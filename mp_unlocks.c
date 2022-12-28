@@ -197,7 +197,7 @@ void __EntryFunction__()//Position - 0x0
 	{
 		iLocal_144 = 40;
 	}
-	switch (iScriptParam_145)
+	switch (iScriptParam_0)
 	{
 		case 3:
 			while (iLocal_136 == 0)

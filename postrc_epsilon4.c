@@ -914,7 +914,7 @@ void func_26(var uParam0, int iParam1, char* sParam2, int iParam3, int iParam4, 
 float func_27(int iParam0, int iParam1, bool bParam2)//Position - 0xBB0
 {
 	struct<3> Var0;
-	struct<3> Var1;
+	struct<3> Var3;
 	
 	if (!ENTITY::IS_ENTITY_DEAD(iParam0, false))
 	{
@@ -926,13 +926,13 @@ float func_27(int iParam0, int iParam1, bool bParam2)//Position - 0xBB0
 	}
 	if (!ENTITY::IS_ENTITY_DEAD(iParam1, false))
 	{
-		Var1 = { ENTITY::GET_ENTITY_COORDS(iParam1, true) };
+		Var3 = { ENTITY::GET_ENTITY_COORDS(iParam1, true) };
 	}
 	else
 	{
-		Var1 = { ENTITY::GET_ENTITY_COORDS(iParam1, false) };
+		Var3 = { ENTITY::GET_ENTITY_COORDS(iParam1, false) };
 	}
-	return MISC::GET_DISTANCE_BETWEEN_COORDS(Var0, Var1, bParam2);
+	return MISC::GET_DISTANCE_BETWEEN_COORDS(Var0, Var3, bParam2);
 }
 
 int func_28()//Position - 0xC0E

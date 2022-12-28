@@ -381,16 +381,16 @@ void func_11(int iParam0, int iParam1, bool bParam2)//Position - 0x582
 void func_12()//Position - 0x6FA
 {
 	char cVar0[64];
-	char cVar1[64];
-	char* sVar2;
+	char cVar16[64];
+	char* sVar32;
 	
 	StringCopy(&cVar0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_2028[Global_8939 /*29*/].f_7)), 64);
 	if (Global_8958 == 0)
 	{
 		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("");
-		StringCopy(&cVar1, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_8863[1 /*6*/])), 64);
-		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253" /* GXT: New Contact */);
-		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, sVar2, &cVar1);
+		StringCopy(&cVar16, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_8863[1 /*6*/])), 64);
+		sVar32 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253" /* GXT: New Contact */);
+		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, sVar32, &cVar16);
 	}
 	else
 	{

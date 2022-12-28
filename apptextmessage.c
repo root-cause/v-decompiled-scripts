@@ -19,39 +19,39 @@
 	int iLocal_17 = 0;
 	var uLocal_18 = 0;
 	int iLocal_19[35] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	int iLocal_20 = 0;
-	int iLocal_21 = 0;
-	int iLocal_22 = 0;
-	int iLocal_23 = 0;
-	int iLocal_24 = 0;
-	int iLocal_25 = 0;
-	int iLocal_26 = 0;
-	int iLocal_27 = 0;
-	int iLocal_28 = 0;
-	int iLocal_29 = 0;
-	int iLocal_30 = 0;
-	int iLocal_31 = 0;
-	int iLocal_32 = 0;
-	var uLocal_33 = 0;
-	var uLocal_34 = 0;
-	var uLocal_35 = 0;
-	var uLocal_36 = 0;
-	var uLocal_37 = 0;
-	var uLocal_38 = 0;
-	var uLocal_39 = 0;
-	var uLocal_40 = 0;
-	var uLocal_41 = 0;
-	var uLocal_42 = 0;
-	var uLocal_43 = 0;
-	var uLocal_44 = 0;
-	var uLocal_45 = 0;
-	var uLocal_46 = 0;
-	var uLocal_47 = 0;
-	var uLocal_48 = 0;
-	struct<6> Local_49[165];
-	struct<6> Local_50[165];
-	struct<8> Local_51[19];
-	int iLocal_52 = 0;
+	int iLocal_55 = 0;
+	int iLocal_56 = 0;
+	int iLocal_57 = 0;
+	int iLocal_58 = 0;
+	int iLocal_59 = 0;
+	int iLocal_60 = 0;
+	int iLocal_61 = 0;
+	int iLocal_62 = 0;
+	int iLocal_63 = 0;
+	int iLocal_64 = 0;
+	int iLocal_65 = 0;
+	int iLocal_66 = 0;
+	int iLocal_67 = 0;
+	var uLocal_68 = 0;
+	var uLocal_69 = 0;
+	var uLocal_70 = 0;
+	var uLocal_71 = 0;
+	var uLocal_72 = 0;
+	var uLocal_73 = 0;
+	var uLocal_74 = 0;
+	var uLocal_75 = 0;
+	var uLocal_76 = 0;
+	var uLocal_77 = 0;
+	var uLocal_78 = 0;
+	var uLocal_79 = 0;
+	var uLocal_80 = 0;
+	var uLocal_81 = 0;
+	var uLocal_82 = 0;
+	var uLocal_83 = 0;
+	struct<6> Local_84[165];
+	struct<6> Local_1075[165];
+	struct<8> Local_2066[19];
+	int iLocal_2219 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -84,17 +84,17 @@ void __EntryFunction__()//Position - 0x0
 	{
 		Global_20383.f_1 = 7;
 	}
-	iLocal_30 = MISC::GET_GAME_TIMER();
+	iLocal_65 = MISC::GET_GAME_TIMER();
 	Global_20387 = 1;
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if (iLocal_29 == 0)
+		if (iLocal_64 == 0)
 		{
-			iLocal_31 = MISC::GET_GAME_TIMER();
-			if ((iLocal_31 - iLocal_30) > 500)
+			iLocal_66 = MISC::GET_GAME_TIMER();
+			if ((iLocal_66 - iLocal_65) > 500)
 			{
-				iLocal_29 = 1;
+				iLocal_64 = 1;
 			}
 		}
 		if (Global_20383.f_1 != 9)
@@ -132,7 +132,7 @@ void __EntryFunction__()//Position - 0x0
 			}
 			else if (func_3(2, Global_20351, 0) || BitTest(Global_8254, 12))
 			{
-				if (MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iLocal_23 /*104*/]), "CELL_FINV"))
+				if (MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iLocal_58 /*104*/]), "CELL_FINV"))
 				{
 				}
 				else
@@ -153,17 +153,17 @@ void __EntryFunction__()//Position - 0x0
 					func_46(Global_20364, "SET_DATA_SLOT_EMPTY", 6f, -1082130432, -1082130432, -1082130432, -1082130432);
 					func_44();
 					func_43();
-					if (Global_113648.f_14143[iLocal_23 /*104*/].f_29 > 0)
+					if (Global_113648.f_14143[iLocal_58 /*104*/].f_29 > 0)
 					{
-						if (Global_113648.f_14143[iLocal_23 /*104*/].f_31 == 1)
+						if (Global_113648.f_14143[iLocal_58 /*104*/].f_31 == 1)
 						{
-							Global_113648.f_14143[iLocal_23 /*104*/].f_29 = 4;
-							Global_113648.f_14143[iLocal_23 /*104*/].f_24 = 1;
+							Global_113648.f_14143[iLocal_58 /*104*/].f_29 = 4;
+							Global_113648.f_14143[iLocal_58 /*104*/].f_24 = 1;
 						}
 						else
 						{
-							Global_113648.f_14143[iLocal_23 /*104*/].f_29 = 4;
-							Global_113648.f_14143[iLocal_23 /*104*/].f_24 = 1;
+							Global_113648.f_14143[iLocal_58 /*104*/].f_29 = 4;
+							Global_113648.f_14143[iLocal_58 /*104*/].f_24 = 1;
 						}
 					}
 				}
@@ -238,7 +238,7 @@ void func_5()//Position - 0x336
 
 void func_6()//Position - 0x342
 {
-	if (Global_113648.f_14143[iLocal_23 /*104*/].f_24 == 1)
+	if (Global_113648.f_14143[iLocal_58 /*104*/].f_24 == 1)
 	{
 		if (Global_20361 == 0)
 		{
@@ -247,30 +247,30 @@ void func_6()//Position - 0x342
 				func_2();
 				Global_20361 = 1;
 				func_26();
-				if (Global_113648.f_14143[iLocal_23 /*104*/].f_27 == 1)
+				if (Global_113648.f_14143[iLocal_58 /*104*/].f_27 == 1)
 				{
-					Global_113648.f_14143[iLocal_23 /*104*/].f_99[0] = 0;
-					Global_113648.f_14143[iLocal_23 /*104*/].f_99[1] = 0;
-					Global_113648.f_14143[iLocal_23 /*104*/].f_99[2] = 0;
+					Global_113648.f_14143[iLocal_58 /*104*/].f_99[0] = 0;
+					Global_113648.f_14143[iLocal_58 /*104*/].f_99[1] = 0;
+					Global_113648.f_14143[iLocal_58 /*104*/].f_99[2] = 0;
 				}
 				else
 				{
-					Global_113648.f_14143[iLocal_23 /*104*/].f_99[Global_20383] = 0;
+					Global_113648.f_14143[iLocal_58 /*104*/].f_99[Global_20383] = 0;
 				}
-				if (func_25(iLocal_23))
+				if (func_25(iLocal_58))
 				{
 				}
 				else
 				{
-					Global_113648.f_14143[iLocal_23 /*104*/].f_24 = 0;
-					Global_113648.f_14143[iLocal_23 /*104*/].f_28 = 0;
+					Global_113648.f_14143[iLocal_58 /*104*/].f_24 = 0;
+					Global_113648.f_14143[iLocal_58 /*104*/].f_28 = 0;
 				}
-				HUD::THEFEED_REMOVE_ITEM(Global_113648.f_14143[iLocal_23 /*104*/].f_16);
+				HUD::THEFEED_REMOVE_ITEM(Global_113648.f_14143[iLocal_58 /*104*/].f_16);
 				func_46(Global_20364, "SET_DATA_SLOT_EMPTY", 6f, -1082130432, -1082130432, -1082130432, -1082130432);
 				func_44();
-				if (iLocal_21 > 0)
+				if (iLocal_56 > 0)
 				{
-					iLocal_21 = (iLocal_21 - 1);
+					iLocal_56 = (iLocal_56 - 1);
 				}
 				func_43();
 				if (Global_20383.f_1 > 3)
@@ -285,7 +285,7 @@ void func_6()//Position - 0x342
 	{
 		if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, Global_20355))
 		{
-			if (iLocal_25 == 1)
+			if (iLocal_60 == 1)
 			{
 				if (Global_20383.f_1 > 3)
 				{
@@ -298,7 +298,7 @@ void func_6()//Position - 0x342
 			}
 		}
 	}
-	if (Global_113648.f_14143[iLocal_23 /*104*/].f_31 == 1)
+	if (Global_113648.f_14143[iLocal_58 /*104*/].f_31 == 1)
 	{
 		if (Global_20361 == 0)
 		{
@@ -306,9 +306,9 @@ void func_6()//Position - 0x342
 			{
 				func_22();
 				Global_20361 = 1;
-				Global_113648.f_14143[iLocal_23 /*104*/].f_29 = 2;
-				Global_113648.f_14143[iLocal_23 /*104*/].f_24 = 1;
-				Global_113648.f_14143[iLocal_23 /*104*/].f_31 = 0;
+				Global_113648.f_14143[iLocal_58 /*104*/].f_29 = 2;
+				Global_113648.f_14143[iLocal_58 /*104*/].f_24 = 1;
+				Global_113648.f_14143[iLocal_58 /*104*/].f_31 = 0;
 				MISC::CLEAR_BIT(&Global_8253, 17);
 				Global_22791 = 0;
 				if (Global_20383.f_1 > 3)
@@ -321,16 +321,16 @@ void func_6()//Position - 0x342
 			}
 		}
 	}
-	if (Global_20361 == 0 && iLocal_29 == 1)
+	if (Global_20361 == 0 && iLocal_64 == 1)
 	{
 		if (func_3(2, Global_20352, 0))
 		{
 			Global_20361 = 1;
-			if (Global_113648.f_14143[iLocal_23 /*104*/].f_29 > 0)
+			if (Global_113648.f_14143[iLocal_58 /*104*/].f_29 > 0)
 			{
 				func_22();
-				Global_113648.f_14143[iLocal_23 /*104*/].f_29 = 3;
-				Global_113648.f_14143[iLocal_23 /*104*/].f_24 = 1;
+				Global_113648.f_14143[iLocal_58 /*104*/].f_29 = 3;
+				Global_113648.f_14143[iLocal_58 /*104*/].f_24 = 1;
 				Global_22791 = 0;
 				if (Global_20383.f_1 > 3)
 				{
@@ -340,7 +340,7 @@ void func_6()//Position - 0x342
 				func_44();
 				func_43();
 			}
-			else if (Global_113648.f_14143[iLocal_23 /*104*/].f_30 == 1)
+			else if (Global_113648.f_14143[iLocal_58 /*104*/].f_30 == 1)
 			{
 				func_22();
 				Global_7568 = 144;
@@ -355,7 +355,7 @@ void func_6()//Position - 0x342
 				func_18("appContacts");
 				Global_20381 = SYSTEM::START_NEW_SCRIPT("appContacts", 4000);
 				SCRIPT::SET_SCRIPT_AS_NO_LONGER_NEEDED("appContacts");
-				Global_7568 = Global_113648.f_14143[iLocal_23 /*104*/].f_17;
+				Global_7568 = Global_113648.f_14143[iLocal_58 /*104*/].f_17;
 				if (func_17(Global_7568, Global_20383) == 0)
 				{
 					func_16(Global_20364, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(4), SYSTEM::TO_FLOAT(0), SYSTEM::TO_FLOAT(3), -1f, -1f, &(Global_117[Global_7568 /*10*/].f_4), "CELL_300" /* GXT: CHAR_DEFAULT */, "CELL_211" /* GXT: DIALING... */, "CELL_195" /* GXT: Unknown */, 0);
@@ -1459,8 +1459,8 @@ var func_32(int iParam0)//Position - 0x1DF9
 void func_33()//Position - 0x1E08
 {
 	struct<16> Var0;
-	char* sVar1;
-	int iVar2;
+	char* sVar16;
+	int iVar17;
 	
 	if (Global_20361 == 0)
 	{
@@ -1471,9 +1471,9 @@ void func_33()//Position - 0x1E08
 				func_22();
 			}
 			Global_20361 = 1;
-			iLocal_29 = 0;
-			iLocal_23 = iLocal_19[iLocal_21];
-			if (Global_113648.f_14143[iLocal_23 /*104*/].f_24 != 0)
+			iLocal_64 = 0;
+			iLocal_58 = iLocal_19[iLocal_56];
+			if (Global_113648.f_14143[iLocal_58 /*104*/].f_24 != 0)
 			{
 				if (Global_20383.f_1 > 3)
 				{
@@ -1483,8 +1483,8 @@ void func_33()//Position - 0x1E08
 				}
 				if (Global_113648.f_14053[Global_20383 /*20*/].f_17 == 1 || Global_22785 == 1)
 				{
-					iLocal_23 = iLocal_19[0];
-					iLocal_22 = 0;
+					iLocal_58 = iLocal_19[0];
+					iLocal_57 = 0;
 					if (Global_113648.f_14053[Global_20383 /*20*/].f_17 == 1)
 					{
 					}
@@ -1493,41 +1493,41 @@ void func_33()//Position - 0x1E08
 				else
 				{
 					SYSTEM::SETTIMERB(0);
-					iLocal_27 = 0;
+					iLocal_62 = 0;
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20364, "GET_CURRENT_SELECTION");
-					iLocal_32 = GRAPHICS::END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE();
-					while (!GRAPHICS::IS_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_READY(iLocal_32) && iLocal_27 == 0)
+					iLocal_67 = GRAPHICS::END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE();
+					while (!GRAPHICS::IS_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_READY(iLocal_67) && iLocal_62 == 0)
 					{
 						SYSTEM::WAIT(0);
 						if (SYSTEM::TIMERB() > 2000)
 						{
-							iLocal_27 = 1;
+							iLocal_62 = 1;
 						}
 					}
-					if (iLocal_27 == 1)
+					if (iLocal_62 == 1)
 					{
-						iLocal_28 = 0;
+						iLocal_63 = 0;
 					}
 					else
 					{
-						iLocal_28 = GRAPHICS::GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT(iLocal_32);
+						iLocal_63 = GRAPHICS::GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT(iLocal_67);
 					}
-					if (iLocal_28 < 0)
+					if (iLocal_63 < 0)
 					{
-						iLocal_28 = 0;
+						iLocal_63 = 0;
 					}
-					iLocal_23 = iLocal_19[iLocal_28];
-					iLocal_22 = iLocal_28;
+					iLocal_58 = iLocal_19[iLocal_63];
+					iLocal_57 = iLocal_63;
 				}
-				Global_113648.f_14143[iLocal_23 /*104*/].f_28 = 1;
-				iLocal_25 = 0;
+				Global_113648.f_14143[iLocal_58 /*104*/].f_28 = 1;
+				iLocal_60 = 0;
 				StringCopy(&Global_22766, "NO_HYPERLINK", 64);
-				Var0 = { Global_113648.f_14143[iLocal_23 /*104*/] };
+				Var0 = { Global_113648.f_14143[iLocal_58 /*104*/] };
 				StringConCat(&Var0, "_LINK", 64);
 				if (HUD::DOES_TEXT_LABEL_EXIST(&Var0))
 				{
 					Global_22766 = { Var0 };
-					iLocal_25 = 1;
+					iLocal_60 = 1;
 					if (Global_20371)
 					{
 						func_16(Global_20364, "SET_SOFT_KEYS", 1f, 1f, 16f, -1f, -1f, "CELL_267" /* GXT: LINK */, 0, 0, 0, 0);
@@ -1537,172 +1537,172 @@ void func_33()//Position - 0x1E08
 						func_16(Global_20364, "SET_SOFT_KEYS", 1f, 1f, 16f, -1f, -1f, 0, 0, 0, 0, 0);
 					}
 					MISC::SET_BIT(&Global_8253, 17);
-					Global_113648.f_14143[iLocal_23 /*104*/].f_26 = 1;
-					Global_113648.f_14143[iLocal_23 /*104*/].f_24 = 2;
+					Global_113648.f_14143[iLocal_58 /*104*/].f_26 = 1;
+					Global_113648.f_14143[iLocal_58 /*104*/].f_24 = 2;
 				}
-				if (Global_113648.f_14143[iLocal_23 /*104*/].f_26 == 0)
+				if (Global_113648.f_14143[iLocal_58 /*104*/].f_26 == 0)
 				{
-					Global_113648.f_14143[iLocal_23 /*104*/].f_24 = 1;
+					Global_113648.f_14143[iLocal_58 /*104*/].f_24 = 1;
 				}
 				func_37();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20364, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(7);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(0);
-				if (Global_113648.f_14143[iLocal_23 /*104*/].f_17 == 145)
+				if (Global_113648.f_14143[iLocal_58 /*104*/].f_17 == 145)
 				{
 					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_2000" /* GXT: ~a~ */);
-					HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iLocal_23 /*104*/].f_50));
+					HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iLocal_58 /*104*/].f_50));
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				}
 				else
 				{
-					func_10(&(Global_2028[Global_113648.f_14143[iLocal_23 /*104*/].f_17 /*29*/].f_3));
+					func_10(&(Global_2028[Global_113648.f_14143[iLocal_58 /*104*/].f_17 /*29*/].f_3));
 				}
-				switch (Global_113648.f_14143[iLocal_23 /*104*/].f_32)
+				switch (Global_113648.f_14143[iLocal_58 /*104*/].f_32)
 				{
 					case 0:
-						func_10(&(Global_113648.f_14143[iLocal_23 /*104*/]));
+						func_10(&(Global_113648.f_14143[iLocal_58 /*104*/]));
 						break;
 					
 					case 1:
-						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(&(Global_113648.f_14143[iLocal_23 /*104*/]));
-						HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iLocal_23 /*104*/].f_33));
-						if (Global_113648.f_14143[iLocal_23 /*104*/].f_66 == 1 && !MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iLocal_23 /*104*/].f_67), "NULL"))
+						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(&(Global_113648.f_14143[iLocal_58 /*104*/]));
+						HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iLocal_58 /*104*/].f_33));
+						if (Global_113648.f_14143[iLocal_58 /*104*/].f_66 == 1 && !MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iLocal_58 /*104*/].f_67), "NULL"))
 						{
-							HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iLocal_23 /*104*/].f_67));
+							HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iLocal_58 /*104*/].f_67));
 						}
-						if ((Global_113648.f_14143[iLocal_23 /*104*/].f_66 == 2 && !MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iLocal_23 /*104*/].f_67), "NULL")) && !MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iLocal_23 /*104*/].f_83), "NULL"))
+						if ((Global_113648.f_14143[iLocal_58 /*104*/].f_66 == 2 && !MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iLocal_58 /*104*/].f_67), "NULL")) && !MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iLocal_58 /*104*/].f_83), "NULL"))
 						{
-							if (HUD::DOES_TEXT_LABEL_EXIST(&(Global_113648.f_14143[iLocal_23 /*104*/].f_67)))
+							if (HUD::DOES_TEXT_LABEL_EXIST(&(Global_113648.f_14143[iLocal_58 /*104*/].f_67)))
 							{
-								HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_113648.f_14143[iLocal_23 /*104*/].f_67));
+								HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_113648.f_14143[iLocal_58 /*104*/].f_67));
 							}
 							else
 							{
-								HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iLocal_23 /*104*/].f_67));
+								HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iLocal_58 /*104*/].f_67));
 							}
-							if (HUD::DOES_TEXT_LABEL_EXIST(&(Global_113648.f_14143[iLocal_23 /*104*/].f_83)))
+							if (HUD::DOES_TEXT_LABEL_EXIST(&(Global_113648.f_14143[iLocal_58 /*104*/].f_83)))
 							{
-								HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_113648.f_14143[iLocal_23 /*104*/].f_83));
+								HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_113648.f_14143[iLocal_58 /*104*/].f_83));
 							}
 							else
 							{
-								HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iLocal_23 /*104*/].f_83));
+								HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iLocal_58 /*104*/].f_83));
 							}
 						}
 						GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 						break;
 					
 					case 2:
-						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(&(Global_113648.f_14143[iLocal_23 /*104*/]));
-						HUD::ADD_TEXT_COMPONENT_INTEGER(Global_113648.f_14143[iLocal_23 /*104*/].f_49);
+						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(&(Global_113648.f_14143[iLocal_58 /*104*/]));
+						HUD::ADD_TEXT_COMPONENT_INTEGER(Global_113648.f_14143[iLocal_58 /*104*/].f_49);
 						GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 						break;
 					
 					case 3:
-						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(&(Global_113648.f_14143[iLocal_23 /*104*/]));
-						HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iLocal_23 /*104*/].f_33));
-						HUD::ADD_TEXT_COMPONENT_INTEGER(Global_113648.f_14143[iLocal_23 /*104*/].f_49);
-						if (Global_113648.f_14143[iLocal_23 /*104*/].f_66 == 1 && !MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iLocal_23 /*104*/].f_67), "NULL"))
+						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(&(Global_113648.f_14143[iLocal_58 /*104*/]));
+						HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iLocal_58 /*104*/].f_33));
+						HUD::ADD_TEXT_COMPONENT_INTEGER(Global_113648.f_14143[iLocal_58 /*104*/].f_49);
+						if (Global_113648.f_14143[iLocal_58 /*104*/].f_66 == 1 && !MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iLocal_58 /*104*/].f_67), "NULL"))
 						{
-							HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iLocal_23 /*104*/].f_67));
+							HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iLocal_58 /*104*/].f_67));
 						}
-						if ((Global_113648.f_14143[iLocal_23 /*104*/].f_66 == 2 && !MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iLocal_23 /*104*/].f_67), "NULL")) && !MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iLocal_23 /*104*/].f_83), "NULL"))
+						if ((Global_113648.f_14143[iLocal_58 /*104*/].f_66 == 2 && !MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iLocal_58 /*104*/].f_67), "NULL")) && !MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iLocal_58 /*104*/].f_83), "NULL"))
 						{
-							if (HUD::DOES_TEXT_LABEL_EXIST(&(Global_113648.f_14143[iLocal_23 /*104*/].f_67)))
+							if (HUD::DOES_TEXT_LABEL_EXIST(&(Global_113648.f_14143[iLocal_58 /*104*/].f_67)))
 							{
-								HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_113648.f_14143[iLocal_23 /*104*/].f_67));
+								HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_113648.f_14143[iLocal_58 /*104*/].f_67));
 							}
 							else
 							{
-								HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iLocal_23 /*104*/].f_67));
+								HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iLocal_58 /*104*/].f_67));
 							}
-							if (HUD::DOES_TEXT_LABEL_EXIST(&(Global_113648.f_14143[iLocal_23 /*104*/].f_83)))
+							if (HUD::DOES_TEXT_LABEL_EXIST(&(Global_113648.f_14143[iLocal_58 /*104*/].f_83)))
 							{
-								HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_113648.f_14143[iLocal_23 /*104*/].f_83));
+								HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_113648.f_14143[iLocal_58 /*104*/].f_83));
 							}
 							else
 							{
-								HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iLocal_23 /*104*/].f_83));
+								HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iLocal_58 /*104*/].f_83));
 							}
 						}
 						GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 						break;
 					
 					case 4:
-						func_36(iLocal_23);
+						func_36(iLocal_58);
 						break;
 					
 					case 5:
-						func_36(iLocal_23);
+						func_36(iLocal_58);
 						break;
 					
 					case 6:
-						func_36(iLocal_23);
+						func_36(iLocal_58);
 						break;
 					
 					case 7:
-						func_36(iLocal_23);
+						func_36(iLocal_58);
 						break;
 					
 					case 8:
-						func_36(iLocal_23);
+						func_36(iLocal_58);
 						break;
 					
 					case 9:
-						func_36(iLocal_23);
+						func_36(iLocal_58);
 						break;
 					
 					case 10:
-						func_36(iLocal_23);
+						func_36(iLocal_58);
 						break;
 					
 					case 11:
-						func_36(iLocal_23);
+						func_36(iLocal_58);
 						break;
 					
 					case 12:
-						func_35(iLocal_23);
+						func_35(iLocal_58);
 						break;
 				}
-				if (Global_22794[iLocal_23] == 0)
+				if (Global_22794[iLocal_58] == 0)
 				{
-					if (Global_113648.f_14143[iLocal_23 /*104*/].f_17 == 159)
+					if (Global_113648.f_14143[iLocal_58 /*104*/].f_17 == 159)
 					{
 						func_10("CELL_COMIC_P" /* GXT: CHAR_COMIC_STORE */);
 					}
 					else
 					{
-						func_10(&(Global_2028[Global_113648.f_14143[iLocal_23 /*104*/].f_17 /*29*/].f_7));
+						func_10(&(Global_2028[Global_113648.f_14143[iLocal_58 /*104*/].f_17 /*29*/].f_7));
 					}
 				}
 				else
 				{
-					if (PED::IS_PEDHEADSHOT_VALID(Global_22794[iLocal_23]))
+					if (PED::IS_PEDHEADSHOT_VALID(Global_22794[iLocal_58]))
 					{
-						if (PED::IS_PEDHEADSHOT_READY(Global_22794[iLocal_23]))
+						if (PED::IS_PEDHEADSHOT_READY(Global_22794[iLocal_58]))
 						{
-							sVar1 = PED::GET_PEDHEADSHOT_TXD_STRING(Global_22794[iLocal_23]);
+							sVar16 = PED::GET_PEDHEADSHOT_TXD_STRING(Global_22794[iLocal_58]);
 						}
 						else
 						{
-							sVar1 = "CHAR_DEFAULT";
+							sVar16 = "CHAR_DEFAULT";
 						}
 					}
 					else
 					{
-						sVar1 = "CHAR_DEFAULT";
+						sVar16 = "CHAR_DEFAULT";
 					}
 					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_2000" /* GXT: ~a~ */);
-					HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(sVar1);
+					HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(sVar16);
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				}
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				Global_22791 = 1;
 				func_46(Global_20364, "DISPLAY_VIEW", 7f, -1082130432, -1082130432, -1082130432, -1082130432);
 				func_34(Global_20364, "SET_HEADER", "CELL_1" /* GXT: Texts */, 0, 0, 0, 0);
-				HUD::THEFEED_REMOVE_ITEM(Global_113648.f_14143[iLocal_23 /*104*/].f_16);
-				if (Global_113648.f_14143[iLocal_23 /*104*/].f_29 > 0)
+				HUD::THEFEED_REMOVE_ITEM(Global_113648.f_14143[iLocal_58 /*104*/].f_16);
+				if (Global_113648.f_14143[iLocal_58 /*104*/].f_29 > 0)
 				{
 					if (Global_20371)
 					{
@@ -1713,7 +1713,7 @@ void func_33()//Position - 0x1E08
 						func_16(Global_20364, "SET_SOFT_KEYS", 2f, 1f, 13f, -1f, -1f, 0, 0, 0, 0, 0);
 					}
 				}
-				else if (Global_113648.f_14143[iLocal_23 /*104*/].f_30 == 1)
+				else if (Global_113648.f_14143[iLocal_58 /*104*/].f_30 == 1)
 				{
 					if (Global_20371)
 					{
@@ -1728,9 +1728,9 @@ void func_33()//Position - 0x1E08
 				{
 					func_16(Global_20364, "SET_SOFT_KEYS", 2f, 0f, 1f, -1f, -1f, 0, 0, 0, 0, 0);
 				}
-				if (Global_113648.f_14143[iLocal_23 /*104*/].f_29 > 0)
+				if (Global_113648.f_14143[iLocal_58 /*104*/].f_29 > 0)
 				{
-					if (MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iLocal_23 /*104*/]), "CELL_FINV"))
+					if (MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iLocal_58 /*104*/]), "CELL_FINV"))
 					{
 						if (Global_20371)
 						{
@@ -1758,11 +1758,11 @@ void func_33()//Position - 0x1E08
 				{
 					func_16(Global_20364, "SET_SOFT_KEYS", 3f, 1f, 4f, -1f, -1f, 0, 0, 0, 0, 0);
 				}
-				if (Global_113648.f_14143[iLocal_23 /*104*/].f_24 == 2)
+				if (Global_113648.f_14143[iLocal_58 /*104*/].f_24 == 2)
 				{
-					if (Global_113648.f_14143[iLocal_23 /*104*/].f_31 == 1)
+					if (Global_113648.f_14143[iLocal_58 /*104*/].f_31 == 1)
 					{
-						iLocal_25 = 0;
+						iLocal_60 = 0;
 						if (Global_20371)
 						{
 							func_16(Global_20364, "SET_SOFT_KEYS", 1f, 1f, 11f, -1f, -1f, "CELL_264" /* GXT: BARTER */, 0, 0, 0, 0);
@@ -1773,7 +1773,7 @@ void func_33()//Position - 0x1E08
 						}
 						MISC::SET_BIT(&Global_8253, 17);
 					}
-					else if (iLocal_25 == 0)
+					else if (iLocal_60 == 0)
 					{
 						func_16(Global_20364, "SET_SOFT_KEYS", 1f, 0f, 1f, -1f, -1f, 0, 0, 0, 0, 0);
 						MISC::CLEAR_BIT(&Global_8253, 17);
@@ -1794,19 +1794,19 @@ void func_33()//Position - 0x1E08
 			}
 			else
 			{
-				iVar2 = 0;
+				iVar17 = 0;
 				if (Global_113648.f_14053[Global_20383 /*20*/].f_17 == 1 || Global_22785 == 1)
 				{
 					if (Global_22785)
 					{
 					}
-					iVar2 = 1;
+					iVar17 = 1;
 				}
 				Global_113648.f_14053[Global_20383 /*20*/].f_18 = 0;
 				Global_113648.f_14053[Global_20383 /*20*/].f_17 = 0;
-				if (iVar2 == 1)
+				if (iVar17 == 1)
 				{
-					iVar2 = 0;
+					iVar17 = 0;
 					Global_20383.f_1 = 3;
 				}
 			}
@@ -1998,29 +1998,29 @@ void func_37()//Position - 0x2AB5
 {
 	int iVar0;
 	
-	if (iLocal_52)
+	if (iLocal_2219)
 	{
-		GRAPHICS::SET_STREAMED_TEXTURE_DICT_AS_NO_LONGER_NEEDED(&uLocal_33);
+		GRAPHICS::SET_STREAMED_TEXTURE_DICT_AS_NO_LONGER_NEEDED(&uLocal_68);
 	}
-	iLocal_52 = 0;
-	if (Global_113648.f_14143[iLocal_23 /*104*/].f_24 != 0)
+	iLocal_2219 = 0;
+	if (Global_113648.f_14143[iLocal_58 /*104*/].f_24 != 0)
 	{
 		iVar0 = 0;
 		while (iVar0 < 165)
 		{
-			if (!MISC::IS_STRING_NULL_OR_EMPTY(&(Local_49[iVar0 /*6*/])) && MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iLocal_23 /*104*/]), &(Local_49[iVar0 /*6*/])))
+			if (!MISC::IS_STRING_NULL_OR_EMPTY(&(Local_84[iVar0 /*6*/])) && MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iLocal_58 /*104*/]), &(Local_84[iVar0 /*6*/])))
 			{
 				if (iVar0 < 19)
 				{
-					MemCopy(&uLocal_33, {Local_51[iVar0 /*8*/]}, 16);
+					MemCopy(&uLocal_68, {Local_2066[iVar0 /*8*/]}, 16);
 				}
 				else
 				{
-					MemCopy(&uLocal_33, {Local_50[iVar0 /*6*/]}, 16);
+					MemCopy(&uLocal_68, {Local_1075[iVar0 /*6*/]}, 16);
 				}
-				iLocal_52 = 1;
-				GRAPHICS::REQUEST_STREAMED_TEXTURE_DICT(&uLocal_33, false);
-				while (!GRAPHICS::HAS_STREAMED_TEXTURE_DICT_LOADED(&uLocal_33))
+				iLocal_2219 = 1;
+				GRAPHICS::REQUEST_STREAMED_TEXTURE_DICT(&uLocal_68, false);
+				while (!GRAPHICS::HAS_STREAMED_TEXTURE_DICT_LOADED(&uLocal_68))
 				{
 					SYSTEM::WAIT(100);
 				}
@@ -2032,34 +2032,34 @@ void func_37()//Position - 0x2AB5
 
 void func_38()//Position - 0x2B60
 {
-	if (iLocal_26)
+	if (iLocal_61)
 	{
 		if (SYSTEM::TIMERA() > 50)
 		{
-			iLocal_26 = 0;
+			iLocal_61 = 0;
 		}
 	}
-	if (iLocal_26 == 0)
+	if (iLocal_61 == 0)
 	{
 		if (func_3(2, Global_20359, 0) || PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 181 /*INPUT_CELLPHONE_SCROLL_BACKWARD*/))
 		{
-			if (iLocal_21 > 0)
+			if (iLocal_56 > 0)
 			{
-				iLocal_21 = (iLocal_21 - 1);
+				iLocal_56 = (iLocal_56 - 1);
 			}
 			func_41();
-			iLocal_26 = 1;
+			iLocal_61 = 1;
 			SYSTEM::SETTIMERA(0);
 		}
 		if (func_3(2, Global_20360, 0) || PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 180 /*INPUT_CELLPHONE_SCROLL_FORWARD*/))
 		{
-			iLocal_21++;
-			if (iLocal_21 == iLocal_20)
+			iLocal_56++;
+			if (iLocal_56 == iLocal_55)
 			{
-				iLocal_21 = 0;
+				iLocal_56 = 0;
 			}
 			func_39();
-			iLocal_26 = 1;
+			iLocal_61 = 1;
 			SYSTEM::SETTIMERA(0);
 		}
 	}
@@ -2113,15 +2113,15 @@ void func_43()//Position - 0x2CA5
 {
 	if (Global_113648.f_14053[Global_20383 /*20*/].f_17 == 0)
 	{
-		if (iLocal_22 < 0)
+		if (iLocal_57 < 0)
 		{
-			iLocal_22 = 0;
+			iLocal_57 = 0;
 		}
-		func_46(Global_20364, "DISPLAY_VIEW", 6f, SYSTEM::TO_FLOAT(iLocal_22), -1082130432, -1082130432, -1082130432);
+		func_46(Global_20364, "DISPLAY_VIEW", 6f, SYSTEM::TO_FLOAT(iLocal_57), -1082130432, -1082130432, -1082130432);
 		func_34(Global_20364, "SET_HEADER", "CELL_1" /* GXT: Texts */, 0, 0, 0, 0);
 		if (Global_20371)
 		{
-			if (iLocal_20 > 0)
+			if (iLocal_55 > 0)
 			{
 				func_16(Global_20364, "SET_SOFT_KEYS", 2f, 1f, 2f, -1f, -1f, "CELL_214" /* GXT: OPTIONS */, 0, 0, 0, 0);
 			}
@@ -2133,7 +2133,7 @@ void func_43()//Position - 0x2CA5
 		}
 		else
 		{
-			if (iLocal_20 > 0)
+			if (iLocal_55 > 0)
 			{
 				func_16(Global_20364, "SET_SOFT_KEYS", 2f, 1f, 2f, -1f, -1f, 0, 0, 0, 0, 0);
 			}
@@ -2156,243 +2156,243 @@ void func_43()//Position - 0x2CA5
 	}
 	else
 	{
-		iLocal_22 = 0;
+		iLocal_57 = 0;
 	}
 }
 
 void func_44()//Position - 0x2DE1
 {
 	int iVar0[35];
-	int iVar1;
-	int iVar2;
-	int iVar3;
+	int iVar36;
+	int iVar37;
+	int iVar38;
 	
-	iLocal_20 = 0;
+	iLocal_55 = 0;
 	func_26();
-	iVar1 = 0;
-	while (iVar1 < 34)
+	iVar36 = 0;
+	while (iVar36 < 34)
 	{
 		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) == 0)
 		{
 			func_59();
 		}
-		iVar2 = 0;
-		iVar3 = 34;
-		Global_113648.f_14143[iVar3 /*104*/].f_18 = -1;
-		Global_113648.f_14143[iVar3 /*104*/].f_18.f_1 = 0;
-		Global_113648.f_14143[iVar3 /*104*/].f_18.f_2 = 0;
-		Global_113648.f_14143[iVar3 /*104*/].f_18.f_3 = 0;
-		Global_113648.f_14143[iVar3 /*104*/].f_18.f_5 = 0;
-		while (iVar2 < 35)
+		iVar37 = 0;
+		iVar38 = 34;
+		Global_113648.f_14143[iVar38 /*104*/].f_18 = -1;
+		Global_113648.f_14143[iVar38 /*104*/].f_18.f_1 = 0;
+		Global_113648.f_14143[iVar38 /*104*/].f_18.f_2 = 0;
+		Global_113648.f_14143[iVar38 /*104*/].f_18.f_3 = 0;
+		Global_113648.f_14143[iVar38 /*104*/].f_18.f_5 = 0;
+		while (iVar37 < 35)
 		{
 			if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) == 0)
 			{
 				func_59();
 			}
-			if (iVar0[iVar2] == 0)
+			if (iVar0[iVar37] == 0)
 			{
-				if (Global_113648.f_14143[iVar2 /*104*/].f_24 != 0)
+				if (Global_113648.f_14143[iVar37 /*104*/].f_24 != 0)
 				{
-					if (Global_113648.f_14143[iVar2 /*104*/].f_99[Global_20383] == 1)
+					if (Global_113648.f_14143[iVar37 /*104*/].f_99[Global_20383] == 1)
 					{
-						if (func_45(Global_113648.f_14143[iVar2 /*104*/].f_18, Global_113648.f_14143[iVar3 /*104*/].f_18))
+						if (func_45(Global_113648.f_14143[iVar37 /*104*/].f_18, Global_113648.f_14143[iVar38 /*104*/].f_18))
 						{
-							iVar3 = iVar2;
-							if (Global_113648.f_14143[iVar3 /*104*/].f_28 == 0)
+							iVar38 = iVar37;
+							if (Global_113648.f_14143[iVar38 /*104*/].f_28 == 0)
 							{
-								iLocal_24 = 33;
+								iLocal_59 = 33;
 							}
 							else
 							{
-								iLocal_24 = 34;
+								iLocal_59 = 34;
 							}
 						}
 					}
 				}
 			}
-			iVar2++;
+			iVar37++;
 		}
-		iLocal_19[iVar1] = iVar3;
-		iVar0[iVar3] = 1;
-		if (Global_113648.f_14143[iVar3 /*104*/].f_24 != 0)
+		iLocal_19[iVar36] = iVar38;
+		iVar0[iVar38] = 1;
+		if (Global_113648.f_14143[iVar38 /*104*/].f_24 != 0)
 		{
-			if (Global_113648.f_14143[iVar3 /*104*/].f_99[Global_20383] == 1)
+			if (Global_113648.f_14143[iVar38 /*104*/].f_99[Global_20383] == 1)
 			{
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20364, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(6);
-				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar1);
-				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_113648.f_14143[iVar3 /*104*/].f_18.f_2);
-				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_113648.f_14143[iVar3 /*104*/].f_18.f_1);
-				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iLocal_24);
-				if (Global_113648.f_14143[iVar3 /*104*/].f_17 == 145)
+				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar36);
+				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_113648.f_14143[iVar38 /*104*/].f_18.f_2);
+				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(Global_113648.f_14143[iVar38 /*104*/].f_18.f_1);
+				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iLocal_59);
+				if (Global_113648.f_14143[iVar38 /*104*/].f_17 == 145)
 				{
 					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_CONDFNH" /* GXT: <C>~a~</C> */);
-					HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iVar3 /*104*/].f_50));
+					HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iVar38 /*104*/].f_50));
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				}
 				else
 				{
-					func_10(&(Global_2028[Global_113648.f_14143[iVar3 /*104*/].f_17 /*29*/].f_3));
+					func_10(&(Global_2028[Global_113648.f_14143[iVar38 /*104*/].f_17 /*29*/].f_3));
 				}
-				switch (Global_113648.f_14143[iVar3 /*104*/].f_32)
+				switch (Global_113648.f_14143[iVar38 /*104*/].f_32)
 				{
 					case 0:
-						func_10(&(Global_113648.f_14143[iVar3 /*104*/]));
+						func_10(&(Global_113648.f_14143[iVar38 /*104*/]));
 						break;
 					
 					case 1:
-						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(&(Global_113648.f_14143[iVar3 /*104*/]));
-						HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iVar3 /*104*/].f_33));
-						if (Global_113648.f_14143[iVar3 /*104*/].f_66 == 1 && !MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iVar3 /*104*/].f_67), "NULL"))
+						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(&(Global_113648.f_14143[iVar38 /*104*/]));
+						HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iVar38 /*104*/].f_33));
+						if (Global_113648.f_14143[iVar38 /*104*/].f_66 == 1 && !MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iVar38 /*104*/].f_67), "NULL"))
 						{
-							HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iVar3 /*104*/].f_67));
+							HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iVar38 /*104*/].f_67));
 						}
-						if ((Global_113648.f_14143[iVar3 /*104*/].f_66 == 2 && !MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iVar3 /*104*/].f_67), "NULL")) && !MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iVar3 /*104*/].f_83), "NULL"))
+						if ((Global_113648.f_14143[iVar38 /*104*/].f_66 == 2 && !MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iVar38 /*104*/].f_67), "NULL")) && !MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iVar38 /*104*/].f_83), "NULL"))
 						{
-							if (HUD::DOES_TEXT_LABEL_EXIST(&(Global_113648.f_14143[iVar3 /*104*/].f_67)))
+							if (HUD::DOES_TEXT_LABEL_EXIST(&(Global_113648.f_14143[iVar38 /*104*/].f_67)))
 							{
-								HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_113648.f_14143[iVar3 /*104*/].f_67));
+								HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_113648.f_14143[iVar38 /*104*/].f_67));
 							}
 							else
 							{
-								HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iVar3 /*104*/].f_67));
+								HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iVar38 /*104*/].f_67));
 							}
-							if (HUD::DOES_TEXT_LABEL_EXIST(&(Global_113648.f_14143[iVar3 /*104*/].f_83)))
+							if (HUD::DOES_TEXT_LABEL_EXIST(&(Global_113648.f_14143[iVar38 /*104*/].f_83)))
 							{
-								HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_113648.f_14143[iVar3 /*104*/].f_83));
+								HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_113648.f_14143[iVar38 /*104*/].f_83));
 							}
 							else
 							{
-								HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iVar3 /*104*/].f_83));
+								HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iVar38 /*104*/].f_83));
 							}
 						}
 						GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 						break;
 					
 					case 2:
-						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(&(Global_113648.f_14143[iVar3 /*104*/]));
-						HUD::ADD_TEXT_COMPONENT_INTEGER(Global_113648.f_14143[iVar3 /*104*/].f_49);
+						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(&(Global_113648.f_14143[iVar38 /*104*/]));
+						HUD::ADD_TEXT_COMPONENT_INTEGER(Global_113648.f_14143[iVar38 /*104*/].f_49);
 						GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 						break;
 					
 					case 3:
-						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(&(Global_113648.f_14143[iVar3 /*104*/]));
-						HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iVar3 /*104*/].f_33));
-						HUD::ADD_TEXT_COMPONENT_INTEGER(Global_113648.f_14143[iVar3 /*104*/].f_49);
-						if (Global_113648.f_14143[iVar3 /*104*/].f_66 == 1 && !MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iVar3 /*104*/].f_67), "NULL"))
+						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(&(Global_113648.f_14143[iVar38 /*104*/]));
+						HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iVar38 /*104*/].f_33));
+						HUD::ADD_TEXT_COMPONENT_INTEGER(Global_113648.f_14143[iVar38 /*104*/].f_49);
+						if (Global_113648.f_14143[iVar38 /*104*/].f_66 == 1 && !MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iVar38 /*104*/].f_67), "NULL"))
 						{
-							HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iVar3 /*104*/].f_67));
+							HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iVar38 /*104*/].f_67));
 						}
-						if ((Global_113648.f_14143[iVar3 /*104*/].f_66 == 2 && !MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iVar3 /*104*/].f_67), "NULL")) && !MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iVar3 /*104*/].f_83), "NULL"))
+						if ((Global_113648.f_14143[iVar38 /*104*/].f_66 == 2 && !MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iVar38 /*104*/].f_67), "NULL")) && !MISC::ARE_STRINGS_EQUAL(&(Global_113648.f_14143[iVar38 /*104*/].f_83), "NULL"))
 						{
-							if (HUD::DOES_TEXT_LABEL_EXIST(&(Global_113648.f_14143[iVar3 /*104*/].f_67)))
+							if (HUD::DOES_TEXT_LABEL_EXIST(&(Global_113648.f_14143[iVar38 /*104*/].f_67)))
 							{
-								HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_113648.f_14143[iVar3 /*104*/].f_67));
+								HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_113648.f_14143[iVar38 /*104*/].f_67));
 							}
 							else
 							{
-								HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iVar3 /*104*/].f_67));
+								HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iVar38 /*104*/].f_67));
 							}
-							if (HUD::DOES_TEXT_LABEL_EXIST(&(Global_113648.f_14143[iVar3 /*104*/].f_83)))
+							if (HUD::DOES_TEXT_LABEL_EXIST(&(Global_113648.f_14143[iVar38 /*104*/].f_83)))
 							{
-								HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_113648.f_14143[iVar3 /*104*/].f_83));
+								HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_113648.f_14143[iVar38 /*104*/].f_83));
 							}
 							else
 							{
-								HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iVar3 /*104*/].f_83));
+								HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_113648.f_14143[iVar38 /*104*/].f_83));
 							}
 						}
 						GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 						break;
 					
 					case 4:
-						func_36(iVar3);
+						func_36(iVar38);
 						break;
 					
 					case 5:
-						func_36(iVar3);
+						func_36(iVar38);
 						break;
 					
 					case 6:
-						func_36(iVar3);
+						func_36(iVar38);
 						break;
 					
 					case 7:
-						func_36(iVar3);
+						func_36(iVar38);
 						break;
 					
 					case 8:
-						func_36(iVar3);
+						func_36(iVar38);
 						break;
 					
 					case 9:
-						func_36(iVar3);
+						func_36(iVar38);
 						break;
 					
 					case 10:
-						func_36(iVar3);
+						func_36(iVar38);
 						break;
 					
 					case 11:
-						func_36(iVar3);
+						func_36(iVar38);
 						break;
 					
 					case 12:
-						func_35(iVar3);
+						func_35(iVar38);
 						break;
 				}
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 			}
 		}
-		if (Global_113648.f_14143[iVar1 /*104*/].f_24 != 0)
+		if (Global_113648.f_14143[iVar36 /*104*/].f_24 != 0)
 		{
-			if (Global_113648.f_14143[iVar1 /*104*/].f_99[Global_20383] == 1)
+			if (Global_113648.f_14143[iVar36 /*104*/].f_99[Global_20383] == 1)
 			{
-				iLocal_20++;
+				iLocal_55++;
 			}
 		}
-		iVar1++;
+		iVar36++;
 	}
 }
 
-int func_45(struct<6> Param0, struct<6> Param1)//Position - 0x3332
+int func_45(struct<6> Param0, struct<6> Param6)//Position - 0x3332
 {
 	struct<4> Var0;
-	struct<4> Var1;
-	int iVar2;
-	int iVar3;
+	struct<4> Var6;
+	int iVar12;
+	int iVar13;
 	
-	if (Param0.f_5 < Param1.f_5)
+	if (Param0.f_5 < Param6.f_5)
 	{
 		return 0;
 	}
-	if (Param0.f_5 > Param1.f_5)
+	if (Param0.f_5 > Param6.f_5)
 	{
 		return 1;
 	}
-	if (Param0.f_5 == Param1.f_5)
+	if (Param0.f_5 == Param6.f_5)
 	{
-		if (Param0.f_4 < Param1.f_4)
+		if (Param0.f_4 < Param6.f_4)
 		{
 			return 0;
 		}
-		if (Param0.f_4 > Param1.f_4)
+		if (Param0.f_4 > Param6.f_4)
 		{
 			return 1;
 		}
-		if (Param0.f_4 == Param1.f_4)
+		if (Param0.f_4 == Param6.f_4)
 		{
 			Var0.f_0 = Param0.f_0;
 			Var0.f_1 = Param0.f_1 * 60;
 			Var0.f_2 = Param0.f_2 * 3600;
 			Var0.f_3 = (Param0.f_3 * 86400);
-			iVar2 = (((Var0.f_0 + Var0.f_1) + Var0.f_2) + Var0.f_3);
-			Var1.f_0 = Param1.f_0;
-			Var1.f_1 = Param1.f_1 * 60;
-			Var1.f_2 = Param1.f_2 * 3600;
-			Var1.f_3 = (Param1.f_3 * 86400);
-			iVar3 = (((Var1.f_0 + Var1.f_1) + Var1.f_2) + Var1.f_3);
-			if (iVar2 > iVar3 || iVar2 == iVar3)
+			iVar12 = (((Var0.f_0 + Var0.f_1) + Var0.f_2) + Var0.f_3);
+			Var6.f_0 = Param6.f_0;
+			Var6.f_1 = Param6.f_1 * 60;
+			Var6.f_2 = Param6.f_2 * 3600;
+			Var6.f_3 = (Param6.f_3 * 86400);
+			iVar13 = (((Var6.f_0 + Var6.f_1) + Var6.f_2) + Var6.f_3);
+			if (iVar12 > iVar13 || iVar12 == iVar13)
 			{
 				return 1;
 			}
@@ -2430,494 +2430,494 @@ void func_46(int iParam0, char* sParam1, float fParam2, float fParam3, float fPa
 
 void func_47()//Position - 0x3480
 {
-	StringCopy(&(Local_49[0 /*6*/]), "SXT_JUL_1ST" /* GXT: I can't wait until you cum again! ~nrt~ <img src='img://05_a_sext_stripperJuliet/05_a_sext_stripperJuliet' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_51[0 /*8*/]), "05_a_sext_stripperJuliet", 32);
-	StringCopy(&(Local_49[1 /*6*/]), "SXT_JUL_2ND" /* GXT: Just when I thought that it couldn't get any better! ~nrt~ <img src='img://05_b_sext_stripperJuliet/05_b_sext_stripperJuliet' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_51[1 /*8*/]), "05_b_sext_stripperJuliet", 32);
-	StringCopy(&(Local_49[2 /*6*/]), "SXT_JUL_NEED" /* GXT: Missing you badly! I want you inside me. ~nrt~ <img src='img://05_c_sext_stripperJuliet/05_c_sext_stripperJuliet' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_51[2 /*8*/]), "05_c_sext_stripperJuliet", 32);
-	StringCopy(&(Local_49[3 /*6*/]), "SXT_NIK_1ST" /* GXT: I just wanted you to know that I miss you already :-* ~nrt~ <img src='img://06_a_sext_stripperNikki/06_a_sext_stripperNikki' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_51[3 /*8*/]), "06_a_sext_stripperNikki", 32);
-	StringCopy(&(Local_49[4 /*6*/]), "SXT_NIK_2ND" /* GXT: You're the man that I've been looking for my entire life! ~nrt~ <img src='img://06_b_sext_stripperNikki/06_b_sext_stripperNikki' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_51[4 /*8*/]), "06_b_sext_stripperNikki", 32);
-	StringCopy(&(Local_49[5 /*6*/]), "SXT_NIK_NEED" /* GXT: Maybe this will get your attention! ~nrt~ <img src='img://06_c_sext_stripperNikki/06_c_sext_stripperNikki' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_51[5 /*8*/]), "06_c_sext_stripperNikki", 32);
-	StringCopy(&(Local_49[6 /*6*/]), "SXT_SAP_1ST" /* GXT: That was deliciously yummy. Next time, I want to be on top. What do you think of this position? ~nrt~ <img src='img://08_a_sext_stripperSapphire/08_a_sext_stripperSapphire' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_51[6 /*8*/]), "08_a_sext_stripperSapphire", 32);
-	StringCopy(&(Local_49[7 /*6*/]), "SXT_SAP_2ND" /* GXT: Here don't show this to anyone else. ~nrt~ <img src='img://08_b_sext_stripperSapphire/08_b_sext_stripperSapphire' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_51[7 /*8*/]), "08_b_sext_stripperSapphire", 32);
-	StringCopy(&(Local_49[8 /*6*/]), "SXT_SAP_NEED" /* GXT: My body aches for you! ~nrt~ <img src='img://08_c_sext_stripperSapphire/08_c_sext_stripperSapphire' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_51[8 /*8*/]), "08_c_sext_stripperSapphire", 32);
-	StringCopy(&(Local_49[9 /*6*/]), "SXT_INF_1ST" /* GXT: This body is all yours and only yours baby! ~nrt~ <img src='img://04_a_sext_stripperInfernus/04_a_sext_stripperInfernus' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_51[9 /*8*/]), "04_a_sext_stripperInfernus", 32);
-	StringCopy(&(Local_49[10 /*6*/]), "SXT_INF_2ND" /* GXT: I can hardly walk, that was amazing! ~nrt~ <img src='img://04_b_sext_stripperInfernus/04_b_sext_stripperInfernus' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_51[10 /*8*/]), "04_b_sext_stripperInfernus", 32);
-	StringCopy(&(Local_49[11 /*6*/]), "SXT_INF_NEED" /* GXT: My loins quiver with the thought of you! ~nrt~ <img src='img://04_c_sext_stripperInfernus/04_c_sext_stripperInfernus' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_51[11 /*8*/]), "04_c_sext_stripperInfernus", 32);
-	StringCopy(&(Local_49[12 /*6*/]), "SXT_TXI_1ST" /* GXT: I can't stop thinking about the last time. ~nrt~ <img src='img://11_a_sext_taxiLiz/11_a_sext_taxiLiz' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_51[12 /*8*/]), "11_a_sext_taxiLiz", 32);
-	StringCopy(&(Local_49[13 /*6*/]), "SXT_TXI_2ND" /* GXT: You're so amazing! I've been missing out. ~nrt~ <img src='img://11_b_sext_taxiLiz/11_b_sext_taxiLiz' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_51[13 /*8*/]), "11_b_sext_taxiLiz", 32);
-	StringCopy(&(Local_49[14 /*6*/]), "SXT_TXI_NEED" /* GXT: Hey babe, I need a study break... ~nrt~ <img src='img://11_c_sext_taxiLiz/11_c_sext_taxiLiz' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_51[14 /*8*/]), "11_c_sext_taxiLiz", 32);
-	StringCopy(&(Local_49[15 /*6*/]), "SXT_HCH_1ST" /* GXT: You always know how to give a good ride ;) ~nrt~ <img src='img://10_a_sext_hitcherGirl/10_a_sext_hitcherGirl' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_51[15 /*8*/]), "10_a_sext_hitcherGirl", 32);
-	StringCopy(&(Local_49[16 /*6*/]), "SXT_HCH_2ND" /* GXT: Can't wait to meet again honey. ~nrt~ <img src='img://10_b_sext_hitcherGirl/10_b_sext_hitcherGirl' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_51[16 /*8*/]), "10_b_sext_hitcherGirl", 32);
-	StringCopy(&(Local_49[17 /*6*/]), "SXT_HCH_NEED" /* GXT: I've been thinking... you should let me ride you. ~nrt~ <img src='img://10_c_sext_hitcherGirl/10_c_sext_hitcherGirl' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_51[17 /*8*/]), "10_c_sext_hitcherGirl", 32);
-	StringCopy(&(Local_49[18 /*6*/]), "SOL2_PASS" /* GXT: Michael I have put your name in the credits for the film. ~nrt~ <img src='img://ExecutiveProducer/executiveproducer' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_51[18 /*8*/]), "executiveproducer", 32);
-	StringCopy(&(Local_49[19 /*6*/]), "LR_PIC_TXT1", 24);
-	StringCopy(&(Local_50[19 /*6*/]), "mt_phone_image_1", 24);
-	StringCopy(&(Local_49[20 /*6*/]), "LR_PIC_TXT2", 24);
-	StringCopy(&(Local_50[20 /*6*/]), "mt_phone_image_2", 24);
-	StringCopy(&(Local_49[21 /*6*/]), "LR_PIC_TXT3", 24);
-	StringCopy(&(Local_50[21 /*6*/]), "mt_phone_image_3", 24);
-	StringCopy(&(Local_49[22 /*6*/]), "LR_PIC_TXT4", 24);
-	StringCopy(&(Local_50[22 /*6*/]), "mt_phone_image_4", 24);
-	StringCopy(&(Local_49[23 /*6*/]), "LR_PIC_TXT5", 24);
-	StringCopy(&(Local_50[23 /*6*/]), "mt_phone_image_5", 24);
-	StringCopy(&(Local_49[24 /*6*/]), "SAD_SMS_0" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_01/MP_SND_TARGET_01' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[24 /*6*/]), "MP_SND_TARGET_01", 24);
-	StringCopy(&(Local_49[25 /*6*/]), "SAD_SMS_1" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_02/MP_SND_TARGET_02' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[25 /*6*/]), "MP_SND_TARGET_02", 24);
-	StringCopy(&(Local_49[26 /*6*/]), "SAD_SMS_2" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_03/MP_SND_TARGET_03' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[26 /*6*/]), "MP_SND_TARGET_03", 24);
-	StringCopy(&(Local_49[27 /*6*/]), "SAD_SMS_3" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_04/MP_SND_TARGET_04' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[27 /*6*/]), "MP_SND_TARGET_04", 24);
-	StringCopy(&(Local_49[28 /*6*/]), "SAD_SMS_4" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_05/MP_SND_TARGET_05' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[28 /*6*/]), "MP_SND_TARGET_05", 24);
-	StringCopy(&(Local_49[29 /*6*/]), "SAD_SMS_5" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_06/MP_SND_TARGET_06' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[29 /*6*/]), "MP_SND_TARGET_06", 24);
-	StringCopy(&(Local_49[30 /*6*/]), "SAD_SMS_6" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_07/MP_SND_TARGET_07' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[30 /*6*/]), "MP_SND_TARGET_07", 24);
-	StringCopy(&(Local_49[31 /*6*/]), "SAD_SMS_7" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_08/MP_SND_TARGET_08' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[31 /*6*/]), "MP_SND_TARGET_08", 24);
-	StringCopy(&(Local_49[32 /*6*/]), "SAD_SMS_8" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_09/MP_SND_TARGET_09' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[32 /*6*/]), "MP_SND_TARGET_09", 24);
-	StringCopy(&(Local_49[33 /*6*/]), "SAD_SMS_9" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_10/MP_SND_TARGET_10' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[33 /*6*/]), "MP_SND_TARGET_10", 24);
-	StringCopy(&(Local_49[34 /*6*/]), "SAD_SMS_10" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_11/MP_SND_TARGET_11' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[34 /*6*/]), "MP_SND_TARGET_11", 24);
-	StringCopy(&(Local_49[35 /*6*/]), "SAD_SMS_11" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_12/MP_SND_TARGET_12' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[35 /*6*/]), "MP_SND_TARGET_12", 24);
-	StringCopy(&(Local_49[36 /*6*/]), "SAD_SMS_12" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_13/MP_SND_TARGET_13' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[36 /*6*/]), "MP_SND_TARGET_13", 24);
-	StringCopy(&(Local_49[37 /*6*/]), "SAD_SMS_13" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_14/MP_SND_TARGET_14' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[37 /*6*/]), "MP_SND_TARGET_14", 24);
-	StringCopy(&(Local_49[38 /*6*/]), "SAD_SMS_14" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_15/MP_SND_TARGET_15' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[38 /*6*/]), "MP_SND_TARGET_15", 24);
-	StringCopy(&(Local_49[39 /*6*/]), "SAD_SMS_15" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_16/MP_SND_TARGET_16' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[39 /*6*/]), "MP_SND_TARGET_16", 24);
-	StringCopy(&(Local_49[40 /*6*/]), "SAD_SMS_16" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_17/MP_SND_TARGET_17' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[40 /*6*/]), "MP_SND_TARGET_17", 24);
-	StringCopy(&(Local_49[41 /*6*/]), "SAD_SMS_17" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_18/MP_SND_TARGET_18' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[41 /*6*/]), "MP_SND_TARGET_18", 24);
-	StringCopy(&(Local_49[42 /*6*/]), "SAD_SMS_18" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_19/MP_SND_TARGET_19' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[42 /*6*/]), "MP_SND_TARGET_19", 24);
-	StringCopy(&(Local_49[43 /*6*/]), "SAD_SMS_19" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_20/MP_SND_TARGET_20' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[43 /*6*/]), "MP_SND_TARGET_20", 24);
-	StringCopy(&(Local_49[44 /*6*/]), "VEX_PM_PHOTO0" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: Del Perro Beach ~nrt~ <img src='img://MP_EX_LOCATION_01/MP_EX_LOCATION_01' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[44 /*6*/]), "MP_EX_LOCATION_01", 24);
-	StringCopy(&(Local_49[45 /*6*/]), "VEX_PM_PHOTO1" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: Paleto Forest ~nrt~ <img src='img://MP_EX_LOCATION_02/MP_EX_LOCATION_02' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[45 /*6*/]), "MP_EX_LOCATION_02", 24);
-	StringCopy(&(Local_49[46 /*6*/]), "VEX_PM_PHOTO2" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: Vinewood Hills ~nrt~ <img src='img://MP_EX_LOCATION_03/MP_EX_LOCATION_03' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[46 /*6*/]), "MP_EX_LOCATION_03", 24);
-	StringCopy(&(Local_49[47 /*6*/]), "VEX_PM_PHOTO3" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: Mount Gordo ~nrt~ <img src='img://MP_EX_LOCATION_04/MP_EX_LOCATION_04' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[47 /*6*/]), "MP_EX_LOCATION_04", 24);
-	StringCopy(&(Local_49[48 /*6*/]), "VEX_PM_PHOTO4" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: Los Santos International Airport ~nrt~ <img src='img://MP_EX_LOCATION_05/MP_EX_LOCATION_05' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[48 /*6*/]), "MP_EX_LOCATION_05", 24);
-	StringCopy(&(Local_49[49 /*6*/]), "VEX_PM_PHOTO5" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: Paleto Forest ~nrt~ <img src='img://MP_EX_LOCATION_06/MP_EX_LOCATION_06' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[49 /*6*/]), "MP_EX_LOCATION_06", 24);
-	StringCopy(&(Local_49[50 /*6*/]), "VEX_PM_PHOTO6" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: Paleto Bay ~nrt~ <img src='img://MP_EX_LOCATION_07/MP_EX_LOCATION_07' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[50 /*6*/]), "MP_EX_LOCATION_07", 24);
-	StringCopy(&(Local_49[51 /*6*/]), "VEX_PM_PHOTO7" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: Ron Alternates Wind Farm ~nrt~ <img src='img://MP_EX_LOCATION_08/MP_EX_LOCATION_08' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[51 /*6*/]), "MP_EX_LOCATION_08", 24);
-	StringCopy(&(Local_49[52 /*6*/]), "VEX_PM_PHOTO8" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: Grand Senora Desert ~nrt~ <img src='img://MP_EX_LOCATION_09/MP_EX_LOCATION_09' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[52 /*6*/]), "MP_EX_LOCATION_09", 24);
-	StringCopy(&(Local_49[53 /*6*/]), "VEX_PM_PHOTO9" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: Sandy Shores ~nrt~ <img src='img://MP_EX_LOCATION_10/MP_EX_LOCATION_10' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[53 /*6*/]), "MP_EX_LOCATION_10", 24);
-	StringCopy(&(Local_49[54 /*6*/]), "VEX_PM_PHOTO10" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: Legion Square ~nrt~ <img src='img://MP_EX_LOCATION_11/MP_EX_LOCATION_11' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[54 /*6*/]), "MP_EX_LOCATION_11", 24);
-	StringCopy(&(Local_49[55 /*6*/]), "VEX_PM_PHOTO11" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: GWC and Golfing Society ~nrt~ <img src='img://MP_EX_LOCATION_12/MP_EX_LOCATION_12' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[55 /*6*/]), "MP_EX_LOCATION_12", 24);
-	StringCopy(&(Local_49[56 /*6*/]), "VEX_PM_PHOTO12" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: Vespucci Beach ~nrt~ <img src='img://MP_EX_LOCATION_13/MP_EX_LOCATION_13' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[56 /*6*/]), "MP_EX_LOCATION_13", 24);
-	StringCopy(&(Local_49[57 /*6*/]), "VEX_PM_PHOTO13" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: Tongva Hills ~nrt~ <img src='img://MP_EX_LOCATION_14/MP_EX_LOCATION_14' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[57 /*6*/]), "MP_EX_LOCATION_14", 24);
-	StringCopy(&(Local_49[58 /*6*/]), "VEX_1_PROTO" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_01/IE_TEXTVECH_01' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[58 /*6*/]), "IE_TEXTVECH_01", 24);
-	StringCopy(&(Local_49[59 /*6*/]), "VEX_2_PROTO" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_02/IE_TEXTVECH_02' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[59 /*6*/]), "IE_TEXTVECH_02", 24);
-	StringCopy(&(Local_49[60 /*6*/]), "VEX_3_PROTO" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_03/IE_TEXTVECH_03' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[60 /*6*/]), "IE_TEXTVECH_03", 24);
-	StringCopy(&(Local_49[61 /*6*/]), "VEX_4_TYRUS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_04/IE_TEXTVECH_04' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[61 /*6*/]), "IE_TEXTVECH_04", 24);
-	StringCopy(&(Local_49[62 /*6*/]), "VEX_5_TYRUS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_05/IE_TEXTVECH_05' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[62 /*6*/]), "IE_TEXTVECH_05", 24);
-	StringCopy(&(Local_49[63 /*6*/]), "VEX_6_TYRUS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_06/IE_TEXTVECH_06' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[63 /*6*/]), "IE_TEXTVECH_06", 24);
-	StringCopy(&(Local_49[64 /*6*/]), "VEX_7_BESTIA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_07/IE_TEXTVECH_07' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[64 /*6*/]), "IE_TEXTVECH_07", 24);
-	StringCopy(&(Local_49[65 /*6*/]), "VEX_8_BESTIA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_08/IE_TEXTVECH_08' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[65 /*6*/]), "IE_TEXTVECH_08", 24);
-	StringCopy(&(Local_49[66 /*6*/]), "VEX_9_BESTIA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_09/IE_TEXTVECH_09' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[66 /*6*/]), "IE_TEXTVECH_09", 24);
-	StringCopy(&(Local_49[67 /*6*/]), "VEX_10_T20" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_10/IE_TEXTVECH_10' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[67 /*6*/]), "IE_TEXTVECH_10", 24);
-	StringCopy(&(Local_49[68 /*6*/]), "VEX_11_T20" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_11/IE_TEXTVECH_11' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[68 /*6*/]), "IE_TEXTVECH_11", 24);
-	StringCopy(&(Local_49[69 /*6*/]), "VEX_12_T20" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_12/IE_TEXTVECH_12' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[69 /*6*/]), "IE_TEXTVECH_12", 24);
-	StringCopy(&(Local_49[70 /*6*/]), "VEX_13_SHEAVA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_13/IE_TEXTVECH_13' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[70 /*6*/]), "IE_TEXTVECH_13", 24);
-	StringCopy(&(Local_49[71 /*6*/]), "VEX_14_SHEAVA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_14/IE_TEXTVECH_14' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[71 /*6*/]), "IE_TEXTVECH_14", 24);
-	StringCopy(&(Local_49[72 /*6*/]), "VEX_15_SHEAVA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_15/IE_TEXTVECH_15' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[72 /*6*/]), "IE_TEXTVECH_15", 24);
-	StringCopy(&(Local_49[73 /*6*/]), "VEX_16_OSIRIS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_16/IE_TEXTVECH_16' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[73 /*6*/]), "IE_TEXTVECH_16", 24);
-	StringCopy(&(Local_49[74 /*6*/]), "VEX_17_OSIRIS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_17/IE_TEXTVECH_17' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[74 /*6*/]), "IE_TEXTVECH_17", 24);
-	StringCopy(&(Local_49[75 /*6*/]), "VEX_18_OSIRIS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_18/IE_TEXTVECH_18' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[75 /*6*/]), "IE_TEXTVECH_18", 24);
-	StringCopy(&(Local_49[76 /*6*/]), "VEX_19_FMJ" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_19/IE_TEXTVECH_19' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[76 /*6*/]), "IE_TEXTVECH_19", 24);
-	StringCopy(&(Local_49[77 /*6*/]), "VEX_20_FMJ" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_20/IE_TEXTVECH_20' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[77 /*6*/]), "IE_TEXTVECH_20", 24);
-	StringCopy(&(Local_49[78 /*6*/]), "VEX_21_FMJ" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_21/IE_TEXTVECH_21' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[78 /*6*/]), "IE_TEXTVECH_21", 24);
-	StringCopy(&(Local_49[79 /*6*/]), "VEX_22_REAPER" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_22/IE_TEXTVECH_22' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[79 /*6*/]), "IE_TEXTVECH_22", 24);
-	StringCopy(&(Local_49[80 /*6*/]), "VEX_23_REAPER" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_23/IE_TEXTVECH_23' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[80 /*6*/]), "IE_TEXTVECH_23", 24);
-	StringCopy(&(Local_49[81 /*6*/]), "VEX_24_REAPER" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_24/IE_TEXTVECH_24' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[81 /*6*/]), "IE_TEXTVECH_24", 24);
-	StringCopy(&(Local_49[82 /*6*/]), "VEX_25_PFISTER" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_25/IE_TEXTVECH_25' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[82 /*6*/]), "IE_TEXTVECH_25", 24);
-	StringCopy(&(Local_49[83 /*6*/]), "VEX_26_PFISTER" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_26/IE_TEXTVECH_26' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[83 /*6*/]), "IE_TEXTVECH_26", 24);
-	StringCopy(&(Local_49[84 /*6*/]), "VEX_27_PFISTER" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_27/IE_TEXTVECH_27' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[84 /*6*/]), "IE_TEXTVECH_27", 24);
-	StringCopy(&(Local_49[85 /*6*/]), "VEX_28_ALPHA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_28/IE_TEXTVECH_28' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[85 /*6*/]), "IE_TEXTVECH_28", 24);
-	StringCopy(&(Local_49[86 /*6*/]), "VEX_29_ALPHA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_29/IE_TEXTVECH_29' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[86 /*6*/]), "IE_TEXTVECH_29", 24);
-	StringCopy(&(Local_49[87 /*6*/]), "VEX_30_ALPHA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_30/IE_TEXTVECH_30' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[87 /*6*/]), "IE_TEXTVECH_30", 24);
-	StringCopy(&(Local_49[88 /*6*/]), "VEX_31_MAMBA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_31/IE_TEXTVECH_31' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[88 /*6*/]), "IE_TEXTVECH_31", 24);
-	StringCopy(&(Local_49[89 /*6*/]), "VEX_32_MAMBA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_32/IE_TEXTVECH_32' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[89 /*6*/]), "IE_TEXTVECH_32", 24);
-	StringCopy(&(Local_49[90 /*6*/]), "VEX_33_MAMBA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_33/IE_TEXTVECH_33' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[90 /*6*/]), "IE_TEXTVECH_33", 24);
-	StringCopy(&(Local_49[91 /*6*/]), "VEX_34_TAMPA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_34/IE_TEXTVECH_34' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[91 /*6*/]), "IE_TEXTVECH_34", 24);
-	StringCopy(&(Local_49[92 /*6*/]), "VEX_35_TAMPA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_35/IE_TEXTVECH_35' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[92 /*6*/]), "IE_TEXTVECH_35", 24);
-	StringCopy(&(Local_49[93 /*6*/]), "VEX_36_TAMPA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_36/IE_TEXTVECH_36' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[93 /*6*/]), "IE_TEXTVECH_36", 24);
-	StringCopy(&(Local_49[94 /*6*/]), "VEX_37_BTYPE" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_37/IE_TEXTVECH_37' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[94 /*6*/]), "IE_TEXTVECH_37", 24);
-	StringCopy(&(Local_49[95 /*6*/]), "VEX_38_BTYPE" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_38/IE_TEXTVECH_38' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[95 /*6*/]), "IE_TEXTVECH_38", 24);
-	StringCopy(&(Local_49[96 /*6*/]), "VEX_39_BTYPE" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_39/IE_TEXTVECH_39' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[96 /*6*/]), "IE_TEXTVECH_39", 24);
-	StringCopy(&(Local_49[97 /*6*/]), "VEX_40_FELTZ3" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_40/IE_TEXTVECH_40' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[97 /*6*/]), "IE_TEXTVECH_40", 24);
-	StringCopy(&(Local_49[98 /*6*/]), "VEX_41_FELTZ3" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_41/IE_TEXTVECH_41' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[98 /*6*/]), "IE_TEXTVECH_41", 24);
-	StringCopy(&(Local_49[99 /*6*/]), "VEX_42_FELTZ3" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_42/IE_TEXTVECH_42' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[99 /*6*/]), "IE_TEXTVECH_42", 24);
-	StringCopy(&(Local_49[100 /*6*/]), "VEX_43_ZTYPE" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_43/IE_TEXTVECH_43' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[100 /*6*/]), "IE_TEXTVECH_43", 24);
-	StringCopy(&(Local_49[101 /*6*/]), "VEX_44_ZTYPE" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_44/IE_TEXTVECH_44' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[101 /*6*/]), "IE_TEXTVECH_44", 24);
-	StringCopy(&(Local_49[102 /*6*/]), "VEX_45_ZTYPE" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_45/IE_TEXTVECH_45' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[102 /*6*/]), "IE_TEXTVECH_45", 24);
-	StringCopy(&(Local_49[103 /*6*/]), "VEX_46_TROPOS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_46/IE_TEXTVECH_46' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[103 /*6*/]), "IE_TEXTVECH_46", 24);
-	StringCopy(&(Local_49[104 /*6*/]), "VEX_47_TROPOS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_47/IE_TEXTVECH_47' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[104 /*6*/]), "IE_TEXTVECH_47", 24);
-	StringCopy(&(Local_49[105 /*6*/]), "VEX_48_TROPOS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_48/IE_TEXTVECH_48' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[105 /*6*/]), "IE_TEXTVECH_48", 24);
-	StringCopy(&(Local_49[106 /*6*/]), "VEX_49_ENTITYXF" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_49/IE_TEXTVECH_49' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[106 /*6*/]), "IE_TEXTVECH_49", 24);
-	StringCopy(&(Local_49[107 /*6*/]), "VEX_50_ENTITYXF" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_50/IE_TEXTVECH_50' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[107 /*6*/]), "IE_TEXTVECH_50", 24);
-	StringCopy(&(Local_49[108 /*6*/]), "VEX_51_ENTITYXF" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_51/IE_TEXTVECH_51' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[108 /*6*/]), "IE_TEXTVECH_51", 24);
-	StringCopy(&(Local_49[109 /*6*/]), "VEX_52_SULTANRS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_52/IE_TEXTVECH_52' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[109 /*6*/]), "IE_TEXTVECH_52", 24);
-	StringCopy(&(Local_49[110 /*6*/]), "VEX_53_SULTANRS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_53/IE_TEXTVECH_53' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[110 /*6*/]), "IE_TEXTVECH_53", 24);
-	StringCopy(&(Local_49[111 /*6*/]), "VEX_54_SULTANRS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_54/IE_TEXTVECH_54' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[111 /*6*/]), "IE_TEXTVECH_54", 24);
-	StringCopy(&(Local_49[112 /*6*/]), "VEX_55_ZENTORNO" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_55/IE_TEXTVECH_55' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[112 /*6*/]), "IE_TEXTVECH_55", 24);
-	StringCopy(&(Local_49[113 /*6*/]), "VEX_56_ZENTORNO" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_56/IE_TEXTVECH_56' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[113 /*6*/]), "IE_TEXTVECH_56", 24);
-	StringCopy(&(Local_49[114 /*6*/]), "VEX_57_ZENTORNO" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_57/IE_TEXTVECH_57' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[114 /*6*/]), "IE_TEXTVECH_57", 24);
-	StringCopy(&(Local_49[115 /*6*/]), "VEX_58_OMNIS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_58/IE_TEXTVECH_58' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[115 /*6*/]), "IE_TEXTVECH_58", 24);
-	StringCopy(&(Local_49[116 /*6*/]), "VEX_59_OMNIS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_59/IE_TEXTVECH_59' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[116 /*6*/]), "IE_TEXTVECH_59", 24);
-	StringCopy(&(Local_49[117 /*6*/]), "VEX_60_OMNIS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_60/IE_TEXTVECH_60' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[117 /*6*/]), "IE_TEXTVECH_60", 24);
-	StringCopy(&(Local_49[118 /*6*/]), "VEX_61_COQUET3" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_61/IE_TEXTVECH_61' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[118 /*6*/]), "IE_TEXTVECH_61", 24);
-	StringCopy(&(Local_49[119 /*6*/]), "VEX_62_COQUET3" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_62/IE_TEXTVECH_62' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[119 /*6*/]), "IE_TEXTVECH_62", 24);
-	StringCopy(&(Local_49[120 /*6*/]), "VEX_63_COQUET3" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_63/IE_TEXTVECH_63' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[120 /*6*/]), "IE_TEXTVECH_63", 24);
-	StringCopy(&(Local_49[121 /*6*/]), "VEX_64_SEVEN70" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_64/IE_TEXTVECH_64' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[121 /*6*/]), "IE_TEXTVECH_64", 24);
-	StringCopy(&(Local_49[122 /*6*/]), "VEX_65_SEVEN70" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_65/IE_TEXTVECH_65' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[122 /*6*/]), "IE_TEXTVECH_65", 24);
-	StringCopy(&(Local_49[123 /*6*/]), "VEX_66_SEVEN70" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_66/IE_TEXTVECH_66' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[123 /*6*/]), "IE_TEXTVECH_66", 24);
-	StringCopy(&(Local_49[124 /*6*/]), "VEX_67_VERLI" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_67/IE_TEXTVECH_67' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[124 /*6*/]), "IE_TEXTVECH_67", 24);
-	StringCopy(&(Local_49[125 /*6*/]), "VEX_68_VERLI" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_68/IE_TEXTVECH_68' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[125 /*6*/]), "IE_TEXTVECH_68", 24);
-	StringCopy(&(Local_49[126 /*6*/]), "VEX_69_VERLI" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_69/IE_TEXTVECH_69' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[126 /*6*/]), "IE_TEXTVECH_69", 24);
-	StringCopy(&(Local_49[127 /*6*/]), "VEX_70_FELTZ2" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_70/IE_TEXTVECH_70' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[127 /*6*/]), "IE_TEXTVECH_70", 24);
-	StringCopy(&(Local_49[128 /*6*/]), "VEX_71_FELTZ2" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_71/IE_TEXTVECH_71' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[128 /*6*/]), "IE_TEXTVECH_71", 24);
-	StringCopy(&(Local_49[129 /*6*/]), "VEX_72_FELTZ2" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_72/IE_TEXTVECH_72' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[129 /*6*/]), "IE_TEXTVECH_72", 24);
-	StringCopy(&(Local_49[130 /*6*/]), "VEX_73_COQUET2" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_73/IE_TEXTVECH_73' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[130 /*6*/]), "IE_TEXTVECH_73", 24);
-	StringCopy(&(Local_49[131 /*6*/]), "VEX_74_COQUET2" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_74/IE_TEXTVECH_74' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[131 /*6*/]), "IE_TEXTVECH_74", 24);
-	StringCopy(&(Local_49[132 /*6*/]), "VEX_75_COQUET2" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_75/IE_TEXTVECH_75' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[132 /*6*/]), "IE_TEXTVECH_75", 24);
-	StringCopy(&(Local_49[133 /*6*/]), "VEX_76_CHEETAH" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_76/IE_TEXTVECH_76' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[133 /*6*/]), "IE_TEXTVECH_76", 24);
-	StringCopy(&(Local_49[134 /*6*/]), "VEX_77_CHEETAH" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_77/IE_TEXTVECH_77' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[134 /*6*/]), "IE_TEXTVECH_77", 24);
-	StringCopy(&(Local_49[135 /*6*/]), "VEX_78_CHEETAH" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_78/IE_TEXTVECH_78' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[135 /*6*/]), "IE_TEXTVECH_78", 24);
-	StringCopy(&(Local_49[136 /*6*/]), "VEX_79_NSHADE" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_79/IE_TEXTVECH_79' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[136 /*6*/]), "IE_TEXTVECH_79", 24);
-	StringCopy(&(Local_49[137 /*6*/]), "VEX_80_NSHADE" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_80/IE_TEXTVECH_80' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[137 /*6*/]), "IE_TEXTVECH_80", 24);
-	StringCopy(&(Local_49[138 /*6*/]), "VEX_81_NSHADE" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_81/IE_TEXTVECH_81' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[138 /*6*/]), "IE_TEXTVECH_81", 24);
-	StringCopy(&(Local_49[139 /*6*/]), "VEX_82_BANSH2" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_82/IE_TEXTVECH_82' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[139 /*6*/]), "IE_TEXTVECH_82", 24);
-	StringCopy(&(Local_49[140 /*6*/]), "VEX_83_BANSH2" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_84/IE_TEXTVECH_84' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[140 /*6*/]), "IE_TEXTVECH_84", 24);
-	StringCopy(&(Local_49[141 /*6*/]), "VEX_84_BANSH2" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_85/IE_TEXTVECH_85' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[141 /*6*/]), "IE_TEXTVECH_85", 24);
-	StringCopy(&(Local_49[142 /*6*/]), "VEX_82_TURIS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_83/IE_TEXTVECH_83' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[142 /*6*/]), "IE_TEXTVECH_83", 24);
-	StringCopy(&(Local_49[143 /*6*/]), "VEX_86_TURIS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_86/IE_TEXTVECH_86' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[143 /*6*/]), "IE_TEXTVECH_86", 24);
-	StringCopy(&(Local_49[144 /*6*/]), "VEX_87_TURIS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_87/IE_TEXTVECH_87' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[144 /*6*/]), "IE_TEXTVECH_87", 24);
-	StringCopy(&(Local_49[145 /*6*/]), "VEX_88_MASS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_88/IE_TEXTVECH_88' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[145 /*6*/]), "IE_TEXTVECH_88", 24);
-	StringCopy(&(Local_49[146 /*6*/]), "VEX_89_MASS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_89/IE_TEXTVECH_89' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[146 /*6*/]), "IE_TEXTVECH_89", 24);
-	StringCopy(&(Local_49[147 /*6*/]), "VEX_90_MASS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_90/IE_TEXTVECH_90' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[147 /*6*/]), "IE_TEXTVECH_90", 24);
-	StringCopy(&(Local_49[148 /*6*/]), "VEX_91_SABRE2" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_91/IE_TEXTVECH_91' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[148 /*6*/]), "IE_TEXTVECH_91", 24);
-	StringCopy(&(Local_49[149 /*6*/]), "VEX_92_SABRE2" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_92/IE_TEXTVECH_92' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[149 /*6*/]), "IE_TEXTVECH_92", 24);
-	StringCopy(&(Local_49[150 /*6*/]), "VEX_93_SABRE2" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_93/IE_TEXTVECH_93' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[150 /*6*/]), "IE_TEXTVECH_93", 24);
-	StringCopy(&(Local_49[151 /*6*/]), "VEX_94_JESTER" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_94/IE_TEXTVECH_94' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[151 /*6*/]), "IE_TEXTVECH_94", 24);
-	StringCopy(&(Local_49[152 /*6*/]), "VEX_95_JESTER" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_95/IE_TEXTVECH_95' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[152 /*6*/]), "IE_TEXTVECH_95", 24);
-	StringCopy(&(Local_49[153 /*6*/]), "VEX_96_JESTER" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_96/IE_TEXTVECH_96' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[153 /*6*/]), "IE_TEXTVECH_96", 24);
-	StringCopy(&(Local_49[154 /*6*/]), "GO_AS_PICM" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://NHP_prep_autosalvage/NHP_prep_autosalvage' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[154 /*6*/]), "NHP_prep_autosalvage", 24);
-	StringCopy(&(Local_49[155 /*6*/]), "GO_DR_PICM" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://nhp_prep_daylightrob/nhp_prep_daylightrob' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[155 /*6*/]), "nhp_prep_daylightrob", 24);
-	StringCopy(&(Local_49[156 /*6*/]), "FHTXT_DDR00M" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://NHP_prep_deaddrop/NHP_prep_deaddrop' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[156 /*6*/]), "NHP_prep_deaddrop", 24);
-	StringCopy(&(Local_49[157 /*6*/]), "BBTXT_CPS00M" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://BAT_carpark_1/BAT_carpark_1' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[157 /*6*/]), "BAT_carpark_1", 24);
-	StringCopy(&(Local_49[158 /*6*/]), "BBTXT_CPS10M" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://BAT_carpark_2/BAT_carpark_2' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[158 /*6*/]), "BAT_carpark_2", 24);
-	StringCopy(&(Local_49[159 /*6*/]), "BBTXT_CPS20M" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://BAT_carpark_3/BAT_carpark_3' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[159 /*6*/]), "BAT_carpark_3", 24);
-	StringCopy(&(Local_49[160 /*6*/]), "ICEBR_EMAIL", 24);
-	StringCopy(&(Local_50[160 /*6*/]), "ib_aircon", 24);
-	StringCopy(&(Local_49[161 /*6*/]), "XM22FLOW_TXT_0" /* GXT: WELCOME TO THE TROUPE ~nrt~ <img src='img://PHONE_MESSAGE_D_DUDE/PHONE_MESSAGE_D_DUDE' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_50[161 /*6*/]), "PHONE_MESSAGE_D_DUDE", 24);
+	StringCopy(&(Local_84[0 /*6*/]), "SXT_JUL_1ST" /* GXT: I can't wait until you cum again! ~nrt~ <img src='img://05_a_sext_stripperJuliet/05_a_sext_stripperJuliet' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_2066[0 /*8*/]), "05_a_sext_stripperJuliet", 32);
+	StringCopy(&(Local_84[1 /*6*/]), "SXT_JUL_2ND" /* GXT: Just when I thought that it couldn't get any better! ~nrt~ <img src='img://05_b_sext_stripperJuliet/05_b_sext_stripperJuliet' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_2066[1 /*8*/]), "05_b_sext_stripperJuliet", 32);
+	StringCopy(&(Local_84[2 /*6*/]), "SXT_JUL_NEED" /* GXT: Missing you badly! I want you inside me. ~nrt~ <img src='img://05_c_sext_stripperJuliet/05_c_sext_stripperJuliet' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_2066[2 /*8*/]), "05_c_sext_stripperJuliet", 32);
+	StringCopy(&(Local_84[3 /*6*/]), "SXT_NIK_1ST" /* GXT: I just wanted you to know that I miss you already :-* ~nrt~ <img src='img://06_a_sext_stripperNikki/06_a_sext_stripperNikki' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_2066[3 /*8*/]), "06_a_sext_stripperNikki", 32);
+	StringCopy(&(Local_84[4 /*6*/]), "SXT_NIK_2ND" /* GXT: You're the man that I've been looking for my entire life! ~nrt~ <img src='img://06_b_sext_stripperNikki/06_b_sext_stripperNikki' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_2066[4 /*8*/]), "06_b_sext_stripperNikki", 32);
+	StringCopy(&(Local_84[5 /*6*/]), "SXT_NIK_NEED" /* GXT: Maybe this will get your attention! ~nrt~ <img src='img://06_c_sext_stripperNikki/06_c_sext_stripperNikki' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_2066[5 /*8*/]), "06_c_sext_stripperNikki", 32);
+	StringCopy(&(Local_84[6 /*6*/]), "SXT_SAP_1ST" /* GXT: That was deliciously yummy. Next time, I want to be on top. What do you think of this position? ~nrt~ <img src='img://08_a_sext_stripperSapphire/08_a_sext_stripperSapphire' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_2066[6 /*8*/]), "08_a_sext_stripperSapphire", 32);
+	StringCopy(&(Local_84[7 /*6*/]), "SXT_SAP_2ND" /* GXT: Here don't show this to anyone else. ~nrt~ <img src='img://08_b_sext_stripperSapphire/08_b_sext_stripperSapphire' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_2066[7 /*8*/]), "08_b_sext_stripperSapphire", 32);
+	StringCopy(&(Local_84[8 /*6*/]), "SXT_SAP_NEED" /* GXT: My body aches for you! ~nrt~ <img src='img://08_c_sext_stripperSapphire/08_c_sext_stripperSapphire' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_2066[8 /*8*/]), "08_c_sext_stripperSapphire", 32);
+	StringCopy(&(Local_84[9 /*6*/]), "SXT_INF_1ST" /* GXT: This body is all yours and only yours baby! ~nrt~ <img src='img://04_a_sext_stripperInfernus/04_a_sext_stripperInfernus' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_2066[9 /*8*/]), "04_a_sext_stripperInfernus", 32);
+	StringCopy(&(Local_84[10 /*6*/]), "SXT_INF_2ND" /* GXT: I can hardly walk, that was amazing! ~nrt~ <img src='img://04_b_sext_stripperInfernus/04_b_sext_stripperInfernus' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_2066[10 /*8*/]), "04_b_sext_stripperInfernus", 32);
+	StringCopy(&(Local_84[11 /*6*/]), "SXT_INF_NEED" /* GXT: My loins quiver with the thought of you! ~nrt~ <img src='img://04_c_sext_stripperInfernus/04_c_sext_stripperInfernus' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_2066[11 /*8*/]), "04_c_sext_stripperInfernus", 32);
+	StringCopy(&(Local_84[12 /*6*/]), "SXT_TXI_1ST" /* GXT: I can't stop thinking about the last time. ~nrt~ <img src='img://11_a_sext_taxiLiz/11_a_sext_taxiLiz' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_2066[12 /*8*/]), "11_a_sext_taxiLiz", 32);
+	StringCopy(&(Local_84[13 /*6*/]), "SXT_TXI_2ND" /* GXT: You're so amazing! I've been missing out. ~nrt~ <img src='img://11_b_sext_taxiLiz/11_b_sext_taxiLiz' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_2066[13 /*8*/]), "11_b_sext_taxiLiz", 32);
+	StringCopy(&(Local_84[14 /*6*/]), "SXT_TXI_NEED" /* GXT: Hey babe, I need a study break... ~nrt~ <img src='img://11_c_sext_taxiLiz/11_c_sext_taxiLiz' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_2066[14 /*8*/]), "11_c_sext_taxiLiz", 32);
+	StringCopy(&(Local_84[15 /*6*/]), "SXT_HCH_1ST" /* GXT: You always know how to give a good ride ;) ~nrt~ <img src='img://10_a_sext_hitcherGirl/10_a_sext_hitcherGirl' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_2066[15 /*8*/]), "10_a_sext_hitcherGirl", 32);
+	StringCopy(&(Local_84[16 /*6*/]), "SXT_HCH_2ND" /* GXT: Can't wait to meet again honey. ~nrt~ <img src='img://10_b_sext_hitcherGirl/10_b_sext_hitcherGirl' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_2066[16 /*8*/]), "10_b_sext_hitcherGirl", 32);
+	StringCopy(&(Local_84[17 /*6*/]), "SXT_HCH_NEED" /* GXT: I've been thinking... you should let me ride you. ~nrt~ <img src='img://10_c_sext_hitcherGirl/10_c_sext_hitcherGirl' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_2066[17 /*8*/]), "10_c_sext_hitcherGirl", 32);
+	StringCopy(&(Local_84[18 /*6*/]), "SOL2_PASS" /* GXT: Michael I have put your name in the credits for the film. ~nrt~ <img src='img://ExecutiveProducer/executiveproducer' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_2066[18 /*8*/]), "executiveproducer", 32);
+	StringCopy(&(Local_84[19 /*6*/]), "LR_PIC_TXT1", 24);
+	StringCopy(&(Local_1075[19 /*6*/]), "mt_phone_image_1", 24);
+	StringCopy(&(Local_84[20 /*6*/]), "LR_PIC_TXT2", 24);
+	StringCopy(&(Local_1075[20 /*6*/]), "mt_phone_image_2", 24);
+	StringCopy(&(Local_84[21 /*6*/]), "LR_PIC_TXT3", 24);
+	StringCopy(&(Local_1075[21 /*6*/]), "mt_phone_image_3", 24);
+	StringCopy(&(Local_84[22 /*6*/]), "LR_PIC_TXT4", 24);
+	StringCopy(&(Local_1075[22 /*6*/]), "mt_phone_image_4", 24);
+	StringCopy(&(Local_84[23 /*6*/]), "LR_PIC_TXT5", 24);
+	StringCopy(&(Local_1075[23 /*6*/]), "mt_phone_image_5", 24);
+	StringCopy(&(Local_84[24 /*6*/]), "SAD_SMS_0" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_01/MP_SND_TARGET_01' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[24 /*6*/]), "MP_SND_TARGET_01", 24);
+	StringCopy(&(Local_84[25 /*6*/]), "SAD_SMS_1" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_02/MP_SND_TARGET_02' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[25 /*6*/]), "MP_SND_TARGET_02", 24);
+	StringCopy(&(Local_84[26 /*6*/]), "SAD_SMS_2" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_03/MP_SND_TARGET_03' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[26 /*6*/]), "MP_SND_TARGET_03", 24);
+	StringCopy(&(Local_84[27 /*6*/]), "SAD_SMS_3" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_04/MP_SND_TARGET_04' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[27 /*6*/]), "MP_SND_TARGET_04", 24);
+	StringCopy(&(Local_84[28 /*6*/]), "SAD_SMS_4" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_05/MP_SND_TARGET_05' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[28 /*6*/]), "MP_SND_TARGET_05", 24);
+	StringCopy(&(Local_84[29 /*6*/]), "SAD_SMS_5" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_06/MP_SND_TARGET_06' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[29 /*6*/]), "MP_SND_TARGET_06", 24);
+	StringCopy(&(Local_84[30 /*6*/]), "SAD_SMS_6" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_07/MP_SND_TARGET_07' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[30 /*6*/]), "MP_SND_TARGET_07", 24);
+	StringCopy(&(Local_84[31 /*6*/]), "SAD_SMS_7" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_08/MP_SND_TARGET_08' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[31 /*6*/]), "MP_SND_TARGET_08", 24);
+	StringCopy(&(Local_84[32 /*6*/]), "SAD_SMS_8" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_09/MP_SND_TARGET_09' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[32 /*6*/]), "MP_SND_TARGET_09", 24);
+	StringCopy(&(Local_84[33 /*6*/]), "SAD_SMS_9" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_10/MP_SND_TARGET_10' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[33 /*6*/]), "MP_SND_TARGET_10", 24);
+	StringCopy(&(Local_84[34 /*6*/]), "SAD_SMS_10" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_11/MP_SND_TARGET_11' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[34 /*6*/]), "MP_SND_TARGET_11", 24);
+	StringCopy(&(Local_84[35 /*6*/]), "SAD_SMS_11" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_12/MP_SND_TARGET_12' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[35 /*6*/]), "MP_SND_TARGET_12", 24);
+	StringCopy(&(Local_84[36 /*6*/]), "SAD_SMS_12" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_13/MP_SND_TARGET_13' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[36 /*6*/]), "MP_SND_TARGET_13", 24);
+	StringCopy(&(Local_84[37 /*6*/]), "SAD_SMS_13" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_14/MP_SND_TARGET_14' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[37 /*6*/]), "MP_SND_TARGET_14", 24);
+	StringCopy(&(Local_84[38 /*6*/]), "SAD_SMS_14" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_15/MP_SND_TARGET_15' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[38 /*6*/]), "MP_SND_TARGET_15", 24);
+	StringCopy(&(Local_84[39 /*6*/]), "SAD_SMS_15" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_16/MP_SND_TARGET_16' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[39 /*6*/]), "MP_SND_TARGET_16", 24);
+	StringCopy(&(Local_84[40 /*6*/]), "SAD_SMS_16" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_17/MP_SND_TARGET_17' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[40 /*6*/]), "MP_SND_TARGET_17", 24);
+	StringCopy(&(Local_84[41 /*6*/]), "SAD_SMS_17" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_18/MP_SND_TARGET_18' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[41 /*6*/]), "MP_SND_TARGET_18", 24);
+	StringCopy(&(Local_84[42 /*6*/]), "SAD_SMS_18" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_19/MP_SND_TARGET_19' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[42 /*6*/]), "MP_SND_TARGET_19", 24);
+	StringCopy(&(Local_84[43 /*6*/]), "SAD_SMS_19" /* GXT: Photo of Target ~nrt~ <img src='img://MP_SND_TARGET_20/MP_SND_TARGET_20' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[43 /*6*/]), "MP_SND_TARGET_20", 24);
+	StringCopy(&(Local_84[44 /*6*/]), "VEX_PM_PHOTO0" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: Del Perro Beach ~nrt~ <img src='img://MP_EX_LOCATION_01/MP_EX_LOCATION_01' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[44 /*6*/]), "MP_EX_LOCATION_01", 24);
+	StringCopy(&(Local_84[45 /*6*/]), "VEX_PM_PHOTO1" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: Paleto Forest ~nrt~ <img src='img://MP_EX_LOCATION_02/MP_EX_LOCATION_02' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[45 /*6*/]), "MP_EX_LOCATION_02", 24);
+	StringCopy(&(Local_84[46 /*6*/]), "VEX_PM_PHOTO2" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: Vinewood Hills ~nrt~ <img src='img://MP_EX_LOCATION_03/MP_EX_LOCATION_03' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[46 /*6*/]), "MP_EX_LOCATION_03", 24);
+	StringCopy(&(Local_84[47 /*6*/]), "VEX_PM_PHOTO3" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: Mount Gordo ~nrt~ <img src='img://MP_EX_LOCATION_04/MP_EX_LOCATION_04' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[47 /*6*/]), "MP_EX_LOCATION_04", 24);
+	StringCopy(&(Local_84[48 /*6*/]), "VEX_PM_PHOTO4" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: Los Santos International Airport ~nrt~ <img src='img://MP_EX_LOCATION_05/MP_EX_LOCATION_05' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[48 /*6*/]), "MP_EX_LOCATION_05", 24);
+	StringCopy(&(Local_84[49 /*6*/]), "VEX_PM_PHOTO5" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: Paleto Forest ~nrt~ <img src='img://MP_EX_LOCATION_06/MP_EX_LOCATION_06' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[49 /*6*/]), "MP_EX_LOCATION_06", 24);
+	StringCopy(&(Local_84[50 /*6*/]), "VEX_PM_PHOTO6" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: Paleto Bay ~nrt~ <img src='img://MP_EX_LOCATION_07/MP_EX_LOCATION_07' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[50 /*6*/]), "MP_EX_LOCATION_07", 24);
+	StringCopy(&(Local_84[51 /*6*/]), "VEX_PM_PHOTO7" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: Ron Alternates Wind Farm ~nrt~ <img src='img://MP_EX_LOCATION_08/MP_EX_LOCATION_08' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[51 /*6*/]), "MP_EX_LOCATION_08", 24);
+	StringCopy(&(Local_84[52 /*6*/]), "VEX_PM_PHOTO8" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: Grand Senora Desert ~nrt~ <img src='img://MP_EX_LOCATION_09/MP_EX_LOCATION_09' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[52 /*6*/]), "MP_EX_LOCATION_09", 24);
+	StringCopy(&(Local_84[53 /*6*/]), "VEX_PM_PHOTO9" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: Sandy Shores ~nrt~ <img src='img://MP_EX_LOCATION_10/MP_EX_LOCATION_10' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[53 /*6*/]), "MP_EX_LOCATION_10", 24);
+	StringCopy(&(Local_84[54 /*6*/]), "VEX_PM_PHOTO10" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: Legion Square ~nrt~ <img src='img://MP_EX_LOCATION_11/MP_EX_LOCATION_11' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[54 /*6*/]), "MP_EX_LOCATION_11", 24);
+	StringCopy(&(Local_84[55 /*6*/]), "VEX_PM_PHOTO11" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: GWC and Golfing Society ~nrt~ <img src='img://MP_EX_LOCATION_12/MP_EX_LOCATION_12' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[55 /*6*/]), "MP_EX_LOCATION_12", 24);
+	StringCopy(&(Local_84[56 /*6*/]), "VEX_PM_PHOTO12" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: Vespucci Beach ~nrt~ <img src='img://MP_EX_LOCATION_13/MP_EX_LOCATION_13' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[56 /*6*/]), "MP_EX_LOCATION_13", 24);
+	StringCopy(&(Local_84[57 /*6*/]), "VEX_PM_PHOTO13" /* GXT: Vehicle: ~a~~n~Color: ~a~~n~Plate: ~a~~n~ Location: Tongva Hills ~nrt~ <img src='img://MP_EX_LOCATION_14/MP_EX_LOCATION_14' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[57 /*6*/]), "MP_EX_LOCATION_14", 24);
+	StringCopy(&(Local_84[58 /*6*/]), "VEX_1_PROTO" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_01/IE_TEXTVECH_01' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[58 /*6*/]), "IE_TEXTVECH_01", 24);
+	StringCopy(&(Local_84[59 /*6*/]), "VEX_2_PROTO" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_02/IE_TEXTVECH_02' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[59 /*6*/]), "IE_TEXTVECH_02", 24);
+	StringCopy(&(Local_84[60 /*6*/]), "VEX_3_PROTO" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_03/IE_TEXTVECH_03' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[60 /*6*/]), "IE_TEXTVECH_03", 24);
+	StringCopy(&(Local_84[61 /*6*/]), "VEX_4_TYRUS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_04/IE_TEXTVECH_04' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[61 /*6*/]), "IE_TEXTVECH_04", 24);
+	StringCopy(&(Local_84[62 /*6*/]), "VEX_5_TYRUS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_05/IE_TEXTVECH_05' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[62 /*6*/]), "IE_TEXTVECH_05", 24);
+	StringCopy(&(Local_84[63 /*6*/]), "VEX_6_TYRUS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_06/IE_TEXTVECH_06' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[63 /*6*/]), "IE_TEXTVECH_06", 24);
+	StringCopy(&(Local_84[64 /*6*/]), "VEX_7_BESTIA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_07/IE_TEXTVECH_07' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[64 /*6*/]), "IE_TEXTVECH_07", 24);
+	StringCopy(&(Local_84[65 /*6*/]), "VEX_8_BESTIA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_08/IE_TEXTVECH_08' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[65 /*6*/]), "IE_TEXTVECH_08", 24);
+	StringCopy(&(Local_84[66 /*6*/]), "VEX_9_BESTIA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_09/IE_TEXTVECH_09' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[66 /*6*/]), "IE_TEXTVECH_09", 24);
+	StringCopy(&(Local_84[67 /*6*/]), "VEX_10_T20" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_10/IE_TEXTVECH_10' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[67 /*6*/]), "IE_TEXTVECH_10", 24);
+	StringCopy(&(Local_84[68 /*6*/]), "VEX_11_T20" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_11/IE_TEXTVECH_11' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[68 /*6*/]), "IE_TEXTVECH_11", 24);
+	StringCopy(&(Local_84[69 /*6*/]), "VEX_12_T20" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_12/IE_TEXTVECH_12' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[69 /*6*/]), "IE_TEXTVECH_12", 24);
+	StringCopy(&(Local_84[70 /*6*/]), "VEX_13_SHEAVA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_13/IE_TEXTVECH_13' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[70 /*6*/]), "IE_TEXTVECH_13", 24);
+	StringCopy(&(Local_84[71 /*6*/]), "VEX_14_SHEAVA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_14/IE_TEXTVECH_14' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[71 /*6*/]), "IE_TEXTVECH_14", 24);
+	StringCopy(&(Local_84[72 /*6*/]), "VEX_15_SHEAVA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_15/IE_TEXTVECH_15' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[72 /*6*/]), "IE_TEXTVECH_15", 24);
+	StringCopy(&(Local_84[73 /*6*/]), "VEX_16_OSIRIS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_16/IE_TEXTVECH_16' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[73 /*6*/]), "IE_TEXTVECH_16", 24);
+	StringCopy(&(Local_84[74 /*6*/]), "VEX_17_OSIRIS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_17/IE_TEXTVECH_17' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[74 /*6*/]), "IE_TEXTVECH_17", 24);
+	StringCopy(&(Local_84[75 /*6*/]), "VEX_18_OSIRIS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_18/IE_TEXTVECH_18' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[75 /*6*/]), "IE_TEXTVECH_18", 24);
+	StringCopy(&(Local_84[76 /*6*/]), "VEX_19_FMJ" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_19/IE_TEXTVECH_19' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[76 /*6*/]), "IE_TEXTVECH_19", 24);
+	StringCopy(&(Local_84[77 /*6*/]), "VEX_20_FMJ" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_20/IE_TEXTVECH_20' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[77 /*6*/]), "IE_TEXTVECH_20", 24);
+	StringCopy(&(Local_84[78 /*6*/]), "VEX_21_FMJ" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_21/IE_TEXTVECH_21' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[78 /*6*/]), "IE_TEXTVECH_21", 24);
+	StringCopy(&(Local_84[79 /*6*/]), "VEX_22_REAPER" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_22/IE_TEXTVECH_22' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[79 /*6*/]), "IE_TEXTVECH_22", 24);
+	StringCopy(&(Local_84[80 /*6*/]), "VEX_23_REAPER" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_23/IE_TEXTVECH_23' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[80 /*6*/]), "IE_TEXTVECH_23", 24);
+	StringCopy(&(Local_84[81 /*6*/]), "VEX_24_REAPER" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_24/IE_TEXTVECH_24' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[81 /*6*/]), "IE_TEXTVECH_24", 24);
+	StringCopy(&(Local_84[82 /*6*/]), "VEX_25_PFISTER" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_25/IE_TEXTVECH_25' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[82 /*6*/]), "IE_TEXTVECH_25", 24);
+	StringCopy(&(Local_84[83 /*6*/]), "VEX_26_PFISTER" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_26/IE_TEXTVECH_26' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[83 /*6*/]), "IE_TEXTVECH_26", 24);
+	StringCopy(&(Local_84[84 /*6*/]), "VEX_27_PFISTER" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_27/IE_TEXTVECH_27' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[84 /*6*/]), "IE_TEXTVECH_27", 24);
+	StringCopy(&(Local_84[85 /*6*/]), "VEX_28_ALPHA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_28/IE_TEXTVECH_28' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[85 /*6*/]), "IE_TEXTVECH_28", 24);
+	StringCopy(&(Local_84[86 /*6*/]), "VEX_29_ALPHA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_29/IE_TEXTVECH_29' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[86 /*6*/]), "IE_TEXTVECH_29", 24);
+	StringCopy(&(Local_84[87 /*6*/]), "VEX_30_ALPHA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_30/IE_TEXTVECH_30' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[87 /*6*/]), "IE_TEXTVECH_30", 24);
+	StringCopy(&(Local_84[88 /*6*/]), "VEX_31_MAMBA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_31/IE_TEXTVECH_31' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[88 /*6*/]), "IE_TEXTVECH_31", 24);
+	StringCopy(&(Local_84[89 /*6*/]), "VEX_32_MAMBA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_32/IE_TEXTVECH_32' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[89 /*6*/]), "IE_TEXTVECH_32", 24);
+	StringCopy(&(Local_84[90 /*6*/]), "VEX_33_MAMBA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_33/IE_TEXTVECH_33' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[90 /*6*/]), "IE_TEXTVECH_33", 24);
+	StringCopy(&(Local_84[91 /*6*/]), "VEX_34_TAMPA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_34/IE_TEXTVECH_34' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[91 /*6*/]), "IE_TEXTVECH_34", 24);
+	StringCopy(&(Local_84[92 /*6*/]), "VEX_35_TAMPA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_35/IE_TEXTVECH_35' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[92 /*6*/]), "IE_TEXTVECH_35", 24);
+	StringCopy(&(Local_84[93 /*6*/]), "VEX_36_TAMPA" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_36/IE_TEXTVECH_36' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[93 /*6*/]), "IE_TEXTVECH_36", 24);
+	StringCopy(&(Local_84[94 /*6*/]), "VEX_37_BTYPE" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_37/IE_TEXTVECH_37' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[94 /*6*/]), "IE_TEXTVECH_37", 24);
+	StringCopy(&(Local_84[95 /*6*/]), "VEX_38_BTYPE" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_38/IE_TEXTVECH_38' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[95 /*6*/]), "IE_TEXTVECH_38", 24);
+	StringCopy(&(Local_84[96 /*6*/]), "VEX_39_BTYPE" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_39/IE_TEXTVECH_39' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[96 /*6*/]), "IE_TEXTVECH_39", 24);
+	StringCopy(&(Local_84[97 /*6*/]), "VEX_40_FELTZ3" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_40/IE_TEXTVECH_40' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[97 /*6*/]), "IE_TEXTVECH_40", 24);
+	StringCopy(&(Local_84[98 /*6*/]), "VEX_41_FELTZ3" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_41/IE_TEXTVECH_41' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[98 /*6*/]), "IE_TEXTVECH_41", 24);
+	StringCopy(&(Local_84[99 /*6*/]), "VEX_42_FELTZ3" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_42/IE_TEXTVECH_42' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[99 /*6*/]), "IE_TEXTVECH_42", 24);
+	StringCopy(&(Local_84[100 /*6*/]), "VEX_43_ZTYPE" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_43/IE_TEXTVECH_43' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[100 /*6*/]), "IE_TEXTVECH_43", 24);
+	StringCopy(&(Local_84[101 /*6*/]), "VEX_44_ZTYPE" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_44/IE_TEXTVECH_44' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[101 /*6*/]), "IE_TEXTVECH_44", 24);
+	StringCopy(&(Local_84[102 /*6*/]), "VEX_45_ZTYPE" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_45/IE_TEXTVECH_45' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[102 /*6*/]), "IE_TEXTVECH_45", 24);
+	StringCopy(&(Local_84[103 /*6*/]), "VEX_46_TROPOS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_46/IE_TEXTVECH_46' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[103 /*6*/]), "IE_TEXTVECH_46", 24);
+	StringCopy(&(Local_84[104 /*6*/]), "VEX_47_TROPOS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_47/IE_TEXTVECH_47' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[104 /*6*/]), "IE_TEXTVECH_47", 24);
+	StringCopy(&(Local_84[105 /*6*/]), "VEX_48_TROPOS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_48/IE_TEXTVECH_48' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[105 /*6*/]), "IE_TEXTVECH_48", 24);
+	StringCopy(&(Local_84[106 /*6*/]), "VEX_49_ENTITYXF" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_49/IE_TEXTVECH_49' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[106 /*6*/]), "IE_TEXTVECH_49", 24);
+	StringCopy(&(Local_84[107 /*6*/]), "VEX_50_ENTITYXF" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_50/IE_TEXTVECH_50' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[107 /*6*/]), "IE_TEXTVECH_50", 24);
+	StringCopy(&(Local_84[108 /*6*/]), "VEX_51_ENTITYXF" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_51/IE_TEXTVECH_51' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[108 /*6*/]), "IE_TEXTVECH_51", 24);
+	StringCopy(&(Local_84[109 /*6*/]), "VEX_52_SULTANRS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_52/IE_TEXTVECH_52' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[109 /*6*/]), "IE_TEXTVECH_52", 24);
+	StringCopy(&(Local_84[110 /*6*/]), "VEX_53_SULTANRS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_53/IE_TEXTVECH_53' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[110 /*6*/]), "IE_TEXTVECH_53", 24);
+	StringCopy(&(Local_84[111 /*6*/]), "VEX_54_SULTANRS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_54/IE_TEXTVECH_54' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[111 /*6*/]), "IE_TEXTVECH_54", 24);
+	StringCopy(&(Local_84[112 /*6*/]), "VEX_55_ZENTORNO" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_55/IE_TEXTVECH_55' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[112 /*6*/]), "IE_TEXTVECH_55", 24);
+	StringCopy(&(Local_84[113 /*6*/]), "VEX_56_ZENTORNO" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_56/IE_TEXTVECH_56' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[113 /*6*/]), "IE_TEXTVECH_56", 24);
+	StringCopy(&(Local_84[114 /*6*/]), "VEX_57_ZENTORNO" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_57/IE_TEXTVECH_57' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[114 /*6*/]), "IE_TEXTVECH_57", 24);
+	StringCopy(&(Local_84[115 /*6*/]), "VEX_58_OMNIS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_58/IE_TEXTVECH_58' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[115 /*6*/]), "IE_TEXTVECH_58", 24);
+	StringCopy(&(Local_84[116 /*6*/]), "VEX_59_OMNIS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_59/IE_TEXTVECH_59' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[116 /*6*/]), "IE_TEXTVECH_59", 24);
+	StringCopy(&(Local_84[117 /*6*/]), "VEX_60_OMNIS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_60/IE_TEXTVECH_60' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[117 /*6*/]), "IE_TEXTVECH_60", 24);
+	StringCopy(&(Local_84[118 /*6*/]), "VEX_61_COQUET3" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_61/IE_TEXTVECH_61' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[118 /*6*/]), "IE_TEXTVECH_61", 24);
+	StringCopy(&(Local_84[119 /*6*/]), "VEX_62_COQUET3" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_62/IE_TEXTVECH_62' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[119 /*6*/]), "IE_TEXTVECH_62", 24);
+	StringCopy(&(Local_84[120 /*6*/]), "VEX_63_COQUET3" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_63/IE_TEXTVECH_63' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[120 /*6*/]), "IE_TEXTVECH_63", 24);
+	StringCopy(&(Local_84[121 /*6*/]), "VEX_64_SEVEN70" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_64/IE_TEXTVECH_64' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[121 /*6*/]), "IE_TEXTVECH_64", 24);
+	StringCopy(&(Local_84[122 /*6*/]), "VEX_65_SEVEN70" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_65/IE_TEXTVECH_65' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[122 /*6*/]), "IE_TEXTVECH_65", 24);
+	StringCopy(&(Local_84[123 /*6*/]), "VEX_66_SEVEN70" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_66/IE_TEXTVECH_66' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[123 /*6*/]), "IE_TEXTVECH_66", 24);
+	StringCopy(&(Local_84[124 /*6*/]), "VEX_67_VERLI" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_67/IE_TEXTVECH_67' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[124 /*6*/]), "IE_TEXTVECH_67", 24);
+	StringCopy(&(Local_84[125 /*6*/]), "VEX_68_VERLI" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_68/IE_TEXTVECH_68' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[125 /*6*/]), "IE_TEXTVECH_68", 24);
+	StringCopy(&(Local_84[126 /*6*/]), "VEX_69_VERLI" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_69/IE_TEXTVECH_69' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[126 /*6*/]), "IE_TEXTVECH_69", 24);
+	StringCopy(&(Local_84[127 /*6*/]), "VEX_70_FELTZ2" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_70/IE_TEXTVECH_70' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[127 /*6*/]), "IE_TEXTVECH_70", 24);
+	StringCopy(&(Local_84[128 /*6*/]), "VEX_71_FELTZ2" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_71/IE_TEXTVECH_71' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[128 /*6*/]), "IE_TEXTVECH_71", 24);
+	StringCopy(&(Local_84[129 /*6*/]), "VEX_72_FELTZ2" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_72/IE_TEXTVECH_72' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[129 /*6*/]), "IE_TEXTVECH_72", 24);
+	StringCopy(&(Local_84[130 /*6*/]), "VEX_73_COQUET2" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_73/IE_TEXTVECH_73' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[130 /*6*/]), "IE_TEXTVECH_73", 24);
+	StringCopy(&(Local_84[131 /*6*/]), "VEX_74_COQUET2" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_74/IE_TEXTVECH_74' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[131 /*6*/]), "IE_TEXTVECH_74", 24);
+	StringCopy(&(Local_84[132 /*6*/]), "VEX_75_COQUET2" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_75/IE_TEXTVECH_75' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[132 /*6*/]), "IE_TEXTVECH_75", 24);
+	StringCopy(&(Local_84[133 /*6*/]), "VEX_76_CHEETAH" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_76/IE_TEXTVECH_76' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[133 /*6*/]), "IE_TEXTVECH_76", 24);
+	StringCopy(&(Local_84[134 /*6*/]), "VEX_77_CHEETAH" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_77/IE_TEXTVECH_77' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[134 /*6*/]), "IE_TEXTVECH_77", 24);
+	StringCopy(&(Local_84[135 /*6*/]), "VEX_78_CHEETAH" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_78/IE_TEXTVECH_78' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[135 /*6*/]), "IE_TEXTVECH_78", 24);
+	StringCopy(&(Local_84[136 /*6*/]), "VEX_79_NSHADE" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_79/IE_TEXTVECH_79' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[136 /*6*/]), "IE_TEXTVECH_79", 24);
+	StringCopy(&(Local_84[137 /*6*/]), "VEX_80_NSHADE" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_80/IE_TEXTVECH_80' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[137 /*6*/]), "IE_TEXTVECH_80", 24);
+	StringCopy(&(Local_84[138 /*6*/]), "VEX_81_NSHADE" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_81/IE_TEXTVECH_81' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[138 /*6*/]), "IE_TEXTVECH_81", 24);
+	StringCopy(&(Local_84[139 /*6*/]), "VEX_82_BANSH2" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_82/IE_TEXTVECH_82' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[139 /*6*/]), "IE_TEXTVECH_82", 24);
+	StringCopy(&(Local_84[140 /*6*/]), "VEX_83_BANSH2" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_84/IE_TEXTVECH_84' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[140 /*6*/]), "IE_TEXTVECH_84", 24);
+	StringCopy(&(Local_84[141 /*6*/]), "VEX_84_BANSH2" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_85/IE_TEXTVECH_85' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[141 /*6*/]), "IE_TEXTVECH_85", 24);
+	StringCopy(&(Local_84[142 /*6*/]), "VEX_82_TURIS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_83/IE_TEXTVECH_83' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[142 /*6*/]), "IE_TEXTVECH_83", 24);
+	StringCopy(&(Local_84[143 /*6*/]), "VEX_86_TURIS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_86/IE_TEXTVECH_86' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[143 /*6*/]), "IE_TEXTVECH_86", 24);
+	StringCopy(&(Local_84[144 /*6*/]), "VEX_87_TURIS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_87/IE_TEXTVECH_87' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[144 /*6*/]), "IE_TEXTVECH_87", 24);
+	StringCopy(&(Local_84[145 /*6*/]), "VEX_88_MASS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_88/IE_TEXTVECH_88' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[145 /*6*/]), "IE_TEXTVECH_88", 24);
+	StringCopy(&(Local_84[146 /*6*/]), "VEX_89_MASS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_89/IE_TEXTVECH_89' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[146 /*6*/]), "IE_TEXTVECH_89", 24);
+	StringCopy(&(Local_84[147 /*6*/]), "VEX_90_MASS" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_90/IE_TEXTVECH_90' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[147 /*6*/]), "IE_TEXTVECH_90", 24);
+	StringCopy(&(Local_84[148 /*6*/]), "VEX_91_SABRE2" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_91/IE_TEXTVECH_91' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[148 /*6*/]), "IE_TEXTVECH_91", 24);
+	StringCopy(&(Local_84[149 /*6*/]), "VEX_92_SABRE2" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_92/IE_TEXTVECH_92' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[149 /*6*/]), "IE_TEXTVECH_92", 24);
+	StringCopy(&(Local_84[150 /*6*/]), "VEX_93_SABRE2" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_93/IE_TEXTVECH_93' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[150 /*6*/]), "IE_TEXTVECH_93", 24);
+	StringCopy(&(Local_84[151 /*6*/]), "VEX_94_JESTER" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_94/IE_TEXTVECH_94' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[151 /*6*/]), "IE_TEXTVECH_94", 24);
+	StringCopy(&(Local_84[152 /*6*/]), "VEX_95_JESTER" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_95/IE_TEXTVECH_95' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[152 /*6*/]), "IE_TEXTVECH_95", 24);
+	StringCopy(&(Local_84[153 /*6*/]), "VEX_96_JESTER" /* GXT: Vehicle: ~a~~n~Value: ~a~~n~Plate: ~a~ ~nrt~ <img src='img://IE_TEXTVECH_96/IE_TEXTVECH_96' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[153 /*6*/]), "IE_TEXTVECH_96", 24);
+	StringCopy(&(Local_84[154 /*6*/]), "GO_AS_PICM" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://NHP_prep_autosalvage/NHP_prep_autosalvage' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[154 /*6*/]), "NHP_prep_autosalvage", 24);
+	StringCopy(&(Local_84[155 /*6*/]), "GO_DR_PICM" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://nhp_prep_daylightrob/nhp_prep_daylightrob' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[155 /*6*/]), "nhp_prep_daylightrob", 24);
+	StringCopy(&(Local_84[156 /*6*/]), "FHTXT_DDR00M" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://NHP_prep_deaddrop/NHP_prep_deaddrop' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[156 /*6*/]), "NHP_prep_deaddrop", 24);
+	StringCopy(&(Local_84[157 /*6*/]), "BBTXT_CPS00M" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://BAT_carpark_1/BAT_carpark_1' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[157 /*6*/]), "BAT_carpark_1", 24);
+	StringCopy(&(Local_84[158 /*6*/]), "BBTXT_CPS10M" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://BAT_carpark_2/BAT_carpark_2' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[158 /*6*/]), "BAT_carpark_2", 24);
+	StringCopy(&(Local_84[159 /*6*/]), "BBTXT_CPS20M" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://BAT_carpark_3/BAT_carpark_3' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[159 /*6*/]), "BAT_carpark_3", 24);
+	StringCopy(&(Local_84[160 /*6*/]), "ICEBR_EMAIL", 24);
+	StringCopy(&(Local_1075[160 /*6*/]), "ib_aircon", 24);
+	StringCopy(&(Local_84[161 /*6*/]), "XM22FLOW_TXT_0" /* GXT: WELCOME TO THE TROUPE ~nrt~ <img src='img://PHONE_MESSAGE_D_DUDE/PHONE_MESSAGE_D_DUDE' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_1075[161 /*6*/]), "PHONE_MESSAGE_D_DUDE", 24);
 	if (func_58(PLAYER::PLAYER_ID()) == 19)
 	{
-		StringCopy(&(Local_49[44 /*6*/]), "SNP_IMG_0_0" /* GXT: ~nrt~ <img src='img://SCLUB_1/DEL_PERRO_PIER_1_2' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[44 /*6*/]), "SCLUB_1", 24);
-		StringCopy(&(Local_49[45 /*6*/]), "SNP_IMG_0_1" /* GXT: ~nrt~ <img src='img://SCLUB_1/ORIENTAL_THEATER_1_6' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[45 /*6*/]), "SCLUB_1", 24);
-		StringCopy(&(Local_49[46 /*6*/]), "SNP_IMG_0_2" /* GXT: ~nrt~ <img src='img://SCLUB_1/GALILEO_OBSERVATORY_1_3' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[46 /*6*/]), "SCLUB_1", 24);
-		StringCopy(&(Local_49[47 /*6*/]), "SNP_IMG_0_3" /* GXT: ~nrt~ <img src='img://SCLUB_1/MAZE_BANK_ARENA_1_4' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[47 /*6*/]), "SCLUB_1", 24);
-		StringCopy(&(Local_49[48 /*6*/]), "SNP_IMG_0_4" /* GXT: ~nrt~ <img src='img://SCLUB_1/CHUMASH_PIER_1_1' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[48 /*6*/]), "SCLUB_1", 24);
-		StringCopy(&(Local_49[49 /*6*/]), "SNP_IMG_0_5" /* GXT: ~nrt~ <img src='img://SCLUB_1/RICHMAN_HOTEL_1_8' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[49 /*6*/]), "SCLUB_1", 24);
-		StringCopy(&(Local_49[50 /*6*/]), "SNP_IMG_0_6" /* GXT: ~nrt~ <img src='img://SCLUB_1/ROCKFORD_HILLS_CITY_HALL_1_9' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[50 /*6*/]), "SCLUB_1", 24);
-		StringCopy(&(Local_49[51 /*6*/]), "SNP_IMG_0_7" /* GXT: ~nrt~ <img src='img://SCLUB_1/MAZE_BANK_TOWER_1_5' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[51 /*6*/]), "SCLUB_1", 24);
-		StringCopy(&(Local_49[52 /*6*/]), "SNP_IMG_0_8" /* GXT: ~nrt~ <img src='img://SCLUB_1/PIPELINE_INN_1_7' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[52 /*6*/]), "SCLUB_1", 24);
-		StringCopy(&(Local_49[53 /*6*/]), "SNP_IMG_0_9" /* GXT: ~nrt~ <img src='img://SCLUB_1/THE_VICEROY_HOTEL_1_10' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[53 /*6*/]), "SCLUB_1", 24);
-		StringCopy(&(Local_49[54 /*6*/]), "SNP_IMG_1_0" /* GXT: ~nrt~ <img src='img://SCLUB_2/VENETIAN_2_7' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[54 /*6*/]), "SCLUB_2", 24);
-		StringCopy(&(Local_49[55 /*6*/]), "SNP_IMG_1_1" /* GXT: ~nrt~ <img src='img://SCLUB_2/OPIUM_NIGHTS_HOTEL_2_4' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[55 /*6*/]), "SCLUB_2", 24);
-		StringCopy(&(Local_49[56 /*6*/]), "SNP_IMG_1_2" /* GXT: ~nrt~ <img src='img://SCLUB_2/VINEWOOD_SIGN_2_8' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[56 /*6*/]), "SCLUB_2", 24);
-		StringCopy(&(Local_49[57 /*6*/]), "SNP_IMG_1_3" /* GXT: ~nrt~ <img src='img://SCLUB_2/LEGION_SQUARE_2_2' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[57 /*6*/]), "SCLUB_2", 24);
-		StringCopy(&(Local_49[58 /*6*/]), "SNP_IMG_1_4" /* GXT: ~nrt~ <img src='img://SCLUB_2/VON_CRASTENBURG_HOTEL_2_10' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[58 /*6*/]), "SCLUB_2", 24);
-		StringCopy(&(Local_49[59 /*6*/]), "SNP_IMG_1_5" /* GXT: ~nrt~ <img src='img://SCLUB_2/VON-CRASTENBURG-RICHMAN_2_9' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[59 /*6*/]), "SCLUB_2", 24);
-		StringCopy(&(Local_49[60 /*6*/]), "SNP_IMG_1_6" /* GXT: ~nrt~ <img src='img://SCLUB_2/RANCHO_TOWERS_2_5' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[60 /*6*/]), "SCLUB_2", 24);
-		StringCopy(&(Local_49[61 /*6*/]), "SNP_IMG_1_7" /* GXT: ~nrt~ <img src='img://SCLUB_2/MIRROR_PARK_2_3' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[61 /*6*/]), "SCLUB_2", 24);
-		StringCopy(&(Local_49[62 /*6*/]), "SNP_IMG_1_8" /* GXT: ~nrt~ <img src='img://SCLUB_2/BJ_SMITH_REC_CENTER_2_1' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[62 /*6*/]), "SCLUB_2", 24);
-		StringCopy(&(Local_49[64 /*6*/]), "SNP_IMG_1_9" /* GXT: ~nrt~ <img src='img://SCLUB_2/ROCKFORD_DORSET_HOTEL_2_6' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[64 /*6*/]), "SCLUB_2", 24);
-		StringCopy(&(Local_49[65 /*6*/]), "SNP_IMG_2_0" /* GXT: ~nrt~ <img src='img://SCLUB_3/KOREAN_PAVILLION_3_1' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[65 /*6*/]), "SCLUB_3", 24);
-		StringCopy(&(Local_49[66 /*6*/]), "SNP_IMG_2_1" /* GXT: ~nrt~ <img src='img://SCLUB_3/VESPUCCI_BEACH_3_6' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[66 /*6*/]), "SCLUB_3", 24);
-		StringCopy(&(Local_49[67 /*6*/]), "SNP_IMG_2_2" /* GXT: ~nrt~ <img src='img://SCLUB_3/VINEWOOD_RACETRACK_3_9' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[67 /*6*/]), "SCLUB_3", 24);
-		StringCopy(&(Local_49[68 /*6*/]), "SNP_IMG_2_3" /* GXT: ~nrt~ <img src='img://SCLUB_3/SISYPHUS_THEATER_3_5' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[68 /*6*/]), "SCLUB_3", 24);
-		StringCopy(&(Local_49[69 /*6*/]), "SNP_IMG_2_4" /* GXT: ~nrt~ <img src='img://SCLUB_3/VESPUCCI_BOULEVARD_BRIDGE_3_7' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[69 /*6*/]), "SCLUB_3", 24);
-		StringCopy(&(Local_49[70 /*6*/]), "SNP_IMG_2_5" /* GXT: ~nrt~ <img src='img://SCLUB_3/ROCKFORD_HILLS_CHURCH_3_4' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[70 /*6*/]), "SCLUB_3", 24);
-		StringCopy(&(Local_49[71 /*6*/]), "SNP_IMG_2_6" /* GXT: ~nrt~ <img src='img://SCLUB_3/LAST_TRAIN_DINER_3_2' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[71 /*6*/]), "SCLUB_3", 24);
-		StringCopy(&(Local_49[72 /*6*/]), "SNP_IMG_2_7" /* GXT: ~nrt~ <img src='img://SCLUB_3/VON-CRASTENBURG-HOTEL_3_10' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[72 /*6*/]), "SCLUB_3", 24);
-		StringCopy(&(Local_49[73 /*6*/]), "SNP_IMG_2_8" /* GXT: ~nrt~ <img src='img://SCLUB_3/METEOR_STREET_APARTMENTS_3_3' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[73 /*6*/]), "SCLUB_3", 24);
-		StringCopy(&(Local_49[74 /*6*/]), "SNP_IMG_2_9" /* GXT: ~nrt~ <img src='img://SCLUB_3/VINEWOOD_HILLS_3_8' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
-		StringCopy(&(Local_50[74 /*6*/]), "SCLUB_3", 24);
+		StringCopy(&(Local_84[44 /*6*/]), "SNP_IMG_0_0" /* GXT: ~nrt~ <img src='img://SCLUB_1/DEL_PERRO_PIER_1_2' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[44 /*6*/]), "SCLUB_1", 24);
+		StringCopy(&(Local_84[45 /*6*/]), "SNP_IMG_0_1" /* GXT: ~nrt~ <img src='img://SCLUB_1/ORIENTAL_THEATER_1_6' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[45 /*6*/]), "SCLUB_1", 24);
+		StringCopy(&(Local_84[46 /*6*/]), "SNP_IMG_0_2" /* GXT: ~nrt~ <img src='img://SCLUB_1/GALILEO_OBSERVATORY_1_3' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[46 /*6*/]), "SCLUB_1", 24);
+		StringCopy(&(Local_84[47 /*6*/]), "SNP_IMG_0_3" /* GXT: ~nrt~ <img src='img://SCLUB_1/MAZE_BANK_ARENA_1_4' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[47 /*6*/]), "SCLUB_1", 24);
+		StringCopy(&(Local_84[48 /*6*/]), "SNP_IMG_0_4" /* GXT: ~nrt~ <img src='img://SCLUB_1/CHUMASH_PIER_1_1' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[48 /*6*/]), "SCLUB_1", 24);
+		StringCopy(&(Local_84[49 /*6*/]), "SNP_IMG_0_5" /* GXT: ~nrt~ <img src='img://SCLUB_1/RICHMAN_HOTEL_1_8' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[49 /*6*/]), "SCLUB_1", 24);
+		StringCopy(&(Local_84[50 /*6*/]), "SNP_IMG_0_6" /* GXT: ~nrt~ <img src='img://SCLUB_1/ROCKFORD_HILLS_CITY_HALL_1_9' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[50 /*6*/]), "SCLUB_1", 24);
+		StringCopy(&(Local_84[51 /*6*/]), "SNP_IMG_0_7" /* GXT: ~nrt~ <img src='img://SCLUB_1/MAZE_BANK_TOWER_1_5' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[51 /*6*/]), "SCLUB_1", 24);
+		StringCopy(&(Local_84[52 /*6*/]), "SNP_IMG_0_8" /* GXT: ~nrt~ <img src='img://SCLUB_1/PIPELINE_INN_1_7' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[52 /*6*/]), "SCLUB_1", 24);
+		StringCopy(&(Local_84[53 /*6*/]), "SNP_IMG_0_9" /* GXT: ~nrt~ <img src='img://SCLUB_1/THE_VICEROY_HOTEL_1_10' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[53 /*6*/]), "SCLUB_1", 24);
+		StringCopy(&(Local_84[54 /*6*/]), "SNP_IMG_1_0" /* GXT: ~nrt~ <img src='img://SCLUB_2/VENETIAN_2_7' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[54 /*6*/]), "SCLUB_2", 24);
+		StringCopy(&(Local_84[55 /*6*/]), "SNP_IMG_1_1" /* GXT: ~nrt~ <img src='img://SCLUB_2/OPIUM_NIGHTS_HOTEL_2_4' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[55 /*6*/]), "SCLUB_2", 24);
+		StringCopy(&(Local_84[56 /*6*/]), "SNP_IMG_1_2" /* GXT: ~nrt~ <img src='img://SCLUB_2/VINEWOOD_SIGN_2_8' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[56 /*6*/]), "SCLUB_2", 24);
+		StringCopy(&(Local_84[57 /*6*/]), "SNP_IMG_1_3" /* GXT: ~nrt~ <img src='img://SCLUB_2/LEGION_SQUARE_2_2' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[57 /*6*/]), "SCLUB_2", 24);
+		StringCopy(&(Local_84[58 /*6*/]), "SNP_IMG_1_4" /* GXT: ~nrt~ <img src='img://SCLUB_2/VON_CRASTENBURG_HOTEL_2_10' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[58 /*6*/]), "SCLUB_2", 24);
+		StringCopy(&(Local_84[59 /*6*/]), "SNP_IMG_1_5" /* GXT: ~nrt~ <img src='img://SCLUB_2/VON-CRASTENBURG-RICHMAN_2_9' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[59 /*6*/]), "SCLUB_2", 24);
+		StringCopy(&(Local_84[60 /*6*/]), "SNP_IMG_1_6" /* GXT: ~nrt~ <img src='img://SCLUB_2/RANCHO_TOWERS_2_5' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[60 /*6*/]), "SCLUB_2", 24);
+		StringCopy(&(Local_84[61 /*6*/]), "SNP_IMG_1_7" /* GXT: ~nrt~ <img src='img://SCLUB_2/MIRROR_PARK_2_3' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[61 /*6*/]), "SCLUB_2", 24);
+		StringCopy(&(Local_84[62 /*6*/]), "SNP_IMG_1_8" /* GXT: ~nrt~ <img src='img://SCLUB_2/BJ_SMITH_REC_CENTER_2_1' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[62 /*6*/]), "SCLUB_2", 24);
+		StringCopy(&(Local_84[64 /*6*/]), "SNP_IMG_1_9" /* GXT: ~nrt~ <img src='img://SCLUB_2/ROCKFORD_DORSET_HOTEL_2_6' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[64 /*6*/]), "SCLUB_2", 24);
+		StringCopy(&(Local_84[65 /*6*/]), "SNP_IMG_2_0" /* GXT: ~nrt~ <img src='img://SCLUB_3/KOREAN_PAVILLION_3_1' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[65 /*6*/]), "SCLUB_3", 24);
+		StringCopy(&(Local_84[66 /*6*/]), "SNP_IMG_2_1" /* GXT: ~nrt~ <img src='img://SCLUB_3/VESPUCCI_BEACH_3_6' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[66 /*6*/]), "SCLUB_3", 24);
+		StringCopy(&(Local_84[67 /*6*/]), "SNP_IMG_2_2" /* GXT: ~nrt~ <img src='img://SCLUB_3/VINEWOOD_RACETRACK_3_9' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[67 /*6*/]), "SCLUB_3", 24);
+		StringCopy(&(Local_84[68 /*6*/]), "SNP_IMG_2_3" /* GXT: ~nrt~ <img src='img://SCLUB_3/SISYPHUS_THEATER_3_5' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[68 /*6*/]), "SCLUB_3", 24);
+		StringCopy(&(Local_84[69 /*6*/]), "SNP_IMG_2_4" /* GXT: ~nrt~ <img src='img://SCLUB_3/VESPUCCI_BOULEVARD_BRIDGE_3_7' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[69 /*6*/]), "SCLUB_3", 24);
+		StringCopy(&(Local_84[70 /*6*/]), "SNP_IMG_2_5" /* GXT: ~nrt~ <img src='img://SCLUB_3/ROCKFORD_HILLS_CHURCH_3_4' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[70 /*6*/]), "SCLUB_3", 24);
+		StringCopy(&(Local_84[71 /*6*/]), "SNP_IMG_2_6" /* GXT: ~nrt~ <img src='img://SCLUB_3/LAST_TRAIN_DINER_3_2' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[71 /*6*/]), "SCLUB_3", 24);
+		StringCopy(&(Local_84[72 /*6*/]), "SNP_IMG_2_7" /* GXT: ~nrt~ <img src='img://SCLUB_3/VON-CRASTENBURG-HOTEL_3_10' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[72 /*6*/]), "SCLUB_3", 24);
+		StringCopy(&(Local_84[73 /*6*/]), "SNP_IMG_2_8" /* GXT: ~nrt~ <img src='img://SCLUB_3/METEOR_STREET_APARTMENTS_3_3' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[73 /*6*/]), "SCLUB_3", 24);
+		StringCopy(&(Local_84[74 /*6*/]), "SNP_IMG_2_9" /* GXT: ~nrt~ <img src='img://SCLUB_3/VINEWOOD_HILLS_3_8' vspace='0' width='252' height='252'/> ~nrt~~a~ ~a~. ~a~ */, 24);
+		StringCopy(&(Local_1075[74 /*6*/]), "SCLUB_3", 24);
 	}
 	else if (func_57(PLAYER::PLAYER_ID()) == 14)
 	{
-		StringCopy(&(Local_49[44 /*6*/]), "GBC_TM_TC100" /* GXT: We have the full cooperation of the observatory's in-house security. Here's some cam footage. ~nrt~ <img src='img://VC_TC_OBSERVCCTV_0/VC_TC_OBSERVCCTV_0' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[44 /*6*/]), "VC_TC_OBSERVCCTV_0", 24);
-		StringCopy(&(Local_49[45 /*6*/]), "GBC_TM_TC101" /* GXT: We have the full cooperation of the observatory's in-house security. Here's some cam footage. ~nrt~ <img src='img://VC_TC_OBSERVCCTV_0/VC_TC_OBSERVCCTV_1' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[45 /*6*/]), "VC_TC_OBSERVCCTV_0", 24);
-		StringCopy(&(Local_49[46 /*6*/]), "GBC_TM_TC102" /* GXT: We have the full cooperation of the observatory's in-house security. Here's some cam footage. ~nrt~ <img src='img://VC_TC_OBSERVCCTV_0/VC_TC_OBSERVCCTV_2' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[46 /*6*/]), "VC_TC_OBSERVCCTV_0", 24);
-		StringCopy(&(Local_49[47 /*6*/]), "GBC_TM_TC103" /* GXT: We have the full cooperation of the observatory's in-house security. Here's some cam footage. ~nrt~ <img src='img://VC_TC_OBSERVCCTV_0/VC_TC_OBSERVCCTV_3' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[47 /*6*/]), "VC_TC_OBSERVCCTV_0", 24);
-		StringCopy(&(Local_49[48 /*6*/]), "GBC_TM_TC104" /* GXT: We have the full cooperation of the observatory's in-house security. Here's some cam footage. ~nrt~ <img src='img://VC_TC_OBSERVCCTV_0/VC_TC_OBSERVCCTV_4' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[48 /*6*/]), "VC_TC_OBSERVCCTV_0", 24);
-		StringCopy(&(Local_49[49 /*6*/]), "GBC_TM_TC105" /* GXT: We have the full cooperation of the observatory's in-house security. Here's some cam footage. ~nrt~ <img src='img://VC_TC_OBSERVCCTV_0/VC_TC_OBSERVCCTV_5' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[49 /*6*/]), "VC_TC_OBSERVCCTV_0", 24);
-		StringCopy(&(Local_49[50 /*6*/]), "GBC_TM_TC110" /* GXT: This one should be easy - we have the make and model of the car. It's an orange Rhapsody. ~nrt~ <img src='img://VC_TC_VEHICLECCTV/VC_TC_VEHICLECCTV_3' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[50 /*6*/]), "VC_TC_VEHICLECCTV", 24);
-		StringCopy(&(Local_49[51 /*6*/]), "GBC_TM_TC111" /* GXT: Here is an image of what they look like. ~nrt~ <img src='img://VC_TC_CASINOCCTV/VC_TC_CASINOCCTV_2' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[51 /*6*/]), "VC_TC_CASINOCCTV", 24);
-		StringCopy(&(Local_49[52 /*6*/]), "GBC_TM_TC120" /* GXT: Stay sharp, this one was last seen on a yellow Vindicator. ~nrt~ <img src='img://VC_TC_VEHICLECCTV/VC_TC_VEHICLECCTV_1' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[52 /*6*/]), "VC_TC_VEHICLECCTV", 24);
-		StringCopy(&(Local_49[53 /*6*/]), "GBC_TM_TC121" /* GXT: Here is an image of what they look like. ~nrt~ <img src='img://VC_TC_CASINOCCTV/VC_TC_CASINOCCTV_0' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[53 /*6*/]), "VC_TC_CASINOCCTV", 24);
-		StringCopy(&(Local_49[54 /*6*/]), "GBC_TM_TC130" /* GXT: This idiot caught a cab - the owner of the cab company is a regular of ours. They dropped your target at the graveyard a few minutes ago. ~nrt~ <img src='img://VC_TC_CASINOCCTV/VC_TC_CASINOCCTV_3' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[54 /*6*/]), "VC_TC_CASINOCCTV", 24);
-		StringCopy(&(Local_49[55 /*6*/]), "GBC_TM_TC140" /* GXT: Don't have much to go on this time. They were last seen on foot, heading in this direction. Keep your eyes peeled. ~nrt~ <img src='img://VC_TC_CASINOCCTV/VC_TC_CASINOCCTV_1' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[55 /*6*/]), "VC_TC_CASINOCCTV", 24);
-		StringCopy(&(Local_49[56 /*6*/]), "GBC_TM_TC200" /* GXT: Turns out ULSA leave their security feed on an unsecured connection. Pretty useful - here's an image of your target. ~nrt~ <img src='img://VC_TC_UNIVERCCTV/VC_TC_UNIVERCCTV_0' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[56 /*6*/]), "VC_TC_UNIVERCCTV", 24);
-		StringCopy(&(Local_49[57 /*6*/]), "GBC_TM_TC201" /* GXT: Turns out ULSA leave their security feed on an unsecured connection. Pretty useful - here's an image of your target. ~nrt~ <img src='img://VC_TC_UNIVERCCTV/VC_TC_UNIVERCCTV_1' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[57 /*6*/]), "VC_TC_UNIVERCCTV", 24);
-		StringCopy(&(Local_49[58 /*6*/]), "GBC_TM_TC202" /* GXT: Turns out ULSA leave their security feed on an unsecured connection. Pretty useful - here's an image of your target. ~nrt~ <img src='img://VC_TC_UNIVERCCTV/VC_TC_UNIVERCCTV_2' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[58 /*6*/]), "VC_TC_UNIVERCCTV", 24);
-		StringCopy(&(Local_49[59 /*6*/]), "GBC_TM_TC203" /* GXT: Turns out ULSA leave their security feed on an unsecured connection. Pretty useful - here's an image of your target. ~nrt~ <img src='img://VC_TC_UNIVERCCTV/VC_TC_UNIVERCCTV_3' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[59 /*6*/]), "VC_TC_UNIVERCCTV", 24);
-		StringCopy(&(Local_49[60 /*6*/]), "GBC_TM_TC204" /* GXT: Turns out ULSA leave their security feed on an unsecured connection. Pretty useful - here's an image of your target. ~nrt~ <img src='img://VC_TC_UNIVERCCTV/VC_TC_UNIVERCCTV_4' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[60 /*6*/]), "VC_TC_UNIVERCCTV", 24);
-		StringCopy(&(Local_49[61 /*6*/]), "GBC_TM_TC205" /* GXT: Turns out ULSA leave their security feed on an unsecured connection. Pretty useful - here's an image of your target. ~nrt~ <img src='img://VC_TC_UNIVERCCTV/VC_TC_UNIVERCCTV_5' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[61 /*6*/]), "VC_TC_UNIVERCCTV", 24);
-		StringCopy(&(Local_49[62 /*6*/]), "GBC_TM_TC210" /* GXT: This one should be easy - we have the make and model of the car. It's a white 9F. ~nrt~ <img src='img://VC_TC_VEHICLECCTV/VC_TC_VEHICLECCTV_5' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[62 /*6*/]), "VC_TC_VEHICLECCTV", 24);
-		StringCopy(&(Local_49[63 /*6*/]), "GBC_TM_TC211" /* GXT: Here is an image of what they look like. ~nrt~ <img src='img://VC_TC_CASINOCCTV/VC_TC_CASINOCCTV_3' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[63 /*6*/]), "VC_TC_CASINOCCTV", 24);
-		StringCopy(&(Local_49[64 /*6*/]), "GBC_TM_TC220" /* GXT: Stay sharp, this one was last seen on a pink Faggio. ~nrt~ <img src='img://VC_TC_VEHICLECCTV/VC_TC_VEHICLECCTV_0' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[64 /*6*/]), "VC_TC_VEHICLECCTV", 24);
-		StringCopy(&(Local_49[65 /*6*/]), "GBC_TM_TC221" /* GXT: Here is an image of what they look like. ~nrt~ <img src='img://VC_TC_CASINOCCTV/VC_TC_CASINOCCTV_0' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[65 /*6*/]), "VC_TC_CASINOCCTV", 24);
-		StringCopy(&(Local_49[66 /*6*/]), "GBC_TM_TC230" /* GXT: This idiot caught a cab - the owner of the cab company is a regular of ours. They dropped your target at IAA headquarters a few minutes ago. ~nrt~ <img src='img://VC_TC_CASINOCCTV/VC_TC_CASINOCCTV_4' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[66 /*6*/]), "VC_TC_CASINOCCTV", 24);
-		StringCopy(&(Local_49[67 /*6*/]), "GBC_TM_TC240" /* GXT: Don't have much to go on this time. They were last seen on foot, heading in this direction. Keep your eyes peeled. ~nrt~ <img src='img://VC_TC_CASINOCCTV/VC_TC_CASINOCCTV_1' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[67 /*6*/]), "VC_TC_CASINOCCTV", 24);
+		StringCopy(&(Local_84[44 /*6*/]), "GBC_TM_TC100" /* GXT: We have the full cooperation of the observatory's in-house security. Here's some cam footage. ~nrt~ <img src='img://VC_TC_OBSERVCCTV_0/VC_TC_OBSERVCCTV_0' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[44 /*6*/]), "VC_TC_OBSERVCCTV_0", 24);
+		StringCopy(&(Local_84[45 /*6*/]), "GBC_TM_TC101" /* GXT: We have the full cooperation of the observatory's in-house security. Here's some cam footage. ~nrt~ <img src='img://VC_TC_OBSERVCCTV_0/VC_TC_OBSERVCCTV_1' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[45 /*6*/]), "VC_TC_OBSERVCCTV_0", 24);
+		StringCopy(&(Local_84[46 /*6*/]), "GBC_TM_TC102" /* GXT: We have the full cooperation of the observatory's in-house security. Here's some cam footage. ~nrt~ <img src='img://VC_TC_OBSERVCCTV_0/VC_TC_OBSERVCCTV_2' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[46 /*6*/]), "VC_TC_OBSERVCCTV_0", 24);
+		StringCopy(&(Local_84[47 /*6*/]), "GBC_TM_TC103" /* GXT: We have the full cooperation of the observatory's in-house security. Here's some cam footage. ~nrt~ <img src='img://VC_TC_OBSERVCCTV_0/VC_TC_OBSERVCCTV_3' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[47 /*6*/]), "VC_TC_OBSERVCCTV_0", 24);
+		StringCopy(&(Local_84[48 /*6*/]), "GBC_TM_TC104" /* GXT: We have the full cooperation of the observatory's in-house security. Here's some cam footage. ~nrt~ <img src='img://VC_TC_OBSERVCCTV_0/VC_TC_OBSERVCCTV_4' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[48 /*6*/]), "VC_TC_OBSERVCCTV_0", 24);
+		StringCopy(&(Local_84[49 /*6*/]), "GBC_TM_TC105" /* GXT: We have the full cooperation of the observatory's in-house security. Here's some cam footage. ~nrt~ <img src='img://VC_TC_OBSERVCCTV_0/VC_TC_OBSERVCCTV_5' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[49 /*6*/]), "VC_TC_OBSERVCCTV_0", 24);
+		StringCopy(&(Local_84[50 /*6*/]), "GBC_TM_TC110" /* GXT: This one should be easy - we have the make and model of the car. It's an orange Rhapsody. ~nrt~ <img src='img://VC_TC_VEHICLECCTV/VC_TC_VEHICLECCTV_3' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[50 /*6*/]), "VC_TC_VEHICLECCTV", 24);
+		StringCopy(&(Local_84[51 /*6*/]), "GBC_TM_TC111" /* GXT: Here is an image of what they look like. ~nrt~ <img src='img://VC_TC_CASINOCCTV/VC_TC_CASINOCCTV_2' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[51 /*6*/]), "VC_TC_CASINOCCTV", 24);
+		StringCopy(&(Local_84[52 /*6*/]), "GBC_TM_TC120" /* GXT: Stay sharp, this one was last seen on a yellow Vindicator. ~nrt~ <img src='img://VC_TC_VEHICLECCTV/VC_TC_VEHICLECCTV_1' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[52 /*6*/]), "VC_TC_VEHICLECCTV", 24);
+		StringCopy(&(Local_84[53 /*6*/]), "GBC_TM_TC121" /* GXT: Here is an image of what they look like. ~nrt~ <img src='img://VC_TC_CASINOCCTV/VC_TC_CASINOCCTV_0' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[53 /*6*/]), "VC_TC_CASINOCCTV", 24);
+		StringCopy(&(Local_84[54 /*6*/]), "GBC_TM_TC130" /* GXT: This idiot caught a cab - the owner of the cab company is a regular of ours. They dropped your target at the graveyard a few minutes ago. ~nrt~ <img src='img://VC_TC_CASINOCCTV/VC_TC_CASINOCCTV_3' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[54 /*6*/]), "VC_TC_CASINOCCTV", 24);
+		StringCopy(&(Local_84[55 /*6*/]), "GBC_TM_TC140" /* GXT: Don't have much to go on this time. They were last seen on foot, heading in this direction. Keep your eyes peeled. ~nrt~ <img src='img://VC_TC_CASINOCCTV/VC_TC_CASINOCCTV_1' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[55 /*6*/]), "VC_TC_CASINOCCTV", 24);
+		StringCopy(&(Local_84[56 /*6*/]), "GBC_TM_TC200" /* GXT: Turns out ULSA leave their security feed on an unsecured connection. Pretty useful - here's an image of your target. ~nrt~ <img src='img://VC_TC_UNIVERCCTV/VC_TC_UNIVERCCTV_0' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[56 /*6*/]), "VC_TC_UNIVERCCTV", 24);
+		StringCopy(&(Local_84[57 /*6*/]), "GBC_TM_TC201" /* GXT: Turns out ULSA leave their security feed on an unsecured connection. Pretty useful - here's an image of your target. ~nrt~ <img src='img://VC_TC_UNIVERCCTV/VC_TC_UNIVERCCTV_1' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[57 /*6*/]), "VC_TC_UNIVERCCTV", 24);
+		StringCopy(&(Local_84[58 /*6*/]), "GBC_TM_TC202" /* GXT: Turns out ULSA leave their security feed on an unsecured connection. Pretty useful - here's an image of your target. ~nrt~ <img src='img://VC_TC_UNIVERCCTV/VC_TC_UNIVERCCTV_2' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[58 /*6*/]), "VC_TC_UNIVERCCTV", 24);
+		StringCopy(&(Local_84[59 /*6*/]), "GBC_TM_TC203" /* GXT: Turns out ULSA leave their security feed on an unsecured connection. Pretty useful - here's an image of your target. ~nrt~ <img src='img://VC_TC_UNIVERCCTV/VC_TC_UNIVERCCTV_3' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[59 /*6*/]), "VC_TC_UNIVERCCTV", 24);
+		StringCopy(&(Local_84[60 /*6*/]), "GBC_TM_TC204" /* GXT: Turns out ULSA leave their security feed on an unsecured connection. Pretty useful - here's an image of your target. ~nrt~ <img src='img://VC_TC_UNIVERCCTV/VC_TC_UNIVERCCTV_4' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[60 /*6*/]), "VC_TC_UNIVERCCTV", 24);
+		StringCopy(&(Local_84[61 /*6*/]), "GBC_TM_TC205" /* GXT: Turns out ULSA leave their security feed on an unsecured connection. Pretty useful - here's an image of your target. ~nrt~ <img src='img://VC_TC_UNIVERCCTV/VC_TC_UNIVERCCTV_5' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[61 /*6*/]), "VC_TC_UNIVERCCTV", 24);
+		StringCopy(&(Local_84[62 /*6*/]), "GBC_TM_TC210" /* GXT: This one should be easy - we have the make and model of the car. It's a white 9F. ~nrt~ <img src='img://VC_TC_VEHICLECCTV/VC_TC_VEHICLECCTV_5' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[62 /*6*/]), "VC_TC_VEHICLECCTV", 24);
+		StringCopy(&(Local_84[63 /*6*/]), "GBC_TM_TC211" /* GXT: Here is an image of what they look like. ~nrt~ <img src='img://VC_TC_CASINOCCTV/VC_TC_CASINOCCTV_3' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[63 /*6*/]), "VC_TC_CASINOCCTV", 24);
+		StringCopy(&(Local_84[64 /*6*/]), "GBC_TM_TC220" /* GXT: Stay sharp, this one was last seen on a pink Faggio. ~nrt~ <img src='img://VC_TC_VEHICLECCTV/VC_TC_VEHICLECCTV_0' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[64 /*6*/]), "VC_TC_VEHICLECCTV", 24);
+		StringCopy(&(Local_84[65 /*6*/]), "GBC_TM_TC221" /* GXT: Here is an image of what they look like. ~nrt~ <img src='img://VC_TC_CASINOCCTV/VC_TC_CASINOCCTV_0' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[65 /*6*/]), "VC_TC_CASINOCCTV", 24);
+		StringCopy(&(Local_84[66 /*6*/]), "GBC_TM_TC230" /* GXT: This idiot caught a cab - the owner of the cab company is a regular of ours. They dropped your target at IAA headquarters a few minutes ago. ~nrt~ <img src='img://VC_TC_CASINOCCTV/VC_TC_CASINOCCTV_4' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[66 /*6*/]), "VC_TC_CASINOCCTV", 24);
+		StringCopy(&(Local_84[67 /*6*/]), "GBC_TM_TC240" /* GXT: Don't have much to go on this time. They were last seen on foot, heading in this direction. Keep your eyes peeled. ~nrt~ <img src='img://VC_TC_CASINOCCTV/VC_TC_CASINOCCTV_1' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[67 /*6*/]), "VC_TC_CASINOCCTV", 24);
 	}
 	else if (func_56(PLAYER::PLAYER_ID()) == 30)
 	{
-		StringCopy(&(Local_49[44 /*6*/]), "CSH_TXT_MD_01M" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://heist3_prep_maid01/heist3_prep_maid01' vspace='0' width='256' height='167'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[44 /*6*/]), "heist3_prep_maid01", 24);
-		StringCopy(&(Local_49[45 /*6*/]), "CSH_TXT_MD_02M" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://heist3_prep_maid02/heist3_prep_maid02' vspace='0' width='256' height='167'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[45 /*6*/]), "heist3_prep_maid02", 24);
+		StringCopy(&(Local_84[44 /*6*/]), "CSH_TXT_MD_01M" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://heist3_prep_maid01/heist3_prep_maid01' vspace='0' width='256' height='167'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[44 /*6*/]), "heist3_prep_maid01", 24);
+		StringCopy(&(Local_84[45 /*6*/]), "CSH_TXT_MD_02M" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://heist3_prep_maid02/heist3_prep_maid02' vspace='0' width='256' height='167'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[45 /*6*/]), "heist3_prep_maid02", 24);
 	}
 	else if (func_56(PLAYER::PLAYER_ID()) == 32)
 	{
-		StringCopy(&(Local_49[44 /*6*/]), "CSHT_IMC_00M" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://heist3_cashier1/heist3_cashier1' vspace='0' width='256' height='352'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[44 /*6*/]), "heist3_cashier1", 24);
-		StringCopy(&(Local_49[45 /*6*/]), "CSHT_IMC_10M" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://heist3_cashier2/heist3_cashier2' vspace='0' width='256' height='352'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[45 /*6*/]), "heist3_cashier2", 24);
-		StringCopy(&(Local_49[46 /*6*/]), "CSHT_IMC_20M" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://heist3_cashier3/heist3_cashier3' vspace='0' width='256' height='352'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[46 /*6*/]), "heist3_cashier3", 24);
-		StringCopy(&(Local_49[47 /*6*/]), "CSHT_IMC_30M" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://heist3_cashier4/heist3_cashier4' vspace='0' width='256' height='352'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[47 /*6*/]), "heist3_cashier4", 24);
+		StringCopy(&(Local_84[44 /*6*/]), "CSHT_IMC_00M" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://heist3_cashier1/heist3_cashier1' vspace='0' width='256' height='352'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[44 /*6*/]), "heist3_cashier1", 24);
+		StringCopy(&(Local_84[45 /*6*/]), "CSHT_IMC_10M" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://heist3_cashier2/heist3_cashier2' vspace='0' width='256' height='352'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[45 /*6*/]), "heist3_cashier2", 24);
+		StringCopy(&(Local_84[46 /*6*/]), "CSHT_IMC_20M" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://heist3_cashier3/heist3_cashier3' vspace='0' width='256' height='352'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[46 /*6*/]), "heist3_cashier3", 24);
+		StringCopy(&(Local_84[47 /*6*/]), "CSHT_IMC_30M" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://heist3_cashier4/heist3_cashier4' vspace='0' width='256' height='352'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[47 /*6*/]), "heist3_cashier4", 24);
 	}
 	else if (func_55(PLAYER::PLAYER_ID()) == 17)
 	{
-		StringCopy(&(Local_49[44 /*6*/]), "ILHTEXT_SFE00M" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://heist4_sec_guard/heist4_sec_guard' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[44 /*6*/]), "heist4_sec_guard", 24);
+		StringCopy(&(Local_84[44 /*6*/]), "ILHTEXT_SFE00M" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://heist4_sec_guard/heist4_sec_guard' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[44 /*6*/]), "heist4_sec_guard", 24);
 	}
 	else if (func_54(PLAYER::PLAYER_ID()) == 4)
 	{
-		StringCopy(&(Local_49[44 /*6*/]), "TR_TXT_CV1" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://TUNER_TEXT_IMG_VIRUS/TUNER_TEXT_IMG_VIRUS' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[44 /*6*/]), "TUNER_TEXT_IMG_VIRUS", 24);
-		StringCopy(&(Local_49[45 /*6*/]), "TR_TXT_CV2" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://TUNER_TEXT_IMG_VIRUS_02/TUNER_TEXT_IMG_VIRUS_02' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[45 /*6*/]), "TUNER_TEXT_IMG_VIRUS_02", 24);
-		StringCopy(&(Local_49[46 /*6*/]), "TR_TXT_CV3" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://TUNER_TEXT_IMG_VIRUS_03/TUNER_TEXT_IMG_VIRUS_03' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[46 /*6*/]), "TUNER_TEXT_IMG_VIRUS_03", 24);
+		StringCopy(&(Local_84[44 /*6*/]), "TR_TXT_CV1" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://TUNER_TEXT_IMG_VIRUS/TUNER_TEXT_IMG_VIRUS' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[44 /*6*/]), "TUNER_TEXT_IMG_VIRUS", 24);
+		StringCopy(&(Local_84[45 /*6*/]), "TR_TXT_CV2" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://TUNER_TEXT_IMG_VIRUS_02/TUNER_TEXT_IMG_VIRUS_02' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[45 /*6*/]), "TUNER_TEXT_IMG_VIRUS_02", 24);
+		StringCopy(&(Local_84[46 /*6*/]), "TR_TXT_CV3" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://TUNER_TEXT_IMG_VIRUS_03/TUNER_TEXT_IMG_VIRUS_03' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[46 /*6*/]), "TUNER_TEXT_IMG_VIRUS_03", 24);
 	}
 	else if (func_54(PLAYER::PLAYER_ID()) == 11)
 	{
-		StringCopy(&(Local_49[44 /*6*/]), "ROBTEXT_IAA00M" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://TUNER_TEXT_IMG_IAA/TUNER_TEXT_IMG_IAA' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[44 /*6*/]), "TUNER_TEXT_IMG_IAA", 24);
+		StringCopy(&(Local_84[44 /*6*/]), "ROBTEXT_IAA00M" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://TUNER_TEXT_IMG_IAA/TUNER_TEXT_IMG_IAA' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[44 /*6*/]), "TUNER_TEXT_IMG_IAA", 24);
 	}
 	else if (func_53(PLAYER::PLAYER_ID()) == 4)
 	{
-		StringCopy(&(Local_49[44 /*6*/]), "FXR_TXT_WI1" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://FXR_WAYIN/FXR_WAYIN' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[44 /*6*/]), "FXR_WAYIN", 24);
+		StringCopy(&(Local_84[44 /*6*/]), "FXR_TXT_WI1" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://FXR_WAYIN/FXR_WAYIN' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[44 /*6*/]), "FXR_WAYIN", 24);
 	}
 	else if (func_48(PLAYER::PLAYER_ID()) == 4)
 	{
-		StringCopy(&(Local_49[44 /*6*/]), "DL_TXT_PHOTO1" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://UPDT2_2022_TEXT_IMG_1/UPDT2_2022_TEXT_IMG_1' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[44 /*6*/]), "UPDT2_2022_TEXT_IMG_1", 24);
-		StringCopy(&(Local_49[45 /*6*/]), "DL_TXT_PHOTO2" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://UPDT2_2022_TEXT_IMG_2/UPDT2_2022_TEXT_IMG_2' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[45 /*6*/]), "UPDT2_2022_TEXT_IMG_2", 24);
-		StringCopy(&(Local_49[46 /*6*/]), "DL_TXT_PHOTO3" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://UPDT2_2022_TEXT_IMG_3/UPDT2_2022_TEXT_IMG_3' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
-		StringCopy(&(Local_50[46 /*6*/]), "UPDT2_2022_TEXT_IMG_3", 24);
+		StringCopy(&(Local_84[44 /*6*/]), "DL_TXT_PHOTO1" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://UPDT2_2022_TEXT_IMG_1/UPDT2_2022_TEXT_IMG_1' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[44 /*6*/]), "UPDT2_2022_TEXT_IMG_1", 24);
+		StringCopy(&(Local_84[45 /*6*/]), "DL_TXT_PHOTO2" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://UPDT2_2022_TEXT_IMG_2/UPDT2_2022_TEXT_IMG_2' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[45 /*6*/]), "UPDT2_2022_TEXT_IMG_2", 24);
+		StringCopy(&(Local_84[46 /*6*/]), "DL_TXT_PHOTO3" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://UPDT2_2022_TEXT_IMG_3/UPDT2_2022_TEXT_IMG_3' vspace='0' width='256' height='128'/> ~nrt~ */, 24);
+		StringCopy(&(Local_1075[46 /*6*/]), "UPDT2_2022_TEXT_IMG_3", 24);
 	}
 }
 
@@ -3026,9 +3026,9 @@ void func_59()//Position - 0x4D12
 	{
 		func_60(0);
 	}
-	if (iLocal_52)
+	if (iLocal_2219)
 	{
-		GRAPHICS::SET_STREAMED_TEXTURE_DICT_AS_NO_LONGER_NEEDED(&uLocal_33);
+		GRAPHICS::SET_STREAMED_TEXTURE_DICT_AS_NO_LONGER_NEEDED(&uLocal_68);
 	}
 	SCRIPT::TERMINATE_THIS_THREAD();
 }

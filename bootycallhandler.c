@@ -262,7 +262,7 @@ void func_1()//Position - 0xB8
 	int iVar0;
 	int iVar1;
 	char cVar2[64];
-	struct<16> Var3;
+	struct<16> Var18;
 	
 	switch (Global_112642)
 	{
@@ -287,7 +287,7 @@ void func_1()//Position - 0xB8
 						else
 						{
 							func_55(&uLocal_36, 3, 0, func_56(iVar0), 0, 1);
-							Var3 = { func_54() };
+							Var18 = { func_54() };
 							if (func_52(iVar0))
 							{
 								func_63(iVar0, 1);
@@ -317,7 +317,7 @@ void func_1()//Position - 0xB8
 								func_55(&uLocal_36, 0, PLAYER::PLAYER_PED_ID(), "FRANKLIN", 0, 1);
 							}
 							StringIntConCat(&cVar2, iVar1, 64);
-							func_33(&uLocal_36, func_67(iVar1), "BCAUD", &Var3, &Var3, &cVar2, &cVar2, 12, 1, 0, 0, 0);
+							func_33(&uLocal_36, func_67(iVar1), "BCAUD", &Var18, &Var18, &cVar2, &cVar2, 12, 1, 0, 0, 0);
 						}
 						Global_112642.f_1 = iVar1;
 						Global_112642 = 1;
@@ -680,8 +680,8 @@ int func_18()//Position - 0x7E1
 void func_19(int iParam0)//Position - 0x7F7
 {
 	struct<6> Var0;
-	int iVar1;
-	struct<6> Var2;
+	int iVar6;
+	struct<6> Var7;
 	
 	SCRIPT::REQUEST_SCRIPT("stripperhome");
 	while (!SCRIPT::HAS_SCRIPT_LOADED("stripperhome"))
@@ -705,22 +705,22 @@ void func_19(int iParam0)//Position - 0x7F7
 		else
 		{
 			iLocal_201 = -1;
-			iVar1 = func_24(&iLocal_201, 6, 10, 0, 0);
-			while (iVar1 == 2)
+			iVar6 = func_24(&iLocal_201, 6, 10, 0, 0);
+			while (iVar6 == 2)
 			{
-				iVar1 = func_24(&iLocal_201, 6, 10, 0, 0);
+				iVar6 = func_24(&iLocal_201, 6, 10, 0, 0);
 				SYSTEM::WAIT(0);
 			}
-			if (iVar1 == 1)
+			if (iVar6 == 1)
 			{
 				func_20(iParam0, 0);
-				Var2 = 1;
-				Var2[0] = iParam0;
-				Var2.f_2 = 1;
-				Var2.f_3 = iLocal_201;
-				Var2.f_4 = 1;
-				Var2.f_5 = 0;
-				SYSTEM::START_NEW_SCRIPT_WITH_ARGS("stripperhome", &Var2, 6, 1424);
+				Var7 = 1;
+				Var7[0] = iParam0;
+				Var7.f_2 = 1;
+				Var7.f_3 = iLocal_201;
+				Var7.f_4 = 1;
+				Var7.f_5 = 0;
+				SYSTEM::START_NEW_SCRIPT_WITH_ARGS("stripperhome", &Var7, 6, 1424);
 				func_29(Global_112642.f_1, -1);
 				Global_112642 = 3;
 			}
@@ -1132,7 +1132,7 @@ int func_32()//Position - 0xE0A
 int func_33(var uParam0, bool bParam1, char* sParam2, var uParam3, var uParam4, char[4] cParam5, char[4] cParam6, int iParam7, int iParam8, int iParam9, int iParam10, bool bParam11)//Position - 0xE33
 {
 	var uVar0;
-	var uVar1;
+	var uVar11;
 	
 	func_46(uParam0, bParam1, sParam2, iParam9, iParam10, 0);
 	func_45();
@@ -1145,9 +1145,9 @@ int func_33(var uParam0, bool bParam1, char* sParam2, var uParam3, var uParam4, 
 		Global_21737 = 0;
 	}
 	uVar0 = 10;
-	uVar1 = 10;
-	func_43(2, &uVar0, &uVar1, uParam3, uParam4, cParam5, cParam6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-	return func_34(&uVar0, &uVar1, iParam7, bParam11);
+	uVar11 = 10;
+	func_43(2, &uVar0, &uVar11, uParam3, uParam4, cParam5, cParam6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+	return func_34(&uVar0, &uVar11, iParam7, bParam11);
 }
 
 int func_34(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 0xE92
@@ -2106,7 +2106,7 @@ int func_76()//Position - 0x1ED8
 	int iVar0;
 	int iVar1;
 	int iVar2[10];
-	int iVar3;
+	int iVar13;
 	
 	iVar1 = 0;
 	iVar0 = 0;
@@ -2121,8 +2121,8 @@ int func_76()//Position - 0x1ED8
 	}
 	if (iVar1 > 0)
 	{
-		iVar3 = MISC::GET_RANDOM_INT_IN_RANGE(0, iVar1);
-		return iVar2[iVar3];
+		iVar13 = MISC::GET_RANDOM_INT_IN_RANGE(0, iVar1);
+		return iVar2[iVar13];
 	}
 	return -1;
 }

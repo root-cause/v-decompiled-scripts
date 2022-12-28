@@ -117,7 +117,7 @@ void func_2(var uParam0, int iParam1)//Position - 0xA0
 void func_3(int iParam0, int iParam1, var uParam2, bool bParam3)//Position - 0x40E
 {
 	struct<6> Var0[2];
-	struct<3> Var1;
+	struct<3> Var13;
 	
 	if (!bParam3)
 	{
@@ -138,10 +138,10 @@ void func_3(int iParam0, int iParam1, var uParam2, bool bParam3)//Position - 0x4
 		Var0[1 /*6*/].f_3 = { 0f, 0f, Global_4280768[iParam0 /*45*/].f_7 };
 	}
 	*uParam2 = { func_5(iParam1, 86) };
-	Var1 = { *uParam2 - Var0[0 /*6*/] };
-	Var1 = { func_4(Var1, -Var0[0 /*6*/].f_3.f_2) };
-	Var1 = { func_4(Var1, Var0[1 /*6*/].f_3.f_2) };
-	*uParam2 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var0[1 /*6*/], 0f, Var1) };
+	Var13 = { *uParam2 - Var0[0 /*6*/] };
+	Var13 = { func_4(Var13, -Var0[0 /*6*/].f_3.f_2) };
+	Var13 = { func_4(Var13, Var0[1 /*6*/].f_3.f_2) };
+	*uParam2 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var0[1 /*6*/], 0f, Var13) };
 	switch (iParam1)
 	{
 		case 6:
@@ -471,16 +471,16 @@ void func_3(int iParam0, int iParam1, var uParam2, bool bParam3)//Position - 0x4
 	}
 }
 
-Vector3 func_4(struct<3> Param0, float fParam1)//Position - 0xD8B
+Vector3 func_4(struct<3> Param0, float fParam3)//Position - 0xD8B
 {
 	struct<3> Var0;
-	float fVar1;
-	float fVar2;
+	float fVar3;
+	float fVar4;
 	
-	fVar1 = SYSTEM::SIN(fParam1);
-	fVar2 = SYSTEM::COS(fParam1);
-	Var0.f_0 = ((Param0.f_0 * fVar2) - (Param0.f_1 * fVar1));
-	Var0.f_1 = ((Param0.f_0 * fVar1) + (Param0.f_1 * fVar2));
+	fVar3 = SYSTEM::SIN(fParam3);
+	fVar4 = SYSTEM::COS(fParam3);
+	Var0.f_0 = ((Param0.f_0 * fVar4) - (Param0.f_1 * fVar3));
+	Var0.f_1 = ((Param0.f_0 * fVar3) + (Param0.f_1 * fVar4));
 	Var0.f_2 = Param0.f_2;
 	return Var0;
 }
@@ -488,15 +488,15 @@ Vector3 func_4(struct<3> Param0, float fParam1)//Position - 0xD8B
 struct<6> func_5(int iParam0, int iParam1)//Position - 0xDCF
 {
 	struct<6> Var0;
-	bool bVar1;
-	int iVar2;
+	bool bVar6;
+	int iVar23;
 	
-	iVar2 = 0;
-	if (func_6(iParam1, &bVar1))
+	iVar23 = 0;
+	if (func_6(iParam1, &bVar6))
 	{
-		iVar2 = 1;
+		iVar23 = 1;
 	}
-	if (iVar2 && MISC::GET_BASE_ELEMENT_LOCATION_FROM_METADATA_BLOCK(&Var0, &(Var0.f_3), iParam0, bVar1))
+	if (iVar23 && MISC::GET_BASE_ELEMENT_LOCATION_FROM_METADATA_BLOCK(&Var0, &(Var0.f_3), iParam0, bVar6))
 	{
 		return Var0;
 	}
@@ -1357,15 +1357,15 @@ void func_9(int iParam0, var uParam1, var uParam2, int iParam3)//Position - 0x29
 void func_10(int iParam0, int iParam1, var uParam2, int iParam3, bool bParam4)//Position - 0x2E0D
 {
 	struct<6> Var0[2];
-	struct<3> Var1;
+	struct<3> Var13;
 	
 	Var0[0 /*6*/] = { func_11(iParam3, bParam4) };
 	Var0[1 /*6*/] = { func_11(iParam0, bParam4) };
 	*uParam2 = { func_5(iParam1, iParam3) };
-	Var1 = { *uParam2 - Var0[0 /*6*/] };
-	Var1 = { func_4(Var1, -Var0[0 /*6*/].f_3.f_2) };
-	Var1 = { func_4(Var1, Var0[1 /*6*/].f_3.f_2) };
-	*uParam2 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var0[1 /*6*/], 0f, Var1) };
+	Var13 = { *uParam2 - Var0[0 /*6*/] };
+	Var13 = { func_4(Var13, -Var0[0 /*6*/].f_3.f_2) };
+	Var13 = { func_4(Var13, Var0[1 /*6*/].f_3.f_2) };
+	*uParam2 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Var0[1 /*6*/], 0f, Var13) };
 	switch (iParam1)
 	{
 		case 6:
@@ -2635,80 +2635,80 @@ void func_12(var uParam0, int iParam1)//Position - 0x5031
 	uParam0->f_1922[0 /*9*/].f_6 = 48.9991f;
 }
 
-void func_13(struct<3> Param0, struct<3> Param1, var uParam2, int iParam3)//Position - 0x532D
+void func_13(struct<3> Param0, struct<3> Param3, var uParam6, int iParam7)//Position - 0x532D
 {
 	struct<6> Var0;
-	struct<6> Var1;
-	struct<6> Var2;
+	struct<6> Var6;
+	struct<6> Var12;
 	
-	*uParam2 = { 0f, 0f, 0f };
-	uParam2->f_3 = { 0f, 0f, 0f };
-	switch (iParam3)
+	*uParam6 = { 0f, 0f, 0f };
+	uParam6->f_3 = { 0f, 0f, 0f };
+	switch (iParam7)
 	{
 		case 0:
 			Var0 = { 285.8317f, -162.205f, 65.1628f };
 			Var0.f_3 = { 0f, 0f, -110f };
-			Var1 = { 285.138f, -162.024f, 63.614f };
-			Var1.f_3 = { 0f, 0f, 160f };
+			Var6 = { 285.138f, -162.024f, 63.614f };
+			Var6.f_3 = { 0f, 0f, 160f };
 			break;
 		
 		case 1:
 			Var0 = { -968.2812f, -1432.9247f, 8.1858f };
 			Var0.f_3 = { 0f, 0f, 70f };
-			Var1 = { -968.944f, -1433.234f, 6.673f };
-			Var1.f_3 = { 0f, 0f, -160f };
+			Var6 = { -968.944f, -1433.234f, 6.673f };
+			Var6.f_3 = { 0f, 0f, -160f };
 			break;
 		
 		case 2:
 			Var0 = { -778.8333f, 313.5024f, 86.1362f };
 			Var0.f_3 = { 0f, 0f, 0f };
-			Var1 = { -778.727f, 312.728f, 84.693f };
-			Var1.f_3 = { 0f, 0f, -90f };
+			Var6 = { -778.727f, 312.728f, 84.693f };
+			Var6.f_3 = { 0f, 0f, -90f };
 			break;
 		
 		case 3:
 			Var0 = { -980.7506f, -1447.0208f, 4.5223f };
 			Var0.f_3 = { 0f, 0f, -70f };
-			Var1 = { -980.29f, -1447.934f, 3.723f };
-			Var1.f_3 = { 0f, 0f, -70f };
+			Var6 = { -980.29f, -1447.934f, 3.723f };
+			Var6.f_3 = { 0f, 0f, -70f };
 			break;
 		
 		case 4:
 			Var0 = { 895.5656f, -889.3296f, 27.6491f };
 			Var0.f_3 = { 0f, 0f, -90f };
-			Var1 = { 894.954f, -889.428f, 26.158f };
-			Var1.f_3 = { 0f, 0f, 180f };
+			Var6 = { 894.954f, -889.428f, 26.158f };
+			Var6.f_3 = { 0f, 0f, 180f };
 			break;
 		
 		case 5:
 			Var0 = { 726.7885f, -1189.545f, 24.7175f };
 			Var0.f_3 = { 0f, 0f, 0f };
-			Var1 = { 726.857f, -1190.163f, 23.27f };
-			Var1.f_3 = { 0f, 0f, -90f };
+			Var6 = { 726.857f, -1190.163f, 23.27f };
+			Var6.f_3 = { 0f, 0f, -90f };
 			break;
 		
 		case 6:
 			Var0 = { -833.9494f, -862.6305f, 21.2407f };
 			Var0.f_3 = { 0f, 0f, 90f };
-			Var1 = { -833.335f, -862.65f, 19.682f };
-			Var1.f_3 = { 0f, 0f, 0f };
+			Var6 = { -833.335f, -862.65f, 19.682f };
+			Var6.f_3 = { 0f, 0f, 0f };
 			break;
 	}
-	Var2 = { Param0 };
-	Var2.f_3 = { Param1 };
-	func_14(Var0, Var1, Var2, uParam2);
+	Var12 = { Param0 };
+	Var12.f_3 = { Param3 };
+	func_14(Var0, Var6, Var12, uParam6);
 }
 
-void func_14(struct<4> Param0, var uParam1, var uParam2, struct<6> Param3, struct<4> Param4, var uParam5, var uParam6, var uParam7)//Position - 0x5563
+void func_14(struct<4> Param0, var uParam4, var uParam5, struct<6> Param6, struct<4> Param12, var uParam16, var uParam17, var uParam18)//Position - 0x5563
 {
 	struct<3> Var0;
 	
-	*uParam7 = { Param3 };
-	Var0 = { *uParam7 - Param0 };
+	*uParam18 = { Param6 };
+	Var0 = { *uParam18 - Param0 };
 	Var0 = { func_4(Var0, -Param0.f_3.f_2) };
-	Var0 = { func_4(Var0, Param4.f_3.f_2) };
-	*uParam7 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Param4, 0f, Var0) };
-	if (!func_15(Param4.f_3, Param0.f_3, 0))
+	Var0 = { func_4(Var0, Param12.f_3.f_2) };
+	*uParam18 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Param12, 0f, Var0) };
+	if (!func_15(Param12.f_3, Param0.f_3, 0))
 	{
 		while (Param0.f_3.f_2 > 180f)
 		{
@@ -2718,40 +2718,40 @@ void func_14(struct<4> Param0, var uParam1, var uParam2, struct<6> Param3, struc
 		{
 			Param0.f_3.f_2 = (Param0.f_3.f_2 + 360f);
 		}
-		while (Param4.f_3.f_2 > 180f)
+		while (Param12.f_3.f_2 > 180f)
 		{
-			Param4.f_3.f_2 = (Param4.f_3.f_2 - 360f);
+			Param12.f_3.f_2 = (Param12.f_3.f_2 - 360f);
 		}
-		while (Param4.f_3.f_2 < -180f)
+		while (Param12.f_3.f_2 < -180f)
 		{
-			Param4.f_3.f_2 = (Param4.f_3.f_2 + 360f);
+			Param12.f_3.f_2 = (Param12.f_3.f_2 + 360f);
 		}
-		uParam7->f_3.f_2 = (uParam7->f_3.f_2 + (Param4.f_3.f_2 - Param0.f_3.f_2));
-		while (uParam7->f_3.f_2 > 180f)
+		uParam18->f_3.f_2 = (uParam18->f_3.f_2 + (Param12.f_3.f_2 - Param0.f_3.f_2));
+		while (uParam18->f_3.f_2 > 180f)
 		{
-			uParam7->f_3.f_2 = (uParam7->f_3.f_2 - 360f);
+			uParam18->f_3.f_2 = (uParam18->f_3.f_2 - 360f);
 		}
-		while (uParam7->f_3.f_2 < -180f)
+		while (uParam18->f_3.f_2 < -180f)
 		{
-			uParam7->f_3.f_2 = (uParam7->f_3.f_2 + 360f);
+			uParam18->f_3.f_2 = (uParam18->f_3.f_2 + 360f);
 		}
 	}
 }
 
-bool func_15(struct<3> Param0, struct<3> Param1, bool bParam2)//Position - 0x56BD
+bool func_15(struct<3> Param0, struct<3> Param3, bool bParam6)//Position - 0x56BD
 {
-	if (bParam2)
+	if (bParam6)
 	{
-		return (Param0.f_0 == Param1.f_0 && Param0.f_1 == Param1.f_1);
+		return (Param0.f_0 == Param3.f_0 && Param0.f_1 == Param3.f_1);
 	}
-	return ((Param0.f_0 == Param1.f_0 && Param0.f_1 == Param1.f_1) && Param0.f_2 == Param1.f_2);
+	return ((Param0.f_0 == Param3.f_0 && Param0.f_1 == Param3.f_1) && Param0.f_2 == Param3.f_2);
 }
 
 void func_16()//Position - 0x5704
 {
 	int iVar0;
 	struct<4> Var1;
-	struct<16> Var2;
+	struct<16> Var7;
 	
 	iVar0 = 0;
 	while (iVar0 < 42)
@@ -2807,9 +2807,9 @@ void func_16()//Position - 0x5704
 	iVar0 = 0;
 	while (iVar0 < 42)
 	{
-		MemCopy(&Var2, {Global_4280768[iVar0 /*45*/].f_15[0 /*8*/]}, 16);
-		StringConCat(&Var2, "_int", 64);
-		MemCopy(&(Global_4280768[iVar0 /*45*/].f_15[1 /*8*/]), {Var2}, 8);
+		MemCopy(&Var7, {Global_4280768[iVar0 /*45*/].f_15[0 /*8*/]}, 16);
+		StringConCat(&Var7, "_int", 64);
+		MemCopy(&(Global_4280768[iVar0 /*45*/].f_15[1 /*8*/]), {Var7}, 8);
 		iVar0++;
 	}
 	Global_4280768[0 /*45*/].f_32[0 /*4*/] = { -3215.5286f, 1337.0327f, 1.2217f };

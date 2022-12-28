@@ -46,7 +46,7 @@ void __EntryFunction__()//Position - 0x0
 void func_1()//Position - 0x4F
 {
 	struct<3> Var0;
-	int iVar1;
+	int iVar3;
 	
 	while (!func_9(&iLocal_20))
 	{
@@ -63,7 +63,7 @@ void func_1()//Position - 0x4F
 			}
 			Var0 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false) };
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iLocal_20, true);
-			TASK::OPEN_SEQUENCE_TASK(&iVar1);
+			TASK::OPEN_SEQUENCE_TASK(&iVar3);
 			if (!PED::IS_PED_IN_ANY_VEHICLE(iLocal_20, false))
 			{
 				if (!PED::IS_PED_IN_COMBAT(iLocal_20, 0) && !PED::IS_PED_IN_ANY_VEHICLE(iLocal_20, false))
@@ -72,8 +72,8 @@ void func_1()//Position - 0x4F
 				}
 			}
 			TASK::TASK_LOOK_AT_COORD(0, Var0, 6000, 0, 2);
-			TASK::CLOSE_SEQUENCE_TASK(iVar1);
-			TASK::TASK_PERFORM_SEQUENCE(iLocal_20, iVar1);
+			TASK::CLOSE_SEQUENCE_TASK(iVar3);
+			TASK::TASK_PERFORM_SEQUENCE(iLocal_20, iVar3);
 		}
 		func_2(iLocal_20);
 	}

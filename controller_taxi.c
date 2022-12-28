@@ -83,8 +83,6 @@
 	var uLocal_81 = 0;
 	var uLocal_82 = 0;
 	struct<3> Local_83 = { 0, 0, 0 } ;
-	var uLocal_84 = 0;
-	var uLocal_85 = 0;
 	var uLocal_86 = 0;
 	var uLocal_87 = 0;
 	var uLocal_88 = 0;
@@ -95,35 +93,33 @@
 	var uLocal_93 = 0;
 	var uLocal_94 = 0;
 	var uLocal_95 = 0;
-	int iLocal_96 = 0;
-	struct<3> Local_97 = { 0, 0, 0 } ;
-	var uLocal_98 = 0;
-	var uLocal_99 = 0;
-	var uLocal_100 = 0;
-	int iLocal_101 = 0;
-	int iLocal_102 = 0;
-	int iLocal_103 = 0;
-	int iLocal_104 = 0;
+	var uLocal_96 = 0;
+	var uLocal_97 = 0;
+	int iLocal_98 = 0;
+	struct<3> Local_99 = { 0, 0, 0 } ;
+	var uLocal_102 = 0;
+	var uLocal_103 = 0;
+	var uLocal_104 = 0;
 	int iLocal_105 = 0;
 	int iLocal_106 = 0;
-	float fLocal_107 = 0f;
+	int iLocal_107 = 0;
 	int iLocal_108 = 0;
 	int iLocal_109 = 0;
-	bool bLocal_110 = 0;
-	int iLocal_111 = 0;
+	int iLocal_110 = 0;
+	float fLocal_111 = 0f;
 	int iLocal_112 = 0;
 	int iLocal_113 = 0;
-	int* iLocal_114 = NULL;
-	var uLocal_115 = 0;
-	var uLocal_116 = 0;
-	int* iLocal_117 = NULL;
-	var uLocal_118 = 0;
+	bool bLocal_114 = 0;
+	int iLocal_115 = 0;
+	int iLocal_116 = 0;
+	int iLocal_117 = 0;
+	int* iLocal_118 = NULL;
 	var uLocal_119 = 0;
-	var uLocal_120 = 16;
-	var uLocal_121 = 0;
+	var uLocal_120 = 0;
+	int* iLocal_121 = NULL;
 	var uLocal_122 = 0;
 	var uLocal_123 = 0;
-	var uLocal_124 = 0;
+	var uLocal_124 = 16;
 	var uLocal_125 = 0;
 	var uLocal_126 = 0;
 	var uLocal_127 = 0;
@@ -284,6 +280,10 @@
 	var uLocal_282 = 0;
 	var uLocal_283 = 0;
 	var uLocal_284 = 0;
+	var uLocal_285 = 0;
+	var uLocal_286 = 0;
+	var uLocal_287 = 0;
+	var uLocal_288 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -295,7 +295,7 @@ void __EntryFunction__()//Position - 0x0
 	int iVar4;
 	int iVar5;
 	struct<3> Var6;
-	struct<3> Var7;
+	struct<3> Var12;
 	
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -324,9 +324,9 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_77 = HUD::GET_STANDARD_BLIP_ENUM_ID();
 	iLocal_78 = HUD::GET_WAYPOINT_BLIP_ENUM_ID();
 	Local_83 = { 500f, 500f, 500f };
-	iLocal_104 = -1;
-	fLocal_107 = 0f;
-	iLocal_113 = 1;
+	iLocal_108 = -1;
+	fLocal_111 = 0f;
+	iLocal_117 = 1;
 	bVar0 = false;
 	iVar1 = 0;
 	func_92(&(Global_113648.f_19099), 4);
@@ -348,7 +348,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			if (func_88(9))
 			{
-				func_87(&iLocal_114);
+				func_87(&iLocal_118);
 				iVar1 = 1;
 			}
 		}
@@ -365,9 +365,9 @@ void __EntryFunction__()//Position - 0x0
 						{
 							func_82(&(Global_113648.f_19099), 64);
 						}
-						func_81(&uLocal_120);
+						func_81(&uLocal_124);
 						iVar1 = 1;
-						func_79(&iLocal_114);
+						func_79(&iLocal_118);
 					}
 				}
 				iVar2 = 100;
@@ -376,7 +376,7 @@ void __EntryFunction__()//Position - 0x0
 			case 1:
 				if (func_78(1))
 				{
-					iLocal_105 = MISC::GET_GAME_TIMER();
+					iLocal_109 = MISC::GET_GAME_TIMER();
 				}
 				if (!func_77() && !Global_97609)
 				{
@@ -387,7 +387,7 @@ void __EntryFunction__()//Position - 0x0
 							func_73();
 							if (func_72())
 							{
-								if (!iLocal_109)
+								if (!iLocal_113)
 								{
 									if (func_70() == 2)
 									{
@@ -409,13 +409,13 @@ void __EntryFunction__()//Position - 0x0
 									{
 										func_92(&(Global_113648.f_19099), 1);
 									}
-									iLocal_109 = 1;
+									iLocal_113 = 1;
 								}
 								if (PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID()) != 0)
 								{
-									iLocal_102 = 0;
+									iLocal_106 = 0;
 								}
-								else if (bLocal_110)
+								else if (bLocal_114)
 								{
 									if (!func_84(Global_113648.f_19099, 16384))
 									{
@@ -433,7 +433,7 @@ void __EntryFunction__()//Position - 0x0
 								}
 								else if (!func_84(Global_113648.f_19099, 16))
 								{
-									if (!iLocal_112)
+									if (!iLocal_116)
 									{
 										switch (func_69("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */))
 										{
@@ -442,8 +442,8 @@ void __EntryFunction__()//Position - 0x0
 												break;
 											
 											case 1:
-												iLocal_106 = MISC::GET_GAME_TIMER();
-												iLocal_112 = 1;
+												iLocal_110 = MISC::GET_GAME_TIMER();
+												iLocal_116 = 1;
 												if (func_66("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */))
 												{
 													Global_113648.f_19099.f_22[15]++;
@@ -456,33 +456,33 @@ void __EntryFunction__()//Position - 0x0
 											}
 										}
 								}
-								if (HUD::DOES_BLIP_EXIST(iLocal_101))
+								if (HUD::DOES_BLIP_EXIST(iLocal_105))
 								{
-									HUD::REMOVE_BLIP(&iLocal_101);
+									HUD::REMOVE_BLIP(&iLocal_105);
 								}
-								switch (iLocal_102)
+								switch (iLocal_106)
 								{
 									case 0:
 										if (func_70() == 0)
 										{
-											if (!func_65(&iLocal_114))
+											if (!func_65(&iLocal_118))
 											{
-												func_64(&iLocal_114);
+												func_64(&iLocal_118);
 											}
-											if (func_65(&iLocal_117))
+											if (func_65(&iLocal_121))
 											{
-												func_87(&iLocal_117);
+												func_87(&iLocal_121);
 											}
-											if (func_61(&iLocal_114) > 20f)
+											if (func_61(&iLocal_118) > 20f)
 											{
 												if (!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && func_60())
 												{
-													iLocal_103 = 9;
-													StringCopy(&Local_97, "Taxi_Procedural", 24);
-													func_59(&uLocal_120, 8, 0, "TaxiDispatch", 0, 1);
-													func_58(&uLocal_120, "OJTXAUD", "OJTX_PRO_OFF", 2, 0, 0, 0);
-													func_79(&iLocal_114);
-													iLocal_102 = 1;
+													iLocal_107 = 9;
+													StringCopy(&Local_99, "Taxi_Procedural", 24);
+													func_59(&uLocal_124, 8, 0, "TaxiDispatch", 0, 1);
+													func_58(&uLocal_124, "OJTXAUD", "OJTX_PRO_OFF", 2, 0, 0, 0);
+													func_79(&iLocal_118);
+													iLocal_106 = 1;
 												}
 												else if (!func_60())
 												{
@@ -495,11 +495,11 @@ void __EntryFunction__()//Position - 0x0
 										break;
 									
 									case 1:
-										if (!func_65(&iLocal_114))
+										if (!func_65(&iLocal_118))
 										{
-											func_64(&iLocal_114);
+											func_64(&iLocal_118);
 										}
-										if (func_61(&iLocal_114) >= 6f)
+										if (func_61(&iLocal_118) >= 6f)
 										{
 											switch (func_69("TC_JOBOFFERED" /* GXT: ~s~Taxi job offered. To accept, press ~INPUT_VEH_HORN~~s~ */))
 											{
@@ -508,9 +508,9 @@ void __EntryFunction__()//Position - 0x0
 													break;
 												
 												case 1:
-													iLocal_108 = 1;
-													func_79(&iLocal_114);
-													iLocal_102 = 2;
+													iLocal_112 = 1;
+													func_79(&iLocal_118);
+													iLocal_106 = 2;
 													break;
 											}
 											if ((MISC::GET_GAME_TIMER() % 1000) < 50)
@@ -520,53 +520,53 @@ void __EntryFunction__()//Position - 0x0
 										break;
 									
 									case 2:
-										if (!func_65(&iLocal_114))
+										if (!func_65(&iLocal_118))
 										{
-											func_64(&iLocal_114);
+											func_64(&iLocal_118);
 										}
-										if (func_61(&iLocal_114) > 15f)
+										if (func_61(&iLocal_118) > 15f)
 										{
 											if (!func_84(Global_113648.f_19099, 32))
 											{
 												func_57("TC_MISSEDJOB" /* GXT: ~s~The taxi job you were offered has expired. There is only a short time to accept before another driver takes the job. However, more jobs can be accessed by pressing ~INPUT_VEH_HORN~~s~ */, -1);
 												func_82(&(Global_113648.f_19099), 32);
 											}
-											fLocal_107 = (MISC::GET_RANDOM_FLOAT_IN_RANGE(10f, 40f) + func_61(&iLocal_114));
-											iLocal_102 = 3;
+											fLocal_111 = (MISC::GET_RANDOM_FLOAT_IN_RANGE(10f, 40f) + func_61(&iLocal_118));
+											iLocal_106 = 3;
 										}
-										else if (iLocal_108)
+										else if (iLocal_112)
 										{
-											if (func_61(&iLocal_114) > 6f)
+											if (func_61(&iLocal_118) > 6f)
 											{
-												iLocal_108 = 0;
+												iLocal_112 = 0;
 												HUD::CLEAR_HELP(true);
 											}
 										}
 										break;
 									
 									case 3:
-										if (!func_65(&iLocal_114))
+										if (!func_65(&iLocal_118))
 										{
-											func_64(&iLocal_114);
+											func_64(&iLocal_118);
 										}
-										if (func_61(&iLocal_114) > fLocal_107)
+										if (func_61(&iLocal_118) > fLocal_111)
 										{
-											func_87(&iLocal_114);
-											iLocal_102 = 0;
+											func_87(&iLocal_118);
+											iLocal_106 = 0;
 										}
 										break;
 								}
-								if (((PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 86 /*INPUT_VEH_HORN*/) && !ENTITY::IS_ENTITY_UPSIDEDOWN(PLAYER::PLAYER_PED_ID())) && !Global_32316) && (MISC::GET_GAME_TIMER() - iLocal_105) > 3000)
+								if (((PAD::IS_CONTROL_PRESSED(0 /*PLAYER_CONTROL*/, 86 /*INPUT_VEH_HORN*/) && !ENTITY::IS_ENTITY_UPSIDEDOWN(PLAYER::PLAYER_PED_ID())) && !Global_32316) && (MISC::GET_GAME_TIMER() - iLocal_109) > 3000)
 								{
 									iVar4 = func_70();
 									if (iVar4 == 0)
 									{
-										if (iLocal_102 == 0 || iLocal_102 == 3)
+										if (iLocal_106 == 0 || iLocal_106 == 3)
 										{
-											func_81(&uLocal_120);
-											iLocal_103 = 9;
-											func_35(iLocal_103, &Local_97, &uLocal_120, 0);
-											iLocal_111 = 1;
+											func_81(&uLocal_124);
+											iLocal_107 = 9;
+											func_35(iLocal_107, &Local_99, &uLocal_124, 0);
+											iLocal_115 = 1;
 											iVar1 = 4;
 										}
 										else
@@ -579,8 +579,8 @@ void __EntryFunction__()//Position - 0x0
 											}
 											iVar1 = 4;
 										}
-										SCRIPT::REQUEST_SCRIPT(&Local_97);
-										func_87(&iLocal_114);
+										SCRIPT::REQUEST_SCRIPT(&Local_99);
+										func_87(&iLocal_118);
 										iVar2 = 0;
 									}
 									else if (iVar4 == 2)
@@ -608,21 +608,21 @@ void __EntryFunction__()//Position - 0x0
 							}
 							else
 							{
-								if (!func_65(&iLocal_117))
+								if (!func_65(&iLocal_121))
 								{
-									func_64(&iLocal_117);
+									func_64(&iLocal_121);
 								}
 								else
 								{
-									if (func_61(&iLocal_117) < 10f)
+									if (func_61(&iLocal_121) < 10f)
 									{
 										if ((MISC::GET_GAME_TIMER() % 1000) < 50)
 										{
 										}
 									}
-									if (func_61(&iLocal_117) > 10f && iLocal_102 != 0)
+									if (func_61(&iLocal_121) > 10f && iLocal_106 != 0)
 									{
-										iLocal_102 = 0;
+										iLocal_106 = 0;
 									}
 								}
 								if (func_34("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */))
@@ -641,23 +641,23 @@ void __EntryFunction__()//Position - 0x0
 								{
 									func_30("TC_ANOTHERJOB" /* GXT: ~s~For another taxi job, press ~INPUT_VEH_HORN~ */, 1);
 								}
-								if (((MISC::GET_GAME_TIMER() - iLocal_106) > 60000 && !func_66("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */)) && iLocal_112)
+								if (((MISC::GET_GAME_TIMER() - iLocal_110) > 60000 && !func_66("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */)) && iLocal_116)
 								{
-									iLocal_112 = 0;
+									iLocal_116 = 0;
 								}
-								if (bLocal_110)
+								if (bLocal_114)
 								{
-									bLocal_110 = false;
+									bLocal_114 = false;
 								}
-								iLocal_109 = 0;
-								func_87(&iLocal_114);
+								iLocal_113 = 0;
+								func_87(&iLocal_118);
 							}
 						}
 					}
 				}
 				else if (PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID()) != 0)
 				{
-					iLocal_102 = 0;
+					iLocal_106 = 0;
 				}
 				break;
 			
@@ -666,13 +666,13 @@ void __EntryFunction__()//Position - 0x0
 				{
 					AUDIO::SET_HORN_ENABLED(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false), true);
 				}
-				if (SCRIPT::HAS_SCRIPT_LOADED(&Local_97))
+				if (SCRIPT::HAS_SCRIPT_LOADED(&Local_99))
 				{
-					iVar5 = func_26(&iLocal_104, 2, 9, 0, 0);
+					iVar5 = func_26(&iLocal_108, 2, 9, 0, 0);
 					if (iVar5 == 1)
 					{
 						Global_112703 = 1;
-						if (iLocal_111)
+						if (iLocal_115)
 						{
 							iVar1 = 5;
 						}
@@ -684,12 +684,12 @@ void __EntryFunction__()//Position - 0x0
 					}
 					else if (iVar5 == 0)
 					{
-						iLocal_102 = 0;
+						iLocal_106 = 0;
 						iVar1 = 11;
 					}
 					else
 					{
-						func_25("PROCESS_TAXI_DBG_SKIP = Scene is loading.", &iLocal_113, 1000);
+						func_25("PROCESS_TAXI_DBG_SKIP = Scene is loading.", &iLocal_117, 1000);
 					}
 				}
 				break;
@@ -697,14 +697,14 @@ void __EntryFunction__()//Position - 0x0
 			case 5:
 				StringCopy(&Var6, "OJTX_PLRDE1", 24);
 				func_24(&Var6, 1);
-				func_58(&uLocal_120, "OJTXAUD", &Var6, 8, 0, 0, 0);
+				func_58(&uLocal_124, "OJTXAUD", &Var6, 8, 0, 0, 0);
 				iVar1 = 6;
 				break;
 			
 			case 6:
 				if (!func_23())
 				{
-					func_58(&uLocal_120, "OJTXAUD", "OJTX_DIS_JOB", 8, 0, 0, 0);
+					func_58(&uLocal_124, "OJTXAUD", "OJTX_DIS_JOB", 8, 0, 0, 0);
 					iVar1 = 7;
 				}
 				break;
@@ -712,10 +712,10 @@ void __EntryFunction__()//Position - 0x0
 			case 7:
 				if (!func_23())
 				{
-					StringCopy(&Var7, "OJTX_ACCEPT", 24);
-					func_24(&Var7, 1);
-					func_81(&uLocal_120);
-					func_58(&uLocal_120, "OJTXAUD", &Var7, 8, 0, 0, 0);
+					StringCopy(&Var12, "OJTX_ACCEPT", 24);
+					func_24(&Var12, 1);
+					func_81(&uLocal_124);
+					func_58(&uLocal_124, "OJTXAUD", &Var12, 8, 0, 0, 0);
 					iVar1 = 8;
 				}
 				break;
@@ -725,23 +725,23 @@ void __EntryFunction__()//Position - 0x0
 				{
 					if (!func_23())
 					{
-						bLocal_110 = false;
+						bLocal_114 = false;
 						if (func_34("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */))
 						{
 							func_30("TC_HOWTOSTART" /* GXT: ~s~While driving a taxi, become available for jobs by pressing ~INPUT_VEH_HORN~ */, 1);
 						}
-						iLocal_96 = SYSTEM::START_NEW_SCRIPT(&Local_97, 54000);
-						SCRIPT::SET_SCRIPT_AS_NO_LONGER_NEEDED(&Local_97);
+						iLocal_98 = SYSTEM::START_NEW_SCRIPT(&Local_99, 54000);
+						SCRIPT::SET_SCRIPT_AS_NO_LONGER_NEEDED(&Local_99);
 						if (!func_84(Global_113648.f_19099, 4))
 						{
 							func_82(&(Global_113648.f_19099), 4);
 							VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(func_22(), true);
 						}
 						func_82(&(Global_113648.f_19099), 256);
-						StringCopy(&Local_97, "", 24);
-						iLocal_111 = 0;
+						StringCopy(&Local_99, "", 24);
+						iLocal_115 = 0;
 						iVar1 = 10;
-						iLocal_102 = 0;
+						iLocal_106 = 0;
 					}
 				}
 				else
@@ -750,18 +750,18 @@ void __EntryFunction__()//Position - 0x0
 					{
 						func_20();
 					}
-					bLocal_110 = false;
-					iLocal_111 = 0;
-					SCRIPT::SET_SCRIPT_AS_NO_LONGER_NEEDED(&Local_97);
+					bLocal_114 = false;
+					iLocal_115 = 0;
+					SCRIPT::SET_SCRIPT_AS_NO_LONGER_NEEDED(&Local_99);
 					func_82(&(Global_113648.f_19099), 256);
-					StringCopy(&Local_97, "", 24);
-					iLocal_102 = 0;
+					StringCopy(&Local_99, "", 24);
+					iLocal_106 = 0;
 					iVar1 = 10;
 				}
 				break;
 			
 			case 10:
-				if (!SCRIPT::IS_THREAD_ACTIVE(iLocal_96))
+				if (!SCRIPT::IS_THREAD_ACTIVE(iLocal_98))
 				{
 					func_92(&(Global_113648.f_19099), 2048);
 					if (func_84(Global_113648.f_19099, 4))
@@ -770,16 +770,16 @@ void __EntryFunction__()//Position - 0x0
 						VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(func_22(), false);
 					}
 					Global_112703 = 0;
-					iLocal_103 = -1;
+					iLocal_107 = -1;
 					iVar1 = 11;
 					iVar2 = 0;
 				}
 				else if (func_84(Global_113648.f_19099, 1024))
 				{
 					func_92(&(Global_113648.f_19099), 1024);
-					func_13(func_19(iLocal_103), 0, 0);
-					bLocal_110 = true;
-					func_11(iLocal_103, bLocal_110);
+					func_13(func_19(iLocal_107), 0, 0);
+					bLocal_114 = true;
+					func_11(iLocal_107, bLocal_114);
 					func_10(1, 0);
 					func_7();
 				}
@@ -789,25 +789,25 @@ void __EntryFunction__()//Position - 0x0
 				if (func_84(Global_113648.f_19099, 256))
 				{
 					func_92(&(Global_113648.f_19099), 256);
-					func_6(&iLocal_104);
+					func_6(&iLocal_108);
 				}
-				iLocal_104 = -1;
+				iLocal_108 = -1;
 				if (!func_5())
 				{
 					func_10(0, 0);
 					func_2();
-					StringCopy(&Local_97, "", 24);
-					if (iLocal_96 != 0)
+					StringCopy(&Local_99, "", 24);
+					if (iLocal_98 != 0)
 					{
-						if (SCRIPT::IS_THREAD_ACTIVE(iLocal_96))
+						if (SCRIPT::IS_THREAD_ACTIVE(iLocal_98))
 						{
-							SCRIPT::TERMINATE_THREAD(iLocal_96);
-							iLocal_96 = 0;
+							SCRIPT::TERMINATE_THREAD(iLocal_98);
+							iLocal_98 = 0;
 						}
 					}
-					func_87(&iLocal_114);
+					func_87(&iLocal_118);
 					func_1(0);
-					iLocal_102 = 0;
+					iLocal_106 = 0;
 					iVar1 = 1;
 					iVar2 = 0;
 				}
@@ -1734,7 +1734,7 @@ int func_34(char* sParam0)//Position - 0x1A82
 void func_35(int iParam0, char* sParam1, var uParam2, bool bParam3)//Position - 0x1ABD
 {
 	struct<6> Var0;
-	char cVar1[24];
+	char cVar6[24];
 	
 	if (iParam0 == 0)
 	{
@@ -1779,10 +1779,10 @@ void func_35(int iParam0, char* sParam1, var uParam2, bool bParam3)//Position - 
 	if (bParam3)
 	{
 		StringCopy(&Var0, func_56(iParam0), 24);
-		cVar1 = { Var0 };
-		StringConCat(&cVar1, "_1", 24);
+		cVar6 = { Var0 };
+		StringConCat(&cVar6, "_1", 24);
 		func_81(uParam2);
-		func_36(uParam2, "OJTXAUD", &Var0, &cVar1, 8, 0, 0);
+		func_36(uParam2, "OJTXAUD", &Var0, &cVar6, 8, 0, 0);
 	}
 }
 
@@ -2978,23 +2978,23 @@ void func_91()//Position - 0x2F60
 	if (func_84(Global_113648.f_19099, 256))
 	{
 		func_92(&(Global_113648.f_19099), 256);
-		func_6(&iLocal_104);
+		func_6(&iLocal_108);
 	}
-	if (iLocal_96 != 0)
+	if (iLocal_98 != 0)
 	{
-		if (SCRIPT::IS_THREAD_ACTIVE(iLocal_96))
+		if (SCRIPT::IS_THREAD_ACTIVE(iLocal_98))
 		{
-			SCRIPT::TERMINATE_THREAD(iLocal_96);
-			iLocal_96 = 0;
+			SCRIPT::TERMINATE_THREAD(iLocal_98);
+			iLocal_98 = 0;
 		}
 	}
-	if (HUD::GET_LENGTH_OF_LITERAL_STRING(&Local_97) != 0)
+	if (HUD::GET_LENGTH_OF_LITERAL_STRING(&Local_99) != 0)
 	{
-		SCRIPT::SET_SCRIPT_AS_NO_LONGER_NEEDED(&Local_97);
+		SCRIPT::SET_SCRIPT_AS_NO_LONGER_NEEDED(&Local_99);
 	}
-	if (HUD::DOES_BLIP_EXIST(iLocal_101))
+	if (HUD::DOES_BLIP_EXIST(iLocal_105))
 	{
-		HUD::REMOVE_BLIP(&iLocal_101);
+		HUD::REMOVE_BLIP(&iLocal_105);
 	}
 	SCRIPT::TERMINATE_THIS_THREAD();
 }

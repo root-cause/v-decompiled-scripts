@@ -11,26 +11,26 @@ void __EntryFunction__()//Position - 0x0
 	{
 		func_1();
 	}
-	if (ENTITY::DOES_ENTITY_EXIST(iScriptParam_3))
+	if (ENTITY::DOES_ENTITY_EXIST(iScriptParam_0))
 	{
-		ENTITY::FREEZE_ENTITY_POSITION(iScriptParam_3, true);
+		ENTITY::FREEZE_ENTITY_POSITION(iScriptParam_0, true);
 	}
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if (ENTITY::DOES_ENTITY_EXIST(iScriptParam_3))
+		if (ENTITY::DOES_ENTITY_EXIST(iScriptParam_0))
 		{
-			if (BRAIN::IS_OBJECT_WITHIN_BRAIN_ACTIVATION_RANGE(iScriptParam_3))
+			if (BRAIN::IS_OBJECT_WITHIN_BRAIN_ACTIVATION_RANGE(iScriptParam_0))
 			{
 				switch (iLocal_2)
 				{
 					case 0:
-						if (ENTITY::DOES_ENTITY_HAVE_DRAWABLE(iScriptParam_3))
+						if (ENTITY::DOES_ENTITY_HAVE_DRAWABLE(iScriptParam_0))
 						{
 							STREAMING::REQUEST_ANIM_DICT("map_objects");
 							if (STREAMING::HAS_ANIM_DICT_LOADED("map_objects"))
 							{
-								ENTITY::PLAY_ENTITY_ANIM(iScriptParam_3, "airdancer_test", "map_objects", 1f, true, false, false, 0f, 0);
+								ENTITY::PLAY_ENTITY_ANIM(iScriptParam_0, "airdancer_test", "map_objects", 1f, true, false, false, 0f, 0);
 								iLocal_2 = 1;
 							}
 						}

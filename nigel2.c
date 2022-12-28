@@ -34,21 +34,19 @@
 	char* sLocal_32 = NULL;
 	float fLocal_33 = 0f;
 	struct<3> Local_34 = { 0, 0, 0 } ;
-	float fLocal_35 = 0f;
-	float fLocal_36 = 0f;
-	var uLocal_37 = 0;
-	var uLocal_38 = 0;
+	float fLocal_37 = 0f;
+	float fLocal_38 = 0f;
 	var uLocal_39 = 0;
-	float fLocal_40 = 0f;
-	float fLocal_41 = 0f;
+	var uLocal_40 = 0;
+	var uLocal_41 = 0;
 	float fLocal_42 = 0f;
-	var uLocal_43 = 0;
-	var uLocal_44 = 0;
-	int iLocal_45 = 0;
-	int iLocal_46 = 0;
-	var uLocal_47 = 10;
-	var uLocal_48 = 0;
-	var uLocal_49 = 0;
+	float fLocal_43 = 0f;
+	float fLocal_44 = 0f;
+	var uLocal_45 = 0;
+	var uLocal_46 = 0;
+	int iLocal_47 = 0;
+	int iLocal_48 = 0;
+	var uLocal_49 = 10;
 	var uLocal_50 = 0;
 	var uLocal_51 = 0;
 	var uLocal_52 = 0;
@@ -91,10 +89,10 @@
 	var uLocal_89 = 0;
 	var uLocal_90 = 0;
 	var uLocal_91 = 0;
-	int iLocal_92 = 0;
-	int iLocal_93 = 0;
-	var uLocal_94 = 0;
-	var uLocal_95 = 0;
+	var uLocal_92 = 0;
+	var uLocal_93 = 0;
+	int iLocal_94 = 0;
+	int iLocal_95 = 0;
 	var uLocal_96 = 0;
 	var uLocal_97 = 0;
 	var uLocal_98 = 0;
@@ -108,41 +106,41 @@
 	var uLocal_106 = 0;
 	var uLocal_107 = 0;
 	var uLocal_108 = 0;
-	int iLocal_109 = 0;
-	int iLocal_110 = 0;
+	var uLocal_109 = 0;
+	var uLocal_110 = 0;
 	int iLocal_111 = 0;
 	int iLocal_112 = 0;
-	var uLocal_113 = 0;
-	var uLocal_114 = 0;
+	int iLocal_113 = 0;
+	int iLocal_114 = 0;
 	var uLocal_115 = 0;
-	int iLocal_116 = 0;
-	int iLocal_117 = 0;
+	var uLocal_116 = 0;
+	var uLocal_117 = 0;
 	int iLocal_118 = 0;
 	int iLocal_119 = 0;
-	bool bLocal_120 = 0;
-	bool bLocal_121 = 0;
+	int iLocal_120 = 0;
+	int iLocal_121 = 0;
 	bool bLocal_122 = 0;
 	bool bLocal_123 = 0;
 	bool bLocal_124 = 0;
-	int iLocal_125 = 0;
-	int iLocal_126 = 0;
-	bool bLocal_127 = 0;
-	bool bLocal_128 = 0;
-	int iLocal_129 = 0;
+	bool bLocal_125 = 0;
+	bool bLocal_126 = 0;
+	int iLocal_127 = 0;
+	int iLocal_128 = 0;
+	bool bLocal_129 = 0;
 	bool bLocal_130 = 0;
-	bool bLocal_131 = 0;
-	int iLocal_132 = 0;
-	int iLocal_133 = 0;
+	int iLocal_131 = 0;
+	bool bLocal_132 = 0;
+	bool bLocal_133 = 0;
 	int iLocal_134 = 0;
 	int iLocal_135 = 0;
-	bool bLocal_136 = 0;
-	bool bLocal_137 = 0;
+	int iLocal_136 = 0;
+	int iLocal_137 = 0;
 	bool bLocal_138 = 0;
-	int iLocal_139 = 0;
+	bool bLocal_139 = 0;
 	bool bLocal_140 = 0;
 	int iLocal_141 = 0;
 	bool bLocal_142 = 0;
-	bool bLocal_143 = 0;
+	int iLocal_143 = 0;
 	bool bLocal_144 = 0;
 	bool bLocal_145 = 0;
 	bool bLocal_146 = 0;
@@ -151,407 +149,409 @@
 	bool bLocal_149 = 0;
 	bool bLocal_150 = 0;
 	bool bLocal_151 = 0;
-	float fLocal_152[85] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
-	float fLocal_153[85] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
+	bool bLocal_152 = 0;
+	bool bLocal_153 = 0;
 	float fLocal_154[85] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
-	float fLocal_155[85] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
-	float fLocal_156[85] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
-	float fLocal_157 = 0f;
-	float fLocal_158 = 0f;
-	float fLocal_159 = 0f;
-	float fLocal_160 = 0f;
-	float fLocal_161[70] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
-	float fLocal_162[70] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
-	float fLocal_163[70] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
-	float fLocal_164[70] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
-	float fLocal_165[70] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
-	float fLocal_166[70] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
-	float fLocal_167[70] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
-	float fLocal_168[70] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
-	float fLocal_169[70] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
-	float fLocal_170[70] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
-	float fLocal_171 = 0f;
-	float fLocal_172 = 0f;
-	float fLocal_173 = 0f;
-	float fLocal_174 = 0f;
-	float fLocal_175 = 0f;
-	float fLocal_176 = 0f;
-	float fLocal_177 = 0f;
-	float fLocal_178 = 0f;
-	float fLocal_179 = 0f;
-	float fLocal_180 = 0f;
-	float fLocal_181 = 0f;
-	float fLocal_182 = 0f;
-	float fLocal_183 = 0f;
-	float fLocal_184 = 0f;
-	float fLocal_185 = 0f;
-	float fLocal_186 = 0f;
-	float fLocal_187 = 0f;
-	float fLocal_188 = 0f;
-	float fLocal_189 = 0f;
-	float fLocal_190 = 0f;
-	float fLocal_191 = 0f;
-	int iLocal_192[85] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	int iLocal_193[85] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	int iLocal_194[85] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	int iLocal_195[70] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	int iLocal_196[70] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	int iLocal_197[70] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	int iLocal_198[70] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	int iLocal_199 = 0;
-	int iLocal_200 = 0;
-	int iLocal_201 = 0;
-	int iLocal_202 = 0;
-	int iLocal_203 = 0;
-	int iLocal_204 = 0;
-	int iLocal_205 = 0;
-	int iLocal_206 = 0;
-	int iLocal_207 = 0;
-	int iLocal_208 = 0;
-	int iLocal_209 = 0;
-	int iLocal_210 = 0;
-	int iLocal_211 = 0;
-	int iLocal_212 = 0;
-	int iLocal_213 = 0;
-	int iLocal_214 = 0;
-	int iLocal_215 = 0;
-	struct<3> Local_216[85];
-	struct<3> Local_217[70];
-	struct<3> Local_218[70];
-	struct<3> Local_219 = { 0, 0, 0 } ;
-	struct<3> Local_220 = { 0, 0, 0 } ;
-	struct<3> Local_221 = { 0, 0, 0 } ;
-	var uLocal_222 = 0;
-	var uLocal_223 = 0;
-	var uLocal_224 = 0;
-	var uLocal_225 = 0;
-	var uLocal_226 = 0;
-	var uLocal_227 = 0;
-	struct<3> Local_228 = { 0, 0, 0 } ;
-	struct<3> Local_229 = { 0, 0, 0 } ;
-	struct<3> Local_230 = { 0, 0, 0 } ;
-	struct<3> Local_231 = { 0, 0, 0 } ;
-	char cLocal_232[64] = "";
-	var uLocal_233 = 0;
-	var uLocal_234 = 0;
-	var uLocal_235 = 0;
-	var uLocal_236 = 0;
-	var uLocal_237 = 0;
-	var uLocal_238 = 0;
-	var uLocal_239 = 0;
-	var uLocal_240 = 0;
-	int iLocal_241 = 0;
-	int iLocal_242[85] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	int iLocal_243[70] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	int iLocal_244[70] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	int iLocal_245 = 0;
-	int iLocal_246 = 0;
-	int iLocal_247 = 0;
-	int iLocal_248[85] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	int iLocal_249[15] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	int iLocal_250[70] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	int iLocal_251[70] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	int iLocal_252[10] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	int iLocal_253 = 0;
-	int iLocal_254 = 0;
-	int iLocal_255 = 0;
-	var uLocal_256 = 15;
-	var uLocal_257 = 0;
-	var uLocal_258 = 0;
-	var uLocal_259 = 0;
-	var uLocal_260 = 0;
-	var uLocal_261 = 0;
-	var uLocal_262 = 0;
-	var uLocal_263 = 0;
-	var uLocal_264 = 0;
-	var uLocal_265 = 0;
-	var uLocal_266 = 0;
-	var uLocal_267 = 0;
-	var uLocal_268 = 0;
-	var uLocal_269 = 0;
-	var uLocal_270 = 0;
-	var uLocal_271 = 0;
-	int iLocal_272 = 0;
-	int iLocal_273 = 0;
-	int iLocal_274 = 0;
-	struct<61> Local_275 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ;
-	bool bLocal_276 = 0;
-	int iLocal_277 = 0;
-	int iLocal_278[7] = { 0, 0, 0, 0, 0, 0, 0 };
-	int iLocal_279[3] = { 0, 0, 0 };
-	int iLocal_280 = 0;
-	int iLocal_281[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
-	int iLocal_282 = 0;
-	int iLocal_283[2] = { 0, 0 };
-	int iLocal_284 = 0;
-	int iLocal_285 = 0;
-	int iLocal_286 = 0;
-	int iLocal_287 = 0;
-	int iLocal_288 = 0;
-	int iLocal_289 = 0;
-	int iLocal_290 = 0;
-	int iLocal_291 = 0;
-	int iLocal_292 = 0;
-	bool bLocal_293 = 0;
-	int iLocal_294 = 0;
-	bool bLocal_295 = 0;
-	int iLocal_296 = 0;
-	int iLocal_297 = 0;
-	bool bLocal_298 = 0;
-	int iLocal_299 = 0;
-	bool bLocal_300 = 0;
-	bool bLocal_301 = 0;
-	bool bLocal_302 = 0;
-	int iLocal_303[12] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	int iLocal_304 = 0;
-	bool bLocal_305 = 0;
-	bool bLocal_306 = 0;
-	int iLocal_307 = 0;
-	int iLocal_308 = 0;
-	int iLocal_309 = 0;
-	int iLocal_310 = 0;
-	int iLocal_311 = 0;
-	int iLocal_312 = 0;
-	int iLocal_313 = 0;
-	int iLocal_314 = 0;
-	bool bLocal_315 = 0;
-	int iLocal_316 = 0;
-	int iLocal_317 = 0;
-	int iLocal_318 = 0;
-	int iLocal_319 = 0;
-	int iLocal_320 = 0;
-	int iLocal_321 = 0;
-	int iLocal_322 = 0;
-	int iLocal_323 = 0;
-	int iLocal_324 = 0;
-	int iLocal_325 = 0;
-	int iLocal_326 = 0;
-	int iLocal_327 = 0;
-	int iLocal_328 = 0;
-	int iLocal_329 = 0;
-	int iLocal_330 = 0;
-	int iLocal_331 = 0;
-	int iLocal_332 = 0;
-	int iLocal_333 = 0;
-	int iLocal_334 = 0;
-	int iLocal_335 = 0;
-	int iLocal_336 = 0;
-	int iLocal_337 = 0;
-	int iLocal_338 = 0;
-	float fLocal_339 = 0f;
-	float fLocal_340 = 0f;
-	float fLocal_341 = 0f;
-	float fLocal_342 = 0f;
-	float fLocal_343 = 0f;
-	float fLocal_344 = 0f;
-	int iLocal_345 = 0;
-	int iLocal_346 = 0;
-	int iLocal_347 = 0;
-	int iLocal_348 = 0;
-	struct<8> Local_349 = { 0, 0, 0, 0, 0, 0, 0, 0 } ;
-	int iLocal_350 = 0;
-	int iLocal_351 = 0;
-	int iLocal_352 = 0;
-	int iLocal_353 = 0;
-	int iLocal_354 = 0;
-	int iLocal_355 = 0;
-	int iLocal_356 = 0;
-	int iLocal_357 = 0;
-	int iLocal_358[5] = { 0, 0, 0, 0, 0 };
-	char* sLocal_359 = NULL;
-	char* sLocal_360 = NULL;
-	char* sLocal_361 = NULL;
-	char* sLocal_362 = NULL;
-	char* sLocal_363 = NULL;
-	char* sLocal_364 = NULL;
-	char* sLocal_365 = NULL;
-	char* sLocal_366 = NULL;
-	var uLocal_367 = 16;
-	var uLocal_368 = 0;
-	var uLocal_369 = 0;
-	var uLocal_370 = 0;
-	var uLocal_371 = 0;
-	var uLocal_372 = 0;
-	var uLocal_373 = 0;
-	var uLocal_374 = 0;
-	var uLocal_375 = 0;
-	var uLocal_376 = 0;
-	var uLocal_377 = 0;
-	var uLocal_378 = 0;
-	var uLocal_379 = 0;
-	var uLocal_380 = 0;
-	var uLocal_381 = 0;
-	var uLocal_382 = 0;
-	var uLocal_383 = 0;
-	var uLocal_384 = 0;
-	var uLocal_385 = 0;
-	var uLocal_386 = 0;
-	var uLocal_387 = 0;
-	var uLocal_388 = 0;
-	var uLocal_389 = 0;
-	var uLocal_390 = 0;
-	var uLocal_391 = 0;
-	var uLocal_392 = 0;
-	var uLocal_393 = 0;
-	var uLocal_394 = 0;
-	var uLocal_395 = 0;
-	var uLocal_396 = 0;
-	var uLocal_397 = 0;
-	var uLocal_398 = 0;
-	var uLocal_399 = 0;
-	var uLocal_400 = 0;
-	var uLocal_401 = 0;
-	var uLocal_402 = 0;
-	var uLocal_403 = 0;
-	var uLocal_404 = 0;
-	var uLocal_405 = 0;
-	var uLocal_406 = 0;
-	var uLocal_407 = 0;
-	var uLocal_408 = 0;
-	var uLocal_409 = 0;
-	var uLocal_410 = 0;
-	var uLocal_411 = 0;
-	var uLocal_412 = 0;
-	var uLocal_413 = 0;
-	var uLocal_414 = 0;
-	var uLocal_415 = 0;
-	var uLocal_416 = 0;
-	var uLocal_417 = 0;
-	var uLocal_418 = 0;
-	var uLocal_419 = 0;
-	var uLocal_420 = 0;
-	var uLocal_421 = 0;
-	var uLocal_422 = 0;
-	var uLocal_423 = 0;
-	var uLocal_424 = 0;
-	var uLocal_425 = 0;
-	var uLocal_426 = 0;
-	var uLocal_427 = 0;
-	var uLocal_428 = 0;
-	var uLocal_429 = 0;
-	var uLocal_430 = 0;
-	var uLocal_431 = 0;
-	var uLocal_432 = 0;
-	var uLocal_433 = 0;
-	var uLocal_434 = 0;
-	var uLocal_435 = 0;
-	var uLocal_436 = 0;
-	var uLocal_437 = 0;
-	var uLocal_438 = 0;
-	var uLocal_439 = 0;
-	var uLocal_440 = 0;
-	var uLocal_441 = 0;
-	var uLocal_442 = 0;
-	var uLocal_443 = 0;
-	var uLocal_444 = 0;
-	var uLocal_445 = 0;
-	var uLocal_446 = 0;
-	var uLocal_447 = 0;
-	var uLocal_448 = 0;
-	var uLocal_449 = 0;
-	var uLocal_450 = 0;
-	var uLocal_451 = 0;
-	var uLocal_452 = 0;
-	var uLocal_453 = 0;
-	var uLocal_454 = 0;
-	var uLocal_455 = 0;
-	var uLocal_456 = 0;
-	var uLocal_457 = 0;
-	var uLocal_458 = 0;
-	var uLocal_459 = 0;
-	var uLocal_460 = 0;
-	var uLocal_461 = 0;
-	var uLocal_462 = 0;
-	var uLocal_463 = 0;
-	var uLocal_464 = 0;
-	var uLocal_465 = 0;
-	var uLocal_466 = 0;
-	var uLocal_467 = 0;
-	var uLocal_468 = 0;
-	var uLocal_469 = 0;
-	var uLocal_470 = 0;
-	var uLocal_471 = 0;
-	var uLocal_472 = 0;
-	var uLocal_473 = 0;
-	var uLocal_474 = 0;
-	var uLocal_475 = 0;
-	var uLocal_476 = 0;
-	var uLocal_477 = 0;
-	var uLocal_478 = 0;
-	var uLocal_479 = 0;
-	var uLocal_480 = 0;
-	var uLocal_481 = 0;
-	var uLocal_482 = 0;
-	var uLocal_483 = 0;
-	var uLocal_484 = 0;
-	var uLocal_485 = 0;
-	var uLocal_486 = 0;
-	var uLocal_487 = 0;
-	var uLocal_488 = 0;
-	var uLocal_489 = 0;
-	var uLocal_490 = 0;
-	var uLocal_491 = 0;
-	var uLocal_492 = 0;
-	var uLocal_493 = 0;
-	var uLocal_494 = 0;
-	var uLocal_495 = 0;
-	var uLocal_496 = 0;
-	var uLocal_497 = 0;
-	var uLocal_498 = 0;
-	var uLocal_499 = 0;
-	var uLocal_500 = 0;
-	var uLocal_501 = 0;
-	var uLocal_502 = 0;
-	var uLocal_503 = 0;
-	var uLocal_504 = 0;
-	var uLocal_505 = 0;
-	var uLocal_506 = 0;
-	var uLocal_507 = 0;
-	var uLocal_508 = 0;
-	var uLocal_509 = 0;
-	var uLocal_510 = 0;
-	var uLocal_511 = 0;
-	var uLocal_512 = 0;
-	var uLocal_513 = 0;
-	var uLocal_514 = 0;
-	var uLocal_515 = 0;
-	var uLocal_516 = 0;
-	var uLocal_517 = 0;
-	var uLocal_518 = 0;
-	var uLocal_519 = 0;
-	var uLocal_520 = 0;
-	var uLocal_521 = 0;
-	var uLocal_522 = 0;
-	var uLocal_523 = 0;
-	var uLocal_524 = 0;
-	var uLocal_525 = 0;
-	var uLocal_526 = 0;
-	var uLocal_527 = 0;
-	var uLocal_528 = 0;
-	var uLocal_529 = 0;
-	var uLocal_530 = 0;
-	var uLocal_531 = 0;
-	struct<7> Local_532 = { 0, 0, 0, 0, 0, 0, 0 } ;
-	struct<7> Local_533 = { 0, 0, 0, 0, 0, 0, 0 } ;
-	struct<7> Local_534 = { 0, 0, 0, 0, 0, 0, 0 } ;
-	struct<7> Local_535 = { 0, 0, 0, 0, 0, 0, 0 } ;
-	struct<7> Local_536 = { 0, 0, 0, 0, 0, 0, 0 } ;
-	struct<2> Local_537 = { 0, 0 } ;
-	struct<2> Local_538[9];
-	struct<2> Local_539[4];
-	struct<2> Local_540[3];
-	struct<2> Local_541 = { 0, 0 } ;
-	int iLocal_542 = 0;
-	struct<3> Local_543 = { 0, 0, 0 } ;
-	var uLocal_544 = 0;
-	var uLocal_545 = 0;
-	var uLocal_546 = 0;
-	struct<3> Local_547 = { 0, 0, 0 } ;
-	struct<3> Local_548 = { 0, 0, 0 } ;
-	struct<3> Local_549 = { 0, 0, 0 } ;
-	struct<3> Local_550 = { 0, 0, 0 } ;
-	struct<3> Local_551 = { 0, 0, 0 } ;
-	struct<61> Local_552 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ;
+	float fLocal_240[85] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
+	float fLocal_326[85] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
+	float fLocal_412[85] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
+	float fLocal_498[85] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
+	float fLocal_584 = 0f;
+	float fLocal_585 = 0f;
+	float fLocal_586 = 0f;
+	float fLocal_587 = 0f;
+	float fLocal_588[70] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
+	float fLocal_659[70] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
+	float fLocal_730[70] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
+	float fLocal_801[70] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
+	float fLocal_872[70] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
+	float fLocal_943[70] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
+	float fLocal_1014[70] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
+	float fLocal_1085[70] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
+	float fLocal_1156[70] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
+	float fLocal_1227[70] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
+	float fLocal_1298 = 0f;
+	float fLocal_1299 = 0f;
+	float fLocal_1300 = 0f;
+	float fLocal_1301 = 0f;
+	float fLocal_1302 = 0f;
+	float fLocal_1303 = 0f;
+	float fLocal_1304 = 0f;
+	float fLocal_1305 = 0f;
+	float fLocal_1306 = 0f;
+	float fLocal_1307 = 0f;
+	float fLocal_1308 = 0f;
+	float fLocal_1309 = 0f;
+	float fLocal_1310 = 0f;
+	float fLocal_1311 = 0f;
+	float fLocal_1312 = 0f;
+	float fLocal_1313 = 0f;
+	float fLocal_1314 = 0f;
+	float fLocal_1315 = 0f;
+	float fLocal_1316 = 0f;
+	float fLocal_1317 = 0f;
+	float fLocal_1318 = 0f;
+	int iLocal_1319[85] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	int iLocal_1405[85] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	int iLocal_1491[85] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	int iLocal_1577[70] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	int iLocal_1648[70] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	int iLocal_1719[70] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	int iLocal_1790[70] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	int iLocal_1861 = 0;
+	int iLocal_1862 = 0;
+	int iLocal_1863 = 0;
+	int iLocal_1864 = 0;
+	int iLocal_1865 = 0;
+	int iLocal_1866 = 0;
+	int iLocal_1867 = 0;
+	int iLocal_1868 = 0;
+	int iLocal_1869 = 0;
+	int iLocal_1870 = 0;
+	int iLocal_1871 = 0;
+	int iLocal_1872 = 0;
+	int iLocal_1873 = 0;
+	int iLocal_1874 = 0;
+	int iLocal_1875 = 0;
+	int iLocal_1876 = 0;
+	int iLocal_1877 = 0;
+	struct<3> Local_1878[85];
+	struct<3> Local_2134[70];
+	struct<3> Local_2345[70];
+	struct<3> Local_2556 = { 0, 0, 0 } ;
+	struct<3> Local_2559 = { 0, 0, 0 } ;
+	struct<3> Local_2562 = { 0, 0, 0 } ;
+	var uLocal_2565 = 0;
+	var uLocal_2566 = 0;
+	var uLocal_2567 = 0;
+	var uLocal_2568 = 0;
+	var uLocal_2569 = 0;
+	var uLocal_2570 = 0;
+	struct<3> Local_2571 = { 0, 0, 0 } ;
+	struct<3> Local_2574 = { 0, 0, 0 } ;
+	struct<3> Local_2577 = { 0, 0, 0 } ;
+	struct<3> Local_2580 = { 0, 0, 0 } ;
+	char cLocal_2583[64] = "";
+	var uLocal_2591 = 0;
+	var uLocal_2592 = 0;
+	var uLocal_2593 = 0;
+	var uLocal_2594 = 0;
+	var uLocal_2595 = 0;
+	var uLocal_2596 = 0;
+	var uLocal_2597 = 0;
+	var uLocal_2598 = 0;
+	int iLocal_2599 = 0;
+	int iLocal_2600[85] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	int iLocal_2686[70] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	int iLocal_2757[70] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	int iLocal_2828 = 0;
+	int iLocal_2829 = 0;
+	int iLocal_2830 = 0;
+	int iLocal_2831[85] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	int iLocal_2917[15] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	int iLocal_2933[70] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	int iLocal_3004[70] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	int iLocal_3075[10] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	int iLocal_3086 = 0;
+	int iLocal_3087 = 0;
+	int iLocal_3088 = 0;
+	var uLocal_3089 = 15;
+	var uLocal_3090 = 0;
+	var uLocal_3091 = 0;
+	var uLocal_3092 = 0;
+	var uLocal_3093 = 0;
+	var uLocal_3094 = 0;
+	var uLocal_3095 = 0;
+	var uLocal_3096 = 0;
+	var uLocal_3097 = 0;
+	var uLocal_3098 = 0;
+	var uLocal_3099 = 0;
+	var uLocal_3100 = 0;
+	var uLocal_3101 = 0;
+	var uLocal_3102 = 0;
+	var uLocal_3103 = 0;
+	var uLocal_3104 = 0;
+	int iLocal_3105 = 0;
+	int iLocal_3106 = 0;
+	int iLocal_3107 = 0;
+	struct<61> Local_3108 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ;
+	bool bLocal_3169 = 0;
+	int iLocal_3170 = 0;
+	int iLocal_3171[7] = { 0, 0, 0, 0, 0, 0, 0 };
+	int iLocal_3179[3] = { 0, 0, 0 };
+	int iLocal_3183 = 0;
+	int iLocal_3184[8] = { 0, 0, 0, 0, 0, 0, 0, 0 };
+	int iLocal_3193 = 0;
+	int iLocal_3194[2] = { 0, 0 };
+	int iLocal_3197 = 0;
+	int iLocal_3198 = 0;
+	int iLocal_3199 = 0;
+	int iLocal_3200 = 0;
+	int iLocal_3201 = 0;
+	int iLocal_3202 = 0;
+	int iLocal_3203 = 0;
+	int iLocal_3204 = 0;
+	int iLocal_3205 = 0;
+	bool bLocal_3206 = 0;
+	int iLocal_3207 = 0;
+	bool bLocal_3208 = 0;
+	int iLocal_3209 = 0;
+	int iLocal_3210 = 0;
+	bool bLocal_3211 = 0;
+	int iLocal_3212 = 0;
+	bool bLocal_3213 = 0;
+	bool bLocal_3214 = 0;
+	bool bLocal_3215 = 0;
+	int iLocal_3216[12] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	int iLocal_3229 = 0;
+	bool bLocal_3230 = 0;
+	bool bLocal_3231 = 0;
+	int iLocal_3232 = 0;
+	int iLocal_3233 = 0;
+	int iLocal_3234 = 0;
+	int iLocal_3235 = 0;
+	int iLocal_3236 = 0;
+	int iLocal_3237 = 0;
+	int iLocal_3238 = 0;
+	int iLocal_3239 = 0;
+	bool bLocal_3240 = 0;
+	int iLocal_3241 = 0;
+	int iLocal_3242 = 0;
+	int iLocal_3243 = 0;
+	int iLocal_3244 = 0;
+	int iLocal_3245 = 0;
+	int iLocal_3246 = 0;
+	int iLocal_3247 = 0;
+	int iLocal_3248 = 0;
+	int iLocal_3249 = 0;
+	int iLocal_3250 = 0;
+	int iLocal_3251 = 0;
+	int iLocal_3252 = 0;
+	int iLocal_3253 = 0;
+	int iLocal_3254 = 0;
+	int iLocal_3255 = 0;
+	int iLocal_3256 = 0;
+	int iLocal_3257 = 0;
+	int iLocal_3258 = 0;
+	int iLocal_3259 = 0;
+	int iLocal_3260 = 0;
+	int iLocal_3261 = 0;
+	int iLocal_3262 = 0;
+	int iLocal_3263 = 0;
+	float fLocal_3264 = 0f;
+	float fLocal_3265 = 0f;
+	float fLocal_3266 = 0f;
+	float fLocal_3267 = 0f;
+	float fLocal_3268 = 0f;
+	float fLocal_3269 = 0f;
+	int iLocal_3270 = 0;
+	int iLocal_3271 = 0;
+	int iLocal_3272 = 0;
+	int iLocal_3273 = 0;
+	struct<8> Local_3274 = { 0, 0, 0, 0, 0, 0, 0, 0 } ;
+	int iLocal_3282 = 0;
+	int iLocal_3283 = 0;
+	int iLocal_3284 = 0;
+	int iLocal_3285 = 0;
+	int iLocal_3286 = 0;
+	int iLocal_3287 = 0;
+	int iLocal_3288 = 0;
+	int iLocal_3289 = 0;
+	int iLocal_3290[5] = { 0, 0, 0, 0, 0 };
+	char* sLocal_3296 = NULL;
+	char* sLocal_3297 = NULL;
+	char* sLocal_3298 = NULL;
+	char* sLocal_3299 = NULL;
+	char* sLocal_3300 = NULL;
+	char* sLocal_3301 = NULL;
+	char* sLocal_3302 = NULL;
+	char* sLocal_3303 = NULL;
+	var uLocal_3304 = 16;
+	var uLocal_3305 = 0;
+	var uLocal_3306 = 0;
+	var uLocal_3307 = 0;
+	var uLocal_3308 = 0;
+	var uLocal_3309 = 0;
+	var uLocal_3310 = 0;
+	var uLocal_3311 = 0;
+	var uLocal_3312 = 0;
+	var uLocal_3313 = 0;
+	var uLocal_3314 = 0;
+	var uLocal_3315 = 0;
+	var uLocal_3316 = 0;
+	var uLocal_3317 = 0;
+	var uLocal_3318 = 0;
+	var uLocal_3319 = 0;
+	var uLocal_3320 = 0;
+	var uLocal_3321 = 0;
+	var uLocal_3322 = 0;
+	var uLocal_3323 = 0;
+	var uLocal_3324 = 0;
+	var uLocal_3325 = 0;
+	var uLocal_3326 = 0;
+	var uLocal_3327 = 0;
+	var uLocal_3328 = 0;
+	var uLocal_3329 = 0;
+	var uLocal_3330 = 0;
+	var uLocal_3331 = 0;
+	var uLocal_3332 = 0;
+	var uLocal_3333 = 0;
+	var uLocal_3334 = 0;
+	var uLocal_3335 = 0;
+	var uLocal_3336 = 0;
+	var uLocal_3337 = 0;
+	var uLocal_3338 = 0;
+	var uLocal_3339 = 0;
+	var uLocal_3340 = 0;
+	var uLocal_3341 = 0;
+	var uLocal_3342 = 0;
+	var uLocal_3343 = 0;
+	var uLocal_3344 = 0;
+	var uLocal_3345 = 0;
+	var uLocal_3346 = 0;
+	var uLocal_3347 = 0;
+	var uLocal_3348 = 0;
+	var uLocal_3349 = 0;
+	var uLocal_3350 = 0;
+	var uLocal_3351 = 0;
+	var uLocal_3352 = 0;
+	var uLocal_3353 = 0;
+	var uLocal_3354 = 0;
+	var uLocal_3355 = 0;
+	var uLocal_3356 = 0;
+	var uLocal_3357 = 0;
+	var uLocal_3358 = 0;
+	var uLocal_3359 = 0;
+	var uLocal_3360 = 0;
+	var uLocal_3361 = 0;
+	var uLocal_3362 = 0;
+	var uLocal_3363 = 0;
+	var uLocal_3364 = 0;
+	var uLocal_3365 = 0;
+	var uLocal_3366 = 0;
+	var uLocal_3367 = 0;
+	var uLocal_3368 = 0;
+	var uLocal_3369 = 0;
+	var uLocal_3370 = 0;
+	var uLocal_3371 = 0;
+	var uLocal_3372 = 0;
+	var uLocal_3373 = 0;
+	var uLocal_3374 = 0;
+	var uLocal_3375 = 0;
+	var uLocal_3376 = 0;
+	var uLocal_3377 = 0;
+	var uLocal_3378 = 0;
+	var uLocal_3379 = 0;
+	var uLocal_3380 = 0;
+	var uLocal_3381 = 0;
+	var uLocal_3382 = 0;
+	var uLocal_3383 = 0;
+	var uLocal_3384 = 0;
+	var uLocal_3385 = 0;
+	var uLocal_3386 = 0;
+	var uLocal_3387 = 0;
+	var uLocal_3388 = 0;
+	var uLocal_3389 = 0;
+	var uLocal_3390 = 0;
+	var uLocal_3391 = 0;
+	var uLocal_3392 = 0;
+	var uLocal_3393 = 0;
+	var uLocal_3394 = 0;
+	var uLocal_3395 = 0;
+	var uLocal_3396 = 0;
+	var uLocal_3397 = 0;
+	var uLocal_3398 = 0;
+	var uLocal_3399 = 0;
+	var uLocal_3400 = 0;
+	var uLocal_3401 = 0;
+	var uLocal_3402 = 0;
+	var uLocal_3403 = 0;
+	var uLocal_3404 = 0;
+	var uLocal_3405 = 0;
+	var uLocal_3406 = 0;
+	var uLocal_3407 = 0;
+	var uLocal_3408 = 0;
+	var uLocal_3409 = 0;
+	var uLocal_3410 = 0;
+	var uLocal_3411 = 0;
+	var uLocal_3412 = 0;
+	var uLocal_3413 = 0;
+	var uLocal_3414 = 0;
+	var uLocal_3415 = 0;
+	var uLocal_3416 = 0;
+	var uLocal_3417 = 0;
+	var uLocal_3418 = 0;
+	var uLocal_3419 = 0;
+	var uLocal_3420 = 0;
+	var uLocal_3421 = 0;
+	var uLocal_3422 = 0;
+	var uLocal_3423 = 0;
+	var uLocal_3424 = 0;
+	var uLocal_3425 = 0;
+	var uLocal_3426 = 0;
+	var uLocal_3427 = 0;
+	var uLocal_3428 = 0;
+	var uLocal_3429 = 0;
+	var uLocal_3430 = 0;
+	var uLocal_3431 = 0;
+	var uLocal_3432 = 0;
+	var uLocal_3433 = 0;
+	var uLocal_3434 = 0;
+	var uLocal_3435 = 0;
+	var uLocal_3436 = 0;
+	var uLocal_3437 = 0;
+	var uLocal_3438 = 0;
+	var uLocal_3439 = 0;
+	var uLocal_3440 = 0;
+	var uLocal_3441 = 0;
+	var uLocal_3442 = 0;
+	var uLocal_3443 = 0;
+	var uLocal_3444 = 0;
+	var uLocal_3445 = 0;
+	var uLocal_3446 = 0;
+	var uLocal_3447 = 0;
+	var uLocal_3448 = 0;
+	var uLocal_3449 = 0;
+	var uLocal_3450 = 0;
+	var uLocal_3451 = 0;
+	var uLocal_3452 = 0;
+	var uLocal_3453 = 0;
+	var uLocal_3454 = 0;
+	var uLocal_3455 = 0;
+	var uLocal_3456 = 0;
+	var uLocal_3457 = 0;
+	var uLocal_3458 = 0;
+	var uLocal_3459 = 0;
+	var uLocal_3460 = 0;
+	var uLocal_3461 = 0;
+	var uLocal_3462 = 0;
+	var uLocal_3463 = 0;
+	var uLocal_3464 = 0;
+	var uLocal_3465 = 0;
+	var uLocal_3466 = 0;
+	var uLocal_3467 = 0;
+	var uLocal_3468 = 0;
+	struct<7> Local_3469 = { 0, 0, 0, 0, 0, 0, 0 } ;
+	struct<7> Local_3476 = { 0, 0, 0, 0, 0, 0, 0 } ;
+	struct<7> Local_3483 = { 0, 0, 0, 0, 0, 0, 0 } ;
+	struct<7> Local_3490 = { 0, 0, 0, 0, 0, 0, 0 } ;
+	struct<7> Local_3497 = { 0, 0, 0, 0, 0, 0, 0 } ;
+	struct<2> Local_3504 = { 0, 0 } ;
+	struct<2> Local_3506[9];
+	struct<2> Local_3525[4];
+	struct<2> Local_3534[3];
+	struct<2> Local_3541 = { 0, 0 } ;
+	int iLocal_3543 = 0;
+	struct<3> Local_3544 = { 0, 0, 0 } ;
+	var uLocal_3547 = 0;
+	var uLocal_3548 = 0;
+	var uLocal_3549 = 0;
+	struct<3> Local_3550 = { 0, 0, 0 } ;
+	struct<3> Local_3553 = { 0, 0, 0 } ;
+	struct<3> Local_3556 = { 0, 0, 0 } ;
+	struct<3> Local_3559 = { 0, 0, 0 } ;
+	struct<3> Local_3562 = { 0, 0, 0 } ;
+	struct<61> ScriptParam_0 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -572,59 +572,59 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_17 = -1;
 	sLocal_32 = "NULL";
 	fLocal_33 = 0f;
-	fLocal_35 = -0.0375f;
-	fLocal_36 = 0.17f;
-	fLocal_40 = 80f;
-	fLocal_41 = 140f;
-	fLocal_42 = 180f;
-	iLocal_45 = 3;
-	uLocal_90 = func_596(64);
-	uLocal_91 = func_596(63);
-	iLocal_92 = joaat("U_M_M_Aldinapoli");
-	iLocal_93 = joaat("premier");
-	iLocal_109 = 1;
-	iLocal_110 = 65;
-	iLocal_111 = 49;
-	iLocal_112 = 64;
-	iLocal_116 = HUD::GET_STANDARD_BLIP_ENUM_ID();
-	iLocal_117 = HUD::GET_WAYPOINT_BLIP_ENUM_ID();
-	bLocal_121 = true;
-	bLocal_128 = true;
-	bLocal_150 = true;
-	fLocal_171 = 120f;
-	fLocal_172 = 0f;
-	fLocal_174 = 1f;
-	fLocal_175 = 0f;
-	fLocal_176 = 1f;
-	fLocal_177 = 30f;
-	fLocal_179 = 1f;
-	fLocal_180 = 5f;
-	fLocal_181 = 1f;
-	fLocal_182 = 1f;
-	fLocal_183 = 100f;
-	fLocal_184 = 100f;
-	fLocal_185 = 0f;
-	fLocal_186 = 7000f;
-	fLocal_187 = 0f;
-	fLocal_188 = 0f;
-	fLocal_189 = 0.3f;
-	fLocal_190 = 0.5f;
-	fLocal_191 = 50f;
-	iLocal_202 = -1;
-	iLocal_210 = -1;
-	iLocal_211 = -1;
-	bLocal_276 = true;
-	sLocal_359 = "Nigel2U";
-	sLocal_360 = "Nigel2Outro";
-	sLocal_361 = "Mrs_Thornhill";
-	sLocal_362 = "Nigel";
-	sLocal_363 = "Trevor";
-	sLocal_364 = func_595();
-	sLocal_365 = "Showroom_Car";
-	sLocal_366 = "EXL_2_abandoned_car";
-	StringCopy(&Local_543, "NMT_2_MCS_2", 24);
-	Local_275 = { ScriptParam_552 };
-	func_593(&Local_275);
+	fLocal_37 = -0.0375f;
+	fLocal_38 = 0.17f;
+	fLocal_42 = 80f;
+	fLocal_43 = 140f;
+	fLocal_44 = 180f;
+	iLocal_47 = 3;
+	uLocal_92 = func_596(64);
+	uLocal_93 = func_596(63);
+	iLocal_94 = joaat("U_M_M_Aldinapoli");
+	iLocal_95 = joaat("premier");
+	iLocal_111 = 1;
+	iLocal_112 = 65;
+	iLocal_113 = 49;
+	iLocal_114 = 64;
+	iLocal_118 = HUD::GET_STANDARD_BLIP_ENUM_ID();
+	iLocal_119 = HUD::GET_WAYPOINT_BLIP_ENUM_ID();
+	bLocal_123 = true;
+	bLocal_130 = true;
+	bLocal_152 = true;
+	fLocal_1298 = 120f;
+	fLocal_1299 = 0f;
+	fLocal_1301 = 1f;
+	fLocal_1302 = 0f;
+	fLocal_1303 = 1f;
+	fLocal_1304 = 30f;
+	fLocal_1306 = 1f;
+	fLocal_1307 = 5f;
+	fLocal_1308 = 1f;
+	fLocal_1309 = 1f;
+	fLocal_1310 = 100f;
+	fLocal_1311 = 100f;
+	fLocal_1312 = 0f;
+	fLocal_1313 = 7000f;
+	fLocal_1314 = 0f;
+	fLocal_1315 = 0f;
+	fLocal_1316 = 0.3f;
+	fLocal_1317 = 0.5f;
+	fLocal_1318 = 50f;
+	iLocal_1864 = -1;
+	iLocal_1872 = -1;
+	iLocal_1873 = -1;
+	bLocal_3169 = true;
+	sLocal_3296 = "Nigel2U";
+	sLocal_3297 = "Nigel2Outro";
+	sLocal_3298 = "Mrs_Thornhill";
+	sLocal_3299 = "Nigel";
+	sLocal_3300 = "Trevor";
+	sLocal_3301 = func_595();
+	sLocal_3302 = "Showroom_Car";
+	sLocal_3303 = "EXL_2_abandoned_car";
+	StringCopy(&Local_3544, "NMT_2_MCS_2", 24);
+	Local_3108 = { ScriptParam_0 };
+	func_593(&Local_3108);
 	MISC::SET_MISSION_FLAG(true);
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(19))
 	{
@@ -635,7 +635,7 @@ void __EntryFunction__()//Position - 0x0
 	func_553();
 	if (func_552())
 	{
-		func_551(&Local_275, 0, 1);
+		func_551(&Local_3108, 0, 1);
 		iVar0 = func_550();
 		if (Global_94858 == 1)
 		{
@@ -645,7 +645,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			case 0:
 				func_549(-1309.0155f, -641.8671f, 25.5017f, 242.3463f, 0, 0);
-				iLocal_283[0] = 1;
+				iLocal_3194[0] = 1;
 				func_539(1, 0);
 				break;
 			
@@ -661,14 +661,14 @@ void __EntryFunction__()//Position - 0x0
 	while (true)
 	{
 		RECORDING::REPLAY_CHECK_FOR_EVENT_THIS_FRAME("SF_VSADN", 0);
-		func_523(Local_275.f_9, 0, 0, 0, 0, 0);
+		func_523(Local_3108.f_9, 0, 0, 0, 0, 0);
 		if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 		{
 			func_520();
-			Local_549 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
+			Local_3556 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
 			PLAYER::SET_ALL_RANDOM_PEDS_FLEE_THIS_FRAME(PLAYER::PLAYER_ID());
 			PLAYER::SET_ALL_NEUTRAL_RANDOM_PEDS_FLEE_THIS_FRAME(PLAYER::PLAYER_ID());
-			switch (iLocal_272)
+			switch (iLocal_3105)
 			{
 				case 0:
 					func_438();
@@ -710,9 +710,9 @@ void __EntryFunction__()//Position - 0x0
 					break;
 				}
 		}
-		if (bLocal_276 == 0)
+		if (bLocal_3169 == 0)
 		{
-			func_1(iLocal_273);
+			func_1(iLocal_3106);
 		}
 		SYSTEM::WAIT(0);
 	}
@@ -722,24 +722,24 @@ void func_1(int iParam0)//Position - 0x2F7
 {
 	int iVar0;
 	
-	if (iLocal_272 == iParam0)
+	if (iLocal_3105 == iParam0)
 	{
 		if (func_49())
 		{
 			iVar0 = 0;
-			if (iLocal_272 == 2 || iLocal_272 == 3)
+			if (iLocal_3105 == 2 || iLocal_3105 == 3)
 			{
-				iVar0 = Local_535.f_0;
+				iVar0 = Local_3490.f_0;
 			}
 			func_47(iVar0, -1, 0);
 		}
-		func_37(iLocal_272);
-		func_35(iLocal_272);
-		if (iLocal_272 == 3)
+		func_37(iLocal_3105);
+		func_35(iLocal_3105);
+		if (iLocal_3105 == 3)
 		{
 			func_24(1, 0, 1);
 		}
-		else if (iLocal_272 == 1)
+		else if (iLocal_3105 == 1)
 		{
 			func_24(0, 1, 1);
 		}
@@ -747,9 +747,9 @@ void func_1(int iParam0)//Position - 0x2F7
 		{
 			func_24(1, 1, 1);
 		}
-		bLocal_276 = true;
-		iLocal_277 = 0;
-		if (iLocal_272 == 4)
+		bLocal_3169 = true;
+		iLocal_3170 = 0;
+		if (iLocal_3105 == 4)
 		{
 			func_23(500, 1);
 		}
@@ -768,10 +768,10 @@ void func_2()//Position - 0x386
 	{
 		func_20();
 		HUD::CLEAR_PRINTS();
-		switch (iLocal_272)
+		switch (iLocal_3105)
 		{
 			case 0:
-				if (iLocal_274 == 1)
+				if (iLocal_3107 == 1)
 				{
 					if (CUTSCENE::IS_CUTSCENE_PLAYING())
 					{
@@ -781,21 +781,21 @@ void func_2()//Position - 0x386
 				break;
 			
 			case 1:
-				if (iLocal_274 == 1)
+				if (iLocal_3107 == 1)
 				{
-					bLocal_298 = true;
-					func_16(Local_533.f_0, &Local_535, 0);
-					func_16(Local_532.f_0, &Local_535, 2);
-					func_16(Local_534.f_0, &Local_536, -1);
-					if (func_15(Local_536.f_0))
+					bLocal_3211 = true;
+					func_16(Local_3476.f_0, &Local_3490, 0);
+					func_16(Local_3469.f_0, &Local_3490, 2);
+					func_16(Local_3483.f_0, &Local_3497, -1);
+					if (func_15(Local_3497.f_0))
 					{
-						if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(Local_536.f_0))
+						if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(Local_3497.f_0))
 						{
-							VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(Local_536.f_0);
+							VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(Local_3497.f_0);
 						}
-						ENTITY::SET_ENTITY_COORDS_NO_OFFSET(Local_536.f_0, 393.4298f, -621.3337f, 28.4891f, false, false, true);
-						ENTITY::SET_ENTITY_QUATERNION(Local_536.f_0, -0.0081f, -0.0061f, 0.7994f, -0.6007f);
-						VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(Local_536.f_0, 5f);
+						ENTITY::SET_ENTITY_COORDS_NO_OFFSET(Local_3497.f_0, 393.4298f, -621.3337f, 28.4891f, false, false, true);
+						ENTITY::SET_ENTITY_QUATERNION(Local_3497.f_0, -0.0081f, -0.0061f, 0.7994f, -0.6007f);
+						VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(Local_3497.f_0, 5f);
 					}
 					STREAMING::REQUEST_ANIM_DICT("rcmnigel2");
 					while (!STREAMING::HAS_ANIM_DICT_LOADED("rcmnigel2"))
@@ -806,56 +806,56 @@ void func_2()//Position - 0x386
 					MISC::CLEAR_AREA_OF_VEHICLES(393.38f, -617.53f, 27.91f, 50f, false, false, false, false, false, false, 0);
 					if (!func_49())
 					{
-						func_16(PLAYER::PLAYER_PED_ID(), &Local_535, -1);
-						func_13(&Local_535, 364.7079f, -608.3558f, 27.7364f, 246.4916f, 0);
+						func_16(PLAYER::PLAYER_PED_ID(), &Local_3490, -1);
+						func_13(&Local_3490, 364.7079f, -608.3558f, 27.7364f, 246.4916f, 0);
 						CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
 						CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
-						if (iLocal_277 == 0)
+						if (iLocal_3170 == 0)
 						{
-							if (iLocal_273 == 2)
+							if (iLocal_3106 == 2)
 							{
 								if (func_12(PLAYER::PLAYER_PED_ID()))
 								{
 									func_3(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 25f, 13, 5000, 0, 0);
-									iLocal_277 = 1;
+									iLocal_3170 = 1;
 								}
 							}
 						}
 					}
 					VEHICLE::SET_VEHICLE_DENSITY_MULTIPLIER_THIS_FRAME(0f);
 					MISC::CLEAR_AREA_OF_VEHICLES(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 150f, false, false, false, false, false, false, 0);
-					iLocal_274 = 2;
+					iLocal_3107 = 2;
 				}
 				break;
 			
 			case 2:
-				if (iLocal_274 == 1)
+				if (iLocal_3107 == 1)
 				{
-					func_16(Local_533.f_0, &Local_535, 0);
-					func_16(Local_532.f_0, &Local_535, 2);
+					func_16(Local_3476.f_0, &Local_3490, 0);
+					func_16(Local_3469.f_0, &Local_3490, 2);
 					if (!func_49())
 					{
-						func_16(PLAYER::PLAYER_PED_ID(), &Local_535, -1);
+						func_16(PLAYER::PLAYER_PED_ID(), &Local_3490, -1);
 						Var0 = { 391.08f, -615.87f, 28.33f };
-						func_13(&Local_535, Var0, 333.66f, 0);
-						if (iLocal_277 == 0)
+						func_13(&Local_3490, Var0, 333.66f, 0);
+						if (iLocal_3170 == 0)
 						{
-							if (iLocal_273 == 3)
+							if (iLocal_3106 == 3)
 							{
 								if (func_12(PLAYER::PLAYER_PED_ID()))
 								{
 									func_3(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 25f, 13, 5000, 0, 0);
-									iLocal_277 = 1;
+									iLocal_3170 = 1;
 								}
 							}
 						}
 					}
-					iLocal_274 = 2;
+					iLocal_3107 = 2;
 				}
 				break;
 			
 			case 3:
-				if (iLocal_274 == 1)
+				if (iLocal_3107 == 1)
 				{
 					if (CUTSCENE::IS_CUTSCENE_PLAYING())
 					{
@@ -870,22 +870,22 @@ void func_2()//Position - 0x386
 	}
 }
 
-void func_3(struct<3> Param0, float fParam1, int iParam2, int iParam3, bool bParam4, bool bParam5)//Position - 0x5E3
+void func_3(struct<3> Param0, float fParam3, int iParam4, int iParam5, bool bParam6, bool bParam7)//Position - 0x5E3
 {
 	int iVar0;
 	int iVar1;
 	
-	iVar0 = STREAMING::STREAMVOL_CREATE_SPHERE(Param0, fParam1, iParam2, 127);
+	iVar0 = STREAMING::STREAMVOL_CREATE_SPHERE(Param0, fParam3, iParam4, 127);
 	if (STREAMING::STREAMVOL_IS_VALID(iVar0))
 	{
-		iVar1 = (MISC::GET_GAME_TIMER() + iParam3);
+		iVar1 = (MISC::GET_GAME_TIMER() + iParam5);
 		while (!STREAMING::STREAMVOL_HAS_LOADED(iVar0) && MISC::GET_GAME_TIMER() < iVar1)
 		{
-			if (bParam5)
+			if (bParam7)
 			{
 				func_5(0);
 			}
-			if (bParam4)
+			if (bParam6)
 			{
 				func_4();
 			}
@@ -1051,16 +1051,16 @@ int func_12(int iParam0)//Position - 0x82D
 	return 0;
 }
 
-void func_13(int iParam0, struct<3> Param1, float fParam2, bool bParam3)//Position - 0x84E
+void func_13(int iParam0, struct<3> Param1, float fParam4, bool bParam5)//Position - 0x84E
 {
 	if (func_12(*iParam0))
 	{
-		if (bParam3)
+		if (bParam5)
 		{
 			Param1.f_2 = -200f;
 		}
 		ENTITY::SET_ENTITY_COORDS(*iParam0, Param1, true, false, false, true);
-		ENTITY::SET_ENTITY_HEADING(*iParam0, fParam2);
+		ENTITY::SET_ENTITY_HEADING(*iParam0, fParam4);
 	}
 }
 
@@ -1069,41 +1069,41 @@ void func_14(bool bParam0, bool bParam1)//Position - 0x886
 	float fVar0;
 	float fVar1;
 	
-	if (!ENTITY::DOES_ENTITY_EXIST(Local_541.f_0))
+	if (!ENTITY::DOES_ENTITY_EXIST(Local_3541.f_0))
 	{
 		fVar0 = 115000f;
 		fVar1 = 116821f;
 		if (bParam1)
 		{
-			if (fLocal_341 < (fVar0 - 3000f))
+			if (fLocal_3266 < (fVar0 - 3000f))
 			{
 				return;
 			}
 		}
-		STREAMING::REQUEST_MODEL(Local_541.f_1);
+		STREAMING::REQUEST_MODEL(Local_3541.f_1);
 		if (bParam0)
 		{
-			while (!STREAMING::HAS_MODEL_LOADED(Local_541.f_1))
+			while (!STREAMING::HAS_MODEL_LOADED(Local_3541.f_1))
 			{
 				SYSTEM::WAIT(0);
 			}
 		}
 		if (bParam1)
 		{
-			if (fLocal_341 < fVar0 || fLocal_341 > fVar1)
+			if (fLocal_3266 < fVar0 || fLocal_3266 > fVar1)
 			{
 				return;
 			}
 		}
-		if (STREAMING::HAS_MODEL_LOADED(Local_541.f_1))
+		if (STREAMING::HAS_MODEL_LOADED(Local_3541.f_1))
 		{
-			Local_541.f_0 = VEHICLE::CREATE_VEHICLE(Local_541.f_1, 419.3891f, -604.8867f, 27.7732f, 0f, true, true, false);
+			Local_3541.f_0 = VEHICLE::CREATE_VEHICLE(Local_3541.f_1, 419.3891f, -604.8867f, 27.7732f, 0f, true, true, false);
 		}
-		if (func_15(Local_541.f_0))
+		if (func_15(Local_3541.f_0))
 		{
-			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_541.f_1);
-			ENTITY::SET_ENTITY_QUATERNION(Local_541.f_0, 0f, 0.0006f, 0.9996f, -0.0275f);
-			VEHICLE::SET_VEHICLE_DOORS_LOCKED(Local_541.f_0, 1);
+			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_3541.f_1);
+			ENTITY::SET_ENTITY_QUATERNION(Local_3541.f_0, 0f, 0.0006f, 0.9996f, -0.0275f);
+			VEHICLE::SET_VEHICLE_DOORS_LOCKED(Local_3541.f_0, 1);
 		}
 	}
 }
@@ -1151,10 +1151,10 @@ void func_16(int iParam0, int iParam1, int iParam2)//Position - 0x985
 void func_17(int iParam0)//Position - 0x9EA
 {
 	struct<3> Var0;
-	float fVar1;
+	float fVar3;
 	
 	Var0 = { 0f, 0f, 0f };
-	fVar1 = 0f;
+	fVar3 = 0f;
 	if (func_12(iParam0))
 	{
 		if (PED::IS_PED_SITTING_IN_ANY_VEHICLE(iParam0))
@@ -1165,23 +1165,23 @@ void func_17(int iParam0)//Position - 0x9EA
 				SYSTEM::WAIT(0);
 				Var0.f_0 = (Var0.f_0 + 2f);
 			}
-			fVar1 = ENTITY::GET_ENTITY_HEADING(iParam0);
-			func_18(iParam0, Var0, fVar1, 1, 1);
+			fVar3 = ENTITY::GET_ENTITY_HEADING(iParam0);
+			func_18(iParam0, Var0, fVar3, 1, 1);
 		}
 	}
 }
 
-void func_18(int iParam0, struct<3> Param1, float fParam2, bool bParam3, bool bParam4)//Position - 0xA4D
+void func_18(int iParam0, struct<3> Param1, float fParam4, bool bParam5, bool bParam6)//Position - 0xA4D
 {
 	if (func_12(iParam0))
 	{
-		if (bParam3)
+		if (bParam5)
 		{
 			Param1.f_2 = -200f;
 		}
 		ENTITY::SET_ENTITY_COORDS(iParam0, Param1, true, false, false, true);
-		ENTITY::SET_ENTITY_HEADING(iParam0, fParam2);
-		if (bParam4)
+		ENTITY::SET_ENTITY_HEADING(iParam0, fParam4);
+		if (bParam6)
 		{
 			PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(iParam0, false, false);
 		}
@@ -1306,13 +1306,13 @@ void func_25(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0x
 	}
 	if (iParam1 == 1)
 	{
-		if ((iLocal_46 != 0 && iLocal_46 != joaat("OBJECT")) && iLocal_46 != joaat("GADGET_PARACHUTE"))
+		if ((iLocal_48 != 0 && iLocal_48 != joaat("OBJECT")) && iLocal_48 != joaat("GADGET_PARACHUTE"))
 		{
 			if (func_12(PLAYER::PLAYER_PED_ID()))
 			{
-				if (WEAPON::HAS_PED_GOT_WEAPON(PLAYER::PLAYER_PED_ID(), iLocal_46, false))
+				if (WEAPON::HAS_PED_GOT_WEAPON(PLAYER::PLAYER_PED_ID(), iLocal_48, false))
 				{
-					WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), iLocal_46, false);
+					WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), iLocal_48, false);
 				}
 			}
 		}
@@ -1494,29 +1494,29 @@ void func_35(int iParam0)//Position - 0xF34
 	switch (iParam0)
 	{
 		case 2:
-			if (iLocal_330 == 0)
+			if (iLocal_3255 == 0)
 			{
 				while (!func_36("NIGEL2_START", 0))
 				{
 					SYSTEM::WAIT(0);
 				}
-				iLocal_330++;
+				iLocal_3255++;
 			}
-			if (iLocal_330 == 1)
+			if (iLocal_3255 == 1)
 			{
 				while (!func_36("NIGEL2_CAR", 0))
 				{
 					SYSTEM::WAIT(0);
 				}
-				iLocal_330++;
+				iLocal_3255++;
 			}
-			if (iLocal_330 == 2)
+			if (iLocal_3255 == 2)
 			{
 				while (!func_36("NIGEL2_JUMP", 1))
 				{
 					SYSTEM::WAIT(0);
 				}
-				iLocal_330++;
+				iLocal_3255++;
 			}
 			break;
 	}
@@ -1550,15 +1550,15 @@ void func_37(int iParam0)//Position - 0xFDE
 				break;
 			
 			case 3:
-				if (iLocal_273 == 3)
+				if (iLocal_3106 == 3)
 				{
-					func_16(PLAYER::PLAYER_PED_ID(), &Local_535, -1);
-					func_13(&Local_535, 391.08f, -615.87f, 28.33f, 333.66f, 0);
-					func_46(&Local_543);
+					func_16(PLAYER::PLAYER_PED_ID(), &Local_3490, -1);
+					func_13(&Local_3490, 391.08f, -615.87f, 28.33f, 333.66f, 0);
+					func_46(&Local_3544);
 					func_45();
 					while (!func_38(1, 1093140480, 0))
 					{
-						func_46(&Local_543);
+						func_46(&Local_3544);
 						func_45();
 						SYSTEM::WAIT(0);
 					}
@@ -1748,25 +1748,25 @@ void func_44(int iParam0)//Position - 0x13AF
 
 void func_45()//Position - 0x13DB
 {
-	if (func_12(Local_533.f_0))
+	if (func_12(Local_3476.f_0))
 	{
 		if (CUTSCENE::CAN_REQUEST_ASSETS_FOR_CUTSCENE_ENTITY())
 		{
-			CUTSCENE::SET_CUTSCENE_PED_COMPONENT_VARIATION_FROM_PED(sLocal_362, Local_533.f_0, 0);
+			CUTSCENE::SET_CUTSCENE_PED_COMPONENT_VARIATION_FROM_PED(sLocal_3299, Local_3476.f_0, 0);
 		}
 	}
-	if (func_12(Local_532.f_0))
+	if (func_12(Local_3469.f_0))
 	{
 		if (CUTSCENE::CAN_REQUEST_ASSETS_FOR_CUTSCENE_ENTITY())
 		{
-			CUTSCENE::SET_CUTSCENE_PED_COMPONENT_VARIATION_FROM_PED(sLocal_361, Local_532.f_0, 0);
+			CUTSCENE::SET_CUTSCENE_PED_COMPONENT_VARIATION_FROM_PED(sLocal_3298, Local_3469.f_0, 0);
 		}
 	}
-	if (func_12(Local_534.f_0))
+	if (func_12(Local_3483.f_0))
 	{
 		if (CUTSCENE::CAN_REQUEST_ASSETS_FOR_CUTSCENE_ENTITY())
 		{
-			CUTSCENE::SET_CUTSCENE_PED_COMPONENT_VARIATION_FROM_PED(sLocal_364, Local_534.f_0, 0);
+			CUTSCENE::SET_CUTSCENE_PED_COMPONENT_VARIATION_FROM_PED(sLocal_3301, Local_3483.f_0, 0);
 		}
 	}
 }
@@ -1847,7 +1847,7 @@ void func_50()//Position - 0x1550
 	int iVar1;
 	
 	sVar0 = 0;
-	switch (iLocal_274)
+	switch (iLocal_3107)
 	{
 		case 0:
 			if (func_36("NIGEL2_MISSION_FAIL", 0))
@@ -1859,93 +1859,93 @@ void func_50()//Position - 0x1550
 					func_20();
 				}
 				func_94();
-				if (func_15(Local_535.f_0))
+				if (func_15(Local_3490.f_0))
 				{
-					if (PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_535.f_0, false) || PED::IS_PED_GETTING_INTO_A_VEHICLE(PLAYER::PLAYER_PED_ID()))
+					if (PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_3490.f_0, false) || PED::IS_PED_GETTING_INTO_A_VEHICLE(PLAYER::PLAYER_PED_ID()))
 					{
-						VEHICLE::BRING_VEHICLE_TO_HALT(Local_535.f_0, 6f, 2, false);
+						VEHICLE::BRING_VEHICLE_TO_HALT(Local_3490.f_0, 6f, 2, false);
 					}
 				}
-				if (func_22(Local_533.f_0))
+				if (func_22(Local_3476.f_0))
 				{
-					if (PED::IS_PED_IN_GROUP(Local_533.f_0))
+					if (PED::IS_PED_IN_GROUP(Local_3476.f_0))
 					{
-						PED::REMOVE_PED_FROM_GROUP(Local_533.f_0);
+						PED::REMOVE_PED_FROM_GROUP(Local_3476.f_0);
 					}
-					TASK::CLEAR_PED_TASKS(Local_533.f_0);
-					if ((iLocal_321 == 7 || iLocal_321 == 6) || iLocal_321 == 4)
+					TASK::CLEAR_PED_TASKS(Local_3476.f_0);
+					if ((iLocal_3246 == 7 || iLocal_3246 == 6) || iLocal_3246 == 4)
 					{
-						PED::SET_PED_FLEE_ATTRIBUTES(Local_533.f_0, 2, false);
+						PED::SET_PED_FLEE_ATTRIBUTES(Local_3476.f_0, 2, false);
 						TASK::OPEN_SEQUENCE_TASK(&iVar1);
-						if (PED::IS_PED_IN_ANY_VEHICLE(Local_533.f_0, false))
+						if (PED::IS_PED_IN_ANY_VEHICLE(Local_3476.f_0, false))
 						{
 							TASK::TASK_LEAVE_ANY_VEHICLE(0, 0, 320);
 						}
 						TASK::TASK_SMART_FLEE_PED(0, PLAYER::PLAYER_PED_ID(), 300f, -1, false, false);
 						TASK::CLOSE_SEQUENCE_TASK(iVar1);
-						TASK::TASK_PERFORM_SEQUENCE(Local_533.f_0, iVar1);
+						TASK::TASK_PERFORM_SEQUENCE(Local_3476.f_0, iVar1);
 						TASK::CLEAR_SEQUENCE_TASK(&iVar1);
-						PED::SET_PED_KEEP_TASK(Local_533.f_0, true);
+						PED::SET_PED_KEEP_TASK(Local_3476.f_0, true);
 					}
 				}
-				if (func_22(Local_532.f_0))
+				if (func_22(Local_3469.f_0))
 				{
-					if (PED::IS_PED_IN_GROUP(Local_532.f_0))
+					if (PED::IS_PED_IN_GROUP(Local_3469.f_0))
 					{
-						PED::REMOVE_PED_FROM_GROUP(Local_532.f_0);
+						PED::REMOVE_PED_FROM_GROUP(Local_3469.f_0);
 					}
-					TASK::CLEAR_PED_TASKS(Local_532.f_0);
-					if ((iLocal_321 == 5 || iLocal_321 == 4) || iLocal_321 == 6)
+					TASK::CLEAR_PED_TASKS(Local_3469.f_0);
+					if ((iLocal_3246 == 5 || iLocal_3246 == 4) || iLocal_3246 == 6)
 					{
-						PED::SET_PED_FLEE_ATTRIBUTES(Local_532.f_0, 2, false);
-						if (PED::IS_PED_IN_ANY_VEHICLE(Local_532.f_0, false))
+						PED::SET_PED_FLEE_ATTRIBUTES(Local_3469.f_0, 2, false);
+						if (PED::IS_PED_IN_ANY_VEHICLE(Local_3469.f_0, false))
 						{
 							TASK::OPEN_SEQUENCE_TASK(&iVar1);
 							TASK::TASK_LEAVE_ANY_VEHICLE(0, 0, 320);
 							TASK::TASK_SMART_FLEE_PED(0, PLAYER::PLAYER_PED_ID(), 300f, -1, false, false);
 							TASK::CLOSE_SEQUENCE_TASK(iVar1);
-							TASK::TASK_PERFORM_SEQUENCE(Local_532.f_0, iVar1);
+							TASK::TASK_PERFORM_SEQUENCE(Local_3469.f_0, iVar1);
 							TASK::CLEAR_SEQUENCE_TASK(&iVar1);
-							PED::SET_PED_KEEP_TASK(Local_532.f_0, true);
+							PED::SET_PED_KEEP_TASK(Local_3469.f_0, true);
 						}
 						else
 						{
-							TASK::TASK_SMART_FLEE_PED(Local_532.f_0, PLAYER::PLAYER_PED_ID(), 300f, -1, false, false);
-							PED::SET_PED_KEEP_TASK(Local_532.f_0, true);
+							TASK::TASK_SMART_FLEE_PED(Local_3469.f_0, PLAYER::PLAYER_PED_ID(), 300f, -1, false, false);
+							PED::SET_PED_KEEP_TASK(Local_3469.f_0, true);
 						}
 					}
 				}
-				if (func_15(Local_536.f_0))
+				if (func_15(Local_3497.f_0))
 				{
-					if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(Local_536.f_0))
+					if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(Local_3497.f_0))
 					{
-						VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(Local_536.f_0);
+						VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(Local_3497.f_0);
 					}
-					if (!bLocal_300)
+					if (!bLocal_3213)
 					{
 						func_68(0, 1);
 					}
 				}
-				if (func_22(Local_534.f_0))
+				if (func_22(Local_3483.f_0))
 				{
-					if (bLocal_300)
+					if (bLocal_3213)
 					{
-						PED::SET_PED_KEEP_TASK(Local_534.f_0, true);
+						PED::SET_PED_KEEP_TASK(Local_3483.f_0, true);
 					}
 					else
 					{
-						TASK::CLEAR_PED_TASKS(Local_534.f_0);
-						PED::SET_PED_FLEE_ATTRIBUTES(Local_534.f_0, 2, true);
-						PED::SET_PED_FLEE_ATTRIBUTES(Local_534.f_0, 8, false);
-						PED::SET_PED_FLEE_ATTRIBUTES(Local_534.f_0, 1, false);
-						PED::SET_PED_FLEE_ATTRIBUTES(Local_534.f_0, 32, false);
-						PED::SET_PED_FLEE_ATTRIBUTES(Local_534.f_0, 64, false);
-						if ((func_15(Local_536.f_0) && PED::IS_PED_IN_VEHICLE(Local_534.f_0, Local_536.f_0, false)) && func_15(Local_535.f_0))
+						TASK::CLEAR_PED_TASKS(Local_3483.f_0);
+						PED::SET_PED_FLEE_ATTRIBUTES(Local_3483.f_0, 2, true);
+						PED::SET_PED_FLEE_ATTRIBUTES(Local_3483.f_0, 8, false);
+						PED::SET_PED_FLEE_ATTRIBUTES(Local_3483.f_0, 1, false);
+						PED::SET_PED_FLEE_ATTRIBUTES(Local_3483.f_0, 32, false);
+						PED::SET_PED_FLEE_ATTRIBUTES(Local_3483.f_0, 64, false);
+						if ((func_15(Local_3497.f_0) && PED::IS_PED_IN_VEHICLE(Local_3483.f_0, Local_3497.f_0, false)) && func_15(Local_3490.f_0))
 						{
 							TASK::OPEN_SEQUENCE_TASK(&iVar1);
-							TASK::TASK_VEHICLE_MISSION_PED_TARGET(0, Local_536.f_0, PLAYER::PLAYER_PED_ID(), 8, 80f, 786468, 500f, -1f, true);
+							TASK::TASK_VEHICLE_MISSION_PED_TARGET(0, Local_3497.f_0, PLAYER::PLAYER_PED_ID(), 8, 80f, 786468, 500f, -1f, true);
 							TASK::CLOSE_SEQUENCE_TASK(iVar1);
-							TASK::TASK_PERFORM_SEQUENCE(Local_534.f_0, iVar1);
+							TASK::TASK_PERFORM_SEQUENCE(Local_3483.f_0, iVar1);
 							TASK::CLEAR_SEQUENCE_TASK(&iVar1);
 						}
 						else
@@ -1953,13 +1953,13 @@ void func_50()//Position - 0x1550
 							TASK::OPEN_SEQUENCE_TASK(&iVar1);
 							TASK::TASK_SMART_FLEE_PED(0, PLAYER::PLAYER_PED_ID(), 300f, -1, false, false);
 							TASK::CLOSE_SEQUENCE_TASK(iVar1);
-							TASK::TASK_PERFORM_SEQUENCE(Local_534.f_0, iVar1);
+							TASK::TASK_PERFORM_SEQUENCE(Local_3483.f_0, iVar1);
 							TASK::CLEAR_SEQUENCE_TASK(&iVar1);
 						}
-						PED::SET_PED_KEEP_TASK(Local_534.f_0, true);
+						PED::SET_PED_KEEP_TASK(Local_3483.f_0, true);
 					}
 				}
-				switch (iLocal_321)
+				switch (iLocal_3246)
 				{
 					case 1:
 						sVar0 = "NIGEL2_F1";
@@ -2004,7 +2004,7 @@ void func_50()//Position - 0x1550
 					default:
 						break;
 				}
-				if (iLocal_321 == 0)
+				if (iLocal_3246 == 0)
 				{
 					func_575(1);
 				}
@@ -2012,7 +2012,7 @@ void func_50()//Position - 0x1550
 				{
 					func_66(sVar0, 1);
 				}
-				iLocal_274 = 1;
+				iLocal_3107 = 1;
 			}
 			break;
 		
@@ -2039,75 +2039,75 @@ void func_51(bool bParam0)//Position - 0x1919
 	iVar0 = 0;
 	while (iVar0 < 9)
 	{
-		func_56(&(Local_538[iVar0 /*2*/]), bParam0);
+		func_56(&(Local_3506[iVar0 /*2*/]), bParam0);
 		iVar0++;
 	}
 	iVar0 = 0;
 	while (iVar0 < 4)
 	{
-		func_56(&(Local_539[iVar0 /*2*/]), bParam0);
+		func_56(&(Local_3525[iVar0 /*2*/]), bParam0);
 		iVar0++;
 	}
-	if (func_12(Local_534.f_0))
+	if (func_12(Local_3483.f_0))
 	{
-		ENTITY::SET_ENTITY_LOAD_COLLISION_FLAG(Local_534.f_0, false, 1);
-		if (!PED::IS_PED_INJURED(Local_534.f_0))
+		ENTITY::SET_ENTITY_LOAD_COLLISION_FLAG(Local_3483.f_0, false, 1);
+		if (!PED::IS_PED_INJURED(Local_3483.f_0))
 		{
-			PED::SET_PED_KEEP_TASK(Local_534.f_0, true);
+			PED::SET_PED_KEEP_TASK(Local_3483.f_0, true);
 		}
 	}
-	PED::SET_PED_MODEL_IS_SUPPRESSED(Local_534.f_1, false);
-	func_56(&Local_534, bParam0);
-	PED::SET_PED_MODEL_IS_SUPPRESSED(Local_532.f_1, false);
-	if (func_22(Local_532.f_0))
+	PED::SET_PED_MODEL_IS_SUPPRESSED(Local_3483.f_1, false);
+	func_56(&Local_3483, bParam0);
+	PED::SET_PED_MODEL_IS_SUPPRESSED(Local_3469.f_1, false);
+	if (func_22(Local_3469.f_0))
 	{
-		PED::SET_PED_KEEP_TASK(Local_532.f_0, true);
+		PED::SET_PED_KEEP_TASK(Local_3469.f_0, true);
 	}
-	func_56(&Local_532, bParam0);
-	PED::SET_PED_MODEL_IS_SUPPRESSED(Local_533.f_1, false);
-	if (func_22(Local_533.f_0))
+	func_56(&Local_3469, bParam0);
+	PED::SET_PED_MODEL_IS_SUPPRESSED(Local_3476.f_1, false);
+	if (func_22(Local_3476.f_0))
 	{
-		PED::SET_PED_KEEP_TASK(Local_533.f_0, true);
+		PED::SET_PED_KEEP_TASK(Local_3476.f_0, true);
 	}
-	func_56(&Local_533, bParam0);
-	func_55(&Local_349);
-	if (func_15(Local_535.f_0))
+	func_56(&Local_3476, bParam0);
+	func_55(&Local_3274);
+	if (func_15(Local_3490.f_0))
 	{
-		VEHICLE::SET_VEHICLE_CAN_LEAK_OIL(Local_535.f_0, true);
-		VEHICLE::SET_VEHICLE_CAN_LEAK_PETROL(Local_535.f_0, true);
-		VEHICLE::SET_DISABLE_PRETEND_OCCUPANTS(Local_535.f_0, true);
-		if (iLocal_318)
+		VEHICLE::SET_VEHICLE_CAN_LEAK_OIL(Local_3490.f_0, true);
+		VEHICLE::SET_VEHICLE_CAN_LEAK_PETROL(Local_3490.f_0, true);
+		VEHICLE::SET_DISABLE_PRETEND_OCCUPANTS(Local_3490.f_0, true);
+		if (iLocal_3243)
 		{
-			VEHICLE::SET_FORCE_HD_VEHICLE(Local_535.f_0, false);
-			iLocal_318 = 0;
+			VEHICLE::SET_FORCE_HD_VEHICLE(Local_3490.f_0, false);
+			iLocal_3243 = 0;
 		}
 	}
-	if (ENTITY::DOES_ENTITY_EXIST(Local_535.f_0))
+	if (ENTITY::DOES_ENTITY_EXIST(Local_3490.f_0))
 	{
-		VEHICLE::REMOVE_VEHICLE_UPSIDEDOWN_CHECK(Local_535.f_0);
+		VEHICLE::REMOVE_VEHICLE_UPSIDEDOWN_CHECK(Local_3490.f_0);
 	}
-	func_52(&Local_535, bParam0);
-	if (func_15(Local_536.f_0))
+	func_52(&Local_3490, bParam0);
+	if (func_15(Local_3497.f_0))
 	{
-		ENTITY::SET_ENTITY_PROOFS(Local_536.f_0, false, false, false, false, false, false, false, false);
-		VEHICLE::SET_DISABLE_VEHICLE_ENGINE_FIRES(Local_536.f_0, false);
-		VEHICLE::SET_VEHICLE_CAN_LEAK_OIL(Local_536.f_0, true);
-		VEHICLE::SET_VEHICLE_CAN_LEAK_PETROL(Local_536.f_0, true);
-		VEHICLE::SET_DISABLE_PRETEND_OCCUPANTS(Local_536.f_0, true);
-		if (bLocal_300)
+		ENTITY::SET_ENTITY_PROOFS(Local_3497.f_0, false, false, false, false, false, false, false, false);
+		VEHICLE::SET_DISABLE_VEHICLE_ENGINE_FIRES(Local_3497.f_0, false);
+		VEHICLE::SET_VEHICLE_CAN_LEAK_OIL(Local_3497.f_0, true);
+		VEHICLE::SET_VEHICLE_CAN_LEAK_PETROL(Local_3497.f_0, true);
+		VEHICLE::SET_DISABLE_PRETEND_OCCUPANTS(Local_3497.f_0, true);
+		if (bLocal_3213)
 		{
-			VEHICLE::SET_VEHICLE_ENGINE_HEALTH(Local_536.f_0, 0f);
+			VEHICLE::SET_VEHICLE_ENGINE_HEALTH(Local_3497.f_0, 0f);
 		}
 	}
-	func_52(&Local_536, bParam0);
+	func_52(&Local_3497, bParam0);
 	iVar0 = 0;
 	while (iVar0 < 3)
 	{
-		func_52(&(Local_540[iVar0 /*2*/]), bParam0);
+		func_52(&(Local_3534[iVar0 /*2*/]), bParam0);
 		iVar0++;
 	}
-	func_52(&Local_541, bParam0);
-	func_56(&Local_537, bParam0);
+	func_52(&Local_3541, bParam0);
+	func_56(&Local_3504, bParam0);
 }
 
 void func_52(int* iParam0, bool bParam1)//Position - 0x1ABC
@@ -2233,33 +2233,33 @@ void func_58(int* iParam0)//Position - 0x1C46
 	}
 }
 
-void func_59(struct<3> Param0, float fParam1)//Position - 0x1C87
+void func_59(struct<3> Param0, float fParam3)//Position - 0x1C87
 {
-	func_60(&(Global_107196.f_2890), Param0, fParam1);
+	func_60(&(Global_107196.f_2890), Param0, fParam3);
 }
 
-void func_60(var uParam0, struct<3> Param1, var uParam2)//Position - 0x1CA0
+void func_60(var uParam0, struct<3> Param1, var uParam4)//Position - 0x1CA0
 {
 	*uParam0 = { Param1 };
-	uParam0->f_6 = uParam2;
+	uParam0->f_6 = uParam4;
 }
 
-void func_61(struct<3> Param0, float fParam1)//Position - 0x1CB6
+void func_61(struct<3> Param0, float fParam3)//Position - 0x1CB6
 {
 	if (func_62(Global_78799, 0f, 0f, 0f, 0))
 	{
 		Global_78799 = { Param0 };
-		Global_78802 = fParam1;
+		Global_78802 = fParam3;
 	}
 }
 
-bool func_62(struct<3> Param0, struct<3> Param1, bool bParam2)//Position - 0x1CE2
+bool func_62(struct<3> Param0, struct<3> Param3, bool bParam6)//Position - 0x1CE2
 {
-	if (bParam2)
+	if (bParam6)
 	{
-		return (Param0.f_0 == Param1.f_0 && Param0.f_1 == Param1.f_1);
+		return (Param0.f_0 == Param3.f_0 && Param0.f_1 == Param3.f_1);
 	}
-	return ((Param0.f_0 == Param1.f_0 && Param0.f_1 == Param1.f_1) && Param0.f_2 == Param1.f_2);
+	return ((Param0.f_0 == Param3.f_0 && Param0.f_1 == Param3.f_1) && Param0.f_2 == Param3.f_2);
 }
 
 int func_63(int iParam0)//Position - 0x1D29
@@ -2267,7 +2267,7 @@ int func_63(int iParam0)//Position - 0x1D29
 	int iVar0;
 	struct<3> Var1;
 	
-	if (!INTERIOR::IS_VALID_INTERIOR(iLocal_337))
+	if (!INTERIOR::IS_VALID_INTERIOR(iLocal_3262))
 	{
 		return 0;
 	}
@@ -2282,7 +2282,7 @@ int func_63(int iParam0)//Position - 0x1D29
 	else
 	{
 		Var1 = { ENTITY::GET_ENTITY_COORDS(iParam0, false) };
-		if (INTERIOR::GET_INTERIOR_AT_COORDS(Var1) == iLocal_337)
+		if (INTERIOR::GET_INTERIOR_AT_COORDS(Var1) == iLocal_3262)
 		{
 			return 1;
 		}
@@ -2336,11 +2336,11 @@ void func_67(char* sParam0)//Position - 0x1E1F
 
 void func_68(bool bParam0, bool bParam1)//Position - 0x1E5F
 {
-	if (!MISC::IS_STRING_NULL_OR_EMPTY(&cLocal_232))
+	if (!MISC::IS_STRING_NULL_OR_EMPTY(&cLocal_2583))
 	{
-		iLocal_134 = 0;
+		iLocal_136 = 0;
 		func_93();
-		PED::REMOVE_RELATIONSHIP_GROUP(iLocal_241);
+		PED::REMOVE_RELATIONSHIP_GROUP(iLocal_2599);
 		PATHFIND::SET_ROADS_BACK_TO_ORIGINAL(-9999f, -9999f, -9999f, 9999f, 9999f, 9999f, 1);
 		if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 		{
@@ -2348,7 +2348,7 @@ void func_68(bool bParam0, bool bParam1)//Position - 0x1E5F
 			PLAYER::SET_DISPATCH_COPS_FOR_PLAYER(PLAYER::PLAYER_ID(), true);
 			PED::SET_CREATE_RANDOM_COPS(true);
 		}
-		if (bLocal_150)
+		if (bLocal_152)
 		{
 			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(func_92());
 		}
@@ -2796,67 +2796,67 @@ void func_79()//Position - 0x24FF
 	iVar0 = 0;
 	while (iVar0 < 85)
 	{
-		iLocal_248[iVar0] = 0;
-		Local_216[iVar0 /*3*/] = { 0f, 0f, 0f };
-		fLocal_152[iVar0] = 0f;
-		fLocal_153[iVar0] = 0f;
+		iLocal_2831[iVar0] = 0;
+		Local_1878[iVar0 /*3*/] = { 0f, 0f, 0f };
 		fLocal_154[iVar0] = 0f;
-		fLocal_155[iVar0] = 0f;
-		iLocal_192[iVar0] = 0;
-		fLocal_156[iVar0] = 0f;
-		iLocal_193[iVar0] = 0;
-		iLocal_242[iVar0] = 0;
-		iLocal_194[iVar0] = 0;
+		fLocal_240[iVar0] = 0f;
+		fLocal_326[iVar0] = 0f;
+		fLocal_412[iVar0] = 0f;
+		iLocal_1319[iVar0] = 0;
+		fLocal_498[iVar0] = 0f;
+		iLocal_1405[iVar0] = 0;
+		iLocal_2600[iVar0] = 0;
+		iLocal_1491[iVar0] = 0;
 		iVar0++;
 	}
 	iVar0 = 0;
 	while (iVar0 < 15)
 	{
-		iLocal_249[iVar0] = 0;
+		iLocal_2917[iVar0] = 0;
 		iVar0++;
 	}
-	iLocal_199 = 0;
+	iLocal_1861 = 0;
 	iVar0 = 0;
 	while (iVar0 < 70)
 	{
-		iLocal_250[iVar0] = 0;
-		Local_217[iVar0 /*3*/] = { 0f, 0f, 0f };
-		fLocal_167[iVar0] = 0f;
-		fLocal_168[iVar0] = 0f;
-		fLocal_169[iVar0] = 0f;
-		fLocal_170[iVar0] = 0f;
-		iLocal_198[iVar0] = 0;
-		iLocal_243[iVar0] = 0;
+		iLocal_2933[iVar0] = 0;
+		Local_2134[iVar0 /*3*/] = { 0f, 0f, 0f };
+		fLocal_1014[iVar0] = 0f;
+		fLocal_1085[iVar0] = 0f;
+		fLocal_1156[iVar0] = 0f;
+		fLocal_1227[iVar0] = 0f;
+		iLocal_1790[iVar0] = 0;
+		iLocal_2686[iVar0] = 0;
 		iVar0++;
 	}
 	iVar0 = 0;
 	while (iVar0 < 10)
 	{
-		iLocal_252[iVar0] = 0;
+		iLocal_3075[iVar0] = 0;
 		iVar0++;
 	}
-	iLocal_201 = 0;
+	iLocal_1863 = 0;
 	iVar0 = 0;
 	while (iVar0 < 70)
 	{
-		iLocal_251[iVar0] = 0;
-		Local_218[iVar0 /*3*/] = { 0f, 0f, 0f };
-		fLocal_161[iVar0] = 0f;
-		fLocal_162[iVar0] = 0f;
-		fLocal_163[iVar0] = 0f;
-		fLocal_164[iVar0] = 0f;
-		iLocal_195[iVar0] = 0;
-		fLocal_165[iVar0] = 0f;
-		iLocal_196[iVar0] = 0;
-		iLocal_244[iVar0] = 0;
-		iLocal_197[iVar0] = 0;
+		iLocal_3004[iVar0] = 0;
+		Local_2345[iVar0 /*3*/] = { 0f, 0f, 0f };
+		fLocal_588[iVar0] = 0f;
+		fLocal_659[iVar0] = 0f;
+		fLocal_730[iVar0] = 0f;
+		fLocal_801[iVar0] = 0f;
+		iLocal_1577[iVar0] = 0;
+		fLocal_872[iVar0] = 0f;
+		iLocal_1648[iVar0] = 0;
+		iLocal_2757[iVar0] = 0;
+		iLocal_1719[iVar0] = 0;
 		iVar0++;
 	}
-	iLocal_200 = 0;
-	iLocal_203 = 0;
-	iLocal_206 = 0;
-	iLocal_207 = 0;
-	iLocal_208 = 0;
+	iLocal_1862 = 0;
+	iLocal_1865 = 0;
+	iLocal_1868 = 0;
+	iLocal_1869 = 0;
+	iLocal_1870 = 0;
 }
 
 void func_80()//Position - 0x268C
@@ -2874,15 +2874,15 @@ void func_81()//Position - 0x26A0
 	iVar0 = 0;
 	while (iVar0 < 70)
 	{
-		if (ENTITY::DOES_ENTITY_EXIST(iLocal_251[iVar0]))
+		if (ENTITY::DOES_ENTITY_EXIST(iLocal_3004[iVar0]))
 		{
-			if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_251[iVar0], false))
+			if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_3004[iVar0], false))
 			{
-				if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_251[iVar0]))
+				if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_3004[iVar0]))
 				{
-					VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_251[iVar0]);
+					VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_3004[iVar0]);
 				}
-				iVar1 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iLocal_251[iVar0], -1, false);
+				iVar1 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iLocal_3004[iVar0], -1, false);
 				if (ENTITY::DOES_ENTITY_EXIST(iVar1) && iVar1 != PLAYER::PLAYER_PED_ID())
 				{
 					if (ENTITY::IS_ENTITY_A_MISSION_ENTITY(iVar1))
@@ -2891,17 +2891,17 @@ void func_81()//Position - 0x26A0
 					}
 				}
 			}
-			if (ENTITY::IS_ENTITY_A_MISSION_ENTITY(iLocal_251[iVar0]))
+			if (ENTITY::IS_ENTITY_A_MISSION_ENTITY(iLocal_3004[iVar0]))
 			{
-				VEHICLE::DELETE_VEHICLE(&(iLocal_251[iVar0]));
+				VEHICLE::DELETE_VEHICLE(&(iLocal_3004[iVar0]));
 			}
 		}
-		iLocal_196[iVar0] = 0;
-		if (!bLocal_130 && !bLocal_143)
+		iLocal_1648[iVar0] = 0;
+		if (!bLocal_132 && !bLocal_145)
 		{
-			if (iLocal_195[iVar0] > 0)
+			if (iLocal_1577[iVar0] > 0)
 			{
-				VEHICLE::REMOVE_VEHICLE_RECORDING(iLocal_195[iVar0], &cLocal_232);
+				VEHICLE::REMOVE_VEHICLE_RECORDING(iLocal_1577[iVar0], &cLocal_2583);
 			}
 		}
 		iVar0++;
@@ -2909,9 +2909,9 @@ void func_81()//Position - 0x26A0
 	iVar0 = 0;
 	while (iVar0 < 70)
 	{
-		if (!iLocal_244[iVar0] == 0)
+		if (!iLocal_2757[iVar0] == 0)
 		{
-			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_244[iVar0]);
+			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_2757[iVar0]);
 		}
 		iVar0++;
 	}
@@ -2924,27 +2924,27 @@ void func_82()//Position - 0x2797
 	iVar0 = 0;
 	while (iVar0 < 70)
 	{
-		if (ENTITY::DOES_ENTITY_EXIST(iLocal_250[iVar0]))
+		if (ENTITY::DOES_ENTITY_EXIST(iLocal_2933[iVar0]))
 		{
-			if (ENTITY::IS_ENTITY_A_MISSION_ENTITY(iLocal_250[iVar0]))
+			if (ENTITY::IS_ENTITY_A_MISSION_ENTITY(iLocal_2933[iVar0]))
 			{
-				VEHICLE::DELETE_VEHICLE(&(iLocal_250[iVar0]));
+				VEHICLE::DELETE_VEHICLE(&(iLocal_2933[iVar0]));
 			}
 		}
-		iLocal_198[iVar0] = 0;
+		iLocal_1790[iVar0] = 0;
 		iVar0++;
 	}
 	iVar0 = 0;
 	while (iVar0 < 70)
 	{
-		if (!iLocal_243[iVar0] == 0)
+		if (!iLocal_2686[iVar0] == 0)
 		{
-			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_243[iVar0]);
+			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_2686[iVar0]);
 		}
 		iVar0++;
 	}
-	iLocal_204 = 0;
-	iLocal_201 = 0;
+	iLocal_1866 = 0;
+	iLocal_1863 = 0;
 }
 
 void func_83()//Position - 0x2814
@@ -2955,15 +2955,15 @@ void func_83()//Position - 0x2814
 	iVar0 = 0;
 	while (iVar0 < 85)
 	{
-		if (ENTITY::DOES_ENTITY_EXIST(iLocal_248[iVar0]))
+		if (ENTITY::DOES_ENTITY_EXIST(iLocal_2831[iVar0]))
 		{
-			if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_248[iVar0], false))
+			if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_2831[iVar0], false))
 			{
-				if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_248[iVar0]))
+				if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_2831[iVar0]))
 				{
-					VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_248[iVar0]);
+					VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_2831[iVar0]);
 				}
-				iVar1 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iLocal_248[iVar0], -1, false);
+				iVar1 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iLocal_2831[iVar0], -1, false);
 				if (ENTITY::DOES_ENTITY_EXIST(iVar1) && iVar1 != PLAYER::PLAYER_PED_ID())
 				{
 					if (ENTITY::IS_ENTITY_A_MISSION_ENTITY(iVar1))
@@ -2972,32 +2972,32 @@ void func_83()//Position - 0x2814
 					}
 				}
 			}
-			if (ENTITY::IS_ENTITY_A_MISSION_ENTITY(iLocal_248[iVar0]))
+			if (ENTITY::IS_ENTITY_A_MISSION_ENTITY(iLocal_2831[iVar0]))
 			{
-				VEHICLE::DELETE_VEHICLE(&(iLocal_248[iVar0]));
+				VEHICLE::DELETE_VEHICLE(&(iLocal_2831[iVar0]));
 			}
 		}
-		if (!bLocal_130 && !bLocal_143)
+		if (!bLocal_132 && !bLocal_145)
 		{
-			if (iLocal_192[iVar0] > 0)
+			if (iLocal_1319[iVar0] > 0)
 			{
-				VEHICLE::REMOVE_VEHICLE_RECORDING(iLocal_192[iVar0], &cLocal_232);
+				VEHICLE::REMOVE_VEHICLE_RECORDING(iLocal_1319[iVar0], &cLocal_2583);
 			}
 		}
-		iLocal_193[iVar0] = 0;
+		iLocal_1405[iVar0] = 0;
 		iVar0++;
 	}
 	iVar0 = 0;
 	while (iVar0 < 85)
 	{
-		if (!iLocal_242[iVar0] == 0)
+		if (!iLocal_2600[iVar0] == 0)
 		{
-			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_242[iVar0]);
+			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_2600[iVar0]);
 		}
 		iVar0++;
 	}
-	iLocal_203 = 0;
-	iLocal_199 = 0;
+	iLocal_1865 = 0;
+	iLocal_1861 = 0;
 }
 
 void func_84()//Position - 0x2913
@@ -3007,25 +3007,25 @@ void func_84()//Position - 0x2913
 	iVar0 = 0;
 	while (iVar0 < 70)
 	{
-		if (ENTITY::DOES_ENTITY_EXIST(iLocal_251[iVar0]))
+		if (ENTITY::DOES_ENTITY_EXIST(iLocal_3004[iVar0]))
 		{
-			if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_251[iVar0], false))
+			if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_3004[iVar0], false))
 			{
-				if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_251[iVar0]))
+				if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_3004[iVar0]))
 				{
-					VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_251[iVar0]);
+					VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_3004[iVar0]);
 				}
 			}
-			func_86(iLocal_251[iVar0]);
-			func_85(iLocal_251[iVar0]);
+			func_86(iLocal_3004[iVar0]);
+			func_85(iLocal_3004[iVar0]);
 		}
-		iLocal_196[iVar0] = 0;
-		iLocal_197[iVar0] = 0;
-		if (!bLocal_130 && !bLocal_143)
+		iLocal_1648[iVar0] = 0;
+		iLocal_1719[iVar0] = 0;
+		if (!bLocal_132 && !bLocal_145)
 		{
-			if (iLocal_195[iVar0] > 0)
+			if (iLocal_1577[iVar0] > 0)
 			{
-				VEHICLE::REMOVE_VEHICLE_RECORDING(iLocal_195[iVar0], &cLocal_232);
+				VEHICLE::REMOVE_VEHICLE_RECORDING(iLocal_1577[iVar0], &cLocal_2583);
 			}
 		}
 		iVar0++;
@@ -3033,13 +3033,13 @@ void func_84()//Position - 0x2913
 	iVar0 = 0;
 	while (iVar0 < 70)
 	{
-		if (!iLocal_244[iVar0] == 0)
+		if (!iLocal_2757[iVar0] == 0)
 		{
-			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_244[iVar0]);
+			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_2757[iVar0]);
 		}
 		iVar0++;
 	}
-	iLocal_205 = 0;
+	iLocal_1867 = 0;
 }
 
 void func_85(int iParam0)//Position - 0x29E0
@@ -3073,7 +3073,7 @@ void func_86(int iParam0)//Position - 0x29F7
 				}
 				TASK::TASK_VEHICLE_MISSION(iVar1, iParam0, 0, 1, fVar0, 786603, 5f, 5f, true);
 				PED::SET_PED_FLEE_ATTRIBUTES(iVar1, 8192, true);
-				if (bLocal_151)
+				if (bLocal_153)
 				{
 					PED::SET_PED_FLEE_ATTRIBUTES(iVar1, 65536, true);
 					PED::SET_PED_FLEE_ATTRIBUTES(iVar1, 2, false);
@@ -3091,27 +3091,27 @@ void func_87()//Position - 0x2A91
 	iVar0 = 0;
 	while (iVar0 < 70)
 	{
-		if (ENTITY::DOES_ENTITY_EXIST(iLocal_250[iVar0]))
+		if (ENTITY::DOES_ENTITY_EXIST(iLocal_2933[iVar0]))
 		{
-			if (!ENTITY::IS_ENTITY_DEAD(iLocal_250[iVar0], false))
+			if (!ENTITY::IS_ENTITY_DEAD(iLocal_2933[iVar0], false))
 			{
-				ENTITY::SET_ENTITY_COLLISION(iLocal_250[iVar0], true, false);
+				ENTITY::SET_ENTITY_COLLISION(iLocal_2933[iVar0], true, false);
 			}
-			func_85(iLocal_250[iVar0]);
+			func_85(iLocal_2933[iVar0]);
 		}
 		iVar0++;
 	}
 	iVar0 = 0;
 	while (iVar0 < 70)
 	{
-		if (!iLocal_243[iVar0] == 0)
+		if (!iLocal_2686[iVar0] == 0)
 		{
-			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_243[iVar0]);
+			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_2686[iVar0]);
 		}
 		iVar0++;
 	}
-	iLocal_204 = 0;
-	iLocal_201 = 0;
+	iLocal_1866 = 0;
+	iLocal_1863 = 0;
 }
 
 void func_88()//Position - 0x2B15
@@ -3121,29 +3121,29 @@ void func_88()//Position - 0x2B15
 	iVar0 = 0;
 	while (iVar0 < 85)
 	{
-		if (ENTITY::DOES_ENTITY_EXIST(iLocal_248[iVar0]))
+		if (ENTITY::DOES_ENTITY_EXIST(iLocal_2831[iVar0]))
 		{
-			if (!ENTITY::IS_ENTITY_DEAD(iLocal_248[iVar0], false))
+			if (!ENTITY::IS_ENTITY_DEAD(iLocal_2831[iVar0], false))
 			{
-				ENTITY::SET_ENTITY_COLLISION(iLocal_248[iVar0], true, false);
+				ENTITY::SET_ENTITY_COLLISION(iLocal_2831[iVar0], true, false);
 			}
-			if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_248[iVar0], false))
+			if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_2831[iVar0], false))
 			{
-				if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_248[iVar0]))
+				if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_2831[iVar0]))
 				{
-					VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_248[iVar0]);
+					VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_2831[iVar0]);
 				}
 			}
-			func_86(iLocal_248[iVar0]);
-			func_85(iLocal_248[iVar0]);
+			func_86(iLocal_2831[iVar0]);
+			func_85(iLocal_2831[iVar0]);
 		}
-		iLocal_193[iVar0] = 0;
-		iLocal_194[iVar0] = 0;
-		if (!bLocal_130 && !bLocal_143)
+		iLocal_1405[iVar0] = 0;
+		iLocal_1491[iVar0] = 0;
+		if (!bLocal_132 && !bLocal_145)
 		{
-			if (iLocal_192[iVar0] > 0)
+			if (iLocal_1319[iVar0] > 0)
 			{
-				VEHICLE::REMOVE_VEHICLE_RECORDING(iLocal_192[iVar0], &cLocal_232);
+				VEHICLE::REMOVE_VEHICLE_RECORDING(iLocal_1319[iVar0], &cLocal_2583);
 			}
 		}
 		iVar0++;
@@ -3151,14 +3151,14 @@ void func_88()//Position - 0x2B15
 	iVar0 = 0;
 	while (iVar0 < 85)
 	{
-		if (!iLocal_242[iVar0] == 0)
+		if (!iLocal_2600[iVar0] == 0)
 		{
-			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_242[iVar0]);
+			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_2600[iVar0]);
 		}
 		iVar0++;
 	}
-	iLocal_203 = 0;
-	iLocal_199 = 0;
+	iLocal_1865 = 0;
+	iLocal_1861 = 0;
 }
 
 int func_89()//Position - 0x2C03
@@ -3178,11 +3178,11 @@ int func_91()//Position - 0x2C1D
 
 int func_92()//Position - 0x2C2A
 {
-	if (iLocal_245 == 0)
+	if (iLocal_2828 == 0)
 	{
 		return joaat("A_M_Y_Business_01");
 	}
-	return iLocal_245;
+	return iLocal_2828;
 }
 
 void func_93()//Position - 0x2C47
@@ -3198,10 +3198,10 @@ void func_93()//Position - 0x2C47
 
 void func_94()//Position - 0x2C71
 {
-	func_95(&(Local_534.f_2));
-	func_95(&(Local_535.f_2));
-	func_95(&(Local_533.f_2));
-	func_95(&(Local_532.f_2));
+	func_95(&(Local_3483.f_2));
+	func_95(&(Local_3490.f_2));
+	func_95(&(Local_3476.f_2));
+	func_95(&(Local_3469.f_2));
 }
 
 void func_95(int* iParam0)//Position - 0x2C9D
@@ -3215,22 +3215,22 @@ void func_95(int* iParam0)//Position - 0x2C9D
 
 void func_96()//Position - 0x2CBD
 {
-	if (func_294(iLocal_335, 1000))
+	if (func_294(iLocal_3260, 1000))
 	{
-		if (func_22(Local_533.f_0) && func_15(Local_535.f_0))
+		if (func_22(Local_3476.f_0) && func_15(Local_3490.f_0))
 		{
-			if (PED::IS_PED_IN_VEHICLE(Local_533.f_0, Local_535.f_0, false))
+			if (PED::IS_PED_IN_VEHICLE(Local_3476.f_0, Local_3490.f_0, false))
 			{
-				if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(Local_535.f_0))
+				if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(Local_3490.f_0))
 				{
-					VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(Local_535.f_0);
-					VEHICLE::REMOVE_VEHICLE_RECORDING(1, sLocal_360);
+					VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(Local_3490.f_0);
+					VEHICLE::REMOVE_VEHICLE_RECORDING(1, sLocal_3297);
 				}
-				if (!func_42(Local_533.f_0, joaat("SCRIPT_TASK_VEHICLE_DRIVE_WANDER")))
+				if (!func_42(Local_3476.f_0, joaat("SCRIPT_TASK_VEHICLE_DRIVE_WANDER")))
 				{
-					TASK::TASK_VEHICLE_DRIVE_WANDER(Local_533.f_0, Local_535.f_0, 60f, 786469);
-					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_533.f_0, true);
-					PED::SET_PED_KEEP_TASK(Local_533.f_0, true);
+					TASK::TASK_VEHICLE_DRIVE_WANDER(Local_3476.f_0, Local_3490.f_0, 60f, 786469);
+					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_3476.f_0, true);
+					PED::SET_PED_KEEP_TASK(Local_3476.f_0, true);
 				}
 			}
 		}
@@ -4036,11 +4036,11 @@ int func_123(int iParam0, int iParam1, int iParam2)//Position - 0x3F90
 	int iVar0;
 	int iVar1;
 	var uVar2;
-	int iVar3;
-	int iVar4;
-	var uVar5;
-	var uVar6;
-	int iVar7;
+	int iVar19;
+	int iVar20;
+	var uVar21;
+	var uVar31;
+	int iVar48;
 	
 	if (PED::IS_PED_INJURED(iParam0) || iParam2 == -99)
 	{
@@ -4071,17 +4071,17 @@ int func_123(int iParam0, int iParam1, int iParam2)//Position - 0x3F90
 	}
 	else if (iParam1 == 13)
 	{
-		uVar5 = { func_165(iVar0, iParam2) };
-		iVar3 = 0;
-		while (iVar3 <= 8)
+		uVar21 = { func_165(iVar0, iParam2) };
+		iVar19 = 0;
+		while (iVar19 <= 8)
 		{
-			if (!func_123(iParam0, 14, uVar5[iVar3]))
+			if (!func_123(iParam0, 14, uVar21[iVar19]))
 			{
-				iVar4 = 0;
+				iVar20 = 0;
 			}
-			iVar3++;
+			iVar19++;
 		}
-		return iVar4;
+		return iVar20;
 	}
 	else if (iParam1 == 14)
 	{
@@ -4089,20 +4089,20 @@ int func_123(int iParam0, int iParam1, int iParam2)//Position - 0x3F90
 	}
 	else
 	{
-		uVar6 = { func_168(iVar0, 0) };
-		Global_78341[1 /*14*/] = { func_172(iVar0, iParam1, uVar6[iParam1], -1) };
+		uVar31 = { func_168(iVar0, 0) };
+		Global_78341[1 /*14*/] = { func_172(iVar0, iParam1, uVar31[iParam1], -1) };
 		if (PED::GET_NUMBER_OF_PED_DRAWABLE_VARIATIONS(iParam0, func_164(iParam1)) > 0 && PED::GET_NUMBER_OF_PED_TEXTURE_VARIATIONS(iParam0, func_164(iParam1), Global_78341[1 /*14*/].f_3) > 0)
 		{
 			PED::SET_PED_COMPONENT_VARIATION(iParam0, func_164(iParam1), Global_78341[1 /*14*/].f_3, Global_78341[1 /*14*/].f_4, 0);
 		}
 	}
-	if (func_163(iParam0, iVar0, &iVar7, 0))
+	if (func_163(iParam0, iVar0, &iVar48, 0))
 	{
-		func_126(iParam0, 2, iVar7, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
+		func_126(iParam0, 2, iVar48, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
 	}
-	if (func_124(iParam0, iVar0, &iVar7))
+	if (func_124(iParam0, iVar0, &iVar48))
 	{
-		func_126(iParam0, 1, iVar7, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
+		func_126(iParam0, 1, iVar48, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
 	}
 	return 1;
 }
@@ -4161,10 +4161,10 @@ int func_126(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 	int iVar9;
 	int iVar10;
 	var uVar11;
-	var uVar12;
-	var uVar13;
-	struct<14> Var14;
-	var uVar15;
+	var uVar28;
+	var uVar38;
+	struct<14> Var55;
+	var uVar69;
 	
 	if (PED::IS_PED_INJURED(iParam0) || iParam2 == -99)
 	{
@@ -4265,19 +4265,19 @@ int func_126(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 				{
 					if (iVar0 == 13)
 					{
-						uVar12 = 9;
+						uVar28 = 9;
 						if (iParam5 == 1)
 						{
-							uVar12 = { Global_78401 };
+							uVar28 = { Global_78401 };
 						}
 						else
 						{
-							uVar12 = { func_165(iVar10, uVar11[iVar0]) };
+							uVar28 = { func_165(iVar10, uVar11[iVar0]) };
 						}
 						iVar1 = 0;
 						while (iVar1 <= 8)
 						{
-							Global_78341[1 /*14*/] = { func_172(iVar10, 14, uVar12[iVar1], -1) };
+							Global_78341[1 /*14*/] = { func_172(iVar10, 14, uVar28[iVar1], -1) };
 							func_142(iParam0, Global_78341[1 /*14*/].f_12, Global_78341[1 /*14*/].f_3, Global_78341[1 /*14*/].f_4);
 							func_158(14);
 							if (Global_78339 == 1)
@@ -4285,7 +4285,7 @@ int func_126(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 								iVar2 = 0;
 								while (iVar2 < 15)
 								{
-									iVar3 = func_134(iParam0, iVar10, 14, uVar12[iVar1], iVar2, 0);
+									iVar3 = func_134(iParam0, iVar10, 14, uVar28[iVar1], iVar2, 0);
 									if (iVar3 != -99)
 									{
 										func_126(iParam0, iVar2, iVar3, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
@@ -4344,8 +4344,8 @@ int func_126(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 					}
 					else
 					{
-						uVar13 = { func_168(iVar10, 0) };
-						func_126(iParam0, iVar0, uVar13[iVar0], 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
+						uVar38 = { func_168(iVar10, 0) };
+						func_126(iParam0, iVar0, uVar38[iVar0], 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
 					}
 				}
 			}
@@ -4353,42 +4353,42 @@ int func_126(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 		}
 		if (iParam7 == 1)
 		{
-			Var14 = { func_172(iVar10, 8, iVar5, -1) };
+			Var55 = { func_172(iVar10, 8, iVar5, -1) };
 			if (iVar5 != -99)
 			{
-				if (func_130(iVar10, iParam2, 8, iVar5, &uVar11, &Var14))
+				if (func_130(iVar10, iParam2, 8, iVar5, &uVar11, &Var55))
 				{
 					func_126(iParam0, 8, iVar5, iParam3, iParam4, iParam5, iParam6, iParam7, -1, -1, -1, 0, 0, 0);
 				}
 			}
-			Var14 = { func_172(iVar10, 9, iVar6, -1) };
+			Var55 = { func_172(iVar10, 9, iVar6, -1) };
 			if (iVar6 != -99)
 			{
-				if (func_130(iVar10, iParam2, 9, iVar6, &uVar11, &Var14))
+				if (func_130(iVar10, iParam2, 9, iVar6, &uVar11, &Var55))
 				{
 					func_126(iParam0, 9, iVar6, iParam3, iParam4, iParam5, iParam6, iParam7, -1, -1, -1, 0, 0, 0);
 				}
 			}
-			Var14 = { func_172(iVar10, 14, iVar7, -1) };
+			Var55 = { func_172(iVar10, 14, iVar7, -1) };
 			if (iVar7 != -99)
 			{
-				if (func_130(iVar10, iParam2, 14, iVar7, &uVar11, &Var14))
+				if (func_130(iVar10, iParam2, 14, iVar7, &uVar11, &Var55))
 				{
 					func_126(iParam0, 14, iVar7, iParam3, iParam4, iParam5, iParam6, iParam7, -1, -1, -1, 0, 0, 0);
 				}
 			}
-			Var14 = { func_172(iVar10, 14, iVar8, -1) };
+			Var55 = { func_172(iVar10, 14, iVar8, -1) };
 			if (iVar8 != -99)
 			{
-				if (func_130(iVar10, iParam2, 14, iVar8, &uVar11, &Var14))
+				if (func_130(iVar10, iParam2, 14, iVar8, &uVar11, &Var55))
 				{
 					func_126(iParam0, 14, iVar8, iParam3, iParam4, iParam5, iParam6, iParam7, -1, -1, -1, 0, 0, 0);
 				}
 			}
-			Var14 = { func_172(iVar10, 14, iVar9, -1) };
+			Var55 = { func_172(iVar10, 14, iVar9, -1) };
 			if (iVar9 != -99)
 			{
-				if (func_130(iVar10, iParam2, 14, iVar9, &uVar11, &Var14))
+				if (func_130(iVar10, iParam2, 14, iVar9, &uVar11, &Var55))
 				{
 					func_126(iParam0, 14, iVar9, iParam3, iParam4, iParam5, iParam6, iParam7, -1, -1, -1, 0, 0, 0);
 				}
@@ -4397,11 +4397,11 @@ int func_126(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 	}
 	else if (iParam1 == 13)
 	{
-		uVar15 = { func_165(iVar10, iParam2) };
+		uVar69 = { func_165(iVar10, iParam2) };
 		iVar1 = 0;
 		while (iVar1 <= 8)
 		{
-			Global_78341[1 /*14*/] = { func_172(iVar10, 14, uVar15[iVar1], -1) };
+			Global_78341[1 /*14*/] = { func_172(iVar10, 14, uVar69[iVar1], -1) };
 			func_142(iParam0, Global_78341[1 /*14*/].f_12, Global_78341[1 /*14*/].f_3, Global_78341[1 /*14*/].f_4);
 			func_158(14);
 			if (Global_78339 == 1)
@@ -4409,7 +4409,7 @@ int func_126(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 				iVar2 = 0;
 				while (iVar2 < 15)
 				{
-					iVar3 = func_134(iParam0, iVar10, 14, uVar15[iVar1], iVar2, 0);
+					iVar3 = func_134(iParam0, iVar10, 14, uVar69[iVar1], iVar2, 0);
 					if (iVar3 != -99)
 					{
 						func_126(iParam0, iVar2, iVar3, 0, -1, 0, 0, 0, -1, -1, -1, 0, 0, 0);
@@ -4580,7 +4580,7 @@ bool func_129(int iParam0, int iParam1, int iParam2)//Position - 0x4B8E
 int func_130(int iParam0, int iParam1, int iParam2, int iParam3, var uParam4, var uParam5)//Position - 0x4BB6
 {
 	var uVar0;
-	int iVar1;
+	int iVar10;
 	
 	if ((*uParam4)[iParam2] == iParam3)
 	{
@@ -4604,14 +4604,14 @@ int func_130(int iParam0, int iParam1, int iParam2, int iParam3, var uParam4, va
 	if (iParam2 == 14)
 	{
 		uVar0 = { func_165(iParam0, (*uParam4)[13]) };
-		iVar1 = 0;
-		while (iVar1 <= 8)
+		iVar10 = 0;
+		while (iVar10 <= 8)
 		{
-			if (uVar0[iVar1] == iParam3)
+			if (uVar0[iVar10] == iParam3)
 			{
 				return 1;
 			}
-			iVar1++;
+			iVar10++;
 		}
 	}
 	if (func_131(iParam0, iParam2, iParam3))
@@ -6432,11 +6432,11 @@ int func_143(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x6
 int func_144(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x6FCC
 {
 	struct<2> Var0;
-	int iVar1;
-	int iVar2;
-	struct<2> Var3;
-	int iVar4;
-	int iVar5;
+	int iVar17;
+	int iVar18;
+	struct<2> Var19;
+	int iVar36;
+	int iVar37;
 	
 	if (iParam2 == 12)
 	{
@@ -6447,24 +6447,24 @@ int func_144(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x6
 	else if (iParam2 == 14)
 	{
 		FILES::INIT_SHOP_PED_PROP(&Var0);
-		iVar1 = (iParam1 - func_146(iParam0));
-		if (iVar1 < 0)
+		iVar17 = (iParam1 - func_146(iParam0));
+		if (iVar17 < 0)
 		{
 			return -1;
 		}
-		iVar2 = FILES::SETUP_SHOP_PED_APPAREL_QUERY_TU(iParam3, 10, -1, true, -1, -1);
-		if (iVar2 <= iVar1)
+		iVar18 = FILES::SETUP_SHOP_PED_APPAREL_QUERY_TU(iParam3, 10, -1, true, -1, -1);
+		if (iVar18 <= iVar17)
 		{
 			return -1;
 		}
-		FILES::GET_SHOP_PED_QUERY_PROP(iVar1, &Var0);
+		FILES::GET_SHOP_PED_QUERY_PROP(iVar17, &Var0);
 		return Var0.f_1;
 	}
 	else
 	{
-		FILES::INIT_SHOP_PED_COMPONENT(&Var3);
-		iVar4 = (iParam1 - func_145(iParam0, func_164(iParam2)));
-		if (iVar4 < 0)
+		FILES::INIT_SHOP_PED_COMPONENT(&Var19);
+		iVar36 = (iParam1 - func_145(iParam0, func_164(iParam2)));
+		if (iVar36 < 0)
 		{
 			return -1;
 		}
@@ -6472,16 +6472,16 @@ int func_144(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x6
 		{
 			return Global_78491.f_13[iParam2];
 		}
-		iVar5 = FILES::SETUP_SHOP_PED_APPAREL_QUERY_TU(iParam3, 10, -1, false, -1, func_164(iParam2));
-		if (iVar5 <= iVar4)
+		iVar37 = FILES::SETUP_SHOP_PED_APPAREL_QUERY_TU(iParam3, 10, -1, false, -1, func_164(iParam2));
+		if (iVar37 <= iVar36)
 		{
 			return -1;
 		}
-		FILES::GET_SHOP_PED_QUERY_COMPONENT(iVar4, &Var3);
-		Global_78491.f_13[iParam2] = Var3.f_1;
+		FILES::GET_SHOP_PED_QUERY_COMPONENT(iVar36, &Var19);
+		Global_78491.f_13[iParam2] = Var19.f_1;
 		Global_78491[iParam2] = iParam1;
 		Global_78491.f_26[iParam2] = iParam0;
-		return Var3.f_1;
+		return Var19.f_1;
 	}
 	return -1;
 }
@@ -6945,23 +6945,23 @@ int func_148(int iParam0, int iParam1)//Position - 0x75EA
 int func_149(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x7728
 {
 	struct<2> Var0;
-	int iVar1;
-	int iVar2;
-	int iVar3;
-	int iVar4;
+	int iVar15;
+	int iVar16;
+	int iVar17;
+	int iVar18;
 	
 	if (iParam2 == 12)
 	{
-		iVar2 = FILES::SETUP_SHOP_PED_OUTFIT_QUERY(iParam3, false);
-		iVar1 = 0;
-		while (iVar1 < iVar2)
+		iVar16 = FILES::SETUP_SHOP_PED_OUTFIT_QUERY(iParam3, false);
+		iVar15 = 0;
+		while (iVar15 < iVar16)
 		{
-			FILES::GET_SHOP_PED_QUERY_OUTFIT(iVar1, &Var0);
+			FILES::GET_SHOP_PED_QUERY_OUTFIT(iVar15, &Var0);
 			if (Var0.f_1 == iParam1)
 			{
-				return (func_150(iParam0) + iVar1);
+				return (func_150(iParam0) + iVar15);
 			}
-			iVar1++;
+			iVar15++;
 		}
 	}
 	else if (iParam2 == 13)
@@ -6970,19 +6970,19 @@ int func_149(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x7
 	else if (iParam2 == 14)
 	{
 		FILES::SETUP_SHOP_PED_APPAREL_QUERY_TU(iParam3, 10, -1, true, -1, -1);
-		iVar3 = FILES::GET_SHOP_PED_QUERY_PROP_INDEX(iParam1);
-		if (iVar3 != -1)
+		iVar17 = FILES::GET_SHOP_PED_QUERY_PROP_INDEX(iParam1);
+		if (iVar17 != -1)
 		{
-			return (func_146(iParam0) + iVar3);
+			return (func_146(iParam0) + iVar17);
 		}
 	}
 	else
 	{
 		FILES::SETUP_SHOP_PED_APPAREL_QUERY_TU(iParam3, 10, -1, false, -1, func_164(iParam2));
-		iVar4 = FILES::GET_SHOP_PED_QUERY_COMPONENT_INDEX(iParam1);
-		if (iVar4 != -1)
+		iVar18 = FILES::GET_SHOP_PED_QUERY_COMPONENT_INDEX(iParam1);
+		if (iVar18 != -1)
 		{
-			return (func_145(iParam0, func_164(iParam2)) + iVar4);
+			return (func_145(iParam0, func_164(iParam2)) + iVar18);
 		}
 	}
 	return -99;
@@ -11152,8 +11152,8 @@ void func_166(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x
 {
 	int iVar0;
 	struct<4> Var1;
-	struct<3> Var2;
-	int iVar3;
+	struct<3> Var16;
+	int iVar19;
 	
 	if (iParam2 != 0 && iParam2 != -99)
 	{
@@ -11190,21 +11190,21 @@ void func_166(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x
 		FILES::GET_SHOP_PED_OUTFIT(iParam2, &Var1);
 		if (!FILES::IS_CONTENT_ITEM_LOCKED(Var1.f_0))
 		{
-			iVar3 = 0;
-			while (iVar3 < Var1.f_3)
+			iVar19 = 0;
+			while (iVar19 < Var1.f_3)
 			{
-				if (FILES::GET_SHOP_PED_OUTFIT_PROP_VARIANT(Var1.f_1, iVar3, &Var2) && Var2.f_2 != -1)
+				if (FILES::GET_SHOP_PED_OUTFIT_PROP_VARIANT(Var1.f_1, iVar19, &Var16) && Var16.f_2 != -1)
 				{
-					if ((Var2.f_0 != 0 && Var2.f_0 != -1) && Var2.f_0 != joaat("0"))
+					if ((Var16.f_0 != 0 && Var16.f_0 != -1) && Var16.f_0 != joaat("0"))
 					{
-						(*iParam0)[Var2.f_2] = func_149(iParam1, Var2.f_0, 14, iVar0);
+						(*iParam0)[Var16.f_2] = func_149(iParam1, Var16.f_0, 14, iVar0);
 					}
-					else if (Var2.f_1 != -1)
+					else if (Var16.f_1 != -1)
 					{
-						(*iParam0)[Var2.f_2] = Var2.f_1;
+						(*iParam0)[Var16.f_2] = Var16.f_1;
 					}
 				}
-				iVar3++;
+				iVar19++;
 			}
 		}
 	}
@@ -12105,9 +12105,9 @@ void func_169(var uParam0, int iParam1, int iParam2, int iParam3)//Position - 0x
 {
 	int iVar0;
 	struct<5> Var1;
-	struct<3> Var2;
-	struct<2> Var3;
-	int iVar4;
+	struct<3> Var16;
+	struct<2> Var19;
+	int iVar36;
 	
 	(*uParam0)[0] = 0;
 	(*uParam0)[2] = -99;
@@ -12152,38 +12152,38 @@ void func_169(var uParam0, int iParam1, int iParam2, int iParam3)//Position - 0x
 	FILES::GET_SHOP_PED_QUERY_OUTFIT((iParam2 - iParam3), &Var1);
 	if (!FILES::IS_CONTENT_ITEM_LOCKED(Var1.f_0))
 	{
-		iVar4 = 0;
-		while (iVar4 < Var1.f_4)
+		iVar36 = 0;
+		while (iVar36 < Var1.f_4)
 		{
-			if (FILES::GET_SHOP_PED_OUTFIT_COMPONENT_VARIANT(Var1.f_1, iVar4, &Var2))
+			if (FILES::GET_SHOP_PED_OUTFIT_COMPONENT_VARIANT(Var1.f_1, iVar36, &Var16))
 			{
-				if ((Var2.f_0 != 0 && Var2.f_0 != -1) && Var2.f_0 != joaat("0"))
+				if ((Var16.f_0 != 0 && Var16.f_0 != -1) && Var16.f_0 != joaat("0"))
 				{
-					if (Var2.f_2 == 10)
+					if (Var16.f_2 == 10)
 					{
-						FILES::INIT_SHOP_PED_COMPONENT(&Var3);
-						FILES::GET_SHOP_PED_COMPONENT(Var2.f_0, &Var3);
-						if (Var2.f_0 != Var3.f_1)
+						FILES::INIT_SHOP_PED_COMPONENT(&Var19);
+						FILES::GET_SHOP_PED_COMPONENT(Var16.f_0, &Var19);
+						if (Var16.f_0 != Var19.f_1)
 						{
 							uParam0->f_16 = 1;
 						}
 					}
-					if (Var2.f_2 == 10 && uParam0->f_16)
+					if (Var16.f_2 == 10 && uParam0->f_16)
 					{
-						(*uParam0)[func_170(Var2.f_2)] = Var2.f_0;
+						(*uParam0)[func_170(Var16.f_2)] = Var16.f_0;
 						uParam0->f_16 = 1;
 					}
 					else
 					{
-						(*uParam0)[func_170(Var2.f_2)] = func_149(iParam1, Var2.f_0, func_170(Var2.f_2), iVar0);
+						(*uParam0)[func_170(Var16.f_2)] = func_149(iParam1, Var16.f_0, func_170(Var16.f_2), iVar0);
 					}
 				}
-				else if (Var2.f_1 != -1)
+				else if (Var16.f_1 != -1)
 				{
-					(*uParam0)[func_170(Var2.f_2)] = Var2.f_1;
+					(*uParam0)[func_170(Var16.f_2)] = Var16.f_1;
 				}
 			}
-			iVar4++;
+			iVar36++;
 		}
 		if (Var1.f_3 == 0)
 		{
@@ -12358,1217 +12358,1217 @@ void func_174(int iParam0)//Position - 0xE9DF
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 14;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 14;
 	Global_78341[0 /*14*/].f_5 = 2;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 1;
+			iVar8 = 1;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 2;
+			iVar8 = 2;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 3;
+			iVar8 = 3;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 4;
+			iVar8 = 4;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 5;
+			iVar8 = 5;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 6;
+			iVar8 = 6;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 7;
+			iVar8 = 7;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 8;
+			iVar8 = 8;
 			break;
 		
 		case 154:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 2;
+			iVar8 = 2;
 			break;
 		
 		case 88:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 89:
 			StringCopy(&Var2, "PROPS_P2_E1" /* GXT: Specs Pest Shades */, 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			iVar1 = 45;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 90:
 			StringCopy(&Var2, "PROPS_P2_E2" /* GXT: Dix Charcoal Glasses */, 16);
-			iVar3 = 2;
-			iVar4 = 0;
-			iVar5 = 10;
+			iVar6 = 2;
+			iVar7 = 0;
+			iVar8 = 10;
 			break;
 		
 		case 91:
 			StringCopy(&Var2, "PROPS_P2_E2_1" /* GXT: Dix Brown Glasses */, 16);
-			iVar3 = 2;
-			iVar4 = 1;
+			iVar6 = 2;
+			iVar7 = 1;
 			iVar1 = 50;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 92:
 			StringCopy(&Var2, "PROPS_P2_E2_2" /* GXT: Dix Black Glasses */, 16);
-			iVar3 = 2;
-			iVar4 = 2;
+			iVar6 = 2;
+			iVar7 = 2;
 			iVar1 = 55;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 93:
 			StringCopy(&Var2, "PROPS_P2_E2_3" /* GXT: Dix Checked Glasses */, 16);
-			iVar3 = 2;
-			iVar4 = 3;
+			iVar6 = 2;
+			iVar7 = 3;
 			iVar1 = 52;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 94:
 			StringCopy(&Var2, "PROPS_P2_E2_4" /* GXT: Dix White Glasses */, 16);
-			iVar3 = 2;
-			iVar4 = 4;
+			iVar6 = 2;
+			iVar7 = 4;
 			iVar1 = 54;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 95:
 			StringCopy(&Var2, "PROPS_P2_E2_5" /* GXT: Dix Red Glasses */, 16);
-			iVar3 = 2;
-			iVar4 = 5;
+			iVar6 = 2;
+			iVar7 = 5;
 			iVar1 = 54;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 96:
 			StringCopy(&Var2, "PROPS_P2_E2_6" /* GXT: Dix Maroon Glasses */, 16);
-			iVar3 = 2;
-			iVar4 = 6;
+			iVar6 = 2;
+			iVar7 = 6;
 			iVar1 = 55;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 97:
 			StringCopy(&Var2, "PROPS_P2_E2_7" /* GXT: Dix Yellow Glasses */, 16);
-			iVar3 = 2;
-			iVar4 = 7;
+			iVar6 = 2;
+			iVar7 = 7;
 			iVar1 = 55;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 98:
 			StringCopy(&Var2, "PROPS_P2_E2_8" /* GXT: Dix Spring Glasses */, 16);
-			iVar3 = 2;
-			iVar4 = 8;
+			iVar6 = 2;
+			iVar7 = 8;
 			iVar1 = 58;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 99:
 			StringCopy(&Var2, "PROPS_P2_E2_9" /* GXT: Dix Fall Glasses */, 16);
-			iVar3 = 2;
-			iVar4 = 9;
+			iVar6 = 2;
+			iVar7 = 9;
 			iVar1 = 58;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 100:
 			StringCopy(&Var2, "PROPS_P2_E3" /* GXT: Tung Charcoal Shades */, 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			iVar1 = 75;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 101:
 			StringCopy(&Var2, "PROPS_P2_E3_1" /* GXT: Tung White Shades */, 16);
-			iVar3 = 3;
-			iVar4 = 1;
+			iVar6 = 3;
+			iVar7 = 1;
 			iVar1 = 75;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 102:
 			StringCopy(&Var2, "PROPS_P2_E3_2" /* GXT: Tung Ash Shades */, 16);
-			iVar3 = 3;
-			iVar4 = 2;
+			iVar6 = 3;
+			iVar7 = 2;
 			iVar1 = 75;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 103:
 			StringCopy(&Var2, "PROPS_P2_E3_3" /* GXT: Tung Red Shades */, 16);
-			iVar3 = 3;
-			iVar4 = 3;
+			iVar6 = 3;
+			iVar7 = 3;
 			iVar1 = 75;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 104:
 			StringCopy(&Var2, "PROPS_P2_E3_4" /* GXT: Tung Blue Shades */, 16);
-			iVar3 = 3;
-			iVar4 = 4;
+			iVar6 = 3;
+			iVar7 = 4;
 			iVar1 = 75;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 105:
 			StringCopy(&Var2, "PROPS_P2_E3_5" /* GXT: Tung Black Shades */, 16);
-			iVar3 = 3;
-			iVar4 = 5;
+			iVar6 = 3;
+			iVar7 = 5;
 			iVar1 = 75;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 106:
 			StringCopy(&Var2, "PROPS_P2_E3_6" /* GXT: Tung Orange Tint Shades */, 16);
-			iVar3 = 3;
-			iVar4 = 6;
+			iVar6 = 3;
+			iVar7 = 6;
 			iVar1 = 75;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 107:
 			StringCopy(&Var2, "PROPS_P2_E3_7" /* GXT: Tung Purple Tint Shades */, 16);
-			iVar3 = 3;
-			iVar4 = 7;
+			iVar6 = 3;
+			iVar7 = 7;
 			iVar1 = 75;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 108:
 			StringCopy(&Var2, "PROPS_P2_E3_8" /* GXT: Tung Hornet Shades */, 16);
-			iVar3 = 3;
-			iVar4 = 8;
+			iVar6 = 3;
+			iVar7 = 8;
 			iVar1 = 75;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 109:
 			StringCopy(&Var2, "PROPS_P2_E3_9" /* GXT: Tung Two-Tone Shades */, 16);
-			iVar3 = 3;
-			iVar4 = 9;
+			iVar6 = 3;
+			iVar7 = 9;
 			iVar1 = 75;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 110:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 0;
-			iVar5 = 10;
+			iVar6 = 4;
+			iVar7 = 0;
+			iVar8 = 10;
 			break;
 		
 		case 111:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 0;
-			iVar5 = 10;
+			iVar6 = 5;
+			iVar7 = 0;
+			iVar8 = 10;
 			break;
 		
 		case 112:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 0;
-			iVar5 = 10;
+			iVar6 = 6;
+			iVar7 = 0;
+			iVar8 = 10;
 			break;
 		
 		case 113:
 			StringCopy(&Var2, "PROPS_P2_E7_0" /* GXT: OG Black Shades */, 16);
-			iVar3 = 7;
-			iVar4 = 0;
+			iVar6 = 7;
+			iVar7 = 0;
 			iVar1 = 60;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 114:
 			StringCopy(&Var2, "PROPS_P2_E7_1" /* GXT: OG Ash Shades */, 16);
-			iVar3 = 7;
-			iVar4 = 1;
+			iVar6 = 7;
+			iVar7 = 1;
 			iVar1 = 50;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 115:
 			StringCopy(&Var2, "PROPS_P2_E7_2" /* GXT: OG Red Shades */, 16);
-			iVar3 = 7;
-			iVar4 = 2;
+			iVar6 = 7;
+			iVar7 = 2;
 			iVar1 = 50;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 116:
 			StringCopy(&Var2, "PROPS_P2_E7_3" /* GXT: OG Yellow Shades */, 16);
-			iVar3 = 7;
-			iVar4 = 3;
+			iVar6 = 7;
+			iVar7 = 3;
 			iVar1 = 59;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 117:
 			StringCopy(&Var2, "PROPS_P2_E7_4" /* GXT: OG Brown Shades */, 16);
-			iVar3 = 7;
-			iVar4 = 4;
+			iVar6 = 7;
+			iVar7 = 4;
 			iVar1 = 55;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 118:
 			StringCopy(&Var2, "PROPS_P2_E7_5" /* GXT: OG Gray Shades */, 16);
-			iVar3 = 7;
-			iVar4 = 5;
+			iVar6 = 7;
+			iVar7 = 5;
 			iVar1 = 55;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 119:
 			StringCopy(&Var2, "PROPS_P2_E7_6" /* GXT: OG Blue Shades */, 16);
-			iVar3 = 7;
-			iVar4 = 6;
+			iVar6 = 7;
+			iVar7 = 6;
 			iVar1 = 65;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 120:
 			StringCopy(&Var2, "PROPS_P2_E7_7" /* GXT: OG Smoke Shades */, 16);
-			iVar3 = 7;
-			iVar4 = 7;
+			iVar6 = 7;
+			iVar7 = 7;
 			iVar1 = 59;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 121:
 			StringCopy(&Var2, "PROPS_P2_E7_8" /* GXT: OG Orange Shades */, 16);
-			iVar3 = 7;
-			iVar4 = 8;
+			iVar6 = 7;
+			iVar7 = 8;
 			iVar1 = 79;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 122:
 			StringCopy(&Var2, "PROPS_P2_E7_9" /* GXT: OG Slate Shades */, 16);
-			iVar3 = 7;
-			iVar4 = 9;
+			iVar6 = 7;
+			iVar7 = 9;
 			iVar1 = 79;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 123:
 			StringCopy(&Var2, "PROPS_P2_E8_0" /* GXT: Steel Aviators */, 16);
-			iVar3 = 8;
-			iVar4 = 0;
+			iVar6 = 8;
+			iVar7 = 0;
 			iVar1 = 150;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 124:
 			StringCopy(&Var2, "PROPS_P2_E8_1" /* GXT: Slate Aviators */, 16);
-			iVar3 = 8;
-			iVar4 = 1;
+			iVar6 = 8;
+			iVar7 = 1;
 			iVar1 = 150;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 125:
 			StringCopy(&Var2, "PROPS_P2_E8_2" /* GXT: Gold Aviators */, 16);
-			iVar3 = 8;
-			iVar4 = 2;
+			iVar6 = 8;
+			iVar7 = 2;
 			iVar1 = 170;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 126:
 			StringCopy(&Var2, "PROPS_P2_E8_3" /* GXT: Silver Two-Tone Aviators */, 16);
-			iVar3 = 8;
-			iVar4 = 3;
+			iVar6 = 8;
+			iVar7 = 3;
 			iVar1 = 175;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 127:
 			StringCopy(&Var2, "PROPS_P2_E8_4" /* GXT: Aluminum Aviators */, 16);
-			iVar3 = 8;
-			iVar4 = 4;
+			iVar6 = 8;
+			iVar7 = 4;
 			iVar1 = 180;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 128:
 			StringCopy(&Var2, "PROPS_P2_E8_5" /* GXT: Bronze Two-Tone Aviators */, 16);
-			iVar3 = 8;
-			iVar4 = 5;
+			iVar6 = 8;
+			iVar7 = 5;
 			iVar1 = 185;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 129:
 			StringCopy(&Var2, "PROPS_P2_E8_6" /* GXT: Brown Two-Tone Aviators */, 16);
-			iVar3 = 8;
-			iVar4 = 6;
+			iVar6 = 8;
+			iVar7 = 6;
 			iVar1 = 189;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 130:
 			StringCopy(&Var2, "PROPS_P2_E8_7" /* GXT: Black Aviators */, 16);
-			iVar3 = 8;
-			iVar4 = 7;
+			iVar6 = 8;
+			iVar7 = 7;
 			iVar1 = 195;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 131:
 			StringCopy(&Var2, "PROPS_P2_E8_8" /* GXT: Silver Aviators */, 16);
-			iVar3 = 8;
-			iVar4 = 8;
+			iVar6 = 8;
+			iVar7 = 8;
 			iVar1 = 210;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 132:
 			StringCopy(&Var2, "PROPS_P2_E8_9" /* GXT: Smoke Aviators */, 16);
-			iVar3 = 8;
-			iVar4 = 9;
+			iVar6 = 8;
+			iVar7 = 9;
 			iVar1 = 215;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 133:
 			StringCopy(&Var2, "PROPS_P2_E9_0" /* GXT: Krepp Gold Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 0;
+			iVar6 = 9;
+			iVar7 = 0;
 			iVar1 = 165;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 134:
 			StringCopy(&Var2, "PROPS_P2_E9_1" /* GXT: Krepp Gray Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 1;
+			iVar6 = 9;
+			iVar7 = 1;
 			iVar1 = 165;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 135:
 			StringCopy(&Var2, "PROPS_P2_E9_2" /* GXT: Krepp Slate Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 2;
+			iVar6 = 9;
+			iVar7 = 2;
 			iVar1 = 169;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 136:
 			StringCopy(&Var2, "PROPS_P2_E9_3" /* GXT: Krepp Black Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 3;
+			iVar6 = 9;
+			iVar7 = 3;
 			iVar1 = 169;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 137:
 			StringCopy(&Var2, "PROPS_P2_E9_4" /* GXT: Krepp White Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 4;
+			iVar6 = 9;
+			iVar7 = 4;
 			iVar1 = 175;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 138:
 			StringCopy(&Var2, "PROPS_P2_E9_5" /* GXT: Krepp Silver Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 5;
+			iVar6 = 9;
+			iVar7 = 5;
 			iVar1 = 175;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 139:
 			StringCopy(&Var2, "PROPS_P2_E9_6" /* GXT: Krepp Ash Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 6;
+			iVar6 = 9;
+			iVar7 = 6;
 			iVar1 = 175;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 140:
 			StringCopy(&Var2, "PROPS_P2_E9_7" /* GXT: Krepp Brown Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 7;
+			iVar6 = 9;
+			iVar7 = 7;
 			iVar1 = 189;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 141:
 			StringCopy(&Var2, "PROPS_P2_E9_8" /* GXT: Krepp Beige Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 8;
+			iVar6 = 9;
+			iVar7 = 8;
 			iVar1 = 195;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 142:
 			StringCopy(&Var2, "PROPS_P2_E9_9" /* GXT: Krepp Coffee Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 9;
+			iVar6 = 9;
+			iVar7 = 9;
 			iVar1 = 195;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 143:
 			StringCopy(&Var2, "PROPS_P2_E10_0" /* GXT: Broker Black Shades */, 16);
-			iVar3 = 10;
-			iVar4 = 0;
+			iVar6 = 10;
+			iVar7 = 0;
 			iVar1 = 49;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 144:
 			StringCopy(&Var2, "PROPS_P2_E10_1" /* GXT: Broker Purple Shades */, 16);
-			iVar3 = 10;
-			iVar4 = 1;
+			iVar6 = 10;
+			iVar7 = 1;
 			iVar1 = 50;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 145:
 			StringCopy(&Var2, "PROPS_P2_E10_2" /* GXT: Broker Brown Shades */, 16);
-			iVar3 = 10;
-			iVar4 = 2;
+			iVar6 = 10;
+			iVar7 = 2;
 			iVar1 = 52;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 146:
 			StringCopy(&Var2, "PROPS_P2_E10_3" /* GXT: Broker Orange Shades */, 16);
-			iVar3 = 10;
-			iVar4 = 3;
+			iVar6 = 10;
+			iVar7 = 3;
 			iVar1 = 55;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 147:
 			StringCopy(&Var2, "PROPS_P2_E10_4" /* GXT: Broker Gray Shades */, 16);
-			iVar3 = 10;
-			iVar4 = 4;
+			iVar6 = 10;
+			iVar7 = 4;
 			iVar1 = 60;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 148:
 			StringCopy(&Var2, "PROPS_P2_E10_5" /* GXT: Broker Striped Shades */, 16);
-			iVar3 = 10;
-			iVar4 = 5;
+			iVar6 = 10;
+			iVar7 = 5;
 			iVar1 = 58;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 149:
 			StringCopy(&Var2, "PROPS_P2_E10_6" /* GXT: Broker Beige Shades */, 16);
-			iVar3 = 10;
-			iVar4 = 6;
+			iVar6 = 10;
+			iVar7 = 6;
 			iVar1 = 60;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 150:
 			StringCopy(&Var2, "PROPS_P2_E10_7" /* GXT: Broker Ash Shades */, 16);
-			iVar3 = 10;
-			iVar4 = 7;
+			iVar6 = 10;
+			iVar7 = 7;
 			iVar1 = 63;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 151:
 			StringCopy(&Var2, "PROPS_P2_E10_8" /* GXT: Broker Charcoal Shades */, 16);
-			iVar3 = 10;
-			iVar4 = 8;
+			iVar6 = 10;
+			iVar7 = 8;
 			iVar1 = 65;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 152:
 			StringCopy(&Var2, "PROPS_P2_E10_9" /* GXT: Broker Gradient Shades */, 16);
-			iVar3 = 10;
-			iVar4 = 9;
+			iVar6 = 10;
+			iVar7 = 9;
 			iVar1 = 68;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 153:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 0;
+			iVar6 = 11;
+			iVar7 = 0;
 			iVar1 = 100;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "PROPS_P2_H2_0" /* GXT: Hockey Mask */, 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			iVar1 = 320;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 14:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 15:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 16:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 0;
+			iVar6 = 6;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 17:
 			StringCopy(&Var2, "PROPS_P2_H7_0" /* GXT: Black Hat */, 16);
-			iVar3 = 7;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 7;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 18:
 			StringCopy(&Var2, "PROPS_P2_H7_1", 16);
-			iVar3 = 7;
-			iVar4 = 1;
-			iVar5 = 0;
+			iVar6 = 7;
+			iVar7 = 1;
+			iVar8 = 0;
 			break;
 		
 		case 19:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 0;
+			iVar6 = 8;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 20:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 9;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 21:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 1;
-			iVar5 = 0;
+			iVar6 = 9;
+			iVar7 = 1;
+			iVar8 = 0;
 			break;
 		
 		case 22:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 2;
-			iVar5 = 0;
+			iVar6 = 9;
+			iVar7 = 2;
+			iVar8 = 0;
 			break;
 		
 		case 23:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 3;
-			iVar5 = 0;
+			iVar6 = 9;
+			iVar7 = 3;
+			iVar8 = 0;
 			break;
 		
 		case 24:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 4;
-			iVar5 = 0;
+			iVar6 = 9;
+			iVar7 = 4;
+			iVar8 = 0;
 			break;
 		
 		case 25:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 5;
-			iVar5 = 0;
+			iVar6 = 9;
+			iVar7 = 5;
+			iVar8 = 0;
 			break;
 		
 		case 26:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 6;
-			iVar5 = 0;
+			iVar6 = 9;
+			iVar7 = 6;
+			iVar8 = 0;
 			break;
 		
 		case 27:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 7;
-			iVar5 = 0;
+			iVar6 = 9;
+			iVar7 = 7;
+			iVar8 = 0;
 			break;
 		
 		case 28:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 8;
-			iVar5 = 0;
+			iVar6 = 9;
+			iVar7 = 8;
+			iVar8 = 0;
 			break;
 		
 		case 29:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 9;
-			iVar5 = 0;
+			iVar6 = 9;
+			iVar7 = 9;
+			iVar8 = 0;
 			break;
 		
 		case 30:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 10;
-			iVar5 = 0;
+			iVar6 = 9;
+			iVar7 = 10;
+			iVar8 = 0;
 			break;
 		
 		case 31:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 11;
-			iVar5 = 0;
+			iVar6 = 9;
+			iVar7 = 11;
+			iVar8 = 0;
 			break;
 		
 		case 32:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 12;
-			iVar5 = 0;
+			iVar6 = 9;
+			iVar7 = 12;
+			iVar8 = 0;
 			break;
 		
 		case 33:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 13;
-			iVar5 = 0;
+			iVar6 = 9;
+			iVar7 = 13;
+			iVar8 = 0;
 			break;
 		
 		case 34:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 14;
-			iVar5 = 0;
+			iVar6 = 9;
+			iVar7 = 14;
+			iVar8 = 0;
 			break;
 		
 		case 35:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 15;
-			iVar5 = 0;
+			iVar6 = 9;
+			iVar7 = 15;
+			iVar8 = 0;
 			break;
 		
 		case 36:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 10;
-			iVar4 = 0;
+			iVar6 = 10;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 37:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 11;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 38:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 1;
-			iVar5 = 0;
+			iVar6 = 11;
+			iVar7 = 1;
+			iVar8 = 0;
 			break;
 		
 		case 39:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 2;
-			iVar5 = 0;
+			iVar6 = 11;
+			iVar7 = 2;
+			iVar8 = 0;
 			break;
 		
 		case 40:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 3;
-			iVar5 = 0;
+			iVar6 = 11;
+			iVar7 = 3;
+			iVar8 = 0;
 			break;
 		
 		case 41:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 4;
-			iVar5 = 0;
+			iVar6 = 11;
+			iVar7 = 4;
+			iVar8 = 0;
 			break;
 		
 		case 42:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 5;
-			iVar5 = 0;
+			iVar6 = 11;
+			iVar7 = 5;
+			iVar8 = 0;
 			break;
 		
 		case 43:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 6;
-			iVar5 = 0;
+			iVar6 = 11;
+			iVar7 = 6;
+			iVar8 = 0;
 			break;
 		
 		case 44:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 7;
-			iVar5 = 0;
+			iVar6 = 11;
+			iVar7 = 7;
+			iVar8 = 0;
 			break;
 		
 		case 45:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 12;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 12;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 46:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 13;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 13;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 47:
 			StringCopy(&Var2, "PROPS_P1_H8_0" /* GXT: Green Monster Mask */, 16);
-			iVar3 = 14;
-			iVar4 = 0;
+			iVar6 = 14;
+			iVar7 = 0;
 			iVar1 = 270;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 48:
 			StringCopy(&Var2, "PROPS_P1_H8_1" /* GXT: Red Monster Mask */, 16);
-			iVar3 = 14;
-			iVar4 = 1;
+			iVar6 = 14;
+			iVar7 = 1;
 			iVar1 = 270;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 49:
 			StringCopy(&Var2, "PROPS_P1_H9_0" /* GXT: Pig Mask */, 16);
-			iVar3 = 15;
-			iVar4 = 0;
+			iVar6 = 15;
+			iVar7 = 0;
 			iVar1 = 200;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 50:
 			StringCopy(&Var2, "PROPS_P1_H9_1" /* GXT: Dark Pig Mask */, 16);
-			iVar3 = 15;
-			iVar4 = 1;
+			iVar6 = 15;
+			iVar7 = 1;
 			iVar1 = 200;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 51:
 			StringCopy(&Var2, "PROPS_P1_H10_0" /* GXT: Silver Skull Mask */, 16);
-			iVar3 = 16;
-			iVar4 = 0;
+			iVar6 = 16;
+			iVar7 = 0;
 			iVar1 = 350;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 52:
 			StringCopy(&Var2, "PROPS_P1_H10_1" /* GXT: Bone Skull Mask */, 16);
-			iVar3 = 16;
-			iVar4 = 1;
+			iVar6 = 16;
+			iVar7 = 1;
 			iVar1 = 350;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 53:
 			StringCopy(&Var2, "PROPS_P1_H11_0" /* GXT: Space Monkey Mask */, 16);
-			iVar3 = 17;
-			iVar4 = 0;
+			iVar6 = 17;
+			iVar7 = 0;
 			iVar1 = 450;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 54:
 			StringCopy(&Var2, "PROPS_P1_H12_0" /* GXT: White Hockey Mask */, 16);
-			iVar3 = 18;
-			iVar4 = 0;
+			iVar6 = 18;
+			iVar7 = 0;
 			iVar1 = 500;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 55:
 			StringCopy(&Var2, "PROPS_P1_H12_1" /* GXT: Red Hockey Mask */, 16);
-			iVar3 = 18;
-			iVar4 = 1;
+			iVar6 = 18;
+			iVar7 = 1;
 			iVar1 = 500;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 56:
 			StringCopy(&Var2, "PROPS_P1_H13_0" /* GXT: Ape Mask */, 16);
-			iVar3 = 19;
-			iVar4 = 0;
+			iVar6 = 19;
+			iVar7 = 0;
 			iVar1 = 50;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 57:
 			StringCopy(&Var2, "PROPS_P1_H13_1" /* GXT: Dark Ape Mask */, 16);
-			iVar3 = 19;
-			iVar4 = 1;
+			iVar6 = 19;
+			iVar7 = 1;
 			iVar1 = 50;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 58:
 			StringCopy(&Var2, "PROPS_P1_H14_0" /* GXT: Carnival Orange Mask */, 16);
-			iVar3 = 20;
-			iVar4 = 0;
+			iVar6 = 20;
+			iVar7 = 0;
 			iVar1 = 99;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 59:
 			StringCopy(&Var2, "PROPS_P1_H14_1" /* GXT: Carnival White Mask */, 16);
-			iVar3 = 20;
-			iVar4 = 1;
+			iVar6 = 20;
+			iVar7 = 1;
 			iVar1 = 99;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 60:
 			StringCopy(&Var2, "PROPS_P1_H14_2" /* GXT: Carnival Blue Mask */, 16);
-			iVar3 = 20;
-			iVar4 = 2;
+			iVar6 = 20;
+			iVar7 = 2;
 			iVar1 = 99;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 61:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 21;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 21;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 62:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 22;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 22;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 63:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 23;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 23;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 64:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 23;
-			iVar4 = 1;
-			iVar5 = 0;
+			iVar6 = 23;
+			iVar7 = 1;
+			iVar8 = 0;
 			break;
 		
 		case 65:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 23;
-			iVar4 = 2;
-			iVar5 = 0;
+			iVar6 = 23;
+			iVar7 = 2;
+			iVar8 = 0;
 			break;
 		
 		case 66:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 23;
-			iVar4 = 3;
-			iVar5 = 0;
+			iVar6 = 23;
+			iVar7 = 3;
+			iVar8 = 0;
 			break;
 		
 		case 67:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 23;
-			iVar4 = 4;
-			iVar5 = 0;
+			iVar6 = 23;
+			iVar7 = 4;
+			iVar8 = 0;
 			break;
 		
 		case 68:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 23;
-			iVar4 = 5;
-			iVar5 = 0;
+			iVar6 = 23;
+			iVar7 = 5;
+			iVar8 = 0;
 			break;
 		
 		case 69:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 24;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 24;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 70:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 25;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 25;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 71:
 			StringCopy(&Var2, "PROPS_P1_H26_0" /* GXT: Hawk and Little Baseball Cap */, 16);
-			iVar3 = 26;
-			iVar4 = 0;
+			iVar6 = 26;
+			iVar7 = 0;
 			iVar1 = 20;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 72:
 			StringCopy(&Var2, "PROPS_P1_H26_1" /* GXT: Taco Bomb Baseball Cap */, 16);
-			iVar3 = 26;
-			iVar4 = 1;
+			iVar6 = 26;
+			iVar7 = 1;
 			iVar1 = 25;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 73:
 			StringCopy(&Var2, "PROPS_P1_H26_2" /* GXT: Nut House Baseball Cap */, 16);
-			iVar3 = 26;
-			iVar4 = 2;
+			iVar6 = 26;
+			iVar7 = 2;
 			iVar1 = 25;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 74:
 			StringCopy(&Var2, "PROPS_P1_H26_3" /* GXT: Rusty Brown's Baseball Cap */, 16);
-			iVar3 = 26;
-			iVar4 = 3;
+			iVar6 = 26;
+			iVar7 = 3;
 			iVar1 = 22;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 75:
 			StringCopy(&Var2, "PROPS_P1_H26_4" /* GXT: Bishop's Chicken Baseball Cap */, 16);
-			iVar3 = 26;
-			iVar4 = 4;
+			iVar6 = 26;
+			iVar7 = 4;
 			iVar1 = 20;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 76:
 			StringCopy(&Var2, "PROPS_P1_H26_5" /* GXT: 24/7 Baseball Cap */, 16);
-			iVar3 = 26;
-			iVar4 = 5;
+			iVar6 = 26;
+			iVar7 = 5;
 			iVar1 = 25;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 77:
 			StringCopy(&Var2, "PROPS_P1_H26_6" /* GXT: iFruit 80s Baseball Cap */, 16);
-			iVar3 = 26;
-			iVar4 = 6;
+			iVar6 = 26;
+			iVar7 = 6;
 			iVar1 = 28;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 78:
 			StringCopy(&Var2, "PROPS_P1_H26_7" /* GXT: Blarneys Baseball Cap */, 16);
-			iVar3 = 26;
-			iVar4 = 7;
+			iVar6 = 26;
+			iVar7 = 7;
 			iVar1 = 24;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 79:
 			StringCopy(&Var2, "PROPS_P1_H26_8" /* GXT: Pisswasser Baseball Cap */, 16);
-			iVar3 = 26;
-			iVar4 = 8;
+			iVar6 = 26;
+			iVar7 = 8;
 			iVar1 = 25;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 80:
 			StringCopy(&Var2, "PROPS_P1_H26_9" /* GXT: RON Baseball Cap */, 16);
-			iVar3 = 26;
-			iVar4 = 9;
+			iVar6 = 26;
+			iVar7 = 9;
 			iVar1 = 22;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 81:
 			StringCopy(&Var2, "PROPS_P1_H26_10" /* GXT: Logger Light Baseball Cap */, 16);
-			iVar3 = 26;
-			iVar4 = 10;
+			iVar6 = 26;
+			iVar7 = 10;
 			iVar1 = 18;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 82:
 			StringCopy(&Var2, "PROPS_P1_H26_11" /* GXT: Meteorite Baseball Cap */, 16);
-			iVar3 = 26;
-			iVar4 = 11;
+			iVar6 = 26;
+			iVar7 = 11;
 			iVar1 = 20;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 83:
 			StringCopy(&Var2, "PROPS_P1_H26_12" /* GXT: Dusche Gold Baseball Cap */, 16);
-			iVar3 = 26;
-			iVar4 = 12;
+			iVar6 = 26;
+			iVar7 = 12;
 			iVar1 = 24;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 84:
 			StringCopy(&Var2, "PROPS_P1_H26_13" /* GXT: Barracho Baseball Cap */, 16);
-			iVar3 = 26;
-			iVar4 = 13;
+			iVar6 = 26;
+			iVar7 = 13;
 			iVar1 = 22;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 85:
 			StringCopy(&Var2, "PROPS_P1_H26_14" /* GXT: Vespucci Beach Baseball Cap */, 16);
-			iVar3 = 26;
-			iVar4 = 14;
+			iVar6 = 26;
+			iVar7 = 14;
 			iVar1 = 25;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 86:
 			StringCopy(&Var2, "PROPS_P1_H26_15" /* GXT: Orang-O-Tang Baseball Cap */, 16);
-			iVar3 = 26;
-			iVar4 = 15;
+			iVar6 = 26;
+			iVar7 = 15;
 			iVar1 = 25;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 87:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 27;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 27;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 155, -1);
+			func_182(iVar10, iParam0, 155, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_175(var uParam0, int iParam1, int iParam2, char* sParam3, int iParam4, int iParam5, int iParam6, bool bParam7, int iParam8, int iParam9, bool bParam10)//Position - 0xFC56
@@ -14668,15 +14668,15 @@ void func_182(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x
 	int iVar0;
 	int iVar1;
 	struct<8> Var2;
-	int iVar3;
-	int iVar4;
-	struct<10> Var5;
-	int iVar6;
-	int iVar7;
-	int iVar8;
-	struct<10> Var9;
-	int iVar10;
-	int iVar11;
+	int iVar17;
+	int iVar18;
+	struct<10> Var19;
+	int iVar36;
+	int iVar37;
+	int iVar38;
+	struct<10> Var39;
+	int iVar56;
+	int iVar57;
 	
 	iVar0 = (iParam1 - iParam2);
 	iVar0 = iVar0;
@@ -14687,13 +14687,13 @@ void func_182(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x
 	iVar1 = Global_78341[0 /*14*/].f_5;
 	if (iParam0 == 12)
 	{
-		iVar3 = (iParam1 - iParam2);
-		if (iVar3 >= 0)
+		iVar17 = (iParam1 - iParam2);
+		if (iVar17 >= 0)
 		{
-			iVar4 = FILES::SETUP_SHOP_PED_OUTFIT_QUERY(iVar1, false);
-			if (iVar4 > iVar3)
+			iVar18 = FILES::SETUP_SHOP_PED_OUTFIT_QUERY(iVar1, false);
+			if (iVar18 > iVar17)
 			{
-				FILES::GET_SHOP_PED_QUERY_OUTFIT(iVar3, &Var2);
+				FILES::GET_SHOP_PED_QUERY_OUTFIT(iVar17, &Var2);
 				Global_2883588 = Var2.f_1;
 				Global_2883589 = Var2.f_0;
 				func_175(&(Global_78341[0 /*14*/]), iParam0, iParam1, &(Var2.f_7), 0, 0, Var2.f_2, 0, -1, 2, 1);
@@ -14707,82 +14707,82 @@ void func_182(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x
 	}
 	else if (iParam0 == 14)
 	{
-		FILES::INIT_SHOP_PED_PROP(&Var5);
-		iVar7 = (iParam1 - iParam2);
-		if (iVar7 >= 0)
+		FILES::INIT_SHOP_PED_PROP(&Var19);
+		iVar37 = (iParam1 - iParam2);
+		if (iVar37 >= 0)
 		{
-			iVar8 = FILES::SETUP_SHOP_PED_APPAREL_QUERY_TU(iVar1, 10, -1, true, -1, -1);
-			if (iVar8 > iVar7)
+			iVar38 = FILES::SETUP_SHOP_PED_APPAREL_QUERY_TU(iVar1, 10, -1, true, -1, -1);
+			if (iVar38 > iVar37)
 			{
-				FILES::GET_SHOP_PED_QUERY_PROP(iVar7, &Var5);
-				if (Var5.f_6 == 0)
+				FILES::GET_SHOP_PED_QUERY_PROP(iVar37, &Var19);
+				if (Var19.f_6 == 0)
 				{
-					iVar6 = 9;
+					iVar36 = 9;
 				}
-				else if (Var5.f_6 == 1)
+				else if (Var19.f_6 == 1)
 				{
-					iVar6 = 10;
+					iVar36 = 10;
 				}
-				else if (Var5.f_6 == 2)
+				else if (Var19.f_6 == 2)
 				{
-					iVar6 = 2;
+					iVar36 = 2;
 				}
-				else if (Var5.f_6 == 3)
+				else if (Var19.f_6 == 3)
 				{
-					iVar6 = 3;
+					iVar36 = 3;
 				}
-				else if (Var5.f_6 == 4)
+				else if (Var19.f_6 == 4)
 				{
-					iVar6 = 4;
+					iVar36 = 4;
 				}
-				else if (Var5.f_6 == 5)
+				else if (Var19.f_6 == 5)
 				{
-					iVar6 = 5;
+					iVar36 = 5;
 				}
-				else if (Var5.f_6 == 6)
+				else if (Var19.f_6 == 6)
 				{
-					iVar6 = 6;
+					iVar36 = 6;
 				}
-				else if (Var5.f_6 == 7)
+				else if (Var19.f_6 == 7)
 				{
-					iVar6 = 7;
+					iVar36 = 7;
 				}
-				else if (Var5.f_6 == 8)
+				else if (Var19.f_6 == 8)
 				{
-					iVar6 = 8;
+					iVar36 = 8;
 				}
 				else
 				{
-					iVar6 = -1;
+					iVar36 = -1;
 				}
-				Global_2883588 = Var5.f_1;
-				Global_2883589 = Var5.f_0;
-				func_175(&(Global_78341[0 /*14*/]), iParam0, iParam1, &(Var5.f_9), Var5.f_3, Var5.f_4, Var5.f_5, FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(Var5.f_1, joaat("OUTFIT_ONLY"), 0), iVar6, 2, Var5.f_1 != 0);
+				Global_2883588 = Var19.f_1;
+				Global_2883589 = Var19.f_0;
+				func_175(&(Global_78341[0 /*14*/]), iParam0, iParam1, &(Var19.f_9), Var19.f_3, Var19.f_4, Var19.f_5, FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(Var19.f_1, joaat("OUTFIT_ONLY"), 0), iVar36, 2, Var19.f_1 != 0);
 				return;
 			}
 		}
 	}
 	else
 	{
-		FILES::INIT_SHOP_PED_COMPONENT(&Var9);
+		FILES::INIT_SHOP_PED_COMPONENT(&Var39);
 		if (iParam3 != -1 && Global_78539)
 		{
-			FILES::GET_SHOP_PED_COMPONENT(iParam3, &Var9);
-			Global_2883588 = Var9.f_1;
-			Global_2883589 = Var9.f_0;
-			func_175(&(Global_78341[0 /*14*/]), iParam0, iParam1, &(Var9.f_9), Var9.f_3, Var9.f_4, Var9.f_5, FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(Var9.f_1, joaat("OUTFIT_ONLY"), 0), -1, 2, Var9.f_1 != 0);
+			FILES::GET_SHOP_PED_COMPONENT(iParam3, &Var39);
+			Global_2883588 = Var39.f_1;
+			Global_2883589 = Var39.f_0;
+			func_175(&(Global_78341[0 /*14*/]), iParam0, iParam1, &(Var39.f_9), Var39.f_3, Var39.f_4, Var39.f_5, FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(Var39.f_1, joaat("OUTFIT_ONLY"), 0), -1, 2, Var39.f_1 != 0);
 			return;
 		}
-		iVar10 = (iParam1 - iParam2);
-		if (iVar10 >= 0)
+		iVar56 = (iParam1 - iParam2);
+		if (iVar56 >= 0)
 		{
-			iVar11 = FILES::SETUP_SHOP_PED_APPAREL_QUERY_TU(iVar1, 10, -1, false, -1, func_164(iParam0));
-			if (iVar11 > iVar10)
+			iVar57 = FILES::SETUP_SHOP_PED_APPAREL_QUERY_TU(iVar1, 10, -1, false, -1, func_164(iParam0));
+			if (iVar57 > iVar56)
 			{
-				FILES::GET_SHOP_PED_QUERY_COMPONENT(iVar10, &Var9);
-				Global_2883588 = Var9.f_1;
-				Global_2883589 = Var9.f_0;
-				func_175(&(Global_78341[0 /*14*/]), iParam0, iParam1, &(Var9.f_9), Var9.f_3, Var9.f_4, Var9.f_5, FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(Var9.f_1, joaat("OUTFIT_ONLY"), 0), -1, 2, Var9.f_1 != 0);
+				FILES::GET_SHOP_PED_QUERY_COMPONENT(iVar56, &Var39);
+				Global_2883588 = Var39.f_1;
+				Global_2883589 = Var39.f_0;
+				func_175(&(Global_78341[0 /*14*/]), iParam0, iParam1, &(Var39.f_9), Var39.f_3, Var39.f_4, Var39.f_5, FILES::DOES_SHOP_PED_APPAREL_HAVE_RESTRICTION_TAG(Var39.f_1, joaat("OUTFIT_ONLY"), 0), -1, 2, Var39.f_1 != 0);
 				return;
 			}
 		}
@@ -14794,94 +14794,94 @@ void func_183(int iParam0)//Position - 0x10FA3
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 13;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 13;
 	Global_78341[0 /*14*/].f_5 = 2;
 	switch (iParam0)
 	{
 		case 31:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 0:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 9, -1);
+			func_182(iVar10, iParam0, 9, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_184(int iParam0)//Position - 0x110FA
@@ -14889,338 +14889,338 @@ void func_184(int iParam0)//Position - 0x110FA
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 12;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 12;
 	Global_78341[0 /*14*/].f_5 = 2;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "OUTFIT_P2_0" /* GXT: White T-Shirt, Sweatpants */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "OUTFIT_P2_5" /* GXT: Dock Worker */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "OUTFIT_P2_6" /* GXT: Highway Patrol */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "OUTFIT_P2_7" /* GXT: Golf */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "OUTFIT_P2_8" /* GXT: Tennis */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "OUTFIT_P2_9", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "OUTFIT_P2_10" /* GXT: Scuba Land */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "OUTFIT_P2_12" /* GXT: Stealth */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "OUTFIT_P2_13" /* GXT: Triathlon */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "OUTFIT_P2_14" /* GXT: Underwear */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "OUTFIT_P2_15" /* GXT: Security */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "OUTFIT_P2_16" /* GXT: Toilet */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "OUTFIT_P2_17" /* GXT: Prologue */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 14:
 			StringCopy(&Var2, "OUTFIT_P2_18" /* GXT: Tuxedo */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 10000;
 			break;
 		
 		case 15:
 			StringCopy(&Var2, "OUTFIT_P2_19" /* GXT: Pink Ladies Sweats */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 16:
 			StringCopy(&Var2, "OUTFIT_P2_20" /* GXT: Blue Boiler Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 17:
 			StringCopy(&Var2, "OUTFIT_P2_21" /* GXT: Navy Boiler Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 105;
 			break;
 		
 		case 18:
 			StringCopy(&Var2, "OUTFIT_P2_22" /* GXT: Gray Boiler Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 105;
 			break;
 		
 		case 19:
 			StringCopy(&Var2, "OUTFIT_P2_23" /* GXT: Green Boiler Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 105;
 			break;
 		
 		case 20:
 			StringCopy(&Var2, "OUTFIT_P2_24" /* GXT: Hunting */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 21:
 			StringCopy(&Var2, "OUTFIT_P2_25" /* GXT: White T-Shirt, Cargo Pants */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 22:
 			StringCopy(&Var2, "OUTFIT_P2_26" /* GXT: Denim Jacket, Jeans */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 23:
 			StringCopy(&Var2, "OUTFIT_P2_27" /* GXT: Ludendorff */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 24:
 			StringCopy(&Var2, "OUTFIT_P2_28" /* GXT: Beige Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 119;
 			break;
 		
 		case 25:
 			StringCopy(&Var2, "OUTFIT_P2_29" /* GXT: Blue Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 99;
 			break;
 		
 		case 26:
 			StringCopy(&Var2, "OUTFIT_P2_30" /* GXT: Brown Plaid Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 129;
 			break;
 		
 		case 27:
 			StringCopy(&Var2, "OUTFIT_P2_44" /* GXT: Burgundy Cheap Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 125;
 			break;
 		
 		case 28:
 			StringCopy(&Var2, "OUTFIT_P2_45" /* GXT: Murky Plaid Cheap Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 120;
 			break;
 		
 		case 29:
 			StringCopy(&Var2, "OUTFIT_P2_46" /* GXT: Mint Plaid Cheap Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 139;
 			break;
 		
 		case 30:
 			StringCopy(&Var2, "OUTFIT_P2_47" /* GXT: Green Plaid Cheap Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 149;
 			break;
 		
 		case 31:
 			StringCopy(&Var2, "OUTFIT_P2_48" /* GXT: Blue-Gray Cheap Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 145;
 			break;
 		
 		case 32:
 			StringCopy(&Var2, "OUTFIT_P2_49" /* GXT: Caramel Cheap Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 140;
 			break;
 		
 		case 33:
 			StringCopy(&Var2, "OUTFIT_P2_50" /* GXT: Mocha Cheap Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 135;
 			break;
 		
 		case 34:
 			StringCopy(&Var2, "OUTFIT_P2_31" /* GXT: Gray Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 4900;
 			break;
 		
 		case 35:
 			StringCopy(&Var2, "OUTFIT_P2_32" /* GXT: Sand Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 5900;
 			break;
 		
 		case 36:
 			StringCopy(&Var2, "OUTFIT_P2_33" /* GXT: Charcoal Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 4500;
 			break;
 		
 		case 37:
 			StringCopy(&Var2, "OUTFIT_P2_34" /* GXT: Off-White Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 4900;
 			break;
 		
 		case 38:
 			StringCopy(&Var2, "OUTFIT_P2_35" /* GXT: Cream Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 4500;
 			break;
 		
 		case 39:
 			StringCopy(&Var2, "OUTFIT_P2_36" /* GXT: Black Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 5900;
 			break;
 		
 		case 40:
 			StringCopy(&Var2, "OUTFIT_P2_37" /* GXT: Ash Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 5500;
 			break;
 		
 		case 41:
 			StringCopy(&Var2, "OUTFIT_P2_38" /* GXT: Red T-Shirt, Cargo Pants */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 42:
 			StringCopy(&Var2, "OUTFIT_P2_39" /* GXT: Amethyst Polo Shirt, Jeans */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 43:
 			StringCopy(&Var2, "OUTFIT_P2_40" /* GXT: White T-Shirt, Camo Pants */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 44:
 			StringCopy(&Var2, "OUTFIT_P2_41" /* GXT: Moto-X */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 45:
 			StringCopy(&Var2, "OUTFIT_P2_42" /* GXT: White Tank Top, Sweatpants */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 46:
 			StringCopy(&Var2, "OUTFIT_P2_43" /* GXT: White T-Shirt, Jeans */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 47:
 			StringCopy(&Var2, "OUTFIT_P2_12" /* GXT: Stealth */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 48, -1);
+			func_182(iVar10, iParam0, 48, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_185(int iParam0)//Position - 0x11608
@@ -15228,34 +15228,34 @@ void func_185(int iParam0)//Position - 0x11608
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 11;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 11;
 	Global_78341[0 /*14*/].f_5 = 2;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 1, -1);
+			func_182(iVar10, iParam0, 1, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_186(int iParam0)//Position - 0x1167D
@@ -15263,34 +15263,34 @@ void func_186(int iParam0)//Position - 0x1167D
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 7;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 7;
 	Global_78341[0 /*14*/].f_5 = 2;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 1, -1);
+			func_182(iVar10, iParam0, 1, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_187(int iParam0)//Position - 0x116F1
@@ -15298,64 +15298,64 @@ void func_187(int iParam0)//Position - 0x116F1
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 1;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 1;
 	Global_78341[0 /*14*/].f_5 = 2;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "BERD_P2_0_0" /* GXT: Clean Shave */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "BERD_P2_1_0" /* GXT: Beard 1 */, 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "BERD_P2_2_0" /* GXT: Stubble */, 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "BERD_P2_3_0" /* GXT: Big Mustache */, 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "BERD_P2_4_0" /* GXT: Handlebar */, 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "BERD_P2_5_0" /* GXT: The Gerry */, 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 6, -1);
+			func_182(iVar10, iParam0, 6, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_188(int iParam0)//Position - 0x117D8
@@ -15363,226 +15363,226 @@ void func_188(int iParam0)//Position - 0x117D8
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 10;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 10;
 	Global_78341[0 /*14*/].f_5 = 2;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 1;
+			iVar6 = 5;
+			iVar7 = 1;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 2;
+			iVar6 = 5;
+			iVar7 = 2;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 3;
+			iVar6 = 5;
+			iVar7 = 3;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 4;
+			iVar6 = 5;
+			iVar7 = 4;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 5;
+			iVar6 = 5;
+			iVar7 = 5;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 0;
+			iVar6 = 6;
+			iVar7 = 0;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 1;
+			iVar6 = 6;
+			iVar7 = 1;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 2;
+			iVar6 = 6;
+			iVar7 = 2;
 			break;
 		
 		case 14:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 3;
+			iVar6 = 6;
+			iVar7 = 3;
 			break;
 		
 		case 15:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 4;
+			iVar6 = 6;
+			iVar7 = 4;
 			break;
 		
 		case 16:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 5;
+			iVar6 = 6;
+			iVar7 = 5;
 			break;
 		
 		case 17:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 6;
+			iVar6 = 6;
+			iVar7 = 6;
 			break;
 		
 		case 18:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 7;
+			iVar6 = 6;
+			iVar7 = 7;
 			break;
 		
 		case 19:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 8;
+			iVar6 = 6;
+			iVar7 = 8;
 			break;
 		
 		case 20:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 9;
+			iVar6 = 6;
+			iVar7 = 9;
 			break;
 		
 		case 21:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 0;
+			iVar6 = 7;
+			iVar7 = 0;
 			break;
 		
 		case 22:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 0;
+			iVar6 = 8;
+			iVar7 = 0;
 			break;
 		
 		case 23:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 1;
+			iVar6 = 8;
+			iVar7 = 1;
 			break;
 		
 		case 24:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 2;
+			iVar6 = 8;
+			iVar7 = 2;
 			break;
 		
 		case 25:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 3;
+			iVar6 = 8;
+			iVar7 = 3;
 			break;
 		
 		case 26:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 4;
+			iVar6 = 8;
+			iVar7 = 4;
 			break;
 		
 		case 27:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 5;
+			iVar6 = 8;
+			iVar7 = 5;
 			break;
 		
 		case 28:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 6;
+			iVar6 = 8;
+			iVar7 = 6;
 			break;
 		
 		case 29:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 0;
+			iVar6 = 9;
+			iVar7 = 0;
 			break;
 		
 		case 30:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 1;
+			iVar6 = 9;
+			iVar7 = 1;
 			break;
 		
 		case 31:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 2;
+			iVar6 = 9;
+			iVar7 = 2;
 			break;
 		
 		case 32:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 3;
+			iVar6 = 9;
+			iVar7 = 3;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 33, -1);
+			func_182(iVar10, iParam0, 33, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_189(int iParam0)//Position - 0x11B3B
@@ -15590,141 +15590,141 @@ void func_189(int iParam0)//Position - 0x11B3B
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 9;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 9;
 	Global_78341[0 /*14*/].f_5 = 2;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 1;
+			iVar6 = 1;
+			iVar7 = 1;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 2;
+			iVar6 = 1;
+			iVar7 = 2;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 3;
+			iVar6 = 1;
+			iVar7 = 3;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "SPEC2_P0_08_0" /* GXT: Red Wrestler Mask */, 16);
-			iVar3 = 6;
-			iVar4 = 0;
+			iVar6 = 6;
+			iVar7 = 0;
 			iVar1 = 125;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "SPEC2_P0_08_1" /* GXT: Green Wrestler Mask */, 16);
-			iVar3 = 6;
-			iVar4 = 1;
+			iVar6 = 6;
+			iVar7 = 1;
 			iVar1 = 150;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "SPEC2_P0_08_2" /* GXT: Patriot Wrestler Mask */, 16);
-			iVar3 = 6;
-			iVar4 = 2;
+			iVar6 = 6;
+			iVar7 = 2;
 			iVar1 = 175;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "SPEC2_P0_08_3" /* GXT: Domino Wrestler Mask */, 16);
-			iVar3 = 6;
-			iVar4 = 3;
+			iVar6 = 6;
+			iVar7 = 3;
 			iVar1 = 85;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "SPEC2_P0_08_4" /* GXT: Gray Wrestler Mask */, 16);
-			iVar3 = 6;
-			iVar4 = 4;
+			iVar6 = 6;
+			iVar7 = 4;
 			iVar1 = 150;
 			break;
 		
 		case 14:
 			StringCopy(&Var2, "SPEC2_P0_08_5" /* GXT: Phoenix Wrestler Mask */, 16);
-			iVar3 = 6;
-			iVar4 = 5;
+			iVar6 = 6;
+			iVar7 = 5;
 			iVar1 = 175;
 			break;
 		
 		case 15:
 			StringCopy(&Var2, "PROPS_P1_H8_0" /* GXT: Green Monster Mask */, 16);
-			iVar3 = 7;
-			iVar4 = 0;
+			iVar6 = 7;
+			iVar7 = 0;
 			iVar1 = 270;
 			break;
 		
 		case 16:
 			StringCopy(&Var2, "PROPS_P1_H8_1" /* GXT: Red Monster Mask */, 16);
-			iVar3 = 7;
-			iVar4 = 1;
+			iVar6 = 7;
+			iVar7 = 1;
 			iVar1 = 270;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 17, -1);
+			func_182(iVar10, iParam0, 17, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_190(int iParam0)//Position - 0x11D4C
@@ -15732,150 +15732,150 @@ void func_190(int iParam0)//Position - 0x11D4C
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 8;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 8;
 	Global_78341[0 /*14*/].f_5 = 2;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "SPEC_P2_0_0" /* GXT: Black Digital Watch */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "SPEC_P2_0_1" /* GXT: White Digital Watch */, 16);
-			iVar3 = 0;
-			iVar4 = 1;
+			iVar6 = 0;
+			iVar7 = 1;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 0;
+			iVar6 = 6;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 0;
+			iVar6 = 7;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 0;
+			iVar6 = 8;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 0;
+			iVar6 = 9;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 10;
-			iVar4 = 0;
+			iVar6 = 10;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 0;
+			iVar6 = 11;
+			iVar7 = 0;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 12;
-			iVar4 = 0;
+			iVar6 = 12;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 14:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 13;
-			iVar4 = 0;
+			iVar6 = 13;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 15:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 14;
-			iVar4 = 0;
+			iVar6 = 14;
+			iVar7 = 0;
 			break;
 		
 		case 16:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 15;
-			iVar4 = 0;
+			iVar6 = 15;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 17:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 16;
-			iVar4 = 0;
+			iVar6 = 16;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 18, -1);
+			func_182(iVar10, iParam0, 18, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_191(int iParam0)//Position - 0x11F7C
@@ -15883,76 +15883,76 @@ void func_191(int iParam0)//Position - 0x11F7C
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 5;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 5;
 	Global_78341[0 /*14*/].f_5 = 2;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 1;
+			iVar6 = 0;
+			iVar7 = 1;
 			bVar0 = true;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 7, -1);
+			func_182(iVar10, iParam0, 7, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_192(int iParam0)//Position - 0x1208C
@@ -15960,609 +15960,609 @@ void func_192(int iParam0)//Position - 0x1208C
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 6;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 6;
 	Global_78341[0 /*14*/].f_5 = 2;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "FEET_P2_0_0" /* GXT: Black Chukka Boots */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "FEET_P2_0_1" /* GXT: Snakeskin Chukka Boots */, 16);
-			iVar3 = 0;
-			iVar4 = 1;
+			iVar6 = 0;
+			iVar7 = 1;
 			iVar1 = 22;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "FEET_P2_0_2" /* GXT: Gray Chukka Boots */, 16);
-			iVar3 = 0;
-			iVar4 = 2;
+			iVar6 = 0;
+			iVar7 = 2;
 			iVar1 = 45;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "FEET_P2_0_3" /* GXT: Brown Chukka Boots */, 16);
-			iVar3 = 0;
-			iVar4 = 3;
+			iVar6 = 0;
+			iVar7 = 3;
 			iVar1 = 65;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "FEET_P2_0_4" /* GXT: Crocodile Skin Boots */, 16);
-			iVar3 = 0;
-			iVar4 = 4;
+			iVar6 = 0;
+			iVar7 = 4;
 			iVar1 = 58;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "FEET_P2_0_5" /* GXT: Cowboy Boots */, 16);
-			iVar3 = 0;
-			iVar4 = 5;
+			iVar6 = 0;
+			iVar7 = 5;
 			iVar1 = 72;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "FEET_P2_0_6" /* GXT: Yellow Reptile Skin Boots */, 16);
-			iVar3 = 0;
-			iVar4 = 6;
+			iVar6 = 0;
+			iVar7 = 6;
 			iVar1 = 68;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "FEET_P2_0_7" /* GXT: Reptile Skin Boots */, 16);
-			iVar3 = 0;
-			iVar4 = 7;
+			iVar6 = 0;
+			iVar7 = 7;
 			iVar1 = 60;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "FEET_P2_5_0" /* GXT: Work Boots */, 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 0;
+			iVar6 = 6;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 14:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 0;
+			iVar6 = 7;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 15:
 			StringCopy(&Var2, "FEET_P2_8_0" /* GXT: Dressy Shoes */, 16);
-			iVar3 = 8;
-			iVar4 = 0;
+			iVar6 = 8;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 16:
 			StringCopy(&Var2, "FEET_P2_9_0" /* GXT: Black Leather Loafers */, 16);
-			iVar3 = 9;
-			iVar4 = 0;
+			iVar6 = 9;
+			iVar7 = 0;
 			break;
 		
 		case 17:
 			StringCopy(&Var2, "FEET_P2_9_1" /* GXT: Gray Leather Loafers */, 16);
-			iVar3 = 9;
-			iVar4 = 1;
+			iVar6 = 9;
+			iVar7 = 1;
 			iVar1 = 680;
 			break;
 		
 		case 18:
 			StringCopy(&Var2, "FEET_P2_9_2" /* GXT: Cream Leather Loafers */, 16);
-			iVar3 = 9;
-			iVar4 = 2;
+			iVar6 = 9;
+			iVar7 = 2;
 			iVar1 = 650;
 			break;
 		
 		case 19:
 			StringCopy(&Var2, "FEET_P2_9_3" /* GXT: Brown Leather Loafers */, 16);
-			iVar3 = 9;
-			iVar4 = 3;
+			iVar6 = 9;
+			iVar7 = 3;
 			iVar1 = 670;
 			break;
 		
 		case 20:
 			StringCopy(&Var2, "FEET_P2_9_4" /* GXT: White Leather Loafers */, 16);
-			iVar3 = 9;
-			iVar4 = 4;
+			iVar6 = 9;
+			iVar7 = 4;
 			iVar1 = 700;
 			break;
 		
 		case 21:
 			StringCopy(&Var2, "FEET_P2_9_5" /* GXT: Russet Leather Loafers */, 16);
-			iVar3 = 9;
-			iVar4 = 5;
+			iVar6 = 9;
+			iVar7 = 5;
 			iVar1 = 680;
 			break;
 		
 		case 22:
 			StringCopy(&Var2, "FEET_P2_9_6" /* GXT: White Snakeskin Loafers */, 16);
-			iVar3 = 9;
-			iVar4 = 6;
+			iVar6 = 9;
+			iVar7 = 6;
 			iVar1 = 720;
 			break;
 		
 		case 23:
 			StringCopy(&Var2, "FEET_P2_9_7" /* GXT: Rattlesnake Loafers */, 16);
-			iVar3 = 9;
-			iVar4 = 7;
+			iVar6 = 9;
+			iVar7 = 7;
 			iVar1 = 740;
 			break;
 		
 		case 24:
 			StringCopy(&Var2, "FEET_P2_9_8" /* GXT: Brown Snakeskin Loafers */, 16);
-			iVar3 = 9;
-			iVar4 = 8;
+			iVar6 = 9;
+			iVar7 = 8;
 			iVar1 = 760;
 			break;
 		
 		case 25:
 			StringCopy(&Var2, "FEET_P2_9_9" /* GXT: Zebra Two-Tone Loafers */, 16);
-			iVar3 = 9;
-			iVar4 = 9;
+			iVar6 = 9;
+			iVar7 = 9;
 			iVar1 = 780;
 			break;
 		
 		case 26:
 			StringCopy(&Var2, "FEET_P2_9_10" /* GXT: Pale Reptile Loafers */, 16);
-			iVar3 = 9;
-			iVar4 = 10;
+			iVar6 = 9;
+			iVar7 = 10;
 			iVar1 = 750;
 			break;
 		
 		case 27:
 			StringCopy(&Var2, "FEET_P2_9_11" /* GXT: Tan Alligator Loafers */, 16);
-			iVar3 = 9;
-			iVar4 = 11;
+			iVar6 = 9;
+			iVar7 = 11;
 			iVar1 = 700;
 			break;
 		
 		case 28:
 			StringCopy(&Var2, "FEET_P2_10_0" /* GXT: Chestnut Boots */, 16);
-			iVar3 = 10;
-			iVar4 = 0;
+			iVar6 = 10;
+			iVar7 = 0;
 			break;
 		
 		case 29:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 0;
+			iVar6 = 11;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 30:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 12;
-			iVar4 = 0;
+			iVar6 = 12;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 31:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 13;
-			iVar4 = 0;
+			iVar6 = 13;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 32:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 14;
-			iVar4 = 0;
+			iVar6 = 14;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 33:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 15;
-			iVar4 = 0;
+			iVar6 = 15;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 34:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 16;
-			iVar4 = 0;
+			iVar6 = 16;
+			iVar7 = 0;
 			break;
 		
 		case 35:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 17;
-			iVar4 = 0;
+			iVar6 = 17;
+			iVar7 = 0;
 			break;
 		
 		case 36:
 			StringCopy(&Var2, "FEET_P2_18_0" /* GXT: All Black Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 0;
+			iVar6 = 18;
+			iVar7 = 0;
 			iVar1 = 790;
 			break;
 		
 		case 37:
 			StringCopy(&Var2, "FEET_P2_18_1" /* GXT: Chocolate Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 1;
+			iVar6 = 18;
+			iVar7 = 1;
 			iVar1 = 750;
 			break;
 		
 		case 38:
 			StringCopy(&Var2, "FEET_P2_18_2" /* GXT: Chestnut Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 2;
+			iVar6 = 18;
+			iVar7 = 2;
 			iVar1 = 860;
 			break;
 		
 		case 39:
 			StringCopy(&Var2, "FEET_P2_18_3" /* GXT: Tan Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 3;
+			iVar6 = 18;
+			iVar7 = 3;
 			iVar1 = 750;
 			break;
 		
 		case 40:
 			StringCopy(&Var2, "FEET_P2_18_4" /* GXT: White Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 4;
+			iVar6 = 18;
+			iVar7 = 4;
 			iVar1 = 790;
 			break;
 		
 		case 41:
 			StringCopy(&Var2, "FEET_P2_18_5" /* GXT: Ash Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 5;
+			iVar6 = 18;
+			iVar7 = 5;
 			iVar1 = 840;
 			break;
 		
 		case 42:
 			StringCopy(&Var2, "FEET_P2_18_6" /* GXT: Gray Two-Tone Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 6;
+			iVar6 = 18;
+			iVar7 = 6;
 			iVar1 = 820;
 			break;
 		
 		case 43:
 			StringCopy(&Var2, "FEET_P2_18_7" /* GXT: Beige Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 7;
+			iVar6 = 18;
+			iVar7 = 7;
 			iVar1 = 800;
 			break;
 		
 		case 44:
 			StringCopy(&Var2, "FEET_P2_18_8" /* GXT: Topaz Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 8;
+			iVar6 = 18;
+			iVar7 = 8;
 			iVar1 = 850;
 			break;
 		
 		case 45:
 			StringCopy(&Var2, "FEET_P2_18_9" /* GXT: Black Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 9;
+			iVar6 = 18;
+			iVar7 = 9;
 			iVar1 = 870;
 			break;
 		
 		case 46:
 			StringCopy(&Var2, "FEET_P2_18_10" /* GXT: Lime Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 10;
+			iVar6 = 18;
+			iVar7 = 10;
 			iVar1 = 720;
 			break;
 		
 		case 47:
 			StringCopy(&Var2, "FEET_P2_18_11" /* GXT: Hawthorn Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 11;
+			iVar6 = 18;
+			iVar7 = 11;
 			iVar1 = 740;
 			break;
 		
 		case 48:
 			StringCopy(&Var2, "FEET_P2_18_12" /* GXT: Coffee Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 12;
+			iVar6 = 18;
+			iVar7 = 12;
 			iVar1 = 800;
 			break;
 		
 		case 49:
 			StringCopy(&Var2, "FEET_P2_18_13" /* GXT: Gray Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 13;
+			iVar6 = 18;
+			iVar7 = 13;
 			iVar1 = 750;
 			break;
 		
 		case 50:
 			StringCopy(&Var2, "FEET_P2_18_14" /* GXT: Cream Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 14;
+			iVar6 = 18;
+			iVar7 = 14;
 			iVar1 = 770;
 			break;
 		
 		case 51:
 			StringCopy(&Var2, "FEET_P2_18_15" /* GXT: Navy Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 15;
+			iVar6 = 18;
+			iVar7 = 15;
 			iVar1 = 860;
 			break;
 		
 		case 52:
 			StringCopy(&Var2, "FEET_P2_19_0" /* GXT: Black Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 0;
+			iVar6 = 19;
+			iVar7 = 0;
 			iVar1 = 850;
 			break;
 		
 		case 53:
 			StringCopy(&Var2, "FEET_P2_19_1" /* GXT: Red Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 1;
+			iVar6 = 19;
+			iVar7 = 1;
 			iVar1 = 800;
 			break;
 		
 		case 54:
 			StringCopy(&Var2, "FEET_P2_19_2" /* GXT: Brown Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 2;
+			iVar6 = 19;
+			iVar7 = 2;
 			iVar1 = 780;
 			break;
 		
 		case 55:
 			StringCopy(&Var2, "FEET_P2_19_3" /* GXT: Green Stripe Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 3;
+			iVar6 = 19;
+			iVar7 = 3;
 			iVar1 = 890;
 			break;
 		
 		case 56:
 			StringCopy(&Var2, "FEET_P2_19_4" /* GXT: Green Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 4;
+			iVar6 = 19;
+			iVar7 = 4;
 			iVar1 = 820;
 			break;
 		
 		case 57:
 			StringCopy(&Var2, "FEET_P2_19_5" /* GXT: Copper Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 5;
+			iVar6 = 19;
+			iVar7 = 5;
 			iVar1 = 840;
 			break;
 		
 		case 58:
 			StringCopy(&Var2, "FEET_P2_19_6" /* GXT: Copper Two-Tone Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 6;
+			iVar6 = 19;
+			iVar7 = 6;
 			iVar1 = 870;
 			break;
 		
 		case 59:
 			StringCopy(&Var2, "FEET_P2_19_7" /* GXT: Navy Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 7;
+			iVar6 = 19;
+			iVar7 = 7;
 			iVar1 = 930;
 			break;
 		
 		case 60:
 			StringCopy(&Var2, "FEET_P2_19_8" /* GXT: Blue Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 8;
+			iVar6 = 19;
+			iVar7 = 8;
 			iVar1 = 880;
 			break;
 		
 		case 61:
 			StringCopy(&Var2, "FEET_P2_19_9" /* GXT: Beige Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 9;
+			iVar6 = 19;
+			iVar7 = 9;
 			iVar1 = 900;
 			break;
 		
 		case 62:
 			StringCopy(&Var2, "FEET_P2_19_10" /* GXT: White Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 10;
+			iVar6 = 19;
+			iVar7 = 10;
 			iVar1 = 920;
 			break;
 		
 		case 63:
 			StringCopy(&Var2, "FEET_P2_19_11" /* GXT: Tan Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 11;
+			iVar6 = 19;
+			iVar7 = 11;
 			iVar1 = 970;
 			break;
 		
 		case 64:
 			StringCopy(&Var2, "FEET_P2_19_12" /* GXT: Black Snakeskin Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 12;
+			iVar6 = 19;
+			iVar7 = 12;
 			iVar1 = 990;
 			break;
 		
 		case 65:
 			StringCopy(&Var2, "FEET_P2_19_13" /* GXT: Two-Tone Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 13;
+			iVar6 = 19;
+			iVar7 = 13;
 			iVar1 = 960;
 			break;
 		
 		case 66:
 			StringCopy(&Var2, "FEET_P2_19_14" /* GXT: Brown Snakeskin Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 14;
+			iVar6 = 19;
+			iVar7 = 14;
 			iVar1 = 980;
 			break;
 		
 		case 67:
 			StringCopy(&Var2, "FEET_P2_19_15" /* GXT: Gray Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 15;
+			iVar6 = 19;
+			iVar7 = 15;
 			iVar1 = 950;
 			break;
 		
 		case 68:
 			StringCopy(&Var2, "FEET_P2_20_0" /* GXT: Brown Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 0;
+			iVar6 = 20;
+			iVar7 = 0;
 			iVar1 = 110;
 			break;
 		
 		case 69:
 			StringCopy(&Var2, "FEET_P2_20_1" /* GXT: Navy Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 1;
+			iVar6 = 20;
+			iVar7 = 1;
 			iVar1 = 115;
 			break;
 		
 		case 70:
 			StringCopy(&Var2, "FEET_P2_20_2" /* GXT: Coffee Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 2;
+			iVar6 = 20;
+			iVar7 = 2;
 			iVar1 = 120;
 			break;
 		
 		case 71:
 			StringCopy(&Var2, "FEET_P2_20_3" /* GXT: Burgundy Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 3;
+			iVar6 = 20;
+			iVar7 = 3;
 			iVar1 = 110;
 			break;
 		
 		case 72:
 			StringCopy(&Var2, "FEET_P2_20_4" /* GXT: Blue Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 4;
+			iVar6 = 20;
+			iVar7 = 4;
 			iVar1 = 125;
 			break;
 		
 		case 73:
 			StringCopy(&Var2, "FEET_P2_20_5" /* GXT: Woodland Camo Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 5;
+			iVar6 = 20;
+			iVar7 = 5;
 			iVar1 = 128;
 			break;
 		
 		case 74:
 			StringCopy(&Var2, "FEET_P2_20_6" /* GXT: Black Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 6;
+			iVar6 = 20;
+			iVar7 = 6;
 			iVar1 = 135;
 			break;
 		
 		case 75:
 			StringCopy(&Var2, "FEET_P2_20_7" /* GXT: Tan Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 7;
+			iVar6 = 20;
+			iVar7 = 7;
 			iVar1 = 130;
 			break;
 		
 		case 76:
 			StringCopy(&Var2, "FEET_P2_20_8" /* GXT: Purple Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 8;
+			iVar6 = 20;
+			iVar7 = 8;
 			iVar1 = 145;
 			break;
 		
 		case 77:
 			StringCopy(&Var2, "FEET_P2_20_9" /* GXT: Brown Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 9;
+			iVar6 = 20;
+			iVar7 = 9;
 			iVar1 = 110;
 			break;
 		
 		case 78:
 			StringCopy(&Var2, "FEET_P2_20_10" /* GXT: Chocolate Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 10;
+			iVar6 = 20;
+			iVar7 = 10;
 			iVar1 = 120;
 			break;
 		
 		case 79:
 			StringCopy(&Var2, "FEET_P2_20_11" /* GXT: Green Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 11;
+			iVar6 = 20;
+			iVar7 = 11;
 			iVar1 = 150;
 			break;
 		
 		case 80:
 			StringCopy(&Var2, "FEET_P2_20_12" /* GXT: Ash Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 12;
+			iVar6 = 20;
+			iVar7 = 12;
 			iVar1 = 125;
 			break;
 		
 		case 81:
 			StringCopy(&Var2, "FEET_P2_20_13" /* GXT: Olive Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 13;
+			iVar6 = 20;
+			iVar7 = 13;
 			iVar1 = 120;
 			break;
 		
 		case 82:
 			StringCopy(&Var2, "FEET_P2_20_14" /* GXT: Two-Tone Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 14;
+			iVar6 = 20;
+			iVar7 = 14;
 			iVar1 = 130;
 			break;
 		
 		case 83:
 			StringCopy(&Var2, "FEET_P2_20_15" /* GXT: Yellow Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 15;
+			iVar6 = 20;
+			iVar7 = 15;
 			iVar1 = 110;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 84, -1);
+			func_182(iVar10, iParam0, 84, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_193(int iParam0)//Position - 0x12A2B
@@ -16570,737 +16570,737 @@ void func_193(int iParam0)//Position - 0x12A2B
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 4;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 4;
 	Global_78341[0 /*14*/].f_5 = 2;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "LEGS_P2_0_0" /* GXT: Blue Jeans */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "LEGS_P2_0_1" /* GXT: Dirty Blue Jeans */, 16);
-			iVar3 = 0;
-			iVar4 = 1;
+			iVar6 = 0;
+			iVar7 = 1;
 			iVar1 = 95;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "LEGS_P2_0_2" /* GXT: Navy Jeans */, 16);
-			iVar3 = 0;
-			iVar4 = 2;
+			iVar6 = 0;
+			iVar7 = 2;
 			iVar1 = 129;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "LEGS_P2_0_3" /* GXT: Faded Jeans */, 16);
-			iVar3 = 0;
-			iVar4 = 3;
+			iVar6 = 0;
+			iVar7 = 3;
 			iVar1 = 115;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 1;
+			iVar6 = 5;
+			iVar7 = 1;
 			bVar0 = true;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 2;
+			iVar6 = 5;
+			iVar7 = 2;
 			bVar0 = true;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 3;
+			iVar6 = 5;
+			iVar7 = 3;
 			bVar0 = true;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 4;
+			iVar6 = 5;
+			iVar7 = 4;
 			bVar0 = true;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 0;
+			iVar6 = 6;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 14:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 0;
+			iVar6 = 7;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 15:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 0;
+			iVar6 = 8;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 16:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 0;
+			iVar6 = 9;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 17:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 10;
-			iVar4 = 0;
+			iVar6 = 10;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 18:
 			StringCopy(&Var2, "LEGS_P2_11_0" /* GXT: Black Golf Pants */, 16);
-			iVar3 = 11;
-			iVar4 = 0;
+			iVar6 = 11;
+			iVar7 = 0;
 			break;
 		
 		case 19:
 			StringCopy(&Var2, "LEGS_P2_11_1" /* GXT: Russet Plaid Golf Pants */, 16);
-			iVar3 = 11;
-			iVar4 = 1;
+			iVar6 = 11;
+			iVar7 = 1;
 			iVar1 = 750;
 			break;
 		
 		case 20:
 			StringCopy(&Var2, "LEGS_P2_11_2" /* GXT: White Golf Pants */, 16);
-			iVar3 = 11;
-			iVar4 = 2;
+			iVar6 = 11;
+			iVar7 = 2;
 			iVar1 = 650;
 			break;
 		
 		case 21:
 			StringCopy(&Var2, "LEGS_P2_11_3" /* GXT: Maroon Golf Pants */, 16);
-			iVar3 = 11;
-			iVar4 = 3;
+			iVar6 = 11;
+			iVar7 = 3;
 			iVar1 = 850;
 			break;
 		
 		case 22:
 			StringCopy(&Var2, "LEGS_P2_11_4" /* GXT: Lobster Golf Pants */, 16);
-			iVar3 = 11;
-			iVar4 = 4;
+			iVar6 = 11;
+			iVar7 = 4;
 			iVar1 = 850;
 			break;
 		
 		case 23:
 			StringCopy(&Var2, "LEGS_P2_11_5" /* GXT: Stone Plaid Golf Pants */, 16);
-			iVar3 = 11;
-			iVar4 = 5;
+			iVar6 = 11;
+			iVar7 = 5;
 			iVar1 = 750;
 			break;
 		
 		case 24:
 			StringCopy(&Var2, "LEGS_P2_11_6" /* GXT: Pink Plaid Golf Pants */, 16);
-			iVar3 = 11;
-			iVar4 = 6;
+			iVar6 = 11;
+			iVar7 = 6;
 			iVar1 = 690;
 			break;
 		
 		case 25:
 			StringCopy(&Var2, "LEGS_P2_11_7" /* GXT: Mint Plaid Golf Pants */, 16);
-			iVar3 = 11;
-			iVar4 = 7;
+			iVar6 = 11;
+			iVar7 = 7;
 			iVar1 = 820;
 			break;
 		
 		case 26:
 			StringCopy(&Var2, "LEGS_P2_11_8" /* GXT: Brown Plaid Golf Pants */, 16);
-			iVar3 = 11;
-			iVar4 = 8;
+			iVar6 = 11;
+			iVar7 = 8;
 			iVar1 = 650;
 			break;
 		
 		case 27:
 			StringCopy(&Var2, "LEGS_P2_11_9" /* GXT: Pale Blue Plaid Golf Pants */, 16);
-			iVar3 = 11;
-			iVar4 = 9;
+			iVar6 = 11;
+			iVar7 = 9;
 			iVar1 = 690;
 			break;
 		
 		case 28:
 			StringCopy(&Var2, "LEGS_P2_11_10" /* GXT: Beige Plaid Golf Pants */, 16);
-			iVar3 = 11;
-			iVar4 = 10;
+			iVar6 = 11;
+			iVar7 = 10;
 			iVar1 = 690;
 			break;
 		
 		case 29:
 			StringCopy(&Var2, "LEGS_P2_11_11" /* GXT: Aqua Plaid Golf Pants */, 16);
-			iVar3 = 11;
-			iVar4 = 11;
+			iVar6 = 11;
+			iVar7 = 11;
 			iVar1 = 820;
 			break;
 		
 		case 30:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 12;
-			iVar4 = 0;
+			iVar6 = 12;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 31:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 13;
-			iVar4 = 0;
+			iVar6 = 13;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 32:
 			StringCopy(&Var2, "LEGS_P2_14_0" /* GXT: Black Cargo Pants */, 16);
-			iVar3 = 14;
-			iVar4 = 0;
+			iVar6 = 14;
+			iVar7 = 0;
 			break;
 		
 		case 33:
 			StringCopy(&Var2, "LEGS_P2_15_0" /* GXT: White Shorts */, 16);
-			iVar3 = 15;
-			iVar4 = 0;
+			iVar6 = 15;
+			iVar7 = 0;
 			break;
 		
 		case 34:
 			StringCopy(&Var2, "LEGS_P2_16_0" /* GXT: Pink Sweatpants */, 16);
-			iVar3 = 16;
-			iVar4 = 0;
+			iVar6 = 16;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 35:
 			StringCopy(&Var2, "LEGS_P2_17_0" /* GXT: Brown Work Pants */, 16);
-			iVar3 = 17;
-			iVar4 = 0;
+			iVar6 = 17;
+			iVar7 = 0;
 			iVar1 = 58;
 			break;
 		
 		case 36:
 			StringCopy(&Var2, "LEGS_P2_17_1" /* GXT: Charcoal Work Pants */, 16);
-			iVar3 = 17;
-			iVar4 = 1;
+			iVar6 = 17;
+			iVar7 = 1;
 			iVar1 = 68;
 			break;
 		
 		case 37:
 			StringCopy(&Var2, "LEGS_P2_17_2" /* GXT: Gray Work Pants */, 16);
-			iVar3 = 17;
-			iVar4 = 2;
+			iVar6 = 17;
+			iVar7 = 2;
 			iVar1 = 65;
 			break;
 		
 		case 38:
 			StringCopy(&Var2, "LEGS_P2_17_3" /* GXT: Tan Work Pants */, 16);
-			iVar3 = 17;
-			iVar4 = 3;
+			iVar6 = 17;
+			iVar7 = 3;
 			iVar1 = 60;
 			break;
 		
 		case 39:
 			StringCopy(&Var2, "LEGS_P2_17_4" /* GXT: Blue Work Pants */, 16);
-			iVar3 = 17;
-			iVar4 = 4;
+			iVar6 = 17;
+			iVar7 = 4;
 			iVar1 = 65;
 			break;
 		
 		case 40:
 			StringCopy(&Var2, "LEGS_P2_17_5" /* GXT: Ash Work Pants */, 16);
-			iVar3 = 17;
-			iVar4 = 5;
+			iVar6 = 17;
+			iVar7 = 5;
 			iVar1 = 63;
 			break;
 		
 		case 41:
 			StringCopy(&Var2, "LEGS_P2_17_6" /* GXT: White Work Pants */, 16);
-			iVar3 = 17;
-			iVar4 = 6;
+			iVar6 = 17;
+			iVar7 = 6;
 			iVar1 = 60;
 			break;
 		
 		case 42:
 			StringCopy(&Var2, "LEGS_P2_17_7" /* GXT: Beige Work Pants */, 16);
-			iVar3 = 17;
-			iVar4 = 7;
+			iVar6 = 17;
+			iVar7 = 7;
 			iVar1 = 58;
 			break;
 		
 		case 43:
 			StringCopy(&Var2, "LEGS_P2_18_0" /* GXT: Tan Cargo Pants */, 16);
-			iVar3 = 18;
-			iVar4 = 0;
+			iVar6 = 18;
+			iVar7 = 0;
 			break;
 		
 		case 44:
 			StringCopy(&Var2, "LEGS_P2_18_1" /* GXT: Cream Cargo Pants */, 16);
-			iVar3 = 18;
-			iVar4 = 1;
+			iVar6 = 18;
+			iVar7 = 1;
 			break;
 		
 		case 45:
 			StringCopy(&Var2, "LEGS_P2_18_2" /* GXT: Silver Cargo Pants */, 16);
-			iVar3 = 18;
-			iVar4 = 2;
+			iVar6 = 18;
+			iVar7 = 2;
 			iVar1 = 99;
 			break;
 		
 		case 46:
 			StringCopy(&Var2, "LEGS_P2_18_3" /* GXT: Gray Cargo Pants */, 16);
-			iVar3 = 18;
-			iVar4 = 3;
+			iVar6 = 18;
+			iVar7 = 3;
 			iVar1 = 105;
 			break;
 		
 		case 47:
 			StringCopy(&Var2, "LEGS_P2_18_4" /* GXT: Charcoal Cargo Pants */, 16);
-			iVar3 = 18;
-			iVar4 = 4;
+			iVar6 = 18;
+			iVar7 = 4;
 			iVar1 = 110;
 			break;
 		
 		case 48:
 			StringCopy(&Var2, "LEGS_P2_18_5" /* GXT: Green Cargo Pants */, 16);
-			iVar3 = 18;
-			iVar4 = 5;
+			iVar6 = 18;
+			iVar7 = 5;
 			iVar1 = 110;
 			break;
 		
 		case 49:
 			StringCopy(&Var2, "LEGS_P2_18_6" /* GXT: White Cargo Pants */, 16);
-			iVar3 = 18;
-			iVar4 = 6;
+			iVar6 = 18;
+			iVar7 = 6;
 			iVar1 = 99;
 			break;
 		
 		case 50:
 			StringCopy(&Var2, "LEGS_P2_18_7" /* GXT: Urban Camo Cargo Pants */, 16);
-			iVar3 = 18;
-			iVar4 = 7;
+			iVar6 = 18;
+			iVar7 = 7;
 			iVar1 = 110;
 			break;
 		
 		case 51:
 			StringCopy(&Var2, "LEGS_P2_18_8" /* GXT: Desert Camo Cargo Pants */, 16);
-			iVar3 = 18;
-			iVar4 = 8;
+			iVar6 = 18;
+			iVar7 = 8;
 			iVar1 = 110;
 			break;
 		
 		case 52:
 			StringCopy(&Var2, "LEGS_P2_18_9" /* GXT: Field Camo Cargo Pants */, 16);
-			iVar3 = 18;
-			iVar4 = 9;
+			iVar6 = 18;
+			iVar7 = 9;
 			iVar1 = 105;
 			break;
 		
 		case 53:
 			StringCopy(&Var2, "LEGS_P2_18_10" /* GXT: Forest Camo Cargo Pants */, 16);
-			iVar3 = 18;
-			iVar4 = 10;
+			iVar6 = 18;
+			iVar7 = 10;
 			iVar1 = 105;
 			break;
 		
 		case 54:
 			StringCopy(&Var2, "LEGS_P2_19_0" /* GXT: Black Shorts */, 16);
-			iVar3 = 19;
-			iVar4 = 0;
+			iVar6 = 19;
+			iVar7 = 0;
 			iVar1 = 15;
 			break;
 		
 		case 55:
 			StringCopy(&Var2, "LEGS_P2_19_1" /* GXT: Pale Blue Shorts */, 16);
-			iVar3 = 19;
-			iVar4 = 1;
+			iVar6 = 19;
+			iVar7 = 1;
 			iVar1 = 15;
 			break;
 		
 		case 56:
 			StringCopy(&Var2, "LEGS_P2_19_2" /* GXT: Orange Shorts */, 16);
-			iVar3 = 19;
-			iVar4 = 2;
+			iVar6 = 19;
+			iVar7 = 2;
 			iVar1 = 15;
 			break;
 		
 		case 57:
 			StringCopy(&Var2, "LEGS_P2_19_3" /* GXT: Blue Shorts */, 16);
-			iVar3 = 19;
-			iVar4 = 3;
+			iVar6 = 19;
+			iVar7 = 3;
 			iVar1 = 15;
 			break;
 		
 		case 58:
 			StringCopy(&Var2, "LEGS_P2_19_4" /* GXT: Slate Shorts */, 16);
-			iVar3 = 19;
-			iVar4 = 4;
+			iVar6 = 19;
+			iVar7 = 4;
 			iVar1 = 15;
 			break;
 		
 		case 59:
 			StringCopy(&Var2, "LEGS_P2_19_5" /* GXT: Green Shorts */, 16);
-			iVar3 = 19;
-			iVar4 = 5;
+			iVar6 = 19;
+			iVar7 = 5;
 			iVar1 = 15;
 			break;
 		
 		case 60:
 			StringCopy(&Var2, "LEGS_P2_19_6" /* GXT: Crimson Shorts */, 16);
-			iVar3 = 19;
-			iVar4 = 6;
+			iVar6 = 19;
+			iVar7 = 6;
 			iVar1 = 15;
 			break;
 		
 		case 61:
 			StringCopy(&Var2, "LEGS_P2_19_7" /* GXT: Pale Blue Stripe Shorts */, 16);
-			iVar3 = 19;
-			iVar4 = 7;
+			iVar6 = 19;
+			iVar7 = 7;
 			iVar1 = 15;
 			break;
 		
 		case 62:
 			StringCopy(&Var2, "LEGS_P2_20_0" /* GXT: Gray Pants */, 16);
-			iVar3 = 20;
-			iVar4 = 0;
+			iVar6 = 20;
+			iVar7 = 0;
 			iVar1 = 600;
 			break;
 		
 		case 63:
 			StringCopy(&Var2, "LEGS_P2_20_1" /* GXT: Khaki Pants */, 16);
-			iVar3 = 20;
-			iVar4 = 1;
+			iVar6 = 20;
+			iVar7 = 1;
 			iVar1 = 600;
 			break;
 		
 		case 64:
 			StringCopy(&Var2, "LEGS_P2_20_2" /* GXT: Charcoal Pants */, 16);
-			iVar3 = 20;
-			iVar4 = 2;
+			iVar6 = 20;
+			iVar7 = 2;
 			iVar1 = 600;
 			break;
 		
 		case 65:
 			StringCopy(&Var2, "LEGS_P2_20_3" /* GXT: Cream Pants */, 16);
-			iVar3 = 20;
-			iVar4 = 3;
+			iVar6 = 20;
+			iVar7 = 3;
 			iVar1 = 600;
 			break;
 		
 		case 66:
 			StringCopy(&Var2, "LEGS_P2_20_4" /* GXT: Stone Pants */, 16);
-			iVar3 = 20;
-			iVar4 = 4;
+			iVar6 = 20;
+			iVar7 = 4;
 			iVar1 = 600;
 			break;
 		
 		case 67:
 			StringCopy(&Var2, "LEGS_P2_20_5" /* GXT: Black Pants */, 16);
-			iVar3 = 20;
-			iVar4 = 5;
+			iVar6 = 20;
+			iVar7 = 5;
 			iVar1 = 600;
 			break;
 		
 		case 68:
 			StringCopy(&Var2, "LEGS_P2_20_6" /* GXT: Ash Pants */, 16);
-			iVar3 = 20;
-			iVar4 = 6;
+			iVar6 = 20;
+			iVar7 = 6;
 			iVar1 = 600;
 			break;
 		
 		case 69:
 			StringCopy(&Var2, "LEGS_P2_20_7" /* GXT: Beige Pants */, 16);
-			iVar3 = 20;
-			iVar4 = 7;
+			iVar6 = 20;
+			iVar7 = 7;
 			iVar1 = 600;
 			break;
 		
 		case 70:
 			StringCopy(&Var2, "LEGS_P2_20_8" /* GXT: Brown Pants */, 16);
-			iVar3 = 20;
-			iVar4 = 8;
+			iVar6 = 20;
+			iVar7 = 8;
 			iVar1 = 600;
 			break;
 		
 		case 71:
 			StringCopy(&Var2, "LEGS_P2_21_0" /* GXT: Beige Cheap Pants */, 16);
-			iVar3 = 21;
-			iVar4 = 0;
+			iVar6 = 21;
+			iVar7 = 0;
 			iVar1 = 80;
 			break;
 		
 		case 72:
 			StringCopy(&Var2, "LEGS_P2_21_1" /* GXT: Blue Cheap Pants */, 16);
-			iVar3 = 21;
-			iVar4 = 1;
+			iVar6 = 21;
+			iVar7 = 1;
 			iVar1 = 80;
 			break;
 		
 		case 73:
 			StringCopy(&Var2, "LEGS_P2_21_2" /* GXT: Brown Plaid Cheap Pants */, 16);
-			iVar3 = 21;
-			iVar4 = 2;
+			iVar6 = 21;
+			iVar7 = 2;
 			iVar1 = 80;
 			break;
 		
 		case 74:
 			StringCopy(&Var2, "LEGS_P2_21_3" /* GXT: Burgundy Cheap Pants */, 16);
-			iVar3 = 21;
-			iVar4 = 3;
+			iVar6 = 21;
+			iVar7 = 3;
 			iVar1 = 80;
 			break;
 		
 		case 75:
 			StringCopy(&Var2, "LEGS_P2_21_4" /* GXT: Murky Plaid Cheap Pants */, 16);
-			iVar3 = 21;
-			iVar4 = 4;
+			iVar6 = 21;
+			iVar7 = 4;
 			iVar1 = 80;
 			break;
 		
 		case 76:
 			StringCopy(&Var2, "LEGS_P2_21_5" /* GXT: Mint Plaid Cheap Pants */, 16);
-			iVar3 = 21;
-			iVar4 = 5;
+			iVar6 = 21;
+			iVar7 = 5;
 			iVar1 = 80;
 			break;
 		
 		case 77:
 			StringCopy(&Var2, "LEGS_P2_21_6" /* GXT: Green Plaid Cheap Pants */, 16);
-			iVar3 = 21;
-			iVar4 = 6;
+			iVar6 = 21;
+			iVar7 = 6;
 			iVar1 = 80;
 			break;
 		
 		case 78:
 			StringCopy(&Var2, "LEGS_P2_21_7" /* GXT: Blue-Gray Cheap Pants */, 16);
-			iVar3 = 21;
-			iVar4 = 7;
+			iVar6 = 21;
+			iVar7 = 7;
 			iVar1 = 80;
 			break;
 		
 		case 79:
 			StringCopy(&Var2, "LEGS_P2_21_8" /* GXT: Caramel Cheap Pants */, 16);
-			iVar3 = 21;
-			iVar4 = 8;
+			iVar6 = 21;
+			iVar7 = 8;
 			iVar1 = 80;
 			break;
 		
 		case 80:
 			StringCopy(&Var2, "LEGS_P2_21_9" /* GXT: Mocha Cheap Pants */, 16);
-			iVar3 = 21;
-			iVar4 = 9;
+			iVar6 = 21;
+			iVar7 = 9;
 			iVar1 = 80;
 			break;
 		
 		case 81:
 			StringCopy(&Var2, "LEGS_P2_22_0" /* GXT: White Briefs */, 16);
-			iVar3 = 22;
-			iVar4 = 0;
+			iVar6 = 22;
+			iVar7 = 0;
 			break;
 		
 		case 82:
 			StringCopy(&Var2, "LEGS_P2_22_1" /* GXT: Green Briefs */, 16);
-			iVar3 = 22;
-			iVar4 = 1;
+			iVar6 = 22;
+			iVar7 = 1;
 			iVar1 = 12;
 			break;
 		
 		case 83:
 			StringCopy(&Var2, "LEGS_P2_22_2" /* GXT: Gray Briefs */, 16);
-			iVar3 = 22;
-			iVar4 = 2;
+			iVar6 = 22;
+			iVar7 = 2;
 			iVar1 = 12;
 			break;
 		
 		case 84:
 			StringCopy(&Var2, "LEGS_P2_22_3" /* GXT: Leopardskin Briefs */, 16);
-			iVar3 = 22;
-			iVar4 = 3;
+			iVar6 = 22;
+			iVar7 = 3;
 			iVar1 = 22;
 			break;
 		
 		case 85:
 			StringCopy(&Var2, "LEGS_P2_22_4" /* GXT: Impotent Rage Briefs */, 16);
-			iVar3 = 22;
-			iVar4 = 4;
+			iVar6 = 22;
+			iVar7 = 4;
 			iVar1 = 18;
 			break;
 		
 		case 86:
 			StringCopy(&Var2, "LEGS_P2_22_5" /* GXT: Pink Leopardskin Briefs */, 16);
-			iVar3 = 22;
-			iVar4 = 5;
+			iVar6 = 22;
+			iVar7 = 5;
 			iVar1 = 20;
 			break;
 		
 		case 87:
 			StringCopy(&Var2, "LEGS_P2_22_6" /* GXT: Space Monkey Briefs 1 */, 16);
-			iVar3 = 22;
-			iVar4 = 6;
+			iVar6 = 22;
+			iVar7 = 6;
 			iVar1 = 30;
 			break;
 		
 		case 88:
 			StringCopy(&Var2, "LEGS_P2_22_7" /* GXT: Space Monkey Briefs 2 */, 16);
-			iVar3 = 22;
-			iVar4 = 7;
+			iVar6 = 22;
+			iVar7 = 7;
 			iVar1 = 30;
 			break;
 		
 		case 89:
 			StringCopy(&Var2, "LEGS_P2_22_8" /* GXT: Space Monkey Briefs 3 */, 16);
-			iVar3 = 22;
-			iVar4 = 8;
+			iVar6 = 22;
+			iVar7 = 8;
 			iVar1 = 30;
 			break;
 		
 		case 90:
 			StringCopy(&Var2, "LEGS_P2_22_9" /* GXT: Space Monkey Briefs 4 */, 16);
-			iVar3 = 22;
-			iVar4 = 9;
+			iVar6 = 22;
+			iVar7 = 9;
 			iVar1 = 30;
 			break;
 		
 		case 91:
 			StringCopy(&Var2, "LEGS_P2_23_0" /* GXT: Sweatpants */, 16);
-			iVar3 = 23;
-			iVar4 = 0;
+			iVar6 = 23;
+			iVar7 = 0;
 			break;
 		
 		case 92:
 			StringCopy(&Var2, "LEGS_P2_24_0" /* GXT: Brown Tuxedo Pants */, 16);
-			iVar3 = 24;
-			iVar4 = 0;
+			iVar6 = 24;
+			iVar7 = 0;
 			break;
 		
 		case 93:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 25;
-			iVar4 = 0;
+			iVar6 = 25;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 94:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 26;
-			iVar4 = 0;
+			iVar6 = 26;
+			iVar7 = 0;
 			break;
 		
 		case 95:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 26;
-			iVar4 = 1;
+			iVar6 = 26;
+			iVar7 = 1;
 			break;
 		
 		case 96:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 26;
-			iVar4 = 2;
+			iVar6 = 26;
+			iVar7 = 2;
 			break;
 		
 		case 97:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 26;
-			iVar4 = 3;
+			iVar6 = 26;
+			iVar7 = 3;
 			break;
 		
 		case 98:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 26;
-			iVar4 = 4;
+			iVar6 = 26;
+			iVar7 = 4;
 			break;
 		
 		case 99:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 26;
-			iVar4 = 5;
+			iVar6 = 26;
+			iVar7 = 5;
 			break;
 		
 		case 100:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 26;
-			iVar4 = 6;
+			iVar6 = 26;
+			iVar7 = 6;
 			break;
 		
 		case 101:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 26;
-			iVar4 = 7;
+			iVar6 = 26;
+			iVar7 = 7;
 			break;
 		
 		case 102:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 26;
-			iVar4 = 8;
+			iVar6 = 26;
+			iVar7 = 8;
 			break;
 		
 		case 103:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 26;
-			iVar4 = 9;
+			iVar6 = 26;
+			iVar7 = 9;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 104, -1);
+			func_182(iVar10, iParam0, 104, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_194(int iParam0)//Position - 0x1359E
@@ -17324,756 +17324,756 @@ void func_195(int iParam0)//Position - 0x135D3
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 3;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 3;
 	Global_78341[0 /*14*/].f_5 = 2;
 	switch (iParam0)
 	{
 		case 136:
 			StringCopy(&Var2, "TORSO_P2_21_0" /* GXT: Peyton Blue Blouson */, 16);
-			iVar3 = 21;
-			iVar4 = 0;
+			iVar6 = 21;
+			iVar7 = 0;
 			iVar1 = 32;
 			break;
 		
 		case 137:
 			StringCopy(&Var2, "TORSO_P2_21_1" /* GXT: Overlooked Red Blouson */, 16);
-			iVar3 = 21;
-			iVar4 = 1;
+			iVar6 = 21;
+			iVar7 = 1;
 			iVar1 = 39;
 			break;
 		
 		case 138:
 			StringCopy(&Var2, "TORSO_P2_21_2" /* GXT: Natural Blouson */, 16);
-			iVar3 = 21;
-			iVar4 = 2;
+			iVar6 = 21;
+			iVar7 = 2;
 			iVar1 = 40;
 			break;
 		
 		case 139:
 			StringCopy(&Var2, "TORSO_P2_21_3" /* GXT: Sky Blue Blouson */, 16);
-			iVar3 = 21;
-			iVar4 = 3;
+			iVar6 = 21;
+			iVar7 = 3;
 			iVar1 = 42;
 			break;
 		
 		case 140:
 			StringCopy(&Var2, "TORSO_P2_21_4" /* GXT: Deep Green Blouson */, 16);
-			iVar3 = 21;
-			iVar4 = 4;
+			iVar6 = 21;
+			iVar7 = 4;
 			iVar1 = 45;
 			break;
 		
 		case 141:
 			StringCopy(&Var2, "TORSO_P2_21_5" /* GXT: Champagne Driver Blouson */, 16);
-			iVar3 = 21;
-			iVar4 = 5;
+			iVar6 = 21;
+			iVar7 = 5;
 			iVar1 = 48;
 			break;
 		
 		case 142:
 			StringCopy(&Var2, "TORSO_P2_21_6" /* GXT: Snakeskin Blouson */, 16);
-			iVar3 = 21;
-			iVar4 = 6;
+			iVar6 = 21;
+			iVar7 = 6;
 			iVar1 = 52;
 			break;
 		
 		case 143:
 			StringCopy(&Var2, "TORSO_P2_21_7" /* GXT: Desert Brown Blouson */, 16);
-			iVar3 = 21;
-			iVar4 = 7;
+			iVar6 = 21;
+			iVar7 = 7;
 			iVar1 = 55;
 			break;
 		
 		case 144:
 			StringCopy(&Var2, "TORSO_P2_22_0" /* GXT: Black Striped Leather Jacket */, 16);
-			iVar3 = 22;
-			iVar4 = 0;
+			iVar6 = 22;
+			iVar7 = 0;
 			iVar1 = 390;
 			break;
 		
 		case 145:
 			StringCopy(&Var2, "TORSO_P2_22_1" /* GXT: Black Leather Jacket */, 16);
-			iVar3 = 22;
-			iVar4 = 1;
+			iVar6 = 22;
+			iVar7 = 1;
 			iVar1 = 390;
 			break;
 		
 		case 146:
 			StringCopy(&Var2, "TORSO_P2_22_2" /* GXT: Chestnut Leather Jacket */, 16);
-			iVar3 = 22;
-			iVar4 = 2;
+			iVar6 = 22;
+			iVar7 = 2;
 			iVar1 = 560;
 			break;
 		
 		case 147:
 			StringCopy(&Var2, "TORSO_P2_22_3" /* GXT: Red Leather Jacket */, 16);
-			iVar3 = 22;
-			iVar4 = 3;
+			iVar6 = 22;
+			iVar7 = 3;
 			iVar1 = 390;
 			break;
 		
 		case 148:
 			StringCopy(&Var2, "TORSO_P2_22_4" /* GXT: White Leather Jacket */, 16);
-			iVar3 = 22;
-			iVar4 = 4;
+			iVar6 = 22;
+			iVar7 = 4;
 			iVar1 = 390;
 			break;
 		
 		case 149:
 			StringCopy(&Var2, "TORSO_P2_22_5" /* GXT: Blue Leather Jacket */, 16);
-			iVar3 = 22;
-			iVar4 = 5;
+			iVar6 = 22;
+			iVar7 = 5;
 			iVar1 = 390;
 			break;
 		
 		case 150:
 			StringCopy(&Var2, "TORSO_P2_22_6" /* GXT: Lonewolf Leather Jacket */, 16);
-			iVar3 = 22;
-			iVar4 = 6;
+			iVar6 = 22;
+			iVar7 = 6;
 			iVar1 = 560;
 			break;
 		
 		case 151:
 			StringCopy(&Var2, "TORSO_P2_22_7" /* GXT: Brown Leather Jacket */, 16);
-			iVar3 = 22;
-			iVar4 = 7;
+			iVar6 = 22;
+			iVar7 = 7;
 			iVar1 = 390;
 			break;
 		
 		case 152:
 			StringCopy(&Var2, "TORSO_P2_22_8" /* GXT: Gray Striped Leather Jacket */, 16);
-			iVar3 = 22;
-			iVar4 = 8;
+			iVar6 = 22;
+			iVar7 = 8;
 			iVar1 = 390;
 			break;
 		
 		case 153:
 			StringCopy(&Var2, "TORSO_P2_22_9" /* GXT: Gray Banded Leather Jacket */, 16);
-			iVar3 = 22;
-			iVar4 = 9;
+			iVar6 = 22;
+			iVar7 = 9;
 			iVar1 = 390;
 			break;
 		
 		case 154:
 			StringCopy(&Var2, "TORSO_P2_22_10" /* GXT: Russet Leather Jacket */, 16);
-			iVar3 = 22;
-			iVar4 = 10;
+			iVar6 = 22;
+			iVar7 = 10;
 			iVar1 = 390;
 			break;
 		
 		case 155:
 			StringCopy(&Var2, "TORSO_P2_22_11" /* GXT: Brown Suede Jacket */, 16);
-			iVar3 = 22;
-			iVar4 = 11;
+			iVar6 = 22;
+			iVar7 = 11;
 			iVar1 = 3950;
 			break;
 		
 		case 156:
 			StringCopy(&Var2, "TORSO_P2_23_0" /* GXT: Brown Shooting Vest */, 16);
-			iVar3 = 23;
-			iVar4 = 0;
+			iVar6 = 23;
+			iVar7 = 0;
 			iVar1 = 150;
 			break;
 		
 		case 157:
 			StringCopy(&Var2, "TORSO_P2_23_1" /* GXT: Woodland Shooting Vest */, 16);
-			iVar3 = 23;
-			iVar4 = 1;
+			iVar6 = 23;
+			iVar7 = 1;
 			break;
 		
 		case 158:
 			StringCopy(&Var2, "TORSO_P2_23_2" /* GXT: Taupe Shooting Vest */, 16);
-			iVar3 = 23;
-			iVar4 = 2;
+			iVar6 = 23;
+			iVar7 = 2;
 			iVar1 = 150;
 			break;
 		
 		case 159:
 			StringCopy(&Var2, "TORSO_P2_23_3" /* GXT: Brown Woven Shooting Vest */, 16);
-			iVar3 = 23;
-			iVar4 = 3;
+			iVar6 = 23;
+			iVar7 = 3;
 			iVar1 = 150;
 			break;
 		
 		case 160:
 			StringCopy(&Var2, "TORSO_P2_23_4" /* GXT: Field Shooting Vest */, 16);
-			iVar3 = 23;
-			iVar4 = 4;
+			iVar6 = 23;
+			iVar7 = 4;
 			iVar1 = 160;
 			break;
 		
 		case 161:
 			StringCopy(&Var2, "TORSO_P2_23_5" /* GXT: Forest Shooting Vest */, 16);
-			iVar3 = 23;
-			iVar4 = 5;
+			iVar6 = 23;
+			iVar7 = 5;
 			break;
 		
 		case 162:
 			StringCopy(&Var2, "TORSO_P2_24_0" /* GXT: Yellow Tank Top */, 16);
-			iVar3 = 24;
-			iVar4 = 0;
+			iVar6 = 24;
+			iVar7 = 0;
 			iVar1 = 19;
 			break;
 		
 		case 163:
 			StringCopy(&Var2, "TORSO_P2_24_1" /* GXT: Blue Birds Tank Top */, 16);
-			iVar3 = 24;
-			iVar4 = 1;
+			iVar6 = 24;
+			iVar7 = 1;
 			iVar1 = 20;
 			break;
 		
 		case 164:
 			StringCopy(&Var2, "TORSO_P2_24_2" /* GXT: Orange Pattern Tank Top */, 16);
-			iVar3 = 24;
-			iVar4 = 2;
+			iVar6 = 24;
+			iVar7 = 2;
 			iVar1 = 19;
 			break;
 		
 		case 165:
 			StringCopy(&Var2, "TORSO_P2_24_3" /* GXT: Blue Stars Tank Top */, 16);
-			iVar3 = 24;
-			iVar4 = 3;
+			iVar6 = 24;
+			iVar7 = 3;
 			iVar1 = 22;
 			break;
 		
 		case 166:
 			StringCopy(&Var2, "TORSO_P2_24_4" /* GXT: Aqua Pattern Tank Top */, 16);
-			iVar3 = 24;
-			iVar4 = 4;
+			iVar6 = 24;
+			iVar7 = 4;
 			iVar1 = 20;
 			break;
 		
 		case 167:
 			StringCopy(&Var2, "TORSO_P2_24_5" /* GXT: Degenatron Tank Top */, 16);
-			iVar3 = 24;
-			iVar4 = 5;
+			iVar6 = 24;
+			iVar7 = 5;
 			iVar1 = 28;
 			break;
 		
 		case 168:
 			StringCopy(&Var2, "TORSO_P2_24_6" /* GXT: Taco Libre Tank Top */, 16);
-			iVar3 = 24;
-			iVar4 = 6;
+			iVar6 = 24;
+			iVar7 = 6;
 			iVar1 = 28;
 			break;
 		
 		case 169:
 			StringCopy(&Var2, "TORSO_P2_24_7" /* GXT: Pussycat Tank Top */, 16);
-			iVar3 = 24;
-			iVar4 = 7;
+			iVar6 = 24;
+			iVar7 = 7;
 			iVar1 = 25;
 			break;
 		
 		case 170:
 			StringCopy(&Var2, "TORSO_P2_24_8" /* GXT: Lemon Pattern Tank Top */, 16);
-			iVar3 = 24;
-			iVar4 = 8;
+			iVar6 = 24;
+			iVar7 = 8;
 			iVar1 = 22;
 			break;
 		
 		case 171:
 			StringCopy(&Var2, "TORSO_P2_24_9" /* GXT: Charcoal Tank Top */, 16);
-			iVar3 = 24;
-			iVar4 = 9;
+			iVar6 = 24;
+			iVar7 = 9;
 			iVar1 = 19;
 			break;
 		
 		case 172:
 			StringCopy(&Var2, "TORSO_P2_24_10" /* GXT: Off-White Tank Top */, 16);
-			iVar3 = 24;
-			iVar4 = 10;
+			iVar6 = 24;
+			iVar7 = 10;
 			iVar1 = 22;
 			break;
 		
 		case 173:
 			StringCopy(&Var2, "TORSO_P2_24_11" /* GXT: Banded Tank Top */, 16);
-			iVar3 = 24;
-			iVar4 = 11;
+			iVar6 = 24;
+			iVar7 = 11;
 			iVar1 = 19;
 			break;
 		
 		case 174:
 			StringCopy(&Var2, "TORSO_P2_24_12" /* GXT: Orange Tank Top */, 16);
-			iVar3 = 24;
-			iVar4 = 12;
+			iVar6 = 24;
+			iVar7 = 12;
 			iVar1 = 20;
 			break;
 		
 		case 175:
 			StringCopy(&Var2, "TORSO_P2_24_13" /* GXT: Camo Tank Top */, 16);
-			iVar3 = 24;
-			iVar4 = 13;
+			iVar6 = 24;
+			iVar7 = 13;
 			iVar1 = 25;
 			break;
 		
 		case 176:
 			StringCopy(&Var2, "TORSO_P2_24_14" /* GXT: Indigo Tank Top */, 16);
-			iVar3 = 24;
-			iVar4 = 14;
+			iVar6 = 24;
+			iVar7 = 14;
 			iVar1 = 20;
 			break;
 		
 		case 177:
 			StringCopy(&Var2, "TORSO_P2_24_15" /* GXT: Liberty Cocks Tank Top */, 16);
-			iVar3 = 24;
-			iVar4 = 15;
+			iVar6 = 24;
+			iVar7 = 15;
 			iVar1 = 28;
 			break;
 		
 		case 178:
 			StringCopy(&Var2, "TORSO_P2_25_0" /* GXT: Blue Two-Tone Shirt */, 16);
-			iVar3 = 25;
-			iVar4 = 0;
+			iVar6 = 25;
+			iVar7 = 0;
 			iVar1 = 35;
 			break;
 		
 		case 179:
 			StringCopy(&Var2, "TORSO_P2_25_1" /* GXT: Circles Shirt */, 16);
-			iVar3 = 25;
-			iVar4 = 1;
+			iVar6 = 25;
+			iVar7 = 1;
 			iVar1 = 40;
 			break;
 		
 		case 180:
 			StringCopy(&Var2, "TORSO_P2_25_2" /* GXT: Gray Two-Tone Shirt */, 16);
-			iVar3 = 25;
-			iVar4 = 2;
+			iVar6 = 25;
+			iVar7 = 2;
 			iVar1 = 45;
 			break;
 		
 		case 181:
 			StringCopy(&Var2, "TORSO_P2_25_3" /* GXT: Mustard Shirt */, 16);
-			iVar3 = 25;
-			iVar4 = 3;
+			iVar6 = 25;
+			iVar7 = 3;
 			iVar1 = 45;
 			break;
 		
 		case 182:
 			StringCopy(&Var2, "TORSO_P2_25_4" /* GXT: Blue Checkered Shirt */, 16);
-			iVar3 = 25;
-			iVar4 = 4;
+			iVar6 = 25;
+			iVar7 = 4;
 			iVar1 = 49;
 			break;
 		
 		case 183:
 			StringCopy(&Var2, "TORSO_P2_25_5" /* GXT: Floral Shirt */, 16);
-			iVar3 = 25;
-			iVar4 = 5;
+			iVar6 = 25;
+			iVar7 = 5;
 			iVar1 = 820;
 			break;
 		
 		case 184:
 			StringCopy(&Var2, "TORSO_P2_25_6" /* GXT: Beige Shirt */, 16);
-			iVar3 = 25;
-			iVar4 = 6;
+			iVar6 = 25;
+			iVar7 = 6;
 			iVar1 = 790;
 			break;
 		
 		case 185:
 			StringCopy(&Var2, "TORSO_P2_25_7" /* GXT: Lavender Shirt */, 16);
-			iVar3 = 25;
-			iVar4 = 7;
+			iVar6 = 25;
+			iVar7 = 7;
 			iVar1 = 820;
 			break;
 		
 		case 186:
 			StringCopy(&Var2, "TORSO_P2_25_8" /* GXT: Black Shirt */, 16);
-			iVar3 = 25;
-			iVar4 = 8;
+			iVar6 = 25;
+			iVar7 = 8;
 			iVar1 = 929;
 			break;
 		
 		case 187:
 			StringCopy(&Var2, "TORSO_P2_25_9" /* GXT: Monogrammed Shirt */, 16);
-			iVar3 = 25;
-			iVar4 = 9;
+			iVar6 = 25;
+			iVar7 = 9;
 			iVar1 = 40;
 			break;
 		
 		case 188:
 			StringCopy(&Var2, "TORSO_P2_25_10" /* GXT: Paisley Shirt */, 16);
-			iVar3 = 25;
-			iVar4 = 10;
+			iVar6 = 25;
+			iVar7 = 10;
 			iVar1 = 850;
 			break;
 		
 		case 189:
 			StringCopy(&Var2, "TORSO_P2_25_11" /* GXT: Camel Shirt */, 16);
-			iVar3 = 25;
-			iVar4 = 11;
+			iVar6 = 25;
+			iVar7 = 11;
 			iVar1 = 790;
 			break;
 		
 		case 190:
 			StringCopy(&Var2, "TORSO_P2_26_0" /* GXT: Beige Tight Jacket */, 16);
-			iVar3 = 26;
-			iVar4 = 0;
+			iVar6 = 26;
+			iVar7 = 0;
 			break;
 		
 		case 191:
 			StringCopy(&Var2, "TORSO_P2_26_1" /* GXT: Blue Tight Jacket */, 16);
-			iVar3 = 26;
-			iVar4 = 1;
+			iVar6 = 26;
+			iVar7 = 1;
 			break;
 		
 		case 192:
 			StringCopy(&Var2, "TORSO_P2_26_2" /* GXT: Brown Plaid Tight Jacket */, 16);
-			iVar3 = 26;
-			iVar4 = 2;
+			iVar6 = 26;
+			iVar7 = 2;
 			break;
 		
 		case 193:
 			StringCopy(&Var2, "TORSO_P2_26_3" /* GXT: Burgundy Tight Jacket */, 16);
-			iVar3 = 26;
-			iVar4 = 3;
+			iVar6 = 26;
+			iVar7 = 3;
 			break;
 		
 		case 194:
 			StringCopy(&Var2, "TORSO_P2_26_4" /* GXT: Murky Plaid Tight Jacket */, 16);
-			iVar3 = 26;
-			iVar4 = 4;
+			iVar6 = 26;
+			iVar7 = 4;
 			break;
 		
 		case 195:
 			StringCopy(&Var2, "TORSO_P2_26_5" /* GXT: Mint Plaid Tight Jacket */, 16);
-			iVar3 = 26;
-			iVar4 = 5;
+			iVar6 = 26;
+			iVar7 = 5;
 			break;
 		
 		case 196:
 			StringCopy(&Var2, "TORSO_P2_26_6" /* GXT: Green Plaid Tight Jacket */, 16);
-			iVar3 = 26;
-			iVar4 = 6;
+			iVar6 = 26;
+			iVar7 = 6;
 			break;
 		
 		case 197:
 			StringCopy(&Var2, "TORSO_P2_26_7" /* GXT: Blue-Gray Tight Jacket */, 16);
-			iVar3 = 26;
-			iVar4 = 7;
+			iVar6 = 26;
+			iVar7 = 7;
 			break;
 		
 		case 198:
 			StringCopy(&Var2, "TORSO_P2_26_8" /* GXT: Caramel Tight Jacket */, 16);
-			iVar3 = 26;
-			iVar4 = 8;
+			iVar6 = 26;
+			iVar7 = 8;
 			break;
 		
 		case 199:
 			StringCopy(&Var2, "TORSO_P2_26_9" /* GXT: Mocha Tight Jacket */, 16);
-			iVar3 = 26;
-			iVar4 = 9;
+			iVar6 = 26;
+			iVar7 = 9;
 			break;
 		
 		case 200:
 			StringCopy(&Var2, "TORSO_P2_27_0" /* GXT: Gray Jacket */, 16);
-			iVar3 = 27;
-			iVar4 = 0;
+			iVar6 = 27;
+			iVar7 = 0;
 			iVar1 = 2200;
 			break;
 		
 		case 201:
 			StringCopy(&Var2, "TORSO_P2_27_1" /* GXT: Oatmeal Jacket */, 16);
-			iVar3 = 27;
-			iVar4 = 1;
+			iVar6 = 27;
+			iVar7 = 1;
 			iVar1 = 2500;
 			break;
 		
 		case 202:
 			StringCopy(&Var2, "TORSO_P2_27_2" /* GXT: Charcoal Jacket */, 16);
-			iVar3 = 27;
-			iVar4 = 2;
+			iVar6 = 27;
+			iVar7 = 2;
 			iVar1 = 2500;
 			break;
 		
 		case 203:
 			StringCopy(&Var2, "TORSO_P2_27_3" /* GXT: Off-White Jacket */, 16);
-			iVar3 = 27;
-			iVar4 = 3;
+			iVar6 = 27;
+			iVar7 = 3;
 			iVar1 = 2200;
 			break;
 		
 		case 204:
 			StringCopy(&Var2, "TORSO_P2_27_4" /* GXT: Cream Jacket */, 16);
-			iVar3 = 27;
-			iVar4 = 4;
+			iVar6 = 27;
+			iVar7 = 4;
 			iVar1 = 2500;
 			break;
 		
 		case 205:
 			StringCopy(&Var2, "TORSO_P2_27_5" /* GXT: Black Jacket */, 16);
-			iVar3 = 27;
-			iVar4 = 5;
+			iVar6 = 27;
+			iVar7 = 5;
 			iVar1 = 2500;
 			break;
 		
 		case 206:
 			StringCopy(&Var2, "TORSO_P2_27_6" /* GXT: Ash Jacket */, 16);
-			iVar3 = 27;
-			iVar4 = 6;
+			iVar6 = 27;
+			iVar7 = 6;
 			iVar1 = 2200;
 			break;
 		
 		case 207:
 			StringCopy(&Var2, "TORSO_P2_28_0" /* GXT: Dark Gray Sweater */, 16);
-			iVar3 = 28;
-			iVar4 = 0;
+			iVar6 = 28;
+			iVar7 = 0;
 			iVar1 = 1100;
 			break;
 		
 		case 208:
 			StringCopy(&Var2, "TORSO_P2_28_1" /* GXT: Pale Gray Sweater */, 16);
-			iVar3 = 28;
-			iVar4 = 1;
+			iVar6 = 28;
+			iVar7 = 1;
 			iVar1 = 1200;
 			break;
 		
 		case 209:
 			StringCopy(&Var2, "TORSO_P2_28_2" /* GXT: Taupe Sweater */, 16);
-			iVar3 = 28;
-			iVar4 = 2;
+			iVar6 = 28;
+			iVar7 = 2;
 			iVar1 = 1220;
 			break;
 		
 		case 210:
 			StringCopy(&Var2, "TORSO_P2_28_3" /* GXT: Pale Blue Sweater */, 16);
-			iVar3 = 28;
-			iVar4 = 3;
+			iVar6 = 28;
+			iVar7 = 3;
 			iVar1 = 1250;
 			break;
 		
 		case 211:
 			StringCopy(&Var2, "TORSO_P2_28_4" /* GXT: Tangerine Sweater */, 16);
-			iVar3 = 28;
-			iVar4 = 4;
+			iVar6 = 28;
+			iVar7 = 4;
 			iVar1 = 1300;
 			break;
 		
 		case 212:
 			StringCopy(&Var2, "TORSO_P2_28_5" /* GXT: Quarry Brown Sweater */, 16);
-			iVar3 = 28;
-			iVar4 = 5;
+			iVar6 = 28;
+			iVar7 = 5;
 			iVar1 = 1360;
 			break;
 		
 		case 213:
 			StringCopy(&Var2, "TORSO_P2_28_6" /* GXT: Dark Chevrons Sweater */, 16);
-			iVar3 = 28;
-			iVar4 = 6;
+			iVar6 = 28;
+			iVar7 = 6;
 			iVar1 = 35;
 			break;
 		
 		case 214:
 			StringCopy(&Var2, "TORSO_P2_28_7" /* GXT: Zingy Chevrons Sweater */, 16);
-			iVar3 = 28;
-			iVar4 = 7;
+			iVar6 = 28;
+			iVar7 = 7;
 			iVar1 = 38;
 			break;
 		
 		case 215:
 			StringCopy(&Var2, "TORSO_P2_28_8" /* GXT: Rainbow Field Sweater */, 16);
-			iVar3 = 28;
-			iVar4 = 8;
+			iVar6 = 28;
+			iVar7 = 8;
 			iVar1 = 40;
 			break;
 		
 		case 216:
 			StringCopy(&Var2, "TORSO_P2_28_9" /* GXT: Dark Field Sweater */, 16);
-			iVar3 = 28;
-			iVar4 = 9;
+			iVar6 = 28;
+			iVar7 = 9;
 			iVar1 = 42;
 			break;
 		
 		case 217:
 			StringCopy(&Var2, "TORSO_P2_28_10" /* GXT: Animal Strip Sweater */, 16);
-			iVar3 = 28;
-			iVar4 = 10;
+			iVar6 = 28;
+			iVar7 = 10;
 			iVar1 = 50;
 			break;
 		
 		case 218:
 			StringCopy(&Var2, "TORSO_P2_28_11" /* GXT: Bill Brown Sweater */, 16);
-			iVar3 = 28;
-			iVar4 = 11;
+			iVar6 = 28;
+			iVar7 = 11;
 			iVar1 = 45;
 			break;
 		
 		case 219:
 			StringCopy(&Var2, "TORSO_P2_28_12" /* GXT: Mint Argyle Sweater */, 16);
-			iVar3 = 28;
-			iVar4 = 12;
+			iVar6 = 28;
+			iVar7 = 12;
 			iVar1 = 45;
 			break;
 		
 		case 220:
 			StringCopy(&Var2, "TORSO_P2_28_13" /* GXT: Gray Argyle Sweater */, 16);
-			iVar3 = 28;
-			iVar4 = 13;
+			iVar6 = 28;
+			iVar7 = 13;
 			iVar1 = 44;
 			break;
 		
 		case 221:
 			StringCopy(&Var2, "TORSO_P2_28_14" /* GXT: Grape Eighties Sweater */, 16);
-			iVar3 = 28;
-			iVar4 = 14;
+			iVar6 = 28;
+			iVar7 = 14;
 			iVar1 = 46;
 			break;
 		
 		case 222:
 			StringCopy(&Var2, "TORSO_P2_28_15" /* GXT: Geometric Eighties Sweater */, 16);
-			iVar3 = 28;
-			iVar4 = 15;
+			iVar6 = 28;
+			iVar7 = 15;
 			iVar1 = 52;
 			break;
 		
 		case 223:
 			StringCopy(&Var2, "TORSO_P2_29_0" /* GXT: Black Jacket */, 16);
-			iVar3 = 29;
-			iVar4 = 0;
+			iVar6 = 29;
+			iVar7 = 0;
 			iVar1 = 3200;
 			break;
 		
 		case 224:
 			StringCopy(&Var2, "TORSO_P2_29_1" /* GXT: All Black Jacket */, 16);
-			iVar3 = 29;
-			iVar4 = 1;
+			iVar6 = 29;
+			iVar7 = 1;
 			iVar1 = 3200;
 			break;
 		
 		case 225:
 			StringCopy(&Var2, "TORSO_P2_29_2" /* GXT: White Jacket */, 16);
-			iVar3 = 29;
-			iVar4 = 2;
+			iVar6 = 29;
+			iVar7 = 2;
 			iVar1 = 2550;
 			break;
 		
 		case 226:
 			StringCopy(&Var2, "TORSO_P2_29_3" /* GXT: Cream Jacket */, 16);
-			iVar3 = 29;
-			iVar4 = 3;
+			iVar6 = 29;
+			iVar7 = 3;
 			iVar1 = 2750;
 			break;
 		
 		case 227:
 			StringCopy(&Var2, "TORSO_P2_29_4" /* GXT: Oatmeal Jacket */, 16);
-			iVar3 = 29;
-			iVar4 = 4;
+			iVar6 = 29;
+			iVar7 = 4;
 			iVar1 = 2590;
 			break;
 		
 		case 228:
 			StringCopy(&Var2, "TORSO_P2_29_5" /* GXT: Blue-Gray Jacket */, 16);
-			iVar3 = 29;
-			iVar4 = 5;
+			iVar6 = 29;
+			iVar7 = 5;
 			iVar1 = 2750;
 			break;
 		
 		case 229:
 			StringCopy(&Var2, "TORSO_P2_29_6" /* GXT: Beige Jacket */, 16);
-			iVar3 = 29;
-			iVar4 = 6;
+			iVar6 = 29;
+			iVar7 = 6;
 			iVar1 = 2550;
 			break;
 		
 		case 230:
 			StringCopy(&Var2, "TORSO_P2_29_7" /* GXT: Off-White Jacket */, 16);
-			iVar3 = 29;
-			iVar4 = 7;
+			iVar6 = 29;
+			iVar7 = 7;
 			iVar1 = 2590;
 			break;
 		
 		case 231:
 			StringCopy(&Var2, "TORSO_P2_29_8" /* GXT: Gray Suit Jacket */, 16);
-			iVar3 = 29;
-			iVar4 = 8;
+			iVar6 = 29;
+			iVar7 = 8;
 			iVar1 = 2720;
 			break;
 		
 		case 232:
 			StringCopy(&Var2, "TORSO_P2_29_9" /* GXT: Ash Suit Jacket */, 16);
-			iVar3 = 29;
-			iVar4 = 9;
+			iVar6 = 29;
+			iVar7 = 9;
 			iVar1 = 2750;
 			break;
 		
 		case 233:
 			StringCopy(&Var2, "TORSO_P2_30_0" /* GXT: Gray Blazer */, 16);
-			iVar3 = 30;
-			iVar4 = 0;
+			iVar6 = 30;
+			iVar7 = 0;
 			iVar1 = 3250;
 			break;
 		
 		case 234:
 			StringCopy(&Var2, "TORSO_P2_30_1" /* GXT: Beige Blazer */, 16);
-			iVar3 = 30;
-			iVar4 = 1;
+			iVar6 = 30;
+			iVar7 = 1;
 			iVar1 = 2950;
 			break;
 		
 		case 235:
 			StringCopy(&Var2, "TORSO_P2_30_2" /* GXT: Black Blazer */, 16);
-			iVar3 = 30;
-			iVar4 = 2;
+			iVar6 = 30;
+			iVar7 = 2;
 			iVar1 = 3100;
 			break;
 		
 		case 236:
 			StringCopy(&Var2, "TORSO_P2_30_3" /* GXT: Brown Blazer */, 16);
-			iVar3 = 30;
-			iVar4 = 3;
+			iVar6 = 30;
+			iVar7 = 3;
 			iVar1 = 3150;
 			break;
 		
 		case 237:
 			StringCopy(&Var2, "TORSO_P2_30_4" /* GXT: Navy Blazer */, 16);
-			iVar3 = 30;
-			iVar4 = 4;
+			iVar6 = 30;
+			iVar7 = 4;
 			iVar1 = 3240;
 			break;
 		
 		case 238:
 			StringCopy(&Var2, "TORSO_P2_30_5" /* GXT: Navy Pinstripe Blazer */, 16);
-			iVar3 = 30;
-			iVar4 = 5;
+			iVar6 = 30;
+			iVar7 = 5;
 			iVar1 = 3350;
 			break;
 		
 		case 239:
 			StringCopy(&Var2, "TORSO_P2_30_6" /* GXT: Blue-Gray Pinstripe Blazer */, 16);
-			iVar3 = 30;
-			iVar4 = 6;
+			iVar6 = 30;
+			iVar7 = 6;
 			iVar1 = 3400;
 			break;
 		
 		case 240:
 			StringCopy(&Var2, "TORSO_P2_30_7" /* GXT: Brown Pinstripe Blazer */, 16);
-			iVar3 = 30;
-			iVar4 = 7;
+			iVar6 = 30;
+			iVar7 = 7;
 			iVar1 = 3280;
 			break;
 		
 		case 241:
 			StringCopy(&Var2, "TORSO_P2_31_0" /* GXT: Tuxedo Jacket */, 16);
-			iVar3 = 31;
-			iVar4 = 0;
+			iVar6 = 31;
+			iVar7 = 0;
 			break;
 		
 		default:
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_196(int iParam0)//Position - 0x141D9
@@ -18081,961 +18081,961 @@ void func_196(int iParam0)//Position - 0x141D9
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 3;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 3;
 	Global_78341[0 /*14*/].f_5 = 2;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "TORSO_P2_0_0" /* GXT: White T-Shirt */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "TORSO_P2_0_1" /* GXT: Yellow T-Shirt */, 16);
-			iVar3 = 0;
-			iVar4 = 1;
+			iVar6 = 0;
+			iVar7 = 1;
 			iVar1 = 25;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "TORSO_P2_0_2" /* GXT: Dusche Gold T-Shirt */, 16);
-			iVar3 = 0;
-			iVar4 = 2;
+			iVar6 = 0;
+			iVar7 = 2;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "TORSO_P2_0_3" /* GXT: Charcoal T-Shirt */, 16);
-			iVar3 = 0;
-			iVar4 = 3;
+			iVar6 = 0;
+			iVar7 = 3;
 			iVar1 = 15;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "TORSO_P2_0_4" /* GXT: Cerveza Barracho T-Shirt */, 16);
-			iVar3 = 0;
-			iVar4 = 4;
+			iVar6 = 0;
+			iVar7 = 4;
 			iVar1 = 25;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "TORSO_P2_0_5" /* GXT: Liberty City Wrath T-Shirt */, 16);
-			iVar3 = 0;
-			iVar4 = 5;
+			iVar6 = 0;
+			iVar7 = 5;
 			iVar1 = 25;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "TORSO_P2_0_6" /* GXT: Pump & Run T-Shirt */, 16);
-			iVar3 = 0;
-			iVar4 = 6;
+			iVar6 = 0;
+			iVar7 = 6;
 			iVar1 = 22;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "TORSO_P2_0_7" /* GXT: Atomic T-Shirt */, 16);
-			iVar3 = 0;
-			iVar4 = 7;
+			iVar6 = 0;
+			iVar7 = 7;
 			iVar1 = 22;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "TORSO_P2_0_8" /* GXT: LS Nuclear Power T-Shirt */, 16);
-			iVar3 = 0;
-			iVar4 = 8;
+			iVar6 = 0;
+			iVar7 = 8;
 			iVar1 = 20;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "TORSO_P2_0_9" /* GXT: Zancudo T-Shirt */, 16);
-			iVar3 = 0;
-			iVar4 = 9;
+			iVar6 = 0;
+			iVar7 = 9;
 			iVar1 = 20;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "TORSO_P2_0_10" /* GXT: West Coast Classics T-Shirt */, 16);
-			iVar3 = 0;
-			iVar4 = 10;
+			iVar6 = 0;
+			iVar7 = 10;
 			iVar1 = 24;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "TORSO_P2_0_11" /* GXT: BC Talk Radio T-Shirt */, 16);
-			iVar3 = 0;
-			iVar4 = 11;
+			iVar6 = 0;
+			iVar7 = 11;
 			iVar1 = 26;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "TORSO_P2_0_12" /* GXT: Animal Ark T-Shirt */, 16);
-			iVar3 = 0;
-			iVar4 = 12;
+			iVar6 = 0;
+			iVar7 = 12;
 			iVar1 = 28;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "TORSO_P2_0_13" /* GXT: Rimmers T-Shirt */, 16);
-			iVar3 = 0;
-			iVar4 = 13;
+			iVar6 = 0;
+			iVar7 = 13;
 			iVar1 = 29;
 			break;
 		
 		case 14:
 			StringCopy(&Var2, "TORSO_P2_0_14" /* GXT: Paperclips T-Shirt */, 16);
-			iVar3 = 0;
-			iVar4 = 14;
+			iVar6 = 0;
+			iVar7 = 14;
 			iVar1 = 22;
 			break;
 		
 		case 15:
 			StringCopy(&Var2, "TORSO_P2_0_15" /* GXT: Pop's Pills T-Shirt */, 16);
-			iVar3 = 0;
-			iVar4 = 15;
+			iVar6 = 0;
+			iVar7 = 15;
 			iVar1 = 20;
 			break;
 		
 		case 16:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 17:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 18:
 			StringCopy(&Var2, "TORSO_P2_3_0" /* GXT: Los Santos Tank Top */, 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			iVar1 = 35;
 			break;
 		
 		case 19:
 			StringCopy(&Var2, "TORSO_P2_3_1" /* GXT: Del Perro Pier Tank Top */, 16);
-			iVar3 = 3;
-			iVar4 = 1;
+			iVar6 = 3;
+			iVar7 = 1;
 			iVar1 = 22;
 			break;
 		
 		case 20:
 			StringCopy(&Var2, "TORSO_P2_3_2" /* GXT: San Andreas Tank Top */, 16);
-			iVar3 = 3;
-			iVar4 = 2;
+			iVar6 = 3;
+			iVar7 = 2;
 			iVar1 = 25;
 			break;
 		
 		case 21:
 			StringCopy(&Var2, "TORSO_P2_3_3" /* GXT: Love Fist Tank Top */, 16);
-			iVar3 = 3;
-			iVar4 = 3;
+			iVar6 = 3;
+			iVar7 = 3;
 			iVar1 = 38;
 			break;
 		
 		case 22:
 			StringCopy(&Var2, "TORSO_P2_3_4" /* GXT: Space Monkey Tank Top 1 */, 16);
-			iVar3 = 3;
-			iVar4 = 4;
+			iVar6 = 3;
+			iVar7 = 4;
 			iVar1 = 40;
 			break;
 		
 		case 23:
 			StringCopy(&Var2, "TORSO_P2_3_5" /* GXT: Space Monkey Tank Top 2 */, 16);
-			iVar3 = 3;
-			iVar4 = 5;
+			iVar6 = 3;
+			iVar7 = 5;
 			iVar1 = 40;
 			break;
 		
 		case 24:
 			StringCopy(&Var2, "TORSO_P2_3_6" /* GXT: Space Monkey Tank Top 3 */, 16);
-			iVar3 = 3;
-			iVar4 = 6;
+			iVar6 = 3;
+			iVar7 = 6;
 			iVar1 = 40;
 			break;
 		
 		case 25:
 			StringCopy(&Var2, "TORSO_P2_3_7" /* GXT: Space Monkey Tank Top 4 */, 16);
-			iVar3 = 3;
-			iVar4 = 7;
+			iVar6 = 3;
+			iVar7 = 7;
 			iVar1 = 40;
 			break;
 		
 		case 26:
 			StringCopy(&Var2, "TORSO_P2_3_8" /* GXT: Space Monkey Tank Top 5 */, 16);
-			iVar3 = 3;
-			iVar4 = 8;
+			iVar6 = 3;
+			iVar7 = 8;
 			iVar1 = 40;
 			break;
 		
 		case 27:
 			StringCopy(&Var2, "TORSO_P2_4_0" /* GXT: Rearwall Black Down Jacket */, 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			break;
 		
 		case 28:
 			StringCopy(&Var2, "TORSO_P2_4_1" /* GXT: Crevis Green Down Jacket */, 16);
-			iVar3 = 4;
-			iVar4 = 1;
+			iVar6 = 4;
+			iVar7 = 1;
 			iVar1 = 500;
 			break;
 		
 		case 29:
 			StringCopy(&Var2, "TORSO_P2_4_2" /* GXT: Rearwall Fluoro Down Jacket */, 16);
-			iVar3 = 4;
-			iVar4 = 2;
+			iVar6 = 4;
+			iVar7 = 2;
 			iVar1 = 560;
 			break;
 		
 		case 30:
 			StringCopy(&Var2, "TORSO_P2_4_3" /* GXT: Rearwall Coffee Down Jacket */, 16);
-			iVar3 = 4;
-			iVar4 = 3;
+			iVar6 = 4;
+			iVar7 = 3;
 			iVar1 = 600;
 			break;
 		
 		case 31:
 			StringCopy(&Var2, "TORSO_P2_4_4tu" /* GXT: Crevis Yellow Down Jacket */, 16);
-			iVar3 = 4;
-			iVar4 = 4;
+			iVar6 = 4;
+			iVar7 = 4;
 			iVar1 = 650;
 			break;
 		
 		case 32:
 			StringCopy(&Var2, "TORSO_P2_4_5tu" /* GXT: Eris Yellow Down Jacket */, 16);
-			iVar3 = 4;
-			iVar4 = 5;
+			iVar6 = 4;
+			iVar7 = 5;
 			iVar1 = 500;
 			break;
 		
 		case 33:
 			StringCopy(&Var2, "TORSO_P2_4_6tu" /* GXT: Crevis Red Down Jacket */, 16);
-			iVar3 = 4;
-			iVar4 = 6;
+			iVar6 = 4;
+			iVar7 = 6;
 			iVar1 = 560;
 			break;
 		
 		case 34:
 			StringCopy(&Var2, "TORSO_P2_4_7" /* GXT: Rearwall Red Down Jacket */, 16);
-			iVar3 = 4;
-			iVar4 = 7;
+			iVar6 = 4;
+			iVar7 = 7;
 			iVar1 = 500;
 			break;
 		
 		case 35:
 			StringCopy(&Var2, "TORSO_P2_4_8" /* GXT: Crevis Blue Down Jacket */, 16);
-			iVar3 = 4;
-			iVar4 = 8;
+			iVar6 = 4;
+			iVar7 = 8;
 			iVar1 = 650;
 			break;
 		
 		case 36:
 			StringCopy(&Var2, "TORSO_P2_4_9" /* GXT: Eris Gray Down Jacket */, 16);
-			iVar3 = 4;
-			iVar4 = 9;
+			iVar6 = 4;
+			iVar7 = 9;
 			iVar1 = 540;
 			break;
 		
 		case 37:
 			StringCopy(&Var2, "TORSO_P2_4_10" /* GXT: Eris Red Down Jacket */, 16);
-			iVar3 = 4;
-			iVar4 = 10;
+			iVar6 = 4;
+			iVar7 = 10;
 			iVar1 = 690;
 			break;
 		
 		case 38:
 			StringCopy(&Var2, "TORSO_P2_4_11" /* GXT: Eris Olive Down Jacket */, 16);
-			iVar3 = 4;
-			iVar4 = 11;
+			iVar6 = 4;
+			iVar7 = 11;
 			iVar1 = 560;
 			break;
 		
 		case 39:
 			StringCopy(&Var2, "TORSO_P2_4_12" /* GXT: Eris Aqua Down Jacket */, 16);
-			iVar3 = 4;
-			iVar4 = 12;
+			iVar6 = 4;
+			iVar7 = 12;
 			iVar1 = 590;
 			break;
 		
 		case 40:
 			StringCopy(&Var2, "TORSO_P2_4_13" /* GXT: Eris Blue Down Jacket */, 16);
-			iVar3 = 4;
-			iVar4 = 13;
+			iVar6 = 4;
+			iVar7 = 13;
 			iVar1 = 690;
 			break;
 		
 		case 41:
 			StringCopy(&Var2, "TORSO_P2_4_14" /* GXT: Crevis Gray Down Jacket */, 16);
-			iVar3 = 4;
-			iVar4 = 14;
+			iVar6 = 4;
+			iVar7 = 14;
 			iVar1 = 540;
 			break;
 		
 		case 42:
 			StringCopy(&Var2, "TORSO_P2_4_15" /* GXT: Eris Tan Down Jacket */, 16);
-			iVar3 = 4;
-			iVar4 = 15;
+			iVar6 = 4;
+			iVar7 = 15;
 			iVar1 = 500;
 			break;
 		
 		case 43:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 44:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 1;
+			iVar6 = 5;
+			iVar7 = 1;
 			bVar0 = true;
 			break;
 		
 		case 45:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 2;
+			iVar6 = 5;
+			iVar7 = 2;
 			bVar0 = true;
 			break;
 		
 		case 46:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 3;
+			iVar6 = 5;
+			iVar7 = 3;
 			bVar0 = true;
 			break;
 		
 		case 47:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 4;
+			iVar6 = 5;
+			iVar7 = 4;
 			bVar0 = true;
 			break;
 		
 		case 48:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 5;
+			iVar6 = 5;
+			iVar7 = 5;
 			bVar0 = true;
 			break;
 		
 		case 49:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 0;
+			iVar6 = 6;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 50:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 0;
+			iVar6 = 7;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 51:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 0;
+			iVar6 = 8;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 52:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 0;
+			iVar6 = 9;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 53:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 10;
-			iVar4 = 0;
+			iVar6 = 10;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 54:
 			StringCopy(&Var2, "TORSO_P2_11_0" /* GXT: Red Floral Polo Shirt */, 16);
-			iVar3 = 11;
-			iVar4 = 0;
+			iVar6 = 11;
+			iVar7 = 0;
 			break;
 		
 		case 55:
 			StringCopy(&Var2, "TORSO_P2_11_1" /* GXT: Amethyst Polo Shirt */, 16);
-			iVar3 = 11;
-			iVar4 = 1;
+			iVar6 = 11;
+			iVar7 = 1;
 			break;
 		
 		case 56:
 			StringCopy(&Var2, "TORSO_P2_11_2" /* GXT: Turquoise Striped Polo Shirt */, 16);
-			iVar3 = 11;
-			iVar4 = 2;
+			iVar6 = 11;
+			iVar7 = 2;
 			iVar1 = 25;
 			break;
 		
 		case 57:
 			StringCopy(&Var2, "TORSO_P2_11_3" /* GXT: Pink Striped Polo Shirt */, 16);
-			iVar3 = 11;
-			iVar4 = 3;
+			iVar6 = 11;
+			iVar7 = 3;
 			iVar1 = 27;
 			break;
 		
 		case 58:
 			StringCopy(&Var2, "TORSO_P2_11_4" /* GXT: Mustard Polo Shirt */, 16);
-			iVar3 = 11;
-			iVar4 = 4;
+			iVar6 = 11;
+			iVar7 = 4;
 			iVar1 = 22;
 			break;
 		
 		case 59:
 			StringCopy(&Var2, "TORSO_P2_11_5" /* GXT: Orange Polo Shirt */, 16);
-			iVar3 = 11;
-			iVar4 = 5;
+			iVar6 = 11;
+			iVar7 = 5;
 			iVar1 = 350;
 			break;
 		
 		case 60:
 			StringCopy(&Var2, "TORSO_P2_11_6" /* GXT: Topaz Striped Polo Shirt */, 16);
-			iVar3 = 11;
-			iVar4 = 6;
+			iVar6 = 11;
+			iVar7 = 6;
 			iVar1 = 27;
 			break;
 		
 		case 61:
 			StringCopy(&Var2, "TORSO_P2_11_7" /* GXT: Mint Polo Shirt */, 16);
-			iVar3 = 11;
-			iVar4 = 7;
+			iVar6 = 11;
+			iVar7 = 7;
 			iVar1 = 370;
 			break;
 		
 		case 62:
 			StringCopy(&Var2, "TORSO_P2_11_8" /* GXT: Navy Striped Polo Shirt */, 16);
-			iVar3 = 11;
-			iVar4 = 8;
+			iVar6 = 11;
+			iVar7 = 8;
 			iVar1 = 25;
 			break;
 		
 		case 63:
 			StringCopy(&Var2, "TORSO_P2_11_9" /* GXT: Green Striped Polo Shirt */, 16);
-			iVar3 = 11;
-			iVar4 = 9;
+			iVar6 = 11;
+			iVar7 = 9;
 			iVar1 = 22;
 			break;
 		
 		case 64:
 			StringCopy(&Var2, "TORSO_P2_11_10" /* GXT: Turquoise Two-Tone Polo Shirt */, 16);
-			iVar3 = 11;
-			iVar4 = 10;
+			iVar6 = 11;
+			iVar7 = 10;
 			iVar1 = 25;
 			break;
 		
 		case 65:
 			StringCopy(&Var2, "TORSO_P2_11_11" /* GXT: Brown Polo Shirt */, 16);
-			iVar3 = 11;
-			iVar4 = 11;
+			iVar6 = 11;
+			iVar7 = 11;
 			break;
 		
 		case 66:
 			StringCopy(&Var2, "TORSO_P2_11_12" /* GXT: Pink Polo Shirt */, 16);
-			iVar3 = 11;
-			iVar4 = 12;
+			iVar6 = 11;
+			iVar7 = 12;
 			iVar1 = 22;
 			break;
 		
 		case 67:
 			StringCopy(&Var2, "TORSO_P2_11_13" /* GXT: Green Polo Shirt */, 16);
-			iVar3 = 11;
-			iVar4 = 13;
+			iVar6 = 11;
+			iVar7 = 13;
 			iVar1 = 27;
 			break;
 		
 		case 68:
 			StringCopy(&Var2, "TORSO_P2_11_14" /* GXT: Aqua Polo Shirt */, 16);
-			iVar3 = 11;
-			iVar4 = 14;
+			iVar6 = 11;
+			iVar7 = 14;
 			iVar1 = 25;
 			break;
 		
 		case 69:
 			StringCopy(&Var2, "TORSO_P2_11_15" /* GXT: Brown Striped Polo Shirt */, 16);
-			iVar3 = 11;
-			iVar4 = 15;
+			iVar6 = 11;
+			iVar7 = 15;
 			iVar1 = 27;
 			break;
 		
 		case 70:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 12;
-			iVar4 = 0;
+			iVar6 = 12;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar6 = 1;
+			iVar9 = 1;
 			break;
 		
 		case 71:
 			StringCopy(&Var2, "TORSO_P2_13_0" /* GXT: Mint Floral Dress */, 16);
-			iVar3 = 13;
-			iVar4 = 0;
+			iVar6 = 13;
+			iVar7 = 0;
 			break;
 		
 		case 72:
 			StringCopy(&Var2, "TORSO_P2_13_1" /* GXT: Pink Dress */, 16);
-			iVar3 = 13;
-			iVar4 = 1;
+			iVar6 = 13;
+			iVar7 = 1;
 			iVar1 = 39;
 			break;
 		
 		case 73:
 			StringCopy(&Var2, "TORSO_P2_13_2" /* GXT: White Floral Dress */, 16);
-			iVar3 = 13;
-			iVar4 = 2;
+			iVar6 = 13;
+			iVar7 = 2;
 			iVar1 = 42;
 			break;
 		
 		case 74:
 			StringCopy(&Var2, "TORSO_P2_13_3" /* GXT: Purple Zebra Dress */, 16);
-			iVar3 = 13;
-			iVar4 = 3;
+			iVar6 = 13;
+			iVar7 = 3;
 			iVar1 = 49;
 			break;
 		
 		case 75:
 			StringCopy(&Var2, "TORSO_P2_13_4" /* GXT: Cream Dress */, 16);
-			iVar3 = 13;
-			iVar4 = 4;
+			iVar6 = 13;
+			iVar7 = 4;
 			iVar1 = 35;
 			break;
 		
 		case 76:
 			StringCopy(&Var2, "TORSO_P2_13_5" /* GXT: Space Monkey Dress 1 */, 16);
-			iVar3 = 13;
-			iVar4 = 5;
+			iVar6 = 13;
+			iVar7 = 5;
 			iVar1 = 50;
 			break;
 		
 		case 77:
 			StringCopy(&Var2, "TORSO_P2_13_6" /* GXT: Space Monkey Dress 2 */, 16);
-			iVar3 = 13;
-			iVar4 = 6;
+			iVar6 = 13;
+			iVar7 = 6;
 			iVar1 = 50;
 			break;
 		
 		case 78:
 			StringCopy(&Var2, "TORSO_P2_13_7" /* GXT: Space Monkey Dress 3 */, 16);
-			iVar3 = 13;
-			iVar4 = 7;
+			iVar6 = 13;
+			iVar7 = 7;
 			iVar1 = 50;
 			break;
 		
 		case 79:
 			StringCopy(&Var2, "TORSO_P2_14_0" /* GXT: Black Hoodie */, 16);
-			iVar3 = 14;
-			iVar4 = 0;
+			iVar6 = 14;
+			iVar7 = 0;
 			break;
 		
 		case 80:
 			StringCopy(&Var2, "TORSO_P2_14_1" /* GXT: Silver Hoodie */, 16);
-			iVar3 = 14;
-			iVar4 = 1;
+			iVar6 = 14;
+			iVar7 = 1;
 			iVar1 = 88;
 			break;
 		
 		case 81:
 			StringCopy(&Var2, "TORSO_P2_14_2" /* GXT: Ammu-Nation Camo Hoodie */, 16);
-			iVar3 = 14;
-			iVar4 = 2;
+			iVar6 = 14;
+			iVar7 = 2;
 			iVar1 = 60;
 			break;
 		
 		case 82:
 			StringCopy(&Var2, "TORSO_P2_14_3" /* GXT: LSGC Urban Hoodie */, 16);
-			iVar3 = 14;
-			iVar4 = 3;
+			iVar6 = 14;
+			iVar7 = 3;
 			iVar1 = 80;
 			break;
 		
 		case 83:
 			StringCopy(&Var2, "TORSO_P2_14_4" /* GXT: LSGC Gray Hoodie */, 16);
-			iVar3 = 14;
-			iVar4 = 4;
+			iVar6 = 14;
+			iVar7 = 4;
 			iVar1 = 70;
 			break;
 		
 		case 84:
 			StringCopy(&Var2, "TORSO_P2_14_5" /* GXT: Ammu-Nation A Hoodie */, 16);
-			iVar3 = 14;
-			iVar4 = 5;
+			iVar6 = 14;
+			iVar7 = 5;
 			iVar1 = 80;
 			break;
 		
 		case 85:
 			StringCopy(&Var2, "TORSO_P2_14_6" /* GXT: Blauser Hoodie */, 16);
-			iVar3 = 14;
-			iVar4 = 6;
+			iVar6 = 14;
+			iVar7 = 6;
 			iVar1 = 70;
 			break;
 		
 		case 86:
 			StringCopy(&Var2, "TORSO_P2_14_7" /* GXT: LSGC Forest Hoodie */, 16);
-			iVar3 = 14;
-			iVar4 = 7;
+			iVar6 = 14;
+			iVar7 = 7;
 			iVar1 = 90;
 			break;
 		
 		case 87:
 			StringCopy(&Var2, "TORSO_P2_14_8" /* GXT: Penetrators Hoodie */, 16);
-			iVar3 = 14;
-			iVar4 = 8;
+			iVar6 = 14;
+			iVar7 = 8;
 			iVar1 = 95;
 			break;
 		
 		case 88:
 			StringCopy(&Var2, "TORSO_P2_14_9" /* GXT: Crevis Fluorescent Hoodie */, 16);
-			iVar3 = 14;
-			iVar4 = 9;
+			iVar6 = 14;
+			iVar7 = 9;
 			iVar1 = 105;
 			break;
 		
 		case 89:
 			StringCopy(&Var2, "TORSO_P2_14_10" /* GXT: Blue Hoodie */, 16);
-			iVar3 = 14;
-			iVar4 = 10;
+			iVar6 = 14;
+			iVar7 = 10;
 			iVar1 = 95;
 			break;
 		
 		case 90:
 			StringCopy(&Var2, "TORSO_P2_14_11" /* GXT: Green Hoodie */, 16);
-			iVar3 = 14;
-			iVar4 = 11;
+			iVar6 = 14;
+			iVar7 = 11;
 			iVar1 = 110;
 			break;
 		
 		case 91:
 			StringCopy(&Var2, "TORSO_P2_14_12" /* GXT: LS Jardineros Hoodie */, 16);
-			iVar3 = 14;
-			iVar4 = 12;
+			iVar6 = 14;
+			iVar7 = 12;
 			iVar1 = 98;
 			break;
 		
 		case 92:
 			StringCopy(&Var2, "TORSO_P2_14_13" /* GXT: Ash 18 Hoodie */, 16);
-			iVar3 = 14;
-			iVar4 = 13;
+			iVar6 = 14;
+			iVar7 = 13;
 			iVar1 = 88;
 			break;
 		
 		case 93:
 			StringCopy(&Var2, "TORSO_P2_14_14" /* GXT: Red Mist XI Hoodie */, 16);
-			iVar3 = 14;
-			iVar4 = 14;
+			iVar6 = 14;
+			iVar7 = 14;
 			iVar1 = 98;
 			break;
 		
 		case 94:
 			StringCopy(&Var2, "TORSO_P2_14_15" /* GXT: Eris Charcoal Hoodie */, 16);
-			iVar3 = 14;
-			iVar4 = 15;
+			iVar6 = 14;
+			iVar7 = 15;
 			iVar1 = 110;
 			break;
 		
 		case 95:
 			StringCopy(&Var2, "TORSO_P2_15_0" /* GXT: Tennis Shirt */, 16);
-			iVar3 = 15;
-			iVar4 = 0;
+			iVar6 = 15;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 96:
 			StringCopy(&Var2, "TORSO_P2_16_0" /* GXT: Bare Chest */, 16);
-			iVar3 = 16;
-			iVar4 = 0;
+			iVar6 = 16;
+			iVar7 = 0;
 			break;
 		
 		case 97:
 			StringCopy(&Var2, "TORSO_P2_17_0" /* GXT: Pink Jacket */, 16);
-			iVar3 = 17;
-			iVar4 = 0;
+			iVar6 = 17;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 98:
 			StringCopy(&Var2, "TORSO_P2_18_0" /* GXT: Blue Denim Jacket */, 16);
-			iVar3 = 18;
-			iVar4 = 0;
+			iVar6 = 18;
+			iVar7 = 0;
 			break;
 		
 		case 99:
 			StringCopy(&Var2, "TORSO_P2_18_1" /* GXT: Black Denim Jacket */, 16);
-			iVar3 = 18;
-			iVar4 = 1;
+			iVar6 = 18;
+			iVar7 = 1;
 			iVar1 = 520;
 			break;
 		
 		case 100:
 			StringCopy(&Var2, "TORSO_P2_18_2" /* GXT: Gray Denim Jacket */, 16);
-			iVar3 = 18;
-			iVar4 = 2;
+			iVar6 = 18;
+			iVar7 = 2;
 			iVar1 = 490;
 			break;
 		
 		case 101:
 			StringCopy(&Var2, "TORSO_P2_18_3" /* GXT: Brown Denim Jacket */, 16);
-			iVar3 = 18;
-			iVar4 = 3;
+			iVar6 = 18;
+			iVar7 = 3;
 			iVar1 = 450;
 			break;
 		
 		case 102:
 			StringCopy(&Var2, "TORSO_P2_18_4" /* GXT: Faded Denim Jacket */, 16);
-			iVar3 = 18;
-			iVar4 = 4;
+			iVar6 = 18;
+			iVar7 = 4;
 			iVar1 = 420;
 			break;
 		
 		case 103:
 			StringCopy(&Var2, "TORSO_P2_18_5" /* GXT: Ash Denim Jacket */, 16);
-			iVar3 = 18;
-			iVar4 = 5;
+			iVar6 = 18;
+			iVar7 = 5;
 			iVar1 = 420;
 			break;
 		
 		case 104:
 			StringCopy(&Var2, "TORSO_P2_19_0" /* GXT: Denim Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 0;
+			iVar6 = 19;
+			iVar7 = 0;
 			iVar1 = 85;
 			break;
 		
 		case 105:
 			StringCopy(&Var2, "TORSO_P2_19_1" /* GXT: Faded Denim Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 1;
+			iVar6 = 19;
+			iVar7 = 1;
 			iVar1 = 85;
 			break;
 		
 		case 106:
 			StringCopy(&Var2, "TORSO_P2_19_2" /* GXT: Black Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 2;
+			iVar6 = 19;
+			iVar7 = 2;
 			iVar1 = 75;
 			break;
 		
 		case 107:
 			StringCopy(&Var2, "TORSO_P2_19_3" /* GXT: Gray Check Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 3;
+			iVar6 = 19;
+			iVar7 = 3;
 			iVar1 = 68;
 			break;
 		
 		case 108:
 			StringCopy(&Var2, "TORSO_P2_19_4" /* GXT: Brown Check Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 4;
+			iVar6 = 19;
+			iVar7 = 4;
 			iVar1 = 68;
 			break;
 		
 		case 109:
 			StringCopy(&Var2, "TORSO_P2_19_5" /* GXT: Red Check Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 5;
+			iVar6 = 19;
+			iVar7 = 5;
 			iVar1 = 78;
 			break;
 		
 		case 110:
 			StringCopy(&Var2, "TORSO_P2_19_6" /* GXT: Brown Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 6;
+			iVar6 = 19;
+			iVar7 = 6;
 			iVar1 = 85;
 			break;
 		
 		case 111:
 			StringCopy(&Var2, "TORSO_P2_19_7" /* GXT: Khaki Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 7;
+			iVar6 = 19;
+			iVar7 = 7;
 			iVar1 = 68;
 			break;
 		
 		case 112:
 			StringCopy(&Var2, "TORSO_P2_19_8" /* GXT: Red Plaid Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 8;
+			iVar6 = 19;
+			iVar7 = 8;
 			iVar1 = 75;
 			break;
 		
 		case 113:
 			StringCopy(&Var2, "TORSO_P2_19_9" /* GXT: Brown Plaid Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 9;
+			iVar6 = 19;
+			iVar7 = 9;
 			iVar1 = 75;
 			break;
 		
 		case 114:
 			StringCopy(&Var2, "TORSO_P2_19_10" /* GXT: Green Check Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 10;
+			iVar6 = 19;
+			iVar7 = 10;
 			iVar1 = 78;
 			break;
 		
 		case 115:
 			StringCopy(&Var2, "TORSO_P2_19_11" /* GXT: Maroon Check Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 11;
+			iVar6 = 19;
+			iVar7 = 11;
 			iVar1 = 75;
 			break;
 		
 		case 116:
 			StringCopy(&Var2, "TORSO_P2_19_12" /* GXT: Gray Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 12;
+			iVar6 = 19;
+			iVar7 = 12;
 			iVar1 = 75;
 			break;
 		
 		case 117:
 			StringCopy(&Var2, "TORSO_P2_19_13" /* GXT: Blue Check Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 13;
+			iVar6 = 19;
+			iVar7 = 13;
 			iVar1 = 75;
 			break;
 		
 		case 118:
 			StringCopy(&Var2, "TORSO_P2_19_14" /* GXT: Blue Two-Tone Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 14;
+			iVar6 = 19;
+			iVar7 = 14;
 			iVar1 = 78;
 			break;
 		
 		case 119:
 			StringCopy(&Var2, "TORSO_P2_19_15" /* GXT: Navy Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 15;
+			iVar6 = 19;
+			iVar7 = 15;
 			iVar1 = 78;
 			break;
 		
 		case 120:
 			StringCopy(&Var2, "TORSO_P2_20_0" /* GXT: Burgundy Bowling Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 0;
+			iVar6 = 20;
+			iVar7 = 0;
 			iVar1 = 40;
 			break;
 		
 		case 121:
 			StringCopy(&Var2, "TORSO_P2_20_1" /* GXT: Purple Bowling Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 1;
+			iVar6 = 20;
+			iVar7 = 1;
 			iVar1 = 32;
 			break;
 		
 		case 122:
 			StringCopy(&Var2, "TORSO_P2_20_2" /* GXT: Crimson Bowling Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 2;
+			iVar6 = 20;
+			iVar7 = 2;
 			iVar1 = 32;
 			break;
 		
 		case 123:
 			StringCopy(&Var2, "TORSO_P2_20_3" /* GXT: Tan Bowling Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 3;
+			iVar6 = 20;
+			iVar7 = 3;
 			iVar1 = 32;
 			break;
 		
 		case 124:
 			StringCopy(&Var2, "TORSO_P2_20_4" /* GXT: Flames Bowling Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 4;
+			iVar6 = 20;
+			iVar7 = 4;
 			break;
 		
 		case 125:
 			StringCopy(&Var2, "TORSO_P2_20_5" /* GXT: Skull Bowling Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 5;
+			iVar6 = 20;
+			iVar7 = 5;
 			iVar1 = 38;
 			break;
 		
 		case 126:
 			StringCopy(&Var2, "TORSO_P2_20_6" /* GXT: Pale Blue Bowling Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 6;
+			iVar6 = 20;
+			iVar7 = 6;
 			iVar1 = 35;
 			break;
 		
 		case 127:
 			StringCopy(&Var2, "TORSO_P2_20_7" /* GXT: Scarab Bowling Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 7;
+			iVar6 = 20;
+			iVar7 = 7;
 			iVar1 = 38;
 			break;
 		
 		case 128:
 			StringCopy(&Var2, "TORSO_P2_20_8" /* GXT: Cream Bowling Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 8;
+			iVar6 = 20;
+			iVar7 = 8;
 			iVar1 = 29;
 			break;
 		
 		case 129:
 			StringCopy(&Var2, "TORSO_P2_20_9" /* GXT: Cube Bowling Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 9;
+			iVar6 = 20;
+			iVar7 = 9;
 			iVar1 = 32;
 			break;
 		
 		case 130:
 			StringCopy(&Var2, "TORSO_P2_20_10" /* GXT: Beige Bowling Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 10;
+			iVar6 = 20;
+			iVar7 = 10;
 			iVar1 = 29;
 			break;
 		
 		case 131:
 			StringCopy(&Var2, "TORSO_P2_20_11" /* GXT: Blue Bowling Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 11;
+			iVar6 = 20;
+			iVar7 = 11;
 			iVar1 = 35;
 			break;
 		
 		case 132:
 			StringCopy(&Var2, "TORSO_P2_20_12" /* GXT: Yellow Bowling Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 12;
+			iVar6 = 20;
+			iVar7 = 12;
 			iVar1 = 32;
 			break;
 		
 		case 133:
 			StringCopy(&Var2, "TORSO_P2_20_13" /* GXT: Pink Bowling Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 13;
+			iVar6 = 20;
+			iVar7 = 13;
 			iVar1 = 35;
 			break;
 		
 		case 134:
 			StringCopy(&Var2, "TORSO_P2_20_14" /* GXT: White Bowling Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 14;
+			iVar6 = 20;
+			iVar7 = 14;
 			iVar1 = 32;
 			break;
 		
 		case 135:
 			StringCopy(&Var2, "TORSO_P2_20_15" /* GXT: Black Bowling Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 15;
+			iVar6 = 20;
+			iVar7 = 15;
 			iVar1 = 40;
 			break;
 		
@@ -19043,7 +19043,7 @@ void func_196(int iParam0)//Position - 0x141D9
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_197(int iParam0)//Position - 0x150E7
@@ -19051,82 +19051,82 @@ void func_197(int iParam0)//Position - 0x150E7
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 2;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 2;
 	Global_78341[0 /*14*/].f_5 = 2;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "HAIR_P2_0_0" /* GXT: Trailer Cut */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "HAIR_P2_0_1" /* GXT: Frozen */, 16);
-			iVar3 = 0;
-			iVar4 = 1;
+			iVar6 = 0;
+			iVar7 = 1;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "HAIR_P2_1_0" /* GXT: Clean Razor */, 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "HAIR_P2_2_0" /* GXT: Randal */, 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "HAIR_P2_3_0" /* GXT: Side Shed */, 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "HAIR_P2_4_0" /* GXT: Grown Out */, 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "HAIR_P2_5_0" /* GXT: Mullet */, 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "HAIR_P2_6_0" /* GXT: Shaved 2 */, 16);
-			iVar3 = 6;
-			iVar4 = 0;
+			iVar6 = 6;
+			iVar7 = 0;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "HAIR_P2_7_0" /* GXT: Swept Back */, 16);
-			iVar3 = 7;
-			iVar4 = 0;
+			iVar6 = 7;
+			iVar7 = 0;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 9, -1);
+			func_182(iVar10, iParam0, 9, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_198(int iParam0)//Position - 0x15214
@@ -19134,70 +19134,70 @@ void func_198(int iParam0)//Position - 0x15214
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
+	iVar6 = 0;
 	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 0;
 	Global_78341[0 /*14*/].f_5 = 2;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 1;
+			iVar6 = 0;
+			iVar7 = 1;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 2;
+			iVar6 = 0;
+			iVar7 = 2;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 3;
+			iVar6 = 0;
+			iVar7 = 3;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 4;
+			iVar6 = 0;
+			iVar7 = 4;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 5;
+			iVar6 = 0;
+			iVar7 = 5;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 6;
+			iVar6 = 0;
+			iVar7 = 6;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 7, -1);
+			func_182(iVar10, iParam0, 7, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_199(int iParam0, int iParam1)//Position - 0x15312
@@ -19271,1383 +19271,1383 @@ void func_200(int iParam0)//Position - 0x15402
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 14;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 14;
 	Global_78341[0 /*14*/].f_5 = 1;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 1;
+			iVar8 = 1;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 2;
+			iVar8 = 2;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 3;
+			iVar8 = 3;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 4;
+			iVar8 = 4;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 5;
+			iVar8 = 5;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 6;
+			iVar8 = 6;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 7;
+			iVar8 = 7;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 8;
+			iVar8 = 8;
 			break;
 		
 		case 158:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 2;
+			iVar8 = 2;
 			break;
 		
 		case 159:
 			StringCopy(&Var2, "PROPS_P1_EA1_0" /* GXT: De Koch Diamond Studs */, 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			iVar1 = 4590;
-			iVar5 = 2;
+			iVar8 = 2;
 			break;
 		
 		case 160:
 			StringCopy(&Var2, "PROPS_P1_EA1_1" /* GXT: De Koch Obsidian Studs */, 16);
-			iVar3 = 1;
-			iVar4 = 1;
+			iVar6 = 1;
+			iVar7 = 1;
 			iVar1 = 4100;
-			iVar5 = 2;
+			iVar8 = 2;
 			break;
 		
 		case 161:
 			StringCopy(&Var2, "PROPS_P1_EA1_2" /* GXT: De Koch Sapphire Studs */, 16);
-			iVar3 = 1;
-			iVar4 = 2;
+			iVar6 = 1;
+			iVar7 = 2;
 			iVar1 = 3850;
-			iVar5 = 2;
+			iVar8 = 2;
 			break;
 		
 		case 162:
 			StringCopy(&Var2, "PROPS_P1_EA1_3" /* GXT: De Koch Opal Studs */, 16);
-			iVar3 = 1;
-			iVar4 = 3;
+			iVar6 = 1;
+			iVar7 = 3;
 			iVar1 = 1850;
-			iVar5 = 2;
+			iVar8 = 2;
 			break;
 		
 		case 163:
 			StringCopy(&Var2, "PROPS_P1_EA1_4" /* GXT: De Koch Platinum Studs */, 16);
-			iVar3 = 1;
-			iVar4 = 4;
+			iVar6 = 1;
+			iVar7 = 4;
 			iVar1 = 5250;
-			iVar5 = 2;
+			iVar8 = 2;
 			break;
 		
 		case 164:
 			StringCopy(&Var2, "PROPS_P1_EA1_5" /* GXT: De Koch Garnet Studs */, 16);
-			iVar3 = 1;
-			iVar4 = 5;
+			iVar6 = 1;
+			iVar7 = 5;
 			iVar1 = 2700;
-			iVar5 = 2;
+			iVar8 = 2;
 			break;
 		
 		case 165:
 			StringCopy(&Var2, "PROPS_P1_EA1_6" /* GXT: De Koch Jasper Studs */, 16);
-			iVar3 = 1;
-			iVar4 = 6;
+			iVar6 = 1;
+			iVar7 = 6;
 			iVar1 = 3100;
-			iVar5 = 2;
+			iVar8 = 2;
 			break;
 		
 		case 166:
 			StringCopy(&Var2, "PROPS_P1_EA1_7" /* GXT: De Koch Aquamarine Studs */, 16);
-			iVar3 = 1;
-			iVar4 = 7;
+			iVar6 = 1;
+			iVar7 = 7;
 			iVar1 = 5050;
-			iVar5 = 2;
+			iVar8 = 2;
 			break;
 		
 		case 167:
 			StringCopy(&Var2, "PROPS_P1_EA2_0" /* GXT: Vankhov Diamond Studs */, 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			iVar1 = 2500;
-			iVar5 = 2;
+			iVar8 = 2;
 			break;
 		
 		case 168:
 			StringCopy(&Var2, "PROPS_P1_EA2_1" /* GXT: Vankhov Emerald Studs */, 16);
-			iVar3 = 2;
-			iVar4 = 1;
+			iVar6 = 2;
+			iVar7 = 1;
 			iVar1 = 1950;
-			iVar5 = 2;
+			iVar8 = 2;
 			break;
 		
 		case 169:
 			StringCopy(&Var2, "PROPS_P1_EA2_2" /* GXT: Vankhov Quartz Studs */, 16);
-			iVar3 = 2;
-			iVar4 = 2;
+			iVar6 = 2;
+			iVar7 = 2;
 			iVar1 = 3900;
-			iVar5 = 2;
+			iVar8 = 2;
 			break;
 		
 		case 170:
 			StringCopy(&Var2, "PROPS_P1_EA2_3" /* GXT: Vankhov Obsidian Studs */, 16);
-			iVar3 = 2;
-			iVar4 = 3;
+			iVar6 = 2;
+			iVar7 = 3;
 			iVar1 = 3550;
-			iVar5 = 2;
+			iVar8 = 2;
 			break;
 		
 		case 171:
 			StringCopy(&Var2, "PROPS_P1_EA2_4" /* GXT: Vankhov Platinum Studs */, 16);
-			iVar3 = 2;
-			iVar4 = 4;
+			iVar6 = 2;
+			iVar7 = 4;
 			iVar1 = 4500;
-			iVar5 = 2;
+			iVar8 = 2;
 			break;
 		
 		case 172:
 			StringCopy(&Var2, "PROPS_P1_EA2_5" /* GXT: Vankhov Agate Studs */, 16);
-			iVar3 = 2;
-			iVar4 = 5;
+			iVar6 = 2;
+			iVar7 = 5;
 			iVar1 = 2700;
-			iVar5 = 2;
+			iVar8 = 2;
 			break;
 		
 		case 173:
 			StringCopy(&Var2, "PROPS_P1_EA2_6" /* GXT: Vankhov Jade Studs */, 16);
-			iVar3 = 2;
-			iVar4 = 6;
+			iVar6 = 2;
+			iVar7 = 6;
 			iVar1 = 3100;
-			iVar5 = 2;
+			iVar8 = 2;
 			break;
 		
 		case 174:
 			StringCopy(&Var2, "PROPS_P1_EA2_7" /* GXT: Vankhov Onyx Studs */, 16);
-			iVar3 = 2;
-			iVar4 = 7;
+			iVar6 = 2;
+			iVar7 = 7;
 			iVar1 = 2950;
-			iVar5 = 2;
+			iVar8 = 2;
 			break;
 		
 		case 82:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 83:
 			StringCopy(&Var2, "PROPS_P1_E1_0" /* GXT: Orange Tint Contour Shades */, 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			iVar1 = 75;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 84:
 			StringCopy(&Var2, "PROPS_P1_E1_1" /* GXT: Slate Contour Shades */, 16);
-			iVar3 = 1;
-			iVar4 = 1;
+			iVar6 = 1;
+			iVar7 = 1;
 			iVar1 = 75;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 85:
 			StringCopy(&Var2, "PROPS_P1_E1_2" /* GXT: Gray Contour Shades */, 16);
-			iVar3 = 1;
-			iVar4 = 2;
+			iVar6 = 1;
+			iVar7 = 2;
 			iVar1 = 75;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 86:
 			StringCopy(&Var2, "PROPS_P1_E1_3" /* GXT: Brown Contour Shades */, 16);
-			iVar3 = 1;
-			iVar4 = 3;
+			iVar6 = 1;
+			iVar7 = 3;
 			iVar1 = 75;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 87:
 			StringCopy(&Var2, "PROPS_P1_E1_4" /* GXT: Burgundy Contour Shades */, 16);
-			iVar3 = 1;
-			iVar4 = 4;
+			iVar6 = 1;
+			iVar7 = 4;
 			iVar1 = 75;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 88:
 			StringCopy(&Var2, "PROPS_P1_E1_5" /* GXT: Chocolate Contour Shades */, 16);
-			iVar3 = 1;
-			iVar4 = 5;
+			iVar6 = 1;
+			iVar7 = 5;
 			iVar1 = 75;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 89:
 			StringCopy(&Var2, "PROPS_P1_E1_6" /* GXT: Black Contour Shades */, 16);
-			iVar3 = 1;
-			iVar4 = 6;
+			iVar6 = 1;
+			iVar7 = 6;
 			iVar1 = 75;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 90:
 			StringCopy(&Var2, "PROPS_P1_E1_7" /* GXT: Purple Tint Contour Shades */, 16);
-			iVar3 = 1;
-			iVar4 = 7;
+			iVar6 = 1;
+			iVar7 = 7;
 			iVar1 = 75;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 91:
 			StringCopy(&Var2, "PROPS_P1_E1_8" /* GXT: Blue-Gray Contour Shades */, 16);
-			iVar3 = 1;
-			iVar4 = 8;
+			iVar6 = 1;
+			iVar7 = 8;
 			iVar1 = 75;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 92:
 			StringCopy(&Var2, "PROPS_P1_E1_9" /* GXT: White Contour Shades */, 16);
-			iVar3 = 1;
-			iVar4 = 9;
+			iVar6 = 1;
+			iVar7 = 9;
 			iVar1 = 75;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 93:
 			StringCopy(&Var2, "PROPS_P1_E2" /* GXT: Swimming Goggles */, 16);
-			iVar3 = 2;
-			iVar4 = 0;
-			iVar5 = 10;
+			iVar6 = 2;
+			iVar7 = 0;
+			iVar8 = 10;
 			break;
 		
 		case 94:
 			StringCopy(&Var2, "PROPS_P1_E3" /* GXT: Racer Shades */, 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			iVar1 = 110;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 95:
 			StringCopy(&Var2, "PROPS_P1_E4_0" /* GXT: Stank Slate Shades */, 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			iVar1 = 120;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 96:
 			StringCopy(&Var2, "PROPS_P1_E4_1" /* GXT: Broker Ash Shades */, 16);
-			iVar3 = 4;
-			iVar4 = 1;
+			iVar6 = 4;
+			iVar7 = 1;
 			iVar1 = 128;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 97:
 			StringCopy(&Var2, "PROPS_P1_E4_2" /* GXT: Broker Chocolate Shades */, 16);
-			iVar3 = 4;
-			iVar4 = 2;
+			iVar6 = 4;
+			iVar7 = 2;
 			iVar1 = 130;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 98:
 			StringCopy(&Var2, "PROPS_P1_E4_3" /* GXT: Stank Black Shades */, 16);
-			iVar3 = 4;
-			iVar4 = 3;
+			iVar6 = 4;
+			iVar7 = 3;
 			iVar1 = 140;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 99:
 			StringCopy(&Var2, "PROPS_P1_E4_4" /* GXT: Broker Black Shades */, 16);
-			iVar3 = 4;
-			iVar4 = 4;
+			iVar6 = 4;
+			iVar7 = 4;
 			iVar1 = 145;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 100:
 			StringCopy(&Var2, "PROPS_P1_E4_5" /* GXT: Stank Green Tint Shades */, 16);
-			iVar3 = 4;
-			iVar4 = 5;
+			iVar6 = 4;
+			iVar7 = 5;
 			iVar1 = 135;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 101:
 			StringCopy(&Var2, "PROPS_P1_E4_6" /* GXT: Stank Blue Tint Shades */, 16);
-			iVar3 = 4;
-			iVar4 = 6;
+			iVar6 = 4;
+			iVar7 = 6;
 			iVar1 = 138;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 102:
 			StringCopy(&Var2, "PROPS_P1_E5_0" /* GXT: Black Aviator Shades */, 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			iVar1 = 110;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 103:
 			StringCopy(&Var2, "PROPS_P1_E5_1" /* GXT: White Aviator Shades */, 16);
-			iVar3 = 5;
-			iVar4 = 1;
+			iVar6 = 5;
+			iVar7 = 1;
 			iVar1 = 112;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 104:
 			StringCopy(&Var2, "PROPS_P1_E5_2" /* GXT: Brown Aviator Shades */, 16);
-			iVar3 = 5;
-			iVar4 = 2;
+			iVar6 = 5;
+			iVar7 = 2;
 			iVar1 = 115;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 105:
 			StringCopy(&Var2, "PROPS_P1_E5_3" /* GXT: Gray Aviator Shades */, 16);
-			iVar3 = 5;
-			iVar4 = 3;
+			iVar6 = 5;
+			iVar7 = 3;
 			iVar1 = 118;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 106:
 			StringCopy(&Var2, "PROPS_P1_E5_4" /* GXT: Two-Tone Aviator Shades */, 16);
-			iVar3 = 5;
-			iVar4 = 4;
+			iVar6 = 5;
+			iVar7 = 4;
 			iVar1 = 120;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 107:
 			StringCopy(&Var2, "PROPS_P1_E5_5" /* GXT: Bone Aviator Shades */, 16);
-			iVar3 = 5;
-			iVar4 = 5;
+			iVar6 = 5;
+			iVar7 = 5;
 			iVar1 = 125;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 108:
 			StringCopy(&Var2, "PROPS_P1_E5_6" /* GXT: Red Aviator Shades */, 16);
-			iVar3 = 5;
-			iVar4 = 6;
+			iVar6 = 5;
+			iVar7 = 6;
 			iVar1 = 128;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 109:
 			StringCopy(&Var2, "PROPS_P1_E5_7" /* GXT: Silver Aviator Shades */, 16);
-			iVar3 = 5;
-			iVar4 = 7;
+			iVar6 = 5;
+			iVar7 = 7;
 			iVar1 = 138;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 110:
 			StringCopy(&Var2, "PROPS_P1_E5_8" /* GXT: Charcoal Aviator Shades */, 16);
-			iVar3 = 5;
-			iVar4 = 8;
+			iVar6 = 5;
+			iVar7 = 8;
 			iVar1 = 140;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 111:
 			StringCopy(&Var2, "PROPS_P1_E5_9" /* GXT: Gold Aviator Shades */, 16);
-			iVar3 = 5;
-			iVar4 = 9;
+			iVar6 = 5;
+			iVar7 = 9;
 			iVar1 = 155;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 112:
 			StringCopy(&Var2, "PROPS_P1_E6_0" /* GXT: Tinted Aviator Glasses */, 16);
-			iVar3 = 6;
-			iVar4 = 0;
+			iVar6 = 6;
+			iVar7 = 0;
 			iVar1 = 55;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 113:
 			StringCopy(&Var2, "PROPS_P1_E6_1" /* GXT: Silver Aviator Glasses */, 16);
-			iVar3 = 6;
-			iVar4 = 1;
+			iVar6 = 6;
+			iVar7 = 1;
 			iVar1 = 55;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 114:
 			StringCopy(&Var2, "PROPS_P1_E6_2" /* GXT: Sepia Aviator Glasses */, 16);
-			iVar3 = 6;
-			iVar4 = 2;
+			iVar6 = 6;
+			iVar7 = 2;
 			iVar1 = 58;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 115:
 			StringCopy(&Var2, "PROPS_P1_E6_3" /* GXT: Blue Aviator Glasses */, 16);
-			iVar3 = 6;
-			iVar4 = 3;
+			iVar6 = 6;
+			iVar7 = 3;
 			iVar1 = 58;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 116:
 			StringCopy(&Var2, "PROPS_P1_E6_4" /* GXT: Yellow Aviator Glasses */, 16);
-			iVar3 = 6;
-			iVar4 = 4;
+			iVar6 = 6;
+			iVar7 = 4;
 			iVar1 = 60;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 117:
 			StringCopy(&Var2, "PROPS_P1_E6_5" /* GXT: Gray Aviator Glasses */, 16);
-			iVar3 = 6;
-			iVar4 = 5;
+			iVar6 = 6;
+			iVar7 = 5;
 			iVar1 = 62;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 118:
 			StringCopy(&Var2, "PROPS_P1_E6_6" /* GXT: Black Aviator Glasses */, 16);
-			iVar3 = 6;
-			iVar4 = 6;
+			iVar6 = 6;
+			iVar7 = 6;
 			iVar1 = 65;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 119:
 			StringCopy(&Var2, "PROPS_P1_E6_7" /* GXT: Slate Aviator Glasses */, 16);
-			iVar3 = 6;
-			iVar4 = 7;
+			iVar6 = 6;
+			iVar7 = 7;
 			iVar1 = 68;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 120:
 			StringCopy(&Var2, "PROPS_P1_E6_8" /* GXT: Smoke Aviator Glasses */, 16);
-			iVar3 = 6;
-			iVar4 = 8;
+			iVar6 = 6;
+			iVar7 = 8;
 			iVar1 = 68;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 121:
 			StringCopy(&Var2, "PROPS_P1_E6_9" /* GXT: Gold Aviator Glasses */, 16);
-			iVar3 = 6;
-			iVar4 = 9;
+			iVar6 = 6;
+			iVar7 = 9;
 			iVar1 = 72;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 122:
 			StringCopy(&Var2, "PROPS_P1_E7_0" /* GXT: Suburban Black Shades */, 16);
-			iVar3 = 7;
-			iVar4 = 0;
+			iVar6 = 7;
+			iVar7 = 0;
 			iVar1 = 145;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 123:
 			StringCopy(&Var2, "PROPS_P1_E7_1" /* GXT: Suburban Teal Shades */, 16);
-			iVar3 = 7;
-			iVar4 = 1;
+			iVar6 = 7;
+			iVar7 = 1;
 			iVar1 = 149;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 124:
 			StringCopy(&Var2, "PROPS_P1_E7_2" /* GXT: Suburban Tortoiseshell Shades */, 16);
-			iVar3 = 7;
-			iVar4 = 2;
+			iVar6 = 7;
+			iVar7 = 2;
 			iVar1 = 139;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 125:
 			StringCopy(&Var2, "PROPS_P1_E7_3" /* GXT: Suburban Orange Shades */, 16);
-			iVar3 = 7;
-			iVar4 = 3;
+			iVar6 = 7;
+			iVar7 = 3;
 			iVar1 = 149;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 126:
 			StringCopy(&Var2, "PROPS_P1_E7_4" /* GXT: Fuque White Shades */, 16);
-			iVar3 = 7;
-			iVar4 = 4;
+			iVar6 = 7;
+			iVar7 = 4;
 			iVar1 = 135;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 127:
 			StringCopy(&Var2, "PROPS_P1_E7_5" /* GXT: Fuque Camo Shades */, 16);
-			iVar3 = 7;
-			iVar4 = 5;
+			iVar6 = 7;
+			iVar7 = 5;
 			iVar1 = 138;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 128:
 			StringCopy(&Var2, "PROPS_P1_E7_6" /* GXT: Fuque Yellow Shades */, 16);
-			iVar3 = 7;
-			iVar4 = 6;
+			iVar6 = 7;
+			iVar7 = 6;
 			iVar1 = 140;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 129:
 			StringCopy(&Var2, "PROPS_P1_E7_7" /* GXT: Fuque Burgundy Shades */, 16);
-			iVar3 = 7;
-			iVar4 = 7;
+			iVar6 = 7;
+			iVar7 = 7;
 			iVar1 = 145;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 130:
 			StringCopy(&Var2, "PROPS_P1_E7_8" /* GXT: Fuque Funky Shades */, 16);
-			iVar3 = 7;
-			iVar4 = 8;
+			iVar6 = 7;
+			iVar7 = 8;
 			iVar1 = 159;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 131:
 			StringCopy(&Var2, "PROPS_P1_E7_9" /* GXT: Fuque Squared Shades */, 16);
-			iVar3 = 7;
-			iVar4 = 9;
+			iVar6 = 7;
+			iVar7 = 9;
 			iVar1 = 155;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 132:
 			StringCopy(&Var2, "PROPS_P1_E8_0" /* GXT: Gold T-Bone Shades */, 16);
-			iVar3 = 8;
-			iVar4 = 0;
+			iVar6 = 8;
+			iVar7 = 0;
 			iVar1 = 198;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 133:
 			StringCopy(&Var2, "PROPS_P1_E8_1" /* GXT: Silver T-Bone Shades */, 16);
-			iVar3 = 8;
-			iVar4 = 1;
+			iVar6 = 8;
+			iVar7 = 1;
 			iVar1 = 210;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 134:
 			StringCopy(&Var2, "PROPS_P1_E8_2" /* GXT: Two-Tone T-Bone Shades */, 16);
-			iVar3 = 8;
-			iVar4 = 2;
+			iVar6 = 8;
+			iVar7 = 2;
 			iVar1 = 185;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 135:
 			StringCopy(&Var2, "PROPS_P1_E8_3" /* GXT: Green T-Bone Shades */, 16);
-			iVar3 = 8;
-			iVar4 = 3;
+			iVar6 = 8;
+			iVar7 = 3;
 			iVar1 = 220;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 136:
 			StringCopy(&Var2, "PROPS_P1_E8_4" /* GXT: Brown T-Bone Shades */, 16);
-			iVar3 = 8;
-			iVar4 = 4;
+			iVar6 = 8;
+			iVar7 = 4;
 			iVar1 = 190;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 137:
 			StringCopy(&Var2, "PROPS_P1_E8_5" /* GXT: Peach T-Bone Shades */, 16);
-			iVar3 = 8;
-			iVar4 = 5;
+			iVar6 = 8;
+			iVar7 = 5;
 			iVar1 = 200;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 138:
 			StringCopy(&Var2, "PROPS_P1_E8_6" /* GXT: Gray T-Bone Shades */, 16);
-			iVar3 = 8;
-			iVar4 = 6;
+			iVar6 = 8;
+			iVar7 = 6;
 			iVar1 = 208;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 139:
 			StringCopy(&Var2, "PROPS_P1_E8_7" /* GXT: Orange T-Bone Shades */, 16);
-			iVar3 = 8;
-			iVar4 = 7;
+			iVar6 = 8;
+			iVar7 = 7;
 			iVar1 = 210;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 140:
 			StringCopy(&Var2, "PROPS_P1_E9_0" /* GXT: Yellow Mono Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 0;
+			iVar6 = 9;
+			iVar7 = 0;
 			iVar1 = 165;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 141:
 			StringCopy(&Var2, "PROPS_P1_E9_1" /* GXT: Gray Mono Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 1;
+			iVar6 = 9;
+			iVar7 = 1;
 			iVar1 = 185;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 142:
 			StringCopy(&Var2, "PROPS_P1_E9_2" /* GXT: Hornet Mono Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 2;
+			iVar6 = 9;
+			iVar7 = 2;
 			iVar1 = 190;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 143:
 			StringCopy(&Var2, "PROPS_P1_E9_3" /* GXT: Copper Mono Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 3;
+			iVar6 = 9;
+			iVar7 = 3;
 			iVar1 = 178;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 144:
 			StringCopy(&Var2, "PROPS_P1_E9_4" /* GXT: Blue Mono Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 4;
+			iVar6 = 9;
+			iVar7 = 4;
 			iVar1 = 180;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 145:
 			StringCopy(&Var2, "PROPS_P1_E9_5" /* GXT: Sepia Mono Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 5;
+			iVar6 = 9;
+			iVar7 = 5;
 			iVar1 = 168;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 146:
 			StringCopy(&Var2, "PROPS_P1_E9_6" /* GXT: White Mono Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 6;
+			iVar6 = 9;
+			iVar7 = 6;
 			iVar1 = 170;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 147:
 			StringCopy(&Var2, "PROPS_P1_E9_7" /* GXT: Orange Tint Mono Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 7;
+			iVar6 = 9;
+			iVar7 = 7;
 			iVar1 = 175;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 148:
 			StringCopy(&Var2, "PROPS_P1_E9_8" /* GXT: Blue Tint Mono Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 8;
+			iVar6 = 9;
+			iVar7 = 8;
 			iVar1 = 170;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 149:
 			StringCopy(&Var2, "PROPS_P1_E9_9" /* GXT: Smoke Mono Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 9;
+			iVar6 = 9;
+			iVar7 = 9;
 			iVar1 = 178;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 150:
 			StringCopy(&Var2, "PROPS_P1_E10_0" /* GXT: Gold Triptych Shades */, 16);
-			iVar3 = 10;
-			iVar4 = 0;
+			iVar6 = 10;
+			iVar7 = 0;
 			iVar1 = 140;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 151:
 			StringCopy(&Var2, "PROPS_P1_E10_1" /* GXT: Gray Triptych Shades */, 16);
-			iVar3 = 10;
-			iVar4 = 1;
+			iVar6 = 10;
+			iVar7 = 1;
 			iVar1 = 145;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 152:
 			StringCopy(&Var2, "PROPS_P1_E10_2" /* GXT: Silver Triptych Shades */, 16);
-			iVar3 = 10;
-			iVar4 = 2;
+			iVar6 = 10;
+			iVar7 = 2;
 			iVar1 = 150;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 153:
 			StringCopy(&Var2, "PROPS_P1_E10_3" /* GXT: Two-Tone Triptych Shades */, 16);
-			iVar3 = 10;
-			iVar4 = 3;
+			iVar6 = 10;
+			iVar7 = 3;
 			iVar1 = 165;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 154:
 			StringCopy(&Var2, "PROPS_P1_E10_4" /* GXT: Copper Triptych Shades */, 16);
-			iVar3 = 10;
-			iVar4 = 4;
+			iVar6 = 10;
+			iVar7 = 4;
 			iVar1 = 168;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 155:
 			StringCopy(&Var2, "PROPS_P1_E10_5" /* GXT: Black Triptych Shades */, 16);
-			iVar3 = 10;
-			iVar4 = 5;
+			iVar6 = 10;
+			iVar7 = 5;
 			iVar1 = 178;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 156:
 			StringCopy(&Var2, "PROPS_P1_E10_6" /* GXT: White Triptych Shades */, 16);
-			iVar3 = 10;
-			iVar4 = 6;
+			iVar6 = 10;
+			iVar7 = 6;
 			iVar1 = 160;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 157:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 0;
+			iVar6 = 11;
+			iVar7 = 0;
 			iVar1 = 100;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "PROPS_P1_H0_0" /* GXT: Hockey Mask */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 320;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "PROPS_P1_H3_0" /* GXT: Gray Flat Cap */, 16);
-			iVar3 = 3;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 14:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 15:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 16:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 6;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 17:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 1;
-			iVar5 = 0;
+			iVar6 = 6;
+			iVar7 = 1;
+			iVar8 = 0;
 			break;
 		
 		case 18:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 2;
-			iVar5 = 0;
+			iVar6 = 6;
+			iVar7 = 2;
+			iVar8 = 0;
 			break;
 		
 		case 19:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 3;
-			iVar5 = 0;
+			iVar6 = 6;
+			iVar7 = 3;
+			iVar8 = 0;
 			break;
 		
 		case 20:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 4;
-			iVar5 = 0;
+			iVar6 = 6;
+			iVar7 = 4;
+			iVar8 = 0;
 			break;
 		
 		case 21:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 5;
-			iVar5 = 0;
+			iVar6 = 6;
+			iVar7 = 5;
+			iVar8 = 0;
 			break;
 		
 		case 22:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 6;
-			iVar5 = 0;
+			iVar6 = 6;
+			iVar7 = 6;
+			iVar8 = 0;
 			break;
 		
 		case 23:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 7;
-			iVar5 = 0;
+			iVar6 = 6;
+			iVar7 = 7;
+			iVar8 = 0;
 			break;
 		
 		case 24:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 8;
-			iVar5 = 0;
+			iVar6 = 6;
+			iVar7 = 8;
+			iVar8 = 0;
 			break;
 		
 		case 25:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 0;
+			iVar6 = 7;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 26:
 			StringCopy(&Var2, "PROPS_P1_H8_0" /* GXT: Green Monster Mask */, 16);
-			iVar3 = 8;
-			iVar4 = 0;
+			iVar6 = 8;
+			iVar7 = 0;
 			iVar1 = 270;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 27:
 			StringCopy(&Var2, "PROPS_P1_H8_1" /* GXT: Red Monster Mask */, 16);
-			iVar3 = 8;
-			iVar4 = 1;
+			iVar6 = 8;
+			iVar7 = 1;
 			iVar1 = 270;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 28:
 			StringCopy(&Var2, "PROPS_P1_H9_0" /* GXT: Pig Mask */, 16);
-			iVar3 = 9;
-			iVar4 = 0;
+			iVar6 = 9;
+			iVar7 = 0;
 			iVar1 = 200;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 29:
 			StringCopy(&Var2, "PROPS_P1_H9_1" /* GXT: Dark Pig Mask */, 16);
-			iVar3 = 9;
-			iVar4 = 1;
+			iVar6 = 9;
+			iVar7 = 1;
 			iVar1 = 200;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 30:
 			StringCopy(&Var2, "PROPS_P1_H10_0" /* GXT: Silver Skull Mask */, 16);
-			iVar3 = 10;
-			iVar4 = 0;
+			iVar6 = 10;
+			iVar7 = 0;
 			iVar1 = 350;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 31:
 			StringCopy(&Var2, "PROPS_P1_H10_1" /* GXT: Bone Skull Mask */, 16);
-			iVar3 = 10;
-			iVar4 = 1;
+			iVar6 = 10;
+			iVar7 = 1;
 			iVar1 = 350;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 32:
 			StringCopy(&Var2, "PROPS_P1_H11_0" /* GXT: Space Monkey Mask */, 16);
-			iVar3 = 11;
-			iVar4 = 0;
+			iVar6 = 11;
+			iVar7 = 0;
 			iVar1 = 450;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 33:
 			StringCopy(&Var2, "PROPS_P1_H12_0" /* GXT: White Hockey Mask */, 16);
-			iVar3 = 12;
-			iVar4 = 0;
+			iVar6 = 12;
+			iVar7 = 0;
 			iVar1 = 500;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 34:
 			StringCopy(&Var2, "PROPS_P1_H12_1" /* GXT: Red Hockey Mask */, 16);
-			iVar3 = 12;
-			iVar4 = 1;
+			iVar6 = 12;
+			iVar7 = 1;
 			iVar1 = 500;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 35:
 			StringCopy(&Var2, "PROPS_P1_H13_0" /* GXT: Ape Mask */, 16);
-			iVar3 = 13;
-			iVar4 = 0;
+			iVar6 = 13;
+			iVar7 = 0;
 			iVar1 = 50;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 36:
 			StringCopy(&Var2, "PROPS_P1_H13_1" /* GXT: Dark Ape Mask */, 16);
-			iVar3 = 13;
-			iVar4 = 1;
+			iVar6 = 13;
+			iVar7 = 1;
 			iVar1 = 50;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 37:
 			StringCopy(&Var2, "PROPS_P1_H14_0" /* GXT: Carnival Orange Mask */, 16);
-			iVar3 = 14;
-			iVar4 = 0;
+			iVar6 = 14;
+			iVar7 = 0;
 			iVar1 = 99;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 38:
 			StringCopy(&Var2, "PROPS_P1_H14_1" /* GXT: Carnival White Mask */, 16);
-			iVar3 = 14;
-			iVar4 = 1;
+			iVar6 = 14;
+			iVar7 = 1;
 			iVar1 = 99;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 39:
 			StringCopy(&Var2, "PROPS_P1_H14_2" /* GXT: Carnival Blue Mask */, 16);
-			iVar3 = 14;
-			iVar4 = 2;
+			iVar6 = 14;
+			iVar7 = 2;
 			iVar1 = 99;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 40:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 15;
-			iVar4 = 0;
+			iVar6 = 15;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 41:
 			StringCopy(&Var2, "PROPS_P1_H19_0" /* GXT: Toe Shoes Fitted Cap */, 16);
-			iVar3 = 16;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 16;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 42:
 			StringCopy(&Var2, "PROPS_P1_H19_1" /* GXT: Yeti Fitted Cap */, 16);
-			iVar3 = 16;
-			iVar4 = 1;
-			iVar5 = 0;
+			iVar6 = 16;
+			iVar7 = 1;
+			iVar8 = 0;
 			break;
 		
 		case 43:
 			StringCopy(&Var2, "PROPS_P1_H19_2" /* GXT: OG Fitted Cap */, 16);
-			iVar3 = 16;
-			iVar4 = 2;
-			iVar5 = 0;
+			iVar6 = 16;
+			iVar7 = 2;
+			iVar8 = 0;
 			break;
 		
 		case 44:
 			StringCopy(&Var2, "PROPS_P1_H19_3" /* GXT: Magnetics Fitted Cap */, 16);
-			iVar3 = 16;
-			iVar4 = 3;
-			iVar5 = 0;
+			iVar6 = 16;
+			iVar7 = 3;
+			iVar8 = 0;
 			break;
 		
 		case 45:
 			StringCopy(&Var2, "PROPS_P1_H19_4" /* GXT: LS Red Fitted Cap */, 16);
-			iVar3 = 16;
-			iVar4 = 4;
-			iVar5 = 0;
+			iVar6 = 16;
+			iVar7 = 4;
+			iVar8 = 0;
 			break;
 		
 		case 46:
 			StringCopy(&Var2, "PROPS_P1_H19_5" /* GXT: Los Santos Charcoal Fitted Cap */, 16);
-			iVar3 = 16;
-			iVar4 = 5;
-			iVar5 = 0;
+			iVar6 = 16;
+			iVar7 = 5;
+			iVar8 = 0;
 			break;
 		
 		case 47:
 			StringCopy(&Var2, "PROPS_P1_H19_6" /* GXT: Stank Fitted Cap */, 16);
-			iVar3 = 16;
-			iVar4 = 6;
-			iVar5 = 0;
+			iVar6 = 16;
+			iVar7 = 6;
+			iVar8 = 0;
 			break;
 		
 		case 48:
 			StringCopy(&Var2, "PROPS_P1_H19_7" /* GXT: Los Santos Gray Fitted Cap */, 16);
-			iVar3 = 16;
-			iVar4 = 7;
-			iVar5 = 0;
+			iVar6 = 16;
+			iVar7 = 7;
+			iVar8 = 0;
 			break;
 		
 		case 49:
 			StringCopy(&Var2, "PROPS_P1_H19_8" /* GXT: Perseus Fitted Cap */, 16);
-			iVar3 = 16;
-			iVar4 = 8;
-			iVar5 = 0;
+			iVar6 = 16;
+			iVar7 = 8;
+			iVar8 = 0;
 			break;
 		
 		case 50:
 			StringCopy(&Var2, "PROPS_P1_H19_9" /* GXT: Feud Slate Fitted Cap */, 16);
-			iVar3 = 16;
-			iVar4 = 9;
-			iVar5 = 0;
+			iVar6 = 16;
+			iVar7 = 9;
+			iVar8 = 0;
 			break;
 		
 		case 51:
 			StringCopy(&Var2, "PROPS_P1_H19_10" /* GXT: Feud Black Fitted Cap */, 16);
-			iVar3 = 16;
-			iVar4 = 10;
-			iVar5 = 0;
+			iVar6 = 16;
+			iVar7 = 10;
+			iVar8 = 0;
 			break;
 		
 		case 52:
 			StringCopy(&Var2, "PROPS_P1_H19_11" /* GXT: LS Black Fitted Cap */, 16);
-			iVar3 = 16;
-			iVar4 = 11;
-			iVar5 = 0;
+			iVar6 = 16;
+			iVar7 = 11;
+			iVar8 = 0;
 			break;
 		
 		case 53:
 			StringCopy(&Var2, "PROPS_P1_H19_12" /* GXT: LS Corkers Fitted Cap */, 16);
-			iVar3 = 16;
-			iVar4 = 12;
-			iVar5 = 0;
+			iVar6 = 16;
+			iVar7 = 12;
+			iVar8 = 0;
 			break;
 		
 		case 54:
 			StringCopy(&Var2, "PROPS_P1_H19_13" /* GXT: LS White Fitted Cap */, 16);
-			iVar3 = 16;
-			iVar4 = 13;
-			iVar5 = 0;
+			iVar6 = 16;
+			iVar7 = 13;
+			iVar8 = 0;
 			break;
 		
 		case 55:
 			StringCopy(&Var2, "PROPS_P1_H19_14" /* GXT: Feud Green Fitted Cap */, 16);
-			iVar3 = 16;
-			iVar4 = 14;
-			iVar5 = 0;
+			iVar6 = 16;
+			iVar7 = 14;
+			iVar8 = 0;
 			break;
 		
 		case 56:
 			StringCopy(&Var2, "PROPS_P1_H19_15" /* GXT: LS Olive Fitted Cap */, 16);
-			iVar3 = 16;
-			iVar4 = 15;
-			iVar5 = 0;
+			iVar6 = 16;
+			iVar7 = 15;
+			iVar8 = 0;
 			break;
 		
 		case 57:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 17;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 17;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 58:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 17;
-			iVar4 = 1;
-			iVar5 = 0;
+			iVar6 = 17;
+			iVar7 = 1;
+			iVar8 = 0;
 			break;
 		
 		case 59:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 17;
-			iVar4 = 2;
-			iVar5 = 0;
+			iVar6 = 17;
+			iVar7 = 2;
+			iVar8 = 0;
 			break;
 		
 		case 60:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 17;
-			iVar4 = 3;
-			iVar5 = 0;
+			iVar6 = 17;
+			iVar7 = 3;
+			iVar8 = 0;
 			break;
 		
 		case 61:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 17;
-			iVar4 = 4;
-			iVar5 = 0;
+			iVar6 = 17;
+			iVar7 = 4;
+			iVar8 = 0;
 			break;
 		
 		case 62:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 17;
-			iVar4 = 5;
-			iVar5 = 0;
+			iVar6 = 17;
+			iVar7 = 5;
+			iVar8 = 0;
 			break;
 		
 		case 63:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 18;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 18;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 64:
 			StringCopy(&Var2, "PROPS_P1_H19_0" /* GXT: Toe Shoes Fitted Cap */, 16);
-			iVar3 = 19;
-			iVar4 = 0;
+			iVar6 = 19;
+			iVar7 = 0;
 			iVar1 = 30;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 65:
 			StringCopy(&Var2, "PROPS_P1_H19_1" /* GXT: Yeti Fitted Cap */, 16);
-			iVar3 = 19;
-			iVar4 = 1;
+			iVar6 = 19;
+			iVar7 = 1;
 			iVar1 = 30;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 66:
 			StringCopy(&Var2, "PROPS_P1_H19_2" /* GXT: OG Fitted Cap */, 16);
-			iVar3 = 19;
-			iVar4 = 2;
+			iVar6 = 19;
+			iVar7 = 2;
 			iVar1 = 32;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 67:
 			StringCopy(&Var2, "PROPS_P1_H19_3" /* GXT: Magnetics Fitted Cap */, 16);
-			iVar3 = 19;
-			iVar4 = 3;
+			iVar6 = 19;
+			iVar7 = 3;
 			iVar1 = 35;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 68:
 			StringCopy(&Var2, "PROPS_P1_H19_4" /* GXT: LS Red Fitted Cap */, 16);
-			iVar3 = 19;
-			iVar4 = 4;
+			iVar6 = 19;
+			iVar7 = 4;
 			iVar1 = 38;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 69:
 			StringCopy(&Var2, "PROPS_P1_H19_5" /* GXT: Los Santos Charcoal Fitted Cap */, 16);
-			iVar3 = 19;
-			iVar4 = 5;
+			iVar6 = 19;
+			iVar7 = 5;
 			iVar1 = 42;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 70:
 			StringCopy(&Var2, "PROPS_P1_H19_6" /* GXT: Stank Fitted Cap */, 16);
-			iVar3 = 19;
-			iVar4 = 6;
+			iVar6 = 19;
+			iVar7 = 6;
 			iVar1 = 42;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 71:
 			StringCopy(&Var2, "PROPS_P1_H19_7" /* GXT: Los Santos Gray Fitted Cap */, 16);
-			iVar3 = 19;
-			iVar4 = 7;
+			iVar6 = 19;
+			iVar7 = 7;
 			iVar1 = 40;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 72:
 			StringCopy(&Var2, "PROPS_P1_H19_8" /* GXT: Perseus Fitted Cap */, 16);
-			iVar3 = 19;
-			iVar4 = 8;
+			iVar6 = 19;
+			iVar7 = 8;
 			iVar1 = 45;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 73:
 			StringCopy(&Var2, "PROPS_P1_H19_9" /* GXT: Feud Slate Fitted Cap */, 16);
-			iVar3 = 19;
-			iVar4 = 9;
+			iVar6 = 19;
+			iVar7 = 9;
 			iVar1 = 48;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 74:
 			StringCopy(&Var2, "PROPS_P1_H19_10" /* GXT: Feud Black Fitted Cap */, 16);
-			iVar3 = 19;
-			iVar4 = 10;
+			iVar6 = 19;
+			iVar7 = 10;
 			iVar1 = 25;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 75:
 			StringCopy(&Var2, "PROPS_P1_H19_11" /* GXT: LS Black Fitted Cap */, 16);
-			iVar3 = 19;
-			iVar4 = 11;
+			iVar6 = 19;
+			iVar7 = 11;
 			iVar1 = 25;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 76:
 			StringCopy(&Var2, "PROPS_P1_H19_12" /* GXT: LS Corkers Fitted Cap */, 16);
-			iVar3 = 19;
-			iVar4 = 12;
+			iVar6 = 19;
+			iVar7 = 12;
 			iVar1 = 28;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 77:
 			StringCopy(&Var2, "PROPS_P1_H19_13" /* GXT: LS White Fitted Cap */, 16);
-			iVar3 = 19;
-			iVar4 = 13;
+			iVar6 = 19;
+			iVar7 = 13;
 			iVar1 = 28;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 78:
 			StringCopy(&Var2, "PROPS_P1_H19_14" /* GXT: Feud Green Fitted Cap */, 16);
-			iVar3 = 19;
-			iVar4 = 14;
+			iVar6 = 19;
+			iVar7 = 14;
 			iVar1 = 30;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 79:
 			StringCopy(&Var2, "PROPS_P1_H19_15" /* GXT: LS Olive Fitted Cap */, 16);
-			iVar3 = 19;
-			iVar4 = 15;
+			iVar6 = 19;
+			iVar7 = 15;
 			iVar1 = 35;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 80:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 20;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 20;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 81:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 21;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 21;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 175, -1);
+			func_182(iVar10, iParam0, 175, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_201(int iParam0)//Position - 0x168F3
@@ -20655,92 +20655,92 @@ void func_201(int iParam0)//Position - 0x168F3
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 13;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 13;
 	Global_78341[0 /*14*/].f_5 = 1;
 	switch (iParam0)
 	{
 		case 31:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 0:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 9, -1);
+			func_182(iVar10, iParam0, 9, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_202(int iParam0)//Position - 0x16A44
@@ -20748,334 +20748,334 @@ void func_202(int iParam0)//Position - 0x16A44
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 12;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 12;
 	Global_78341[0 /*14*/].f_5 = 1;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "OUTFIT_P1_0" /* GXT: Blue Shirt, Jeans */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "OUTFIT_P1_2" /* GXT: White Tuxedo */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "OUTFIT_P1_4" /* GXT: Golf */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "OUTFIT_P1_7" /* GXT: Scuba Land */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "OUTFIT_P1_10" /* GXT: Stealth */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "OUTFIT_P1_11" /* GXT: Triathlon */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "OUTFIT_P1_12" /* GXT: Fireman */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "OUTFIT_P1_13" /* GXT: Exterminator */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "OUTFIT_P1_15" /* GXT: Black Boiler Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "OUTFIT_P1_16" /* GXT: Skydiving */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "OUTFIT_P1_17" /* GXT: Tuxedo */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 10000;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "OUTFIT_P1_18" /* GXT: Blue Boiler Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "OUTFIT_P1_19" /* GXT: Navy Boiler Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 105;
 			break;
 		
 		case 14:
 			StringCopy(&Var2, "OUTFIT_P1_20" /* GXT: Gray Boiler Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 105;
 			break;
 		
 		case 15:
 			StringCopy(&Var2, "OUTFIT_P1_21" /* GXT: Green Boiler Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 105;
 			break;
 		
 		case 16:
 			StringCopy(&Var2, "OUTFIT_P1_22" /* GXT: Ash Hoodie, Sweatpants */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 17:
 			StringCopy(&Var2, "OUTFIT_P1_23" /* GXT: Yellow Check Shirt, Jeans */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 18:
 			StringCopy(&Var2, "OUTFIT_P1_24" /* GXT: Gray Plaid Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 19:
 			StringCopy(&Var2, "OUTFIT_P1_25" /* GXT: Black Hoodie, Jeans */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 20:
 			StringCopy(&Var2, "OUTFIT_P1_26" /* GXT: Track Jacket, Jeans */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 21:
 			StringCopy(&Var2, "OUTFIT_P1_27" /* GXT: Off-White Shirt, Jeans */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 22:
 			StringCopy(&Var2, "OUTFIT_P1_28" /* GXT: Gray Plaid 3 Piece Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 4000;
 			break;
 		
 		case 23:
 			StringCopy(&Var2, "OUTFIT_P1_29" /* GXT: Ash Plaid 3 Piece Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 4500;
 			break;
 		
 		case 24:
 			StringCopy(&Var2, "OUTFIT_P1_30" /* GXT: Charcoal Plaid 3 Piece Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 4500;
 			break;
 		
 		case 25:
 			StringCopy(&Var2, "OUTFIT_P1_31" /* GXT: Tan Plaid 3 Piece Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 4650;
 			break;
 		
 		case 26:
 			StringCopy(&Var2, "OUTFIT_P1_32" /* GXT: Slate 3 Piece Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 4900;
 			break;
 		
 		case 27:
 			StringCopy(&Var2, "OUTFIT_P1_33" /* GXT: Ash 3 Piece Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 5000;
 			break;
 		
 		case 28:
 			StringCopy(&Var2, "OUTFIT_P1_34" /* GXT: Stone 3 Piece Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 4750;
 			break;
 		
 		case 29:
 			StringCopy(&Var2, "OUTFIT_P1_35" /* GXT: Oatmeal 3 Piece Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 4750;
 			break;
 		
 		case 30:
 			StringCopy(&Var2, "OUTFIT_P1_36" /* GXT: Navy Plaid Piped 3 Piece Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 5200;
 			break;
 		
 		case 31:
 			StringCopy(&Var2, "OUTFIT_P1_37" /* GXT: Off-White 3 Piece Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 5200;
 			break;
 		
 		case 32:
 			StringCopy(&Var2, "OUTFIT_P1_38" /* GXT: Red Piped 3 Piece Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 5500;
 			break;
 		
 		case 33:
 			StringCopy(&Var2, "OUTFIT_P1_39" /* GXT: Gray Piped 3 Piece Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 5900;
 			break;
 		
 		case 34:
 			StringCopy(&Var2, "OUTFIT_P1_40" /* GXT: Navy 3 Piece Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 5900;
 			break;
 		
 		case 35:
 			StringCopy(&Var2, "OUTFIT_P1_41" /* GXT: Russet Piped 3 Piece Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 5900;
 			break;
 		
 		case 36:
 			StringCopy(&Var2, "OUTFIT_P1_42" /* GXT: Green 3 Piece Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 5900;
 			break;
 		
 		case 37:
 			StringCopy(&Var2, "OUTFIT_P1_43" /* GXT: Beige 3 Piece Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 5900;
 			break;
 		
 		case 38:
 			StringCopy(&Var2, "OUTFIT_P1_47" /* GXT: Underwear */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 3000;
 			break;
 		
 		case 39:
 			StringCopy(&Var2, "OUTFIT_P1_48" /* GXT: LS Black Hoodie, Jeans */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 3000;
 			break;
 		
 		case 40:
 			StringCopy(&Var2, "OUTFIT_P1_49" /* GXT: Gray Hoodie, Jeans */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 3000;
 			break;
 		
 		case 41:
 			StringCopy(&Var2, "OUTFIT_P1_10" /* GXT: Stealth */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 42:
 			StringCopy(&Var2, "OUTFIT_P1_50" /* GXT: Moto X */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 43:
 			StringCopy(&Var2, "OUTFIT_P1_51" /* GXT: U.R. Jersey, Fatigues */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 44:
 			StringCopy(&Var2, "OUTFIT_P1_52" /* GXT: U.R. OG Tee, Bike Leathers */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 45:
 			StringCopy(&Var2, "OUTFIT_P1_53" /* GXT: Uptown Riders Longsleeve, Camos */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 46:
 			StringCopy(&Var2, "OUTFIT_P1_54" /* GXT: U.R. Jacket, Baggies */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 47, -1);
+			func_182(iVar10, iParam0, 47, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_203(int iParam0)//Position - 0x16F4F
@@ -21083,421 +21083,421 @@ void func_203(int iParam0)//Position - 0x16F4F
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 11;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 11;
 	Global_78341[0 /*14*/].f_5 = 1;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 1;
+			iVar6 = 1;
+			iVar7 = 1;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 2;
+			iVar6 = 1;
+			iVar7 = 2;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 3;
+			iVar6 = 1;
+			iVar7 = 3;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "JBIB_P1_1_0", 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "JBIB_P1_1_1", 16);
-			iVar3 = 2;
-			iVar4 = 1;
+			iVar6 = 2;
+			iVar7 = 1;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "JBIB_P1_1_2", 16);
-			iVar3 = 2;
-			iVar4 = 2;
+			iVar6 = 2;
+			iVar7 = 2;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "JBIB_P1_1_3", 16);
-			iVar3 = 2;
-			iVar4 = 3;
+			iVar6 = 2;
+			iVar7 = 3;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "JBIB_P1_3_0" /* GXT: Silver Plaid Vest */, 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "JBIB_P1_3_1" /* GXT: Ash Vest */, 16);
-			iVar3 = 3;
-			iVar4 = 1;
+			iVar6 = 3;
+			iVar7 = 1;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "JBIB_P1_3_2" /* GXT: Navy Vest */, 16);
-			iVar3 = 3;
-			iVar4 = 2;
+			iVar6 = 3;
+			iVar7 = 2;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "JBIB_P1_3_3" /* GXT: Colorful Plaid Vest */, 16);
-			iVar3 = 3;
-			iVar4 = 3;
+			iVar6 = 3;
+			iVar7 = 3;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "JBIB_P1_3_4" /* GXT: Beige Vest */, 16);
-			iVar3 = 3;
-			iVar4 = 4;
+			iVar6 = 3;
+			iVar7 = 4;
 			break;
 		
 		case 14:
 			StringCopy(&Var2, "JBIB_P1_3_5" /* GXT: Black Vest */, 16);
-			iVar3 = 3;
-			iVar4 = 5;
+			iVar6 = 3;
+			iVar7 = 5;
 			break;
 		
 		case 15:
 			StringCopy(&Var2, "JBIB_P1_3_6" /* GXT: Gray Plaid Vest */, 16);
-			iVar3 = 3;
-			iVar4 = 6;
+			iVar6 = 3;
+			iVar7 = 6;
 			break;
 		
 		case 16:
 			StringCopy(&Var2, "JBIB_P1_3_7" /* GXT: Jade Plaid Vest */, 16);
-			iVar3 = 3;
-			iVar4 = 7;
+			iVar6 = 3;
+			iVar7 = 7;
 			break;
 		
 		case 17:
 			StringCopy(&Var2, "JBIB_P1_3_8" /* GXT: Beige Plaid Vest */, 16);
-			iVar3 = 3;
-			iVar4 = 8;
+			iVar6 = 3;
+			iVar7 = 8;
 			break;
 		
 		case 18:
 			StringCopy(&Var2, "JBIB_P1_3_9" /* GXT: Brown Plaid Vest */, 16);
-			iVar3 = 3;
-			iVar4 = 9;
+			iVar6 = 3;
+			iVar7 = 9;
 			break;
 		
 		case 19:
 			StringCopy(&Var2, "JBIB_P1_3_10" /* GXT: Brown Vest */, 16);
-			iVar3 = 3;
-			iVar4 = 10;
+			iVar6 = 3;
+			iVar7 = 10;
 			break;
 		
 		case 20:
 			StringCopy(&Var2, "JBIB_P1_3_11" /* GXT: White Plaid Vest */, 16);
-			iVar3 = 3;
-			iVar4 = 11;
+			iVar6 = 3;
+			iVar7 = 11;
 			break;
 		
 		case 21:
 			StringCopy(&Var2, "JBIB_P1_3_12" /* GXT: Pearl Plaid Vest */, 16);
-			iVar3 = 3;
-			iVar4 = 12;
+			iVar6 = 3;
+			iVar7 = 12;
 			break;
 		
 		case 22:
 			StringCopy(&Var2, "JBIB_P1_3_13" /* GXT: Warm Gray Vest */, 16);
-			iVar3 = 3;
-			iVar4 = 13;
+			iVar6 = 3;
+			iVar7 = 13;
 			break;
 		
 		case 23:
 			StringCopy(&Var2, "JBIB_P1_3_14" /* GXT: Topaz Vest */, 16);
-			iVar3 = 3;
-			iVar4 = 14;
+			iVar6 = 3;
+			iVar7 = 14;
 			break;
 		
 		case 24:
 			StringCopy(&Var2, "JBIB_P1_3_15" /* GXT: Plum Vest */, 16);
-			iVar3 = 3;
-			iVar4 = 15;
+			iVar6 = 3;
+			iVar7 = 15;
 			break;
 		
 		case 25:
 			StringCopy(&Var2, "JBIB_P1_3_0" /* GXT: Silver Plaid Vest */, 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			break;
 		
 		case 26:
 			StringCopy(&Var2, "JBIB_P1_3_1" /* GXT: Ash Vest */, 16);
-			iVar3 = 4;
-			iVar4 = 1;
+			iVar6 = 4;
+			iVar7 = 1;
 			break;
 		
 		case 27:
 			StringCopy(&Var2, "JBIB_P1_3_2" /* GXT: Navy Vest */, 16);
-			iVar3 = 4;
-			iVar4 = 2;
+			iVar6 = 4;
+			iVar7 = 2;
 			break;
 		
 		case 28:
 			StringCopy(&Var2, "JBIB_P1_3_3" /* GXT: Colorful Plaid Vest */, 16);
-			iVar3 = 4;
-			iVar4 = 3;
+			iVar6 = 4;
+			iVar7 = 3;
 			break;
 		
 		case 29:
 			StringCopy(&Var2, "JBIB_P1_3_4" /* GXT: Beige Vest */, 16);
-			iVar3 = 4;
-			iVar4 = 4;
+			iVar6 = 4;
+			iVar7 = 4;
 			break;
 		
 		case 30:
 			StringCopy(&Var2, "JBIB_P1_3_5" /* GXT: Black Vest */, 16);
-			iVar3 = 4;
-			iVar4 = 5;
+			iVar6 = 4;
+			iVar7 = 5;
 			break;
 		
 		case 31:
 			StringCopy(&Var2, "JBIB_P1_3_6" /* GXT: Gray Plaid Vest */, 16);
-			iVar3 = 4;
-			iVar4 = 6;
+			iVar6 = 4;
+			iVar7 = 6;
 			break;
 		
 		case 32:
 			StringCopy(&Var2, "JBIB_P1_3_7" /* GXT: Jade Plaid Vest */, 16);
-			iVar3 = 4;
-			iVar4 = 7;
+			iVar6 = 4;
+			iVar7 = 7;
 			break;
 		
 		case 33:
 			StringCopy(&Var2, "JBIB_P1_3_8" /* GXT: Beige Plaid Vest */, 16);
-			iVar3 = 4;
-			iVar4 = 8;
+			iVar6 = 4;
+			iVar7 = 8;
 			break;
 		
 		case 34:
 			StringCopy(&Var2, "JBIB_P1_3_9" /* GXT: Brown Plaid Vest */, 16);
-			iVar3 = 4;
-			iVar4 = 9;
+			iVar6 = 4;
+			iVar7 = 9;
 			break;
 		
 		case 35:
 			StringCopy(&Var2, "JBIB_P1_3_10" /* GXT: Brown Vest */, 16);
-			iVar3 = 4;
-			iVar4 = 10;
+			iVar6 = 4;
+			iVar7 = 10;
 			break;
 		
 		case 36:
 			StringCopy(&Var2, "JBIB_P1_3_11" /* GXT: White Plaid Vest */, 16);
-			iVar3 = 4;
-			iVar4 = 11;
+			iVar6 = 4;
+			iVar7 = 11;
 			break;
 		
 		case 37:
 			StringCopy(&Var2, "JBIB_P1_3_12" /* GXT: Pearl Plaid Vest */, 16);
-			iVar3 = 4;
-			iVar4 = 12;
+			iVar6 = 4;
+			iVar7 = 12;
 			break;
 		
 		case 38:
 			StringCopy(&Var2, "JBIB_P1_3_13" /* GXT: Warm Gray Vest */, 16);
-			iVar3 = 4;
-			iVar4 = 13;
+			iVar6 = 4;
+			iVar7 = 13;
 			break;
 		
 		case 39:
 			StringCopy(&Var2, "JBIB_P1_3_14" /* GXT: Topaz Vest */, 16);
-			iVar3 = 4;
-			iVar4 = 14;
+			iVar6 = 4;
+			iVar7 = 14;
 			break;
 		
 		case 40:
 			StringCopy(&Var2, "JBIB_P1_3_15" /* GXT: Plum Vest */, 16);
-			iVar3 = 4;
-			iVar4 = 15;
+			iVar6 = 4;
+			iVar7 = 15;
 			break;
 		
 		case 41:
 			StringCopy(&Var2, "JBIB_P1_5_0" /* GXT: White Shirt */, 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			break;
 		
 		case 42:
 			StringCopy(&Var2, "JBIB_P1_6_0" /* GXT: White Shirt */, 16);
-			iVar3 = 6;
-			iVar4 = 0;
+			iVar6 = 6;
+			iVar7 = 0;
 			break;
 		
 		case 43:
 			StringCopy(&Var2, "JBIB_P1_6_1" /* GXT: Two-Tone Shirt */, 16);
-			iVar3 = 6;
-			iVar4 = 1;
+			iVar6 = 6;
+			iVar7 = 1;
 			break;
 		
 		case 44:
 			StringCopy(&Var2, "JBIB_P1_7_0" /* GXT: Charcoal Hoodie */, 16);
-			iVar3 = 7;
-			iVar4 = 0;
+			iVar6 = 7;
+			iVar7 = 0;
 			break;
 		
 		case 45:
 			StringCopy(&Var2, "JBIB_P1_8_0" /* GXT: White T-Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 0;
+			iVar6 = 8;
+			iVar7 = 0;
 			break;
 		
 		case 46:
 			StringCopy(&Var2, "JBIB_P1_9_0" /* GXT: Blue Shirt */, 16);
-			iVar3 = 9;
-			iVar4 = 0;
+			iVar6 = 9;
+			iVar7 = 0;
 			break;
 		
 		case 47:
 			StringCopy(&Var2, "JBIB_P1_10_0" /* GXT: White T-Shirt */, 16);
-			iVar3 = 10;
-			iVar4 = 0;
+			iVar6 = 10;
+			iVar7 = 0;
 			break;
 		
 		case 48:
 			StringCopy(&Var2, "JBIB_P1_10_1" /* GXT: Crevis T-Shirt */, 16);
-			iVar3 = 10;
-			iVar4 = 1;
+			iVar6 = 10;
+			iVar7 = 1;
 			iVar1 = 48;
 			break;
 		
 		case 49:
 			StringCopy(&Var2, "JBIB_P1_10_2" /* GXT: Yeti T-Shirt */, 16);
-			iVar3 = 10;
-			iVar4 = 2;
+			iVar6 = 10;
+			iVar7 = 2;
 			iVar1 = 35;
 			break;
 		
 		case 50:
 			StringCopy(&Var2, "JBIB_P1_10_3" /* GXT: Sweatbox T-Shirt */, 16);
-			iVar3 = 10;
-			iVar4 = 3;
+			iVar6 = 10;
+			iVar7 = 3;
 			iVar1 = 32;
 			break;
 		
 		case 51:
 			StringCopy(&Var2, "JBIB_P1_10_4" /* GXT: Trey Baker T-Shirt */, 16);
-			iVar3 = 10;
-			iVar4 = 4;
+			iVar6 = 10;
+			iVar7 = 4;
 			iVar1 = 35;
 			break;
 		
 		case 52:
 			StringCopy(&Var2, "JBIB_P1_10_5" /* GXT: Black T-Shirt */, 16);
-			iVar3 = 10;
-			iVar4 = 5;
+			iVar6 = 10;
+			iVar7 = 5;
 			iVar1 = 48;
 			break;
 		
 		case 53:
 			StringCopy(&Var2, "JBIB_P1_10_6" /* GXT: Fruntalot T-Shirt */, 16);
-			iVar3 = 10;
-			iVar4 = 6;
+			iVar6 = 10;
+			iVar7 = 6;
 			iVar1 = 52;
 			break;
 		
 		case 54:
 			StringCopy(&Var2, "JBIB_P1_10_7" /* GXT: Kingz of Los Santos T-Shirt */, 16);
-			iVar3 = 10;
-			iVar4 = 7;
+			iVar6 = 10;
+			iVar7 = 7;
 			iVar1 = 38;
 			break;
 		
 		case 55:
 			StringCopy(&Var2, "JBIB_P1_10_8" /* GXT: Ten Off The Chain T-Shirt */, 16);
-			iVar3 = 10;
-			iVar4 = 8;
+			iVar6 = 10;
+			iVar7 = 8;
 			iVar1 = 42;
 			break;
 		
 		case 56:
 			StringCopy(&Var2, "JBIB_P1_10_9" /* GXT: Gray T-Shirt */, 16);
-			iVar3 = 10;
-			iVar4 = 9;
+			iVar6 = 10;
+			iVar7 = 9;
 			iVar1 = 38;
 			break;
 		
 		case 57:
 			StringCopy(&Var2, "JBIB_P1_10_10" /* GXT: Green T-Shirt */, 16);
-			iVar3 = 10;
-			iVar4 = 10;
+			iVar6 = 10;
+			iVar7 = 10;
 			iVar1 = 35;
 			break;
 		
 		case 58:
 			StringCopy(&Var2, "JBIB_P1_10_11" /* GXT: Camo T-Shirt */, 16);
-			iVar3 = 10;
-			iVar4 = 11;
+			iVar6 = 10;
+			iVar7 = 11;
 			iVar1 = 48;
 			break;
 		
 		case 59:
 			StringCopy(&Var2, "JBIB_P1_10_12" /* GXT: Yeti Rainbow T-Shirt */, 16);
-			iVar3 = 10;
-			iVar4 = 12;
+			iVar6 = 10;
+			iVar7 = 12;
 			iVar1 = 42;
 			break;
 		
 		case 60:
 			StringCopy(&Var2, "JBIB_P1_10_13" /* GXT: Feud Banded T-Shirt */, 16);
-			iVar3 = 10;
-			iVar4 = 13;
+			iVar6 = 10;
+			iVar7 = 13;
 			iVar1 = 45;
 			break;
 		
 		case 61:
 			StringCopy(&Var2, "JBIB_P1_10_14" /* GXT: Yogarishima T-Shirt */, 16);
-			iVar3 = 10;
-			iVar4 = 14;
+			iVar6 = 10;
+			iVar7 = 14;
 			iVar1 = 45;
 			break;
 		
 		case 62:
 			StringCopy(&Var2, "JBIB_P1_10_15" /* GXT: Feud Gray T-Shirt */, 16);
-			iVar3 = 10;
-			iVar4 = 15;
+			iVar6 = 10;
+			iVar7 = 15;
 			iVar1 = 49;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 63, -1);
+			func_182(iVar10, iParam0, 63, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_204(int iParam0)//Position - 0x175BD
@@ -21505,34 +21505,34 @@ void func_204(int iParam0)//Position - 0x175BD
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 7;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 7;
 	Global_78341[0 /*14*/].f_5 = 1;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 1, -1);
+			func_182(iVar10, iParam0, 1, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_205(int iParam0)//Position - 0x17631
@@ -21540,58 +21540,58 @@ void func_205(int iParam0)//Position - 0x17631
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 1;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 1;
 	Global_78341[0 /*14*/].f_5 = 1;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "BERD_P1_0_0" /* GXT: Clean Shave */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "BERD_P1_1_0" /* GXT: Full Van Dyke */, 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "BERD_P1_2_0" /* GXT: Methodical */, 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "BERD_P1_3_0" /* GXT: Full Spartan */, 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "BERD_P1_4_0" /* GXT: Stubble */, 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 5, -1);
+			func_182(iVar10, iParam0, 5, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_206(int iParam0)//Position - 0x17701
@@ -21599,346 +21599,346 @@ void func_206(int iParam0)//Position - 0x17701
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 10;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 10;
 	Global_78341[0 /*14*/].f_5 = 1;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 1;
+			iVar6 = 3;
+			iVar7 = 1;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 2;
+			iVar6 = 3;
+			iVar7 = 2;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 3;
+			iVar6 = 3;
+			iVar7 = 3;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 4;
+			iVar6 = 3;
+			iVar7 = 4;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 5;
+			iVar6 = 3;
+			iVar7 = 5;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 1;
+			iVar6 = 4;
+			iVar7 = 1;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 2;
+			iVar6 = 4;
+			iVar7 = 2;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 3;
+			iVar6 = 4;
+			iVar7 = 3;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 4;
+			iVar6 = 4;
+			iVar7 = 4;
 			break;
 		
 		case 14:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 5;
+			iVar6 = 4;
+			iVar7 = 5;
 			break;
 		
 		case 15:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 6;
+			iVar6 = 4;
+			iVar7 = 6;
 			break;
 		
 		case 16:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			break;
 		
 		case 17:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 1;
+			iVar6 = 5;
+			iVar7 = 1;
 			break;
 		
 		case 18:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 2;
+			iVar6 = 5;
+			iVar7 = 2;
 			break;
 		
 		case 19:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 3;
+			iVar6 = 5;
+			iVar7 = 3;
 			break;
 		
 		case 20:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 4;
+			iVar6 = 5;
+			iVar7 = 4;
 			break;
 		
 		case 21:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 5;
+			iVar6 = 5;
+			iVar7 = 5;
 			break;
 		
 		case 22:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 6;
+			iVar6 = 5;
+			iVar7 = 6;
 			break;
 		
 		case 23:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 7;
+			iVar6 = 5;
+			iVar7 = 7;
 			break;
 		
 		case 24:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 8;
+			iVar6 = 5;
+			iVar7 = 8;
 			break;
 		
 		case 25:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 9;
+			iVar6 = 5;
+			iVar7 = 9;
 			break;
 		
 		case 26:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 10;
+			iVar6 = 5;
+			iVar7 = 10;
 			break;
 		
 		case 27:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 11;
+			iVar6 = 5;
+			iVar7 = 11;
 			break;
 		
 		case 28:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 12;
+			iVar6 = 5;
+			iVar7 = 12;
 			break;
 		
 		case 29:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 13;
+			iVar6 = 5;
+			iVar7 = 13;
 			break;
 		
 		case 30:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 14;
+			iVar6 = 5;
+			iVar7 = 14;
 			break;
 		
 		case 31:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 15;
+			iVar6 = 5;
+			iVar7 = 15;
 			break;
 		
 		case 32:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 0;
+			iVar6 = 6;
+			iVar7 = 0;
 			break;
 		
 		case 33:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 1;
+			iVar6 = 6;
+			iVar7 = 1;
 			break;
 		
 		case 34:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 2;
+			iVar6 = 6;
+			iVar7 = 2;
 			break;
 		
 		case 35:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 3;
+			iVar6 = 6;
+			iVar7 = 3;
 			break;
 		
 		case 36:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 4;
+			iVar6 = 6;
+			iVar7 = 4;
 			break;
 		
 		case 37:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 5;
+			iVar6 = 6;
+			iVar7 = 5;
 			break;
 		
 		case 38:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 6;
+			iVar6 = 6;
+			iVar7 = 6;
 			break;
 		
 		case 39:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 0;
+			iVar6 = 7;
+			iVar7 = 0;
 			break;
 		
 		case 40:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 1;
+			iVar6 = 7;
+			iVar7 = 1;
 			break;
 		
 		case 41:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 2;
+			iVar6 = 7;
+			iVar7 = 2;
 			break;
 		
 		case 42:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 3;
+			iVar6 = 7;
+			iVar7 = 3;
 			break;
 		
 		case 43:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 4;
+			iVar6 = 7;
+			iVar7 = 4;
 			break;
 		
 		case 44:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 5;
+			iVar6 = 7;
+			iVar7 = 5;
 			break;
 		
 		case 45:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 6;
+			iVar6 = 7;
+			iVar7 = 6;
 			break;
 		
 		case 46:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 7;
+			iVar6 = 7;
+			iVar7 = 7;
 			break;
 		
 		case 47:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 0;
+			iVar6 = 8;
+			iVar7 = 0;
 			break;
 		
 		case 48:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 1;
+			iVar6 = 8;
+			iVar7 = 1;
 			break;
 		
 		case 49:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 2;
+			iVar6 = 8;
+			iVar7 = 2;
 			break;
 		
 		case 50:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 3;
+			iVar6 = 8;
+			iVar7 = 3;
 			break;
 		
 		case 51:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 0;
+			iVar6 = 9;
+			iVar7 = 0;
 			break;
 		
 		case 52:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 10;
-			iVar4 = 0;
+			iVar6 = 10;
+			iVar7 = 0;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 53, -1);
+			func_182(iVar10, iParam0, 53, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_207(int iParam0)//Position - 0x17C31
@@ -21946,110 +21946,110 @@ void func_207(int iParam0)//Position - 0x17C31
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 9;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 9;
 	Global_78341[0 /*14*/].f_5 = 1;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "SPEC2_P0_08_0" /* GXT: Red Wrestler Mask */, 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			iVar1 = 125;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "SPEC2_P0_08_1" /* GXT: Green Wrestler Mask */, 16);
-			iVar3 = 5;
-			iVar4 = 1;
+			iVar6 = 5;
+			iVar7 = 1;
 			iVar1 = 150;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "SPEC2_P0_08_2" /* GXT: Patriot Wrestler Mask */, 16);
-			iVar3 = 5;
-			iVar4 = 2;
+			iVar6 = 5;
+			iVar7 = 2;
 			iVar1 = 175;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "SPEC2_P0_08_3" /* GXT: Domino Wrestler Mask */, 16);
-			iVar3 = 5;
-			iVar4 = 3;
+			iVar6 = 5;
+			iVar7 = 3;
 			iVar1 = 85;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "SPEC2_P0_08_4" /* GXT: Gray Wrestler Mask */, 16);
-			iVar3 = 5;
-			iVar4 = 4;
+			iVar6 = 5;
+			iVar7 = 4;
 			iVar1 = 150;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "SPEC2_P0_08_5" /* GXT: Phoenix Wrestler Mask */, 16);
-			iVar3 = 5;
-			iVar4 = 5;
+			iVar6 = 5;
+			iVar7 = 5;
 			iVar1 = 175;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 0;
+			iVar6 = 6;
+			iVar7 = 0;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 12, -1);
+			func_182(iVar10, iParam0, 12, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_208(int iParam0)//Position - 0x17DC8
@@ -22057,513 +22057,513 @@ void func_208(int iParam0)//Position - 0x17DC8
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 8;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 8;
 	Global_78341[0 /*14*/].f_5 = 1;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 0;
+			iVar6 = 6;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 0;
+			iVar6 = 7;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 0;
+			iVar6 = 8;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "SPEC_P1_9_0" /* GXT: Bandana */, 16);
-			iVar3 = 9;
-			iVar4 = 0;
+			iVar6 = 9;
+			iVar7 = 0;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 10;
-			iVar4 = 0;
+			iVar6 = 10;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "SPEC_P1_11_0" /* GXT: Silver Tie */, 16);
-			iVar3 = 11;
-			iVar4 = 0;
+			iVar6 = 11;
+			iVar7 = 0;
 			iVar1 = 195;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "SPEC_P1_11_1" /* GXT: Gold Tie */, 16);
-			iVar3 = 11;
-			iVar4 = 1;
+			iVar6 = 11;
+			iVar7 = 1;
 			iVar1 = 195;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "SPEC_P1_11_2" /* GXT: Cream Tie */, 16);
-			iVar3 = 11;
-			iVar4 = 2;
+			iVar6 = 11;
+			iVar7 = 2;
 			iVar1 = 195;
 			break;
 		
 		case 14:
 			StringCopy(&Var2, "SPEC_P1_11_3" /* GXT: Blue Diamond Tie */, 16);
-			iVar3 = 11;
-			iVar4 = 3;
+			iVar6 = 11;
+			iVar7 = 3;
 			iVar1 = 250;
 			break;
 		
 		case 15:
 			StringCopy(&Var2, "SPEC_P1_11_4" /* GXT: Blue Spotted Tie */, 16);
-			iVar3 = 11;
-			iVar4 = 4;
+			iVar6 = 11;
+			iVar7 = 4;
 			iVar1 = 250;
 			break;
 		
 		case 16:
 			StringCopy(&Var2, "SPEC_P1_11_5" /* GXT: White Spotted Tie */, 16);
-			iVar3 = 11;
-			iVar4 = 5;
+			iVar6 = 11;
+			iVar7 = 5;
 			iVar1 = 250;
 			break;
 		
 		case 17:
 			StringCopy(&Var2, "SPEC_P1_11_6" /* GXT: Dark Gray Tie */, 16);
-			iVar3 = 11;
-			iVar4 = 6;
+			iVar6 = 11;
+			iVar7 = 6;
 			iVar1 = 195;
 			break;
 		
 		case 18:
 			StringCopy(&Var2, "SPEC_P1_11_7" /* GXT: Gray Striped Tie */, 16);
-			iVar3 = 11;
-			iVar4 = 7;
+			iVar6 = 11;
+			iVar7 = 7;
 			iVar1 = 250;
 			break;
 		
 		case 19:
 			StringCopy(&Var2, "SPEC_P1_11_8" /* GXT: Silver Striped Tie */, 16);
-			iVar3 = 11;
-			iVar4 = 8;
+			iVar6 = 11;
+			iVar7 = 8;
 			iVar1 = 250;
 			break;
 		
 		case 20:
 			StringCopy(&Var2, "SPEC_P1_11_9" /* GXT: Red Striped Tie */, 16);
-			iVar3 = 11;
-			iVar4 = 9;
+			iVar6 = 11;
+			iVar7 = 9;
 			iVar1 = 250;
 			break;
 		
 		case 21:
 			StringCopy(&Var2, "SPEC_P1_11_10" /* GXT: Bronze Striped Tie */, 16);
-			iVar3 = 11;
-			iVar4 = 10;
+			iVar6 = 11;
+			iVar7 = 10;
 			iVar1 = 250;
 			break;
 		
 		case 22:
 			StringCopy(&Var2, "SPEC_P1_11_11" /* GXT: White Diamond Tie */, 16);
-			iVar3 = 11;
-			iVar4 = 11;
+			iVar6 = 11;
+			iVar7 = 11;
 			iVar1 = 195;
 			break;
 		
 		case 23:
 			StringCopy(&Var2, "SPEC_P1_11_12" /* GXT: Black Diamond Tie */, 16);
-			iVar3 = 11;
-			iVar4 = 12;
+			iVar6 = 11;
+			iVar7 = 12;
 			iVar1 = 250;
 			break;
 		
 		case 24:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 12;
-			iVar4 = 0;
+			iVar6 = 12;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 25:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 13;
-			iVar4 = 0;
+			iVar6 = 13;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 26:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 14;
-			iVar4 = 0;
+			iVar6 = 14;
+			iVar7 = 0;
 			break;
 		
 		case 27:
 			StringCopy(&Var2, "SPEC_P1_15_0" /* GXT: Purple Tie */, 16);
-			iVar3 = 15;
-			iVar4 = 0;
+			iVar6 = 15;
+			iVar7 = 0;
 			break;
 		
 		case 28:
 			StringCopy(&Var2, "SPEC_P1_15_1" /* GXT: Cream Tie */, 16);
-			iVar3 = 15;
-			iVar4 = 1;
+			iVar6 = 15;
+			iVar7 = 1;
 			break;
 		
 		case 29:
 			StringCopy(&Var2, "SPEC_P1_15_2" /* GXT: Beige Tie */, 16);
-			iVar3 = 15;
-			iVar4 = 2;
+			iVar6 = 15;
+			iVar7 = 2;
 			break;
 		
 		case 30:
 			StringCopy(&Var2, "SPEC_P1_15_3" /* GXT: Ash Tie */, 16);
-			iVar3 = 15;
-			iVar4 = 3;
+			iVar6 = 15;
+			iVar7 = 3;
 			break;
 		
 		case 31:
 			StringCopy(&Var2, "SPEC_P1_15_4" /* GXT: White Diamond Tie */, 16);
-			iVar3 = 15;
-			iVar4 = 4;
+			iVar6 = 15;
+			iVar7 = 4;
 			break;
 		
 		case 32:
 			StringCopy(&Var2, "SPEC_P1_15_5" /* GXT: Gray Diamond Tie */, 16);
-			iVar3 = 15;
-			iVar4 = 5;
+			iVar6 = 15;
+			iVar7 = 5;
 			break;
 		
 		case 33:
 			StringCopy(&Var2, "SPEC_P1_15_6" /* GXT: Beige Striped Tie */, 16);
-			iVar3 = 15;
-			iVar4 = 6;
+			iVar6 = 15;
+			iVar7 = 6;
 			break;
 		
 		case 34:
 			StringCopy(&Var2, "SPEC_P1_15_7" /* GXT: Red Striped Tie */, 16);
-			iVar3 = 15;
-			iVar4 = 7;
+			iVar6 = 15;
+			iVar7 = 7;
 			break;
 		
 		case 35:
 			StringCopy(&Var2, "SPEC_P1_15_8" /* GXT: Russet Wool Tie */, 16);
-			iVar3 = 15;
-			iVar4 = 8;
+			iVar6 = 15;
+			iVar7 = 8;
 			break;
 		
 		case 36:
 			StringCopy(&Var2, "SPEC_P1_15_9" /* GXT: Gray Striped Tie */, 16);
-			iVar3 = 15;
-			iVar4 = 9;
+			iVar6 = 15;
+			iVar7 = 9;
 			break;
 		
 		case 37:
 			StringCopy(&Var2, "SPEC_P1_15_10" /* GXT: Gray Wool Tie */, 16);
-			iVar3 = 15;
-			iVar4 = 10;
+			iVar6 = 15;
+			iVar7 = 10;
 			break;
 		
 		case 38:
 			StringCopy(&Var2, "SPEC_P1_15_11" /* GXT: Off-White Tie */, 16);
-			iVar3 = 15;
-			iVar4 = 11;
+			iVar6 = 15;
+			iVar7 = 11;
 			break;
 		
 		case 39:
 			StringCopy(&Var2, "SPEC_P1_15_12" /* GXT: Blue Diamond Tie */, 16);
-			iVar3 = 15;
-			iVar4 = 12;
+			iVar6 = 15;
+			iVar7 = 12;
 			break;
 		
 		case 40:
 			StringCopy(&Var2, "SPEC_P1_15_13" /* GXT: Brown Wool Tie */, 16);
-			iVar3 = 15;
-			iVar4 = 13;
+			iVar6 = 15;
+			iVar7 = 13;
 			break;
 		
 		case 41:
 			StringCopy(&Var2, "SPEC_P1_15_14" /* GXT: Gray Textured Tie */, 16);
-			iVar3 = 15;
-			iVar4 = 14;
+			iVar6 = 15;
+			iVar7 = 14;
 			break;
 		
 		case 42:
 			StringCopy(&Var2, "SPEC_P1_15_15" /* GXT: Amethyst Tie */, 16);
-			iVar3 = 15;
-			iVar4 = 15;
+			iVar6 = 15;
+			iVar7 = 15;
 			break;
 		
 		case 43:
 			StringCopy(&Var2, "SPEC_P1_15_0" /* GXT: Purple Tie */, 16);
-			iVar3 = 16;
-			iVar4 = 0;
+			iVar6 = 16;
+			iVar7 = 0;
 			break;
 		
 		case 44:
 			StringCopy(&Var2, "SPEC_P1_15_1" /* GXT: Cream Tie */, 16);
-			iVar3 = 16;
-			iVar4 = 1;
+			iVar6 = 16;
+			iVar7 = 1;
 			break;
 		
 		case 45:
 			StringCopy(&Var2, "SPEC_P1_15_2" /* GXT: Beige Tie */, 16);
-			iVar3 = 16;
-			iVar4 = 2;
+			iVar6 = 16;
+			iVar7 = 2;
 			break;
 		
 		case 46:
 			StringCopy(&Var2, "SPEC_P1_15_3" /* GXT: Ash Tie */, 16);
-			iVar3 = 16;
-			iVar4 = 3;
+			iVar6 = 16;
+			iVar7 = 3;
 			break;
 		
 		case 47:
 			StringCopy(&Var2, "SPEC_P1_15_4" /* GXT: White Diamond Tie */, 16);
-			iVar3 = 16;
-			iVar4 = 4;
+			iVar6 = 16;
+			iVar7 = 4;
 			break;
 		
 		case 48:
 			StringCopy(&Var2, "SPEC_P1_15_5" /* GXT: Gray Diamond Tie */, 16);
-			iVar3 = 16;
-			iVar4 = 5;
+			iVar6 = 16;
+			iVar7 = 5;
 			break;
 		
 		case 49:
 			StringCopy(&Var2, "SPEC_P1_15_6" /* GXT: Beige Striped Tie */, 16);
-			iVar3 = 16;
-			iVar4 = 6;
+			iVar6 = 16;
+			iVar7 = 6;
 			break;
 		
 		case 50:
 			StringCopy(&Var2, "SPEC_P1_15_7" /* GXT: Red Striped Tie */, 16);
-			iVar3 = 16;
-			iVar4 = 7;
+			iVar6 = 16;
+			iVar7 = 7;
 			break;
 		
 		case 51:
 			StringCopy(&Var2, "SPEC_P1_15_8" /* GXT: Russet Wool Tie */, 16);
-			iVar3 = 16;
-			iVar4 = 8;
+			iVar6 = 16;
+			iVar7 = 8;
 			break;
 		
 		case 52:
 			StringCopy(&Var2, "SPEC_P1_15_9" /* GXT: Gray Striped Tie */, 16);
-			iVar3 = 16;
-			iVar4 = 9;
+			iVar6 = 16;
+			iVar7 = 9;
 			break;
 		
 		case 53:
 			StringCopy(&Var2, "SPEC_P1_15_10" /* GXT: Gray Wool Tie */, 16);
-			iVar3 = 16;
-			iVar4 = 10;
+			iVar6 = 16;
+			iVar7 = 10;
 			break;
 		
 		case 54:
 			StringCopy(&Var2, "SPEC_P1_15_11" /* GXT: Off-White Tie */, 16);
-			iVar3 = 16;
-			iVar4 = 11;
+			iVar6 = 16;
+			iVar7 = 11;
 			break;
 		
 		case 55:
 			StringCopy(&Var2, "SPEC_P1_15_12" /* GXT: Blue Diamond Tie */, 16);
-			iVar3 = 16;
-			iVar4 = 12;
+			iVar6 = 16;
+			iVar7 = 12;
 			break;
 		
 		case 56:
 			StringCopy(&Var2, "SPEC_P1_15_13" /* GXT: Brown Wool Tie */, 16);
-			iVar3 = 16;
-			iVar4 = 13;
+			iVar6 = 16;
+			iVar7 = 13;
 			break;
 		
 		case 57:
 			StringCopy(&Var2, "SPEC_P1_15_14" /* GXT: Gray Textured Tie */, 16);
-			iVar3 = 16;
-			iVar4 = 14;
+			iVar6 = 16;
+			iVar7 = 14;
 			break;
 		
 		case 58:
 			StringCopy(&Var2, "SPEC_P1_15_15" /* GXT: Amethyst Tie */, 16);
-			iVar3 = 16;
-			iVar4 = 15;
+			iVar6 = 16;
+			iVar7 = 15;
 			break;
 		
 		case 59:
 			StringCopy(&Var2, "SPEC_P1_15_0" /* GXT: Purple Tie */, 16);
-			iVar3 = 17;
-			iVar4 = 0;
+			iVar6 = 17;
+			iVar7 = 0;
 			break;
 		
 		case 60:
 			StringCopy(&Var2, "SPEC_P1_15_1" /* GXT: Cream Tie */, 16);
-			iVar3 = 17;
-			iVar4 = 1;
+			iVar6 = 17;
+			iVar7 = 1;
 			break;
 		
 		case 61:
 			StringCopy(&Var2, "SPEC_P1_15_2" /* GXT: Beige Tie */, 16);
-			iVar3 = 17;
-			iVar4 = 2;
+			iVar6 = 17;
+			iVar7 = 2;
 			break;
 		
 		case 62:
 			StringCopy(&Var2, "SPEC_P1_15_3" /* GXT: Ash Tie */, 16);
-			iVar3 = 17;
-			iVar4 = 3;
+			iVar6 = 17;
+			iVar7 = 3;
 			break;
 		
 		case 63:
 			StringCopy(&Var2, "SPEC_P1_15_4" /* GXT: White Diamond Tie */, 16);
-			iVar3 = 17;
-			iVar4 = 4;
+			iVar6 = 17;
+			iVar7 = 4;
 			break;
 		
 		case 64:
 			StringCopy(&Var2, "SPEC_P1_15_5" /* GXT: Gray Diamond Tie */, 16);
-			iVar3 = 17;
-			iVar4 = 5;
+			iVar6 = 17;
+			iVar7 = 5;
 			break;
 		
 		case 65:
 			StringCopy(&Var2, "SPEC_P1_15_6" /* GXT: Beige Striped Tie */, 16);
-			iVar3 = 17;
-			iVar4 = 6;
+			iVar6 = 17;
+			iVar7 = 6;
 			break;
 		
 		case 66:
 			StringCopy(&Var2, "SPEC_P1_15_7" /* GXT: Red Striped Tie */, 16);
-			iVar3 = 17;
-			iVar4 = 7;
+			iVar6 = 17;
+			iVar7 = 7;
 			break;
 		
 		case 67:
 			StringCopy(&Var2, "SPEC_P1_15_8" /* GXT: Russet Wool Tie */, 16);
-			iVar3 = 17;
-			iVar4 = 8;
+			iVar6 = 17;
+			iVar7 = 8;
 			break;
 		
 		case 68:
 			StringCopy(&Var2, "SPEC_P1_15_9" /* GXT: Gray Striped Tie */, 16);
-			iVar3 = 17;
-			iVar4 = 9;
+			iVar6 = 17;
+			iVar7 = 9;
 			break;
 		
 		case 69:
 			StringCopy(&Var2, "SPEC_P1_15_10" /* GXT: Gray Wool Tie */, 16);
-			iVar3 = 17;
-			iVar4 = 10;
+			iVar6 = 17;
+			iVar7 = 10;
 			break;
 		
 		case 70:
 			StringCopy(&Var2, "SPEC_P1_15_11" /* GXT: Off-White Tie */, 16);
-			iVar3 = 17;
-			iVar4 = 11;
+			iVar6 = 17;
+			iVar7 = 11;
 			break;
 		
 		case 71:
 			StringCopy(&Var2, "SPEC_P1_15_12" /* GXT: Blue Diamond Tie */, 16);
-			iVar3 = 17;
-			iVar4 = 12;
+			iVar6 = 17;
+			iVar7 = 12;
 			break;
 		
 		case 72:
 			StringCopy(&Var2, "SPEC_P1_15_13" /* GXT: Brown Wool Tie */, 16);
-			iVar3 = 17;
-			iVar4 = 13;
+			iVar6 = 17;
+			iVar7 = 13;
 			break;
 		
 		case 73:
 			StringCopy(&Var2, "SPEC_P1_15_14" /* GXT: Gray Textured Tie */, 16);
-			iVar3 = 17;
-			iVar4 = 14;
+			iVar6 = 17;
+			iVar7 = 14;
 			break;
 		
 		case 74:
 			StringCopy(&Var2, "SPEC_P1_15_15" /* GXT: Amethyst Tie */, 16);
-			iVar3 = 17;
-			iVar4 = 15;
+			iVar6 = 17;
+			iVar7 = 15;
 			break;
 		
 		case 75:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 18;
-			iVar4 = 0;
+			iVar6 = 18;
+			iVar7 = 0;
 			break;
 		
 		case 76:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 19;
-			iVar4 = 0;
+			iVar6 = 19;
+			iVar7 = 0;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 77, -1);
+			func_182(iVar10, iParam0, 77, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_209(int iParam0)//Position - 0x185C7
@@ -22571,76 +22571,76 @@ void func_209(int iParam0)//Position - 0x185C7
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 5;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 5;
 	Global_78341[0 /*14*/].f_5 = 1;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 2;
-			iVar4 = 1;
+			iVar6 = 2;
+			iVar7 = 1;
 			bVar0 = true;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 7, -1);
+			func_182(iVar10, iParam0, 7, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_210(int iParam0)//Position - 0x186D7
@@ -22648,959 +22648,959 @@ void func_210(int iParam0)//Position - 0x186D7
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 6;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 6;
 	Global_78341[0 /*14*/].f_5 = 1;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "FEET_P1_00_0" /* GXT: White Athletic Shoes */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "FEET_P1_00_1" /* GXT: All White Athletic Shoes */, 16);
-			iVar3 = 0;
-			iVar4 = 1;
+			iVar6 = 0;
+			iVar7 = 1;
 			iVar1 = 80;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "FEET_P1_00_2" /* GXT: Charcoal Two-Tone Athletic Shoes */, 16);
-			iVar3 = 0;
-			iVar4 = 2;
+			iVar6 = 0;
+			iVar7 = 2;
 			iVar1 = 80;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "FEET_P1_00_3" /* GXT: Yellow Athletic Shoes */, 16);
-			iVar3 = 0;
-			iVar4 = 3;
+			iVar6 = 0;
+			iVar7 = 3;
 			iVar1 = 89;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "FEET_P1_00_4" /* GXT: Gray Athletic Shoes */, 16);
-			iVar3 = 0;
-			iVar4 = 4;
+			iVar6 = 0;
+			iVar7 = 4;
 			iVar1 = 45;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "FEET_P1_00_5" /* GXT: Black Two-Tone Athletic Shoes */, 16);
-			iVar3 = 0;
-			iVar4 = 5;
+			iVar6 = 0;
+			iVar7 = 5;
 			iVar1 = 35;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "FEET_P1_00_6" /* GXT: Gray Two-Tone Athletic Shoes */, 16);
-			iVar3 = 0;
-			iVar4 = 6;
+			iVar6 = 0;
+			iVar7 = 6;
 			iVar1 = 89;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "FEET_P1_00_7" /* GXT: Lemon Accent Athletic Shoes */, 16);
-			iVar3 = 0;
-			iVar4 = 7;
+			iVar6 = 0;
+			iVar7 = 7;
 			iVar1 = 95;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "FEET_P1_00_8" /* GXT: Two-Tone Athletic Shoes */, 16);
-			iVar3 = 0;
-			iVar4 = 8;
+			iVar6 = 0;
+			iVar7 = 8;
 			iVar1 = 115;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "FEET_P1_00_9" /* GXT: Cyan Athletic Shoes */, 16);
-			iVar3 = 0;
-			iVar4 = 9;
+			iVar6 = 0;
+			iVar7 = 9;
 			iVar1 = 40;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "FEET_P1_00_10" /* GXT: Cyan Accent Athletic Shoes */, 16);
-			iVar3 = 0;
-			iVar4 = 10;
+			iVar6 = 0;
+			iVar7 = 10;
 			iVar1 = 145;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "FEET_P1_00_11" /* GXT: Fluorescent Athletic Shoes */, 16);
-			iVar3 = 0;
-			iVar4 = 11;
+			iVar6 = 0;
+			iVar7 = 11;
 			iVar1 = 145;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "FEET_P1_01_0" /* GXT: Work Boots */, 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 14:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 15:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 16:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 1;
+			iVar6 = 4;
+			iVar7 = 1;
 			bVar0 = true;
 			break;
 		
 		case 17:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			break;
 		
 		case 18:
 			StringCopy(&Var2, "FEET_P1_06_0" /* GXT: Desert Round-Toe Boots */, 16);
-			iVar3 = 6;
-			iVar4 = 0;
+			iVar6 = 6;
+			iVar7 = 0;
 			break;
 		
 		case 19:
 			StringCopy(&Var2, "FEET_P1_06_1" /* GXT: Coffee Round-Toe Boots */, 16);
-			iVar3 = 6;
-			iVar4 = 1;
+			iVar6 = 6;
+			iVar7 = 1;
 			iVar1 = 180;
 			break;
 		
 		case 20:
 			StringCopy(&Var2, "FEET_P1_06_2" /* GXT: Chocolate Round-Toe Boots */, 16);
-			iVar3 = 6;
-			iVar4 = 2;
+			iVar6 = 6;
+			iVar7 = 2;
 			iVar1 = 80;
 			break;
 		
 		case 21:
 			StringCopy(&Var2, "FEET_P1_06_3" /* GXT: Gray Round-Toe Boots */, 16);
-			iVar3 = 6;
-			iVar4 = 3;
+			iVar6 = 6;
+			iVar7 = 3;
 			iVar1 = 200;
 			break;
 		
 		case 22:
 			StringCopy(&Var2, "FEET_P1_06_4" /* GXT: Slate Round-Toe Boots */, 16);
-			iVar3 = 6;
-			iVar4 = 4;
+			iVar6 = 6;
+			iVar7 = 4;
 			iVar1 = 220;
 			break;
 		
 		case 23:
 			StringCopy(&Var2, "FEET_P1_06_5" /* GXT: Copper Round-Toe Boots */, 16);
-			iVar3 = 6;
-			iVar4 = 5;
+			iVar6 = 6;
+			iVar7 = 5;
 			iVar1 = 235;
 			break;
 		
 		case 24:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 0;
+			iVar6 = 7;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 25:
 			StringCopy(&Var2, "FEET_P1_08_0" /* GXT: Gray Snake Shoes */, 16);
-			iVar3 = 8;
-			iVar4 = 0;
+			iVar6 = 8;
+			iVar7 = 0;
 			iVar1 = 870;
 			break;
 		
 		case 26:
 			StringCopy(&Var2, "FEET_P1_08_1" /* GXT: Black Shoes */, 16);
-			iVar3 = 8;
-			iVar4 = 1;
+			iVar6 = 8;
+			iVar7 = 1;
 			iVar1 = 870;
 			break;
 		
 		case 27:
 			StringCopy(&Var2, "FEET_P1_08_2" /* GXT: White Snake Shoes */, 16);
-			iVar3 = 8;
-			iVar4 = 2;
+			iVar6 = 8;
+			iVar7 = 2;
 			iVar1 = 870;
 			break;
 		
 		case 28:
 			StringCopy(&Var2, "FEET_P1_08_3" /* GXT: Gray Crocodile Shoes */, 16);
-			iVar3 = 8;
-			iVar4 = 3;
+			iVar6 = 8;
+			iVar7 = 3;
 			iVar1 = 1275;
 			break;
 		
 		case 29:
 			StringCopy(&Var2, "FEET_P1_08_4" /* GXT: Alligator Shoes */, 16);
-			iVar3 = 8;
-			iVar4 = 4;
+			iVar6 = 8;
+			iVar7 = 4;
 			iVar1 = 1275;
 			break;
 		
 		case 30:
 			StringCopy(&Var2, "FEET_P1_08_5" /* GXT: Brown Crocodile Shoes */, 16);
-			iVar3 = 8;
-			iVar4 = 5;
+			iVar6 = 8;
+			iVar7 = 5;
 			iVar1 = 1275;
 			break;
 		
 		case 31:
 			StringCopy(&Var2, "FEET_P1_08_6" /* GXT: Rattlesnake Shoes */, 16);
-			iVar3 = 8;
-			iVar4 = 6;
+			iVar6 = 8;
+			iVar7 = 6;
 			iVar1 = 1275;
 			break;
 		
 		case 32:
 			StringCopy(&Var2, "FEET_P1_08_7" /* GXT: Gray Python Shoes */, 16);
-			iVar3 = 8;
-			iVar4 = 7;
+			iVar6 = 8;
+			iVar7 = 7;
 			iVar1 = 1275;
 			break;
 		
 		case 33:
 			StringCopy(&Var2, "FEET_P1_08_8" /* GXT: Two-Tone Crocodile Shoes */, 16);
-			iVar3 = 8;
-			iVar4 = 8;
+			iVar6 = 8;
+			iVar7 = 8;
 			iVar1 = 1275;
 			break;
 		
 		case 34:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 0;
+			iVar6 = 9;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 35:
 			StringCopy(&Var2, "FEET_P1_10_0" /* GXT: Black Brogues */, 16);
-			iVar3 = 10;
-			iVar4 = 0;
+			iVar6 = 10;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 36:
 			StringCopy(&Var2, "FEET_P1_11_0" /* GXT: Two-Tone Sneakers */, 16);
-			iVar3 = 11;
-			iVar4 = 0;
+			iVar6 = 11;
+			iVar7 = 0;
 			break;
 		
 		case 37:
 			StringCopy(&Var2, "FEET_P1_11_1" /* GXT: Orange Sneakers */, 16);
-			iVar3 = 11;
-			iVar4 = 1;
+			iVar6 = 11;
+			iVar7 = 1;
 			iVar1 = 50;
 			break;
 		
 		case 38:
 			StringCopy(&Var2, "FEET_P1_11_2" /* GXT: Black Sneakers */, 16);
-			iVar3 = 11;
-			iVar4 = 2;
+			iVar6 = 11;
+			iVar7 = 2;
 			iVar1 = 50;
 			break;
 		
 		case 39:
 			StringCopy(&Var2, "FEET_P1_11_3" /* GXT: Desert Green Sneakers */, 16);
-			iVar3 = 11;
-			iVar4 = 3;
+			iVar6 = 11;
+			iVar7 = 3;
 			iVar1 = 50;
 			break;
 		
 		case 40:
 			StringCopy(&Var2, "FEET_P1_11_4" /* GXT: Mint Sneakers */, 16);
-			iVar3 = 11;
-			iVar4 = 4;
+			iVar6 = 11;
+			iVar7 = 4;
 			iVar1 = 50;
 			break;
 		
 		case 41:
 			StringCopy(&Var2, "FEET_P1_11_5" /* GXT: Freeway Sneakers */, 16);
-			iVar3 = 11;
-			iVar4 = 5;
+			iVar6 = 11;
+			iVar7 = 5;
 			iVar1 = 50;
 			break;
 		
 		case 42:
 			StringCopy(&Var2, "FEET_P1_11_6" /* GXT: Animal Fashion Sneakers */, 16);
-			iVar3 = 11;
-			iVar4 = 6;
+			iVar6 = 11;
+			iVar7 = 6;
 			iVar1 = 50;
 			break;
 		
 		case 43:
 			StringCopy(&Var2, "FEET_P1_11_7" /* GXT: Feud Classic Sneakers */, 16);
-			iVar3 = 11;
-			iVar4 = 7;
+			iVar6 = 11;
+			iVar7 = 7;
 			iVar1 = 50;
 			break;
 		
 		case 44:
 			StringCopy(&Var2, "FEET_P1_11_8" /* GXT: Cacao Blend Sneakers */, 16);
-			iVar3 = 11;
-			iVar4 = 8;
+			iVar6 = 11;
+			iVar7 = 8;
 			iVar1 = 50;
 			break;
 		
 		case 45:
 			StringCopy(&Var2, "FEET_P1_11_9" /* GXT: Magnetics Sneakers */, 16);
-			iVar3 = 11;
-			iVar4 = 9;
+			iVar6 = 11;
+			iVar7 = 9;
 			iVar1 = 50;
 			break;
 		
 		case 46:
 			StringCopy(&Var2, "FEET_P1_11_10" /* GXT: Blue Sneakers */, 16);
-			iVar3 = 11;
-			iVar4 = 10;
+			iVar6 = 11;
+			iVar7 = 10;
 			iVar1 = 50;
 			break;
 		
 		case 47:
 			StringCopy(&Var2, "FEET_P1_11_11" /* GXT: White Sneakers */, 16);
-			iVar3 = 11;
-			iVar4 = 11;
+			iVar6 = 11;
+			iVar7 = 11;
 			iVar1 = 50;
 			break;
 		
 		case 48:
 			StringCopy(&Var2, "FEET_P1_11_12" /* GXT: Winter Camo Sneakers */, 16);
-			iVar3 = 11;
-			iVar4 = 12;
+			iVar6 = 11;
+			iVar7 = 12;
 			iVar1 = 50;
 			break;
 		
 		case 49:
 			StringCopy(&Var2, "FEET_P1_11_13" /* GXT: Forest Camo Sneakers */, 16);
-			iVar3 = 11;
-			iVar4 = 13;
+			iVar6 = 11;
+			iVar7 = 13;
 			iVar1 = 50;
 			break;
 		
 		case 50:
 			StringCopy(&Var2, "FEET_P1_11_14" /* GXT: Soft Seas Sneakers */, 16);
-			iVar3 = 11;
-			iVar4 = 14;
+			iVar6 = 11;
+			iVar7 = 14;
 			iVar1 = 50;
 			break;
 		
 		case 51:
 			StringCopy(&Var2, "FEET_P1_11_15" /* GXT: Latte Sneakers */, 16);
-			iVar3 = 11;
-			iVar4 = 15;
+			iVar6 = 11;
+			iVar7 = 15;
 			iVar1 = 50;
 			break;
 		
 		case 52:
 			StringCopy(&Var2, "FEET_P1_12_0" /* GXT: White Skate Sneakers */, 16);
-			iVar3 = 12;
-			iVar4 = 0;
+			iVar6 = 12;
+			iVar7 = 0;
 			break;
 		
 		case 53:
 			StringCopy(&Var2, "FEET_P1_12_1" /* GXT: Green Skate Sneakers */, 16);
-			iVar3 = 12;
-			iVar4 = 1;
+			iVar6 = 12;
+			iVar7 = 1;
 			iVar1 = 25;
 			break;
 		
 		case 54:
 			StringCopy(&Var2, "FEET_P1_12_2" /* GXT: Two-Tone Skate Sneakers */, 16);
-			iVar3 = 12;
-			iVar4 = 2;
+			iVar6 = 12;
+			iVar7 = 2;
 			iVar1 = 20;
 			break;
 		
 		case 55:
 			StringCopy(&Var2, "FEET_P1_12_3" /* GXT: Black Skate Sneakers */, 16);
-			iVar3 = 12;
-			iVar4 = 3;
+			iVar6 = 12;
+			iVar7 = 3;
 			iVar1 = 24;
 			break;
 		
 		case 56:
 			StringCopy(&Var2, "FEET_P1_12_4" /* GXT: Blue Skate Sneakers */, 16);
-			iVar3 = 12;
-			iVar4 = 4;
+			iVar6 = 12;
+			iVar7 = 4;
 			iVar1 = 25;
 			break;
 		
 		case 57:
 			StringCopy(&Var2, "FEET_P1_12_5" /* GXT: Orange Accent Skate Sneakers */, 16);
-			iVar3 = 12;
-			iVar4 = 5;
+			iVar6 = 12;
+			iVar7 = 5;
 			iVar1 = 27;
 			break;
 		
 		case 58:
 			StringCopy(&Var2, "FEET_P1_12_6" /* GXT: Red Skate Sneakers */, 16);
-			iVar3 = 12;
-			iVar4 = 6;
+			iVar6 = 12;
+			iVar7 = 6;
 			iVar1 = 29;
 			break;
 		
 		case 59:
 			StringCopy(&Var2, "FEET_P1_12_7" /* GXT: Orange Skate Sneakers */, 16);
-			iVar3 = 12;
-			iVar4 = 7;
+			iVar6 = 12;
+			iVar7 = 7;
 			iVar1 = 27;
 			break;
 		
 		case 60:
 			StringCopy(&Var2, "FEET_P1_12_8" /* GXT: Mocha Skate Sneakers */, 16);
-			iVar3 = 12;
-			iVar4 = 8;
+			iVar6 = 12;
+			iVar7 = 8;
 			iVar1 = 25;
 			break;
 		
 		case 61:
 			StringCopy(&Var2, "FEET_P1_12_9" /* GXT: Black Skate Sneakers */, 16);
-			iVar3 = 12;
-			iVar4 = 9;
+			iVar6 = 12;
+			iVar7 = 9;
 			iVar1 = 30;
 			break;
 		
 		case 62:
 			StringCopy(&Var2, "FEET_P1_12_10" /* GXT: Fresh Skate Sneakers */, 16);
-			iVar3 = 12;
-			iVar4 = 10;
+			iVar6 = 12;
+			iVar7 = 10;
 			iVar1 = 28;
 			break;
 		
 		case 63:
 			StringCopy(&Var2, "FEET_P1_12_11" /* GXT: Green Skate Sneakers */, 16);
-			iVar3 = 12;
-			iVar4 = 11;
+			iVar6 = 12;
+			iVar7 = 11;
 			iVar1 = 30;
 			break;
 		
 		case 64:
 			StringCopy(&Var2, "FEET_P1_13_0" /* GXT: Black Oxfords */, 16);
-			iVar3 = 13;
-			iVar4 = 0;
+			iVar6 = 13;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 65:
 			StringCopy(&Var2, "FEET_P1_14_0" /* GXT: Gray Skate Shoes */, 16);
-			iVar3 = 14;
-			iVar4 = 0;
+			iVar6 = 14;
+			iVar7 = 0;
 			iVar1 = 155;
 			break;
 		
 		case 66:
 			StringCopy(&Var2, "FEET_P1_14_1" /* GXT: White Skate Shoes */, 16);
-			iVar3 = 14;
-			iVar4 = 1;
+			iVar6 = 14;
+			iVar7 = 1;
 			iVar1 = 155;
 			break;
 		
 		case 67:
 			StringCopy(&Var2, "FEET_P1_14_2" /* GXT: Chestnut Skate Shoes */, 16);
-			iVar3 = 14;
-			iVar4 = 2;
+			iVar6 = 14;
+			iVar7 = 2;
 			iVar1 = 165;
 			break;
 		
 		case 68:
 			StringCopy(&Var2, "FEET_P1_14_3" /* GXT: Jade Accent Skate Shoes */, 16);
-			iVar3 = 14;
-			iVar4 = 3;
+			iVar6 = 14;
+			iVar7 = 3;
 			iVar1 = 170;
 			break;
 		
 		case 69:
 			StringCopy(&Var2, "FEET_P1_14_4" /* GXT: Two-Tone Skate Shoes */, 16);
-			iVar3 = 14;
-			iVar4 = 4;
+			iVar6 = 14;
+			iVar7 = 4;
 			iVar1 = 160;
 			break;
 		
 		case 70:
 			StringCopy(&Var2, "FEET_P1_14_5" /* GXT: Red Piped Skate Shoes */, 16);
-			iVar3 = 14;
-			iVar4 = 5;
+			iVar6 = 14;
+			iVar7 = 5;
 			iVar1 = 165;
 			break;
 		
 		case 71:
 			StringCopy(&Var2, "FEET_P1_14_6" /* GXT: Red Skate Shoes */, 16);
-			iVar3 = 14;
-			iVar4 = 6;
+			iVar6 = 14;
+			iVar7 = 6;
 			iVar1 = 170;
 			break;
 		
 		case 72:
 			StringCopy(&Var2, "FEET_P1_14_7" /* GXT: Beige Skate Shoes */, 16);
-			iVar3 = 14;
-			iVar4 = 7;
+			iVar6 = 14;
+			iVar7 = 7;
 			iVar1 = 160;
 			break;
 		
 		case 73:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 15;
-			iVar4 = 0;
+			iVar6 = 15;
+			iVar7 = 0;
 			break;
 		
 		case 74:
 			StringCopy(&Var2, "FEET_P1_16_0" /* GXT: Black Leather Loafers */, 16);
-			iVar3 = 16;
-			iVar4 = 0;
+			iVar6 = 16;
+			iVar7 = 0;
 			iVar1 = 720;
 			break;
 		
 		case 75:
 			StringCopy(&Var2, "FEET_P1_16_1" /* GXT: Gray Leather Loafers */, 16);
-			iVar3 = 16;
-			iVar4 = 1;
+			iVar6 = 16;
+			iVar7 = 1;
 			iVar1 = 680;
 			break;
 		
 		case 76:
 			StringCopy(&Var2, "FEET_P1_16_2" /* GXT: Cream Leather Loafers */, 16);
-			iVar3 = 16;
-			iVar4 = 2;
+			iVar6 = 16;
+			iVar7 = 2;
 			iVar1 = 650;
 			break;
 		
 		case 77:
 			StringCopy(&Var2, "FEET_P1_16_3" /* GXT: Brown Leather Loafers */, 16);
-			iVar3 = 16;
-			iVar4 = 3;
+			iVar6 = 16;
+			iVar7 = 3;
 			iVar1 = 670;
 			break;
 		
 		case 78:
 			StringCopy(&Var2, "FEET_P1_16_4" /* GXT: White Leather Loafers */, 16);
-			iVar3 = 16;
-			iVar4 = 4;
+			iVar6 = 16;
+			iVar7 = 4;
 			iVar1 = 700;
 			break;
 		
 		case 79:
 			StringCopy(&Var2, "FEET_P1_16_5" /* GXT: Russet Leather Loafers */, 16);
-			iVar3 = 16;
-			iVar4 = 5;
+			iVar6 = 16;
+			iVar7 = 5;
 			iVar1 = 680;
 			break;
 		
 		case 80:
 			StringCopy(&Var2, "FEET_P1_16_6" /* GXT: White Snakeskin Loafers */, 16);
-			iVar3 = 16;
-			iVar4 = 6;
+			iVar6 = 16;
+			iVar7 = 6;
 			iVar1 = 720;
 			break;
 		
 		case 81:
 			StringCopy(&Var2, "FEET_P1_16_7" /* GXT: Rattlesnake Loafers */, 16);
-			iVar3 = 16;
-			iVar4 = 7;
+			iVar6 = 16;
+			iVar7 = 7;
 			iVar1 = 740;
 			break;
 		
 		case 82:
 			StringCopy(&Var2, "FEET_P1_16_8" /* GXT: Brown Snakeskin Loafers */, 16);
-			iVar3 = 16;
-			iVar4 = 8;
+			iVar6 = 16;
+			iVar7 = 8;
 			iVar1 = 760;
 			break;
 		
 		case 83:
 			StringCopy(&Var2, "FEET_P1_16_9" /* GXT: Zebra Two-Tone Loafers */, 16);
-			iVar3 = 16;
-			iVar4 = 9;
+			iVar6 = 16;
+			iVar7 = 9;
 			iVar1 = 780;
 			break;
 		
 		case 84:
 			StringCopy(&Var2, "FEET_P1_16_10" /* GXT: Pale Reptile Loafers */, 16);
-			iVar3 = 16;
-			iVar4 = 10;
+			iVar6 = 16;
+			iVar7 = 10;
 			iVar1 = 750;
 			break;
 		
 		case 85:
 			StringCopy(&Var2, "FEET_P1_16_11" /* GXT: Tan Alligator Loafers */, 16);
-			iVar3 = 16;
-			iVar4 = 11;
+			iVar6 = 16;
+			iVar7 = 11;
 			iVar1 = 700;
 			break;
 		
 		case 86:
 			StringCopy(&Var2, "FEET_P1_17_0" /* GXT: All Black Oxfords */, 16);
-			iVar3 = 17;
-			iVar4 = 0;
+			iVar6 = 17;
+			iVar7 = 0;
 			iVar1 = 790;
 			break;
 		
 		case 87:
 			StringCopy(&Var2, "FEET_P1_17_1" /* GXT: Chocolate Oxfords */, 16);
-			iVar3 = 17;
-			iVar4 = 1;
+			iVar6 = 17;
+			iVar7 = 1;
 			iVar1 = 750;
 			break;
 		
 		case 88:
 			StringCopy(&Var2, "FEET_P1_17_2" /* GXT: Chestnut Oxfords */, 16);
-			iVar3 = 17;
-			iVar4 = 2;
+			iVar6 = 17;
+			iVar7 = 2;
 			iVar1 = 860;
 			break;
 		
 		case 89:
 			StringCopy(&Var2, "FEET_P1_17_3" /* GXT: Tan Oxfords */, 16);
-			iVar3 = 17;
-			iVar4 = 3;
+			iVar6 = 17;
+			iVar7 = 3;
 			iVar1 = 750;
 			break;
 		
 		case 90:
 			StringCopy(&Var2, "FEET_P1_17_4" /* GXT: White Oxfords */, 16);
-			iVar3 = 17;
-			iVar4 = 4;
+			iVar6 = 17;
+			iVar7 = 4;
 			iVar1 = 790;
 			break;
 		
 		case 91:
 			StringCopy(&Var2, "FEET_P1_17_5" /* GXT: Ash Oxfords */, 16);
-			iVar3 = 17;
-			iVar4 = 5;
+			iVar6 = 17;
+			iVar7 = 5;
 			iVar1 = 840;
 			break;
 		
 		case 92:
 			StringCopy(&Var2, "FEET_P1_17_6" /* GXT: Gray Two-Tone Oxfords */, 16);
-			iVar3 = 17;
-			iVar4 = 6;
+			iVar6 = 17;
+			iVar7 = 6;
 			iVar1 = 820;
 			break;
 		
 		case 93:
 			StringCopy(&Var2, "FEET_P1_17_7" /* GXT: Beige Oxfords */, 16);
-			iVar3 = 17;
-			iVar4 = 7;
+			iVar6 = 17;
+			iVar7 = 7;
 			iVar1 = 800;
 			break;
 		
 		case 94:
 			StringCopy(&Var2, "FEET_P1_17_8" /* GXT: Topaz Oxfords */, 16);
-			iVar3 = 17;
-			iVar4 = 8;
+			iVar6 = 17;
+			iVar7 = 8;
 			iVar1 = 850;
 			break;
 		
 		case 95:
 			StringCopy(&Var2, "FEET_P1_17_9" /* GXT: Black Oxfords */, 16);
-			iVar3 = 17;
-			iVar4 = 9;
+			iVar6 = 17;
+			iVar7 = 9;
 			iVar1 = 870;
 			break;
 		
 		case 96:
 			StringCopy(&Var2, "FEET_P1_17_10" /* GXT: Lime Oxfords */, 16);
-			iVar3 = 17;
-			iVar4 = 10;
+			iVar6 = 17;
+			iVar7 = 10;
 			iVar1 = 720;
 			break;
 		
 		case 97:
 			StringCopy(&Var2, "FEET_P1_17_11" /* GXT: Hawthorn Oxfords */, 16);
-			iVar3 = 17;
-			iVar4 = 11;
+			iVar6 = 17;
+			iVar7 = 11;
 			iVar1 = 740;
 			break;
 		
 		case 98:
 			StringCopy(&Var2, "FEET_P1_17_12" /* GXT: Coffee Oxfords */, 16);
-			iVar3 = 17;
-			iVar4 = 12;
+			iVar6 = 17;
+			iVar7 = 12;
 			iVar1 = 800;
 			break;
 		
 		case 99:
 			StringCopy(&Var2, "FEET_P1_17_13" /* GXT: Gray Oxfords */, 16);
-			iVar3 = 17;
-			iVar4 = 13;
+			iVar6 = 17;
+			iVar7 = 13;
 			iVar1 = 750;
 			break;
 		
 		case 100:
 			StringCopy(&Var2, "FEET_P1_17_14" /* GXT: Cream Oxfords */, 16);
-			iVar3 = 17;
-			iVar4 = 14;
+			iVar6 = 17;
+			iVar7 = 14;
 			iVar1 = 770;
 			break;
 		
 		case 101:
 			StringCopy(&Var2, "FEET_P1_17_15" /* GXT: Navy Oxfords */, 16);
-			iVar3 = 17;
-			iVar4 = 15;
+			iVar6 = 17;
+			iVar7 = 15;
 			iVar1 = 860;
 			break;
 		
 		case 102:
 			StringCopy(&Var2, "FEET_P1_18_0" /* GXT: Black Slip-Ons */, 16);
-			iVar3 = 18;
-			iVar4 = 0;
+			iVar6 = 18;
+			iVar7 = 0;
 			iVar1 = 850;
 			break;
 		
 		case 103:
 			StringCopy(&Var2, "FEET_P1_18_1" /* GXT: Red Slip-Ons */, 16);
-			iVar3 = 18;
-			iVar4 = 1;
+			iVar6 = 18;
+			iVar7 = 1;
 			iVar1 = 800;
 			break;
 		
 		case 104:
 			StringCopy(&Var2, "FEET_P1_18_2" /* GXT: Brown Slip-Ons */, 16);
-			iVar3 = 18;
-			iVar4 = 2;
+			iVar6 = 18;
+			iVar7 = 2;
 			iVar1 = 780;
 			break;
 		
 		case 105:
 			StringCopy(&Var2, "FEET_P1_18_3" /* GXT: Green Stripe Slip-Ons */, 16);
-			iVar3 = 18;
-			iVar4 = 3;
+			iVar6 = 18;
+			iVar7 = 3;
 			iVar1 = 890;
 			break;
 		
 		case 106:
 			StringCopy(&Var2, "FEET_P1_18_4" /* GXT: Green Slip-Ons */, 16);
-			iVar3 = 18;
-			iVar4 = 4;
+			iVar6 = 18;
+			iVar7 = 4;
 			iVar1 = 820;
 			break;
 		
 		case 107:
 			StringCopy(&Var2, "FEET_P1_18_5" /* GXT: Copper Slip-Ons */, 16);
-			iVar3 = 18;
-			iVar4 = 5;
+			iVar6 = 18;
+			iVar7 = 5;
 			iVar1 = 840;
 			break;
 		
 		case 108:
 			StringCopy(&Var2, "FEET_P1_18_6" /* GXT: Copper Two-Tone Slip-Ons */, 16);
-			iVar3 = 18;
-			iVar4 = 6;
+			iVar6 = 18;
+			iVar7 = 6;
 			iVar1 = 870;
 			break;
 		
 		case 109:
 			StringCopy(&Var2, "FEET_P1_18_7" /* GXT: Navy Slip-Ons */, 16);
-			iVar3 = 18;
-			iVar4 = 7;
+			iVar6 = 18;
+			iVar7 = 7;
 			iVar1 = 930;
 			break;
 		
 		case 110:
 			StringCopy(&Var2, "FEET_P1_18_8" /* GXT: Blue Slip-Ons */, 16);
-			iVar3 = 18;
-			iVar4 = 8;
+			iVar6 = 18;
+			iVar7 = 8;
 			iVar1 = 880;
 			break;
 		
 		case 111:
 			StringCopy(&Var2, "FEET_P1_18_9" /* GXT: Beige Slip-Ons */, 16);
-			iVar3 = 18;
-			iVar4 = 9;
+			iVar6 = 18;
+			iVar7 = 9;
 			iVar1 = 900;
 			break;
 		
 		case 112:
 			StringCopy(&Var2, "FEET_P1_18_10" /* GXT: White Slip-Ons */, 16);
-			iVar3 = 18;
-			iVar4 = 10;
+			iVar6 = 18;
+			iVar7 = 10;
 			iVar1 = 920;
 			break;
 		
 		case 113:
 			StringCopy(&Var2, "FEET_P1_18_11" /* GXT: Tan Slip-Ons */, 16);
-			iVar3 = 18;
-			iVar4 = 11;
+			iVar6 = 18;
+			iVar7 = 11;
 			iVar1 = 970;
 			break;
 		
 		case 114:
 			StringCopy(&Var2, "FEET_P1_18_12" /* GXT: Black Snakeskin Slip-Ons */, 16);
-			iVar3 = 18;
-			iVar4 = 12;
+			iVar6 = 18;
+			iVar7 = 12;
 			iVar1 = 990;
 			break;
 		
 		case 115:
 			StringCopy(&Var2, "FEET_P1_18_13" /* GXT: Two-Tone Slip-Ons */, 16);
-			iVar3 = 18;
-			iVar4 = 13;
+			iVar6 = 18;
+			iVar7 = 13;
 			iVar1 = 960;
 			break;
 		
 		case 116:
 			StringCopy(&Var2, "FEET_P1_18_14" /* GXT: Brown Snakeskin Slip-Ons */, 16);
-			iVar3 = 18;
-			iVar4 = 14;
+			iVar6 = 18;
+			iVar7 = 14;
 			iVar1 = 980;
 			break;
 		
 		case 117:
 			StringCopy(&Var2, "FEET_P1_18_15" /* GXT: Gray Slip-Ons */, 16);
-			iVar3 = 18;
-			iVar4 = 15;
+			iVar6 = 18;
+			iVar7 = 15;
 			iVar1 = 950;
 			break;
 		
 		case 118:
 			StringCopy(&Var2, "FEET_P1_19_0" /* GXT: Brown Wingtips */, 16);
-			iVar3 = 19;
-			iVar4 = 0;
+			iVar6 = 19;
+			iVar7 = 0;
 			iVar1 = 110;
 			break;
 		
 		case 119:
 			StringCopy(&Var2, "FEET_P1_19_1" /* GXT: Navy Wingtips */, 16);
-			iVar3 = 19;
-			iVar4 = 1;
+			iVar6 = 19;
+			iVar7 = 1;
 			iVar1 = 115;
 			break;
 		
 		case 120:
 			StringCopy(&Var2, "FEET_P1_19_2" /* GXT: Coffee Wingtips */, 16);
-			iVar3 = 19;
-			iVar4 = 2;
+			iVar6 = 19;
+			iVar7 = 2;
 			iVar1 = 120;
 			break;
 		
 		case 121:
 			StringCopy(&Var2, "FEET_P1_19_3" /* GXT: Burgundy Wingtips */, 16);
-			iVar3 = 19;
-			iVar4 = 3;
+			iVar6 = 19;
+			iVar7 = 3;
 			iVar1 = 110;
 			break;
 		
 		case 122:
 			StringCopy(&Var2, "FEET_P1_19_4" /* GXT: Blue Wingtips */, 16);
-			iVar3 = 19;
-			iVar4 = 4;
+			iVar6 = 19;
+			iVar7 = 4;
 			iVar1 = 125;
 			break;
 		
 		case 123:
 			StringCopy(&Var2, "FEET_P1_19_5" /* GXT: Woodland Camo Wingtips */, 16);
-			iVar3 = 19;
-			iVar4 = 5;
+			iVar6 = 19;
+			iVar7 = 5;
 			iVar1 = 128;
 			break;
 		
 		case 124:
 			StringCopy(&Var2, "FEET_P1_19_6" /* GXT: Black Wingtips */, 16);
-			iVar3 = 19;
-			iVar4 = 6;
+			iVar6 = 19;
+			iVar7 = 6;
 			iVar1 = 135;
 			break;
 		
 		case 125:
 			StringCopy(&Var2, "FEET_P1_19_7" /* GXT: Tan Wingtips */, 16);
-			iVar3 = 19;
-			iVar4 = 7;
+			iVar6 = 19;
+			iVar7 = 7;
 			iVar1 = 130;
 			break;
 		
 		case 126:
 			StringCopy(&Var2, "FEET_P1_19_8" /* GXT: Purple Wingtips */, 16);
-			iVar3 = 19;
-			iVar4 = 8;
+			iVar6 = 19;
+			iVar7 = 8;
 			iVar1 = 145;
 			break;
 		
 		case 127:
 			StringCopy(&Var2, "FEET_P1_19_9" /* GXT: Brown Wingtips */, 16);
-			iVar3 = 19;
-			iVar4 = 9;
+			iVar6 = 19;
+			iVar7 = 9;
 			iVar1 = 110;
 			break;
 		
 		case 128:
 			StringCopy(&Var2, "FEET_P1_19_10" /* GXT: Chocolate Wingtips */, 16);
-			iVar3 = 19;
-			iVar4 = 10;
+			iVar6 = 19;
+			iVar7 = 10;
 			iVar1 = 120;
 			break;
 		
 		case 129:
 			StringCopy(&Var2, "FEET_P1_19_11" /* GXT: Green Wingtips */, 16);
-			iVar3 = 19;
-			iVar4 = 11;
+			iVar6 = 19;
+			iVar7 = 11;
 			iVar1 = 150;
 			break;
 		
 		case 130:
 			StringCopy(&Var2, "FEET_P1_19_12" /* GXT: Ash Wingtips */, 16);
-			iVar3 = 19;
-			iVar4 = 12;
+			iVar6 = 19;
+			iVar7 = 12;
 			iVar1 = 125;
 			break;
 		
 		case 131:
 			StringCopy(&Var2, "FEET_P1_19_13" /* GXT: Olive Wingtips */, 16);
-			iVar3 = 19;
-			iVar4 = 13;
+			iVar6 = 19;
+			iVar7 = 13;
 			iVar1 = 120;
 			break;
 		
 		case 132:
 			StringCopy(&Var2, "FEET_P1_19_14" /* GXT: Two-Tone Wingtips */, 16);
-			iVar3 = 19;
-			iVar4 = 14;
+			iVar6 = 19;
+			iVar7 = 14;
 			iVar1 = 130;
 			break;
 		
 		case 133:
 			StringCopy(&Var2, "FEET_P1_19_15" /* GXT: Yellow Wingtips */, 16);
-			iVar3 = 19;
-			iVar4 = 15;
+			iVar6 = 19;
+			iVar7 = 15;
 			iVar1 = 110;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 134, -1);
+			func_182(iVar10, iParam0, 134, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_211(int iParam0)//Position - 0x19602
@@ -23608,822 +23608,822 @@ void func_211(int iParam0)//Position - 0x19602
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 4;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 4;
 	Global_78341[0 /*14*/].f_5 = 1;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "LEGS_P1_0_0" /* GXT: Cream Cargo Shorts */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "LEGS_P1_0_1" /* GXT: Sand Cargo Shorts */, 16);
-			iVar3 = 0;
-			iVar4 = 1;
+			iVar6 = 0;
+			iVar7 = 1;
 			iVar1 = 32;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "LEGS_P1_0_2" /* GXT: Navy Cargo Shorts */, 16);
-			iVar3 = 0;
-			iVar4 = 2;
+			iVar6 = 0;
+			iVar7 = 2;
 			iVar1 = 38;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "LEGS_P1_0_3" /* GXT: Olive Cargo Shorts */, 16);
-			iVar3 = 0;
-			iVar4 = 3;
+			iVar6 = 0;
+			iVar7 = 3;
 			iVar1 = 44;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 1;
+			iVar6 = 1;
+			iVar7 = 1;
 			bVar0 = true;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 2;
+			iVar6 = 1;
+			iVar7 = 2;
 			bVar0 = true;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 3;
+			iVar6 = 1;
+			iVar7 = 3;
 			bVar0 = true;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 4;
+			iVar6 = 1;
+			iVar7 = 4;
 			bVar0 = true;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 5;
+			iVar6 = 1;
+			iVar7 = 5;
 			bVar0 = true;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "LEGS_P1_2_0" /* GXT: Black Tuxedo Pants */, 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 14:
 			StringCopy(&Var2, "LEGS_P1_6_0" /* GXT: Gray Golf Pants */, 16);
-			iVar3 = 6;
-			iVar4 = 0;
+			iVar6 = 6;
+			iVar7 = 0;
 			break;
 		
 		case 15:
 			StringCopy(&Var2, "LEGS_P1_6_1" /* GXT: Cream Golf Pants */, 16);
-			iVar3 = 6;
-			iVar4 = 1;
+			iVar6 = 6;
+			iVar7 = 1;
 			iVar1 = 690;
 			break;
 		
 		case 16:
 			StringCopy(&Var2, "LEGS_P1_6_2" /* GXT: Tan Plaid Golf Pants */, 16);
-			iVar3 = 6;
-			iVar4 = 2;
+			iVar6 = 6;
+			iVar7 = 2;
 			iVar1 = 720;
 			break;
 		
 		case 17:
 			StringCopy(&Var2, "LEGS_P1_6_3" /* GXT: Tartan Golf Pants */, 16);
-			iVar3 = 6;
-			iVar4 = 3;
+			iVar6 = 6;
+			iVar7 = 3;
 			iVar1 = 850;
 			break;
 		
 		case 18:
 			StringCopy(&Var2, "LEGS_P1_6_4" /* GXT: Charcoal Plaid Golf Pants */, 16);
-			iVar3 = 6;
-			iVar4 = 4;
+			iVar6 = 6;
+			iVar7 = 4;
 			iVar1 = 850;
 			break;
 		
 		case 19:
 			StringCopy(&Var2, "LEGS_P1_6_5" /* GXT: Dark Plaid Golf Pants */, 16);
-			iVar3 = 6;
-			iVar4 = 5;
+			iVar6 = 6;
+			iVar7 = 5;
 			iVar1 = 740;
 			break;
 		
 		case 20:
 			StringCopy(&Var2, "LEGS_P1_6_6" /* GXT: Brown Plaid Golf Pants */, 16);
-			iVar3 = 6;
-			iVar4 = 6;
+			iVar6 = 6;
+			iVar7 = 6;
 			iVar1 = 750;
 			break;
 		
 		case 21:
 			StringCopy(&Var2, "LEGS_P1_6_7" /* GXT: Slate Golf Pants */, 16);
-			iVar3 = 6;
-			iVar4 = 7;
+			iVar6 = 6;
+			iVar7 = 7;
 			iVar1 = 790;
 			break;
 		
 		case 22:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 0;
+			iVar6 = 7;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 23:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 1;
+			iVar6 = 7;
+			iVar7 = 1;
 			bVar0 = true;
 			break;
 		
 		case 24:
 			StringCopy(&Var2, "LEGS_P1_8_0" /* GXT: Slate Baggy Jeans */, 16);
-			iVar3 = 8;
-			iVar4 = 0;
+			iVar6 = 8;
+			iVar7 = 0;
 			break;
 		
 		case 25:
 			StringCopy(&Var2, "LEGS_P1_8_1" /* GXT: Blue Baggy Jeans */, 16);
-			iVar3 = 8;
-			iVar4 = 1;
+			iVar6 = 8;
+			iVar7 = 1;
 			iVar1 = 145;
 			break;
 		
 		case 26:
 			StringCopy(&Var2, "LEGS_P1_8_2" /* GXT: Gray Baggy Jeans */, 16);
-			iVar3 = 8;
-			iVar4 = 2;
+			iVar6 = 8;
+			iVar7 = 2;
 			iVar1 = 140;
 			break;
 		
 		case 27:
 			StringCopy(&Var2, "LEGS_P1_8_3" /* GXT: Pale Blue Baggy Jeans */, 16);
-			iVar3 = 8;
-			iVar4 = 3;
+			iVar6 = 8;
+			iVar7 = 3;
 			iVar1 = 148;
 			break;
 		
 		case 28:
 			StringCopy(&Var2, "LEGS_P1_8_4" /* GXT: Black Baggy Jeans */, 16);
-			iVar3 = 8;
-			iVar4 = 4;
+			iVar6 = 8;
+			iVar7 = 4;
 			iVar1 = 150;
 			break;
 		
 		case 29:
 			StringCopy(&Var2, "LEGS_P1_8_5" /* GXT: Blue-Green Baggy Jeans */, 16);
-			iVar3 = 8;
-			iVar4 = 5;
+			iVar6 = 8;
+			iVar7 = 5;
 			iVar1 = 154;
 			break;
 		
 		case 30:
 			StringCopy(&Var2, "LEGS_P1_8_6" /* GXT: Faded Baggy Jeans */, 16);
-			iVar3 = 8;
-			iVar4 = 6;
+			iVar6 = 8;
+			iVar7 = 6;
 			iVar1 = 158;
 			break;
 		
 		case 31:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 0;
+			iVar6 = 9;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 32:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 10;
-			iVar4 = 0;
+			iVar6 = 10;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 33:
 			StringCopy(&Var2, "LEGS_P1_11_0" /* GXT: Beige Chinos */, 16);
-			iVar3 = 11;
-			iVar4 = 0;
+			iVar6 = 11;
+			iVar7 = 0;
 			iVar1 = 820;
 			break;
 		
 		case 34:
 			StringCopy(&Var2, "LEGS_P1_11_1" /* GXT: Olive Chinos */, 16);
-			iVar3 = 11;
-			iVar4 = 1;
+			iVar6 = 11;
+			iVar7 = 1;
 			iVar1 = 820;
 			break;
 		
 		case 35:
 			StringCopy(&Var2, "LEGS_P1_11_2" /* GXT: Black Chinos */, 16);
-			iVar3 = 11;
-			iVar4 = 2;
+			iVar6 = 11;
+			iVar7 = 2;
 			iVar1 = 850;
 			break;
 		
 		case 36:
 			StringCopy(&Var2, "LEGS_P1_11_3" /* GXT: Off-White Chinos */, 16);
-			iVar3 = 11;
-			iVar4 = 3;
+			iVar6 = 11;
+			iVar7 = 3;
 			iVar1 = 850;
 			break;
 		
 		case 37:
 			StringCopy(&Var2, "LEGS_P1_11_4" /* GXT: Gray Chinos */, 16);
-			iVar3 = 11;
-			iVar4 = 4;
+			iVar6 = 11;
+			iVar7 = 4;
 			iVar1 = 920;
 			break;
 		
 		case 38:
 			StringCopy(&Var2, "LEGS_P1_11_5" /* GXT: Navy Chinos */, 16);
-			iVar3 = 11;
-			iVar4 = 5;
+			iVar6 = 11;
+			iVar7 = 5;
 			iVar1 = 950;
 			break;
 		
 		case 39:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 12;
-			iVar4 = 0;
+			iVar6 = 12;
+			iVar7 = 0;
 			break;
 		
 		case 40:
 			StringCopy(&Var2, "LEGS_P1_13_0" /* GXT: Silver Sweatpants */, 16);
-			iVar3 = 13;
-			iVar4 = 0;
+			iVar6 = 13;
+			iVar7 = 0;
 			break;
 		
 		case 41:
 			StringCopy(&Var2, "LEGS_P1_13_1" /* GXT: Gray Sweatpants */, 16);
-			iVar3 = 13;
-			iVar4 = 1;
+			iVar6 = 13;
+			iVar7 = 1;
 			iVar1 = 45;
 			break;
 		
 		case 42:
 			StringCopy(&Var2, "LEGS_P1_13_2" /* GXT: Topaz Sweatpants */, 16);
-			iVar3 = 13;
-			iVar4 = 2;
+			iVar6 = 13;
+			iVar7 = 2;
 			iVar1 = 48;
 			break;
 		
 		case 43:
 			StringCopy(&Var2, "LEGS_P1_13_3" /* GXT: Ash Sweatpants */, 16);
-			iVar3 = 13;
-			iVar4 = 3;
+			iVar6 = 13;
+			iVar7 = 3;
 			iVar1 = 45;
 			break;
 		
 		case 44:
 			StringCopy(&Var2, "LEGS_P1_13_4" /* GXT: Slate Sweatpants */, 16);
-			iVar3 = 13;
-			iVar4 = 4;
+			iVar6 = 13;
+			iVar7 = 4;
 			iVar1 = 48;
 			break;
 		
 		case 45:
 			StringCopy(&Var2, "LEGS_P1_13_5" /* GXT: Olive Sweatpants */, 16);
-			iVar3 = 13;
-			iVar4 = 5;
+			iVar6 = 13;
+			iVar7 = 5;
 			iVar1 = 52;
 			break;
 		
 		case 46:
 			StringCopy(&Var2, "LEGS_P1_13_6" /* GXT: Jade Sweatpants */, 16);
-			iVar3 = 13;
-			iVar4 = 6;
+			iVar6 = 13;
+			iVar7 = 6;
 			iVar1 = 55;
 			break;
 		
 		case 47:
 			StringCopy(&Var2, "LEGS_P1_13_7" /* GXT: Dark Green Sweatpants */, 16);
-			iVar3 = 13;
-			iVar4 = 7;
+			iVar6 = 13;
+			iVar7 = 7;
 			iVar1 = 58;
 			break;
 		
 		case 48:
 			StringCopy(&Var2, "LEGS_P1_13_8" /* GXT: Teal Sweatpants */, 16);
-			iVar3 = 13;
-			iVar4 = 8;
+			iVar6 = 13;
+			iVar7 = 8;
 			iVar1 = 60;
 			break;
 		
 		case 49:
 			StringCopy(&Var2, "LEGS_P1_13_9" /* GXT: Brown Sweatpants */, 16);
-			iVar3 = 13;
-			iVar4 = 9;
+			iVar6 = 13;
+			iVar7 = 9;
 			iVar1 = 58;
 			break;
 		
 		case 50:
 			StringCopy(&Var2, "LEGS_P1_13_10" /* GXT: Kingz Green Sweatpants */, 16);
-			iVar3 = 13;
-			iVar4 = 10;
+			iVar6 = 13;
+			iVar7 = 10;
 			iVar1 = 62;
 			break;
 		
 		case 51:
 			StringCopy(&Var2, "LEGS_P1_13_11" /* GXT: Gray Stripe Sweatpants */, 16);
-			iVar3 = 13;
-			iVar4 = 11;
+			iVar6 = 13;
+			iVar7 = 11;
 			iVar1 = 65;
 			break;
 		
 		case 52:
 			StringCopy(&Var2, "LEGS_P1_14_0" /* GXT: White Shorts */, 16);
-			iVar3 = 14;
-			iVar4 = 0;
+			iVar6 = 14;
+			iVar7 = 0;
 			break;
 		
 		case 53:
 			StringCopy(&Var2, "LEGS_P1_15_0" /* GXT: Gray Plaid Pants */, 16);
-			iVar3 = 15;
-			iVar4 = 0;
+			iVar6 = 15;
+			iVar7 = 0;
 			break;
 		
 		case 54:
 			StringCopy(&Var2, "LEGS_P1_15_1" /* GXT: Silver Plaid Pants */, 16);
-			iVar3 = 15;
-			iVar4 = 1;
+			iVar6 = 15;
+			iVar7 = 1;
 			break;
 		
 		case 55:
 			StringCopy(&Var2, "LEGS_P1_15_2" /* GXT: Charcoal Plaid Pants */, 16);
-			iVar3 = 15;
-			iVar4 = 2;
+			iVar6 = 15;
+			iVar7 = 2;
 			break;
 		
 		case 56:
 			StringCopy(&Var2, "LEGS_P1_15_3" /* GXT: Tan Plaid Pants */, 16);
-			iVar3 = 15;
-			iVar4 = 3;
+			iVar6 = 15;
+			iVar7 = 3;
 			break;
 		
 		case 57:
 			StringCopy(&Var2, "LEGS_P1_15_4" /* GXT: Charcoal Pants */, 16);
-			iVar3 = 15;
-			iVar4 = 4;
+			iVar6 = 15;
+			iVar7 = 4;
 			break;
 		
 		case 58:
 			StringCopy(&Var2, "LEGS_P1_15_5" /* GXT: Ash Pants */, 16);
-			iVar3 = 15;
-			iVar4 = 5;
+			iVar6 = 15;
+			iVar7 = 5;
 			break;
 		
 		case 59:
 			StringCopy(&Var2, "LEGS_P1_15_6" /* GXT: Beige Pants */, 16);
-			iVar3 = 15;
-			iVar4 = 6;
+			iVar6 = 15;
+			iVar7 = 6;
 			break;
 		
 		case 60:
 			StringCopy(&Var2, "LEGS_P1_15_7" /* GXT: Cream Pants */, 16);
-			iVar3 = 15;
-			iVar4 = 7;
+			iVar6 = 15;
+			iVar7 = 7;
 			break;
 		
 		case 61:
 			StringCopy(&Var2, "LEGS_P1_15_8" /* GXT: Navy Plaid Pants */, 16);
-			iVar3 = 15;
-			iVar4 = 8;
+			iVar6 = 15;
+			iVar7 = 8;
 			break;
 		
 		case 62:
 			StringCopy(&Var2, "LEGS_P1_15_9" /* GXT: Off-White Pants */, 16);
-			iVar3 = 15;
-			iVar4 = 9;
+			iVar6 = 15;
+			iVar7 = 9;
 			break;
 		
 		case 63:
 			StringCopy(&Var2, "LEGS_P1_15_10" /* GXT: White Pants */, 16);
-			iVar3 = 15;
-			iVar4 = 10;
+			iVar6 = 15;
+			iVar7 = 10;
 			break;
 		
 		case 64:
 			StringCopy(&Var2, "LEGS_P1_15_11" /* GXT: Subtle Blue Pants */, 16);
-			iVar3 = 15;
-			iVar4 = 11;
+			iVar6 = 15;
+			iVar7 = 11;
 			break;
 		
 		case 65:
 			StringCopy(&Var2, "LEGS_P1_15_12" /* GXT: Navy Pants */, 16);
-			iVar3 = 15;
-			iVar4 = 12;
+			iVar6 = 15;
+			iVar7 = 12;
 			break;
 		
 		case 66:
 			StringCopy(&Var2, "LEGS_P1_15_13" /* GXT: Rust Pants */, 16);
-			iVar3 = 15;
-			iVar4 = 13;
+			iVar6 = 15;
+			iVar7 = 13;
 			break;
 		
 		case 67:
 			StringCopy(&Var2, "LEGS_P1_15_14" /* GXT: Green Pants */, 16);
-			iVar3 = 15;
-			iVar4 = 14;
+			iVar6 = 15;
+			iVar7 = 14;
 			break;
 		
 		case 68:
 			StringCopy(&Var2, "LEGS_P1_15_15" /* GXT: Tan Pants */, 16);
-			iVar3 = 15;
-			iVar4 = 15;
+			iVar6 = 15;
+			iVar7 = 15;
 			break;
 		
 		case 69:
 			StringCopy(&Var2, "LEGS_P1_16_0" /* GXT: Combat Pants */, 16);
-			iVar3 = 16;
-			iVar4 = 0;
+			iVar6 = 16;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 70:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 16;
-			iVar4 = 1;
+			iVar6 = 16;
+			iVar7 = 1;
 			bVar0 = true;
 			break;
 		
 		case 71:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 17;
-			iVar4 = 0;
+			iVar6 = 17;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 72:
 			StringCopy(&Var2, "LEGS_P1_18_0" /* GXT: White Boxers */, 16);
-			iVar3 = 18;
-			iVar4 = 0;
+			iVar6 = 18;
+			iVar7 = 0;
 			break;
 		
 		case 73:
 			StringCopy(&Var2, "LEGS_P1_18_1" /* GXT: Gray Boxers */, 16);
-			iVar3 = 18;
-			iVar4 = 1;
+			iVar6 = 18;
+			iVar7 = 1;
 			iVar1 = 160;
 			break;
 		
 		case 74:
 			StringCopy(&Var2, "LEGS_P1_18_2" /* GXT: Black Boxers */, 16);
-			iVar3 = 18;
-			iVar4 = 2;
+			iVar6 = 18;
+			iVar7 = 2;
 			iVar1 = 180;
 			break;
 		
 		case 75:
 			StringCopy(&Var2, "LEGS_P1_18_3" /* GXT: Kings Ash Boxers */, 16);
-			iVar3 = 18;
-			iVar4 = 3;
+			iVar6 = 18;
+			iVar7 = 3;
 			iVar1 = 180;
 			break;
 		
 		case 76:
 			StringCopy(&Var2, "LEGS_P1_18_4" /* GXT: Feud Green Boxers */, 16);
-			iVar3 = 18;
-			iVar4 = 4;
+			iVar6 = 18;
+			iVar7 = 4;
 			break;
 		
 		case 77:
 			StringCopy(&Var2, "LEGS_P1_18_5" /* GXT: Feud White Boxers */, 16);
-			iVar3 = 18;
-			iVar4 = 5;
+			iVar6 = 18;
+			iVar7 = 5;
 			break;
 		
 		case 78:
 			StringCopy(&Var2, "LEGS_P1_19_0" /* GXT: Black Tuxedo Pants */, 16);
-			iVar3 = 19;
-			iVar4 = 0;
+			iVar6 = 19;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 79:
 			StringCopy(&Var2, "LEGS_P1_20_0" /* GXT: Indigo Jeans */, 16);
-			iVar3 = 20;
-			iVar4 = 0;
+			iVar6 = 20;
+			iVar7 = 0;
 			iVar1 = 118;
 			break;
 		
 		case 80:
 			StringCopy(&Var2, "LEGS_P1_20_1" /* GXT: Black Jeans */, 16);
-			iVar3 = 20;
-			iVar4 = 1;
+			iVar6 = 20;
+			iVar7 = 1;
 			iVar1 = 120;
 			break;
 		
 		case 81:
 			StringCopy(&Var2, "LEGS_P1_20_2" /* GXT: Gray Faded Jeans */, 16);
-			iVar3 = 20;
-			iVar4 = 2;
+			iVar6 = 20;
+			iVar7 = 2;
 			iVar1 = 128;
 			break;
 		
 		case 82:
 			StringCopy(&Var2, "LEGS_P1_20_3" /* GXT: Navy Jeans */, 16);
-			iVar3 = 20;
-			iVar4 = 3;
+			iVar6 = 20;
+			iVar7 = 3;
 			iVar1 = 128;
 			break;
 		
 		case 83:
 			StringCopy(&Var2, "LEGS_P1_20_4" /* GXT: Brown Jeans */, 16);
-			iVar3 = 20;
-			iVar4 = 4;
+			iVar6 = 20;
+			iVar7 = 4;
 			iVar1 = 130;
 			break;
 		
 		case 84:
 			StringCopy(&Var2, "LEGS_P1_20_5" /* GXT: Blue Jeans */, 16);
-			iVar3 = 20;
-			iVar4 = 5;
+			iVar6 = 20;
+			iVar7 = 5;
 			iVar1 = 145;
 			break;
 		
 		case 85:
 			StringCopy(&Var2, "LEGS_P1_20_6" /* GXT: Olive Jeans */, 16);
-			iVar3 = 20;
-			iVar4 = 6;
+			iVar6 = 20;
+			iVar7 = 6;
 			iVar1 = 138;
 			break;
 		
 		case 86:
 			StringCopy(&Var2, "LEGS_P1_20_7" /* GXT: Black Faded Jeans */, 16);
-			iVar3 = 20;
-			iVar4 = 7;
+			iVar6 = 20;
+			iVar7 = 7;
 			iVar1 = 132;
 			break;
 		
 		case 87:
 			StringCopy(&Var2, "LEGS_P1_20_8" /* GXT: Coffee Jeans */, 16);
-			iVar3 = 20;
-			iVar4 = 8;
+			iVar6 = 20;
+			iVar7 = 8;
 			iVar1 = 148;
 			break;
 		
 		case 88:
 			StringCopy(&Var2, "LEGS_P1_21_0" /* GXT: Indigo Skinny Jeans */, 16);
-			iVar3 = 21;
-			iVar4 = 0;
+			iVar6 = 21;
+			iVar7 = 0;
 			iVar1 = 118;
 			break;
 		
 		case 89:
 			StringCopy(&Var2, "LEGS_P1_21_1" /* GXT: Black Skinny Jeans */, 16);
-			iVar3 = 21;
-			iVar4 = 1;
+			iVar6 = 21;
+			iVar7 = 1;
 			iVar1 = 118;
 			break;
 		
 		case 90:
 			StringCopy(&Var2, "LEGS_P1_21_2" /* GXT: Aqua Skinny Jeans */, 16);
-			iVar3 = 21;
-			iVar4 = 2;
+			iVar6 = 21;
+			iVar7 = 2;
 			iVar1 = 118;
 			break;
 		
 		case 91:
 			StringCopy(&Var2, "LEGS_P1_21_3" /* GXT: Brown Skinny Jeans */, 16);
-			iVar3 = 21;
-			iVar4 = 3;
+			iVar6 = 21;
+			iVar7 = 3;
 			iVar1 = 129;
 			break;
 		
 		case 92:
 			StringCopy(&Var2, "LEGS_P1_21_4" /* GXT: Blue Skinny Jeans */, 16);
-			iVar3 = 21;
-			iVar4 = 4;
+			iVar6 = 21;
+			iVar7 = 4;
 			iVar1 = 135;
 			break;
 		
 		case 93:
 			StringCopy(&Var2, "LEGS_P1_21_5" /* GXT: Red Skinny Jeans */, 16);
-			iVar3 = 21;
-			iVar4 = 5;
+			iVar6 = 21;
+			iVar7 = 5;
 			iVar1 = 135;
 			break;
 		
 		case 94:
 			StringCopy(&Var2, "LEGS_P1_21_6" /* GXT: Gray Skinny Jeans */, 16);
-			iVar3 = 21;
-			iVar4 = 6;
+			iVar6 = 21;
+			iVar7 = 6;
 			iVar1 = 118;
 			break;
 		
 		case 95:
 			StringCopy(&Var2, "LEGS_P1_21_7" /* GXT: Green Skinny Jeans */, 16);
-			iVar3 = 21;
-			iVar4 = 7;
+			iVar6 = 21;
+			iVar7 = 7;
 			iVar1 = 118;
 			break;
 		
 		case 96:
 			StringCopy(&Var2, "LEGS_P1_21_8" /* GXT: Coffee Skinny Jeans */, 16);
-			iVar3 = 21;
-			iVar4 = 8;
+			iVar6 = 21;
+			iVar7 = 8;
 			iVar1 = 118;
 			break;
 		
 		case 97:
 			StringCopy(&Var2, "LEGS_P1_22_0" /* GXT: LS Panic Charcoal Shorts */, 16);
-			iVar3 = 22;
-			iVar4 = 0;
+			iVar6 = 22;
+			iVar7 = 0;
 			iVar1 = 55;
 			break;
 		
 		case 98:
 			StringCopy(&Var2, "LEGS_P1_22_1" /* GXT: LS Panic Yellow Shorts */, 16);
-			iVar3 = 22;
-			iVar4 = 1;
+			iVar6 = 22;
+			iVar7 = 1;
 			iVar1 = 55;
 			break;
 		
 		case 99:
 			StringCopy(&Var2, "LEGS_P1_22_2" /* GXT: Prolaps White Shorts */, 16);
-			iVar3 = 22;
-			iVar4 = 2;
+			iVar6 = 22;
+			iVar7 = 2;
 			iVar1 = 59;
 			break;
 		
 		case 100:
 			StringCopy(&Var2, "LEGS_P1_22_3" /* GXT: Prolaps Blue Shorts */, 16);
-			iVar3 = 22;
-			iVar4 = 3;
+			iVar6 = 22;
+			iVar7 = 3;
 			iVar1 = 59;
 			break;
 		
 		case 101:
 			StringCopy(&Var2, "LEGS_P1_22_4" /* GXT: LC Salamanders Red Shorts */, 16);
-			iVar3 = 22;
-			iVar4 = 4;
+			iVar6 = 22;
+			iVar7 = 4;
 			iVar1 = 65;
 			break;
 		
 		case 102:
 			StringCopy(&Var2, "LEGS_P1_22_5" /* GXT: LC Salamanders Green Shorts */, 16);
-			iVar3 = 22;
-			iVar4 = 5;
+			iVar6 = 22;
+			iVar7 = 5;
 			iVar1 = 65;
 			break;
 		
 		case 103:
 			StringCopy(&Var2, "LEGS_P1_22_6" /* GXT: LS Shrimps Gray Shorts */, 16);
-			iVar3 = 22;
-			iVar4 = 6;
+			iVar6 = 22;
+			iVar7 = 6;
 			iVar1 = 69;
 			break;
 		
 		case 104:
 			StringCopy(&Var2, "LEGS_P1_22_7" /* GXT: LS Shrimps White Shorts */, 16);
-			iVar3 = 22;
-			iVar4 = 7;
+			iVar6 = 22;
+			iVar7 = 7;
 			iVar1 = 69;
 			break;
 		
 		case 105:
 			StringCopy(&Var2, "LEGS_P1_22_8" /* GXT: LOB Gray Shorts */, 16);
-			iVar3 = 22;
-			iVar4 = 8;
+			iVar6 = 22;
+			iVar7 = 8;
 			iVar1 = 75;
 			break;
 		
 		case 106:
 			StringCopy(&Var2, "LEGS_P1_22_9" /* GXT: LOB Blue Shorts */, 16);
-			iVar3 = 22;
-			iVar4 = 9;
+			iVar6 = 22;
+			iVar7 = 9;
 			iVar1 = 75;
 			break;
 		
 		case 107:
 			StringCopy(&Var2, "LEGS_P1_22_10" /* GXT: LOB Green Shorts */, 16);
-			iVar3 = 22;
-			iVar4 = 10;
+			iVar6 = 22;
+			iVar7 = 10;
 			iVar1 = 65;
 			break;
 		
 		case 108:
 			StringCopy(&Var2, "LEGS_P1_22_11" /* GXT: LOB Tan Shorts */, 16);
-			iVar3 = 22;
-			iVar4 = 11;
+			iVar6 = 22;
+			iVar7 = 11;
 			iVar1 = 65;
 			break;
 		
 		case 109:
 			StringCopy(&Var2, "LEGS_P1_22_12" /* GXT: LOB Orange Shorts */, 16);
-			iVar3 = 22;
-			iVar4 = 12;
+			iVar6 = 22;
+			iVar7 = 12;
 			iVar1 = 65;
 			break;
 		
 		case 110:
 			StringCopy(&Var2, "LEGS_P1_22_13" /* GXT: LOB Pale Blue Shorts */, 16);
-			iVar3 = 22;
-			iVar4 = 13;
+			iVar6 = 22;
+			iVar7 = 13;
 			iVar1 = 65;
 			break;
 		
 		case 111:
 			StringCopy(&Var2, "LEGS_P1_23_0" /* GXT: Broker White Shorts */, 16);
-			iVar3 = 23;
-			iVar4 = 0;
+			iVar6 = 23;
+			iVar7 = 0;
 			iVar1 = 38;
 			break;
 		
 		case 112:
 			StringCopy(&Var2, "LEGS_P1_23_1" /* GXT: Broker Black Shorts */, 16);
-			iVar3 = 23;
-			iVar4 = 1;
+			iVar6 = 23;
+			iVar7 = 1;
 			iVar1 = 38;
 			break;
 		
 		case 113:
 			StringCopy(&Var2, "LEGS_P1_23_2" /* GXT: Broker Gray Shorts */, 16);
-			iVar3 = 23;
-			iVar4 = 2;
+			iVar6 = 23;
+			iVar7 = 2;
 			iVar1 = 28;
 			break;
 		
 		case 114:
 			StringCopy(&Var2, "LEGS_P1_23_3" /* GXT: Broker Navy Shorts */, 16);
-			iVar3 = 23;
-			iVar4 = 3;
+			iVar6 = 23;
+			iVar7 = 3;
 			iVar1 = 34;
 			break;
 		
 		case 115:
 			StringCopy(&Var2, "LEGS_P1_23_4" /* GXT: Broker Green Shorts */, 16);
-			iVar3 = 23;
-			iVar4 = 4;
+			iVar6 = 23;
+			iVar7 = 4;
 			iVar1 = 36;
 			break;
 		
 		case 116:
 			StringCopy(&Var2, "LEGS_P1_23_5" /* GXT: Broker Brown Shorts */, 16);
-			iVar3 = 23;
-			iVar4 = 5;
+			iVar6 = 23;
+			iVar7 = 5;
 			iVar1 = 32;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 117, -1);
+			func_182(iVar10, iParam0, 117, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_212(int iParam0)//Position - 0x1A2BF
@@ -24451,679 +24451,679 @@ void func_213(int iParam0)//Position - 0x1A305
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 3;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 3;
 	Global_78341[0 /*14*/].f_5 = 1;
 	switch (iParam0)
 	{
 		case 227:
 			StringCopy(&Var2, "TORSO_P1_18_0" /* GXT: Gray Plaid Jacket */, 16);
-			iVar3 = 23;
-			iVar4 = 0;
-			iVar6 = 3;
+			iVar6 = 23;
+			iVar7 = 0;
+			iVar9 = 3;
 			break;
 		
 		case 228:
 			StringCopy(&Var2, "TORSO_P1_18_1" /* GXT: Ash Plaid Jacket */, 16);
-			iVar3 = 23;
-			iVar4 = 1;
-			iVar6 = 3;
+			iVar6 = 23;
+			iVar7 = 1;
+			iVar9 = 3;
 			break;
 		
 		case 229:
 			StringCopy(&Var2, "TORSO_P1_18_2" /* GXT: Charcoal Plaid Jacket */, 16);
-			iVar3 = 23;
-			iVar4 = 2;
-			iVar6 = 3;
+			iVar6 = 23;
+			iVar7 = 2;
+			iVar9 = 3;
 			break;
 		
 		case 230:
 			StringCopy(&Var2, "TORSO_P1_18_3" /* GXT: Tan Plaid Jacket */, 16);
-			iVar3 = 23;
-			iVar4 = 3;
-			iVar6 = 3;
+			iVar6 = 23;
+			iVar7 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 231:
 			StringCopy(&Var2, "TORSO_P1_18_4" /* GXT: Slate Jacket */, 16);
-			iVar3 = 23;
-			iVar4 = 4;
-			iVar6 = 3;
+			iVar6 = 23;
+			iVar7 = 4;
+			iVar9 = 3;
 			break;
 		
 		case 232:
 			StringCopy(&Var2, "TORSO_P1_18_5" /* GXT: Silver Jacket */, 16);
-			iVar3 = 23;
-			iVar4 = 5;
-			iVar6 = 3;
+			iVar6 = 23;
+			iVar7 = 5;
+			iVar9 = 3;
 			break;
 		
 		case 233:
 			StringCopy(&Var2, "TORSO_P1_18_6" /* GXT: Stone Jacket */, 16);
-			iVar3 = 23;
-			iVar4 = 6;
-			iVar6 = 3;
+			iVar6 = 23;
+			iVar7 = 6;
+			iVar9 = 3;
 			break;
 		
 		case 234:
 			StringCopy(&Var2, "TORSO_P1_18_7" /* GXT: Cream Jacket */, 16);
-			iVar3 = 23;
-			iVar4 = 7;
-			iVar6 = 3;
+			iVar6 = 23;
+			iVar7 = 7;
+			iVar9 = 3;
 			break;
 		
 		case 235:
 			StringCopy(&Var2, "TORSO_P1_18_8" /* GXT: Navy Plaid Piped Jacket */, 16);
-			iVar3 = 23;
-			iVar4 = 8;
-			iVar6 = 3;
+			iVar6 = 23;
+			iVar7 = 8;
+			iVar9 = 3;
 			break;
 		
 		case 236:
 			StringCopy(&Var2, "TORSO_P1_18_9" /* GXT: Off-White Jacket */, 16);
-			iVar3 = 23;
-			iVar4 = 9;
-			iVar6 = 3;
+			iVar6 = 23;
+			iVar7 = 9;
+			iVar9 = 3;
 			break;
 		
 		case 237:
 			StringCopy(&Var2, "TORSO_P1_18_10" /* GXT: Red Piped Jacket */, 16);
-			iVar3 = 23;
-			iVar4 = 10;
-			iVar6 = 3;
+			iVar6 = 23;
+			iVar7 = 10;
+			iVar9 = 3;
 			break;
 		
 		case 238:
 			StringCopy(&Var2, "TORSO_P1_18_11" /* GXT: Gray Piped Jacket */, 16);
-			iVar3 = 23;
-			iVar4 = 11;
-			iVar6 = 3;
+			iVar6 = 23;
+			iVar7 = 11;
+			iVar9 = 3;
 			break;
 		
 		case 239:
 			StringCopy(&Var2, "TORSO_P1_18_12" /* GXT: Navy Jacket */, 16);
-			iVar3 = 23;
-			iVar4 = 12;
-			iVar6 = 3;
+			iVar6 = 23;
+			iVar7 = 12;
+			iVar9 = 3;
 			break;
 		
 		case 240:
 			StringCopy(&Var2, "TORSO_P1_18_13" /* GXT: Russet Piped Jacket */, 16);
-			iVar3 = 23;
-			iVar4 = 13;
-			iVar6 = 3;
+			iVar6 = 23;
+			iVar7 = 13;
+			iVar9 = 3;
 			break;
 		
 		case 241:
 			StringCopy(&Var2, "TORSO_P1_18_14" /* GXT: Green Jacket */, 16);
-			iVar3 = 23;
-			iVar4 = 14;
-			iVar6 = 3;
+			iVar6 = 23;
+			iVar7 = 14;
+			iVar9 = 3;
 			break;
 		
 		case 242:
 			StringCopy(&Var2, "TORSO_P1_18_15" /* GXT: Beige Jacket */, 16);
-			iVar3 = 23;
-			iVar4 = 15;
-			iVar6 = 3;
+			iVar6 = 23;
+			iVar7 = 15;
+			iVar9 = 3;
 			break;
 		
 		case 243:
 			StringCopy(&Var2, "TORSO_P1_24_0" /* GXT: Navy Plaid Vest */, 16);
-			iVar3 = 24;
-			iVar4 = 0;
+			iVar6 = 24;
+			iVar7 = 0;
 			iVar1 = 2200;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 244:
 			StringCopy(&Var2, "TORSO_P1_24_1" /* GXT: Gray Plaid Vest */, 16);
-			iVar3 = 24;
-			iVar4 = 1;
+			iVar6 = 24;
+			iVar7 = 1;
 			iVar1 = 2200;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 245:
 			StringCopy(&Var2, "TORSO_P1_24_2" /* GXT: Silver Plaid Vest */, 16);
-			iVar3 = 24;
-			iVar4 = 2;
+			iVar6 = 24;
+			iVar7 = 2;
 			iVar1 = 2200;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 246:
 			StringCopy(&Var2, "TORSO_P1_24_3" /* GXT: Charcoal Vest */, 16);
-			iVar3 = 24;
-			iVar4 = 3;
+			iVar6 = 24;
+			iVar7 = 3;
 			iVar1 = 2200;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 247:
 			StringCopy(&Var2, "TORSO_P1_24_4" /* GXT: Plum Plaid Vest */, 16);
-			iVar3 = 24;
-			iVar4 = 4;
+			iVar6 = 24;
+			iVar7 = 4;
 			iVar1 = 2200;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 248:
 			StringCopy(&Var2, "TORSO_P1_24_5" /* GXT: All Ash Vest */, 16);
-			iVar3 = 24;
-			iVar4 = 5;
+			iVar6 = 24;
+			iVar7 = 5;
 			iVar1 = 2200;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 249:
 			StringCopy(&Var2, "TORSO_P1_24_6" /* GXT: Silverback Vest */, 16);
-			iVar3 = 24;
-			iVar4 = 6;
+			iVar6 = 24;
+			iVar7 = 6;
 			iVar1 = 2200;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 250:
 			StringCopy(&Var2, "TORSO_P1_24_7" /* GXT: Gray Subtle Plaid Vest */, 16);
-			iVar3 = 24;
-			iVar4 = 7;
+			iVar6 = 24;
+			iVar7 = 7;
 			iVar1 = 2200;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 251:
 			StringCopy(&Var2, "TORSO_P1_24_8" /* GXT: Green Plaid Vest */, 16);
-			iVar3 = 24;
-			iVar4 = 8;
+			iVar6 = 24;
+			iVar7 = 8;
 			iVar1 = 2200;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 252:
 			StringCopy(&Var2, "TORSO_P1_24_9" /* GXT: Ash Plaid Vest */, 16);
-			iVar3 = 24;
-			iVar4 = 9;
+			iVar6 = 24;
+			iVar7 = 9;
 			iVar1 = 2200;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 253:
 			StringCopy(&Var2, "TORSO_P1_24_10" /* GXT: Stone Plaid Vest */, 16);
-			iVar3 = 24;
-			iVar4 = 10;
+			iVar6 = 24;
+			iVar7 = 10;
 			iVar1 = 2200;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 254:
 			StringCopy(&Var2, "TORSO_P1_24_11" /* GXT: Charcoal Plaid Vest */, 16);
-			iVar3 = 24;
-			iVar4 = 11;
+			iVar6 = 24;
+			iVar7 = 11;
 			iVar1 = 2200;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 255:
 			StringCopy(&Var2, "TORSO_P1_24_12" /* GXT: White Vest */, 16);
-			iVar3 = 24;
-			iVar4 = 12;
+			iVar6 = 24;
+			iVar7 = 12;
 			iVar1 = 2200;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 256:
 			StringCopy(&Var2, "TORSO_P1_24_13" /* GXT: Gray Vest */, 16);
-			iVar3 = 24;
-			iVar4 = 13;
+			iVar6 = 24;
+			iVar7 = 13;
 			iVar1 = 2200;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 257:
 			StringCopy(&Var2, "TORSO_P1_24_14" /* GXT: Silver Light Plaid Vest */, 16);
-			iVar3 = 24;
-			iVar4 = 14;
+			iVar6 = 24;
+			iVar7 = 14;
 			iVar1 = 2200;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 258:
 			StringCopy(&Var2, "TORSO_P1_24_15" /* GXT: All Silver Vest */, 16);
-			iVar3 = 24;
-			iVar4 = 15;
+			iVar6 = 24;
+			iVar7 = 15;
 			iVar1 = 2200;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 259:
 			StringCopy(&Var2, "TORSO_P1_25_0" /* GXT: Gray Tuxedo Jacket */, 16);
-			iVar3 = 25;
-			iVar4 = 0;
+			iVar6 = 25;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 260:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 26;
-			iVar4 = 0;
-			iVar6 = 1;
+			iVar6 = 26;
+			iVar7 = 0;
+			iVar9 = 1;
 			break;
 		
 		case 261:
 			StringCopy(&Var2, "TORSO_P1_27_0" /* GXT: Brown Shooting Vest */, 16);
-			iVar3 = 27;
-			iVar4 = 0;
+			iVar6 = 27;
+			iVar7 = 0;
 			iVar1 = 150;
 			break;
 		
 		case 262:
 			StringCopy(&Var2, "TORSO_P1_27_1" /* GXT: Woodland Shooting Vest */, 16);
-			iVar3 = 27;
-			iVar4 = 1;
+			iVar6 = 27;
+			iVar7 = 1;
 			iVar1 = 160;
 			break;
 		
 		case 263:
 			StringCopy(&Var2, "TORSO_P1_27_2" /* GXT: Taupe Shooting Vest */, 16);
-			iVar3 = 27;
-			iVar4 = 2;
+			iVar6 = 27;
+			iVar7 = 2;
 			iVar1 = 150;
 			break;
 		
 		case 264:
 			StringCopy(&Var2, "TORSO_P1_27_3" /* GXT: Brown Woven Shooting Vest */, 16);
-			iVar3 = 27;
-			iVar4 = 3;
+			iVar6 = 27;
+			iVar7 = 3;
 			iVar1 = 150;
 			break;
 		
 		case 265:
 			StringCopy(&Var2, "TORSO_P1_27_4" /* GXT: Field Shooting Vest */, 16);
-			iVar3 = 27;
-			iVar4 = 4;
+			iVar6 = 27;
+			iVar7 = 4;
 			iVar1 = 160;
 			break;
 		
 		case 266:
 			StringCopy(&Var2, "TORSO_P1_27_5" /* GXT: Forest Shooting Vest */, 16);
-			iVar3 = 27;
-			iVar4 = 5;
+			iVar6 = 27;
+			iVar7 = 5;
 			iVar1 = 160;
 			break;
 		
 		case 267:
 			StringCopy(&Var2, "TORSO_P1_28_0" /* GXT: Silver Hoodie */, 16);
-			iVar3 = 28;
-			iVar4 = 0;
+			iVar6 = 28;
+			iVar7 = 0;
 			iVar1 = 88;
 			break;
 		
 		case 268:
 			StringCopy(&Var2, "TORSO_P1_28_1" /* GXT: Ammu-Nation Camo Hoodie */, 16);
-			iVar3 = 28;
-			iVar4 = 1;
+			iVar6 = 28;
+			iVar7 = 1;
 			iVar1 = 60;
 			break;
 		
 		case 269:
 			StringCopy(&Var2, "TORSO_P1_28_2" /* GXT: LSGC Gray Hoodie */, 16);
-			iVar3 = 28;
-			iVar4 = 2;
+			iVar6 = 28;
+			iVar7 = 2;
 			iVar1 = 70;
 			break;
 		
 		case 270:
 			StringCopy(&Var2, "TORSO_P1_28_3" /* GXT: LSGC Urban Hoodie */, 16);
-			iVar3 = 28;
-			iVar4 = 3;
+			iVar6 = 28;
+			iVar7 = 3;
 			iVar1 = 80;
 			break;
 		
 		case 271:
 			StringCopy(&Var2, "TORSO_P1_28_4" /* GXT: LSGC Forest Hoodie */, 16);
-			iVar3 = 28;
-			iVar4 = 4;
+			iVar6 = 28;
+			iVar7 = 4;
 			iVar1 = 90;
 			break;
 		
 		case 272:
 			StringCopy(&Var2, "TORSO_P1_28_5" /* GXT: Ammu-Nation A Hoodie */, 16);
-			iVar3 = 28;
-			iVar4 = 5;
+			iVar6 = 28;
+			iVar7 = 5;
 			iVar1 = 80;
 			break;
 		
 		case 273:
 			StringCopy(&Var2, "TORSO_P1_28_6" /* GXT: Blauser Hoodie */, 16);
-			iVar3 = 28;
-			iVar4 = 6;
+			iVar6 = 28;
+			iVar7 = 6;
 			iVar1 = 70;
 			break;
 		
 		case 274:
 			StringCopy(&Var2, "TORSO_P1_28_7" /* GXT: Penetrators Orange Hoodie */, 16);
-			iVar3 = 28;
-			iVar4 = 7;
+			iVar6 = 28;
+			iVar7 = 7;
 			iVar1 = 95;
 			break;
 		
 		case 275:
 			StringCopy(&Var2, "TORSO_P1_28_8" /* GXT: Crevis Fluorescent Hoodie */, 16);
-			iVar3 = 28;
-			iVar4 = 8;
+			iVar6 = 28;
+			iVar7 = 8;
 			iVar1 = 105;
 			break;
 		
 		case 276:
 			StringCopy(&Var2, "TORSO_P1_28_9" /* GXT: Blue Hoodie */, 16);
-			iVar3 = 28;
-			iVar4 = 9;
+			iVar6 = 28;
+			iVar7 = 9;
 			iVar1 = 95;
 			break;
 		
 		case 277:
 			StringCopy(&Var2, "TORSO_P1_28_10" /* GXT: Green Hoodie */, 16);
-			iVar3 = 28;
-			iVar4 = 10;
+			iVar6 = 28;
+			iVar7 = 10;
 			iVar1 = 110;
 			break;
 		
 		case 278:
 			StringCopy(&Var2, "TORSO_P1_28_11" /* GXT: LS Jardineros Hoodie */, 16);
-			iVar3 = 28;
-			iVar4 = 11;
+			iVar6 = 28;
+			iVar7 = 11;
 			iVar1 = 98;
 			break;
 		
 		case 279:
 			StringCopy(&Var2, "TORSO_P1_28_12" /* GXT: Ash 18 Hoodie */, 16);
-			iVar3 = 28;
-			iVar4 = 12;
+			iVar6 = 28;
+			iVar7 = 12;
 			iVar1 = 88;
 			break;
 		
 		case 280:
 			StringCopy(&Var2, "TORSO_P1_28_13" /* GXT: Red Mist XI Hoodie */, 16);
-			iVar3 = 28;
-			iVar4 = 13;
+			iVar6 = 28;
+			iVar7 = 13;
 			iVar1 = 98;
 			break;
 		
 		case 281:
 			StringCopy(&Var2, "TORSO_P1_28_14" /* GXT: Eris Charcoal Hoodie */, 16);
-			iVar3 = 28;
-			iVar4 = 14;
+			iVar6 = 28;
+			iVar7 = 14;
 			iVar1 = 110;
 			break;
 		
 		case 282:
 			StringCopy(&Var2, "TORSO_P1_28_15" /* GXT: OG Hoodie */, 16);
-			iVar3 = 28;
-			iVar4 = 15;
+			iVar6 = 28;
+			iVar7 = 15;
 			iVar1 = 98;
 			break;
 		
 		case 283:
 			StringCopy(&Var2, "TORSO_P1_29_0" /* GXT: White V Neck T-Shirt */, 16);
-			iVar3 = 29;
-			iVar4 = 0;
+			iVar6 = 29;
+			iVar7 = 0;
 			iVar1 = 250;
 			break;
 		
 		case 284:
 			StringCopy(&Var2, "TORSO_P1_29_1" /* GXT: Ash V Neck T-Shirt */, 16);
-			iVar3 = 29;
-			iVar4 = 1;
+			iVar6 = 29;
+			iVar7 = 1;
 			iVar1 = 270;
 			break;
 		
 		case 285:
 			StringCopy(&Var2, "TORSO_P1_29_2" /* GXT: Black V Neck T-Shirt */, 16);
-			iVar3 = 29;
-			iVar4 = 2;
+			iVar6 = 29;
+			iVar7 = 2;
 			iVar1 = 280;
 			break;
 		
 		case 286:
 			StringCopy(&Var2, "TORSO_P1_29_3" /* GXT: Brown V Neck T-Shirt */, 16);
-			iVar3 = 29;
-			iVar4 = 3;
+			iVar6 = 29;
+			iVar7 = 3;
 			iVar1 = 275;
 			break;
 		
 		case 287:
 			StringCopy(&Var2, "TORSO_P1_29_4" /* GXT: Olive V Neck T-Shirt */, 16);
-			iVar3 = 29;
-			iVar4 = 4;
+			iVar6 = 29;
+			iVar7 = 4;
 			iVar1 = 290;
 			break;
 		
 		case 288:
 			StringCopy(&Var2, "TORSO_P1_29_5" /* GXT: Corkers V Neck T-Shirt */, 16);
-			iVar3 = 29;
-			iVar4 = 5;
+			iVar6 = 29;
+			iVar7 = 5;
 			iVar1 = 35;
 			break;
 		
 		case 289:
 			StringCopy(&Var2, "TORSO_P1_29_6" /* GXT: Feud V Neck T-Shirt */, 16);
-			iVar3 = 29;
-			iVar4 = 6;
+			iVar6 = 29;
+			iVar7 = 6;
 			iVar1 = 35;
 			break;
 		
 		case 290:
 			StringCopy(&Var2, "TORSO_P1_29_7" /* GXT: Magnetics V Neck T-Shirt */, 16);
-			iVar3 = 29;
-			iVar4 = 7;
+			iVar6 = 29;
+			iVar7 = 7;
 			iVar1 = 35;
 			break;
 		
 		case 291:
 			StringCopy(&Var2, "TORSO_P1_29_8" /* GXT: Mint V Neck T-Shirt */, 16);
-			iVar3 = 29;
-			iVar4 = 8;
+			iVar6 = 29;
+			iVar7 = 8;
 			iVar1 = 295;
 			break;
 		
 		case 292:
 			StringCopy(&Var2, "TORSO_P1_29_9" /* GXT: Harsh Souls V Neck T-Shirt */, 16);
-			iVar3 = 29;
-			iVar4 = 9;
+			iVar6 = 29;
+			iVar7 = 9;
 			iVar1 = 35;
 			break;
 		
 		case 293:
 			StringCopy(&Var2, "TORSO_P1_29_10" /* GXT: Trey Baker V Neck T-Shirt */, 16);
-			iVar3 = 29;
-			iVar4 = 10;
+			iVar6 = 29;
+			iVar7 = 10;
 			iVar1 = 35;
 			break;
 		
 		case 294:
 			StringCopy(&Var2, "TORSO_P1_29_11" /* GXT: Fuque V Neck T-Shirt */, 16);
-			iVar3 = 29;
-			iVar4 = 11;
+			iVar6 = 29;
+			iVar7 = 11;
 			iVar1 = 35;
 			break;
 		
 		case 295:
 			StringCopy(&Var2, "TORSO_P1_29_12" /* GXT: Fellowship V Neck T-Shirt */, 16);
-			iVar3 = 29;
-			iVar4 = 12;
+			iVar6 = 29;
+			iVar7 = 12;
 			break;
 		
 		case 296:
 			StringCopy(&Var2, "TORSO_P1_30_0" /* GXT: Green Cardigan */, 16);
-			iVar3 = 30;
-			iVar4 = 0;
+			iVar6 = 30;
+			iVar7 = 0;
 			iVar1 = 1750;
 			break;
 		
 		case 297:
 			StringCopy(&Var2, "TORSO_P1_30_1" /* GXT: Gray Cardigan */, 16);
-			iVar3 = 30;
-			iVar4 = 1;
+			iVar6 = 30;
+			iVar7 = 1;
 			iVar1 = 1920;
 			break;
 		
 		case 298:
 			StringCopy(&Var2, "TORSO_P1_30_2" /* GXT: Slate Cardigan */, 16);
-			iVar3 = 30;
-			iVar4 = 2;
+			iVar6 = 30;
+			iVar7 = 2;
 			iVar1 = 1890;
 			break;
 		
 		case 299:
 			StringCopy(&Var2, "TORSO_P1_30_3" /* GXT: Blue Cardigan */, 16);
-			iVar3 = 30;
-			iVar4 = 3;
+			iVar6 = 30;
+			iVar7 = 3;
 			iVar1 = 1850;
 			break;
 		
 		case 300:
 			StringCopy(&Var2, "TORSO_P1_30_4" /* GXT: Red Cardigan */, 16);
-			iVar3 = 30;
-			iVar4 = 4;
+			iVar6 = 30;
+			iVar7 = 4;
 			iVar1 = 1750;
 			break;
 		
 		case 301:
 			StringCopy(&Var2, "TORSO_P1_30_5" /* GXT: Charcoal Cardigan */, 16);
-			iVar3 = 30;
-			iVar4 = 5;
+			iVar6 = 30;
+			iVar7 = 5;
 			iVar1 = 1990;
 			break;
 		
 		case 302:
 			StringCopy(&Var2, "TORSO_P1_30_6" /* GXT: White Cardigan */, 16);
-			iVar3 = 30;
-			iVar4 = 6;
+			iVar6 = 30;
+			iVar7 = 6;
 			iVar1 = 1820;
 			break;
 		
 		case 303:
 			StringCopy(&Var2, "TORSO_P1_30_7" /* GXT: Silver Cardigan */, 16);
-			iVar3 = 30;
-			iVar4 = 7;
+			iVar6 = 30;
+			iVar7 = 7;
 			iVar1 = 1990;
 			break;
 		
 		case 304:
 			StringCopy(&Var2, "TORSO_P1_30_8" /* GXT: Pale Blue Cardigan */, 16);
-			iVar3 = 30;
-			iVar4 = 8;
+			iVar6 = 30;
+			iVar7 = 8;
 			iVar1 = 1920;
 			break;
 		
 		case 305:
 			StringCopy(&Var2, "TORSO_P1_30_9" /* GXT: Aqua Cardigan */, 16);
-			iVar3 = 30;
-			iVar4 = 9;
+			iVar6 = 30;
+			iVar7 = 9;
 			iVar1 = 1850;
 			break;
 		
 		case 306:
 			StringCopy(&Var2, "TORSO_P1_30_10" /* GXT: Gray Two-Tone Cardigan */, 16);
-			iVar3 = 30;
-			iVar4 = 10;
+			iVar6 = 30;
+			iVar7 = 10;
 			iVar1 = 1990;
 			break;
 		
 		case 307:
 			StringCopy(&Var2, "TORSO_P1_30_11" /* GXT: Pink Cardigan */, 16);
-			iVar3 = 30;
-			iVar4 = 11;
+			iVar6 = 30;
+			iVar7 = 11;
 			iVar1 = 1790;
 			break;
 		
 		case 308:
 			StringCopy(&Var2, "TORSO_P1_30_12" /* GXT: Yellow Cardigan */, 16);
-			iVar3 = 30;
-			iVar4 = 12;
+			iVar6 = 30;
+			iVar7 = 12;
 			iVar1 = 1790;
 			break;
 		
 		case 309:
 			StringCopy(&Var2, "TORSO_P1_31_0" /* GXT: LS Panic Gray Jersey */, 16);
-			iVar3 = 31;
-			iVar4 = 0;
+			iVar6 = 31;
+			iVar7 = 0;
 			iVar1 = 69;
 			break;
 		
 		case 310:
 			StringCopy(&Var2, "TORSO_P1_31_1" /* GXT: LS Panic Yellow Jersey */, 16);
-			iVar3 = 31;
-			iVar4 = 1;
+			iVar6 = 31;
+			iVar7 = 1;
 			iVar1 = 75;
 			break;
 		
 		case 311:
 			StringCopy(&Var2, "TORSO_P1_31_2" /* GXT: Penetrators White Jersey */, 16);
-			iVar3 = 31;
-			iVar4 = 2;
+			iVar6 = 31;
+			iVar7 = 2;
 			iVar1 = 75;
 			break;
 		
 		case 312:
 			StringCopy(&Var2, "TORSO_P1_31_3" /* GXT: Penetrators Blue Jersey */, 16);
-			iVar3 = 31;
-			iVar4 = 3;
+			iVar6 = 31;
+			iVar7 = 3;
 			iVar1 = 79;
 			break;
 		
 		case 313:
 			StringCopy(&Var2, "TORSO_P1_31_4" /* GXT: LC Salamanders Red Jersey */, 16);
-			iVar3 = 31;
-			iVar4 = 4;
+			iVar6 = 31;
+			iVar7 = 4;
 			iVar1 = 79;
 			break;
 		
 		case 314:
 			StringCopy(&Var2, "TORSO_P1_31_5" /* GXT: LC Salamanders Green Jersey */, 16);
-			iVar3 = 31;
-			iVar4 = 5;
+			iVar6 = 31;
+			iVar7 = 5;
 			iVar1 = 89;
 			break;
 		
 		case 315:
 			StringCopy(&Var2, "TORSO_P1_31_6" /* GXT: LS Shrimps Gray Jersey */, 16);
-			iVar3 = 31;
-			iVar4 = 6;
+			iVar6 = 31;
+			iVar7 = 6;
 			iVar1 = 85;
 			break;
 		
 		case 316:
 			StringCopy(&Var2, "TORSO_P1_31_7" /* GXT: LS Shrimps White Jersey */, 16);
-			iVar3 = 31;
-			iVar4 = 7;
+			iVar6 = 31;
+			iVar7 = 7;
 			iVar1 = 85;
 			break;
 		
 		case 317:
 			StringCopy(&Var2, "TORSO_P1_31_8" /* GXT: Uptown Riders Jersey */, 16);
-			iVar3 = 31;
-			iVar4 = 8;
+			iVar6 = 31;
+			iVar7 = 8;
 			break;
 		
 		default:
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_214(int iParam0)//Position - 0x1ADAA
@@ -25131,882 +25131,882 @@ void func_214(int iParam0)//Position - 0x1ADAA
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 3;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 3;
 	Global_78341[0 /*14*/].f_5 = 1;
 	switch (iParam0)
 	{
 		case 107:
 			StringCopy(&Var2, "TORSO_P1_12_0" /* GXT: Snake A Jacket */, 16);
-			iVar3 = 12;
-			iVar4 = 0;
+			iVar6 = 12;
+			iVar7 = 0;
 			iVar1 = 195;
 			break;
 		
 		case 108:
 			StringCopy(&Var2, "TORSO_P1_12_1" /* GXT: Eagle 69 Jacket */, 16);
-			iVar3 = 12;
-			iVar4 = 1;
+			iVar6 = 12;
+			iVar7 = 1;
 			iVar1 = 420;
 			break;
 		
 		case 109:
 			StringCopy(&Var2, "TORSO_P1_12_2" /* GXT: LS Corkers 33 Jacket */, 16);
-			iVar3 = 12;
-			iVar4 = 2;
+			iVar6 = 12;
+			iVar7 = 2;
 			iVar1 = 390;
 			break;
 		
 		case 110:
 			StringCopy(&Var2, "TORSO_P1_12_3" /* GXT: LSP 41 Jacket */, 16);
-			iVar3 = 12;
-			iVar4 = 3;
+			iVar6 = 12;
+			iVar7 = 3;
 			iVar1 = 450;
 			break;
 		
 		case 111:
 			StringCopy(&Var2, "TORSO_P1_12_4" /* GXT: LS Corkers E Jacket */, 16);
-			iVar3 = 12;
-			iVar4 = 4;
+			iVar6 = 12;
+			iVar7 = 4;
 			iVar1 = 400;
 			break;
 		
 		case 112:
 			StringCopy(&Var2, "TORSO_P1_12_5" /* GXT: LS Squeezers Jacket */, 16);
-			iVar3 = 12;
-			iVar4 = 5;
+			iVar6 = 12;
+			iVar7 = 5;
 			iVar1 = 390;
 			break;
 		
 		case 113:
 			StringCopy(&Var2, "TORSO_P1_12_6" /* GXT: The Feud 69 Jacket */, 16);
-			iVar3 = 12;
-			iVar4 = 6;
+			iVar6 = 12;
+			iVar7 = 6;
 			iVar1 = 570;
 			break;
 		
 		case 114:
 			StringCopy(&Var2, "TORSO_P1_12_7" /* GXT: LS Pounders Jacket */, 16);
-			iVar3 = 12;
-			iVar4 = 7;
+			iVar6 = 12;
+			iVar7 = 7;
 			iVar1 = 390;
 			break;
 		
 		case 115:
 			StringCopy(&Var2, "TORSO_P1_12_8" /* GXT: SA Jacket */, 16);
-			iVar3 = 12;
-			iVar4 = 8;
+			iVar6 = 12;
+			iVar7 = 8;
 			iVar1 = 470;
 			break;
 		
 		case 116:
 			StringCopy(&Var2, "TORSO_P1_12_9" /* GXT: Redwood A Jacket */, 16);
-			iVar3 = 12;
-			iVar4 = 9;
+			iVar6 = 12;
+			iVar7 = 9;
 			iVar1 = 390;
 			break;
 		
 		case 117:
 			StringCopy(&Var2, "TORSO_P1_12_10" /* GXT: Uptown Riders Jacket */, 16);
-			iVar3 = 12;
-			iVar4 = 10;
+			iVar6 = 12;
+			iVar7 = 10;
 			iVar1 = 520;
 			break;
 		
 		case 118:
 			StringCopy(&Var2, "TORSO_P1_12_11" /* GXT: The Feud Black Jacket */, 16);
-			iVar3 = 12;
-			iVar4 = 11;
+			iVar6 = 12;
+			iVar7 = 11;
 			iVar1 = 490;
 			break;
 		
 		case 119:
 			StringCopy(&Var2, "TORSO_P1_12_12" /* GXT: Yeti Jacket */, 16);
-			iVar3 = 12;
-			iVar4 = 12;
+			iVar6 = 12;
+			iVar7 = 12;
 			iVar1 = 490;
 			break;
 		
 		case 120:
 			StringCopy(&Var2, "TORSO_P1_12_13" /* GXT: LSP 71 Jacket */, 16);
-			iVar3 = 12;
-			iVar4 = 13;
+			iVar6 = 12;
+			iVar7 = 13;
 			iVar1 = 590;
 			break;
 		
 		case 121:
 			StringCopy(&Var2, "TORSO_P1_12_14" /* GXT: Dust Devils Jacket */, 16);
-			iVar3 = 12;
-			iVar4 = 14;
+			iVar6 = 12;
+			iVar7 = 14;
 			iVar1 = 560;
 			break;
 		
 		case 122:
 			StringCopy(&Var2, "TORSO_P1_12_15" /* GXT: SA 56 Jacket */, 16);
-			iVar3 = 12;
-			iVar4 = 15;
+			iVar6 = 12;
+			iVar7 = 15;
 			iVar1 = 520;
 			break;
 		
 		case 123:
 			StringCopy(&Var2, "TORSO_P1_13_0" /* GXT: Gray Hoodie */, 16);
-			iVar3 = 13;
-			iVar4 = 0;
+			iVar6 = 13;
+			iVar7 = 0;
 			break;
 		
 		case 124:
 			StringCopy(&Var2, "TORSO_P1_13_1" /* GXT: Kingz of Los Santos Hoodie */, 16);
-			iVar3 = 13;
-			iVar4 = 1;
+			iVar6 = 13;
+			iVar7 = 1;
 			break;
 		
 		case 125:
 			StringCopy(&Var2, "TORSO_P1_13_2" /* GXT: LS Black Hoodie */, 16);
-			iVar3 = 13;
-			iVar4 = 2;
+			iVar6 = 13;
+			iVar7 = 2;
 			break;
 		
 		case 126:
 			StringCopy(&Var2, "TORSO_P1_13_3" /* GXT: Dark Blue Hoodie */, 16);
-			iVar3 = 13;
-			iVar4 = 3;
+			iVar6 = 13;
+			iVar7 = 3;
 			iVar1 = 90;
 			break;
 		
 		case 127:
 			StringCopy(&Var2, "TORSO_P1_13_4" /* GXT: LS Mustard Hoodie */, 16);
-			iVar3 = 13;
-			iVar4 = 4;
+			iVar6 = 13;
+			iVar7 = 4;
 			iVar1 = 85;
 			break;
 		
 		case 128:
 			StringCopy(&Var2, "TORSO_P1_13_5" /* GXT: Crevis Hoodie */, 16);
-			iVar3 = 13;
-			iVar4 = 5;
+			iVar6 = 13;
+			iVar7 = 5;
 			iVar1 = 45;
 			break;
 		
 		case 129:
 			StringCopy(&Var2, "TORSO_P1_13_6" /* GXT: Dust Devils Hoodie */, 16);
-			iVar3 = 13;
-			iVar4 = 6;
+			iVar6 = 13;
+			iVar7 = 6;
 			iVar1 = 90;
 			break;
 		
 		case 130:
 			StringCopy(&Var2, "TORSO_P1_13_7" /* GXT: Feud Olive Hoodie */, 16);
-			iVar3 = 13;
-			iVar4 = 7;
+			iVar6 = 13;
+			iVar7 = 7;
 			iVar1 = 47;
 			break;
 		
 		case 131:
 			StringCopy(&Var2, "TORSO_P1_13_8" /* GXT: Eris Hoodie */, 16);
-			iVar3 = 13;
-			iVar4 = 8;
+			iVar6 = 13;
+			iVar7 = 8;
 			iVar1 = 45;
 			break;
 		
 		case 132:
 			StringCopy(&Var2, "TORSO_P1_13_9" /* GXT: Hinterland Hoodie */, 16);
-			iVar3 = 13;
-			iVar4 = 9;
+			iVar6 = 13;
+			iVar7 = 9;
 			iVar1 = 48;
 			break;
 		
 		case 133:
 			StringCopy(&Var2, "TORSO_P1_13_10" /* GXT: Feud Mint Hoodie */, 16);
-			iVar3 = 13;
-			iVar4 = 10;
+			iVar6 = 13;
+			iVar7 = 10;
 			iVar1 = 45;
 			break;
 		
 		case 134:
 			StringCopy(&Var2, "TORSO_P1_13_11" /* GXT: Penetrators Gray Hoodie */, 16);
-			iVar3 = 13;
-			iVar4 = 11;
+			iVar6 = 13;
+			iVar7 = 11;
 			iVar1 = 85;
 			break;
 		
 		case 135:
 			StringCopy(&Var2, "TORSO_P1_13_12" /* GXT: Ash Hoodie */, 16);
-			iVar3 = 13;
-			iVar4 = 12;
+			iVar6 = 13;
+			iVar7 = 12;
 			iVar1 = 45;
 			break;
 		
 		case 136:
 			StringCopy(&Var2, "TORSO_P1_13_13" /* GXT: Rearwall Hoodie */, 16);
-			iVar3 = 13;
-			iVar4 = 13;
+			iVar6 = 13;
+			iVar7 = 13;
 			iVar1 = 47;
 			break;
 		
 		case 137:
 			StringCopy(&Var2, "TORSO_P1_13_14" /* GXT: Trey Baker Hoodie */, 16);
-			iVar3 = 13;
-			iVar4 = 14;
+			iVar6 = 13;
+			iVar7 = 14;
 			iVar1 = 45;
 			break;
 		
 		case 138:
 			StringCopy(&Var2, "TORSO_P1_13_15" /* GXT: Feud Camo Hoodie */, 16);
-			iVar3 = 13;
-			iVar4 = 15;
+			iVar6 = 13;
+			iVar7 = 15;
 			iVar1 = 48;
 			break;
 		
 		case 139:
 			StringCopy(&Var2, "TORSO_P1_14_0" /* GXT: Gray Jacket */, 16);
-			iVar3 = 14;
-			iVar4 = 0;
+			iVar6 = 14;
+			iVar7 = 0;
 			iVar1 = 290;
 			break;
 		
 		case 140:
 			StringCopy(&Var2, "TORSO_P1_14_1" /* GXT: Charcoal Jacket */, 16);
-			iVar3 = 14;
-			iVar4 = 1;
+			iVar6 = 14;
+			iVar7 = 1;
 			iVar1 = 290;
 			break;
 		
 		case 141:
 			StringCopy(&Var2, "TORSO_P1_14_2" /* GXT: Silver Jacket */, 16);
-			iVar3 = 14;
-			iVar4 = 2;
+			iVar6 = 14;
+			iVar7 = 2;
 			iVar1 = 290;
 			break;
 		
 		case 142:
 			StringCopy(&Var2, "TORSO_P1_14_3" /* GXT: Olive Jacket */, 16);
-			iVar3 = 14;
-			iVar4 = 3;
+			iVar6 = 14;
+			iVar7 = 3;
 			iVar1 = 290;
 			break;
 		
 		case 143:
 			StringCopy(&Var2, "TORSO_P1_14_4" /* GXT: Brown Jacket */, 16);
-			iVar3 = 14;
-			iVar4 = 4;
+			iVar6 = 14;
+			iVar7 = 4;
 			iVar1 = 290;
 			break;
 		
 		case 144:
 			StringCopy(&Var2, "TORSO_P1_14_5" /* GXT: Desert Sand Jacket */, 16);
-			iVar3 = 14;
-			iVar4 = 5;
+			iVar6 = 14;
+			iVar7 = 5;
 			iVar1 = 290;
 			break;
 		
 		case 145:
 			StringCopy(&Var2, "TORSO_P1_14_6" /* GXT: Field Camo Jacket */, 16);
-			iVar3 = 14;
-			iVar4 = 6;
+			iVar6 = 14;
+			iVar7 = 6;
 			iVar1 = 65;
 			break;
 		
 		case 146:
 			StringCopy(&Var2, "TORSO_P1_14_7" /* GXT: Desert Camo Jacket */, 16);
-			iVar3 = 14;
-			iVar4 = 7;
+			iVar6 = 14;
+			iVar7 = 7;
 			iVar1 = 65;
 			break;
 		
 		case 147:
 			StringCopy(&Var2, "TORSO_P1_15_0" /* GXT: White T-Shirt */, 16);
-			iVar3 = 15;
-			iVar4 = 0;
+			iVar6 = 15;
+			iVar7 = 0;
 			iVar1 = 200;
 			break;
 		
 		case 148:
 			StringCopy(&Var2, "TORSO_P1_15_1" /* GXT: Gray T-Shirt */, 16);
-			iVar3 = 15;
-			iVar4 = 1;
+			iVar6 = 15;
+			iVar7 = 1;
 			iVar1 = 220;
 			break;
 		
 		case 149:
 			StringCopy(&Var2, "TORSO_P1_15_2" /* GXT: Slate T-Shirt */, 16);
-			iVar3 = 15;
-			iVar4 = 2;
+			iVar6 = 15;
+			iVar7 = 2;
 			iVar1 = 220;
 			break;
 		
 		case 150:
 			StringCopy(&Var2, "TORSO_P1_15_3" /* GXT: Jade T-Shirt */, 16);
-			iVar3 = 15;
-			iVar4 = 3;
+			iVar6 = 15;
+			iVar7 = 3;
 			iVar1 = 240;
 			break;
 		
 		case 151:
 			StringCopy(&Var2, "TORSO_P1_15_4" /* GXT: 100% T-Shirt */, 16);
-			iVar3 = 15;
-			iVar4 = 4;
+			iVar6 = 15;
+			iVar7 = 4;
 			break;
 		
 		case 152:
 			StringCopy(&Var2, "TORSO_P1_15_5" /* GXT: Navy T-Shirt */, 16);
-			iVar3 = 15;
-			iVar4 = 5;
+			iVar6 = 15;
+			iVar7 = 5;
 			iVar1 = 250;
 			break;
 		
 		case 153:
 			StringCopy(&Var2, "TORSO_P1_15_6" /* GXT: Black T-Shirt */, 16);
-			iVar3 = 15;
-			iVar4 = 6;
+			iVar6 = 15;
+			iVar7 = 6;
 			iVar1 = 260;
 			break;
 		
 		case 154:
 			StringCopy(&Var2, "TORSO_P1_15_7" /* GXT: LC Wrath T-Shirt */, 16);
-			iVar3 = 15;
-			iVar4 = 7;
+			iVar6 = 15;
+			iVar7 = 7;
 			iVar1 = 40;
 			break;
 		
 		case 155:
 			StringCopy(&Var2, "TORSO_P1_15_8" /* GXT: LOB T-Shirt */, 16);
-			iVar3 = 15;
-			iVar4 = 8;
+			iVar6 = 15;
+			iVar7 = 8;
 			iVar1 = 50;
 			break;
 		
 		case 156:
 			StringCopy(&Var2, "TORSO_P1_15_9" /* GXT: UCLS Bookworms T-Shirt */, 16);
-			iVar3 = 15;
-			iVar4 = 9;
+			iVar6 = 15;
+			iVar7 = 9;
 			iVar1 = 45;
 			break;
 		
 		case 157:
 			StringCopy(&Var2, "TORSO_P1_15_10" /* GXT: Los Santos Red T-Shirt */, 16);
-			iVar3 = 15;
-			iVar4 = 10;
+			iVar6 = 15;
+			iVar7 = 10;
 			iVar1 = 40;
 			break;
 		
 		case 158:
 			StringCopy(&Var2, "TORSO_P1_15_11" /* GXT: Queensbury Boxing T-Shirt */, 16);
-			iVar3 = 15;
-			iVar4 = 11;
+			iVar6 = 15;
+			iVar7 = 11;
 			iVar1 = 55;
 			break;
 		
 		case 159:
 			StringCopy(&Var2, "TORSO_P1_16_0" /* GXT: Black Shirt */, 16);
-			iVar3 = 16;
-			iVar4 = 0;
+			iVar6 = 16;
+			iVar7 = 0;
 			break;
 		
 		case 160:
 			StringCopy(&Var2, "TORSO_P1_17_0" /* GXT: Blue Jacket */, 16);
-			iVar3 = 17;
-			iVar4 = 0;
+			iVar6 = 17;
+			iVar7 = 0;
 			iVar1 = 40;
 			break;
 		
 		case 161:
 			StringCopy(&Var2, "TORSO_P1_17_1" /* GXT: OG Slate Jacket */, 16);
-			iVar3 = 17;
-			iVar4 = 1;
+			iVar6 = 17;
+			iVar7 = 1;
 			iVar1 = 50;
 			break;
 		
 		case 162:
 			StringCopy(&Var2, "TORSO_P1_17_2" /* GXT: OG White Jacket */, 16);
-			iVar3 = 17;
-			iVar4 = 2;
+			iVar6 = 17;
+			iVar7 = 2;
 			break;
 		
 		case 163:
 			StringCopy(&Var2, "TORSO_P1_17_3" /* GXT: Corkers Green Jacket */, 16);
-			iVar3 = 17;
-			iVar4 = 3;
+			iVar6 = 17;
+			iVar7 = 3;
 			iVar1 = 50;
 			break;
 		
 		case 164:
 			StringCopy(&Var2, "TORSO_P1_17_4" /* GXT: Deep Gray Jacket */, 16);
-			iVar3 = 17;
-			iVar4 = 4;
+			iVar6 = 17;
+			iVar7 = 4;
 			iVar1 = 50;
 			break;
 		
 		case 165:
 			StringCopy(&Var2, "TORSO_P1_17_5" /* GXT: Kingz Banded Jacket */, 16);
-			iVar3 = 17;
-			iVar4 = 5;
+			iVar6 = 17;
+			iVar7 = 5;
 			iVar1 = 50;
 			break;
 		
 		case 166:
 			StringCopy(&Var2, "TORSO_P1_17_6" /* GXT: Stank Forest Camo Jacket */, 16);
-			iVar3 = 17;
-			iVar4 = 6;
+			iVar6 = 17;
+			iVar7 = 6;
 			iVar1 = 50;
 			break;
 		
 		case 167:
 			StringCopy(&Var2, "TORSO_P1_17_7" /* GXT: Trey Baker Camo Jacket */, 16);
-			iVar3 = 17;
-			iVar4 = 7;
+			iVar6 = 17;
+			iVar7 = 7;
 			iVar1 = 50;
 			break;
 		
 		case 168:
 			StringCopy(&Var2, "TORSO_P1_17_8" /* GXT: Coffee Jacket */, 16);
-			iVar3 = 17;
-			iVar4 = 8;
+			iVar6 = 17;
+			iVar7 = 8;
 			iVar1 = 50;
 			break;
 		
 		case 169:
 			StringCopy(&Var2, "TORSO_P1_17_9" /* GXT: Plain Coffee Jacket */, 16);
-			iVar3 = 17;
-			iVar4 = 9;
+			iVar6 = 17;
+			iVar7 = 9;
 			iVar1 = 50;
 			break;
 		
 		case 170:
 			StringCopy(&Var2, "TORSO_P1_17_10" /* GXT: Fruntalot Green Jacket */, 16);
-			iVar3 = 17;
-			iVar4 = 10;
+			iVar6 = 17;
+			iVar7 = 10;
 			iVar1 = 50;
 			break;
 		
 		case 171:
 			StringCopy(&Var2, "TORSO_P1_17_11" /* GXT: Mocha Jacket */, 16);
-			iVar3 = 17;
-			iVar4 = 11;
+			iVar6 = 17;
+			iVar7 = 11;
 			iVar1 = 50;
 			break;
 		
 		case 172:
 			StringCopy(&Var2, "TORSO_P1_17_12" /* GXT: Brown Jacket */, 16);
-			iVar3 = 17;
-			iVar4 = 12;
+			iVar6 = 17;
+			iVar7 = 12;
 			iVar1 = 50;
 			break;
 		
 		case 173:
 			StringCopy(&Var2, "TORSO_P1_17_13" /* GXT: LS Snake Weave Jacket */, 16);
-			iVar3 = 17;
-			iVar4 = 13;
+			iVar6 = 17;
+			iVar7 = 13;
 			iVar1 = 50;
 			break;
 		
 		case 174:
 			StringCopy(&Var2, "TORSO_P1_17_14" /* GXT: Feud Animal Print Jacket */, 16);
-			iVar3 = 17;
-			iVar4 = 14;
+			iVar6 = 17;
+			iVar7 = 14;
 			iVar1 = 50;
 			break;
 		
 		case 175:
 			StringCopy(&Var2, "TORSO_P1_17_15" /* GXT: Fruntalot Techno Jacket */, 16);
-			iVar3 = 17;
-			iVar4 = 15;
+			iVar6 = 17;
+			iVar7 = 15;
 			iVar1 = 50;
 			break;
 		
 		case 176:
 			StringCopy(&Var2, "TORSO_P1_18_0" /* GXT: Gray Plaid Jacket */, 16);
-			iVar3 = 18;
-			iVar4 = 0;
-			iVar6 = 3;
+			iVar6 = 18;
+			iVar7 = 0;
+			iVar9 = 3;
 			break;
 		
 		case 177:
 			StringCopy(&Var2, "TORSO_P1_18_1" /* GXT: Ash Plaid Jacket */, 16);
-			iVar3 = 18;
-			iVar4 = 1;
-			iVar6 = 3;
+			iVar6 = 18;
+			iVar7 = 1;
+			iVar9 = 3;
 			break;
 		
 		case 178:
 			StringCopy(&Var2, "TORSO_P1_18_2" /* GXT: Charcoal Plaid Jacket */, 16);
-			iVar3 = 18;
-			iVar4 = 2;
-			iVar6 = 3;
+			iVar6 = 18;
+			iVar7 = 2;
+			iVar9 = 3;
 			break;
 		
 		case 179:
 			StringCopy(&Var2, "TORSO_P1_18_3" /* GXT: Tan Plaid Jacket */, 16);
-			iVar3 = 18;
-			iVar4 = 3;
-			iVar6 = 3;
+			iVar6 = 18;
+			iVar7 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 180:
 			StringCopy(&Var2, "TORSO_P1_18_4" /* GXT: Slate Jacket */, 16);
-			iVar3 = 18;
-			iVar4 = 4;
-			iVar6 = 3;
+			iVar6 = 18;
+			iVar7 = 4;
+			iVar9 = 3;
 			break;
 		
 		case 181:
 			StringCopy(&Var2, "TORSO_P1_18_5" /* GXT: Silver Jacket */, 16);
-			iVar3 = 18;
-			iVar4 = 5;
-			iVar6 = 3;
+			iVar6 = 18;
+			iVar7 = 5;
+			iVar9 = 3;
 			break;
 		
 		case 182:
 			StringCopy(&Var2, "TORSO_P1_18_6" /* GXT: Stone Jacket */, 16);
-			iVar3 = 18;
-			iVar4 = 6;
-			iVar6 = 3;
+			iVar6 = 18;
+			iVar7 = 6;
+			iVar9 = 3;
 			break;
 		
 		case 183:
 			StringCopy(&Var2, "TORSO_P1_18_7" /* GXT: Cream Jacket */, 16);
-			iVar3 = 18;
-			iVar4 = 7;
-			iVar6 = 3;
+			iVar6 = 18;
+			iVar7 = 7;
+			iVar9 = 3;
 			break;
 		
 		case 184:
 			StringCopy(&Var2, "TORSO_P1_18_8" /* GXT: Navy Plaid Piped Jacket */, 16);
-			iVar3 = 18;
-			iVar4 = 8;
-			iVar6 = 3;
+			iVar6 = 18;
+			iVar7 = 8;
+			iVar9 = 3;
 			break;
 		
 		case 185:
 			StringCopy(&Var2, "TORSO_P1_18_9" /* GXT: Off-White Jacket */, 16);
-			iVar3 = 18;
-			iVar4 = 9;
-			iVar6 = 3;
+			iVar6 = 18;
+			iVar7 = 9;
+			iVar9 = 3;
 			break;
 		
 		case 186:
 			StringCopy(&Var2, "TORSO_P1_18_10" /* GXT: Red Piped Jacket */, 16);
-			iVar3 = 18;
-			iVar4 = 10;
-			iVar6 = 3;
+			iVar6 = 18;
+			iVar7 = 10;
+			iVar9 = 3;
 			break;
 		
 		case 187:
 			StringCopy(&Var2, "TORSO_P1_18_11" /* GXT: Gray Piped Jacket */, 16);
-			iVar3 = 18;
-			iVar4 = 11;
-			iVar6 = 3;
+			iVar6 = 18;
+			iVar7 = 11;
+			iVar9 = 3;
 			break;
 		
 		case 188:
 			StringCopy(&Var2, "TORSO_P1_18_12" /* GXT: Navy Jacket */, 16);
-			iVar3 = 18;
-			iVar4 = 12;
-			iVar6 = 3;
+			iVar6 = 18;
+			iVar7 = 12;
+			iVar9 = 3;
 			break;
 		
 		case 189:
 			StringCopy(&Var2, "TORSO_P1_18_13" /* GXT: Russet Piped Jacket */, 16);
-			iVar3 = 18;
-			iVar4 = 13;
-			iVar6 = 3;
+			iVar6 = 18;
+			iVar7 = 13;
+			iVar9 = 3;
 			break;
 		
 		case 190:
 			StringCopy(&Var2, "TORSO_P1_18_14" /* GXT: Green Jacket */, 16);
-			iVar3 = 18;
-			iVar4 = 14;
-			iVar6 = 3;
+			iVar6 = 18;
+			iVar7 = 14;
+			iVar9 = 3;
 			break;
 		
 		case 191:
 			StringCopy(&Var2, "TORSO_P1_18_15" /* GXT: Beige Jacket */, 16);
-			iVar3 = 18;
-			iVar4 = 15;
-			iVar6 = 3;
+			iVar6 = 18;
+			iVar7 = 15;
+			iVar9 = 3;
 			break;
 		
 		case 192:
 			StringCopy(&Var2, "TORSO_P1_19_0" /* GXT: Blue Striped Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 0;
+			iVar6 = 19;
+			iVar7 = 0;
 			iVar1 = 480;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 193:
 			StringCopy(&Var2, "TORSO_P1_19_1" /* GXT: Beige Striped Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 1;
+			iVar6 = 19;
+			iVar7 = 1;
 			iVar1 = 440;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 194:
 			StringCopy(&Var2, "TORSO_P1_19_2" /* GXT: Gray Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 2;
+			iVar6 = 19;
+			iVar7 = 2;
 			iVar1 = 440;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 195:
 			StringCopy(&Var2, "TORSO_P1_19_3" /* GXT: Slate Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 3;
+			iVar6 = 19;
+			iVar7 = 3;
 			iVar1 = 520;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 196:
 			StringCopy(&Var2, "TORSO_P1_19_4" /* GXT: Green Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 4;
+			iVar6 = 19;
+			iVar7 = 4;
 			iVar1 = 440;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 197:
 			StringCopy(&Var2, "TORSO_P1_19_5" /* GXT: Picnic Plaid Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 5;
+			iVar6 = 19;
+			iVar7 = 5;
 			iVar1 = 440;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 198:
 			StringCopy(&Var2, "TORSO_P1_19_6" /* GXT: White Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 6;
+			iVar6 = 19;
+			iVar7 = 6;
 			iVar1 = 480;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 199:
 			StringCopy(&Var2, "TORSO_P1_19_7" /* GXT: Light Green Plaid Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 7;
+			iVar6 = 19;
+			iVar7 = 7;
 			iVar1 = 480;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 200:
 			StringCopy(&Var2, "TORSO_P1_19_8" /* GXT: Pink Striped Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 8;
+			iVar6 = 19;
+			iVar7 = 8;
 			iVar1 = 480;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 201:
 			StringCopy(&Var2, "TORSO_P1_19_9" /* GXT: Country Check Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 9;
+			iVar6 = 19;
+			iVar7 = 9;
 			iVar1 = 480;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 202:
 			StringCopy(&Var2, "TORSO_P1_19_10" /* GXT: Off-White Striped Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 10;
+			iVar6 = 19;
+			iVar7 = 10;
 			iVar1 = 480;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 203:
 			StringCopy(&Var2, "TORSO_P1_19_11" /* GXT: Russet Striped Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 11;
+			iVar6 = 19;
+			iVar7 = 11;
 			iVar1 = 480;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 204:
 			StringCopy(&Var2, "TORSO_P1_19_12" /* GXT: Sea Green Plaid Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 12;
+			iVar6 = 19;
+			iVar7 = 12;
 			iVar1 = 520;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 205:
 			StringCopy(&Var2, "TORSO_P1_19_13" /* GXT: Navy Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 13;
+			iVar6 = 19;
+			iVar7 = 13;
 			iVar1 = 520;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 206:
 			StringCopy(&Var2, "TORSO_P1_19_14" /* GXT: Brown Check Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 14;
+			iVar6 = 19;
+			iVar7 = 14;
 			iVar1 = 520;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 207:
 			StringCopy(&Var2, "TORSO_P1_19_15" /* GXT: Sand Check Shirt */, 16);
-			iVar3 = 19;
-			iVar4 = 15;
+			iVar6 = 19;
+			iVar7 = 15;
 			iVar1 = 440;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 208:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 20;
-			iVar4 = 0;
+			iVar6 = 20;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar6 = 4;
+			iVar9 = 4;
 			break;
 		
 		case 209:
 			StringCopy(&Var2, "TORSO_P1_21_0" /* GXT: Black Jacket */, 16);
-			iVar3 = 21;
-			iVar4 = 0;
+			iVar6 = 21;
+			iVar7 = 0;
 			iVar1 = 220;
 			break;
 		
 		case 210:
 			StringCopy(&Var2, "TORSO_P1_21_1" /* GXT: Sand Jacket */, 16);
-			iVar3 = 21;
-			iVar4 = 1;
+			iVar6 = 21;
+			iVar7 = 1;
 			iVar1 = 200;
 			break;
 		
 		case 211:
 			StringCopy(&Var2, "TORSO_P1_21_2" /* GXT: Teal Jacket */, 16);
-			iVar3 = 21;
-			iVar4 = 2;
+			iVar6 = 21;
+			iVar7 = 2;
 			iVar1 = 240;
 			break;
 		
 		case 212:
 			StringCopy(&Var2, "TORSO_P1_21_3" /* GXT: Gray Jacket */, 16);
-			iVar3 = 21;
-			iVar4 = 3;
+			iVar6 = 21;
+			iVar7 = 3;
 			iVar1 = 240;
 			break;
 		
 		case 213:
 			StringCopy(&Var2, "TORSO_P1_21_4" /* GXT: Gray Three-Way Jacket */, 16);
-			iVar3 = 21;
-			iVar4 = 4;
+			iVar6 = 21;
+			iVar7 = 4;
 			iVar1 = 260;
 			break;
 		
 		case 214:
 			StringCopy(&Var2, "TORSO_P1_21_5" /* GXT: Red Accent Jacket */, 16);
-			iVar3 = 21;
-			iVar4 = 5;
+			iVar6 = 21;
+			iVar7 = 5;
 			iVar1 = 275;
 			break;
 		
 		case 215:
 			StringCopy(&Var2, "TORSO_P1_21_6" /* GXT: Aqua Accent Jacket */, 16);
-			iVar3 = 21;
-			iVar4 = 6;
+			iVar6 = 21;
+			iVar7 = 6;
 			iVar1 = 275;
 			break;
 		
 		case 216:
 			StringCopy(&Var2, "TORSO_P1_21_7" /* GXT: Brown Two-Tone Jacket */, 16);
-			iVar3 = 21;
-			iVar4 = 7;
+			iVar6 = 21;
+			iVar7 = 7;
 			iVar1 = 280;
 			break;
 		
 		case 217:
 			StringCopy(&Var2, "TORSO_P1_21_8" /* GXT: White Jacket */, 16);
-			iVar3 = 21;
-			iVar4 = 8;
+			iVar6 = 21;
+			iVar7 = 8;
 			iVar1 = 280;
 			break;
 		
 		case 218:
 			StringCopy(&Var2, "TORSO_P1_21_9" /* GXT: Tan Two-Tone Jacket */, 16);
-			iVar3 = 21;
-			iVar4 = 9;
+			iVar6 = 21;
+			iVar7 = 9;
 			iVar1 = 280;
 			break;
 		
 		case 219:
 			StringCopy(&Var2, "TORSO_P1_21_10" /* GXT: Red Jacket */, 16);
-			iVar3 = 21;
-			iVar4 = 10;
+			iVar6 = 21;
+			iVar7 = 10;
 			iVar1 = 280;
 			break;
 		
 		case 220:
 			StringCopy(&Var2, "TORSO_P1_21_11" /* GXT: Olive Two-Tone Jacket */, 16);
-			iVar3 = 21;
-			iVar4 = 11;
+			iVar6 = 21;
+			iVar7 = 11;
 			iVar1 = 280;
 			break;
 		
 		case 221:
 			StringCopy(&Var2, "TORSO_P1_21_12" /* GXT: Three-Way Jacket */, 16);
-			iVar3 = 21;
-			iVar4 = 12;
+			iVar6 = 21;
+			iVar7 = 12;
 			iVar1 = 280;
 			break;
 		
 		case 222:
 			StringCopy(&Var2, "TORSO_P1_21_13" /* GXT: Ash Two-Tone Jacket */, 16);
-			iVar3 = 21;
-			iVar4 = 13;
+			iVar6 = 21;
+			iVar7 = 13;
 			iVar1 = 280;
 			break;
 		
 		case 223:
 			StringCopy(&Var2, "TORSO_P1_22_0" /* GXT: Navy Peacoat */, 16);
-			iVar3 = 22;
-			iVar4 = 0;
+			iVar6 = 22;
+			iVar7 = 0;
 			iVar1 = 3100;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 224:
 			StringCopy(&Var2, "TORSO_P1_22_1" /* GXT: Gray Peacoat */, 16);
-			iVar3 = 22;
-			iVar4 = 1;
+			iVar6 = 22;
+			iVar7 = 1;
 			iVar1 = 2800;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 225:
 			StringCopy(&Var2, "TORSO_P1_22_2" /* GXT: Brown Peacoat */, 16);
-			iVar3 = 22;
-			iVar4 = 2;
+			iVar6 = 22;
+			iVar7 = 2;
 			iVar1 = 2500;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 226:
 			StringCopy(&Var2, "TORSO_P1_22_3" /* GXT: Black Peacoat */, 16);
-			iVar3 = 22;
-			iVar4 = 3;
+			iVar6 = 22;
+			iVar7 = 3;
 			iVar1 = 3000;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		default:
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_215(int iParam0)//Position - 0x1BB99
@@ -26014,800 +26014,800 @@ void func_215(int iParam0)//Position - 0x1BB99
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 3;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 3;
 	Global_78341[0 /*14*/].f_5 = 1;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "TORSO_P1_0_0" /* GXT: White Tank Top */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "TORSO_P1_0_1" /* GXT: Black Tank Top */, 16);
-			iVar3 = 0;
-			iVar4 = 1;
+			iVar6 = 0;
+			iVar7 = 1;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "TORSO_P1_0_2" /* GXT: Gray Tank Top */, 16);
-			iVar3 = 0;
-			iVar4 = 2;
+			iVar6 = 0;
+			iVar7 = 2;
 			iVar1 = 180;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "TORSO_P1_0_3" /* GXT: Feud Green Tank Top */, 16);
-			iVar3 = 0;
-			iVar4 = 3;
+			iVar6 = 0;
+			iVar7 = 3;
 			iVar1 = 22;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "TORSO_P1_0_4" /* GXT: Fruntalot Jade Tank Top */, 16);
-			iVar3 = 0;
-			iVar4 = 4;
+			iVar6 = 0;
+			iVar7 = 4;
 			iVar1 = 20;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "TORSO_P1_0_5" /* GXT: Fruntalot Brown Tank Top */, 16);
-			iVar3 = 0;
-			iVar4 = 5;
+			iVar6 = 0;
+			iVar7 = 5;
 			iVar1 = 18;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "TORSO_P1_0_6" /* GXT: Broker Blue Tank Top */, 16);
-			iVar3 = 0;
-			iVar4 = 6;
+			iVar6 = 0;
+			iVar7 = 6;
 			iVar1 = 19;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "TORSO_P1_0_7" /* GXT: Kingz Green Tank Top */, 16);
-			iVar3 = 0;
-			iVar4 = 7;
+			iVar6 = 0;
+			iVar7 = 7;
 			iVar1 = 22;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "TORSO_P1_0_8" /* GXT: Broker Gray Tank Top */, 16);
-			iVar3 = 0;
-			iVar4 = 8;
+			iVar6 = 0;
+			iVar7 = 8;
 			iVar1 = 20;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "TORSO_P1_0_9" /* GXT: Harsh Souls Tank Top */, 16);
-			iVar3 = 0;
-			iVar4 = 9;
+			iVar6 = 0;
+			iVar7 = 9;
 			iVar1 = 19;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "TORSO_P1_0_10" /* GXT: Sweatbox Tank Top */, 16);
-			iVar3 = 0;
-			iVar4 = 10;
+			iVar6 = 0;
+			iVar7 = 10;
 			iVar1 = 19;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "TORSO_P1_0_11" /* GXT: White Ringer Tank Top */, 16);
-			iVar3 = 0;
-			iVar4 = 11;
+			iVar6 = 0;
+			iVar7 = 11;
 			iVar1 = 18;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "TORSO_P1_0_12" /* GXT: Rearwall Tank Top */, 16);
-			iVar3 = 0;
-			iVar4 = 12;
+			iVar6 = 0;
+			iVar7 = 12;
 			iVar1 = 20;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "TORSO_P1_0_13" /* GXT: Feud 3 Tank Top */, 16);
-			iVar3 = 0;
-			iVar4 = 13;
+			iVar6 = 0;
+			iVar7 = 13;
 			iVar1 = 22;
 			break;
 		
 		case 14:
 			StringCopy(&Var2, "TORSO_P1_0_14" /* GXT: Kingz Charcoal Tank Top */, 16);
-			iVar3 = 0;
-			iVar4 = 14;
+			iVar6 = 0;
+			iVar7 = 14;
 			iVar1 = 19;
 			break;
 		
 		case 15:
 			StringCopy(&Var2, "TORSO_P1_0_15" /* GXT: Feud White Tank Top */, 16);
-			iVar3 = 0;
-			iVar4 = 15;
+			iVar6 = 0;
+			iVar7 = 15;
 			iVar1 = 22;
 			break;
 		
 		case 16:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar6 = 4;
+			iVar9 = 4;
 			break;
 		
 		case 17:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 1;
+			iVar6 = 1;
+			iVar7 = 1;
 			bVar0 = true;
-			iVar6 = 4;
+			iVar9 = 4;
 			break;
 		
 		case 18:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 2;
+			iVar6 = 1;
+			iVar7 = 2;
 			bVar0 = true;
-			iVar6 = 4;
+			iVar9 = 4;
 			break;
 		
 		case 19:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 3;
+			iVar6 = 1;
+			iVar7 = 3;
 			bVar0 = true;
-			iVar6 = 4;
+			iVar9 = 4;
 			break;
 		
 		case 20:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 4;
+			iVar6 = 1;
+			iVar7 = 4;
 			bVar0 = true;
-			iVar6 = 4;
+			iVar9 = 4;
 			break;
 		
 		case 21:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 5;
+			iVar6 = 1;
+			iVar7 = 5;
 			bVar0 = true;
-			iVar6 = 4;
+			iVar9 = 4;
 			break;
 		
 		case 22:
 			StringCopy(&Var2, "TORSO_P1_2_0" /* GXT: White Tuxedo Jacket */, 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 23:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar6 = 1;
+			iVar9 = 1;
 			break;
 		
 		case 24:
 			StringCopy(&Var2, "TORSO_P1_4_0" /* GXT: White OG T-Shirt */, 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			iVar1 = 20;
-			iVar6 = 2;
+			iVar9 = 2;
 			break;
 		
 		case 25:
 			StringCopy(&Var2, "TORSO_P1_4_1" /* GXT: Black OG T-Shirt */, 16);
-			iVar3 = 4;
-			iVar4 = 1;
+			iVar6 = 4;
+			iVar7 = 1;
 			iVar1 = 22;
-			iVar6 = 2;
+			iVar9 = 2;
 			break;
 		
 		case 26:
 			StringCopy(&Var2, "TORSO_P1_4_2" /* GXT: Ash OG T-Shirt */, 16);
-			iVar3 = 4;
-			iVar4 = 2;
+			iVar6 = 4;
+			iVar7 = 2;
 			iVar1 = 20;
-			iVar6 = 2;
+			iVar9 = 2;
 			break;
 		
 		case 27:
 			StringCopy(&Var2, "TORSO_P1_4_3" /* GXT: LC Swingers OG T-Shirt */, 16);
-			iVar3 = 4;
-			iVar4 = 3;
+			iVar6 = 4;
+			iVar7 = 3;
 			iVar1 = 25;
-			iVar6 = 2;
+			iVar9 = 2;
 			break;
 		
 		case 28:
 			StringCopy(&Var2, "TORSO_P1_4_4" /* GXT: Corkers Red OG T-Shirt */, 16);
-			iVar3 = 4;
-			iVar4 = 4;
+			iVar6 = 4;
+			iVar7 = 4;
 			iVar1 = 23;
-			iVar6 = 2;
+			iVar9 = 2;
 			break;
 		
 		case 29:
 			StringCopy(&Var2, "TORSO_P1_4_5" /* GXT: Corkers Green OG T-Shirt */, 16);
-			iVar3 = 4;
-			iVar4 = 5;
+			iVar6 = 4;
+			iVar7 = 5;
 			iVar1 = 25;
-			iVar6 = 2;
+			iVar9 = 2;
 			break;
 		
 		case 30:
 			StringCopy(&Var2, "TORSO_P1_4_6" /* GXT: Uptown Riders OG T-Shirt */, 16);
-			iVar3 = 4;
-			iVar4 = 6;
+			iVar6 = 4;
+			iVar7 = 6;
 			iVar1 = 28;
-			iVar6 = 2;
+			iVar9 = 2;
 			break;
 		
 		case 31:
 			StringCopy(&Var2, "TORSO_P1_4_7" /* GXT: Feud White OG T-Shirt */, 16);
-			iVar3 = 4;
-			iVar4 = 7;
+			iVar6 = 4;
+			iVar7 = 7;
 			iVar1 = 26;
-			iVar6 = 2;
+			iVar9 = 2;
 			break;
 		
 		case 32:
 			StringCopy(&Var2, "TORSO_P1_4_8" /* GXT: Salamanders OG T-Shirt */, 16);
-			iVar3 = 4;
-			iVar4 = 8;
+			iVar6 = 4;
+			iVar7 = 8;
 			iVar1 = 24;
-			iVar6 = 2;
+			iVar9 = 2;
 			break;
 		
 		case 33:
 			StringCopy(&Var2, "TORSO_P1_4_9" /* GXT: LC Rampage OG T-Shirt */, 16);
-			iVar3 = 4;
-			iVar4 = 9;
+			iVar6 = 4;
+			iVar7 = 9;
 			iVar1 = 27;
-			iVar6 = 2;
+			iVar9 = 2;
 			break;
 		
 		case 34:
 			StringCopy(&Var2, "TORSO_P1_4_10" /* GXT: Dust Devils OG T-Shirt */, 16);
-			iVar3 = 4;
-			iVar4 = 10;
+			iVar6 = 4;
+			iVar7 = 10;
 			iVar1 = 29;
-			iVar6 = 2;
+			iVar9 = 2;
 			break;
 		
 		case 35:
 			StringCopy(&Var2, "TORSO_P1_4_11" /* GXT: LS Gray OG T-Shirt */, 16);
-			iVar3 = 4;
-			iVar4 = 11;
+			iVar6 = 4;
+			iVar7 = 11;
 			iVar1 = 28;
-			iVar6 = 2;
+			iVar9 = 2;
 			break;
 		
 		case 36:
 			StringCopy(&Var2, "TORSO_P1_4_12" /* GXT: Los Santos Black OG T-Shirt */, 16);
-			iVar3 = 4;
-			iVar4 = 12;
+			iVar6 = 4;
+			iVar7 = 12;
 			iVar1 = 25;
-			iVar6 = 2;
+			iVar9 = 2;
 			break;
 		
 		case 37:
 			StringCopy(&Var2, "TORSO_P1_4_13" /* GXT: Los Santos White OG T-Shirt */, 16);
-			iVar3 = 4;
-			iVar4 = 13;
+			iVar6 = 4;
+			iVar7 = 13;
 			iVar1 = 22;
-			iVar6 = 2;
+			iVar9 = 2;
 			break;
 		
 		case 38:
 			StringCopy(&Var2, "TORSO_P1_4_14" /* GXT: Pounders OG T-Shirt */, 16);
-			iVar3 = 4;
-			iVar4 = 14;
+			iVar6 = 4;
+			iVar7 = 14;
 			iVar1 = 27;
-			iVar6 = 2;
+			iVar9 = 2;
 			break;
 		
 		case 39:
 			StringCopy(&Var2, "TORSO_P1_4_15" /* GXT: Feud Black OG T-Shirt */, 16);
-			iVar3 = 4;
-			iVar4 = 15;
+			iVar6 = 4;
+			iVar7 = 15;
 			iVar1 = 29;
-			iVar6 = 2;
+			iVar9 = 2;
 			break;
 		
 		case 40:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar6 = 4;
+			iVar9 = 4;
 			break;
 		
 		case 41:
 			StringCopy(&Var2, "TORSO_P1_6_0" /* GXT: Pine Striped Sweater */, 16);
-			iVar3 = 6;
-			iVar4 = 0;
-			iVar6 = 3;
+			iVar6 = 6;
+			iVar7 = 0;
+			iVar9 = 3;
 			break;
 		
 		case 42:
 			StringCopy(&Var2, "TORSO_P1_6_1" /* GXT: Yellow Sweater */, 16);
-			iVar3 = 6;
-			iVar4 = 1;
+			iVar6 = 6;
+			iVar7 = 1;
 			iVar1 = 1270;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 43:
 			StringCopy(&Var2, "TORSO_P1_6_2" /* GXT: Blue Sweater */, 16);
-			iVar3 = 6;
-			iVar4 = 2;
+			iVar6 = 6;
+			iVar7 = 2;
 			iVar1 = 1270;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 44:
 			StringCopy(&Var2, "TORSO_P1_6_3" /* GXT: Sand Striped Sweater */, 16);
-			iVar3 = 6;
-			iVar4 = 3;
+			iVar6 = 6;
+			iVar7 = 3;
 			iVar1 = 1270;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 45:
 			StringCopy(&Var2, "TORSO_P1_6_4" /* GXT: Silver Sweater */, 16);
-			iVar3 = 6;
-			iVar4 = 4;
+			iVar6 = 6;
+			iVar7 = 4;
 			iVar1 = 1090;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 46:
 			StringCopy(&Var2, "TORSO_P1_6_5" /* GXT: Gray Sweater */, 16);
-			iVar3 = 6;
-			iVar4 = 5;
+			iVar6 = 6;
+			iVar7 = 5;
 			iVar1 = 1090;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 47:
 			StringCopy(&Var2, "TORSO_P1_6_6" /* GXT: Navy Argyle Sweater */, 16);
-			iVar3 = 6;
-			iVar4 = 6;
+			iVar6 = 6;
+			iVar7 = 6;
 			iVar1 = 1120;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 48:
 			StringCopy(&Var2, "TORSO_P1_6_7" /* GXT: Sand Sweater */, 16);
-			iVar3 = 6;
-			iVar4 = 7;
+			iVar6 = 6;
+			iVar7 = 7;
 			iVar1 = 1120;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 49:
 			StringCopy(&Var2, "TORSO_P1_6_8" /* GXT: Salmon Pink Sweater */, 16);
-			iVar3 = 6;
-			iVar4 = 8;
+			iVar6 = 6;
+			iVar7 = 8;
 			iVar1 = 1290;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 50:
 			StringCopy(&Var2, "TORSO_P1_6_9" /* GXT: Turquoise Sweater */, 16);
-			iVar3 = 6;
-			iVar4 = 9;
+			iVar6 = 6;
+			iVar7 = 9;
 			iVar1 = 1290;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 51:
 			StringCopy(&Var2, "TORSO_P1_6_10" /* GXT: Green Sweater */, 16);
-			iVar3 = 6;
-			iVar4 = 10;
+			iVar6 = 6;
+			iVar7 = 10;
 			iVar1 = 1320;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 52:
 			StringCopy(&Var2, "TORSO_P1_6_11" /* GXT: Amethyst Sweater */, 16);
-			iVar3 = 6;
-			iVar4 = 11;
+			iVar6 = 6;
+			iVar7 = 11;
 			iVar1 = 1320;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 53:
 			StringCopy(&Var2, "TORSO_P1_6_12" /* GXT: Yellow Argyle Sweater */, 16);
-			iVar3 = 6;
-			iVar4 = 12;
+			iVar6 = 6;
+			iVar7 = 12;
 			iVar1 = 1590;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 54:
 			StringCopy(&Var2, "TORSO_P1_6_13" /* GXT: Gray Two-Tone Sweater */, 16);
-			iVar3 = 6;
-			iVar4 = 13;
+			iVar6 = 6;
+			iVar7 = 13;
 			iVar1 = 1590;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 55:
 			StringCopy(&Var2, "TORSO_P1_6_14" /* GXT: Sand Argyle Sweater */, 16);
-			iVar3 = 6;
-			iVar4 = 14;
+			iVar6 = 6;
+			iVar7 = 14;
 			iVar1 = 1590;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 56:
 			StringCopy(&Var2, "TORSO_P1_6_15" /* GXT: Charcoal Sweater */, 16);
-			iVar3 = 6;
-			iVar4 = 15;
+			iVar6 = 6;
+			iVar7 = 15;
 			iVar1 = 1320;
-			iVar6 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 57:
 			StringCopy(&Var2, "TORSO_P1_7_0" /* GXT: Ash Shirt */, 16);
-			iVar3 = 7;
-			iVar4 = 0;
+			iVar6 = 7;
+			iVar7 = 0;
 			iVar1 = 98;
 			break;
 		
 		case 58:
 			StringCopy(&Var2, "TORSO_P1_7_1" /* GXT: Gray Shirt */, 16);
-			iVar3 = 7;
-			iVar4 = 1;
+			iVar6 = 7;
+			iVar7 = 1;
 			iVar1 = 98;
 			break;
 		
 		case 59:
 			StringCopy(&Var2, "TORSO_P1_7_2" /* GXT: Black Shirt */, 16);
-			iVar3 = 7;
-			iVar4 = 2;
+			iVar6 = 7;
+			iVar7 = 2;
 			iVar1 = 110;
 			break;
 		
 		case 60:
 			StringCopy(&Var2, "TORSO_P1_7_3" /* GXT: Silver Shirt */, 16);
-			iVar3 = 7;
-			iVar4 = 3;
+			iVar6 = 7;
+			iVar7 = 3;
 			iVar1 = 110;
 			break;
 		
 		case 61:
 			StringCopy(&Var2, "TORSO_P1_7_4" /* GXT: White Shirt */, 16);
-			iVar3 = 7;
-			iVar4 = 4;
+			iVar6 = 7;
+			iVar7 = 4;
 			iVar1 = 118;
 			break;
 		
 		case 62:
 			StringCopy(&Var2, "TORSO_P1_7_5" /* GXT: Olive Shirt */, 16);
-			iVar3 = 7;
-			iVar4 = 5;
+			iVar6 = 7;
+			iVar7 = 5;
 			iVar1 = 120;
 			break;
 		
 		case 63:
 			StringCopy(&Var2, "TORSO_P1_7_6" /* GXT: Navy Shirt */, 16);
-			iVar3 = 7;
-			iVar4 = 6;
+			iVar6 = 7;
+			iVar7 = 6;
 			iVar1 = 120;
 			break;
 		
 		case 64:
 			StringCopy(&Var2, "TORSO_P1_7_7" /* GXT: Red Shirt */, 16);
-			iVar3 = 7;
-			iVar4 = 7;
+			iVar6 = 7;
+			iVar7 = 7;
 			iVar1 = 129;
 			break;
 		
 		case 65:
 			StringCopy(&Var2, "TORSO_P1_7_8" /* GXT: Tan Check Shirt */, 16);
-			iVar3 = 7;
-			iVar4 = 8;
+			iVar6 = 7;
+			iVar7 = 8;
 			iVar1 = 125;
 			break;
 		
 		case 66:
 			StringCopy(&Var2, "TORSO_P1_7_9" /* GXT: Beige Gingham Shirt */, 16);
-			iVar3 = 7;
-			iVar4 = 9;
+			iVar6 = 7;
+			iVar7 = 9;
 			iVar1 = 125;
 			break;
 		
 		case 67:
 			StringCopy(&Var2, "TORSO_P1_7_10" /* GXT: Gray Gingham Shirt */, 16);
-			iVar3 = 7;
-			iVar4 = 10;
+			iVar6 = 7;
+			iVar7 = 10;
 			iVar1 = 129;
 			break;
 		
 		case 68:
 			StringCopy(&Var2, "TORSO_P1_7_11" /* GXT: Gray Check Shirt */, 16);
-			iVar3 = 7;
-			iVar4 = 11;
+			iVar6 = 7;
+			iVar7 = 11;
 			iVar1 = 129;
 			break;
 		
 		case 69:
 			StringCopy(&Var2, "TORSO_P1_7_12" /* GXT: Blue Shirt */, 16);
-			iVar3 = 7;
-			iVar4 = 12;
+			iVar6 = 7;
+			iVar7 = 12;
 			iVar1 = 135;
 			break;
 		
 		case 70:
 			StringCopy(&Var2, "TORSO_P1_7_13" /* GXT: Off-White Shirt */, 16);
-			iVar3 = 7;
-			iVar4 = 13;
+			iVar6 = 7;
+			iVar7 = 13;
 			iVar1 = 139;
 			break;
 		
 		case 71:
 			StringCopy(&Var2, "TORSO_P1_7_14" /* GXT: Pastel Check Shirt */, 16);
-			iVar3 = 7;
-			iVar4 = 14;
+			iVar6 = 7;
+			iVar7 = 14;
 			iVar1 = 145;
 			break;
 		
 		case 72:
 			StringCopy(&Var2, "TORSO_P1_7_15" /* GXT: Fruity Check Shirt */, 16);
-			iVar3 = 7;
-			iVar4 = 15;
+			iVar6 = 7;
+			iVar7 = 15;
 			iVar1 = 145;
 			break;
 		
 		case 73:
 			StringCopy(&Var2, "TORSO_P1_8_0" /* GXT: Blue Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 0;
+			iVar6 = 8;
+			iVar7 = 0;
 			break;
 		
 		case 74:
 			StringCopy(&Var2, "TORSO_P1_8_1" /* GXT: Yellow Check Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 1;
+			iVar6 = 8;
+			iVar7 = 1;
 			break;
 		
 		case 75:
 			StringCopy(&Var2, "TORSO_P1_8_2" /* GXT: Off-White Striped Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 2;
+			iVar6 = 8;
+			iVar7 = 2;
 			break;
 		
 		case 76:
 			StringCopy(&Var2, "TORSO_P1_8_3" /* GXT: Off-White Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 3;
+			iVar6 = 8;
+			iVar7 = 3;
 			break;
 		
 		case 77:
 			StringCopy(&Var2, "TORSO_P1_8_4" /* GXT: Red Check Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 4;
+			iVar6 = 8;
+			iVar7 = 4;
 			iVar1 = 30;
 			break;
 		
 		case 78:
 			StringCopy(&Var2, "TORSO_P1_8_5" /* GXT: Charcoal Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 5;
+			iVar6 = 8;
+			iVar7 = 5;
 			iVar1 = 38;
 			break;
 		
 		case 79:
 			StringCopy(&Var2, "TORSO_P1_8_6" /* GXT: Blue Check Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 6;
+			iVar6 = 8;
+			iVar7 = 6;
 			iVar1 = 32;
 			break;
 		
 		case 80:
 			StringCopy(&Var2, "TORSO_P1_8_7" /* GXT: Gingham Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 7;
+			iVar6 = 8;
+			iVar7 = 7;
 			iVar1 = 30;
 			break;
 		
 		case 81:
 			StringCopy(&Var2, "TORSO_P1_8_8" /* GXT: Aqua Check Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 8;
+			iVar6 = 8;
+			iVar7 = 8;
 			iVar1 = 33;
 			break;
 		
 		case 82:
 			StringCopy(&Var2, "TORSO_P1_8_9" /* GXT: Orange Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 9;
+			iVar6 = 8;
+			iVar7 = 9;
 			iVar1 = 35;
 			break;
 		
 		case 83:
 			StringCopy(&Var2, "TORSO_P1_8_10" /* GXT: Mint Check Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 10;
+			iVar6 = 8;
+			iVar7 = 10;
 			iVar1 = 35;
 			break;
 		
 		case 84:
 			StringCopy(&Var2, "TORSO_P1_8_11" /* GXT: Dark Gray Check Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 11;
+			iVar6 = 8;
+			iVar7 = 11;
 			iVar1 = 38;
 			break;
 		
 		case 85:
 			StringCopy(&Var2, "TORSO_P1_8_12" /* GXT: Purple Check Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 12;
+			iVar6 = 8;
+			iVar7 = 12;
 			iVar1 = 33;
 			break;
 		
 		case 86:
 			StringCopy(&Var2, "TORSO_P1_8_13" /* GXT: Olive Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 13;
+			iVar6 = 8;
+			iVar7 = 13;
 			iVar1 = 35;
 			break;
 		
 		case 87:
 			StringCopy(&Var2, "TORSO_P1_8_14" /* GXT: Cream Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 14;
+			iVar6 = 8;
+			iVar7 = 14;
 			iVar1 = 38;
 			break;
 		
 		case 88:
 			StringCopy(&Var2, "TORSO_P1_8_15" /* GXT: Fruity Check Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 15;
+			iVar6 = 8;
+			iVar7 = 15;
 			iVar1 = 32;
 			break;
 		
 		case 89:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 0;
+			iVar6 = 9;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 90:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 10;
-			iVar4 = 0;
+			iVar6 = 10;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 91:
 			StringCopy(&Var2, "TORSO_P1_11_0" /* GXT: White Longsleeve */, 16);
-			iVar3 = 11;
-			iVar4 = 0;
+			iVar6 = 11;
+			iVar7 = 0;
 			break;
 		
 		case 92:
 			StringCopy(&Var2, "TORSO_P1_11_1" /* GXT: Gray Longsleeve */, 16);
-			iVar3 = 11;
-			iVar4 = 1;
+			iVar6 = 11;
+			iVar7 = 1;
 			iVar1 = 59;
 			break;
 		
 		case 93:
 			StringCopy(&Var2, "TORSO_P1_11_2" /* GXT: Black Longsleeve */, 16);
-			iVar3 = 11;
-			iVar4 = 2;
+			iVar6 = 11;
+			iVar7 = 2;
 			break;
 		
 		case 94:
 			StringCopy(&Var2, "TORSO_P1_11_3" /* GXT: Ten Off Yellow Longsleeve */, 16);
-			iVar3 = 11;
-			iVar4 = 3;
+			iVar6 = 11;
+			iVar7 = 3;
 			iVar1 = 25;
 			break;
 		
 		case 95:
 			StringCopy(&Var2, "TORSO_P1_11_4" /* GXT: Kingz Of Los Santos Longsleeve */, 16);
-			iVar3 = 11;
-			iVar4 = 4;
+			iVar6 = 11;
+			iVar7 = 4;
 			iVar1 = 29;
 			break;
 		
 		case 96:
 			StringCopy(&Var2, "TORSO_P1_11_5" /* GXT: Yeti Rainbow Longsleeve */, 16);
-			iVar3 = 11;
-			iVar4 = 5;
+			iVar6 = 11;
+			iVar7 = 5;
 			iVar1 = 27;
 			break;
 		
 		case 97:
 			StringCopy(&Var2, "TORSO_P1_11_6" /* GXT: Ten Off Red Longsleeve */, 16);
-			iVar3 = 11;
-			iVar4 = 6;
+			iVar6 = 11;
+			iVar7 = 6;
 			iVar1 = 25;
 			break;
 		
 		case 98:
 			StringCopy(&Var2, "TORSO_P1_11_7" /* GXT: Trey Baker Longsleeve */, 16);
-			iVar3 = 11;
-			iVar4 = 7;
+			iVar6 = 11;
+			iVar7 = 7;
 			iVar1 = 27;
 			break;
 		
 		case 99:
 			StringCopy(&Var2, "TORSO_P1_11_8" /* GXT: Stank Striped Longsleeve */, 16);
-			iVar3 = 11;
-			iVar4 = 8;
+			iVar6 = 11;
+			iVar7 = 8;
 			iVar1 = 28;
 			break;
 		
 		case 100:
 			StringCopy(&Var2, "TORSO_P1_11_9" /* GXT: Feud Olive Longsleeve */, 16);
-			iVar3 = 11;
-			iVar4 = 9;
+			iVar6 = 11;
+			iVar7 = 9;
 			iVar1 = 30;
 			break;
 		
 		case 101:
 			StringCopy(&Var2, "TORSO_P1_11_10" /* GXT: Yeti Gray Longsleeve */, 16);
-			iVar3 = 11;
-			iVar4 = 10;
+			iVar6 = 11;
+			iVar7 = 10;
 			iVar1 = 29;
 			break;
 		
 		case 102:
 			StringCopy(&Var2, "TORSO_P1_11_11" /* GXT: Yogarishima Longsleeve */, 16);
-			iVar3 = 11;
-			iVar4 = 11;
+			iVar6 = 11;
+			iVar7 = 11;
 			iVar1 = 27;
 			break;
 		
 		case 103:
 			StringCopy(&Var2, "TORSO_P1_11_12" /* GXT: Yeti Camo Longsleeve */, 16);
-			iVar3 = 11;
-			iVar4 = 12;
+			iVar6 = 11;
+			iVar7 = 12;
 			iVar1 = 29;
 			break;
 		
 		case 104:
 			StringCopy(&Var2, "TORSO_P1_11_13" /* GXT: Crevis White Longsleeve */, 16);
-			iVar3 = 11;
-			iVar4 = 13;
+			iVar6 = 11;
+			iVar7 = 13;
 			iVar1 = 32;
 			break;
 		
 		case 105:
 			StringCopy(&Var2, "TORSO_P1_11_14" /* GXT: Yeti Blue Longsleeve */, 16);
-			iVar3 = 11;
-			iVar4 = 14;
+			iVar6 = 11;
+			iVar7 = 14;
 			iVar1 = 30;
 			break;
 		
 		case 106:
 			StringCopy(&Var2, "TORSO_P1_11_15" /* GXT: Uptown Ryders Longsleeve */, 16);
-			iVar3 = 11;
-			iVar4 = 15;
+			iVar6 = 11;
+			iVar7 = 15;
 			iVar1 = 28;
 			break;
 		
@@ -26815,7 +26815,7 @@ void func_215(int iParam0)//Position - 0x1BB99
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_216(int iParam0)//Position - 0x1C7E3
@@ -26823,170 +26823,170 @@ void func_216(int iParam0)//Position - 0x1C7E3
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 2;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 2;
 	Global_78341[0 /*14*/].f_5 = 1;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "HAIR_P1_0_0" /* GXT: Fade */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "HAIR_P1_0_1" /* GXT: Triple Rails */, 16);
-			iVar3 = 0;
-			iVar4 = 1;
+			iVar6 = 0;
+			iVar7 = 1;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "HAIR_P1_0_2" /* GXT: Side Shaded */, 16);
-			iVar3 = 0;
-			iVar4 = 2;
+			iVar6 = 0;
+			iVar7 = 2;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "HAIR_P1_0_3" /* GXT: Wavy Siderows */, 16);
-			iVar3 = 0;
-			iVar4 = 3;
-			iVar6 = 3;
+			iVar6 = 0;
+			iVar7 = 3;
+			iVar9 = 3;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "HAIR_P1_0_4" /* GXT: Snakes */, 16);
-			iVar3 = 0;
-			iVar4 = 4;
-			iVar6 = 3;
+			iVar6 = 0;
+			iVar7 = 4;
+			iVar9 = 3;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "HAIR_P1_0_5" /* GXT: Tramlines */, 16);
-			iVar3 = 0;
-			iVar4 = 5;
-			iVar6 = 3;
+			iVar6 = 0;
+			iVar7 = 5;
+			iVar9 = 3;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "HAIR_P1_0_6" /* GXT: The King Fresh */, 16);
-			iVar3 = 0;
-			iVar4 = 6;
-			iVar6 = 3;
+			iVar6 = 0;
+			iVar7 = 6;
+			iVar9 = 3;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "HAIR_P1_0_7" /* GXT: Star Kutz */, 16);
-			iVar3 = 0;
-			iVar4 = 7;
-			iVar6 = 3;
+			iVar6 = 0;
+			iVar7 = 7;
+			iVar9 = 3;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "HAIR_P1_0_8" /* GXT: Tigerized */, 16);
-			iVar3 = 0;
-			iVar4 = 8;
-			iVar6 = 3;
+			iVar6 = 0;
+			iVar7 = 8;
+			iVar9 = 3;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "HAIR_P1_0_9" /* GXT: Abstraction */, 16);
-			iVar3 = 0;
-			iVar4 = 9;
-			iVar6 = 3;
+			iVar6 = 0;
+			iVar7 = 9;
+			iVar9 = 3;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "HAIR_P1_0_10" /* GXT: Shutters */, 16);
-			iVar3 = 0;
-			iVar4 = 10;
-			iVar6 = 3;
+			iVar6 = 0;
+			iVar7 = 10;
+			iVar9 = 3;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "HAIR_P1_0_11" /* GXT: Berms */, 16);
-			iVar3 = 0;
-			iVar4 = 11;
-			iVar6 = 3;
+			iVar6 = 0;
+			iVar7 = 11;
+			iVar9 = 3;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "HAIR_P1_0_12" /* GXT: Mellowplex */, 16);
-			iVar3 = 0;
-			iVar4 = 12;
-			iVar6 = 3;
+			iVar6 = 0;
+			iVar7 = 12;
+			iVar9 = 3;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "HAIR_P1_0_13" /* GXT: The Feud */, 16);
-			iVar3 = 0;
-			iVar4 = 13;
+			iVar6 = 0;
+			iVar7 = 13;
 			break;
 		
 		case 14:
 			StringCopy(&Var2, "HAIR_P1_0_14" /* GXT: Business on Top */, 16);
-			iVar3 = 0;
-			iVar4 = 14;
-			iVar6 = 3;
+			iVar6 = 0;
+			iVar7 = 14;
+			iVar9 = 3;
 			break;
 		
 		case 15:
 			StringCopy(&Var2, "HAIR_P1_0_15" /* GXT: Wild Palm */, 16);
-			iVar3 = 0;
-			iVar4 = 15;
-			iVar6 = 3;
+			iVar6 = 0;
+			iVar7 = 15;
+			iVar9 = 3;
 			break;
 		
 		case 16:
 			StringCopy(&Var2, "HAIR_P1_1_0" /* GXT: Lo Fro */, 16);
-			iVar3 = 1;
-			iVar4 = 0;
-			iVar6 = 3;
+			iVar6 = 1;
+			iVar7 = 0;
+			iVar9 = 3;
 			break;
 		
 		case 17:
 			StringCopy(&Var2, "HAIR_P1_2_0" /* GXT: Blowout */, 16);
-			iVar3 = 2;
-			iVar4 = 0;
-			iVar6 = 3;
+			iVar6 = 2;
+			iVar7 = 0;
+			iVar9 = 3;
 			break;
 		
 		case 18:
 			StringCopy(&Var2, "HAIR_P1_3_0" /* GXT: Cornrows */, 16);
-			iVar3 = 3;
-			iVar4 = 0;
 			iVar6 = 3;
+			iVar7 = 0;
+			iVar9 = 3;
 			break;
 		
 		case 19:
 			StringCopy(&Var2, "HAIR_P1_4_0" /* GXT: Shape-up */, 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			break;
 		
 		case 20:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 21, -1);
+			func_182(iVar10, iParam0, 21, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_217(int iParam0)//Position - 0x1CA5C
@@ -26994,88 +26994,88 @@ void func_217(int iParam0)//Position - 0x1CA5C
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
+	iVar6 = 0;
 	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 0;
 	Global_78341[0 /*14*/].f_5 = 1;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 1;
+			iVar6 = 0;
+			iVar7 = 1;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 2;
+			iVar6 = 0;
+			iVar7 = 2;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 3;
+			iVar6 = 0;
+			iVar7 = 3;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 4;
+			iVar6 = 0;
+			iVar7 = 4;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 5;
+			iVar6 = 0;
+			iVar7 = 5;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 6;
+			iVar6 = 0;
+			iVar7 = 6;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 7;
+			iVar6 = 0;
+			iVar7 = 7;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 8;
+			iVar6 = 0;
+			iVar7 = 8;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 9;
+			iVar6 = 0;
+			iVar7 = 9;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 10, -1);
+			func_182(iVar10, iParam0, 10, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_218(int iParam0, int iParam1)//Position - 0x1CBA2
@@ -27149,898 +27149,898 @@ void func_219(int iParam0)//Position - 0x1CC92
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 14;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 14;
 	Global_78341[0 /*14*/].f_5 = 0;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 1;
+			iVar8 = 1;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 2;
+			iVar8 = 2;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 3;
+			iVar8 = 3;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 4;
+			iVar8 = 4;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 5;
+			iVar8 = 5;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 6;
+			iVar8 = 6;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 7;
+			iVar8 = 7;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = -1;
-			iVar4 = 0;
+			iVar6 = -1;
+			iVar7 = 0;
 			iVar1 = 0;
-			iVar5 = 8;
+			iVar8 = 8;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "PROPS_P0_H1" /* GXT: Blue Baseball Cap */, 16);
-			iVar3 = 1;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "PROPS_P0_H2" /* GXT: White Hockey Mask */, 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			iVar1 = 320;
-			iVar5 = 11;
+			iVar8 = 11;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 14:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 15:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 16:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 0;
+			iVar6 = 6;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 17:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 0;
+			iVar6 = 7;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 18:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 0;
+			iVar6 = 8;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 19:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 0;
+			iVar6 = 9;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 20:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 10;
-			iVar4 = 0;
+			iVar6 = 10;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 21:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 11;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 22:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 1;
-			iVar5 = 0;
+			iVar6 = 11;
+			iVar7 = 1;
+			iVar8 = 0;
 			break;
 		
 		case 23:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 2;
-			iVar5 = 0;
+			iVar6 = 11;
+			iVar7 = 2;
+			iVar8 = 0;
 			break;
 		
 		case 24:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 3;
-			iVar5 = 0;
+			iVar6 = 11;
+			iVar7 = 3;
+			iVar8 = 0;
 			break;
 		
 		case 25:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 4;
-			iVar5 = 0;
+			iVar6 = 11;
+			iVar7 = 4;
+			iVar8 = 0;
 			break;
 		
 		case 26:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 5;
-			iVar5 = 0;
+			iVar6 = 11;
+			iVar7 = 5;
+			iVar8 = 0;
 			break;
 		
 		case 27:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 6;
-			iVar5 = 0;
+			iVar6 = 11;
+			iVar7 = 6;
+			iVar8 = 0;
 			break;
 		
 		case 28:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 7;
-			iVar5 = 0;
+			iVar6 = 11;
+			iVar7 = 7;
+			iVar8 = 0;
 			break;
 		
 		case 29:
 			StringCopy(&Var2, "PROPS_P0_H12" /* GXT: Black Knitted Hat */, 16);
-			iVar3 = 12;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 12;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 30:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 13;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 13;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 31:
 			StringCopy(&Var2, "PROPS_P1_H8_0" /* GXT: Green Monster Mask */, 16);
-			iVar3 = 14;
-			iVar4 = 0;
+			iVar6 = 14;
+			iVar7 = 0;
 			iVar1 = 270;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 32:
 			StringCopy(&Var2, "PROPS_P1_H8_1" /* GXT: Red Monster Mask */, 16);
-			iVar3 = 14;
-			iVar4 = 1;
+			iVar6 = 14;
+			iVar7 = 1;
 			iVar1 = 270;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 33:
 			StringCopy(&Var2, "PROPS_P1_H9_0" /* GXT: Pig Mask */, 16);
-			iVar3 = 15;
-			iVar4 = 0;
+			iVar6 = 15;
+			iVar7 = 0;
 			iVar1 = 200;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 34:
 			StringCopy(&Var2, "PROPS_P1_H9_1" /* GXT: Dark Pig Mask */, 16);
-			iVar3 = 15;
-			iVar4 = 1;
+			iVar6 = 15;
+			iVar7 = 1;
 			iVar1 = 200;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 35:
 			StringCopy(&Var2, "PROPS_P1_H10_0" /* GXT: Silver Skull Mask */, 16);
-			iVar3 = 16;
-			iVar4 = 0;
+			iVar6 = 16;
+			iVar7 = 0;
 			iVar1 = 350;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 36:
 			StringCopy(&Var2, "PROPS_P1_H10_1" /* GXT: Bone Skull Mask */, 16);
-			iVar3 = 16;
-			iVar4 = 1;
+			iVar6 = 16;
+			iVar7 = 1;
 			iVar1 = 350;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 37:
 			StringCopy(&Var2, "PROPS_P1_H11_0" /* GXT: Space Monkey Mask */, 16);
-			iVar3 = 17;
-			iVar4 = 0;
+			iVar6 = 17;
+			iVar7 = 0;
 			iVar1 = 450;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 38:
 			StringCopy(&Var2, "PROPS_P1_H12_0" /* GXT: White Hockey Mask */, 16);
-			iVar3 = 18;
-			iVar4 = 0;
+			iVar6 = 18;
+			iVar7 = 0;
 			iVar1 = 500;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 39:
 			StringCopy(&Var2, "PROPS_P1_H12_1" /* GXT: Red Hockey Mask */, 16);
-			iVar3 = 18;
-			iVar4 = 1;
+			iVar6 = 18;
+			iVar7 = 1;
 			iVar1 = 500;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 40:
 			StringCopy(&Var2, "PROPS_P1_H13_0" /* GXT: Ape Mask */, 16);
-			iVar3 = 19;
-			iVar4 = 0;
+			iVar6 = 19;
+			iVar7 = 0;
 			iVar1 = 50;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 41:
 			StringCopy(&Var2, "PROPS_P1_H13_1" /* GXT: Dark Ape Mask */, 16);
-			iVar3 = 19;
-			iVar4 = 1;
+			iVar6 = 19;
+			iVar7 = 1;
 			iVar1 = 50;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 42:
 			StringCopy(&Var2, "PROPS_P1_H14_0" /* GXT: Carnival Orange Mask */, 16);
-			iVar3 = 20;
-			iVar4 = 0;
+			iVar6 = 20;
+			iVar7 = 0;
 			iVar1 = 99;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 43:
 			StringCopy(&Var2, "PROPS_P1_H14_1" /* GXT: Carnival White Mask */, 16);
-			iVar3 = 20;
-			iVar4 = 1;
+			iVar6 = 20;
+			iVar7 = 1;
 			iVar1 = 99;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 44:
 			StringCopy(&Var2, "PROPS_P1_H14_2" /* GXT: Carnival Blue Mask */, 16);
-			iVar3 = 20;
-			iVar4 = 2;
+			iVar6 = 20;
+			iVar7 = 2;
 			iVar1 = 99;
-			iVar5 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 45:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 21;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 21;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 46:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 22;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 22;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 47:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 23;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 23;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 48:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 23;
-			iVar4 = 1;
-			iVar5 = 0;
+			iVar6 = 23;
+			iVar7 = 1;
+			iVar8 = 0;
 			break;
 		
 		case 49:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 23;
-			iVar4 = 2;
-			iVar5 = 0;
+			iVar6 = 23;
+			iVar7 = 2;
+			iVar8 = 0;
 			break;
 		
 		case 50:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 23;
-			iVar4 = 3;
-			iVar5 = 0;
+			iVar6 = 23;
+			iVar7 = 3;
+			iVar8 = 0;
 			break;
 		
 		case 51:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 23;
-			iVar4 = 4;
-			iVar5 = 0;
+			iVar6 = 23;
+			iVar7 = 4;
+			iVar8 = 0;
 			break;
 		
 		case 52:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 23;
-			iVar4 = 5;
-			iVar5 = 0;
+			iVar6 = 23;
+			iVar7 = 5;
+			iVar8 = 0;
 			break;
 		
 		case 53:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 24;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 24;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 54:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 25;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 25;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 55:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 26;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 26;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 56:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 27;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 27;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 57:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 28;
-			iVar4 = 0;
-			iVar5 = 0;
+			iVar6 = 28;
+			iVar7 = 0;
+			iVar8 = 0;
 			break;
 		
 		case 58:
 			StringCopy(&Var2, "PROPS_P0_E0" /* GXT: Black-Rimmed Glasses */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 45;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 59:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 60:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 61:
 			StringCopy(&Var2, "PROPS_P0_E3" /* GXT: Copper Sports Shades */, 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			iVar1 = 55;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 62:
 			StringCopy(&Var2, "PROPS_P0_E4" /* GXT: Enema Brown Glasses */, 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			iVar1 = 58;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 63:
 			StringCopy(&Var2, "PROPS_P0_E4_1" /* GXT: Enema Gray Glasses */, 16);
-			iVar3 = 4;
-			iVar4 = 1;
+			iVar6 = 4;
+			iVar7 = 1;
 			iVar1 = 56;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 64:
 			StringCopy(&Var2, "PROPS_P0_E4_2" /* GXT: Enema Black Glasses */, 16);
-			iVar3 = 4;
-			iVar4 = 2;
+			iVar6 = 4;
+			iVar7 = 2;
 			iVar1 = 60;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 65:
 			StringCopy(&Var2, "PROPS_P0_E4_3" /* GXT: Enema Tortoiseshell Glasses */, 16);
-			iVar3 = 4;
-			iVar4 = 3;
+			iVar6 = 4;
+			iVar7 = 3;
 			iVar1 = 65;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 66:
 			StringCopy(&Var2, "PROPS_P0_E4_4" /* GXT: Enema Coffee Glasses */, 16);
-			iVar3 = 4;
-			iVar4 = 4;
+			iVar6 = 4;
+			iVar7 = 4;
 			iVar1 = 62;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 67:
 			StringCopy(&Var2, "PROPS_P0_E4_5" /* GXT: Enema Walnut Glasses */, 16);
-			iVar3 = 4;
-			iVar4 = 5;
+			iVar6 = 4;
+			iVar7 = 5;
 			iVar1 = 65;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 68:
 			StringCopy(&Var2, "PROPS_P0_E4_6" /* GXT: Enema Silver Accent Glasses */, 16);
-			iVar3 = 4;
-			iVar4 = 6;
+			iVar6 = 4;
+			iVar7 = 6;
 			iVar1 = 68;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 69:
 			StringCopy(&Var2, "PROPS_P0_E4_7" /* GXT: Enema Smoke Glasses */, 16);
-			iVar3 = 4;
-			iVar4 = 7;
+			iVar6 = 4;
+			iVar7 = 7;
 			iVar1 = 68;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 70:
 			StringCopy(&Var2, "PROPS_P0_E5" /* GXT: Farshtunken Gold Aviators */, 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			iVar1 = 65;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 71:
 			StringCopy(&Var2, "PROPS_P0_E5_1" /* GXT: Farshtunken Purple Aviators */, 16);
-			iVar3 = 5;
-			iVar4 = 1;
+			iVar6 = 5;
+			iVar7 = 1;
 			iVar1 = 69;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 72:
 			StringCopy(&Var2, "PROPS_P0_E5_2" /* GXT: Farshtunken Silver Aviators */, 16);
-			iVar3 = 5;
-			iVar4 = 2;
+			iVar6 = 5;
+			iVar7 = 2;
 			iVar1 = 72;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 73:
 			StringCopy(&Var2, "PROPS_P0_E5_3" /* GXT: Farshtunken Gray Aviators */, 16);
-			iVar3 = 5;
-			iVar4 = 3;
+			iVar6 = 5;
+			iVar7 = 3;
 			iVar1 = 70;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 74:
 			StringCopy(&Var2, "PROPS_P0_E5_4" /* GXT: Farshtunken Blue Aviators */, 16);
-			iVar3 = 5;
-			iVar4 = 4;
+			iVar6 = 5;
+			iVar7 = 4;
 			iVar1 = 74;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 75:
 			StringCopy(&Var2, "PROPS_P0_E5_5" /* GXT: Farshtunken Tinted Aviators */, 16);
-			iVar3 = 5;
-			iVar4 = 5;
+			iVar6 = 5;
+			iVar7 = 5;
 			iVar1 = 78;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 76:
 			StringCopy(&Var2, "PROPS_P0_E5_6" /* GXT: Farshtunken Steel Aviators */, 16);
-			iVar3 = 5;
-			iVar4 = 6;
+			iVar6 = 5;
+			iVar7 = 6;
 			iVar1 = 82;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 77:
 			StringCopy(&Var2, "PROPS_P0_E5_7" /* GXT: Farshtunken Sepia Aviators */, 16);
-			iVar3 = 5;
-			iVar4 = 7;
+			iVar6 = 5;
+			iVar7 = 7;
 			iVar1 = 85;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 78:
 			StringCopy(&Var2, "PROPS_P0_E5_8" /* GXT: Farshtunken Black Aviators */, 16);
-			iVar3 = 5;
-			iVar4 = 8;
+			iVar6 = 5;
+			iVar7 = 8;
 			iVar1 = 85;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 79:
 			StringCopy(&Var2, "PROPS_P0_E5_9" /* GXT: Farshtunken Smoke Aviators */, 16);
-			iVar3 = 5;
-			iVar4 = 9;
-			iVar5 = 10;
+			iVar6 = 5;
+			iVar7 = 9;
+			iVar8 = 10;
 			break;
 		
 		case 80:
 			StringCopy(&Var2, "PROPS_P0_E6" /* GXT: Tung Charcoal Shades */, 16);
-			iVar3 = 6;
-			iVar4 = 0;
+			iVar6 = 6;
+			iVar7 = 0;
 			iVar1 = 69;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 81:
 			StringCopy(&Var2, "PROPS_P0_E6_1" /* GXT: Tung Ash Shades */, 16);
-			iVar3 = 6;
-			iVar4 = 1;
+			iVar6 = 6;
+			iVar7 = 1;
 			iVar1 = 69;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 82:
 			StringCopy(&Var2, "PROPS_P0_E6_2" /* GXT: Tung Gray Shades */, 16);
-			iVar3 = 6;
-			iVar4 = 2;
+			iVar6 = 6;
+			iVar7 = 2;
 			iVar1 = 69;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 83:
 			StringCopy(&Var2, "PROPS_P0_E6_3" /* GXT: Tung Red Shades */, 16);
-			iVar3 = 6;
-			iVar4 = 3;
+			iVar6 = 6;
+			iVar7 = 3;
 			iVar1 = 69;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 84:
 			StringCopy(&Var2, "PROPS_P0_E6_4" /* GXT: Tung Blue Shades */, 16);
-			iVar3 = 6;
-			iVar4 = 4;
+			iVar6 = 6;
+			iVar7 = 4;
 			iVar1 = 69;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 85:
 			StringCopy(&Var2, "PROPS_P0_E6_5" /* GXT: Tung Yellow Shades */, 16);
-			iVar3 = 6;
-			iVar4 = 5;
+			iVar6 = 6;
+			iVar7 = 5;
 			iVar1 = 69;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 86:
 			StringCopy(&Var2, "PROPS_P0_E6_6" /* GXT: Tung Black Shades */, 16);
-			iVar3 = 6;
-			iVar4 = 6;
+			iVar6 = 6;
+			iVar7 = 6;
 			iVar1 = 69;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 87:
 			StringCopy(&Var2, "PROPS_P0_E6_7" /* GXT: Tung Rosy Shades */, 16);
-			iVar3 = 6;
-			iVar4 = 7;
+			iVar6 = 6;
+			iVar7 = 7;
 			iVar1 = 69;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 88:
 			StringCopy(&Var2, "PROPS_P0_E6_8" /* GXT: Tung Hornet Shades */, 16);
-			iVar3 = 6;
-			iVar4 = 8;
+			iVar6 = 6;
+			iVar7 = 8;
 			iVar1 = 69;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 89:
 			StringCopy(&Var2, "PROPS_P0_E6_9" /* GXT: Tung Two-Tone Shades */, 16);
-			iVar3 = 6;
-			iVar4 = 9;
+			iVar6 = 6;
+			iVar7 = 9;
 			iVar1 = 69;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 90:
 			StringCopy(&Var2, "PROPS_P0_E7" /* GXT: Swimming Goggles */, 16);
-			iVar3 = 7;
-			iVar4 = 0;
-			iVar5 = 10;
+			iVar6 = 7;
+			iVar7 = 0;
+			iVar8 = 10;
 			break;
 		
 		case 91:
 			StringCopy(&Var2, "PROPS_P0_E8" /* GXT: Rimmers Azure Aviators */, 16);
-			iVar3 = 8;
-			iVar4 = 0;
+			iVar6 = 8;
+			iVar7 = 0;
 			iVar1 = 170;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 92:
 			StringCopy(&Var2, "PROPS_P0_E8_1" /* GXT: Rimmers Smoke Aviators */, 16);
-			iVar3 = 8;
-			iVar4 = 1;
+			iVar6 = 8;
+			iVar7 = 1;
 			iVar1 = 175;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 93:
 			StringCopy(&Var2, "PROPS_P0_E8_2" /* GXT: Rimmers Yellow Aviators */, 16);
-			iVar3 = 8;
-			iVar4 = 2;
+			iVar6 = 8;
+			iVar7 = 2;
 			iVar1 = 180;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 94:
 			StringCopy(&Var2, "PROPS_P0_E8_3" /* GXT: Rimmers Topaz Aviators */, 16);
-			iVar3 = 8;
-			iVar4 = 3;
+			iVar6 = 8;
+			iVar7 = 3;
 			iVar1 = 185;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 95:
 			StringCopy(&Var2, "PROPS_P0_E8_4" /* GXT: Rimmers Tinted Aviators */, 16);
-			iVar3 = 8;
-			iVar4 = 4;
+			iVar6 = 8;
+			iVar7 = 4;
 			iVar1 = 189;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 96:
 			StringCopy(&Var2, "PROPS_P0_E8_5" /* GXT: Rimmers Steel Aviators */, 16);
-			iVar3 = 8;
-			iVar4 = 5;
+			iVar6 = 8;
+			iVar7 = 5;
 			iVar1 = 195;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 97:
 			StringCopy(&Var2, "PROPS_P0_E8_6" /* GXT: Rimmers Indigo Aviators */, 16);
-			iVar3 = 8;
-			iVar4 = 6;
+			iVar6 = 8;
+			iVar7 = 6;
 			iVar1 = 235;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 98:
 			StringCopy(&Var2, "PROPS_P0_E8_7" /* GXT: Rimmers Chocolate Aviators */, 16);
-			iVar3 = 8;
-			iVar4 = 7;
+			iVar6 = 8;
+			iVar7 = 7;
 			iVar1 = 245;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 99:
 			StringCopy(&Var2, "PROPS_P0_E8_8" /* GXT: Rimmers Sepia Aviators */, 16);
-			iVar3 = 8;
-			iVar4 = 8;
+			iVar6 = 8;
+			iVar7 = 8;
 			iVar1 = 250;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 100:
 			StringCopy(&Var2, "PROPS_P0_E8_9" /* GXT: Rimmers Slate Aviators */, 16);
-			iVar3 = 8;
-			iVar4 = 9;
+			iVar6 = 8;
+			iVar7 = 9;
 			iVar1 = 275;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 101:
 			StringCopy(&Var2, "PROPS_P0_E8_10" /* GXT: Rimmers Gold Aviators */, 16);
-			iVar3 = 8;
-			iVar4 = 10;
+			iVar6 = 8;
+			iVar7 = 10;
 			iVar1 = 280;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 102:
 			StringCopy(&Var2, "PROPS_P0_E8_11" /* GXT: Rimmers Blue Aviators */, 16);
-			iVar3 = 8;
-			iVar4 = 11;
+			iVar6 = 8;
+			iVar7 = 11;
 			iVar1 = 295;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 103:
 			StringCopy(&Var2, "PROPS_P0_E9" /* GXT: Hawaiian Snow Black Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 0;
+			iVar6 = 9;
+			iVar7 = 0;
 			iVar1 = 179;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 104:
 			StringCopy(&Var2, "PROPS_P0_E9_1" /* GXT: Hawaiian Snow Charcoal Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 1;
+			iVar6 = 9;
+			iVar7 = 1;
 			iVar1 = 159;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 105:
 			StringCopy(&Var2, "PROPS_P0_E9_2" /* GXT: Hawaiian Snow Ash Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 2;
+			iVar6 = 9;
+			iVar7 = 2;
 			iVar1 = 165;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 106:
 			StringCopy(&Var2, "PROPS_P0_E9_3" /* GXT: Hawaiian Snow Gray Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 3;
+			iVar6 = 9;
+			iVar7 = 3;
 			iVar1 = 155;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 107:
 			StringCopy(&Var2, "PROPS_P0_E9_4" /* GXT: Hawaiian Snow Tan Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 4;
+			iVar6 = 9;
+			iVar7 = 4;
 			iVar1 = 175;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 108:
 			StringCopy(&Var2, "PROPS_P0_E9_5" /* GXT: Hawaiian Snow Tortoiseshell Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 5;
+			iVar6 = 9;
+			iVar7 = 5;
 			iVar1 = 185;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 109:
 			StringCopy(&Var2, "PROPS_P0_E9_6" /* GXT: Hawaiian Snow Walnut Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 6;
+			iVar6 = 9;
+			iVar7 = 6;
 			iVar1 = 189;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 110:
 			StringCopy(&Var2, "PROPS_P0_E9_7" /* GXT: Hawaiian Snow Marbled Shades */, 16);
-			iVar3 = 9;
-			iVar4 = 7;
+			iVar6 = 9;
+			iVar7 = 7;
 			iVar1 = 225;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 111:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 10;
-			iVar4 = 0;
+			iVar6 = 10;
+			iVar7 = 0;
 			iVar1 = 100;
-			iVar5 = 10;
+			iVar8 = 10;
 			break;
 		
 		case 112:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
-			iVar5 = 2;
+			iVar8 = 2;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 113, -1);
+			func_182(iVar10, iParam0, 113, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_220(int iParam0)//Position - 0x1DA1C
@@ -28048,104 +28048,104 @@ void func_220(int iParam0)//Position - 0x1DA1C
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 13;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 13;
 	Global_78341[0 /*14*/].f_5 = 0;
 	switch (iParam0)
 	{
 		case 31:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 0:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 10, -1);
+			func_182(iVar10, iParam0, 10, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_221(int iParam0)//Position - 0x1DB96
@@ -28153,364 +28153,364 @@ void func_221(int iParam0)//Position - 0x1DB96
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 12;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 12;
 	Global_78341[0 /*14*/].f_5 = 0;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "OUTFIT_P0_0" /* GXT: Gray Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "OUTFIT_P0_1" /* GXT: Firefighter */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "OUTFIT_P0_4" /* GXT: Janitor */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "OUTFIT_P0_7" /* GXT: Highway Patrol */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "OUTFIT_P0_8" /* GXT: Golf */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "OUTFIT_P0_9" /* GXT: Bed */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "OUTFIT_P0_11" /* GXT: Epsilon Robes */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "OUTFIT_P0_12" /* GXT: Tennis */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "OUTFIT_P0_14" /* GXT: Scuba Land */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "OUTFIT_P0_17" /* GXT: Stealth */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "OUTFIT_P0_18" /* GXT: Triathlon */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 14:
 			StringCopy(&Var2, "OUTFIT_P0_19" /* GXT: Security */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 15:
 			StringCopy(&Var2, "OUTFIT_P0_20" /* GXT: Exterminator */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 16:
 			StringCopy(&Var2, "OUTFIT_P0_22" /* GXT: Tuxedo */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 10000;
 			break;
 		
 		case 17:
 			StringCopy(&Var2, "OUTFIT_P0_23" /* GXT: Ludendorff */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 18:
 			StringCopy(&Var2, "OUTFIT_P0_24" /* GXT: Rappel Gear */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 19:
 			StringCopy(&Var2, "OUTFIT_P0_26" /* GXT: Blue Boiler Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 20:
 			StringCopy(&Var2, "OUTFIT_P0_28" /* GXT: Navy Boiler Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 105;
 			break;
 		
 		case 21:
 			StringCopy(&Var2, "OUTFIT_P0_29" /* GXT: Gray Boiler Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 105;
 			break;
 		
 		case 22:
 			StringCopy(&Var2, "OUTFIT_P0_30" /* GXT: Green Boiler Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 105;
 			break;
 		
 		case 23:
 			StringCopy(&Var2, "OUTFIT_P0_31" /* GXT: Prologue */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 24:
 			StringCopy(&Var2, "OUTFIT_P0_32" /* GXT: Spec Ops */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 25:
 			StringCopy(&Var2, "OUTFIT_P0_33" /* GXT: Denim Shirt, Jeans */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 26:
 			StringCopy(&Var2, "OUTFIT_P0_34" /* GXT: Slate Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 27:
 			StringCopy(&Var2, "OUTFIT_P0_35" /* GXT: Leather Jacket, Jeans */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 28:
 			StringCopy(&Var2, "OUTFIT_P0_11" /* GXT: Epsilon Robes */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 29:
 			StringCopy(&Var2, "OUTFIT_P0_36" /* GXT: Charcoal Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 4900;
 			break;
 		
 		case 30:
 			StringCopy(&Var2, "OUTFIT_P0_37" /* GXT: Pale Blue Shirt, Gray Pants */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 840;
 			break;
 		
 		case 31:
 			StringCopy(&Var2, "OUTFIT_P0_38" /* GXT: Jewel Heist Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 32:
 			StringCopy(&Var2, "OUTFIT_P0_39" /* GXT: Polo Shirt, Beach Shorts */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 33:
 			StringCopy(&Var2, "OUTFIT_P0_40" /* GXT: Polo Shirt, Suit Pants */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 34:
 			StringCopy(&Var2, "OUTFIT_P0_41" /* GXT: Shirt, Shorts */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 35:
 			StringCopy(&Var2, "OUTFIT_P0_42" /* GXT: Polo Shirt, Jeans */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 36:
 			StringCopy(&Var2, "OUTFIT_P0_43" /* GXT: Topaz Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 37:
 			StringCopy(&Var2, "OUTFIT_P0_44" /* GXT: Pale Blue Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 3900;
 			break;
 		
 		case 38:
 			StringCopy(&Var2, "OUTFIT_P0_45" /* GXT: Off-White Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 4000;
 			break;
 		
 		case 39:
 			StringCopy(&Var2, "OUTFIT_P0_46" /* GXT: Olive Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 5900;
 			break;
 		
 		case 40:
 			StringCopy(&Var2, "OUTFIT_P0_47" /* GXT: Cream Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 4600;
 			break;
 		
 		case 41:
 			StringCopy(&Var2, "OUTFIT_P0_48" /* GXT: Navy Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 5500;
 			break;
 		
 		case 42:
 			StringCopy(&Var2, "OUTFIT_P0_49" /* GXT: Beige Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 4400;
 			break;
 		
 		case 43:
 			StringCopy(&Var2, "OUTFIT_P0_50" /* GXT: Smoke Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 4400;
 			break;
 		
 		case 44:
 			StringCopy(&Var2, "OUTFIT_P0_51" /* GXT: Blue-Gray Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 4900;
 			break;
 		
 		case 45:
 			StringCopy(&Var2, "OUTFIT_P0_52" /* GXT: Ash Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 5500;
 			break;
 		
 		case 46:
 			StringCopy(&Var2, "OUTFIT_P0_53" /* GXT: Sand Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 4500;
 			break;
 		
 		case 47:
 			StringCopy(&Var2, "OUTFIT_P0_54" /* GXT: Black Suit */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			iVar1 = 5900;
 			break;
 		
 		case 48:
 			StringCopy(&Var2, "OUTFIT_P0_55" /* GXT: Moto X */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 49:
 			StringCopy(&Var2, "OUTFIT_P0_17" /* GXT: Stealth */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 50:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 51:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 52:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 53, -1);
+			func_182(iVar10, iParam0, 53, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_222(int iParam0)//Position - 0x1E10D
@@ -28518,334 +28518,334 @@ void func_222(int iParam0)//Position - 0x1E10D
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 11;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 11;
 	Global_78341[0 /*14*/].f_5 = 0;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "JBIB_P0_02_0" /* GXT: Ash T-Shirt */, 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "JBIB_P0_02_1" /* GXT: White T-Shirt */, 16);
-			iVar3 = 2;
-			iVar4 = 1;
+			iVar6 = 2;
+			iVar7 = 1;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "JBIB_P0_02_2" /* GXT: Gray T-Shirt */, 16);
-			iVar3 = 2;
-			iVar4 = 2;
+			iVar6 = 2;
+			iVar7 = 2;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "JBIB_P0_02_3" /* GXT: Charcoal T-Shirt */, 16);
-			iVar3 = 2;
-			iVar4 = 3;
+			iVar6 = 2;
+			iVar7 = 3;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "JBIB_P0_02_4" /* GXT: Green T-Shirt */, 16);
-			iVar3 = 2;
-			iVar4 = 4;
+			iVar6 = 2;
+			iVar7 = 4;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "JBIB_P0_02_5" /* GXT: Blue T-Shirt */, 16);
-			iVar3 = 2;
-			iVar4 = 5;
+			iVar6 = 2;
+			iVar7 = 5;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "JBIB_P0_03_0" /* GXT: Charcoal Henley */, 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			iVar1 = 390;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "JBIB_P0_03_1" /* GXT: Gray Henley */, 16);
-			iVar3 = 3;
-			iVar4 = 1;
+			iVar6 = 3;
+			iVar7 = 1;
 			iVar1 = 390;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "JBIB_P0_03_2" /* GXT: Black Henley */, 16);
-			iVar3 = 3;
-			iVar4 = 2;
+			iVar6 = 3;
+			iVar7 = 2;
 			iVar1 = 420;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "JBIB_P0_03_3" /* GXT: Beige Henley */, 16);
-			iVar3 = 3;
-			iVar4 = 3;
+			iVar6 = 3;
+			iVar7 = 3;
 			iVar1 = 420;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "JBIB_P0_03_4" /* GXT: Brown Henley */, 16);
-			iVar3 = 3;
-			iVar4 = 4;
+			iVar6 = 3;
+			iVar7 = 4;
 			iVar1 = 490;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "JBIB_P0_03_5" /* GXT: Navy Henley */, 16);
-			iVar3 = 3;
-			iVar4 = 5;
+			iVar6 = 3;
+			iVar7 = 5;
 			iVar1 = 490;
 			break;
 		
 		case 14:
 			StringCopy(&Var2, "JBIB_P0_03_6" /* GXT: Navy Striped Henley */, 16);
-			iVar3 = 3;
-			iVar4 = 6;
+			iVar6 = 3;
+			iVar7 = 6;
 			iVar1 = 540;
 			break;
 		
 		case 15:
 			StringCopy(&Var2, "JBIB_P0_03_7" /* GXT: Gray Striped Henley */, 16);
-			iVar3 = 3;
-			iVar4 = 7;
+			iVar6 = 3;
+			iVar7 = 7;
 			iVar1 = 540;
 			break;
 		
 		case 16:
 			StringCopy(&Var2, "JBIB_P0_03_8" /* GXT: Gray Wool Henley */, 16);
-			iVar3 = 3;
-			iVar4 = 8;
+			iVar6 = 3;
+			iVar7 = 8;
 			iVar1 = 550;
 			break;
 		
 		case 17:
 			StringCopy(&Var2, "JBIB_P0_03_9" /* GXT: Charcoal Striped Henley */, 16);
-			iVar3 = 3;
-			iVar4 = 9;
+			iVar6 = 3;
+			iVar7 = 9;
 			iVar1 = 540;
 			break;
 		
 		case 18:
 			StringCopy(&Var2, "JBIB_P0_04_0" /* GXT: Charcoal V Neck */, 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			iVar1 = 850;
 			break;
 		
 		case 19:
 			StringCopy(&Var2, "JBIB_P0_04_1" /* GXT: Beige V Neck */, 16);
-			iVar3 = 4;
-			iVar4 = 1;
+			iVar6 = 4;
+			iVar7 = 1;
 			iVar1 = 850;
 			break;
 		
 		case 20:
 			StringCopy(&Var2, "JBIB_P0_04_2" /* GXT: Black V Neck */, 16);
-			iVar3 = 4;
-			iVar4 = 2;
+			iVar6 = 4;
+			iVar7 = 2;
 			iVar1 = 890;
 			break;
 		
 		case 21:
 			StringCopy(&Var2, "JBIB_P0_04_3" /* GXT: Olive V Neck */, 16);
-			iVar3 = 4;
-			iVar4 = 3;
+			iVar6 = 4;
+			iVar7 = 3;
 			iVar1 = 890;
 			break;
 		
 		case 22:
 			StringCopy(&Var2, "JBIB_P0_04_4" /* GXT: Gray V Neck */, 16);
-			iVar3 = 4;
-			iVar4 = 4;
+			iVar6 = 4;
+			iVar7 = 4;
 			iVar1 = 920;
 			break;
 		
 		case 23:
 			StringCopy(&Var2, "JBIB_P0_04_5" /* GXT: Brown V Neck */, 16);
-			iVar3 = 4;
-			iVar4 = 5;
+			iVar6 = 4;
+			iVar7 = 5;
 			iVar1 = 920;
 			break;
 		
 		case 24:
 			StringCopy(&Var2, "JBIB_P0_04_6" /* GXT: Black Striped V Neck */, 16);
-			iVar3 = 4;
-			iVar4 = 6;
+			iVar6 = 4;
+			iVar7 = 6;
 			iVar1 = 950;
 			break;
 		
 		case 25:
 			StringCopy(&Var2, "JBIB_P0_04_7" /* GXT: Gray Diamond V Neck */, 16);
-			iVar3 = 4;
-			iVar4 = 7;
+			iVar6 = 4;
+			iVar7 = 7;
 			iVar1 = 980;
 			break;
 		
 		case 26:
 			StringCopy(&Var2, "JBIB_P0_04_8" /* GXT: Brown Striped V Neck */, 16);
-			iVar3 = 4;
-			iVar4 = 8;
+			iVar6 = 4;
+			iVar7 = 8;
 			iVar1 = 1050;
 			break;
 		
 		case 27:
 			StringCopy(&Var2, "JBIB_P0_04_9" /* GXT: Silver Diamond V Neck */, 16);
-			iVar3 = 4;
-			iVar4 = 9;
+			iVar6 = 4;
+			iVar7 = 9;
 			iVar1 = 1100;
 			break;
 		
 		case 28:
 			StringCopy(&Var2, "JBIB_P0_05_0" /* GXT: Black Vest, White Shirt */, 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			iVar1 = 1890;
 			break;
 		
 		case 29:
 			StringCopy(&Var2, "JBIB_P0_05_1" /* GXT: Black Vest, Black Shirt */, 16);
-			iVar3 = 5;
-			iVar4 = 1;
+			iVar6 = 5;
+			iVar7 = 1;
 			iVar1 = 1820;
 			break;
 		
 		case 30:
 			StringCopy(&Var2, "JBIB_P0_05_2" /* GXT: Black Vest, Gray Shirt */, 16);
-			iVar3 = 5;
-			iVar4 = 2;
+			iVar6 = 5;
+			iVar7 = 2;
 			iVar1 = 1820;
 			break;
 		
 		case 31:
 			StringCopy(&Var2, "JBIB_P0_05_3" /* GXT: Black Vest, Blue Shirt */, 16);
-			iVar3 = 5;
-			iVar4 = 3;
+			iVar6 = 5;
+			iVar7 = 3;
 			iVar1 = 1850;
 			break;
 		
 		case 32:
 			StringCopy(&Var2, "JBIB_P0_05_4" /* GXT: Black Vest, Pink Shirt */, 16);
-			iVar3 = 5;
-			iVar4 = 4;
+			iVar6 = 5;
+			iVar7 = 4;
 			iVar1 = 1850;
 			break;
 		
 		case 33:
 			StringCopy(&Var2, "JBIB_P0_05_5" /* GXT: Ash Vest, White Shirt */, 16);
-			iVar3 = 5;
-			iVar4 = 5;
+			iVar6 = 5;
+			iVar7 = 5;
 			iVar1 = 1900;
 			break;
 		
 		case 34:
 			StringCopy(&Var2, "JBIB_P0_05_6" /* GXT: Ash Vest, Black Shirt */, 16);
-			iVar3 = 5;
-			iVar4 = 6;
+			iVar6 = 5;
+			iVar7 = 6;
 			iVar1 = 1920;
 			break;
 		
 		case 35:
 			StringCopy(&Var2, "JBIB_P0_05_7" /* GXT: Ash Vest, Gray Shirt */, 16);
-			iVar3 = 5;
-			iVar4 = 7;
+			iVar6 = 5;
+			iVar7 = 7;
 			iVar1 = 1980;
 			break;
 		
 		case 36:
 			StringCopy(&Var2, "JBIB_P0_05_8" /* GXT: Ash Vest, Blue Shirt */, 16);
-			iVar3 = 5;
-			iVar4 = 8;
+			iVar6 = 5;
+			iVar7 = 8;
 			iVar1 = 2100;
 			break;
 		
 		case 37:
 			StringCopy(&Var2, "JBIB_P0_05_9" /* GXT: Ash Vest, Pink Shirt */, 16);
-			iVar3 = 5;
-			iVar4 = 9;
+			iVar6 = 5;
+			iVar7 = 9;
 			iVar1 = 2120;
 			break;
 		
 		case 38:
 			StringCopy(&Var2, "JBIB_P0_05_10" /* GXT: Blue Vest, White Shirt */, 16);
-			iVar3 = 5;
-			iVar4 = 10;
+			iVar6 = 5;
+			iVar7 = 10;
 			iVar1 = 2000;
 			break;
 		
 		case 39:
 			StringCopy(&Var2, "JBIB_P0_05_11" /* GXT: Blue Vest, Black Shirt */, 16);
-			iVar3 = 5;
-			iVar4 = 11;
+			iVar6 = 5;
+			iVar7 = 11;
 			iVar1 = 2200;
 			break;
 		
 		case 40:
 			StringCopy(&Var2, "JBIB_P0_05_12" /* GXT: Blue Vest, Gray Shirt */, 16);
-			iVar3 = 5;
-			iVar4 = 12;
+			iVar6 = 5;
+			iVar7 = 12;
 			iVar1 = 2280;
 			break;
 		
 		case 41:
 			StringCopy(&Var2, "JBIB_P0_05_13" /* GXT: Blue Vest, Blue Shirt */, 16);
-			iVar3 = 5;
-			iVar4 = 13;
+			iVar6 = 5;
+			iVar7 = 13;
 			iVar1 = 2300;
 			break;
 		
 		case 42:
 			StringCopy(&Var2, "JBIB_P0_05_14" /* GXT: Blue Vest, Pink Shirt */, 16);
-			iVar3 = 5;
-			iVar4 = 14;
+			iVar6 = 5;
+			iVar7 = 14;
 			iVar1 = 2350;
 			break;
 		
 		case 43:
 			StringCopy(&Var2, "JBIB_P0_05_15" /* GXT: Stone Vest, White Shirt */, 16);
-			iVar3 = 5;
-			iVar4 = 15;
+			iVar6 = 5;
+			iVar7 = 15;
 			iVar1 = 2280;
 			break;
 		
 		case 44:
 			StringCopy(&Var2, "JBIB_P0_06_0" /* GXT: Bare Chest */, 16);
-			iVar3 = 6;
-			iVar4 = 0;
+			iVar6 = 6;
+			iVar7 = 0;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 45, -1);
+			func_182(iVar10, iParam0, 45, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_223(int iParam0)//Position - 0x1E637
@@ -28853,34 +28853,34 @@ void func_223(int iParam0)//Position - 0x1E637
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 7;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 7;
 	Global_78341[0 /*14*/].f_5 = 0;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 1, -1);
+			func_182(iVar10, iParam0, 1, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_224(int iParam0)//Position - 0x1E6AB
@@ -28888,58 +28888,58 @@ void func_224(int iParam0)//Position - 0x1E6AB
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 1;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 1;
 	Global_78341[0 /*14*/].f_5 = 0;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "BERD_P0_0_0" /* GXT: Clean Shave */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "BERD_P0_1_0" /* GXT: Stubbled */, 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "BERD_P0_2_0" /* GXT: Long Stubbled */, 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "BERD_P0_3_0" /* GXT: Full Goatee */, 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "BERD_P0_4_0" /* GXT: Full Beard */, 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 5, -1);
+			func_182(iVar10, iParam0, 5, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_225(int iParam0)//Position - 0x1E77B
@@ -28947,316 +28947,316 @@ void func_225(int iParam0)//Position - 0x1E77B
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 10;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 10;
 	Global_78341[0 /*14*/].f_5 = 0;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 0;
+			iVar6 = 6;
+			iVar7 = 0;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 0;
+			iVar6 = 7;
+			iVar7 = 0;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 1;
+			iVar6 = 7;
+			iVar7 = 1;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 2;
+			iVar6 = 7;
+			iVar7 = 2;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 3;
+			iVar6 = 7;
+			iVar7 = 3;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 4;
+			iVar6 = 7;
+			iVar7 = 4;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 5;
+			iVar6 = 7;
+			iVar7 = 5;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 6;
+			iVar6 = 7;
+			iVar7 = 6;
 			break;
 		
 		case 14:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 7;
+			iVar6 = 7;
+			iVar7 = 7;
 			break;
 		
 		case 15:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 0;
+			iVar6 = 8;
+			iVar7 = 0;
 			break;
 		
 		case 16:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 1;
+			iVar6 = 8;
+			iVar7 = 1;
 			break;
 		
 		case 17:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 2;
+			iVar6 = 8;
+			iVar7 = 2;
 			break;
 		
 		case 18:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 3;
+			iVar6 = 8;
+			iVar7 = 3;
 			break;
 		
 		case 19:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 4;
+			iVar6 = 8;
+			iVar7 = 4;
 			break;
 		
 		case 20:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 5;
+			iVar6 = 8;
+			iVar7 = 5;
 			break;
 		
 		case 21:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 0;
+			iVar6 = 9;
+			iVar7 = 0;
 			break;
 		
 		case 22:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 1;
+			iVar6 = 9;
+			iVar7 = 1;
 			break;
 		
 		case 23:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 2;
+			iVar6 = 9;
+			iVar7 = 2;
 			break;
 		
 		case 24:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 3;
+			iVar6 = 9;
+			iVar7 = 3;
 			break;
 		
 		case 25:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 4;
+			iVar6 = 9;
+			iVar7 = 4;
 			break;
 		
 		case 26:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 5;
+			iVar6 = 9;
+			iVar7 = 5;
 			break;
 		
 		case 27:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 6;
+			iVar6 = 9;
+			iVar7 = 6;
 			break;
 		
 		case 28:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 10;
-			iVar4 = 0;
+			iVar6 = 10;
+			iVar7 = 0;
 			break;
 		
 		case 29:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 10;
-			iVar4 = 1;
+			iVar6 = 10;
+			iVar7 = 1;
 			break;
 		
 		case 30:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 10;
-			iVar4 = 2;
+			iVar6 = 10;
+			iVar7 = 2;
 			break;
 		
 		case 31:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 10;
-			iVar4 = 3;
+			iVar6 = 10;
+			iVar7 = 3;
 			break;
 		
 		case 32:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 10;
-			iVar4 = 4;
+			iVar6 = 10;
+			iVar7 = 4;
 			break;
 		
 		case 33:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 10;
-			iVar4 = 5;
+			iVar6 = 10;
+			iVar7 = 5;
 			break;
 		
 		case 34:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 10;
-			iVar4 = 6;
+			iVar6 = 10;
+			iVar7 = 6;
 			break;
 		
 		case 35:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 10;
-			iVar4 = 7;
+			iVar6 = 10;
+			iVar7 = 7;
 			break;
 		
 		case 36:
 			StringCopy(&Var2, "DECL_P0_10_8" /* GXT: Del Perro Pier T-Shirt */, 16);
-			iVar3 = 10;
-			iVar4 = 8;
+			iVar6 = 10;
+			iVar7 = 8;
 			break;
 		
 		case 37:
 			StringCopy(&Var2, "DECL_P0_10_9" /* GXT: Los Santos T-Shirt */, 16);
-			iVar3 = 10;
-			iVar4 = 9;
+			iVar6 = 10;
+			iVar7 = 9;
 			break;
 		
 		case 38:
 			StringCopy(&Var2, "DECL_P0_10_10" /* GXT: Sharkies Bites T-Shirt */, 16);
-			iVar3 = 10;
-			iVar4 = 10;
+			iVar6 = 10;
+			iVar7 = 10;
 			break;
 		
 		case 39:
 			StringCopy(&Var2, "DECL_P0_10_11" /* GXT: Muscle Peach T-Shirt */, 16);
-			iVar3 = 10;
-			iVar4 = 11;
+			iVar6 = 10;
+			iVar7 = 11;
 			break;
 		
 		case 40:
 			StringCopy(&Var2, "DECL_P0_10_12" /* GXT: Coral Reefers T-Shirt */, 16);
-			iVar3 = 10;
-			iVar4 = 12;
+			iVar6 = 10;
+			iVar7 = 12;
 			break;
 		
 		case 41:
 			StringCopy(&Var2, "DECL_P0_10_13" /* GXT: SmokeBomb T-Shirt */, 16);
-			iVar3 = 10;
-			iVar4 = 13;
+			iVar6 = 10;
+			iVar7 = 13;
 			break;
 		
 		case 42:
 			StringCopy(&Var2, "DECL_P0_10_14" /* GXT: The Big Puffa T-Shirt */, 16);
-			iVar3 = 10;
-			iVar4 = 14;
+			iVar6 = 10;
+			iVar7 = 14;
 			break;
 		
 		case 43:
 			StringCopy(&Var2, "DECL_P0_10_15" /* GXT: Lob-Star T-Shirt */, 16);
-			iVar3 = 10;
-			iVar4 = 15;
+			iVar6 = 10;
+			iVar7 = 15;
 			break;
 		
 		case 44:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 0;
+			iVar6 = 11;
+			iVar7 = 0;
 			break;
 		
 		case 45:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 1;
+			iVar6 = 11;
+			iVar7 = 1;
 			break;
 		
 		case 46:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 2;
+			iVar6 = 11;
+			iVar7 = 2;
 			break;
 		
 		case 47:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 3;
+			iVar6 = 11;
+			iVar7 = 3;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 48, -1);
+			func_182(iVar10, iParam0, 48, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_226(int iParam0)//Position - 0x1EC53
@@ -29264,163 +29264,163 @@ void func_226(int iParam0)//Position - 0x1EC53
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 9;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 9;
 	Global_78341[0 /*14*/].f_5 = 0;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 1;
+			iVar6 = 1;
+			iVar7 = 1;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 0;
+			iVar6 = 6;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 0;
+			iVar6 = 7;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "SPEC2_P0_08_0" /* GXT: Red Wrestler Mask */, 16);
-			iVar3 = 8;
-			iVar4 = 0;
+			iVar6 = 8;
+			iVar7 = 0;
 			iVar1 = 125;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "SPEC2_P0_08_1" /* GXT: Green Wrestler Mask */, 16);
-			iVar3 = 8;
-			iVar4 = 1;
+			iVar6 = 8;
+			iVar7 = 1;
 			iVar1 = 150;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "SPEC2_P0_08_2" /* GXT: Patriot Wrestler Mask */, 16);
-			iVar3 = 8;
-			iVar4 = 2;
+			iVar6 = 8;
+			iVar7 = 2;
 			iVar1 = 175;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "SPEC2_P0_08_3" /* GXT: Domino Wrestler Mask */, 16);
-			iVar3 = 8;
-			iVar4 = 3;
+			iVar6 = 8;
+			iVar7 = 3;
 			iVar1 = 85;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "SPEC2_P0_08_4" /* GXT: Gray Wrestler Mask */, 16);
-			iVar3 = 8;
-			iVar4 = 4;
+			iVar6 = 8;
+			iVar7 = 4;
 			iVar1 = 150;
 			break;
 		
 		case 14:
 			StringCopy(&Var2, "SPEC2_P0_08_5" /* GXT: Phoenix Wrestler Mask */, 16);
-			iVar3 = 8;
-			iVar4 = 5;
+			iVar6 = 8;
+			iVar7 = 5;
 			iVar1 = 175;
 			break;
 		
 		case 15:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 0;
+			iVar6 = 9;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 16:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 10;
-			iVar4 = 0;
+			iVar6 = 10;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 17:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 10;
-			iVar4 = 1;
+			iVar6 = 10;
+			iVar7 = 1;
 			bVar0 = true;
 			break;
 		
 		case 18:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 0;
+			iVar6 = 11;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 19:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 12;
-			iVar4 = 0;
+			iVar6 = 12;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 20, -1);
+			func_182(iVar10, iParam0, 20, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_227(int iParam0)//Position - 0x1EEBC
@@ -29428,193 +29428,193 @@ void func_227(int iParam0)//Position - 0x1EEBC
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 8;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 8;
 	Global_78341[0 /*14*/].f_5 = 0;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 0;
+			iVar6 = 6;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 0;
+			iVar6 = 7;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 0;
+			iVar6 = 8;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 0;
+			iVar6 = 9;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "SPEC_P0_10" /* GXT: Watch and Bracelet */, 16);
-			iVar3 = 10;
-			iVar4 = 0;
+			iVar6 = 10;
+			iVar7 = 0;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 0;
+			iVar6 = 11;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 12;
-			iVar4 = 0;
+			iVar6 = 12;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 13;
-			iVar4 = 0;
+			iVar6 = 13;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 14:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 14;
-			iVar4 = 0;
+			iVar6 = 14;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 15:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 15;
-			iVar4 = 0;
+			iVar6 = 15;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 16:
 			StringCopy(&Var2, "SPEC_P0_16" /* GXT: Leather Watch */, 16);
-			iVar3 = 16;
-			iVar4 = 0;
+			iVar6 = 16;
+			iVar7 = 0;
 			break;
 		
 		case 17:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 17;
-			iVar4 = 0;
+			iVar6 = 17;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 18:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 18;
-			iVar4 = 0;
+			iVar6 = 18;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 19:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 19;
-			iVar4 = 0;
+			iVar6 = 19;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 20:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 20;
-			iVar4 = 0;
+			iVar6 = 20;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 21:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 21;
-			iVar4 = 0;
+			iVar6 = 21;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 22:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 22;
-			iVar4 = 0;
+			iVar6 = 22;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 23:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 23;
-			iVar4 = 0;
+			iVar6 = 23;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 24, -1);
+			func_182(iVar10, iParam0, 24, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_228(int iParam0)//Position - 0x1F192
@@ -29622,125 +29622,125 @@ void func_228(int iParam0)//Position - 0x1F192
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 5;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 5;
 	Global_78341[0 /*14*/].f_5 = 0;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 1;
+			iVar6 = 3;
+			iVar7 = 1;
 			bVar0 = true;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 2;
+			iVar6 = 3;
+			iVar7 = 2;
 			bVar0 = true;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 3;
+			iVar6 = 3;
+			iVar7 = 3;
 			bVar0 = true;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 4;
+			iVar6 = 3;
+			iVar7 = 4;
 			bVar0 = true;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 0;
+			iVar6 = 6;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 0;
+			iVar6 = 7;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 0;
+			iVar6 = 8;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 0;
+			iVar6 = 9;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 14, -1);
+			func_182(iVar10, iParam0, 14, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_229(int iParam0)//Position - 0x1F35B
@@ -29748,716 +29748,716 @@ void func_229(int iParam0)//Position - 0x1F35B
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 6;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 6;
 	Global_78341[0 /*14*/].f_5 = 0;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "FEET_P0_0_0" /* GXT: Black Leather Shoes */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "FEET_P0_0_1" /* GXT: Brown Leather Shoes */, 16);
-			iVar3 = 0;
-			iVar4 = 1;
+			iVar6 = 0;
+			iVar7 = 1;
 			iVar1 = 665;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "FEET_P0_0_2" /* GXT: Charcoal Leather Shoes */, 16);
-			iVar3 = 0;
-			iVar4 = 2;
+			iVar6 = 0;
+			iVar7 = 2;
 			iVar1 = 620;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "FEET_P0_0_3" /* GXT: Gray Leather Shoes */, 16);
-			iVar3 = 0;
-			iVar4 = 3;
+			iVar6 = 0;
+			iVar7 = 3;
 			iVar1 = 540;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "FEET_P0_0_4" /* GXT: Sand Leather Shoes */, 16);
-			iVar3 = 0;
-			iVar4 = 4;
+			iVar6 = 0;
+			iVar7 = 4;
 			iVar1 = 580;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "FEET_P0_0_5" /* GXT: Blue Suede Shoes */, 16);
-			iVar3 = 0;
-			iVar4 = 5;
+			iVar6 = 0;
+			iVar7 = 5;
 			iVar1 = 650;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 0;
+			iVar6 = 6;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 7;
-			iVar4 = 0;
+			iVar6 = 7;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 0;
+			iVar6 = 8;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 14:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 0;
+			iVar6 = 9;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 15:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 10;
-			iVar4 = 0;
+			iVar6 = 10;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 16:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 0;
+			iVar6 = 11;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 17:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 12;
-			iVar4 = 0;
+			iVar6 = 12;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 18:
 			StringCopy(&Var2, "FEET_P0_13_0" /* GXT: Dress Loafers */, 16);
-			iVar3 = 13;
-			iVar4 = 0;
+			iVar6 = 13;
+			iVar7 = 0;
 			break;
 		
 		case 19:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 14;
-			iVar4 = 0;
+			iVar6 = 14;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 20:
 			StringCopy(&Var2, "FEET_P0_15_0" /* GXT: Ash Skate Shoes */, 16);
-			iVar3 = 15;
-			iVar4 = 0;
+			iVar6 = 15;
+			iVar7 = 0;
 			break;
 		
 		case 21:
 			StringCopy(&Var2, "FEET_P0_15_1" /* GXT: Black Skate Shoes */, 16);
-			iVar3 = 15;
-			iVar4 = 1;
+			iVar6 = 15;
+			iVar7 = 1;
 			iVar1 = 64;
 			break;
 		
 		case 22:
 			StringCopy(&Var2, "FEET_P0_15_2" /* GXT: White Skate Shoes */, 16);
-			iVar3 = 15;
-			iVar4 = 2;
+			iVar6 = 15;
+			iVar7 = 2;
 			iVar1 = 56;
 			break;
 		
 		case 23:
 			StringCopy(&Var2, "FEET_P0_15_3" /* GXT: Red Skate Shoes */, 16);
-			iVar3 = 15;
-			iVar4 = 3;
+			iVar6 = 15;
+			iVar7 = 3;
 			iVar1 = 69;
 			break;
 		
 		case 24:
 			StringCopy(&Var2, "FEET_P0_15_4" /* GXT: Plaid Skate Shoes */, 16);
-			iVar3 = 15;
-			iVar4 = 4;
+			iVar6 = 15;
+			iVar7 = 4;
 			iVar1 = 59;
 			break;
 		
 		case 25:
 			StringCopy(&Var2, "FEET_P0_15_5" /* GXT: Striped Skate Shoes */, 16);
-			iVar3 = 15;
-			iVar4 = 5;
+			iVar6 = 15;
+			iVar7 = 5;
 			iVar1 = 62;
 			break;
 		
 		case 26:
 			StringCopy(&Var2, "FEET_P0_15_6" /* GXT: Coffee Skate Shoes */, 16);
-			iVar3 = 15;
-			iVar4 = 6;
+			iVar6 = 15;
+			iVar7 = 6;
 			iVar1 = 74;
 			break;
 		
 		case 27:
 			StringCopy(&Var2, "FEET_P0_15_7" /* GXT: Camo Skate Shoes */, 16);
-			iVar3 = 15;
-			iVar4 = 7;
+			iVar6 = 15;
+			iVar7 = 7;
 			iVar1 = 68;
 			break;
 		
 		case 28:
 			StringCopy(&Var2, "FEET_P0_15_8" /* GXT: Tropical Skate Shoes */, 16);
-			iVar3 = 15;
-			iVar4 = 8;
+			iVar6 = 15;
+			iVar7 = 8;
 			iVar1 = 72;
 			break;
 		
 		case 29:
 			StringCopy(&Var2, "FEET_P0_15_9" /* GXT: Green Skate Shoes */, 16);
-			iVar3 = 15;
-			iVar4 = 9;
+			iVar6 = 15;
+			iVar7 = 9;
 			iVar1 = 70;
 			break;
 		
 		case 30:
 			StringCopy(&Var2, "FEET_P0_16_0" /* GXT: Chocolate Boat Shoes */, 16);
-			iVar3 = 16;
-			iVar4 = 0;
+			iVar6 = 16;
+			iVar7 = 0;
 			iVar1 = 48;
 			break;
 		
 		case 31:
 			StringCopy(&Var2, "FEET_P0_16_1" /* GXT: Teal Boat Shoes */, 16);
-			iVar3 = 16;
-			iVar4 = 1;
+			iVar6 = 16;
+			iVar7 = 1;
 			iVar1 = 48;
 			break;
 		
 		case 32:
 			StringCopy(&Var2, "FEET_P0_16_2" /* GXT: Black Boat Shoes */, 16);
-			iVar3 = 16;
-			iVar4 = 2;
+			iVar6 = 16;
+			iVar7 = 2;
 			iVar1 = 55;
 			break;
 		
 		case 33:
 			StringCopy(&Var2, "FEET_P0_16_3" /* GXT: Chestnut Boat Shoes */, 16);
-			iVar3 = 16;
-			iVar4 = 3;
+			iVar6 = 16;
+			iVar7 = 3;
 			iVar1 = 75;
 			break;
 		
 		case 34:
 			StringCopy(&Var2, "FEET_P0_16_4" /* GXT: Tan Boat Shoes */, 16);
-			iVar3 = 16;
-			iVar4 = 4;
+			iVar6 = 16;
+			iVar7 = 4;
 			iVar1 = 65;
 			break;
 		
 		case 35:
 			StringCopy(&Var2, "FEET_P0_16_5" /* GXT: Gray Boat Shoes */, 16);
-			iVar3 = 16;
-			iVar4 = 5;
+			iVar6 = 16;
+			iVar7 = 5;
 			iVar1 = 68;
 			break;
 		
 		case 36:
 			StringCopy(&Var2, "FEET_P0_16_6" /* GXT: Red Boat Shoes */, 16);
-			iVar3 = 16;
-			iVar4 = 6;
+			iVar6 = 16;
+			iVar7 = 6;
 			iVar1 = 58;
 			break;
 		
 		case 37:
 			StringCopy(&Var2, "FEET_P0_16_7" /* GXT: Slate Boat Shoes */, 16);
-			iVar3 = 16;
-			iVar4 = 7;
+			iVar6 = 16;
+			iVar7 = 7;
 			iVar1 = 68;
 			break;
 		
 		case 38:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 17;
-			iVar4 = 0;
+			iVar6 = 17;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 39:
 			StringCopy(&Var2, "FEET_P0_18_0" /* GXT: All Black Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 0;
+			iVar6 = 18;
+			iVar7 = 0;
 			iVar1 = 790;
 			break;
 		
 		case 40:
 			StringCopy(&Var2, "FEET_P0_18_1" /* GXT: Chocolate Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 1;
+			iVar6 = 18;
+			iVar7 = 1;
 			iVar1 = 750;
 			break;
 		
 		case 41:
 			StringCopy(&Var2, "FEET_P0_18_2" /* GXT: Chestnut Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 2;
+			iVar6 = 18;
+			iVar7 = 2;
 			iVar1 = 860;
 			break;
 		
 		case 42:
 			StringCopy(&Var2, "FEET_P0_18_3" /* GXT: Tan Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 3;
+			iVar6 = 18;
+			iVar7 = 3;
 			iVar1 = 750;
 			break;
 		
 		case 43:
 			StringCopy(&Var2, "FEET_P0_18_4" /* GXT: White Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 4;
+			iVar6 = 18;
+			iVar7 = 4;
 			iVar1 = 790;
 			break;
 		
 		case 44:
 			StringCopy(&Var2, "FEET_P0_18_5" /* GXT: Ash Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 5;
+			iVar6 = 18;
+			iVar7 = 5;
 			iVar1 = 840;
 			break;
 		
 		case 45:
 			StringCopy(&Var2, "FEET_P0_18_6" /* GXT: Gray Two-Tone Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 6;
+			iVar6 = 18;
+			iVar7 = 6;
 			iVar1 = 820;
 			break;
 		
 		case 46:
 			StringCopy(&Var2, "FEET_P0_18_7" /* GXT: Beige Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 7;
+			iVar6 = 18;
+			iVar7 = 7;
 			iVar1 = 800;
 			break;
 		
 		case 47:
 			StringCopy(&Var2, "FEET_P0_18_8" /* GXT: Topaz Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 8;
+			iVar6 = 18;
+			iVar7 = 8;
 			iVar1 = 850;
 			break;
 		
 		case 48:
 			StringCopy(&Var2, "FEET_P0_18_9" /* GXT: Black Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 9;
+			iVar6 = 18;
+			iVar7 = 9;
 			iVar1 = 870;
 			break;
 		
 		case 49:
 			StringCopy(&Var2, "FEET_P0_18_10" /* GXT: Lime Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 10;
+			iVar6 = 18;
+			iVar7 = 10;
 			iVar1 = 720;
 			break;
 		
 		case 50:
 			StringCopy(&Var2, "FEET_P0_18_11" /* GXT: Hawthorn Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 11;
+			iVar6 = 18;
+			iVar7 = 11;
 			iVar1 = 740;
 			break;
 		
 		case 51:
 			StringCopy(&Var2, "FEET_P0_18_12" /* GXT: Coffee Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 12;
+			iVar6 = 18;
+			iVar7 = 12;
 			iVar1 = 800;
 			break;
 		
 		case 52:
 			StringCopy(&Var2, "FEET_P0_18_13" /* GXT: Gray Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 13;
+			iVar6 = 18;
+			iVar7 = 13;
 			iVar1 = 750;
 			break;
 		
 		case 53:
 			StringCopy(&Var2, "FEET_P0_18_14" /* GXT: Cream Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 14;
+			iVar6 = 18;
+			iVar7 = 14;
 			iVar1 = 770;
 			break;
 		
 		case 54:
 			StringCopy(&Var2, "FEET_P0_18_15" /* GXT: Navy Oxfords */, 16);
-			iVar3 = 18;
-			iVar4 = 15;
+			iVar6 = 18;
+			iVar7 = 15;
 			iVar1 = 860;
 			break;
 		
 		case 55:
 			StringCopy(&Var2, "FEET_P0_19_0" /* GXT: Black Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 0;
+			iVar6 = 19;
+			iVar7 = 0;
 			iVar1 = 850;
 			break;
 		
 		case 56:
 			StringCopy(&Var2, "FEET_P0_19_1" /* GXT: Red Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 1;
+			iVar6 = 19;
+			iVar7 = 1;
 			iVar1 = 800;
 			break;
 		
 		case 57:
 			StringCopy(&Var2, "FEET_P0_19_2" /* GXT: Brown Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 2;
+			iVar6 = 19;
+			iVar7 = 2;
 			iVar1 = 780;
 			break;
 		
 		case 58:
 			StringCopy(&Var2, "FEET_P0_19_3" /* GXT: Green Stripe Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 3;
+			iVar6 = 19;
+			iVar7 = 3;
 			iVar1 = 890;
 			break;
 		
 		case 59:
 			StringCopy(&Var2, "FEET_P0_19_4" /* GXT: Green Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 4;
+			iVar6 = 19;
+			iVar7 = 4;
 			iVar1 = 820;
 			break;
 		
 		case 60:
 			StringCopy(&Var2, "FEET_P0_19_5" /* GXT: Copper Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 5;
+			iVar6 = 19;
+			iVar7 = 5;
 			iVar1 = 840;
 			break;
 		
 		case 61:
 			StringCopy(&Var2, "FEET_P0_19_6" /* GXT: Copper Two-Tone Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 6;
+			iVar6 = 19;
+			iVar7 = 6;
 			iVar1 = 870;
 			break;
 		
 		case 62:
 			StringCopy(&Var2, "FEET_P0_19_7" /* GXT: Navy Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 7;
+			iVar6 = 19;
+			iVar7 = 7;
 			iVar1 = 930;
 			break;
 		
 		case 63:
 			StringCopy(&Var2, "FEET_P0_19_8" /* GXT: Blue Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 8;
+			iVar6 = 19;
+			iVar7 = 8;
 			iVar1 = 880;
 			break;
 		
 		case 64:
 			StringCopy(&Var2, "FEET_P0_19_9" /* GXT: Beige Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 9;
+			iVar6 = 19;
+			iVar7 = 9;
 			iVar1 = 900;
 			break;
 		
 		case 65:
 			StringCopy(&Var2, "FEET_P0_19_10" /* GXT: White Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 10;
+			iVar6 = 19;
+			iVar7 = 10;
 			iVar1 = 920;
 			break;
 		
 		case 66:
 			StringCopy(&Var2, "FEET_P0_19_11" /* GXT: Tan Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 11;
+			iVar6 = 19;
+			iVar7 = 11;
 			iVar1 = 970;
 			break;
 		
 		case 67:
 			StringCopy(&Var2, "FEET_P0_19_12" /* GXT: Black Snakeskin Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 12;
+			iVar6 = 19;
+			iVar7 = 12;
 			iVar1 = 990;
 			break;
 		
 		case 68:
 			StringCopy(&Var2, "FEET_P0_19_13" /* GXT: Two-Tone Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 13;
+			iVar6 = 19;
+			iVar7 = 13;
 			iVar1 = 960;
 			break;
 		
 		case 69:
 			StringCopy(&Var2, "FEET_P0_19_14" /* GXT: Brown Snakeskin Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 14;
+			iVar6 = 19;
+			iVar7 = 14;
 			iVar1 = 980;
 			break;
 		
 		case 70:
 			StringCopy(&Var2, "FEET_P0_19_15" /* GXT: Gray Slip-Ons */, 16);
-			iVar3 = 19;
-			iVar4 = 15;
+			iVar6 = 19;
+			iVar7 = 15;
 			iVar1 = 950;
 			break;
 		
 		case 71:
 			StringCopy(&Var2, "FEET_P0_20_0" /* GXT: Brown Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 0;
+			iVar6 = 20;
+			iVar7 = 0;
 			iVar1 = 110;
 			break;
 		
 		case 72:
 			StringCopy(&Var2, "FEET_P0_20_1" /* GXT: Navy Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 1;
+			iVar6 = 20;
+			iVar7 = 1;
 			iVar1 = 115;
 			break;
 		
 		case 73:
 			StringCopy(&Var2, "FEET_P0_20_2" /* GXT: Coffee Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 2;
+			iVar6 = 20;
+			iVar7 = 2;
 			iVar1 = 120;
 			break;
 		
 		case 74:
 			StringCopy(&Var2, "FEET_P0_20_3" /* GXT: Burgundy Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 3;
+			iVar6 = 20;
+			iVar7 = 3;
 			iVar1 = 110;
 			break;
 		
 		case 75:
 			StringCopy(&Var2, "FEET_P0_20_4" /* GXT: Blue Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 4;
+			iVar6 = 20;
+			iVar7 = 4;
 			iVar1 = 125;
 			break;
 		
 		case 76:
 			StringCopy(&Var2, "FEET_P0_20_5" /* GXT: Woodland Camo Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 5;
+			iVar6 = 20;
+			iVar7 = 5;
 			iVar1 = 128;
 			break;
 		
 		case 77:
 			StringCopy(&Var2, "FEET_P0_20_6" /* GXT: Black Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 6;
+			iVar6 = 20;
+			iVar7 = 6;
 			iVar1 = 135;
 			break;
 		
 		case 78:
 			StringCopy(&Var2, "FEET_P0_20_7" /* GXT: Tan Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 7;
+			iVar6 = 20;
+			iVar7 = 7;
 			iVar1 = 130;
 			break;
 		
 		case 79:
 			StringCopy(&Var2, "FEET_P0_20_8" /* GXT: Purple Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 8;
+			iVar6 = 20;
+			iVar7 = 8;
 			iVar1 = 145;
 			break;
 		
 		case 80:
 			StringCopy(&Var2, "FEET_P0_20_9" /* GXT: Brown Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 9;
+			iVar6 = 20;
+			iVar7 = 9;
 			iVar1 = 110;
 			break;
 		
 		case 81:
 			StringCopy(&Var2, "FEET_P0_20_10" /* GXT: Chocolate Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 10;
+			iVar6 = 20;
+			iVar7 = 10;
 			iVar1 = 120;
 			break;
 		
 		case 82:
 			StringCopy(&Var2, "FEET_P0_20_11" /* GXT: Green Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 11;
+			iVar6 = 20;
+			iVar7 = 11;
 			iVar1 = 150;
 			break;
 		
 		case 83:
 			StringCopy(&Var2, "FEET_P0_20_12" /* GXT: Ash Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 12;
+			iVar6 = 20;
+			iVar7 = 12;
 			iVar1 = 125;
 			break;
 		
 		case 84:
 			StringCopy(&Var2, "FEET_P0_20_13" /* GXT: Olive Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 13;
+			iVar6 = 20;
+			iVar7 = 13;
 			iVar1 = 120;
 			break;
 		
 		case 85:
 			StringCopy(&Var2, "FEET_P0_20_14" /* GXT: Two-Tone Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 14;
+			iVar6 = 20;
+			iVar7 = 14;
 			iVar1 = 130;
 			break;
 		
 		case 86:
 			StringCopy(&Var2, "FEET_P0_20_15" /* GXT: Yellow Wingtips */, 16);
-			iVar3 = 20;
-			iVar4 = 15;
+			iVar6 = 20;
+			iVar7 = 15;
 			iVar1 = 110;
 			break;
 		
 		case 87:
 			StringCopy(&Var2, "FEET_P0_21_0" /* GXT: Black Leather Loafers */, 16);
-			iVar3 = 21;
-			iVar4 = 0;
+			iVar6 = 21;
+			iVar7 = 0;
 			iVar1 = 720;
 			break;
 		
 		case 88:
 			StringCopy(&Var2, "FEET_P0_21_1" /* GXT: Gray Leather Loafers */, 16);
-			iVar3 = 21;
-			iVar4 = 1;
+			iVar6 = 21;
+			iVar7 = 1;
 			iVar1 = 680;
 			break;
 		
 		case 89:
 			StringCopy(&Var2, "FEET_P0_21_2" /* GXT: Cream Leather Loafers */, 16);
-			iVar3 = 21;
-			iVar4 = 2;
+			iVar6 = 21;
+			iVar7 = 2;
 			iVar1 = 650;
 			break;
 		
 		case 90:
 			StringCopy(&Var2, "FEET_P0_21_3" /* GXT: Brown Leather Loafers */, 16);
-			iVar3 = 21;
-			iVar4 = 3;
+			iVar6 = 21;
+			iVar7 = 3;
 			iVar1 = 670;
 			break;
 		
 		case 91:
 			StringCopy(&Var2, "FEET_P0_21_4" /* GXT: White Leather Loafers */, 16);
-			iVar3 = 21;
-			iVar4 = 4;
+			iVar6 = 21;
+			iVar7 = 4;
 			iVar1 = 700;
 			break;
 		
 		case 92:
 			StringCopy(&Var2, "FEET_P0_21_5" /* GXT: Russet Leather Loafers */, 16);
-			iVar3 = 21;
-			iVar4 = 5;
+			iVar6 = 21;
+			iVar7 = 5;
 			iVar1 = 680;
 			break;
 		
 		case 93:
 			StringCopy(&Var2, "FEET_P0_21_6" /* GXT: White Snakeskin Loafers */, 16);
-			iVar3 = 21;
-			iVar4 = 6;
+			iVar6 = 21;
+			iVar7 = 6;
 			iVar1 = 720;
 			break;
 		
 		case 94:
 			StringCopy(&Var2, "FEET_P0_21_7" /* GXT: Rattlesnake Loafers */, 16);
-			iVar3 = 21;
-			iVar4 = 7;
+			iVar6 = 21;
+			iVar7 = 7;
 			iVar1 = 740;
 			break;
 		
 		case 95:
 			StringCopy(&Var2, "FEET_P0_21_8" /* GXT: Brown Snakeskin Loafers */, 16);
-			iVar3 = 21;
-			iVar4 = 8;
+			iVar6 = 21;
+			iVar7 = 8;
 			iVar1 = 760;
 			break;
 		
 		case 96:
 			StringCopy(&Var2, "FEET_P0_21_9" /* GXT: Zebra Two-Tone Loafers */, 16);
-			iVar3 = 21;
-			iVar4 = 9;
+			iVar6 = 21;
+			iVar7 = 9;
 			iVar1 = 780;
 			break;
 		
 		case 97:
 			StringCopy(&Var2, "FEET_P0_21_10" /* GXT: Pale Reptile Loafers */, 16);
-			iVar3 = 21;
-			iVar4 = 10;
+			iVar6 = 21;
+			iVar7 = 10;
 			iVar1 = 750;
 			break;
 		
 		case 98:
 			StringCopy(&Var2, "FEET_P0_21_11" /* GXT: Tan Alligator Loafers */, 16);
-			iVar3 = 21;
-			iVar4 = 11;
+			iVar6 = 21;
+			iVar7 = 11;
 			iVar1 = 700;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 99, -1);
+			func_182(iVar10, iParam0, 99, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_230(int iParam0)//Position - 0x1FEAF
@@ -30465,796 +30465,796 @@ void func_230(int iParam0)//Position - 0x1FEAF
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 4;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 4;
 	Global_78341[0 /*14*/].f_5 = 0;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "LEGS_P0_0_0" /* GXT: Gray Pants */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "LEGS_P0_0_0" /* GXT: Gray Pants */, 16);
-			iVar3 = 0;
-			iVar4 = 1;
+			iVar6 = 0;
+			iVar7 = 1;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "LEGS_P0_0_2" /* GXT: Charcoal Pants */, 16);
-			iVar3 = 0;
-			iVar4 = 2;
+			iVar6 = 0;
+			iVar7 = 2;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "LEGS_P0_0_3" /* GXT: Slate Pants */, 16);
-			iVar3 = 0;
-			iVar4 = 3;
+			iVar6 = 0;
+			iVar7 = 3;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "LEGS_P0_0_4" /* GXT: Topaz Pants */, 16);
-			iVar3 = 0;
-			iVar4 = 4;
+			iVar6 = 0;
+			iVar7 = 4;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "LEGS_P0_0_5" /* GXT: Pale Blue Pants */, 16);
-			iVar3 = 0;
-			iVar4 = 5;
+			iVar6 = 0;
+			iVar7 = 5;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "LEGS_P0_0_6" /* GXT: Cream Pants */, 16);
-			iVar3 = 0;
-			iVar4 = 6;
+			iVar6 = 0;
+			iVar7 = 6;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "LEGS_P0_0_7" /* GXT: Olive Pants */, 16);
-			iVar3 = 0;
-			iVar4 = 7;
+			iVar6 = 0;
+			iVar7 = 7;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "LEGS_P0_0_8" /* GXT: Off-White Pants */, 16);
-			iVar3 = 0;
-			iVar4 = 8;
+			iVar6 = 0;
+			iVar7 = 8;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "LEGS_P0_0_9" /* GXT: Navy Pants */, 16);
-			iVar3 = 0;
-			iVar4 = 9;
+			iVar6 = 0;
+			iVar7 = 9;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "LEGS_P0_0_10" /* GXT: Beige Pants */, 16);
-			iVar3 = 0;
-			iVar4 = 10;
+			iVar6 = 0;
+			iVar7 = 10;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "LEGS_P0_0_11" /* GXT: Smoke Pants */, 16);
-			iVar3 = 0;
-			iVar4 = 11;
+			iVar6 = 0;
+			iVar7 = 11;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "LEGS_P0_0_12" /* GXT: Blue-Gray Pants */, 16);
-			iVar3 = 0;
-			iVar4 = 12;
+			iVar6 = 0;
+			iVar7 = 12;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "LEGS_P0_0_13" /* GXT: Ash Pants */, 16);
-			iVar3 = 0;
-			iVar4 = 13;
+			iVar6 = 0;
+			iVar7 = 13;
 			break;
 		
 		case 14:
 			StringCopy(&Var2, "LEGS_P0_0_14" /* GXT: Sand Pants */, 16);
-			iVar3 = 0;
-			iVar4 = 14;
+			iVar6 = 0;
+			iVar7 = 14;
 			break;
 		
 		case 15:
 			StringCopy(&Var2, "LEGS_P0_0_15" /* GXT: Black Pants */, 16);
-			iVar3 = 0;
-			iVar4 = 15;
+			iVar6 = 0;
+			iVar7 = 15;
 			break;
 		
 		case 16:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 17:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 18:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 19:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 1;
+			iVar6 = 3;
+			iVar7 = 1;
 			bVar0 = true;
 			break;
 		
 		case 20:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 21:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 22:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 0;
+			iVar6 = 6;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 23:
 			StringCopy(&Var2, "LEGS_P0_7_0" /* GXT: Off-White Chinos */, 16);
-			iVar3 = 7;
-			iVar4 = 0;
+			iVar6 = 7;
+			iVar7 = 0;
 			iVar1 = 115;
 			break;
 		
 		case 24:
 			StringCopy(&Var2, "LEGS_P0_7_1" /* GXT: Camel Chinos */, 16);
-			iVar3 = 7;
-			iVar4 = 1;
+			iVar6 = 7;
+			iVar7 = 1;
 			iVar1 = 115;
 			break;
 		
 		case 25:
 			StringCopy(&Var2, "LEGS_P0_7_2" /* GXT: Ash Chinos */, 16);
-			iVar3 = 7;
-			iVar4 = 2;
+			iVar6 = 7;
+			iVar7 = 2;
 			iVar1 = 128;
 			break;
 		
 		case 26:
 			StringCopy(&Var2, "LEGS_P0_7_3" /* GXT: Olive Chinos */, 16);
-			iVar3 = 7;
-			iVar4 = 3;
+			iVar6 = 7;
+			iVar7 = 3;
 			iVar1 = 118;
 			break;
 		
 		case 27:
 			StringCopy(&Var2, "LEGS_P0_7_4" /* GXT: Brown Chinos */, 16);
-			iVar3 = 7;
-			iVar4 = 4;
+			iVar6 = 7;
+			iVar7 = 4;
 			iVar1 = 125;
 			break;
 		
 		case 28:
 			StringCopy(&Var2, "LEGS_P0_7_5" /* GXT: Black Chinos */, 16);
-			iVar3 = 7;
-			iVar4 = 5;
+			iVar6 = 7;
+			iVar7 = 5;
 			iVar1 = 128;
 			break;
 		
 		case 29:
 			StringCopy(&Var2, "LEGS_P0_7_6" /* GXT: Charcoal Chinos */, 16);
-			iVar3 = 7;
-			iVar4 = 6;
+			iVar6 = 7;
+			iVar7 = 6;
 			iVar1 = 128;
 			break;
 		
 		case 30:
 			StringCopy(&Var2, "LEGS_P0_7_7" /* GXT: White Chinos */, 16);
-			iVar3 = 7;
-			iVar4 = 7;
+			iVar6 = 7;
+			iVar7 = 7;
 			iVar1 = 125;
 			break;
 		
 		case 31:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 8;
-			iVar4 = 0;
+			iVar6 = 8;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 32:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 0;
+			iVar6 = 9;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 33:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 10;
-			iVar4 = 0;
+			iVar6 = 10;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 34:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 0;
+			iVar6 = 11;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 35:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 1;
+			iVar6 = 11;
+			iVar7 = 1;
 			bVar0 = true;
 			break;
 		
 		case 36:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 2;
+			iVar6 = 11;
+			iVar7 = 2;
 			bVar0 = true;
 			break;
 		
 		case 37:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 3;
+			iVar6 = 11;
+			iVar7 = 3;
 			bVar0 = true;
 			break;
 		
 		case 38:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 4;
+			iVar6 = 11;
+			iVar7 = 4;
 			bVar0 = true;
 			break;
 		
 		case 39:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 5;
+			iVar6 = 11;
+			iVar7 = 5;
 			bVar0 = true;
 			break;
 		
 		case 40:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 12;
-			iVar4 = 0;
+			iVar6 = 12;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 41:
 			StringCopy(&Var2, "LEGS_P0_13_0" /* GXT: Cream Cargo Shorts */, 16);
-			iVar3 = 13;
-			iVar4 = 0;
+			iVar6 = 13;
+			iVar7 = 0;
 			iVar1 = 68;
 			break;
 		
 		case 42:
 			StringCopy(&Var2, "LEGS_P0_13_1" /* GXT: Khaki Cargo Shorts */, 16);
-			iVar3 = 13;
-			iVar4 = 1;
+			iVar6 = 13;
+			iVar7 = 1;
 			iVar1 = 68;
 			break;
 		
 		case 43:
 			StringCopy(&Var2, "LEGS_P0_13_2" /* GXT: Camo Cargo Shorts */, 16);
-			iVar3 = 13;
-			iVar4 = 2;
+			iVar6 = 13;
+			iVar7 = 2;
 			iVar1 = 68;
 			break;
 		
 		case 44:
 			StringCopy(&Var2, "LEGS_P0_13_3" /* GXT: Gray Cargo Shorts */, 16);
-			iVar3 = 13;
-			iVar4 = 3;
+			iVar6 = 13;
+			iVar7 = 3;
 			iVar1 = 68;
 			break;
 		
 		case 45:
 			StringCopy(&Var2, "LEGS_P0_13_4" /* GXT: White Cargo Shorts */, 16);
-			iVar3 = 13;
-			iVar4 = 4;
+			iVar6 = 13;
+			iVar7 = 4;
 			iVar1 = 68;
 			break;
 		
 		case 46:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 14;
-			iVar4 = 0;
+			iVar6 = 14;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 47:
 			StringCopy(&Var2, "LEGS_P0_15_0" /* GXT: Gray Golf Pants */, 16);
-			iVar3 = 15;
-			iVar4 = 0;
+			iVar6 = 15;
+			iVar7 = 0;
 			break;
 		
 		case 48:
 			StringCopy(&Var2, "LEGS_P0_15_1" /* GXT: Cream Golf Pants */, 16);
-			iVar3 = 15;
-			iVar4 = 1;
+			iVar6 = 15;
+			iVar7 = 1;
 			iVar1 = 550;
 			break;
 		
 		case 49:
 			StringCopy(&Var2, "LEGS_P0_15_2" /* GXT: Brown Golf Pants */, 16);
-			iVar3 = 15;
-			iVar4 = 2;
+			iVar6 = 15;
+			iVar7 = 2;
 			iVar1 = 650;
 			break;
 		
 		case 50:
 			StringCopy(&Var2, "LEGS_P0_15_3" /* GXT: Tartan Golf Pants */, 16);
-			iVar3 = 15;
-			iVar4 = 3;
+			iVar6 = 15;
+			iVar7 = 3;
 			iVar1 = 875;
 			break;
 		
 		case 51:
 			StringCopy(&Var2, "LEGS_P0_15_4" /* GXT: Charcoal Plaid Golf Pants */, 16);
-			iVar3 = 15;
-			iVar4 = 4;
+			iVar6 = 15;
+			iVar7 = 4;
 			iVar1 = 820;
 			break;
 		
 		case 52:
 			StringCopy(&Var2, "LEGS_P0_15_5" /* GXT: Green Plaid Golf Pants */, 16);
-			iVar3 = 15;
-			iVar4 = 5;
+			iVar6 = 15;
+			iVar7 = 5;
 			iVar1 = 720;
 			break;
 		
 		case 53:
 			StringCopy(&Var2, "LEGS_P0_15_6" /* GXT: Brown Plaid Golf Pants */, 16);
-			iVar3 = 15;
-			iVar4 = 6;
+			iVar6 = 15;
+			iVar7 = 6;
 			iVar1 = 750;
 			break;
 		
 		case 54:
 			StringCopy(&Var2, "LEGS_P0_15_7" /* GXT: Slate Golf Pants */, 16);
-			iVar3 = 15;
-			iVar4 = 7;
+			iVar6 = 15;
+			iVar7 = 7;
 			iVar1 = 850;
 			break;
 		
 		case 55:
 			StringCopy(&Var2, "LEGS_P0_16_0" /* GXT: Beige Shorts */, 16);
-			iVar3 = 16;
-			iVar4 = 0;
+			iVar6 = 16;
+			iVar7 = 0;
 			break;
 		
 		case 56:
 			StringCopy(&Var2, "LEGS_P0_16_1" /* GXT: Yellow Shorts */, 16);
-			iVar3 = 16;
-			iVar4 = 1;
+			iVar6 = 16;
+			iVar7 = 1;
 			iVar1 = 48;
 			break;
 		
 		case 57:
 			StringCopy(&Var2, "LEGS_P0_16_2" /* GXT: Blue Shorts */, 16);
-			iVar3 = 16;
-			iVar4 = 2;
+			iVar6 = 16;
+			iVar7 = 2;
 			iVar1 = 48;
 			break;
 		
 		case 58:
 			StringCopy(&Var2, "LEGS_P0_16_3" /* GXT: Brown Leafy Shorts */, 16);
-			iVar3 = 16;
-			iVar4 = 3;
+			iVar6 = 16;
+			iVar7 = 3;
 			iVar1 = 38;
 			break;
 		
 		case 59:
 			StringCopy(&Var2, "LEGS_P0_16_4" /* GXT: Tropical Shorts */, 16);
-			iVar3 = 16;
-			iVar4 = 4;
+			iVar6 = 16;
+			iVar7 = 4;
 			iVar1 = 38;
 			break;
 		
 		case 60:
 			StringCopy(&Var2, "LEGS_P0_16_5" /* GXT: Aqua Vintage Shorts */, 16);
-			iVar3 = 16;
-			iVar4 = 5;
+			iVar6 = 16;
+			iVar7 = 5;
 			iVar1 = 42;
 			break;
 		
 		case 61:
 			StringCopy(&Var2, "LEGS_P0_16_6" /* GXT: Bright Two-Tone Shorts */, 16);
-			iVar3 = 16;
-			iVar4 = 6;
+			iVar6 = 16;
+			iVar7 = 6;
 			iVar1 = 58;
 			break;
 		
 		case 62:
 			StringCopy(&Var2, "LEGS_P0_16_7" /* GXT: Red Floral Shorts */, 16);
-			iVar3 = 16;
-			iVar4 = 7;
+			iVar6 = 16;
+			iVar7 = 7;
 			iVar1 = 46;
 			break;
 		
 		case 63:
 			StringCopy(&Var2, "LEGS_P0_16_8" /* GXT: Navy Floral Shorts */, 16);
-			iVar3 = 16;
-			iVar4 = 8;
+			iVar6 = 16;
+			iVar7 = 8;
 			iVar1 = 46;
 			break;
 		
 		case 64:
 			StringCopy(&Var2, "LEGS_P0_16_9" /* GXT: Blue Floral Shorts */, 16);
-			iVar3 = 16;
-			iVar4 = 9;
+			iVar6 = 16;
+			iVar7 = 9;
 			iVar1 = 46;
 			break;
 		
 		case 65:
 			StringCopy(&Var2, "LEGS_P0_16_10" /* GXT: Orange Shorts */, 16);
-			iVar3 = 16;
-			iVar4 = 10;
+			iVar6 = 16;
+			iVar7 = 10;
 			iVar1 = 68;
 			break;
 		
 		case 66:
 			StringCopy(&Var2, "LEGS_P0_16_11" /* GXT: White Striped Shorts */, 16);
-			iVar3 = 16;
-			iVar4 = 11;
+			iVar6 = 16;
+			iVar7 = 11;
 			iVar1 = 58;
 			break;
 		
 		case 67:
 			StringCopy(&Var2, "LEGS_P0_16_12" /* GXT: Charcoal Shorts */, 16);
-			iVar3 = 16;
-			iVar4 = 12;
+			iVar6 = 16;
+			iVar7 = 12;
 			iVar1 = 50;
 			break;
 		
 		case 68:
 			StringCopy(&Var2, "LEGS_P0_16_13" /* GXT: Gray Shorts */, 16);
-			iVar3 = 16;
-			iVar4 = 13;
+			iVar6 = 16;
+			iVar7 = 13;
 			iVar1 = 68;
 			break;
 		
 		case 69:
 			StringCopy(&Var2, "LEGS_P0_16_14" /* GXT: Candy Surf Shorts */, 16);
-			iVar3 = 16;
-			iVar4 = 14;
+			iVar6 = 16;
+			iVar7 = 14;
 			iVar1 = 68;
 			break;
 		
 		case 70:
 			StringCopy(&Var2, "LEGS_P0_16_15" /* GXT: Undersea Shorts */, 16);
-			iVar3 = 16;
-			iVar4 = 15;
+			iVar6 = 16;
+			iVar7 = 15;
 			iVar1 = 42;
 			break;
 		
 		case 71:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 17;
-			iVar4 = 0;
+			iVar6 = 17;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 72:
 			StringCopy(&Var2, "LEGS_P0_18_0" /* GXT: White Striped Boxers */, 16);
-			iVar3 = 18;
-			iVar4 = 0;
+			iVar6 = 18;
+			iVar7 = 0;
 			break;
 		
 		case 73:
 			StringCopy(&Var2, "LEGS_P0_18_1" /* GXT: Blue Boxers */, 16);
-			iVar3 = 18;
-			iVar4 = 1;
+			iVar6 = 18;
+			iVar7 = 1;
 			iVar1 = 250;
 			break;
 		
 		case 74:
 			StringCopy(&Var2, "LEGS_P0_18_2" /* GXT: Ash Boxers */, 16);
-			iVar3 = 18;
-			iVar4 = 2;
+			iVar6 = 18;
+			iVar7 = 2;
 			iVar1 = 250;
 			break;
 		
 		case 75:
 			StringCopy(&Var2, "LEGS_P0_18_3" /* GXT: Blue Striped Boxers */, 16);
-			iVar3 = 18;
-			iVar4 = 3;
+			iVar6 = 18;
+			iVar7 = 3;
 			iVar1 = 290;
 			break;
 		
 		case 76:
 			StringCopy(&Var2, "LEGS_P0_18_4" /* GXT: White Boxers */, 16);
-			iVar3 = 18;
-			iVar4 = 4;
+			iVar6 = 18;
+			iVar7 = 4;
 			iVar1 = 270;
 			break;
 		
 		case 77:
 			StringCopy(&Var2, "LEGS_P0_18_5" /* GXT: Charcoal Boxers */, 16);
-			iVar3 = 18;
-			iVar4 = 5;
+			iVar6 = 18;
+			iVar7 = 5;
 			iVar1 = 270;
 			break;
 		
 		case 78:
 			StringCopy(&Var2, "LEGS_P0_18_6" /* GXT: Red Heart Boxers */, 16);
-			iVar3 = 18;
-			iVar4 = 6;
+			iVar6 = 18;
+			iVar7 = 6;
 			iVar1 = 15;
 			break;
 		
 		case 79:
 			StringCopy(&Var2, "LEGS_P0_18_7" /* GXT: Blue Heart Boxers */, 16);
-			iVar3 = 18;
-			iVar4 = 7;
+			iVar6 = 18;
+			iVar7 = 7;
 			iVar1 = 12;
 			break;
 		
 		case 80:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 19;
-			iVar4 = 0;
+			iVar6 = 19;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 81:
 			StringCopy(&Var2, "LEGS_P0_20_0" /* GXT: Blue Casual Jeans */, 16);
-			iVar3 = 20;
-			iVar4 = 0;
+			iVar6 = 20;
+			iVar7 = 0;
 			break;
 		
 		case 82:
 			StringCopy(&Var2, "LEGS_P0_20_1" /* GXT: Black Casual Jeans */, 16);
-			iVar3 = 20;
-			iVar4 = 1;
+			iVar6 = 20;
+			iVar7 = 1;
 			iVar1 = 118;
 			break;
 		
 		case 83:
 			StringCopy(&Var2, "LEGS_P0_20_2" /* GXT: Faded Casual Jeans */, 16);
-			iVar3 = 20;
-			iVar4 = 2;
+			iVar6 = 20;
+			iVar7 = 2;
 			iVar1 = 110;
 			break;
 		
 		case 84:
 			StringCopy(&Var2, "LEGS_P0_21_0" /* GXT: Tan Pants */, 16);
-			iVar3 = 21;
-			iVar4 = 0;
+			iVar6 = 21;
+			iVar7 = 0;
 			iVar1 = 88;
 			break;
 		
 		case 85:
 			StringCopy(&Var2, "LEGS_P0_21_1" /* GXT: Charcoal Pants */, 16);
-			iVar3 = 21;
-			iVar4 = 1;
+			iVar6 = 21;
+			iVar7 = 1;
 			iVar1 = 95;
 			break;
 		
 		case 86:
 			StringCopy(&Var2, "LEGS_P0_21_2" /* GXT: Brown Pants */, 16);
-			iVar3 = 21;
-			iVar4 = 2;
+			iVar6 = 21;
+			iVar7 = 2;
 			iVar1 = 95;
 			break;
 		
 		case 87:
 			StringCopy(&Var2, "LEGS_P0_21_3" /* GXT: Ash Pants */, 16);
-			iVar3 = 21;
-			iVar4 = 3;
+			iVar6 = 21;
+			iVar7 = 3;
 			iVar1 = 98;
 			break;
 		
 		case 88:
 			StringCopy(&Var2, "LEGS_P0_22_0" /* GXT: Smart Jeans */, 16);
-			iVar3 = 22;
-			iVar4 = 0;
+			iVar6 = 22;
+			iVar7 = 0;
 			iVar1 = 140;
 			break;
 		
 		case 89:
 			StringCopy(&Var2, "LEGS_P0_23_0" /* GXT: White Tennis Shorts */, 16);
-			iVar3 = 23;
-			iVar4 = 0;
+			iVar6 = 23;
+			iVar7 = 0;
 			break;
 		
 		case 90:
 			StringCopy(&Var2, "LEGS_P0_23_1" /* GXT: Lobon Tennis Shorts */, 16);
-			iVar3 = 23;
-			iVar4 = 1;
+			iVar6 = 23;
+			iVar7 = 1;
 			iVar1 = 150;
 			break;
 		
 		case 91:
 			StringCopy(&Var2, "LEGS_P0_23_2" /* GXT: Plaid Tennis Shorts */, 16);
-			iVar3 = 23;
-			iVar4 = 2;
+			iVar6 = 23;
+			iVar7 = 2;
 			iVar1 = 130;
 			break;
 		
 		case 92:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 24;
-			iVar4 = 0;
+			iVar6 = 24;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 93:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 25;
-			iVar4 = 0;
+			iVar6 = 25;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 94:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 26;
-			iVar4 = 0;
+			iVar6 = 26;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 95:
 			StringCopy(&Var2, "LEGS_P0_27_0" /* GXT: Beige Shorts, Bare Feet */, 16);
-			iVar3 = 27;
-			iVar4 = 0;
+			iVar6 = 27;
+			iVar7 = 0;
 			break;
 		
 		case 96:
 			StringCopy(&Var2, "LEGS_P0_28_0" /* GXT: Pale Blue Bermudas */, 16);
-			iVar3 = 28;
-			iVar4 = 0;
+			iVar6 = 28;
+			iVar7 = 0;
 			iVar1 = 45;
 			break;
 		
 		case 97:
 			StringCopy(&Var2, "LEGS_P0_28_1" /* GXT: Beige Bermudas */, 16);
-			iVar3 = 28;
-			iVar4 = 1;
+			iVar6 = 28;
+			iVar7 = 1;
 			iVar1 = 48;
 			break;
 		
 		case 98:
 			StringCopy(&Var2, "LEGS_P0_28_2" /* GXT: Cream Bermudas */, 16);
-			iVar3 = 28;
-			iVar4 = 2;
+			iVar6 = 28;
+			iVar7 = 2;
 			iVar1 = 48;
 			break;
 		
 		case 99:
 			StringCopy(&Var2, "LEGS_P0_28_3" /* GXT: Olive Bermudas */, 16);
-			iVar3 = 28;
-			iVar4 = 3;
+			iVar6 = 28;
+			iVar7 = 3;
 			iVar1 = 52;
 			break;
 		
 		case 100:
 			StringCopy(&Var2, "LEGS_P0_28_4" /* GXT: Blue Bermudas */, 16);
-			iVar3 = 28;
-			iVar4 = 4;
+			iVar6 = 28;
+			iVar7 = 4;
 			iVar1 = 52;
 			break;
 		
 		case 101:
 			StringCopy(&Var2, "LEGS_P0_28_5" /* GXT: Off-White Bermudas */, 16);
-			iVar3 = 28;
-			iVar4 = 5;
+			iVar6 = 28;
+			iVar7 = 5;
 			iVar1 = 55;
 			break;
 		
 		case 102:
 			StringCopy(&Var2, "LEGS_P0_28_6" /* GXT: Gray Bermudas */, 16);
-			iVar3 = 28;
-			iVar4 = 6;
+			iVar6 = 28;
+			iVar7 = 6;
 			iVar1 = 55;
 			break;
 		
 		case 103:
 			StringCopy(&Var2, "LEGS_P0_28_7" /* GXT: Charcoal Bermudas */, 16);
-			iVar3 = 28;
-			iVar4 = 7;
+			iVar6 = 28;
+			iVar7 = 7;
 			iVar1 = 55;
 			break;
 		
 		case 104:
 			StringCopy(&Var2, "LEGS_P0_28_8" /* GXT: Pink Bermudas */, 16);
-			iVar3 = 28;
-			iVar4 = 8;
+			iVar6 = 28;
+			iVar7 = 8;
 			iVar1 = 58;
 			break;
 		
 		case 105:
 			StringCopy(&Var2, "LEGS_P0_28_9" /* GXT: Beige Plaid Bermudas */, 16);
-			iVar3 = 28;
-			iVar4 = 9;
+			iVar6 = 28;
+			iVar7 = 9;
 			iVar1 = 58;
 			break;
 		
 		case 106:
 			StringCopy(&Var2, "LEGS_P0_28_10" /* GXT: Pastel Plaid Bermudas */, 16);
-			iVar3 = 28;
-			iVar4 = 10;
+			iVar6 = 28;
+			iVar7 = 10;
 			iVar1 = 60;
 			break;
 		
 		case 107:
 			StringCopy(&Var2, "LEGS_P0_28_11" /* GXT: Orange Plaid Bermudas */, 16);
-			iVar3 = 28;
-			iVar4 = 11;
+			iVar6 = 28;
+			iVar7 = 11;
 			iVar1 = 60;
 			break;
 		
 		case 108:
 			StringCopy(&Var2, "LEGS_P0_28_12" /* GXT: Gray Plaid Bermudas */, 16);
-			iVar3 = 28;
-			iVar4 = 12;
+			iVar6 = 28;
+			iVar7 = 12;
 			iVar1 = 62;
 			break;
 		
 		case 109:
 			StringCopy(&Var2, "LEGS_P0_28_13" /* GXT: Blue Striped Bermudas */, 16);
-			iVar3 = 28;
-			iVar4 = 13;
+			iVar6 = 28;
+			iVar7 = 13;
 			iVar1 = 62;
 			break;
 		
 		case 110:
 			StringCopy(&Var2, "LEGS_P0_28_14" /* GXT: Murky Plaid Bermudas */, 16);
-			iVar3 = 28;
-			iVar4 = 14;
+			iVar6 = 28;
+			iVar7 = 14;
 			iVar1 = 65;
 			break;
 		
 		case 111:
 			StringCopy(&Var2, "LEGS_P0_28_15" /* GXT: Pastel Check Bermudas */, 16);
-			iVar3 = 28;
-			iVar4 = 15;
+			iVar6 = 28;
+			iVar7 = 15;
 			iVar1 = 65;
 			break;
 		
 		case 112:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 29;
-			iVar4 = 0;
+			iVar6 = 29;
+			iVar7 = 0;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 113, -1);
+			func_182(iVar10, iParam0, 113, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_231(int iParam0)//Position - 0x20C23
@@ -31278,857 +31278,857 @@ void func_232(int iParam0)//Position - 0x20C58
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 3;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 3;
 	Global_78341[0 /*14*/].f_5 = 0;
 	switch (iParam0)
 	{
 		case 60:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 9;
-			iVar4 = 0;
+			iVar6 = 9;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 61:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 10;
-			iVar4 = 0;
+			iVar6 = 10;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 62:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 11;
-			iVar4 = 0;
+			iVar6 = 11;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 63:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 12;
-			iVar4 = 0;
+			iVar6 = 12;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 64:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 12;
-			iVar4 = 1;
+			iVar6 = 12;
+			iVar7 = 1;
 			bVar0 = true;
 			break;
 		
 		case 65:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 12;
-			iVar4 = 2;
+			iVar6 = 12;
+			iVar7 = 2;
 			bVar0 = true;
 			break;
 		
 		case 66:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 12;
-			iVar4 = 3;
+			iVar6 = 12;
+			iVar7 = 3;
 			bVar0 = true;
 			break;
 		
 		case 67:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 12;
-			iVar4 = 4;
+			iVar6 = 12;
+			iVar7 = 4;
 			bVar0 = true;
 			break;
 		
 		case 68:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 12;
-			iVar4 = 5;
+			iVar6 = 12;
+			iVar7 = 5;
 			bVar0 = true;
 			break;
 		
 		case 69:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 13;
-			iVar4 = 0;
+			iVar6 = 13;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 70:
 			StringCopy(&Var2, "TORSO_P0_14_0" /* GXT: Rearwall Black Gilet */, 16);
-			iVar3 = 14;
-			iVar4 = 0;
+			iVar6 = 14;
+			iVar7 = 0;
 			iVar1 = 120;
 			break;
 		
 		case 71:
 			StringCopy(&Var2, "TORSO_P0_14_1" /* GXT: Fruntalot Red Gilet */, 16);
-			iVar3 = 14;
-			iVar4 = 1;
+			iVar6 = 14;
+			iVar7 = 1;
 			iVar1 = 120;
 			break;
 		
 		case 72:
 			StringCopy(&Var2, "TORSO_P0_14_2" /* GXT: Yeti Blue Gilet */, 16);
-			iVar3 = 14;
-			iVar4 = 2;
+			iVar6 = 14;
+			iVar7 = 2;
 			iVar1 = 120;
 			break;
 		
 		case 73:
 			StringCopy(&Var2, "TORSO_P0_14_3" /* GXT: Rearwall Brown Gilet */, 16);
-			iVar3 = 14;
-			iVar4 = 3;
+			iVar6 = 14;
+			iVar7 = 3;
 			iVar1 = 120;
 			break;
 		
 		case 74:
 			StringCopy(&Var2, "TORSO_P0_14_4" /* GXT: Rearwall Orange Gilet */, 16);
-			iVar3 = 14;
-			iVar4 = 4;
+			iVar6 = 14;
+			iVar7 = 4;
 			iVar1 = 120;
 			break;
 		
 		case 75:
 			StringCopy(&Var2, "TORSO_P0_14_5" /* GXT: Rearwall Green Gilet */, 16);
-			iVar3 = 14;
-			iVar4 = 5;
+			iVar6 = 14;
+			iVar7 = 5;
 			iVar1 = 120;
 			break;
 		
 		case 76:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 15;
-			iVar4 = 0;
+			iVar6 = 15;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 77:
 			StringCopy(&Var2, "TORSO_P0_16_0" /* GXT: Purple Golf Shirt */, 16);
-			iVar3 = 16;
-			iVar4 = 0;
+			iVar6 = 16;
+			iVar7 = 0;
 			break;
 		
 		case 78:
 			StringCopy(&Var2, "TORSO_P0_16_1" /* GXT: Orange Golf Shirt */, 16);
-			iVar3 = 16;
-			iVar4 = 1;
+			iVar6 = 16;
+			iVar7 = 1;
 			iVar1 = 20;
 			break;
 		
 		case 79:
 			StringCopy(&Var2, "TORSO_P0_16_2" /* GXT: Burgundy Golf Shirt */, 16);
-			iVar3 = 16;
-			iVar4 = 2;
+			iVar6 = 16;
+			iVar7 = 2;
 			iVar1 = 24;
 			break;
 		
 		case 80:
 			StringCopy(&Var2, "TORSO_P0_16_3" /* GXT: Yellow Golf Shirt */, 16);
-			iVar3 = 16;
-			iVar4 = 3;
+			iVar6 = 16;
+			iVar7 = 3;
 			iVar1 = 22;
 			break;
 		
 		case 81:
 			StringCopy(&Var2, "TORSO_P0_16_4" /* GXT: Blue Golf Shirt */, 16);
-			iVar3 = 16;
-			iVar4 = 4;
+			iVar6 = 16;
+			iVar7 = 4;
 			iVar1 = 25;
 			break;
 		
 		case 82:
 			StringCopy(&Var2, "TORSO_P0_16_5" /* GXT: Mint Golf Shirt */, 16);
-			iVar3 = 16;
-			iVar4 = 5;
+			iVar6 = 16;
+			iVar7 = 5;
 			iVar1 = 25;
 			break;
 		
 		case 83:
 			StringCopy(&Var2, "TORSO_P0_16_6" /* GXT: Brown Golf Shirt */, 16);
-			iVar3 = 16;
-			iVar4 = 6;
+			iVar6 = 16;
+			iVar7 = 6;
 			iVar1 = 22;
 			break;
 		
 		case 84:
 			StringCopy(&Var2, "TORSO_P0_16_7" /* GXT: Crimson Golf Shirt */, 16);
-			iVar3 = 16;
-			iVar4 = 7;
+			iVar6 = 16;
+			iVar7 = 7;
 			iVar1 = 27;
 			break;
 		
 		case 85:
 			StringCopy(&Var2, "TORSO_P0_17_0" /* GXT: Blue-Gray Polo Shirt */, 16);
-			iVar3 = 17;
-			iVar4 = 0;
+			iVar6 = 17;
+			iVar7 = 0;
 			break;
 		
 		case 86:
 			StringCopy(&Var2, "TORSO_P0_17_1" /* GXT: Olive Polo Shirt */, 16);
-			iVar3 = 17;
-			iVar4 = 1;
+			iVar6 = 17;
+			iVar7 = 1;
 			break;
 		
 		case 87:
 			StringCopy(&Var2, "TORSO_P0_17_2" /* GXT: Red Polo Shirt */, 16);
-			iVar3 = 17;
-			iVar4 = 2;
+			iVar6 = 17;
+			iVar7 = 2;
 			break;
 		
 		case 88:
 			StringCopy(&Var2, "TORSO_P0_17_3" /* GXT: Black Polo Shirt */, 16);
-			iVar3 = 17;
-			iVar4 = 3;
+			iVar6 = 17;
+			iVar7 = 3;
 			iVar1 = 48;
 			break;
 		
 		case 89:
 			StringCopy(&Var2, "TORSO_P0_17_4" /* GXT: White Polo Shirt */, 16);
-			iVar3 = 17;
-			iVar4 = 4;
+			iVar6 = 17;
+			iVar7 = 4;
 			iVar1 = 40;
 			break;
 		
 		case 90:
 			StringCopy(&Var2, "TORSO_P0_17_5" /* GXT: Blue Polo Shirt */, 16);
-			iVar3 = 17;
-			iVar4 = 5;
+			iVar6 = 17;
+			iVar7 = 5;
 			iVar1 = 45;
 			break;
 		
 		case 91:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 18;
-			iVar4 = 0;
+			iVar6 = 18;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 92:
 			StringCopy(&Var2, "TORSO_P0_19_0" /* GXT: Off-White Tank Top */, 16);
-			iVar3 = 19;
-			iVar4 = 0;
+			iVar6 = 19;
+			iVar7 = 0;
 			break;
 		
 		case 93:
 			StringCopy(&Var2, "TORSO_P0_19_1" /* GXT: White Tank Top */, 16);
-			iVar3 = 19;
-			iVar4 = 1;
+			iVar6 = 19;
+			iVar7 = 1;
 			iVar1 = 190;
 			break;
 		
 		case 94:
 			StringCopy(&Var2, "TORSO_P0_19_2" /* GXT: Ash Tank Top */, 16);
-			iVar3 = 19;
-			iVar4 = 2;
+			iVar6 = 19;
+			iVar7 = 2;
 			iVar1 = 190;
 			break;
 		
 		case 95:
 			StringCopy(&Var2, "TORSO_P0_19_3" /* GXT: Gray Tank Top */, 16);
-			iVar3 = 19;
-			iVar4 = 3;
+			iVar6 = 19;
+			iVar7 = 3;
 			iVar1 = 190;
 			break;
 		
 		case 96:
 			StringCopy(&Var2, "TORSO_P0_19_4" /* GXT: Black Tank Top */, 16);
-			iVar3 = 19;
-			iVar4 = 4;
+			iVar6 = 19;
+			iVar7 = 4;
 			iVar1 = 210;
 			break;
 		
 		case 97:
 			StringCopy(&Var2, "TORSO_P0_20_0" /* GXT: Blue Denim Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 0;
+			iVar6 = 20;
+			iVar7 = 0;
 			break;
 		
 		case 98:
 			StringCopy(&Var2, "TORSO_P0_20_1" /* GXT: Deep Black Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 1;
+			iVar6 = 20;
+			iVar7 = 1;
 			iVar1 = 115;
 			break;
 		
 		case 99:
 			StringCopy(&Var2, "TORSO_P0_20_2" /* GXT: Russet Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 2;
+			iVar6 = 20;
+			iVar7 = 2;
 			iVar1 = 55;
 			break;
 		
 		case 100:
 			StringCopy(&Var2, "TORSO_P0_20_3" /* GXT: Green Cord Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 3;
+			iVar6 = 20;
+			iVar7 = 3;
 			iVar1 = 110;
 			break;
 		
 		case 101:
 			StringCopy(&Var2, "TORSO_P0_20_4" /* GXT: Gray Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 4;
+			iVar6 = 20;
+			iVar7 = 4;
 			iVar1 = 99;
 			break;
 		
 		case 102:
 			StringCopy(&Var2, "TORSO_P0_20_5" /* GXT: Fresh Check Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 5;
+			iVar6 = 20;
+			iVar7 = 5;
 			iVar1 = 49;
 			break;
 		
 		case 103:
 			StringCopy(&Var2, "TORSO_P0_20_6" /* GXT: Southern Plaid Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 6;
+			iVar6 = 20;
+			iVar7 = 6;
 			iVar1 = 120;
 			break;
 		
 		case 104:
 			StringCopy(&Var2, "TORSO_P0_20_7" /* GXT: Sunrise Yellow Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 7;
+			iVar6 = 20;
+			iVar7 = 7;
 			iVar1 = 45;
 			break;
 		
 		case 105:
 			StringCopy(&Var2, "TORSO_P0_20_8" /* GXT: White Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 8;
+			iVar6 = 20;
+			iVar7 = 8;
 			iVar1 = 115;
 			break;
 		
 		case 106:
 			StringCopy(&Var2, "TORSO_P0_20_9" /* GXT: Stone Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 9;
+			iVar6 = 20;
+			iVar7 = 9;
 			iVar1 = 105;
 			break;
 		
 		case 107:
 			StringCopy(&Var2, "TORSO_P0_20_10" /* GXT: Earth Plaid Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 10;
+			iVar6 = 20;
+			iVar7 = 10;
 			iVar1 = 90;
 			break;
 		
 		case 108:
 			StringCopy(&Var2, "TORSO_P0_20_11" /* GXT: Green Check Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 11;
+			iVar6 = 20;
+			iVar7 = 11;
 			iVar1 = 95;
 			break;
 		
 		case 109:
 			StringCopy(&Var2, "TORSO_P0_20_12" /* GXT: Country Plaid Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 12;
+			iVar6 = 20;
+			iVar7 = 12;
 			iVar1 = 39;
 			break;
 		
 		case 110:
 			StringCopy(&Var2, "TORSO_P0_20_13" /* GXT: Orange Tight Check Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 13;
+			iVar6 = 20;
+			iVar7 = 13;
 			iVar1 = 95;
 			break;
 		
 		case 111:
 			StringCopy(&Var2, "TORSO_P0_20_14" /* GXT: Bright Blue Plaid Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 14;
+			iVar6 = 20;
+			iVar7 = 14;
 			iVar1 = 35;
 			break;
 		
 		case 112:
 			StringCopy(&Var2, "TORSO_P0_20_15" /* GXT: Blue Check Shirt */, 16);
-			iVar3 = 20;
-			iVar4 = 15;
+			iVar6 = 20;
+			iVar7 = 15;
 			iVar1 = 95;
 			break;
 		
 		case 113:
 			StringCopy(&Var2, "TORSO_P0_21_0" /* GXT: Gray Hoodie */, 16);
-			iVar3 = 21;
-			iVar4 = 0;
+			iVar6 = 21;
+			iVar7 = 0;
 			iVar1 = 88;
 			break;
 		
 		case 114:
 			StringCopy(&Var2, "TORSO_P0_21_1" /* GXT: Ammu-Nation Camo Hoodie */, 16);
-			iVar3 = 21;
-			iVar4 = 1;
+			iVar6 = 21;
+			iVar7 = 1;
 			iVar1 = 60;
 			break;
 		
 		case 115:
 			StringCopy(&Var2, "TORSO_P0_21_2" /* GXT: LSGC Gray Hoodie */, 16);
-			iVar3 = 21;
-			iVar4 = 2;
+			iVar6 = 21;
+			iVar7 = 2;
 			iVar1 = 70;
 			break;
 		
 		case 116:
 			StringCopy(&Var2, "TORSO_P0_21_3" /* GXT: LSGC Urban Hoodie */, 16);
-			iVar3 = 21;
-			iVar4 = 3;
+			iVar6 = 21;
+			iVar7 = 3;
 			iVar1 = 80;
 			break;
 		
 		case 117:
 			StringCopy(&Var2, "TORSO_P0_21_4" /* GXT: LSGC Forest Hoodie */, 16);
-			iVar3 = 21;
-			iVar4 = 4;
+			iVar6 = 21;
+			iVar7 = 4;
 			iVar1 = 90;
 			break;
 		
 		case 118:
 			StringCopy(&Var2, "TORSO_P0_21_5" /* GXT: Ammu-Nation A Hoodie */, 16);
-			iVar3 = 21;
-			iVar4 = 5;
+			iVar6 = 21;
+			iVar7 = 5;
 			iVar1 = 80;
 			break;
 		
 		case 119:
 			StringCopy(&Var2, "TORSO_P0_21_6" /* GXT: Blauser Hoodie */, 16);
-			iVar3 = 21;
-			iVar4 = 6;
+			iVar6 = 21;
+			iVar7 = 6;
 			iVar1 = 70;
 			break;
 		
 		case 120:
 			StringCopy(&Var2, "TORSO_P0_21_7" /* GXT: Penetrators Orange Hoodie */, 16);
-			iVar3 = 21;
-			iVar4 = 7;
+			iVar6 = 21;
+			iVar7 = 7;
 			iVar1 = 95;
 			break;
 		
 		case 121:
 			StringCopy(&Var2, "TORSO_P0_21_8" /* GXT: Crevis Fluorescent Hoodie */, 16);
-			iVar3 = 21;
-			iVar4 = 8;
+			iVar6 = 21;
+			iVar7 = 8;
 			iVar1 = 105;
 			break;
 		
 		case 122:
 			StringCopy(&Var2, "TORSO_P0_21_9" /* GXT: Blue Hoodie */, 16);
-			iVar3 = 21;
-			iVar4 = 9;
+			iVar6 = 21;
+			iVar7 = 9;
 			iVar1 = 95;
 			break;
 		
 		case 123:
 			StringCopy(&Var2, "TORSO_P0_21_10" /* GXT: Green Hoodie */, 16);
-			iVar3 = 21;
-			iVar4 = 10;
+			iVar6 = 21;
+			iVar7 = 10;
 			iVar1 = 110;
 			break;
 		
 		case 124:
 			StringCopy(&Var2, "TORSO_P0_21_11" /* GXT: LS Jardineros Hoodie */, 16);
-			iVar3 = 21;
-			iVar4 = 11;
+			iVar6 = 21;
+			iVar7 = 11;
 			iVar1 = 98;
 			break;
 		
 		case 125:
 			StringCopy(&Var2, "TORSO_P0_21_12" /* GXT: Ash 18 Hoodie */, 16);
-			iVar3 = 21;
-			iVar4 = 12;
+			iVar6 = 21;
+			iVar7 = 12;
 			iVar1 = 88;
 			break;
 		
 		case 126:
 			StringCopy(&Var2, "TORSO_P0_21_13" /* GXT: Red Mist XI Hoodie */, 16);
-			iVar3 = 21;
-			iVar4 = 13;
+			iVar6 = 21;
+			iVar7 = 13;
 			iVar1 = 98;
 			break;
 		
 		case 127:
 			StringCopy(&Var2, "TORSO_P0_21_14" /* GXT: Eris Charcoal Hoodie */, 16);
-			iVar3 = 21;
-			iVar4 = 14;
+			iVar6 = 21;
+			iVar7 = 14;
 			iVar1 = 110;
 			break;
 		
 		case 128:
 			StringCopy(&Var2, "TORSO_P0_21_15" /* GXT: OG Hoodie */, 16);
-			iVar3 = 21;
-			iVar4 = 15;
+			iVar6 = 21;
+			iVar7 = 15;
 			iVar1 = 98;
 			break;
 		
 		case 129:
 			StringCopy(&Var2, "TORSO_P0_22_0" /* GXT: Distressed Leather Jacket */, 16);
-			iVar3 = 22;
-			iVar4 = 0;
+			iVar6 = 22;
+			iVar7 = 0;
 			break;
 		
 		case 130:
 			StringCopy(&Var2, "TORSO_P0_22_1" /* GXT: Black Leather Jacket */, 16);
-			iVar3 = 22;
-			iVar4 = 1;
+			iVar6 = 22;
+			iVar7 = 1;
 			iVar1 = 4950;
 			break;
 		
 		case 131:
 			StringCopy(&Var2, "TORSO_P0_22_2" /* GXT: Chestnut Leather Jacket */, 16);
-			iVar3 = 22;
-			iVar4 = 2;
+			iVar6 = 22;
+			iVar7 = 2;
 			iVar1 = 4195;
 			break;
 		
 		case 132:
 			StringCopy(&Var2, "TORSO_P0_22_3" /* GXT: Oxblood Leather Jacket */, 16);
-			iVar3 = 22;
-			iVar4 = 3;
+			iVar6 = 22;
+			iVar7 = 3;
 			iVar1 = 3195;
 			break;
 		
 		case 133:
 			StringCopy(&Var2, "TORSO_P0_22_4" /* GXT: Vintage Black Leather Jacket */, 16);
-			iVar3 = 22;
-			iVar4 = 4;
+			iVar6 = 22;
+			iVar7 = 4;
 			iVar1 = 2950;
 			break;
 		
 		case 134:
 			StringCopy(&Var2, "TORSO_P0_22_5" /* GXT: Brown Leather Jacket */, 16);
-			iVar3 = 22;
-			iVar4 = 5;
+			iVar6 = 22;
+			iVar7 = 5;
 			iVar1 = 3950;
 			break;
 		
 		case 135:
 			StringCopy(&Var2, "TORSO_P0_23_0" /* GXT: Silver Sports Coat */, 16);
-			iVar3 = 23;
-			iVar4 = 0;
+			iVar6 = 23;
+			iVar7 = 0;
 			iVar1 = 3200;
 			break;
 		
 		case 136:
 			StringCopy(&Var2, "TORSO_P0_23_1" /* GXT: Gray-Green Sports Coat */, 16);
-			iVar3 = 23;
-			iVar4 = 1;
+			iVar6 = 23;
+			iVar7 = 1;
 			iVar1 = 3200;
 			break;
 		
 		case 137:
 			StringCopy(&Var2, "TORSO_P0_23_2" /* GXT: Slate Sports Coat */, 16);
-			iVar3 = 23;
-			iVar4 = 2;
+			iVar6 = 23;
+			iVar7 = 2;
 			iVar1 = 3200;
 			break;
 		
 		case 138:
 			StringCopy(&Var2, "TORSO_P0_23_3" /* GXT: Gray Sports Coat */, 16);
-			iVar3 = 23;
-			iVar4 = 3;
+			iVar6 = 23;
+			iVar7 = 3;
 			iVar1 = 3200;
 			break;
 		
 		case 139:
 			StringCopy(&Var2, "TORSO_P0_23_4" /* GXT: Blue Sports Coat */, 16);
-			iVar3 = 23;
-			iVar4 = 4;
+			iVar6 = 23;
+			iVar7 = 4;
 			iVar1 = 3200;
 			break;
 		
 		case 140:
 			StringCopy(&Var2, "TORSO_P0_23_5" /* GXT: Pale Blue Sports Coat */, 16);
-			iVar3 = 23;
-			iVar4 = 5;
+			iVar6 = 23;
+			iVar7 = 5;
 			iVar1 = 3200;
 			break;
 		
 		case 141:
 			StringCopy(&Var2, "TORSO_P0_23_6" /* GXT: White Sports Coat */, 16);
-			iVar3 = 23;
-			iVar4 = 6;
+			iVar6 = 23;
+			iVar7 = 6;
 			iVar1 = 3200;
 			break;
 		
 		case 142:
 			StringCopy(&Var2, "TORSO_P0_23_7" /* GXT: Warm Gray Sports Coat */, 16);
-			iVar3 = 23;
-			iVar4 = 7;
+			iVar6 = 23;
+			iVar7 = 7;
 			iVar1 = 3200;
 			break;
 		
 		case 143:
 			StringCopy(&Var2, "TORSO_P0_23_8" /* GXT: Cream Sports Coat */, 16);
-			iVar3 = 23;
-			iVar4 = 8;
+			iVar6 = 23;
+			iVar7 = 8;
 			iVar1 = 3200;
 			break;
 		
 		case 144:
 			StringCopy(&Var2, "TORSO_P0_23_9" /* GXT: Midnight Blue Sports Coat */, 16);
-			iVar3 = 23;
-			iVar4 = 9;
+			iVar6 = 23;
+			iVar7 = 9;
 			iVar1 = 3200;
 			break;
 		
 		case 145:
 			StringCopy(&Var2, "TORSO_P0_23_10" /* GXT: Off-White Sports Coat */, 16);
-			iVar3 = 23;
-			iVar4 = 10;
+			iVar6 = 23;
+			iVar7 = 10;
 			iVar1 = 3200;
 			break;
 		
 		case 146:
 			StringCopy(&Var2, "TORSO_P0_23_11" /* GXT: Charcoal Wool Sports Coat */, 16);
-			iVar3 = 23;
-			iVar4 = 11;
+			iVar6 = 23;
+			iVar7 = 11;
 			iVar1 = 3200;
 			break;
 		
 		case 147:
 			StringCopy(&Var2, "TORSO_P0_23_12" /* GXT: Charcoal Sports Coat */, 16);
-			iVar3 = 23;
-			iVar4 = 12;
+			iVar6 = 23;
+			iVar7 = 12;
 			iVar1 = 3200;
 			break;
 		
 		case 148:
 			StringCopy(&Var2, "TORSO_P0_23_13" /* GXT: Ash Plaid Sports Coat */, 16);
-			iVar3 = 23;
-			iVar4 = 13;
+			iVar6 = 23;
+			iVar7 = 13;
 			iVar1 = 3200;
 			break;
 		
 		case 149:
 			StringCopy(&Var2, "TORSO_P0_23_14" /* GXT: Beige Sports Coat */, 16);
-			iVar3 = 23;
-			iVar4 = 14;
+			iVar6 = 23;
+			iVar7 = 14;
 			iVar1 = 3200;
 			break;
 		
 		case 150:
 			StringCopy(&Var2, "TORSO_P0_23_15" /* GXT: Brown Sports Coat */, 16);
-			iVar3 = 23;
-			iVar4 = 15;
+			iVar6 = 23;
+			iVar7 = 15;
 			iVar1 = 3200;
 			break;
 		
 		case 151:
 			StringCopy(&Var2, "TORSO_P0_24_0" /* GXT: Charcoal Sweater */, 16);
-			iVar3 = 24;
-			iVar4 = 0;
+			iVar6 = 24;
+			iVar7 = 0;
 			iVar1 = 1350;
 			break;
 		
 		case 152:
 			StringCopy(&Var2, "TORSO_P0_24_1" /* GXT: Gray Sweater */, 16);
-			iVar3 = 24;
-			iVar4 = 1;
+			iVar6 = 24;
+			iVar7 = 1;
 			iVar1 = 1400;
 			break;
 		
 		case 153:
 			StringCopy(&Var2, "TORSO_P0_24_2" /* GXT: Beige Sweater */, 16);
-			iVar3 = 24;
-			iVar4 = 2;
+			iVar6 = 24;
+			iVar7 = 2;
 			iVar1 = 1200;
 			break;
 		
 		case 154:
 			StringCopy(&Var2, "TORSO_P0_24_3" /* GXT: Red Sweater */, 16);
-			iVar3 = 24;
-			iVar4 = 3;
+			iVar6 = 24;
+			iVar7 = 3;
 			iVar1 = 1250;
 			break;
 		
 		case 155:
 			StringCopy(&Var2, "TORSO_P0_24_4" /* GXT: Pale Blue Sweater */, 16);
-			iVar3 = 24;
-			iVar4 = 4;
+			iVar6 = 24;
+			iVar7 = 4;
 			iVar1 = 1350;
 			break;
 		
 		case 156:
 			StringCopy(&Var2, "TORSO_P0_24_5" /* GXT: Pale Amethyst Sweater */, 16);
-			iVar3 = 24;
-			iVar4 = 5;
+			iVar6 = 24;
+			iVar7 = 5;
 			iVar1 = 1300;
 			break;
 		
 		case 157:
 			StringCopy(&Var2, "TORSO_P0_24_6" /* GXT: Blue Sweater */, 16);
-			iVar3 = 24;
-			iVar4 = 6;
+			iVar6 = 24;
+			iVar7 = 6;
 			iVar1 = 1380;
 			break;
 		
 		case 158:
 			StringCopy(&Var2, "TORSO_P0_24_7" /* GXT: Pale Jade Sweater */, 16);
-			iVar3 = 24;
-			iVar4 = 7;
+			iVar6 = 24;
+			iVar7 = 7;
 			iVar1 = 1340;
 			break;
 		
 		case 159:
 			StringCopy(&Var2, "TORSO_P0_24_8" /* GXT: Orange Sweater */, 16);
-			iVar3 = 24;
-			iVar4 = 8;
+			iVar6 = 24;
+			iVar7 = 8;
 			iVar1 = 1380;
 			break;
 		
 		case 160:
 			StringCopy(&Var2, "TORSO_P0_24_9" /* GXT: Lemon Sweater */, 16);
-			iVar3 = 24;
-			iVar4 = 9;
+			iVar6 = 24;
+			iVar7 = 9;
 			iVar1 = 1250;
 			break;
 		
 		case 161:
 			StringCopy(&Var2, "TORSO_P0_25_0" /* GXT: Pale Blue Shirt */, 16);
-			iVar3 = 25;
-			iVar4 = 0;
+			iVar6 = 25;
+			iVar7 = 0;
 			iVar1 = 840;
 			break;
 		
 		case 162:
 			StringCopy(&Var2, "TORSO_P0_25_1" /* GXT: Pink Shirt */, 16);
-			iVar3 = 25;
-			iVar4 = 1;
+			iVar6 = 25;
+			iVar7 = 1;
 			iVar1 = 840;
 			break;
 		
 		case 163:
 			StringCopy(&Var2, "TORSO_P0_25_2" /* GXT: White Shirt */, 16);
-			iVar3 = 25;
-			iVar4 = 2;
+			iVar6 = 25;
+			iVar7 = 2;
 			iVar1 = 840;
 			break;
 		
 		case 164:
 			StringCopy(&Var2, "TORSO_P0_25_3" /* GXT: Gray Shirt */, 16);
-			iVar3 = 25;
-			iVar4 = 3;
+			iVar6 = 25;
+			iVar7 = 3;
 			iVar1 = 840;
 			break;
 		
 		case 165:
 			StringCopy(&Var2, "TORSO_P0_25_4" /* GXT: Charcoal Shirt */, 16);
-			iVar3 = 25;
-			iVar4 = 4;
+			iVar6 = 25;
+			iVar7 = 4;
 			iVar1 = 840;
 			break;
 		
 		case 166:
 			StringCopy(&Var2, "TORSO_P0_25_5" /* GXT: Blue Shirt */, 16);
-			iVar3 = 25;
-			iVar4 = 5;
+			iVar6 = 25;
+			iVar7 = 5;
 			iVar1 = 840;
 			break;
 		
 		case 167:
 			StringCopy(&Var2, "TORSO_P0_25_6" /* GXT: Topaz Shirt */, 16);
-			iVar3 = 25;
-			iVar4 = 6;
+			iVar6 = 25;
+			iVar7 = 6;
 			iVar1 = 840;
 			break;
 		
 		case 168:
 			StringCopy(&Var2, "TORSO_P0_25_7" /* GXT: Black Shirt */, 16);
-			iVar3 = 25;
-			iVar4 = 7;
+			iVar6 = 25;
+			iVar7 = 7;
 			iVar1 = 840;
 			break;
 		
 		case 169:
 			StringCopy(&Var2, "TORSO_P0_26_0" /* GXT: Bare Chested */, 16);
-			iVar3 = 26;
-			iVar4 = 0;
+			iVar6 = 26;
+			iVar7 = 0;
 			break;
 		
 		case 170:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 27;
-			iVar4 = 0;
+			iVar6 = 27;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 171:
 			StringCopy(&Var2, "TORSO_P0_28_0" /* GXT: Eris White Sweater Vest */, 16);
-			iVar3 = 28;
-			iVar4 = 0;
+			iVar6 = 28;
+			iVar7 = 0;
 			break;
 		
 		case 172:
 			StringCopy(&Var2, "TORSO_P0_28_1" /* GXT: Lobon Sweater Vest */, 16);
-			iVar3 = 28;
-			iVar4 = 1;
+			iVar6 = 28;
+			iVar7 = 1;
 			iVar1 = 130;
 			break;
 		
 		case 173:
 			StringCopy(&Var2, "TORSO_P0_28_2" /* GXT: Eris Blue Sweater Vest */, 16);
-			iVar3 = 28;
-			iVar4 = 2;
+			iVar6 = 28;
+			iVar7 = 2;
 			iVar1 = 110;
 			break;
 		
 		case 174:
 			StringCopy(&Var2, "TORSO_P0_29_0", 16);
-			iVar3 = 29;
-			iVar4 = 0;
+			iVar6 = 29;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 175:
 			StringCopy(&Var2, "TORSO_P0_30_0" /* GXT: Gray Jacket */, 16);
-			iVar3 = 30;
-			iVar4 = 0;
+			iVar6 = 30;
+			iVar7 = 0;
 			iVar1 = 290;
 			break;
 		
 		case 176:
 			StringCopy(&Var2, "TORSO_P0_30_1" /* GXT: Black Jacket */, 16);
-			iVar3 = 30;
-			iVar4 = 1;
+			iVar6 = 30;
+			iVar7 = 1;
 			iVar1 = 320;
 			break;
 		
 		case 177:
 			StringCopy(&Var2, "TORSO_P0_31_0" /* GXT: Red Check Winter Shirt */, 16);
-			iVar3 = 31;
-			iVar4 = 0;
+			iVar6 = 31;
+			iVar7 = 0;
 			iVar1 = 59;
 			break;
 		
 		case 178:
 			StringCopy(&Var2, "TORSO_P0_31_1" /* GXT: Blue Check Winter Shirt */, 16);
-			iVar3 = 31;
-			iVar4 = 1;
+			iVar6 = 31;
+			iVar7 = 1;
 			iVar1 = 55;
 			break;
 		
 		case 179:
 			StringCopy(&Var2, "TORSO_P0_31_2" /* GXT: Black Winter Shirt */, 16);
-			iVar3 = 31;
-			iVar4 = 2;
+			iVar6 = 31;
+			iVar7 = 2;
 			iVar1 = 59;
 			break;
 		
 		case 180:
 			StringCopy(&Var2, "TORSO_P0_31_3" /* GXT: Brown Check Winter Shirt */, 16);
-			iVar3 = 31;
-			iVar4 = 3;
+			iVar6 = 31;
+			iVar7 = 3;
 			iVar1 = 49;
 			break;
 		
@@ -32136,7 +32136,7 @@ void func_232(int iParam0)//Position - 0x20C58
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_233(int iParam0)//Position - 0x219F8
@@ -32144,423 +32144,423 @@ void func_233(int iParam0)//Position - 0x219F8
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 3;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 3;
 	Global_78341[0 /*14*/].f_5 = 0;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "TORSO_P0_0_0" /* GXT: Gray Jacket */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "TORSO_P0_0_0" /* GXT: Gray Jacket */, 16);
-			iVar3 = 0;
-			iVar4 = 1;
+			iVar6 = 0;
+			iVar7 = 1;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "TORSO_P0_0_2" /* GXT: Charcoal Jacket */, 16);
-			iVar3 = 0;
-			iVar4 = 2;
+			iVar6 = 0;
+			iVar7 = 2;
 			iVar1 = 3500;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "TORSO_P0_0_3" /* GXT: Slate Jacket */, 16);
-			iVar3 = 0;
-			iVar4 = 3;
+			iVar6 = 0;
+			iVar7 = 3;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "TORSO_P0_0_4" /* GXT: Topaz Jacket */, 16);
-			iVar3 = 0;
-			iVar4 = 4;
+			iVar6 = 0;
+			iVar7 = 4;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "TORSO_P0_0_5" /* GXT: Pale Blue Jacket */, 16);
-			iVar3 = 0;
-			iVar4 = 5;
+			iVar6 = 0;
+			iVar7 = 5;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "TORSO_P0_0_6" /* GXT: Cream Jacket */, 16);
-			iVar3 = 0;
-			iVar4 = 6;
+			iVar6 = 0;
+			iVar7 = 6;
 			break;
 		
 		case 7:
 			StringCopy(&Var2, "TORSO_P0_0_7" /* GXT: Olive Jacket */, 16);
-			iVar3 = 0;
-			iVar4 = 7;
+			iVar6 = 0;
+			iVar7 = 7;
 			break;
 		
 		case 8:
 			StringCopy(&Var2, "TORSO_P0_0_8" /* GXT: Off-White Jacket */, 16);
-			iVar3 = 0;
-			iVar4 = 8;
+			iVar6 = 0;
+			iVar7 = 8;
 			break;
 		
 		case 9:
 			StringCopy(&Var2, "TORSO_P0_0_9" /* GXT: Navy Jacket */, 16);
-			iVar3 = 0;
-			iVar4 = 9;
+			iVar6 = 0;
+			iVar7 = 9;
 			break;
 		
 		case 10:
 			StringCopy(&Var2, "TORSO_P0_0_10" /* GXT: Beige Jacket */, 16);
-			iVar3 = 0;
-			iVar4 = 10;
+			iVar6 = 0;
+			iVar7 = 10;
 			break;
 		
 		case 11:
 			StringCopy(&Var2, "TORSO_P0_0_11" /* GXT: Smoke Jacket */, 16);
-			iVar3 = 0;
-			iVar4 = 11;
+			iVar6 = 0;
+			iVar7 = 11;
 			break;
 		
 		case 12:
 			StringCopy(&Var2, "TORSO_P0_0_12" /* GXT: Blue-Gray Jacket */, 16);
-			iVar3 = 0;
-			iVar4 = 12;
+			iVar6 = 0;
+			iVar7 = 12;
 			break;
 		
 		case 13:
 			StringCopy(&Var2, "TORSO_P0_0_13" /* GXT: Ash Jacket */, 16);
-			iVar3 = 0;
-			iVar4 = 13;
+			iVar6 = 0;
+			iVar7 = 13;
 			break;
 		
 		case 14:
 			StringCopy(&Var2, "TORSO_P0_0_14" /* GXT: Sand Jacket */, 16);
-			iVar3 = 0;
-			iVar4 = 14;
+			iVar6 = 0;
+			iVar7 = 14;
 			break;
 		
 		case 15:
 			StringCopy(&Var2, "TORSO_P0_0_15" /* GXT: Black Jacket */, 16);
-			iVar3 = 0;
-			iVar4 = 15;
+			iVar6 = 0;
+			iVar7 = 15;
 			break;
 		
 		case 16:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 17:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			iVar1 = 20;
 			break;
 		
 		case 18:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 2;
-			iVar4 = 1;
+			iVar6 = 2;
+			iVar7 = 1;
 			iVar1 = 18;
 			break;
 		
 		case 19:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 2;
-			iVar4 = 2;
+			iVar6 = 2;
+			iVar7 = 2;
 			iVar1 = 22;
 			break;
 		
 		case 20:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 2;
-			iVar4 = 3;
+			iVar6 = 2;
+			iVar7 = 3;
 			iVar1 = 25;
 			break;
 		
 		case 21:
 			StringCopy(&Var2, "TORSO_P0_2_4" /* GXT: Suburban Yellow T-Shirt */, 16);
-			iVar3 = 2;
-			iVar4 = 4;
+			iVar6 = 2;
+			iVar7 = 4;
 			iVar1 = 19;
 			break;
 		
 		case 22:
 			StringCopy(&Var2, "TORSO_P0_2_5" /* GXT: Rearwall Slate T-Shirt */, 16);
-			iVar3 = 2;
-			iVar4 = 5;
+			iVar6 = 2;
+			iVar7 = 5;
 			iVar1 = 20;
 			break;
 		
 		case 23:
 			StringCopy(&Var2, "TORSO_P0_2_6" /* GXT: Rearwall Blue T-Shirt */, 16);
-			iVar3 = 2;
-			iVar4 = 6;
+			iVar6 = 2;
+			iVar7 = 6;
 			iVar1 = 22;
 			break;
 		
 		case 24:
 			StringCopy(&Var2, "TORSO_P0_2_7" /* GXT: Rearwall Gray T-Shirt */, 16);
-			iVar3 = 2;
-			iVar4 = 7;
+			iVar6 = 2;
+			iVar7 = 7;
 			iVar1 = 18;
 			break;
 		
 		case 25:
 			StringCopy(&Var2, "TORSO_P0_2_8" /* GXT: Suburban Navy T-Shirt */, 16);
-			iVar3 = 2;
-			iVar4 = 8;
+			iVar6 = 2;
+			iVar7 = 8;
 			iVar1 = 39;
 			break;
 		
 		case 26:
 			StringCopy(&Var2, "TORSO_P0_2_9" /* GXT: Suburban Russet T-Shirt */, 16);
-			iVar3 = 2;
-			iVar4 = 9;
+			iVar6 = 2;
+			iVar7 = 9;
 			iVar1 = 32;
 			break;
 		
 		case 27:
 			StringCopy(&Var2, "TORSO_P0_2_10" /* GXT: Suburban Orange T-Shirt */, 16);
-			iVar3 = 2;
-			iVar4 = 10;
+			iVar6 = 2;
+			iVar7 = 10;
 			iVar1 = 35;
 			break;
 		
 		case 28:
 			StringCopy(&Var2, "TORSO_P0_2_11" /* GXT: Suburban Gray T-Shirt */, 16);
-			iVar3 = 2;
-			iVar4 = 11;
+			iVar6 = 2;
+			iVar7 = 11;
 			iVar1 = 35;
 			break;
 		
 		case 29:
 			StringCopy(&Var2, "TORSO_P0_2_12" /* GXT: White T-Shirt */, 16);
-			iVar3 = 2;
-			iVar4 = 12;
+			iVar6 = 2;
+			iVar7 = 12;
 			iVar1 = 210;
 			break;
 		
 		case 30:
 			StringCopy(&Var2, "TORSO_P0_2_13" /* GXT: Forest Green T-Shirt */, 16);
-			iVar3 = 2;
-			iVar4 = 13;
+			iVar6 = 2;
+			iVar7 = 13;
 			iVar1 = 250;
 			break;
 		
 		case 31:
 			StringCopy(&Var2, "TORSO_P0_2_14" /* GXT: Pale Blue T-Shirt */, 16);
-			iVar3 = 2;
-			iVar4 = 14;
+			iVar6 = 2;
+			iVar7 = 14;
 			iVar1 = 290;
 			break;
 		
 		case 32:
 			StringCopy(&Var2, "TORSO_P0_2_15" /* GXT: Ash T-Shirt */, 16);
-			iVar3 = 2;
-			iVar4 = 15;
+			iVar6 = 2;
+			iVar7 = 15;
 			iVar1 = 310;
 			break;
 		
 		case 33:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 34:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 3;
-			iVar4 = 1;
+			iVar6 = 3;
+			iVar7 = 1;
 			bVar0 = true;
 			break;
 		
 		case 35:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 36:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 37:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 6;
-			iVar4 = 0;
+			iVar6 = 6;
+			iVar7 = 0;
 			bVar0 = true;
 			break;
 		
 		case 38:
 			StringCopy(&Var2, "TORSO_P0_7_0" /* GXT: Brown Shooting Vest */, 16);
-			iVar3 = 7;
-			iVar4 = 0;
+			iVar6 = 7;
+			iVar7 = 0;
 			iVar1 = 150;
 			break;
 		
 		case 39:
 			StringCopy(&Var2, "TORSO_P0_7_1" /* GXT: Woodland Shooting Vest */, 16);
-			iVar3 = 7;
-			iVar4 = 1;
+			iVar6 = 7;
+			iVar7 = 1;
 			iVar1 = 160;
 			break;
 		
 		case 40:
 			StringCopy(&Var2, "TORSO_P0_7_2" /* GXT: Taupe Shooting Vest */, 16);
-			iVar3 = 7;
-			iVar4 = 2;
+			iVar6 = 7;
+			iVar7 = 2;
 			iVar1 = 150;
 			break;
 		
 		case 41:
 			StringCopy(&Var2, "TORSO_P0_7_3" /* GXT: Brown Woven Shooting Vest */, 16);
-			iVar3 = 7;
-			iVar4 = 3;
+			iVar6 = 7;
+			iVar7 = 3;
 			iVar1 = 150;
 			break;
 		
 		case 42:
 			StringCopy(&Var2, "TORSO_P0_7_4" /* GXT: Field Shooting Vest */, 16);
-			iVar3 = 7;
-			iVar4 = 4;
+			iVar6 = 7;
+			iVar7 = 4;
 			iVar1 = 160;
 			break;
 		
 		case 43:
 			StringCopy(&Var2, "TORSO_P0_7_5" /* GXT: Forest Shooting Vest */, 16);
-			iVar3 = 7;
-			iVar4 = 5;
+			iVar6 = 7;
+			iVar7 = 5;
 			iVar1 = 160;
 			break;
 		
 		case 44:
 			StringCopy(&Var2, "TORSO_P0_8_0" /* GXT: Blue-Gray Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 0;
+			iVar6 = 8;
+			iVar7 = 0;
 			break;
 		
 		case 45:
 			StringCopy(&Var2, "TORSO_P0_8_1" /* GXT: White Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 1;
+			iVar6 = 8;
+			iVar7 = 1;
 			iVar1 = 52;
 			break;
 		
 		case 46:
 			StringCopy(&Var2, "TORSO_P0_8_2" /* GXT: Camel Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 2;
+			iVar6 = 8;
+			iVar7 = 2;
 			iVar1 = 52;
 			break;
 		
 		case 47:
 			StringCopy(&Var2, "TORSO_P0_8_3" /* GXT: Black Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 3;
+			iVar6 = 8;
+			iVar7 = 3;
 			iVar1 = 55;
 			break;
 		
 		case 48:
 			StringCopy(&Var2, "TORSO_P0_8_4" /* GXT: Citrus Hawaiian Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 4;
+			iVar6 = 8;
+			iVar7 = 4;
 			iVar1 = 55;
 			break;
 		
 		case 49:
 			StringCopy(&Var2, "TORSO_P0_8_5" /* GXT: Orange Grove Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 5;
+			iVar6 = 8;
+			iVar7 = 5;
 			iVar1 = 58;
 			break;
 		
 		case 50:
 			StringCopy(&Var2, "TORSO_P0_8_6" /* GXT: Parrot Print Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 6;
+			iVar6 = 8;
+			iVar7 = 6;
 			iVar1 = 58;
 			break;
 		
 		case 51:
 			StringCopy(&Var2, "TORSO_P0_8_7" /* GXT: Blue Geometric Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 7;
+			iVar6 = 8;
+			iVar7 = 7;
 			iVar1 = 62;
 			break;
 		
 		case 52:
 			StringCopy(&Var2, "TORSO_P0_8_8" /* GXT: Gray Patterned Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 8;
+			iVar6 = 8;
+			iVar7 = 8;
 			iVar1 = 65;
 			break;
 		
 		case 53:
 			StringCopy(&Var2, "TORSO_P0_8_9" /* GXT: Peach Patterned Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 9;
+			iVar6 = 8;
+			iVar7 = 9;
 			iVar1 = 65;
 			break;
 		
 		case 54:
 			StringCopy(&Var2, "TORSO_P0_8_10" /* GXT: Tropical Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 10;
+			iVar6 = 8;
+			iVar7 = 10;
 			iVar1 = 68;
 			break;
 		
 		case 55:
 			StringCopy(&Var2, "TORSO_P0_8_11" /* GXT: Navy Floral Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 11;
+			iVar6 = 8;
+			iVar7 = 11;
 			iVar1 = 68;
 			break;
 		
 		case 56:
 			StringCopy(&Var2, "TORSO_P0_8_12" /* GXT: Lime Plaid Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 12;
+			iVar6 = 8;
+			iVar7 = 12;
 			iVar1 = 55;
 			break;
 		
 		case 57:
 			StringCopy(&Var2, "TORSO_P0_8_13" /* GXT: Brown Patterned Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 13;
+			iVar6 = 8;
+			iVar7 = 13;
 			iVar1 = 62;
 			break;
 		
 		case 58:
 			StringCopy(&Var2, "TORSO_P0_8_14" /* GXT: Vintage Hawaiian Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 14;
+			iVar6 = 8;
+			iVar7 = 14;
 			iVar1 = 58;
 			break;
 		
 		case 59:
 			StringCopy(&Var2, "TORSO_P0_8_15" /* GXT: Blue Plaid Shirt */, 16);
-			iVar3 = 8;
-			iVar4 = 15;
+			iVar6 = 8;
+			iVar7 = 15;
 			iVar1 = 58;
 			break;
 		
@@ -32568,7 +32568,7 @@ void func_233(int iParam0)//Position - 0x219F8
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_234(int iParam0)//Position - 0x22084
@@ -32576,64 +32576,64 @@ void func_234(int iParam0)//Position - 0x22084
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
-	iVar7 = 2;
+	iVar6 = 0;
+	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 2;
 	Global_78341[0 /*14*/].f_5 = 0;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "HAIR_P0_0_0" /* GXT: Lexington */, 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "HAIR_P0_1_0" /* GXT: The Wood */, 16);
-			iVar3 = 1;
-			iVar4 = 0;
+			iVar6 = 1;
+			iVar7 = 0;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "HAIR_P0_2_0" /* GXT: Clippered Cut */, 16);
-			iVar3 = 2;
-			iVar4 = 0;
+			iVar6 = 2;
+			iVar7 = 0;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "HAIR_P0_3_0" /* GXT: Grown Out */, 16);
-			iVar3 = 3;
-			iVar4 = 0;
+			iVar6 = 3;
+			iVar7 = 0;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "HAIR_P0_4_0" /* GXT: Slicker */, 16);
-			iVar3 = 4;
-			iVar4 = 0;
+			iVar6 = 4;
+			iVar7 = 0;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 5;
-			iVar4 = 0;
+			iVar6 = 5;
+			iVar7 = 0;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 6, -1);
+			func_182(iVar10, iParam0, 6, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_235(int iParam0)//Position - 0x2216B
@@ -32641,70 +32641,70 @@ void func_235(int iParam0)//Position - 0x2216B
 	bool bVar0;
 	int iVar1;
 	struct<2> Var2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
 	int iVar6;
 	int iVar7;
+	int iVar8;
+	int iVar9;
+	int iVar10;
 	
 	bVar0 = false;
 	iVar1 = 10;
-	iVar3 = 0;
-	iVar4 = 0;
-	iVar5 = -1;
-	iVar6 = 2;
+	iVar6 = 0;
 	iVar7 = 0;
+	iVar8 = -1;
+	iVar9 = 2;
+	iVar10 = 0;
 	Global_78341[0 /*14*/].f_5 = 0;
 	switch (iParam0)
 	{
 		case 0:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 0;
+			iVar6 = 0;
+			iVar7 = 0;
 			break;
 		
 		case 1:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 1;
+			iVar6 = 0;
+			iVar7 = 1;
 			break;
 		
 		case 2:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 2;
+			iVar6 = 0;
+			iVar7 = 2;
 			break;
 		
 		case 3:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 3;
+			iVar6 = 0;
+			iVar7 = 3;
 			break;
 		
 		case 4:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 4;
+			iVar6 = 0;
+			iVar7 = 4;
 			break;
 		
 		case 5:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 5;
+			iVar6 = 0;
+			iVar7 = 5;
 			break;
 		
 		case 6:
 			StringCopy(&Var2, "NO_LABEL", 16);
-			iVar3 = 0;
-			iVar4 = 6;
+			iVar6 = 0;
+			iVar7 = 6;
 			break;
 		
 		default:
-			func_182(iVar7, iParam0, 7, -1);
+			func_182(iVar10, iParam0, 7, -1);
 			return;
 			break;
 	}
-	func_175(&(Global_78341[0 /*14*/]), iVar7, iParam0, &Var2, iVar3, iVar4, iVar1, bVar0, iVar5, iVar6, 0);
+	func_175(&(Global_78341[0 /*14*/]), iVar10, iParam0, &Var2, iVar6, iVar7, iVar1, bVar0, iVar8, iVar9, 0);
 }
 
 void func_236()//Position - 0x22269
@@ -32730,9 +32730,9 @@ int func_237(int iParam0, int iParam1, int iParam2)//Position - 0x222E2
 	int iVar3;
 	int iVar4;
 	var uVar5;
-	var uVar6;
-	int iVar7;
-	var uVar8;
+	var uVar22;
+	int iVar32;
+	var uVar33;
 	
 	if (PED::IS_PED_INJURED(iParam0))
 	{
@@ -32756,11 +32756,11 @@ int func_237(int iParam0, int iParam1, int iParam2)//Position - 0x222E2
 				{
 					if (iVar2 == 13)
 					{
-						uVar6 = { func_165(iVar0, uVar5[iVar2]) };
+						uVar22 = { func_165(iVar0, uVar5[iVar2]) };
 						iVar3 = 0;
 						while (iVar3 <= 8)
 						{
-							if (!func_237(iParam0, 14, uVar6[iVar3]))
+							if (!func_237(iParam0, 14, uVar22[iVar3]))
 							{
 								iVar4 = 0;
 								while (iVar4 <= 19)
@@ -32799,15 +32799,15 @@ int func_237(int iParam0, int iParam1, int iParam2)//Position - 0x222E2
 	}
 	else if (iParam1 == 13)
 	{
-		uVar8 = { func_165(iVar0, iParam2) };
-		iVar7 = 0;
-		while (iVar7 <= 8)
+		uVar33 = { func_165(iVar0, iParam2) };
+		iVar32 = 0;
+		while (iVar32 <= 8)
 		{
-			if (!func_237(iParam0, 14, uVar8[iVar7]))
+			if (!func_237(iParam0, 14, uVar33[iVar32]))
 			{
 				return 0;
 			}
-			iVar7++;
+			iVar32++;
 		}
 		return 1;
 	}
@@ -32940,17 +32940,17 @@ void func_244()//Position - 0x2264F
 struct<2> func_245(int iParam0)//Position - 0x2274C
 {
 	struct<2> Var0;
-	char[] cVar1[8];
+	char[] cVar2[8];
 	
 	StringCopy(&Var0, "", 8);
-	cVar1 = { func_246(iParam0) };
-	if (MISC::IS_STRING_NULL_OR_EMPTY(&cVar1))
+	cVar2 = { func_246(iParam0) };
+	if (MISC::IS_STRING_NULL_OR_EMPTY(&cVar2))
 	{
 	}
 	else
 	{
 		StringCopy(&Var0, "RC_", 8);
-		StringConCat(&Var0, &cVar1, 8);
+		StringConCat(&Var0, &cVar2, 8);
 	}
 	return Var0;
 }
@@ -33275,14 +33275,14 @@ void func_248(int iParam0, int iParam1, bool bParam2, bool bParam3)//Position - 
 void func_249(int iParam0, bool bParam1, bool bParam2)//Position - 0x22CB8
 {
 	struct<4> Var0;
-	char* sVar1;
+	char* sVar32;
 	
 	if (iParam0 != -1)
 	{
 		func_251(iParam0, &Var0);
-		MemCopy(&sVar1, {func_246(iParam0)}, 4);
-		STATS::PLAYSTATS_MISSION_CHECKPOINT(&sVar1, 0, Global_100718, 0);
-		func_250(&sVar1, Var0.f_3, Global_100718, bParam1, bParam2);
+		MemCopy(&sVar32, {func_246(iParam0)}, 4);
+		STATS::PLAYSTATS_MISSION_CHECKPOINT(&sVar32, 0, Global_100718, 0);
+		func_250(&sVar32, Var0.f_3, Global_100718, bParam1, bParam2);
 	}
 }
 
@@ -33561,29 +33561,29 @@ void func_251(int iParam0, var uParam1)//Position - 0x22D3C
 	}
 }
 
-void func_252(var uParam0, char* sParam1, struct<2> Param2, int iParam3, int iParam4, int iParam5, struct<3> Param6, int iParam7, char* sParam8, int iParam9, int iParam10, char* sParam11, int iParam12, int iParam13, int iParam14, int iParam15, int iParam16, int iParam17, int iParam18, var uParam19, int iParam20, int iParam21)//Position - 0x23F83
+void func_252(var uParam0, char* sParam1, struct<2> Param2, int iParam4, int iParam5, int iParam6, struct<3> Param7, int iParam10, char* sParam11, int iParam12, int iParam13, char* sParam14, int iParam15, int iParam16, int iParam17, int iParam18, int iParam19, int iParam20, int iParam21, var uParam22, int iParam23, int iParam24)//Position - 0x23F83
 {
-	uParam0->f_4 = iParam4;
+	uParam0->f_4 = iParam5;
 	*uParam0 = sParam1;
 	uParam0->f_1 = { Param2 };
-	uParam0->f_3 = iParam3;
-	uParam0->f_5 = iParam5;
-	uParam0->f_6 = { Param6 };
-	uParam0->f_9 = iParam7;
-	StringCopy(&(uParam0->f_10), sParam8, 16);
-	uParam0->f_14 = iParam9;
-	uParam0->f_15 = iParam10;
-	StringCopy(&(uParam0->f_16), sParam11, 24);
-	uParam0->f_22 = iParam12;
-	uParam0->f_23 = iParam13;
-	uParam0->f_24 = iParam14;
-	uParam0->f_25 = iParam15;
-	uParam0->f_26 = iParam16;
-	uParam0->f_27 = iParam17;
-	uParam0->f_28 = iParam18;
-	uParam0->f_29 = uParam19;
-	uParam0->f_30 = iParam20;
-	uParam0->f_31 = iParam21;
+	uParam0->f_3 = iParam4;
+	uParam0->f_5 = iParam6;
+	uParam0->f_6 = { Param7 };
+	uParam0->f_9 = iParam10;
+	StringCopy(&(uParam0->f_10), sParam11, 16);
+	uParam0->f_14 = iParam12;
+	uParam0->f_15 = iParam13;
+	StringCopy(&(uParam0->f_16), sParam14, 24);
+	uParam0->f_22 = iParam15;
+	uParam0->f_23 = iParam16;
+	uParam0->f_24 = iParam17;
+	uParam0->f_25 = iParam18;
+	uParam0->f_26 = iParam19;
+	uParam0->f_27 = iParam20;
+	uParam0->f_28 = iParam21;
+	uParam0->f_29 = uParam22;
+	uParam0->f_30 = iParam23;
+	uParam0->f_31 = iParam24;
 }
 
 int func_253(int iParam0)//Position - 0x24015
@@ -33941,15 +33941,15 @@ void func_262(var uParam0)//Position - 0x2446B
 void func_263(int iParam0, bool bParam1)//Position - 0x244A8
 {
 	struct<26> Var0;
-	int iVar1;
-	bool bVar2;
-	int iVar3;
-	struct<6> Var4;
-	int iVar5;
-	int iVar6;
-	struct<6> Var7;
-	int iVar8;
-	int iVar9;
+	int iVar32;
+	bool bVar33;
+	int iVar34;
+	struct<6> Var35;
+	int iVar67;
+	int iVar68;
+	struct<6> Var69;
+	int iVar101;
+	int iVar102;
 	
 	func_251(iParam0, &Var0);
 	if (!MISC::ARE_STRINGS_EQUAL(&(Var0.f_16), ""))
@@ -33966,62 +33966,62 @@ void func_263(int iParam0, bool bParam1)//Position - 0x244A8
 	func_281(iParam0, Global_78828);
 	if (!bParam1)
 	{
-		iVar1 = func_280(iParam0);
-		if (iVar1 != 0)
+		iVar32 = func_280(iParam0);
+		if (iVar32 != 0)
 		{
-			if (!AUDIO::IS_MISSION_NEWS_STORY_UNLOCKED(iVar1))
+			if (!AUDIO::IS_MISSION_NEWS_STORY_UNLOCKED(iVar32))
 			{
-				AUDIO::UNLOCK_MISSION_NEWS_STORY(iVar1);
+				AUDIO::UNLOCK_MISSION_NEWS_STORY(iVar32);
 			}
 		}
 	}
 	if (Var0.f_24 != -1)
 	{
-		bVar2 = true;
+		bVar33 = true;
 		if (Var0.f_5 != 4)
 		{
-			iVar3 = 0;
-			while (iVar3 < 63)
+			iVar34 = 0;
+			while (iVar34 < 63)
 			{
-				iVar5 = iVar3;
-				if (iVar5 != iParam0)
+				iVar67 = iVar34;
+				if (iVar67 != iParam0)
 				{
-					func_251(iVar5, &Var4);
-					if (Var4.f_5 == Var0.f_5)
+					func_251(iVar67, &Var35);
+					if (Var35.f_5 == Var0.f_5)
 					{
-						if (!BitTest(Global_113648.f_18576[iVar5 /*6*/], 3))
+						if (!BitTest(Global_113648.f_18576[iVar67 /*6*/], 3))
 						{
-							bVar2 = false;
+							bVar33 = false;
 						}
-						if (!BitTest(Global_113648.f_18576[iVar5 /*6*/], 0))
+						if (!BitTest(Global_113648.f_18576[iVar67 /*6*/], 0))
 						{
-							func_268(iVar5);
+							func_268(iVar67);
 						}
 					}
 				}
-				iVar3++;
+				iVar34++;
 			}
 		}
-		if (bVar2)
+		if (bVar33)
 		{
 			func_268(Var0.f_24);
 		}
 	}
 	else if (Var0.f_25 != 4)
 	{
-		iVar6 = 0;
-		while (iVar6 < 63)
+		iVar68 = 0;
+		while (iVar68 < 63)
 		{
-			iVar8 = iVar6;
-			if (iVar8 != iParam0)
+			iVar101 = iVar68;
+			if (iVar101 != iParam0)
 			{
-				func_251(iVar8, &Var7);
-				if (Var7.f_5 == Var0.f_25)
+				func_251(iVar101, &Var69);
+				if (Var69.f_5 == Var0.f_25)
 				{
-					func_268(iVar8);
+					func_268(iVar101);
 				}
 			}
-			iVar6++;
+			iVar68++;
 		}
 	}
 	if (!BitTest(Global_113648.f_18576[iParam0 /*6*/], 3))
@@ -34029,10 +34029,10 @@ void func_263(int iParam0, bool bParam1)//Position - 0x244A8
 		MISC::SET_BIT(&(Global_113648.f_18576[iParam0 /*6*/]), 3);
 		Global_112735[iParam0 /*10*/].f_5 = 1;
 		func_265(iParam0);
-		iVar9 = func_264(iParam0);
-		if (iVar9 != 322)
+		iVar102 = func_264(iParam0);
+		if (iVar102 != 322)
 		{
-			func_100(iVar9, 0, 0);
+			func_100(iVar102, 0, 0);
 		}
 	}
 }
@@ -34722,9 +34722,9 @@ bool func_276(int iParam0, bool bParam1, int iParam2, bool bParam3)//Position - 
 	int iVar1;
 	int iVar2;
 	struct<5> Var3;
-	int iVar4;
-	bool bVar5;
-	int iVar6;
+	int iVar98;
+	bool bVar99;
+	int iVar100;
 	
 	Global_1925773 = 1;
 	bVar0 = false;
@@ -34749,21 +34749,21 @@ bool func_276(int iParam0, bool bParam1, int iParam2, bool bParam3)//Position - 
 	}
 	else
 	{
-		bVar5 = true;
+		bVar99 = true;
 		if (MISC::GET_HASH_KEY(SCRIPT::GET_THIS_SCRIPT_NAME()) != MISC::GET_HASH_KEY("standard_global_reg"))
 		{
 			if (iParam2 == 0)
 			{
 				if (Global_39797[iParam0] && MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), Var3, true) < 200f)
 				{
-					bVar5 = false;
+					bVar99 = false;
 					Global_1925773 = 1;
 				}
 				if (!PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()) || TASK::IS_PED_BEING_ARRESTED(PLAYER::PLAYER_PED_ID()))
 				{
 					if (!CAM::IS_SCREEN_FADED_OUT())
 					{
-						bVar5 = false;
+						bVar99 = false;
 						Global_1925773 = 1;
 					}
 				}
@@ -34771,10 +34771,10 @@ bool func_276(int iParam0, bool bParam1, int iParam2, bool bParam3)//Position - 
 		}
 		if (STREAMING::IS_NEW_LOAD_SCENE_ACTIVE() && (!STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS() || STREAMING::GET_PLAYER_SWITCH_STATE() != 5))
 		{
-			bVar5 = false;
+			bVar99 = false;
 			Global_1925773 = 1;
 		}
-		if (bVar5)
+		if (bVar99)
 		{
 			switch (Var3.f_3)
 			{
@@ -34901,37 +34901,37 @@ bool func_276(int iParam0, bool bParam1, int iParam2, bool bParam3)//Position - 
 					break;
 				
 				case 2:
-					iVar6 = INTERIOR::GET_INTERIOR_AT_COORDS_WITH_TYPE(Var3, &(Var3.f_42));
-					if (iVar6 != 0)
+					iVar100 = INTERIOR::GET_INTERIOR_AT_COORDS_WITH_TYPE(Var3, &(Var3.f_42));
+					if (iVar100 != 0)
 					{
 						if (MISC::GET_HASH_KEY(&(Var3.f_50)) != MISC::GET_HASH_KEY(""))
 						{
-							if (INTERIOR::IS_INTERIOR_ENTITY_SET_ACTIVE(iVar6, &(Var3.f_50)))
+							if (INTERIOR::IS_INTERIOR_ENTITY_SET_ACTIVE(iVar100, &(Var3.f_50)))
 							{
-								INTERIOR::DEACTIVATE_INTERIOR_ENTITY_SET(iVar6, &(Var3.f_50));
+								INTERIOR::DEACTIVATE_INTERIOR_ENTITY_SET(iVar100, &(Var3.f_50));
 							}
 						}
 						if (iVar1 == 0)
 						{
 							if (MISC::GET_HASH_KEY(&(Var3.f_8[1 /*8*/])) != MISC::GET_HASH_KEY(""))
 							{
-								if (INTERIOR::IS_INTERIOR_ENTITY_SET_ACTIVE(iVar6, &(Var3.f_8[1 /*8*/])))
+								if (INTERIOR::IS_INTERIOR_ENTITY_SET_ACTIVE(iVar100, &(Var3.f_8[1 /*8*/])))
 								{
-									INTERIOR::DEACTIVATE_INTERIOR_ENTITY_SET(iVar6, &(Var3.f_8[1 /*8*/]));
+									INTERIOR::DEACTIVATE_INTERIOR_ENTITY_SET(iVar100, &(Var3.f_8[1 /*8*/]));
 								}
 							}
 							if ((MISC::GET_HASH_KEY(&(Var3.f_8[2 /*8*/])) != MISC::GET_HASH_KEY("") && MISC::GET_HASH_KEY(&(Var3.f_8[2 /*8*/])) != MISC::GET_HASH_KEY("REMOVE_ALL_STATES")) && MISC::GET_HASH_KEY(&(Var3.f_8[2 /*8*/])) != MISC::GET_HASH_KEY(&(Var3.f_8[iVar1 /*8*/])))
 							{
-								if (INTERIOR::IS_INTERIOR_ENTITY_SET_ACTIVE(iVar6, &(Var3.f_8[2 /*8*/])))
+								if (INTERIOR::IS_INTERIOR_ENTITY_SET_ACTIVE(iVar100, &(Var3.f_8[2 /*8*/])))
 								{
-									INTERIOR::DEACTIVATE_INTERIOR_ENTITY_SET(iVar6, &(Var3.f_8[2 /*8*/]));
+									INTERIOR::DEACTIVATE_INTERIOR_ENTITY_SET(iVar100, &(Var3.f_8[2 /*8*/]));
 								}
 							}
 							if (MISC::GET_HASH_KEY(&(Var3.f_8[0 /*8*/])) != MISC::GET_HASH_KEY(""))
 							{
-								if (!INTERIOR::IS_INTERIOR_ENTITY_SET_ACTIVE(iVar6, &(Var3.f_8[0 /*8*/])))
+								if (!INTERIOR::IS_INTERIOR_ENTITY_SET_ACTIVE(iVar100, &(Var3.f_8[0 /*8*/])))
 								{
-									INTERIOR::ACTIVATE_INTERIOR_ENTITY_SET(iVar6, &(Var3.f_8[0 /*8*/]));
+									INTERIOR::ACTIVATE_INTERIOR_ENTITY_SET(iVar100, &(Var3.f_8[0 /*8*/]));
 								}
 							}
 						}
@@ -34939,23 +34939,23 @@ bool func_276(int iParam0, bool bParam1, int iParam2, bool bParam3)//Position - 
 						{
 							if (MISC::GET_HASH_KEY(&(Var3.f_8[0 /*8*/])) != MISC::GET_HASH_KEY(""))
 							{
-								if (INTERIOR::IS_INTERIOR_ENTITY_SET_ACTIVE(iVar6, &(Var3.f_8[0 /*8*/])))
+								if (INTERIOR::IS_INTERIOR_ENTITY_SET_ACTIVE(iVar100, &(Var3.f_8[0 /*8*/])))
 								{
-									INTERIOR::DEACTIVATE_INTERIOR_ENTITY_SET(iVar6, &(Var3.f_8[0 /*8*/]));
+									INTERIOR::DEACTIVATE_INTERIOR_ENTITY_SET(iVar100, &(Var3.f_8[0 /*8*/]));
 								}
 							}
 							if ((MISC::GET_HASH_KEY(&(Var3.f_8[2 /*8*/])) != MISC::GET_HASH_KEY("") && MISC::GET_HASH_KEY(&(Var3.f_8[2 /*8*/])) != MISC::GET_HASH_KEY("REMOVE_ALL_STATES")) && MISC::GET_HASH_KEY(&(Var3.f_8[2 /*8*/])) != MISC::GET_HASH_KEY(&(Var3.f_8[iVar1 /*8*/])))
 							{
-								if (INTERIOR::IS_INTERIOR_ENTITY_SET_ACTIVE(iVar6, &(Var3.f_8[2 /*8*/])))
+								if (INTERIOR::IS_INTERIOR_ENTITY_SET_ACTIVE(iVar100, &(Var3.f_8[2 /*8*/])))
 								{
-									INTERIOR::DEACTIVATE_INTERIOR_ENTITY_SET(iVar6, &(Var3.f_8[2 /*8*/]));
+									INTERIOR::DEACTIVATE_INTERIOR_ENTITY_SET(iVar100, &(Var3.f_8[2 /*8*/]));
 								}
 							}
 							if (MISC::GET_HASH_KEY(&(Var3.f_8[1 /*8*/])) != MISC::GET_HASH_KEY(""))
 							{
-								if (!INTERIOR::IS_INTERIOR_ENTITY_SET_ACTIVE(iVar6, &(Var3.f_8[1 /*8*/])))
+								if (!INTERIOR::IS_INTERIOR_ENTITY_SET_ACTIVE(iVar100, &(Var3.f_8[1 /*8*/])))
 								{
-									INTERIOR::ACTIVATE_INTERIOR_ENTITY_SET(iVar6, &(Var3.f_8[1 /*8*/]));
+									INTERIOR::ACTIVATE_INTERIOR_ENTITY_SET(iVar100, &(Var3.f_8[1 /*8*/]));
 								}
 							}
 						}
@@ -34963,29 +34963,29 @@ bool func_276(int iParam0, bool bParam1, int iParam2, bool bParam3)//Position - 
 						{
 							if (MISC::GET_HASH_KEY(&(Var3.f_8[0 /*8*/])) != MISC::GET_HASH_KEY(""))
 							{
-								if (INTERIOR::IS_INTERIOR_ENTITY_SET_ACTIVE(iVar6, &(Var3.f_8[0 /*8*/])))
+								if (INTERIOR::IS_INTERIOR_ENTITY_SET_ACTIVE(iVar100, &(Var3.f_8[0 /*8*/])))
 								{
-									INTERIOR::DEACTIVATE_INTERIOR_ENTITY_SET(iVar6, &(Var3.f_8[0 /*8*/]));
+									INTERIOR::DEACTIVATE_INTERIOR_ENTITY_SET(iVar100, &(Var3.f_8[0 /*8*/]));
 								}
 							}
 							if (MISC::GET_HASH_KEY(&(Var3.f_8[1 /*8*/])) != MISC::GET_HASH_KEY(""))
 							{
-								if (INTERIOR::IS_INTERIOR_ENTITY_SET_ACTIVE(iVar6, &(Var3.f_8[1 /*8*/])))
+								if (INTERIOR::IS_INTERIOR_ENTITY_SET_ACTIVE(iVar100, &(Var3.f_8[1 /*8*/])))
 								{
-									INTERIOR::DEACTIVATE_INTERIOR_ENTITY_SET(iVar6, &(Var3.f_8[1 /*8*/]));
+									INTERIOR::DEACTIVATE_INTERIOR_ENTITY_SET(iVar100, &(Var3.f_8[1 /*8*/]));
 								}
 							}
 							if (MISC::GET_HASH_KEY(&(Var3.f_8[2 /*8*/])) != MISC::GET_HASH_KEY("") && MISC::GET_HASH_KEY(&(Var3.f_8[2 /*8*/])) != MISC::GET_HASH_KEY("REMOVE_ALL_STATES"))
 							{
-								if (!INTERIOR::IS_INTERIOR_ENTITY_SET_ACTIVE(iVar6, &(Var3.f_8[2 /*8*/])))
+								if (!INTERIOR::IS_INTERIOR_ENTITY_SET_ACTIVE(iVar100, &(Var3.f_8[2 /*8*/])))
 								{
-									INTERIOR::ACTIVATE_INTERIOR_ENTITY_SET(iVar6, &(Var3.f_8[2 /*8*/]));
+									INTERIOR::ACTIVATE_INTERIOR_ENTITY_SET(iVar100, &(Var3.f_8[2 /*8*/]));
 								}
 							}
 						}
 						if (bParam1)
 						{
-							INTERIOR::REFRESH_INTERIOR(iVar6);
+							INTERIOR::REFRESH_INTERIOR(iVar100);
 						}
 					}
 					Global_41391[iParam0] = 1;
@@ -34996,20 +34996,20 @@ bool func_276(int iParam0, bool bParam1, int iParam2, bool bParam3)//Position - 
 				case 3:
 					if (MISC::GET_DISTANCE_BETWEEN_COORDS(Var3, ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), true) < 250f)
 					{
-						iVar4 = OBJECT::GET_RAYFIRE_MAP_OBJECT(Var3, 25f, &(Var3.f_8[0 /*8*/]));
-						if (OBJECT::DOES_RAYFIRE_MAP_OBJECT_EXIST(iVar4))
+						iVar98 = OBJECT::GET_RAYFIRE_MAP_OBJECT(Var3, 25f, &(Var3.f_8[0 /*8*/]));
+						if (OBJECT::DOES_RAYFIRE_MAP_OBJECT_EXIST(iVar98))
 						{
 							if (iVar1 == 0)
 							{
-								OBJECT::SET_STATE_OF_RAYFIRE_MAP_OBJECT(iVar4, 3);
+								OBJECT::SET_STATE_OF_RAYFIRE_MAP_OBJECT(iVar98, 3);
 								Global_41391[iParam0] = 1;
 								bVar0 = true;
 							}
 							else if (iVar1 == 1)
 							{
-								if ((OBJECT::GET_STATE_OF_RAYFIRE_MAP_OBJECT(iVar4) != 6 && OBJECT::GET_STATE_OF_RAYFIRE_MAP_OBJECT(iVar4) != 7) && OBJECT::GET_STATE_OF_RAYFIRE_MAP_OBJECT(iVar4) != 8)
+								if ((OBJECT::GET_STATE_OF_RAYFIRE_MAP_OBJECT(iVar98) != 6 && OBJECT::GET_STATE_OF_RAYFIRE_MAP_OBJECT(iVar98) != 7) && OBJECT::GET_STATE_OF_RAYFIRE_MAP_OBJECT(iVar98) != 8)
 								{
-									OBJECT::SET_STATE_OF_RAYFIRE_MAP_OBJECT(iVar4, 10);
+									OBJECT::SET_STATE_OF_RAYFIRE_MAP_OBJECT(iVar98, 10);
 									Global_41391[iParam0] = 1;
 									bVar0 = true;
 								}
@@ -37119,21 +37119,21 @@ int func_293(char* sParam0, int iParam1)//Position - 0x29950
 {
 	int iVar0;
 	char* sVar1;
-	int iVar2;
-	int iVar3;
+	int iVar33;
+	int iVar34;
 	
-	iVar2 = MISC::GET_HASH_KEY(sParam0);
-	iVar3 = 0;
-	iVar3 = 0;
-	while (iVar3 < 63)
+	iVar33 = MISC::GET_HASH_KEY(sParam0);
+	iVar34 = 0;
+	iVar34 = 0;
+	while (iVar34 < 63)
 	{
-		iVar0 = iVar3;
+		iVar0 = iVar34;
 		func_251(iVar0, &sVar1);
-		if (MISC::GET_HASH_KEY(sVar1) == iVar2)
+		if (MISC::GET_HASH_KEY(sVar1) == iVar33)
 		{
 			return iVar0;
 		}
-		iVar3++;
+		iVar34++;
 	}
 	if (iParam1 == 0)
 	{
@@ -37149,53 +37149,53 @@ bool func_294(int iParam0, int iParam1)//Position - 0x29999
 void func_295()//Position - 0x299AB
 {
 	PED::SET_PED_DENSITY_MULTIPLIER_THIS_FRAME(0.3f);
-	switch (iLocal_274)
+	switch (iLocal_3107)
 	{
 		case 0:
-			if (!bLocal_276)
+			if (!bLocal_3169)
 			{
 				if (!func_49())
 				{
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
 				}
-				iLocal_274 = 2;
+				iLocal_3107 = 2;
 			}
 			else
 			{
 				PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 75 /*INPUT_VEH_EXIT*/, true);
-				func_46(&Local_543);
-				VEHICLE::REQUEST_VEHICLE_RECORDING(1, sLocal_360);
+				func_46(&Local_3544);
+				VEHICLE::REQUEST_VEHICLE_RECORDING(1, sLocal_3297);
 				func_45();
-				if (func_12(Local_536.f_0))
+				if (func_12(Local_3497.f_0))
 				{
-					ENTITY::SET_ENTITY_PROOFS(Local_536.f_0, false, false, false, true, false, false, false, false);
+					ENTITY::SET_ENTITY_PROOFS(Local_3497.f_0, false, false, false, true, false, false, false, false);
 				}
-				if ((VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(1, sLocal_360) && !func_302(&Local_532)) && !func_302(&Local_533))
+				if ((VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(1, sLocal_3297) && !func_302(&Local_3469)) && !func_302(&Local_3476))
 				{
 					if (func_38(1, 1093140480, 0))
 					{
-						CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(PLAYER::PLAYER_PED_ID(), sLocal_363, 0, 0, 0);
-						if (func_12(Local_533.f_0))
+						CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(PLAYER::PLAYER_PED_ID(), sLocal_3300, 0, 0, 0);
+						if (func_12(Local_3476.f_0))
 						{
-							CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_533.f_0, sLocal_362, 0, 0, 0);
+							CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_3476.f_0, sLocal_3299, 0, 0, 0);
 						}
-						if (func_12(Local_532.f_0))
+						if (func_12(Local_3469.f_0))
 						{
-							CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_532.f_0, sLocal_361, 0, 0, 0);
+							CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_3469.f_0, sLocal_3298, 0, 0, 0);
 						}
-						if (func_12(Local_534.f_0))
+						if (func_12(Local_3483.f_0))
 						{
-							CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_534.f_0, sLocal_364, 0, 0, 0);
+							CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_3483.f_0, sLocal_3301, 0, 0, 0);
 						}
-						if (func_12(Local_535.f_0))
+						if (func_12(Local_3490.f_0))
 						{
-							CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_535.f_0, sLocal_365, 0, 0, 0);
+							CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_3490.f_0, sLocal_3302, 0, 0, 0);
 						}
-						if (func_12(Local_536.f_0))
+						if (func_12(Local_3497.f_0))
 						{
-							CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_536.f_0, sLocal_366, 0, 0, 0);
-							GRAPHICS::REMOVE_PARTICLE_FX_IN_RANGE(ENTITY::GET_ENTITY_COORDS(Local_536.f_0, false), 4f);
+							CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_3497.f_0, sLocal_3303, 0, 0, 0);
+							GRAPHICS::REMOVE_PARTICLE_FX_IN_RANGE(ENTITY::GET_ENTITY_COORDS(Local_3497.f_0, false), 4f);
 						}
 						RECORDING::REPLAY_START_EVENT(1);
 						CUTSCENE::START_CUTSCENE(0);
@@ -37206,14 +37206,14 @@ void func_295()//Position - 0x299AB
 						func_297(1);
 						VEHICLE::SET_VEHICLE_DENSITY_MULTIPLIER_THIS_FRAME(0f);
 						PED::SET_PED_DENSITY_MULTIPLIER_THIS_FRAME(0.3f);
-						iLocal_274 = 1;
+						iLocal_3107 = 1;
 					}
 				}
 				else
 				{
-					if (func_15(Local_535.f_0))
+					if (func_15(Local_3490.f_0))
 					{
-						func_43(Local_535.f_0, 10.5f, 1, 0f, 0, 1, 0);
+						func_43(Local_3490.f_0, 10.5f, 1, 0f, 0, 1, 0);
 					}
 					func_5(0);
 					PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 21 /*INPUT_SPRINT*/, true);
@@ -37230,7 +37230,7 @@ void func_295()//Position - 0x299AB
 			break;
 		
 		case 1:
-			if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY(sLocal_363, 0))
+			if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY(sLocal_3300, 0))
 			{
 				RECORDING::REPLAY_STOP_EVENT();
 				if (CUTSCENE::WAS_CUTSCENE_SKIPPED() && CAM::IS_SCREEN_FADED_OUT())
@@ -37238,54 +37238,54 @@ void func_295()//Position - 0x299AB
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
 					CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
 				}
-				bLocal_315 = true;
+				bLocal_3240 = true;
 			}
-			if ((func_22(Local_533.f_0) && func_22(Local_532.f_0)) && func_15(Local_535.f_0))
+			if ((func_22(Local_3476.f_0) && func_22(Local_3469.f_0)) && func_15(Local_3490.f_0))
 			{
-				if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY(sLocal_362, 0))
+				if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY(sLocal_3299, 0))
 				{
-					if (!PED::IS_PED_SITTING_IN_VEHICLE(Local_533.f_0, Local_535.f_0))
+					if (!PED::IS_PED_SITTING_IN_VEHICLE(Local_3476.f_0, Local_3490.f_0))
 					{
-						PED::SET_PED_INTO_VEHICLE(Local_533.f_0, Local_535.f_0, -1);
+						PED::SET_PED_INTO_VEHICLE(Local_3476.f_0, Local_3490.f_0, -1);
 					}
-					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_533.f_0, true);
+					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_3476.f_0, true);
 				}
-				if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY(sLocal_361, 0))
+				if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY(sLocal_3298, 0))
 				{
-					if (!PED::IS_PED_SITTING_IN_VEHICLE(Local_532.f_0, Local_535.f_0))
+					if (!PED::IS_PED_SITTING_IN_VEHICLE(Local_3469.f_0, Local_3490.f_0))
 					{
-						PED::SET_PED_INTO_VEHICLE(Local_532.f_0, Local_535.f_0, 0);
+						PED::SET_PED_INTO_VEHICLE(Local_3469.f_0, Local_3490.f_0, 0);
 					}
-					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_532.f_0, true);
-					PED::SET_PED_KEEP_TASK(Local_532.f_0, true);
+					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_3469.f_0, true);
+					PED::SET_PED_KEEP_TASK(Local_3469.f_0, true);
 				}
-				if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY(sLocal_365, 0))
+				if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY(sLocal_3302, 0))
 				{
-					VEHICLE::SET_VEHICLE_ENGINE_ON(Local_535.f_0, true, true, false);
-					VEHICLE::SET_VEHICLE_FORWARD_SPEED(Local_535.f_0, 17f);
-					VEHICLE::SET_VEHICLE_DOORS_SHUT(Local_535.f_0, true);
-					if (!VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(Local_535.f_0))
+					VEHICLE::SET_VEHICLE_ENGINE_ON(Local_3490.f_0, true, true, false);
+					VEHICLE::SET_VEHICLE_FORWARD_SPEED(Local_3490.f_0, 17f);
+					VEHICLE::SET_VEHICLE_DOORS_SHUT(Local_3490.f_0, true);
+					if (!VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(Local_3490.f_0))
 					{
-						VEHICLE::START_PLAYBACK_RECORDED_VEHICLE_USING_AI(Local_535.f_0, 1, sLocal_360, 35f, 786468);
+						VEHICLE::START_PLAYBACK_RECORDED_VEHICLE_USING_AI(Local_3490.f_0, 1, sLocal_3297, 35f, 786468);
 					}
 				}
 			}
-			if (func_22(Local_534.f_0))
+			if (func_22(Local_3483.f_0))
 			{
-				if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY(sLocal_364, 0))
+				if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY(sLocal_3301, 0))
 				{
-					ENTITY::SET_ENTITY_LOAD_COLLISION_FLAG(Local_534.f_0, false, 1);
-					func_56(&Local_534, 1);
+					ENTITY::SET_ENTITY_LOAD_COLLISION_FLAG(Local_3483.f_0, false, 1);
+					func_56(&Local_3483, 1);
 				}
 			}
-			if (!bLocal_315)
+			if (!bLocal_3240)
 			{
 				CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
 				CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
 			}
 			if (!CUTSCENE::IS_CUTSCENE_PLAYING())
 			{
-				iLocal_274 = 2;
+				iLocal_3107 = 2;
 			}
 			else
 			{
@@ -37305,38 +37305,38 @@ void func_295()//Position - 0x299AB
 				{
 					CUTSCENE::REMOVE_CUTSCENE();
 				}
-				if (func_12(Local_534.f_0))
+				if (func_12(Local_3483.f_0))
 				{
-					ENTITY::SET_ENTITY_LOAD_COLLISION_FLAG(Local_534.f_0, false, 1);
+					ENTITY::SET_ENTITY_LOAD_COLLISION_FLAG(Local_3483.f_0, false, 1);
 				}
-				func_56(&Local_534, 1);
-				if (func_15(Local_535.f_0))
+				func_56(&Local_3483, 1);
+				if (func_15(Local_3490.f_0))
 				{
-					if (func_22(Local_533.f_0))
+					if (func_22(Local_3476.f_0))
 					{
-						if (!func_42(Local_533.f_0, joaat("SCRIPT_TASK_VEHICLE_DRIVE_WANDER")))
+						if (!func_42(Local_3476.f_0, joaat("SCRIPT_TASK_VEHICLE_DRIVE_WANDER")))
 						{
-							if (PED::IS_PED_SITTING_IN_VEHICLE(Local_533.f_0, Local_535.f_0))
+							if (PED::IS_PED_SITTING_IN_VEHICLE(Local_3476.f_0, Local_3490.f_0))
 							{
-								PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_533.f_0, true);
+								PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_3476.f_0, true);
 							}
 						}
 					}
-					if (func_22(Local_532.f_0))
+					if (func_22(Local_3469.f_0))
 					{
-						PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_532.f_0, true);
-						PED::SET_PED_KEEP_TASK(Local_532.f_0, true);
+						PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_3469.f_0, true);
+						PED::SET_PED_KEEP_TASK(Local_3469.f_0, true);
 					}
 				}
-				if (func_12(Local_536.f_0))
+				if (func_12(Local_3497.f_0))
 				{
-					ENTITY::SET_ENTITY_PROOFS(Local_536.f_0, false, false, false, false, false, false, false, false);
+					ENTITY::SET_ENTITY_PROOFS(Local_3497.f_0, false, false, false, false, false, false, false, false);
 				}
-				if (bLocal_276)
+				if (bLocal_3169)
 				{
 					func_25(1, 1, 1, 1);
 				}
-				iLocal_335 = MISC::GET_GAME_TIMER();
+				iLocal_3260 = MISC::GET_GAME_TIMER();
 				func_296(4);
 			}
 			break;
@@ -37345,37 +37345,37 @@ void func_295()//Position - 0x299AB
 
 void func_296(int iParam0)//Position - 0x29DEF
 {
-	iLocal_272 = iParam0;
-	iLocal_274 = 0;
+	iLocal_3105 = iParam0;
+	iLocal_3107 = 0;
 }
 
 void func_297(bool bParam0)//Position - 0x29E00
 {
 	int iVar0;
 	struct<3> Var1;
-	struct<3> Var2;
+	struct<3> Var4;
 	
 	Var1 = { 341.2f, -645.83f, 25f };
-	Var2 = { 429.1f, -572.89f, 35f };
-	VEHICLE::SET_ALL_VEHICLE_GENERATORS_ACTIVE_IN_AREA(Var1, Var2, false, true);
+	Var4 = { 429.1f, -572.89f, 35f };
+	VEHICLE::SET_ALL_VEHICLE_GENERATORS_ACTIVE_IN_AREA(Var1, Var4, false, true);
 	PATHFIND::SET_ROADS_IN_ANGLED_AREA(418.28375f, -571.6629f, 24.697943f, 362.0258f, -663.1398f, 38.339985f, 28f, false, false, true);
 	if (bParam0)
 	{
-		VEHICLE::REMOVE_VEHICLES_FROM_GENERATORS_IN_AREA(Var1, Var2, 0);
+		VEHICLE::REMOVE_VEHICLES_FROM_GENERATORS_IN_AREA(Var1, Var4, 0);
 		MISC::CLEAR_ANGLED_AREA_OF_VEHICLES(418.28375f, -571.6629f, 24.697943f, 362.0258f, -663.1398f, 38.339985f, 28f, false, false, false, false, false, 0, 0);
 	}
-	PATHFIND::SET_PED_PATHS_IN_AREA(Var1, Var2, false, 0);
-	PED::SET_PED_NON_CREATION_AREA(Var1, Var2);
+	PATHFIND::SET_PED_PATHS_IN_AREA(Var1, Var4, false, 0);
+	PED::SET_PED_NON_CREATION_AREA(Var1, Var4);
 	iVar0 = 0;
 	while (iVar0 <= 4)
 	{
 		if (iVar0 != 1)
 		{
-			PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_358[iVar0], false);
+			PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_3290[iVar0], false);
 		}
 		iVar0++;
 	}
-	iLocal_357 = PED::ADD_SCENARIO_BLOCKING_AREA(Var1, Var2, false, true, true, true);
+	iLocal_3289 = PED::ADD_SCENARIO_BLOCKING_AREA(Var1, Var4, false, true, true, true);
 	if (bParam0)
 	{
 		MISC::CLEAR_AREA_OF_OBJECTS(395.24756f, -615.01337f, 27.87107f, 20f, 0);
@@ -37383,7 +37383,7 @@ void func_297(bool bParam0)//Position - 0x29E00
 	}
 }
 
-void func_298(struct<3> Param0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5, bool bParam6, bool bParam7, bool bParam8, int iParam9, bool bParam10)//Position - 0x29F31
+void func_298(struct<3> Param0, int iParam3, int iParam4, int iParam5, int iParam6, int iParam7, bool bParam8, bool bParam9, bool bParam10, int iParam11, bool bParam12)//Position - 0x29F31
 {
 	int iVar0;
 	
@@ -37391,11 +37391,11 @@ void func_298(struct<3> Param0, int iParam1, int iParam2, int iParam3, int iPara
 	if (PLAYER::IS_PLAYER_PLAYING(iVar0))
 	{
 		func_301(0);
-		if (bParam7)
+		if (bParam9)
 		{
 			PLAYER::REMOVE_PLAYER_HELMET(PLAYER::GET_PLAYER_INDEX(), true);
 		}
-		if (bParam6)
+		if (bParam8)
 		{
 			switch (func_300())
 			{
@@ -37425,15 +37425,15 @@ void func_298(struct<3> Param0, int iParam1, int iParam2, int iParam3, int iPara
 					break;
 				}
 		}
-		if (iParam4 == 1)
+		if (iParam6 == 1)
 		{
 			MISC::CLEAR_AREA_OF_PEDS(func_299(PLAYER::GET_PLAYER_INDEX()), 50f, 0);
 		}
-		if (iParam5 == 1)
+		if (iParam7 == 1)
 		{
 			MISC::CLEAR_AREA_OF_OBJECTS(Param0, 30f, 0);
 		}
-		if (bParam8)
+		if (bParam10)
 		{
 			FIRE::STOP_FIRE_IN_RANGE(Param0, 30f);
 		}
@@ -37441,30 +37441,30 @@ void func_298(struct<3> Param0, int iParam1, int iParam2, int iParam3, int iPara
 		PLAYER::SET_PLAYER_WANTED_LEVEL(iVar0, 0, false);
 		PLAYER::SET_PLAYER_WANTED_LEVEL_NOW(iVar0, false);
 		PLAYER::SET_EVERYONE_IGNORE_PLAYER(iVar0, true);
-		if (bParam10)
+		if (bParam12)
 		{
 			HUD::DISPLAY_RADAR(false);
 			HUD::DISPLAY_HUD(false);
 		}
 		HUD::CLEAR_PRINTS();
-		if (iParam9 == 1)
+		if (iParam11 == 1)
 		{
 			HUD::CLEAR_HELP(true);
 		}
-		if (iParam1 == 1)
+		if (iParam3 == 1)
 		{
 			CAM::SET_WIDESCREEN_BORDERS(true, 0);
 		}
-		if (iParam2 == 1)
+		if (iParam4 == 1)
 		{
-			iLocal_46 = 0;
+			iLocal_48 = 0;
 			if (func_12(PLAYER::PLAYER_PED_ID()))
 			{
-				iLocal_46 = WEAPON::GET_SELECTED_PED_WEAPON(PLAYER::PLAYER_PED_ID());
+				iLocal_48 = WEAPON::GET_SELECTED_PED_WEAPON(PLAYER::PLAYER_PED_ID());
 				WEAPON::SET_CURRENT_PED_WEAPON(PLAYER::PLAYER_PED_ID(), joaat("WEAPON_UNARMED"), true);
 			}
 		}
-		if (iParam3 == 1)
+		if (iParam5 == 1)
 		{
 			func_23(500, 0);
 		}
@@ -37513,113 +37513,113 @@ int func_302(int iParam0)//Position - 0x2A15A
 void func_303()//Position - 0x2A17B
 {
 	PED::SET_PED_DENSITY_MULTIPLIER_THIS_FRAME(0.3f);
-	VEHICLE::REQUEST_VEHICLE_RECORDING(1, sLocal_360);
+	VEHICLE::REQUEST_VEHICLE_RECORDING(1, sLocal_3297);
 	func_384();
 	func_383(1090519040);
-	switch (iLocal_274)
+	switch (iLocal_3107)
 	{
 		case 0:
 			func_380();
-			iLocal_336 = MISC::GET_GAME_TIMER();
-			if (func_22(Local_534.f_0))
+			iLocal_3261 = MISC::GET_GAME_TIMER();
+			if (func_22(Local_3483.f_0))
 			{
-				if (iLocal_292)
+				if (iLocal_3205)
 				{
-					func_352(&uLocal_20, Local_534.f_0, 0, 0, 1, 1, 1);
+					func_352(&uLocal_20, Local_3483.f_0, 0, 0, 1, 1, 1);
 				}
 			}
-			iLocal_274 = 1;
+			iLocal_3107 = 1;
 			break;
 		
 		case 1:
-			if (func_22(Local_534.f_0))
+			if (func_22(Local_3483.f_0))
 			{
-				if (iLocal_292)
+				if (iLocal_3205)
 				{
-					func_352(&uLocal_20, Local_534.f_0, 0, 0, 1, 1, 1);
+					func_352(&uLocal_20, Local_3483.f_0, 0, 0, 1, 1, 1);
 				}
-				if (ENTITY::DOES_ENTITY_EXIST(Local_536.f_0))
+				if (ENTITY::DOES_ENTITY_EXIST(Local_3497.f_0))
 				{
-					fLocal_340 = SYSTEM::VDIST(Local_549, ENTITY::GET_ENTITY_COORDS(Local_536.f_0, false));
+					fLocal_3265 = SYSTEM::VDIST(Local_3556, ENTITY::GET_ENTITY_COORDS(Local_3497.f_0, false));
 				}
-				if ((func_15(Local_535.f_0) && func_22(Local_533.f_0)) && func_22(Local_532.f_0))
+				if ((func_15(Local_3490.f_0) && func_22(Local_3476.f_0)) && func_22(Local_3469.f_0))
 				{
-					if (PED::IS_PED_SITTING_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_535.f_0))
+					if (PED::IS_PED_SITTING_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_3490.f_0))
 					{
 						if (func_351("NIGEL2_04", 0, 0))
 						{
 							HUD::CLEAR_THIS_PRINT("NIGEL2_04");
 						}
-						iLocal_294 = 0;
-						func_95(&(Local_535.f_2));
-						func_345(&iLocal_317);
-						if (!HUD::DOES_BLIP_EXIST(Local_534.f_2))
+						iLocal_3207 = 0;
+						func_95(&(Local_3490.f_2));
+						func_345(&iLocal_3242);
+						if (!HUD::DOES_BLIP_EXIST(Local_3483.f_2))
 						{
-							Local_534.f_2 = func_344(Local_534.f_0, 1, 0, 5);
+							Local_3483.f_2 = func_344(Local_3483.f_0, 1, 0, 5);
 						}
 						else
 						{
-							if (PED::IS_PED_IN_ANY_VEHICLE(Local_534.f_0, false))
+							if (PED::IS_PED_IN_ANY_VEHICLE(Local_3483.f_0, false))
 							{
-								HUD::SET_BLIP_SCALE(Local_534.f_2, 1f);
+								HUD::SET_BLIP_SCALE(Local_3483.f_2, 1f);
 							}
-							func_343(Local_534.f_2, Local_534.f_0, 200f, 0.7f, iLocal_317);
+							func_343(Local_3483.f_2, Local_3483.f_0, 200f, 0.7f, iLocal_3242);
 						}
-						if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_535.f_0, 381.91562f, -628.10144f, 22.932293f, 394.47723f, -606.12695f, 35.774826f, 18.5f, false, true, 0))
+						if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_3490.f_0, 381.91562f, -628.10144f, 22.932293f, 394.47723f, -606.12695f, 35.774826f, 18.5f, false, true, 0))
 						{
-							if (func_342(&Local_535))
+							if (func_342(&Local_3490))
 							{
-								if (func_294(iLocal_336, 500))
+								if (func_294(iLocal_3261, 500))
 								{
-									iLocal_274 = 2;
+									iLocal_3107 = 2;
 								}
 							}
 							else
 							{
-								iLocal_336 = MISC::GET_GAME_TIMER();
+								iLocal_3261 = MISC::GET_GAME_TIMER();
 							}
 						}
 						else
 						{
-							iLocal_336 = MISC::GET_GAME_TIMER();
+							iLocal_3261 = MISC::GET_GAME_TIMER();
 						}
 					}
 					else
 					{
-						func_95(&(Local_534.f_2));
-						if (!HUD::DOES_BLIP_EXIST(Local_535.f_2))
+						func_95(&(Local_3483.f_2));
+						if (!HUD::DOES_BLIP_EXIST(Local_3490.f_2))
 						{
-							Local_535.f_2 = func_341(Local_535.f_0, 1, 7);
+							Local_3490.f_2 = func_341(Local_3490.f_0, 1, 7);
 						}
-						if (!iLocal_294)
+						if (!iLocal_3207)
 						{
 							if (func_40())
 							{
 								func_339();
 							}
-							iLocal_294 = 1;
+							iLocal_3207 = 1;
 						}
-						if (!iLocal_289)
+						if (!iLocal_3202)
 						{
 							func_338("NIGEL2_04", 7500, 1);
-							iLocal_326 = MISC::GET_GAME_TIMER();
-							iLocal_289 = 1;
+							iLocal_3251 = MISC::GET_GAME_TIMER();
+							iLocal_3202 = 1;
 						}
 						else if (!func_40())
 						{
-							if (fLocal_342 < 20f)
+							if (fLocal_3267 < 20f)
 							{
-								if (MISC::GET_GAME_TIMER() - iLocal_326) > MISC::GET_RANDOM_INT_IN_RANGE(4500, 6500)
+								if (MISC::GET_GAME_TIMER() - iLocal_3251) > MISC::GET_RANDOM_INT_IN_RANGE(4500, 6500)
 								{
-									if (!PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_535.f_0, false))
+									if (!PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_3490.f_0, false))
 									{
 										if (MISC::GET_RANDOM_INT_IN_RANGE(0, 11) > 5)
 										{
-											if (func_323(&uLocal_367, "NIG2AUD", "NIG2_GIC", 8, 0, 0, 0))
+											if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_GIC", 8, 0, 0, 0))
 											{
 											}
 										}
-										else if (func_323(&uLocal_367, "NIG2AUD", "NIG2_GIC2", 8, 0, 0, 0))
+										else if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_GIC2", 8, 0, 0, 0))
 										{
 										}
 									}
@@ -37628,10 +37628,10 @@ void func_303()//Position - 0x2A17B
 						}
 						else
 						{
-							iLocal_326 = MISC::GET_GAME_TIMER();
+							iLocal_3251 = MISC::GET_GAME_TIMER();
 						}
 						func_322();
-						iLocal_336 = MISC::GET_GAME_TIMER();
+						iLocal_3261 = MISC::GET_GAME_TIMER();
 					}
 				}
 				func_321();
@@ -37641,8 +37641,8 @@ void func_303()//Position - 0x2A17B
 			break;
 		
 		case 2:
-			func_95(&(Local_535.f_2));
-			func_95(&(Local_534.f_2));
+			func_95(&(Local_3490.f_2));
+			func_95(&(Local_3483.f_2));
 			HUD::CLEAR_PRINTS();
 			HUD::CLEAR_HELP(true);
 			func_308(&uLocal_20, 0, 0);
@@ -37650,20 +37650,20 @@ void func_303()//Position - 0x2A17B
 			{
 				func_306();
 			}
-			if (!iLocal_292)
+			if (!iLocal_3205)
 			{
 				func_305(0);
 				RECORDING::REPLAY_STOP_EVENT();
-				iLocal_292 = 1;
+				iLocal_3205 = 1;
 			}
-			if (GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(iLocal_351))
+			if (GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(iLocal_3283))
 			{
-				GRAPHICS::STOP_PARTICLE_FX_LOOPED(iLocal_351, false);
+				GRAPHICS::STOP_PARTICLE_FX_LOOPED(iLocal_3283, false);
 			}
-			iLocal_542 = 2;
-			func_55(&Local_349);
+			iLocal_3543 = 2;
+			func_55(&Local_3274);
 			STREAMING::REMOVE_PTFX_ASSET();
-			if (!func_49() && bLocal_276)
+			if (!func_49() && bLocal_3169)
 			{
 				func_36("NIGEL2_STOP", 0);
 			}
@@ -37675,16 +37675,16 @@ void func_303()//Position - 0x2A17B
 
 void func_304(int iParam0)//Position - 0x2A4AD
 {
-	if (!func_49() && bLocal_276)
+	if (!func_49() && bLocal_3169)
 	{
-		if (iParam0 == iLocal_330)
+		if (iParam0 == iLocal_3255)
 		{
-			switch (iLocal_330)
+			switch (iLocal_3255)
 			{
 				case 0:
 					if (func_36("NIGEL2_START", 0))
 					{
-						iLocal_330++;
+						iLocal_3255++;
 					}
 					break;
 				
@@ -37692,21 +37692,21 @@ void func_304(int iParam0)//Position - 0x2A4AD
 					if (func_36("NIGEL2_CAR", 0))
 					{
 						AUDIO::PREPARE_MUSIC_EVENT("NIGEL2_JUMP");
-						iLocal_330++;
+						iLocal_3255++;
 					}
 					break;
 				
 				case 2:
 					if (func_36("NIGEL2_JUMP", 1))
 					{
-						iLocal_330++;
+						iLocal_3255++;
 					}
 					break;
 				
 				case 3:
 					if (func_36("NIGEL2_STOP", 0))
 					{
-						iLocal_330++;
+						iLocal_3255++;
 					}
 					break;
 				
@@ -37721,36 +37721,36 @@ void func_305(bool bParam0)//Position - 0x2A551
 {
 	if (bParam0)
 	{
-		if (!CAM::DOES_CAM_EXIST(iLocal_320))
+		if (!CAM::DOES_CAM_EXIST(iLocal_3245))
 		{
-			iLocal_320 = CAM::CREATE_CAM("DEFAULT_SCRIPTED_CAMERA", true);
+			iLocal_3245 = CAM::CREATE_CAM("DEFAULT_SCRIPTED_CAMERA", true);
 		}
-		if (CAM::DOES_CAM_EXIST(iLocal_320))
+		if (CAM::DOES_CAM_EXIST(iLocal_3245))
 		{
 			CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
-			CAM::SET_CAM_COORD(iLocal_320, Local_550);
-			CAM::SET_CAM_FOV(iLocal_320, 14f);
-			CAM::POINT_CAM_AT_ENTITY(iLocal_320, Local_535.f_0, Local_551, true);
+			CAM::SET_CAM_COORD(iLocal_3245, Local_3559);
+			CAM::SET_CAM_FOV(iLocal_3245, 14f);
+			CAM::POINT_CAM_AT_ENTITY(iLocal_3245, Local_3490.f_0, Local_3562, true);
 			AUDIO::ACTIVATE_AUDIO_SLOWMO_MODE("NIGEL_02_SLOWMO_SETTING");
 		}
 	}
 	else
 	{
 		CAM::STOP_SCRIPT_GLOBAL_SHAKING(false);
-		if (CAM::DOES_CAM_EXIST(iLocal_320))
+		if (CAM::DOES_CAM_EXIST(iLocal_3245))
 		{
-			if (CAM::IS_CAM_ACTIVE(iLocal_320))
+			if (CAM::IS_CAM_ACTIVE(iLocal_3245))
 			{
 				CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
 				CAM::SET_GAMEPLAY_CAM_RELATIVE_PITCH(0f, 1f);
-				CAM::SET_CAM_ACTIVE(iLocal_320, false);
+				CAM::SET_CAM_ACTIVE(iLocal_3245, false);
 			}
-			CAM::DESTROY_CAM(iLocal_320, false);
+			CAM::DESTROY_CAM(iLocal_3245, false);
 		}
 		CAM::RENDER_SCRIPT_CAMS(false, false, 3000, true, false, 0);
 		MISC::SET_TIME_SCALE(1f);
 		AUDIO::DEACTIVATE_AUDIO_SLOWMO_MODE("NIGEL_02_SLOWMO_SETTING");
-		bLocal_293 = true;
+		bLocal_3206 = true;
 	}
 }
 
@@ -37838,14 +37838,14 @@ bool func_309(char* sParam0)//Position - 0x2A721
 
 void func_310()//Position - 0x2A734
 {
-	if (!iLocal_314)
+	if (!iLocal_3239)
 	{
-		if (func_320(Local_549, 307.3065f, -589.9595f, 42.302f, 200f))
+		if (func_320(Local_3556, 307.3065f, -589.9595f, 42.302f, 200f))
 		{
 			if (func_312())
 			{
 				func_311(794);
-				iLocal_314 = 1;
+				iLocal_3239 = 1;
 			}
 		}
 	}
@@ -37972,14 +37972,14 @@ int func_316(struct<3> Param0)//Position - 0x2A8F1
 {
 	int iVar0;
 	
-	if (!INTERIOR::IS_VALID_INTERIOR(iLocal_337))
+	if (!INTERIOR::IS_VALID_INTERIOR(iLocal_3262))
 	{
 		return 0;
 	}
 	if (!INTERIOR::IS_COLLISION_MARKED_OUTSIDE(Param0))
 	{
 		iVar0 = INTERIOR::GET_INTERIOR_FROM_COLLISION(Param0);
-		if (iVar0 == iLocal_337)
+		if (iVar0 == iLocal_3262)
 		{
 			return 1;
 		}
@@ -38002,9 +38002,9 @@ bool func_319()//Position - 0x2A949
 	return Global_55613.f_36 > 0;
 }
 
-bool func_320(struct<3> Param0, struct<3> Param1, float fParam2)//Position - 0x2A958
+bool func_320(struct<3> Param0, struct<3> Param3, float fParam6)//Position - 0x2A958
 {
-	return SYSTEM::VDIST2(Param0, Param1) <= (fParam2 * fParam2);
+	return SYSTEM::VDIST2(Param0, Param3) <= (fParam6 * fParam6);
 }
 
 void func_321()//Position - 0x2A972
@@ -38012,12 +38012,12 @@ void func_321()//Position - 0x2A972
 	float fVar0;
 	
 	fVar0 = 100f;
-	if (iLocal_312)
+	if (iLocal_3237)
 	{
-		if (fLocal_340 > fVar0)
+		if (fLocal_3265 > fVar0)
 		{
 			func_311(793);
-			iLocal_312 = 0;
+			iLocal_3237 = 0;
 		}
 	}
 }
@@ -38675,192 +38675,192 @@ void func_345(int iParam0)//Position - 0x2B3BC
 {
 	int iVar0;
 	char cVar1[32];
-	int iVar2;
+	int iVar9;
 	
 	if (func_40())
 	{
-		iLocal_325 = MISC::GET_GAME_TIMER();
+		iLocal_3250 = MISC::GET_GAME_TIMER();
 	}
 	else
 	{
-		iLocal_308 = 0;
+		iLocal_3233 = 0;
 	}
-	if (iLocal_309)
+	if (iLocal_3234)
 	{
-		if (func_22(iLocal_350))
+		if (func_22(iLocal_3282))
 		{
-			if (!AUDIO::IS_AMBIENT_SPEECH_PLAYING(iLocal_350))
+			if (!AUDIO::IS_AMBIENT_SPEECH_PLAYING(iLocal_3282))
 			{
-				iLocal_350 = 0;
-				iLocal_309 = 0;
+				iLocal_3282 = 0;
+				iLocal_3234 = 0;
 			}
 		}
 		else
 		{
-			iLocal_350 = 0;
-			iLocal_309 = 0;
+			iLocal_3282 = 0;
+			iLocal_3234 = 0;
 		}
 	}
-	if (!ENTITY::IS_ENTITY_IN_AIR(Local_535.f_0))
+	if (!ENTITY::IS_ENTITY_IN_AIR(Local_3490.f_0))
 	{
-		iLocal_327 = MISC::GET_GAME_TIMER();
+		iLocal_3252 = MISC::GET_GAME_TIMER();
 	}
-	if (iLocal_272 == 1)
+	if (iLocal_3105 == 1)
 	{
-		if (fLocal_340 < ((200f / 100f) * (0.7f * 100f)))
+		if (fLocal_3265 < ((200f / 100f) * (0.7f * 100f)))
 		{
-			if (fLocal_341 > 3000f && fLocal_341 < 7500f)
+			if (fLocal_3266 > 3000f && fLocal_3266 < 7500f)
 			{
-				if (!iLocal_282)
+				if (!iLocal_3193)
 				{
 					if (!func_40())
 					{
-						iVar2 = 0;
+						iVar9 = 0;
 						if (HUD::IS_MESSAGE_BEING_DISPLAYED())
 						{
-							iVar2 = 1;
+							iVar9 = 1;
 						}
-						if (func_349(&uLocal_367, "NIG2AUD", "NIG2_INSTR", "NIG2_INSTR_13", 8, iVar2, 0))
+						if (func_349(&uLocal_3304, "NIG2AUD", "NIG2_INSTR", "NIG2_INSTR_13", 8, iVar9, 0))
 						{
-							iLocal_308 = 1;
-							iLocal_282 = 1;
+							iLocal_3233 = 1;
+							iLocal_3193 = 1;
 						}
 					}
 				}
 			}
-			if (fLocal_341 > 15500f && fLocal_341 < 16000f)
+			if (fLocal_3266 > 15500f && fLocal_3266 < 16000f)
 			{
-				if (!iLocal_281[0])
+				if (!iLocal_3184[0])
 				{
-					if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_535.f_0, -1237.7784f, -763.4679f, 26.422665f, -1186.7028f, -829.47723f, 10.580473f, 31f, false, true, 0))
+					if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_3490.f_0, -1237.7784f, -763.4679f, 26.422665f, -1186.7028f, -829.47723f, 10.580473f, 31f, false, true, 0))
 					{
 						if (!func_40())
 						{
-							if (func_349(&uLocal_367, "NIG2AUD", "NIG2_INSTR", "NIG2_INSTR_1", 8, 0, 0))
+							if (func_349(&uLocal_3304, "NIG2AUD", "NIG2_INSTR", "NIG2_INSTR_1", 8, 0, 0))
 							{
-								iLocal_308 = 1;
-								iLocal_281[0] = 1;
+								iLocal_3233 = 1;
+								iLocal_3184[0] = 1;
 							}
 						}
 					}
 				}
 			}
-			if (fLocal_341 > 45500f && fLocal_341 < 47500f)
+			if (fLocal_3266 > 45500f && fLocal_3266 < 47500f)
 			{
-				if (!iLocal_281[1])
+				if (!iLocal_3184[1])
 				{
-					if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_535.f_0, -664.5371f, -580.7943f, 29.308285f, -590.7203f, -581.19324f, 23.308285f, 13.5f, false, true, 0))
+					if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_3490.f_0, -664.5371f, -580.7943f, 29.308285f, -590.7203f, -581.19324f, 23.308285f, 13.5f, false, true, 0))
 					{
 						if (func_40())
 						{
 							func_339();
 						}
-						if (func_323(&uLocal_367, "NIG2AUD", "NIG_SP1", 8, 0, 0, 0))
+						if (func_323(&uLocal_3304, "NIG2AUD", "NIG_SP1", 8, 0, 0, 0))
 						{
 							RECORDING::REPLAY_RECORD_BACK_FOR_TIME(3f, 3f, 0);
-							iLocal_308 = 1;
-							iLocal_281[1] = 1;
+							iLocal_3233 = 1;
+							iLocal_3184[1] = 1;
 						}
 					}
 				}
 			}
-			if (fLocal_341 > 69000f && fLocal_341 < 71000f)
+			if (fLocal_3266 > 69000f && fLocal_3266 < 71000f)
 			{
-				if (!iLocal_281[2])
+				if (!iLocal_3184[2])
 				{
-					if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_535.f_0, -440.78574f, -828.3237f, 35.735603f, -511.81116f, -826.65594f, 27.668936f, 60f, false, true, 0))
+					if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_3490.f_0, -440.78574f, -828.3237f, 35.735603f, -511.81116f, -826.65594f, 27.668936f, 60f, false, true, 0))
 					{
 						if (func_40())
 						{
 							func_339();
 						}
-						if (func_323(&uLocal_367, "NIG2AUD", "NIG_SP2", 8, 0, 0, 0))
+						if (func_323(&uLocal_3304, "NIG2AUD", "NIG_SP2", 8, 0, 0, 0))
 						{
 							RECORDING::REPLAY_RECORD_BACK_FOR_TIME(3f, 3f, 0);
-							iLocal_308 = 1;
-							iLocal_281[2] = 1;
+							iLocal_3233 = 1;
+							iLocal_3184[2] = 1;
 						}
 					}
 				}
 			}
-			if (fLocal_341 > 85000f && fLocal_341 < 89000f)
+			if (fLocal_3266 > 85000f && fLocal_3266 < 89000f)
 			{
-				if (!iLocal_281[3])
+				if (!iLocal_3184[3])
 				{
-					if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_535.f_0, -432.32776f, -540.98804f, 44.071632f, -433.24832f, -485.56494f, 22.470394f, 60f, false, true, 0))
+					if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_3490.f_0, -432.32776f, -540.98804f, 44.071632f, -433.24832f, -485.56494f, 22.470394f, 60f, false, true, 0))
 					{
 						if (func_40())
 						{
 							func_339();
 						}
-						if (func_323(&uLocal_367, "NIG2AUD", "NIG_SP3", 8, 0, 0, 0))
+						if (func_323(&uLocal_3304, "NIG2AUD", "NIG_SP3", 8, 0, 0, 0))
 						{
-							iLocal_308 = 1;
-							iLocal_281[3] = 1;
+							iLocal_3233 = 1;
+							iLocal_3184[3] = 1;
 						}
 					}
 				}
 			}
-			if (fLocal_341 > 104000f && fLocal_341 < 110000f)
+			if (fLocal_3266 > 104000f && fLocal_3266 < 110000f)
 			{
-				if (!iLocal_281[4])
+				if (!iLocal_3184[4])
 				{
 					if (func_40())
 					{
-						if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_535.f_0, 81.94607f, -518.6024f, 38.074284f, -107.36858f, -519.7444f, 27.815357f, 60f, false, true, 0))
+						if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_3490.f_0, 81.94607f, -518.6024f, 38.074284f, -107.36858f, -519.7444f, 27.815357f, 60f, false, true, 0))
 						{
 							if (func_40())
 							{
 								func_20();
 							}
-							if (func_349(&uLocal_367, "NIG2AUD", "NIG2_INSTR", "NIG2_INSTR_12", 8, 0, 0))
+							if (func_349(&uLocal_3304, "NIG2AUD", "NIG2_INSTR", "NIG2_INSTR_12", 8, 0, 0))
 							{
-								iLocal_308 = 1;
-								iLocal_281[4] = 1;
+								iLocal_3233 = 1;
+								iLocal_3184[4] = 1;
 							}
 						}
 					}
 				}
 			}
-			if (fLocal_341 > 113000f && fLocal_341 < 116000f)
+			if (fLocal_3266 > 113000f && fLocal_3266 < 116000f)
 			{
-				if (!iLocal_281[5])
+				if (!iLocal_3184[5])
 				{
-					if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_535.f_0, 254.99944f, -594.3826f, 49.60252f, 270.4643f, -527.226f, 39.68248f, 70f, false, true, 0))
+					if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_3490.f_0, 254.99944f, -594.3826f, 49.60252f, 270.4643f, -527.226f, 39.68248f, 70f, false, true, 0))
 					{
 						if (func_40())
 						{
 							func_339();
 						}
-						if (func_323(&uLocal_367, "NIG2AUD", "NIG2_HOSP01", 8, 0, 0, 0))
+						if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_HOSP01", 8, 0, 0, 0))
 						{
 							RECORDING::REPLAY_RECORD_BACK_FOR_TIME(3f, 3f, 0);
-							iLocal_308 = 1;
-							iLocal_281[5] = 1;
+							iLocal_3233 = 1;
+							iLocal_3184[5] = 1;
 						}
 					}
 				}
 			}
-			if (fLocal_341 > 118000f)
+			if (fLocal_3266 > 118000f)
 			{
-				if (!iLocal_281[6])
+				if (!iLocal_3184[6])
 				{
-					if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_535.f_0, 338.01114f, -581.90546f, 41.577534f, 350.98694f, -586.7529f, 46.077515f, 6.75f, false, true, 0))
+					if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_3490.f_0, 338.01114f, -581.90546f, 41.577534f, 350.98694f, -586.7529f, 46.077515f, 6.75f, false, true, 0))
 					{
 						if (func_40())
 						{
 							func_339();
 						}
-						if (func_323(&uLocal_367, "NIG2AUD", "NIG2_HWH", 8, 0, 0, 0))
+						if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_HWH", 8, 0, 0, 0))
 						{
-							iLocal_308 = 1;
-							iLocal_281[6] = 1;
+							iLocal_3233 = 1;
+							iLocal_3184[6] = 1;
 						}
 					}
 				}
-				if (!iLocal_281[7])
+				if (!iLocal_3184[7])
 				{
-					if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_535.f_0, 368.57144f, -594.94666f, 45.542202f, 389.5015f, -614.1279f, 27.117891f, 20.75f, false, true, 0))
+					if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_3490.f_0, 368.57144f, -594.94666f, 45.542202f, 389.5015f, -614.1279f, 27.117891f, 20.75f, false, true, 0))
 					{
 						if (!func_347("NIG2_HWH", 1))
 						{
@@ -38868,10 +38868,10 @@ void func_345(int iParam0)//Position - 0x2B3BC
 							{
 								func_339();
 							}
-							if (func_323(&uLocal_367, "NIG2AUD", "NIG2_HWS", 8, 0, 0, 0))
+							if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_HWS", 8, 0, 0, 0))
 							{
-								iLocal_308 = 1;
-								iLocal_281[7] = 1;
+								iLocal_3233 = 1;
+								iLocal_3184[7] = 1;
 							}
 						}
 					}
@@ -38879,108 +38879,108 @@ void func_345(int iParam0)//Position - 0x2B3BC
 			}
 		}
 	}
-	if (!iLocal_309)
+	if (!iLocal_3234)
 	{
-		if (!iLocal_288)
+		if (!iLocal_3201)
 		{
-			if (((VEHICLE::IS_VEHICLE_STUCK_ON_ROOF(Local_535.f_0) || VEHICLE::IS_VEHICLE_STUCK_TIMER_UP(Local_535.f_0, 0, 1000)) || VEHICLE::IS_VEHICLE_STUCK_TIMER_UP(Local_535.f_0, 1, 1000)) || func_294(iLocal_331, 500))
+			if (((VEHICLE::IS_VEHICLE_STUCK_ON_ROOF(Local_3490.f_0) || VEHICLE::IS_VEHICLE_STUCK_TIMER_UP(Local_3490.f_0, 0, 1000)) || VEHICLE::IS_VEHICLE_STUCK_TIMER_UP(Local_3490.f_0, 1, 1000)) || func_294(iLocal_3256, 500))
 			{
 				StringCopy(&cVar1, "NIG2_FLIP_", 32);
 				iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(1, 3);
 				StringIntConCat(&cVar1, iVar0, 32);
 				if (iVar0 == 1)
 				{
-					AUDIO::INTERRUPT_CONVERSATION(Local_533.f_0, "NIG2_CCAA", "NIGEL");
-					iLocal_288 = 1;
-					iLocal_350 = Local_533.f_0;
-					iLocal_309 = 1;
+					AUDIO::INTERRUPT_CONVERSATION(Local_3476.f_0, "NIG2_CCAA", "NIGEL");
+					iLocal_3201 = 1;
+					iLocal_3282 = Local_3476.f_0;
+					iLocal_3234 = 1;
 					return;
 				}
 				else
 				{
-					AUDIO::INTERRUPT_CONVERSATION(Local_532.f_0, "NIG2_CCAB", "MRSTHORNHILL");
-					iLocal_288 = 1;
-					iLocal_350 = Local_532.f_0;
-					iLocal_309 = 1;
+					AUDIO::INTERRUPT_CONVERSATION(Local_3469.f_0, "NIG2_CCAB", "MRSTHORNHILL");
+					iLocal_3201 = 1;
+					iLocal_3282 = Local_3469.f_0;
+					iLocal_3234 = 1;
 					return;
 				}
 			}
-			else if (ENTITY::IS_ENTITY_IN_AIR(Local_535.f_0))
+			else if (ENTITY::IS_ENTITY_IN_AIR(Local_3490.f_0))
 			{
-				if (func_294(iLocal_327, 500))
+				if (func_294(iLocal_3252, 500))
 				{
 					if (!func_347("NIG2_HWH", 1) && !func_347("NIG2_HWS", 1))
 					{
 						if (MISC::GET_RANDOM_INT_IN_RANGE(0, 11) > 5)
 						{
 							StringCopy(&cVar1, "NIG2_CDAA", 32);
-							AUDIO::INTERRUPT_CONVERSATION(Local_533.f_0, &cVar1, "NIGEL");
-							iLocal_350 = Local_533.f_0;
+							AUDIO::INTERRUPT_CONVERSATION(Local_3476.f_0, &cVar1, "NIGEL");
+							iLocal_3282 = Local_3476.f_0;
 						}
 						else
 						{
 							StringCopy(&cVar1, "NIG2_CDAB", 32);
-							AUDIO::INTERRUPT_CONVERSATION(Local_532.f_0, &cVar1, "MRSTHORNHILL");
-							iLocal_350 = Local_532.f_0;
+							AUDIO::INTERRUPT_CONVERSATION(Local_3469.f_0, &cVar1, "MRSTHORNHILL");
+							iLocal_3282 = Local_3469.f_0;
 						}
-						iLocal_327 = MISC::GET_GAME_TIMER();
-						iLocal_309 = 1;
-						iLocal_288 = 1;
+						iLocal_3252 = MISC::GET_GAME_TIMER();
+						iLocal_3234 = 1;
+						iLocal_3201 = 1;
 						return;
 					}
 				}
 			}
 		}
-		else if (!ENTITY::IS_ENTITY_IN_AIR(Local_535.f_0))
+		else if (!ENTITY::IS_ENTITY_IN_AIR(Local_3490.f_0))
 		{
-			if (VEHICLE::IS_VEHICLE_ON_ALL_WHEELS(Local_535.f_0) || ((!VEHICLE::IS_VEHICLE_STUCK_ON_ROOF(Local_535.f_0) && !VEHICLE::IS_VEHICLE_STUCK_TIMER_UP(Local_535.f_0, 0, 1000)) && !VEHICLE::IS_VEHICLE_STUCK_TIMER_UP(Local_535.f_0, 1, 1000)))
+			if (VEHICLE::IS_VEHICLE_ON_ALL_WHEELS(Local_3490.f_0) || ((!VEHICLE::IS_VEHICLE_STUCK_ON_ROOF(Local_3490.f_0) && !VEHICLE::IS_VEHICLE_STUCK_TIMER_UP(Local_3490.f_0, 0, 1000)) && !VEHICLE::IS_VEHICLE_STUCK_TIMER_UP(Local_3490.f_0, 1, 1000)))
 			{
-				iLocal_288 = 0;
+				iLocal_3201 = 0;
 			}
 		}
-		if (!iLocal_308)
+		if (!iLocal_3233)
 		{
 			if (PLAYER::GET_TIME_SINCE_PLAYER_HIT_PED(PLAYER::PLAYER_ID()) >= 0 && PLAYER::GET_TIME_SINCE_PLAYER_HIT_PED(PLAYER::PLAYER_ID()) < 500)
 			{
 				if (MISC::GET_RANDOM_INT_IN_RANGE(0, 11) > 5)
 				{
 					StringCopy(&cVar1, "NIG2_CQAA", 32);
-					AUDIO::INTERRUPT_CONVERSATION(Local_533.f_0, &cVar1, "NIGEL");
-					iLocal_350 = Local_533.f_0;
+					AUDIO::INTERRUPT_CONVERSATION(Local_3476.f_0, &cVar1, "NIGEL");
+					iLocal_3282 = Local_3476.f_0;
 				}
 				else
 				{
 					StringCopy(&cVar1, "NIG2_CPAA", 32);
-					AUDIO::INTERRUPT_CONVERSATION(Local_532.f_0, &cVar1, "MRSTHORNHILL");
-					iLocal_350 = Local_532.f_0;
+					AUDIO::INTERRUPT_CONVERSATION(Local_3469.f_0, &cVar1, "MRSTHORNHILL");
+					iLocal_3282 = Local_3469.f_0;
 				}
-				iLocal_309 = 1;
+				iLocal_3234 = 1;
 				return;
 			}
-			if (ENTITY::HAS_ENTITY_COLLIDED_WITH_ANYTHING(Local_535.f_0))
+			if (ENTITY::HAS_ENTITY_COLLIDED_WITH_ANYTHING(Local_3490.f_0))
 			{
 				if (MISC::GET_RANDOM_INT_IN_RANGE(0, 11) > 5)
 				{
 					StringCopy(&cVar1, "NIG2_COAA", 32);
-					AUDIO::INTERRUPT_CONVERSATION(Local_533.f_0, &cVar1, "NIGEL");
-					iLocal_350 = Local_533.f_0;
+					AUDIO::INTERRUPT_CONVERSATION(Local_3476.f_0, &cVar1, "NIGEL");
+					iLocal_3282 = Local_3476.f_0;
 				}
 				else
 				{
 					StringCopy(&cVar1, "NIG2_CNAA", 32);
-					AUDIO::INTERRUPT_CONVERSATION(Local_532.f_0, &cVar1, "MRSTHORNHILL");
-					iLocal_350 = Local_532.f_0;
+					AUDIO::INTERRUPT_CONVERSATION(Local_3469.f_0, &cVar1, "MRSTHORNHILL");
+					iLocal_3282 = Local_3469.f_0;
 				}
-				iLocal_309 = 1;
+				iLocal_3234 = 1;
 				return;
 			}
 		}
 	}
-	if (!iLocal_308 && !iLocal_309)
+	if (!iLocal_3233 && !iLocal_3234)
 	{
-		if (ENTITY::DOES_ENTITY_EXIST(Local_536.f_0))
+		if (ENTITY::DOES_ENTITY_EXIST(Local_3497.f_0))
 		{
-			if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_536.f_0, PLAYER::PLAYER_PED_ID(), true) && PED::IS_PED_SHOOTING(PLAYER::PLAYER_PED_ID()))
+			if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_3497.f_0, PLAYER::PLAYER_PED_ID(), true) && PED::IS_PED_SHOOTING(PLAYER::PLAYER_PED_ID()))
 			{
 				if (!func_347("NIG2_SHOOTS", 1) && !func_347("NIG2_SHOOTSN", 1))
 				{
@@ -38990,35 +38990,35 @@ void func_345(int iParam0)//Position - 0x2B3BC
 					}
 					if (MISC::GET_RANDOM_INT_IN_RANGE(0, 11) > 5)
 					{
-						if (func_323(&uLocal_367, "NIG2AUD", "NIG2_SHOOTS", 8, 0, 0, 0))
+						if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_SHOOTS", 8, 0, 0, 0))
 						{
-							ENTITY::CLEAR_ENTITY_LAST_DAMAGE_ENTITY(Local_536.f_0);
-							iLocal_309 = 1;
+							ENTITY::CLEAR_ENTITY_LAST_DAMAGE_ENTITY(Local_3497.f_0);
+							iLocal_3234 = 1;
 							return;
 						}
 					}
-					else if (func_323(&uLocal_367, "NIG2AUD", "NIG2_SHOOTSN", 8, 0, 0, 0))
+					else if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_SHOOTSN", 8, 0, 0, 0))
 					{
-						ENTITY::CLEAR_ENTITY_LAST_DAMAGE_ENTITY(Local_536.f_0);
-						iLocal_309 = 1;
+						ENTITY::CLEAR_ENTITY_LAST_DAMAGE_ENTITY(Local_3497.f_0);
+						iLocal_3234 = 1;
 						return;
 					}
 				}
-				ENTITY::CLEAR_ENTITY_LAST_DAMAGE_ENTITY(Local_536.f_0);
+				ENTITY::CLEAR_ENTITY_LAST_DAMAGE_ENTITY(Local_3497.f_0);
 			}
-			if (!iLocal_284)
+			if (!iLocal_3197)
 			{
-				if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_536.f_0, PLAYER::PLAYER_PED_ID(), true))
+				if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_3497.f_0, PLAYER::PLAYER_PED_ID(), true))
 				{
 					if (func_40())
 					{
 						func_339();
 					}
-					if (func_323(&uLocal_367, "NIG2AUD", "NIG2_CHASE01", 8, 0, 0, 0))
+					if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_CHASE01", 8, 0, 0, 0))
 					{
-						ENTITY::CLEAR_ENTITY_LAST_DAMAGE_ENTITY(Local_536.f_0);
-						iLocal_308 = 1;
-						iLocal_284 = 1;
+						ENTITY::CLEAR_ENTITY_LAST_DAMAGE_ENTITY(Local_3497.f_0);
+						iLocal_3233 = 1;
+						iLocal_3197 = 1;
 						return;
 					}
 				}
@@ -39026,19 +39026,19 @@ void func_345(int iParam0)//Position - 0x2B3BC
 		}
 		if (PLAYER::IS_PLAYER_WANTED_LEVEL_GREATER(PLAYER::PLAYER_ID(), 0))
 		{
-			if (!iLocal_285)
+			if (!iLocal_3198)
 			{
 				if (func_40())
 				{
 					func_306();
 				}
-				if (func_323(&uLocal_367, "NIG2AUD", "NIG2_WANTED", 8, 0, 0, 0))
+				if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_WANTED", 8, 0, 0, 0))
 				{
-					iLocal_285 = 1;
-					iLocal_308 = 1;
+					iLocal_3198 = 1;
+					iLocal_3233 = 1;
 				}
 			}
-			else if (!iLocal_286)
+			else if (!iLocal_3199)
 			{
 				if (!func_347("NIG2_WANTED", 1))
 				{
@@ -39046,102 +39046,102 @@ void func_345(int iParam0)//Position - 0x2B3BC
 					{
 						func_339();
 					}
-					if (func_323(&uLocal_367, "NIG2AUD", "NIG2_POLICE", 8, 0, 0, 0))
+					if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_POLICE", 8, 0, 0, 0))
 					{
-						iLocal_286 = 1;
-						iLocal_308 = 1;
+						iLocal_3199 = 1;
+						iLocal_3233 = 1;
 					}
 				}
 			}
 		}
-		if (iLocal_272 == 1)
+		if (iLocal_3105 == 1)
 		{
-			if (fLocal_340 < ((200f / 100f) * (0.7f * 100f)))
+			if (fLocal_3265 < ((200f / 100f) * (0.7f * 100f)))
 			{
-				if (!iLocal_308 && !func_40())
+				if (!iLocal_3233 && !func_40())
 				{
-					if (func_294(iLocal_325, 500))
+					if (func_294(iLocal_3250, 500))
 					{
-						if (fLocal_341 < 116000f)
+						if (fLocal_3266 < 116000f)
 						{
-							if (!iLocal_287)
+							if (!iLocal_3200)
 							{
-								if (fLocal_341 > 20000f)
+								if (fLocal_3266 > 20000f)
 								{
 									if (func_346())
 									{
-										if (func_323(&uLocal_367, "NIG2AUD", "NIG2_LEFT", 8, 0, 0, 0))
+										if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_LEFT", 8, 0, 0, 0))
 										{
-											iLocal_287 = 1;
+											iLocal_3200 = 1;
 										}
 									}
 								}
 							}
-							if (!iLocal_278[0])
+							if (!iLocal_3171[0])
 							{
-								if (func_323(&uLocal_367, "NIG2AUD", "NIG2_CHASE02", 8, 0, 0, 0))
+								if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_CHASE02", 8, 0, 0, 0))
 								{
-									iLocal_278[0] = 1;
+									iLocal_3171[0] = 1;
 								}
 							}
-							if (!iLocal_278[1])
+							if (!iLocal_3171[1])
 							{
-								if (iLocal_281[0] || fLocal_341 > 16500f)
+								if (iLocal_3184[0] || fLocal_3266 > 16500f)
 								{
-									if (func_323(&uLocal_367, "NIG2AUD", "NIG2_CHASE05", 8, 0, 0, 0))
+									if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_CHASE05", 8, 0, 0, 0))
 									{
-										iLocal_278[1] = 1;
+										iLocal_3171[1] = 1;
 									}
 								}
 							}
-							else if (!iLocal_278[2])
+							else if (!iLocal_3171[2])
 							{
-								if (func_323(&uLocal_367, "NIG2AUD", "NIG2_CHASE08", 8, 0, 0, 0))
+								if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_CHASE08", 8, 0, 0, 0))
 								{
-									iLocal_278[2] = 1;
+									iLocal_3171[2] = 1;
 								}
 							}
-							else if (!iLocal_278[3])
+							else if (!iLocal_3171[3])
 							{
-								if (iLocal_281[1] || fLocal_341 > 52500f)
+								if (iLocal_3184[1] || fLocal_3266 > 52500f)
 								{
-									if (func_323(&uLocal_367, "NIG2AUD", "NIG2_CHASE06", 8, 0, 0, 0))
+									if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_CHASE06", 8, 0, 0, 0))
 									{
-										iLocal_278[3] = 1;
+										iLocal_3171[3] = 1;
 									}
 								}
 							}
-							else if (!iLocal_278[4])
+							else if (!iLocal_3171[4])
 							{
-								if (iLocal_281[2] || fLocal_341 > 71500f)
+								if (iLocal_3184[2] || fLocal_3266 > 71500f)
 								{
-									if (func_323(&uLocal_367, "NIG2AUD", "NIG2_CHASE03", 8, 0, 0, 0))
+									if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_CHASE03", 8, 0, 0, 0))
 									{
-										iLocal_278[4] = 1;
+										iLocal_3171[4] = 1;
 									}
 								}
 							}
-							else if (!iLocal_278[5])
+							else if (!iLocal_3171[5])
 							{
-								if (iLocal_281[3] || fLocal_341 > 89500f)
+								if (iLocal_3184[3] || fLocal_3266 > 89500f)
 								{
-									if (func_323(&uLocal_367, "NIG2AUD", "NIG2_CHASE04", 8, 0, 0, 0))
+									if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_CHASE04", 8, 0, 0, 0))
 									{
-										iLocal_278[5] = 1;
+										iLocal_3171[5] = 1;
 									}
 								}
 							}
-							else if (!iLocal_278[6])
+							else if (!iLocal_3171[6])
 							{
-								if (!iLocal_281[5])
+								if (!iLocal_3184[5])
 								{
-									if (iLocal_281[4] || fLocal_341 > 106500f)
+									if (iLocal_3184[4] || fLocal_3266 > 106500f)
 									{
-										if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_535.f_0, 81.94607f, -518.6024f, 38.074284f, -107.36858f, -519.7444f, 27.815357f, 60f, false, true, 0))
+										if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_3490.f_0, 81.94607f, -518.6024f, 38.074284f, -107.36858f, -519.7444f, 27.815357f, 60f, false, true, 0))
 										{
-											if (func_323(&uLocal_367, "NIG2AUD", "NIG2_CHASE07", 8, 0, 0, 0))
+											if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_CHASE07", 8, 0, 0, 0))
 											{
-												iLocal_278[6] = 1;
+												iLocal_3171[6] = 1;
 											}
 										}
 									}
@@ -39153,62 +39153,62 @@ void func_345(int iParam0)//Position - 0x2B3BC
 			}
 		}
 	}
-	if (fLocal_340 > ((200f / 100f) * (0.7f * 100f)))
+	if (fLocal_3265 > ((200f / 100f) * (0.7f * 100f)))
 	{
-		if (!iLocal_308)
+		if (!iLocal_3233)
 		{
-			if (!iLocal_279[2])
+			if (!iLocal_3179[2])
 			{
 				if (func_40())
 				{
 					func_306();
 				}
-				else if (!iLocal_279[0])
+				else if (!iLocal_3179[0])
 				{
-					if (func_323(&uLocal_367, "NIG2AUD", "NIG2_CU01", 8, 0, 0, 0))
+					if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_CU01", 8, 0, 0, 0))
 					{
-						iLocal_308 = 1;
-						iLocal_279[0] = 1;
+						iLocal_3233 = 1;
+						iLocal_3179[0] = 1;
 					}
 				}
-				else if (!iLocal_279[1])
+				else if (!iLocal_3179[1])
 				{
-					if (func_323(&uLocal_367, "NIG2AUD", "NIG2_CU02", 8, 0, 0, 0))
+					if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_CU02", 8, 0, 0, 0))
 					{
-						iLocal_308 = 1;
-						iLocal_279[1] = 1;
+						iLocal_3233 = 1;
+						iLocal_3179[1] = 1;
 					}
 				}
-				else if (!iLocal_279[2])
+				else if (!iLocal_3179[2])
 				{
-					if (func_323(&uLocal_367, "NIG2AUD", "NIG2_CU03", 8, 0, 0, 0))
+					if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_CU03", 8, 0, 0, 0))
 					{
-						iLocal_308 = 1;
-						iLocal_279[2] = 1;
+						iLocal_3233 = 1;
+						iLocal_3179[2] = 1;
 					}
 				}
 			}
 		}
 	}
-	else if (fLocal_341 > 40000f)
+	else if (fLocal_3266 > 40000f)
 	{
-		if (fLocal_341 < 58000f)
+		if (fLocal_3266 < 58000f)
 		{
 			if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -731.6891f, -657.82416f, 26.269114f, -448.3936f, -657.125f, 40.717342f, 40f, false, true, 0))
 			{
-				if (!iLocal_280)
+				if (!iLocal_3183)
 				{
-					if (!iLocal_279[1])
+					if (!iLocal_3179[1])
 					{
 						if (func_40())
 						{
 							func_339();
 						}
-						if (func_323(&uLocal_367, "NIG2AUD", "NIG2_CU02", 8, 0, 0, 0))
+						if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_CU02", 8, 0, 0, 0))
 						{
-							iLocal_308 = 1;
-							iLocal_279[1] = 1;
-							iLocal_280 = 1;
+							iLocal_3233 = 1;
+							iLocal_3179[1] = 1;
+							iLocal_3183 = 1;
 						}
 					}
 					else
@@ -39217,11 +39217,11 @@ void func_345(int iParam0)//Position - 0x2B3BC
 						{
 							func_339();
 						}
-						if (func_323(&uLocal_367, "NIG2AUD", "NIG2_CU03", 8, 0, 0, 0))
+						if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_CU03", 8, 0, 0, 0))
 						{
-							iLocal_308 = 1;
-							iLocal_279[2] = 1;
-							iLocal_280 = 1;
+							iLocal_3233 = 1;
+							iLocal_3179[2] = 1;
+							iLocal_3183 = 1;
 						}
 					}
 				}
@@ -39334,17 +39334,17 @@ void func_353(var uParam0, int iParam1, char* sParam2, int iParam3, bool bParam4
 	func_354(uParam0, iParam1, 0f, 0f, 0f, sParam2, iParam3, bParam4, uParam5, bParam6);
 }
 
-void func_354(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iParam4, bool bParam5, var uParam6, bool bParam7)//Position - 0x2C1B8
+void func_354(var uParam0, int iParam1, struct<3> Param2, char* sParam5, int iParam6, bool bParam7, var uParam8, bool bParam9)//Position - 0x2C1B8
 {
 	if (!PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), true))
 	{
 		func_308(uParam0, 0, 0);
 	}
 	uParam0->f_6 = 2;
-	func_355(uParam0, iParam1, Param2, sParam3, iParam4, bParam5, uParam6, bParam7);
+	func_355(uParam0, iParam1, Param2, sParam5, iParam6, bParam7, uParam8, bParam9);
 }
 
-void func_355(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iParam4, bool bParam5, var uParam6, bool bParam7)//Position - 0x2C1F0
+void func_355(var uParam0, int iParam1, struct<3> Param2, char* sParam5, int iParam6, bool bParam7, var uParam8, bool bParam9)//Position - 0x2C1F0
 {
 	int iVar0;
 	int iVar1;
@@ -39356,7 +39356,7 @@ void func_355(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iPa
 			uParam0->f_1 = 0;
 		}
 	}
-	iVar0 = sParam3;
+	iVar0 = sParam5;
 	if (MISC::IS_STRING_NULL(iVar0))
 	{
 		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
@@ -39402,9 +39402,9 @@ void func_355(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iPa
 		}
 		if (!CAM::IS_GAMEPLAY_HINT_ACTIVE())
 		{
-			if (func_373(uParam0, bParam5, bParam7, 0))
+			if (func_373(uParam0, bParam7, bParam9, 0))
 			{
-				func_370(uParam0, iParam1, Param2, iParam4);
+				func_370(uParam0, iParam1, Param2, iParam6);
 			}
 			if (*uParam0)
 			{
@@ -39416,7 +39416,7 @@ void func_355(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iPa
 				{
 					if ((MISC::IS_STRING_NULL(uParam0->f_3) && !MISC::IS_STRING_NULL(iVar0)) && PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 					{
-						if ((iVar1 && !HUD::IS_HELP_MESSAGE_BEING_DISPLAYED()) && uParam6)
+						if ((iVar1 && !HUD::IS_HELP_MESSAGE_BEING_DISPLAYED()) && uParam8)
 						{
 							if (!func_309(iVar0))
 							{
@@ -39435,7 +39435,7 @@ void func_355(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iPa
 			{
 				if (MISC::IS_STRING_NULL(uParam0->f_3) && !MISC::IS_STRING_NULL(iVar0))
 				{
-					if (((ENTITY::IS_ENTITY_ON_SCREEN(iParam1) && iVar1) && !HUD::IS_HELP_MESSAGE_BEING_DISPLAYED()) && uParam6)
+					if (((ENTITY::IS_ENTITY_ON_SCREEN(iParam1) && iVar1) && !HUD::IS_HELP_MESSAGE_BEING_DISPLAYED()) && uParam8)
 					{
 						if (!func_309(iVar0))
 						{
@@ -39452,9 +39452,9 @@ void func_355(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iPa
 		}
 		else
 		{
-			if (!MISC::IS_STRING_NULL(sParam3))
+			if (!MISC::IS_STRING_NULL(sParam5))
 			{
-				if (func_309(sParam3))
+				if (func_309(sParam5))
 				{
 					HUD::CLEAR_HELP(true);
 				}
@@ -39501,7 +39501,7 @@ void func_355(var uParam0, int iParam1, struct<3> Param2, char* sParam3, int iPa
 					func_308(uParam0, iVar0, 1);
 				}
 			}
-			if (!func_373(uParam0, bParam5, bParam7, 0))
+			if (!func_373(uParam0, bParam7, bParam9, 0))
 			{
 				if ((!*uParam0 && !uParam0->f_1) && !func_357(uParam0))
 				{
@@ -39890,7 +39890,7 @@ bool func_369()//Position - 0x2CB7A
 	return MISC::GET_GAME_TIMER() <= Global_23270.f_6321 + 100;
 }
 
-void func_370(var uParam0, int iParam1, struct<3> Param2, int iParam3)//Position - 0x2CB8F
+void func_370(var uParam0, int iParam1, struct<3> Param2, int iParam5)//Position - 0x2CB8F
 {
 	int iVar0;
 	int iVar1;
@@ -39930,7 +39930,7 @@ void func_370(var uParam0, int iParam1, struct<3> Param2, int iParam3)//Position
 	CAM::SET_CINEMATIC_BUTTON_ACTIVE(false);
 	iVar1 = uParam0->f_9;
 	iVar2 = uParam0->f_10;
-	if (iParam3 == joaat("VEHICLE_HIGH_ZOOM_HINT_HELPER"))
+	if (iParam5 == joaat("VEHICLE_HIGH_ZOOM_HINT_HELPER"))
 	{
 		if (iVar1 < 1500)
 		{
@@ -39941,7 +39941,7 @@ void func_370(var uParam0, int iParam1, struct<3> Param2, int iParam3)//Position
 			iVar2 = 1500;
 		}
 	}
-	CAM::SET_GAMEPLAY_ENTITY_HINT(iParam1, Param2, true, -1, iVar1, iVar2, iParam3);
+	CAM::SET_GAMEPLAY_ENTITY_HINT(iParam1, Param2, true, -1, iVar1, iVar2, iParam5);
 	iVar3 = 2048;
 	iVar4 = 3;
 	TASK::TASK_LOOK_AT_ENTITY(PLAYER::PLAYER_PED_ID(), iParam1, -1, iVar3, iVar4);
@@ -40281,95 +40281,95 @@ void func_379()//Position - 0x2D1E5
 void func_380()//Position - 0x2D1F5
 {
 	struct<3> Var0;
-	float fVar1;
-	float fVar2;
 	float fVar3;
+	float fVar4;
+	float fVar5;
 	
-	if (!bLocal_293)
+	if (!bLocal_3206)
 	{
-		if (func_15(Local_535.f_0))
+		if (func_15(Local_3490.f_0))
 		{
-			if (PED::IS_PED_SITTING_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_535.f_0))
+			if (PED::IS_PED_SITTING_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_3490.f_0))
 			{
-				if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_535.f_0, 373.2886f, -580.87103f, 37.239483f, 359.66025f, -605.2207f, 29.13826f, 20f, false, true, 0) && (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_535.f_0, Local_547, Local_548, fLocal_339, false, true, 0) || ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_535.f_0, 370.70535f, -596.1437f, 45.439484f, 361.38342f, -600.7f, 33.239487f, 6f, false, true, 0)))
+				if (!ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_3490.f_0, 373.2886f, -580.87103f, 37.239483f, 359.66025f, -605.2207f, 29.13826f, 20f, false, true, 0) && (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_3490.f_0, Local_3550, Local_3553, fLocal_3264, false, true, 0) || ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_3490.f_0, 370.70535f, -596.1437f, 45.439484f, 361.38342f, -600.7f, 33.239487f, 6f, false, true, 0)))
 				{
 					func_304(2);
-					if (iLocal_292)
+					if (iLocal_3205)
 					{
 						func_305(1);
 						func_308(&uLocal_20, 0, 0);
-						iLocal_292 = 0;
-						iLocal_319 = 1;
-						fLocal_344 = 1f;
+						iLocal_3205 = 0;
+						iLocal_3244 = 1;
+						fLocal_3269 = 1f;
 						RECORDING::REPLAY_START_EVENT(0);
 					}
-					if (iLocal_313)
+					if (iLocal_3238)
 					{
 						func_382(0, 795);
-						iLocal_313 = 0;
+						iLocal_3238 = 0;
 					}
-					Var0 = { ENTITY::GET_ENTITY_COORDS(Local_535.f_0, true) };
-					fVar1 = 0.2f;
-					fVar2 = 0.9f;
-					fVar3 = 2f;
+					Var0 = { ENTITY::GET_ENTITY_COORDS(Local_3490.f_0, true) };
+					fVar3 = 0.2f;
+					fVar4 = 0.9f;
+					fVar5 = 2f;
 					if (Var0.f_2 > 35.25f)
 					{
-						if (fLocal_344 > fVar1)
+						if (fLocal_3269 > fVar3)
 						{
-							fLocal_344 = (fLocal_344 - (fVar2 * SYSTEM::TIMESTEP()));
-							if (fLocal_344 < fVar1)
+							fLocal_3269 = (fLocal_3269 - (fVar4 * SYSTEM::TIMESTEP()));
+							if (fLocal_3269 < fVar3)
 							{
-								fLocal_344 = fVar1;
+								fLocal_3269 = fVar3;
 							}
-							MISC::SET_TIME_SCALE(fLocal_344);
+							MISC::SET_TIME_SCALE(fLocal_3269);
 						}
 					}
 					else if (Var0.f_2 < 35f)
 					{
-						if (fLocal_344 < 1f)
+						if (fLocal_3269 < 1f)
 						{
-							fLocal_344 = (fLocal_344 + (fVar3 * SYSTEM::TIMESTEP()));
-							if (fLocal_344 > 1f)
+							fLocal_3269 = (fLocal_3269 + (fVar5 * SYSTEM::TIMESTEP()));
+							if (fLocal_3269 > 1f)
 							{
-								fLocal_344 = 1f;
+								fLocal_3269 = 1f;
 							}
-							MISC::SET_TIME_SCALE(fLocal_344);
+							MISC::SET_TIME_SCALE(fLocal_3269);
 						}
 					}
 					if (Var0.f_2 < 40f)
 					{
-						if (VEHICLE::IS_VEHICLE_ON_ALL_WHEELS(Local_535.f_0))
+						if (VEHICLE::IS_VEHICLE_ON_ALL_WHEELS(Local_3490.f_0))
 						{
-							if (!iLocal_292)
+							if (!iLocal_3205)
 							{
 								func_305(0);
 								RECORDING::REPLAY_STOP_EVENT();
-								iLocal_292 = 1;
+								iLocal_3205 = 1;
 							}
 						}
 					}
 				}
-				else if (!iLocal_292)
+				else if (!iLocal_3205)
 				{
 					func_305(0);
 					RECORDING::REPLAY_STOP_EVENT();
-					iLocal_292 = 1;
+					iLocal_3205 = 1;
 				}
 			}
-			else if (!iLocal_292)
+			else if (!iLocal_3205)
 			{
 				func_305(0);
 				RECORDING::REPLAY_STOP_EVENT();
-				iLocal_319 = 0;
-				iLocal_292 = 1;
+				iLocal_3244 = 0;
+				iLocal_3205 = 1;
 			}
 		}
-		else if (!iLocal_292)
+		else if (!iLocal_3205)
 		{
 			func_305(0);
 			RECORDING::REPLAY_STOP_EVENT();
-			iLocal_319 = 0;
-			iLocal_292 = 1;
+			iLocal_3244 = 0;
+			iLocal_3205 = 1;
 		}
 	}
 	func_381();
@@ -40379,17 +40379,17 @@ void func_381()//Position - 0x2D3DE
 {
 	struct<3> Var0;
 	
-	if (iLocal_319)
+	if (iLocal_3244)
 	{
-		if (func_15(Local_535.f_0))
+		if (func_15(Local_3490.f_0))
 		{
-			Var0 = { ENTITY::GET_ENTITY_COORDS(Local_535.f_0, false) };
+			Var0 = { ENTITY::GET_ENTITY_COORDS(Local_3490.f_0, false) };
 			if (Var0.f_2 < 35f)
 			{
-				if (ENTITY::HAS_ENTITY_COLLIDED_WITH_ANYTHING(Local_535.f_0) || VEHICLE::IS_VEHICLE_ON_ALL_WHEELS(Local_535.f_0))
+				if (ENTITY::HAS_ENTITY_COLLIDED_WITH_ANYTHING(Local_3490.f_0) || VEHICLE::IS_VEHICLE_ON_ALL_WHEELS(Local_3490.f_0))
 				{
-					AUDIO::PLAY_SOUND_FROM_ENTITY(-1, "CAR_DROP_WRAP", Local_535.f_0, 0, false, 0);
-					iLocal_319 = 0;
+					AUDIO::PLAY_SOUND_FROM_ENTITY(-1, "CAR_DROP_WRAP", Local_3490.f_0, 0, false, 0);
+					iLocal_3244 = 0;
 				}
 			}
 		}
@@ -40419,14 +40419,14 @@ void func_382(int iParam0, int iParam1)//Position - 0x2D439
 
 void func_383(float fParam0)//Position - 0x2D4A4
 {
-	if (func_22(Local_534.f_0))
+	if (func_22(Local_3483.f_0))
 	{
-		if (!ENTITY::IS_ENTITY_PLAYING_ANIM(Local_534.f_0, "rcmnigel2", "die_horn", 3))
+		if (!ENTITY::IS_ENTITY_PLAYING_ANIM(Local_3483.f_0, "rcmnigel2", "die_horn", 3))
 		{
 			STREAMING::REQUEST_ANIM_DICT("rcmnigel2");
 			if (STREAMING::HAS_ANIM_DICT_LOADED("rcmnigel2"))
 			{
-				TASK::TASK_PLAY_ANIM(Local_534.f_0, "rcmnigel2", "die_horn", fParam0, -8f, -1, 2, 0.9f, false, false, false);
+				TASK::TASK_PLAY_ANIM(Local_3483.f_0, "rcmnigel2", "die_horn", fParam0, -8f, -1, 2, 0.9f, false, false, false);
 			}
 		}
 	}
@@ -40441,19 +40441,19 @@ void func_384()//Position - 0x2D4F9
 	{
 		if (!func_385())
 		{
-			CUTSCENE::REQUEST_CUTSCENE(&Local_543, 8);
+			CUTSCENE::REQUEST_CUTSCENE(&Local_3544, 8);
 			func_45();
-			iLocal_316 = 1;
+			iLocal_3241 = 1;
 		}
 	}
-	else if (iLocal_316)
+	else if (iLocal_3241)
 	{
 		if (!func_320(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), Var0, 120f))
 		{
 			if (CUTSCENE::HAS_CUTSCENE_LOADED())
 			{
 				CUTSCENE::REMOVE_CUTSCENE();
-				iLocal_316 = 0;
+				iLocal_3241 = 0;
 			}
 		}
 		else
@@ -40461,12 +40461,12 @@ void func_384()//Position - 0x2D4F9
 			func_45();
 		}
 	}
-	if (iLocal_316)
+	if (iLocal_3241)
 	{
 		if (func_385())
 		{
 			CUTSCENE::REMOVE_CUTSCENE();
-			iLocal_316 = 0;
+			iLocal_3241 = 0;
 		}
 	}
 }
@@ -40479,137 +40479,137 @@ bool func_385()//Position - 0x2D594
 void func_386()//Position - 0x2D5A0
 {
 	PED::SET_PED_DENSITY_MULTIPLIER_THIS_FRAME(0.3f);
-	switch (iLocal_274)
+	switch (iLocal_3107)
 	{
 		case 0:
-			if (func_22(Local_534.f_0) && func_15(Local_536.f_0))
+			if (func_22(Local_3483.f_0) && func_15(Local_3497.f_0))
 			{
-				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_534.f_0, true);
-				PED::SET_PED_RESET_FLAG(Local_534.f_0, 237, true);
-				AUDIO::ADD_ENTITY_TO_AUDIO_MIX_GROUP(Local_536.f_0, "NIGEL_02_CHASE_CAR_MG", 0f);
+				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_3483.f_0, true);
+				PED::SET_PED_RESET_FLAG(Local_3483.f_0, 237, true);
+				AUDIO::ADD_ENTITY_TO_AUDIO_MIX_GROUP(Local_3497.f_0, "NIGEL_02_CHASE_CAR_MG", 0f);
 			}
-			if (func_22(Local_532.f_0))
+			if (func_22(Local_3469.f_0))
 			{
-				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_532.f_0, true);
+				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_3469.f_0, true);
 			}
-			if (func_22(Local_533.f_0))
+			if (func_22(Local_3476.f_0))
 			{
-				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_533.f_0, true);
+				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_3476.f_0, true);
 			}
-			if (func_15(Local_535.f_0))
+			if (func_15(Local_3490.f_0))
 			{
-				if (!iLocal_313)
+				if (!iLocal_3238)
 				{
-					func_382(Local_535.f_0, 795);
-					iLocal_313 = 1;
+					func_382(Local_3490.f_0, 795);
+					iLocal_3238 = 1;
 				}
-				VEHICLE::SET_FORCE_HD_VEHICLE(Local_535.f_0, true);
-				iLocal_318 = 1;
+				VEHICLE::SET_FORCE_HD_VEHICLE(Local_3490.f_0, true);
+				iLocal_3243 = 1;
 			}
 			RECORDING::REPLAY_RECORD_BACK_FOR_TIME(0f, 15f, 1);
-			func_437(fLocal_343, Local_549);
+			func_437(fLocal_3268, Local_3556);
 			PED::SET_PED_CONFIG_FLAG(PLAYER::PLAYER_PED_ID(), 170, true);
 			PLAYER::CLEAR_PLAYER_HAS_DAMAGED_AT_LEAST_ONE_PED(PLAYER::PLAYER_ID());
-			iLocal_274 = 1;
+			iLocal_3107 = 1;
 			break;
 		
 		case 1:
 			func_304(0);
 			func_436();
-			iLocal_317 = 0;
-			if (ENTITY::DOES_ENTITY_EXIST(Local_536.f_0))
+			iLocal_3242 = 0;
+			if (ENTITY::DOES_ENTITY_EXIST(Local_3497.f_0))
 			{
-				fLocal_340 = SYSTEM::VDIST(Local_549, ENTITY::GET_ENTITY_COORDS(Local_536.f_0, false));
+				fLocal_3265 = SYSTEM::VDIST(Local_3556, ENTITY::GET_ENTITY_COORDS(Local_3497.f_0, false));
 			}
-			if (func_22(Local_534.f_0))
+			if (func_22(Local_3483.f_0))
 			{
-				if (func_15(Local_536.f_0))
+				if (func_15(Local_3497.f_0))
 				{
-					if (!bLocal_298)
+					if (!bLocal_3211)
 					{
-						PED::SET_PED_RESET_FLAG(Local_534.f_0, 237, true);
-						if (PED::IS_PED_SITTING_IN_VEHICLE(Local_534.f_0, Local_536.f_0) && VEHICLE::GET_PED_IN_VEHICLE_SEAT(Local_536.f_0, -1, false) == Local_534.f_0)
+						PED::SET_PED_RESET_FLAG(Local_3483.f_0, 237, true);
+						if (PED::IS_PED_SITTING_IN_VEHICLE(Local_3483.f_0, Local_3497.f_0) && VEHICLE::GET_PED_IN_VEHICLE_SEAT(Local_3497.f_0, -1, false) == Local_3483.f_0)
 						{
-							if (!VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(Local_536.f_0))
+							if (!VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(Local_3497.f_0))
 							{
-								ENTITY::FREEZE_ENTITY_POSITION(Local_536.f_0, false);
-								VEHICLE::START_PLAYBACK_RECORDED_VEHICLE(Local_536.f_0, iLocal_333, sLocal_359, true);
-								VEHICLE::FORCE_PLAYBACK_RECORDED_VEHICLE_UPDATE(Local_536.f_0, true);
-								fLocal_341 = VEHICLE::GET_TIME_POSITION_IN_RECORDING(Local_536.f_0);
-								fLocal_343 = 0.85f;
-								VEHICLE::SET_PLAYBACK_SPEED(Local_536.f_0, fLocal_343);
+								ENTITY::FREEZE_ENTITY_POSITION(Local_3497.f_0, false);
+								VEHICLE::START_PLAYBACK_RECORDED_VEHICLE(Local_3497.f_0, iLocal_3258, sLocal_3296, true);
+								VEHICLE::FORCE_PLAYBACK_RECORDED_VEHICLE_UPDATE(Local_3497.f_0, true);
+								fLocal_3266 = VEHICLE::GET_TIME_POSITION_IN_RECORDING(Local_3497.f_0);
+								fLocal_3268 = 0.85f;
+								VEHICLE::SET_PLAYBACK_SPEED(Local_3497.f_0, fLocal_3268);
 								func_435();
-								func_413(Local_536.f_0, fLocal_343);
+								func_413(Local_3497.f_0, fLocal_3268);
 								func_409();
 								if (!AUDIO::IS_AUDIO_SCENE_ACTIVE("NIGEL_02_CHASE"))
 								{
-									if (!func_49() && bLocal_276)
+									if (!func_49() && bLocal_3169)
 									{
 										AUDIO::START_AUDIO_SCENE("NIGEL_02_CHASE");
 									}
 								}
-								bLocal_298 = true;
+								bLocal_3211 = true;
 							}
 						}
 					}
-					else if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(Local_536.f_0))
+					else if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(Local_3497.f_0))
 					{
-						fLocal_341 = VEHICLE::GET_TIME_POSITION_IN_RECORDING(Local_536.f_0);
-						func_400(&fLocal_343, fLocal_341);
-						VEHICLE::SET_PLAYBACK_SPEED(Local_536.f_0, fLocal_343);
+						fLocal_3266 = VEHICLE::GET_TIME_POSITION_IN_RECORDING(Local_3497.f_0);
+						func_400(&fLocal_3268, fLocal_3266);
+						VEHICLE::SET_PLAYBACK_SPEED(Local_3497.f_0, fLocal_3268);
 						func_435();
-						func_413(Local_536.f_0, fLocal_343);
+						func_413(Local_3497.f_0, fLocal_3268);
 						func_409();
 						func_399();
 						func_398();
 						func_14(0, 1);
-						if (fLocal_341 > 82000f && fLocal_341 < 105000f)
+						if (fLocal_3266 > 82000f && fLocal_3266 < 105000f)
 						{
 							func_397();
 						}
-						if (VEHICLE::GET_VEHICLE_ENGINE_HEALTH(Local_536.f_0) < 800f)
+						if (VEHICLE::GET_VEHICLE_ENGINE_HEALTH(Local_3497.f_0) < 800f)
 						{
-							VEHICLE::SET_VEHICLE_ENGINE_HEALTH(Local_536.f_0, 800f);
+							VEHICLE::SET_VEHICLE_ENGINE_HEALTH(Local_3497.f_0, 800f);
 						}
 					}
-					else if (!bLocal_300)
+					else if (!bLocal_3213)
 					{
 						func_68(0, 1);
 						func_396();
-						VEHICLE::REMOVE_VEHICLE_RECORDING(iLocal_333, sLocal_359);
-						AUDIO::REMOVE_ENTITY_FROM_AUDIO_MIX_GROUP(Local_536.f_0, 0f);
+						VEHICLE::REMOVE_VEHICLE_RECORDING(iLocal_3258, sLocal_3296);
+						AUDIO::REMOVE_ENTITY_FROM_AUDIO_MIX_GROUP(Local_3497.f_0, 0f);
 						if (AUDIO::IS_AUDIO_SCENE_ACTIVE("NIGEL_02_CHASE"))
 						{
 							AUDIO::STOP_AUDIO_SCENE("NIGEL_02_CHASE");
 						}
 						func_297(0);
 						func_395();
-						if (fLocal_341 < 124136f)
+						if (fLocal_3266 < 124136f)
 						{
-							fLocal_341 = (124136f + 1000f);
+							fLocal_3266 = (124136f + 1000f);
 						}
 						func_398();
-						bLocal_300 = true;
+						bLocal_3213 = true;
 					}
 					else
 					{
 						func_383(1090519040);
 					}
 				}
-				if (iLocal_292)
+				if (iLocal_3205)
 				{
-					func_352(&uLocal_20, Local_534.f_0, 0, 0, 1, 1, 1);
+					func_352(&uLocal_20, Local_3483.f_0, 0, 0, 1, 1, 1);
 				}
 				func_394();
 				func_393();
-				func_392(fLocal_341);
-				func_389(Local_549);
+				func_392(fLocal_3266);
+				func_389(Local_3556);
 				func_388();
 				func_321();
-				func_437(fLocal_343, Local_549);
-				if ((func_15(Local_535.f_0) && func_22(Local_533.f_0)) && func_22(Local_532.f_0))
+				func_437(fLocal_3268, Local_3556);
+				if ((func_15(Local_3490.f_0) && func_22(Local_3476.f_0)) && func_22(Local_3469.f_0))
 				{
-					if (PED::IS_PED_SITTING_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_535.f_0))
+					if (PED::IS_PED_SITTING_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_3490.f_0))
 					{
 						if (func_351("NIGEL2_03", 0, 0))
 						{
@@ -40619,15 +40619,15 @@ void func_386()//Position - 0x2D5A0
 						{
 							HUD::CLEAR_THIS_PRINT("NIGEL2_04");
 						}
-						func_95(&(Local_535.f_2));
-						if (iLocal_318)
+						func_95(&(Local_3490.f_2));
+						if (iLocal_3243)
 						{
-							VEHICLE::SET_FORCE_HD_VEHICLE(Local_535.f_0, false);
-							iLocal_318 = 0;
+							VEHICLE::SET_FORCE_HD_VEHICLE(Local_3490.f_0, false);
+							iLocal_3243 = 0;
 						}
-						if (!PED::IS_PED_SITTING_IN_VEHICLE(Local_533.f_0, Local_535.f_0) || !PED::IS_PED_SITTING_IN_VEHICLE(Local_532.f_0, Local_535.f_0))
+						if (!PED::IS_PED_SITTING_IN_VEHICLE(Local_3476.f_0, Local_3490.f_0) || !PED::IS_PED_SITTING_IN_VEHICLE(Local_3469.f_0, Local_3490.f_0))
 						{
-							func_95(&(Local_534.f_2));
+							func_95(&(Local_3483.f_2));
 							if (func_351("NIGEL2_04", 0, 0))
 							{
 								HUD::CLEAR_THIS_PRINT("NIGEL2_04");
@@ -40635,21 +40635,21 @@ void func_386()//Position - 0x2D5A0
 						}
 						else
 						{
-							if (!iLocal_299)
+							if (!iLocal_3212)
 							{
-								if (VEHICLE::GET_PED_IN_VEHICLE_SEAT(Local_535.f_0, -1, false) == PLAYER::PLAYER_PED_ID())
+								if (VEHICLE::GET_PED_IN_VEHICLE_SEAT(Local_3490.f_0, -1, false) == PLAYER::PLAYER_PED_ID())
 								{
-									VEHICLE::SET_VEHICLE_ENGINE_ON(Local_535.f_0, true, false, false);
-									iLocal_299 = 1;
+									VEHICLE::SET_VEHICLE_ENGINE_ON(Local_3490.f_0, true, false, false);
+									iLocal_3212 = 1;
 								}
 							}
 							func_304(1);
-							if (!bLocal_295)
+							if (!bLocal_3208)
 							{
 								func_338("NIGEL2_01", 7500, 1);
-								bLocal_295 = true;
+								bLocal_3208 = true;
 							}
-							iLocal_294 = 0;
+							iLocal_3207 = 0;
 							if (func_351("NIGEL2_05", 0, 0))
 							{
 								HUD::CLEAR_THIS_PRINT("NIGEL2_05");
@@ -40662,26 +40662,26 @@ void func_386()//Position - 0x2D5A0
 							{
 								HUD::CLEAR_THIS_PRINT("NIGEL2_09");
 							}
-							func_345(&iLocal_317);
-							if (!HUD::DOES_BLIP_EXIST(Local_534.f_2))
+							func_345(&iLocal_3242);
+							if (!HUD::DOES_BLIP_EXIST(Local_3483.f_2))
 							{
-								Local_534.f_2 = func_344(Local_534.f_0, 1, 0, 5);
+								Local_3483.f_2 = func_344(Local_3483.f_0, 1, 0, 5);
 							}
 							else
 							{
-								if (PED::IS_PED_IN_ANY_VEHICLE(Local_534.f_0, false))
+								if (PED::IS_PED_IN_ANY_VEHICLE(Local_3483.f_0, false))
 								{
-									HUD::SET_BLIP_SCALE(Local_534.f_2, 1f);
+									HUD::SET_BLIP_SCALE(Local_3483.f_2, 1f);
 								}
-								func_343(Local_534.f_2, Local_534.f_0, 200f, 0.7f, iLocal_317);
+								func_343(Local_3483.f_2, Local_3483.f_0, 200f, 0.7f, iLocal_3242);
 							}
-							if (bLocal_298)
+							if (bLocal_3211)
 							{
-								if (bLocal_300)
+								if (bLocal_3213)
 								{
-									if (fLocal_340 < 25f)
+									if (fLocal_3265 < 25f)
 									{
-										iLocal_274 = 2;
+										iLocal_3107 = 2;
 									}
 								}
 							}
@@ -40690,80 +40690,80 @@ void func_386()//Position - 0x2D5A0
 					}
 					else
 					{
-						if (iLocal_318)
+						if (iLocal_3243)
 						{
-							VEHICLE::SET_FORCE_HD_VEHICLE(Local_535.f_0, true);
-							iLocal_318 = 1;
+							VEHICLE::SET_FORCE_HD_VEHICLE(Local_3490.f_0, true);
+							iLocal_3243 = 1;
 						}
 						PED::SET_PED_CONFIG_FLAG(PLAYER::PLAYER_PED_ID(), 170, false);
-						func_95(&(Local_534.f_2));
-						if (!HUD::DOES_BLIP_EXIST(Local_535.f_2))
+						func_95(&(Local_3483.f_2));
+						if (!HUD::DOES_BLIP_EXIST(Local_3490.f_2))
 						{
-							Local_535.f_2 = func_341(Local_535.f_0, 1, 7);
+							Local_3490.f_2 = func_341(Local_3490.f_0, 1, 7);
 						}
-						if (!bLocal_295)
+						if (!bLocal_3208)
 						{
-							if (!iLocal_283[0])
+							if (!iLocal_3194[0])
 							{
 								if (func_40())
 								{
 									func_339();
 								}
-								if (func_323(&uLocal_367, "NIG2AUD", "NIG2_DAWDM", 7, 0, 0, 0))
+								if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_DAWDM", 7, 0, 0, 0))
 								{
-									iLocal_283[0] = 1;
+									iLocal_3194[0] = 1;
 								}
 							}
-							else if (!iLocal_290)
+							else if (!iLocal_3203)
 							{
 								if (!func_40())
 								{
 									func_338("NIGEL2_03", 7500, 1);
-									iLocal_290 = 1;
+									iLocal_3203 = 1;
 								}
 							}
-							else if (!iLocal_283[1])
+							else if (!iLocal_3194[1])
 							{
-								if ((!func_40() && PED::IS_PED_SITTING_IN_VEHICLE(Local_533.f_0, Local_535.f_0)) && PED::IS_PED_SITTING_IN_VEHICLE(Local_532.f_0, Local_535.f_0))
+								if ((!func_40() && PED::IS_PED_SITTING_IN_VEHICLE(Local_3476.f_0, Local_3490.f_0)) && PED::IS_PED_SITTING_IN_VEHICLE(Local_3469.f_0, Local_3490.f_0))
 								{
-									if (func_323(&uLocal_367, "NIG2AUD", "NIG2_SPOTSP", 8, 0, 0, 0))
+									if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_SPOTSP", 8, 0, 0, 0))
 									{
-										iLocal_283[1] = 1;
+										iLocal_3194[1] = 1;
 									}
 								}
 							}
 						}
 						else
 						{
-							if (!iLocal_294)
+							if (!iLocal_3207)
 							{
 								if (func_40())
 								{
 									func_339();
 								}
-								iLocal_294 = 1;
+								iLocal_3207 = 1;
 							}
-							if (!iLocal_289)
+							if (!iLocal_3202)
 							{
 								func_338("NIGEL2_04", 7500, 1);
-								iLocal_326 = MISC::GET_GAME_TIMER();
-								iLocal_289 = 1;
+								iLocal_3251 = MISC::GET_GAME_TIMER();
+								iLocal_3202 = 1;
 							}
 							else if (!func_40())
 							{
-								if (fLocal_342 < 20f)
+								if (fLocal_3267 < 20f)
 								{
-									if (MISC::GET_GAME_TIMER() - iLocal_326) > MISC::GET_RANDOM_INT_IN_RANGE(4500, 6500)
+									if (MISC::GET_GAME_TIMER() - iLocal_3251) > MISC::GET_RANDOM_INT_IN_RANGE(4500, 6500)
 									{
-										if (!PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_535.f_0, false))
+										if (!PED::IS_PED_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_3490.f_0, false))
 										{
 											if (MISC::GET_RANDOM_INT_IN_RANGE(0, 11) > 5)
 											{
-												if (func_323(&uLocal_367, "NIG2AUD", "NIG2_GIC", 8, 0, 0, 0))
+												if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_GIC", 8, 0, 0, 0))
 												{
 												}
 											}
-											else if (func_323(&uLocal_367, "NIG2AUD", "NIG2_GIC2", 8, 0, 0, 0))
+											else if (func_323(&uLocal_3304, "NIG2AUD", "NIG2_GIC2", 8, 0, 0, 0))
 											{
 											}
 										}
@@ -40772,7 +40772,7 @@ void func_386()//Position - 0x2D5A0
 							}
 							else
 							{
-								iLocal_326 = MISC::GET_GAME_TIMER();
+								iLocal_3251 = MISC::GET_GAME_TIMER();
 							}
 						}
 						func_322();
@@ -40784,51 +40784,51 @@ void func_386()//Position - 0x2D5A0
 			break;
 		
 		case 2:
-			if (!bLocal_300)
+			if (!bLocal_3213)
 			{
 				func_68(0, 1);
 				func_396();
-				if (func_12(Local_536.f_0))
+				if (func_12(Local_3497.f_0))
 				{
-					if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(Local_536.f_0))
+					if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(Local_3497.f_0))
 					{
-						VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(Local_536.f_0);
+						VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(Local_3497.f_0);
 					}
-					ENTITY::FREEZE_ENTITY_POSITION(Local_536.f_0, true);
+					ENTITY::FREEZE_ENTITY_POSITION(Local_3497.f_0, true);
 				}
-				VEHICLE::REMOVE_VEHICLE_RECORDING(iLocal_333, sLocal_359);
+				VEHICLE::REMOVE_VEHICLE_RECORDING(iLocal_3258, sLocal_3296);
 				func_297(0);
 				if (AUDIO::IS_AUDIO_SCENE_ACTIVE("NIGEL_02_CHASE"))
 				{
 					AUDIO::STOP_AUDIO_SCENE("NIGEL_02_CHASE");
 				}
-				if (fLocal_341 < 124136f)
+				if (fLocal_3266 < 124136f)
 				{
-					fLocal_341 = (124136f + 1000f);
+					fLocal_3266 = (124136f + 1000f);
 				}
 				func_398();
 				func_395();
-				bLocal_300 = true;
+				bLocal_3213 = true;
 			}
-			if (func_12(Local_534.f_0))
+			if (func_12(Local_3483.f_0))
 			{
-				if (iLocal_292)
+				if (iLocal_3205)
 				{
-					func_352(&uLocal_20, Local_534.f_0, 0, 0, 1, 1, 1);
+					func_352(&uLocal_20, Local_3483.f_0, 0, 0, 1, 1, 1);
 				}
 			}
 			func_380();
-			if (iLocal_313)
+			if (iLocal_3238)
 			{
 				func_382(0, 795);
-				iLocal_313 = 0;
+				iLocal_3238 = 0;
 			}
 			MISC::SET_INSTANCE_PRIORITY_HINT(0);
-			if (bLocal_305)
+			if (bLocal_3230)
 			{
-				if (GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(iLocal_352))
+				if (GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(iLocal_3284))
 				{
-					GRAPHICS::STOP_PARTICLE_FX_LOOPED(iLocal_352, false);
+					GRAPHICS::STOP_PARTICLE_FX_LOOPED(iLocal_3284, false);
 				}
 			}
 			AUDIO::RELEASE_SCRIPT_AUDIO_BANK();
@@ -40841,34 +40841,34 @@ void func_387()//Position - 0x2DCE1
 {
 	float fVar0;
 	
-	if (!bLocal_305)
+	if (!bLocal_3230)
 	{
 		fVar0 = 115225f;
-		if (fLocal_341 > fVar0)
+		if (fLocal_3266 > fVar0)
 		{
 			STREAMING::REQUEST_PTFX_ASSET();
 			if (STREAMING::HAS_PTFX_ASSET_LOADED())
 			{
-				if (!GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(iLocal_352))
+				if (!GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(iLocal_3284))
 				{
-					if (ENTITY::GET_ENTITY_SPEED(Local_535.f_0) > 8f)
+					if (ENTITY::GET_ENTITY_SPEED(Local_3490.f_0) > 8f)
 					{
-						if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_535.f_0, 368.91098f, -599.17255f, 41.238842f, 366.0153f, -596.1f, 44.985764f, 6.5f, false, true, 0))
+						if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_3490.f_0, 368.91098f, -599.17255f, 41.238842f, 366.0153f, -596.1f, 44.985764f, 6.5f, false, true, 0))
 						{
-							iLocal_352 = GRAPHICS::START_PARTICLE_FX_LOOPED_ON_ENTITY("scr_rcn2_debris_trail", Local_535.f_0, 0f, -1.5f, -0.4f, 0f, 0f, 0f, 0.3f, false, false, false);
-							bLocal_305 = true;
+							iLocal_3284 = GRAPHICS::START_PARTICLE_FX_LOOPED_ON_ENTITY("scr_rcn2_debris_trail", Local_3490.f_0, 0f, -1.5f, -0.4f, 0f, 0f, 0f, 0.3f, false, false, false);
+							bLocal_3230 = true;
 						}
 					}
 				}
 			}
 		}
 	}
-	else if (GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(iLocal_352))
+	else if (GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(iLocal_3284))
 	{
-		if (ENTITY::GET_ENTITY_SPEED(Local_535.f_0) < 4f || !ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_535.f_0, 368.91098f, -599.17255f, 41.238842f, 366.0153f, -596.1f, 44.985764f, 6.5f, false, true, 0))
+		if (ENTITY::GET_ENTITY_SPEED(Local_3490.f_0) < 4f || !ENTITY::IS_ENTITY_IN_ANGLED_AREA(Local_3490.f_0, 368.91098f, -599.17255f, 41.238842f, 366.0153f, -596.1f, 44.985764f, 6.5f, false, true, 0))
 		{
-			GRAPHICS::STOP_PARTICLE_FX_LOOPED(iLocal_352, false);
-			bLocal_305 = false;
+			GRAPHICS::STOP_PARTICLE_FX_LOOPED(iLocal_3284, false);
+			bLocal_3230 = false;
 		}
 	}
 }
@@ -40878,26 +40878,26 @@ void func_388()//Position - 0x2DDD7
 	float fVar0;
 	
 	fVar0 = 115225f;
-	if (!iLocal_310)
+	if (!iLocal_3235)
 	{
-		if (!iLocal_307)
+		if (!iLocal_3232)
 		{
-			if (fLocal_341 > (fVar0 - 5000f))
+			if (fLocal_3266 > (fVar0 - 5000f))
 			{
 				STREAMING::REQUEST_PTFX_ASSET();
-				iLocal_307 = 1;
+				iLocal_3232 = 1;
 			}
 		}
 		else
 		{
-			if (fLocal_341 > fVar0)
+			if (fLocal_3266 > fVar0)
 			{
 				if (STREAMING::HAS_PTFX_ASSET_LOADED())
 				{
-					if (!GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(iLocal_351))
+					if (!GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(iLocal_3283))
 					{
-						iLocal_351 = GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD("scr_rcn2_ceiling_debris", 325f, -589f, 45f, 0f, 0f, 0f, 1f, false, false, false, false);
-						iLocal_310 = 1;
+						iLocal_3283 = GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD("scr_rcn2_ceiling_debris", 325f, -589f, 45f, 0f, 0f, 0f, 1f, false, false, false, false);
+						iLocal_3235 = 1;
 					}
 				}
 			}
@@ -40914,61 +40914,61 @@ void func_389(struct<3> Param0)//Position - 0x2DE5F
 	bool bVar0;
 	int iVar1;
 	struct<3> Var2;
-	float fVar3;
-	int iVar4;
-	int iVar5;
+	float fVar5;
 	int iVar6;
+	int iVar7;
+	int iVar8;
 	
 	bVar0 = false;
-	iVar4 = 250;
-	if (func_12(Local_534.f_0))
+	iVar6 = 250;
+	if (func_12(Local_3483.f_0))
 	{
-		iVar5 = 0;
-		while (iVar5 <= 3)
+		iVar7 = 0;
+		while (iVar7 <= 3)
 		{
-			if (Local_539[iVar5 /*2*/].f_1 == 0)
+			if (Local_3525[iVar7 /*2*/].f_1 == 0)
 			{
 				if (!bVar0)
 				{
-					if (fLocal_341 >= 500f)
+					if (fLocal_3266 >= 500f)
 					{
-						switch (iVar5)
+						switch (iVar7)
 						{
 							case 0:
-								iVar1 = iLocal_345;
+								iVar1 = iLocal_3270;
 								Var2 = { -1262.53f, -731.25f, 21.88f };
-								fVar3 = 47.38f;
+								fVar5 = 47.38f;
 								break;
 							
 							case 1:
-								iVar1 = iLocal_348;
+								iVar1 = iLocal_3273;
 								Var2 = { -1300.17f, -704.1f, 24.61f };
-								fVar3 = -87.53f;
+								fVar5 = -87.53f;
 								break;
 							
 							case 2:
-								iVar1 = iLocal_348;
+								iVar1 = iLocal_3273;
 								Var2 = { -1298.33f, -704.16f, 24.53f };
-								fVar3 = 83.96f;
+								fVar5 = 83.96f;
 								break;
 							
 							case 3:
-								iVar1 = iLocal_348;
+								iVar1 = iLocal_3273;
 								Var2 = { -1209.92f, -817.51f, 15.62f };
-								fVar3 = 15.06f;
+								fVar5 = 15.06f;
 								break;
 						}
 						STREAMING::REQUEST_MODEL(iVar1);
 						if (STREAMING::HAS_MODEL_LOADED(iVar1))
 						{
-							Local_539[iVar5 /*2*/] = PED::CREATE_PED(26, iVar1, Var2, fVar3, true, true);
-							if (func_22(Local_539[iVar5 /*2*/]))
+							Local_3525[iVar7 /*2*/] = PED::CREATE_PED(26, iVar1, Var2, fVar5, true, true);
+							if (func_22(Local_3525[iVar7 /*2*/]))
 							{
-								Local_539[iVar5 /*2*/].f_1 = 1;
-								PED::SET_PED_RANDOM_COMPONENT_VARIATION(Local_539[iVar5 /*2*/], 0);
-								PED::SET_PED_KEEP_TASK(Local_539[iVar5 /*2*/], true);
+								Local_3525[iVar7 /*2*/].f_1 = 1;
+								PED::SET_PED_RANDOM_COMPONENT_VARIATION(Local_3525[iVar7 /*2*/], 0);
+								PED::SET_PED_KEEP_TASK(Local_3525[iVar7 /*2*/], true);
 							}
-							if (iVar5 != 0)
+							if (iVar7 != 0)
 							{
 								STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iVar1);
 							}
@@ -40977,228 +40977,228 @@ void func_389(struct<3> Param0)//Position - 0x2DE5F
 					}
 				}
 			}
-			else if ((MISC::GET_GAME_TIMER() - iLocal_328) > iVar4)
+			else if ((MISC::GET_GAME_TIMER() - iLocal_3253) > iVar6)
 			{
-				if (func_22(Local_539[iVar5 /*2*/]))
+				if (func_22(Local_3525[iVar7 /*2*/]))
 				{
-					switch (Local_539[iVar5 /*2*/].f_1)
+					switch (Local_3525[iVar7 /*2*/].f_1)
 					{
 						case 1:
-							if (func_391(Local_534.f_0, Local_539[iVar5 /*2*/], 150f, 1))
+							if (func_391(Local_3483.f_0, Local_3525[iVar7 /*2*/], 150f, 1))
 							{
-								if (iVar5 == 0 || iVar5 == 3)
+								if (iVar7 == 0 || iVar7 == 3)
 								{
-									TASK::TASK_USE_MOBILE_PHONE(Local_539[iVar5 /*2*/], true, 1);
-									PED::SET_PED_KEEP_TASK(Local_539[iVar5 /*2*/], false);
-									Local_539[iVar5 /*2*/].f_1 = 4;
+									TASK::TASK_USE_MOBILE_PHONE(Local_3525[iVar7 /*2*/], true, 1);
+									PED::SET_PED_KEEP_TASK(Local_3525[iVar7 /*2*/], false);
+									Local_3525[iVar7 /*2*/].f_1 = 4;
 								}
-								else if (iVar5 == 1)
+								else if (iVar7 == 1)
 								{
-									if (func_22(Local_539[iVar5 + 1 /*2*/]))
+									if (func_22(Local_3525[iVar7 + 1 /*2*/]))
 									{
-										TASK::TASK_CHAT_TO_PED(Local_539[iVar5 /*2*/], Local_539[iVar5 + 1 /*2*/], 17, 0f, 0f, 0f, 0f, 0f);
-										PED::SET_PED_KEEP_TASK(Local_539[iVar5 /*2*/], false);
-										Local_539[iVar5 /*2*/].f_1 = 4;
+										TASK::TASK_CHAT_TO_PED(Local_3525[iVar7 /*2*/], Local_3525[iVar7 + 1 /*2*/], 17, 0f, 0f, 0f, 0f, 0f);
+										PED::SET_PED_KEEP_TASK(Local_3525[iVar7 /*2*/], false);
+										Local_3525[iVar7 /*2*/].f_1 = 4;
 									}
 								}
-								else if (iVar5 == 2)
+								else if (iVar7 == 2)
 								{
-									if (func_22(Local_539[(iVar5 - 1) /*2*/]))
+									if (func_22(Local_3525[(iVar7 - 1) /*2*/]))
 									{
-										TASK::TASK_CHAT_TO_PED(Local_539[iVar5 /*2*/], Local_539[(iVar5 - 1) /*2*/], 16, 0f, 0f, 0f, 0f, 0f);
-										PED::SET_PED_KEEP_TASK(Local_539[iVar5 /*2*/], false);
-										Local_539[iVar5 /*2*/].f_1 = 4;
+										TASK::TASK_CHAT_TO_PED(Local_3525[iVar7 /*2*/], Local_3525[(iVar7 - 1) /*2*/], 16, 0f, 0f, 0f, 0f, 0f);
+										PED::SET_PED_KEEP_TASK(Local_3525[iVar7 /*2*/], false);
+										Local_3525[iVar7 /*2*/].f_1 = 4;
 									}
 								}
 							}
 							break;
 						
 						case 4:
-							if (func_391(Local_534.f_0, Local_539[iVar5 /*2*/], 3f, 1))
+							if (func_391(Local_3483.f_0, Local_3525[iVar7 /*2*/], 3f, 1))
 							{
-								TASK::CLEAR_PED_TASKS(Local_539[iVar5 /*2*/]);
-								TASK::OPEN_SEQUENCE_TASK(&iVar6);
-								TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, Local_534.f_0, -1);
-								TASK::CLOSE_SEQUENCE_TASK(iVar6);
-								TASK::TASK_PERFORM_SEQUENCE(Local_539[iVar5 /*2*/], iVar6);
-								TASK::CLEAR_SEQUENCE_TASK(&iVar6);
-								Local_539[iVar5 /*2*/].f_1 = 6;
+								TASK::CLEAR_PED_TASKS(Local_3525[iVar7 /*2*/]);
+								TASK::OPEN_SEQUENCE_TASK(&iVar8);
+								TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, Local_3483.f_0, -1);
+								TASK::CLOSE_SEQUENCE_TASK(iVar8);
+								TASK::TASK_PERFORM_SEQUENCE(Local_3525[iVar7 /*2*/], iVar8);
+								TASK::CLEAR_SEQUENCE_TASK(&iVar8);
+								Local_3525[iVar7 /*2*/].f_1 = 6;
 							}
-							if (!func_390(Local_539[iVar5 /*2*/], Param0, 300f, 1))
+							if (!func_390(Local_3525[iVar7 /*2*/], Param0, 300f, 1))
 							{
-								func_56(&(Local_539[iVar5 /*2*/]), 0);
-								Local_539[iVar5 /*2*/].f_1 = 7;
+								func_56(&(Local_3525[iVar7 /*2*/]), 0);
+								Local_3525[iVar7 /*2*/].f_1 = 7;
 							}
 							break;
 						
 						case 6:
-							if (!func_390(Local_539[iVar5 /*2*/], Param0, 150f, 1))
+							if (!func_390(Local_3525[iVar7 /*2*/], Param0, 150f, 1))
 							{
-								func_56(&(Local_539[iVar5 /*2*/]), 0);
-								Local_539[iVar5 /*2*/].f_1 = 7;
+								func_56(&(Local_3525[iVar7 /*2*/]), 0);
+								Local_3525[iVar7 /*2*/].f_1 = 7;
 							}
 							break;
 						}
 					}
 			}
-			iVar5++;
+			iVar7++;
 		}
-		iVar5 = 0;
-		while (iVar5 <= 8)
+		iVar7 = 0;
+		while (iVar7 <= 8)
 		{
-			if (Local_538[iVar5 /*2*/].f_1 == 0)
+			if (Local_3506[iVar7 /*2*/].f_1 == 0)
 			{
 				if (!bVar0)
 				{
-					if (fLocal_341 >= 111161f && iLocal_338 > 1)
+					if (fLocal_3266 >= 111161f && iLocal_3263 > 1)
 					{
-						if (INTERIOR::IS_VALID_INTERIOR(iLocal_337) && INTERIOR::IS_INTERIOR_READY(iLocal_337))
+						if (INTERIOR::IS_VALID_INTERIOR(iLocal_3262) && INTERIOR::IS_INTERIOR_READY(iLocal_3262))
 						{
-							switch (iVar5)
+							switch (iVar7)
 							{
 								case 0:
-									iVar1 = iLocal_347;
+									iVar1 = iLocal_3272;
 									Var2 = { 309.34f, -596.87f, 43.31f };
-									fVar3 = 14.8f;
+									fVar5 = 14.8f;
 									break;
 								
 								case 1:
-									iVar1 = iLocal_347;
+									iVar1 = iLocal_3272;
 									Var2 = { 309.52f, -594.85f, 43.31f };
-									fVar3 = 153.4102f;
+									fVar5 = 153.4102f;
 									break;
 								
 								case 2:
-									iVar1 = iLocal_347;
+									iVar1 = iLocal_3272;
 									Var2 = { 316f, -588.77f, 42.3f };
-									fVar3 = 207.556f;
+									fVar5 = 207.556f;
 									break;
 								
 								case 3:
-									iVar1 = iLocal_346;
+									iVar1 = iLocal_3271;
 									Var2 = { 317.1715f, -590.084f, 42.302f };
-									fVar3 = 60.6f;
+									fVar5 = 60.6f;
 									break;
 								
 								case 4:
-									iVar1 = iLocal_347;
+									iVar1 = iLocal_3272;
 									Var2 = { 332.54f, -588.5f, 43.3f };
-									fVar3 = 70.64f;
+									fVar5 = 70.64f;
 									break;
 								
 								case 5:
-									iVar1 = iLocal_347;
+									iVar1 = iLocal_3272;
 									Var2 = { 331.68f, -578.6f, 43.32f };
-									fVar3 = 234.5983f;
+									fVar5 = 234.5983f;
 									break;
 								
 								case 6:
-									iVar1 = iLocal_347;
+									iVar1 = iLocal_3272;
 									Var2 = { 362.56f, -589.32f, 43.33f };
-									fVar3 = -21.77f;
+									fVar5 = -21.77f;
 									break;
 								
 								case 7:
-									iVar1 = iLocal_347;
+									iVar1 = iLocal_3272;
 									Var2 = { 363.3849f, -587.8508f, 42.3275f };
-									fVar3 = 161.2689f;
+									fVar5 = 161.2689f;
 									break;
 								
 								case 8:
-									iVar1 = iLocal_346;
+									iVar1 = iLocal_3271;
 									Var2 = { 358.5161f, -586.02f, 42.3275f };
-									fVar3 = 67.7037f;
+									fVar5 = 67.7037f;
 									break;
 							}
 							STREAMING::REQUEST_MODEL(iVar1);
 							if (STREAMING::HAS_MODEL_LOADED(iVar1))
 							{
-								Local_538[iVar5 /*2*/] = PED::CREATE_PED(26, iVar1, Var2, fVar3, true, true);
-								if (func_22(Local_538[iVar5 /*2*/]))
+								Local_3506[iVar7 /*2*/] = PED::CREATE_PED(26, iVar1, Var2, fVar5, true, true);
+								if (func_22(Local_3506[iVar7 /*2*/]))
 								{
-									Local_538[iVar5 /*2*/].f_1 = 4;
-									PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_538[iVar5 /*2*/], true);
-									PED::SET_PED_FLEE_ATTRIBUTES(Local_538[iVar5 /*2*/], 4, true);
-									PED::SET_PED_KEEP_TASK(Local_538[iVar5 /*2*/], true);
-									switch (iVar5)
+									Local_3506[iVar7 /*2*/].f_1 = 4;
+									PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_3506[iVar7 /*2*/], true);
+									PED::SET_PED_FLEE_ATTRIBUTES(Local_3506[iVar7 /*2*/], 4, true);
+									PED::SET_PED_KEEP_TASK(Local_3506[iVar7 /*2*/], true);
+									switch (iVar7)
 									{
 										case 0:
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[iVar5 /*2*/], 0, 0, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[iVar5 /*2*/], 2, 0, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[iVar5 /*2*/], 3, 0, 1, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[iVar5 /*2*/], 4, 0, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[iVar5 /*2*/], 5, 0, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[iVar5 /*2*/], 8, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[iVar7 /*2*/], 0, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[iVar7 /*2*/], 2, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[iVar7 /*2*/], 3, 0, 1, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[iVar7 /*2*/], 4, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[iVar7 /*2*/], 5, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[iVar7 /*2*/], 8, 0, 0, 0);
 											break;
 										
 										case 1:
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[iVar5 /*2*/], 0, 1, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[iVar5 /*2*/], 2, 0, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[iVar5 /*2*/], 3, 0, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[iVar5 /*2*/], 4, 0, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[iVar5 /*2*/], 5, 0, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[iVar5 /*2*/], 8, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[iVar7 /*2*/], 0, 1, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[iVar7 /*2*/], 2, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[iVar7 /*2*/], 3, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[iVar7 /*2*/], 4, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[iVar7 /*2*/], 5, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[iVar7 /*2*/], 8, 0, 0, 0);
 											break;
 										
 										case 2:
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[2 /*2*/], 0, 1, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[2 /*2*/], 2, 0, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[2 /*2*/], 3, 0, 1, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[2 /*2*/], 4, 0, 1, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[2 /*2*/], 5, 0, 1, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[2 /*2*/], 8, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[2 /*2*/], 0, 1, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[2 /*2*/], 2, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[2 /*2*/], 3, 0, 1, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[2 /*2*/], 4, 0, 1, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[2 /*2*/], 5, 0, 1, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[2 /*2*/], 8, 0, 0, 0);
 											break;
 										
 										case 3:
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[3 /*2*/], 0, 0, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[3 /*2*/], 3, 0, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[3 /*2*/], 4, 0, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[3 /*2*/], 8, 0, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[3 /*2*/], 11, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[3 /*2*/], 0, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[3 /*2*/], 3, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[3 /*2*/], 4, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[3 /*2*/], 8, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[3 /*2*/], 11, 0, 0, 0);
 											break;
 										
 										case 4:
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[4 /*2*/], 0, 1, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[4 /*2*/], 2, 1, 1, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[4 /*2*/], 3, 1, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[4 /*2*/], 4, 0, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[4 /*2*/], 5, 1, 1, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[4 /*2*/], 8, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[4 /*2*/], 0, 1, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[4 /*2*/], 2, 1, 1, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[4 /*2*/], 3, 1, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[4 /*2*/], 4, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[4 /*2*/], 5, 1, 1, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[4 /*2*/], 8, 0, 0, 0);
 											break;
 										
 										case 5:
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[5 /*2*/], 0, 1, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[5 /*2*/], 2, 1, 1, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[5 /*2*/], 3, 0, 2, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[5 /*2*/], 4, 0, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[5 /*2*/], 5, 0, 2, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[5 /*2*/], 8, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[5 /*2*/], 0, 1, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[5 /*2*/], 2, 1, 1, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[5 /*2*/], 3, 0, 2, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[5 /*2*/], 4, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[5 /*2*/], 5, 0, 2, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[5 /*2*/], 8, 0, 0, 0);
 											break;
 										
 										case 6:
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[6 /*2*/], 0, 0, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[6 /*2*/], 2, 0, 1, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[6 /*2*/], 3, 1, 1, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[6 /*2*/], 4, 0, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[6 /*2*/], 5, 0, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[6 /*2*/], 8, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[6 /*2*/], 0, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[6 /*2*/], 2, 0, 1, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[6 /*2*/], 3, 1, 1, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[6 /*2*/], 4, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[6 /*2*/], 5, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[6 /*2*/], 8, 0, 0, 0);
 											break;
 										
 										case 7:
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[7 /*2*/], 0, 0, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[7 /*2*/], 2, 1, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[7 /*2*/], 3, 0, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[7 /*2*/], 4, 0, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[7 /*2*/], 5, 0, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[7 /*2*/], 8, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[7 /*2*/], 0, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[7 /*2*/], 2, 1, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[7 /*2*/], 3, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[7 /*2*/], 4, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[7 /*2*/], 5, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[7 /*2*/], 8, 0, 0, 0);
 											break;
 										
 										case 8:
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[8 /*2*/], 0, 1, 1, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[8 /*2*/], 3, 0, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[8 /*2*/], 4, 1, 2, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[8 /*2*/], 8, 0, 0, 0);
-											PED::SET_PED_COMPONENT_VARIATION(Local_538[8 /*2*/], 11, 1, 2, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[8 /*2*/], 0, 1, 1, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[8 /*2*/], 3, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[8 /*2*/], 4, 1, 2, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[8 /*2*/], 8, 0, 0, 0);
+											PED::SET_PED_COMPONENT_VARIATION(Local_3506[8 /*2*/], 11, 1, 2, 0);
 											break;
 										}
 								}
@@ -41209,18 +41209,18 @@ void func_389(struct<3> Param0)//Position - 0x2DE5F
 					}
 				}
 			}
-			else if ((MISC::GET_GAME_TIMER() - iLocal_328) > iVar4)
+			else if ((MISC::GET_GAME_TIMER() - iLocal_3253) > iVar6)
 			{
-				if (func_22(Local_538[iVar5 /*2*/]))
+				if (func_22(Local_3506[iVar7 /*2*/]))
 				{
-					switch (Local_538[iVar5 /*2*/].f_1)
+					switch (Local_3506[iVar7 /*2*/].f_1)
 					{
 						case 4:
-							if (func_390(Local_538[iVar5 /*2*/], Param0, 5f, 1) || func_391(Local_534.f_0, Local_538[iVar5 /*2*/], 8f, 1))
+							if (func_390(Local_3506[iVar7 /*2*/], Param0, 5f, 1) || func_391(Local_3483.f_0, Local_3506[iVar7 /*2*/], 8f, 1))
 							{
-								TASK::TASK_COWER(Local_538[iVar5 /*2*/], -1);
-								PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_538[iVar5 /*2*/], true);
-								Local_538[iVar5 /*2*/].f_1 = 6;
+								TASK::TASK_COWER(Local_3506[iVar7 /*2*/], -1);
+								PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_3506[iVar7 /*2*/], true);
+								Local_3506[iVar7 /*2*/].f_1 = 6;
 							}
 							break;
 						
@@ -41228,34 +41228,34 @@ void func_389(struct<3> Param0)//Position - 0x2DE5F
 							break;
 						
 						case 6:
-							if ((PED::IS_PED_SHOOTING(PLAYER::PLAYER_PED_ID()) || PLAYER::IS_PLAYER_FREE_AIMING_AT_ENTITY(PLAYER::PLAYER_ID(), Local_538[iVar5 /*2*/])) || PLAYER::IS_PLAYER_TARGETTING_ENTITY(PLAYER::PLAYER_ID(), Local_538[iVar5 /*2*/]))
+							if ((PED::IS_PED_SHOOTING(PLAYER::PLAYER_PED_ID()) || PLAYER::IS_PLAYER_FREE_AIMING_AT_ENTITY(PLAYER::PLAYER_ID(), Local_3506[iVar7 /*2*/])) || PLAYER::IS_PLAYER_TARGETTING_ENTITY(PLAYER::PLAYER_ID(), Local_3506[iVar7 /*2*/]))
 							{
-								if (TASK::GET_SCRIPT_TASK_STATUS(Local_538[iVar5 /*2*/], joaat("SCRIPT_TASK_COWER")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(Local_538[iVar5 /*2*/], joaat("SCRIPT_TASK_COWER")) != 0)
+								if (TASK::GET_SCRIPT_TASK_STATUS(Local_3506[iVar7 /*2*/], joaat("SCRIPT_TASK_COWER")) != 1 && TASK::GET_SCRIPT_TASK_STATUS(Local_3506[iVar7 /*2*/], joaat("SCRIPT_TASK_COWER")) != 0)
 								{
-									TASK::TASK_COWER(Local_538[iVar5 /*2*/], -1);
+									TASK::TASK_COWER(Local_3506[iVar7 /*2*/], -1);
 								}
 							}
-							else if (!func_390(Local_538[iVar5 /*2*/], Param0, 250f, 1))
+							else if (!func_390(Local_3506[iVar7 /*2*/], Param0, 250f, 1))
 							{
-								func_56(&(Local_538[iVar5 /*2*/]), 0);
-								Local_538[iVar5 /*2*/].f_1 = 7;
+								func_56(&(Local_3506[iVar7 /*2*/]), 0);
+								Local_3506[iVar7 /*2*/].f_1 = 7;
 							}
 							break;
 						}
 					}
 			}
-			iVar5++;
+			iVar7++;
 		}
 	}
-	if ((MISC::GET_GAME_TIMER() - iLocal_328) > iVar4)
+	if ((MISC::GET_GAME_TIMER() - iLocal_3253) > iVar6)
 	{
-		iLocal_328 = MISC::GET_GAME_TIMER();
+		iLocal_3253 = MISC::GET_GAME_TIMER();
 	}
 }
 
-bool func_390(int iParam0, struct<3> Param1, float fParam2, bool bParam3)//Position - 0x2E84C
+bool func_390(int iParam0, struct<3> Param1, float fParam4, bool bParam5)//Position - 0x2E84C
 {
-	return SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(iParam0, bParam3), Param1) <= (fParam2 * fParam2);
+	return SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(iParam0, bParam5), Param1) <= (fParam4 * fParam4);
 }
 
 bool func_391(int iParam0, int iParam1, float fParam2, bool bParam3)//Position - 0x2E86A
@@ -41267,13 +41267,13 @@ void func_392(float fParam0)//Position - 0x2E88C
 {
 	int iVar0;
 	
-	switch (iLocal_334)
+	switch (iLocal_3259)
 	{
 		case 0:
 			if (fParam0 > 5000f)
 			{
 				PED::SET_PED_NON_CREATION_AREA(-1332.3508f, -763.45764f, 10f, -1229.1422f, -654.3546f, 42f);
-				iLocal_334++;
+				iLocal_3259++;
 			}
 			break;
 		
@@ -41281,7 +41281,7 @@ void func_392(float fParam0)//Position - 0x2E88C
 			if (fParam0 > 10000f)
 			{
 				PED::SET_PED_NON_CREATION_AREA(-1274.1476f, -842.63574f, 10f, -1139.8356f, -703.74365f, 42f);
-				iLocal_334++;
+				iLocal_3259++;
 			}
 			break;
 		
@@ -41291,11 +41291,11 @@ void func_392(float fParam0)//Position - 0x2E88C
 				iVar0 = 0;
 				while (iVar0 <= 4)
 				{
-					PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_358[iVar0], false);
+					PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_3290[iVar0], false);
 					iVar0++;
 				}
 				PATHFIND::SET_ROADS_IN_ANGLED_AREA(-668.36346f, -658.38007f, 27.433815f, -440.02197f, -657.42377f, 40.251266f, 40f, false, false, true);
-				iLocal_334++;
+				iLocal_3259++;
 			}
 			break;
 		
@@ -41305,7 +41305,7 @@ void func_392(float fParam0)//Position - 0x2E88C
 				iVar0 = 0;
 				while (iVar0 <= 4)
 				{
-					PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_358[iVar0], false);
+					PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_3290[iVar0], false);
 					iVar0++;
 				}
 				if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -513.48773f, -598.49554f, 30.898241f, -695.001f, -593.83844f, 19.307816f, 60f, false, true, 0) || ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -518.4041f, -622.82935f, 32.301056f, -608.4054f, -622.3588f, 26.787561f, 11f, false, true, 0))
@@ -41318,9 +41318,9 @@ void func_392(float fParam0)//Position - 0x2E88C
 				}
 				PATHFIND::SET_PED_PATHS_IN_AREA(-496.28848f, -681.55994f, 25f, -481.59882f, -668.74115f, 38f, false, 0);
 				PED::SET_PED_NON_CREATION_AREA(-496.28848f, -681.55994f, 25f, -481.59882f, -668.74115f, 38f);
-				iLocal_358[0] = PED::ADD_SCENARIO_BLOCKING_AREA(-497.21988f, -679.97705f, 22.0126f, -486.8124f, -672.0134f, 41.80794f, false, true, true, true);
-				iLocal_358[1] = PED::ADD_SCENARIO_BLOCKING_AREA(-489.72855f, -680.74554f, 22.0126f, -497.19778f, -690.007f, 41.80794f, false, true, true, true);
-				iLocal_334++;
+				iLocal_3290[0] = PED::ADD_SCENARIO_BLOCKING_AREA(-497.21988f, -679.97705f, 22.0126f, -486.8124f, -672.0134f, 41.80794f, false, true, true, true);
+				iLocal_3290[1] = PED::ADD_SCENARIO_BLOCKING_AREA(-489.72855f, -680.74554f, 22.0126f, -497.19778f, -690.007f, 41.80794f, false, true, true, true);
+				iLocal_3259++;
 			}
 			break;
 		
@@ -41330,13 +41330,13 @@ void func_392(float fParam0)//Position - 0x2E88C
 				iVar0 = 0;
 				while (iVar0 <= 4)
 				{
-					PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_358[iVar0], false);
+					PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_3290[iVar0], false);
 					iVar0++;
 				}
 				PATHFIND::SET_ROADS_BACK_TO_ORIGINAL_IN_ANGLED_AREA(-668.36346f, -658.38007f, 27.433815f, -440.02197f, -657.42377f, 40.251266f, 40f, 1);
 				PED::SET_PED_NON_CREATION_AREA(-508.7908f, -764.6354f, 28f, -488.04373f, -702.8006f, 38f);
-				iLocal_358[0] = PED::ADD_SCENARIO_BLOCKING_AREA(-503.09494f, -754.9647f, 29f, -494.79437f, -730.12964f, 37f, false, true, true, true);
-				iLocal_334++;
+				iLocal_3290[0] = PED::ADD_SCENARIO_BLOCKING_AREA(-503.09494f, -754.9647f, 29f, -494.79437f, -730.12964f, 37f, false, true, true, true);
+				iLocal_3259++;
 			}
 			break;
 		
@@ -41346,14 +41346,14 @@ void func_392(float fParam0)//Position - 0x2E88C
 				iVar0 = 0;
 				while (iVar0 <= 4)
 				{
-					PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_358[iVar0], false);
+					PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_3290[iVar0], false);
 					iVar0++;
 				}
 				PATHFIND::SET_PED_PATHS_BACK_TO_ORIGINAL(-496.28848f, -681.55994f, 25f, -481.59882f, -668.74115f, 38f, 0);
 				PATHFIND::SET_PED_PATHS_IN_AREA(-463.2153f, -829.0475f, 22.4812f, -445.46454f, -813.1011f, 36.56588f, false, 0);
 				PED::SET_PED_NON_CREATION_AREA(-463.2153f, -829.0475f, 22.4812f, -445.46454f, -813.1011f, 36.56588f);
-				iLocal_358[0] = PED::ADD_SCENARIO_BLOCKING_AREA(-497.21988f, -679.97705f, 22.0126f, -486.8124f, -672.0134f, 41.80794f, false, true, true, true);
-				iLocal_334++;
+				iLocal_3290[0] = PED::ADD_SCENARIO_BLOCKING_AREA(-497.21988f, -679.97705f, 22.0126f, -486.8124f, -672.0134f, 41.80794f, false, true, true, true);
+				iLocal_3259++;
 			}
 			break;
 		
@@ -41361,8 +41361,8 @@ void func_392(float fParam0)//Position - 0x2E88C
 			if (fParam0 > 75000f)
 			{
 				PATHFIND::SET_PED_PATHS_BACK_TO_ORIGINAL(-463.2153f, -829.0475f, 22.4812f, -445.46454f, -813.1011f, 36.56588f, 0);
-				iLocal_358[1] = PED::ADD_SCENARIO_BLOCKING_AREA(291.5848f, -588.8806f, 37f, 303.76028f, -579.5882f, 48f, false, true, true, true);
-				iLocal_334++;
+				iLocal_3290[1] = PED::ADD_SCENARIO_BLOCKING_AREA(291.5848f, -588.8806f, 37f, 303.76028f, -579.5882f, 48f, false, true, true, true);
+				iLocal_3259++;
 			}
 			break;
 		
@@ -41370,7 +41370,7 @@ void func_392(float fParam0)//Position - 0x2E88C
 			if (fParam0 > 114500f)
 			{
 				func_297(1);
-				iLocal_334++;
+				iLocal_3259++;
 			}
 			break;
 	}
@@ -41378,79 +41378,79 @@ void func_392(float fParam0)//Position - 0x2E88C
 
 void func_393()//Position - 0x2ED56
 {
-	if (!iLocal_296)
+	if (!iLocal_3209)
 	{
-		if (fLocal_341 > (114436f - 4000f))
+		if (fLocal_3266 > (114436f - 4000f))
 		{
 			AUDIO::REQUEST_SCRIPT_AUDIO_BANK("NIGEL_02_CRASH_A", false, -1);
 			AUDIO::REQUEST_SCRIPT_AUDIO_BANK("NIGEL_02_CRASH_B", false, -1);
 			AUDIO::REQUEST_SCRIPT_AUDIO_BANK("PANIC_WALLA_INTERIOR", false, -1);
 			if ((AUDIO::REQUEST_SCRIPT_AUDIO_BANK("NIGEL_02_CRASH_A", false, -1) && AUDIO::REQUEST_SCRIPT_AUDIO_BANK("NIGEL_02_CRASH_B", false, -1)) && AUDIO::REQUEST_SCRIPT_AUDIO_BANK("PANIC_WALLA_INTERIOR", false, -1))
 			{
-				iLocal_296 = 1;
+				iLocal_3209 = 1;
 			}
 		}
 	}
 	else
 	{
-		switch (iLocal_322)
+		switch (iLocal_3247)
 		{
 			case 0:
-				if (fLocal_341 >= 114436f)
+				if (fLocal_3266 >= 114436f)
 				{
 					AUDIO::PLAY_SOUND_FROM_COORD(-1, "DOOR_CRASH", 299.5664f, -584.6757f, 42.302f, "NIGEL_02_SOUNDSET", false, 0, false);
-					iLocal_322++;
+					iLocal_3247++;
 				}
 				break;
 			
 			case 1:
-				if (fLocal_341 >= 114936f)
+				if (fLocal_3266 >= 114936f)
 				{
 					AUDIO::PLAY_SOUND_FROM_COORD(-1, "SCREAMS", 310.5149f, -595.4158f, 42.302f, "NIGEL_02_SOUNDSET", false, 0, false);
 					AUDIO::FORCE_PED_PANIC_WALLA();
 					AUDIO::PLAY_SOUND_FROM_COORD(-1, "PANIC_WALLA", 316.4345f, -589.3902f, 42.2919f, "NIGEL_02_SOUNDSET", false, 0, false);
-					iLocal_322++;
+					iLocal_3247++;
 				}
 				break;
 			
 			case 2:
-				if (fLocal_341 >= 117166f)
+				if (fLocal_3266 >= 117166f)
 				{
 					AUDIO::PLAY_SOUND_FROM_COORD(-1, "WALL_CRASH", 325.66f, -589.01f, 42.3f, "NIGEL_02_SOUNDSET", false, 0, false);
-					iLocal_322++;
+					iLocal_3247++;
 				}
 				break;
 			
 			case 3:
-				if (fLocal_341 >= 117736f)
+				if (fLocal_3266 >= 117736f)
 				{
 					AUDIO::PLAY_SOUND_FROM_COORD(-1, "WALL_CRASH", 330.13f, -585.72f, 42.42f, "NIGEL_02_SOUNDSET", false, 0, false);
-					iLocal_322++;
+					iLocal_3247++;
 				}
 				break;
 			
 			case 4:
-				if (fLocal_341 >= 118186f)
+				if (fLocal_3266 >= 118186f)
 				{
 					AUDIO::PLAY_SOUND_FROM_COORD(-1, "SCREAMS", 331.7845f, -578.5184f, 42.3167f, "NIGEL_02_SOUNDSET", false, 0, false);
 					AUDIO::PLAY_SOUND_FROM_COORD(-1, "PANIC_WALLA", 354.6585f, -584.2177f, 42.315f, "NIGEL_02_SOUNDSET", false, 0, false);
-					iLocal_322++;
+					iLocal_3247++;
 				}
 				break;
 			
 			case 5:
-				if (fLocal_341 >= 118496f)
+				if (fLocal_3266 >= 118496f)
 				{
 					AUDIO::PLAY_SOUND_FROM_COORD(-1, "WALL_CRASH", 337.89f, -582.38f, 42.33f, "NIGEL_02_SOUNDSET", false, 0, false);
-					iLocal_322++;
+					iLocal_3247++;
 				}
 				break;
 			
 			case 6:
-				if (fLocal_341 >= 120986f)
+				if (fLocal_3266 >= 120986f)
 				{
 					AUDIO::PLAY_SOUND_FROM_COORD(-1, "WINDOW_CRASH", 364.64f, -595.43f, 42.54f, "NIGEL_02_SOUNDSET", false, 0, false);
-					iLocal_322++;
+					iLocal_3247++;
 				}
 				break;
 			
@@ -41462,85 +41462,85 @@ void func_393()//Position - 0x2ED56
 
 void func_394()//Position - 0x2EFBB
 {
-	if (!func_49() && bLocal_276)
+	if (!func_49() && bLocal_3169)
 	{
-		if (iLocal_542 == 0)
+		if (iLocal_3543 == 0)
 		{
-			if (fLocal_341 >= 99000f)
+			if (fLocal_3266 >= 99000f)
 			{
-				if (func_320(Local_549, 308.96793f, -591.075f, 43.29187f, 500f))
+				if (func_320(Local_3556, 308.96793f, -591.075f, 43.29187f, 500f))
 				{
-					if (!ENTITY::DOES_ENTITY_EXIST(Local_349.f_0))
+					if (!ENTITY::DOES_ENTITY_EXIST(Local_3274.f_0))
 					{
-						STREAMING::REQUEST_MODEL(Local_349.f_7);
-						if (STREAMING::HAS_MODEL_LOADED(Local_349.f_7))
+						STREAMING::REQUEST_MODEL(Local_3274.f_7);
+						if (STREAMING::HAS_MODEL_LOADED(Local_3274.f_7))
 						{
-							Local_349.f_0 = OBJECT::CREATE_OBJECT(Local_349.f_7, Local_349.f_1, true, true, false);
-							if (func_12(Local_349.f_0))
+							Local_3274.f_0 = OBJECT::CREATE_OBJECT(Local_3274.f_7, Local_3274.f_1, true, true, false);
+							if (func_12(Local_3274.f_0))
 							{
-								ENTITY::SET_ENTITY_ROTATION(Local_349.f_0, Local_349.f_4, 2, true);
-								ENTITY::SET_ENTITY_COORDS_NO_OFFSET(Local_349.f_0, Local_349.f_1, false, false, true);
-								ENTITY::FREEZE_ENTITY_POSITION(Local_349.f_0, true);
-								STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_349.f_7);
-								iLocal_542 = 1;
+								ENTITY::SET_ENTITY_ROTATION(Local_3274.f_0, Local_3274.f_4, 2, true);
+								ENTITY::SET_ENTITY_COORDS_NO_OFFSET(Local_3274.f_0, Local_3274.f_1, false, false, true);
+								ENTITY::FREEZE_ENTITY_POSITION(Local_3274.f_0, true);
+								STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_3274.f_7);
+								iLocal_3543 = 1;
 							}
 						}
 					}
 				}
 			}
 		}
-		else if (iLocal_542 == 1)
+		else if (iLocal_3543 == 1)
 		{
-			if (fLocal_341 >= 114436f)
+			if (fLocal_3266 >= 114436f)
 			{
-				if (ENTITY::DOES_ENTITY_EXIST(Local_349.f_0))
+				if (ENTITY::DOES_ENTITY_EXIST(Local_3274.f_0))
 				{
-					func_55(&Local_349);
-					iLocal_542 = 2;
+					func_55(&Local_3274);
+					iLocal_3543 = 2;
 				}
 			}
 		}
-		else if (iLocal_542 == 2)
+		else if (iLocal_3543 == 2)
 		{
 		}
-		if (iLocal_324 == 0)
+		if (iLocal_3249 == 0)
 		{
-			if (fLocal_341 >= 99000f)
+			if (fLocal_3266 >= 99000f)
 			{
-				if (func_320(Local_549, 308.96793f, -591.075f, 43.29187f, 500f))
+				if (func_320(Local_3556, 308.96793f, -591.075f, 43.29187f, 500f))
 				{
-					if (iLocal_338 > 3)
+					if (iLocal_3263 > 3)
 					{
-						iLocal_353 = OBJECT::GET_RAYFIRE_MAP_OBJECT(299.4302f, -584.8925f, 42.2629f, 100f, "DES_hospitaldoors");
-						if (OBJECT::DOES_RAYFIRE_MAP_OBJECT_EXIST(iLocal_353))
+						iLocal_3285 = OBJECT::GET_RAYFIRE_MAP_OBJECT(299.4302f, -584.8925f, 42.2629f, 100f, "DES_hospitaldoors");
+						if (OBJECT::DOES_RAYFIRE_MAP_OBJECT_EXIST(iLocal_3285))
 						{
-							OBJECT::SET_STATE_OF_RAYFIRE_MAP_OBJECT(iLocal_353, 11);
-							iLocal_324++;
+							OBJECT::SET_STATE_OF_RAYFIRE_MAP_OBJECT(iLocal_3285, 11);
+							iLocal_3249++;
 						}
 					}
 				}
 			}
 		}
-		else if (iLocal_324 == 1)
+		else if (iLocal_3249 == 1)
 		{
-			if (OBJECT::DOES_RAYFIRE_MAP_OBJECT_EXIST(iLocal_353))
+			if (OBJECT::DOES_RAYFIRE_MAP_OBJECT_EXIST(iLocal_3285))
 			{
-				if (OBJECT::GET_STATE_OF_RAYFIRE_MAP_OBJECT(iLocal_353) == 5)
+				if (OBJECT::GET_STATE_OF_RAYFIRE_MAP_OBJECT(iLocal_3285) == 5)
 				{
-					if (fLocal_341 >= 114436f)
+					if (fLocal_3266 >= 114436f)
 					{
-						OBJECT::SET_STATE_OF_RAYFIRE_MAP_OBJECT(iLocal_353, 6);
-						iLocal_324++;
+						OBJECT::SET_STATE_OF_RAYFIRE_MAP_OBJECT(iLocal_3285, 6);
+						iLocal_3249++;
 					}
 				}
-				else if (OBJECT::GET_STATE_OF_RAYFIRE_MAP_OBJECT(iLocal_353) != 4)
+				else if (OBJECT::GET_STATE_OF_RAYFIRE_MAP_OBJECT(iLocal_3285) != 4)
 				{
-					OBJECT::SET_STATE_OF_RAYFIRE_MAP_OBJECT(iLocal_353, 4);
+					OBJECT::SET_STATE_OF_RAYFIRE_MAP_OBJECT(iLocal_3285, 4);
 				}
 			}
 			else
 			{
-				iLocal_324 = (iLocal_324 - 1);
+				iLocal_3249 = (iLocal_3249 - 1);
 			}
 		}
 	}
@@ -41549,24 +41549,24 @@ void func_394()//Position - 0x2EFBB
 void func_395()//Position - 0x2F181
 {
 	STREAMING::REQUEST_ANIM_DICT("rcmnigel2");
-	if (func_12(Local_536.f_0))
+	if (func_12(Local_3497.f_0))
 	{
-		VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(Local_536.f_0, 5f);
-		AUDIO::REMOVE_ENTITY_FROM_AUDIO_MIX_GROUP(Local_536.f_0, 0f);
-		ENTITY::FREEZE_ENTITY_POSITION(Local_536.f_0, true);
-		VEHICLE::SET_VEHICLE_IS_CONSIDERED_BY_PLAYER(Local_536.f_0, false);
-		VEHICLE::SET_DISABLE_VEHICLE_ENGINE_FIRES(Local_536.f_0, true);
-		VEHICLE::SET_VEHICLE_ENGINE_ON(Local_536.f_0, true, true, false);
-		AUDIO::SET_VEHICLE_AUDIO_BODY_DAMAGE_FACTOR(Local_536.f_0, 1f);
-		VEHICLE::SET_VEHICLE_ENGINE_HEALTH(Local_536.f_0, 0f);
+		VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(Local_3497.f_0, 5f);
+		AUDIO::REMOVE_ENTITY_FROM_AUDIO_MIX_GROUP(Local_3497.f_0, 0f);
+		ENTITY::FREEZE_ENTITY_POSITION(Local_3497.f_0, true);
+		VEHICLE::SET_VEHICLE_IS_CONSIDERED_BY_PLAYER(Local_3497.f_0, false);
+		VEHICLE::SET_DISABLE_VEHICLE_ENGINE_FIRES(Local_3497.f_0, true);
+		VEHICLE::SET_VEHICLE_ENGINE_ON(Local_3497.f_0, true, true, false);
+		AUDIO::SET_VEHICLE_AUDIO_BODY_DAMAGE_FACTOR(Local_3497.f_0, 1f);
+		VEHICLE::SET_VEHICLE_ENGINE_HEALTH(Local_3497.f_0, 0f);
 	}
-	if (func_22(Local_534.f_0))
+	if (func_22(Local_3483.f_0))
 	{
 		func_383(1090519040);
-		if (ENTITY::GET_ENTITY_HEALTH(Local_534.f_0) > 110)
+		if (ENTITY::GET_ENTITY_HEALTH(Local_3483.f_0) > 110)
 		{
-			ENTITY::SET_ENTITY_HEALTH(Local_534.f_0, 110, 0);
-			PED::SET_PED_SUFFERS_CRITICAL_HITS(Local_534.f_0, true);
+			ENTITY::SET_ENTITY_HEALTH(Local_3483.f_0, 110, 0);
+			PED::SET_PED_SUFFERS_CRITICAL_HITS(Local_3483.f_0, true);
 		}
 	}
 	if (!CAM::IS_SPHERE_VISIBLE(393.38f, -617.53f, 27.91f, 30f))
@@ -41582,15 +41582,15 @@ void func_396()//Position - 0x2F260
 	int iVar1;
 	int iVar2;
 	
-	iVar0 = iLocal_248;
-	iVar1 = iLocal_251;
+	iVar0 = iLocal_2831;
+	iVar1 = iLocal_3004;
 	iVar2 = 0;
 	iVar2 = 0;
 	while (iVar2 < iVar0)
 	{
-		if (iLocal_192[iVar2] > 0)
+		if (iLocal_1319[iVar2] > 0)
 		{
-			VEHICLE::REMOVE_VEHICLE_RECORDING(iLocal_192[iVar2], sLocal_359);
+			VEHICLE::REMOVE_VEHICLE_RECORDING(iLocal_1319[iVar2], sLocal_3296);
 		}
 		iVar2++;
 	}
@@ -41598,9 +41598,9 @@ void func_396()//Position - 0x2F260
 	iVar2 = 0;
 	while (iVar2 < iVar1)
 	{
-		if (iLocal_195[iVar2] > 0)
+		if (iLocal_1577[iVar2] > 0)
 		{
-			VEHICLE::REMOVE_VEHICLE_RECORDING(iLocal_195[iVar2], sLocal_359);
+			VEHICLE::REMOVE_VEHICLE_RECORDING(iLocal_1577[iVar2], sLocal_3296);
 		}
 		iVar2++;
 	}
@@ -41608,37 +41608,37 @@ void func_396()//Position - 0x2F260
 
 void func_397()//Position - 0x2F2D0
 {
-	iLocal_132 = 1;
+	iLocal_134 = 1;
 }
 
 void func_398()//Position - 0x2F2DB
 {
-	if (!iLocal_304)
+	if (!iLocal_3229)
 	{
-		if (fLocal_341 > 124136f)
+		if (fLocal_3266 > 124136f)
 		{
-			if (func_22(Local_534.f_0))
+			if (func_22(Local_3483.f_0))
 			{
-				if (ENTITY::GET_ENTITY_HEALTH(Local_534.f_0) < 200)
+				if (ENTITY::GET_ENTITY_HEALTH(Local_3483.f_0) < 200)
 				{
-					ENTITY::SET_ENTITY_HEALTH(Local_534.f_0, 200, 0);
+					ENTITY::SET_ENTITY_HEALTH(Local_3483.f_0, 200, 0);
 				}
 			}
-			if (func_15(Local_536.f_0))
+			if (func_15(Local_3497.f_0))
 			{
-				ENTITY::SET_ENTITY_HEALTH(Local_536.f_0, 1000, 0);
-				if (!VEHICLE::IS_VEHICLE_DOOR_DAMAGED(Local_536.f_0, 4))
+				ENTITY::SET_ENTITY_HEALTH(Local_3497.f_0, 1000, 0);
+				if (!VEHICLE::IS_VEHICLE_DOOR_DAMAGED(Local_3497.f_0, 4))
 				{
-					VEHICLE::SET_VEHICLE_DOOR_BROKEN(Local_536.f_0, 4, true);
+					VEHICLE::SET_VEHICLE_DOOR_BROKEN(Local_3497.f_0, 4, true);
 				}
-				VEHICLE::SET_VEHICLE_TYRES_CAN_BURST(Local_536.f_0, true);
-				VEHICLE::SMASH_VEHICLE_WINDOW(Local_536.f_0, 0);
-				VEHICLE::SMASH_VEHICLE_WINDOW(Local_536.f_0, 1);
-				VEHICLE::POP_OUT_VEHICLE_WINDSCREEN(Local_536.f_0);
-				VEHICLE::SET_VEHICLE_DAMAGE(Local_536.f_0, 0f, 1f, 0.1f, 800f, 1850f, true);
-				VEHICLE::SET_VEHICLE_DAMAGE(Local_536.f_0, -0.2f, 1f, 0.5f, 50f, 650f, true);
-				VEHICLE::SET_VEHICLE_DAMAGE(Local_536.f_0, -0.7f, -0.2f, 0.3f, 50f, 500f, true);
-				iLocal_304 = 1;
+				VEHICLE::SET_VEHICLE_TYRES_CAN_BURST(Local_3497.f_0, true);
+				VEHICLE::SMASH_VEHICLE_WINDOW(Local_3497.f_0, 0);
+				VEHICLE::SMASH_VEHICLE_WINDOW(Local_3497.f_0, 1);
+				VEHICLE::POP_OUT_VEHICLE_WINDSCREEN(Local_3497.f_0);
+				VEHICLE::SET_VEHICLE_DAMAGE(Local_3497.f_0, 0f, 1f, 0.1f, 800f, 1850f, true);
+				VEHICLE::SET_VEHICLE_DAMAGE(Local_3497.f_0, -0.2f, 1f, 0.5f, 50f, 650f, true);
+				VEHICLE::SET_VEHICLE_DAMAGE(Local_3497.f_0, -0.7f, -0.2f, 0.3f, 50f, 500f, true);
+				iLocal_3229 = 1;
 			}
 		}
 	}
@@ -41646,13 +41646,13 @@ void func_398()//Position - 0x2F2DB
 
 void func_399()//Position - 0x2F3BA
 {
-	if (((((((((((fLocal_341 > 3000f && fLocal_341 < 3800f) || (fLocal_341 > 14750f && fLocal_341 < 15250f)) || (fLocal_341 > 28500f && fLocal_341 < 29400f)) || (fLocal_341 > 34000f && fLocal_341 < 35250f)) || (fLocal_341 > 38800f && fLocal_341 < 41000f)) || (fLocal_341 > 47000f && fLocal_341 < 48300f)) || (fLocal_341 > 56000f && fLocal_341 < 57200f)) || (fLocal_341 > 66750f && fLocal_341 < 67250f)) || (fLocal_341 > 68500f && fLocal_341 < 70500f)) || (fLocal_341 > 101500f && fLocal_341 < 102500f)) || (fLocal_341 > 114500f && fLocal_341 < 116500f))
+	if (((((((((((fLocal_3266 > 3000f && fLocal_3266 < 3800f) || (fLocal_3266 > 14750f && fLocal_3266 < 15250f)) || (fLocal_3266 > 28500f && fLocal_3266 < 29400f)) || (fLocal_3266 > 34000f && fLocal_3266 < 35250f)) || (fLocal_3266 > 38800f && fLocal_3266 < 41000f)) || (fLocal_3266 > 47000f && fLocal_3266 < 48300f)) || (fLocal_3266 > 56000f && fLocal_3266 < 57200f)) || (fLocal_3266 > 66750f && fLocal_3266 < 67250f)) || (fLocal_3266 > 68500f && fLocal_3266 < 70500f)) || (fLocal_3266 > 101500f && fLocal_3266 < 102500f)) || (fLocal_3266 > 114500f && fLocal_3266 < 116500f))
 	{
-		VEHICLE::SET_VEHICLE_BRAKE_LIGHTS(Local_536.f_0, true);
+		VEHICLE::SET_VEHICLE_BRAKE_LIGHTS(Local_3497.f_0, true);
 	}
-	if ((((((fLocal_341 > 6500f && fLocal_341 < 7000f) || (fLocal_341 > 7500f && fLocal_341 < 8500f)) || (fLocal_341 > 10500f && fLocal_341 < 11250f)) || (fLocal_341 > 11750f && fLocal_341 < 12250f)) || (fLocal_341 > 13250f && fLocal_341 < 13500f)) || (fLocal_341 > 14000f && fLocal_341 < 14500f))
+	if ((((((fLocal_3266 > 6500f && fLocal_3266 < 7000f) || (fLocal_3266 > 7500f && fLocal_3266 < 8500f)) || (fLocal_3266 > 10500f && fLocal_3266 < 11250f)) || (fLocal_3266 > 11750f && fLocal_3266 < 12250f)) || (fLocal_3266 > 13250f && fLocal_3266 < 13500f)) || (fLocal_3266 > 14000f && fLocal_3266 < 14500f))
 	{
-		AUDIO::SET_HORN_PERMANENTLY_ON(Local_536.f_0);
+		AUDIO::SET_HORN_PERMANENTLY_ON(Local_3497.f_0);
 	}
 }
 
@@ -41678,7 +41678,7 @@ void func_400(float fParam0, float fParam1)//Position - 0x2F5B8
 	bVar0 = true;
 	if (bVar0)
 	{
-		if (func_15(Local_535.f_0))
+		if (func_15(Local_3490.f_0))
 		{
 			fVar1 = *fParam0;
 			fVar2 = 9f;
@@ -41797,7 +41797,7 @@ void func_400(float fParam0, float fParam1)//Position - 0x2F5B8
 				fVar4 = 70f;
 				fVar9 = 2f;
 			}
-			func_408(&fVar1, &Local_535, Local_536.f_0, fVar2, fVar3, fVar4, fVar5, fVar6, 1f, fVar7, fVar8, fVar9, 1, 0, 1097859072, 1);
+			func_408(&fVar1, &Local_3490, Local_3497.f_0, fVar2, fVar3, fVar4, fVar5, fVar6, 1f, fVar7, fVar8, fVar9, 1, 0, 1097859072, 1);
 			if (fParam1 > 114500f)
 			{
 				if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), 290.1243f, -545.2184f, 38.397015f, 448.90536f, -554.20013f, 48.652863f, 19.25f, false, true, 0))
@@ -41906,7 +41906,7 @@ void func_400(float fParam0, float fParam1)//Position - 0x2F5B8
 			fVar14 = 65f;
 			fVar15 = 2f;
 		}
-		func_401(Local_536.f_0, PLAYER::PLAYER_PED_ID(), &fVar11, 1f, fVar12, fVar13, fVar14, fVar15, 1065353216, 1060320051, 1);
+		func_401(Local_3497.f_0, PLAYER::PLAYER_PED_ID(), &fVar11, 1f, fVar12, fVar13, fVar14, fVar15, 1065353216, 1060320051, 1);
 		if (fParam1 > 114500f && fParam1 < 118000f)
 		{
 			fVar11 = 2.2f;
@@ -41936,17 +41936,17 @@ void func_401(int iParam0, int iParam1, var uParam2, float fParam3, float fParam
 	int iVar9;
 	int iVar10;
 	
-	if (iLocal_134 == 0)
+	if (iLocal_136 == 0)
 	{
 		if (*uParam2 < fParam3)
 		{
 			*uParam2 = fParam3;
-			iLocal_134 = 1;
+			iLocal_136 = 1;
 		}
 	}
 	if (fParam8 < 0f)
 	{
-		fParam8 = fLocal_182;
+		fParam8 = fLocal_1309;
 	}
 	fVar0 = (fParam3 * fParam7);
 	if (!fVar0 > fParam3)
@@ -42012,14 +42012,14 @@ void func_401(int iParam0, int iParam1, var uParam2, float fParam3, float fParam
 		else if (fVar2 > fParam6)
 		{
 			fVar4 = fVar5;
-			iLocal_135 = 1;
+			iLocal_137 = 1;
 		}
-		else if (iLocal_135)
+		else if (iLocal_137)
 		{
 			if (fVar2 < fVar6)
 			{
 				fVar4 = fParam3;
-				iLocal_135 = 0;
+				iLocal_137 = 0;
 			}
 			else
 			{
@@ -42035,7 +42035,7 @@ void func_401(int iParam0, int iParam1, var uParam2, float fParam3, float fParam
 	if (fVar1 > 0f)
 	{
 		fVar1 = MISC::GET_FRAME_TIME();
-		fVar8 = ((fLocal_189 * fParam3) * fVar1);
+		fVar8 = ((fLocal_1316 * fParam3) * fVar1);
 		fVar1 = (fVar4 - *uParam2);
 		if (fVar1 > fVar8)
 		{
@@ -42046,7 +42046,7 @@ void func_401(int iParam0, int iParam1, var uParam2, float fParam3, float fParam
 	else
 	{
 		fVar1 = MISC::GET_FRAME_TIME();
-		fVar8 = ((fLocal_190 * fParam3) * fVar1);
+		fVar8 = ((fLocal_1317 * fParam3) * fVar1);
 		fVar1 = (fVar4 - *uParam2);
 		if (fVar1 < (fVar8 * -1f))
 		{
@@ -42076,18 +42076,18 @@ void func_401(int iParam0, int iParam1, var uParam2, float fParam3, float fParam
 							fVar1 = (fVar1 - fParam3);
 							fVar1 = (fVar1 / (fVar0 - fParam3));
 							fVar1 = (fVar1 * fParam8);
-							fVar1 = (fVar1 * (fLocal_180 - fLocal_181));
-							fVar1 = (fVar1 + fLocal_181);
-							fLocal_179 = fVar1;
-							if (fLocal_179 < fLocal_181)
+							fVar1 = (fVar1 * (fLocal_1307 - fLocal_1308));
+							fVar1 = (fVar1 + fLocal_1308);
+							fLocal_1306 = fVar1;
+							if (fLocal_1306 < fLocal_1308)
 							{
-								fLocal_179 = fLocal_181;
+								fLocal_1306 = fLocal_1308;
 							}
-							if (fLocal_179 > fLocal_180)
+							if (fLocal_1306 > fLocal_1307)
 							{
-								fLocal_179 = fLocal_180;
+								fLocal_1306 = fLocal_1307;
 							}
-							PLAYER::SET_AIR_DRAG_MULTIPLIER_FOR_PLAYERS_VEHICLE(PLAYER::PLAYER_ID(), fLocal_179);
+							PLAYER::SET_AIR_DRAG_MULTIPLIER_FOR_PLAYERS_VEHICLE(PLAYER::PLAYER_ID(), fLocal_1306);
 						}
 					}
 				}
@@ -42099,11 +42099,11 @@ void func_401(int iParam0, int iParam1, var uParam2, float fParam3, float fParam
 float func_402(int iParam0, int iParam1)//Position - 0x30003
 {
 	struct<2> Var0;
-	struct<3> Var1;
-	struct<3> Var2;
 	struct<3> Var3;
-	float fVar4;
-	int iVar5;
+	struct<3> Var6;
+	struct<3> Var9;
+	float fVar12;
+	int iVar13;
 	
 	if (!ENTITY::IS_ENTITY_DEAD(iParam0, false))
 	{
@@ -42112,29 +42112,29 @@ float func_402(int iParam0, int iParam1)//Position - 0x30003
 	}
 	if (!ENTITY::IS_ENTITY_DEAD(iParam1, false))
 	{
-		Var1 = { ENTITY::GET_ENTITY_COORDS(iParam1, true) };
+		Var3 = { ENTITY::GET_ENTITY_COORDS(iParam1, true) };
 		if (PED::IS_PED_IN_ANY_VEHICLE(iParam1, false))
 		{
-			iVar5 = PED::GET_VEHICLE_PED_IS_IN(iParam1, false);
-			Var3.f_0 = ENTITY::GET_ENTITY_FORWARD_X(iVar5);
-			Var3.f_1 = ENTITY::GET_ENTITY_FORWARD_Y(iVar5);
+			iVar13 = PED::GET_VEHICLE_PED_IS_IN(iParam1, false);
+			Var9.f_0 = ENTITY::GET_ENTITY_FORWARD_X(iVar13);
+			Var9.f_1 = ENTITY::GET_ENTITY_FORWARD_Y(iVar13);
 		}
 		else
 		{
-			Var2 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iParam1, 0f, 5f, 0f) };
-			Var3 = { Var2 - Var1 };
+			Var6 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iParam1, 0f, 5f, 0f) };
+			Var9 = { Var6 - Var3 };
 		}
 	}
-	fVar4 = MISC::GET_ANGLE_BETWEEN_2D_VECTORS(Var0.f_0, Var0.f_1, Var3.f_0, Var3.f_1);
-	return fVar4;
+	fVar12 = MISC::GET_ANGLE_BETWEEN_2D_VECTORS(Var0.f_0, Var0.f_1, Var9.f_0, Var9.f_1);
+	return fVar12;
 }
 
 float func_403(int iParam0, int iParam1)//Position - 0x30094
 {
 	struct<3> Var0;
-	struct<3> Var1;
-	struct<3> Var2;
-	float fVar3;
+	struct<3> Var3;
+	struct<3> Var6;
+	float fVar9;
 	
 	if (!ENTITY::IS_ENTITY_DEAD(iParam0, false))
 	{
@@ -42142,22 +42142,22 @@ float func_403(int iParam0, int iParam1)//Position - 0x30094
 	}
 	if (!ENTITY::IS_ENTITY_DEAD(iParam1, false))
 	{
-		Var1 = { ENTITY::GET_ENTITY_COORDS(iParam1, true) };
+		Var3 = { ENTITY::GET_ENTITY_COORDS(iParam1, true) };
 	}
-	Var2 = { Var1 - Var0 };
-	Var2.f_2 = 0f;
-	fVar3 = SYSTEM::VMAG(Var2);
-	return fVar3;
+	Var6 = { Var3 - Var0 };
+	Var6.f_2 = 0f;
+	fVar9 = SYSTEM::VMAG(Var6);
+	return fVar9;
 }
 
 int func_404(int iParam0, int iParam1)//Position - 0x300E6
 {
 	struct<3> Var0;
-	struct<3> Var1;
-	struct<3> Var2;
 	struct<3> Var3;
-	struct<3> Var4;
-	float fVar5;
+	struct<3> Var6;
+	struct<3> Var9;
+	struct<3> Var12;
+	float fVar15;
 	
 	if (!PED::IS_PED_INJURED(iParam0))
 	{
@@ -42175,53 +42175,53 @@ int func_404(int iParam0, int iParam1)//Position - 0x300E6
 	}
 	if (VEHICLE::IS_VEHICLE_DRIVEABLE(iParam1, false))
 	{
-		Var1 = { ENTITY::GET_ENTITY_COORDS(iParam1, true) };
-		Var2 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iParam1, 0f, 5f, 0f) };
-		Var4 = { Var2 - Var1 };
+		Var3 = { ENTITY::GET_ENTITY_COORDS(iParam1, true) };
+		Var6 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iParam1, 0f, 5f, 0f) };
+		Var12 = { Var6 - Var3 };
 	}
-	Var3 = { Var1 - Var0 };
-	Var3.f_2 = 0f;
-	Var4.f_2 = 0f;
-	fVar5 = func_405(Var3, Var4);
-	if (fVar5 < 0f)
+	Var9 = { Var3 - Var0 };
+	Var9.f_2 = 0f;
+	Var12.f_2 = 0f;
+	fVar15 = func_405(Var9, Var12);
+	if (fVar15 < 0f)
 	{
 		return 1;
 	}
 	return 0;
 }
 
-float func_405(struct<3> Param0, struct<3> Param1)//Position - 0x30189
+float func_405(struct<3> Param0, struct<3> Param3)//Position - 0x30189
 {
-	return (((Param0.f_0 * Param1.f_0) + (Param0.f_1 * Param1.f_1)) + (Param0.f_2 * Param1.f_2));
+	return (((Param0.f_0 * Param3.f_0) + (Param0.f_1 * Param3.f_1)) + (Param0.f_2 * Param3.f_2));
 }
 
 float func_406(int iParam0, int iParam1)//Position - 0x301AA
 {
 	struct<2> Var0;
-	struct<3> Var1;
-	struct<3> Var2;
 	struct<3> Var3;
-	float fVar4;
+	struct<3> Var6;
+	struct<3> Var9;
+	float fVar12;
 	
 	if (VEHICLE::IS_VEHICLE_DRIVEABLE(iParam0, false))
 	{
 		Var0.f_0 = ENTITY::GET_ENTITY_FORWARD_X(iParam0);
 		Var0.f_1 = ENTITY::GET_ENTITY_FORWARD_Y(iParam0);
-		Var2 = { ENTITY::GET_ENTITY_COORDS(iParam0, true) };
+		Var6 = { ENTITY::GET_ENTITY_COORDS(iParam0, true) };
 	}
 	if (!ENTITY::IS_ENTITY_DEAD(iParam1, false))
 	{
-		Var3 = { ENTITY::GET_ENTITY_COORDS(iParam1, true) };
+		Var9 = { ENTITY::GET_ENTITY_COORDS(iParam1, true) };
 	}
-	Var1 = { Var3 - Var2 };
-	fVar4 = MISC::GET_ANGLE_BETWEEN_2D_VECTORS(Var1.f_0, Var1.f_1, Var0.f_0, Var0.f_1);
-	fVar4 = (fVar4 + -90f);
-	if (fVar4 < 0f)
+	Var3 = { Var9 - Var6 };
+	fVar12 = MISC::GET_ANGLE_BETWEEN_2D_VECTORS(Var3.f_0, Var3.f_1, Var0.f_0, Var0.f_1);
+	fVar12 = (fVar12 + -90f);
+	if (fVar12 < 0f)
 	{
-		fVar4 = (fVar4 * -1f);
+		fVar12 = (fVar12 * -1f);
 	}
-	Var1.f_2 = 0f;
-	return (SYSTEM::VMAG(Var1) * SYSTEM::SIN(fVar4));
+	Var3.f_2 = 0f;
+	return (SYSTEM::VMAG(Var3) * SYSTEM::SIN(fVar12));
 }
 
 void func_407(var uParam0, float fParam1, float fParam2)//Position - 0x30239
@@ -42232,97 +42232,97 @@ void func_407(var uParam0, float fParam1, float fParam2)//Position - 0x30239
 void func_408(var uParam0, int iParam1, int iParam2, float fParam3, float fParam4, float fParam5, float fParam6, float fParam7, float fParam8, float fParam9, float fParam10, float fParam11, bool bParam12, float fParam13, float fParam14, int iParam15)//Position - 0x3025C
 {
 	struct<3> Var0;
-	struct<3> Var1;
-	struct<3> Var2;
-	float fVar3;
-	float fVar4;
-	float fVar5;
-	float fVar6;
-	int iVar7;
-	float fVar8;
+	struct<3> Var3;
+	struct<3> Var6;
 	float fVar9;
+	float fVar10;
+	float fVar11;
+	float fVar12;
+	int iVar13;
+	float fVar14;
+	float fVar15;
 	
 	Var0 = { ENTITY::GET_ENTITY_COORDS(*iParam1, true) };
-	Var1 = { ENTITY::GET_ENTITY_COORDS(iParam2, true) };
-	Var2 = { ENTITY::GET_OFFSET_FROM_ENTITY_GIVEN_WORLD_COORDS(iParam2, Var0) };
-	fVar3 = SYSTEM::VDIST(Var0, Var1);
-	fVar4 = 0f;
-	fVar5 = (fParam11 - 1f);
-	fVar6 = (1f - fParam9);
-	if (Var2.f_1 < 1f)
+	Var3 = { ENTITY::GET_ENTITY_COORDS(iParam2, true) };
+	Var6 = { ENTITY::GET_OFFSET_FROM_ENTITY_GIVEN_WORLD_COORDS(iParam2, Var0) };
+	fVar9 = SYSTEM::VDIST(Var0, Var3);
+	fVar10 = 0f;
+	fVar11 = (fParam11 - 1f);
+	fVar12 = (1f - fParam9);
+	if (Var6.f_1 < 1f)
 	{
-		if (fVar3 > fParam5)
+		if (fVar9 > fParam5)
 		{
-			iVar7 = 0;
-			if (fVar3 > fParam6)
+			iVar13 = 0;
+			if (fVar9 > fParam6)
 			{
-				if (fVar3 > (fParam6 * 2f))
+				if (fVar9 > (fParam6 * 2f))
 				{
-					iVar7 = 1;
+					iVar13 = 1;
 				}
-				fVar3 = fParam6;
+				fVar9 = fParam6;
 			}
-			fVar4 = ((fVar3 - fParam5) / (fParam6 - fParam5));
-			if (!ENTITY::IS_ENTITY_ON_SCREEN(iParam2) || iVar7)
+			fVar10 = ((fVar9 - fParam5) / (fParam6 - fParam5));
+			if (!ENTITY::IS_ENTITY_ON_SCREEN(iParam2) || iVar13)
 			{
-				*uParam0 = (fParam9 - ((fParam9 - fParam10) * fVar4));
+				*uParam0 = (fParam9 - ((fParam9 - fParam10) * fVar10));
 			}
 			else
 			{
 				*uParam0 = fParam9;
 			}
 		}
-		else if (fVar3 > fParam4)
+		else if (fVar9 > fParam4)
 		{
-			fVar4 = ((fVar3 - fParam4) / (fParam5 - fParam4));
-			*uParam0 = (1f - (fVar6 * fVar4));
+			fVar10 = ((fVar9 - fParam4) / (fParam5 - fParam4));
+			*uParam0 = (1f - (fVar12 * fVar10));
 		}
 		else
 		{
-			if (fVar3 < fParam3)
+			if (fVar9 < fParam3)
 			{
-				fVar3 = fParam3;
+				fVar9 = fParam3;
 			}
-			fVar4 = ((fParam4 - fVar3) / (fParam4 - fParam3));
+			fVar10 = ((fParam4 - fVar9) / (fParam4 - fParam3));
 			if (PLAYER::IS_SPECIAL_ABILITY_ACTIVE(PLAYER::PLAYER_ID(), 0) && iParam15)
 			{
-				*uParam0 = (1f + ((fVar4 * fVar5) * 2f));
+				*uParam0 = (1f + ((fVar10 * fVar11) * 2f));
 			}
 			else
 			{
-				*uParam0 = (1f + (fVar4 * fVar5));
+				*uParam0 = (1f + (fVar10 * fVar11));
 			}
 		}
 	}
 	else
 	{
-		if (fVar3 > fParam7)
+		if (fVar9 > fParam7)
 		{
-			fVar3 = fParam7;
+			fVar9 = fParam7;
 		}
-		fVar4 = (fVar3 / fParam7);
-		fVar8 = (ENTITY::GET_ENTITY_SPEED(iParam2) - ENTITY::GET_ENTITY_SPEED(*iParam1));
-		if (fVar8 > 0f)
+		fVar10 = (fVar9 / fParam7);
+		fVar14 = (ENTITY::GET_ENTITY_SPEED(iParam2) - ENTITY::GET_ENTITY_SPEED(*iParam1));
+		if (fVar14 > 0f)
 		{
-			fVar4 = (fVar4 * 0.5f);
+			fVar10 = (fVar10 * 0.5f);
 		}
 		if (PLAYER::IS_SPECIAL_ABILITY_ACTIVE(PLAYER::PLAYER_ID(), 0) && iParam15)
 		{
-			*uParam0 = (2f + fVar4);
+			*uParam0 = (2f + fVar10);
 		}
-		else if (ENTITY::GET_ENTITY_SPEED(*iParam1) < 5f && fVar8 > 0f)
+		else if (ENTITY::GET_ENTITY_SPEED(*iParam1) < 5f && fVar14 > 0f)
 		{
-			*uParam0 = (0.6f + fVar4);
+			*uParam0 = (0.6f + fVar10);
 		}
 		else
 		{
-			*uParam0 = (1f + fVar4);
+			*uParam0 = (1f + fVar10);
 		}
 	}
 	*uParam0 = (*uParam0 * fParam8);
 	if (bParam12)
 	{
-		fVar9 = fParam13;
+		fVar15 = fParam13;
 		if (PLAYER::IS_SPECIAL_ABILITY_ACTIVE(PLAYER::PLAYER_ID(), 0) && iParam15)
 		{
 			fParam14 = (fParam14 * 2f);
@@ -42330,9 +42330,9 @@ void func_408(var uParam0, int iParam1, int iParam2, float fParam3, float fParam
 		}
 		if (*uParam0 > 1f)
 		{
-			fVar9 = (fParam13 + ((fParam14 - fParam13) * (*uParam0 - 1f)));
+			fVar15 = (fParam13 + ((fParam14 - fParam13) * (*uParam0 - 1f)));
 		}
-		VEHICLE::MODIFY_VEHICLE_TOP_SPEED(*iParam1, -fVar9);
+		VEHICLE::MODIFY_VEHICLE_TOP_SPEED(*iParam1, -fVar15);
 	}
 }
 
@@ -42341,274 +42341,274 @@ void func_409()//Position - 0x30443
 	int iVar0;
 	int iVar1;
 	
-	if ((MISC::GET_GAME_TIMER() - iLocal_329) > 50)
+	if ((MISC::GET_GAME_TIMER() - iLocal_3254) > 50)
 	{
-		if (func_15(iLocal_251[3]))
+		if (func_15(iLocal_3004[3]))
 		{
-			if (fLocal_341 > 28750f && fLocal_341 < 29750f)
+			if (fLocal_3266 > 28750f && fLocal_3266 < 29750f)
 			{
-				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_251[3], 2);
-				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_251[3], 2f);
-				if (!iLocal_303[0])
+				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_3004[3], 2);
+				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_3004[3], 2f);
+				if (!iLocal_3216[0])
 				{
-					VEHICLE::START_VEHICLE_HORN(iLocal_251[3], 3500, MISC::GET_HASH_KEY("HELDDOWN"), false);
-					iLocal_303[0] = 1;
+					VEHICLE::START_VEHICLE_HORN(iLocal_3004[3], 3500, MISC::GET_HASH_KEY("HELDDOWN"), false);
+					iLocal_3216[0] = 1;
 				}
 			}
 			else
 			{
-				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_251[3], 1);
-				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_251[3], 1f);
+				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_3004[3], 1);
+				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_3004[3], 1f);
 			}
 		}
-		if (func_15(iLocal_251[5]))
+		if (func_15(iLocal_3004[5]))
 		{
-			if (fLocal_341 > 34500f && fLocal_341 < 35500f)
+			if (fLocal_3266 > 34500f && fLocal_3266 < 35500f)
 			{
-				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_251[5], 2);
-				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_251[5], 2f);
-				if (!iLocal_303[1])
+				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_3004[5], 2);
+				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_3004[5], 2f);
+				if (!iLocal_3216[1])
 				{
-					VEHICLE::START_VEHICLE_HORN(iLocal_251[5], 3000, MISC::GET_HASH_KEY("HELDDOWN"), false);
-					iLocal_303[1] = 1;
+					VEHICLE::START_VEHICLE_HORN(iLocal_3004[5], 3000, MISC::GET_HASH_KEY("HELDDOWN"), false);
+					iLocal_3216[1] = 1;
 				}
 			}
 			else
 			{
-				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_251[5], 1);
-				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_251[5], 1f);
+				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_3004[5], 1);
+				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_3004[5], 1f);
 			}
 		}
-		if (func_15(iLocal_251[8]))
+		if (func_15(iLocal_3004[8]))
 		{
-			if (!bLocal_301)
+			if (!bLocal_3214)
 			{
-				bLocal_301 = func_410(iLocal_251[8], joaat("S_M_Y_Garbage"), 26);
+				bLocal_3214 = func_410(iLocal_3004[8], joaat("S_M_Y_Garbage"), 26);
 			}
-			if (fLocal_341 > 46000f && fLocal_341 < 47000f)
+			if (fLocal_3266 > 46000f && fLocal_3266 < 47000f)
 			{
-				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_251[8], 2);
-				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_251[8], 2f);
-				if (!iLocal_303[2])
+				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_3004[8], 2);
+				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_3004[8], 2f);
+				if (!iLocal_3216[2])
 				{
-					VEHICLE::START_VEHICLE_HORN(iLocal_251[8], 3500, MISC::GET_HASH_KEY("HELDDOWN"), false);
-					iLocal_303[2] = 1;
+					VEHICLE::START_VEHICLE_HORN(iLocal_3004[8], 3500, MISC::GET_HASH_KEY("HELDDOWN"), false);
+					iLocal_3216[2] = 1;
 				}
 			}
-			else if (fLocal_341 > 47500f && fLocal_341 < 48500f)
+			else if (fLocal_3266 > 47500f && fLocal_3266 < 48500f)
 			{
-				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_251[8], 2);
-				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_251[8], 2f);
+				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_3004[8], 2);
+				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_3004[8], 2f);
 			}
 			else
 			{
-				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_251[8], 1);
-				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_251[8], 1f);
+				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_3004[8], 1);
+				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_3004[8], 1f);
 			}
 		}
-		if (func_15(iLocal_251[9]))
+		if (func_15(iLocal_3004[9]))
 		{
-			if (!bLocal_302)
+			if (!bLocal_3215)
 			{
-				bLocal_302 = func_410(iLocal_251[9], joaat("A_M_Y_Cyclist_01"), 26);
+				bLocal_3215 = func_410(iLocal_3004[9], joaat("A_M_Y_Cyclist_01"), 26);
 			}
 		}
-		if (func_15(iLocal_251[16]))
+		if (func_15(iLocal_3004[16]))
 		{
-			if (fLocal_341 > 69000f && fLocal_341 < 71000f)
+			if (fLocal_3266 > 69000f && fLocal_3266 < 71000f)
 			{
-				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_251[16], 2);
-				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_251[16], 2f);
-				if (!iLocal_303[3])
+				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_3004[16], 2);
+				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_3004[16], 2f);
+				if (!iLocal_3216[3])
 				{
-					VEHICLE::START_VEHICLE_HORN(iLocal_251[16], 3500, MISC::GET_HASH_KEY("HELDDOWN"), false);
-					iLocal_303[3] = 1;
-				}
-			}
-			else
-			{
-				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_251[16], 1);
-				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_251[16], 1f);
-			}
-		}
-		if (func_15(iLocal_248[17]))
-		{
-			if (!iLocal_303[4])
-			{
-				if (fLocal_341 > 78700f && fLocal_341 < 79300f)
-				{
-					VEHICLE::START_VEHICLE_HORN(iLocal_248[17], 3000, MISC::GET_HASH_KEY("HELDDOWN"), false);
-					iLocal_303[4] = 1;
-				}
-			}
-		}
-		if (func_15(iLocal_248[19]))
-		{
-			if (!iLocal_303[4])
-			{
-				if (fLocal_341 > 79950f && fLocal_341 < 82300f)
-				{
-					VEHICLE::START_VEHICLE_HORN(iLocal_248[19], 3000, MISC::GET_HASH_KEY("HELDDOWN"), false);
-					iLocal_303[4] = 1;
-				}
-			}
-		}
-		if (func_15(iLocal_251[20]))
-		{
-			if (!iLocal_303[5])
-			{
-				if (fLocal_341 > 84000f && fLocal_341 < 84750f)
-				{
-					VEHICLE::START_VEHICLE_HORN(iLocal_251[20], 3000, MISC::GET_HASH_KEY("HELDDOWN"), false);
-					iLocal_303[5] = 1;
-				}
-			}
-		}
-		if (func_15(iLocal_251[21]))
-		{
-			if (fLocal_341 > 88000f && fLocal_341 < 90502f)
-			{
-				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_251[21], 2);
-				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_251[21], 2f);
-				if (!iLocal_303[6])
-				{
-					VEHICLE::START_VEHICLE_HORN(iLocal_251[21], 3500, MISC::GET_HASH_KEY("HELDDOWN"), false);
-					iLocal_303[6] = 1;
+					VEHICLE::START_VEHICLE_HORN(iLocal_3004[16], 3500, MISC::GET_HASH_KEY("HELDDOWN"), false);
+					iLocal_3216[3] = 1;
 				}
 			}
 			else
 			{
-				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_251[21], 1);
-				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_251[21], 1f);
+				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_3004[16], 1);
+				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_3004[16], 1f);
 			}
 		}
-		if (func_15(iLocal_251[23]))
+		if (func_15(iLocal_2831[17]))
 		{
-			if (fLocal_341 > 84800f && fLocal_341 < 87000f)
+			if (!iLocal_3216[4])
 			{
-				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_251[23], 2);
-				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_251[23], 2f);
-				if (!iLocal_303[7])
+				if (fLocal_3266 > 78700f && fLocal_3266 < 79300f)
 				{
-					VEHICLE::START_VEHICLE_HORN(iLocal_251[23], 3500, MISC::GET_HASH_KEY("HELDDOWN"), false);
-					iLocal_303[7] = 1;
+					VEHICLE::START_VEHICLE_HORN(iLocal_2831[17], 3000, MISC::GET_HASH_KEY("HELDDOWN"), false);
+					iLocal_3216[4] = 1;
+				}
+			}
+		}
+		if (func_15(iLocal_2831[19]))
+		{
+			if (!iLocal_3216[4])
+			{
+				if (fLocal_3266 > 79950f && fLocal_3266 < 82300f)
+				{
+					VEHICLE::START_VEHICLE_HORN(iLocal_2831[19], 3000, MISC::GET_HASH_KEY("HELDDOWN"), false);
+					iLocal_3216[4] = 1;
+				}
+			}
+		}
+		if (func_15(iLocal_3004[20]))
+		{
+			if (!iLocal_3216[5])
+			{
+				if (fLocal_3266 > 84000f && fLocal_3266 < 84750f)
+				{
+					VEHICLE::START_VEHICLE_HORN(iLocal_3004[20], 3000, MISC::GET_HASH_KEY("HELDDOWN"), false);
+					iLocal_3216[5] = 1;
+				}
+			}
+		}
+		if (func_15(iLocal_3004[21]))
+		{
+			if (fLocal_3266 > 88000f && fLocal_3266 < 90502f)
+			{
+				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_3004[21], 2);
+				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_3004[21], 2f);
+				if (!iLocal_3216[6])
+				{
+					VEHICLE::START_VEHICLE_HORN(iLocal_3004[21], 3500, MISC::GET_HASH_KEY("HELDDOWN"), false);
+					iLocal_3216[6] = 1;
 				}
 			}
 			else
 			{
-				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_251[23], 1);
-				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_251[23], 1f);
+				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_3004[21], 1);
+				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_3004[21], 1f);
 			}
 		}
-		if (func_15(iLocal_248[21]))
+		if (func_15(iLocal_3004[23]))
 		{
-			if (!iLocal_303[8])
+			if (fLocal_3266 > 84800f && fLocal_3266 < 87000f)
 			{
-				if (fLocal_341 > 98800f && fLocal_341 < 99400f)
+				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_3004[23], 2);
+				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_3004[23], 2f);
+				if (!iLocal_3216[7])
 				{
-					VEHICLE::START_VEHICLE_HORN(iLocal_248[21], 2000, MISC::GET_HASH_KEY("HELDDOWN"), false);
-					iLocal_303[8] = 1;
-				}
-			}
-		}
-		if (func_15(iLocal_248[23]))
-		{
-			if (fLocal_341 > 91200f && fLocal_341 < 92200f)
-			{
-				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_248[23], 2);
-				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_248[23], 2f);
-				if (!iLocal_303[9])
-				{
-					VEHICLE::START_VEHICLE_HORN(iLocal_248[23], 2000, MISC::GET_HASH_KEY("HELDDOWN"), false);
-					iLocal_303[9] = 1;
+					VEHICLE::START_VEHICLE_HORN(iLocal_3004[23], 3500, MISC::GET_HASH_KEY("HELDDOWN"), false);
+					iLocal_3216[7] = 1;
 				}
 			}
 			else
 			{
-				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_248[23], 1);
-				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_248[23], 1f);
+				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_3004[23], 1);
+				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_3004[23], 1f);
 			}
 		}
-		if (func_15(iLocal_251[28]))
+		if (func_15(iLocal_2831[21]))
 		{
-			if (fLocal_341 > 93500f && fLocal_341 < 95000f)
+			if (!iLocal_3216[8])
 			{
-				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_251[28], 2);
-				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_251[28], 2f);
-				if (!iLocal_303[10])
+				if (fLocal_3266 > 98800f && fLocal_3266 < 99400f)
 				{
-					VEHICLE::START_VEHICLE_HORN(iLocal_251[28], 3500, MISC::GET_HASH_KEY("HELDDOWN"), false);
-					iLocal_303[10] = 1;
+					VEHICLE::START_VEHICLE_HORN(iLocal_2831[21], 2000, MISC::GET_HASH_KEY("HELDDOWN"), false);
+					iLocal_3216[8] = 1;
+				}
+			}
+		}
+		if (func_15(iLocal_2831[23]))
+		{
+			if (fLocal_3266 > 91200f && fLocal_3266 < 92200f)
+			{
+				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_2831[23], 2);
+				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_2831[23], 2f);
+				if (!iLocal_3216[9])
+				{
+					VEHICLE::START_VEHICLE_HORN(iLocal_2831[23], 2000, MISC::GET_HASH_KEY("HELDDOWN"), false);
+					iLocal_3216[9] = 1;
 				}
 			}
 			else
 			{
-				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_251[28], 1);
-				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_251[28], 1f);
+				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_2831[23], 1);
+				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_2831[23], 1f);
 			}
 		}
-		if (func_15(iLocal_251[29]))
+		if (func_15(iLocal_3004[28]))
 		{
-			if (!iLocal_303[11])
+			if (fLocal_3266 > 93500f && fLocal_3266 < 95000f)
 			{
-				if (fLocal_341 > 104500f && fLocal_341 < 105000f)
+				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_3004[28], 2);
+				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_3004[28], 2f);
+				if (!iLocal_3216[10])
 				{
-					VEHICLE::START_VEHICLE_HORN(iLocal_251[29], 2000, MISC::GET_HASH_KEY("HELDDOWN"), false);
-					iLocal_303[11] = 1;
+					VEHICLE::START_VEHICLE_HORN(iLocal_3004[28], 3500, MISC::GET_HASH_KEY("HELDDOWN"), false);
+					iLocal_3216[10] = 1;
+				}
+			}
+			else
+			{
+				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_3004[28], 1);
+				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_3004[28], 1f);
+			}
+		}
+		if (func_15(iLocal_3004[29]))
+		{
+			if (!iLocal_3216[11])
+			{
+				if (fLocal_3266 > 104500f && fLocal_3266 < 105000f)
+				{
+					VEHICLE::START_VEHICLE_HORN(iLocal_3004[29], 2000, MISC::GET_HASH_KEY("HELDDOWN"), false);
+					iLocal_3216[11] = 1;
 				}
 			}
 		}
-		if (func_15(iLocal_250[31]))
+		if (func_15(iLocal_2933[31]))
 		{
-			if (!VEHICLE::IS_VEHICLE_DOOR_FULLY_OPEN(iLocal_250[31], 2))
+			if (!VEHICLE::IS_VEHICLE_DOOR_FULLY_OPEN(iLocal_2933[31], 2))
 			{
-				VEHICLE::SET_VEHICLE_DOOR_OPEN(iLocal_250[31], 2, false, false);
+				VEHICLE::SET_VEHICLE_DOOR_OPEN(iLocal_2933[31], 2, false, false);
 			}
-			if (!VEHICLE::IS_VEHICLE_DOOR_FULLY_OPEN(iLocal_250[31], 3))
+			if (!VEHICLE::IS_VEHICLE_DOOR_FULLY_OPEN(iLocal_2933[31], 3))
 			{
-				VEHICLE::SET_VEHICLE_DOOR_OPEN(iLocal_250[31], 3, false, false);
+				VEHICLE::SET_VEHICLE_DOOR_OPEN(iLocal_2933[31], 3, false, false);
 			}
-			if (!VEHICLE::IS_VEHICLE_SIREN_ON(iLocal_250[31]))
+			if (!VEHICLE::IS_VEHICLE_SIREN_ON(iLocal_2933[31]))
 			{
-				VEHICLE::SET_VEHICLE_SIREN(iLocal_250[31], true);
+				VEHICLE::SET_VEHICLE_SIREN(iLocal_2933[31], true);
 			}
 		}
-		if (func_15(iLocal_251[22]))
+		if (func_15(iLocal_3004[22]))
 		{
-			if (!VEHICLE::IS_VEHICLE_SIREN_ON(iLocal_251[22]))
+			if (!VEHICLE::IS_VEHICLE_SIREN_ON(iLocal_3004[22]))
 			{
-				VEHICLE::SET_VEHICLE_SIREN(iLocal_251[22], true);
+				VEHICLE::SET_VEHICLE_SIREN(iLocal_3004[22], true);
 			}
 		}
-		if (func_15(iLocal_251[19]))
+		if (func_15(iLocal_3004[19]))
 		{
 			iVar0 = -1;
 			iVar1 = -1;
-			VEHICLE::GET_VEHICLE_LIGHTS_STATE(iLocal_251[19], &iVar0, &iVar1);
+			VEHICLE::GET_VEHICLE_LIGHTS_STATE(iLocal_3004[19], &iVar0, &iVar1);
 			if (iVar0 != 1)
 			{
-				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_251[19], 2);
-				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_251[19], 2f);
+				VEHICLE::SET_VEHICLE_LIGHTS(iLocal_3004[19], 2);
+				VEHICLE::SET_VEHICLE_LIGHT_MULTIPLIER(iLocal_3004[19], 2f);
 			}
-			if (iLocal_332 == -1)
+			if (iLocal_3257 == -1)
 			{
-				if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_251[19]))
+				if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_3004[19]))
 				{
-					iLocal_332 = AUDIO::GET_SOUND_ID();
-					AUDIO::PLAY_SOUND_FROM_ENTITY(iLocal_332, "FAKE_REVS_VEHICLE_02", iLocal_251[19], "NIGEL_02_SOUNDSET", false, 0);
+					iLocal_3257 = AUDIO::GET_SOUND_ID();
+					AUDIO::PLAY_SOUND_FROM_ENTITY(iLocal_3257, "FAKE_REVS_VEHICLE_02", iLocal_3004[19], "NIGEL_02_SOUNDSET", false, 0);
 				}
 			}
-			else if (!AUDIO::HAS_SOUND_FINISHED(iLocal_332))
+			else if (!AUDIO::HAS_SOUND_FINISHED(iLocal_3257))
 			{
-				if (!VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_251[19]))
+				if (!VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_3004[19]))
 				{
-					AUDIO::STOP_SOUND(iLocal_332);
-					AUDIO::RELEASE_SOUND_ID(iLocal_332);
-					iLocal_332 = -1;
+					AUDIO::STOP_SOUND(iLocal_3257);
+					AUDIO::RELEASE_SOUND_ID(iLocal_3257);
+					iLocal_3257 = -1;
 				}
 			}
 		}
-		iLocal_329 = MISC::GET_GAME_TIMER();
+		iLocal_3254 = MISC::GET_GAME_TIMER();
 	}
 }
 
@@ -42653,14 +42653,14 @@ int func_410(int iParam0, int iParam1, int iParam2)//Position - 0x30BB1
 				iVar2 = PED::CREATE_PED_INSIDE_VEHICLE(iParam0, iParam2, iParam1, -1, false, false);
 				if (func_412(ENTITY::GET_ENTITY_MODEL(iParam0)))
 				{
-					PED::SET_PED_RELATIONSHIP_GROUP_HASH(iVar2, iLocal_241);
+					PED::SET_PED_RELATIONSHIP_GROUP_HASH(iVar2, iLocal_2599);
 				}
 				PED::SET_PED_RANDOM_COMPONENT_VARIATION(iVar2, 0);
 				PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iVar2, true);
 				ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_PLAYER(iVar2, true);
 				PED::SET_PED_SUFFERS_CRITICAL_HITS(iVar2, false);
 				PED::SET_PED_CONFIG_FLAG(iVar2, 32, false);
-				if (bLocal_151)
+				if (bLocal_153)
 				{
 					PED::SET_PED_FLEE_ATTRIBUTES(iVar2, 8192, true);
 					PED::SET_PED_FLEE_ATTRIBUTES(iVar2, 65536, true);
@@ -42697,14 +42697,14 @@ void func_413(int iParam0, float fParam1)//Position - 0x30D3D
 {
 	float fVar0;
 	struct<3> Var1;
-	int iVar2;
+	int iVar4;
 	
 	fVar0 = MISC::GET_FRAME_TIME();
 	fVar0 = (fVar0 * 1000f);
-	bLocal_149 = false;
-	if (!bLocal_131)
+	bLocal_151 = false;
+	if (!bLocal_133)
 	{
-		if (bLocal_130)
+		if (bLocal_132)
 		{
 			func_434();
 			if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
@@ -42712,28 +42712,28 @@ void func_413(int iParam0, float fParam1)//Position - 0x30D3D
 				Var1 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
 				MISC::CLEAR_AREA(Var1, 1000f, true, false, false, false);
 			}
-			bLocal_131 = true;
+			bLocal_133 = true;
 		}
 	}
-	else if (!bLocal_130)
+	else if (!bLocal_132)
 	{
 		func_93();
-		bLocal_131 = false;
+		bLocal_133 = false;
 	}
-	if (bLocal_130)
+	if (bLocal_132)
 	{
 		fParam1 = 1f;
 		VEHICLE::SET_VEHICLE_DENSITY_MULTIPLIER_THIS_FRAME(0f);
 	}
-	if (!bLocal_124)
+	if (!bLocal_126)
 	{
-		if (iLocal_119)
+		if (iLocal_121)
 		{
-			fLocal_176 = 0f;
+			fLocal_1303 = 0f;
 		}
 		else
 		{
-			fLocal_176 = 1f;
+			fLocal_1303 = 1f;
 		}
 		if (VEHICLE::IS_VEHICLE_DRIVEABLE(iParam0, false))
 		{
@@ -42743,121 +42743,121 @@ void func_413(int iParam0, float fParam1)//Position - 0x30D3D
 				{
 					if (func_404(PLAYER::PLAYER_PED_ID(), iParam0))
 					{
-						iLocal_129 = 1;
+						iLocal_131 = 1;
 					}
 					else
 					{
-						iLocal_129 = 0;
+						iLocal_131 = 0;
 					}
 				}
-				fLocal_173 = VEHICLE::GET_TIME_POSITION_IN_RECORDING(iParam0);
-				VEHICLE::SET_PLAYBACK_SPEED(iParam0, ((fParam1 * fLocal_174) * fLocal_176));
-				if (bLocal_128)
+				fLocal_1300 = VEHICLE::GET_TIME_POSITION_IN_RECORDING(iParam0);
+				VEHICLE::SET_PLAYBACK_SPEED(iParam0, ((fParam1 * fLocal_1301) * fLocal_1303));
+				if (bLocal_130)
 				{
-					func_433(iParam0, fLocal_173);
-					func_432(iParam0, fLocal_183);
-					if (fLocal_178 > 1000f)
+					func_433(iParam0, fLocal_1300);
+					func_432(iParam0, fLocal_1310);
+					if (fLocal_1305 > 1000f)
 					{
-						if (iLocal_215 == 0)
+						if (iLocal_1877 == 0)
 						{
-							func_431(iParam0, fLocal_183);
+							func_431(iParam0, fLocal_1310);
 						}
-						fVar0 = ((fLocal_173 + 4000f) + (SYSTEM::TO_FLOAT(iLocal_215) * 2000f));
-						func_430(iParam0, fVar0, fLocal_177);
-						iLocal_215++;
-						if (iLocal_215 > 2)
+						fVar0 = ((fLocal_1300 + 4000f) + (SYSTEM::TO_FLOAT(iLocal_1877) * 2000f));
+						func_430(iParam0, fVar0, fLocal_1304);
+						iLocal_1877++;
+						if (iLocal_1877 > 2)
 						{
-							fLocal_178 = 0f;
+							fLocal_1305 = 0f;
 						}
 					}
 					else
 					{
-						iLocal_215 = 0;
-						fLocal_178 = (fLocal_178 + (MISC::GET_FRAME_TIME() * 1000f));
+						iLocal_1877 = 0;
+						fLocal_1305 = (fLocal_1305 + (MISC::GET_FRAME_TIME() * 1000f));
 					}
 				}
 			}
 		}
-		iVar2 = 0;
+		iVar4 = 0;
 		if (VEHICLE::IS_VEHICLE_DRIVEABLE(iParam0, false))
 		{
 			if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iParam0))
 			{
-				iVar2 = 1;
+				iVar4 = 1;
 			}
 		}
-		if (fLocal_173 == 0f || CAM::IS_SCREEN_FADED_OUT())
+		if (fLocal_1300 == 0f || CAM::IS_SCREEN_FADED_OUT())
 		{
-			iVar2 = 1;
+			iVar4 = 1;
 		}
-		if (iVar2 && !bLocal_136)
+		if (iVar4 && !bLocal_138)
 		{
-			if (!iLocal_118)
+			if (!iLocal_120)
 			{
-				func_427(iParam0, ((fParam1 * fLocal_174) * fLocal_176), 0);
-				if (!iLocal_139)
+				func_427(iParam0, ((fParam1 * fLocal_1301) * fLocal_1303), 0);
+				if (!iLocal_141)
 				{
 				}
-				iLocal_139 = 0;
+				iLocal_141 = 0;
 			}
-			if (bLocal_121)
+			if (bLocal_123)
 			{
 				func_426(iParam0);
 			}
-			if (!iLocal_118)
+			if (!iLocal_120)
 			{
-				func_416(iParam0, ((fParam1 * fLocal_174) * fLocal_176), 0);
+				func_416(iParam0, ((fParam1 * fLocal_1301) * fLocal_1303), 0);
 			}
 		}
-		if (iLocal_126)
+		if (iLocal_128)
 		{
 			if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 			{
 				if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 				{
-					iLocal_253 = PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false);
-					Local_219 = { ENTITY::GET_ENTITY_COORDS(iLocal_253, true) };
-					ENTITY::GET_ENTITY_QUATERNION(iLocal_253, &fLocal_157, &fLocal_158, &fLocal_159, &fLocal_160);
+					iLocal_3086 = PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false);
+					Local_2556 = { ENTITY::GET_ENTITY_COORDS(iLocal_3086, true) };
+					ENTITY::GET_ENTITY_QUATERNION(iLocal_3086, &fLocal_584, &fLocal_585, &fLocal_586, &fLocal_587);
 				}
 			}
-			iLocal_126 = 0;
+			iLocal_128 = 0;
 		}
-		if (iLocal_125)
+		if (iLocal_127)
 		{
-			if (ENTITY::DOES_ENTITY_EXIST(iLocal_253))
+			if (ENTITY::DOES_ENTITY_EXIST(iLocal_3086))
 			{
-				func_85(iLocal_254);
-				iLocal_254 = iLocal_253;
+				func_85(iLocal_3087);
+				iLocal_3087 = iLocal_3086;
 			}
-			if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_254, false))
+			if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_3087, false))
 			{
-				ENTITY::SET_ENTITY_COORDS(iLocal_254, Local_219, true, false, false, true);
-				ENTITY::SET_ENTITY_QUATERNION(iLocal_254, fLocal_157, fLocal_158, fLocal_159, fLocal_160);
+				ENTITY::SET_ENTITY_COORDS(iLocal_3087, Local_2556, true, false, false, true);
+				ENTITY::SET_ENTITY_QUATERNION(iLocal_3087, fLocal_584, fLocal_585, fLocal_586, fLocal_587);
 			}
-			fLocal_172 = fLocal_175;
-			iLocal_118 = 1;
-			iLocal_125 = 0;
+			fLocal_1299 = fLocal_1302;
+			iLocal_120 = 1;
+			iLocal_127 = 0;
 		}
-		if (iLocal_118)
+		if (iLocal_120)
 		{
-			while (!func_414(&iParam0, fLocal_172))
+			while (!func_414(&iParam0, fLocal_1299))
 			{
 				SYSTEM::WAIT(0);
 			}
-			iLocal_119 = 1;
+			iLocal_121 = 1;
 		}
-		if (iLocal_132)
+		if (iLocal_134)
 		{
-			iLocal_132 = 0;
+			iLocal_134 = 0;
 		}
 	}
 }
 
 int func_414(int iParam0, float fParam1)//Position - 0x30FD8
 {
-	if (!iLocal_133)
+	if (!iLocal_135)
 	{
-		iLocal_118 = 1;
+		iLocal_120 = 1;
 		func_80();
 		if (VEHICLE::IS_VEHICLE_DRIVEABLE(*iParam0, false))
 		{
@@ -42866,29 +42866,29 @@ int func_414(int iParam0, float fParam1)//Position - 0x30FD8
 				VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(*iParam0);
 				VEHICLE::SET_VEHICLE_FIXED(*iParam0);
 			}
-			if (!iLocal_202 == -1)
+			if (!iLocal_1864 == -1)
 			{
-				while (!func_415(iParam0, iLocal_202, fParam1, 1, 0, 0, 0, 0))
+				while (!func_415(iParam0, iLocal_1864, fParam1, 1, 0, 0, 0, 0))
 				{
 					SYSTEM::WAIT(0);
 				}
-				if (!bLocal_123)
+				if (!bLocal_125)
 				{
-					iLocal_119 = 1;
-					fLocal_176 = 0f;
-					iLocal_203 = 0;
-					iLocal_205 = 0;
-					iLocal_204 = 0;
-					iLocal_199 = 0;
-					iLocal_200 = 0;
-					iLocal_201 = 0;
-					iLocal_206 = 0;
-					iLocal_207 = 0;
-					iLocal_208 = 0;
+					iLocal_121 = 1;
+					fLocal_1303 = 0f;
+					iLocal_1865 = 0;
+					iLocal_1867 = 0;
+					iLocal_1866 = 0;
+					iLocal_1861 = 0;
+					iLocal_1862 = 0;
+					iLocal_1863 = 0;
+					iLocal_1868 = 0;
+					iLocal_1869 = 0;
+					iLocal_1870 = 0;
 				}
 			}
 		}
-		iLocal_133 = 1;
+		iLocal_135 = 1;
 	}
 	else
 	{
@@ -42896,23 +42896,23 @@ int func_414(int iParam0, float fParam1)//Position - 0x30FD8
 		{
 			if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(*iParam0))
 			{
-				VEHICLE::SET_PLAYBACK_SPEED(*iParam0, ((1f * fLocal_174) * fLocal_176));
-				func_415(iParam0, iLocal_202, fParam1, 1, 0, 0, 0, 0);
+				VEHICLE::SET_PLAYBACK_SPEED(*iParam0, ((1f * fLocal_1301) * fLocal_1303));
+				func_415(iParam0, iLocal_1864, fParam1, 1, 0, 0, 0, 0);
 			}
 		}
-		fLocal_173 = fParam1;
-		iLocal_209 = 0;
-		iLocal_212 = 0;
-		fLocal_188 = 0f;
-		fLocal_187 = 0f;
-		func_416(*iParam0, ((1f * fLocal_174) * fLocal_176), 1);
-		func_427(*iParam0, ((1f * fLocal_174) * fLocal_176), 1);
+		fLocal_1300 = fParam1;
+		iLocal_1871 = 0;
+		iLocal_1874 = 0;
+		fLocal_1315 = 0f;
+		fLocal_1314 = 0f;
+		func_416(*iParam0, ((1f * fLocal_1301) * fLocal_1303), 1);
+		func_427(*iParam0, ((1f * fLocal_1301) * fLocal_1303), 1);
 		func_426(*iParam0);
-		if ((iLocal_206 == 0 && iLocal_207 == 0) && iLocal_208 == 0)
+		if ((iLocal_1868 == 0 && iLocal_1869 == 0) && iLocal_1870 == 0)
 		{
-			iLocal_119 = 0;
-			iLocal_118 = 0;
-			iLocal_133 = 0;
+			iLocal_121 = 0;
+			iLocal_120 = 0;
+			iLocal_135 = 0;
 			return 1;
 		}
 	}
@@ -42925,8 +42925,8 @@ int func_415(var uParam0, int iParam1, float fParam2, bool bParam3, bool bParam4
 	
 	if (iParam1 > 0)
 	{
-		VEHICLE::REQUEST_VEHICLE_RECORDING(iParam1, &cLocal_232);
-		if (VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(iParam1, &cLocal_232))
+		VEHICLE::REQUEST_VEHICLE_RECORDING(iParam1, &cLocal_2583);
+		if (VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(iParam1, &cLocal_2583))
 		{
 			if (VEHICLE::IS_VEHICLE_DRIVEABLE(*uParam0, false))
 			{
@@ -42935,28 +42935,28 @@ int func_415(var uParam0, int iParam1, float fParam2, bool bParam3, bool bParam4
 					ENTITY::FREEZE_ENTITY_POSITION(*uParam0, false);
 					if (bParam4)
 					{
-						VEHICLE::START_PLAYBACK_RECORDED_VEHICLE_USING_AI(*uParam0, iParam1, &cLocal_232, 10f, 786603);
+						VEHICLE::START_PLAYBACK_RECORDED_VEHICLE_USING_AI(*uParam0, iParam1, &cLocal_2583, 10f, 786603);
 					}
 					else
 					{
-						if (iParam1 != iLocal_210 && iParam1 != iLocal_211)
+						if (iParam1 != iLocal_1872 && iParam1 != iLocal_1873)
 						{
 							if (bParam7)
 							{
-								VEHICLE::START_PLAYBACK_RECORDED_VEHICLE_WITH_FLAGS(*uParam0, iParam1, &cLocal_232, 2 | 4, 0, 786603);
+								VEHICLE::START_PLAYBACK_RECORDED_VEHICLE_WITH_FLAGS(*uParam0, iParam1, &cLocal_2583, 2 | 4, 0, 786603);
 							}
 							else if (bParam6)
 							{
-								VEHICLE::START_PLAYBACK_RECORDED_VEHICLE_WITH_FLAGS(*uParam0, iParam1, &cLocal_232, 1 | 4, 0, 786603);
+								VEHICLE::START_PLAYBACK_RECORDED_VEHICLE_WITH_FLAGS(*uParam0, iParam1, &cLocal_2583, 1 | 4, 0, 786603);
 							}
 							else
 							{
-								VEHICLE::START_PLAYBACK_RECORDED_VEHICLE(*uParam0, iParam1, &cLocal_232, true);
+								VEHICLE::START_PLAYBACK_RECORDED_VEHICLE(*uParam0, iParam1, &cLocal_2583, true);
 							}
 						}
 						else
 						{
-							VEHICLE::START_PLAYBACK_RECORDED_VEHICLE(*uParam0, iParam1, &cLocal_232, true);
+							VEHICLE::START_PLAYBACK_RECORDED_VEHICLE(*uParam0, iParam1, &cLocal_2583, true);
 						}
 						VEHICLE::SKIP_TIME_IN_PLAYBACK_RECORDED_VEHICLE(*uParam0, fParam2);
 						if (bParam5)
@@ -42966,14 +42966,14 @@ int func_415(var uParam0, int iParam1, float fParam2, bool bParam3, bool bParam4
 						return 1;
 					}
 				}
-				else if (VEHICLE::GET_CURRENT_PLAYBACK_FOR_VEHICLE(*uParam0) == VEHICLE::GET_VEHICLE_RECORDING_ID(iParam1, &cLocal_232))
+				else if (VEHICLE::GET_CURRENT_PLAYBACK_FOR_VEHICLE(*uParam0) == VEHICLE::GET_VEHICLE_RECORDING_ID(iParam1, &cLocal_2583))
 				{
 					fVar0 = VEHICLE::GET_TIME_POSITION_IN_RECORDING(*uParam0);
 					VEHICLE::SKIP_TIME_IN_PLAYBACK_RECORDED_VEHICLE(*uParam0, (fParam2 - fVar0));
 					if (!bParam3)
 					{
 						VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(*uParam0);
-						VEHICLE::REQUEST_VEHICLE_RECORDING(iParam1, &cLocal_232);
+						VEHICLE::REQUEST_VEHICLE_RECORDING(iParam1, &cLocal_2583);
 					}
 					if (bParam5)
 					{
@@ -42987,26 +42987,26 @@ int func_415(var uParam0, int iParam1, float fParam2, bool bParam3, bool bParam4
 					ENTITY::FREEZE_ENTITY_POSITION(*uParam0, false);
 					if (bParam4)
 					{
-						VEHICLE::START_PLAYBACK_RECORDED_VEHICLE_USING_AI(*uParam0, iParam1, &cLocal_232, 10f, 786603);
+						VEHICLE::START_PLAYBACK_RECORDED_VEHICLE_USING_AI(*uParam0, iParam1, &cLocal_2583, 10f, 786603);
 					}
-					else if (iParam1 != iLocal_210 && iParam1 != iLocal_211)
+					else if (iParam1 != iLocal_1872 && iParam1 != iLocal_1873)
 					{
 						if (bParam7)
 						{
-							VEHICLE::START_PLAYBACK_RECORDED_VEHICLE_WITH_FLAGS(*uParam0, iParam1, &cLocal_232, 2 | 4, 0, 786603);
+							VEHICLE::START_PLAYBACK_RECORDED_VEHICLE_WITH_FLAGS(*uParam0, iParam1, &cLocal_2583, 2 | 4, 0, 786603);
 						}
 						else if (bParam6)
 						{
-							VEHICLE::START_PLAYBACK_RECORDED_VEHICLE_WITH_FLAGS(*uParam0, iParam1, &cLocal_232, 1 | 4, 0, 786603);
+							VEHICLE::START_PLAYBACK_RECORDED_VEHICLE_WITH_FLAGS(*uParam0, iParam1, &cLocal_2583, 1 | 4, 0, 786603);
 						}
 						else
 						{
-							VEHICLE::START_PLAYBACK_RECORDED_VEHICLE(*uParam0, iParam1, &cLocal_232, true);
+							VEHICLE::START_PLAYBACK_RECORDED_VEHICLE(*uParam0, iParam1, &cLocal_2583, true);
 						}
 					}
 					else
 					{
-						VEHICLE::START_PLAYBACK_RECORDED_VEHICLE(*uParam0, iParam1, &cLocal_232, true);
+						VEHICLE::START_PLAYBACK_RECORDED_VEHICLE(*uParam0, iParam1, &cLocal_2583, true);
 					}
 					VEHICLE::SKIP_TIME_IN_PLAYBACK_RECORDED_VEHICLE(*uParam0, fParam2);
 					if (bParam5)
@@ -43027,450 +43027,450 @@ void func_416(int iParam0, float fParam1, bool bParam2)//Position - 0x312F0
 	int iVar1;
 	int iVar2;
 	struct<3> Var3;
-	struct<3> Var4;
-	struct<3> Var5;
-	float fVar6;
-	float fVar7;
-	bool bVar8;
-	bool bVar9;
-	bool bVar10;
-	bool bVar11;
-	bool bVar12;
-	int iVar13;
-	int iVar14;
+	struct<3> Var6;
+	struct<3> Var9;
+	float fVar12;
+	float fVar13;
+	bool bVar14;
+	bool bVar15;
+	bool bVar16;
+	bool bVar17;
+	bool bVar18;
+	int iVar19;
+	int iVar20;
 	
-	bVar9 = PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID());
-	bVar10 = PED::CAN_CREATE_RANDOM_DRIVER();
-	bVar11 = PED::CAN_CREATE_RANDOM_BIKE_RIDER();
-	bVar12 = false;
-	if (bVar9)
+	bVar15 = PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID());
+	bVar16 = PED::CAN_CREATE_RANDOM_DRIVER();
+	bVar17 = PED::CAN_CREATE_RANDOM_BIKE_RIDER();
+	bVar18 = false;
+	if (bVar15)
 	{
 		if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 		{
 			iVar2 = PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false);
 		}
-		Var5 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
+		Var9 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
 	}
 	if (VEHICLE::IS_VEHICLE_DRIVEABLE(iParam0, false))
 	{
-		iVar0 = iLocal_205;
+		iVar0 = iLocal_1867;
 		while (iVar0 < 70)
 		{
-			if (iLocal_196[iVar0] != 99)
+			if (iLocal_1648[iVar0] != 99)
 			{
-				if (iLocal_196[iVar0] == 0)
+				if (iLocal_1648[iVar0] == 0)
 				{
-					if (iLocal_195[iVar0] > 0)
+					if (iLocal_1577[iVar0] > 0)
 					{
-						if (!iLocal_118)
+						if (!iLocal_120)
 						{
-							if (fLocal_173 > (fLocal_165[iVar0] - (7000f * fParam1)))
+							if (fLocal_1300 > (fLocal_872[iVar0] - (7000f * fParam1)))
 							{
-								if (func_412(iLocal_244[iVar0]))
+								if (func_412(iLocal_2757[iVar0]))
 								{
-									MISC::SET_BIT(&(iLocal_197[iVar0]), 0);
+									MISC::SET_BIT(&(iLocal_1719[iVar0]), 0);
 								}
-								else if (VEHICLE::IS_THIS_MODEL_A_BIKE(iLocal_244[iVar0]))
+								else if (VEHICLE::IS_THIS_MODEL_A_BIKE(iLocal_2757[iVar0]))
 								{
-									MISC::SET_BIT(&(iLocal_197[iVar0]), 2);
+									MISC::SET_BIT(&(iLocal_1719[iVar0]), 2);
 								}
-								MISC::CLEAR_BIT(&(iLocal_197[iVar0]), 1);
-								iLocal_196[iVar0]++;
-								iLocal_207++;
+								MISC::CLEAR_BIT(&(iLocal_1719[iVar0]), 1);
+								iLocal_1648[iVar0]++;
+								iLocal_1869++;
 							}
 						}
 						else
 						{
-							fVar6 = (fLocal_173 - fLocal_165[iVar0]);
-							fVar6 = (fVar6 * fLocal_166[iVar0]);
-							if (fVar6 >= 0f)
+							fVar12 = (fLocal_1300 - fLocal_872[iVar0]);
+							fVar12 = (fVar12 * fLocal_943[iVar0]);
+							if (fVar12 >= 0f)
 							{
-								if (fVar6 < func_425(iLocal_195[iVar0]))
+								if (fVar12 < func_425(iLocal_1577[iVar0]))
 								{
-									if (func_412(iLocal_244[iVar0]))
+									if (func_412(iLocal_2757[iVar0]))
 									{
-										MISC::SET_BIT(&(iLocal_197[iVar0]), 0);
+										MISC::SET_BIT(&(iLocal_1719[iVar0]), 0);
 									}
-									else if (VEHICLE::IS_THIS_MODEL_A_BIKE(iLocal_244[iVar0]))
+									else if (VEHICLE::IS_THIS_MODEL_A_BIKE(iLocal_2757[iVar0]))
 									{
-										MISC::SET_BIT(&(iLocal_197[iVar0]), 2);
+										MISC::SET_BIT(&(iLocal_1719[iVar0]), 2);
 									}
-									MISC::CLEAR_BIT(&(iLocal_197[iVar0]), 1);
-									iLocal_196[iVar0]++;
-									iLocal_207++;
+									MISC::CLEAR_BIT(&(iLocal_1719[iVar0]), 1);
+									iLocal_1648[iVar0]++;
+									iLocal_1869++;
 								}
 								else
 								{
-									iLocal_196[iVar0] = 99;
+									iLocal_1648[iVar0] = 99;
 								}
 							}
 						}
 					}
 					else
 					{
-						iLocal_196[iVar0] = 99;
+						iLocal_1648[iVar0] = 99;
 					}
 				}
-				else if (iLocal_196[iVar0] == 1)
+				else if (iLocal_1648[iVar0] == 1)
 				{
-					bVar8 = false;
-					VEHICLE::REQUEST_VEHICLE_RECORDING(iLocal_195[iVar0], &cLocal_232);
-					if (BitTest(iLocal_197[iVar0], 0))
+					bVar14 = false;
+					VEHICLE::REQUEST_VEHICLE_RECORDING(iLocal_1577[iVar0], &cLocal_2583);
+					if (BitTest(iLocal_1719[iVar0], 0))
 					{
 						STREAMING::REQUEST_MODEL(func_89());
-						bVar8 = STREAMING::HAS_MODEL_LOADED(func_89());
+						bVar14 = STREAMING::HAS_MODEL_LOADED(func_89());
 					}
-					else if (!bLocal_145 && ((!BitTest(iLocal_197[iVar0], 2) && bVar10) || (BitTest(iLocal_197[iVar0], 2) && bVar11)))
+					else if (!bLocal_147 && ((!BitTest(iLocal_1719[iVar0], 2) && bVar16) || (BitTest(iLocal_1719[iVar0], 2) && bVar17)))
 					{
-						bVar8 = true;
+						bVar14 = true;
 					}
 					else
 					{
 						STREAMING::REQUEST_MODEL(func_92());
-						bVar8 = STREAMING::HAS_MODEL_LOADED(func_92());
+						bVar14 = STREAMING::HAS_MODEL_LOADED(func_92());
 					}
-					if (bVar8)
+					if (bVar14)
 					{
-						if (!ENTITY::DOES_ENTITY_EXIST(iLocal_251[iVar0]))
+						if (!ENTITY::DOES_ENTITY_EXIST(iLocal_3004[iVar0]))
 						{
-							STREAMING::REQUEST_MODEL(iLocal_244[iVar0]);
-							if (STREAMING::HAS_MODEL_LOADED(iLocal_244[iVar0]) && VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(iLocal_195[iVar0], &cLocal_232))
+							STREAMING::REQUEST_MODEL(iLocal_2757[iVar0]);
+							if (STREAMING::HAS_MODEL_LOADED(iLocal_2757[iVar0]) && VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(iLocal_1577[iVar0], &cLocal_2583))
 							{
-								if (fLocal_173 >= (fLocal_165[iVar0] - (fLocal_186 * fParam1)))
+								if (fLocal_1300 >= (fLocal_872[iVar0] - (fLocal_1313 * fParam1)))
 								{
-									if ((iLocal_132 || bParam2) || (!bLocal_149 && !func_424(Local_218[iVar0 /*3*/], Var5, 5f, fLocal_184)))
+									if ((iLocal_134 || bParam2) || (!bLocal_151 && !func_424(Local_2345[iVar0 /*3*/], Var9, 5f, fLocal_1311)))
 									{
-										if (bLocal_128)
+										if (bLocal_130)
 										{
-											func_423(Local_218[iVar0 /*3*/], Var5, fLocal_177);
+											func_423(Local_2345[iVar0 /*3*/], Var9, fLocal_1304);
 										}
-										iLocal_251[iVar0] = VEHICLE::CREATE_VEHICLE(iLocal_244[iVar0], Local_218[iVar0 /*3*/], 0f, false, false, false);
-										if (iLocal_244[iVar0] == joaat("polmav"))
+										iLocal_3004[iVar0] = VEHICLE::CREATE_VEHICLE(iLocal_2757[iVar0], Local_2345[iVar0 /*3*/], 0f, false, false, false);
+										if (iLocal_2757[iVar0] == joaat("polmav"))
 										{
-											VEHICLE::SET_VEHICLE_LIVERY(iLocal_251[iVar0], 0);
+											VEHICLE::SET_VEHICLE_LIVERY(iLocal_3004[iVar0], 0);
 										}
-										if (iLocal_141 && !BitTest(iLocal_197[iVar0], 0))
+										if (iLocal_143 && !BitTest(iLocal_1719[iVar0], 0))
 										{
-											func_422(iLocal_251[iVar0]);
+											func_422(iLocal_3004[iVar0]);
 										}
-										if (BitTest(iLocal_197[iVar0], 3))
+										if (BitTest(iLocal_1719[iVar0], 3))
 										{
-											ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iLocal_251[iVar0], true);
+											ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iLocal_3004[iVar0], true);
 										}
-										ENTITY::SET_ENTITY_COORDS_NO_OFFSET(iLocal_251[iVar0], Local_218[iVar0 /*3*/], false, false, true);
-										ENTITY::SET_ENTITY_QUATERNION(iLocal_251[iVar0], fLocal_161[iVar0], fLocal_162[iVar0], fLocal_163[iVar0], fLocal_164[iVar0]);
-										if (VEHICLE::IS_THIS_MODEL_A_CAR(iLocal_244[iVar0]) || VEHICLE::IS_THIS_MODEL_A_BIKE(iLocal_244[iVar0]))
+										ENTITY::SET_ENTITY_COORDS_NO_OFFSET(iLocal_3004[iVar0], Local_2345[iVar0 /*3*/], false, false, true);
+										ENTITY::SET_ENTITY_QUATERNION(iLocal_3004[iVar0], fLocal_588[iVar0], fLocal_659[iVar0], fLocal_730[iVar0], fLocal_801[iVar0]);
+										if (VEHICLE::IS_THIS_MODEL_A_CAR(iLocal_2757[iVar0]) || VEHICLE::IS_THIS_MODEL_A_BIKE(iLocal_2757[iVar0]))
 										{
-											VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(iLocal_251[iVar0], 5f);
+											VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(iLocal_3004[iVar0], 5f);
 										}
-										if (!BitTest(iLocal_197[iVar0], 0))
+										if (!BitTest(iLocal_1719[iVar0], 0))
 										{
-											VEHICLE::SET_VEHICLE_ENGINE_ON(iLocal_251[iVar0], true, true, false);
+											VEHICLE::SET_VEHICLE_ENGINE_ON(iLocal_3004[iVar0], true, true, false);
 											if (CLOCK::GET_CLOCK_HOURS() > 19 || CLOCK::GET_CLOCK_HOURS() < 7)
 											{
-												VEHICLE::SET_VEHICLE_LIGHTS(iLocal_251[iVar0], 3);
+												VEHICLE::SET_VEHICLE_LIGHTS(iLocal_3004[iVar0], 3);
 											}
 										}
-										ENTITY::FREEZE_ENTITY_POSITION(iLocal_251[iVar0], true);
-										STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_244[iVar0]);
-										iLocal_207 = (iLocal_207 - 1);
-										iLocal_196[iVar0]++;
-										bLocal_149 = true;
+										ENTITY::FREEZE_ENTITY_POSITION(iLocal_3004[iVar0], true);
+										STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_2757[iVar0]);
+										iLocal_1869 = (iLocal_1869 - 1);
+										iLocal_1648[iVar0]++;
+										bLocal_151 = true;
 									}
 								}
 							}
 						}
-						else if (!ENTITY::IS_ENTITY_DEAD(iLocal_251[iVar0], false) && VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_251[iVar0], false))
+						else if (!ENTITY::IS_ENTITY_DEAD(iLocal_3004[iVar0], false) && VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_3004[iVar0], false))
 						{
-							ENTITY::SET_ENTITY_COORDS_NO_OFFSET(iLocal_251[iVar0], Local_218[iVar0 /*3*/], false, false, true);
-							ENTITY::SET_ENTITY_QUATERNION(iLocal_251[iVar0], fLocal_161[iVar0], fLocal_162[iVar0], fLocal_163[iVar0], fLocal_164[iVar0]);
-							if (VEHICLE::IS_THIS_MODEL_A_CAR(iLocal_244[iVar0]) || VEHICLE::IS_THIS_MODEL_A_BIKE(iLocal_244[iVar0]))
+							ENTITY::SET_ENTITY_COORDS_NO_OFFSET(iLocal_3004[iVar0], Local_2345[iVar0 /*3*/], false, false, true);
+							ENTITY::SET_ENTITY_QUATERNION(iLocal_3004[iVar0], fLocal_588[iVar0], fLocal_659[iVar0], fLocal_730[iVar0], fLocal_801[iVar0]);
+							if (VEHICLE::IS_THIS_MODEL_A_CAR(iLocal_2757[iVar0]) || VEHICLE::IS_THIS_MODEL_A_BIKE(iLocal_2757[iVar0]))
 							{
-								VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(iLocal_251[iVar0], 5f);
+								VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(iLocal_3004[iVar0], 5f);
 							}
-							ENTITY::FREEZE_ENTITY_POSITION(iLocal_251[iVar0], true);
-							STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_244[iVar0]);
-							iLocal_207 = (iLocal_207 - 1);
-							iLocal_196[iVar0]++;
+							ENTITY::FREEZE_ENTITY_POSITION(iLocal_3004[iVar0], true);
+							STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_2757[iVar0]);
+							iLocal_1869 = (iLocal_1869 - 1);
+							iLocal_1648[iVar0]++;
 						}
 					}
 				}
-				else if (iLocal_196[iVar0] == 2)
+				else if (iLocal_1648[iVar0] == 2)
 				{
-					VEHICLE::REQUEST_VEHICLE_RECORDING(iLocal_195[iVar0], &cLocal_232);
-					if (!BitTest(iLocal_197[iVar0], 1))
+					VEHICLE::REQUEST_VEHICLE_RECORDING(iLocal_1577[iVar0], &cLocal_2583);
+					if (!BitTest(iLocal_1719[iVar0], 1))
 					{
-						bVar8 = false;
-						if (BitTest(iLocal_197[iVar0], 0))
+						bVar14 = false;
+						if (BitTest(iLocal_1719[iVar0], 0))
 						{
 							STREAMING::REQUEST_MODEL(func_89());
-							bVar8 = STREAMING::HAS_MODEL_LOADED(func_89());
-							iVar13 = 2;
+							bVar14 = STREAMING::HAS_MODEL_LOADED(func_89());
+							iVar19 = 2;
 						}
-						else if (!bLocal_145 && ((!BitTest(iLocal_197[iVar0], 2) && bVar10) || (BitTest(iLocal_197[iVar0], 2) && bVar11)))
+						else if (!bLocal_147 && ((!BitTest(iLocal_1719[iVar0], 2) && bVar16) || (BitTest(iLocal_1719[iVar0], 2) && bVar17)))
 						{
-							bVar8 = true;
-							iVar13 = 1;
+							bVar14 = true;
+							iVar19 = 1;
 						}
 						else
 						{
 							STREAMING::REQUEST_MODEL(func_92());
-							bVar8 = STREAMING::HAS_MODEL_LOADED(func_92());
-							iVar13 = 0;
+							bVar14 = STREAMING::HAS_MODEL_LOADED(func_92());
+							iVar19 = 0;
 						}
-						if (!ENTITY::IS_ENTITY_DEAD(iLocal_251[iVar0], false))
+						if (!ENTITY::IS_ENTITY_DEAD(iLocal_3004[iVar0], false))
 						{
-							if (!bLocal_149 && VEHICLE::IS_VEHICLE_SEAT_FREE(iLocal_251[iVar0], -1, false))
+							if (!bLocal_151 && VEHICLE::IS_VEHICLE_SEAT_FREE(iLocal_3004[iVar0], -1, false))
 							{
-								if (bVar8)
+								if (bVar14)
 								{
-									if ((SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(iLocal_251[iVar0], true), Var5) < 10000f || bParam2) || iLocal_132)
+									if ((SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(iLocal_3004[iVar0], true), Var9) < 10000f || bParam2) || iLocal_134)
 									{
-										func_421(&(iLocal_251[iVar0]), iVar13, 1);
-										MISC::SET_BIT(&(iLocal_197[iVar0]), 1);
+										func_421(&(iLocal_3004[iVar0]), iVar19, 1);
+										MISC::SET_BIT(&(iLocal_1719[iVar0]), 1);
 									}
 								}
 							}
 						}
 					}
-					if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_251[iVar0], false))
+					if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_3004[iVar0], false))
 					{
-						if (fLocal_173 >= fLocal_165[iVar0])
+						if (fLocal_1300 >= fLocal_872[iVar0])
 						{
-							if (11 > iLocal_200)
+							if (11 > iLocal_1862)
 							{
-								fVar6 = (fLocal_173 - fLocal_165[iVar0]);
-								fVar6 = (fVar6 * fLocal_166[iVar0]);
-								if (VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(iLocal_195[iVar0], &cLocal_232))
+								fVar12 = (fLocal_1300 - fLocal_872[iVar0]);
+								fVar12 = (fVar12 * fLocal_943[iVar0]);
+								if (VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(iLocal_1577[iVar0], &cLocal_2583))
 								{
-									if (fVar6 < VEHICLE::GET_TOTAL_DURATION_OF_VEHICLE_RECORDING(iLocal_195[iVar0], &cLocal_232))
+									if (fVar12 < VEHICLE::GET_TOTAL_DURATION_OF_VEHICLE_RECORDING(iLocal_1577[iVar0], &cLocal_2583))
 									{
-										Var3 = { ENTITY::GET_ENTITY_COORDS(iLocal_251[iVar0], true) };
-										Var4 = { VEHICLE::GET_POSITION_OF_VEHICLE_RECORDING_AT_TIME(iLocal_195[iVar0], fVar6, &cLocal_232) };
-										if (((!func_424(Var3, Var5, 5f, fLocal_184) && func_424(Var4, Var5, 5f, fLocal_184)) && !iLocal_132) && !bParam2)
+										Var3 = { ENTITY::GET_ENTITY_COORDS(iLocal_3004[iVar0], true) };
+										Var6 = { VEHICLE::GET_POSITION_OF_VEHICLE_RECORDING_AT_TIME(iLocal_1577[iVar0], fVar12, &cLocal_2583) };
+										if (((!func_424(Var3, Var9, 5f, fLocal_1311) && func_424(Var6, Var9, 5f, fLocal_1311)) && !iLocal_134) && !bParam2)
 										{
-											if (!BitTest(iLocal_197[iVar0], 1))
+											if (!BitTest(iLocal_1719[iVar0], 1))
 											{
-												func_421(&(iLocal_251[iVar0]), iVar13, 1);
+												func_421(&(iLocal_3004[iVar0]), iVar19, 1);
 											}
-											iLocal_200++;
-											iLocal_196[iVar0]++;
+											iLocal_1862++;
+											iLocal_1648[iVar0]++;
 										}
-										else if (((!bLocal_149 || BitTest(iLocal_197[iVar0], 1)) || iLocal_132) || bParam2)
+										else if (((!bLocal_151 || BitTest(iLocal_1719[iVar0], 1)) || iLocal_134) || bParam2)
 										{
-											if (func_415(&(iLocal_251[iVar0]), iLocal_195[iVar0], fVar6, 1, 0, 0, bLocal_147, bLocal_146))
+											if (func_415(&(iLocal_3004[iVar0]), iLocal_1577[iVar0], fVar12, 1, 0, 0, bLocal_149, bLocal_148))
 											{
-												VEHICLE::SET_PLAYBACK_SPEED(iLocal_251[iVar0], (fParam1 * fLocal_166[iVar0]));
-												if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_251[iVar0], false))
+												VEHICLE::SET_PLAYBACK_SPEED(iLocal_3004[iVar0], (fParam1 * fLocal_943[iVar0]));
+												if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_3004[iVar0], false))
 												{
-													if (BitTest(iLocal_197[iVar0], 0))
+													if (BitTest(iLocal_1719[iVar0], 0))
 													{
-														VEHICLE::SET_VEHICLE_ENGINE_ON(iLocal_251[iVar0], true, true, false);
-														VEHICLE::SET_VEHICLE_SIREN(iLocal_251[iVar0], true);
-														VEHICLE::SET_VEHICLE_LIGHTS(iLocal_251[iVar0], 2);
-														if (!VEHICLE::IS_THIS_MODEL_A_BIKE(iLocal_244[iVar0]))
+														VEHICLE::SET_VEHICLE_ENGINE_ON(iLocal_3004[iVar0], true, true, false);
+														VEHICLE::SET_VEHICLE_SIREN(iLocal_3004[iVar0], true);
+														VEHICLE::SET_VEHICLE_LIGHTS(iLocal_3004[iVar0], 2);
+														if (!VEHICLE::IS_THIS_MODEL_A_BIKE(iLocal_2757[iVar0]))
 														{
-															AUDIO::SET_SIREN_WITH_NO_DRIVER(iLocal_251[iVar0], true);
+															AUDIO::SET_SIREN_WITH_NO_DRIVER(iLocal_3004[iVar0], true);
 														}
 													}
 												}
-												if (!BitTest(iLocal_197[iVar0], 1))
+												if (!BitTest(iLocal_1719[iVar0], 1))
 												{
-													func_421(&(iLocal_251[iVar0]), iVar13, 1);
+													func_421(&(iLocal_3004[iVar0]), iVar19, 1);
 												}
-												iLocal_200++;
-												iLocal_196[iVar0]++;
+												iLocal_1862++;
+												iLocal_1648[iVar0]++;
 											}
 										}
 									}
 									else
 									{
-										if (!BitTest(iLocal_197[iVar0], 1))
+										if (!BitTest(iLocal_1719[iVar0], 1))
 										{
-											func_421(&(iLocal_251[iVar0]), iVar13, 1);
+											func_421(&(iLocal_3004[iVar0]), iVar19, 1);
 										}
-										iLocal_200++;
-										iLocal_196[iVar0]++;
+										iLocal_1862++;
+										iLocal_1648[iVar0]++;
 									}
 								}
 							}
 							else
 							{
-								if (!BitTest(iLocal_197[iVar0], 1))
+								if (!BitTest(iLocal_1719[iVar0], 1))
 								{
-									func_421(&(iLocal_251[iVar0]), iVar13, 1);
+									func_421(&(iLocal_3004[iVar0]), iVar19, 1);
 								}
-								iLocal_200++;
-								iLocal_196[iVar0]++;
+								iLocal_1862++;
+								iLocal_1648[iVar0]++;
 							}
 						}
 					}
 					else
 					{
-						if (!BitTest(iLocal_197[iVar0], 1))
+						if (!BitTest(iLocal_1719[iVar0], 1))
 						{
-							func_421(&(iLocal_251[iVar0]), iVar13, 1);
+							func_421(&(iLocal_3004[iVar0]), iVar19, 1);
 						}
-						iLocal_200++;
-						iLocal_196[iVar0]++;
+						iLocal_1862++;
+						iLocal_1648[iVar0]++;
 					}
 				}
-				else if (iLocal_196[iVar0] == 3)
+				else if (iLocal_1648[iVar0] == 3)
 				{
-					if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_251[iVar0], false))
+					if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_3004[iVar0], false))
 					{
-						if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_251[iVar0]))
+						if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_3004[iVar0]))
 						{
-							iVar1 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iLocal_251[iVar0], -1, false);
+							iVar1 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iLocal_3004[iVar0], -1, false);
 							if (!PED::IS_PED_INJURED(iVar1))
 							{
-								if (bVar9)
+								if (bVar15)
 								{
-									if (((!bLocal_122 && !iLocal_119) && !bLocal_138) && (((!bLocal_147 && !bLocal_146) && ENTITY::IS_ENTITY_TOUCHING_ENTITY(PLAYER::PLAYER_PED_ID(), iLocal_251[iVar0])) || func_420(iLocal_251[iVar0])))
+									if (((!bLocal_124 && !iLocal_121) && !bLocal_140) && (((!bLocal_149 && !bLocal_148) && ENTITY::IS_ENTITY_TOUCHING_ENTITY(PLAYER::PLAYER_PED_ID(), iLocal_3004[iVar0])) || func_420(iLocal_3004[iVar0])))
 									{
 										if (ENTITY::DOES_ENTITY_EXIST(iVar2))
 										{
-											bVar8 = false;
-											if (bLocal_140)
+											bVar14 = false;
+											if (bLocal_142)
 											{
-												bVar8 = true;
+												bVar14 = true;
 											}
 											else
 											{
-												fVar7 = ENTITY::GET_ENTITY_SPEED(iVar2);
-												if (fVar7 < 1f)
+												fVar13 = ENTITY::GET_ENTITY_SPEED(iVar2);
+												if (fVar13 < 1f)
 												{
-													bVar8 = true;
+													bVar14 = true;
 												}
-												else if (MISC::ABSF((fVar7 - ENTITY::GET_ENTITY_SPEED(iLocal_251[iVar0]))) > 15f)
+												else if (MISC::ABSF((fVar13 - ENTITY::GET_ENTITY_SPEED(iLocal_3004[iVar0]))) > 15f)
 												{
-													bVar8 = true;
+													bVar14 = true;
 												}
-												else if (!func_419(iLocal_251[iVar0], iVar2, 45f))
+												else if (!func_419(iLocal_3004[iVar0], iVar2, 45f))
 												{
-													bVar8 = true;
+													bVar14 = true;
 												}
-												else if (func_418(iVar2, iLocal_251[iVar0], 0))
+												else if (func_418(iVar2, iLocal_3004[iVar0], 0))
 												{
-													bVar8 = true;
+													bVar14 = true;
 												}
 											}
-											if (bVar8)
+											if (bVar14)
 											{
-												func_417(iLocal_251[iVar0]);
-												iLocal_196[iVar0]++;
+												func_417(iLocal_3004[iVar0]);
+												iLocal_1648[iVar0]++;
 											}
 										}
 									}
 									else
 									{
-										VEHICLE::SET_PLAYBACK_SPEED(iLocal_251[iVar0], (fParam1 * fLocal_166[iVar0]));
+										VEHICLE::SET_PLAYBACK_SPEED(iLocal_3004[iVar0], (fParam1 * fLocal_943[iVar0]));
 									}
 								}
 							}
 							else
 							{
-								VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_251[iVar0]);
+								VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_3004[iVar0]);
 							}
 						}
 						else
 						{
-							iLocal_196[iVar0]++;
+							iLocal_1648[iVar0]++;
 						}
 					}
 					else
 					{
-						iLocal_196[iVar0]++;
+						iLocal_1648[iVar0]++;
 					}
 				}
-				else if (iLocal_196[iVar0] == 4)
+				else if (iLocal_1648[iVar0] == 4)
 				{
-					if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_251[iVar0], false))
+					if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_3004[iVar0], false))
 					{
-						if (!VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_251[iVar0]))
+						if (!VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_3004[iVar0]))
 						{
-							iLocal_196[iVar0]++;
+							iLocal_1648[iVar0]++;
 						}
 						else
 						{
-							iVar1 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iLocal_251[iVar0], -1, false);
+							iVar1 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iLocal_3004[iVar0], -1, false);
 							if (!PED::IS_PED_INJURED(iVar1))
 							{
-								VEHICLE::SET_PLAYBACK_SPEED(iLocal_251[iVar0], (fParam1 * fLocal_166[iVar0]));
+								VEHICLE::SET_PLAYBACK_SPEED(iLocal_3004[iVar0], (fParam1 * fLocal_943[iVar0]));
 							}
 							else
 							{
-								VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_251[iVar0]);
+								VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_3004[iVar0]);
 							}
-							if (VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(iLocal_195[iVar0], &cLocal_232))
+							if (VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(iLocal_1577[iVar0], &cLocal_2583))
 							{
-								if (fLocal_173 > (fLocal_165[iVar0] + VEHICLE::GET_TOTAL_DURATION_OF_VEHICLE_RECORDING(iLocal_195[iVar0], &cLocal_232)))
+								if (fLocal_1300 > (fLocal_872[iVar0] + VEHICLE::GET_TOTAL_DURATION_OF_VEHICLE_RECORDING(iLocal_1577[iVar0], &cLocal_2583)))
 								{
-									VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_251[iVar0]);
+									VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_3004[iVar0]);
 								}
 							}
 							else
 							{
-								VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_251[iVar0]);
+								VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_3004[iVar0]);
 							}
 						}
 					}
 					else
 					{
-						iLocal_196[iVar0]++;
+						iLocal_1648[iVar0]++;
 					}
 				}
-				else if (iLocal_196[iVar0] == 5)
+				else if (iLocal_1648[iVar0] == 5)
 				{
-					if (!iLocal_251[iVar0] == iLocal_255)
+					if (!iLocal_3004[iVar0] == iLocal_3088)
 					{
-						if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_251[iVar0], false))
+						if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_3004[iVar0], false))
 						{
-							iVar1 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iLocal_251[iVar0], -1, false);
+							iVar1 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iLocal_3004[iVar0], -1, false);
 							if (!PED::IS_PED_INJURED(iVar1))
 							{
-								iVar14 = TASK::GET_SCRIPT_TASK_STATUS(iVar1, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"));
-								if (iVar14 == 7)
+								iVar20 = TASK::GET_SCRIPT_TASK_STATUS(iVar1, joaat("SCRIPT_TASK_PERFORM_SEQUENCE"));
+								if (iVar20 == 7)
 								{
-									fVar7 = ENTITY::GET_ENTITY_SPEED(iLocal_251[iVar0]);
-									if (fVar7 < 8f)
+									fVar13 = ENTITY::GET_ENTITY_SPEED(iLocal_3004[iVar0]);
+									if (fVar13 < 8f)
 									{
-										fVar7 = 8f;
+										fVar13 = 8f;
 									}
-									if (fVar7 > 62.9f)
+									if (fVar13 > 62.9f)
 									{
-										fVar7 = 62.9f;
+										fVar13 = 62.9f;
 									}
-									TASK::SET_DRIVE_TASK_CRUISE_SPEED(iVar1, fVar7);
+									TASK::SET_DRIVE_TASK_CRUISE_SPEED(iVar1, fVar13);
 								}
 							}
 						}
-						if (!bLocal_130 && !bLocal_143)
+						if (!bLocal_132 && !bLocal_145)
 						{
-							if (iLocal_195[iVar0] > 0)
+							if (iLocal_1577[iVar0] > 0)
 							{
-								VEHICLE::REMOVE_VEHICLE_RECORDING(iLocal_195[iVar0], &cLocal_232);
+								VEHICLE::REMOVE_VEHICLE_RECORDING(iLocal_1577[iVar0], &cLocal_2583);
 							}
 						}
-						if (!bLocal_120)
+						if (!bLocal_122)
 						{
-							if (!bLocal_148)
+							if (!bLocal_150)
 							{
-								func_85(iLocal_251[iVar0]);
+								func_85(iLocal_3004[iVar0]);
 							}
 						}
-						else if (ENTITY::DOES_ENTITY_EXIST(iLocal_251[iVar0]))
+						else if (ENTITY::DOES_ENTITY_EXIST(iLocal_3004[iVar0]))
 						{
-							VEHICLE::DELETE_VEHICLE(&(iLocal_251[iVar0]));
+							VEHICLE::DELETE_VEHICLE(&(iLocal_3004[iVar0]));
 						}
 					}
-					iLocal_200 = (iLocal_200 - 1);
-					iLocal_196[iVar0] = 99;
+					iLocal_1862 = (iLocal_1862 - 1);
+					iLocal_1648[iVar0] = 99;
 				}
-				if (!bVar12)
+				if (!bVar18)
 				{
-					iLocal_205 = iVar0;
-					bVar12 = true;
+					iLocal_1867 = iVar0;
+					bVar18 = true;
 				}
 			}
 			iVar0++;
@@ -43494,11 +43494,11 @@ void func_417(int iParam0)//Position - 0x31ECE
 int func_418(int iParam0, int iParam1, bool bParam2)//Position - 0x31EF0
 {
 	struct<3> Var0;
-	struct<3> Var1;
-	struct<3> Var2;
 	struct<3> Var3;
-	struct<3> Var4;
-	struct<3> Var5;
+	struct<3> Var6;
+	struct<3> Var9;
+	struct<3> Var12;
+	struct<3> Var15;
 	
 	if (VEHICLE::IS_VEHICLE_DRIVEABLE(iParam0, false))
 	{
@@ -43506,22 +43506,22 @@ int func_418(int iParam0, int iParam1, bool bParam2)//Position - 0x31EF0
 	}
 	if (VEHICLE::IS_VEHICLE_DRIVEABLE(iParam1, false))
 	{
-		Var1 = { ENTITY::GET_ENTITY_COORDS(iParam1, true) };
+		Var3 = { ENTITY::GET_ENTITY_COORDS(iParam1, true) };
 		if (bParam2)
 		{
-			Var5 = { ENTITY::GET_ENTITY_VELOCITY(iParam1) };
-			Var4 = { Var5 / FtoV(SYSTEM::VMAG(Var5)) };
+			Var15 = { ENTITY::GET_ENTITY_VELOCITY(iParam1) };
+			Var12 = { Var15 / FtoV(SYSTEM::VMAG(Var15)) };
 		}
 		else
 		{
-			Var2 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iParam1, 0f, 5f, 0f) };
-			Var4 = { Var2 - Var1 };
+			Var6 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iParam1, 0f, 5f, 0f) };
+			Var12 = { Var6 - Var3 };
 		}
 	}
-	Var3 = { Var1 - Var0 };
-	Var3.f_2 = 0f;
-	Var4.f_2 = 0f;
-	if (func_405(Var3, Var4) < 0f)
+	Var9 = { Var3 - Var0 };
+	Var9.f_2 = 0f;
+	Var12.f_2 = 0f;
+	if (func_405(Var9, Var12) < 0f)
 	{
 		return 1;
 	}
@@ -43531,8 +43531,8 @@ int func_418(int iParam0, int iParam1, bool bParam2)//Position - 0x31EF0
 int func_419(int iParam0, int iParam1, float fParam2)//Position - 0x31F8D
 {
 	struct<3> Var0;
-	struct<3> Var1;
-	float fVar2;
+	struct<3> Var3;
+	float fVar6;
 	
 	if (VEHICLE::IS_VEHICLE_DRIVEABLE(iParam0, false))
 	{
@@ -43544,21 +43544,21 @@ int func_419(int iParam0, int iParam1, float fParam2)//Position - 0x31F8D
 	}
 	if (VEHICLE::IS_VEHICLE_DRIVEABLE(iParam1, false))
 	{
-		Var1 = { ENTITY::GET_ENTITY_SPEED_VECTOR(iParam1, false) };
+		Var3 = { ENTITY::GET_ENTITY_SPEED_VECTOR(iParam1, false) };
 	}
 	else
 	{
 		return 0;
 	}
 	Var0.f_2 = 0f;
-	Var1.f_2 = 0f;
-	fVar2 = func_405(Var0, Var1);
-	if (fVar2 < 0f)
+	Var3.f_2 = 0f;
+	fVar6 = func_405(Var0, Var3);
+	if (fVar6 < 0f)
 	{
 		return 0;
 	}
-	fVar2 = MISC::GET_ANGLE_BETWEEN_2D_VECTORS(Var0.f_0, Var0.f_1, Var1.f_0, Var1.f_1);
-	if (!fVar2 < fParam2)
+	fVar6 = MISC::GET_ANGLE_BETWEEN_2D_VECTORS(Var0.f_0, Var0.f_1, Var3.f_0, Var3.f_1);
+	if (!fVar6 < fParam2)
 	{
 		return 0;
 	}
@@ -43571,7 +43571,7 @@ int func_420(int iParam0)//Position - 0x32010
 	int iVar1;
 	int iVar2;
 	
-	if (bLocal_144)
+	if (bLocal_146)
 	{
 		iVar1 = PLAYER::GET_PLAYERS_LAST_VEHICLE();
 		if (!ENTITY::IS_ENTITY_DEAD(iVar1, false))
@@ -43609,7 +43609,7 @@ int func_421(var uParam0, int iParam1, bool bParam2)//Position - 0x3206E
 			if (iParam1 == 2)
 			{
 				iVar0 = PED::CREATE_PED_INSIDE_VEHICLE(*uParam0, 6, func_89(), -1, false, false);
-				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iVar0, iLocal_241);
+				PED::SET_PED_RELATIONSHIP_GROUP_HASH(iVar0, iLocal_2599);
 				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(func_89());
 			}
 			else if (iParam1 == 1)
@@ -43623,7 +43623,7 @@ int func_421(var uParam0, int iParam1, bool bParam2)//Position - 0x3206E
 			else
 			{
 				iVar0 = PED::CREATE_PED_INSIDE_VEHICLE(*uParam0, 4, func_92(), -1, false, false);
-				if (bLocal_150)
+				if (bLocal_152)
 				{
 					STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(func_92());
 				}
@@ -43634,7 +43634,7 @@ int func_421(var uParam0, int iParam1, bool bParam2)//Position - 0x3206E
 				PED::SET_PED_SUFFERS_CRITICAL_HITS(iVar0, false);
 				PED::SET_PED_CONFIG_FLAG(iVar0, 32, false);
 			}
-			if (bLocal_151)
+			if (bLocal_153)
 			{
 				PED::SET_PED_FLEE_ATTRIBUTES(iVar0, 8192, true);
 				PED::SET_PED_FLEE_ATTRIBUTES(iVar0, 65536, true);
@@ -43643,7 +43643,7 @@ int func_421(var uParam0, int iParam1, bool bParam2)//Position - 0x3206E
 			}
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iVar0, true);
 			func_411(iVar0);
-			bLocal_149 = true;
+			bLocal_151 = true;
 			return 1;
 		}
 		else
@@ -43660,16 +43660,16 @@ void func_422(int iParam0)//Position - 0x32165
 	int iVar1;
 	
 	iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(0, 12);
-	if (iLocal_246 >= -1 && iLocal_247 >= -1)
+	if (iLocal_2829 >= -1 && iLocal_2830 >= -1)
 	{
-		while (iVar0 == iLocal_246 || iVar0 == iLocal_247)
+		while (iVar0 == iLocal_2829 || iVar0 == iLocal_2830)
 		{
 			iVar0++;
 		}
 	}
-	else if (iLocal_246 >= -1)
+	else if (iLocal_2829 >= -1)
 	{
-		if (iVar0 == iLocal_246)
+		if (iVar0 == iLocal_2829)
 		{
 			iVar0++;
 		}
@@ -43743,22 +43743,22 @@ void func_422(int iParam0)//Position - 0x32165
 	}
 }
 
-void func_423(struct<3> Param0, struct<3> Param1, float fParam2)//Position - 0x322DE
+void func_423(struct<3> Param0, struct<3> Param3, float fParam6)//Position - 0x322DE
 {
 	bool bVar0;
 	int iVar1;
 	
 	bVar0 = true;
-	if (!bLocal_131)
+	if (!bLocal_133)
 	{
-		if (!func_424(Param0, Param1, fParam2, 200f))
+		if (!func_424(Param0, Param3, fParam6, 200f))
 		{
 			if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 			{
 				iVar1 = PLAYER::GET_PLAYERS_LAST_VEHICLE();
 				if (!ENTITY::IS_ENTITY_DEAD(iVar1, false))
 				{
-					if (ENTITY::IS_ENTITY_AT_COORD(iVar1, Param0, fParam2, fParam2, fParam2, false, true, 0))
+					if (ENTITY::IS_ENTITY_AT_COORD(iVar1, Param0, fParam6, fParam6, fParam6, false, true, 0))
 					{
 						bVar0 = false;
 					}
@@ -43766,23 +43766,23 @@ void func_423(struct<3> Param0, struct<3> Param1, float fParam2)//Position - 0x3
 			}
 			if (bVar0)
 			{
-				MISC::CLEAR_AREA_OF_VEHICLES(Param0, fParam2, false, false, false, false, false, false, 0);
+				MISC::CLEAR_AREA_OF_VEHICLES(Param0, fParam6, false, false, false, false, false, false, 0);
 			}
 		}
 	}
 }
 
-int func_424(struct<3> Param0, struct<3> Param1, float fParam2, float fParam3)//Position - 0x32351
+int func_424(struct<3> Param0, struct<3> Param3, float fParam6, float fParam7)//Position - 0x32351
 {
 	if (!CAM::IS_SCREEN_FADED_OUT())
 	{
-		if (!bLocal_131)
+		if (!bLocal_133)
 		{
-			if (!iLocal_118)
+			if (!iLocal_120)
 			{
-				if (SYSTEM::VMAG2(Param1 - Param0) - fParam2) < (fParam3 * fParam3)
+				if (SYSTEM::VMAG2(Param3 - Param0) - fParam6) < (fParam7 * fParam7)
 				{
-					if (CAM::IS_SPHERE_VISIBLE(Param0, fParam2))
+					if (CAM::IS_SPHERE_VISIBLE(Param0, fParam6))
 					{
 						return 1;
 					}
@@ -43797,13 +43797,13 @@ float func_425(int iParam0)//Position - 0x32398
 {
 	float fVar0;
 	
-	VEHICLE::REQUEST_VEHICLE_RECORDING(iParam0, &cLocal_232);
-	while (!VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(iParam0, &cLocal_232))
+	VEHICLE::REQUEST_VEHICLE_RECORDING(iParam0, &cLocal_2583);
+	while (!VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(iParam0, &cLocal_2583))
 	{
 		SYSTEM::WAIT(0);
 	}
-	fVar0 = VEHICLE::GET_TOTAL_DURATION_OF_VEHICLE_RECORDING(iParam0, &cLocal_232);
-	VEHICLE::REMOVE_VEHICLE_RECORDING(iParam0, &cLocal_232);
+	fVar0 = VEHICLE::GET_TOTAL_DURATION_OF_VEHICLE_RECORDING(iParam0, &cLocal_2583);
+	VEHICLE::REMOVE_VEHICLE_RECORDING(iParam0, &cLocal_2583);
 	return fVar0;
 }
 
@@ -43811,9 +43811,9 @@ void func_426(int iParam0)//Position - 0x323D4
 {
 	int iVar0;
 	struct<3> Var1;
-	struct<3> Var2;
-	bool bVar3;
-	bool bVar4;
+	struct<3> Var4;
+	bool bVar7;
+	bool bVar8;
 	
 	if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 	{
@@ -43821,111 +43821,111 @@ void func_426(int iParam0)//Position - 0x323D4
 	}
 	if (VEHICLE::IS_VEHICLE_DRIVEABLE(iParam0, false))
 	{
-		bVar3 = false;
-		bVar4 = false;
-		iVar0 = iLocal_204;
+		bVar7 = false;
+		bVar8 = false;
+		iVar0 = iLocal_1866;
 		while (iVar0 < 70)
 		{
-			switch (iLocal_198[iVar0])
+			switch (iLocal_1790[iVar0])
 			{
 				case 0:
-					if (!iLocal_243[iVar0] == 0)
+					if (!iLocal_2686[iVar0] == 0)
 					{
-						if (ENTITY::IS_ENTITY_AT_COORD(iParam0, Local_217[iVar0 /*3*/], fLocal_171, fLocal_171, fLocal_171, false, true, 0))
+						if (ENTITY::IS_ENTITY_AT_COORD(iParam0, Local_2134[iVar0 /*3*/], fLocal_1298, fLocal_1298, fLocal_1298, false, true, 0))
 						{
-							iLocal_206++;
-							iLocal_198[iVar0]++;
+							iLocal_1868++;
+							iLocal_1790[iVar0]++;
 						}
 					}
 					else
 					{
-						iLocal_198[iVar0] = 99;
+						iLocal_1790[iVar0] = 99;
 					}
 					break;
 				
 				case 1:
-					if (10 > iLocal_201)
+					if (10 > iLocal_1863)
 					{
-						if (!ENTITY::DOES_ENTITY_EXIST(iLocal_250[iVar0]))
+						if (!ENTITY::DOES_ENTITY_EXIST(iLocal_2933[iVar0]))
 						{
-							STREAMING::REQUEST_MODEL(iLocal_243[iVar0]);
-							if (STREAMING::HAS_MODEL_LOADED(iLocal_243[iVar0]))
+							STREAMING::REQUEST_MODEL(iLocal_2686[iVar0]);
+							if (STREAMING::HAS_MODEL_LOADED(iLocal_2686[iVar0]))
 							{
-								if ((iLocal_118 || iLocal_132) || (!bLocal_149 && !func_424(Local_217[iVar0 /*3*/], Var1, 5f, fLocal_184)))
+								if ((iLocal_120 || iLocal_134) || (!bLocal_151 && !func_424(Local_2134[iVar0 /*3*/], Var1, 5f, fLocal_1311)))
 								{
-									if (bLocal_128)
+									if (bLocal_130)
 									{
-										func_423(Local_217[iVar0 /*3*/], Var1, fLocal_177);
+										func_423(Local_2134[iVar0 /*3*/], Var1, fLocal_1304);
 									}
-									iLocal_250[iVar0] = VEHICLE::CREATE_VEHICLE(iLocal_243[iVar0], Local_217[iVar0 /*3*/], 0f, false, false, false);
-									if (iLocal_243[iVar0] == joaat("polmav"))
+									iLocal_2933[iVar0] = VEHICLE::CREATE_VEHICLE(iLocal_2686[iVar0], Local_2134[iVar0 /*3*/], 0f, false, false, false);
+									if (iLocal_2686[iVar0] == joaat("polmav"))
 									{
-										VEHICLE::SET_VEHICLE_LIVERY(iLocal_250[iVar0], 0);
+										VEHICLE::SET_VEHICLE_LIVERY(iLocal_2933[iVar0], 0);
 									}
-									ENTITY::SET_ENTITY_QUATERNION(iLocal_250[iVar0], fLocal_167[iVar0], fLocal_168[iVar0], fLocal_169[iVar0], fLocal_170[iVar0]);
-									STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_243[iVar0]);
-									if (VEHICLE::IS_VEHICLE_MODEL(iLocal_250[iVar0], func_90()))
+									ENTITY::SET_ENTITY_QUATERNION(iLocal_2933[iVar0], fLocal_1014[iVar0], fLocal_1085[iVar0], fLocal_1156[iVar0], fLocal_1227[iVar0]);
+									STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_2686[iVar0]);
+									if (VEHICLE::IS_VEHICLE_MODEL(iLocal_2933[iVar0], func_90()))
 									{
-										VEHICLE::SET_VEHICLE_SIREN(iLocal_250[iVar0], true);
-										if (!VEHICLE::IS_THIS_MODEL_A_BIKE(iLocal_243[iVar0]))
+										VEHICLE::SET_VEHICLE_SIREN(iLocal_2933[iVar0], true);
+										if (!VEHICLE::IS_THIS_MODEL_A_BIKE(iLocal_2686[iVar0]))
 										{
-											AUDIO::SET_SIREN_WITH_NO_DRIVER(iLocal_250[iVar0], true);
+											AUDIO::SET_SIREN_WITH_NO_DRIVER(iLocal_2933[iVar0], true);
 										}
 									}
-									if (VEHICLE::IS_VEHICLE_MODEL(iLocal_250[iVar0], func_91()))
+									if (VEHICLE::IS_VEHICLE_MODEL(iLocal_2933[iVar0], func_91()))
 									{
-										VEHICLE::SET_VEHICLE_COLOURS(iLocal_250[iVar0], 0, 0);
+										VEHICLE::SET_VEHICLE_COLOURS(iLocal_2933[iVar0], 0, 0);
 									}
-									ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iLocal_250[iVar0], true);
-									iLocal_206 = (iLocal_206 - 1);
-									iLocal_201++;
-									iLocal_198[iVar0]++;
-									bLocal_149 = true;
+									ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iLocal_2933[iVar0], true);
+									iLocal_1868 = (iLocal_1868 - 1);
+									iLocal_1863++;
+									iLocal_1790[iVar0]++;
+									bLocal_151 = true;
 								}
 							}
 						}
 						else
 						{
-							iLocal_206 = (iLocal_206 - 1);
-							iLocal_201++;
-							iLocal_198[iVar0]++;
+							iLocal_1868 = (iLocal_1868 - 1);
+							iLocal_1863++;
+							iLocal_1790[iVar0]++;
 						}
 					}
 					break;
 				
 				case 2:
-					if (!bVar3)
+					if (!bVar7)
 					{
-						if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_250[iVar0], false))
+						if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_2933[iVar0], false))
 						{
-							Var2 = { ENTITY::GET_ENTITY_COORDS(iLocal_250[iVar0], true) };
+							Var4 = { ENTITY::GET_ENTITY_COORDS(iLocal_2933[iVar0], true) };
 						}
-						if (fLocal_185 == 0f || SYSTEM::VDIST2(Var1, Var2) < (fLocal_185 * fLocal_185))
+						if (fLocal_1312 == 0f || SYSTEM::VDIST2(Var1, Var4) < (fLocal_1312 * fLocal_1312))
 						{
-							if (!func_418(iLocal_250[iVar0], iParam0, 0))
+							if (!func_418(iLocal_2933[iVar0], iParam0, 0))
 							{
-								if (!bLocal_120)
+								if (!bLocal_122)
 								{
-									func_85(iLocal_250[iVar0]);
+									func_85(iLocal_2933[iVar0]);
 								}
 								else
 								{
-									VEHICLE::DELETE_VEHICLE(&(iLocal_250[iVar0]));
+									VEHICLE::DELETE_VEHICLE(&(iLocal_2933[iVar0]));
 								}
-								iLocal_201 = (iLocal_201 - 1);
-								iLocal_198[iVar0] = 99;
-								bVar3 = true;
+								iLocal_1863 = (iLocal_1863 - 1);
+								iLocal_1790[iVar0] = 99;
+								bVar7 = true;
 							}
 						}
 					}
 					break;
 			}
-			if (iLocal_198[iVar0] != 99)
+			if (iLocal_1790[iVar0] != 99)
 			{
-				if (!bVar4)
+				if (!bVar8)
 				{
-					iLocal_204 = iVar0;
-					bVar4 = true;
+					iLocal_1866 = iVar0;
+					bVar8 = true;
 				}
 			}
 			iVar0++;
@@ -43946,72 +43946,72 @@ void func_427(int iParam0, float fParam1, int iParam2)//Position - 0x326CC
 	int iVar4;
 	int iVar5;
 	struct<3> Var6;
-	struct<3> Var7;
-	struct<3> Var8;
-	float fVar9;
-	float fVar10;
-	bool bVar11;
-	bool bVar12;
-	bool bVar13;
-	bool bVar14;
-	int iVar15;
-	int iVar16;
+	struct<3> Var9;
+	struct<3> Var12;
+	float fVar15;
+	float fVar16;
 	bool bVar17;
 	bool bVar18;
-	struct<3> Var19;
+	bool bVar19;
+	bool bVar20;
+	int iVar21;
+	int iVar22;
+	bool bVar23;
+	bool bVar24;
+	struct<3> Var25;
 	
 	iVar5 = 0;
-	bVar12 = PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID());
-	bVar13 = PED::CAN_CREATE_RANDOM_DRIVER();
-	bVar14 = PED::CAN_CREATE_RANDOM_BIKE_RIDER();
-	if (bVar12)
+	bVar18 = PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID());
+	bVar19 = PED::CAN_CREATE_RANDOM_DRIVER();
+	bVar20 = PED::CAN_CREATE_RANDOM_BIKE_RIDER();
+	if (bVar18)
 	{
 		if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 		{
 			iVar5 = PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false);
 		}
-		Var8 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
+		Var12 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
 	}
 	iVar1 = 0;
 	if (VEHICLE::IS_VEHICLE_DRIVEABLE(iParam0, false))
 	{
 		if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iParam0))
 		{
-			fLocal_173 = VEHICLE::GET_TIME_POSITION_IN_RECORDING(iParam0);
+			fLocal_1300 = VEHICLE::GET_TIME_POSITION_IN_RECORDING(iParam0);
 		}
-		iVar16 = -1;
-		bVar17 = false;
-		bVar18 = false;
-		iVar0 = iLocal_203;
-		while (iVar0 < 85 && !bVar17)
+		iVar22 = -1;
+		bVar23 = false;
+		bVar24 = false;
+		iVar0 = iLocal_1865;
+		while (iVar0 < 85 && !bVar23)
 		{
-			if (iLocal_193[iVar0] != 99)
+			if (iLocal_1405[iVar0] != 99)
 			{
-				if (iLocal_193[iVar0] == 0)
+				if (iLocal_1405[iVar0] == 0)
 				{
-					if (iLocal_192[iVar0] > 0 && iLocal_242[iVar0] != 0)
+					if (iLocal_1319[iVar0] > 0 && iLocal_2600[iVar0] != 0)
 					{
-						if (!iLocal_118)
+						if (!iLocal_120)
 						{
-							if (fLocal_173 < (fLocal_156[iVar0] + 20000f))
+							if (fLocal_1300 < (fLocal_498[iVar0] + 20000f))
 							{
-								if (fLocal_173 >= (fLocal_156[iVar0] - (7000f * fParam1)))
+								if (fLocal_1300 >= (fLocal_498[iVar0] - (7000f * fParam1)))
 								{
-									if (func_412(iLocal_242[iVar0]))
+									if (func_412(iLocal_2600[iVar0]))
 									{
-										MISC::SET_BIT(&(iLocal_194[iVar0]), 0);
+										MISC::SET_BIT(&(iLocal_1491[iVar0]), 0);
 									}
-									else if (VEHICLE::IS_THIS_MODEL_A_BIKE(iLocal_242[iVar0]))
+									else if (VEHICLE::IS_THIS_MODEL_A_BIKE(iLocal_2600[iVar0]))
 									{
-										MISC::SET_BIT(&(iLocal_194[iVar0]), 2);
+										MISC::SET_BIT(&(iLocal_1491[iVar0]), 2);
 									}
-									MISC::CLEAR_BIT(&(iLocal_194[iVar0]), 1);
-									iLocal_208++;
-									iLocal_193[iVar0]++;
+									MISC::CLEAR_BIT(&(iLocal_1491[iVar0]), 1);
+									iLocal_1870++;
+									iLocal_1405[iVar0]++;
 								}
 								else if (iVar1 > 2)
 								{
-									bVar17 = true;
+									bVar23 = true;
 								}
 								else
 								{
@@ -44025,22 +44025,22 @@ void func_427(int iParam0, float fParam1, int iParam2)//Position - 0x326CC
 						}
 						else
 						{
-							fVar9 = (fLocal_173 - fLocal_156[iVar0]);
-							if (fVar9 >= 0f)
+							fVar15 = (fLocal_1300 - fLocal_498[iVar0]);
+							if (fVar15 >= 0f)
 							{
-								if (fVar9 < func_425(iLocal_192[iVar0]))
+								if (fVar15 < func_425(iLocal_1319[iVar0]))
 								{
-									if (func_412(iLocal_242[iVar0]))
+									if (func_412(iLocal_2600[iVar0]))
 									{
-										MISC::SET_BIT(&(iLocal_194[iVar0]), 0);
+										MISC::SET_BIT(&(iLocal_1491[iVar0]), 0);
 									}
-									else if (VEHICLE::IS_THIS_MODEL_A_BIKE(iLocal_242[iVar0]))
+									else if (VEHICLE::IS_THIS_MODEL_A_BIKE(iLocal_2600[iVar0]))
 									{
-										MISC::SET_BIT(&(iLocal_194[iVar0]), 2);
+										MISC::SET_BIT(&(iLocal_1491[iVar0]), 2);
 									}
-									MISC::CLEAR_BIT(&(iLocal_194[iVar0]), 1);
-									iLocal_208++;
-									iLocal_193[iVar0]++;
+									MISC::CLEAR_BIT(&(iLocal_1491[iVar0]), 1);
+									iLocal_1870++;
+									iLocal_1405[iVar0]++;
 								}
 								else
 								{
@@ -44054,341 +44054,341 @@ void func_427(int iParam0, float fParam1, int iParam2)//Position - 0x326CC
 						func_429(iVar0, 1090519040);
 					}
 				}
-				else if (iLocal_193[iVar0] == 1)
+				else if (iLocal_1405[iVar0] == 1)
 				{
-					VEHICLE::REQUEST_VEHICLE_RECORDING(iLocal_192[iVar0], &cLocal_232);
-					bVar11 = false;
-					if (BitTest(iLocal_194[iVar0], 0))
+					VEHICLE::REQUEST_VEHICLE_RECORDING(iLocal_1319[iVar0], &cLocal_2583);
+					bVar17 = false;
+					if (BitTest(iLocal_1491[iVar0], 0))
 					{
 						STREAMING::REQUEST_MODEL(func_89());
 						if (STREAMING::HAS_MODEL_LOADED(func_89()))
 						{
-							bVar11 = true;
+							bVar17 = true;
 						}
 					}
-					else if (!bLocal_145 && ((!BitTest(iLocal_194[iVar0], 2) && bVar13) || (BitTest(iLocal_194[iVar0], 2) && bVar14)))
+					else if (!bLocal_147 && ((!BitTest(iLocal_1491[iVar0], 2) && bVar19) || (BitTest(iLocal_1491[iVar0], 2) && bVar20)))
 					{
-						bVar11 = true;
+						bVar17 = true;
 					}
 					else
 					{
 						STREAMING::REQUEST_MODEL(func_92());
-						bVar11 = STREAMING::HAS_MODEL_LOADED(func_92());
+						bVar17 = STREAMING::HAS_MODEL_LOADED(func_92());
 					}
-					if (!ENTITY::DOES_ENTITY_EXIST(iLocal_248[iVar0]))
+					if (!ENTITY::DOES_ENTITY_EXIST(iLocal_2831[iVar0]))
 					{
-						STREAMING::REQUEST_MODEL(iLocal_242[iVar0]);
-						if ((STREAMING::HAS_MODEL_LOADED(iLocal_242[iVar0]) && VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(iLocal_192[iVar0], &cLocal_232)) && bVar11)
+						STREAMING::REQUEST_MODEL(iLocal_2600[iVar0]);
+						if ((STREAMING::HAS_MODEL_LOADED(iLocal_2600[iVar0]) && VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(iLocal_1319[iVar0], &cLocal_2583)) && bVar17)
 						{
-							if (fLocal_173 >= (fLocal_156[iVar0] - (fLocal_186 * fParam1)))
+							if (fLocal_1300 >= (fLocal_498[iVar0] - (fLocal_1313 * fParam1)))
 							{
-								if ((iLocal_132 || iParam2) || (!bLocal_149 && !func_424(Local_216[iVar0 /*3*/], Var8, 5f, fLocal_184)))
+								if ((iLocal_134 || iParam2) || (!bLocal_151 && !func_424(Local_1878[iVar0 /*3*/], Var12, 5f, fLocal_1311)))
 								{
-									if (bLocal_128)
+									if (bLocal_130)
 									{
-										func_423(Local_216[iVar0 /*3*/], Var8, fLocal_177);
+										func_423(Local_1878[iVar0 /*3*/], Var12, fLocal_1304);
 									}
-									iLocal_248[iVar0] = VEHICLE::CREATE_VEHICLE(iLocal_242[iVar0], Local_216[iVar0 /*3*/], 0f, false, false, false);
-									if (iLocal_242[iVar0] == joaat("polmav"))
+									iLocal_2831[iVar0] = VEHICLE::CREATE_VEHICLE(iLocal_2600[iVar0], Local_1878[iVar0 /*3*/], 0f, false, false, false);
+									if (iLocal_2600[iVar0] == joaat("polmav"))
 									{
-										VEHICLE::SET_VEHICLE_LIVERY(iLocal_248[iVar0], 0);
+										VEHICLE::SET_VEHICLE_LIVERY(iLocal_2831[iVar0], 0);
 									}
-									if (iLocal_141 && !BitTest(iLocal_194[iVar0], 0))
+									if (iLocal_143 && !BitTest(iLocal_1491[iVar0], 0))
 									{
-										func_422(iLocal_248[iVar0]);
+										func_422(iLocal_2831[iVar0]);
 									}
-									ENTITY::SET_ENTITY_COORDS_NO_OFFSET(iLocal_248[iVar0], Local_216[iVar0 /*3*/], false, false, true);
-									ENTITY::SET_ENTITY_QUATERNION(iLocal_248[iVar0], fLocal_152[iVar0], fLocal_153[iVar0], fLocal_154[iVar0], fLocal_155[iVar0]);
-									if (VEHICLE::IS_THIS_MODEL_A_CAR(iLocal_242[iVar0]) || VEHICLE::IS_THIS_MODEL_A_BIKE(iLocal_242[iVar0]))
+									ENTITY::SET_ENTITY_COORDS_NO_OFFSET(iLocal_2831[iVar0], Local_1878[iVar0 /*3*/], false, false, true);
+									ENTITY::SET_ENTITY_QUATERNION(iLocal_2831[iVar0], fLocal_154[iVar0], fLocal_240[iVar0], fLocal_326[iVar0], fLocal_412[iVar0]);
+									if (VEHICLE::IS_THIS_MODEL_A_CAR(iLocal_2600[iVar0]) || VEHICLE::IS_THIS_MODEL_A_BIKE(iLocal_2600[iVar0]))
 									{
-										VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(iLocal_248[iVar0], 5f);
+										VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(iLocal_2831[iVar0], 5f);
 									}
-									if (BitTest(iLocal_194[iVar0], 3))
+									if (BitTest(iLocal_1491[iVar0], 3))
 									{
-										ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iLocal_248[iVar0], true);
+										ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(iLocal_2831[iVar0], true);
 									}
-									if (!BitTest(iLocal_194[iVar0], 0))
+									if (!BitTest(iLocal_1491[iVar0], 0))
 									{
-										VEHICLE::SET_VEHICLE_ENGINE_ON(iLocal_248[iVar0], true, true, false);
+										VEHICLE::SET_VEHICLE_ENGINE_ON(iLocal_2831[iVar0], true, true, false);
 										if (CLOCK::GET_CLOCK_HOURS() > 19 || CLOCK::GET_CLOCK_HOURS() < 7)
 										{
-											VEHICLE::SET_VEHICLE_LIGHTS(iLocal_248[iVar0], 3);
+											VEHICLE::SET_VEHICLE_LIGHTS(iLocal_2831[iVar0], 3);
 										}
 									}
-									ENTITY::FREEZE_ENTITY_POSITION(iLocal_248[iVar0], true);
-									ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_PLAYER(iLocal_248[iVar0], true);
-									STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_242[iVar0]);
-									iLocal_208 = (iLocal_208 - 1);
-									iLocal_193[iVar0]++;
-									bLocal_149 = true;
+									ENTITY::FREEZE_ENTITY_POSITION(iLocal_2831[iVar0], true);
+									ENTITY::SET_ENTITY_ONLY_DAMAGED_BY_PLAYER(iLocal_2831[iVar0], true);
+									STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_2600[iVar0]);
+									iLocal_1870 = (iLocal_1870 - 1);
+									iLocal_1405[iVar0]++;
+									bLocal_151 = true;
 								}
-								else if (fLocal_173 > fLocal_156[iVar0])
+								else if (fLocal_1300 > fLocal_498[iVar0])
 								{
-									iLocal_208 = (iLocal_208 - 1);
+									iLocal_1870 = (iLocal_1870 - 1);
 									func_429(iVar0, 1090519040);
 								}
 							}
 						}
 					}
 				}
-				else if (iLocal_193[iVar0] == 2)
+				else if (iLocal_1405[iVar0] == 2)
 				{
-					bVar11 = false;
-					if (((iVar3 < 8 && (iVar0 > iLocal_214 || iLocal_214 == 0)) || iLocal_132) || iParam2)
+					bVar17 = false;
+					if (((iVar3 < 8 && (iVar0 > iLocal_1876 || iLocal_1876 == 0)) || iLocal_134) || iParam2)
 					{
-						if (!BitTest(iLocal_194[iVar0], 1))
+						if (!BitTest(iLocal_1491[iVar0], 1))
 						{
-							if (BitTest(iLocal_194[iVar0], 0))
+							if (BitTest(iLocal_1491[iVar0], 0))
 							{
 								STREAMING::REQUEST_MODEL(func_89());
-								bVar11 = STREAMING::HAS_MODEL_LOADED(func_89());
-								iVar15 = 2;
+								bVar17 = STREAMING::HAS_MODEL_LOADED(func_89());
+								iVar21 = 2;
 							}
-							else if (!bLocal_145 && ((!BitTest(iLocal_194[iVar0], 2) && bVar13) || (BitTest(iLocal_194[iVar0], 2) && bVar14)))
+							else if (!bLocal_147 && ((!BitTest(iLocal_1491[iVar0], 2) && bVar19) || (BitTest(iLocal_1491[iVar0], 2) && bVar20)))
 							{
-								bVar11 = true;
-								iVar15 = 1;
+								bVar17 = true;
+								iVar21 = 1;
 							}
 							else
 							{
 								STREAMING::REQUEST_MODEL(func_92());
-								bVar11 = STREAMING::HAS_MODEL_LOADED(func_92());
-								iVar15 = 0;
+								bVar17 = STREAMING::HAS_MODEL_LOADED(func_92());
+								iVar21 = 0;
 							}
-							if (!ENTITY::IS_ENTITY_DEAD(iLocal_248[iVar0], false))
+							if (!ENTITY::IS_ENTITY_DEAD(iLocal_2831[iVar0], false))
 							{
-								if (!bLocal_149 && VEHICLE::IS_VEHICLE_SEAT_FREE(iLocal_248[iVar0], -1, false))
+								if (!bLocal_151 && VEHICLE::IS_VEHICLE_SEAT_FREE(iLocal_2831[iVar0], -1, false))
 								{
-									if (bVar11)
+									if (bVar17)
 									{
-										if ((SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(iLocal_248[iVar0], true), Var8) < 10000f || iParam2) || iLocal_132)
+										if ((SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(iLocal_2831[iVar0], true), Var12) < 10000f || iParam2) || iLocal_134)
 										{
-											func_421(&(iLocal_248[iVar0]), iVar15, 0);
-											MISC::SET_BIT(&(iLocal_194[iVar0]), 1);
+											func_421(&(iLocal_2831[iVar0]), iVar21, 0);
+											MISC::SET_BIT(&(iLocal_1491[iVar0]), 1);
 										}
 									}
 								}
 							}
 						}
-						if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_248[iVar0], false))
+						if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_2831[iVar0], false))
 						{
-							VEHICLE::REQUEST_VEHICLE_RECORDING(iLocal_192[iVar0], &cLocal_232);
-							if (fLocal_173 >= fLocal_156[iVar0])
+							VEHICLE::REQUEST_VEHICLE_RECORDING(iLocal_1319[iVar0], &cLocal_2583);
+							if (fLocal_1300 >= fLocal_498[iVar0])
 							{
-								if (15 > iLocal_199)
+								if (15 > iLocal_1861)
 								{
-									fVar9 = (fLocal_173 - fLocal_156[iVar0]);
-									if (VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(iLocal_192[iVar0], &cLocal_232))
+									fVar15 = (fLocal_1300 - fLocal_498[iVar0]);
+									if (VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(iLocal_1319[iVar0], &cLocal_2583))
 									{
-										if (fVar9 < VEHICLE::GET_TOTAL_DURATION_OF_VEHICLE_RECORDING(iLocal_192[iVar0], &cLocal_232))
+										if (fVar15 < VEHICLE::GET_TOTAL_DURATION_OF_VEHICLE_RECORDING(iLocal_1319[iVar0], &cLocal_2583))
 										{
-											Var6 = { ENTITY::GET_ENTITY_COORDS(iLocal_248[iVar0], true) };
-											Var7 = { VEHICLE::GET_POSITION_OF_VEHICLE_RECORDING_AT_TIME(iLocal_192[iVar0], fVar9, &cLocal_232) };
-											if (!func_424(Var6, Var8, 5f, fLocal_184) && func_424(Var7, Var8, 5f, fLocal_184))
+											Var6 = { ENTITY::GET_ENTITY_COORDS(iLocal_2831[iVar0], true) };
+											Var9 = { VEHICLE::GET_POSITION_OF_VEHICLE_RECORDING_AT_TIME(iLocal_1319[iVar0], fVar15, &cLocal_2583) };
+											if (!func_424(Var6, Var12, 5f, fLocal_1311) && func_424(Var9, Var12, 5f, fLocal_1311))
 											{
-												if (!BitTest(iLocal_194[iVar0], 1))
+												if (!BitTest(iLocal_1491[iVar0], 1))
 												{
-													func_421(&(iLocal_248[iVar0]), iVar15, 0);
+													func_421(&(iLocal_2831[iVar0]), iVar21, 0);
 												}
 												func_429(iVar0, 1090519040);
 											}
-											else if (((!bLocal_149 || BitTest(iLocal_194[iVar0], 1)) || iLocal_132) || iParam2)
+											else if (((!bLocal_151 || BitTest(iLocal_1491[iVar0], 1)) || iLocal_134) || iParam2)
 											{
-												if (func_415(&(iLocal_248[iVar0]), iLocal_192[iVar0], fVar9, 1, 0, 0, 1, bLocal_146))
+												if (func_415(&(iLocal_2831[iVar0]), iLocal_1319[iVar0], fVar15, 1, 0, 0, 1, bLocal_148))
 												{
-													if (!BitTest(iLocal_194[iVar0], 1))
+													if (!BitTest(iLocal_1491[iVar0], 1))
 													{
-														func_421(&(iLocal_248[iVar0]), iVar15, 0);
+														func_421(&(iLocal_2831[iVar0]), iVar21, 0);
 													}
-													ENTITY::SET_ENTITY_COLLISION(iLocal_248[iVar0], true, false);
-													VEHICLE::SET_PLAYBACK_SPEED(iLocal_248[iVar0], fParam1);
-													iLocal_199++;
-													iLocal_193[iVar0]++;
+													ENTITY::SET_ENTITY_COLLISION(iLocal_2831[iVar0], true, false);
+													VEHICLE::SET_PLAYBACK_SPEED(iLocal_2831[iVar0], fParam1);
+													iLocal_1861++;
+													iLocal_1405[iVar0]++;
 												}
 											}
 										}
 										else
 										{
-											if (!BitTest(iLocal_194[iVar0], 1))
+											if (!BitTest(iLocal_1491[iVar0], 1))
 											{
-												func_421(&(iLocal_248[iVar0]), iVar15, 0);
+												func_421(&(iLocal_2831[iVar0]), iVar21, 0);
 											}
 											func_429(iVar0, 1090519040);
 										}
 									}
-									else if (fVar9 > VEHICLE::GET_TOTAL_DURATION_OF_VEHICLE_RECORDING(iLocal_192[iVar0], &cLocal_232))
+									else if (fVar15 > VEHICLE::GET_TOTAL_DURATION_OF_VEHICLE_RECORDING(iLocal_1319[iVar0], &cLocal_2583))
 									{
-										if (!BitTest(iLocal_194[iVar0], 1))
+										if (!BitTest(iLocal_1491[iVar0], 1))
 										{
-											func_421(&(iLocal_248[iVar0]), iVar15, 0);
+											func_421(&(iLocal_2831[iVar0]), iVar21, 0);
 										}
 										func_429(iVar0, 1090519040);
 									}
 								}
 								else
 								{
-									if (!BitTest(iLocal_194[iVar0], 1))
+									if (!BitTest(iLocal_1491[iVar0], 1))
 									{
-										func_421(&(iLocal_248[iVar0]), iVar15, 0);
+										func_421(&(iLocal_2831[iVar0]), iVar21, 0);
 									}
 									func_429(iVar0, 1090519040);
 								}
 							}
-							else if (iLocal_129 && !bLocal_137)
+							else if (iLocal_131 && !bLocal_139)
 							{
-								if (!BitTest(iLocal_194[iVar0], 1))
+								if (!BitTest(iLocal_1491[iVar0], 1))
 								{
-									func_421(&(iLocal_248[iVar0]), iVar15, 0);
+									func_421(&(iLocal_2831[iVar0]), iVar21, 0);
 								}
 								func_429(iVar0, 1090519040);
 							}
 						}
 						else
 						{
-							if (!BitTest(iLocal_194[iVar0], 1))
+							if (!BitTest(iLocal_1491[iVar0], 1))
 							{
-								func_421(&(iLocal_248[iVar0]), iVar15, 0);
+								func_421(&(iLocal_2831[iVar0]), iVar21, 0);
 							}
 							func_429(iVar0, 1090519040);
 						}
 						iVar3++;
-						iLocal_214 = iVar0;
+						iLocal_1876 = iVar0;
 					}
 				}
-				else if (iLocal_193[iVar0] == 3)
+				else if (iLocal_1405[iVar0] == 3)
 				{
-					if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_248[iVar0], false))
+					if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_2831[iVar0], false))
 					{
-						if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_248[iVar0]))
+						if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_2831[iVar0]))
 						{
-							iVar4 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iLocal_248[iVar0], -1, false);
+							iVar4 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iLocal_2831[iVar0], -1, false);
 							if (!PED::IS_PED_INJURED(iVar4))
 							{
-								if (bVar12)
+								if (bVar18)
 								{
-									bVar18 = false;
-									if (!bLocal_127)
+									bVar24 = false;
+									if (!bLocal_129)
 									{
-										if ((!bLocal_122 && !iLocal_119) && func_420(iLocal_248[iVar0]))
+										if ((!bLocal_124 && !iLocal_121) && func_420(iLocal_2831[iVar0]))
 										{
-											if (iVar2 < 3 && (iVar0 > iLocal_213 || iLocal_213 == 0))
+											if (iVar2 < 3 && (iVar0 > iLocal_1875 || iLocal_1875 == 0))
 											{
 												if (!ENTITY::IS_ENTITY_DEAD(iVar5, false))
 												{
-													bVar11 = false;
-													if (!func_428(iLocal_248[iVar0], iVar5) || func_418(iVar5, iLocal_248[iVar0], 0))
+													bVar17 = false;
+													if (!func_428(iLocal_2831[iVar0], iVar5) || func_418(iVar5, iLocal_2831[iVar0], 0))
 													{
-														bVar18 = true;
+														bVar24 = true;
 													}
 												}
-												iLocal_213 = iVar0;
+												iLocal_1875 = iVar0;
 												iVar2++;
 											}
 										}
-										else if (((!bLocal_142 && !BitTest(iLocal_194[iVar0], 4)) && iVar2 < 3) && (iVar0 > iLocal_213 || iLocal_213 == 0))
+										else if (((!bLocal_144 && !BitTest(iLocal_1491[iVar0], 4)) && iVar2 < 3) && (iVar0 > iLocal_1875 || iLocal_1875 == 0))
 										{
-											Var19 = { ENTITY::GET_OFFSET_FROM_ENTITY_GIVEN_WORLD_COORDS(iParam0, ENTITY::GET_ENTITY_COORDS(iLocal_248[iVar0], true)) };
-											if (Var19.f_1 < 0f)
+											Var25 = { ENTITY::GET_OFFSET_FROM_ENTITY_GIVEN_WORLD_COORDS(iParam0, ENTITY::GET_ENTITY_COORDS(iLocal_2831[iVar0], true)) };
+											if (Var25.f_1 < 0f)
 											{
-												if (MISC::ABSF(Var19.f_1) > MISC::ABSF(Var19.f_0))
+												if (MISC::ABSF(Var25.f_1) > MISC::ABSF(Var25.f_0))
 												{
-													bVar18 = true;
+													bVar24 = true;
 												}
 											}
 											iVar2++;
-											iLocal_213 = iVar0;
+											iLocal_1875 = iVar0;
 										}
 									}
-									if (bVar18)
+									if (bVar24)
 									{
-										func_417(iLocal_248[iVar0]);
-										iLocal_193[iVar0]++;
+										func_417(iLocal_2831[iVar0]);
+										iLocal_1405[iVar0]++;
 									}
 									else
 									{
-										VEHICLE::SET_PLAYBACK_SPEED(iLocal_248[iVar0], fParam1);
+										VEHICLE::SET_PLAYBACK_SPEED(iLocal_2831[iVar0], fParam1);
 									}
 								}
 							}
 							else
 							{
-								VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_248[iVar0]);
+								VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_2831[iVar0]);
 							}
 						}
 						else
 						{
-							iLocal_193[iVar0]++;
+							iLocal_1405[iVar0]++;
 						}
 					}
 					else
 					{
-						iLocal_193[iVar0]++;
+						iLocal_1405[iVar0]++;
 					}
 				}
-				else if (iLocal_193[iVar0] == 4)
+				else if (iLocal_1405[iVar0] == 4)
 				{
-					if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_248[iVar0], false))
+					if (VEHICLE::IS_VEHICLE_DRIVEABLE(iLocal_2831[iVar0], false))
 					{
-						if (!VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_248[iVar0]))
+						if (!VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_2831[iVar0]))
 						{
-							iLocal_193[iVar0]++;
+							iLocal_1405[iVar0]++;
 						}
 						else
 						{
-							iVar4 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iLocal_248[iVar0], -1, false);
+							iVar4 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iLocal_2831[iVar0], -1, false);
 							if (!PED::IS_PED_INJURED(iVar4))
 							{
-								VEHICLE::SET_PLAYBACK_SPEED(iLocal_248[iVar0], fParam1);
+								VEHICLE::SET_PLAYBACK_SPEED(iLocal_2831[iVar0], fParam1);
 							}
 							else
 							{
-								VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_248[iVar0]);
+								VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_2831[iVar0]);
 							}
-							if (VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(iLocal_192[iVar0], &cLocal_232))
+							if (VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(iLocal_1319[iVar0], &cLocal_2583))
 							{
-								if (fLocal_173 > (fLocal_156[iVar0] + VEHICLE::GET_TOTAL_DURATION_OF_VEHICLE_RECORDING(iLocal_192[iVar0], &cLocal_232)))
+								if (fLocal_1300 > (fLocal_498[iVar0] + VEHICLE::GET_TOTAL_DURATION_OF_VEHICLE_RECORDING(iLocal_1319[iVar0], &cLocal_2583)))
 								{
-									VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_248[iVar0]);
+									VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_2831[iVar0]);
 								}
 							}
 							else
 							{
-								VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_248[iVar0]);
+								VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(iLocal_2831[iVar0]);
 							}
 						}
 					}
 					else
 					{
-						iLocal_193[iVar0]++;
+						iLocal_1405[iVar0]++;
 					}
 				}
-				else if (iLocal_193[iVar0] == 5)
+				else if (iLocal_1405[iVar0] == 5)
 				{
-					if (!ENTITY::IS_ENTITY_DEAD(iLocal_248[iVar0], false))
+					if (!ENTITY::IS_ENTITY_DEAD(iLocal_2831[iVar0], false))
 					{
-						fVar10 = ENTITY::GET_ENTITY_SPEED(iLocal_248[iVar0]);
+						fVar16 = ENTITY::GET_ENTITY_SPEED(iLocal_2831[iVar0]);
 					}
-					iLocal_199 = (iLocal_199 - 1);
-					func_429(iVar0, fVar10);
+					iLocal_1861 = (iLocal_1861 - 1);
+					func_429(iVar0, fVar16);
 				}
-				if (iVar16 == -1)
+				if (iVar22 == -1)
 				{
-					iVar16 = iVar0;
+					iVar22 = iVar0;
 				}
 			}
 			iVar0++;
 		}
-		if (iVar16 != -1)
+		if (iVar22 != -1)
 		{
-			iLocal_203 = iVar16;
+			iLocal_1865 = iVar22;
 		}
 		if (iVar2 < 3)
 		{
-			iLocal_213 = 0;
+			iLocal_1875 = 0;
 		}
 		if (iVar3 < 8)
 		{
-			iLocal_214 = 0;
+			iLocal_1876 = 0;
 		}
 	}
 	else
@@ -44400,8 +44400,8 @@ void func_427(int iParam0, float fParam1, int iParam2)//Position - 0x326CC
 int func_428(int iParam0, int iParam1)//Position - 0x33206
 {
 	struct<3> Var0;
-	struct<3> Var1;
-	float fVar2;
+	struct<3> Var3;
+	float fVar6;
 	
 	if (VEHICLE::IS_VEHICLE_DRIVEABLE(iParam0, false))
 	{
@@ -44413,16 +44413,16 @@ int func_428(int iParam0, int iParam1)//Position - 0x33206
 	}
 	if (VEHICLE::IS_VEHICLE_DRIVEABLE(iParam1, false))
 	{
-		Var1 = { ENTITY::GET_ENTITY_SPEED_VECTOR(iParam1, false) };
+		Var3 = { ENTITY::GET_ENTITY_SPEED_VECTOR(iParam1, false) };
 	}
 	else
 	{
 		return 0;
 	}
 	Var0.f_2 = 0f;
-	Var1.f_2 = 0f;
-	fVar2 = func_405(Var0, Var1);
-	if (fVar2 < 0f)
+	Var3.f_2 = 0f;
+	fVar6 = func_405(Var0, Var3);
+	if (fVar6 < 0f)
 	{
 		return 0;
 	}
@@ -44433,15 +44433,15 @@ void func_429(int iParam0, float fParam1)//Position - 0x3326A
 {
 	int iVar0;
 	
-	if (!iLocal_242[iParam0] == 0)
+	if (!iLocal_2600[iParam0] == 0)
 	{
-		STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_242[iParam0]);
+		STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_2600[iParam0]);
 	}
-	if (!ENTITY::IS_ENTITY_DEAD(iLocal_248[iParam0], false))
+	if (!ENTITY::IS_ENTITY_DEAD(iLocal_2831[iParam0], false))
 	{
-		ENTITY::SET_ENTITY_COLLISION(iLocal_248[iParam0], true, false);
-		ENTITY::FREEZE_ENTITY_POSITION(iLocal_248[iParam0], false);
-		iVar0 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iLocal_248[iParam0], -1, false);
+		ENTITY::SET_ENTITY_COLLISION(iLocal_2831[iParam0], true, false);
+		ENTITY::FREEZE_ENTITY_POSITION(iLocal_2831[iParam0], false);
+		iVar0 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iLocal_2831[iParam0], -1, false);
 		if (!PED::IS_PED_INJURED(iVar0) && iVar0 != PLAYER::PLAYER_PED_ID())
 		{
 			PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(iVar0, false);
@@ -44453,9 +44453,9 @@ void func_429(int iParam0, float fParam1)//Position - 0x3326A
 			{
 				fParam1 = 62.9f;
 			}
-			TASK::TASK_VEHICLE_MISSION(iVar0, iLocal_248[iParam0], 0, 1, fParam1, 786603, 5f, 5f, true);
+			TASK::TASK_VEHICLE_MISSION(iVar0, iLocal_2831[iParam0], 0, 1, fParam1, 786603, 5f, 5f, true);
 			PED::SET_PED_FLEE_ATTRIBUTES(iVar0, 8192, true);
-			if (bLocal_151)
+			if (bLocal_153)
 			{
 				PED::SET_PED_FLEE_ATTRIBUTES(iVar0, 65536, true);
 				PED::SET_PED_FLEE_ATTRIBUTES(iVar0, 2, false);
@@ -44464,12 +44464,12 @@ void func_429(int iParam0, float fParam1)//Position - 0x3326A
 			TASK::SET_DRIVE_TASK_CRUISE_SPEED(iVar0, fParam1);
 		}
 	}
-	if (!bLocal_120)
+	if (!bLocal_122)
 	{
-		if (!bLocal_148)
+		if (!bLocal_150)
 		{
 			func_411(iVar0);
-			func_85(iLocal_248[iParam0]);
+			func_85(iLocal_2831[iParam0]);
 		}
 	}
 	else
@@ -44478,33 +44478,33 @@ void func_429(int iParam0, float fParam1)//Position - 0x3326A
 		{
 			PED::DELETE_PED(&iVar0);
 		}
-		if (ENTITY::DOES_ENTITY_EXIST(iLocal_248[iParam0]))
+		if (ENTITY::DOES_ENTITY_EXIST(iLocal_2831[iParam0]))
 		{
-			VEHICLE::DELETE_VEHICLE(&(iLocal_248[iParam0]));
+			VEHICLE::DELETE_VEHICLE(&(iLocal_2831[iParam0]));
 		}
 	}
-	if (!bLocal_130 && !bLocal_143)
+	if (!bLocal_132 && !bLocal_145)
 	{
-		if (iLocal_192[iParam0] > 0)
+		if (iLocal_1319[iParam0] > 0)
 		{
-			VEHICLE::REMOVE_VEHICLE_RECORDING(iLocal_192[iParam0], &cLocal_232);
+			VEHICLE::REMOVE_VEHICLE_RECORDING(iLocal_1319[iParam0], &cLocal_2583);
 		}
 	}
-	iLocal_193[iParam0] = 99;
+	iLocal_1405[iParam0] = 99;
 }
 
 void func_430(int iParam0, float fParam1, float fParam2)//Position - 0x333C5
 {
 	int iVar0;
 	struct<3> Var1;
-	struct<3> Var2;
-	struct<3> Var3;
 	struct<3> Var4;
-	float fVar5;
+	struct<3> Var7;
+	struct<3> Var10;
+	float fVar13;
 	
 	if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 	{
-		Var4 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
+		Var10 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
 	}
 	if (VEHICLE::IS_VEHICLE_DRIVEABLE(iParam0, false))
 	{
@@ -44512,21 +44512,21 @@ void func_430(int iParam0, float fParam1, float fParam2)//Position - 0x333C5
 		{
 			iVar0 = VEHICLE::GET_CURRENT_PLAYBACK_FOR_VEHICLE(iParam0);
 			Var1 = { VEHICLE::GET_POSITION_OF_VEHICLE_RECORDING_ID_AT_TIME(iVar0, fParam1) };
-			Var2 = { ENTITY::GET_ENTITY_COORDS(iParam0, true) };
-			Var3 = { Var2 - Var1 };
-			fVar5 = SYSTEM::VMAG(Var3);
-			if (fVar5 > fParam2)
+			Var4 = { ENTITY::GET_ENTITY_COORDS(iParam0, true) };
+			Var7 = { Var4 - Var1 };
+			fVar13 = SYSTEM::VMAG(Var7);
+			if (fVar13 > fParam2)
 			{
-				fVar5 = fParam2;
+				fVar13 = fParam2;
 			}
-			func_423(Var1, Var4, fVar5);
+			func_423(Var1, Var10, fVar13);
 		}
 	}
 }
 
 void func_431(int iParam0, float fParam1)//Position - 0x33448
 {
-	if (!bLocal_131)
+	if (!bLocal_133)
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(iParam0, false))
 		{
@@ -44547,7 +44547,7 @@ void func_431(int iParam0, float fParam1)//Position - 0x33448
 
 void func_432(int iParam0, float fParam1)//Position - 0x33496
 {
-	if (!bLocal_131)
+	if (!bLocal_133)
 	{
 		if (!ENTITY::IS_ENTITY_DEAD(iParam0, false))
 		{
@@ -44576,90 +44576,90 @@ void func_433(int iParam0, float fParam1)//Position - 0x334E4
 	
 	if (!ENTITY::IS_ENTITY_DEAD(iParam0, false) && VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iParam0))
 	{
-		fVar1 = (fLocal_187 + 2000f);
-		fVar2 = (fLocal_188 + 2000f);
+		fVar1 = (fLocal_1314 + 2000f);
+		fVar2 = (fLocal_1315 + 2000f);
 		bVar4 = false;
 		if (fVar1 < (fParam1 + 25000f))
 		{
 			iVar0 = VEHICLE::GET_CURRENT_PLAYBACK_FOR_VEHICLE(iParam0);
 			if (fVar1 <= VEHICLE::GET_TOTAL_DURATION_OF_VEHICLE_RECORDING_ID(iVar0))
 			{
-				if (iLocal_209 == 0)
+				if (iLocal_1871 == 0)
 				{
-					Local_228 = { VEHICLE::GET_POSITION_OF_VEHICLE_RECORDING_ID_AT_TIME(iVar0, fLocal_187) };
-					iLocal_209++;
+					Local_2571 = { VEHICLE::GET_POSITION_OF_VEHICLE_RECORDING_ID_AT_TIME(iVar0, fLocal_1314) };
+					iLocal_1871++;
 				}
-				else if (iLocal_209 == 1)
+				else if (iLocal_1871 == 1)
 				{
-					Local_229 = { VEHICLE::GET_POSITION_OF_VEHICLE_RECORDING_ID_AT_TIME(iVar0, fVar1) };
-					iLocal_209++;
+					Local_2574 = { VEHICLE::GET_POSITION_OF_VEHICLE_RECORDING_ID_AT_TIME(iVar0, fVar1) };
+					iLocal_1871++;
 				}
-				else if (!bLocal_149)
+				else if (!bLocal_151)
 				{
-					if (Local_228.f_0 > Local_229.f_0)
+					if (Local_2571.f_0 > Local_2574.f_0)
 					{
-						fVar3 = Local_228.f_0;
-						Local_228.f_0 = Local_229.f_0;
-						Local_229.f_0 = fVar3;
+						fVar3 = Local_2571.f_0;
+						Local_2571.f_0 = Local_2574.f_0;
+						Local_2574.f_0 = fVar3;
 					}
-					if (Local_228.f_1 > Local_229.f_1)
+					if (Local_2571.f_1 > Local_2574.f_1)
 					{
-						fVar3 = Local_228.f_1;
-						Local_228.f_1 = Local_229.f_1;
-						Local_229.f_1 = fVar3;
+						fVar3 = Local_2571.f_1;
+						Local_2571.f_1 = Local_2574.f_1;
+						Local_2574.f_1 = fVar3;
 					}
-					if (Local_228.f_2 > Local_229.f_2)
+					if (Local_2571.f_2 > Local_2574.f_2)
 					{
-						fVar3 = Local_228.f_2;
-						Local_228.f_2 = Local_229.f_2;
-						Local_229.f_2 = fVar3;
+						fVar3 = Local_2571.f_2;
+						Local_2571.f_2 = Local_2574.f_2;
+						Local_2574.f_2 = fVar3;
 					}
-					Local_228 = { Local_228 - Vector(fLocal_191, fLocal_191, fLocal_191) };
-					Local_229 = { Local_229 + Vector(fLocal_191, fLocal_191, fLocal_191) };
-					PATHFIND::SET_ROADS_IN_AREA(Local_228, Local_229, false, false);
-					fLocal_187 = fVar1;
-					iLocal_209 = 0;
+					Local_2571 = { Local_2571 - Vector(fLocal_1318, fLocal_1318, fLocal_1318) };
+					Local_2574 = { Local_2574 + Vector(fLocal_1318, fLocal_1318, fLocal_1318) };
+					PATHFIND::SET_ROADS_IN_AREA(Local_2571, Local_2574, false, false);
+					fLocal_1314 = fVar1;
+					iLocal_1871 = 0;
 				}
 			}
 		}
 		if (fVar2 < (fParam1 - 8000f))
 		{
 			iVar0 = VEHICLE::GET_CURRENT_PLAYBACK_FOR_VEHICLE(iParam0);
-			if (iLocal_212 == 0)
+			if (iLocal_1874 == 0)
 			{
-				Local_230 = { VEHICLE::GET_POSITION_OF_VEHICLE_RECORDING_ID_AT_TIME(iVar0, fLocal_188) };
-				iLocal_212++;
+				Local_2577 = { VEHICLE::GET_POSITION_OF_VEHICLE_RECORDING_ID_AT_TIME(iVar0, fLocal_1315) };
+				iLocal_1874++;
 			}
-			else if (iLocal_212 == 1)
+			else if (iLocal_1874 == 1)
 			{
-				Local_231 = { VEHICLE::GET_POSITION_OF_VEHICLE_RECORDING_ID_AT_TIME(iVar0, fVar2) };
-				iLocal_212++;
+				Local_2580 = { VEHICLE::GET_POSITION_OF_VEHICLE_RECORDING_ID_AT_TIME(iVar0, fVar2) };
+				iLocal_1874++;
 			}
-			else if (!bLocal_149 && !bVar4)
+			else if (!bLocal_151 && !bVar4)
 			{
-				if (Local_230.f_0 > Local_231.f_0)
+				if (Local_2577.f_0 > Local_2580.f_0)
 				{
-					fVar3 = Local_230.f_0;
-					Local_230.f_0 = Local_231.f_0;
-					Local_231.f_0 = fVar3;
+					fVar3 = Local_2577.f_0;
+					Local_2577.f_0 = Local_2580.f_0;
+					Local_2580.f_0 = fVar3;
 				}
-				if (Local_230.f_1 > Local_231.f_1)
+				if (Local_2577.f_1 > Local_2580.f_1)
 				{
-					fVar3 = Local_230.f_1;
-					Local_230.f_1 = Local_231.f_1;
-					Local_231.f_1 = fVar3;
+					fVar3 = Local_2577.f_1;
+					Local_2577.f_1 = Local_2580.f_1;
+					Local_2580.f_1 = fVar3;
 				}
-				if (Local_230.f_2 > Local_231.f_2)
+				if (Local_2577.f_2 > Local_2580.f_2)
 				{
-					fVar3 = Local_230.f_2;
-					Local_230.f_2 = Local_231.f_2;
-					Local_231.f_2 = fVar3;
+					fVar3 = Local_2577.f_2;
+					Local_2577.f_2 = Local_2580.f_2;
+					Local_2580.f_2 = fVar3;
 				}
-				Local_230 = { Local_230 - Vector(fLocal_191, fLocal_191, fLocal_191) };
-				Local_231 = { Local_231 + Vector(fLocal_191, fLocal_191, fLocal_191) };
-				PATHFIND::SET_ROADS_BACK_TO_ORIGINAL(Local_230, Local_231, 1);
-				fLocal_188 = fVar2;
-				iLocal_212 = 0;
+				Local_2577 = { Local_2577 - Vector(fLocal_1318, fLocal_1318, fLocal_1318) };
+				Local_2580 = { Local_2580 + Vector(fLocal_1318, fLocal_1318, fLocal_1318) };
+				PATHFIND::SET_ROADS_BACK_TO_ORIGINAL(Local_2577, Local_2580, 1);
+				fLocal_1315 = fVar2;
+				iLocal_1874 = 0;
 			}
 		}
 	}
@@ -44682,25 +44682,25 @@ void func_435()//Position - 0x3377C
 	int iVar1;
 	int iVar2;
 	
-	if ((MISC::GET_GAME_TIMER() - iLocal_323) > 3)
+	if ((MISC::GET_GAME_TIMER() - iLocal_3248) > 3)
 	{
 		iVar0 = 0;
-		iVar1 = iLocal_251;
-		iVar2 = iLocal_248;
+		iVar1 = iLocal_3004;
+		iVar2 = iLocal_2831;
 		iVar0 = 0;
 		while (iVar0 < iVar1)
 		{
-			if (iLocal_195[iVar0] > 0)
+			if (iLocal_1577[iVar0] > 0)
 			{
-				if (fLocal_341 > (fLocal_165[iVar0] - 5000f))
+				if (fLocal_3266 > (fLocal_872[iVar0] - 5000f))
 				{
-					VEHICLE::REQUEST_VEHICLE_RECORDING(iLocal_195[iVar0], sLocal_359);
+					VEHICLE::REQUEST_VEHICLE_RECORDING(iLocal_1577[iVar0], sLocal_3296);
 				}
-				else if (fLocal_341 > (fLocal_165[iVar0] + 3000f))
+				else if (fLocal_3266 > (fLocal_872[iVar0] + 3000f))
 				{
-					if (!VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_251[iVar0]))
+					if (!VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_3004[iVar0]))
 					{
-						VEHICLE::REMOVE_VEHICLE_RECORDING(iLocal_195[iVar0], sLocal_359);
+						VEHICLE::REMOVE_VEHICLE_RECORDING(iLocal_1577[iVar0], sLocal_3296);
 					}
 				}
 			}
@@ -44709,110 +44709,110 @@ void func_435()//Position - 0x3377C
 		iVar0 = 0;
 		while (iVar0 < iVar2)
 		{
-			if (iLocal_192[iVar0] > 0)
+			if (iLocal_1319[iVar0] > 0)
 			{
-				if (fLocal_341 > (fLocal_156[iVar0] - 5000f))
+				if (fLocal_3266 > (fLocal_498[iVar0] - 5000f))
 				{
-					VEHICLE::REQUEST_VEHICLE_RECORDING(iLocal_192[iVar0], sLocal_359);
+					VEHICLE::REQUEST_VEHICLE_RECORDING(iLocal_1319[iVar0], sLocal_3296);
 				}
-				else if (fLocal_341 > (fLocal_156[iVar0] + 3000f))
+				else if (fLocal_3266 > (fLocal_498[iVar0] + 3000f))
 				{
-					if (!VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_248[iVar0]))
+					if (!VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(iLocal_2831[iVar0]))
 					{
-						VEHICLE::REMOVE_VEHICLE_RECORDING(iLocal_192[iVar0], sLocal_359);
+						VEHICLE::REMOVE_VEHICLE_RECORDING(iLocal_1319[iVar0], sLocal_3296);
 					}
 				}
 			}
 			iVar0++;
 		}
-		iLocal_323 = MISC::GET_GAME_TIMER();
+		iLocal_3248 = MISC::GET_GAME_TIMER();
 	}
 }
 
 void func_436()//Position - 0x3388C
 {
-	if (iLocal_338 == 0)
+	if (iLocal_3263 == 0)
 	{
 		func_273(75, 1, 0, 1, 0);
 		func_273(76, 0, 0, 1, 0);
-		iLocal_337 = INTERIOR::GET_INTERIOR_AT_COORDS_WITH_TYPE(307.3065f, -589.9595f, 43.302f, "v_hospital");
-		iLocal_338 = 1;
+		iLocal_3262 = INTERIOR::GET_INTERIOR_AT_COORDS_WITH_TYPE(307.3065f, -589.9595f, 43.302f, "v_hospital");
+		iLocal_3263 = 1;
 	}
-	else if (iLocal_338 == 1)
+	else if (iLocal_3263 == 1)
 	{
 		if (!func_49())
 		{
-			if (INTERIOR::IS_VALID_INTERIOR(iLocal_337))
+			if (INTERIOR::IS_VALID_INTERIOR(iLocal_3262))
 			{
-				if (!INTERIOR::IS_INTERIOR_READY(iLocal_337))
+				if (!INTERIOR::IS_INTERIOR_READY(iLocal_3262))
 				{
-					INTERIOR::PIN_INTERIOR_IN_MEMORY(iLocal_337);
+					INTERIOR::PIN_INTERIOR_IN_MEMORY(iLocal_3262);
 				}
 				else
 				{
-					STREAMING::SET_INTERIOR_ACTIVE(iLocal_337, true);
-					iLocal_338 = 2;
+					STREAMING::SET_INTERIOR_ACTIVE(iLocal_3262, true);
+					iLocal_3263 = 2;
 				}
 			}
 			else
 			{
-				iLocal_337 = INTERIOR::GET_INTERIOR_AT_COORDS_WITH_TYPE(307.3065f, -589.9595f, 43.302f, "v_hospital");
+				iLocal_3262 = INTERIOR::GET_INTERIOR_AT_COORDS_WITH_TYPE(307.3065f, -589.9595f, 43.302f, "v_hospital");
 			}
 		}
 	}
-	else if (iLocal_338 == 2)
+	else if (iLocal_3263 == 2)
 	{
-		if (INTERIOR::IS_VALID_INTERIOR(iLocal_337))
+		if (INTERIOR::IS_VALID_INTERIOR(iLocal_3262))
 		{
-			if (INTERIOR::IS_INTERIOR_READY(iLocal_337))
+			if (INTERIOR::IS_INTERIOR_READY(iLocal_3262))
 			{
 				func_273(181, 0, 0, 1, 0);
-				iLocal_338 = 3;
+				iLocal_3263 = 3;
 			}
 			else
 			{
-				iLocal_338 = 1;
+				iLocal_3263 = 1;
 			}
 		}
 		else
 		{
-			iLocal_338 = 1;
+			iLocal_3263 = 1;
 		}
 	}
-	else if (iLocal_338 == 3)
+	else if (iLocal_3263 == 3)
 	{
 		if (!func_49())
 		{
-			if (INTERIOR::IS_VALID_INTERIOR(iLocal_337))
+			if (INTERIOR::IS_VALID_INTERIOR(iLocal_3262))
 			{
-				if (INTERIOR::IS_INTERIOR_READY(iLocal_337))
+				if (INTERIOR::IS_INTERIOR_READY(iLocal_3262))
 				{
-					INTERIOR::REFRESH_INTERIOR(iLocal_337);
-					iLocal_338 = 4;
+					INTERIOR::REFRESH_INTERIOR(iLocal_3262);
+					iLocal_3263 = 4;
 				}
 				else
 				{
-					INTERIOR::PIN_INTERIOR_IN_MEMORY(iLocal_337);
+					INTERIOR::PIN_INTERIOR_IN_MEMORY(iLocal_3262);
 				}
 			}
 			else
 			{
-				iLocal_337 = INTERIOR::GET_INTERIOR_AT_COORDS_WITH_TYPE(307.3065f, -589.9595f, 43.302f, "v_hospital");
+				iLocal_3262 = INTERIOR::GET_INTERIOR_AT_COORDS_WITH_TYPE(307.3065f, -589.9595f, 43.302f, "v_hospital");
 			}
 		}
 	}
-	else if (iLocal_338 == 4)
+	else if (iLocal_3263 == 4)
 	{
-		if (INTERIOR::IS_VALID_INTERIOR(iLocal_337))
+		if (INTERIOR::IS_VALID_INTERIOR(iLocal_3262))
 		{
-			if (!INTERIOR::IS_INTERIOR_READY(iLocal_337))
+			if (!INTERIOR::IS_INTERIOR_READY(iLocal_3262))
 			{
-				INTERIOR::PIN_INTERIOR_IN_MEMORY(iLocal_337);
+				INTERIOR::PIN_INTERIOR_IN_MEMORY(iLocal_3262);
 			}
 		}
 		else
 		{
-			iLocal_337 = INTERIOR::GET_INTERIOR_AT_COORDS_WITH_TYPE(307.3065f, -589.9595f, 43.302f, "v_hospital");
+			iLocal_3262 = INTERIOR::GET_INTERIOR_AT_COORDS_WITH_TYPE(307.3065f, -589.9595f, 43.302f, "v_hospital");
 		}
 	}
 }
@@ -44821,87 +44821,87 @@ void func_437(float fParam0, struct<3> Param1)//Position - 0x339FC
 {
 	float fVar0;
 	
-	if (func_15(Local_540[0 /*2*/]))
+	if (func_15(Local_3534[0 /*2*/]))
 	{
-		VEHICLE::SET_VEHICLE_INDICATOR_LIGHTS(Local_540[0 /*2*/], 1, true);
-		VEHICLE::SET_VEHICLE_INDICATOR_LIGHTS(Local_540[0 /*2*/], 0, true);
-		if (fLocal_341 > 10000f)
+		VEHICLE::SET_VEHICLE_INDICATOR_LIGHTS(Local_3534[0 /*2*/], 1, true);
+		VEHICLE::SET_VEHICLE_INDICATOR_LIGHTS(Local_3534[0 /*2*/], 0, true);
+		if (fLocal_3266 > 10000f)
 		{
-			fVar0 = SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(Local_540[0 /*2*/], true), Param1);
+			fVar0 = SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(Local_3534[0 /*2*/], true), Param1);
 			if (fVar0 > 14400f)
 			{
-				func_52(&(Local_540[0 /*2*/]), 0);
+				func_52(&(Local_3534[0 /*2*/]), 0);
 			}
 		}
 	}
-	if (func_15(Local_540[1 /*2*/]))
+	if (func_15(Local_3534[1 /*2*/]))
 	{
-		if (fLocal_341 > 10000f)
+		if (fLocal_3266 > 10000f)
 		{
-			fVar0 = SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(Local_540[1 /*2*/], true), Param1);
+			fVar0 = SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(Local_3534[1 /*2*/], true), Param1);
 			if (fVar0 > 14400f)
 			{
-				func_52(&(Local_540[1 /*2*/]), 0);
+				func_52(&(Local_3534[1 /*2*/]), 0);
 			}
 		}
 	}
-	if (func_15(Local_540[2 /*2*/]))
+	if (func_15(Local_3534[2 /*2*/]))
 	{
-		if (Local_537.f_1 == 0)
+		if (Local_3504.f_1 == 0)
 		{
-			STREAMING::REQUEST_MODEL(iLocal_345);
-			if (STREAMING::HAS_MODEL_LOADED(iLocal_345))
+			STREAMING::REQUEST_MODEL(iLocal_3270);
+			if (STREAMING::HAS_MODEL_LOADED(iLocal_3270))
 			{
-				if (!ENTITY::DOES_ENTITY_EXIST(Local_537.f_0))
+				if (!ENTITY::DOES_ENTITY_EXIST(Local_3504.f_0))
 				{
-					Local_537.f_0 = PED::CREATE_PED_INSIDE_VEHICLE(Local_540[2 /*2*/], 26, iLocal_345, -1, true, true);
-					STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_345);
-					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_537.f_0, true);
-					Local_537.f_1 = 1;
+					Local_3504.f_0 = PED::CREATE_PED_INSIDE_VEHICLE(Local_3534[2 /*2*/], 26, iLocal_3270, -1, true, true);
+					STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_3270);
+					PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_3504.f_0, true);
+					Local_3504.f_1 = 1;
 				}
 			}
-			if (!VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(Local_540[2 /*2*/]))
+			if (!VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(Local_3534[2 /*2*/]))
 			{
-				ENTITY::SET_ENTITY_QUATERNION(Local_540[2 /*2*/], 0.0269f, 0.0079f, -0.4791f, 0.8773f);
+				ENTITY::SET_ENTITY_QUATERNION(Local_3534[2 /*2*/], 0.0269f, 0.0079f, -0.4791f, 0.8773f);
 			}
 		}
-		if (!VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(Local_540[2 /*2*/]))
+		if (!VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(Local_3534[2 /*2*/]))
 		{
-			if (!iLocal_311)
+			if (!iLocal_3236)
 			{
-				if (fLocal_341 >= 200f)
+				if (fLocal_3266 >= 200f)
 				{
-					VEHICLE::START_PLAYBACK_RECORDED_VEHICLE(Local_540[2 /*2*/], 2, sLocal_359, true);
-					VEHICLE::SET_PLAYBACK_SPEED(Local_540[2 /*2*/], fParam0);
-					iLocal_311 = 1;
+					VEHICLE::START_PLAYBACK_RECORDED_VEHICLE(Local_3534[2 /*2*/], 2, sLocal_3296, true);
+					VEHICLE::SET_PLAYBACK_SPEED(Local_3534[2 /*2*/], fParam0);
+					iLocal_3236 = 1;
 				}
 			}
 		}
 		else
 		{
-			VEHICLE::SET_PLAYBACK_SPEED(Local_540[2 /*2*/], fParam0);
-			if (!iLocal_297)
+			VEHICLE::SET_PLAYBACK_SPEED(Local_3534[2 /*2*/], fParam0);
+			if (!iLocal_3210)
 			{
-				if (fLocal_341 > 3500f && fLocal_341 < 4500f)
+				if (fLocal_3266 > 3500f && fLocal_3266 < 4500f)
 				{
-					VEHICLE::START_VEHICLE_HORN(Local_540[2 /*2*/], 2000, MISC::GET_HASH_KEY("HELDDOWN"), false);
-					iLocal_297 = 1;
+					VEHICLE::START_VEHICLE_HORN(Local_3534[2 /*2*/], 2000, MISC::GET_HASH_KEY("HELDDOWN"), false);
+					iLocal_3210 = 1;
 				}
 			}
 		}
-		if (fLocal_341 > 10000f)
+		if (fLocal_3266 > 10000f)
 		{
-			fVar0 = SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(Local_540[2 /*2*/], true), Param1);
+			fVar0 = SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(Local_3534[2 /*2*/], true), Param1);
 			if (fVar0 > 14400f)
 			{
-				if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(Local_540[2 /*2*/]))
+				if (VEHICLE::IS_PLAYBACK_GOING_ON_FOR_VEHICLE(Local_3534[2 /*2*/]))
 				{
-					VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(Local_540[2 /*2*/]);
+					VEHICLE::STOP_PLAYBACK_RECORDED_VEHICLE(Local_3534[2 /*2*/]);
 				}
-				VEHICLE::REMOVE_VEHICLE_RECORDING(2, sLocal_359);
-				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_345);
-				func_56(&Local_537, 0);
-				func_52(&(Local_540[2 /*2*/]), 0);
+				VEHICLE::REMOVE_VEHICLE_RECORDING(2, sLocal_3296);
+				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_3270);
+				func_56(&Local_3504, 0);
+				func_52(&(Local_3534[2 /*2*/]), 0);
 			}
 		}
 	}
@@ -44909,91 +44909,91 @@ void func_437(float fParam0, struct<3> Param1)//Position - 0x339FC
 
 void func_438()//Position - 0x33C1B
 {
-	switch (iLocal_274)
+	switch (iLocal_3107)
 	{
 		case 0:
-			if (!bLocal_276)
+			if (!bLocal_3169)
 			{
 				if (!func_49())
 				{
 					func_18(PLAYER::PLAYER_PED_ID(), -1309.0155f, -641.8671f, 25.5017f, 242.3463f, 0, 0);
-					if (iLocal_277 == 0)
+					if (iLocal_3170 == 0)
 					{
-						if (iLocal_273 == 1)
+						if (iLocal_3106 == 1)
 						{
 							if (func_12(PLAYER::PLAYER_PED_ID()))
 							{
 								func_3(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 50f, 13, 5000, 0, 0);
-								iLocal_277 = 1;
+								iLocal_3170 = 1;
 							}
 						}
 					}
 					func_18(PLAYER::PLAYER_PED_ID(), -1309.0155f, -641.8671f, 25.5017f, 242.3463f, 1, 1);
 				}
-				func_58(&(Local_275.f_28[0]));
-				func_54(&(Local_275.f_35[0]));
-				func_54(&(Local_275.f_35[1]));
+				func_58(&(Local_3108.f_28[0]));
+				func_54(&(Local_3108.f_35[0]));
+				func_54(&(Local_3108.f_35[1]));
 				func_461();
 				func_459(1);
 				func_456();
-				if (func_15(Local_535.f_0))
+				if (func_15(Local_3490.f_0))
 				{
-					VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(Local_535.f_0, 5f);
+					VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(Local_3490.f_0, 5f);
 				}
-				func_437(fLocal_343, Local_549);
+				func_437(fLocal_3268, Local_3556);
 				func_449(1);
-				iLocal_274 = 2;
+				iLocal_3107 = 2;
 			}
 			else
 			{
 				func_448("NMT_2_RCM", 0);
 				if (CUTSCENE::CAN_REQUEST_ASSETS_FOR_CUTSCENE_ENTITY())
 				{
-					CUTSCENE::SET_CUTSCENE_PED_COMPONENT_VARIATION(sLocal_364, 4, 0, 0, Local_534.f_1);
+					CUTSCENE::SET_CUTSCENE_PED_COMPONENT_VARIATION(sLocal_3301, 4, 0, 0, Local_3483.f_1);
 				}
 				if (func_38(1, 1093140480, 0))
 				{
-					if (func_12(Local_275.f_35[0]))
+					if (func_12(Local_3108.f_35[0]))
 					{
-						func_447(&Local_535, &(Local_275.f_35[0]));
+						func_447(&Local_3490, &(Local_3108.f_35[0]));
 					}
-					if (func_12(Local_535.f_0))
+					if (func_12(Local_3490.f_0))
 					{
-						VEHICLE::SET_VEHICLE_FIXED(Local_535.f_0);
-						ENTITY::SET_ENTITY_PROOFS(Local_535.f_0, false, false, false, false, false, false, false, false);
+						VEHICLE::SET_VEHICLE_FIXED(Local_3490.f_0);
+						ENTITY::SET_ENTITY_PROOFS(Local_3490.f_0, false, false, false, false, false, false, false, false);
 					}
-					if (func_12(Local_275.f_35[1]))
+					if (func_12(Local_3108.f_35[1]))
 					{
-						func_447(&Local_536, &(Local_275.f_35[1]));
+						func_447(&Local_3497, &(Local_3108.f_35[1]));
 					}
-					if (func_12(Local_536.f_0))
+					if (func_12(Local_3497.f_0))
 					{
-						VEHICLE::SET_VEHICLE_FIXED(Local_536.f_0);
-						ENTITY::SET_ENTITY_PROOFS(Local_536.f_0, false, false, false, false, false, false, false, false);
+						VEHICLE::SET_VEHICLE_FIXED(Local_3497.f_0);
+						ENTITY::SET_ENTITY_PROOFS(Local_3497.f_0, false, false, false, false, false, false, false, false);
 					}
-					CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(PLAYER::PLAYER_PED_ID(), sLocal_363, 0, 0, 0);
-					CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_533.f_0, sLocal_362, 2, Local_533.f_1, 0);
-					CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_532.f_0, sLocal_361, 2, Local_532.f_1, 0);
-					CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_534.f_0, sLocal_364, 2, Local_534.f_1, 0);
-					if (func_15(Local_535.f_0))
+					CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(PLAYER::PLAYER_PED_ID(), sLocal_3300, 0, 0, 0);
+					CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_3476.f_0, sLocal_3299, 2, Local_3476.f_1, 0);
+					CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_3469.f_0, sLocal_3298, 2, Local_3469.f_1, 0);
+					CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_3483.f_0, sLocal_3301, 2, Local_3483.f_1, 0);
+					if (func_15(Local_3490.f_0))
 					{
-						CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_535.f_0, sLocal_365, 0, 0, 0);
-					}
-					else
-					{
-						func_54(&(Local_275.f_35[0]));
-						func_54(&Local_535);
-						CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_535.f_0, sLocal_365, 2, Local_535.f_1, 0);
-					}
-					if (func_15(Local_536.f_0))
-					{
-						CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_536.f_0, sLocal_366, 0, 0, 0);
+						CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_3490.f_0, sLocal_3302, 0, 0, 0);
 					}
 					else
 					{
-						func_54(&(Local_275.f_35[1]));
-						func_54(&Local_536);
-						CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_536.f_0, sLocal_366, 2, Local_536.f_1, 0);
+						func_54(&(Local_3108.f_35[0]));
+						func_54(&Local_3490);
+						CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_3490.f_0, sLocal_3302, 2, Local_3490.f_1, 0);
+					}
+					if (func_15(Local_3497.f_0))
+					{
+						CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_3497.f_0, sLocal_3303, 0, 0, 0);
+					}
+					else
+					{
+						func_54(&(Local_3108.f_35[1]));
+						func_54(&Local_3497);
+						CUTSCENE::REGISTER_ENTITY_FOR_CUTSCENE(Local_3497.f_0, sLocal_3303, 2, Local_3497.f_1, 0);
 					}
 					func_23(800, 0);
 					RECORDING::REPLAY_START_EVENT(1);
@@ -45002,97 +45002,97 @@ void func_438()//Position - 0x33C1B
 					func_446();
 					func_298(-1310.7f, -640.22f, 26.54f, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
 					func_461();
-					func_58(&(Local_275.f_28[0]));
+					func_58(&(Local_3108.f_28[0]));
 					VEHICLE::SET_VEHICLE_DENSITY_MULTIPLIER_THIS_FRAME(0.3f);
 					PED::SET_PED_DENSITY_MULTIPLIER_THIS_FRAME(0.3f);
 					func_459(0);
-					func_437(fLocal_343, Local_549);
-					iLocal_274 = 1;
+					func_437(fLocal_3268, Local_3556);
+					iLocal_3107 = 1;
 				}
 			}
 			break;
 		
 		case 1:
-			func_437(fLocal_343, Local_549);
-			if (!ENTITY::DOES_ENTITY_EXIST(Local_533.f_0))
+			func_437(fLocal_3268, Local_3556);
+			if (!ENTITY::DOES_ENTITY_EXIST(Local_3476.f_0))
 			{
-				if (ENTITY::DOES_ENTITY_EXIST(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY(sLocal_362, 0)))
+				if (ENTITY::DOES_ENTITY_EXIST(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY(sLocal_3299, 0)))
 				{
-					Local_533.f_0 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY(sLocal_362, 0));
+					Local_3476.f_0 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY(sLocal_3299, 0));
 				}
 			}
-			if (!ENTITY::DOES_ENTITY_EXIST(Local_532.f_0))
+			if (!ENTITY::DOES_ENTITY_EXIST(Local_3469.f_0))
 			{
-				if (ENTITY::DOES_ENTITY_EXIST(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY(sLocal_361, 0)))
+				if (ENTITY::DOES_ENTITY_EXIST(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY(sLocal_3298, 0)))
 				{
-					Local_532.f_0 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY(sLocal_361, 0));
+					Local_3469.f_0 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY(sLocal_3298, 0));
 				}
 			}
-			if (!ENTITY::DOES_ENTITY_EXIST(Local_534.f_0))
+			if (!ENTITY::DOES_ENTITY_EXIST(Local_3483.f_0))
 			{
-				if (ENTITY::DOES_ENTITY_EXIST(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY(sLocal_364, 0)))
+				if (ENTITY::DOES_ENTITY_EXIST(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY(sLocal_3301, 0)))
 				{
-					Local_534.f_0 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY(sLocal_364, 0));
+					Local_3483.f_0 = ENTITY::GET_PED_INDEX_FROM_ENTITY_INDEX(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY(sLocal_3301, 0));
 				}
 			}
-			if (!ENTITY::DOES_ENTITY_EXIST(Local_535.f_0))
+			if (!ENTITY::DOES_ENTITY_EXIST(Local_3490.f_0))
 			{
-				if (ENTITY::DOES_ENTITY_EXIST(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY(sLocal_365, 0)))
+				if (ENTITY::DOES_ENTITY_EXIST(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY(sLocal_3302, 0)))
 				{
-					Local_535.f_0 = ENTITY::GET_VEHICLE_INDEX_FROM_ENTITY_INDEX(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY(sLocal_365, 0));
+					Local_3490.f_0 = ENTITY::GET_VEHICLE_INDEX_FROM_ENTITY_INDEX(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY(sLocal_3302, 0));
 				}
 			}
-			if (!ENTITY::DOES_ENTITY_EXIST(Local_536.f_0))
+			if (!ENTITY::DOES_ENTITY_EXIST(Local_3497.f_0))
 			{
-				if (ENTITY::DOES_ENTITY_EXIST(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY(sLocal_366, 0)))
+				if (ENTITY::DOES_ENTITY_EXIST(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY(sLocal_3303, 0)))
 				{
-					Local_536.f_0 = ENTITY::GET_VEHICLE_INDEX_FROM_ENTITY_INDEX(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY(sLocal_366, 0));
+					Local_3497.f_0 = ENTITY::GET_VEHICLE_INDEX_FROM_ENTITY_INDEX(CUTSCENE::GET_ENTITY_INDEX_OF_REGISTERED_ENTITY(sLocal_3303, 0));
 				}
 			}
-			if ((func_15(Local_535.f_0) && func_22(Local_533.f_0)) && func_22(Local_532.f_0))
+			if ((func_15(Local_3490.f_0) && func_22(Local_3476.f_0)) && func_22(Local_3469.f_0))
 			{
-				if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY(sLocal_362, 0))
+				if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY(sLocal_3299, 0))
 				{
 					RECORDING::REPLAY_STOP_EVENT();
-					if (!PED::IS_PED_SITTING_IN_VEHICLE(Local_533.f_0, Local_535.f_0))
+					if (!PED::IS_PED_SITTING_IN_VEHICLE(Local_3476.f_0, Local_3490.f_0))
 					{
-						PED::SET_PED_INTO_VEHICLE(Local_533.f_0, Local_535.f_0, 0);
+						PED::SET_PED_INTO_VEHICLE(Local_3476.f_0, Local_3490.f_0, 0);
 					}
 					func_445();
 				}
-				if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY(sLocal_361, 0))
+				if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY(sLocal_3298, 0))
 				{
-					if (!PED::IS_PED_SITTING_IN_VEHICLE(Local_532.f_0, Local_535.f_0))
+					if (!PED::IS_PED_SITTING_IN_VEHICLE(Local_3469.f_0, Local_3490.f_0))
 					{
-						PED::SET_PED_INTO_VEHICLE(Local_532.f_0, Local_535.f_0, 2);
+						PED::SET_PED_INTO_VEHICLE(Local_3469.f_0, Local_3490.f_0, 2);
 					}
 					func_444();
 				}
-				if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY(sLocal_365, 0))
+				if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY(sLocal_3302, 0))
 				{
 					func_443();
-					VEHICLE::SET_VEHICLE_DOORS_SHUT(Local_535.f_0, true);
-					VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(Local_535.f_0, 5f);
-					ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(Local_535.f_0);
+					VEHICLE::SET_VEHICLE_DOORS_SHUT(Local_3490.f_0, true);
+					VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(Local_3490.f_0, 5f);
+					ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(Local_3490.f_0);
 				}
-				VEHICLE::SET_FORCE_HD_VEHICLE(Local_535.f_0, true);
-				iLocal_318 = 1;
+				VEHICLE::SET_FORCE_HD_VEHICLE(Local_3490.f_0, true);
+				iLocal_3243 = 1;
 			}
-			if (func_15(Local_536.f_0) && func_22(Local_534.f_0))
+			if (func_15(Local_3497.f_0) && func_22(Local_3483.f_0))
 			{
-				if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY(sLocal_364, 0))
+				if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY(sLocal_3301, 0))
 				{
-					if (!PED::IS_PED_SITTING_IN_VEHICLE(Local_534.f_0, Local_536.f_0))
+					if (!PED::IS_PED_SITTING_IN_VEHICLE(Local_3483.f_0, Local_3497.f_0))
 					{
-						PED::SET_PED_INTO_VEHICLE(Local_534.f_0, Local_536.f_0, -1);
+						PED::SET_PED_INTO_VEHICLE(Local_3483.f_0, Local_3497.f_0, -1);
 					}
 					func_441();
 				}
-				if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY(sLocal_366, 0))
+				if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_REGISTERED_ENTITY(sLocal_3303, 0))
 				{
 					func_439();
-					VEHICLE::SET_VEHICLE_DOORS_SHUT(Local_536.f_0, true);
-					ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(Local_536.f_0);
+					VEHICLE::SET_VEHICLE_DOORS_SHUT(Local_3497.f_0, true);
+					ENTITY::FORCE_ENTITY_AI_AND_ANIMATION_UPDATE(Local_3497.f_0);
 				}
 			}
 			if (CUTSCENE::CAN_SET_EXIT_STATE_FOR_CAMERA(false))
@@ -45109,7 +45109,7 @@ void func_438()//Position - 0x33C1B
 				func_459(1);
 				func_456();
 				func_449(0);
-				iLocal_274 = 2;
+				iLocal_3107 = 2;
 			}
 			else
 			{
@@ -45132,10 +45132,10 @@ void func_438()//Position - 0x33C1B
 			break;
 		
 		case 2:
-			if (func_15(Local_535.f_0))
+			if (func_15(Local_3490.f_0))
 			{
-				VEHICLE::SET_FORCE_HD_VEHICLE(Local_535.f_0, true);
-				iLocal_318 = 1;
+				VEHICLE::SET_FORCE_HD_VEHICLE(Local_3490.f_0, true);
+				iLocal_3243 = 1;
 			}
 			if (CUTSCENE::IS_CUTSCENE_PLAYING())
 			{
@@ -45147,14 +45147,14 @@ void func_438()//Position - 0x33C1B
 				{
 					CUTSCENE::REMOVE_CUTSCENE();
 				}
-				if (bLocal_276)
+				if (bLocal_3169)
 				{
 					func_25(1, 1, 1, 1);
 					func_33(0, 0, 1, 0);
 				}
-				iLocal_317 = 0;
-				func_551(&Local_275, 0, 1);
-				func_437(fLocal_343, Local_549);
+				iLocal_3242 = 0;
+				func_551(&Local_3108, 0, 1);
+				func_437(fLocal_3268, Local_3556);
 				func_296(1);
 			}
 			break;
@@ -45163,28 +45163,28 @@ void func_438()//Position - 0x33C1B
 
 void func_439()//Position - 0x341FC
 {
-	if (func_15(Local_536.f_0))
+	if (func_15(Local_3497.f_0))
 	{
-		VEHICLE::SET_VEHICLE_FIXED(Local_536.f_0);
-		VEHICLE::SET_VEHICLE_DOORS_LOCKED(Local_536.f_0, 1);
-		VEHICLE::SET_VEHICLE_COLOURS(Local_536.f_0, 0, 0);
-		VEHICLE::SET_VEHICLE_ENGINE_ON(Local_536.f_0, true, true, false);
-		VEHICLE::SET_VEHICLE_TYRES_CAN_BURST(Local_536.f_0, false);
-		VEHICLE::SET_VEHICLE_HAS_STRONG_AXLES(Local_536.f_0, true);
-		VEHICLE::SET_VEHICLE_STRONG(Local_536.f_0, true);
-		ENTITY::SET_ENTITY_HEALTH(Local_536.f_0, 2000, 0);
-		VEHICLE::SET_DISABLE_VEHICLE_ENGINE_FIRES(Local_536.f_0, true);
-		VEHICLE::SET_VEHICLE_CAN_LEAK_OIL(Local_536.f_0, false);
-		VEHICLE::SET_VEHICLE_CAN_LEAK_PETROL(Local_536.f_0, false);
-		VEHICLE::SET_VEHICLE_IS_CONSIDERED_BY_PLAYER(Local_536.f_0, false);
-		VEHICLE::SET_VEHICLE_DOOR_SHUT(Local_536.f_0, 0, true);
-		VEHICLE::SET_VEHICLE_DOORS_LOCKED(Local_536.f_0, 3);
-		VEHICLE::SET_DOOR_ALLOWED_TO_BE_BROKEN_OFF(Local_536.f_0, 0, false);
-		VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(Local_536.f_1, true);
-		func_440(Local_536.f_0, 1);
-		ENTITY::SET_ENTITY_COORDS(Local_536.f_0, Local_536.f_3, true, false, false, true);
-		ENTITY::SET_ENTITY_QUATERNION(Local_536.f_0, -0.0248f, 0.0004f, 0.8949f, 0.4456f);
-		ENTITY::FREEZE_ENTITY_POSITION(Local_536.f_0, true);
+		VEHICLE::SET_VEHICLE_FIXED(Local_3497.f_0);
+		VEHICLE::SET_VEHICLE_DOORS_LOCKED(Local_3497.f_0, 1);
+		VEHICLE::SET_VEHICLE_COLOURS(Local_3497.f_0, 0, 0);
+		VEHICLE::SET_VEHICLE_ENGINE_ON(Local_3497.f_0, true, true, false);
+		VEHICLE::SET_VEHICLE_TYRES_CAN_BURST(Local_3497.f_0, false);
+		VEHICLE::SET_VEHICLE_HAS_STRONG_AXLES(Local_3497.f_0, true);
+		VEHICLE::SET_VEHICLE_STRONG(Local_3497.f_0, true);
+		ENTITY::SET_ENTITY_HEALTH(Local_3497.f_0, 2000, 0);
+		VEHICLE::SET_DISABLE_VEHICLE_ENGINE_FIRES(Local_3497.f_0, true);
+		VEHICLE::SET_VEHICLE_CAN_LEAK_OIL(Local_3497.f_0, false);
+		VEHICLE::SET_VEHICLE_CAN_LEAK_PETROL(Local_3497.f_0, false);
+		VEHICLE::SET_VEHICLE_IS_CONSIDERED_BY_PLAYER(Local_3497.f_0, false);
+		VEHICLE::SET_VEHICLE_DOOR_SHUT(Local_3497.f_0, 0, true);
+		VEHICLE::SET_VEHICLE_DOORS_LOCKED(Local_3497.f_0, 3);
+		VEHICLE::SET_DOOR_ALLOWED_TO_BE_BROKEN_OFF(Local_3497.f_0, 0, false);
+		VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(Local_3497.f_1, true);
+		func_440(Local_3497.f_0, 1);
+		ENTITY::SET_ENTITY_COORDS(Local_3497.f_0, Local_3497.f_3, true, false, false, true);
+		ENTITY::SET_ENTITY_QUATERNION(Local_3497.f_0, -0.0248f, 0.0004f, 0.8949f, 0.4456f);
+		ENTITY::FREEZE_ENTITY_POSITION(Local_3497.f_0, true);
 	}
 }
 
@@ -45195,25 +45195,25 @@ void func_440(int iParam0, int iParam1)//Position - 0x342D4
 
 void func_441()//Position - 0x342E8
 {
-	if (func_22(Local_534.f_0))
+	if (func_22(Local_3483.f_0))
 	{
-		PED::SET_PED_COMPONENT_VARIATION(Local_534.f_0, 4, 0, 0, 0);
-		PED::SET_PED_MODEL_IS_SUPPRESSED(Local_534.f_1, true);
-		PED::SET_PED_CAN_BE_TARGETTED(Local_534.f_0, false);
-		PED::SET_PED_CAN_BE_DRAGGED_OUT(Local_534.f_0, false);
-		PED::SET_PED_CONFIG_FLAG(Local_534.f_0, 32, false);
-		PED::SET_PED_CONFIG_FLAG(Local_534.f_0, 29, false);
-		PED::SET_PED_CONFIG_FLAG(Local_534.f_0, 116, false);
-		PED::SET_PED_DIES_WHEN_INJURED(Local_534.f_0, true);
-		ENTITY::SET_ENTITY_LOAD_COLLISION_FLAG(Local_534.f_0, true, 1);
-		if (PED::IS_PED_IN_GROUP(Local_534.f_0))
+		PED::SET_PED_COMPONENT_VARIATION(Local_3483.f_0, 4, 0, 0, 0);
+		PED::SET_PED_MODEL_IS_SUPPRESSED(Local_3483.f_1, true);
+		PED::SET_PED_CAN_BE_TARGETTED(Local_3483.f_0, false);
+		PED::SET_PED_CAN_BE_DRAGGED_OUT(Local_3483.f_0, false);
+		PED::SET_PED_CONFIG_FLAG(Local_3483.f_0, 32, false);
+		PED::SET_PED_CONFIG_FLAG(Local_3483.f_0, 29, false);
+		PED::SET_PED_CONFIG_FLAG(Local_3483.f_0, 116, false);
+		PED::SET_PED_DIES_WHEN_INJURED(Local_3483.f_0, true);
+		ENTITY::SET_ENTITY_LOAD_COLLISION_FLAG(Local_3483.f_0, true, 1);
+		if (PED::IS_PED_IN_GROUP(Local_3483.f_0))
 		{
-			PED::REMOVE_PED_FROM_GROUP(Local_534.f_0);
+			PED::REMOVE_PED_FROM_GROUP(Local_3483.f_0);
 		}
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_534.f_0, iLocal_354);
-		func_442(&uLocal_367, 3, Local_534.f_0, "DINAPOLI", 0, 1);
-		PED::SET_PED_CAN_USE_AUTO_CONVERSATION_LOOKAT(Local_534.f_0, true);
-		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_534.f_0, true);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_3483.f_0, iLocal_3286);
+		func_442(&uLocal_3304, 3, Local_3483.f_0, "DINAPOLI", 0, 1);
+		PED::SET_PED_CAN_USE_AUTO_CONVERSATION_LOOKAT(Local_3483.f_0, true);
+		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_3483.f_0, true);
 	}
 }
 
@@ -45256,66 +45256,66 @@ void func_442(var uParam0, int iParam1, int iParam2, char* sParam3, int iParam4,
 
 void func_443()//Position - 0x34425
 {
-	if (func_15(Local_535.f_0))
+	if (func_15(Local_3490.f_0))
 	{
-		VEHICLE::SET_VEHICLE_FIXED(Local_535.f_0);
-		VEHICLE::SET_VEHICLE_DOORS_LOCKED(Local_535.f_0, 1);
-		VEHICLE::SET_VEHICLE_COLOURS(Local_535.f_0, 65, 0);
-		VEHICLE::SET_VEHICLE_HAS_STRONG_AXLES(Local_535.f_0, true);
-		VEHICLE::SET_VEHICLE_STRONG(Local_535.f_0, true);
-		ENTITY::SET_ENTITY_HEALTH(Local_535.f_0, 2000, 0);
-		VEHICLE::SET_VEHICLE_CAN_LEAK_OIL(Local_535.f_0, false);
-		VEHICLE::SET_VEHICLE_CAN_LEAK_PETROL(Local_535.f_0, false);
-		VEHICLE::SET_DOOR_ALLOWED_TO_BE_BROKEN_OFF(Local_535.f_0, 5, false);
-		VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(Local_535.f_1, true);
-		VEHICLE::ADD_VEHICLE_UPSIDEDOWN_CHECK(Local_535.f_0);
-		func_440(Local_535.f_0, 0);
+		VEHICLE::SET_VEHICLE_FIXED(Local_3490.f_0);
+		VEHICLE::SET_VEHICLE_DOORS_LOCKED(Local_3490.f_0, 1);
+		VEHICLE::SET_VEHICLE_COLOURS(Local_3490.f_0, 65, 0);
+		VEHICLE::SET_VEHICLE_HAS_STRONG_AXLES(Local_3490.f_0, true);
+		VEHICLE::SET_VEHICLE_STRONG(Local_3490.f_0, true);
+		ENTITY::SET_ENTITY_HEALTH(Local_3490.f_0, 2000, 0);
+		VEHICLE::SET_VEHICLE_CAN_LEAK_OIL(Local_3490.f_0, false);
+		VEHICLE::SET_VEHICLE_CAN_LEAK_PETROL(Local_3490.f_0, false);
+		VEHICLE::SET_DOOR_ALLOWED_TO_BE_BROKEN_OFF(Local_3490.f_0, 5, false);
+		VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(Local_3490.f_1, true);
+		VEHICLE::ADD_VEHICLE_UPSIDEDOWN_CHECK(Local_3490.f_0);
+		func_440(Local_3490.f_0, 0);
 	}
 }
 
 void func_444()//Position - 0x3449D
 {
-	if (func_22(Local_532.f_0))
+	if (func_22(Local_3469.f_0))
 	{
-		PED::SET_PED_DEFAULT_COMPONENT_VARIATION(Local_532.f_0);
-		PED::SET_PED_MODEL_IS_SUPPRESSED(Local_532.f_1, true);
-		PED::SET_PED_CAN_BE_TARGETTED(Local_532.f_0, false);
-		PED::SET_PED_CAN_RAGDOLL_FROM_PLAYER_IMPACT(Local_532.f_0, false);
-		PED::SET_PED_CONFIG_FLAG(Local_532.f_0, 32, false);
-		PED::SET_PED_CONFIG_FLAG(Local_532.f_0, 132, true);
-		PED::SET_PED_CONFIG_FLAG(Local_532.f_0, 29, false);
-		PED::SET_PED_CONFIG_FLAG(Local_532.f_0, 116, false);
-		if (PED::IS_PED_IN_GROUP(Local_532.f_0))
+		PED::SET_PED_DEFAULT_COMPONENT_VARIATION(Local_3469.f_0);
+		PED::SET_PED_MODEL_IS_SUPPRESSED(Local_3469.f_1, true);
+		PED::SET_PED_CAN_BE_TARGETTED(Local_3469.f_0, false);
+		PED::SET_PED_CAN_RAGDOLL_FROM_PLAYER_IMPACT(Local_3469.f_0, false);
+		PED::SET_PED_CONFIG_FLAG(Local_3469.f_0, 32, false);
+		PED::SET_PED_CONFIG_FLAG(Local_3469.f_0, 132, true);
+		PED::SET_PED_CONFIG_FLAG(Local_3469.f_0, 29, false);
+		PED::SET_PED_CONFIG_FLAG(Local_3469.f_0, 116, false);
+		if (PED::IS_PED_IN_GROUP(Local_3469.f_0))
 		{
-			PED::REMOVE_PED_FROM_GROUP(Local_532.f_0);
+			PED::REMOVE_PED_FROM_GROUP(Local_3469.f_0);
 		}
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_532.f_0, iLocal_355);
-		func_442(&uLocal_367, 5, Local_532.f_0, "MRSTHORNHILL", 0, 1);
-		PED::SET_PED_CAN_USE_AUTO_CONVERSATION_LOOKAT(Local_532.f_0, true);
-		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_532.f_0, true);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_3469.f_0, iLocal_3287);
+		func_442(&uLocal_3304, 5, Local_3469.f_0, "MRSTHORNHILL", 0, 1);
+		PED::SET_PED_CAN_USE_AUTO_CONVERSATION_LOOKAT(Local_3469.f_0, true);
+		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_3469.f_0, true);
 	}
 }
 
 void func_445()//Position - 0x34534
 {
-	if (func_22(Local_533.f_0))
+	if (func_22(Local_3476.f_0))
 	{
-		PED::SET_PED_DEFAULT_COMPONENT_VARIATION(Local_533.f_0);
-		PED::SET_PED_MODEL_IS_SUPPRESSED(Local_533.f_1, true);
-		PED::SET_PED_CAN_BE_TARGETTED(Local_533.f_0, false);
-		PED::SET_PED_CAN_RAGDOLL_FROM_PLAYER_IMPACT(Local_533.f_0, false);
-		PED::SET_PED_CONFIG_FLAG(Local_533.f_0, 32, false);
-		PED::SET_PED_CONFIG_FLAG(Local_533.f_0, 132, true);
-		PED::SET_PED_CONFIG_FLAG(Local_533.f_0, 29, false);
-		PED::SET_PED_CONFIG_FLAG(Local_533.f_0, 116, false);
-		if (PED::IS_PED_IN_GROUP(Local_533.f_0))
+		PED::SET_PED_DEFAULT_COMPONENT_VARIATION(Local_3476.f_0);
+		PED::SET_PED_MODEL_IS_SUPPRESSED(Local_3476.f_1, true);
+		PED::SET_PED_CAN_BE_TARGETTED(Local_3476.f_0, false);
+		PED::SET_PED_CAN_RAGDOLL_FROM_PLAYER_IMPACT(Local_3476.f_0, false);
+		PED::SET_PED_CONFIG_FLAG(Local_3476.f_0, 32, false);
+		PED::SET_PED_CONFIG_FLAG(Local_3476.f_0, 132, true);
+		PED::SET_PED_CONFIG_FLAG(Local_3476.f_0, 29, false);
+		PED::SET_PED_CONFIG_FLAG(Local_3476.f_0, 116, false);
+		if (PED::IS_PED_IN_GROUP(Local_3476.f_0))
 		{
-			PED::REMOVE_PED_FROM_GROUP(Local_533.f_0);
+			PED::REMOVE_PED_FROM_GROUP(Local_3476.f_0);
 		}
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_533.f_0, iLocal_355);
-		func_442(&uLocal_367, 4, Local_533.f_0, "NIGEL", 0, 1);
-		PED::SET_PED_CAN_USE_AUTO_CONVERSATION_LOOKAT(Local_533.f_0, true);
-		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_533.f_0, true);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(Local_3476.f_0, iLocal_3287);
+		func_442(&uLocal_3304, 4, Local_3476.f_0, "NIGEL", 0, 1);
+		PED::SET_PED_CAN_USE_AUTO_CONVERSATION_LOOKAT(Local_3476.f_0, true);
+		PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_3476.f_0, true);
 	}
 }
 
@@ -45345,15 +45345,15 @@ void func_448(char* sParam0, bool bParam1)//Position - 0x345FD
 
 void func_449(bool bParam0)//Position - 0x34613
 {
-	func_455(sLocal_359, iLocal_333, bParam0, 1);
+	func_455(sLocal_3296, iLocal_3258, bParam0, 1);
 	func_454();
 	func_453(1);
 	func_452(joaat("A_M_M_BevHills_02"));
 	func_397();
-	fLocal_183 = 250f;
-	bLocal_140 = true;
+	fLocal_1310 = 250f;
+	bLocal_142 = true;
 	func_451(1);
-	bLocal_146 = true;
+	bLocal_148 = true;
 	func_450(1, 0, -1);
 	MISC::SET_INSTANCE_PRIORITY_HINT(2);
 }
@@ -45362,25 +45362,25 @@ void func_450(bool bParam0, int iParam1, int iParam2)//Position - 0x3465D
 {
 	if (bParam0)
 	{
-		iLocal_141 = 1;
-		iLocal_246 = iParam1;
-		iLocal_247 = iParam2;
+		iLocal_143 = 1;
+		iLocal_2829 = iParam1;
+		iLocal_2830 = iParam2;
 	}
 }
 
 void func_451(bool bParam0)//Position - 0x34677
 {
-	bLocal_151 = bParam0;
+	bLocal_153 = bParam0;
 }
 
 void func_452(int iParam0)//Position - 0x34683
 {
-	iLocal_245 = iParam0;
+	iLocal_2828 = iParam0;
 }
 
 void func_453(int iParam0)//Position - 0x34690
 {
-	bLocal_145 = iParam0;
+	bLocal_147 = iParam0;
 }
 
 void func_454()//Position - 0x3469C
@@ -45389,825 +45389,825 @@ void func_454()//Position - 0x3469C
 	int iVar1;
 	int iVar2;
 	
-	Local_216[0 /*3*/] = { -1189.919f, -864.3419f, 13.5062f };
-	fLocal_152[0] = 0.011f;
-	fLocal_153[0] = -0.0057f;
-	fLocal_154[0] = -0.4728f;
-	fLocal_155[0] = 0.8811f;
-	iLocal_192[0] = 3;
-	fLocal_156[0] = 12794f;
-	iLocal_242[0] = joaat("f620");
-	Local_216[1 /*3*/] = { -1168.0251f, -846.5394f, 13.8245f };
-	fLocal_152[1] = 0.0067f;
-	fLocal_153[1] = 0.0025f;
-	fLocal_154[1] = 0.3507f;
-	fLocal_155[1] = 0.9364f;
-	iLocal_192[1] = 4;
-	fLocal_156[1] = 12926f;
-	iLocal_242[1] = joaat("washington");
-	Local_216[2 /*3*/] = { -1052.3594f, -730.7704f, 18.729f };
-	fLocal_152[2] = -0.0125f;
-	fLocal_153[2] = -0.0121f;
-	fLocal_154[2] = 0.9079f;
-	fLocal_155[2] = 0.4187f;
-	iLocal_192[2] = 14;
-	fLocal_156[2] = 19594.96f;
-	iLocal_242[2] = joaat("serrano");
-	Local_216[3 /*3*/] = { -1050.4532f, -743.3076f, 18.7718f };
-	fLocal_152[3] = -0.0019f;
-	fLocal_153[3] = -0.0002f;
-	fLocal_154[3] = -0.3894f;
-	fLocal_155[3] = 0.9211f;
-	iLocal_192[3] = 6;
-	fLocal_156[3] = 20400f;
-	iLocal_242[3] = joaat("washington");
-	Local_216[4 /*3*/] = { -1032.5537f, -734.0855f, 19.1223f };
-	fLocal_152[4] = 0.0233f;
-	fLocal_153[4] = -0.0077f;
-	fLocal_154[4] = -0.4212f;
-	fLocal_155[4] = 0.9066f;
-	iLocal_192[4] = 16;
-	fLocal_156[4] = 19960.85f;
-	iLocal_242[4] = joaat("serrano");
-	Local_216[5 /*3*/] = { -865.4848f, -623.928f, 28.3187f };
-	fLocal_152[5] = 0.0038f;
-	fLocal_153[5] = -0.0257f;
-	fLocal_154[5] = 0.9893f;
-	fLocal_155[5] = -0.1433f;
-	iLocal_192[5] = 7;
-	fLocal_156[5] = 28417f;
-	iLocal_242[5] = joaat("washington");
-	Local_216[6 /*3*/] = { -869.6063f, -612.9931f, 28.5539f };
-	fLocal_152[6] = 0.005f;
-	fLocal_153[6] = -0.0119f;
-	fLocal_154[6] = 0.9777f;
-	fLocal_155[6] = -0.2094f;
-	iLocal_192[6] = 8;
-	fLocal_156[6] = 28417f;
-	iLocal_242[6] = joaat("serrano");
-	Local_216[7 /*3*/] = { -853.7338f, -652.7806f, 27.3348f };
-	fLocal_152[7] = -0.0022f;
-	fLocal_153[7] = -0.0021f;
-	fLocal_154[7] = 0.7085f;
-	fLocal_155[7] = 0.7057f;
-	iLocal_192[7] = 9;
-	fLocal_156[7] = 28549f;
-	iLocal_242[7] = joaat("serrano");
-	Local_216[8 /*3*/] = { -797.3943f, -667.453f, 28.1434f };
-	fLocal_152[8] = 0.0434f;
-	fLocal_153[8] = 0.0031f;
-	fLocal_154[8] = -0.7039f;
-	fLocal_155[8] = 0.709f;
-	iLocal_192[8] = 10;
-	fLocal_156[8] = 30654f;
-	iLocal_242[8] = joaat("feltzer2");
-	Local_216[9 /*3*/] = { -728.5153f, -661.8074f, 29.8396f };
-	fLocal_152[9] = -0.0017f;
-	fLocal_153[9] = 0.0032f;
-	fLocal_154[9] = -0.7028f;
-	fLocal_155[9] = 0.7114f;
-	iLocal_192[9] = 11;
-	fLocal_156[9] = 33027f;
-	iLocal_242[9] = joaat("rapidgt");
-	Local_216[10 /*3*/] = { -595.1748f, -661.9557f, 31.8497f };
-	fLocal_152[10] = 0.0098f;
-	fLocal_153[10] = -0.0088f;
-	fLocal_154[10] = -0.7017f;
-	fLocal_155[10] = 0.7123f;
-	iLocal_192[10] = 15;
-	fLocal_156[10] = 48186f;
-	iLocal_242[10] = joaat("sultan");
-	Local_216[11 /*3*/] = { -477.1852f, -644.7173f, 32.0538f };
-	fLocal_152[11] = -0.0087f;
-	fLocal_153[11] = 0.0318f;
-	fLocal_154[11] = 0.0461f;
-	fLocal_155[11] = 0.9984f;
-	iLocal_192[11] = 17;
-	fLocal_156[11] = 55765.85f;
-	iLocal_242[11] = joaat("serrano");
-	Local_216[12 /*3*/] = { -489.0458f, -666.3751f, 32.3303f };
-	fLocal_152[12] = 0.0113f;
-	fLocal_153[12] = 0.0176f;
-	fLocal_154[12] = -0.7063f;
-	fLocal_155[12] = 0.7076f;
-	iLocal_192[12] = 23;
-	fLocal_156[12] = 58613f;
-	iLocal_242[12] = joaat("asterope");
-	Local_216[13 /*3*/] = { -487.5655f, -744.9453f, 32.6015f };
-	fLocal_152[13] = -0.0937f;
-	fLocal_153[13] = 0.045f;
-	fLocal_154[13] = 0.8793f;
-	fLocal_155[13] = 0.4648f;
-	iLocal_192[13] = 19;
-	fLocal_156[13] = 60459.32f;
-	iLocal_242[13] = joaat("bmx");
-	Local_216[14 /*3*/] = { -478.1905f, -835.1024f, 29.9746f };
-	fLocal_152[14] = -0.0021f;
-	fLocal_153[14] = -0.0021f;
-	fLocal_154[14] = 0.7008f;
-	fLocal_155[14] = 0.7134f;
-	iLocal_192[14] = 18;
-	fLocal_156[14] = 64923.85f;
-	iLocal_242[14] = joaat("serrano");
-	Local_216[15 /*3*/] = { -430.6053f, -816.6718f, 36.8249f };
-	fLocal_152[15] = -0.0001f;
-	fLocal_153[15] = 0.0048f;
-	fLocal_154[15] = 0.9993f;
-	fLocal_155[15] = 0.0373f;
-	iLocal_192[15] = 28;
-	fLocal_156[15] = 68551f;
-	iLocal_242[15] = joaat("asterope");
-	Local_216[16 /*3*/] = { -427.4086f, -762.012f, 36.6573f };
-	fLocal_152[16] = 0.0001f;
-	fLocal_153[16] = 0.0049f;
-	fLocal_154[16] = 1f;
-	fLocal_155[16] = 0.0047f;
-	iLocal_192[16] = 30;
-	fLocal_156[16] = 70333f;
-	iLocal_242[16] = joaat("sultan");
-	Local_216[17 /*3*/] = { -476.9606f, -664.9507f, 31.9901f };
-	fLocal_152[17] = -0.003f;
-	fLocal_153[17] = -0.0083f;
-	fLocal_154[17] = 0.7264f;
-	fLocal_155[17] = -0.6872f;
-	iLocal_192[17] = 70;
-	fLocal_156[17] = 77000f;
-	iLocal_242[17] = joaat("sultan");
-	Local_216[18 /*3*/] = { -436.342f, -650.5261f, 30.4239f };
-	fLocal_152[18] = 0.0056f;
-	fLocal_153[18] = 0.0224f;
-	fLocal_154[18] = 0.7071f;
-	fLocal_155[18] = 0.7068f;
-	iLocal_192[18] = 13;
-	fLocal_156[18] = 77590f;
-	iLocal_242[18] = joaat("sultan");
-	Local_216[19 /*3*/] = { -420.96f, -656.3897f, 30.5754f };
-	fLocal_152[19] = 0.0112f;
-	fLocal_153[19] = 0.0112f;
-	fLocal_154[19] = 0.707f;
-	fLocal_155[19] = 0.707f;
-	iLocal_192[19] = 12;
-	fLocal_156[19] = 78000f;
-	iLocal_242[19] = joaat("packer");
-	Local_216[20 /*3*/] = { -455.2408f, -535.85f, 24.7102f };
-	fLocal_152[20] = -0.0022f;
-	fLocal_153[20] = 0.0022f;
-	fLocal_154[20] = -0.707f;
-	fLocal_155[20] = 0.7072f;
-	iLocal_192[20] = 31;
-	fLocal_156[20] = 80849f;
-	iLocal_242[20] = joaat("sultan");
-	Local_216[21 /*3*/] = { -421.8391f, -535.8503f, 24.7099f };
-	fLocal_152[21] = -0.0024f;
-	fLocal_153[21] = 0.0024f;
-	fLocal_154[21] = -0.7071f;
-	fLocal_155[21] = 0.7071f;
-	iLocal_192[21] = 32;
-	fLocal_156[21] = 80849f;
-	iLocal_242[21] = joaat("sultan");
-	Local_216[22 /*3*/] = { -323.2696f, -519.5041f, 24.769f };
-	fLocal_152[22] = -0.0086f;
-	fLocal_153[22] = -0.0166f;
-	fLocal_154[22] = -0.7001f;
-	fLocal_155[22] = 0.7138f;
-	iLocal_192[22] = 34;
-	fLocal_156[22] = 85280f;
-	iLocal_242[22] = joaat("asterope");
-	Local_216[23 /*3*/] = { -384.7831f, -496.5516f, 24.806f };
-	fLocal_152[23] = -0.0022f;
-	fLocal_153[23] = -0.0022f;
-	fLocal_154[23] = 0.7072f;
-	fLocal_155[23] = 0.7071f;
-	iLocal_192[23] = 33;
-	fLocal_156[23] = 85722f;
-	iLocal_242[23] = joaat("landstalker");
-	Local_216[24 /*3*/] = { -299.8336f, -519.6835f, 24.804f };
-	fLocal_152[24] = -0.0071f;
-	fLocal_153[24] = -0.0166f;
-	fLocal_154[24] = -0.7047f;
-	fLocal_155[24] = 0.7093f;
-	iLocal_192[24] = 35;
-	fLocal_156[24] = 86195f;
-	iLocal_242[24] = joaat("asterope");
-	Local_216[25 /*3*/] = { -296.6222f, -496.012f, 24.8684f };
-	fLocal_152[25] = -0.0026f;
-	fLocal_153[25] = -0.0022f;
-	fLocal_154[25] = 0.7084f;
-	fLocal_155[25] = 0.7058f;
-	iLocal_192[25] = 21;
-	fLocal_156[25] = 87170.85f;
-	iLocal_242[25] = joaat("landstalker");
-	Local_216[26 /*3*/] = { -242.5362f, -502.0159f, 25.6451f };
-	fLocal_152[26] = -0.0096f;
-	fLocal_153[26] = -0.0094f;
-	fLocal_154[26] = 0.7194f;
-	fLocal_155[26] = 0.6945f;
-	iLocal_192[26] = 36;
-	fLocal_156[26] = 88537f;
-	iLocal_242[26] = joaat("landstalker");
-	Local_216[27 /*3*/] = { -234.2082f, -530.1547f, 25.9344f };
-	fLocal_152[27] = -0.0058f;
-	fLocal_153[27] = 0.0064f;
-	fLocal_154[27] = 0.7091f;
-	fLocal_155[27] = -0.705f;
-	iLocal_192[27] = 39;
-	fLocal_156[27] = 90066f;
-	iLocal_242[27] = joaat("rapidgt");
-	Local_216[28 /*3*/] = { -204.8521f, -534.9627f, 26.6094f };
-	fLocal_152[28] = 0.0281f;
-	fLocal_153[28] = 0.0002f;
-	fLocal_154[28] = -0.6936f;
-	fLocal_155[28] = 0.7198f;
-	iLocal_192[28] = 37;
-	fLocal_156[28] = 91140f;
-	iLocal_242[28] = joaat("asterope");
-	Local_216[29 /*3*/] = { -186.2448f, -518.6406f, 27.3221f };
-	fLocal_152[29] = -0.0061f;
-	fLocal_153[29] = -0.0197f;
-	fLocal_154[29] = -0.7053f;
-	fLocal_155[29] = 0.7086f;
-	iLocal_192[29] = 41;
-	fLocal_156[29] = 91890f;
-	iLocal_242[29] = joaat("fq2");
-	Local_216[30 /*3*/] = { -181.6259f, -523.8001f, 27.2923f };
-	fLocal_152[30] = 0.0116f;
-	fLocal_153[30] = -0.0124f;
-	fLocal_154[30] = -0.7029f;
-	fLocal_155[30] = 0.7111f;
-	iLocal_192[30] = 38;
-	fLocal_156[30] = 92230f;
-	iLocal_242[30] = joaat("sultan");
-	Local_216[31 /*3*/] = { -152.8287f, -489.4706f, 28.3269f };
-	fLocal_152[31] = -0.0213f;
-	fLocal_153[31] = 0.0018f;
-	fLocal_154[31] = 0.7254f;
-	fLocal_155[31] = 0.688f;
-	iLocal_192[31] = 24;
-	fLocal_156[31] = 92554.85f;
-	iLocal_242[31] = joaat("landstalker");
-	Local_216[32 /*3*/] = { -172.1277f, -500.8638f, 27.8326f };
-	fLocal_152[32] = -0.0252f;
-	fLocal_153[32] = -0.0296f;
-	fLocal_154[32] = 0.7083f;
-	fLocal_155[32] = 0.7048f;
-	iLocal_192[32] = 40;
-	fLocal_156[32] = 94528f;
-	iLocal_242[32] = joaat("fq2");
-	Local_216[33 /*3*/] = { -114.866f, -500.2346f, 29.8111f };
-	fLocal_152[33] = -0.0104f;
-	fLocal_153[33] = -0.0098f;
-	fLocal_154[33] = 0.7021f;
-	fLocal_155[33] = 0.7119f;
-	iLocal_192[33] = 78;
-	fLocal_156[33] = 95865.44f;
-	iLocal_242[33] = joaat("asterope");
-	Local_216[34 /*3*/] = { -129.1858f, -505.694f, 29.242f };
-	fLocal_152[34] = -0.015f;
-	fLocal_153[34] = -0.0163f;
-	fLocal_154[34] = 0.7139f;
-	fLocal_155[34] = 0.6999f;
-	iLocal_192[34] = 42;
-	fLocal_156[34] = 95886f;
-	iLocal_242[34] = joaat("asterope");
-	Local_216[35 /*3*/] = { -55.6079f, -499.5939f, 31.8493f };
-	fLocal_152[35] = -0.0116f;
-	fLocal_153[35] = -0.0112f;
-	fLocal_154[35] = 0.7134f;
-	fLocal_155[35] = 0.7006f;
-	iLocal_192[35] = 25;
-	fLocal_156[35] = 96787.85f;
-	iLocal_242[35] = joaat("landstalker");
-	Local_216[36 /*3*/] = { -87.112f, -504.988f, 30.9077f };
-	fLocal_152[36] = -0.0159f;
-	fLocal_153[36] = -0.0149f;
-	fLocal_154[36] = 0.7118f;
-	fLocal_155[36] = 0.702f;
-	iLocal_192[36] = 43;
-	fLocal_156[36] = 97140f;
-	iLocal_242[36] = joaat("fq2");
-	Local_216[37 /*3*/] = { 26.5103f, -499.3918f, 34.2088f };
-	fLocal_152[37] = -0.0005f;
-	fLocal_153[37] = -0.0002f;
-	fLocal_154[37] = 0.7186f;
-	fLocal_155[37] = 0.6954f;
-	iLocal_192[37] = 79;
-	fLocal_156[37] = 100001.4f;
-	iLocal_242[37] = joaat("packer");
-	Local_216[39 /*3*/] = { 70.5888f, -526.8503f, 33.7031f };
-	fLocal_152[39] = -0.0004f;
-	fLocal_153[39] = -0.0004f;
-	fLocal_154[39] = -0.7039f;
-	fLocal_155[39] = 0.7103f;
-	iLocal_192[39] = 46;
-	fLocal_156[39] = 102948f;
-	iLocal_242[39] = joaat("ninef2");
-	Local_216[40 /*3*/] = { 99.8609f, -521.5526f, 33.5624f };
-	fLocal_152[40] = 0.0145f;
-	fLocal_153[40] = -0.0145f;
-	fLocal_154[40] = 0.707f;
-	fLocal_155[40] = -0.7069f;
-	iLocal_192[40] = 47;
-	fLocal_156[40] = 104004f;
-	iLocal_242[40] = joaat("landstalker");
-	Local_216[41 /*3*/] = { 196.1974f, -526.9512f, 33.5498f };
-	fLocal_152[41] = 0.0178f;
-	fLocal_153[41] = -0.0178f;
-	fLocal_154[41] = 0.7069f;
-	fLocal_155[41] = -0.7068f;
-	iLocal_192[41] = 48;
-	fLocal_156[41] = 107502f;
-	iLocal_242[41] = joaat("landstalker");
-	Local_216[42 /*3*/] = { 230.2825f, -516.1511f, 33.5591f };
-	fLocal_152[42] = -0.0023f;
-	fLocal_153[42] = 0.0023f;
-	fLocal_154[42] = -0.7071f;
-	fLocal_155[42] = 0.7071f;
-	iLocal_192[42] = 49;
-	fLocal_156[42] = 108624f;
-	iLocal_242[42] = joaat("landstalker");
-	Local_216[44 /*3*/] = { 301.1906f, -521.55f, 33.4621f };
-	fLocal_152[44] = 0.0001f;
-	fLocal_153[44] = -0.0001f;
-	fLocal_154[44] = 0.7071f;
-	fLocal_155[44] = -0.7071f;
-	iLocal_192[44] = 50;
-	fLocal_156[44] = 111198f;
-	iLocal_242[44] = joaat("sultan");
-	Local_217[0 /*3*/] = { -1200.0914f, -849.0596f, 13.5431f };
-	fLocal_167[0] = -0.0171f;
-	fLocal_168[0] = -0.0063f;
-	fLocal_169[0] = 0.88f;
-	fLocal_170[0] = 0.4747f;
-	iLocal_243[0] = joaat("feltzer2");
-	Local_217[1 /*3*/] = { -1058.3451f, -772.2757f, 18.8924f };
-	fLocal_167[1] = -0.0028f;
-	fLocal_168[1] = 0.0149f;
-	fLocal_169[1] = 0.3553f;
-	fLocal_170[1] = 0.9346f;
-	iLocal_243[1] = joaat("feltzer2");
-	Local_217[2 /*3*/] = { -1070.664f, -739.6081f, 18.8482f };
-	fLocal_167[2] = -0.0111f;
-	fLocal_168[2] = 0.0192f;
-	fLocal_169[2] = 0.9254f;
-	fLocal_170[2] = 0.3784f;
-	iLocal_243[2] = joaat("feltzer2");
-	Local_217[3 /*3*/] = { -1121.0957f, -880.1656f, 7.6752f };
-	fLocal_167[3] = 0.0021f;
-	fLocal_168[3] = -0.0011f;
-	fLocal_169[3] = -0.4944f;
-	fLocal_170[3] = 0.8692f;
-	iLocal_243[3] = joaat("serrano");
-	Local_217[4 /*3*/] = { -1115.6182f, -807.3134f, 16.6315f };
-	fLocal_167[4] = -0.0414f;
-	fLocal_168[4] = -0.0257f;
-	fLocal_169[4] = 0.8471f;
-	fLocal_170[4] = -0.5292f;
-	iLocal_243[4] = joaat("serrano");
-	Local_217[5 /*3*/] = { -1112.4027f, -774.3158f, 18.3801f };
-	fLocal_167[5] = -0.0097f;
-	fLocal_168[5] = -0.0319f;
-	fLocal_169[5] = 0.5058f;
-	fLocal_170[5] = 0.862f;
-	iLocal_243[5] = joaat("serrano");
-	Local_217[6 /*3*/] = { -1130.5292f, -792.3233f, 16.5972f };
-	fLocal_167[6] = -0.0307f;
-	fLocal_168[6] = -0.0293f;
-	fLocal_169[6] = 0.9133f;
-	fLocal_170[6] = 0.4051f;
-	iLocal_243[6] = joaat("feltzer2");
-	Local_217[7 /*3*/] = { -1045.3898f, -778.9995f, 18.3863f };
-	fLocal_167[7] = 0.0118f;
-	fLocal_168[7] = 0.037f;
-	fLocal_169[7] = 0.5106f;
-	fLocal_170[7] = 0.859f;
-	iLocal_243[7] = joaat("serrano");
-	Local_217[8 /*3*/] = { -1034.8263f, -739.7039f, 18.881f };
-	fLocal_167[8] = 0.0195f;
-	fLocal_168[8] = 0.019f;
-	fLocal_169[8] = -0.4353f;
-	fLocal_170[8] = 0.8999f;
-	iLocal_243[8] = joaat("radi");
-	Local_217[9 /*3*/] = { -1033.9292f, -712.6562f, 19.4857f };
-	fLocal_167[9] = -0.0193f;
-	fLocal_168[9] = -0.0194f;
-	fLocal_169[9] = 0.9056f;
-	fLocal_170[9] = 0.4231f;
-	iLocal_243[9] = joaat("serrano");
-	Local_217[10 /*3*/] = { -1005.5381f, -715.5715f, 20.3848f };
-	fLocal_167[10] = -0.044f;
-	fLocal_168[10] = -0.1329f;
-	fLocal_169[10] = -0.3895f;
-	fLocal_170[10] = 0.9103f;
-	iLocal_243[10] = joaat("bati");
-	Local_217[11 /*3*/] = { -980.4462f, -670.3936f, 22.8034f };
-	fLocal_167[11] = -0.0432f;
-	fLocal_168[11] = -0.0121f;
-	fLocal_169[11] = 0.8701f;
-	fLocal_170[11] = 0.4908f;
-	iLocal_243[11] = joaat("washington");
-	Local_217[12 /*3*/] = { -969.1606f, -664.5714f, 23.887f };
-	fLocal_167[12] = -0.046f;
-	fLocal_168[12] = -0.0213f;
-	fLocal_169[12] = 0.8534f;
-	fLocal_170[12] = 0.5187f;
-	iLocal_243[12] = joaat("rapidgt");
-	Local_217[13 /*3*/] = { -928.2644f, -652.7425f, 26.6901f };
-	fLocal_167[13] = -0.0303f;
-	fLocal_168[13] = -0.0054f;
-	fLocal_169[13] = 0.7573f;
-	fLocal_170[13] = 0.6524f;
-	iLocal_243[13] = joaat("rapidgt");
-	Local_217[14 /*3*/] = { -916.6693f, -650.6878f, 27.0863f };
-	fLocal_167[14] = -0.024f;
-	fLocal_168[14] = 0.0101f;
-	fLocal_169[14] = 0.7742f;
-	fLocal_170[14] = 0.6324f;
-	iLocal_243[14] = joaat("feltzer2");
-	Local_217[15 /*3*/] = { -790.8272f, -667.5106f, 28.4613f };
-	fLocal_167[15] = -0.0369f;
-	fLocal_168[15] = -0.005f;
-	fLocal_169[15] = 0.7209f;
-	fLocal_170[15] = -0.6921f;
-	iLocal_243[15] = joaat("rapidgt");
-	Local_217[16 /*3*/] = { -790.0645f, -647.0408f, 28.4882f };
-	fLocal_167[16] = -0.037f;
-	fLocal_168[16] = 0.0003f;
-	fLocal_169[16] = 0.7201f;
-	fLocal_170[16] = 0.6929f;
-	iLocal_243[16] = joaat("feltzer2");
-	Local_217[17 /*3*/] = { -716.8614f, -667.7233f, 29.6724f };
-	fLocal_167[17] = -0.0267f;
-	fLocal_168[17] = -0.0106f;
-	fLocal_169[17] = 0.7068f;
-	fLocal_170[17] = -0.7068f;
-	iLocal_243[17] = joaat("sultan");
-	Local_217[18 /*3*/] = { -653.5672f, -605.7774f, 32.8442f };
-	fLocal_167[18] = 0.0008f;
-	fLocal_168[18] = -0.0298f;
-	fLocal_169[18] = 0.9991f;
-	fLocal_170[18] = 0.031f;
-	iLocal_243[18] = joaat("radi");
-	Local_217[19 /*3*/] = { -598.4409f, -647.7642f, 31.2207f };
-	fLocal_167[19] = 0.0659f;
-	fLocal_168[19] = -0.1257f;
-	fLocal_169[19] = 0.6417f;
-	fLocal_170[19] = 0.7537f;
-	iLocal_243[19] = joaat("bati");
-	Local_217[20 /*3*/] = { -457.3376f, -774.9608f, 29.9679f };
-	fLocal_167[20] = -0.0002f;
-	fLocal_168[20] = 0f;
-	fLocal_169[20] = 0.7033f;
-	fLocal_170[20] = 0.7109f;
-	iLocal_243[20] = joaat("sultan");
-	Local_217[21 /*3*/] = { -506.0643f, -614.7634f, 29.6699f };
-	fLocal_167[21] = -0.0131f;
-	fLocal_168[21] = -0.1302f;
-	fLocal_169[21] = -0.0218f;
-	fLocal_170[21] = 0.9912f;
-	iLocal_243[21] = joaat("bati");
-	Local_217[22 /*3*/] = { -487.6026f, -614.804f, 30.58f };
-	fLocal_167[22] = 0.0002f;
-	fLocal_168[22] = 0f;
-	fLocal_169[22] = 0.9999f;
-	fLocal_170[22] = 0.0166f;
-	iLocal_243[22] = joaat("sultan");
-	Local_217[23 /*3*/] = { -856.7647f, -679.063f, 27.2491f };
-	fLocal_167[23] = -0.008f;
-	fLocal_168[23] = 0.0277f;
-	fLocal_169[23] = 0.0148f;
-	fLocal_170[23] = 0.9995f;
-	iLocal_243[23] = joaat("sultan");
-	Local_217[24 /*3*/] = { -750.8827f, -607.8928f, 29.5466f };
-	fLocal_167[24] = 0.0609f;
-	fLocal_168[24] = 0.0021f;
-	fLocal_169[24] = 0.9978f;
-	fLocal_170[24] = -0.0261f;
-	iLocal_243[24] = joaat("sultan");
-	Local_217[25 /*3*/] = { -477.1844f, -757.5135f, 30.1527f };
-	fLocal_167[25] = -0.0022f;
-	fLocal_168[25] = -0.0021f;
-	fLocal_169[25] = 0.7233f;
-	fLocal_170[25] = 0.6905f;
-	iLocal_243[25] = joaat("rapidgt");
-	Local_217[26 /*3*/] = { -471.01f, -624.55f, 30.58f };
-	fLocal_167[26] = 0.0001f;
-	fLocal_168[26] = -0.0002f;
-	fLocal_169[26] = -0.0144f;
-	fLocal_170[26] = 0.9999f;
-	iLocal_243[26] = joaat("sultan");
-	Local_217[27 /*3*/] = { -679.3469f, -593.3812f, 24.7059f };
-	fLocal_167[27] = -0.0011f;
-	fLocal_168[27] = 0.0004f;
-	fLocal_169[27] = 0.6772f;
-	fLocal_170[27] = 0.7358f;
-	iLocal_243[27] = joaat("sultan");
-	Local_217[28 /*3*/] = { 433.6576f, -608.7065f, 27.7732f };
-	fLocal_167[28] = -0.0003f;
-	fLocal_168[28] = 0.0005f;
-	fLocal_169[28] = 0.7774f;
-	fLocal_170[28] = -0.629f;
-	iLocal_243[28] = joaat("sultan");
-	Local_217[29 /*3*/] = { 416.3534f, -638.7431f, 27.8704f };
-	fLocal_167[29] = 0.0891f;
-	fLocal_168[29] = -0.0957f;
-	fLocal_169[29] = 0.7111f;
-	fLocal_170[29] = 0.6908f;
-	iLocal_243[29] = joaat("bati");
-	Local_217[30 /*3*/] = { 433.9501f, -603.2841f, 27.8743f };
-	fLocal_167[30] = 0.0794f;
-	fLocal_168[30] = -0.1039f;
-	fLocal_169[30] = 0.6505f;
-	fLocal_170[30] = 0.7482f;
-	iLocal_243[30] = joaat("bati");
-	Local_217[31 /*3*/] = { 291.0103f, -589.8865f, 42.9593f };
-	fLocal_167[31] = 0.0053f;
-	fLocal_168[31] = -0.0026f;
-	fLocal_169[31] = 0.9489f;
-	fLocal_170[31] = 0.3156f;
-	iLocal_243[31] = joaat("ambulance");
-	Local_218[0 /*3*/] = { -1104.2826f, -775.1389f, 18.8468f };
-	fLocal_161[0] = -0.0068f;
-	fLocal_162[0] = -0.0121f;
-	fLocal_163[0] = 0.9186f;
-	fLocal_164[0] = 0.3949f;
-	iLocal_195[0] = 52;
-	fLocal_165[0] = 16000f;
-	fLocal_166[0] = 1f;
-	iLocal_244[0] = joaat("feltzer2");
-	Local_218[1 /*3*/] = { -1129.4855f, -805.7412f, 15.9592f };
-	fLocal_161[1] = 0.0303f;
-	fLocal_162[1] = -0.0208f;
-	fLocal_163[1] = -0.3298f;
-	fLocal_164[1] = 0.9433f;
-	iLocal_195[1] = 5;
-	fLocal_165[1] = 16488f;
-	fLocal_166[1] = 1f;
-	iLocal_244[1] = joaat("washington");
-	Local_218[2 /*3*/] = { -998.2445f, -692.8199f, 21.5328f };
-	fLocal_161[2] = -0.0136f;
-	fLocal_162[2] = -0.0158f;
-	fLocal_163[2] = 0.8929f;
-	fLocal_164[2] = 0.4498f;
-	iLocal_195[2] = 53;
-	fLocal_165[2] = 21412f;
-	fLocal_166[2] = 1f;
-	iLocal_244[2] = joaat("feltzer2");
-	Local_218[3 /*3*/] = { -883.8546f, -655.3506f, 27.5493f };
-	fLocal_161[3] = 0.0032f;
-	fLocal_162[3] = -0.0018f;
-	fLocal_163[3] = 0.712f;
-	fLocal_164[3] = 0.7021f;
-	iLocal_195[3] = 54;
-	fLocal_165[3] = 25000f;
-	fLocal_166[3] = 1f;
-	iLocal_244[3] = joaat("feltzer2");
-	Local_218[4 /*3*/] = { -850.7409f, -661.5627f, 27.3668f };
-	fLocal_161[4] = -0.0015f;
-	fLocal_162[4] = 0.0017f;
-	fLocal_163[4] = -0.6912f;
-	fLocal_164[4] = 0.7227f;
-	iLocal_195[4] = 55;
-	fLocal_165[4] = 28500f;
-	fLocal_166[4] = 1f;
-	iLocal_244[4] = joaat("serrano");
-	Local_218[5 /*3*/] = { -721.2928f, -652.8879f, 29.816f };
-	fLocal_161[5] = -0.0024f;
-	fLocal_162[5] = -0.0102f;
-	fLocal_163[5] = 0.6908f;
-	fLocal_164[5] = 0.723f;
-	iLocal_195[5] = 56;
-	fLocal_165[5] = 32500f;
-	fLocal_166[5] = 1f;
-	iLocal_244[5] = joaat("serrano");
-	Local_218[6 /*3*/] = { -724.7061f, -648.64f, 29.7668f };
-	fLocal_161[6] = -0.0212f;
-	fLocal_162[6] = 0.005f;
-	fLocal_163[6] = 0.7061f;
-	fLocal_164[6] = 0.7078f;
-	iLocal_195[6] = 57;
-	fLocal_165[6] = 32750f;
-	fLocal_166[6] = 1f;
-	iLocal_244[6] = joaat("washington");
-	Local_218[7 /*3*/] = { -688.4173f, -579.6989f, 24.8499f };
-	fLocal_161[7] = 0.0026f;
-	fLocal_162[7] = -0.0029f;
-	fLocal_163[7] = 0.7397f;
-	fLocal_164[7] = -0.673f;
-	iLocal_195[7] = 58;
-	fLocal_165[7] = 40273f;
-	fLocal_166[7] = 1f;
-	iLocal_244[7] = joaat("washington");
-	Local_218[8 /*3*/] = { -563.1786f, -579.4122f, 25.3124f };
-	fLocal_161[8] = 0.002f;
-	fLocal_162[8] = 0.0021f;
-	fLocal_163[8] = 0.7032f;
-	fLocal_164[8] = 0.711f;
-	iLocal_195[8] = 59;
-	fLocal_165[8] = 43500f;
-	fLocal_166[8] = 1f;
-	iLocal_244[8] = joaat("trash");
-	Local_218[9 /*3*/] = { -556.1506f, -631.2017f, 30.562f };
-	fLocal_161[9] = -0.0352f;
-	fLocal_162[9] = 0.0378f;
-	fLocal_163[9] = -0.6805f;
-	fLocal_164[9] = 0.7309f;
-	iLocal_195[9] = 60;
-	fLocal_165[9] = 51889f;
-	fLocal_166[9] = 1f;
-	iLocal_244[9] = joaat("bmx");
-	Local_218[10 /*3*/] = { -445.0543f, -655.1606f, 31.3466f };
-	fLocal_161[10] = 0.0076f;
-	fLocal_162[10] = 0.0093f;
-	fLocal_163[10] = 0.7136f;
-	fLocal_164[10] = 0.7005f;
-	iLocal_195[10] = 61;
-	fLocal_165[10] = 56772f;
-	fLocal_166[10] = 1f;
-	iLocal_244[10] = joaat("sultan");
-	Local_218[11 /*3*/] = { -519.4122f, -666.3391f, 32.7365f };
-	fLocal_161[11] = 0.0105f;
-	fLocal_162[11] = 0.0179f;
-	fLocal_163[11] = -0.6817f;
-	fLocal_164[11] = 0.7313f;
-	iLocal_195[11] = 62;
-	fLocal_165[11] = 57772f;
-	fLocal_166[11] = 1f;
-	iLocal_244[11] = joaat("washington");
-	Local_218[12 /*3*/] = { -491.8959f, -716.5375f, 32.5585f };
-	fLocal_161[12] = 0.1433f;
-	fLocal_162[12] = 0.0787f;
-	fLocal_163[12] = 0.9609f;
-	fLocal_164[12] = -0.2234f;
-	iLocal_195[12] = 63;
-	fLocal_165[12] = 60800f;
-	fLocal_166[12] = 1.2f;
-	iLocal_244[12] = joaat("bmx");
-	Local_218[13 /*3*/] = { -492.3147f, -827.8944f, 29.9952f };
-	fLocal_161[13] = -0.005f;
-	fLocal_162[13] = 0.0046f;
-	fLocal_163[13] = 0.0169f;
-	fLocal_164[13] = 0.9998f;
-	iLocal_195[13] = 64;
-	fLocal_165[13] = 64030f;
-	fLocal_166[13] = 1f;
-	iLocal_244[13] = joaat("washington");
-	Local_218[14 /*3*/] = { -518.8372f, -756.7956f, 31.5421f };
-	fLocal_161[14] = -0.0147f;
-	fLocal_162[14] = -0.0264f;
-	fLocal_163[14] = 0.9686f;
-	fLocal_164[14] = -0.2467f;
-	iLocal_195[14] = 65;
-	fLocal_165[14] = 64230f;
-	fLocal_166[14] = 1f;
-	iLocal_244[14] = joaat("washington");
-	Local_218[15 /*3*/] = { -477.6166f, -806.7344f, 30.0523f };
-	fLocal_161[15] = 0f;
-	fLocal_162[15] = 0.0025f;
-	fLocal_163[15] = -0.701f;
-	fLocal_164[15] = 0.7132f;
-	iLocal_195[15] = 66;
-	fLocal_165[15] = 66084f;
-	fLocal_166[15] = 1f;
-	iLocal_244[15] = joaat("washington");
-	Local_218[16 /*3*/] = { -417.4774f, -836.1498f, 31.442f };
-	fLocal_161[16] = -0.0077f;
-	fLocal_162[16] = -0.0047f;
-	fLocal_163[16] = 0.7025f;
-	fLocal_164[16] = 0.7117f;
-	iLocal_195[16] = 67;
-	fLocal_165[16] = 65384f;
-	fLocal_166[16] = 1f;
-	iLocal_244[16] = joaat("benson");
-	Local_218[17 /*3*/] = { -413.1984f, -831.7321f, 30.8216f };
-	fLocal_161[17] = -0.0237f;
-	fLocal_162[17] = 0.0144f;
-	fLocal_163[17] = 0.7088f;
-	fLocal_164[17] = 0.7049f;
-	iLocal_195[17] = 68;
-	fLocal_165[17] = 67078f;
-	fLocal_166[17] = 1f;
-	iLocal_244[17] = joaat("sultan");
-	Local_218[18 /*3*/] = { -528.5989f, -840.7145f, 29.413f };
-	fLocal_161[18] = -0.0237f;
-	fLocal_162[18] = 0.0236f;
-	fLocal_163[18] = 0.7098f;
-	fLocal_164[18] = -0.7036f;
-	iLocal_195[18] = 69;
-	fLocal_165[18] = 64606.32f;
-	fLocal_166[18] = 1f;
-	iLocal_244[18] = joaat("sultan");
-	Local_218[19 /*3*/] = { -446.0574f, -767.6522f, 29.9676f };
-	fLocal_161[19] = -0.0002f;
-	fLocal_162[19] = 0.0001f;
-	fLocal_163[19] = 0.711f;
-	fLocal_164[19] = 0.7032f;
-	iLocal_195[19] = 51;
-	fLocal_165[19] = 70071.85f;
-	fLocal_166[19] = 1f;
-	iLocal_244[19] = joaat("sultan");
-	Local_218[20 /*3*/] = { -488.5203f, -523.8471f, 24.8363f };
-	fLocal_161[20] = -0.001f;
-	fLocal_162[20] = 0.0015f;
-	fLocal_163[20] = 0.7208f;
-	fLocal_164[20] = -0.6931f;
-	iLocal_195[20] = 71;
-	fLocal_165[20] = 81355.85f;
-	fLocal_166[20] = 1f;
-	iLocal_244[20] = joaat("landstalker");
-	Local_218[21 /*3*/] = { -305.7855f, -508.727f, 24.7583f };
-	fLocal_161[21] = 0.0168f;
-	fLocal_162[21] = -0.0137f;
-	fLocal_163[21] = 0.7019f;
-	fLocal_164[21] = 0.7119f;
-	iLocal_195[21] = 72;
-	fLocal_165[21] = 86290.85f;
-	fLocal_166[21] = 1f;
-	iLocal_244[21] = joaat("landstalker");
-	Local_218[22 /*3*/] = { 294.6554f, -576.5358f, 42.9547f };
-	fLocal_161[22] = 0.0001f;
-	fLocal_162[22] = 0.0078f;
-	fLocal_163[22] = 0.2262f;
-	fLocal_164[22] = 0.974f;
-	iLocal_195[22] = 73;
-	fLocal_165[22] = 109000f;
-	fLocal_166[22] = 1f;
-	iLocal_244[22] = joaat("ambulance");
-	Local_218[23 /*3*/] = { -393.8603f, -503.4236f, 25.4432f };
-	fLocal_161[23] = 0.0016f;
-	fLocal_162[23] = 0.0018f;
-	fLocal_163[23] = 0.7075f;
-	fLocal_164[23] = 0.7067f;
-	iLocal_195[23] = 74;
-	fLocal_165[23] = 82431.85f;
-	fLocal_166[23] = 1f;
-	iLocal_244[23] = joaat("packer");
-	Local_218[24 /*3*/] = { -527.6368f, -846.5891f, 29.9361f };
-	fLocal_161[24] = 0.0422f;
-	fLocal_162[24] = -0.0031f;
-	fLocal_163[24] = -0.7009f;
-	fLocal_164[24] = 0.712f;
-	iLocal_195[24] = 75;
-	fLocal_165[24] = 62500f;
-	fLocal_166[24] = 1f;
-	iLocal_244[24] = joaat("bus");
-	Local_218[25 /*3*/] = { 3.4457f, -533.8352f, 33.2443f };
-	fLocal_161[25] = 0.0232f;
-	fLocal_162[25] = 0.0045f;
-	fLocal_163[25] = -0.6929f;
-	fLocal_164[25] = 0.7206f;
-	iLocal_195[25] = 80;
-	fLocal_165[25] = 100001.4f;
-	fLocal_166[25] = 1f;
-	iLocal_244[25] = joaat("asterope");
-	Local_218[26 /*3*/] = { -483.5551f, -531.6314f, 24.8571f };
-	fLocal_161[26] = 0.0034f;
-	fLocal_162[26] = -0.0031f;
-	fLocal_163[26] = -0.6972f;
-	fLocal_164[26] = 0.7168f;
-	iLocal_195[26] = 76;
-	fLocal_165[26] = 81217.44f;
-	fLocal_166[26] = 1f;
-	iLocal_244[26] = joaat("asterope");
-	Local_218[27 /*3*/] = { -277.6243f, -508.3559f, 24.9767f };
-	fLocal_161[27] = 0.0108f;
-	fLocal_162[27] = -0.0139f;
-	fLocal_163[27] = 0.7117f;
-	fLocal_164[27] = 0.7023f;
-	iLocal_195[27] = 77;
-	fLocal_165[27] = 87256.44f;
-	fLocal_166[27] = 1f;
-	iLocal_244[27] = joaat("asterope");
-	Local_218[28 /*3*/] = { -201.7354f, -496.1847f, 27.3531f };
-	fLocal_161[28] = -0.0125f;
-	fLocal_162[28] = -0.0117f;
-	fLocal_163[28] = 0.7296f;
-	fLocal_164[28] = 0.6837f;
-	iLocal_195[28] = 82;
-	fLocal_165[28] = 90798.32f;
-	fLocal_166[28] = 1f;
-	iLocal_244[28] = joaat("packer");
-	Local_218[29 /*3*/] = { -118.4835f, -529.6654f, 29.6739f };
-	fLocal_161[29] = 0.0116f;
-	fLocal_162[29] = -0.0127f;
-	fLocal_163[29] = -0.686f;
-	fLocal_164[29] = 0.7274f;
-	iLocal_195[29] = 44;
-	fLocal_165[29] = 94954.86f;
-	fLocal_166[29] = 1f;
-	iLocal_244[29] = joaat("landstalker");
+	Local_1878[0 /*3*/] = { -1189.919f, -864.3419f, 13.5062f };
+	fLocal_154[0] = 0.011f;
+	fLocal_240[0] = -0.0057f;
+	fLocal_326[0] = -0.4728f;
+	fLocal_412[0] = 0.8811f;
+	iLocal_1319[0] = 3;
+	fLocal_498[0] = 12794f;
+	iLocal_2600[0] = joaat("f620");
+	Local_1878[1 /*3*/] = { -1168.0251f, -846.5394f, 13.8245f };
+	fLocal_154[1] = 0.0067f;
+	fLocal_240[1] = 0.0025f;
+	fLocal_326[1] = 0.3507f;
+	fLocal_412[1] = 0.9364f;
+	iLocal_1319[1] = 4;
+	fLocal_498[1] = 12926f;
+	iLocal_2600[1] = joaat("washington");
+	Local_1878[2 /*3*/] = { -1052.3594f, -730.7704f, 18.729f };
+	fLocal_154[2] = -0.0125f;
+	fLocal_240[2] = -0.0121f;
+	fLocal_326[2] = 0.9079f;
+	fLocal_412[2] = 0.4187f;
+	iLocal_1319[2] = 14;
+	fLocal_498[2] = 19594.96f;
+	iLocal_2600[2] = joaat("serrano");
+	Local_1878[3 /*3*/] = { -1050.4532f, -743.3076f, 18.7718f };
+	fLocal_154[3] = -0.0019f;
+	fLocal_240[3] = -0.0002f;
+	fLocal_326[3] = -0.3894f;
+	fLocal_412[3] = 0.9211f;
+	iLocal_1319[3] = 6;
+	fLocal_498[3] = 20400f;
+	iLocal_2600[3] = joaat("washington");
+	Local_1878[4 /*3*/] = { -1032.5537f, -734.0855f, 19.1223f };
+	fLocal_154[4] = 0.0233f;
+	fLocal_240[4] = -0.0077f;
+	fLocal_326[4] = -0.4212f;
+	fLocal_412[4] = 0.9066f;
+	iLocal_1319[4] = 16;
+	fLocal_498[4] = 19960.85f;
+	iLocal_2600[4] = joaat("serrano");
+	Local_1878[5 /*3*/] = { -865.4848f, -623.928f, 28.3187f };
+	fLocal_154[5] = 0.0038f;
+	fLocal_240[5] = -0.0257f;
+	fLocal_326[5] = 0.9893f;
+	fLocal_412[5] = -0.1433f;
+	iLocal_1319[5] = 7;
+	fLocal_498[5] = 28417f;
+	iLocal_2600[5] = joaat("washington");
+	Local_1878[6 /*3*/] = { -869.6063f, -612.9931f, 28.5539f };
+	fLocal_154[6] = 0.005f;
+	fLocal_240[6] = -0.0119f;
+	fLocal_326[6] = 0.9777f;
+	fLocal_412[6] = -0.2094f;
+	iLocal_1319[6] = 8;
+	fLocal_498[6] = 28417f;
+	iLocal_2600[6] = joaat("serrano");
+	Local_1878[7 /*3*/] = { -853.7338f, -652.7806f, 27.3348f };
+	fLocal_154[7] = -0.0022f;
+	fLocal_240[7] = -0.0021f;
+	fLocal_326[7] = 0.7085f;
+	fLocal_412[7] = 0.7057f;
+	iLocal_1319[7] = 9;
+	fLocal_498[7] = 28549f;
+	iLocal_2600[7] = joaat("serrano");
+	Local_1878[8 /*3*/] = { -797.3943f, -667.453f, 28.1434f };
+	fLocal_154[8] = 0.0434f;
+	fLocal_240[8] = 0.0031f;
+	fLocal_326[8] = -0.7039f;
+	fLocal_412[8] = 0.709f;
+	iLocal_1319[8] = 10;
+	fLocal_498[8] = 30654f;
+	iLocal_2600[8] = joaat("feltzer2");
+	Local_1878[9 /*3*/] = { -728.5153f, -661.8074f, 29.8396f };
+	fLocal_154[9] = -0.0017f;
+	fLocal_240[9] = 0.0032f;
+	fLocal_326[9] = -0.7028f;
+	fLocal_412[9] = 0.7114f;
+	iLocal_1319[9] = 11;
+	fLocal_498[9] = 33027f;
+	iLocal_2600[9] = joaat("rapidgt");
+	Local_1878[10 /*3*/] = { -595.1748f, -661.9557f, 31.8497f };
+	fLocal_154[10] = 0.0098f;
+	fLocal_240[10] = -0.0088f;
+	fLocal_326[10] = -0.7017f;
+	fLocal_412[10] = 0.7123f;
+	iLocal_1319[10] = 15;
+	fLocal_498[10] = 48186f;
+	iLocal_2600[10] = joaat("sultan");
+	Local_1878[11 /*3*/] = { -477.1852f, -644.7173f, 32.0538f };
+	fLocal_154[11] = -0.0087f;
+	fLocal_240[11] = 0.0318f;
+	fLocal_326[11] = 0.0461f;
+	fLocal_412[11] = 0.9984f;
+	iLocal_1319[11] = 17;
+	fLocal_498[11] = 55765.85f;
+	iLocal_2600[11] = joaat("serrano");
+	Local_1878[12 /*3*/] = { -489.0458f, -666.3751f, 32.3303f };
+	fLocal_154[12] = 0.0113f;
+	fLocal_240[12] = 0.0176f;
+	fLocal_326[12] = -0.7063f;
+	fLocal_412[12] = 0.7076f;
+	iLocal_1319[12] = 23;
+	fLocal_498[12] = 58613f;
+	iLocal_2600[12] = joaat("asterope");
+	Local_1878[13 /*3*/] = { -487.5655f, -744.9453f, 32.6015f };
+	fLocal_154[13] = -0.0937f;
+	fLocal_240[13] = 0.045f;
+	fLocal_326[13] = 0.8793f;
+	fLocal_412[13] = 0.4648f;
+	iLocal_1319[13] = 19;
+	fLocal_498[13] = 60459.32f;
+	iLocal_2600[13] = joaat("bmx");
+	Local_1878[14 /*3*/] = { -478.1905f, -835.1024f, 29.9746f };
+	fLocal_154[14] = -0.0021f;
+	fLocal_240[14] = -0.0021f;
+	fLocal_326[14] = 0.7008f;
+	fLocal_412[14] = 0.7134f;
+	iLocal_1319[14] = 18;
+	fLocal_498[14] = 64923.85f;
+	iLocal_2600[14] = joaat("serrano");
+	Local_1878[15 /*3*/] = { -430.6053f, -816.6718f, 36.8249f };
+	fLocal_154[15] = -0.0001f;
+	fLocal_240[15] = 0.0048f;
+	fLocal_326[15] = 0.9993f;
+	fLocal_412[15] = 0.0373f;
+	iLocal_1319[15] = 28;
+	fLocal_498[15] = 68551f;
+	iLocal_2600[15] = joaat("asterope");
+	Local_1878[16 /*3*/] = { -427.4086f, -762.012f, 36.6573f };
+	fLocal_154[16] = 0.0001f;
+	fLocal_240[16] = 0.0049f;
+	fLocal_326[16] = 1f;
+	fLocal_412[16] = 0.0047f;
+	iLocal_1319[16] = 30;
+	fLocal_498[16] = 70333f;
+	iLocal_2600[16] = joaat("sultan");
+	Local_1878[17 /*3*/] = { -476.9606f, -664.9507f, 31.9901f };
+	fLocal_154[17] = -0.003f;
+	fLocal_240[17] = -0.0083f;
+	fLocal_326[17] = 0.7264f;
+	fLocal_412[17] = -0.6872f;
+	iLocal_1319[17] = 70;
+	fLocal_498[17] = 77000f;
+	iLocal_2600[17] = joaat("sultan");
+	Local_1878[18 /*3*/] = { -436.342f, -650.5261f, 30.4239f };
+	fLocal_154[18] = 0.0056f;
+	fLocal_240[18] = 0.0224f;
+	fLocal_326[18] = 0.7071f;
+	fLocal_412[18] = 0.7068f;
+	iLocal_1319[18] = 13;
+	fLocal_498[18] = 77590f;
+	iLocal_2600[18] = joaat("sultan");
+	Local_1878[19 /*3*/] = { -420.96f, -656.3897f, 30.5754f };
+	fLocal_154[19] = 0.0112f;
+	fLocal_240[19] = 0.0112f;
+	fLocal_326[19] = 0.707f;
+	fLocal_412[19] = 0.707f;
+	iLocal_1319[19] = 12;
+	fLocal_498[19] = 78000f;
+	iLocal_2600[19] = joaat("packer");
+	Local_1878[20 /*3*/] = { -455.2408f, -535.85f, 24.7102f };
+	fLocal_154[20] = -0.0022f;
+	fLocal_240[20] = 0.0022f;
+	fLocal_326[20] = -0.707f;
+	fLocal_412[20] = 0.7072f;
+	iLocal_1319[20] = 31;
+	fLocal_498[20] = 80849f;
+	iLocal_2600[20] = joaat("sultan");
+	Local_1878[21 /*3*/] = { -421.8391f, -535.8503f, 24.7099f };
+	fLocal_154[21] = -0.0024f;
+	fLocal_240[21] = 0.0024f;
+	fLocal_326[21] = -0.7071f;
+	fLocal_412[21] = 0.7071f;
+	iLocal_1319[21] = 32;
+	fLocal_498[21] = 80849f;
+	iLocal_2600[21] = joaat("sultan");
+	Local_1878[22 /*3*/] = { -323.2696f, -519.5041f, 24.769f };
+	fLocal_154[22] = -0.0086f;
+	fLocal_240[22] = -0.0166f;
+	fLocal_326[22] = -0.7001f;
+	fLocal_412[22] = 0.7138f;
+	iLocal_1319[22] = 34;
+	fLocal_498[22] = 85280f;
+	iLocal_2600[22] = joaat("asterope");
+	Local_1878[23 /*3*/] = { -384.7831f, -496.5516f, 24.806f };
+	fLocal_154[23] = -0.0022f;
+	fLocal_240[23] = -0.0022f;
+	fLocal_326[23] = 0.7072f;
+	fLocal_412[23] = 0.7071f;
+	iLocal_1319[23] = 33;
+	fLocal_498[23] = 85722f;
+	iLocal_2600[23] = joaat("landstalker");
+	Local_1878[24 /*3*/] = { -299.8336f, -519.6835f, 24.804f };
+	fLocal_154[24] = -0.0071f;
+	fLocal_240[24] = -0.0166f;
+	fLocal_326[24] = -0.7047f;
+	fLocal_412[24] = 0.7093f;
+	iLocal_1319[24] = 35;
+	fLocal_498[24] = 86195f;
+	iLocal_2600[24] = joaat("asterope");
+	Local_1878[25 /*3*/] = { -296.6222f, -496.012f, 24.8684f };
+	fLocal_154[25] = -0.0026f;
+	fLocal_240[25] = -0.0022f;
+	fLocal_326[25] = 0.7084f;
+	fLocal_412[25] = 0.7058f;
+	iLocal_1319[25] = 21;
+	fLocal_498[25] = 87170.85f;
+	iLocal_2600[25] = joaat("landstalker");
+	Local_1878[26 /*3*/] = { -242.5362f, -502.0159f, 25.6451f };
+	fLocal_154[26] = -0.0096f;
+	fLocal_240[26] = -0.0094f;
+	fLocal_326[26] = 0.7194f;
+	fLocal_412[26] = 0.6945f;
+	iLocal_1319[26] = 36;
+	fLocal_498[26] = 88537f;
+	iLocal_2600[26] = joaat("landstalker");
+	Local_1878[27 /*3*/] = { -234.2082f, -530.1547f, 25.9344f };
+	fLocal_154[27] = -0.0058f;
+	fLocal_240[27] = 0.0064f;
+	fLocal_326[27] = 0.7091f;
+	fLocal_412[27] = -0.705f;
+	iLocal_1319[27] = 39;
+	fLocal_498[27] = 90066f;
+	iLocal_2600[27] = joaat("rapidgt");
+	Local_1878[28 /*3*/] = { -204.8521f, -534.9627f, 26.6094f };
+	fLocal_154[28] = 0.0281f;
+	fLocal_240[28] = 0.0002f;
+	fLocal_326[28] = -0.6936f;
+	fLocal_412[28] = 0.7198f;
+	iLocal_1319[28] = 37;
+	fLocal_498[28] = 91140f;
+	iLocal_2600[28] = joaat("asterope");
+	Local_1878[29 /*3*/] = { -186.2448f, -518.6406f, 27.3221f };
+	fLocal_154[29] = -0.0061f;
+	fLocal_240[29] = -0.0197f;
+	fLocal_326[29] = -0.7053f;
+	fLocal_412[29] = 0.7086f;
+	iLocal_1319[29] = 41;
+	fLocal_498[29] = 91890f;
+	iLocal_2600[29] = joaat("fq2");
+	Local_1878[30 /*3*/] = { -181.6259f, -523.8001f, 27.2923f };
+	fLocal_154[30] = 0.0116f;
+	fLocal_240[30] = -0.0124f;
+	fLocal_326[30] = -0.7029f;
+	fLocal_412[30] = 0.7111f;
+	iLocal_1319[30] = 38;
+	fLocal_498[30] = 92230f;
+	iLocal_2600[30] = joaat("sultan");
+	Local_1878[31 /*3*/] = { -152.8287f, -489.4706f, 28.3269f };
+	fLocal_154[31] = -0.0213f;
+	fLocal_240[31] = 0.0018f;
+	fLocal_326[31] = 0.7254f;
+	fLocal_412[31] = 0.688f;
+	iLocal_1319[31] = 24;
+	fLocal_498[31] = 92554.85f;
+	iLocal_2600[31] = joaat("landstalker");
+	Local_1878[32 /*3*/] = { -172.1277f, -500.8638f, 27.8326f };
+	fLocal_154[32] = -0.0252f;
+	fLocal_240[32] = -0.0296f;
+	fLocal_326[32] = 0.7083f;
+	fLocal_412[32] = 0.7048f;
+	iLocal_1319[32] = 40;
+	fLocal_498[32] = 94528f;
+	iLocal_2600[32] = joaat("fq2");
+	Local_1878[33 /*3*/] = { -114.866f, -500.2346f, 29.8111f };
+	fLocal_154[33] = -0.0104f;
+	fLocal_240[33] = -0.0098f;
+	fLocal_326[33] = 0.7021f;
+	fLocal_412[33] = 0.7119f;
+	iLocal_1319[33] = 78;
+	fLocal_498[33] = 95865.44f;
+	iLocal_2600[33] = joaat("asterope");
+	Local_1878[34 /*3*/] = { -129.1858f, -505.694f, 29.242f };
+	fLocal_154[34] = -0.015f;
+	fLocal_240[34] = -0.0163f;
+	fLocal_326[34] = 0.7139f;
+	fLocal_412[34] = 0.6999f;
+	iLocal_1319[34] = 42;
+	fLocal_498[34] = 95886f;
+	iLocal_2600[34] = joaat("asterope");
+	Local_1878[35 /*3*/] = { -55.6079f, -499.5939f, 31.8493f };
+	fLocal_154[35] = -0.0116f;
+	fLocal_240[35] = -0.0112f;
+	fLocal_326[35] = 0.7134f;
+	fLocal_412[35] = 0.7006f;
+	iLocal_1319[35] = 25;
+	fLocal_498[35] = 96787.85f;
+	iLocal_2600[35] = joaat("landstalker");
+	Local_1878[36 /*3*/] = { -87.112f, -504.988f, 30.9077f };
+	fLocal_154[36] = -0.0159f;
+	fLocal_240[36] = -0.0149f;
+	fLocal_326[36] = 0.7118f;
+	fLocal_412[36] = 0.702f;
+	iLocal_1319[36] = 43;
+	fLocal_498[36] = 97140f;
+	iLocal_2600[36] = joaat("fq2");
+	Local_1878[37 /*3*/] = { 26.5103f, -499.3918f, 34.2088f };
+	fLocal_154[37] = -0.0005f;
+	fLocal_240[37] = -0.0002f;
+	fLocal_326[37] = 0.7186f;
+	fLocal_412[37] = 0.6954f;
+	iLocal_1319[37] = 79;
+	fLocal_498[37] = 100001.4f;
+	iLocal_2600[37] = joaat("packer");
+	Local_1878[39 /*3*/] = { 70.5888f, -526.8503f, 33.7031f };
+	fLocal_154[39] = -0.0004f;
+	fLocal_240[39] = -0.0004f;
+	fLocal_326[39] = -0.7039f;
+	fLocal_412[39] = 0.7103f;
+	iLocal_1319[39] = 46;
+	fLocal_498[39] = 102948f;
+	iLocal_2600[39] = joaat("ninef2");
+	Local_1878[40 /*3*/] = { 99.8609f, -521.5526f, 33.5624f };
+	fLocal_154[40] = 0.0145f;
+	fLocal_240[40] = -0.0145f;
+	fLocal_326[40] = 0.707f;
+	fLocal_412[40] = -0.7069f;
+	iLocal_1319[40] = 47;
+	fLocal_498[40] = 104004f;
+	iLocal_2600[40] = joaat("landstalker");
+	Local_1878[41 /*3*/] = { 196.1974f, -526.9512f, 33.5498f };
+	fLocal_154[41] = 0.0178f;
+	fLocal_240[41] = -0.0178f;
+	fLocal_326[41] = 0.7069f;
+	fLocal_412[41] = -0.7068f;
+	iLocal_1319[41] = 48;
+	fLocal_498[41] = 107502f;
+	iLocal_2600[41] = joaat("landstalker");
+	Local_1878[42 /*3*/] = { 230.2825f, -516.1511f, 33.5591f };
+	fLocal_154[42] = -0.0023f;
+	fLocal_240[42] = 0.0023f;
+	fLocal_326[42] = -0.7071f;
+	fLocal_412[42] = 0.7071f;
+	iLocal_1319[42] = 49;
+	fLocal_498[42] = 108624f;
+	iLocal_2600[42] = joaat("landstalker");
+	Local_1878[44 /*3*/] = { 301.1906f, -521.55f, 33.4621f };
+	fLocal_154[44] = 0.0001f;
+	fLocal_240[44] = -0.0001f;
+	fLocal_326[44] = 0.7071f;
+	fLocal_412[44] = -0.7071f;
+	iLocal_1319[44] = 50;
+	fLocal_498[44] = 111198f;
+	iLocal_2600[44] = joaat("sultan");
+	Local_2134[0 /*3*/] = { -1200.0914f, -849.0596f, 13.5431f };
+	fLocal_1014[0] = -0.0171f;
+	fLocal_1085[0] = -0.0063f;
+	fLocal_1156[0] = 0.88f;
+	fLocal_1227[0] = 0.4747f;
+	iLocal_2686[0] = joaat("feltzer2");
+	Local_2134[1 /*3*/] = { -1058.3451f, -772.2757f, 18.8924f };
+	fLocal_1014[1] = -0.0028f;
+	fLocal_1085[1] = 0.0149f;
+	fLocal_1156[1] = 0.3553f;
+	fLocal_1227[1] = 0.9346f;
+	iLocal_2686[1] = joaat("feltzer2");
+	Local_2134[2 /*3*/] = { -1070.664f, -739.6081f, 18.8482f };
+	fLocal_1014[2] = -0.0111f;
+	fLocal_1085[2] = 0.0192f;
+	fLocal_1156[2] = 0.9254f;
+	fLocal_1227[2] = 0.3784f;
+	iLocal_2686[2] = joaat("feltzer2");
+	Local_2134[3 /*3*/] = { -1121.0957f, -880.1656f, 7.6752f };
+	fLocal_1014[3] = 0.0021f;
+	fLocal_1085[3] = -0.0011f;
+	fLocal_1156[3] = -0.4944f;
+	fLocal_1227[3] = 0.8692f;
+	iLocal_2686[3] = joaat("serrano");
+	Local_2134[4 /*3*/] = { -1115.6182f, -807.3134f, 16.6315f };
+	fLocal_1014[4] = -0.0414f;
+	fLocal_1085[4] = -0.0257f;
+	fLocal_1156[4] = 0.8471f;
+	fLocal_1227[4] = -0.5292f;
+	iLocal_2686[4] = joaat("serrano");
+	Local_2134[5 /*3*/] = { -1112.4027f, -774.3158f, 18.3801f };
+	fLocal_1014[5] = -0.0097f;
+	fLocal_1085[5] = -0.0319f;
+	fLocal_1156[5] = 0.5058f;
+	fLocal_1227[5] = 0.862f;
+	iLocal_2686[5] = joaat("serrano");
+	Local_2134[6 /*3*/] = { -1130.5292f, -792.3233f, 16.5972f };
+	fLocal_1014[6] = -0.0307f;
+	fLocal_1085[6] = -0.0293f;
+	fLocal_1156[6] = 0.9133f;
+	fLocal_1227[6] = 0.4051f;
+	iLocal_2686[6] = joaat("feltzer2");
+	Local_2134[7 /*3*/] = { -1045.3898f, -778.9995f, 18.3863f };
+	fLocal_1014[7] = 0.0118f;
+	fLocal_1085[7] = 0.037f;
+	fLocal_1156[7] = 0.5106f;
+	fLocal_1227[7] = 0.859f;
+	iLocal_2686[7] = joaat("serrano");
+	Local_2134[8 /*3*/] = { -1034.8263f, -739.7039f, 18.881f };
+	fLocal_1014[8] = 0.0195f;
+	fLocal_1085[8] = 0.019f;
+	fLocal_1156[8] = -0.4353f;
+	fLocal_1227[8] = 0.8999f;
+	iLocal_2686[8] = joaat("radi");
+	Local_2134[9 /*3*/] = { -1033.9292f, -712.6562f, 19.4857f };
+	fLocal_1014[9] = -0.0193f;
+	fLocal_1085[9] = -0.0194f;
+	fLocal_1156[9] = 0.9056f;
+	fLocal_1227[9] = 0.4231f;
+	iLocal_2686[9] = joaat("serrano");
+	Local_2134[10 /*3*/] = { -1005.5381f, -715.5715f, 20.3848f };
+	fLocal_1014[10] = -0.044f;
+	fLocal_1085[10] = -0.1329f;
+	fLocal_1156[10] = -0.3895f;
+	fLocal_1227[10] = 0.9103f;
+	iLocal_2686[10] = joaat("bati");
+	Local_2134[11 /*3*/] = { -980.4462f, -670.3936f, 22.8034f };
+	fLocal_1014[11] = -0.0432f;
+	fLocal_1085[11] = -0.0121f;
+	fLocal_1156[11] = 0.8701f;
+	fLocal_1227[11] = 0.4908f;
+	iLocal_2686[11] = joaat("washington");
+	Local_2134[12 /*3*/] = { -969.1606f, -664.5714f, 23.887f };
+	fLocal_1014[12] = -0.046f;
+	fLocal_1085[12] = -0.0213f;
+	fLocal_1156[12] = 0.8534f;
+	fLocal_1227[12] = 0.5187f;
+	iLocal_2686[12] = joaat("rapidgt");
+	Local_2134[13 /*3*/] = { -928.2644f, -652.7425f, 26.6901f };
+	fLocal_1014[13] = -0.0303f;
+	fLocal_1085[13] = -0.0054f;
+	fLocal_1156[13] = 0.7573f;
+	fLocal_1227[13] = 0.6524f;
+	iLocal_2686[13] = joaat("rapidgt");
+	Local_2134[14 /*3*/] = { -916.6693f, -650.6878f, 27.0863f };
+	fLocal_1014[14] = -0.024f;
+	fLocal_1085[14] = 0.0101f;
+	fLocal_1156[14] = 0.7742f;
+	fLocal_1227[14] = 0.6324f;
+	iLocal_2686[14] = joaat("feltzer2");
+	Local_2134[15 /*3*/] = { -790.8272f, -667.5106f, 28.4613f };
+	fLocal_1014[15] = -0.0369f;
+	fLocal_1085[15] = -0.005f;
+	fLocal_1156[15] = 0.7209f;
+	fLocal_1227[15] = -0.6921f;
+	iLocal_2686[15] = joaat("rapidgt");
+	Local_2134[16 /*3*/] = { -790.0645f, -647.0408f, 28.4882f };
+	fLocal_1014[16] = -0.037f;
+	fLocal_1085[16] = 0.0003f;
+	fLocal_1156[16] = 0.7201f;
+	fLocal_1227[16] = 0.6929f;
+	iLocal_2686[16] = joaat("feltzer2");
+	Local_2134[17 /*3*/] = { -716.8614f, -667.7233f, 29.6724f };
+	fLocal_1014[17] = -0.0267f;
+	fLocal_1085[17] = -0.0106f;
+	fLocal_1156[17] = 0.7068f;
+	fLocal_1227[17] = -0.7068f;
+	iLocal_2686[17] = joaat("sultan");
+	Local_2134[18 /*3*/] = { -653.5672f, -605.7774f, 32.8442f };
+	fLocal_1014[18] = 0.0008f;
+	fLocal_1085[18] = -0.0298f;
+	fLocal_1156[18] = 0.9991f;
+	fLocal_1227[18] = 0.031f;
+	iLocal_2686[18] = joaat("radi");
+	Local_2134[19 /*3*/] = { -598.4409f, -647.7642f, 31.2207f };
+	fLocal_1014[19] = 0.0659f;
+	fLocal_1085[19] = -0.1257f;
+	fLocal_1156[19] = 0.6417f;
+	fLocal_1227[19] = 0.7537f;
+	iLocal_2686[19] = joaat("bati");
+	Local_2134[20 /*3*/] = { -457.3376f, -774.9608f, 29.9679f };
+	fLocal_1014[20] = -0.0002f;
+	fLocal_1085[20] = 0f;
+	fLocal_1156[20] = 0.7033f;
+	fLocal_1227[20] = 0.7109f;
+	iLocal_2686[20] = joaat("sultan");
+	Local_2134[21 /*3*/] = { -506.0643f, -614.7634f, 29.6699f };
+	fLocal_1014[21] = -0.0131f;
+	fLocal_1085[21] = -0.1302f;
+	fLocal_1156[21] = -0.0218f;
+	fLocal_1227[21] = 0.9912f;
+	iLocal_2686[21] = joaat("bati");
+	Local_2134[22 /*3*/] = { -487.6026f, -614.804f, 30.58f };
+	fLocal_1014[22] = 0.0002f;
+	fLocal_1085[22] = 0f;
+	fLocal_1156[22] = 0.9999f;
+	fLocal_1227[22] = 0.0166f;
+	iLocal_2686[22] = joaat("sultan");
+	Local_2134[23 /*3*/] = { -856.7647f, -679.063f, 27.2491f };
+	fLocal_1014[23] = -0.008f;
+	fLocal_1085[23] = 0.0277f;
+	fLocal_1156[23] = 0.0148f;
+	fLocal_1227[23] = 0.9995f;
+	iLocal_2686[23] = joaat("sultan");
+	Local_2134[24 /*3*/] = { -750.8827f, -607.8928f, 29.5466f };
+	fLocal_1014[24] = 0.0609f;
+	fLocal_1085[24] = 0.0021f;
+	fLocal_1156[24] = 0.9978f;
+	fLocal_1227[24] = -0.0261f;
+	iLocal_2686[24] = joaat("sultan");
+	Local_2134[25 /*3*/] = { -477.1844f, -757.5135f, 30.1527f };
+	fLocal_1014[25] = -0.0022f;
+	fLocal_1085[25] = -0.0021f;
+	fLocal_1156[25] = 0.7233f;
+	fLocal_1227[25] = 0.6905f;
+	iLocal_2686[25] = joaat("rapidgt");
+	Local_2134[26 /*3*/] = { -471.01f, -624.55f, 30.58f };
+	fLocal_1014[26] = 0.0001f;
+	fLocal_1085[26] = -0.0002f;
+	fLocal_1156[26] = -0.0144f;
+	fLocal_1227[26] = 0.9999f;
+	iLocal_2686[26] = joaat("sultan");
+	Local_2134[27 /*3*/] = { -679.3469f, -593.3812f, 24.7059f };
+	fLocal_1014[27] = -0.0011f;
+	fLocal_1085[27] = 0.0004f;
+	fLocal_1156[27] = 0.6772f;
+	fLocal_1227[27] = 0.7358f;
+	iLocal_2686[27] = joaat("sultan");
+	Local_2134[28 /*3*/] = { 433.6576f, -608.7065f, 27.7732f };
+	fLocal_1014[28] = -0.0003f;
+	fLocal_1085[28] = 0.0005f;
+	fLocal_1156[28] = 0.7774f;
+	fLocal_1227[28] = -0.629f;
+	iLocal_2686[28] = joaat("sultan");
+	Local_2134[29 /*3*/] = { 416.3534f, -638.7431f, 27.8704f };
+	fLocal_1014[29] = 0.0891f;
+	fLocal_1085[29] = -0.0957f;
+	fLocal_1156[29] = 0.7111f;
+	fLocal_1227[29] = 0.6908f;
+	iLocal_2686[29] = joaat("bati");
+	Local_2134[30 /*3*/] = { 433.9501f, -603.2841f, 27.8743f };
+	fLocal_1014[30] = 0.0794f;
+	fLocal_1085[30] = -0.1039f;
+	fLocal_1156[30] = 0.6505f;
+	fLocal_1227[30] = 0.7482f;
+	iLocal_2686[30] = joaat("bati");
+	Local_2134[31 /*3*/] = { 291.0103f, -589.8865f, 42.9593f };
+	fLocal_1014[31] = 0.0053f;
+	fLocal_1085[31] = -0.0026f;
+	fLocal_1156[31] = 0.9489f;
+	fLocal_1227[31] = 0.3156f;
+	iLocal_2686[31] = joaat("ambulance");
+	Local_2345[0 /*3*/] = { -1104.2826f, -775.1389f, 18.8468f };
+	fLocal_588[0] = -0.0068f;
+	fLocal_659[0] = -0.0121f;
+	fLocal_730[0] = 0.9186f;
+	fLocal_801[0] = 0.3949f;
+	iLocal_1577[0] = 52;
+	fLocal_872[0] = 16000f;
+	fLocal_943[0] = 1f;
+	iLocal_2757[0] = joaat("feltzer2");
+	Local_2345[1 /*3*/] = { -1129.4855f, -805.7412f, 15.9592f };
+	fLocal_588[1] = 0.0303f;
+	fLocal_659[1] = -0.0208f;
+	fLocal_730[1] = -0.3298f;
+	fLocal_801[1] = 0.9433f;
+	iLocal_1577[1] = 5;
+	fLocal_872[1] = 16488f;
+	fLocal_943[1] = 1f;
+	iLocal_2757[1] = joaat("washington");
+	Local_2345[2 /*3*/] = { -998.2445f, -692.8199f, 21.5328f };
+	fLocal_588[2] = -0.0136f;
+	fLocal_659[2] = -0.0158f;
+	fLocal_730[2] = 0.8929f;
+	fLocal_801[2] = 0.4498f;
+	iLocal_1577[2] = 53;
+	fLocal_872[2] = 21412f;
+	fLocal_943[2] = 1f;
+	iLocal_2757[2] = joaat("feltzer2");
+	Local_2345[3 /*3*/] = { -883.8546f, -655.3506f, 27.5493f };
+	fLocal_588[3] = 0.0032f;
+	fLocal_659[3] = -0.0018f;
+	fLocal_730[3] = 0.712f;
+	fLocal_801[3] = 0.7021f;
+	iLocal_1577[3] = 54;
+	fLocal_872[3] = 25000f;
+	fLocal_943[3] = 1f;
+	iLocal_2757[3] = joaat("feltzer2");
+	Local_2345[4 /*3*/] = { -850.7409f, -661.5627f, 27.3668f };
+	fLocal_588[4] = -0.0015f;
+	fLocal_659[4] = 0.0017f;
+	fLocal_730[4] = -0.6912f;
+	fLocal_801[4] = 0.7227f;
+	iLocal_1577[4] = 55;
+	fLocal_872[4] = 28500f;
+	fLocal_943[4] = 1f;
+	iLocal_2757[4] = joaat("serrano");
+	Local_2345[5 /*3*/] = { -721.2928f, -652.8879f, 29.816f };
+	fLocal_588[5] = -0.0024f;
+	fLocal_659[5] = -0.0102f;
+	fLocal_730[5] = 0.6908f;
+	fLocal_801[5] = 0.723f;
+	iLocal_1577[5] = 56;
+	fLocal_872[5] = 32500f;
+	fLocal_943[5] = 1f;
+	iLocal_2757[5] = joaat("serrano");
+	Local_2345[6 /*3*/] = { -724.7061f, -648.64f, 29.7668f };
+	fLocal_588[6] = -0.0212f;
+	fLocal_659[6] = 0.005f;
+	fLocal_730[6] = 0.7061f;
+	fLocal_801[6] = 0.7078f;
+	iLocal_1577[6] = 57;
+	fLocal_872[6] = 32750f;
+	fLocal_943[6] = 1f;
+	iLocal_2757[6] = joaat("washington");
+	Local_2345[7 /*3*/] = { -688.4173f, -579.6989f, 24.8499f };
+	fLocal_588[7] = 0.0026f;
+	fLocal_659[7] = -0.0029f;
+	fLocal_730[7] = 0.7397f;
+	fLocal_801[7] = -0.673f;
+	iLocal_1577[7] = 58;
+	fLocal_872[7] = 40273f;
+	fLocal_943[7] = 1f;
+	iLocal_2757[7] = joaat("washington");
+	Local_2345[8 /*3*/] = { -563.1786f, -579.4122f, 25.3124f };
+	fLocal_588[8] = 0.002f;
+	fLocal_659[8] = 0.0021f;
+	fLocal_730[8] = 0.7032f;
+	fLocal_801[8] = 0.711f;
+	iLocal_1577[8] = 59;
+	fLocal_872[8] = 43500f;
+	fLocal_943[8] = 1f;
+	iLocal_2757[8] = joaat("trash");
+	Local_2345[9 /*3*/] = { -556.1506f, -631.2017f, 30.562f };
+	fLocal_588[9] = -0.0352f;
+	fLocal_659[9] = 0.0378f;
+	fLocal_730[9] = -0.6805f;
+	fLocal_801[9] = 0.7309f;
+	iLocal_1577[9] = 60;
+	fLocal_872[9] = 51889f;
+	fLocal_943[9] = 1f;
+	iLocal_2757[9] = joaat("bmx");
+	Local_2345[10 /*3*/] = { -445.0543f, -655.1606f, 31.3466f };
+	fLocal_588[10] = 0.0076f;
+	fLocal_659[10] = 0.0093f;
+	fLocal_730[10] = 0.7136f;
+	fLocal_801[10] = 0.7005f;
+	iLocal_1577[10] = 61;
+	fLocal_872[10] = 56772f;
+	fLocal_943[10] = 1f;
+	iLocal_2757[10] = joaat("sultan");
+	Local_2345[11 /*3*/] = { -519.4122f, -666.3391f, 32.7365f };
+	fLocal_588[11] = 0.0105f;
+	fLocal_659[11] = 0.0179f;
+	fLocal_730[11] = -0.6817f;
+	fLocal_801[11] = 0.7313f;
+	iLocal_1577[11] = 62;
+	fLocal_872[11] = 57772f;
+	fLocal_943[11] = 1f;
+	iLocal_2757[11] = joaat("washington");
+	Local_2345[12 /*3*/] = { -491.8959f, -716.5375f, 32.5585f };
+	fLocal_588[12] = 0.1433f;
+	fLocal_659[12] = 0.0787f;
+	fLocal_730[12] = 0.9609f;
+	fLocal_801[12] = -0.2234f;
+	iLocal_1577[12] = 63;
+	fLocal_872[12] = 60800f;
+	fLocal_943[12] = 1.2f;
+	iLocal_2757[12] = joaat("bmx");
+	Local_2345[13 /*3*/] = { -492.3147f, -827.8944f, 29.9952f };
+	fLocal_588[13] = -0.005f;
+	fLocal_659[13] = 0.0046f;
+	fLocal_730[13] = 0.0169f;
+	fLocal_801[13] = 0.9998f;
+	iLocal_1577[13] = 64;
+	fLocal_872[13] = 64030f;
+	fLocal_943[13] = 1f;
+	iLocal_2757[13] = joaat("washington");
+	Local_2345[14 /*3*/] = { -518.8372f, -756.7956f, 31.5421f };
+	fLocal_588[14] = -0.0147f;
+	fLocal_659[14] = -0.0264f;
+	fLocal_730[14] = 0.9686f;
+	fLocal_801[14] = -0.2467f;
+	iLocal_1577[14] = 65;
+	fLocal_872[14] = 64230f;
+	fLocal_943[14] = 1f;
+	iLocal_2757[14] = joaat("washington");
+	Local_2345[15 /*3*/] = { -477.6166f, -806.7344f, 30.0523f };
+	fLocal_588[15] = 0f;
+	fLocal_659[15] = 0.0025f;
+	fLocal_730[15] = -0.701f;
+	fLocal_801[15] = 0.7132f;
+	iLocal_1577[15] = 66;
+	fLocal_872[15] = 66084f;
+	fLocal_943[15] = 1f;
+	iLocal_2757[15] = joaat("washington");
+	Local_2345[16 /*3*/] = { -417.4774f, -836.1498f, 31.442f };
+	fLocal_588[16] = -0.0077f;
+	fLocal_659[16] = -0.0047f;
+	fLocal_730[16] = 0.7025f;
+	fLocal_801[16] = 0.7117f;
+	iLocal_1577[16] = 67;
+	fLocal_872[16] = 65384f;
+	fLocal_943[16] = 1f;
+	iLocal_2757[16] = joaat("benson");
+	Local_2345[17 /*3*/] = { -413.1984f, -831.7321f, 30.8216f };
+	fLocal_588[17] = -0.0237f;
+	fLocal_659[17] = 0.0144f;
+	fLocal_730[17] = 0.7088f;
+	fLocal_801[17] = 0.7049f;
+	iLocal_1577[17] = 68;
+	fLocal_872[17] = 67078f;
+	fLocal_943[17] = 1f;
+	iLocal_2757[17] = joaat("sultan");
+	Local_2345[18 /*3*/] = { -528.5989f, -840.7145f, 29.413f };
+	fLocal_588[18] = -0.0237f;
+	fLocal_659[18] = 0.0236f;
+	fLocal_730[18] = 0.7098f;
+	fLocal_801[18] = -0.7036f;
+	iLocal_1577[18] = 69;
+	fLocal_872[18] = 64606.32f;
+	fLocal_943[18] = 1f;
+	iLocal_2757[18] = joaat("sultan");
+	Local_2345[19 /*3*/] = { -446.0574f, -767.6522f, 29.9676f };
+	fLocal_588[19] = -0.0002f;
+	fLocal_659[19] = 0.0001f;
+	fLocal_730[19] = 0.711f;
+	fLocal_801[19] = 0.7032f;
+	iLocal_1577[19] = 51;
+	fLocal_872[19] = 70071.85f;
+	fLocal_943[19] = 1f;
+	iLocal_2757[19] = joaat("sultan");
+	Local_2345[20 /*3*/] = { -488.5203f, -523.8471f, 24.8363f };
+	fLocal_588[20] = -0.001f;
+	fLocal_659[20] = 0.0015f;
+	fLocal_730[20] = 0.7208f;
+	fLocal_801[20] = -0.6931f;
+	iLocal_1577[20] = 71;
+	fLocal_872[20] = 81355.85f;
+	fLocal_943[20] = 1f;
+	iLocal_2757[20] = joaat("landstalker");
+	Local_2345[21 /*3*/] = { -305.7855f, -508.727f, 24.7583f };
+	fLocal_588[21] = 0.0168f;
+	fLocal_659[21] = -0.0137f;
+	fLocal_730[21] = 0.7019f;
+	fLocal_801[21] = 0.7119f;
+	iLocal_1577[21] = 72;
+	fLocal_872[21] = 86290.85f;
+	fLocal_943[21] = 1f;
+	iLocal_2757[21] = joaat("landstalker");
+	Local_2345[22 /*3*/] = { 294.6554f, -576.5358f, 42.9547f };
+	fLocal_588[22] = 0.0001f;
+	fLocal_659[22] = 0.0078f;
+	fLocal_730[22] = 0.2262f;
+	fLocal_801[22] = 0.974f;
+	iLocal_1577[22] = 73;
+	fLocal_872[22] = 109000f;
+	fLocal_943[22] = 1f;
+	iLocal_2757[22] = joaat("ambulance");
+	Local_2345[23 /*3*/] = { -393.8603f, -503.4236f, 25.4432f };
+	fLocal_588[23] = 0.0016f;
+	fLocal_659[23] = 0.0018f;
+	fLocal_730[23] = 0.7075f;
+	fLocal_801[23] = 0.7067f;
+	iLocal_1577[23] = 74;
+	fLocal_872[23] = 82431.85f;
+	fLocal_943[23] = 1f;
+	iLocal_2757[23] = joaat("packer");
+	Local_2345[24 /*3*/] = { -527.6368f, -846.5891f, 29.9361f };
+	fLocal_588[24] = 0.0422f;
+	fLocal_659[24] = -0.0031f;
+	fLocal_730[24] = -0.7009f;
+	fLocal_801[24] = 0.712f;
+	iLocal_1577[24] = 75;
+	fLocal_872[24] = 62500f;
+	fLocal_943[24] = 1f;
+	iLocal_2757[24] = joaat("bus");
+	Local_2345[25 /*3*/] = { 3.4457f, -533.8352f, 33.2443f };
+	fLocal_588[25] = 0.0232f;
+	fLocal_659[25] = 0.0045f;
+	fLocal_730[25] = -0.6929f;
+	fLocal_801[25] = 0.7206f;
+	iLocal_1577[25] = 80;
+	fLocal_872[25] = 100001.4f;
+	fLocal_943[25] = 1f;
+	iLocal_2757[25] = joaat("asterope");
+	Local_2345[26 /*3*/] = { -483.5551f, -531.6314f, 24.8571f };
+	fLocal_588[26] = 0.0034f;
+	fLocal_659[26] = -0.0031f;
+	fLocal_730[26] = -0.6972f;
+	fLocal_801[26] = 0.7168f;
+	iLocal_1577[26] = 76;
+	fLocal_872[26] = 81217.44f;
+	fLocal_943[26] = 1f;
+	iLocal_2757[26] = joaat("asterope");
+	Local_2345[27 /*3*/] = { -277.6243f, -508.3559f, 24.9767f };
+	fLocal_588[27] = 0.0108f;
+	fLocal_659[27] = -0.0139f;
+	fLocal_730[27] = 0.7117f;
+	fLocal_801[27] = 0.7023f;
+	iLocal_1577[27] = 77;
+	fLocal_872[27] = 87256.44f;
+	fLocal_943[27] = 1f;
+	iLocal_2757[27] = joaat("asterope");
+	Local_2345[28 /*3*/] = { -201.7354f, -496.1847f, 27.3531f };
+	fLocal_588[28] = -0.0125f;
+	fLocal_659[28] = -0.0117f;
+	fLocal_730[28] = 0.7296f;
+	fLocal_801[28] = 0.6837f;
+	iLocal_1577[28] = 82;
+	fLocal_872[28] = 90798.32f;
+	fLocal_943[28] = 1f;
+	iLocal_2757[28] = joaat("packer");
+	Local_2345[29 /*3*/] = { -118.4835f, -529.6654f, 29.6739f };
+	fLocal_588[29] = 0.0116f;
+	fLocal_659[29] = -0.0127f;
+	fLocal_730[29] = -0.686f;
+	fLocal_801[29] = 0.7274f;
+	iLocal_1577[29] = 44;
+	fLocal_872[29] = 94954.86f;
+	fLocal_943[29] = 1f;
+	iLocal_2757[29] = joaat("landstalker");
 	iVar0 = 0;
-	iVar1 = iLocal_251;
-	iVar2 = iLocal_248;
+	iVar1 = iLocal_3004;
+	iVar2 = iLocal_2831;
 	iVar0 = 0;
 	while (iVar0 < iVar1)
 	{
-		if (fLocal_165[iVar0] >= 41011f)
+		if (fLocal_872[iVar0] >= 41011f)
 		{
-			fLocal_165[iVar0] = (fLocal_165[iVar0] - 43.5f);
+			fLocal_872[iVar0] = (fLocal_872[iVar0] - 43.5f);
 		}
-		if (fLocal_165[iVar0] >= 77018.5f)
+		if (fLocal_872[iVar0] >= 77018.5f)
 		{
-			fLocal_165[iVar0] = (fLocal_165[iVar0] - 78.5f);
+			fLocal_872[iVar0] = (fLocal_872[iVar0] - 78.5f);
 		}
 		iVar0++;
 	}
@@ -46215,13 +46215,13 @@ void func_454()//Position - 0x3469C
 	iVar0 = 0;
 	while (iVar0 < iVar2)
 	{
-		if (fLocal_156[iVar0] >= 41011f)
+		if (fLocal_498[iVar0] >= 41011f)
 		{
-			fLocal_156[iVar0] = (fLocal_156[iVar0] - 43.5f);
+			fLocal_498[iVar0] = (fLocal_498[iVar0] - 43.5f);
 		}
-		if (fLocal_156[iVar0] >= 77018.5f)
+		if (fLocal_498[iVar0] >= 77018.5f)
 		{
-			fLocal_156[iVar0] = (fLocal_156[iVar0] - 78.5f);
+			fLocal_498[iVar0] = (fLocal_498[iVar0] - 78.5f);
 		}
 		iVar0++;
 	}
@@ -46231,42 +46231,42 @@ void func_455(char* sParam0, int iParam1, bool bParam2, bool bParam3)//Position 
 {
 	struct<3> Var0;
 	
-	StringCopy(&cLocal_232, sParam0, 64);
-	bLocal_128 = true;
-	iLocal_133 = 0;
-	iLocal_199 = 0;
-	iLocal_200 = 0;
-	iLocal_201 = 0;
-	iLocal_202 = iParam1;
-	iLocal_203 = 0;
-	iLocal_204 = 0;
-	iLocal_205 = 0;
-	iLocal_209 = 0;
-	iLocal_212 = 0;
-	iLocal_210 = -1;
-	iLocal_211 = -1;
-	iLocal_213 = 0;
-	iLocal_214 = 0;
-	fLocal_187 = 0f;
-	fLocal_188 = 0f;
-	fLocal_173 = 0f;
-	iLocal_134 = 0;
+	StringCopy(&cLocal_2583, sParam0, 64);
+	bLocal_130 = true;
+	iLocal_135 = 0;
+	iLocal_1861 = 0;
+	iLocal_1862 = 0;
+	iLocal_1863 = 0;
+	iLocal_1864 = iParam1;
+	iLocal_1865 = 0;
+	iLocal_1866 = 0;
+	iLocal_1867 = 0;
+	iLocal_1871 = 0;
+	iLocal_1874 = 0;
+	iLocal_1872 = -1;
+	iLocal_1873 = -1;
+	iLocal_1875 = 0;
+	iLocal_1876 = 0;
+	fLocal_1314 = 0f;
+	fLocal_1315 = 0f;
+	fLocal_1300 = 0f;
+	iLocal_136 = 0;
 	if (PLAYER::IS_PLAYER_PLAYING(PLAYER::PLAYER_ID()))
 	{
 		Var0 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
-		Local_220.f_0 = (Var0.f_0 - 100f);
-		Local_220.f_1 = (Var0.f_1 - 100f);
-		Local_220.f_2 = (Var0.f_2 - 100f);
-		Local_221.f_0 = (Var0.f_0 + 100f);
-		Local_221.f_1 = (Var0.f_1 + 100f);
-		Local_221.f_2 = (Var0.f_2 + 100f);
-		PATHFIND::SET_ROADS_IN_AREA(Local_220, Local_221, false, false);
+		Local_2559.f_0 = (Var0.f_0 - 100f);
+		Local_2559.f_1 = (Var0.f_1 - 100f);
+		Local_2559.f_2 = (Var0.f_2 - 100f);
+		Local_2562.f_0 = (Var0.f_0 + 100f);
+		Local_2562.f_1 = (Var0.f_1 + 100f);
+		Local_2562.f_2 = (Var0.f_2 + 100f);
+		PATHFIND::SET_ROADS_IN_AREA(Local_2559, Local_2562, false, false);
 		if (bParam2)
 		{
 			MISC::CLEAR_AREA_OF_VEHICLES(Var0, 500f, false, false, false, false, false, false, 0);
 		}
 	}
-	PED::ADD_RELATIONSHIP_GROUP("rgh_traffic", &iLocal_241);
+	PED::ADD_RELATIONSHIP_GROUP("rgh_traffic", &iLocal_2599);
 	func_434();
 	if (bParam3)
 	{
@@ -46284,108 +46284,108 @@ void func_456()//Position - 0x37096
 {
 	int iVar0;
 	
-	func_54(&(Local_275.f_35[0]));
-	if (!ENTITY::DOES_ENTITY_EXIST(Local_535.f_0))
+	func_54(&(Local_3108.f_35[0]));
+	if (!ENTITY::DOES_ENTITY_EXIST(Local_3490.f_0))
 	{
-		MISC::CLEAR_AREA(Local_535.f_3, 2f, true, false, false, false);
-		func_457(&Local_535, Local_535.f_3, Local_535.f_6, 0, 1);
+		MISC::CLEAR_AREA(Local_3490.f_3, 2f, true, false, false, false);
+		func_457(&Local_3490, Local_3490.f_3, Local_3490.f_6, 0, 1);
 		func_443();
 	}
-	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_535.f_1);
-	func_54(&(Local_275.f_35[1]));
-	if (!ENTITY::DOES_ENTITY_EXIST(Local_536.f_0))
+	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_3490.f_1);
+	func_54(&(Local_3108.f_35[1]));
+	if (!ENTITY::DOES_ENTITY_EXIST(Local_3497.f_0))
 	{
-		MISC::CLEAR_AREA(Local_536.f_3, 2f, true, false, false, false);
-		Local_536.f_0 = VEHICLE::CREATE_VEHICLE(Local_536.f_1, Local_536.f_3, Local_536.f_6, true, true, false);
-		if (func_15(Local_536.f_0))
+		MISC::CLEAR_AREA(Local_3497.f_3, 2f, true, false, false, false);
+		Local_3497.f_0 = VEHICLE::CREATE_VEHICLE(Local_3497.f_1, Local_3497.f_3, Local_3497.f_6, true, true, false);
+		if (func_15(Local_3497.f_0))
 		{
-			ENTITY::SET_ENTITY_COORDS(Local_536.f_0, Local_536.f_3, true, false, false, true);
-			ENTITY::SET_ENTITY_QUATERNION(Local_536.f_0, -0.0248f, 0.0004f, 0.8949f, 0.4456f);
+			ENTITY::SET_ENTITY_COORDS(Local_3497.f_0, Local_3497.f_3, true, false, false, true);
+			ENTITY::SET_ENTITY_QUATERNION(Local_3497.f_0, -0.0248f, 0.0004f, 0.8949f, 0.4456f);
 		}
 		func_439();
 	}
-	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_536.f_1);
-	if (func_15(Local_535.f_0))
+	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_3497.f_1);
+	if (func_15(Local_3490.f_0))
 	{
-		if (!ENTITY::DOES_ENTITY_EXIST(Local_532.f_0))
+		if (!ENTITY::DOES_ENTITY_EXIST(Local_3469.f_0))
 		{
-			Local_532.f_0 = PED::CREATE_PED_INSIDE_VEHICLE(Local_535.f_0, 26, Local_532.f_1, 2, true, true);
+			Local_3469.f_0 = PED::CREATE_PED_INSIDE_VEHICLE(Local_3490.f_0, 26, Local_3469.f_1, 2, true, true);
 			func_444();
 		}
-		func_58(&(Local_275.f_28[0]));
-		if (!ENTITY::DOES_ENTITY_EXIST(Local_533.f_0))
+		func_58(&(Local_3108.f_28[0]));
+		if (!ENTITY::DOES_ENTITY_EXIST(Local_3476.f_0))
 		{
-			Local_533.f_0 = PED::CREATE_PED_INSIDE_VEHICLE(Local_535.f_0, 26, Local_533.f_1, 0, true, true);
+			Local_3476.f_0 = PED::CREATE_PED_INSIDE_VEHICLE(Local_3490.f_0, 26, Local_3476.f_1, 0, true, true);
 			func_445();
 		}
 	}
-	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_532.f_1);
-	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_533.f_1);
-	if (func_15(Local_536.f_0))
+	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_3469.f_1);
+	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_3476.f_1);
+	if (func_15(Local_3497.f_0))
 	{
-		if (!ENTITY::DOES_ENTITY_EXIST(Local_534.f_0))
+		if (!ENTITY::DOES_ENTITY_EXIST(Local_3483.f_0))
 		{
-			Local_534.f_0 = PED::CREATE_PED_INSIDE_VEHICLE(Local_536.f_0, 26, Local_534.f_1, -1, true, true);
+			Local_3483.f_0 = PED::CREATE_PED_INSIDE_VEHICLE(Local_3497.f_0, 26, Local_3483.f_1, -1, true, true);
 			func_441();
 		}
 	}
-	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_534.f_1);
+	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_3483.f_1);
 	if (func_22(PLAYER::PLAYER_PED_ID()))
 	{
-		func_442(&uLocal_367, 2, PLAYER::PLAYER_PED_ID(), "TREVOR", 0, 1);
+		func_442(&uLocal_3304, 2, PLAYER::PLAYER_PED_ID(), "TREVOR", 0, 1);
 		PED::SET_PED_CAN_USE_AUTO_CONVERSATION_LOOKAT(PLAYER::PLAYER_PED_ID(), true);
 	}
-	if (!ENTITY::DOES_ENTITY_EXIST(Local_540[0 /*2*/]))
+	if (!ENTITY::DOES_ENTITY_EXIST(Local_3534[0 /*2*/]))
 	{
 		MISC::CLEAR_AREA(-1329.7417f, -665.3537f, 26.3413f, 2f, true, false, false, false);
-		Local_540[0 /*2*/] = VEHICLE::CREATE_VEHICLE(Local_540[0 /*2*/].f_1, -1329.7417f, -665.3537f, 26.3413f, 126.9722f, true, true, false);
+		Local_3534[0 /*2*/] = VEHICLE::CREATE_VEHICLE(Local_3534[0 /*2*/].f_1, -1329.7417f, -665.3537f, 26.3413f, 126.9722f, true, true, false);
 	}
-	if (func_15(Local_540[0 /*2*/]))
+	if (func_15(Local_3534[0 /*2*/]))
 	{
-		ENTITY::SET_ENTITY_QUATERNION(Local_540[0 /*2*/], -0.0318f, 0.0067f, 0.8936f, 0.4476f);
-		if (!VEHICLE::IS_VEHICLE_DOOR_FULLY_OPEN(Local_540[0 /*2*/], 2))
+		ENTITY::SET_ENTITY_QUATERNION(Local_3534[0 /*2*/], -0.0318f, 0.0067f, 0.8936f, 0.4476f);
+		if (!VEHICLE::IS_VEHICLE_DOOR_FULLY_OPEN(Local_3534[0 /*2*/], 2))
 		{
-			VEHICLE::SET_VEHICLE_DOOR_OPEN(Local_540[0 /*2*/], 2, false, false);
+			VEHICLE::SET_VEHICLE_DOOR_OPEN(Local_3534[0 /*2*/], 2, false, false);
 		}
-		if (!VEHICLE::IS_VEHICLE_DOOR_FULLY_OPEN(Local_540[0 /*2*/], 3))
+		if (!VEHICLE::IS_VEHICLE_DOOR_FULLY_OPEN(Local_3534[0 /*2*/], 3))
 		{
-			VEHICLE::SET_VEHICLE_DOOR_OPEN(Local_540[0 /*2*/], 3, false, false);
+			VEHICLE::SET_VEHICLE_DOOR_OPEN(Local_3534[0 /*2*/], 3, false, false);
 		}
-		VEHICLE::SET_VEHICLE_INDICATOR_LIGHTS(Local_540[0 /*2*/], 1, true);
-		VEHICLE::SET_VEHICLE_INDICATOR_LIGHTS(Local_540[0 /*2*/], 0, true);
+		VEHICLE::SET_VEHICLE_INDICATOR_LIGHTS(Local_3534[0 /*2*/], 1, true);
+		VEHICLE::SET_VEHICLE_INDICATOR_LIGHTS(Local_3534[0 /*2*/], 0, true);
 	}
-	if (!ENTITY::DOES_ENTITY_EXIST(Local_540[1 /*2*/]))
+	if (!ENTITY::DOES_ENTITY_EXIST(Local_3534[1 /*2*/]))
 	{
 		MISC::CLEAR_AREA(-1329.7509f, -676.4864f, 25.8557f, 2f, true, false, false, false);
-		Local_540[1 /*2*/] = VEHICLE::CREATE_VEHICLE(Local_540[1 /*2*/].f_1, -1329.7509f, -676.4864f, 25.8557f, 307.7227f, true, true, false);
+		Local_3534[1 /*2*/] = VEHICLE::CREATE_VEHICLE(Local_3534[1 /*2*/].f_1, -1329.7509f, -676.4864f, 25.8557f, 307.7227f, true, true, false);
 	}
-	if (func_15(Local_540[1 /*2*/]))
+	if (func_15(Local_3534[1 /*2*/]))
 	{
-		ENTITY::SET_ENTITY_QUATERNION(Local_540[1 /*2*/], 0.0248f, 0.0142f, -0.4405f, 0.8973f);
+		ENTITY::SET_ENTITY_QUATERNION(Local_3534[1 /*2*/], 0.0248f, 0.0142f, -0.4405f, 0.8973f);
 	}
-	if (!ENTITY::DOES_ENTITY_EXIST(Local_540[2 /*2*/]))
+	if (!ENTITY::DOES_ENTITY_EXIST(Local_3534[2 /*2*/]))
 	{
 		MISC::CLEAR_AREA(-1336.3171f, -680.9752f, 25.5144f, 2f, true, false, false, false);
-		Local_540[2 /*2*/] = VEHICLE::CREATE_VEHICLE(Local_540[2 /*2*/].f_1, -1336.3171f, -680.9752f, 25.5144f, 307.7227f, true, true, false);
+		Local_3534[2 /*2*/] = VEHICLE::CREATE_VEHICLE(Local_3534[2 /*2*/].f_1, -1336.3171f, -680.9752f, 25.5144f, 307.7227f, true, true, false);
 	}
-	if (func_15(Local_540[2 /*2*/]))
+	if (func_15(Local_3534[2 /*2*/]))
 	{
-		ENTITY::SET_ENTITY_QUATERNION(Local_540[2 /*2*/], 0.0269f, 0.0079f, -0.4791f, 0.8773f);
+		ENTITY::SET_ENTITY_QUATERNION(Local_3534[2 /*2*/], 0.0269f, 0.0079f, -0.4791f, 0.8773f);
 	}
 	iVar0 = 0;
 	iVar0 = 0;
 	while (iVar0 < 3)
 	{
-		if (func_15(Local_540[iVar0 /*2*/]))
+		if (func_15(Local_3534[iVar0 /*2*/]))
 		{
-			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_540[iVar0 /*2*/].f_1);
+			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_3534[iVar0 /*2*/].f_1);
 		}
 		iVar0++;
 	}
-	func_437(fLocal_343, Local_549);
-	if (bLocal_276)
+	func_437(fLocal_3268, Local_3556);
+	if (bLocal_3169)
 	{
-		if (bLocal_306)
+		if (bLocal_3231)
 		{
 			if (!CAM::IS_SCREEN_FADED_IN() && !CAM::IS_SCREEN_FADING_IN())
 			{
@@ -46395,40 +46395,40 @@ void func_456()//Position - 0x37096
 	}
 }
 
-int func_457(int* iParam0, struct<3> Param1, float fParam2, int iParam3, int iParam4)//Position - 0x37458
+int func_457(int* iParam0, struct<3> Param1, float fParam4, int iParam5, int iParam6)//Position - 0x37458
 {
-	STREAMING::REQUEST_MODEL(iLocal_93);
-	if (iParam4 == 1)
+	STREAMING::REQUEST_MODEL(iLocal_95);
+	if (iParam6 == 1)
 	{
-		while (!STREAMING::HAS_MODEL_LOADED(iLocal_93))
+		while (!STREAMING::HAS_MODEL_LOADED(iLocal_95))
 		{
 			SYSTEM::WAIT(0);
 		}
 	}
-	else if (!STREAMING::HAS_MODEL_LOADED(iLocal_93))
+	else if (!STREAMING::HAS_MODEL_LOADED(iLocal_95))
 	{
 		return 0;
 	}
-	func_458(iParam0, iLocal_93, Param1, fParam2);
+	func_458(iParam0, iLocal_95, Param1, fParam4);
 	if (func_12(*iParam0))
 	{
 		VEHICLE::SET_VEHICLE_COLOURS(*iParam0, 65, 0);
 		VEHICLE::SET_DOOR_ALLOWED_TO_BE_BROKEN_OFF(*iParam0, 5, false);
 		VEHICLE::SET_VEHICLE_NUMBER_PLATE_TEXT(*iParam0, "28BNT310");
 		VEHICLE::SET_VEHICLE_NUMBER_PLATE_TEXT_INDEX(*iParam0, 0);
-		if (iParam3 == 1)
+		if (iParam5 == 1)
 		{
 			VEHICLE::SET_VEHICLE_DOORS_LOCKED(*iParam0, 10);
 		}
 	}
-	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_93);
+	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_95);
 	return 1;
 }
 
-void func_458(int* iParam0, int iParam1, struct<3> Param2, float fParam3)//Position - 0x374E3
+void func_458(int* iParam0, int iParam1, struct<3> Param2, float fParam5)//Position - 0x374E3
 {
 	func_54(iParam0);
-	*iParam0 = VEHICLE::CREATE_VEHICLE(iParam1, Param2, fParam3, true, true, false);
+	*iParam0 = VEHICLE::CREATE_VEHICLE(iParam1, Param2, fParam5, true, true, false);
 	if (ENTITY::DOES_ENTITY_EXIST(*iParam0))
 	{
 		VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(*iParam0, 5f);
@@ -46439,26 +46439,26 @@ void func_458(int* iParam0, int iParam1, struct<3> Param2, float fParam3)//Posit
 void func_459(bool bParam0)//Position - 0x37525
 {
 	HUD::REQUEST_ADDITIONAL_TEXT("NIGEL2", 0);
-	VEHICLE::REQUEST_VEHICLE_RECORDING(iLocal_333, sLocal_359);
-	STREAMING::REQUEST_MODEL(Local_536.f_1);
-	STREAMING::REQUEST_MODEL(Local_535.f_1);
-	STREAMING::REQUEST_MODEL(Local_534.f_1);
-	STREAMING::REQUEST_MODEL(Local_532.f_1);
-	STREAMING::REQUEST_MODEL(Local_533.f_1);
-	STREAMING::REQUEST_MODEL(Local_540[0 /*2*/].f_1);
-	STREAMING::REQUEST_MODEL(Local_540[1 /*2*/].f_1);
-	STREAMING::REQUEST_MODEL(Local_540[2 /*2*/].f_1);
-	VEHICLE::REQUEST_VEHICLE_RECORDING(2, sLocal_359);
+	VEHICLE::REQUEST_VEHICLE_RECORDING(iLocal_3258, sLocal_3296);
+	STREAMING::REQUEST_MODEL(Local_3497.f_1);
+	STREAMING::REQUEST_MODEL(Local_3490.f_1);
+	STREAMING::REQUEST_MODEL(Local_3483.f_1);
+	STREAMING::REQUEST_MODEL(Local_3469.f_1);
+	STREAMING::REQUEST_MODEL(Local_3476.f_1);
+	STREAMING::REQUEST_MODEL(Local_3534[0 /*2*/].f_1);
+	STREAMING::REQUEST_MODEL(Local_3534[1 /*2*/].f_1);
+	STREAMING::REQUEST_MODEL(Local_3534[2 /*2*/].f_1);
+	VEHICLE::REQUEST_VEHICLE_RECORDING(2, sLocal_3296);
 	if (bParam0)
 	{
-		while ((((((((((!HUD::HAS_ADDITIONAL_TEXT_LOADED(0) || !VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(iLocal_333, sLocal_359)) || !STREAMING::HAS_MODEL_LOADED(Local_536.f_1)) || !STREAMING::HAS_MODEL_LOADED(Local_535.f_1)) || !STREAMING::HAS_MODEL_LOADED(Local_534.f_1)) || !STREAMING::HAS_MODEL_LOADED(Local_532.f_1)) || !STREAMING::HAS_MODEL_LOADED(Local_533.f_1)) || !STREAMING::HAS_MODEL_LOADED(Local_540[0 /*2*/].f_1)) || !STREAMING::HAS_MODEL_LOADED(Local_540[1 /*2*/].f_1)) || !STREAMING::HAS_MODEL_LOADED(Local_540[2 /*2*/].f_1)) || !VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(2, sLocal_359))
+		while ((((((((((!HUD::HAS_ADDITIONAL_TEXT_LOADED(0) || !VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(iLocal_3258, sLocal_3296)) || !STREAMING::HAS_MODEL_LOADED(Local_3497.f_1)) || !STREAMING::HAS_MODEL_LOADED(Local_3490.f_1)) || !STREAMING::HAS_MODEL_LOADED(Local_3483.f_1)) || !STREAMING::HAS_MODEL_LOADED(Local_3469.f_1)) || !STREAMING::HAS_MODEL_LOADED(Local_3476.f_1)) || !STREAMING::HAS_MODEL_LOADED(Local_3534[0 /*2*/].f_1)) || !STREAMING::HAS_MODEL_LOADED(Local_3534[1 /*2*/].f_1)) || !STREAMING::HAS_MODEL_LOADED(Local_3534[2 /*2*/].f_1)) || !VEHICLE::HAS_VEHICLE_RECORDING_BEEN_LOADED(2, sLocal_3296))
 		{
-			if (bLocal_276)
+			if (bLocal_3169)
 			{
 				if (!CAM::IS_SCREEN_FADED_OUT())
 				{
 					func_460(0, 1);
-					bLocal_306 = true;
+					bLocal_3231 = true;
 				}
 			}
 			SYSTEM::WAIT(0);
@@ -46487,15 +46487,15 @@ void func_460(int iParam0, bool bParam1)//Position - 0x37670
 void func_461()//Position - 0x376A2
 {
 	struct<3> Var0;
-	float fVar1;
+	float fVar3;
 	
 	Var0 = { -1290f, -646.1f, 26.05f };
-	fVar1 = 307.66f;
-	func_512(-1311.4094f, -648.4133f, 24.925262f, -1289.0276f, -632.04297f, 29.552197f, 17.5f, Var0, fVar1, func_519(), 1, 0, 1, 0, 0);
-	func_512(-1319.6898f, -655.77734f, 29.458387f, -1184.4613f, -834.82007f, 12.343782f, 30f, Var0, fVar1, func_519(), 1, 0, 1, 0, 0);
+	fVar3 = 307.66f;
+	func_512(-1311.4094f, -648.4133f, 24.925262f, -1289.0276f, -632.04297f, 29.552197f, 17.5f, Var0, fVar3, func_519(), 1, 0, 1, 0, 0);
+	func_512(-1319.6898f, -655.77734f, 29.458387f, -1184.4613f, -834.82007f, 12.343782f, 30f, Var0, fVar3, func_519(), 1, 0, 1, 0, 0);
 	if (func_510(0f, 0f, 0f, 1))
 	{
-		func_462(Var0, fVar1, 0, 145);
+		func_462(Var0, fVar3, 0, 145);
 	}
 	VEHICLE::SET_ALL_VEHICLE_GENERATORS_ACTIVE_IN_AREA(-1409.3435f, -756.381f, 17.59896f, -1239.1476f, -587.12195f, 31.25266f, false, true);
 	VEHICLE::REMOVE_VEHICLES_FROM_GENERATORS_IN_AREA(-1409.3435f, -756.381f, 17.59896f, -1239.1476f, -587.12195f, 31.25266f, 0);
@@ -46503,28 +46503,28 @@ void func_461()//Position - 0x376A2
 	MISC::CLEAR_ANGLED_AREA_OF_VEHICLES(-1415.9039f, -732.5489f, 17.545492f, -1236.6282f, -601.0265f, 31.153446f, 23f, false, false, false, true, true, 0, 0);
 	PATHFIND::SET_PED_PATHS_IN_AREA(-1318.5005f, -678.88257f, 23f, -1296.6278f, -631.5449f, 29f, false, 0);
 	PED::SET_PED_NON_CREATION_AREA(-1318.5005f, -678.88257f, 23f, -1296.6278f, -631.5449f, 29f);
-	iLocal_356 = PED::ADD_SCENARIO_BLOCKING_AREA(-1318.5005f, -678.88257f, 23f, -1296.6278f, -631.5449f, 29f, false, true, true, true);
+	iLocal_3288 = PED::ADD_SCENARIO_BLOCKING_AREA(-1318.5005f, -678.88257f, 23f, -1296.6278f, -631.5449f, 29f, false, true, true, true);
 	MISC::CLEAR_AREA_OF_OBJECTS(-1297.8f, -637.42f, 25.55f, 16f, 0);
-	iLocal_358[0] = PED::ADD_SCENARIO_BLOCKING_AREA(-1315.6798f, -682.7614f, 23.24123f, -1295.2665f, -670.37604f, 27.9768f, false, true, true, true);
+	iLocal_3290[0] = PED::ADD_SCENARIO_BLOCKING_AREA(-1315.6798f, -682.7614f, 23.24123f, -1295.2665f, -670.37604f, 27.9768f, false, true, true, true);
 	MISC::CLEAR_AREA(-1305.332f, -676.3739f, 25.79325f, 10f, true, false, false, false);
-	iLocal_358[1] = PED::ADD_SCENARIO_BLOCKING_AREA(-1286.9061f, -697.55927f, 21.7392f, -1279.6984f, -691.5876f, 26.33636f, false, true, true, true);
+	iLocal_3290[1] = PED::ADD_SCENARIO_BLOCKING_AREA(-1286.9061f, -697.55927f, 21.7392f, -1279.6984f, -691.5876f, 26.33636f, false, true, true, true);
 	MISC::CLEAR_AREA(-1287.702f, -698.19574f, 27.50166f, 10f, true, false, false, false);
-	iLocal_358[2] = PED::ADD_SCENARIO_BLOCKING_AREA(-1270.7201f, -723.89026f, 19.46898f, -1262.898f, -718.27856f, 24.43682f, false, true, true, true);
+	iLocal_3290[2] = PED::ADD_SCENARIO_BLOCKING_AREA(-1270.7201f, -723.89026f, 19.46898f, -1262.898f, -718.27856f, 24.43682f, false, true, true, true);
 	MISC::CLEAR_AREA(-1269.8602f, -722.4664f, 21.54627f, 8f, true, false, false, false);
-	iLocal_358[3] = PED::ADD_SCENARIO_BLOCKING_AREA(-1268.0575f, -731.51825f, 18.92047f, -1263.5745f, -727.55023f, 24.05783f, false, true, true, true);
+	iLocal_3290[3] = PED::ADD_SCENARIO_BLOCKING_AREA(-1268.0575f, -731.51825f, 18.92047f, -1263.5745f, -727.55023f, 24.05783f, false, true, true, true);
 	MISC::CLEAR_AREA(-1266.4307f, -728.92267f, 21.08542f, 2.5f, true, false, false, false);
-	iLocal_358[3] = PED::ADD_SCENARIO_BLOCKING_AREA(-1237.0238f, -777.42224f, 15.58289f, -1221.889f, -764.5969f, 20.58871f, false, true, true, true);
+	iLocal_3290[3] = PED::ADD_SCENARIO_BLOCKING_AREA(-1237.0238f, -777.42224f, 15.58289f, -1221.889f, -764.5969f, 20.58871f, false, true, true, true);
 	MISC::CLEAR_AREA(-1231.4406f, -770.94794f, 17.70891f, 8.5f, true, false, false, false);
-	iLocal_358[4] = PED::ADD_SCENARIO_BLOCKING_AREA(-1222.4478f, -786.73486f, 13.60073f, -1215.773f, -780.20215f, 20.43715f, false, true, true, true);
+	iLocal_3290[4] = PED::ADD_SCENARIO_BLOCKING_AREA(-1222.4478f, -786.73486f, 13.60073f, -1215.773f, -780.20215f, 20.43715f, false, true, true, true);
 	MISC::CLEAR_AREA(-1222.0077f, -783.6834f, 16.73119f, 7.5f, true, false, false, false);
 	MISC::CLEAR_AREA_OF_VEHICLES(-1459.2f, -736.9f, 23.6f, 50f, false, false, false, true, false, false, 0);
 	MISC::CLEAR_AREA_OF_VEHICLES(-1332.2f, -537.6f, 31.5f, 30f, false, false, false, true, false, false, 0);
 }
 
-void func_462(struct<3> Param0, float fParam1, int iParam2, int iParam3)//Position - 0x37A5D
+void func_462(struct<3> Param0, float fParam3, int iParam4, int iParam5)//Position - 0x37A5D
 {
 	struct<3> Var0;
-	var uVar1;
+	var uVar3;
 	
 	if (ENTITY::DOES_ENTITY_EXIST(Global_104212.f_4))
 	{
@@ -46532,31 +46532,31 @@ void func_462(struct<3> Param0, float fParam1, int iParam2, int iParam3)//Positi
 		{
 			if (func_509(24) != Global_104212.f_4)
 			{
-				if (iParam2 == 1)
+				if (iParam4 == 1)
 				{
-					if (func_506(ENTITY::GET_ENTITY_COORDS(Global_104212.f_4, true), iParam3, &Var0, &uVar1))
+					if (func_506(ENTITY::GET_ENTITY_COORDS(Global_104212.f_4, true), iParam5, &Var0, &uVar3))
 					{
 						Param0 = { Var0 };
-						fParam1 = uVar1;
+						fParam3 = uVar3;
 					}
 				}
-				func_463(Global_104212.f_4, Param0, fParam1, 24, 0);
+				func_463(Global_104212.f_4, Param0, fParam3, 24, 0);
 			}
 		}
 	}
 }
 
-void func_463(int iParam0, struct<3> Param1, float fParam2, int iParam3, bool bParam4)//Position - 0x37AD8
+void func_463(int iParam0, struct<3> Param1, float fParam4, int iParam5, bool bParam6)//Position - 0x37AD8
 {
 	struct<60> Var0;
 	
 	if (ENTITY::DOES_ENTITY_EXIST(iParam0) && VEHICLE::IS_VEHICLE_DRIVEABLE(iParam0, false))
 	{
-		if (iParam3 != 24 && iParam3 != 25)
+		if (iParam5 != 24 && iParam5 != 25)
 		{
 			return;
 		}
-		if (iParam3 == 24)
+		if (iParam5 == 24)
 		{
 			if (ENTITY::DOES_ENTITY_EXIST(Global_77348.f_484[25]) && VEHICLE::IS_VEHICLE_DRIVEABLE(Global_77348.f_484[25], false))
 			{
@@ -46566,31 +46566,31 @@ void func_463(int iParam0, struct<3> Param1, float fParam2, int iParam3, bool bP
 				}
 			}
 		}
-		if (!bParam4)
+		if (!bParam6)
 		{
 			if ((VEHICLE::IS_BIG_VEHICLE(iParam0) || ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("bus")) || ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("tourbus"))
 			{
 				return;
 			}
 		}
-		func_505(iParam3);
+		func_505(iParam5);
 		Var0.f_9 = 49;
 		Var0.f_59 = 2;
 		func_501(iParam0, &Var0);
 		if (func_62(Param1, 0f, 0f, 0f, 0))
 		{
 			Param1 = { ENTITY::GET_ENTITY_COORDS(iParam0, true) };
-			fParam2 = ENTITY::GET_ENTITY_HEADING(iParam0);
+			fParam4 = ENTITY::GET_ENTITY_HEADING(iParam0);
 		}
-		if (iParam3 == 24)
+		if (iParam5 == 24)
 		{
 			if (MISC::GET_HASH_KEY(SCRIPT::GET_THIS_SCRIPT_NAME()) != joaat("vehicle_gen_controller"))
 			{
 				Global_78336 = MISC::GET_HASH_KEY(SCRIPT::GET_THIS_SCRIPT_NAME());
 			}
 		}
-		func_497(iParam3, &Var0, Param1, fParam2, func_500(iParam0));
-		func_464(iParam3, iParam0, 0);
+		func_497(iParam5, &Var0, Param1, fParam4, func_500(iParam0));
+		func_464(iParam5, iParam0, 0);
 	}
 }
 
@@ -49431,16 +49431,16 @@ int func_481(int iParam0, int iParam1, bool bParam2)//Position - 0x3BD11
 {
 	int iVar0;
 	char* sVar1;
-	int iVar2;
+	int iVar9;
 	
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0) || !VEHICLE::IS_VEHICLE_DRIVEABLE(iParam0, false))
 	{
 		return 0;
 	}
 	iVar0 = 0;
-	while (func_482(iParam1, iVar0, &sVar1, &iVar2))
+	while (func_482(iParam1, iVar0, &sVar1, &iVar9))
 	{
-		if (!bParam2 || BitTest(Global_113648.f_7231[iVar2], 0))
+		if (!bParam2 || BitTest(Global_113648.f_7231[iVar9], 0))
 		{
 			if (VEHICLE::IS_VEHICLE_IN_GARAGE_AREA(&sVar1, iParam0))
 			{
@@ -50567,7 +50567,7 @@ void func_496(int iParam0, var uParam1, int iParam2)//Position - 0x3D8BA
 	}
 }
 
-void func_497(int iParam0, var uParam1, struct<3> Param2, float fParam3, int iParam4)//Position - 0x3DB16
+void func_497(int iParam0, var uParam1, struct<3> Param2, float fParam5, int iParam6)//Position - 0x3DB16
 {
 	if (func_494(&(Global_77348.f_555[0 /*21*/]), iParam0))
 	{
@@ -50578,14 +50578,14 @@ void func_497(int iParam0, var uParam1, struct<3> Param2, float fParam3, int iPa
 			if (BitTest(Global_77348.f_555[0 /*21*/].f_9, 11))
 			{
 				Global_113648.f_32751.f_1864[Global_77348.f_555[0 /*21*/].f_14 /*3*/] = { Param2 };
-				Global_113648.f_32751.f_1934[Global_77348.f_555[0 /*21*/].f_14] = fParam3;
+				Global_113648.f_32751.f_1934[Global_77348.f_555[0 /*21*/].f_14] = fParam5;
 			}
 			else
 			{
 				Global_113648.f_32751.f_1864[Global_77348.f_555[0 /*21*/].f_14 /*3*/] = { 0f, 0f, 0f };
 				Global_113648.f_32751.f_1934[Global_77348.f_555[0 /*21*/].f_14] = -1f;
 			}
-			Global_113648.f_32751.f_1958[Global_77348.f_555[0 /*21*/].f_14] = iParam4 + 1;
+			Global_113648.f_32751.f_1958[Global_77348.f_555[0 /*21*/].f_14] = iParam6 + 1;
 			func_270(iParam0, 1);
 		}
 	}
@@ -50974,47 +50974,47 @@ void func_505(int iParam0)//Position - 0x3E323
 	func_270(iParam0, 0);
 }
 
-int func_506(struct<3> Param0, int iParam1, var uParam2, var uParam3)//Position - 0x3E34A
+int func_506(struct<3> Param0, int iParam3, var uParam4, var uParam5)//Position - 0x3E34A
 {
 	int iVar0;
 	
-	iVar0 = func_507(Param0, iParam1, 1);
+	iVar0 = func_507(Param0, iParam3, 1);
 	switch (iVar0)
 	{
 		case 0:
-			*uParam2 = { -827.351f, 157.785f, 68.2143f };
-			*uParam3 = 85.1509f;
+			*uParam4 = { -827.351f, 157.785f, 68.2143f };
+			*uParam5 = 85.1509f;
 			return 1;
 			break;
 		
 		case 1:
 		case 2:
-			*uParam2 = { 1992.5234f, 3813.9158f, 31.1008f };
-			*uParam3 = 122.1498f;
+			*uParam4 = { 1992.5234f, 3813.9158f, 31.1008f };
+			*uParam5 = 122.1498f;
 			return 1;
 			break;
 		
 		case 3:
-			*uParam2 = { -1184.2582f, -1496.5555f, 3.3895f };
-			*uParam3 = 303.2098f;
+			*uParam4 = { -1184.2582f, -1496.5555f, 3.3895f };
+			*uParam5 = 303.2098f;
 			return 1;
 			break;
 		
 		case 4:
-			*uParam2 = { 118.1067f, -1325.9058f, 28.3706f };
-			*uParam3 = 123.5016f;
+			*uParam4 = { 118.1067f, -1325.9058f, 28.3706f };
+			*uParam5 = 123.5016f;
 			return 1;
 			break;
 		
 		case 5:
-			*uParam2 = { -18.118f, -1455.1265f, 29.5004f };
-			*uParam3 = 273.2822f;
+			*uParam4 = { -18.118f, -1455.1265f, 29.5004f };
+			*uParam5 = 273.2822f;
 			return 1;
 			break;
 		
 		case 6:
-			*uParam2 = { 1.5947f, 543.4017f, 173.46439f };
-			*uParam3 = 310.7556f;
+			*uParam4 = { 1.5947f, 543.4017f, 173.46439f };
+			*uParam5 = 310.7556f;
 			return 1;
 			break;
 		
@@ -51024,7 +51024,7 @@ int func_506(struct<3> Param0, int iParam1, var uParam2, var uParam3)//Position 
 	return 0;
 }
 
-int func_507(struct<3> Param0, int iParam1, int iParam2)//Position - 0x3E460
+int func_507(struct<3> Param0, int iParam3, int iParam4)//Position - 0x3E460
 {
 	int iVar0;
 	float fVar1;
@@ -51038,9 +51038,9 @@ int func_507(struct<3> Param0, int iParam1, int iParam2)//Position - 0x3E460
 	{
 		if (Global_95719[iVar0 /*10*/].f_7 != 263)
 		{
-			if (Global_95719[iVar0 /*10*/].f_9 == iParam1 || iParam1 == 145)
+			if (Global_95719[iVar0 /*10*/].f_9 == iParam3 || iParam3 == 145)
 			{
-				if (func_508(iVar0) || iParam2 == 0)
+				if (func_508(iVar0) || iParam4 == 0)
 				{
 					fVar1 = MISC::GET_DISTANCE_BETWEEN_COORDS(Param0, Global_95719[iVar0 /*10*/].f_3, true);
 					if (fVar1 < fVar2)
@@ -51070,61 +51070,61 @@ int func_509(int iParam0)//Position - 0x3E504
 	return Global_77348.f_139[iParam0];
 }
 
-bool func_510(struct<3> Param0, int iParam1)//Position - 0x3E520
+bool func_510(struct<3> Param0, int iParam3)//Position - 0x3E520
 {
-	return func_511(Global_104212.f_2890.f_12.f_66, Param0, iParam1);
+	return func_511(Global_104212.f_2890.f_12.f_66, Param0, iParam3);
 }
 
-int func_511(int iParam0, struct<3> Param1, int iParam2)//Position - 0x3E53D
+int func_511(int iParam0, struct<3> Param1, int iParam4)//Position - 0x3E53D
 {
 	struct<3> Var0;
-	struct<3> Var1;
+	struct<3> Var3;
 	
 	if (iParam0 == 0)
 	{
 		return 0;
 	}
-	if (iParam2 == 1)
+	if (iParam4 == 1)
 	{
 		Param1 = { func_519() };
 	}
-	MISC::GET_MODEL_DIMENSIONS(iParam0, &Var0, &Var1);
-	if ((Var1.f_0 - Var0.f_0) > Param1.f_0)
+	MISC::GET_MODEL_DIMENSIONS(iParam0, &Var0, &Var3);
+	if ((Var3.f_0 - Var0.f_0) > Param1.f_0)
 	{
 		return 0;
 	}
-	else if ((Var1.f_1 - Var0.f_1) > Param1.f_1)
+	else if ((Var3.f_1 - Var0.f_1) > Param1.f_1)
 	{
 		return 0;
 	}
-	else if ((Var1.f_2 - Var0.f_2) > Param1.f_2)
+	else if ((Var3.f_2 - Var0.f_2) > Param1.f_2)
 	{
 		return 0;
 	}
 	return 1;
 }
 
-void func_512(struct<3> Param0, struct<3> Param1, float fParam2, struct<3> Param3, float fParam4, struct<3> Param5, bool bParam6, bool bParam7, bool bParam8, bool bParam9, bool bParam10)//Position - 0x3E5A7
+void func_512(struct<3> Param0, struct<3> Param3, float fParam6, struct<3> Param7, float fParam10, struct<3> Param11, bool bParam14, bool bParam15, bool bParam16, bool bParam17, bool bParam18)//Position - 0x3E5A7
 {
-	func_513(Param0, Param1, fParam2, Param3, fParam4, Param5, bParam6, bParam7, bParam8, bParam9, bParam10);
+	func_513(Param0, Param3, fParam6, Param7, fParam10, Param11, bParam14, bParam15, bParam16, bParam17, bParam18);
 }
 
-void func_513(struct<3> Param0, struct<3> Param1, float fParam2, struct<3> Param3, float fParam4, struct<3> Param5, bool bParam6, bool bParam7, bool bParam8, bool bParam9, bool bParam10)//Position - 0x3E5D1
+void func_513(struct<3> Param0, struct<3> Param3, float fParam6, struct<3> Param7, float fParam10, struct<3> Param11, bool bParam14, bool bParam15, bool bParam16, bool bParam17, bool bParam18)//Position - 0x3E5D1
 {
 	int iVar0;
 	bool bVar1;
 	bool bVar2;
 	int iVar3;
 	struct<3> Var4;
-	struct<3> Var5;
-	struct<3> Var6;
-	int iVar7;
-	int iVar8;
-	int iVar9;
+	struct<3> Var7;
+	struct<3> Var10;
+	int iVar13;
+	int iVar14;
+	int iVar15;
 	
-	if (bParam7)
+	if (bParam15)
 	{
-		bParam7 = false;
+		bParam15 = false;
 	}
 	bVar2 = true;
 	iVar3 = 0;
@@ -51138,20 +51138,20 @@ void func_513(struct<3> Param0, struct<3> Param1, float fParam2, struct<3> Param
 		}
 		if (VEHICLE::IS_VEHICLE_DRIVEABLE(iVar0, false))
 		{
-			if (bParam10)
+			if (bParam18)
 			{
 				func_518(iVar0);
 			}
-			if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(iVar0, Param0, Param1, fParam2, false, true, 0))
+			if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(iVar0, Param0, Param3, fParam6, false, true, 0))
 			{
 				bVar1 = true;
 			}
 			else
 			{
-				Var6 = { ENTITY::GET_ENTITY_COORDS(iVar0, true) };
-				if ((Var6.f_2 > Param0.f_2 && Var6.f_2 < Param1.f_2) || (Var6.f_2 > Param1.f_2 && Var6.f_2 < Param0.f_2))
+				Var10 = { ENTITY::GET_ENTITY_COORDS(iVar0, true) };
+				if ((Var10.f_2 > Param0.f_2 && Var10.f_2 < Param3.f_2) || (Var10.f_2 > Param3.f_2 && Var10.f_2 < Param0.f_2))
 				{
-					if (func_515(iVar0, Param0, Param1, fParam2))
+					if (func_515(iVar0, Param0, Param3, fParam6))
 					{
 						bVar1 = true;
 					}
@@ -51163,7 +51163,7 @@ void func_513(struct<3> Param0, struct<3> Param1, float fParam2, struct<3> Param
 				{
 					if (VEHICLE::GET_PED_IN_VEHICLE_SEAT(iVar0, -1, false) != PLAYER::PLAYER_PED_ID() && VEHICLE::GET_PED_IN_VEHICLE_SEAT(iVar0, -1, false) != 0)
 					{
-						if (MISC::GET_DISTANCE_BETWEEN_COORDS(Param0 + Param1 / Vector(2f, 2f, 2f), ENTITY::GET_ENTITY_COORDS(iVar0, true), true) < 20f)
+						if (MISC::GET_DISTANCE_BETWEEN_COORDS(Param0 + Param3 / Vector(2f, 2f, 2f), ENTITY::GET_ENTITY_COORDS(iVar0, true), true) < 20f)
 						{
 							bVar1 = true;
 							bVar2 = false;
@@ -51171,7 +51171,7 @@ void func_513(struct<3> Param0, struct<3> Param1, float fParam2, struct<3> Param
 					}
 				}
 			}
-			if (bParam8)
+			if (bParam16)
 			{
 				if (func_481(iVar0, func_300(), 1))
 				{
@@ -51180,34 +51180,34 @@ void func_513(struct<3> Param0, struct<3> Param1, float fParam2, struct<3> Param
 			}
 			if (bVar1)
 			{
-				if (!func_514(Param5))
+				if (!func_514(Param11))
 				{
 					if (VEHICLE::IS_VEHICLE_DRIVEABLE(iVar0, false))
 					{
-						iVar7 = ENTITY::GET_ENTITY_MODEL(iVar0);
-						VEHICLE::GET_VEHICLE_SIZE(iVar0, &Var4, &Var5);
-						if (VEHICLE::IS_THIS_MODEL_A_HELI(iVar7))
+						iVar13 = ENTITY::GET_ENTITY_MODEL(iVar0);
+						VEHICLE::GET_VEHICLE_SIZE(iVar0, &Var4, &Var7);
+						if (VEHICLE::IS_THIS_MODEL_A_HELI(iVar13))
 						{
-							Param5.f_0 = (Param5.f_0 + 3f);
-							Param5.f_1 = (Param5.f_1 + 3f);
+							Param11.f_0 = (Param11.f_0 + 3f);
+							Param11.f_1 = (Param11.f_1 + 3f);
 						}
-						if (((iVar7 == joaat("zentorno") || iVar7 == joaat("btype")) || iVar7 == joaat("dubsta3")) || iVar7 == joaat("monster"))
+						if (((iVar13 == joaat("zentorno") || iVar13 == joaat("btype")) || iVar13 == joaat("dubsta3")) || iVar13 == joaat("monster"))
 						{
-							Param5 = { Param5 * Vector(1.1f, 1.1f, 1.1f) };
+							Param11 = { Param11 * Vector(1.1f, 1.1f, 1.1f) };
 						}
-						else if (iVar7 == joaat("t20") || iVar7 == joaat("virgo"))
+						else if (iVar13 == joaat("t20") || iVar13 == joaat("virgo"))
 						{
-							Param5 = { Param5 * Vector(1.2f, 1.2f, 1.2f) };
+							Param11 = { Param11 * Vector(1.2f, 1.2f, 1.2f) };
 						}
-						if ((Var5.f_0 - Var4.f_0) > Param5.f_0)
-						{
-							bVar2 = false;
-						}
-						else if ((Var5.f_1 - Var4.f_1) > Param5.f_1)
+						if ((Var7.f_0 - Var4.f_0) > Param11.f_0)
 						{
 							bVar2 = false;
 						}
-						else if ((Var5.f_2 - Var4.f_2) > Param5.f_2)
+						else if ((Var7.f_1 - Var4.f_1) > Param11.f_1)
+						{
+							bVar2 = false;
+						}
+						else if ((Var7.f_2 - Var4.f_2) > Param11.f_2)
 						{
 							bVar2 = false;
 						}
@@ -51217,11 +51217,11 @@ void func_513(struct<3> Param0, struct<3> Param1, float fParam2, struct<3> Param
 				{
 					if (bVar2)
 					{
-						MISC::CLEAR_AREA_OF_VEHICLES(Param3, 5f, false, false, false, false, false, false, 0);
-						ENTITY::SET_ENTITY_HEADING(iVar0, fParam4);
-						ENTITY::SET_ENTITY_COORDS(iVar0, Param3, true, false, false, true);
+						MISC::CLEAR_AREA_OF_VEHICLES(Param7, 5f, false, false, false, false, false, false, 0);
+						ENTITY::SET_ENTITY_HEADING(iVar0, fParam10);
+						ENTITY::SET_ENTITY_COORDS(iVar0, Param7, true, false, false, true);
 						VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(iVar0, 5f);
-						if (bParam9)
+						if (bParam17)
 						{
 							VEHICLE::SET_VEHICLE_ENGINE_ON(iVar0, false, true, false);
 							VEHICLE::SET_VEHICLE_DOORS_SHUT(iVar0, true);
@@ -51241,9 +51241,9 @@ void func_513(struct<3> Param0, struct<3> Param1, float fParam2, struct<3> Param
 					}
 				}
 			}
-			if (bParam6)
+			if (bParam14)
 			{
-				MISC::CLEAR_ANGLED_AREA_OF_VEHICLES(Param0, Param1, fParam2, false, false, false, false, false, 0, 0);
+				MISC::CLEAR_ANGLED_AREA_OF_VEHICLES(Param0, Param3, fParam6, false, false, false, false, false, 0, 0);
 			}
 			if (iVar3 == 1)
 			{
@@ -51262,31 +51262,31 @@ void func_513(struct<3> Param0, struct<3> Param1, float fParam2, struct<3> Param
 			{
 				ENTITY::SET_ENTITY_AS_MISSION_ENTITY(iVar0, true, false);
 			}
-			iVar8 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iVar0, -1, false);
-			if (ENTITY::DOES_ENTITY_EXIST(iVar8) && !PED::IS_PED_INJURED(iVar8))
+			iVar14 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iVar0, -1, false);
+			if (ENTITY::DOES_ENTITY_EXIST(iVar14) && !PED::IS_PED_INJURED(iVar14))
 			{
-				ENTITY::SET_ENTITY_COORDS(iVar8, ENTITY::GET_ENTITY_COORDS(iVar8, true), true, false, false, true);
+				ENTITY::SET_ENTITY_COORDS(iVar14, ENTITY::GET_ENTITY_COORDS(iVar14, true), true, false, false, true);
 			}
-			iVar9 = VEHICLE::GET_VEHICLE_MODEL_NUMBER_OF_SEATS(ENTITY::GET_ENTITY_MODEL(iVar0));
-			if (iVar9 <= 2)
+			iVar15 = VEHICLE::GET_VEHICLE_MODEL_NUMBER_OF_SEATS(ENTITY::GET_ENTITY_MODEL(iVar0));
+			if (iVar15 <= 2)
 			{
-				iVar8 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iVar0, 0, false);
-				if (ENTITY::DOES_ENTITY_EXIST(iVar8) && !PED::IS_PED_INJURED(iVar8))
+				iVar14 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iVar0, 0, false);
+				if (ENTITY::DOES_ENTITY_EXIST(iVar14) && !PED::IS_PED_INJURED(iVar14))
 				{
-					ENTITY::SET_ENTITY_COORDS(iVar8, ENTITY::GET_ENTITY_COORDS(iVar8, true), true, false, false, true);
+					ENTITY::SET_ENTITY_COORDS(iVar14, ENTITY::GET_ENTITY_COORDS(iVar14, true), true, false, false, true);
 				}
 			}
-			if (iVar9 <= 4)
+			if (iVar15 <= 4)
 			{
-				iVar8 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iVar0, 1, false);
-				if (ENTITY::DOES_ENTITY_EXIST(iVar8) && !PED::IS_PED_INJURED(iVar8))
+				iVar14 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iVar0, 1, false);
+				if (ENTITY::DOES_ENTITY_EXIST(iVar14) && !PED::IS_PED_INJURED(iVar14))
 				{
-					ENTITY::SET_ENTITY_COORDS(iVar8, ENTITY::GET_ENTITY_COORDS(iVar8, true), true, false, false, true);
+					ENTITY::SET_ENTITY_COORDS(iVar14, ENTITY::GET_ENTITY_COORDS(iVar14, true), true, false, false, true);
 				}
-				iVar8 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iVar0, 2, false);
-				if (ENTITY::DOES_ENTITY_EXIST(iVar8) && !PED::IS_PED_INJURED(iVar8))
+				iVar14 = VEHICLE::GET_PED_IN_VEHICLE_SEAT(iVar0, 2, false);
+				if (ENTITY::DOES_ENTITY_EXIST(iVar14) && !PED::IS_PED_INJURED(iVar14))
 				{
-					ENTITY::SET_ENTITY_COORDS(iVar8, ENTITY::GET_ENTITY_COORDS(iVar8, true), true, false, false, true);
+					ENTITY::SET_ENTITY_COORDS(iVar14, ENTITY::GET_ENTITY_COORDS(iVar14, true), true, false, false, true);
 				}
 			}
 			VEHICLE::DELETE_VEHICLE(&iVar0);
@@ -51303,36 +51303,36 @@ int func_514(struct<3> Param0)//Position - 0x3E9C7
 	return 0;
 }
 
-int func_515(int iParam0, struct<3> Param1, struct<3> Param2, float fParam3)//Position - 0x3E9F1
+int func_515(int iParam0, struct<3> Param1, struct<3> Param4, float fParam7)//Position - 0x3E9F1
 {
 	struct<3> Var0;
-	struct<3> Var1;
-	struct<3> Var2;
 	struct<3> Var3;
-	struct<3> Var4;
-	struct<3> Var5;
-	struct<3> Var6[4];
-	struct<2> Var7;
-	struct<2> Var8;
+	struct<3> Var6;
+	struct<3> Var9;
+	struct<3> Var12;
+	struct<3> Var15;
+	struct<3> Var18[4];
+	struct<2> Var31;
+	struct<2> Var34;
 	
 	if (VEHICLE::IS_VEHICLE_DRIVEABLE(iParam0, false))
 	{
-		Param1.f_2 = Param2.f_2;
-		Var0 = { func_517(Param1 - Param2) };
-		Var1 = { Var0 };
-		Var0.f_0 = -Var1.f_1;
-		Var0.f_1 = Var1.f_0;
+		Param1.f_2 = Param4.f_2;
+		Var0 = { func_517(Param1 - Param4) };
+		Var3 = { Var0 };
+		Var0.f_0 = -Var3.f_1;
+		Var0.f_1 = Var3.f_0;
 		Var0.f_2 = 0f;
-		Var2 = { Param1 - Var0 * FtoV((fParam3 / 2f)) };
-		Var3 = { Param1 + Var0 * FtoV((fParam3 / 2f)) };
-		Var4 = { Param2 - Var0 * FtoV((fParam3 / 2f)) };
-		Var5 = { Param2 + Var0 * FtoV((fParam3 / 2f)) };
-		MISC::GET_MODEL_DIMENSIONS(ENTITY::GET_ENTITY_MODEL(iParam0), &Var7, &Var8);
-		Var6[0 /*3*/] = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iParam0, Var7.f_0, Var7.f_1, 0f) };
-		Var6[1 /*3*/] = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iParam0, Var7.f_0, Var8.f_1, 0f) };
-		Var6[2 /*3*/] = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iParam0, Var8.f_0, Var7.f_1, 0f) };
-		Var6[3 /*3*/] = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iParam0, Var8.f_0, Var8.f_1, 0f) };
-		if (((((((((((((((func_516(Var6[0 /*3*/], Var6[1 /*3*/], Var2, Var3) || func_516(Var6[0 /*3*/], Var6[1 /*3*/], Var3, Var5)) || func_516(Var6[0 /*3*/], Var6[1 /*3*/], Var4, Var5)) || func_516(Var6[0 /*3*/], Var6[1 /*3*/], Var2, Var4)) || func_516(Var6[1 /*3*/], Var6[3 /*3*/], Var2, Var3)) || func_516(Var6[1 /*3*/], Var6[3 /*3*/], Var3, Var5)) || func_516(Var6[1 /*3*/], Var6[3 /*3*/], Var4, Var5)) || func_516(Var6[1 /*3*/], Var6[3 /*3*/], Var2, Var4)) || func_516(Var6[3 /*3*/], Var6[2 /*3*/], Var2, Var3)) || func_516(Var6[3 /*3*/], Var6[2 /*3*/], Var3, Var5)) || func_516(Var6[3 /*3*/], Var6[2 /*3*/], Var4, Var5)) || func_516(Var6[3 /*3*/], Var6[2 /*3*/], Var2, Var4)) || func_516(Var6[2 /*3*/], Var6[0 /*3*/], Var2, Var3)) || func_516(Var6[2 /*3*/], Var6[0 /*3*/], Var3, Var5)) || func_516(Var6[2 /*3*/], Var6[0 /*3*/], Var4, Var5)) || func_516(Var6[2 /*3*/], Var6[0 /*3*/], Var2, Var4))
+		Var6 = { Param1 - Var0 * FtoV((fParam7 / 2f)) };
+		Var9 = { Param1 + Var0 * FtoV((fParam7 / 2f)) };
+		Var12 = { Param4 - Var0 * FtoV((fParam7 / 2f)) };
+		Var15 = { Param4 + Var0 * FtoV((fParam7 / 2f)) };
+		MISC::GET_MODEL_DIMENSIONS(ENTITY::GET_ENTITY_MODEL(iParam0), &Var31, &Var34);
+		Var18[0 /*3*/] = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iParam0, Var31.f_0, Var31.f_1, 0f) };
+		Var18[1 /*3*/] = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iParam0, Var31.f_0, Var34.f_1, 0f) };
+		Var18[2 /*3*/] = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iParam0, Var34.f_0, Var31.f_1, 0f) };
+		Var18[3 /*3*/] = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iParam0, Var34.f_0, Var34.f_1, 0f) };
+		if (((((((((((((((func_516(Var18[0 /*3*/], Var18[1 /*3*/], Var6, Var9) || func_516(Var18[0 /*3*/], Var18[1 /*3*/], Var9, Var15)) || func_516(Var18[0 /*3*/], Var18[1 /*3*/], Var12, Var15)) || func_516(Var18[0 /*3*/], Var18[1 /*3*/], Var6, Var12)) || func_516(Var18[1 /*3*/], Var18[3 /*3*/], Var6, Var9)) || func_516(Var18[1 /*3*/], Var18[3 /*3*/], Var9, Var15)) || func_516(Var18[1 /*3*/], Var18[3 /*3*/], Var12, Var15)) || func_516(Var18[1 /*3*/], Var18[3 /*3*/], Var6, Var12)) || func_516(Var18[3 /*3*/], Var18[2 /*3*/], Var6, Var9)) || func_516(Var18[3 /*3*/], Var18[2 /*3*/], Var9, Var15)) || func_516(Var18[3 /*3*/], Var18[2 /*3*/], Var12, Var15)) || func_516(Var18[3 /*3*/], Var18[2 /*3*/], Var6, Var12)) || func_516(Var18[2 /*3*/], Var18[0 /*3*/], Var6, Var9)) || func_516(Var18[2 /*3*/], Var18[0 /*3*/], Var9, Var15)) || func_516(Var18[2 /*3*/], Var18[0 /*3*/], Var12, Var15)) || func_516(Var18[2 /*3*/], Var18[0 /*3*/], Var6, Var12))
 		{
 			return 1;
 		}
@@ -51340,7 +51340,7 @@ int func_515(int iParam0, struct<3> Param1, struct<3> Param2, float fParam3)//Po
 	return 0;
 }
 
-int func_516(struct<2> Param0, var uParam1, struct<2> Param2, var uParam3, struct<2> Param4, var uParam5, struct<2> Param6, var uParam7)//Position - 0x3ECE7
+int func_516(struct<2> Param0, var uParam2, struct<2> Param3, var uParam5, struct<2> Param6, var uParam8, struct<2> Param9, var uParam11)//Position - 0x3ECE7
 {
 	float fVar0;
 	float fVar1;
@@ -51359,12 +51359,12 @@ int func_516(struct<2> Param0, var uParam1, struct<2> Param2, var uParam3, struc
 	
 	fVar0 = Param0.f_0;
 	fVar1 = Param0.f_1;
-	fVar2 = Param2.f_0;
-	fVar3 = Param2.f_1;
-	fVar4 = Param4.f_0;
-	fVar5 = Param4.f_1;
-	fVar6 = Param6.f_0;
-	fVar7 = Param6.f_1;
+	fVar2 = Param3.f_0;
+	fVar3 = Param3.f_1;
+	fVar4 = Param6.f_0;
+	fVar5 = Param6.f_1;
+	fVar6 = Param9.f_0;
+	fVar7 = Param9.f_1;
 	fVar8 = (fVar2 - fVar0);
 	fVar9 = (fVar3 - fVar1);
 	fVar10 = (fVar6 - fVar4);
@@ -51427,12 +51427,12 @@ Vector3 func_519()//Position - 0x3EE3F
 
 void func_520()//Position - 0x3EE56
 {
-	if (bLocal_276)
+	if (bLocal_3169)
 	{
-		if (((iLocal_272 != 5 && iLocal_272 != 0) && iLocal_272 != 3) && iLocal_272 != 4)
+		if (((iLocal_3105 != 5 && iLocal_3105 != 0) && iLocal_3105 != 3) && iLocal_3105 != 4)
 		{
 			func_521();
-			if (iLocal_321 != 0)
+			if (iLocal_3246 != 0)
 			{
 				func_296(5);
 			}
@@ -51443,207 +51443,207 @@ void func_520()//Position - 0x3EE56
 void func_521()//Position - 0x3EE9A
 {
 	struct<3> Var0;
-	struct<3> Var1;
+	struct<3> Var3;
 	
-	if (ENTITY::DOES_ENTITY_EXIST(Local_533.f_0) && ENTITY::DOES_ENTITY_EXIST(Local_532.f_0))
+	if (ENTITY::DOES_ENTITY_EXIST(Local_3476.f_0) && ENTITY::DOES_ENTITY_EXIST(Local_3469.f_0))
 	{
-		if (ENTITY::IS_ENTITY_DEAD(Local_533.f_0, false) || PED::IS_PED_INJURED(Local_533.f_0))
+		if (ENTITY::IS_ENTITY_DEAD(Local_3476.f_0, false) || PED::IS_PED_INJURED(Local_3476.f_0))
 		{
-			iLocal_321 = 5;
+			iLocal_3246 = 5;
 			return;
 		}
-		if (ENTITY::IS_ENTITY_DEAD(Local_532.f_0, false) || PED::IS_PED_INJURED(Local_532.f_0))
+		if (ENTITY::IS_ENTITY_DEAD(Local_3469.f_0, false) || PED::IS_PED_INJURED(Local_3469.f_0))
 		{
-			iLocal_321 = 7;
+			iLocal_3246 = 7;
 			return;
 		}
-		if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_533.f_0, PLAYER::PLAYER_PED_ID(), true))
+		if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_3476.f_0, PLAYER::PLAYER_PED_ID(), true))
 		{
 			PLAYER::CLEAR_PLAYER_HAS_DAMAGED_AT_LEAST_ONE_PED(PLAYER::PLAYER_ID());
-			iLocal_321 = 4;
+			iLocal_3246 = 4;
 			return;
 		}
-		if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_532.f_0, PLAYER::PLAYER_PED_ID(), true))
+		if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(Local_3469.f_0, PLAYER::PLAYER_PED_ID(), true))
 		{
 			PLAYER::CLEAR_PLAYER_HAS_DAMAGED_AT_LEAST_ONE_PED(PLAYER::PLAYER_ID());
-			iLocal_321 = 6;
+			iLocal_3246 = 6;
 			return;
 		}
 	}
-	if (ENTITY::DOES_ENTITY_EXIST(Local_534.f_0))
+	if (ENTITY::DOES_ENTITY_EXIST(Local_3483.f_0))
 	{
-		if (ENTITY::IS_ENTITY_DEAD(Local_534.f_0, false) || PED::IS_PED_INJURED(Local_534.f_0))
+		if (ENTITY::IS_ENTITY_DEAD(Local_3483.f_0, false) || PED::IS_PED_INJURED(Local_3483.f_0))
 		{
-			iLocal_321 = 1;
+			iLocal_3246 = 1;
 			return;
 		}
-		else if (ENTITY::DOES_ENTITY_EXIST(Local_536.f_0))
+		else if (ENTITY::DOES_ENTITY_EXIST(Local_3497.f_0))
 		{
-			if (!ENTITY::IS_ENTITY_DEAD(Local_536.f_0, false) && FIRE::IS_ENTITY_ON_FIRE(Local_536.f_0))
+			if (!ENTITY::IS_ENTITY_DEAD(Local_3497.f_0, false) && FIRE::IS_ENTITY_ON_FIRE(Local_3497.f_0))
 			{
-				VEHICLE::EXPLODE_VEHICLE(Local_536.f_0, true, false);
+				VEHICLE::EXPLODE_VEHICLE(Local_3497.f_0, true, false);
 			}
 		}
 	}
-	if (ENTITY::DOES_ENTITY_EXIST(Local_535.f_0))
+	if (ENTITY::DOES_ENTITY_EXIST(Local_3490.f_0))
 	{
-		if ((ENTITY::IS_ENTITY_DEAD(Local_535.f_0, false) || ENTITY::IS_ENTITY_IN_WATER(Local_535.f_0)) || !VEHICLE::IS_VEHICLE_DRIVEABLE(Local_535.f_0, false))
+		if ((ENTITY::IS_ENTITY_DEAD(Local_3490.f_0, false) || ENTITY::IS_ENTITY_IN_WATER(Local_3490.f_0)) || !VEHICLE::IS_VEHICLE_DRIVEABLE(Local_3490.f_0, false))
 		{
-			iLocal_321 = 3;
+			iLocal_3246 = 3;
 			return;
 		}
-		else if (iLocal_272 != 0)
+		else if (iLocal_3105 != 0)
 		{
-			if (VEHICLE::IS_VEHICLE_STUCK_ON_ROOF(Local_535.f_0))
+			if (VEHICLE::IS_VEHICLE_STUCK_ON_ROOF(Local_3490.f_0))
 			{
-				if (func_294(iLocal_331, 3000))
+				if (func_294(iLocal_3256, 3000))
 				{
-					iLocal_321 = 3;
+					iLocal_3246 = 3;
 					return;
 				}
 			}
 			else
 			{
-				iLocal_331 = MISC::GET_GAME_TIMER();
+				iLocal_3256 = MISC::GET_GAME_TIMER();
 			}
 		}
 	}
-	if (((iLocal_321 == 8 || iLocal_321 == 9) || iLocal_321 == 10) || iLocal_321 == 2)
+	if (((iLocal_3246 == 8 || iLocal_3246 == 9) || iLocal_3246 == 10) || iLocal_3246 == 2)
 	{
 		return;
 	}
-	if (iLocal_272 == 1 || iLocal_272 == 2)
+	if (iLocal_3105 == 1 || iLocal_3105 == 2)
 	{
-		if (func_22(Local_534.f_0))
+		if (func_22(Local_3483.f_0))
 		{
-			if (fLocal_340 > 200f)
+			if (fLocal_3265 > 200f)
 			{
-				iLocal_321 = 2;
+				iLocal_3246 = 2;
 				return;
 			}
-			if (fLocal_341 > 50000f && fLocal_341 < 58000f)
+			if (fLocal_3266 > 50000f && fLocal_3266 < 58000f)
 			{
-				if (iLocal_280 || !PED::IS_PED_SITTING_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_535.f_0))
+				if (iLocal_3183 || !PED::IS_PED_SITTING_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_3490.f_0))
 				{
 					if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(PLAYER::PLAYER_PED_ID(), -668.36346f, -658.38007f, 27.433815f, -440.02197f, -657.42377f, 40.251266f, 40f, false, true, 0))
 					{
-						iLocal_321 = 2;
+						iLocal_3246 = 2;
 						return;
 					}
 				}
 			}
 		}
-		if ((func_15(Local_535.f_0) && func_12(Local_533.f_0)) && func_12(Local_532.f_0))
+		if ((func_15(Local_3490.f_0) && func_12(Local_3476.f_0)) && func_12(Local_3469.f_0))
 		{
 			Var0 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
-			if (!PED::IS_PED_SITTING_IN_VEHICLE(Local_533.f_0, Local_535.f_0))
+			if (!PED::IS_PED_SITTING_IN_VEHICLE(Local_3476.f_0, Local_3490.f_0))
 			{
-				if (!PED::IS_PED_SITTING_IN_VEHICLE(Local_532.f_0, Local_535.f_0))
+				if (!PED::IS_PED_SITTING_IN_VEHICLE(Local_3469.f_0, Local_3490.f_0))
 				{
-					if (!iLocal_291)
+					if (!iLocal_3204)
 					{
-						if (!func_390(Local_533.f_0, Var0, 60f, 1) || !func_390(Local_532.f_0, Var0, 60f, 1))
+						if (!func_390(Local_3476.f_0, Var0, 60f, 1) || !func_390(Local_3469.f_0, Var0, 60f, 1))
 						{
 							func_20();
 							func_338("NIGEL2_08", 7500, 1);
-							iLocal_291 = 1;
+							iLocal_3204 = 1;
 						}
 					}
-					else if (func_390(Local_533.f_0, Var0, 30f, 1) && func_390(Local_532.f_0, Var0, 30f, 1))
+					else if (func_390(Local_3476.f_0, Var0, 30f, 1) && func_390(Local_3469.f_0, Var0, 30f, 1))
 					{
 						if (func_351("NIGEL2_08", 0, 0))
 						{
 							HUD::CLEAR_THIS_PRINT("NIGEL2_08");
 						}
-						iLocal_291 = 0;
+						iLocal_3204 = 0;
 					}
-					else if (!func_390(Local_533.f_0, Var0, 100f, 1) && !func_390(Local_532.f_0, Var0, 100f, 1))
+					else if (!func_390(Local_3476.f_0, Var0, 100f, 1) && !func_390(Local_3469.f_0, Var0, 100f, 1))
 					{
-						iLocal_321 = 8;
+						iLocal_3246 = 8;
 						return;
 					}
 				}
-				else if (!iLocal_291)
+				else if (!iLocal_3204)
 				{
-					if (!func_390(Local_533.f_0, Var0, 60f, 1))
+					if (!func_390(Local_3476.f_0, Var0, 60f, 1))
 					{
 						func_20();
 						func_338("NIGEL2_05", 7500, 1);
-						iLocal_291 = 1;
+						iLocal_3204 = 1;
 					}
 				}
-				else if (func_390(Local_533.f_0, Var0, 30f, 1))
+				else if (func_390(Local_3476.f_0, Var0, 30f, 1))
 				{
 					if (func_351("NIGEL2_05", 0, 0))
 					{
 						HUD::CLEAR_THIS_PRINT("NIGEL2_05");
 					}
-					iLocal_291 = 0;
+					iLocal_3204 = 0;
 				}
-				else if (!func_390(Local_533.f_0, Var0, 100f, 1))
+				else if (!func_390(Local_3476.f_0, Var0, 100f, 1))
 				{
-					iLocal_321 = 9;
+					iLocal_3246 = 9;
 					return;
 				}
 			}
-			else if (!PED::IS_PED_SITTING_IN_VEHICLE(Local_532.f_0, Local_535.f_0))
+			else if (!PED::IS_PED_SITTING_IN_VEHICLE(Local_3469.f_0, Local_3490.f_0))
 			{
-				if (!iLocal_291)
+				if (!iLocal_3204)
 				{
-					if (!func_390(Local_532.f_0, Var0, 60f, 1))
+					if (!func_390(Local_3469.f_0, Var0, 60f, 1))
 					{
 						func_20();
 						func_338("NIGEL2_09", 7500, 1);
-						iLocal_291 = 1;
+						iLocal_3204 = 1;
 					}
 				}
-				else if (func_390(Local_532.f_0, Var0, 30f, 1))
+				else if (func_390(Local_3469.f_0, Var0, 30f, 1))
 				{
 					if (func_351("NIGEL2_09", 0, 0))
 					{
 						HUD::CLEAR_THIS_PRINT("NIGEL2_09");
 					}
-					iLocal_291 = 0;
+					iLocal_3204 = 0;
 				}
-				else if (!func_390(Local_532.f_0, Var0, 100f, 1))
+				else if (!func_390(Local_3469.f_0, Var0, 100f, 1))
 				{
-					iLocal_321 = 10;
+					iLocal_3246 = 10;
 					return;
 				}
 			}
-			else if (!PED::IS_PED_SITTING_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_535.f_0))
+			else if (!PED::IS_PED_SITTING_IN_VEHICLE(PLAYER::PLAYER_PED_ID(), Local_3490.f_0))
 			{
-				Var1 = { ENTITY::GET_ENTITY_COORDS(Local_535.f_0, true) };
-				fLocal_342 = SYSTEM::VDIST(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), Var1);
-				if (!iLocal_291)
+				Var3 = { ENTITY::GET_ENTITY_COORDS(Local_3490.f_0, true) };
+				fLocal_3267 = SYSTEM::VDIST(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), Var3);
+				if (!iLocal_3204)
 				{
-					if (fLocal_342 > 60f)
+					if (fLocal_3267 > 60f)
 					{
 						func_20();
 						func_338("NIGEL2_08", 7500, 1);
-						iLocal_291 = 1;
+						iLocal_3204 = 1;
 					}
 				}
-				else if (fLocal_342 > 100f)
+				else if (fLocal_3267 > 100f)
 				{
-					iLocal_321 = 8;
+					iLocal_3246 = 8;
 					return;
 				}
-				else if (fLocal_342 < 30f)
+				else if (fLocal_3267 < 30f)
 				{
 					if (func_351("NIGEL2_08", 0, 0))
 					{
 						HUD::CLEAR_THIS_PRINT("NIGEL2_08");
 					}
-					iLocal_291 = 0;
+					iLocal_3204 = 0;
 				}
-				if (bLocal_300)
+				if (bLocal_3213)
 				{
-					if (fLocal_340 < 35f)
+					if (fLocal_3265 < 35f)
 					{
-						if (func_522(Local_535.f_0))
+						if (func_522(Local_3490.f_0))
 						{
-							iLocal_321 = 8;
+							iLocal_3246 = 8;
 							return;
 						}
 					}
@@ -51656,19 +51656,19 @@ void func_521()//Position - 0x3EE9A
 int func_522(int iParam0)//Position - 0x3F39C
 {
 	struct<3> Var0;
-	int iVar1;
+	int iVar3;
 	
-	if (!INTERIOR::IS_VALID_INTERIOR(iLocal_337))
+	if (!INTERIOR::IS_VALID_INTERIOR(iLocal_3262))
 	{
 		return 0;
 	}
 	if (VEHICLE::IS_VEHICLE_DRIVEABLE(iParam0, false))
 	{
 		Var0 = { ENTITY::GET_ENTITY_COORDS(iParam0, true) };
-		if (INTERIOR::GET_INTERIOR_AT_COORDS(Var0) == iLocal_337)
+		if (INTERIOR::GET_INTERIOR_AT_COORDS(Var0) == iLocal_3262)
 		{
-			iVar1 = INTERIOR::GET_KEY_FOR_ENTITY_IN_ROOM(iParam0);
-			if (func_64(iVar1))
+			iVar3 = INTERIOR::GET_KEY_FOR_ENTITY_IN_ROOM(iParam0);
+			if (func_64(iVar3))
 			{
 				return 1;
 			}
@@ -51677,20 +51677,20 @@ int func_522(int iParam0)//Position - 0x3F39C
 	return 0;
 }
 
-void func_523(struct<6> Param0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)//Position - 0x3F3EC
+void func_523(struct<6> Param0, int iParam6, int iParam7, int iParam8, int iParam9, int iParam10)//Position - 0x3F3EC
 {
 	float fVar0;
 	int iVar1;
 	int iVar2;
 	int iVar3;
 	struct<2> Var4;
-	float fVar5;
 	float fVar6;
-	int iVar7;
+	float fVar7;
 	int iVar8;
 	int iVar9;
-	var uVar10;
-	int iVar11;
+	int iVar10;
+	var uVar11;
+	int iVar12;
 	
 	if (Global_78813 != 6)
 	{
@@ -51752,94 +51752,94 @@ void func_523(struct<6> Param0, int iParam1, int iParam2, int iParam3, int iPara
 				{
 					case 3:
 					case 5:
-						if (iParam1 == 1)
+						if (iParam6 == 1)
 						{
-							fVar5 = 0f;
-							fVar6 = -0.07f;
+							fVar6 = 0f;
+							fVar7 = -0.07f;
 						}
-						else if (iParam2 == 1)
+						else if (iParam7 == 1)
 						{
-							fVar5 = 0f;
-							fVar6 = -0.077f;
+							fVar6 = 0f;
+							fVar7 = -0.077f;
 						}
-						else if (iParam3 == 1)
+						else if (iParam8 == 1)
 						{
-							fVar5 = 0f;
-							fVar6 = -0.05f;
+							fVar6 = 0f;
+							fVar7 = -0.05f;
 						}
-						else if (iParam4 == 1)
+						else if (iParam9 == 1)
 						{
-							fVar5 = 0f;
-							fVar6 = -0.035f;
+							fVar6 = 0f;
+							fVar7 = -0.035f;
 						}
 						else
 						{
-							fVar5 = 0f;
-							fVar6 = -0.014f;
+							fVar6 = 0f;
+							fVar7 = -0.014f;
 						}
 						break;
 					
 					default:
-						fVar5 = 0f;
-						fVar6 = -0.014f;
+						fVar6 = 0f;
+						fVar7 = -0.014f;
 						break;
 				}
 				GRAPHICS::SET_SCRIPT_GFX_ALIGN(82, 66);
 				HUD::SET_TEXT_FONT(1);
 				HUD::SET_TEXT_JUSTIFICATION(2);
-				iVar11 = func_300();
+				iVar12 = func_300();
 				if (Global_78816 == 1 && Global_78814 == 62)
 				{
-					iVar11 = Global_113648.f_2365.f_539.f_4322;
+					iVar12 = Global_113648.f_2365.f_539.f_4322;
 				}
-				switch (iVar11)
+				switch (iVar12)
 				{
 					case 0:
-						HUD::GET_HUD_COLOUR(143, &iVar7, &iVar8, &iVar9, &uVar10);
+						HUD::GET_HUD_COLOUR(143, &iVar8, &iVar9, &iVar10, &uVar11);
 						break;
 					
 					case 1:
-						HUD::GET_HUD_COLOUR(144, &iVar7, &iVar8, &iVar9, &uVar10);
+						HUD::GET_HUD_COLOUR(144, &iVar8, &iVar9, &iVar10, &uVar11);
 						break;
 					
 					case 2:
-						HUD::GET_HUD_COLOUR(145, &iVar7, &iVar8, &iVar9, &uVar10);
+						HUD::GET_HUD_COLOUR(145, &iVar8, &iVar9, &iVar10, &uVar11);
 						break;
 					
 					default:
-						iVar7 = 240;
-						iVar8 = 200;
-						iVar9 = 80;
+						iVar8 = 240;
+						iVar9 = 200;
+						iVar10 = 80;
 				}
-				HUD::SET_TEXT_COLOUR(iVar7, iVar8, iVar9, iVar2);
+				HUD::SET_TEXT_COLOUR(iVar8, iVar9, iVar10, iVar2);
 				HUD::SET_TEXT_DROP_SHADOW();
-				Var4 = { func_525(Global_78814, Global_78816, iParam5) };
-				if (fVar6 == -0.014f)
+				Var4 = { func_525(Global_78814, Global_78816, iParam10) };
+				if (fVar7 == -0.014f)
 				{
 				}
-				GRAPHICS::SET_SCRIPT_GFX_ALIGN_PARAMS(fVar5, fVar6, 0f, 0.01f);
+				GRAPHICS::SET_SCRIPT_GFX_ALIGN_PARAMS(fVar6, fVar7, 0f, 0.01f);
 				HUD::SET_TEXT_SCALE(0.67f, 0.67f);
 				if (!GRAPHICS::GET_IS_WIDESCREEN() && !GRAPHICS::GET_IS_HIDEF())
 				{
-					fLocal_36 = 0.14f;
+					fLocal_38 = 0.14f;
 				}
 				else
 				{
-					fLocal_36 = 0.17f;
+					fLocal_38 = 0.17f;
 				}
-				if (fVar6 == -0.014f)
+				if (fVar7 == -0.014f)
 				{
-					if (func_524(&Var4) > fLocal_36)
+					if (func_524(&Var4) > fLocal_38)
 					{
 						if (HUD::IS_HUD_COMPONENT_ACTIVE(15))
 						{
-							HUD::SET_HUD_COMPONENT_POSITION(15, Local_34.f_0, (Local_34.f_1 + fLocal_35));
+							HUD::SET_HUD_COMPONENT_POSITION(15, Local_34.f_0, (Local_34.f_1 + fLocal_37));
 							Global_78818 = 1;
 						}
 					}
 				}
 				HUD::BEGIN_TEXT_COMMAND_DISPLAY_TEXT(&Var4);
-				HUD::END_TEXT_COMMAND_DISPLAY_TEXT(fVar5, fVar6, 0);
+				HUD::END_TEXT_COMMAND_DISPLAY_TEXT(fVar6, fVar7, 0);
 				GRAPHICS::RESET_SCRIPT_GFX_ALIGN();
 				if (Global_78817 == 1)
 				{
@@ -51865,7 +51865,7 @@ float func_524(char* sParam0)//Position - 0x3F6D1
 struct<2> func_525(int iParam0, int iParam1, int iParam2)//Position - 0x3F6E4
 {
 	struct<2> Var0;
-	int iVar1;
+	int iVar2;
 	
 	StringCopy(&Var0, "", 8);
 	switch (iParam1)
@@ -51879,8 +51879,8 @@ struct<2> func_525(int iParam0, int iParam1, int iParam2)//Position - 0x3F6E4
 			break;
 		
 		case 3:
-			iVar1 = iParam0;
-			switch (iVar1)
+			iVar2 = iParam0;
+			switch (iVar2)
 			{
 				case 0:
 					Var0 = { func_532(iParam2) };
@@ -51907,7 +51907,7 @@ struct<2> func_525(int iParam0, int iParam1, int iParam2)//Position - 0x3F6E4
 					break;
 				
 				default:
-					StringCopy(&Var0, func_526(iVar1), 8);
+					StringCopy(&Var0, func_526(iVar2), 8);
 					break;
 			}
 			break;
@@ -52008,17 +52008,17 @@ char* func_526(int iParam0)//Position - 0x3F7BB
 struct<2> func_527(int iParam0)//Position - 0x3F90E
 {
 	struct<2> Var0;
-	char[] cVar1[8];
+	char[] cVar2[8];
 	
 	StringCopy(&Var0, "", 8);
-	IntToString(&cVar1, iParam0, 8);
-	if (MISC::IS_STRING_NULL_OR_EMPTY(&cVar1))
+	IntToString(&cVar2, iParam0, 8);
+	if (MISC::IS_STRING_NULL_OR_EMPTY(&cVar2))
 	{
 	}
 	else
 	{
 		StringCopy(&Var0, "MGOR_", 8);
-		StringConCat(&Var0, &cVar1, 8);
+		StringConCat(&Var0, &cVar2, 8);
 	}
 	return Var0;
 }
@@ -52026,17 +52026,17 @@ struct<2> func_527(int iParam0)//Position - 0x3F90E
 struct<2> func_528(int iParam0)//Position - 0x3F942
 {
 	struct<2> Var0;
-	char[] cVar1[8];
+	char[] cVar2[8];
 	
 	StringCopy(&Var0, "", 8);
-	IntToString(&cVar1, iParam0, 8);
-	if (MISC::IS_STRING_NULL_OR_EMPTY(&cVar1))
+	IntToString(&cVar2, iParam0, 8);
+	if (MISC::IS_STRING_NULL_OR_EMPTY(&cVar2))
 	{
 	}
 	else
 	{
 		StringCopy(&Var0, "MGFS_", 8);
-		StringConCat(&Var0, &cVar1, 8);
+		StringConCat(&Var0, &cVar2, 8);
 	}
 	return Var0;
 }
@@ -52044,17 +52044,17 @@ struct<2> func_528(int iParam0)//Position - 0x3F942
 struct<2> func_529(int iParam0)//Position - 0x3F976
 {
 	struct<2> Var0;
-	char[] cVar1[8];
+	char[] cVar2[8];
 	
 	StringCopy(&Var0, "", 8);
-	IntToString(&cVar1, iParam0, 8);
-	if (MISC::IS_STRING_NULL_OR_EMPTY(&cVar1))
+	IntToString(&cVar2, iParam0, 8);
+	if (MISC::IS_STRING_NULL_OR_EMPTY(&cVar2))
 	{
 	}
 	else
 	{
 		StringCopy(&Var0, "MGSP_", 8);
-		StringConCat(&Var0, &cVar1, 8);
+		StringConCat(&Var0, &cVar2, 8);
 	}
 	return Var0;
 }
@@ -52062,17 +52062,17 @@ struct<2> func_529(int iParam0)//Position - 0x3F976
 struct<2> func_530(int iParam0)//Position - 0x3F9AA
 {
 	struct<2> Var0;
-	char[] cVar1[8];
+	char[] cVar2[8];
 	
 	StringCopy(&Var0, "", 8);
-	IntToString(&cVar1, iParam0, 8);
-	if (MISC::IS_STRING_NULL_OR_EMPTY(&cVar1))
+	IntToString(&cVar2, iParam0, 8);
+	if (MISC::IS_STRING_NULL_OR_EMPTY(&cVar2))
 	{
 	}
 	else
 	{
 		StringCopy(&Var0, "MGSR_", 8);
-		StringConCat(&Var0, &cVar1, 8);
+		StringConCat(&Var0, &cVar2, 8);
 	}
 	return Var0;
 }
@@ -52080,17 +52080,17 @@ struct<2> func_530(int iParam0)//Position - 0x3F9AA
 struct<2> func_531(int iParam0)//Position - 0x3F9DE
 {
 	struct<2> Var0;
-	char[] cVar1[8];
+	char[] cVar2[8];
 	
 	StringCopy(&Var0, "", 8);
-	IntToString(&cVar1, iParam0, 8);
-	if (MISC::IS_STRING_NULL_OR_EMPTY(&cVar1) || iParam0 == 3)
+	IntToString(&cVar2, iParam0, 8);
+	if (MISC::IS_STRING_NULL_OR_EMPTY(&cVar2) || iParam0 == 3)
 	{
 	}
 	else
 	{
 		StringCopy(&Var0, "MGCR_", 8);
-		StringConCat(&Var0, &cVar1, 8);
+		StringConCat(&Var0, &cVar2, 8);
 	}
 	return Var0;
 }
@@ -52098,17 +52098,17 @@ struct<2> func_531(int iParam0)//Position - 0x3F9DE
 struct<2> func_532(int iParam0)//Position - 0x3FA1C
 {
 	struct<2> Var0;
-	char[] cVar1[8];
+	char[] cVar2[8];
 	
 	StringCopy(&Var0, "", 8);
-	IntToString(&cVar1, iParam0, 8);
-	if (MISC::IS_STRING_NULL_OR_EMPTY(&cVar1))
+	IntToString(&cVar2, iParam0, 8);
+	if (MISC::IS_STRING_NULL_OR_EMPTY(&cVar2))
 	{
 	}
 	else
 	{
 		StringCopy(&Var0, "MGBJ_", 8);
-		StringConCat(&Var0, &cVar1, 8);
+		StringConCat(&Var0, &cVar2, 8);
 	}
 	return Var0;
 }
@@ -52393,35 +52393,35 @@ void func_539(int iParam0, bool bParam1)//Position - 0x3FE0E
 	{
 		func_540();
 	}
-	iLocal_273 = iParam0;
-	bLocal_276 = false;
+	iLocal_3106 = iParam0;
+	bLocal_3169 = false;
 	if (func_49())
 	{
-		iLocal_277 = 1;
+		iLocal_3170 = 1;
 	}
 	else
 	{
-		iLocal_277 = 0;
+		iLocal_3170 = 0;
 	}
 	if (!func_49())
 	{
-		if (iLocal_273 == 0)
+		if (iLocal_3106 == 0)
 		{
 			if (func_12(PLAYER::PLAYER_PED_ID()))
 			{
 				func_18(PLAYER::PLAYER_PED_ID(), -1309.0155f, -641.8671f, 25.5017f, 242.3463f, 0, 0);
 				func_3(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), 50f, 13, 5000, 0, 0);
-				iLocal_277 = 1;
+				iLocal_3170 = 1;
 			}
 		}
 	}
-	func_1(iLocal_273);
+	func_1(iLocal_3106);
 }
 
 void func_540()//Position - 0x3FEAE
 {
 	func_541(1, 0);
-	if (!func_49() && bLocal_276)
+	if (!func_49() && bLocal_3169)
 	{
 		while (!func_36("NIGEL2_MISSION_FAIL", 0))
 		{
@@ -52458,7 +52458,7 @@ void func_541(bool bParam0, bool bParam1)//Position - 0x3FF24
 	CAM::STOP_SCRIPT_GLOBAL_SHAKING(false);
 	MISC::SET_INSTANCE_PRIORITY_HINT(0);
 	func_305(0);
-	if (!iLocal_292)
+	if (!iLocal_3205)
 	{
 		RECORDING::REPLAY_STOP_EVENT();
 	}
@@ -52467,12 +52467,12 @@ void func_541(bool bParam0, bool bParam1)//Position - 0x3FF24
 	PATHFIND::SET_ROADS_BACK_TO_ORIGINAL_IN_ANGLED_AREA(-668.36346f, -658.38007f, 27.433815f, -440.02197f, -657.42377f, 40.251266f, 40f, 1);
 	VEHICLE::SET_ALL_VEHICLE_GENERATORS_ACTIVE_IN_AREA(-1409.3435f, -756.381f, 17.59896f, -1239.1476f, -587.12195f, 31.25266f, true, true);
 	VEHICLE::SET_ALL_VEHICLE_GENERATORS_ACTIVE_IN_AREA(341.2f, -645.83f, 25f, 429.1f, -572.89f, 35f, true, true);
-	PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_356, false);
-	PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_357, false);
+	PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_3288, false);
+	PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_3289, false);
 	iVar0 = 0;
 	while (iVar0 <= 4)
 	{
-		PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_358[iVar0], false);
+		PED::REMOVE_SCENARIO_BLOCKING_AREA(iLocal_3290[iVar0], false);
 		iVar0++;
 	}
 	PATHFIND::SET_PED_PATHS_BACK_TO_ORIGINAL(-1318.5005f, -678.88257f, 23f, -1296.6278f, -631.5449f, 28f, 0);
@@ -52482,7 +52482,7 @@ void func_541(bool bParam0, bool bParam1)//Position - 0x3FF24
 	PED::CLEAR_PED_NON_CREATION_AREA();
 	AUDIO::SET_AGGRESSIVE_HORNS(false);
 	func_545(0);
-	if (!func_49() && bLocal_276)
+	if (!func_49() && bLocal_3169)
 	{
 		func_36("NIGEL2_MISSION_FAIL", 0);
 	}
@@ -52491,26 +52491,26 @@ void func_541(bool bParam0, bool bParam1)//Position - 0x3FF24
 		PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), true, 0);
 		PED::SET_PED_CONFIG_FLAG(PLAYER::PLAYER_PED_ID(), 170, false);
 	}
-	if (CAM::DOES_CAM_EXIST(iLocal_320))
+	if (CAM::DOES_CAM_EXIST(iLocal_3245))
 	{
-		CAM::SET_CAM_ACTIVE(iLocal_320, false);
-		CAM::DESTROY_CAM(iLocal_320, false);
+		CAM::SET_CAM_ACTIVE(iLocal_3245, false);
+		CAM::DESTROY_CAM(iLocal_3245, false);
 	}
 	func_544(1, 1, 1);
-	func_543(&uLocal_367, 2);
-	func_543(&uLocal_367, 3);
-	func_543(&uLocal_367, 4);
-	func_543(&uLocal_367, 5);
+	func_543(&uLocal_3304, 2);
+	func_543(&uLocal_3304, 3);
+	func_543(&uLocal_3304, 4);
+	func_543(&uLocal_3304, 5);
 	func_308(&uLocal_20, 0, 0);
 	CAM::SET_FOLLOW_VEHICLE_CAM_VIEW_MODE(1);
 	MISC::SET_TIME_SCALE(1f);
-	PED::REMOVE_RELATIONSHIP_GROUP(iLocal_354);
-	VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(Local_535.f_1, false);
-	VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(Local_536.f_1, false);
+	PED::REMOVE_RELATIONSHIP_GROUP(iLocal_3286);
+	VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(Local_3490.f_1, false);
+	VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(Local_3497.f_1, false);
 	func_94();
 	func_51(bParam0);
 	func_542(bParam1);
-	if (iLocal_272 == 4)
+	if (iLocal_3105 == 4)
 	{
 		func_273(75, 2, 1, 1, 0);
 		func_273(76, 1, 1, 1, 0);
@@ -52529,64 +52529,64 @@ void func_542(bool bParam0)//Position - 0x401F2
 	int iVar0;
 	
 	iVar0 = 0;
-	if (INTERIOR::IS_VALID_INTERIOR(iLocal_337))
+	if (INTERIOR::IS_VALID_INTERIOR(iLocal_3262))
 	{
-		if (INTERIOR::IS_INTERIOR_READY(iLocal_337))
+		if (INTERIOR::IS_INTERIOR_READY(iLocal_3262))
 		{
-			STREAMING::SET_INTERIOR_ACTIVE(iLocal_337, false);
-			INTERIOR::UNPIN_INTERIOR(iLocal_337);
+			STREAMING::SET_INTERIOR_ACTIVE(iLocal_3262, false);
+			INTERIOR::UNPIN_INTERIOR(iLocal_3262);
 		}
 	}
-	if (OBJECT::DOES_RAYFIRE_MAP_OBJECT_EXIST(iLocal_353))
+	if (OBJECT::DOES_RAYFIRE_MAP_OBJECT_EXIST(iLocal_3285))
 	{
-		if (OBJECT::GET_STATE_OF_RAYFIRE_MAP_OBJECT(iLocal_353) != 10)
+		if (OBJECT::GET_STATE_OF_RAYFIRE_MAP_OBJECT(iLocal_3285) != 10)
 		{
-			OBJECT::SET_STATE_OF_RAYFIRE_MAP_OBJECT(iLocal_353, 9);
+			OBJECT::SET_STATE_OF_RAYFIRE_MAP_OBJECT(iLocal_3285, 9);
 		}
 	}
-	VEHICLE::REMOVE_VEHICLE_RECORDING(iLocal_333, sLocal_359);
-	VEHICLE::REMOVE_VEHICLE_RECORDING(2, sLocal_359);
-	VEHICLE::REMOVE_VEHICLE_RECORDING(1, sLocal_360);
+	VEHICLE::REMOVE_VEHICLE_RECORDING(iLocal_3258, sLocal_3296);
+	VEHICLE::REMOVE_VEHICLE_RECORDING(2, sLocal_3296);
+	VEHICLE::REMOVE_VEHICLE_RECORDING(1, sLocal_3297);
 	func_396();
 	func_68(0, 1);
-	if (GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(iLocal_351))
+	if (GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(iLocal_3283))
 	{
-		GRAPHICS::STOP_PARTICLE_FX_LOOPED(iLocal_351, false);
+		GRAPHICS::STOP_PARTICLE_FX_LOOPED(iLocal_3283, false);
 	}
-	if (GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(iLocal_352))
+	if (GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(iLocal_3284))
 	{
-		GRAPHICS::STOP_PARTICLE_FX_LOOPED(iLocal_352, false);
+		GRAPHICS::STOP_PARTICLE_FX_LOOPED(iLocal_3284, false);
 	}
 	STREAMING::REMOVE_PTFX_ASSET();
-	if (func_15(Local_536.f_0))
+	if (func_15(Local_3497.f_0))
 	{
-		AUDIO::REMOVE_ENTITY_FROM_AUDIO_MIX_GROUP(Local_536.f_0, 0f);
+		AUDIO::REMOVE_ENTITY_FROM_AUDIO_MIX_GROUP(Local_3497.f_0, 0f);
 	}
 	if (AUDIO::IS_AUDIO_SCENE_ACTIVE("NIGEL_02_CHASE"))
 	{
 		AUDIO::STOP_AUDIO_SCENE("NIGEL_02_CHASE");
 	}
-	AUDIO::RELEASE_SOUND_ID(iLocal_332);
+	AUDIO::RELEASE_SOUND_ID(iLocal_3257);
 	AUDIO::RELEASE_SCRIPT_AUDIO_BANK();
 	AUDIO::UNREGISTER_SCRIPT_WITH_AUDIO();
 	STREAMING::REMOVE_ANIM_DICT("rcmnigel2");
-	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_349.f_7);
-	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_536.f_1);
-	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_535.f_1);
-	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_534.f_1);
-	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_532.f_1);
-	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_533.f_1);
-	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_345);
-	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_346);
-	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_347);
-	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_348);
+	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_3274.f_7);
+	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_3497.f_1);
+	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_3490.f_1);
+	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_3483.f_1);
+	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_3469.f_1);
+	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_3476.f_1);
+	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_3270);
+	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_3271);
+	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_3272);
+	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iLocal_3273);
 	iVar0 = 0;
 	while (iVar0 < 3)
 	{
-		STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_540[iVar0 /*2*/].f_1);
+		STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_3534[iVar0 /*2*/].f_1);
 		iVar0++;
 	}
-	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_541.f_1);
+	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_3541.f_1);
 	if (bParam0)
 	{
 		HUD::CLEAR_ADDITIONAL_TEXT(0, true);
@@ -52692,7 +52692,7 @@ void func_548(bool bParam0, bool bParam1)//Position - 0x4047F
 	func_298(0f, 0f, 0f, 0, 0, 0, 1, 1, 1, bParam1, 1, 1, 1);
 }
 
-void func_549(struct<3> Param0, float fParam1, int iParam2, int iParam3)//Position - 0x404B2
+void func_549(struct<3> Param0, float fParam3, int iParam4, int iParam5)//Position - 0x404B2
 {
 	if (func_552())
 	{
@@ -52704,9 +52704,9 @@ void func_549(struct<3> Param0, float fParam1, int iParam2, int iParam3)//Positi
 			PLAYER::SET_PLAYER_CONTROL(PLAYER::PLAYER_ID(), false, 0);
 		}
 		Global_100677 = { Param0 };
-		Global_100680 = fParam1;
+		Global_100680 = fParam3;
 		Global_100676 = 1;
-		if (iParam2 == 1)
+		if (iParam4 == 1)
 		{
 			MISC::SET_BIT(&(Global_100681.f_20), 14);
 		}
@@ -52714,7 +52714,7 @@ void func_549(struct<3> Param0, float fParam1, int iParam2, int iParam3)//Positi
 		{
 			MISC::CLEAR_BIT(&(Global_100681.f_20), 14);
 		}
-		if (iParam3 == 1)
+		if (iParam5 == 1)
 		{
 			MISC::SET_BIT(&(Global_100681.f_20), 24);
 		}
@@ -52887,16 +52887,16 @@ void func_555(int iParam0, int iParam1, bool bParam2)//Position - 0x406DF
 void func_556()//Position - 0x40857
 {
 	char cVar0[64];
-	char cVar1[64];
-	char* sVar2;
+	char cVar16[64];
+	char* sVar32;
 	
 	StringCopy(&cVar0, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_2028[Global_8939 /*29*/].f_7)), 64);
 	if (Global_8958 == 0)
 	{
 		HUD::BEGIN_TEXT_COMMAND_THEFEED_POST("");
-		StringCopy(&cVar1, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_8863[1 /*6*/])), 64);
-		sVar2 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253" /* GXT: New Contact */);
-		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, sVar2, &cVar1);
+		StringCopy(&cVar16, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&(Global_8863[1 /*6*/])), 64);
+		sVar32 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION("CELL_253" /* GXT: New Contact */);
+		HUD::END_TEXT_COMMAND_THEFEED_POST_MESSAGETEXT(&cVar0, &cVar0, false, 3, sVar32, &cVar16);
 	}
 	else
 	{
@@ -52963,127 +52963,127 @@ void func_562()//Position - 0x409C5
 	iVar0 = 0;
 	while (iVar0 <= 7)
 	{
-		iLocal_281[iVar0] = 0;
+		iLocal_3184[iVar0] = 0;
 		iVar0++;
 	}
 	iVar0 = 0;
 	while (iVar0 <= 6)
 	{
-		iLocal_278[iVar0] = 0;
+		iLocal_3171[iVar0] = 0;
 		iVar0++;
 	}
 	iVar0 = 0;
 	while (iVar0 <= 2)
 	{
-		iLocal_279[iVar0] = 0;
+		iLocal_3179[iVar0] = 0;
 		iVar0++;
 	}
-	iLocal_282 = 0;
-	iLocal_284 = 0;
-	iLocal_291 = 0;
-	iLocal_288 = 0;
-	iLocal_289 = 0;
-	iLocal_285 = 0;
-	iLocal_286 = 0;
-	iLocal_287 = 0;
-	bLocal_300 = false;
-	bLocal_298 = false;
-	bLocal_295 = false;
-	iLocal_290 = 0;
+	iLocal_3193 = 0;
+	iLocal_3197 = 0;
+	iLocal_3204 = 0;
+	iLocal_3201 = 0;
+	iLocal_3202 = 0;
+	iLocal_3198 = 0;
+	iLocal_3199 = 0;
+	iLocal_3200 = 0;
+	bLocal_3213 = false;
+	bLocal_3211 = false;
+	bLocal_3208 = false;
+	iLocal_3203 = 0;
 	iVar0 = 0;
 	while (iVar0 <= 1)
 	{
-		iLocal_283[iVar0] = 0;
+		iLocal_3194[iVar0] = 0;
 		iVar0++;
 	}
-	iLocal_310 = 0;
-	iLocal_307 = 0;
-	iLocal_308 = 0;
-	iLocal_309 = 0;
-	iLocal_311 = 0;
-	iLocal_312 = 1;
-	iLocal_313 = 0;
-	iLocal_314 = 0;
+	iLocal_3235 = 0;
+	iLocal_3232 = 0;
+	iLocal_3233 = 0;
+	iLocal_3234 = 0;
+	iLocal_3236 = 0;
+	iLocal_3237 = 1;
+	iLocal_3238 = 0;
+	iLocal_3239 = 0;
 	iVar0 = 0;
 	while (iVar0 <= 11)
 	{
-		iLocal_303[iVar0] = 0;
+		iLocal_3216[iVar0] = 0;
 		iVar0++;
 	}
-	iLocal_297 = 0;
-	iLocal_299 = 0;
-	iLocal_292 = 1;
-	bLocal_293 = false;
-	iLocal_296 = 0;
-	iLocal_294 = 0;
-	bLocal_306 = false;
-	iLocal_304 = 0;
-	bLocal_305 = false;
-	bLocal_301 = false;
-	bLocal_302 = false;
-	bLocal_315 = false;
-	iLocal_316 = 0;
-	iLocal_317 = 0;
-	iLocal_318 = 0;
-	iLocal_319 = 0;
-	iLocal_321 = 0;
-	iLocal_328 = 0;
-	iLocal_323 = 0;
-	iLocal_329 = 0;
-	iLocal_330 = 0;
-	iLocal_331 = 0;
-	iLocal_324 = 0;
-	iLocal_325 = 0;
-	iLocal_322 = 0;
-	iLocal_326 = 0;
-	iLocal_327 = 0;
-	iLocal_332 = -1;
-	iLocal_333 = 1;
-	iLocal_334 = 0;
-	fLocal_340 = 0f;
-	fLocal_341 = 0f;
-	fLocal_339 = 20.75f;
-	fLocal_342 = 0f;
-	Local_547 = { 368.57144f, -594.94666f, 45.542202f };
-	Local_548 = { 389.5015f, -614.1279f, 29.618f };
-	iLocal_338 = 0;
-	Local_540[0 /*2*/].f_1 = joaat("boxville2");
-	Local_540[1 /*2*/].f_1 = joaat("washington");
-	Local_540[2 /*2*/].f_1 = joaat("washington");
-	Local_541.f_1 = joaat("sultan");
-	iLocal_345 = joaat("A_M_Y_Business_01");
-	iLocal_346 = joaat("S_M_M_Doctor_01");
-	iLocal_347 = joaat("S_F_Y_Scrubs_01");
-	iLocal_348 = joaat("A_F_Y_BevHills_03");
-	Local_536.f_1 = joaat("dubsta");
-	Local_536.f_3 = { -1290.73f, -634.603f, 26.1004f };
-	Local_536.f_6 = 126.961f;
-	Local_535.f_1 = func_564();
-	Local_535.f_3 = { -1304.01f, -644.58f, 25.91f };
-	Local_535.f_6 = 127.67f;
-	Local_534.f_1 = func_563();
-	Local_534.f_3 = { -1290.0477f, -631.459f, 25.6863f };
-	Local_534.f_6 = 121.506f;
-	Local_532.f_1 = func_596(63);
-	Local_532.f_3 = { -1309.61f, -640.33f, 26.53f };
-	Local_532.f_6 = -124f;
-	Local_533.f_1 = func_596(64);
-	Local_533.f_3 = { -1310.24f, -640.19f, 26.53f };
-	Local_533.f_6 = -73.78f;
-	Local_349.f_1 = { 299.48f, -584.84f, 41.445f };
-	Local_349.f_4 = { 0f, 0f, -20f };
-	Local_349.f_7 = joaat("prop_hospitaldoors_start");
-	iLocal_542 = 0;
-	Local_550 = { 394.5f, -619.1f, 28.2f };
-	Local_551 = { 0f, 0f, 0f };
-	PED::ADD_RELATIONSHIP_GROUP("ENEMIES", &iLocal_354);
-	iLocal_355 = PED::GET_PED_RELATIONSHIP_GROUP_HASH(PLAYER::PLAYER_PED_ID());
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_354, joaat("PLAYER"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_354);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_354, iLocal_355);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_355, iLocal_354);
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_355, joaat("PLAYER"));
-	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), iLocal_355);
+	iLocal_3210 = 0;
+	iLocal_3212 = 0;
+	iLocal_3205 = 1;
+	bLocal_3206 = false;
+	iLocal_3209 = 0;
+	iLocal_3207 = 0;
+	bLocal_3231 = false;
+	iLocal_3229 = 0;
+	bLocal_3230 = false;
+	bLocal_3214 = false;
+	bLocal_3215 = false;
+	bLocal_3240 = false;
+	iLocal_3241 = 0;
+	iLocal_3242 = 0;
+	iLocal_3243 = 0;
+	iLocal_3244 = 0;
+	iLocal_3246 = 0;
+	iLocal_3253 = 0;
+	iLocal_3248 = 0;
+	iLocal_3254 = 0;
+	iLocal_3255 = 0;
+	iLocal_3256 = 0;
+	iLocal_3249 = 0;
+	iLocal_3250 = 0;
+	iLocal_3247 = 0;
+	iLocal_3251 = 0;
+	iLocal_3252 = 0;
+	iLocal_3257 = -1;
+	iLocal_3258 = 1;
+	iLocal_3259 = 0;
+	fLocal_3265 = 0f;
+	fLocal_3266 = 0f;
+	fLocal_3264 = 20.75f;
+	fLocal_3267 = 0f;
+	Local_3550 = { 368.57144f, -594.94666f, 45.542202f };
+	Local_3553 = { 389.5015f, -614.1279f, 29.618f };
+	iLocal_3263 = 0;
+	Local_3534[0 /*2*/].f_1 = joaat("boxville2");
+	Local_3534[1 /*2*/].f_1 = joaat("washington");
+	Local_3534[2 /*2*/].f_1 = joaat("washington");
+	Local_3541.f_1 = joaat("sultan");
+	iLocal_3270 = joaat("A_M_Y_Business_01");
+	iLocal_3271 = joaat("S_M_M_Doctor_01");
+	iLocal_3272 = joaat("S_F_Y_Scrubs_01");
+	iLocal_3273 = joaat("A_F_Y_BevHills_03");
+	Local_3497.f_1 = joaat("dubsta");
+	Local_3497.f_3 = { -1290.73f, -634.603f, 26.1004f };
+	Local_3497.f_6 = 126.961f;
+	Local_3490.f_1 = func_564();
+	Local_3490.f_3 = { -1304.01f, -644.58f, 25.91f };
+	Local_3490.f_6 = 127.67f;
+	Local_3483.f_1 = func_563();
+	Local_3483.f_3 = { -1290.0477f, -631.459f, 25.6863f };
+	Local_3483.f_6 = 121.506f;
+	Local_3469.f_1 = func_596(63);
+	Local_3469.f_3 = { -1309.61f, -640.33f, 26.53f };
+	Local_3469.f_6 = -124f;
+	Local_3476.f_1 = func_596(64);
+	Local_3476.f_3 = { -1310.24f, -640.19f, 26.53f };
+	Local_3476.f_6 = -73.78f;
+	Local_3274.f_1 = { 299.48f, -584.84f, 41.445f };
+	Local_3274.f_4 = { 0f, 0f, -20f };
+	Local_3274.f_7 = joaat("prop_hospitaldoors_start");
+	iLocal_3543 = 0;
+	Local_3559 = { 394.5f, -619.1f, 28.2f };
+	Local_3562 = { 0f, 0f, 0f };
+	PED::ADD_RELATIONSHIP_GROUP("ENEMIES", &iLocal_3286);
+	iLocal_3287 = PED::GET_PED_RELATIONSHIP_GROUP_HASH(PLAYER::PLAYER_PED_ID());
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_3286, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, joaat("PLAYER"), iLocal_3286);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_3286, iLocal_3287);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(5, iLocal_3287, iLocal_3286);
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, iLocal_3287, joaat("PLAYER"));
+	PED::SET_RELATIONSHIP_BETWEEN_GROUPS(1, joaat("PLAYER"), iLocal_3287);
 }
 
 int func_563()//Position - 0x40D2A
@@ -53093,7 +53093,7 @@ int func_563()//Position - 0x40D2A
 
 int func_564()//Position - 0x40D37
 {
-	return iLocal_93;
+	return iLocal_95;
 }
 
 void func_565()//Position - 0x40D41
@@ -53103,7 +53103,7 @@ void func_565()//Position - 0x40D41
 	{
 		func_541(0, 1);
 	}
-	func_566(&Local_275, 1, 0, 0);
+	func_566(&Local_3108, 1, 0, 0);
 	SCRIPT::TERMINATE_THIS_THREAD();
 }
 
@@ -53303,7 +53303,7 @@ int func_577(char* sParam0, int iParam1, int iParam2)//Position - 0x4104E
 {
 	int iVar0;
 	struct<32> Var1;
-	int iVar2;
+	int iVar33;
 	
 	func_108();
 	func_589();
@@ -53369,10 +53369,10 @@ int func_577(char* sParam0, int iParam1, int iParam2)//Position - 0x4104E
 		}
 		else
 		{
-			iVar2 = func_578(SCRIPT::GET_THIS_SCRIPT_NAME());
-			if (iVar2 > -1)
+			iVar33 = func_578(SCRIPT::GET_THIS_SCRIPT_NAME());
+			if (iVar33 > -1)
 			{
-				if (Global_113648.f_24988.f_4[iVar2] >= 2)
+				if (Global_113648.f_24988.f_4[iVar33] >= 2)
 				{
 					Global_94857 = 1;
 				}

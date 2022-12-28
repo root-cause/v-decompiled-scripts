@@ -18,9 +18,9 @@ void __EntryFunction__()//Position - 0x0
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if (ENTITY::DOES_ENTITY_EXIST(iScriptParam_5))
+		if (ENTITY::DOES_ENTITY_EXIST(iScriptParam_0))
 		{
-			if (BRAIN::IS_OBJECT_WITHIN_BRAIN_ACTIVATION_RANGE(iScriptParam_5) && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("finalec1")) == 0)
+			if (BRAIN::IS_OBJECT_WITHIN_BRAIN_ACTIVATION_RANGE(iScriptParam_0) && SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("finalec1")) == 0)
 			{
 				switch (iLocal_2)
 				{

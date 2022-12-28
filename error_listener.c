@@ -114,7 +114,7 @@ void func_2()//Position - 0xAE
 	int iVar0;
 	int iVar1;
 	struct<2> Var2;
-	var uVar3;
+	var uVar5;
 	
 	iVar0 = 0;
 	while (iVar0 < SCRIPT::GET_NUMBER_OF_EVENTS(2))
@@ -126,7 +126,7 @@ void func_2()//Position - 0xAE
 			func_8(2, iVar0, iVar1, &Var2);
 			Var2.f_1 = (MISC::GET_FRAME_COUNT() - 1);
 			Var2.f_0 = iVar1;
-			if (!func_7(&Var2, &uVar3))
+			if (!func_7(&Var2, &uVar5))
 			{
 				func_6(&Var2);
 			}

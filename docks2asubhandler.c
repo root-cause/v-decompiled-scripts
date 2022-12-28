@@ -13,8 +13,8 @@ void __EntryFunction__()//Position - 0x0
 	{
 		func_1();
 	}
-	iLocal_0 = ScriptParam_3.f_0;
-	iLocal_1 = ScriptParam_3.f_1;
+	iLocal_0 = ScriptParam_0.f_0;
+	iLocal_1 = ScriptParam_0.f_1;
 	while (!BitTest(uLocal_2, 1))
 	{
 		if (!BitTest(uLocal_2, 0))

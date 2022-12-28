@@ -96,11 +96,11 @@
 	bool bLocal_94 = 0;
 	bool bLocal_95 = 0;
 	struct<4> Local_96 = { 0, 0, 0, 0 } ;
-	struct<16> Local_97 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ;
-	int iLocal_98 = 0;
-	int iLocal_99 = 0;
-	int iLocal_100 = 0;
-	int iLocal_101 = 0;
+	struct<16> Local_100 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ;
+	int iLocal_116 = 0;
+	int iLocal_117 = 0;
+	int iLocal_118 = 0;
+	int iLocal_119 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -140,7 +140,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_42 = 49;
 	iLocal_43 = 64;
 	fLocal_62 = ((0.05f + 0.275f) - 0.01f);
-	iLocal_101 = -1;
+	iLocal_119 = -1;
 	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("context_controller")) > 1)
 	{
 		SCRIPT::TERMINATE_THIS_THREAD();
@@ -400,7 +400,7 @@ void func_1()//Position - 0x457
 		return;
 	}
 	bVar0 = true;
-	if (iLocal_98 == 1)
+	if (iLocal_116 == 1)
 	{
 		bVar0 = false;
 	}
@@ -413,12 +413,12 @@ void func_1()//Position - 0x457
 		HUD::BEGIN_TEXT_COMMAND_DISPLAY_HELP(&Local_96);
 		if (bLocal_95)
 		{
-			HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&Local_97);
+			HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&Local_100);
 		}
 		else
 		{
 			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&Global_44195);
-			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&Local_97);
+			HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&Local_100);
 		}
 		HUD::END_TEXT_COMMAND_DISPLAY_HELP(0, false, bVar0, 50);
 	}
@@ -428,7 +428,7 @@ void func_1()//Position - 0x457
 		HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&Global_44195);
 		HUD::END_TEXT_COMMAND_DISPLAY_HELP(0, false, bVar0, 50);
 	}
-	switch (iLocal_98)
+	switch (iLocal_116)
 	{
 		case 0:
 			break;
@@ -661,22 +661,22 @@ int func_15()//Position - 0x813
 	return iVar2;
 }
 
-void func_16(struct<4> Param0, struct<16> Param1, var uParam2, var uParam3)//Position - 0x85F
+void func_16(struct<4> Param0, struct<16> Param4, var uParam20, var uParam21)//Position - 0x85F
 {
 	Local_96 = { Param0 };
-	Local_97 = { Param1 };
+	Local_100 = { Param4 };
 	bLocal_93 = true;
 	bLocal_94 = true;
-	iLocal_98 = uParam2;
-	bLocal_95 = uParam3;
+	iLocal_116 = uParam20;
+	bLocal_95 = uParam21;
 }
 
-void func_17(struct<4> Param0, var uParam1)//Position - 0x887
+void func_17(struct<4> Param0, var uParam4)//Position - 0x887
 {
 	Local_96 = { Param0 };
 	bLocal_93 = true;
 	bLocal_94 = false;
-	iLocal_98 = uParam1;
+	iLocal_116 = uParam4;
 }
 
 int func_18(int iParam0)//Position - 0x8A1
@@ -1101,8 +1101,8 @@ void func_34(int iParam0)//Position - 0xE40
 void func_35()//Position - 0xE9A
 {
 	struct<13> Var0[1];
-	struct<16> Var1[1];
-	int iVar2;
+	struct<16> Var14[1];
+	int iVar31;
 	
 	if (Global_1835457 != -1)
 	{
@@ -1121,14 +1121,14 @@ void func_35()//Position - 0xE9A
 		Var0[0 /*13*/].f_12 = Global_1835458[12];
 		if (MISC::IS_XBOX360_VERSION() || func_40())
 		{
-			if (!iLocal_99)
+			if (!iLocal_117)
 			{
 				if (NETWORK::NETWORK_GAMERTAG_FROM_HANDLE_START(&(Var0[0 /*13*/])))
 				{
-					iLocal_99 = 1;
+					iLocal_117 = 1;
 				}
 			}
-			if (iLocal_99)
+			if (iLocal_117)
 			{
 				if (NETWORK::NETWORK_GAMERTAG_FROM_HANDLE_PENDING())
 				{
@@ -1147,26 +1147,26 @@ void func_35()//Position - 0xE9A
 		{
 			if (func_36(Var0[0 /*13*/]))
 			{
-				switch (iLocal_100)
+				switch (iLocal_118)
 				{
 					case 0:
-						iLocal_101 = NETWORK::NETWORK_DISPLAYNAMES_FROM_HANDLES_START(&Var0, 1);
-						if (iLocal_101 >= 0)
+						iLocal_119 = NETWORK::NETWORK_DISPLAYNAMES_FROM_HANDLES_START(&Var0, 1);
+						if (iLocal_119 >= 0)
 						{
-							iLocal_100++;
+							iLocal_118++;
 						}
 						break;
 					
 					case 1:
-						iVar2 = NETWORK::NETWORK_GET_DISPLAYNAMES_FROM_HANDLES(iLocal_101, &Var1, 1);
-						switch (iVar2)
+						iVar31 = NETWORK::NETWORK_GET_DISPLAYNAMES_FROM_HANDLES(iLocal_119, &Var14, 1);
+						switch (iVar31)
 						{
 							case -1:
 								func_38();
 								break;
 							
 							case 0:
-								MemCopy(&(Global_2359296[func_39() /*5568*/].f_5391.f_18[Global_1835457 /*6*/]), {Var1[0 /*16*/]}, 6);
+								MemCopy(&(Global_2359296[func_39() /*5568*/].f_5391.f_18[Global_1835457 /*6*/]), {Var14[0 /*16*/]}, 6);
 								func_38();
 								break;
 							
@@ -1205,9 +1205,9 @@ bool func_37()//Position - 0x10C4
 void func_38()//Position - 0x10DA
 {
 	Global_1835457 = -1;
-	iLocal_99 = 0;
-	iLocal_101 = -1;
-	iLocal_100 = 0;
+	iLocal_117 = 0;
+	iLocal_119 = -1;
+	iLocal_118 = 0;
 }
 
 int func_39()//Position - 0x10F0

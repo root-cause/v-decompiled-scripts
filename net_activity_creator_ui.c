@@ -143,6 +143,6 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_41 = 49;
 	iLocal_42 = 64;
 	fLocal_65 = ((0.05f + 0.275f) - 0.01f);
-	uScriptParam_114 = uScriptParam_114;
+	uScriptParam_0 = uScriptParam_0;
 }
 

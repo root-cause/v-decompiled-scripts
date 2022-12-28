@@ -600,7 +600,7 @@ void func_9()//Position - 0x5A4
 void func_10()//Position - 0x641
 {
 	struct<4893> Var0;
-	var uVar1;
+	var uVar4893;
 	
 	Var0.f_14 = 162;
 	Var0.f_14.f_1 = 2;
@@ -905,7 +905,7 @@ void func_10()//Position - 0x641
 	Var0.f_4887.f_1 = -1;
 	Var0.f_4887.f_4 = -1;
 	Var0.f_4887.f_5 = -1;
-	uVar1 = Global_1950108.f_3439;
+	uVar4893 = Global_1950108.f_3439;
 	if (Global_2672504)
 	{
 		MISC::COPY_SCRIPT_STRUCT(&Global_1950108, &Var0, 4893);
@@ -914,7 +914,7 @@ void func_10()//Position - 0x641
 	{
 		Global_1950108 = { Var0 };
 	}
-	Global_1950108.f_3439 = uVar1;
+	Global_1950108.f_3439 = uVar4893;
 }
 
 void func_11()//Position - 0xE7F
@@ -2727,55 +2727,55 @@ void func_33()//Position - 0x35BF
 void func_34()//Position - 0x3FE3
 {
 	struct<9> Var0;
-	struct<83> Var1;
-	struct<8> Var2;
-	struct<32> Var3;
-	struct<18> Var4;
-	struct<10> Var5;
-	var uVar6;
-	var uVar7;
-	struct<66> Var8;
+	struct<83> Var9;
+	struct<8> Var92;
+	struct<32> Var100;
+	struct<18> Var132;
+	struct<10> Var150;
+	var uVar160;
+	var uVar161;
+	struct<66> Var162;
 	
 	Global_2793044.f_912 = { Var0 };
-	Var1 = -1;
-	Var1.f_1 = -1;
-	Var1.f_2.f_1 = -1;
-	Var1.f_2.f_2 = -1;
-	Var1.f_2.f_9 = -1;
-	Var1.f_2.f_16 = -1;
-	Var1.f_2.f_19 = -1;
-	Var1.f_2.f_20 = -1;
-	Var1.f_23 = -1;
-	Var1.f_47 = 32;
-	Global_2793044.f_28 = { Var1 };
-	Var2.f_2 = -1;
-	Var2.f_3 = -1;
-	Global_2793044.f_198 = { Var2 };
-	Var3.f_4.f_1 = -1;
-	Var3.f_4.f_2 = -1;
-	Var3.f_4.f_9 = -1;
-	Var3.f_4.f_16 = -1;
-	Var3.f_4.f_19 = -1;
-	Var3.f_4.f_20 = -1;
-	Var3.f_25 = 2;
-	Global_2793044.f_206 = { Var3 };
-	Var4.f_7 = 10;
-	Global_2793044.f_242 = { Var4 };
-	Var5.f_6 = -1;
-	Global_2793044.f_440 = { Var5 };
-	Global_2793044.f_451 = uVar6;
-	Global_2793044.f_461 = uVar7;
-	Var8 = 12;
-	Var8.f_65 = 1;
-	MISC::COPY_SCRIPT_STRUCT(&(Global_2793044.f_6909), &Var8, 67);
+	Var9 = -1;
+	Var9.f_1 = -1;
+	Var9.f_2.f_1 = -1;
+	Var9.f_2.f_2 = -1;
+	Var9.f_2.f_9 = -1;
+	Var9.f_2.f_16 = -1;
+	Var9.f_2.f_19 = -1;
+	Var9.f_2.f_20 = -1;
+	Var9.f_23 = -1;
+	Var9.f_47 = 32;
+	Global_2793044.f_28 = { Var9 };
+	Var92.f_2 = -1;
+	Var92.f_3 = -1;
+	Global_2793044.f_198 = { Var92 };
+	Var100.f_4.f_1 = -1;
+	Var100.f_4.f_2 = -1;
+	Var100.f_4.f_9 = -1;
+	Var100.f_4.f_16 = -1;
+	Var100.f_4.f_19 = -1;
+	Var100.f_4.f_20 = -1;
+	Var100.f_25 = 2;
+	Global_2793044.f_206 = { Var100 };
+	Var132.f_7 = 10;
+	Global_2793044.f_242 = { Var132 };
+	Var150.f_6 = -1;
+	Global_2793044.f_440 = { Var150 };
+	Global_2793044.f_451 = uVar160;
+	Global_2793044.f_461 = uVar161;
+	Var162 = 12;
+	Var162.f_65 = 1;
+	MISC::COPY_SCRIPT_STRUCT(&(Global_2793044.f_6909), &Var162, 67);
 }
 
 void func_35()//Position - 0x410A
 {
 	int iVar0;
 	struct<767> Var1;
-	var uVar2[8];
-	var uVar3;
+	var uVar768[8];
+	var uVar777;
 	
 	Var1 = 21;
 	Var1.f_2 = -1;
@@ -2839,19 +2839,19 @@ void func_35()//Position - 0x410A
 	Var1.f_761 = 1;
 	Var1.f_763 = 1;
 	Var1.f_764 = 1;
-	uVar3 = Global_2793044.f_5225.f_366;
+	uVar777 = Global_2793044.f_5225.f_366;
 	iVar0 = 0;
 	while (iVar0 < 8)
 	{
-		uVar2[iVar0] = Global_2793044.f_5225.f_348[iVar0];
+		uVar768[iVar0] = Global_2793044.f_5225.f_348[iVar0];
 		iVar0++;
 	}
 	Global_2793044.f_5225 = { Var1 };
-	Global_2793044.f_5225.f_366 = uVar3;
+	Global_2793044.f_5225.f_366 = uVar777;
 	iVar0 = 0;
 	while (iVar0 < 8)
 	{
-		Global_2793044.f_5225.f_348[iVar0] = uVar2[iVar0];
+		Global_2793044.f_5225.f_348[iVar0] = uVar768[iVar0];
 		iVar0++;
 	}
 }
@@ -2873,10 +2873,10 @@ void func_37()//Position - 0x4376
 {
 	int iVar0;
 	struct<17> Var1;
-	struct<12> Var2;
-	struct<51> Var3;
-	struct<51> Var4;
-	struct<21> Var5;
+	struct<12> Var18;
+	struct<51> Var30;
+	struct<51> Var81;
+	struct<21> Var132;
 	
 	iVar0 = 0;
 	while (iVar0 <= 4)
@@ -2887,34 +2887,34 @@ void func_37()//Position - 0x4376
 	iVar0 = 0;
 	while (iVar0 <= 0)
 	{
-		Global_2793044.f_4601[iVar0 /*12*/] = { Var2 };
+		Global_2793044.f_4601[iVar0 /*12*/] = { Var18 };
 		iVar0++;
 	}
-	Var3.f_2 = -1;
-	Var3.f_3 = -1;
-	Var3.f_4 = -1;
-	Var3.f_50 = -1;
-	Var4.f_2 = -1;
-	Var4.f_3 = -1;
-	Var4.f_4 = -1;
-	Var4.f_50 = -1;
+	Var30.f_2 = -1;
+	Var30.f_3 = -1;
+	Var30.f_4 = -1;
+	Var30.f_50 = -1;
+	Var81.f_2 = -1;
+	Var81.f_3 = -1;
+	Var81.f_4 = -1;
+	Var81.f_50 = -1;
 	iVar0 = 0;
 	while (iVar0 <= 0)
 	{
-		Global_2793044.f_1167[iVar0 /*51*/] = { Var3 };
-		Global_2793044.f_1423[iVar0 /*51*/] = { Var4 };
+		Global_2793044.f_1167[iVar0 /*51*/] = { Var30 };
+		Global_2793044.f_1423[iVar0 /*51*/] = { Var81 };
 		iVar0++;
 	}
-	Var5.f_1 = -1;
-	Var5.f_2 = -1;
-	Var5.f_9 = -1;
-	Var5.f_16 = -1;
-	Var5.f_19 = -1;
-	Var5.f_20 = -1;
+	Var132.f_1 = -1;
+	Var132.f_2 = -1;
+	Var132.f_9 = -1;
+	Var132.f_16 = -1;
+	Var132.f_19 = -1;
+	Var132.f_20 = -1;
 	iVar0 = 0;
 	while (iVar0 <= 15)
 	{
-		Global_2793044.f_462[iVar0 /*21*/] = { Var5 };
+		Global_2793044.f_462[iVar0 /*21*/] = { Var132 };
 		iVar0++;
 	}
 }
@@ -2922,7 +2922,7 @@ void func_37()//Position - 0x4376
 void func_38()//Position - 0x4484
 {
 	struct<1719> Var0;
-	var uVar1;
+	var uVar1719;
 	
 	Var0 = 39;
 	Var0.f_1.f_39 = -1;
@@ -3004,53 +3004,53 @@ void func_38()//Position - 0x4484
 	Var0.f_1.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_39 = -1;
 	Var0.f_1.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_44.f_40 = -1;
 	Global_2793044.f_2339 = { Var0 };
-	Global_2793044.f_4058 = uVar1;
+	Global_2793044.f_4058 = uVar1719;
 }
 
 void func_39()//Position - 0x46D5
 {
 	struct<12> Var0;
-	struct<61> Var1;
-	struct<3> Var2;
-	struct<358> Var3;
-	struct<9> Var4;
-	struct<19> Var5;
-	struct<19> Var6;
-	struct<2> Var7;
-	struct<51> Var8;
-	var uVar9;
-	struct<165> Var10;
-	struct<12> Var11;
+	struct<61> Var12;
+	struct<3> Var73;
+	struct<358> Var76;
+	struct<9> Var434;
+	struct<19> Var443;
+	struct<19> Var462;
+	struct<2> Var481;
+	struct<51> Var483;
+	var uVar534;
+	struct<165> Var535;
+	struct<12> Var700;
 	
 	Global_2793044.f_4564 = { Var0 };
-	Var1.f_19 = 32;
-	Global_2793044.f_1886 = { Var1 };
-	Global_2793044.f_1949 = { Var2 };
-	Var3 = 8;
-	Global_2793044.f_1953 = { Var3 };
-	Global_2793044.f_2311 = { Var4 };
-	Global_2793044.f_2320 = { Var5 };
-	Var6 = 1;
-	Var6.f_3 = 1;
-	Var6.f_6 = 1;
-	Var6.f_8 = 1;
-	Var6.f_10 = 1;
-	Var6.f_12 = 1;
-	Var6.f_14 = 1;
-	Var6.f_16 = 1;
-	Global_2793044.f_4576 = { Var6 };
-	Global_2793044.f_4595 = { Var7 };
-	Var8.f_2 = -1;
-	Var8.f_3 = -1;
-	Var8.f_4 = -1;
-	Var8.f_50 = -1;
-	Global_2793044.f_1679 = { Var8 };
-	Global_2793044.f_851 = uVar9;
-	Var10 = 16;
-	Global_2793044.f_1002 = { Var10 };
-	Var11 = 5;
-	Var11.f_6 = 5;
-	Global_2793044.f_1736 = { Var11 };
+	Var12.f_19 = 32;
+	Global_2793044.f_1886 = { Var12 };
+	Global_2793044.f_1949 = { Var73 };
+	Var76 = 8;
+	Global_2793044.f_1953 = { Var76 };
+	Global_2793044.f_2311 = { Var434 };
+	Global_2793044.f_2320 = { Var443 };
+	Var462 = 1;
+	Var462.f_3 = 1;
+	Var462.f_6 = 1;
+	Var462.f_8 = 1;
+	Var462.f_10 = 1;
+	Var462.f_12 = 1;
+	Var462.f_14 = 1;
+	Var462.f_16 = 1;
+	Global_2793044.f_4576 = { Var462 };
+	Global_2793044.f_4595 = { Var481 };
+	Var483.f_2 = -1;
+	Var483.f_3 = -1;
+	Var483.f_4 = -1;
+	Var483.f_50 = -1;
+	Global_2793044.f_1679 = { Var483 };
+	Global_2793044.f_851 = uVar534;
+	Var535 = 16;
+	Global_2793044.f_1002 = { Var535 };
+	Var700 = 5;
+	Var700.f_6 = 5;
+	Global_2793044.f_1736 = { Var700 };
 }
 
 void func_40(var uParam0)//Position - 0x4808
@@ -6254,7 +6254,7 @@ void func_68(int iParam0)//Position - 0x9651
 void func_69(int iParam0)//Position - 0x967C
 {
 	struct<862> Var0;
-	struct<16> Var1;
+	struct<16> Var862;
 	
 	Var0 = -1;
 	Var0.f_1 = -1;
@@ -6334,11 +6334,11 @@ void func_69(int iParam0)//Position - 0x967C
 	}
 	if (Global_2672504)
 	{
-		MISC::COPY_SCRIPT_STRUCT(&(Global_1881495[iParam0 /*16*/]), &Var1, 16);
+		MISC::COPY_SCRIPT_STRUCT(&(Global_1881495[iParam0 /*16*/]), &Var862, 16);
 	}
 	else
 	{
-		Global_1881495[iParam0 /*16*/] = { Var1 };
+		Global_1881495[iParam0 /*16*/] = { Var862 };
 	}
 }
 

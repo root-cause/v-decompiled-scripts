@@ -47,18 +47,13 @@
 	int iLocal_45 = 0;
 	int iLocal_46 = 0;
 	struct<3> Local_47 = { 0, 0, 0 } ;
-	struct<3> Local_48 = { 0, 0, 0 } ;
-	int iLocal_49 = 0;
-	int iLocal_50 = 0;
-	int iLocal_51 = 0;
-	int iLocal_52 = 0;
+	struct<3> Local_50 = { 0, 0, 0 } ;
 	int iLocal_53 = 0;
-	struct<2> Local_54 = { 0, 5 } ;
-	var uLocal_55 = 0;
-	var uLocal_56 = 0;
-	var uLocal_57 = 0;
-	var uScriptParam_0 = 0;
-	var uScriptParam_1 = 0;
+	int iLocal_54 = 0;
+	int iLocal_55 = 0;
+	int iLocal_56 = 0;
+	int iLocal_57 = 0;
+	struct<2> ScriptParam_0 = { 0, 5 } ;
 	var uScriptParam_2 = 0;
 	var uScriptParam_3 = 0;
 	var uScriptParam_4 = 0;
@@ -69,12 +64,17 @@
 	var uScriptParam_9 = 0;
 	var uScriptParam_10 = 0;
 	var uScriptParam_11 = 0;
-	var uScriptParam_12 = 5;
+	var uScriptParam_12 = 0;
 	var uScriptParam_13 = 0;
 	var uScriptParam_14 = 0;
 	var uScriptParam_15 = 0;
 	var uScriptParam_16 = 0;
-	var uScriptParam_17 = 0;
+	var uScriptParam_17 = 5;
+	var uScriptParam_18 = 0;
+	var uScriptParam_19 = 0;
+	var uScriptParam_20 = 0;
+	var uScriptParam_21 = 0;
+	var uScriptParam_22 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -103,7 +103,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_40 = 65;
 	iLocal_41 = 49;
 	iLocal_42 = 64;
-	Local_47 = { ScriptParam_54.f_1[0 /*3*/] };
+	Local_47 = { ScriptParam_0.f_1[0 /*3*/] };
 	iLocal_44 = MISC::GET_RANDOM_INT_IN_RANGE(0, 2);
 	func_28();
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(11))
@@ -131,17 +131,17 @@ void __EntryFunction__()//Position - 0x0
 						break;
 					
 					case 1:
-						if (!ENTITY::IS_ENTITY_DEAD(iLocal_50, false))
+						if (!ENTITY::IS_ENTITY_DEAD(iLocal_54, false))
 						{
 							if (iLocal_46 == 0)
 							{
-								if (func_2(iLocal_50, 0, 1056964608, 0, 0, 0))
+								if (func_2(iLocal_54, 0, 1056964608, 0, 0, 0))
 								{
 									iLocal_46 = 1;
 								}
 							}
 						}
-						if (iLocal_52 == 0)
+						if (iLocal_56 == 0)
 						{
 							func_1();
 						}
@@ -167,27 +167,27 @@ void func_1()//Position - 0x119
 		if (ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), Local_47, 10f, 10f, 10f, false, true, 0) && !PED::IS_PED_IN_ANY_VEHICLE(PLAYER::PLAYER_PED_ID(), false))
 		{
 			SYSTEM::SETTIMERB(0);
-			if (!ENTITY::IS_ENTITY_DEAD(iLocal_50, false))
+			if (!ENTITY::IS_ENTITY_DEAD(iLocal_54, false))
 			{
 				if (iLocal_44 == 0)
 				{
 					if (iLocal_46 == 0)
 					{
 					}
-					TASK::OPEN_SEQUENCE_TASK(&iLocal_53);
+					TASK::OPEN_SEQUENCE_TASK(&iLocal_57);
 					TASK::TASK_TURN_PED_TO_FACE_ENTITY(0, PLAYER::PLAYER_PED_ID(), 0);
 					TASK::TASK_PLAY_ANIM(0, "amb@drug_dealer", "beckon_03", 8f, -8f, -1, 0, 0f, false, false, false);
-					TASK::CLOSE_SEQUENCE_TASK(iLocal_53);
-					TASK::TASK_PERFORM_SEQUENCE(iLocal_50, iLocal_53);
-					TASK::CLEAR_SEQUENCE_TASK(&iLocal_53);
+					TASK::CLOSE_SEQUENCE_TASK(iLocal_57);
+					TASK::TASK_PERFORM_SEQUENCE(iLocal_54, iLocal_57);
+					TASK::CLEAR_SEQUENCE_TASK(&iLocal_57);
 				}
-				else if (!ENTITY::IS_ENTITY_DEAD(iLocal_51, false))
+				else if (!ENTITY::IS_ENTITY_DEAD(iLocal_55, false))
 				{
-					TASK::TASK_TURN_PED_TO_FACE_ENTITY(iLocal_50, iLocal_51, 0);
+					TASK::TASK_TURN_PED_TO_FACE_ENTITY(iLocal_54, iLocal_55, 0);
 					if (iLocal_46 == 0)
 					{
 					}
-					TASK::TASK_WANDER_STANDARD(iLocal_51, 40000f, 0);
+					TASK::TASK_WANDER_STANDARD(iLocal_55, 40000f, 0);
 					iLocal_44 = 0;
 				}
 			}
@@ -255,23 +255,23 @@ int func_2(int iParam0, int iParam1, float fParam2, int iParam3, int iParam4, bo
 	return 0;
 }
 
-int func_3(int iParam0, struct<3> Param1, float fParam2, float fParam3, bool bParam4)//Position - 0x314
+int func_3(int iParam0, struct<3> Param1, float fParam4, float fParam5, bool bParam6)//Position - 0x314
 {
 	float fVar0;
 	struct<3> Var1;
 	
-	if (fParam3 < 1f)
+	if (fParam5 < 1f)
 	{
 		fVar0 = (1f + 0.5f);
 	}
 	else
 	{
-		fVar0 = (fParam3 + 0.5f);
+		fVar0 = (fParam5 + 0.5f);
 	}
-	Var1 = { (fParam3 + 0.2f), (fParam3 + 0.2f), fVar0 };
+	Var1 = { (fParam5 + 0.2f), (fParam5 + 0.2f), fVar0 };
 	if (!PED::IS_PED_INJURED(iParam0))
 	{
-		if ((((ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iParam0, Param1), Var1, false, true, 0) && PED::IS_PED_HEADING_TOWARDS_POSITION(PLAYER::PLAYER_PED_ID(), ENTITY::GET_ENTITY_COORDS(iParam0, true), fParam2)) && func_5(bParam4)) && !PED::IS_PED_RAGDOLL(iParam0)) && !TASK::IS_PED_GETTING_UP(iParam0))
+		if ((((ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iParam0, Param1), Var1, false, true, 0) && PED::IS_PED_HEADING_TOWARDS_POSITION(PLAYER::PLAYER_PED_ID(), ENTITY::GET_ENTITY_COORDS(iParam0, true), fParam4)) && func_5(bParam6)) && !PED::IS_PED_RAGDOLL(iParam0)) && !TASK::IS_PED_GETTING_UP(iParam0))
 		{
 			func_4(iParam0, 1);
 			return 1;
@@ -489,33 +489,33 @@ void func_7()//Position - 0x6C5
 		{
 			SYSTEM::WAIT(0);
 		}
-		PED::ADD_RELATIONSHIP_GROUP("homeless", &iLocal_49);
-		Local_48.f_2 = (Local_47.f_2 - 1f);
-		iLocal_50 = PED::CREATE_PED(19, joaat("A_M_O_Tramp_01"), Local_47.f_0, Local_47.f_1, Local_48.f_2, 0f, true, true);
-		PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_50, iLocal_49);
+		PED::ADD_RELATIONSHIP_GROUP("homeless", &iLocal_53);
+		Local_50.f_2 = (Local_47.f_2 - 1f);
+		iLocal_54 = PED::CREATE_PED(19, joaat("A_M_O_Tramp_01"), Local_47.f_0, Local_47.f_1, Local_50.f_2, 0f, true, true);
+		PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_54, iLocal_53);
 		if (iLocal_44 == 1)
 		{
-			Local_48 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iLocal_50, 0.8f, 0.8f, -1f) };
-			iLocal_51 = PED::CREATE_PED(5, joaat("G_M_Y_StrPunk_01"), Local_48, 0f, true, true);
-			PED::ADD_RELATIONSHIP_GROUP("homeless", &iLocal_49);
-			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_51, iLocal_49);
-			if (!ENTITY::IS_ENTITY_DEAD(iLocal_50, false))
+			Local_50 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iLocal_54, 0.8f, 0.8f, -1f) };
+			iLocal_55 = PED::CREATE_PED(5, joaat("G_M_Y_StrPunk_01"), Local_50, 0f, true, true);
+			PED::ADD_RELATIONSHIP_GROUP("homeless", &iLocal_53);
+			PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_55, iLocal_53);
+			if (!ENTITY::IS_ENTITY_DEAD(iLocal_54, false))
 			{
-				TASK::OPEN_SEQUENCE_TASK(&iLocal_53);
-				TASK::TASK_TURN_PED_TO_FACE_COORD(0, Local_48, 0);
+				TASK::OPEN_SEQUENCE_TASK(&iLocal_57);
+				TASK::TASK_TURN_PED_TO_FACE_COORD(0, Local_50, 0);
 				TASK::TASK_PLAY_ANIM(0, "amb@drug_dealer", "beckon_01", 8f, -8f, -1, 0, 0f, false, false, false);
-				TASK::CLOSE_SEQUENCE_TASK(iLocal_53);
-				TASK::TASK_PERFORM_SEQUENCE(iLocal_50, iLocal_53);
-				TASK::CLEAR_SEQUENCE_TASK(&iLocal_53);
+				TASK::CLOSE_SEQUENCE_TASK(iLocal_57);
+				TASK::TASK_PERFORM_SEQUENCE(iLocal_54, iLocal_57);
+				TASK::CLEAR_SEQUENCE_TASK(&iLocal_57);
 			}
-			if (!ENTITY::IS_ENTITY_DEAD(iLocal_51, false))
+			if (!ENTITY::IS_ENTITY_DEAD(iLocal_55, false))
 			{
-				TASK::OPEN_SEQUENCE_TASK(&iLocal_53);
+				TASK::OPEN_SEQUENCE_TASK(&iLocal_57);
 				TASK::TASK_TURN_PED_TO_FACE_COORD(0, Local_47, 0);
 				TASK::TASK_PLAY_ANIM(0, "amb@drug_dealer", "beckon_02", 8f, -8f, -1, 0, 0f, false, false, false);
-				TASK::CLOSE_SEQUENCE_TASK(iLocal_53);
-				TASK::TASK_PERFORM_SEQUENCE(iLocal_51, iLocal_53);
-				TASK::CLEAR_SEQUENCE_TASK(&iLocal_53);
+				TASK::CLOSE_SEQUENCE_TASK(iLocal_57);
+				TASK::TASK_PERFORM_SEQUENCE(iLocal_55, iLocal_57);
+				TASK::CLEAR_SEQUENCE_TASK(&iLocal_57);
 			}
 		}
 		iLocal_45 = 1;

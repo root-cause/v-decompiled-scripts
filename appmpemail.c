@@ -19,32 +19,32 @@
 	int iLocal_17 = 0;
 	int iLocal_18 = 0;
 	int iLocal_19[12] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	int iLocal_20 = 0;
-	int iLocal_21 = 0;
-	int iLocal_22 = 0;
-	int iLocal_23 = 0;
-	int iLocal_24 = 0;
-	int iLocal_25 = 0;
-	int iLocal_26 = 0;
-	int iLocal_27 = 0;
-	int iLocal_28 = 0;
-	int iLocal_29 = 0;
-	int iLocal_30 = 0;
-	int iLocal_31 = 0;
 	int iLocal_32 = 0;
 	int iLocal_33 = 0;
-	struct<16> Local_34 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ;
-	struct<6> Local_35[59];
-	struct<16> Local_36[59];
+	int iLocal_34 = 0;
+	int iLocal_35 = 0;
+	int iLocal_36 = 0;
 	int iLocal_37 = 0;
-	struct<3> Local_38 = { 0, 0, 0 } ;
-	struct<3> Local_39 = { 0, 0, 0 } ;
+	int iLocal_38 = 0;
+	int iLocal_39 = 0;
 	int iLocal_40 = 0;
 	int iLocal_41 = 0;
-	bool bLocal_42 = 0;
+	int iLocal_42 = 0;
 	int iLocal_43 = 0;
 	int iLocal_44 = 0;
-	struct<314> Local_45 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ;
+	int iLocal_45 = 0;
+	struct<16> Local_46 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ;
+	struct<6> Local_62[59];
+	struct<16> Local_417[59];
+	int iLocal_1362 = 0;
+	struct<3> Local_1363 = { 0, 0, 0 } ;
+	struct<3> Local_1366 = { 0, 0, 0 } ;
+	int iLocal_1369 = 0;
+	int iLocal_1370 = 0;
+	bool bLocal_1371 = 0;
+	int iLocal_1372 = 0;
+	int iLocal_1373 = 0;
+	struct<314> Local_1374 = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -78,12 +78,12 @@ void __EntryFunction__()//Position - 0x0
 	{
 		Global_20383.f_1 = 7;
 	}
-	iLocal_31 = MISC::GET_GAME_TIMER();
+	iLocal_43 = MISC::GET_GAME_TIMER();
 	Global_20387 = 0;
-	MOBILE::GET_MOBILE_PHONE_POSITION(&Local_39);
-	Local_38 = { Local_39 };
-	Local_38.f_0 = (Local_38.f_0 - 10f);
-	Local_38.f_1 = (Local_38.f_1 + 20f);
+	MOBILE::GET_MOBILE_PHONE_POSITION(&Local_1366);
+	Local_1363 = { Local_1366 };
+	Local_1363.f_0 = (Local_1363.f_0 - 10f);
+	Local_1363.f_1 = (Local_1363.f_1 + 20f);
 	Global_22758 = 0;
 	Global_22759 = 1;
 	while (true)
@@ -97,12 +97,12 @@ void __EntryFunction__()//Position - 0x0
 		{
 			func_45();
 		}
-		if (iLocal_30 == 0)
+		if (iLocal_42 == 0)
 		{
-			iLocal_32 = MISC::GET_GAME_TIMER();
-			if ((iLocal_32 - iLocal_31) > 500)
+			iLocal_44 = MISC::GET_GAME_TIMER();
+			if ((iLocal_44 - iLocal_43) > 500)
 			{
-				iLocal_30 = 1;
+				iLocal_42 = 1;
 			}
 		}
 		if ((Global_20383.f_1 != 9 && Global_22759 == 0) && Global_22758 == 0)
@@ -140,7 +140,7 @@ void __EntryFunction__()//Position - 0x0
 			}
 			else if (func_3(2, Global_20351, 0) || BitTest(Global_8254, 12))
 			{
-				if (MISC::ARE_STRINGS_EQUAL(&(Global_4541032[iLocal_24 /*104*/]), "CELL_FINV"))
+				if (MISC::ARE_STRINGS_EQUAL(&(Global_4541032[iLocal_36 /*104*/]), "CELL_FINV"))
 				{
 				}
 				else
@@ -161,16 +161,16 @@ void __EntryFunction__()//Position - 0x0
 					func_56(Global_20364, "SET_DATA_SLOT_EMPTY", 8f, -1082130432, -1082130432, -1082130432, -1082130432);
 					func_53();
 					func_51();
-					if (Global_4541032[iLocal_24 /*104*/].f_29 > 0)
+					if (Global_4541032[iLocal_36 /*104*/].f_29 > 0)
 					{
-						if (Global_4541032[iLocal_24 /*104*/].f_31 == 1)
+						if (Global_4541032[iLocal_36 /*104*/].f_31 == 1)
 						{
-							Global_4541032[iLocal_24 /*104*/].f_29 = 4;
-							Global_4541032[iLocal_24 /*104*/].f_24 = 1;
+							Global_4541032[iLocal_36 /*104*/].f_29 = 4;
+							Global_4541032[iLocal_36 /*104*/].f_24 = 1;
 						}
 						else
 						{
-							Global_4541032[iLocal_24 /*104*/].f_24 = 1;
+							Global_4541032[iLocal_36 /*104*/].f_24 = 1;
 						}
 					}
 				}
@@ -240,11 +240,11 @@ int func_4()//Position - 0x36F
 
 void func_5()//Position - 0x398
 {
-	if (iLocal_27)
+	if (iLocal_39)
 	{
 		if (SYSTEM::TIMERA() > 50)
 		{
-			iLocal_27 = 0;
+			iLocal_39 = 0;
 		}
 	}
 	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
@@ -258,18 +258,18 @@ void func_5()//Position - 0x398
 			func_6();
 		}
 	}
-	if (iLocal_27 == 0)
+	if (iLocal_39 == 0)
 	{
 		if (func_3(2, Global_20359, 0))
 		{
 			func_9();
-			iLocal_27 = 1;
+			iLocal_39 = 1;
 			SYSTEM::SETTIMERA(0);
 		}
 		if (func_3(2, Global_20360, 0))
 		{
 			func_6();
-			iLocal_27 = 1;
+			iLocal_39 = 1;
 			SYSTEM::SETTIMERA(0);
 		}
 	}
@@ -350,7 +350,7 @@ void func_11()//Position - 0x510
 
 void func_12()//Position - 0x51C
 {
-	if (Global_4541032[iLocal_24 /*104*/].f_24 == 1)
+	if (Global_4541032[iLocal_36 /*104*/].f_24 == 1)
 	{
 		if (Global_20361 == 0)
 		{
@@ -359,30 +359,30 @@ void func_12()//Position - 0x51C
 				func_2();
 				Global_20361 = 1;
 				func_30();
-				if (Global_4541032[iLocal_24 /*104*/].f_27 == 1)
+				if (Global_4541032[iLocal_36 /*104*/].f_27 == 1)
 				{
-					Global_4541032[iLocal_24 /*104*/].f_99[0] = 0;
-					Global_4541032[iLocal_24 /*104*/].f_99[1] = 0;
-					Global_4541032[iLocal_24 /*104*/].f_99[2] = 0;
+					Global_4541032[iLocal_36 /*104*/].f_99[0] = 0;
+					Global_4541032[iLocal_36 /*104*/].f_99[1] = 0;
+					Global_4541032[iLocal_36 /*104*/].f_99[2] = 0;
 				}
 				else
 				{
-					Global_4541032[iLocal_24 /*104*/].f_99[Global_20383] = 0;
+					Global_4541032[iLocal_36 /*104*/].f_99[Global_20383] = 0;
 				}
-				if (func_29(iLocal_24))
+				if (func_29(iLocal_36))
 				{
 				}
 				else
 				{
-					Global_4541032[iLocal_24 /*104*/].f_24 = 0;
-					Global_4541032[iLocal_24 /*104*/].f_28 = 0;
+					Global_4541032[iLocal_36 /*104*/].f_24 = 0;
+					Global_4541032[iLocal_36 /*104*/].f_28 = 0;
 				}
-				HUD::THEFEED_REMOVE_ITEM(Global_4541032[iLocal_24 /*104*/].f_16);
+				HUD::THEFEED_REMOVE_ITEM(Global_4541032[iLocal_36 /*104*/].f_16);
 				func_56(Global_20364, "SET_DATA_SLOT_EMPTY", 8f, -1082130432, -1082130432, -1082130432, -1082130432);
 				func_53();
-				if (iLocal_22 > 0)
+				if (iLocal_34 > 0)
 				{
-					iLocal_22 = (iLocal_22 - 1);
+					iLocal_34 = (iLocal_34 - 1);
 				}
 				func_51();
 				if (Global_20383.f_1 > 3)
@@ -397,7 +397,7 @@ void func_12()//Position - 0x51C
 	{
 		if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, Global_20355))
 		{
-			if (iLocal_26 == 1)
+			if (iLocal_38 == 1)
 			{
 				if (Global_20383.f_1 > 3)
 				{
@@ -418,7 +418,7 @@ void func_12()//Position - 0x51C
 			}
 		}
 	}
-	if (Global_4541032[iLocal_24 /*104*/].f_31 == 1)
+	if (Global_4541032[iLocal_36 /*104*/].f_31 == 1)
 	{
 		if (Global_20361 == 0)
 		{
@@ -426,9 +426,9 @@ void func_12()//Position - 0x51C
 			{
 				func_27();
 				Global_20361 = 1;
-				Global_4541032[iLocal_24 /*104*/].f_29 = 2;
-				Global_4541032[iLocal_24 /*104*/].f_24 = 1;
-				Global_4541032[iLocal_24 /*104*/].f_31 = 0;
+				Global_4541032[iLocal_36 /*104*/].f_29 = 2;
+				Global_4541032[iLocal_36 /*104*/].f_24 = 1;
+				Global_4541032[iLocal_36 /*104*/].f_31 = 0;
 				MISC::CLEAR_BIT(&Global_8253, 17);
 				Global_22791 = 0;
 				if (Global_20383.f_1 > 3)
@@ -441,16 +441,16 @@ void func_12()//Position - 0x51C
 			}
 		}
 	}
-	if (Global_20361 == 0 && iLocal_30 == 1)
+	if (Global_20361 == 0 && iLocal_42 == 1)
 	{
 		if (func_3(2, Global_20352, 0))
 		{
 			Global_20361 = 1;
-			if (Global_4541032[iLocal_24 /*104*/].f_29 > 0)
+			if (Global_4541032[iLocal_36 /*104*/].f_29 > 0)
 			{
 				func_27();
-				Global_4541032[iLocal_24 /*104*/].f_29 = 3;
-				Global_4541032[iLocal_24 /*104*/].f_24 = 1;
+				Global_4541032[iLocal_36 /*104*/].f_29 = 3;
+				Global_4541032[iLocal_36 /*104*/].f_24 = 1;
 				Global_22791 = 0;
 				if (Global_20383.f_1 > 3)
 				{
@@ -460,7 +460,7 @@ void func_12()//Position - 0x51C
 				func_53();
 				func_51();
 			}
-			else if (Global_4541032[iLocal_24 /*104*/].f_30 == 1)
+			else if (Global_4541032[iLocal_36 /*104*/].f_30 == 1)
 			{
 				func_27();
 				Global_7568 = 144;
@@ -472,7 +472,7 @@ void func_12()//Position - 0x51C
 				func_24("appContacts");
 				Global_20381 = SYSTEM::START_NEW_SCRIPT("appContacts", 4000);
 				SCRIPT::SET_SCRIPT_AS_NO_LONGER_NEEDED("appContacts");
-				Global_7568 = Global_4541032[iLocal_24 /*104*/].f_17;
+				Global_7568 = Global_4541032[iLocal_36 /*104*/].f_17;
 				if (func_23(Global_7568, Global_20383) == 0)
 				{
 					func_22(Global_20364, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(4), SYSTEM::TO_FLOAT(0), SYSTEM::TO_FLOAT(3), -1f, -1f, &(Global_117[Global_7568 /*10*/].f_4), "CELL_300" /* GXT: CHAR_DEFAULT */, "CELL_211" /* GXT: DIALING... */, "CELL_195" /* GXT: Unknown */, 0);
@@ -1468,29 +1468,29 @@ void func_37()//Position - 0x1D3E
 				func_27();
 			}
 			Global_20361 = 1;
-			iLocal_30 = 0;
+			iLocal_42 = 0;
 			func_22(Global_20364, "SET_SOFT_KEYS", 1f, 0f, 11f, -1f, -1f, 0, 0, 0, 0, 0);
 			MISC::CLEAR_BIT(&Global_8253, 17);
-			iLocal_24 = iLocal_19[iLocal_22];
-			if (iLocal_22 == iLocal_21 || iLocal_22 > iLocal_21)
+			iLocal_36 = iLocal_19[iLocal_34];
+			if (iLocal_34 == iLocal_33 || iLocal_34 > iLocal_33)
 			{
 				if (Global_20383.f_1 > 3)
 				{
 					Global_20383.f_1 = 8;
 					Global_22791 = 1;
-					iLocal_23 = iLocal_22;
-					SOCIALCLUB::SC_EMAIL_GET_EMAIL_AT_INDEX(iLocal_19[iLocal_22], &Local_45);
+					iLocal_35 = iLocal_34;
+					SOCIALCLUB::SC_EMAIL_GET_EMAIL_AT_INDEX(iLocal_19[iLocal_34], &Local_1374);
 				}
 				SYSTEM::SETTIMERB(0);
-				iLocal_28 = 0;
+				iLocal_40 = 0;
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20364, "GET_CURRENT_SELECTION");
-				iLocal_33 = GRAPHICS::END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE();
-				while (!GRAPHICS::IS_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_READY(iLocal_33) && iLocal_28 == 0)
+				iLocal_45 = GRAPHICS::END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE();
+				while (!GRAPHICS::IS_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_READY(iLocal_45) && iLocal_40 == 0)
 				{
 					SYSTEM::WAIT(0);
 					if (SYSTEM::TIMERB() > 2000)
 					{
-						iLocal_28 = 1;
+						iLocal_40 = 1;
 					}
 				}
 				func_42();
@@ -1502,24 +1502,24 @@ void func_37()//Position - 0x1D3E
 				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(PLAYER::GET_PLAYER_NAME(PLAYER::PLAYER_ID()));
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_FROM_FIELD" /* GXT: From: ~a~ */);
-				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_45.f_2));
+				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_1374.f_2));
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_EMAIL_BCON" /* GXT: ~a~~a~~a~~a~~a~~a~~a~~a~~a~~a~ */);
-				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_45.f_56[0 /*16*/]));
-				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_45.f_56[1 /*16*/]));
-				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_45.f_56[2 /*16*/]));
-				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_45.f_56[3 /*16*/]));
-				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_45.f_56[4 /*16*/]));
-				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_45.f_56[5 /*16*/]));
-				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_45.f_56[6 /*16*/]));
-				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_45.f_56[7 /*16*/]));
-				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_45.f_56[8 /*16*/]));
-				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_45.f_56[9 /*16*/]));
+				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_1374.f_56[0 /*16*/]));
+				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_1374.f_56[1 /*16*/]));
+				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_1374.f_56[2 /*16*/]));
+				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_1374.f_56[3 /*16*/]));
+				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_1374.f_56[4 /*16*/]));
+				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_1374.f_56[5 /*16*/]));
+				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_1374.f_56[6 /*16*/]));
+				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_1374.f_56[7 /*16*/]));
+				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_1374.f_56[8 /*16*/]));
+				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_1374.f_56[9 /*16*/]));
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_2000" /* GXT: ~a~ */);
-				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_45.f_2));
+				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_1374.f_2));
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
-				switch (Local_45.f_313)
+				switch (Local_1374.f_313)
 				{
 					case 0:
 						break;
@@ -1595,7 +1595,7 @@ void func_37()//Position - 0x1D3E
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				func_22(Global_20364, "SET_SOFT_KEYS", 2f, 0f, 1f, -1f, -1f, 0, 0, 0, 0, 0);
 				func_56(Global_20364, "DISPLAY_VIEW", 9f, -1082130432, -1082130432, -1082130432, -1082130432);
-				if (iLocal_22 == iLocal_21)
+				if (iLocal_34 == iLocal_33)
 				{
 					if (BitTest(Global_4542297, 25))
 					{
@@ -1603,7 +1603,7 @@ void func_37()//Position - 0x1D3E
 					}
 					if (Global_4541031 > 0)
 					{
-						func_39(12388, iLocal_40, -1, 1, 0);
+						func_39(12388, iLocal_1369, -1, 1, 0);
 						if (Global_4541031 > 0)
 						{
 							Global_4541031 = 0;
@@ -1612,7 +1612,7 @@ void func_37()//Position - 0x1D3E
 				}
 				return;
 			}
-			if (Global_4541032[iLocal_24 /*104*/].f_24 != 0)
+			if (Global_4541032[iLocal_36 /*104*/].f_24 != 0)
 			{
 				if (Global_20383.f_1 > 3)
 				{
@@ -1620,8 +1620,8 @@ void func_37()//Position - 0x1D3E
 				}
 				if (Global_4542282 == 1 || Global_22785 == 1)
 				{
-					iLocal_24 = iLocal_19[0];
-					iLocal_23 = 0;
+					iLocal_36 = iLocal_19[0];
+					iLocal_35 = 0;
 					if (Global_4542282 == 1)
 					{
 					}
@@ -1630,41 +1630,41 @@ void func_37()//Position - 0x1D3E
 				else
 				{
 					SYSTEM::SETTIMERB(0);
-					iLocal_28 = 0;
+					iLocal_40 = 0;
 					GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20364, "GET_CURRENT_SELECTION");
-					iLocal_33 = GRAPHICS::END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE();
-					while (!GRAPHICS::IS_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_READY(iLocal_33) && iLocal_28 == 0)
+					iLocal_45 = GRAPHICS::END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE();
+					while (!GRAPHICS::IS_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_READY(iLocal_45) && iLocal_40 == 0)
 					{
 						SYSTEM::WAIT(0);
 						if (SYSTEM::TIMERB() > 2000)
 						{
-							iLocal_28 = 1;
+							iLocal_40 = 1;
 						}
 					}
-					if (iLocal_28 == 1)
+					if (iLocal_40 == 1)
 					{
-						iLocal_29 = 0;
+						iLocal_41 = 0;
 					}
 					else
 					{
-						iLocal_29 = GRAPHICS::GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT(iLocal_33);
+						iLocal_41 = GRAPHICS::GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT(iLocal_45);
 					}
-					if (iLocal_29 < 0)
+					if (iLocal_41 < 0)
 					{
-						iLocal_29 = 0;
+						iLocal_41 = 0;
 					}
-					iLocal_24 = iLocal_19[iLocal_22];
-					iLocal_23 = iLocal_22;
+					iLocal_36 = iLocal_19[iLocal_34];
+					iLocal_35 = iLocal_34;
 				}
-				Global_4541032[iLocal_24 /*104*/].f_28 = 1;
-				iLocal_26 = 0;
+				Global_4541032[iLocal_36 /*104*/].f_28 = 1;
+				iLocal_38 = 0;
 				StringCopy(&Global_22766, "NO_HYPERLINK", 64);
-				Var0 = { Global_4541032[iLocal_24 /*104*/] };
+				Var0 = { Global_4541032[iLocal_36 /*104*/] };
 				StringConCat(&Var0, "_LINK", 64);
 				if (HUD::DOES_TEXT_LABEL_EXIST(&Var0))
 				{
 					Global_22766 = { Var0 };
-					iLocal_26 = 1;
+					iLocal_38 = 1;
 					if (Global_20371)
 					{
 						func_22(Global_20364, "SET_SOFT_KEYS", 1f, 1f, 16f, -1f, -1f, "CELL_267" /* GXT: LINK */, 0, 0, 0, 0);
@@ -1674,12 +1674,12 @@ void func_37()//Position - 0x1D3E
 						func_22(Global_20364, "SET_SOFT_KEYS", 1f, 1f, 16f, -1f, -1f, 0, 0, 0, 0, 0);
 					}
 					MISC::SET_BIT(&Global_8253, 17);
-					Global_4541032[iLocal_24 /*104*/].f_26 = 1;
-					Global_4541032[iLocal_24 /*104*/].f_24 = 2;
+					Global_4541032[iLocal_36 /*104*/].f_26 = 1;
+					Global_4541032[iLocal_36 /*104*/].f_24 = 2;
 				}
-				if (Global_4541032[iLocal_24 /*104*/].f_26 == 0)
+				if (Global_4541032[iLocal_36 /*104*/].f_26 == 0)
 				{
-					Global_4541032[iLocal_24 /*104*/].f_24 = 1;
+					Global_4541032[iLocal_36 /*104*/].f_24 = 1;
 				}
 				func_42();
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20364, "SET_DATA_SLOT");
@@ -1689,162 +1689,162 @@ void func_37()//Position - 0x1D3E
 				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_TO_FIELD" /* GXT: To: ~a~ */);
 				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(PLAYER::GET_PLAYER_NAME(PLAYER::PLAYER_ID()));
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
-				if (Global_4541032[iLocal_24 /*104*/].f_17 == 145)
+				if (Global_4541032[iLocal_36 /*104*/].f_17 == 145)
 				{
 					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_FROM_FIELD" /* GXT: From: ~a~ */);
-					HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_4541032[iLocal_24 /*104*/].f_50));
+					HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_4541032[iLocal_36 /*104*/].f_50));
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				}
 				else
 				{
 					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_FROM_FIELD" /* GXT: From: ~a~ */);
-					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_2028[Global_4541032[iLocal_24 /*104*/].f_17 /*29*/].f_3));
+					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_2028[Global_4541032[iLocal_36 /*104*/].f_17 /*29*/].f_3));
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				}
-				switch (Global_4541032[iLocal_24 /*104*/].f_32)
+				switch (Global_4541032[iLocal_36 /*104*/].f_32)
 				{
 					case 0:
-						func_16(&(Global_4541032[iLocal_24 /*104*/]));
+						func_16(&(Global_4541032[iLocal_36 /*104*/]));
 						break;
 					
 					case 1:
-						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(&(Global_4541032[iLocal_24 /*104*/]));
-						HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_4541032[iLocal_24 /*104*/].f_33));
-						if (Global_4541032[iLocal_24 /*104*/].f_66 == 1 && !MISC::ARE_STRINGS_EQUAL(&(Global_4541032[iLocal_24 /*104*/].f_67), "NULL"))
+						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(&(Global_4541032[iLocal_36 /*104*/]));
+						HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_4541032[iLocal_36 /*104*/].f_33));
+						if (Global_4541032[iLocal_36 /*104*/].f_66 == 1 && !MISC::ARE_STRINGS_EQUAL(&(Global_4541032[iLocal_36 /*104*/].f_67), "NULL"))
 						{
-							HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_4541032[iLocal_24 /*104*/].f_67));
+							HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_4541032[iLocal_36 /*104*/].f_67));
 						}
-						if ((Global_4541032[iLocal_24 /*104*/].f_66 == 2 && !MISC::ARE_STRINGS_EQUAL(&(Global_4541032[iLocal_24 /*104*/].f_67), "NULL")) && !MISC::ARE_STRINGS_EQUAL(&(Global_4541032[iLocal_24 /*104*/].f_83), "NULL"))
+						if ((Global_4541032[iLocal_36 /*104*/].f_66 == 2 && !MISC::ARE_STRINGS_EQUAL(&(Global_4541032[iLocal_36 /*104*/].f_67), "NULL")) && !MISC::ARE_STRINGS_EQUAL(&(Global_4541032[iLocal_36 /*104*/].f_83), "NULL"))
 						{
-							if (HUD::DOES_TEXT_LABEL_EXIST(&(Global_4541032[iLocal_24 /*104*/].f_67)))
+							if (HUD::DOES_TEXT_LABEL_EXIST(&(Global_4541032[iLocal_36 /*104*/].f_67)))
 							{
-								HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_4541032[iLocal_24 /*104*/].f_67));
+								HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_4541032[iLocal_36 /*104*/].f_67));
 							}
 							else
 							{
-								HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_4541032[iLocal_24 /*104*/].f_67));
+								HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_4541032[iLocal_36 /*104*/].f_67));
 							}
-							if (HUD::DOES_TEXT_LABEL_EXIST(&(Global_4541032[iLocal_24 /*104*/].f_83)))
+							if (HUD::DOES_TEXT_LABEL_EXIST(&(Global_4541032[iLocal_36 /*104*/].f_83)))
 							{
-								HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_4541032[iLocal_24 /*104*/].f_83));
+								HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_4541032[iLocal_36 /*104*/].f_83));
 							}
 							else
 							{
-								HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_4541032[iLocal_24 /*104*/].f_83));
+								HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_4541032[iLocal_36 /*104*/].f_83));
 							}
 						}
 						GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 						break;
 					
 					case 2:
-						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(&(Global_4541032[iLocal_24 /*104*/]));
-						HUD::ADD_TEXT_COMPONENT_INTEGER(Global_4541032[iLocal_24 /*104*/].f_49);
+						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(&(Global_4541032[iLocal_36 /*104*/]));
+						HUD::ADD_TEXT_COMPONENT_INTEGER(Global_4541032[iLocal_36 /*104*/].f_49);
 						GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 						break;
 					
 					case 3:
-						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(&(Global_4541032[iLocal_24 /*104*/]));
-						HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_4541032[iLocal_24 /*104*/].f_33));
-						HUD::ADD_TEXT_COMPONENT_INTEGER(Global_4541032[iLocal_24 /*104*/].f_49);
-						if (Global_4541032[iLocal_24 /*104*/].f_66 == 1 && !MISC::ARE_STRINGS_EQUAL(&(Global_4541032[iLocal_24 /*104*/].f_67), "NULL"))
+						GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(&(Global_4541032[iLocal_36 /*104*/]));
+						HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_4541032[iLocal_36 /*104*/].f_33));
+						HUD::ADD_TEXT_COMPONENT_INTEGER(Global_4541032[iLocal_36 /*104*/].f_49);
+						if (Global_4541032[iLocal_36 /*104*/].f_66 == 1 && !MISC::ARE_STRINGS_EQUAL(&(Global_4541032[iLocal_36 /*104*/].f_67), "NULL"))
 						{
-							HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_4541032[iLocal_24 /*104*/].f_67));
+							HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_4541032[iLocal_36 /*104*/].f_67));
 						}
-						if ((Global_4541032[iLocal_24 /*104*/].f_66 == 2 && !MISC::ARE_STRINGS_EQUAL(&(Global_4541032[iLocal_24 /*104*/].f_67), "NULL")) && !MISC::ARE_STRINGS_EQUAL(&(Global_4541032[iLocal_24 /*104*/].f_83), "NULL"))
+						if ((Global_4541032[iLocal_36 /*104*/].f_66 == 2 && !MISC::ARE_STRINGS_EQUAL(&(Global_4541032[iLocal_36 /*104*/].f_67), "NULL")) && !MISC::ARE_STRINGS_EQUAL(&(Global_4541032[iLocal_36 /*104*/].f_83), "NULL"))
 						{
-							if (HUD::DOES_TEXT_LABEL_EXIST(&(Global_4541032[iLocal_24 /*104*/].f_67)))
+							if (HUD::DOES_TEXT_LABEL_EXIST(&(Global_4541032[iLocal_36 /*104*/].f_67)))
 							{
-								HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_4541032[iLocal_24 /*104*/].f_67));
+								HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_4541032[iLocal_36 /*104*/].f_67));
 							}
 							else
 							{
-								HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_4541032[iLocal_24 /*104*/].f_67));
+								HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_4541032[iLocal_36 /*104*/].f_67));
 							}
-							if (HUD::DOES_TEXT_LABEL_EXIST(&(Global_4541032[iLocal_24 /*104*/].f_83)))
+							if (HUD::DOES_TEXT_LABEL_EXIST(&(Global_4541032[iLocal_36 /*104*/].f_83)))
 							{
-								HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_4541032[iLocal_24 /*104*/].f_83));
+								HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_4541032[iLocal_36 /*104*/].f_83));
 							}
 							else
 							{
-								HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_4541032[iLocal_24 /*104*/].f_83));
+								HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_4541032[iLocal_36 /*104*/].f_83));
 							}
 						}
 						GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 						break;
 					
 					case 4:
-						func_38(iLocal_24);
+						func_38(iLocal_36);
 						break;
 					
 					case 5:
-						func_38(iLocal_24);
+						func_38(iLocal_36);
 						break;
 					
 					case 6:
-						func_38(iLocal_24);
+						func_38(iLocal_36);
 						break;
 					
 					case 7:
-						func_38(iLocal_24);
+						func_38(iLocal_36);
 						break;
 					
 					case 8:
-						func_38(iLocal_24);
+						func_38(iLocal_36);
 						break;
 					
 					case 9:
-						func_38(iLocal_24);
+						func_38(iLocal_36);
 						break;
 					
 					case 10:
-						func_38(iLocal_24);
+						func_38(iLocal_36);
 						break;
 					
 					case 11:
-						func_38(iLocal_24);
+						func_38(iLocal_36);
 						break;
 				}
-				if (Global_4541032[iLocal_24 /*104*/].f_17 == 145)
+				if (Global_4541032[iLocal_36 /*104*/].f_17 == 145)
 				{
 					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_2000" /* GXT: ~a~ */);
-					HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_4541032[iLocal_24 /*104*/].f_50));
+					HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_4541032[iLocal_36 /*104*/].f_50));
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				}
 				else
 				{
-					func_16(&(Global_2028[Global_4541032[iLocal_24 /*104*/].f_17 /*29*/].f_3));
+					func_16(&(Global_2028[Global_4541032[iLocal_36 /*104*/].f_17 /*29*/].f_3));
 				}
-				if (Global_4541032[iLocal_24 /*104*/].f_17 == 149)
+				if (Global_4541032[iLocal_36 /*104*/].f_17 == 149)
 				{
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING("emailads_maze_bank");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
 				}
-				if (Global_4541032[iLocal_24 /*104*/].f_17 == 140)
+				if (Global_4541032[iLocal_36 /*104*/].f_17 == 140)
 				{
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING("EmailAds_Warstock");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
 				}
-				if (Global_4541032[iLocal_24 /*104*/].f_17 == 155)
+				if (Global_4541032[iLocal_36 /*104*/].f_17 == 155)
 				{
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING("emailads_arena");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
 				}
-				if (Global_4541032[iLocal_24 /*104*/].f_17 == 160)
+				if (Global_4541032[iLocal_36 /*104*/].f_17 == 160)
 				{
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING("emailads_diamond");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
 				}
-				if (Global_4541032[iLocal_24 /*104*/].f_17 == 174)
+				if (Global_4541032[iLocal_36 /*104*/].f_17 == 174)
 				{
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING("emailads_ls_car_meet");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
 				}
-				if (Global_4541032[iLocal_24 /*104*/].f_17 == 185)
+				if (Global_4541032[iLocal_36 /*104*/].f_17 == 185)
 				{
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING("SUM2_EMAIL_LUXURY_AUTOS");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
 				}
-				if (Global_4541032[iLocal_24 /*104*/].f_17 == 186)
+				if (Global_4541032[iLocal_36 /*104*/].f_17 == 186)
 				{
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_TEXTURE_NAME_STRING("SUM2_EMAIL_PREMIUM_DELUXE");
 					GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
@@ -1852,8 +1852,8 @@ void func_37()//Position - 0x1D3E
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 				Global_22791 = 1;
 				func_56(Global_20364, "DISPLAY_VIEW", 9f, -1082130432, -1082130432, -1082130432, -1082130432);
-				HUD::THEFEED_REMOVE_ITEM(Global_4541032[iLocal_24 /*104*/].f_16);
-				if (Global_4541032[iLocal_24 /*104*/].f_29 > 0)
+				HUD::THEFEED_REMOVE_ITEM(Global_4541032[iLocal_36 /*104*/].f_16);
+				if (Global_4541032[iLocal_36 /*104*/].f_29 > 0)
 				{
 					if (Global_20371)
 					{
@@ -1864,7 +1864,7 @@ void func_37()//Position - 0x1D3E
 						func_22(Global_20364, "SET_SOFT_KEYS", 2f, 1f, 13f, -1f, -1f, 0, 0, 0, 0, 0);
 					}
 				}
-				else if (Global_4541032[iLocal_24 /*104*/].f_30 == 1)
+				else if (Global_4541032[iLocal_36 /*104*/].f_30 == 1)
 				{
 					if (Global_20371)
 					{
@@ -1879,9 +1879,9 @@ void func_37()//Position - 0x1D3E
 				{
 					func_22(Global_20364, "SET_SOFT_KEYS", 2f, 0f, 1f, -1f, -1f, 0, 0, 0, 0, 0);
 				}
-				if (Global_4541032[iLocal_24 /*104*/].f_29 > 0)
+				if (Global_4541032[iLocal_36 /*104*/].f_29 > 0)
 				{
-					if (MISC::ARE_STRINGS_EQUAL(&(Global_4541032[iLocal_24 /*104*/]), "CELL_FINV"))
+					if (MISC::ARE_STRINGS_EQUAL(&(Global_4541032[iLocal_36 /*104*/]), "CELL_FINV"))
 					{
 						if (Global_20371)
 						{
@@ -1909,11 +1909,11 @@ void func_37()//Position - 0x1D3E
 				{
 					func_22(Global_20364, "SET_SOFT_KEYS", 3f, 1f, 4f, -1f, -1f, 0, 0, 0, 0, 0);
 				}
-				if (Global_4541032[iLocal_24 /*104*/].f_24 == 2)
+				if (Global_4541032[iLocal_36 /*104*/].f_24 == 2)
 				{
-					if (Global_4541032[iLocal_24 /*104*/].f_31 == 1)
+					if (Global_4541032[iLocal_36 /*104*/].f_31 == 1)
 					{
-						iLocal_26 = 0;
+						iLocal_38 = 0;
 						if (Global_20371)
 						{
 							func_22(Global_20364, "SET_SOFT_KEYS", 1f, 1f, 11f, -1f, -1f, "CELL_264" /* GXT: BARTER */, 0, 0, 0, 0);
@@ -1924,7 +1924,7 @@ void func_37()//Position - 0x1D3E
 						}
 						MISC::SET_BIT(&Global_8253, 17);
 					}
-					else if (iLocal_26 == 0)
+					else if (iLocal_38 == 0)
 					{
 						func_22(Global_20364, "SET_SOFT_KEYS", 1f, 0f, 1f, -1f, -1f, 0, 0, 0, 0, 0);
 						MISC::CLEAR_BIT(&Global_8253, 17);
@@ -2089,30 +2089,30 @@ void func_42()//Position - 0x2B62
 {
 	int iVar0;
 	
-	if (iLocal_37)
+	if (iLocal_1362)
 	{
-		GRAPHICS::SET_STREAMED_TEXTURE_DICT_AS_NO_LONGER_NEEDED(&Local_34);
+		GRAPHICS::SET_STREAMED_TEXTURE_DICT_AS_NO_LONGER_NEEDED(&Local_46);
 	}
-	iLocal_37 = 0;
-	if (Global_4541032[iLocal_24 /*104*/].f_24 != 0)
+	iLocal_1362 = 0;
+	if (Global_4541032[iLocal_36 /*104*/].f_24 != 0)
 	{
 		iVar0 = 0;
 		while (iVar0 < 59)
 		{
-			if (MISC::ARE_STRINGS_EQUAL(&(Global_4541032[iLocal_24 /*104*/]), &(Local_35[iVar0 /*6*/])))
+			if (MISC::ARE_STRINGS_EQUAL(&(Global_4541032[iLocal_36 /*104*/]), &(Local_62[iVar0 /*6*/])))
 			{
-				if (func_43(&(Local_35[iVar0 /*6*/])))
+				if (func_43(&(Local_62[iVar0 /*6*/])))
 				{
-					StringCopy(&Local_34, "BAT_CASE_", 64);
-					StringIntConCat(&Local_34, Global_1968330, 64);
+					StringCopy(&Local_46, "BAT_CASE_", 64);
+					StringIntConCat(&Local_46, Global_1968330, 64);
 				}
 				else
 				{
-					Local_34 = { Local_36[iVar0 /*16*/] };
+					Local_46 = { Local_417[iVar0 /*16*/] };
 				}
-				iLocal_37 = 1;
-				GRAPHICS::REQUEST_STREAMED_TEXTURE_DICT(&Local_34, false);
-				while (!GRAPHICS::HAS_STREAMED_TEXTURE_DICT_LOADED(&Local_34))
+				iLocal_1362 = 1;
+				GRAPHICS::REQUEST_STREAMED_TEXTURE_DICT(&Local_46, false);
+				while (!GRAPHICS::HAS_STREAMED_TEXTURE_DICT_LOADED(&Local_46))
 				{
 					SYSTEM::WAIT(100);
 				}
@@ -2155,54 +2155,54 @@ int func_43(char* sParam0)//Position - 0x2BFD
 
 void func_44()//Position - 0x2C8D
 {
-	if (iLocal_27)
+	if (iLocal_39)
 	{
 		if (SYSTEM::TIMERA() > 50)
 		{
-			iLocal_27 = 0;
+			iLocal_39 = 0;
 		}
 	}
 	if (PAD::IS_USING_KEYBOARD_AND_MOUSE(2 /*FRONTEND_CONTROL*/))
 	{
 		if (func_3(2, 181, 0))
 		{
-			if (iLocal_22 > 0)
+			if (iLocal_34 > 0)
 			{
-				iLocal_22 = (iLocal_22 - 1);
+				iLocal_34 = (iLocal_34 - 1);
 				func_9();
 			}
 		}
 		if (func_3(2, 180, 0))
 		{
-			iLocal_22++;
-			if (iLocal_22 == iLocal_20)
+			iLocal_34++;
+			if (iLocal_34 == iLocal_32)
 			{
-				iLocal_22 = 0;
+				iLocal_34 = 0;
 			}
 			func_6();
 		}
 	}
-	if (iLocal_27 == 0)
+	if (iLocal_39 == 0)
 	{
 		if (func_3(2, Global_20359, 0))
 		{
-			if (iLocal_22 > 0)
+			if (iLocal_34 > 0)
 			{
-				iLocal_22 = (iLocal_22 - 1);
+				iLocal_34 = (iLocal_34 - 1);
 				func_9();
 			}
-			iLocal_27 = 1;
+			iLocal_39 = 1;
 			SYSTEM::SETTIMERA(0);
 		}
 		if (func_3(2, Global_20360, 0))
 		{
-			iLocal_22++;
-			if (iLocal_22 == iLocal_20)
+			iLocal_34++;
+			if (iLocal_34 == iLocal_32)
 			{
-				iLocal_22 = 0;
+				iLocal_34 = 0;
 			}
 			func_6();
-			iLocal_27 = 1;
+			iLocal_39 = 1;
 			SYSTEM::SETTIMERA(0);
 		}
 	}
@@ -2212,7 +2212,7 @@ void func_45()//Position - 0x2D3A
 {
 	float fVar0;
 	
-	fVar0 = func_46(Local_39, Local_38, Global_20343, -90f, 0f, 90f, 350f, 0);
+	fVar0 = func_46(Local_1366, Local_1363, Global_20343, -90f, 0f, 90f, 350f, 0);
 	MOBILE::SET_MOBILE_PHONE_SCALE((500f + (75f * fVar0)));
 	if (fVar0 >= 1f)
 	{
@@ -2221,12 +2221,12 @@ void func_45()//Position - 0x2D3A
 	}
 }
 
-float func_46(struct<3> Param0, struct<3> Param1, struct<3> Param2, struct<3> Param3, float fParam4, bool bParam5)//Position - 0x2D88
+float func_46(struct<3> Param0, struct<3> Param3, struct<3> Param6, struct<3> Param9, float fParam12, bool bParam13)//Position - 0x2D88
 {
 	struct<2> Var0;
-	float fVar1;
-	float fVar2;
 	float fVar3;
+	float fVar4;
+	float fVar5;
 	
 	if (Global_4542576 == 0)
 	{
@@ -2247,36 +2247,36 @@ float func_46(struct<3> Param0, struct<3> Param1, struct<3> Param2, struct<3> Pa
 	{
 		iLocal_18 = MISC::GET_GAME_TIMER();
 	}
-	fVar1 = func_48((SYSTEM::TO_FLOAT((MISC::GET_GAME_TIMER() - iLocal_18)) / fParam4), 0f, 1f);
-	if (fVar1 < 1f)
+	fVar3 = func_48((SYSTEM::TO_FLOAT((MISC::GET_GAME_TIMER() - iLocal_18)) / fParam12), 0f, 1f);
+	if (fVar3 < 1f)
 	{
-		fVar2 = fVar1;
-		if (bParam5)
+		fVar4 = fVar3;
+		if (bParam13)
 		{
-			fVar2 = (fVar2 - 1f);
-			fVar3 = 0.670158f;
-			fVar2 = (((fVar2 * fVar2) * (((fVar3 + 1f) * fVar2) + fVar3)) + 1f);
+			fVar4 = (fVar4 - 1f);
+			fVar5 = 0.670158f;
+			fVar4 = (((fVar4 * fVar4) * (((fVar5 + 1f) * fVar4) + fVar5)) + 1f);
 		}
 		else
 		{
-			fVar2 = SYSTEM::SIN((fVar1 * 90f));
+			fVar4 = SYSTEM::SIN((fVar3 * 90f));
 		}
-		Global_20311 = { func_47(Param0, Param1, fVar2) };
-		Global_20314 = { func_47(Param2, Param3, fVar2) };
+		Global_20311 = { func_47(Param0, Param3, fVar4) };
+		Global_20314 = { func_47(Param6, Param9, fVar4) };
 	}
 	else
 	{
-		Global_20311 = { Param1 };
-		Global_20314 = { Param3 };
+		Global_20311 = { Param3 };
+		Global_20314 = { Param9 };
 	}
 	MOBILE::SET_MOBILE_PHONE_POSITION(Global_20311);
 	MOBILE::SET_MOBILE_PHONE_ROTATION(Global_20314, 0);
-	return fVar1;
+	return fVar3;
 }
 
-Vector3 func_47(struct<3> Param0, struct<3> Param1, float fParam2)//Position - 0x2E97
+Vector3 func_47(struct<3> Param0, struct<3> Param3, float fParam6)//Position - 0x2E97
 {
-	return Param0 + Param1 - Param0 * Vector(fParam2, fParam2, fParam2);
+	return Param0 + Param3 - Param0 * Vector(fParam6, fParam6, fParam6);
 }
 
 float func_48(float fParam0, float fParam1, float fParam2)//Position - 0x2EB1
@@ -2390,7 +2390,7 @@ void func_50()//Position - 0x3121
 {
 	float fVar0;
 	
-	fVar0 = func_46(Local_38, Local_39, -90f, 0f, 90f, Global_20343, 350f, 0);
+	fVar0 = func_46(Local_1363, Local_1366, -90f, 0f, 90f, Global_20343, 350f, 0);
 	MOBILE::SET_MOBILE_PHONE_SCALE((500f + (75f * (1f - fVar0))));
 	if (fVar0 >= 1f)
 	{
@@ -2404,15 +2404,15 @@ void func_51()//Position - 0x3175
 {
 	if (Global_4542282 == 0)
 	{
-		if (iLocal_23 < 0)
+		if (iLocal_35 < 0)
 		{
-			iLocal_23 = 0;
+			iLocal_35 = 0;
 		}
 		func_52(Global_20364, "SET_HEADER", "CELL_INBOX" /* GXT: Inbox */, 0, 0, 0, 0);
-		func_56(Global_20364, "DISPLAY_VIEW", 8f, SYSTEM::TO_FLOAT(iLocal_23), -1082130432, -1082130432, -1082130432);
+		func_56(Global_20364, "DISPLAY_VIEW", 8f, SYSTEM::TO_FLOAT(iLocal_35), -1082130432, -1082130432, -1082130432);
 		if (Global_20371)
 		{
-			if (iLocal_20 > 0)
+			if (iLocal_32 > 0)
 			{
 				func_22(Global_20364, "SET_SOFT_KEYS", 2f, 1f, 2f, -1f, -1f, "CELL_214" /* GXT: OPTIONS */, 0, 0, 0, 0);
 			}
@@ -2424,7 +2424,7 @@ void func_51()//Position - 0x3175
 		}
 		else
 		{
-			if (iLocal_20 > 0)
+			if (iLocal_32 > 0)
 			{
 				func_22(Global_20364, "SET_SOFT_KEYS", 2f, 1f, 2f, -1f, -1f, 0, 0, 0, 0, 0);
 			}
@@ -2447,7 +2447,7 @@ void func_51()//Position - 0x3175
 	}
 	else
 	{
-		iLocal_23 = 0;
+		iLocal_35 = 0;
 	}
 }
 
@@ -2477,137 +2477,137 @@ void func_52(int iParam0, char* sParam1, char* sParam2, char* sParam3, char* sPa
 void func_53()//Position - 0x3302
 {
 	int iVar0[12];
-	int iVar1;
-	int iVar2;
-	int iVar3;
-	int iVar4;
-	struct<8> Var5;
-	int iVar6;
-	int iVar7[10];
-	int iVar8;
+	int iVar13;
+	int iVar14;
+	int iVar15;
+	int iVar16;
+	struct<8> Var17;
+	int iVar33;
+	int iVar34[10];
+	int iVar45;
 	
-	iLocal_20 = 0;
-	iLocal_21 = 0;
+	iLocal_32 = 0;
+	iLocal_33 = 0;
 	func_30();
-	iVar1 = 0;
-	iVar2 = 0;
-	while (iVar1 < 11)
+	iVar13 = 0;
+	iVar14 = 0;
+	while (iVar13 < 11)
 	{
 		if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) == 0)
 		{
 			func_59();
 		}
-		iVar3 = 0;
-		iVar4 = 11;
-		Global_4541032[iVar4 /*104*/].f_18 = -1;
-		Global_4541032[iVar4 /*104*/].f_18.f_1 = 0;
-		Global_4541032[iVar4 /*104*/].f_18.f_2 = 0;
-		Global_4541032[iVar4 /*104*/].f_18.f_3 = 0;
-		Global_4541032[iVar4 /*104*/].f_18.f_5 = 0;
-		while (iVar3 < 12)
+		iVar15 = 0;
+		iVar16 = 11;
+		Global_4541032[iVar16 /*104*/].f_18 = -1;
+		Global_4541032[iVar16 /*104*/].f_18.f_1 = 0;
+		Global_4541032[iVar16 /*104*/].f_18.f_2 = 0;
+		Global_4541032[iVar16 /*104*/].f_18.f_3 = 0;
+		Global_4541032[iVar16 /*104*/].f_18.f_5 = 0;
+		while (iVar15 < 12)
 		{
 			if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) == 0)
 			{
 				func_59();
 			}
-			if (iVar0[iVar3] == 0)
+			if (iVar0[iVar15] == 0)
 			{
-				if (Global_4541032[iVar3 /*104*/].f_24 != 0)
+				if (Global_4541032[iVar15 /*104*/].f_24 != 0)
 				{
-					if (Global_4541032[iVar3 /*104*/].f_99[Global_20383] == 1)
+					if (Global_4541032[iVar15 /*104*/].f_99[Global_20383] == 1)
 					{
-						if (func_55(Global_4541032[iVar3 /*104*/].f_18, Global_4541032[iVar4 /*104*/].f_18))
+						if (func_55(Global_4541032[iVar15 /*104*/].f_18, Global_4541032[iVar16 /*104*/].f_18))
 						{
-							iVar4 = iVar3;
-							if (Global_4541032[iVar4 /*104*/].f_28 == 0)
+							iVar16 = iVar15;
+							if (Global_4541032[iVar16 /*104*/].f_28 == 0)
 							{
-								iLocal_25 = 0;
+								iLocal_37 = 0;
 							}
 							else
 							{
-								iLocal_25 = 1;
+								iLocal_37 = 1;
 							}
 						}
 					}
 				}
 			}
-			iVar3++;
+			iVar15++;
 		}
-		iLocal_19[iVar1] = iVar4;
-		iVar0[iVar4] = 1;
-		if (Global_4541032[iVar4 /*104*/].f_24 != 0)
+		iLocal_19[iVar13] = iVar16;
+		iVar0[iVar16] = 1;
+		if (Global_4541032[iVar16 /*104*/].f_24 != 0)
 		{
-			if (Global_4541032[iVar4 /*104*/].f_99[Global_20383] == 1)
+			if (Global_4541032[iVar16 /*104*/].f_99[Global_20383] == 1)
 			{
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20364, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(8);
-				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar1);
-				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iLocal_25);
+				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar13);
+				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iLocal_37);
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(false);
-				if (Global_4541032[iVar4 /*104*/].f_17 == 145)
+				if (Global_4541032[iVar16 /*104*/].f_17 == 145)
 				{
 					GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_2000" /* GXT: ~a~ */);
-					HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_4541032[iVar4 /*104*/].f_50));
+					HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_4541032[iVar16 /*104*/].f_50));
 					GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				}
 				else
 				{
-					func_16(&(Global_2028[Global_4541032[iVar4 /*104*/].f_17 /*29*/].f_3));
+					func_16(&(Global_2028[Global_4541032[iVar16 /*104*/].f_17 /*29*/].f_3));
 				}
-				Var5 = { Global_4541032[iVar4 /*104*/] };
-				if (func_43(&(Global_4541032[iVar4 /*104*/])))
+				Var17 = { Global_4541032[iVar16 /*104*/] };
+				if (func_43(&(Global_4541032[iVar16 /*104*/])))
 				{
-					iVar6 = func_54(7315, -1);
-					switch (iVar6)
+					iVar33 = func_54(7315, -1);
+					switch (iVar33)
 					{
 						case 0:
-							StringCopy(&Var5, "BONEMAIL_TXT_SUB" /* GXT: First Bounty Target */, 64);
+							StringCopy(&Var17, "BONEMAIL_TXT_SUB" /* GXT: First Bounty Target */, 64);
 							break;
 						
 						case 1:
-							StringCopy(&Var5, "BONEMAIL2_TXT_SUB" /* GXT: Second Bounty Target */, 64);
+							StringCopy(&Var17, "BONEMAIL2_TXT_SUB" /* GXT: Second Bounty Target */, 64);
 							break;
 						
 						case 2:
-							StringCopy(&Var5, "BONEMAIL3_TXT_SUB" /* GXT: Third Bounty Target */, 64);
+							StringCopy(&Var17, "BONEMAIL3_TXT_SUB" /* GXT: Third Bounty Target */, 64);
 							break;
 						
 						case 3:
-							StringCopy(&Var5, "BONEMAIL4_TXT_SUB" /* GXT: Fourth Bounty Target */, 64);
+							StringCopy(&Var17, "BONEMAIL4_TXT_SUB" /* GXT: Fourth Bounty Target */, 64);
 							break;
 						
 						case 4:
-							StringCopy(&Var5, "BONEMAIL5_TXT_SUB" /* GXT: Final Bounty Target */, 64);
+							StringCopy(&Var17, "BONEMAIL5_TXT_SUB" /* GXT: Final Bounty Target */, 64);
 							break;
 					}
 				}
 				else
 				{
-					StringConCat(&Var5, "_SUB", 64);
+					StringConCat(&Var17, "_SUB", 64);
 				}
-				func_16(&Var5);
+				func_16(&Var17);
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
-				iLocal_20++;
-				iLocal_21++;
+				iLocal_32++;
+				iLocal_33++;
 			}
 		}
-		iVar1++;
+		iVar13++;
 	}
-	iVar1 = iLocal_20;
-	iVar8 = 0;
-	while (iVar1 < (iLocal_44 + iLocal_20))
+	iVar13 = iLocal_32;
+	iVar45 = 0;
+	while (iVar13 < (iLocal_1373 + iLocal_32))
 	{
-		iVar2 = 0;
-		iVar8 = 0;
-		while (iVar2 < iLocal_44 && iVar8 == 0)
+		iVar14 = 0;
+		iVar45 = 0;
+		while (iVar14 < iLocal_1373 && iVar45 == 0)
 		{
-			SOCIALCLUB::SC_EMAIL_GET_EMAIL_AT_INDEX(iVar2, &Local_45);
-			if (iVar7[iVar2] == 0)
+			SOCIALCLUB::SC_EMAIL_GET_EMAIL_AT_INDEX(iVar14, &Local_1374);
+			if (iVar34[iVar14] == 0)
 			{
 				GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20364, "SET_DATA_SLOT");
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(8);
-				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar1);
-				if (iVar1 == 0)
+				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar13);
+				if (iVar13 == 0)
 				{
 					if (Global_4541031 == 0)
 					{
@@ -2624,25 +2624,25 @@ void func_53()//Position - 0x3302
 				}
 				GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(false);
 				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_2000" /* GXT: ~a~ */);
-				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_45.f_2));
+				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_1374.f_2));
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("CELL_EMAIL_SUBJ" /* GXT: ~a~~a~ */);
-				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_45.f_23[0 /*16*/]));
-				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_45.f_23[1 /*16*/]));
+				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_1374.f_23[0 /*16*/]));
+				HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Local_1374.f_23[1 /*16*/]));
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 				GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
-				iVar7[iVar2] = 1;
-				iLocal_19[iVar1] = iVar2;
-				iVar8 = 1;
-				iLocal_20++;
-				if (iVar2 == 0)
+				iVar34[iVar14] = 1;
+				iLocal_19[iVar13] = iVar14;
+				iVar45 = 1;
+				iLocal_32++;
+				if (iVar14 == 0)
 				{
-					iLocal_40 = Local_45.f_1;
+					iLocal_1369 = Local_1374.f_1;
 				}
 			}
-			iVar2++;
+			iVar14++;
 		}
-		iVar1++;
+		iVar13++;
 	}
 }
 
@@ -2655,44 +2655,44 @@ int func_54(int iParam0, int iParam1)//Position - 0x363E
 	return STATS::GET_PACKED_STAT_INT_CODE(iParam0, iParam1);
 }
 
-int func_55(struct<6> Param0, struct<6> Param1)//Position - 0x365A
+int func_55(struct<6> Param0, struct<6> Param6)//Position - 0x365A
 {
 	struct<4> Var0;
-	struct<4> Var1;
-	int iVar2;
-	int iVar3;
+	struct<4> Var6;
+	int iVar12;
+	int iVar13;
 	
-	if (Param0.f_5 < Param1.f_5)
+	if (Param0.f_5 < Param6.f_5)
 	{
 		return 0;
 	}
-	if (Param0.f_5 > Param1.f_5)
+	if (Param0.f_5 > Param6.f_5)
 	{
 		return 1;
 	}
-	if (Param0.f_5 == Param1.f_5)
+	if (Param0.f_5 == Param6.f_5)
 	{
-		if (Param0.f_4 < Param1.f_4)
+		if (Param0.f_4 < Param6.f_4)
 		{
 			return 0;
 		}
-		if (Param0.f_4 > Param1.f_4)
+		if (Param0.f_4 > Param6.f_4)
 		{
 			return 1;
 		}
-		if (Param0.f_4 == Param1.f_4)
+		if (Param0.f_4 == Param6.f_4)
 		{
 			Var0.f_0 = Param0.f_0;
 			Var0.f_1 = Param0.f_1 * 60;
 			Var0.f_2 = Param0.f_2 * 3600;
 			Var0.f_3 = (Param0.f_3 * 86400);
-			iVar2 = (((Var0.f_0 + Var0.f_1) + Var0.f_2) + Var0.f_3);
-			Var1.f_0 = Param1.f_0;
-			Var1.f_1 = Param1.f_1 * 60;
-			Var1.f_2 = Param1.f_2 * 3600;
-			Var1.f_3 = (Param1.f_3 * 86400);
-			iVar3 = (((Var1.f_0 + Var1.f_1) + Var1.f_2) + Var1.f_3);
-			if (iVar2 > iVar3 || iVar2 == iVar3)
+			iVar12 = (((Var0.f_0 + Var0.f_1) + Var0.f_2) + Var0.f_3);
+			Var6.f_0 = Param6.f_0;
+			Var6.f_1 = Param6.f_1 * 60;
+			Var6.f_2 = Param6.f_2 * 3600;
+			Var6.f_3 = (Param6.f_3 * 86400);
+			iVar13 = (((Var6.f_0 + Var6.f_1) + Var6.f_2) + Var6.f_3);
+			if (iVar12 > iVar13 || iVar12 == iVar13)
 			{
 				return 1;
 			}
@@ -2790,174 +2790,174 @@ void func_57()//Position - 0x37A8
 	}
 	SOCIALCLUB::SC_EMAIL_RETRIEVE_EMAILS(0, 6);
 	SYSTEM::WAIT(0);
-	iLocal_41 = 1;
-	bLocal_42 = false;
-	while (iLocal_41 && Global_20383.f_1 > 3)
+	iLocal_1370 = 1;
+	bLocal_1371 = false;
+	while (iLocal_1370 && Global_20383.f_1 > 3)
 	{
 		SYSTEM::WAIT(0);
-		iLocal_43 = SOCIALCLUB::SC_EMAIL_GET_RETRIEVAL_STATUS();
+		iLocal_1372 = SOCIALCLUB::SC_EMAIL_GET_RETRIEVAL_STATUS();
 		if (func_4())
 		{
 			Global_20383.f_1 = 3;
-			iLocal_41 = 0;
-			bLocal_42 = false;
+			iLocal_1370 = 0;
+			bLocal_1371 = false;
 		}
-		switch (iLocal_43)
+		switch (iLocal_1372)
 		{
 			case 3:
-				iLocal_41 = 0;
-				bLocal_42 = true;
+				iLocal_1370 = 0;
+				bLocal_1371 = true;
 				break;
 			
 			case 0:
-				iLocal_41 = 0;
-				bLocal_42 = true;
+				iLocal_1370 = 0;
+				bLocal_1371 = true;
 				break;
 			
 			case 1:
 				break;
 			
 			case 4:
-				iLocal_41 = 0;
-				bLocal_42 = false;
+				iLocal_1370 = 0;
+				bLocal_1371 = false;
 				break;
 			
 			case 2:
-				iLocal_41 = 0;
-				bLocal_42 = false;
+				iLocal_1370 = 0;
+				bLocal_1371 = false;
 				break;
 		}
 	}
-	if (bLocal_42)
+	if (bLocal_1371)
 	{
-		iLocal_44 = SOCIALCLUB::SC_EMAIL_GET_NUM_RETRIEVED_EMAILS();
+		iLocal_1373 = SOCIALCLUB::SC_EMAIL_GET_NUM_RETRIEVED_EMAILS();
 	}
 	else
 	{
-		iLocal_44 = 0;
+		iLocal_1373 = 0;
 	}
 }
 
 void func_58()//Position - 0x3967
 {
-	StringCopy(&(Local_35[0 /*6*/]), "SXT_JUL_1ST" /* GXT: I can't wait until you cum again! ~nrt~ <img src='img://05_a_sext_stripperJuliet/05_a_sext_stripperJuliet' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[0 /*16*/]), "05_a_sext_stripperJuliet", 64);
-	StringCopy(&(Local_35[1 /*6*/]), "SXT_JUL_2ND" /* GXT: Just when I thought that it couldn't get any better! ~nrt~ <img src='img://05_b_sext_stripperJuliet/05_b_sext_stripperJuliet' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[1 /*16*/]), "05_b_sext_stripperJuliet", 64);
-	StringCopy(&(Local_35[2 /*6*/]), "SXT_JUL_NEED" /* GXT: Missing you badly! I want you inside me. ~nrt~ <img src='img://05_c_sext_stripperJuliet/05_c_sext_stripperJuliet' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[2 /*16*/]), "05_c_sext_stripperJuliet", 64);
-	StringCopy(&(Local_35[3 /*6*/]), "MAPEMAIL_TXT" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_19/NHP_PHOTO_19' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[3 /*16*/]), "NHP_PHOTO_19", 64);
-	StringCopy(&(Local_35[4 /*6*/]), "SXT_NIK_2ND" /* GXT: You're the man that I've been looking for my entire life! ~nrt~ <img src='img://06_b_sext_stripperNikki/06_b_sext_stripperNikki' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[4 /*16*/]), "06_b_sext_stripperNikki", 64);
-	StringCopy(&(Local_35[5 /*6*/]), "SXT_NIK_NEED" /* GXT: Maybe this will get your attention! ~nrt~ <img src='img://06_c_sext_stripperNikki/06_c_sext_stripperNikki' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[5 /*16*/]), "06_c_sext_stripperNikki", 64);
-	StringCopy(&(Local_35[6 /*6*/]), "SXT_SAP_1ST" /* GXT: That was deliciously yummy. Next time, I want to be on top. What do you think of this position? ~nrt~ <img src='img://08_a_sext_stripperSapphire/08_a_sext_stripperSapphire' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[6 /*16*/]), "08_a_sext_stripperSapphire", 64);
-	StringCopy(&(Local_35[7 /*6*/]), "SXT_SAP_2ND" /* GXT: Here don't show this to anyone else. ~nrt~ <img src='img://08_b_sext_stripperSapphire/08_b_sext_stripperSapphire' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[7 /*16*/]), "08_b_sext_stripperSapphire", 64);
-	StringCopy(&(Local_35[8 /*6*/]), "SXT_SAP_NEED" /* GXT: My body aches for you! ~nrt~ <img src='img://08_c_sext_stripperSapphire/08_c_sext_stripperSapphire' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[8 /*16*/]), "08_c_sext_stripperSapphire", 64);
-	StringCopy(&(Local_35[9 /*6*/]), "SXT_INF_1ST" /* GXT: This body is all yours and only yours baby! ~nrt~ <img src='img://04_a_sext_stripperInfernus/04_a_sext_stripperInfernus' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[9 /*16*/]), "04_a_sext_stripperInfernus", 64);
-	StringCopy(&(Local_35[10 /*6*/]), "SXT_INF_2ND" /* GXT: I can hardly walk, that was amazing! ~nrt~ <img src='img://04_b_sext_stripperInfernus/04_b_sext_stripperInfernus' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[10 /*16*/]), "04_b_sext_stripperInfernus", 64);
-	StringCopy(&(Local_35[11 /*6*/]), "SXT_INF_NEED" /* GXT: My loins quiver with the thought of you! ~nrt~ <img src='img://04_c_sext_stripperInfernus/04_c_sext_stripperInfernus' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[11 /*16*/]), "04_c_sext_stripperInfernus", 64);
-	StringCopy(&(Local_35[12 /*6*/]), "SXT_TXI_1ST" /* GXT: I can't stop thinking about the last time. ~nrt~ <img src='img://11_a_sext_taxiLiz/11_a_sext_taxiLiz' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[12 /*16*/]), "11_a_sext_taxiLiz", 64);
-	StringCopy(&(Local_35[13 /*6*/]), "SXT_TXI_2ND" /* GXT: You're so amazing! I've been missing out. ~nrt~ <img src='img://11_b_sext_taxiLiz/11_b_sext_taxiLiz' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[13 /*16*/]), "11_b_sext_taxiLiz", 64);
-	StringCopy(&(Local_35[14 /*6*/]), "SXT_TXI_NEED" /* GXT: Hey babe, I need a study break... ~nrt~ <img src='img://11_c_sext_taxiLiz/11_c_sext_taxiLiz' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[14 /*16*/]), "11_c_sext_taxiLiz", 64);
-	StringCopy(&(Local_35[15 /*6*/]), "SXT_HCH_1ST" /* GXT: You always know how to give a good ride ;) ~nrt~ <img src='img://10_a_sext_hitcherGirl/10_a_sext_hitcherGirl' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[15 /*16*/]), "10_a_sext_hitcherGirl", 64);
-	StringCopy(&(Local_35[16 /*6*/]), "SXT_HCH_2ND" /* GXT: Can't wait to meet again honey. ~nrt~ <img src='img://10_b_sext_hitcherGirl/10_b_sext_hitcherGirl' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[16 /*16*/]), "10_b_sext_hitcherGirl", 64);
-	StringCopy(&(Local_35[17 /*6*/]), "SXT_HCH_NEED" /* GXT: I've been thinking... you should let me ride you. ~nrt~ <img src='img://10_c_sext_hitcherGirl/10_c_sext_hitcherGirl' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[17 /*16*/]), "10_c_sext_hitcherGirl", 64);
-	StringCopy(&(Local_35[18 /*6*/]), "SOL2_PASS" /* GXT: Michael I have put your name in the credits for the film. ~nrt~ <img src='img://ExecutiveProducer/executiveproducer' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[18 /*16*/]), "executiveproducer", 64);
-	StringCopy(&(Local_35[19 /*6*/]), "MAPEMAIL_TXT1" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_18/NHP_PHOTO_18' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[19 /*16*/]), "NHP_PHOTO_18", 64);
-	StringCopy(&(Local_35[20 /*6*/]), "MAPEMAIL_TXT2" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_11/NHP_PHOTO_11' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[20 /*16*/]), "NHP_PHOTO_11", 64);
-	StringCopy(&(Local_35[21 /*6*/]), "MAPEMAIL_TXT3" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_13/NHP_PHOTO_13' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[21 /*16*/]), "NHP_PHOTO_13", 64);
-	StringCopy(&(Local_35[22 /*6*/]), "MAPEMAIL_TXT4" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_5/NHP_PHOTO_5' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[22 /*16*/]), "NHP_PHOTO_5", 64);
-	StringCopy(&(Local_35[23 /*6*/]), "MAPEMAIL_TXT5" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_12/NHP_PHOTO_12' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[23 /*16*/]), "NHP_PHOTO_12", 64);
-	StringCopy(&(Local_35[24 /*6*/]), "MAPEMAIL_TXT6" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_3/NHP_PHOTO_3' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[24 /*16*/]), "NHP_PHOTO_3", 64);
-	StringCopy(&(Local_35[25 /*6*/]), "MAPEMAIL_TXT7" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_1/NHP_PHOTO_1' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[25 /*16*/]), "NHP_PHOTO_1", 64);
-	StringCopy(&(Local_35[26 /*6*/]), "MAPEMAIL_TXT8" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_10/NHP_PHOTO_10' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[26 /*16*/]), "NHP_PHOTO_10", 64);
-	StringCopy(&(Local_35[27 /*6*/]), "MAPEMAIL_TXT9" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_6/NHP_PHOTO_6' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[27 /*16*/]), "NHP_PHOTO_6", 64);
-	StringCopy(&(Local_35[28 /*6*/]), "MAPEMAIL_TXT10" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_20/NHP_PHOTO_20' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[28 /*16*/]), "NHP_PHOTO_20", 64);
-	StringCopy(&(Local_35[29 /*6*/]), "MAPEMAIL_TXT11" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_7/NHP_PHOTO_7' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[29 /*16*/]), "NHP_PHOTO_7", 64);
-	StringCopy(&(Local_35[30 /*6*/]), "MAPEMAIL_TXT12" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_14/NHP_PHOTO_14' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[30 /*16*/]), "NHP_PHOTO_14", 64);
-	StringCopy(&(Local_35[31 /*6*/]), "MAPEMAIL_TXT13" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_4/NHP_PHOTO_4' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[31 /*16*/]), "NHP_PHOTO_4", 64);
-	StringCopy(&(Local_35[32 /*6*/]), "MAPEMAIL_TXT14" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_17/NHP_PHOTO_17' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[32 /*16*/]), "NHP_PHOTO_17", 64);
-	StringCopy(&(Local_35[33 /*6*/]), "MAPEMAIL_TXT15" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_2/NHP_PHOTO_2' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[33 /*16*/]), "NHP_PHOTO_2", 64);
-	StringCopy(&(Local_35[34 /*6*/]), "MAPEMAIL_TXT16" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_15/NHP_PHOTO_15' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[34 /*16*/]), "NHP_PHOTO_15", 64);
-	StringCopy(&(Local_35[35 /*6*/]), "MAPEMAIL_TXT17" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_8/NHP_PHOTO_8' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[35 /*16*/]), "NHP_PHOTO_8", 64);
-	StringCopy(&(Local_35[36 /*6*/]), "MAPEMAIL_TXT18" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_9/NHP_PHOTO_9' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[36 /*16*/]), "NHP_PHOTO_9", 64);
-	StringCopy(&(Local_35[37 /*6*/]), "MAPEMAIL_TXT19" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_16/NHP_PHOTO_16' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[37 /*16*/]), "NHP_PHOTO_16", 64);
-	StringCopy(&(Local_35[38 /*6*/]), "MC_EMAIL_0" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://NHP_prep_mines/NHP_prep_mines' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[38 /*16*/]), "NHP_prep_mines", 64);
-	StringCopy(&(Local_35[39 /*6*/]), "BONEPIC1_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_0/BAT_CASE_0'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[39 /*16*/]), "", 64);
-	StringCopy(&(Local_35[40 /*6*/]), "BONEPIC2_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_1/BAT_CASE_1'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[40 /*16*/]), "", 64);
-	StringCopy(&(Local_35[41 /*6*/]), "BONEPIC3_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_2/BAT_CASE_2'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[41 /*16*/]), "", 64);
-	StringCopy(&(Local_35[42 /*6*/]), "BONEPIC4_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_3/BAT_CASE_3'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[42 /*16*/]), "", 64);
-	StringCopy(&(Local_35[43 /*6*/]), "BONEPIC5_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_4/BAT_CASE_4'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[43 /*16*/]), "", 64);
-	StringCopy(&(Local_35[44 /*6*/]), "BONEPIC6_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_5/BAT_CASE_5'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[44 /*16*/]), "", 64);
-	StringCopy(&(Local_35[45 /*6*/]), "BONEPIC7_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_6/BAT_CASE_6'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[45 /*16*/]), "", 64);
-	StringCopy(&(Local_35[46 /*6*/]), "BONEPIC8_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_7/BAT_CASE_7'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[46 /*16*/]), "", 64);
-	StringCopy(&(Local_35[47 /*6*/]), "BONEPIC9_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_8/BAT_CASE_8'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[47 /*16*/]), "", 64);
-	StringCopy(&(Local_35[48 /*6*/]), "BONEPIC10_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_9/BAT_CASE_9'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[48 /*16*/]), "", 64);
-	StringCopy(&(Local_35[49 /*6*/]), "BONEPIC11_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_10/BAT_CASE_10'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[49 /*16*/]), "", 64);
-	StringCopy(&(Local_35[50 /*6*/]), "BONEPIC12_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_11/BAT_CASE_11'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[50 /*16*/]), "", 64);
-	StringCopy(&(Local_35[51 /*6*/]), "BONEPIC13_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_12/BAT_CASE_12'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[51 /*16*/]), "", 64);
-	StringCopy(&(Local_35[52 /*6*/]), "BONEPIC14_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_13/BAT_CASE_13'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[52 /*16*/]), "", 64);
-	StringCopy(&(Local_35[53 /*6*/]), "BONEPIC15_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_14/BAT_CASE_14'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[53 /*16*/]), "", 64);
-	StringCopy(&(Local_35[54 /*6*/]), "BONEPIC16_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_15/BAT_CASE_15'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[54 /*16*/]), "", 64);
-	StringCopy(&(Local_35[55 /*6*/]), "BONEPIC17_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_16/BAT_CASE_16'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[55 /*16*/]), "", 64);
-	StringCopy(&(Local_35[56 /*6*/]), "BONEPIC18_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_17/BAT_CASE_17'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[56 /*16*/]), "", 64);
-	StringCopy(&(Local_35[57 /*6*/]), "BONEPIC19_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_18/BAT_CASE_18'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[57 /*16*/]), "", 64);
-	StringCopy(&(Local_35[58 /*6*/]), "BONEPIC20_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_19/BAT_CASE_19'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
-	StringCopy(&(Local_36[58 /*16*/]), "", 64);
+	StringCopy(&(Local_62[0 /*6*/]), "SXT_JUL_1ST" /* GXT: I can't wait until you cum again! ~nrt~ <img src='img://05_a_sext_stripperJuliet/05_a_sext_stripperJuliet' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[0 /*16*/]), "05_a_sext_stripperJuliet", 64);
+	StringCopy(&(Local_62[1 /*6*/]), "SXT_JUL_2ND" /* GXT: Just when I thought that it couldn't get any better! ~nrt~ <img src='img://05_b_sext_stripperJuliet/05_b_sext_stripperJuliet' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[1 /*16*/]), "05_b_sext_stripperJuliet", 64);
+	StringCopy(&(Local_62[2 /*6*/]), "SXT_JUL_NEED" /* GXT: Missing you badly! I want you inside me. ~nrt~ <img src='img://05_c_sext_stripperJuliet/05_c_sext_stripperJuliet' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[2 /*16*/]), "05_c_sext_stripperJuliet", 64);
+	StringCopy(&(Local_62[3 /*6*/]), "MAPEMAIL_TXT" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_19/NHP_PHOTO_19' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[3 /*16*/]), "NHP_PHOTO_19", 64);
+	StringCopy(&(Local_62[4 /*6*/]), "SXT_NIK_2ND" /* GXT: You're the man that I've been looking for my entire life! ~nrt~ <img src='img://06_b_sext_stripperNikki/06_b_sext_stripperNikki' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[4 /*16*/]), "06_b_sext_stripperNikki", 64);
+	StringCopy(&(Local_62[5 /*6*/]), "SXT_NIK_NEED" /* GXT: Maybe this will get your attention! ~nrt~ <img src='img://06_c_sext_stripperNikki/06_c_sext_stripperNikki' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[5 /*16*/]), "06_c_sext_stripperNikki", 64);
+	StringCopy(&(Local_62[6 /*6*/]), "SXT_SAP_1ST" /* GXT: That was deliciously yummy. Next time, I want to be on top. What do you think of this position? ~nrt~ <img src='img://08_a_sext_stripperSapphire/08_a_sext_stripperSapphire' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[6 /*16*/]), "08_a_sext_stripperSapphire", 64);
+	StringCopy(&(Local_62[7 /*6*/]), "SXT_SAP_2ND" /* GXT: Here don't show this to anyone else. ~nrt~ <img src='img://08_b_sext_stripperSapphire/08_b_sext_stripperSapphire' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[7 /*16*/]), "08_b_sext_stripperSapphire", 64);
+	StringCopy(&(Local_62[8 /*6*/]), "SXT_SAP_NEED" /* GXT: My body aches for you! ~nrt~ <img src='img://08_c_sext_stripperSapphire/08_c_sext_stripperSapphire' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[8 /*16*/]), "08_c_sext_stripperSapphire", 64);
+	StringCopy(&(Local_62[9 /*6*/]), "SXT_INF_1ST" /* GXT: This body is all yours and only yours baby! ~nrt~ <img src='img://04_a_sext_stripperInfernus/04_a_sext_stripperInfernus' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[9 /*16*/]), "04_a_sext_stripperInfernus", 64);
+	StringCopy(&(Local_62[10 /*6*/]), "SXT_INF_2ND" /* GXT: I can hardly walk, that was amazing! ~nrt~ <img src='img://04_b_sext_stripperInfernus/04_b_sext_stripperInfernus' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[10 /*16*/]), "04_b_sext_stripperInfernus", 64);
+	StringCopy(&(Local_62[11 /*6*/]), "SXT_INF_NEED" /* GXT: My loins quiver with the thought of you! ~nrt~ <img src='img://04_c_sext_stripperInfernus/04_c_sext_stripperInfernus' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[11 /*16*/]), "04_c_sext_stripperInfernus", 64);
+	StringCopy(&(Local_62[12 /*6*/]), "SXT_TXI_1ST" /* GXT: I can't stop thinking about the last time. ~nrt~ <img src='img://11_a_sext_taxiLiz/11_a_sext_taxiLiz' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[12 /*16*/]), "11_a_sext_taxiLiz", 64);
+	StringCopy(&(Local_62[13 /*6*/]), "SXT_TXI_2ND" /* GXT: You're so amazing! I've been missing out. ~nrt~ <img src='img://11_b_sext_taxiLiz/11_b_sext_taxiLiz' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[13 /*16*/]), "11_b_sext_taxiLiz", 64);
+	StringCopy(&(Local_62[14 /*6*/]), "SXT_TXI_NEED" /* GXT: Hey babe, I need a study break... ~nrt~ <img src='img://11_c_sext_taxiLiz/11_c_sext_taxiLiz' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[14 /*16*/]), "11_c_sext_taxiLiz", 64);
+	StringCopy(&(Local_62[15 /*6*/]), "SXT_HCH_1ST" /* GXT: You always know how to give a good ride ;) ~nrt~ <img src='img://10_a_sext_hitcherGirl/10_a_sext_hitcherGirl' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[15 /*16*/]), "10_a_sext_hitcherGirl", 64);
+	StringCopy(&(Local_62[16 /*6*/]), "SXT_HCH_2ND" /* GXT: Can't wait to meet again honey. ~nrt~ <img src='img://10_b_sext_hitcherGirl/10_b_sext_hitcherGirl' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[16 /*16*/]), "10_b_sext_hitcherGirl", 64);
+	StringCopy(&(Local_62[17 /*6*/]), "SXT_HCH_NEED" /* GXT: I've been thinking... you should let me ride you. ~nrt~ <img src='img://10_c_sext_hitcherGirl/10_c_sext_hitcherGirl' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[17 /*16*/]), "10_c_sext_hitcherGirl", 64);
+	StringCopy(&(Local_62[18 /*6*/]), "SOL2_PASS" /* GXT: Michael I have put your name in the credits for the film. ~nrt~ <img src='img://ExecutiveProducer/executiveproducer' vspace='0' width='252' height='150'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[18 /*16*/]), "executiveproducer", 64);
+	StringCopy(&(Local_62[19 /*6*/]), "MAPEMAIL_TXT1" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_18/NHP_PHOTO_18' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[19 /*16*/]), "NHP_PHOTO_18", 64);
+	StringCopy(&(Local_62[20 /*6*/]), "MAPEMAIL_TXT2" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_11/NHP_PHOTO_11' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[20 /*16*/]), "NHP_PHOTO_11", 64);
+	StringCopy(&(Local_62[21 /*6*/]), "MAPEMAIL_TXT3" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_13/NHP_PHOTO_13' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[21 /*16*/]), "NHP_PHOTO_13", 64);
+	StringCopy(&(Local_62[22 /*6*/]), "MAPEMAIL_TXT4" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_5/NHP_PHOTO_5' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[22 /*16*/]), "NHP_PHOTO_5", 64);
+	StringCopy(&(Local_62[23 /*6*/]), "MAPEMAIL_TXT5" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_12/NHP_PHOTO_12' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[23 /*16*/]), "NHP_PHOTO_12", 64);
+	StringCopy(&(Local_62[24 /*6*/]), "MAPEMAIL_TXT6" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_3/NHP_PHOTO_3' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[24 /*16*/]), "NHP_PHOTO_3", 64);
+	StringCopy(&(Local_62[25 /*6*/]), "MAPEMAIL_TXT7" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_1/NHP_PHOTO_1' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[25 /*16*/]), "NHP_PHOTO_1", 64);
+	StringCopy(&(Local_62[26 /*6*/]), "MAPEMAIL_TXT8" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_10/NHP_PHOTO_10' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[26 /*16*/]), "NHP_PHOTO_10", 64);
+	StringCopy(&(Local_62[27 /*6*/]), "MAPEMAIL_TXT9" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_6/NHP_PHOTO_6' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[27 /*16*/]), "NHP_PHOTO_6", 64);
+	StringCopy(&(Local_62[28 /*6*/]), "MAPEMAIL_TXT10" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_20/NHP_PHOTO_20' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[28 /*16*/]), "NHP_PHOTO_20", 64);
+	StringCopy(&(Local_62[29 /*6*/]), "MAPEMAIL_TXT11" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_7/NHP_PHOTO_7' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[29 /*16*/]), "NHP_PHOTO_7", 64);
+	StringCopy(&(Local_62[30 /*6*/]), "MAPEMAIL_TXT12" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_14/NHP_PHOTO_14' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[30 /*16*/]), "NHP_PHOTO_14", 64);
+	StringCopy(&(Local_62[31 /*6*/]), "MAPEMAIL_TXT13" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_4/NHP_PHOTO_4' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[31 /*16*/]), "NHP_PHOTO_4", 64);
+	StringCopy(&(Local_62[32 /*6*/]), "MAPEMAIL_TXT14" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_17/NHP_PHOTO_17' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[32 /*16*/]), "NHP_PHOTO_17", 64);
+	StringCopy(&(Local_62[33 /*6*/]), "MAPEMAIL_TXT15" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_2/NHP_PHOTO_2' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[33 /*16*/]), "NHP_PHOTO_2", 64);
+	StringCopy(&(Local_62[34 /*6*/]), "MAPEMAIL_TXT16" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_15/NHP_PHOTO_15' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[34 /*16*/]), "NHP_PHOTO_15", 64);
+	StringCopy(&(Local_62[35 /*6*/]), "MAPEMAIL_TXT17" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_8/NHP_PHOTO_8' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[35 /*16*/]), "NHP_PHOTO_8", 64);
+	StringCopy(&(Local_62[36 /*6*/]), "MAPEMAIL_TXT18" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_9/NHP_PHOTO_9' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[36 /*16*/]), "NHP_PHOTO_9", 64);
+	StringCopy(&(Local_62[37 /*6*/]), "MAPEMAIL_TXT19" /* GXT: Use the photograph in this email to identify the location of the treasure. ~nrt~ <img src='img://NHP_PHOTO_16/NHP_PHOTO_16' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[37 /*16*/]), "NHP_PHOTO_16", 64);
+	StringCopy(&(Local_62[38 /*6*/]), "MC_EMAIL_0" /* GXT: IMAGE ATTACHMENT ~nrt~ <img src='img://NHP_prep_mines/NHP_prep_mines' vspace='0' width='320' height='200'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[38 /*16*/]), "NHP_prep_mines", 64);
+	StringCopy(&(Local_62[39 /*6*/]), "BONEPIC1_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_0/BAT_CASE_0'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[39 /*16*/]), "", 64);
+	StringCopy(&(Local_62[40 /*6*/]), "BONEPIC2_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_1/BAT_CASE_1'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[40 /*16*/]), "", 64);
+	StringCopy(&(Local_62[41 /*6*/]), "BONEPIC3_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_2/BAT_CASE_2'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[41 /*16*/]), "", 64);
+	StringCopy(&(Local_62[42 /*6*/]), "BONEPIC4_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_3/BAT_CASE_3'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[42 /*16*/]), "", 64);
+	StringCopy(&(Local_62[43 /*6*/]), "BONEPIC5_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_4/BAT_CASE_4'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[43 /*16*/]), "", 64);
+	StringCopy(&(Local_62[44 /*6*/]), "BONEPIC6_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_5/BAT_CASE_5'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[44 /*16*/]), "", 64);
+	StringCopy(&(Local_62[45 /*6*/]), "BONEPIC7_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_6/BAT_CASE_6'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[45 /*16*/]), "", 64);
+	StringCopy(&(Local_62[46 /*6*/]), "BONEPIC8_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_7/BAT_CASE_7'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[46 /*16*/]), "", 64);
+	StringCopy(&(Local_62[47 /*6*/]), "BONEPIC9_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_8/BAT_CASE_8'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[47 /*16*/]), "", 64);
+	StringCopy(&(Local_62[48 /*6*/]), "BONEPIC10_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_9/BAT_CASE_9'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[48 /*16*/]), "", 64);
+	StringCopy(&(Local_62[49 /*6*/]), "BONEPIC11_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_10/BAT_CASE_10'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[49 /*16*/]), "", 64);
+	StringCopy(&(Local_62[50 /*6*/]), "BONEPIC12_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_11/BAT_CASE_11'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[50 /*16*/]), "", 64);
+	StringCopy(&(Local_62[51 /*6*/]), "BONEPIC13_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_12/BAT_CASE_12'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[51 /*16*/]), "", 64);
+	StringCopy(&(Local_62[52 /*6*/]), "BONEPIC14_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_13/BAT_CASE_13'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[52 /*16*/]), "", 64);
+	StringCopy(&(Local_62[53 /*6*/]), "BONEPIC15_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_14/BAT_CASE_14'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[53 /*16*/]), "", 64);
+	StringCopy(&(Local_62[54 /*6*/]), "BONEPIC16_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_15/BAT_CASE_15'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[54 /*16*/]), "", 64);
+	StringCopy(&(Local_62[55 /*6*/]), "BONEPIC17_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_16/BAT_CASE_16'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[55 /*16*/]), "", 64);
+	StringCopy(&(Local_62[56 /*6*/]), "BONEPIC18_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_17/BAT_CASE_17'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[56 /*16*/]), "", 64);
+	StringCopy(&(Local_62[57 /*6*/]), "BONEPIC19_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_18/BAT_CASE_18'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[57 /*16*/]), "", 64);
+	StringCopy(&(Local_62[58 /*6*/]), "BONEPIC20_TXT" /* GXT: ~a~~a~~a~~nrt~ <img src='img://BAT_CASE_19/BAT_CASE_19'  vspace='0' width='252' height='300'/> ~nrt~ */, 24);
+	StringCopy(&(Local_417[58 /*16*/]), "", 64);
 }
 
 void func_59()//Position - 0x3F22
@@ -2970,9 +2970,9 @@ void func_59()//Position - 0x3F22
 	{
 		func_60(0);
 	}
-	if (iLocal_37)
+	if (iLocal_1362)
 	{
-		GRAPHICS::SET_STREAMED_TEXTURE_DICT_AS_NO_LONGER_NEEDED(&Local_34);
+		GRAPHICS::SET_STREAMED_TEXTURE_DICT_AS_NO_LONGER_NEEDED(&Local_46);
 	}
 	Global_22759 = 0;
 	Global_22758 = 0;

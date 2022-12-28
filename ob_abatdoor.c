@@ -4,38 +4,38 @@
 	int iLocal_2 = 0;
 	int iLocal_3 = 0;
 	struct<3> Local_4 = { 0, 0, 0 } ;
-	struct<3> Local_5 = { 0, 0, 0 } ;
-	int iLocal_6 = 0;
+	struct<3> Local_7 = { 0, 0, 0 } ;
+	int iScriptParam_0 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
 {
 	struct<3> Var0;
-	struct<3> Var1;
-	struct<3> Var2;
-	float fVar3;
+	struct<3> Var3;
+	struct<3> Var6;
+	float fVar9;
 	
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(2))
 	{
 		func_4();
 	}
-	if (ENTITY::DOES_ENTITY_EXIST(iScriptParam_6))
+	if (ENTITY::DOES_ENTITY_EXIST(iScriptParam_0))
 	{
-		ENTITY::FREEZE_ENTITY_POSITION(iScriptParam_6, true);
-		Local_4 = { ENTITY::GET_ENTITY_COORDS(iScriptParam_6, true) };
-		Local_5 = { ENTITY::GET_ENTITY_ROTATION(iScriptParam_6, 2) };
+		ENTITY::FREEZE_ENTITY_POSITION(iScriptParam_0, true);
+		Local_4 = { ENTITY::GET_ENTITY_COORDS(iScriptParam_0, true) };
+		Local_7 = { ENTITY::GET_ENTITY_ROTATION(iScriptParam_0, 2) };
 	}
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if (ENTITY::DOES_ENTITY_EXIST(iScriptParam_6))
+		if (ENTITY::DOES_ENTITY_EXIST(iScriptParam_0))
 		{
-			if (BRAIN::IS_OBJECT_WITHIN_BRAIN_ACTIVATION_RANGE(iScriptParam_6))
+			if (BRAIN::IS_OBJECT_WITHIN_BRAIN_ACTIVATION_RANGE(iScriptParam_0))
 			{
 				switch (iLocal_2)
 				{
 					case 0:
-						if (ENTITY::DOES_ENTITY_HAVE_DRAWABLE(iScriptParam_6))
+						if (ENTITY::DOES_ENTITY_HAVE_DRAWABLE(iScriptParam_0))
 						{
 							STREAMING::REQUEST_MODEL(joaat("p_abat_roller_1_col"));
 							if (STREAMING::HAS_MODEL_LOADED(joaat("p_abat_roller_1_col")))
@@ -43,7 +43,7 @@ void __EntryFunction__()//Position - 0x0
 								if (!func_3(Local_4, 0f, 0f, 0f, 0))
 								{
 									iLocal_3 = OBJECT::CREATE_OBJECT(joaat("p_abat_roller_1_col"), Local_4, true, true, false);
-									ENTITY::SET_ENTITY_ROTATION(iLocal_3, Local_5, 2, true);
+									ENTITY::SET_ENTITY_ROTATION(iLocal_3, Local_7, 2, true);
 									iLocal_2 = 1;
 								}
 							}
@@ -51,7 +51,7 @@ void __EntryFunction__()//Position - 0x0
 						break;
 					
 					case 1:
-						if (ENTITY::DOES_ENTITY_HAVE_DRAWABLE(iScriptParam_6))
+						if (ENTITY::DOES_ENTITY_HAVE_DRAWABLE(iScriptParam_0))
 						{
 							if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("michael2")) > 0)
 							{
@@ -65,7 +65,7 @@ void __EntryFunction__()//Position - 0x0
 						break;
 					
 					case 2:
-						if (ENTITY::DOES_ENTITY_HAVE_DRAWABLE(iScriptParam_6))
+						if (ENTITY::DOES_ENTITY_HAVE_DRAWABLE(iScriptParam_0))
 						{
 							if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("michael2")) > 0)
 							{
@@ -73,7 +73,7 @@ void __EntryFunction__()//Position - 0x0
 								{
 									if (STREAMING::HAS_ANIM_DICT_LOADED("map_objects"))
 									{
-										ENTITY::PLAY_ENTITY_ANIM(iScriptParam_6, "P_Abat_roller_1_open", "map_objects", 1f, false, true, false, 0f, 0);
+										ENTITY::PLAY_ENTITY_ANIM(iScriptParam_0, "P_Abat_roller_1_open", "map_objects", 1f, false, true, false, 0f, 0);
 										iLocal_2 = 3;
 									}
 								}
@@ -82,15 +82,15 @@ void __EntryFunction__()//Position - 0x0
 						break;
 					
 					case 3:
-						fVar3 = 0.35f;
+						fVar9 = 0.35f;
 						Var0 = { Local_4 + Vector(3.45f, 0f, 0f) };
 						if (ENTITY::DOES_ENTITY_EXIST(iLocal_3))
 						{
-							Var1 = { ENTITY::GET_ENTITY_COORDS(iLocal_3, true) };
-							if (!func_2(Var1, Var0, 0.1f, 0))
+							Var3 = { ENTITY::GET_ENTITY_COORDS(iLocal_3, true) };
+							if (!func_2(Var3, Var0, 0.1f, 0))
 							{
-								Var2 = { Var0 - Var1 };
-								ENTITY::SET_ENTITY_COORDS(iLocal_3, Var1 + func_1(Var2) * FtoV(MISC::GET_FRAME_TIME()) * Vector(fVar3, fVar3, fVar3), true, false, false, true);
+								Var6 = { Var0 - Var3 };
+								ENTITY::SET_ENTITY_COORDS(iLocal_3, Var3 + func_1(Var6) * FtoV(MISC::GET_FRAME_TIME()) * Vector(fVar9, fVar9, fVar9), true, false, false, true);
 							}
 							else
 							{
@@ -136,28 +136,28 @@ Vector3 func_1(struct<3> Param0)//Position - 0x1C6
 	return Param0;
 }
 
-int func_2(struct<3> Param0, struct<3> Param1, float fParam2, bool bParam3)//Position - 0x205
+int func_2(struct<3> Param0, struct<3> Param3, float fParam6, bool bParam7)//Position - 0x205
 {
-	if (fParam2 < 0f)
+	if (fParam6 < 0f)
 	{
-		fParam2 = 0f;
+		fParam6 = 0f;
 	}
-	if (!bParam3)
+	if (!bParam7)
 	{
-		if (MISC::ABSF((Param0.f_0 - Param1.f_0)) <= fParam2)
+		if (MISC::ABSF((Param0.f_0 - Param3.f_0)) <= fParam6)
 		{
-			if (MISC::ABSF((Param0.f_1 - Param1.f_1)) <= fParam2)
+			if (MISC::ABSF((Param0.f_1 - Param3.f_1)) <= fParam6)
 			{
-				if (MISC::ABSF((Param0.f_2 - Param1.f_2)) <= fParam2)
+				if (MISC::ABSF((Param0.f_2 - Param3.f_2)) <= fParam6)
 				{
 					return 1;
 				}
 			}
 		}
 	}
-	else if (MISC::ABSF((Param0.f_0 - Param1.f_0)) <= fParam2)
+	else if (MISC::ABSF((Param0.f_0 - Param3.f_0)) <= fParam6)
 	{
-		if (MISC::ABSF((Param0.f_1 - Param1.f_1)) <= fParam2)
+		if (MISC::ABSF((Param0.f_1 - Param3.f_1)) <= fParam6)
 		{
 			return 1;
 		}
@@ -165,13 +165,13 @@ int func_2(struct<3> Param0, struct<3> Param1, float fParam2, bool bParam3)//Pos
 	return 0;
 }
 
-bool func_3(struct<3> Param0, struct<3> Param1, bool bParam2)//Position - 0x280
+bool func_3(struct<3> Param0, struct<3> Param3, bool bParam6)//Position - 0x280
 {
-	if (bParam2)
+	if (bParam6)
 	{
-		return (Param0.f_0 == Param1.f_0 && Param0.f_1 == Param1.f_1);
+		return (Param0.f_0 == Param3.f_0 && Param0.f_1 == Param3.f_1);
 	}
-	return ((Param0.f_0 == Param1.f_0 && Param0.f_1 == Param1.f_1) && Param0.f_2 == Param1.f_2);
+	return ((Param0.f_0 == Param3.f_0 && Param0.f_1 == Param3.f_1) && Param0.f_2 == Param3.f_2);
 }
 
 void func_4()//Position - 0x2C7

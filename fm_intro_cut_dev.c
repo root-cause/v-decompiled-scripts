@@ -63,29 +63,19 @@
 	var uLocal_61 = 0;
 	var uLocal_62 = 0;
 	struct<5> Local_63[2];
-	int* iLocal_64 = NULL;
-	var uLocal_65 = 0;
-	var uLocal_66 = 0;
-	var uLocal_67 = 0;
-	var uLocal_68 = 0;
-	var uLocal_69 = 0;
-	var uLocal_70 = 0;
-	var uLocal_71 = 0;
-	var uLocal_72 = 0;
-	var uLocal_73 = -1;
-	var uLocal_74 = -1;
-	var uLocal_75 = -1;
-	var uLocal_76 = -1;
+	int* iLocal_74 = NULL;
+	var uLocal_75 = 0;
+	var uLocal_76 = 0;
 	var uLocal_77 = 0;
 	var uLocal_78 = 0;
 	var uLocal_79 = 0;
 	var uLocal_80 = 0;
 	var uLocal_81 = 0;
 	var uLocal_82 = 0;
-	var uLocal_83 = 0;
-	var uLocal_84 = 0;
-	var uLocal_85 = 0;
-	var uLocal_86 = 0;
+	var uLocal_83 = -1;
+	var uLocal_84 = -1;
+	var uLocal_85 = -1;
+	var uLocal_86 = -1;
 	var uLocal_87 = 0;
 	var uLocal_88 = 0;
 	var uLocal_89 = 0;
@@ -100,7 +90,7 @@
 	var uLocal_98 = 0;
 	var uLocal_99 = 0;
 	var uLocal_100 = 0;
-	var uLocal_101 = 10;
+	var uLocal_101 = 0;
 	var uLocal_102 = 0;
 	var uLocal_103 = 0;
 	var uLocal_104 = 0;
@@ -110,9 +100,9 @@
 	var uLocal_108 = 0;
 	var uLocal_109 = 0;
 	var uLocal_110 = 0;
-	var uLocal_111 = 0;
+	var uLocal_111 = 10;
 	var uLocal_112 = 0;
-	var uLocal_113 = 8;
+	var uLocal_113 = 0;
 	var uLocal_114 = 0;
 	var uLocal_115 = 0;
 	var uLocal_116 = 0;
@@ -121,8 +111,8 @@
 	var uLocal_119 = 0;
 	var uLocal_120 = 0;
 	var uLocal_121 = 0;
-	var uLocal_122 = 15;
-	var uLocal_123 = 0;
+	var uLocal_122 = 0;
+	var uLocal_123 = 8;
 	var uLocal_124 = 0;
 	var uLocal_125 = 0;
 	var uLocal_126 = 0;
@@ -131,13 +121,13 @@
 	var uLocal_129 = 0;
 	var uLocal_130 = 0;
 	var uLocal_131 = 0;
-	var uLocal_132 = 0;
+	var uLocal_132 = 15;
 	var uLocal_133 = 0;
 	var uLocal_134 = 0;
 	var uLocal_135 = 0;
 	var uLocal_136 = 0;
 	var uLocal_137 = 0;
-	var uLocal_138 = 15;
+	var uLocal_138 = 0;
 	var uLocal_139 = 0;
 	var uLocal_140 = 0;
 	var uLocal_141 = 0;
@@ -147,7 +137,7 @@
 	var uLocal_145 = 0;
 	var uLocal_146 = 0;
 	var uLocal_147 = 0;
-	var uLocal_148 = 0;
+	var uLocal_148 = 15;
 	var uLocal_149 = 0;
 	var uLocal_150 = 0;
 	var uLocal_151 = 0;
@@ -155,29 +145,29 @@
 	var uLocal_153 = 0;
 	var uLocal_154 = 0;
 	var uLocal_155 = 0;
-	var uLocal_156 = 5;
+	var uLocal_156 = 0;
 	var uLocal_157 = 0;
 	var uLocal_158 = 0;
 	var uLocal_159 = 0;
 	var uLocal_160 = 0;
 	var uLocal_161 = 0;
-	var uLocal_162 = 5;
+	var uLocal_162 = 0;
 	var uLocal_163 = 0;
 	var uLocal_164 = 0;
 	var uLocal_165 = 0;
-	var uLocal_166 = 0;
+	var uLocal_166 = 5;
 	var uLocal_167 = 0;
-	var uLocal_168 = 7;
+	var uLocal_168 = 0;
 	var uLocal_169 = 0;
 	var uLocal_170 = 0;
 	var uLocal_171 = 0;
-	var uLocal_172 = 0;
+	var uLocal_172 = 5;
 	var uLocal_173 = 0;
 	var uLocal_174 = 0;
 	var uLocal_175 = 0;
-	var uLocal_176 = 7;
+	var uLocal_176 = 0;
 	var uLocal_177 = 0;
-	var uLocal_178 = 0;
+	var uLocal_178 = 7;
 	var uLocal_179 = 0;
 	var uLocal_180 = 0;
 	var uLocal_181 = 0;
@@ -185,8 +175,8 @@
 	var uLocal_183 = 0;
 	var uLocal_184 = 0;
 	var uLocal_185 = 0;
-	var uLocal_186 = 0;
-	var uLocal_187 = 16;
+	var uLocal_186 = 7;
+	var uLocal_187 = 0;
 	var uLocal_188 = 0;
 	var uLocal_189 = 0;
 	var uLocal_190 = 0;
@@ -196,7 +186,7 @@
 	var uLocal_194 = 0;
 	var uLocal_195 = 0;
 	var uLocal_196 = 0;
-	var uLocal_197 = 0;
+	var uLocal_197 = 16;
 	var uLocal_198 = 0;
 	var uLocal_199 = 0;
 	var uLocal_200 = 0;
@@ -360,6 +350,16 @@
 	var uLocal_358 = 0;
 	var uLocal_359 = 0;
 	var uLocal_360 = 0;
+	var uLocal_361 = 0;
+	var uLocal_362 = 0;
+	var uLocal_363 = 0;
+	var uLocal_364 = 0;
+	var uLocal_365 = 0;
+	var uLocal_366 = 0;
+	var uLocal_367 = 0;
+	var uLocal_368 = 0;
+	var uLocal_369 = 0;
+	var uLocal_370 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -407,7 +407,7 @@ void __EntryFunction__()//Position - 0x0
 				}
 			}
 		}
-		if (func_1(&iLocal_64, &(Local_63[0 /*5*/].f_4)))
+		if (func_1(&iLocal_74, &(Local_63[0 /*5*/].f_4)))
 		{
 		}
 	}
@@ -417,18 +417,18 @@ int func_1(int* iParam0, int* iParam1)//Position - 0xD8
 {
 	float fVar0;
 	struct<3> Var1;
-	int iVar2;
-	struct<3> Var3;
-	bool bVar4;
+	int iVar4;
+	struct<3> Var5;
+	bool bVar8;
 	
 	if (!BitTest(*iParam0, 13))
 	{
 		if (CAM::DOES_CAM_EXIST(CAM::GET_RENDERING_CAM()))
 		{
-			Var3 = { CAM::GET_CAM_COORD(CAM::GET_RENDERING_CAM()) };
-			if ((Var3.f_0 != 0f || Var3.f_1 != 0f) || Var3.f_2 != 0f)
+			Var5 = { CAM::GET_CAM_COORD(CAM::GET_RENDERING_CAM()) };
+			if ((Var5.f_0 != 0f || Var5.f_1 != 0f) || Var5.f_2 != 0f)
 			{
-				STREAMING::SET_FOCUS_POS_AND_VEL(Var3, 0f, 0f, 0f);
+				STREAMING::SET_FOCUS_POS_AND_VEL(Var5, 0f, 0f, 0f);
 				if (!BitTest(*iParam0, 14))
 				{
 					MISC::SET_BIT(iParam0, 14);
@@ -907,14 +907,14 @@ int func_1(int* iParam0, int* iParam1)//Position - 0xD8
 									INTERIOR::FORCE_ROOM_FOR_ENTITY(iParam0->f_91, iParam0->f_32, MISC::GET_HASH_KEY("GtaMloRoom001"));
 								}
 								AUDIO::SET_STATIC_EMITTER_ENABLED("SE_MP_GARAGE_L_RADIO", false);
-								iVar2 = 0;
-								while (iVar2 < 8)
+								iVar4 = 0;
+								while (iVar4 < 8)
 								{
-									if (!ENTITY::IS_ENTITY_DEAD(iParam0->f_49[iVar2], false))
+									if (!ENTITY::IS_ENTITY_DEAD(iParam0->f_49[iVar4], false))
 									{
-										INTERIOR::FORCE_ROOM_FOR_ENTITY(iParam0->f_49[iVar2], iParam0->f_32, MISC::GET_HASH_KEY("GtaMloRoom001"));
+										INTERIOR::FORCE_ROOM_FOR_ENTITY(iParam0->f_49[iVar4], iParam0->f_32, MISC::GET_HASH_KEY("GtaMloRoom001"));
 									}
-									iVar2++;
+									iVar4++;
 								}
 								MISC::SET_BIT(&(iParam0->f_3), 6);
 							}
@@ -2429,8 +2429,8 @@ int func_1(int* iParam0, int* iParam1)//Position - 0xD8
 			
 			case 57:
 				func_132(iParam0, 57);
-				bVar4 = !iParam0->f_288;
-				func_14(iParam0, bVar4, 0);
+				bVar8 = !iParam0->f_288;
+				func_14(iParam0, bVar8, 0);
 				if (iParam0->f_292)
 				{
 					STREAMING::END_SRL();
@@ -2599,16 +2599,16 @@ void func_5(int* iParam0)//Position - 0x38D8
 void func_6(var uParam0, bool bParam1)//Position - 0x3945
 {
 	struct<3> Var0;
-	float fVar1;
+	float fVar3;
 	
 	if (ENTITY::DOES_ENTITY_EXIST(uParam0->f_58[bParam1]))
 	{
 		if (ENTITY::IS_ENTITY_DEAD(uParam0->f_58[bParam1], false))
 		{
 		}
-		func_7(bParam1, &Var0, &fVar1);
+		func_7(bParam1, &Var0, &fVar3);
 		ENTITY::SET_ENTITY_COORDS(uParam0->f_58[bParam1], Var0, true, false, false, true);
-		ENTITY::SET_ENTITY_HEADING(uParam0->f_58[bParam1], fVar1);
+		ENTITY::SET_ENTITY_HEADING(uParam0->f_58[bParam1], fVar3);
 		ENTITY::FREEZE_ENTITY_POSITION(uParam0->f_58[bParam1], true);
 		VEHICLE::SET_VEHICLE_FIXED(uParam0->f_58[bParam1]);
 		ENTITY::SET_ENTITY_COLLISION(uParam0->f_58[bParam1], false, false);
@@ -4277,17 +4277,17 @@ int func_68(int* iParam0)//Position - 0x582C
 {
 	int iVar0;
 	struct<3> Var1;
-	float fVar2;
-	int iVar3;
+	float fVar4;
+	int iVar5;
 	
 	if (BitTest(iParam0->f_3, 11))
 	{
 		return 1;
 	}
-	iVar3 = joaat("shamal");
-	STREAMING::REQUEST_MODEL(iVar3);
+	iVar5 = joaat("shamal");
+	STREAMING::REQUEST_MODEL(iVar5);
 	STREAMING::REQUEST_MODEL(func_69());
-	if (STREAMING::HAS_MODEL_LOADED(iVar3))
+	if (STREAMING::HAS_MODEL_LOADED(iVar5))
 	{
 		iVar0 = 0;
 		while (iVar0 < 1)
@@ -4298,15 +4298,15 @@ int func_68(int* iParam0)//Position - 0x582C
 				{
 					case 0:
 						Var1 = { -1358.9728f, -2361.92f, 12.9502f };
-						fVar2 = 149.9339f;
+						fVar4 = 149.9339f;
 						break;
 					
 					case 1:
 						Var1 = { -1302.004f, -2279.3777f, 12.9468f };
-						fVar2 = 239.9712f;
+						fVar4 = 239.9712f;
 						break;
 				}
-				iParam0->f_92[iVar0] = VEHICLE::CREATE_VEHICLE(iVar3, Var1, fVar2, false, false, false);
+				iParam0->f_92[iVar0] = VEHICLE::CREATE_VEHICLE(iVar5, Var1, fVar4, false, false, false);
 				VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(iParam0->f_92[iVar0], 5f);
 				ENTITY::FREEZE_ENTITY_POSITION(iParam0->f_92[iVar0], true);
 				VEHICLE::SET_VEHICLE_LIGHTS(iParam0->f_92[iVar0], 2);
@@ -4343,7 +4343,7 @@ int func_68(int* iParam0)//Position - 0x582C
 			iVar0++;
 		}
 	}
-	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iVar3);
+	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iVar5);
 	STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(func_69());
 	MISC::SET_BIT(&(iParam0->f_3), 11);
 	return 1;
@@ -4911,7 +4911,7 @@ int func_97()//Position - 0x6323
 	return 1;
 }
 
-void func_98(int* iParam0, char* sParam1, char* sParam2, int iParam3, struct<3> Param4, struct<3> Param5)//Position - 0x6353
+void func_98(int* iParam0, char* sParam1, char* sParam2, int iParam3, struct<3> Param4, struct<3> Param7)//Position - 0x6353
 {
 	if (ENTITY::DOES_ENTITY_EXIST(iParam3))
 	{
@@ -4923,7 +4923,7 @@ void func_98(int* iParam0, char* sParam1, char* sParam2, int iParam3, struct<3> 
 			iParam0->f_8 = CAM::CREATE_CAM("DEFAULT_ANIMATED_CAMERA", false);
 		}
 		iParam0->f_9 = -1;
-		iParam0->f_9 = PED::CREATE_SYNCHRONIZED_SCENE(Param4, Param5, 2);
+		iParam0->f_9 = PED::CREATE_SYNCHRONIZED_SCENE(Param4, Param7, 2);
 		PED::ATTACH_SYNCHRONIZED_SCENE_TO_ENTITY(iParam0->f_9, iParam3, 0);
 		CAM::PLAY_SYNCHRONIZED_CAM_ANIM(iParam0->f_8, iParam0->f_9, sParam1, sParam2);
 		CAM::SET_CAM_ACTIVE(iParam0->f_8, true);
@@ -5485,69 +5485,69 @@ int func_111(var uParam0)//Position - 0x75CE
 {
 	int iVar0;
 	struct<3> Var1;
-	float fVar2;
-	bool bVar3;
+	float fVar4;
+	bool bVar5;
 	
 	if (!BitTest(uParam0->f_2, 31))
 	{
 		func_119();
-		bVar3 = false;
-		while (bVar3 < 8)
+		bVar5 = false;
+		while (bVar5 < 8)
 		{
-			func_116(bVar3, &Var1, &fVar2);
+			func_116(bVar5, &Var1, &fVar4);
 			if (!func_115(Var1, 0f, 0f, 0f, 0))
 			{
-				if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_49[bVar3]))
+				if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_49[bVar5]))
 				{
-					iVar0 = func_92(bVar3);
+					iVar0 = func_92(bVar5);
 					if (STREAMING::IS_MODEL_IN_CDIMAGE(iVar0))
 					{
 						if (STREAMING::HAS_MODEL_LOADED(iVar0))
 						{
-							uParam0->f_49[bVar3] = VEHICLE::CREATE_VEHICLE(iVar0, Var1, fVar2, false, false, false);
-							ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(uParam0->f_49[bVar3], true);
-							VEHICLE::SET_VEHICLE_DIRT_LEVEL(uParam0->f_49[bVar3], 0f);
-							VEHICLE::SET_VEHICLE_NOT_STEALABLE_AMBIENTLY(uParam0->f_49[bVar3], false);
-							if (bVar3 == 2)
+							uParam0->f_49[bVar5] = VEHICLE::CREATE_VEHICLE(iVar0, Var1, fVar4, false, false, false);
+							ENTITY::SET_ENTITY_SHOULD_FREEZE_WAITING_ON_COLLISION(uParam0->f_49[bVar5], true);
+							VEHICLE::SET_VEHICLE_DIRT_LEVEL(uParam0->f_49[bVar5], 0f);
+							VEHICLE::SET_VEHICLE_NOT_STEALABLE_AMBIENTLY(uParam0->f_49[bVar5], false);
+							if (bVar5 == 2)
 							{
-								VEHICLE::SET_VEHICLE_DOOR_OPEN(uParam0->f_49[bVar3], 4, false, true);
-								VEHICLE::SET_VEHICLE_DOOR_CONTROL(uParam0->f_49[bVar3], 4, 0, 1f);
+								VEHICLE::SET_VEHICLE_DOOR_OPEN(uParam0->f_49[bVar5], 4, false, true);
+								VEHICLE::SET_VEHICLE_DOOR_CONTROL(uParam0->f_49[bVar5], 4, 0, 1f);
 							}
-							func_114(uParam0, bVar3);
-							func_113(uParam0, bVar3);
+							func_114(uParam0, bVar5);
+							func_113(uParam0, bVar5);
 							STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iVar0);
 						}
 					}
 				}
 			}
-			bVar3++;
+			bVar5++;
 		}
-		bVar3 = false;
-		while (bVar3 < 8)
+		bVar5 = false;
+		while (bVar5 < 8)
 		{
-			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_49[bVar3]))
+			if (!ENTITY::DOES_ENTITY_EXIST(uParam0->f_49[bVar5]))
 			{
 				return 0;
 			}
-			if (!BitTest(uParam0->f_2, bVar3))
+			if (!BitTest(uParam0->f_2, bVar5))
 			{
-				if (func_112(uParam0, bVar3))
+				if (func_112(uParam0, bVar5))
 				{
-					MISC::SET_BIT(&(uParam0->f_2), bVar3);
+					MISC::SET_BIT(&(uParam0->f_2), bVar5);
 				}
 				else
 				{
 					return 0;
 				}
 			}
-			if (VEHICLE::IS_VEHICLE_DRIVEABLE(uParam0->f_49[bVar3], false))
+			if (VEHICLE::IS_VEHICLE_DRIVEABLE(uParam0->f_49[bVar5], false))
 			{
-				if (!VEHICLE::HAVE_VEHICLE_MODS_STREAMED_IN(uParam0->f_49[bVar3]))
+				if (!VEHICLE::HAVE_VEHICLE_MODS_STREAMED_IN(uParam0->f_49[bVar5]))
 				{
 					return 0;
 				}
 			}
-			bVar3++;
+			bVar5++;
 		}
 		MISC::SET_BIT(&(uParam0->f_2), 31);
 	}
@@ -5796,13 +5796,13 @@ void func_114(var uParam0, int iParam1)//Position - 0x7E2D
 	}
 }
 
-bool func_115(struct<3> Param0, struct<3> Param1, bool bParam2)//Position - 0x7F4A
+bool func_115(struct<3> Param0, struct<3> Param3, bool bParam6)//Position - 0x7F4A
 {
-	if (bParam2)
+	if (bParam6)
 	{
-		return (Param0.f_0 == Param1.f_0 && Param0.f_1 == Param1.f_1);
+		return (Param0.f_0 == Param3.f_0 && Param0.f_1 == Param3.f_1);
 	}
-	return ((Param0.f_0 == Param1.f_0 && Param0.f_1 == Param1.f_1) && Param0.f_2 == Param1.f_2);
+	return ((Param0.f_0 == Param3.f_0 && Param0.f_1 == Param3.f_1) && Param0.f_2 == Param3.f_2);
 }
 
 void func_116(int iParam0, var uParam1, var uParam2)//Position - 0x7F91
@@ -6047,17 +6047,17 @@ void func_121(int* iParam0, int iParam1)//Position - 0x8170
 	}
 }
 
-void func_122(var uParam0, int iParam1, struct<3> Param2, float fParam3, int* iParam4, bool bParam5)//Position - 0x8B3C
+void func_122(var uParam0, int iParam1, struct<3> Param2, float fParam5, int* iParam6, bool bParam7)//Position - 0x8B3C
 {
 	if (VEHICLE::IS_VEHICLE_DRIVEABLE(uParam0->f_58[iParam1], false) && !PED::IS_PED_INJURED(uParam0->f_74[iParam1]))
 	{
 		ENTITY::FREEZE_ENTITY_POSITION(uParam0->f_58[iParam1], false);
 		ENTITY::SET_ENTITY_COLLISION(uParam0->f_58[iParam1], true, false);
 		ENTITY::SET_ENTITY_COORDS(uParam0->f_58[iParam1], Param2, true, false, false, true);
-		ENTITY::SET_ENTITY_HEADING(uParam0->f_58[iParam1], fParam3);
+		ENTITY::SET_ENTITY_HEADING(uParam0->f_58[iParam1], fParam5);
 		VEHICLE::SET_VEHICLE_ON_GROUND_PROPERLY(uParam0->f_58[iParam1], 5f);
 		VEHICLE::SET_VEHICLE_FIXED(uParam0->f_58[iParam1]);
-		if (bParam5)
+		if (bParam7)
 		{
 			TASK::TASK_VEHICLE_MISSION(uParam0->f_74[iParam1], uParam0->f_58[iParam1], 0, 1, 35f, 786603, 5f, 5f, true);
 			VEHICLE::SET_VEHICLE_FORWARD_SPEED(uParam0->f_58[iParam1], 30f);
@@ -6070,21 +6070,21 @@ void func_122(var uParam0, int iParam1, struct<3> Param2, float fParam3, int* iP
 		PED::SET_PED_KEEP_TASK(uParam0->f_74[iParam1], true);
 		ENTITY::SET_ENTITY_VISIBLE(uParam0->f_58[iParam1], true, false);
 		ENTITY::SET_ENTITY_VISIBLE(uParam0->f_74[iParam1], true, false);
-		MISC::SET_BIT(iParam4, iParam1);
+		MISC::SET_BIT(iParam6, iParam1);
 	}
 }
 
-void func_123(int* iParam0, char* sParam1, char* sParam2, struct<3> Param3, struct<3> Param4, float fParam5, float fParam6)//Position - 0x8C60
+void func_123(int* iParam0, char* sParam1, char* sParam2, struct<3> Param3, struct<3> Param6, float fParam9, float fParam10)//Position - 0x8C60
 {
 	if (!CAM::DOES_CAM_EXIST(iParam0->f_8))
 	{
 		iParam0->f_8 = CAM::CREATE_CAM("DEFAULT_ANIMATED_CAMERA", false);
 	}
 	iParam0->f_9 = -1;
-	iParam0->f_9 = PED::CREATE_SYNCHRONIZED_SCENE(Param3, Param4, 2);
+	iParam0->f_9 = PED::CREATE_SYNCHRONIZED_SCENE(Param3, Param6, 2);
 	CAM::PLAY_SYNCHRONIZED_CAM_ANIM(iParam0->f_8, iParam0->f_9, sParam1, sParam2);
-	PED::SET_SYNCHRONIZED_SCENE_PHASE(iParam0->f_9, fParam5);
-	PED::SET_SYNCHRONIZED_SCENE_RATE(iParam0->f_9, fParam6);
+	PED::SET_SYNCHRONIZED_SCENE_PHASE(iParam0->f_9, fParam9);
+	PED::SET_SYNCHRONIZED_SCENE_RATE(iParam0->f_9, fParam10);
 	CAM::SET_CAM_ACTIVE(iParam0->f_8, true);
 	CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, true, 0);
 }
@@ -6299,7 +6299,7 @@ int func_128(int* iParam0)//Position - 0x91C0
 	int iVar0;
 	int iVar1;
 	struct<3> Var2;
-	float fVar3;
+	float fVar5;
 	
 	if (BitTest(iParam0->f_3, 4))
 	{
@@ -6325,8 +6325,8 @@ int func_128(int* iParam0)//Position - 0x91C0
 					{
 						iVar1 = joaat("sentinel");
 					}
-					func_7(iVar0, &Var2, &fVar3);
-					iParam0->f_58[iVar0] = VEHICLE::CREATE_VEHICLE(iVar1, Var2, fVar3, false, false, false);
+					func_7(iVar0, &Var2, &fVar5);
+					iParam0->f_58[iVar0] = VEHICLE::CREATE_VEHICLE(iVar1, Var2, fVar5, false, false, false);
 					VEHICLE::SET_VEHICLE_COLOUR_COMBINATION(iParam0->f_58[iVar0], iVar0);
 					ENTITY::SET_ENTITY_INVINCIBLE(iParam0->f_58[iVar0], true);
 					VEHICLE::SET_VEHICLE_LIGHTS(iParam0->f_58[iVar0], 2);
@@ -6743,7 +6743,7 @@ var func_156(int iParam0, int iParam1)//Position - 0x99AE
 struct<5> func_157(int iParam0)//Position - 0x99D3
 {
 	struct<5> Var0;
-	struct<3> Var1;
+	struct<3> Var5;
 	
 	switch (iParam0)
 	{
@@ -6899,50 +6899,50 @@ struct<5> func_157(int iParam0)//Position - 0x99D3
 			break;
 		
 		case 25:
-			Var1 = { func_158(1, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(1, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "hei_dlc_apart_high_new";
 			Var0.f_4 = "hei_dlc_apart_high_new (1)";
 			break;
 		
 		case 26:
-			Var1 = { func_158(2, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(2, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "hei_dlc_apart_high_new";
 			Var0.f_4 = "hei_dlc_apart_high_new (2)";
 			break;
 		
 		case 27:
-			Var1 = { func_158(3, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(3, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "hei_dlc_apart_high_new";
 			Var0.f_4 = "hei_dlc_apart_high_new (3)";
 			break;
 		
 		case 28:
-			Var1 = { func_158(4, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(4, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "hei_dlc_apart_high_new";
 			Var0.f_4 = "hei_dlc_apart_high_new (4)";
 			break;
 		
 		case 29:
-			Var1 = { func_158(5, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(5, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "hei_dlc_apart_high_new";
 			Var0.f_4 = "hei_dlc_apart_high_new (5)";
 			break;
 		
 		case 30:
-			Var1 = { func_158(6, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(6, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "hei_dlc_apart_high_new";
 			Var0.f_4 = "hei_dlc_apart_high_new (6)";
 			break;
 		
 		case 31:
-			Var1 = { func_158(7, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(7, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "hei_dlc_apart_high_new";
 			Var0.f_4 = "hei_dlc_apart_high_new (7)";
 			break;
@@ -6954,64 +6954,64 @@ struct<5> func_157(int iParam0)//Position - 0x99D3
 			break;
 		
 		case 33:
-			Var1 = { func_158(35, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(35, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "hei_dlc_apart_high_new";
 			Var0.f_4 = "hei_dlc_apart_high_new (9)";
 			break;
 		
 		case 34:
-			Var1 = { func_158(36, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(36, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "hei_dlc_apart_high_new";
 			Var0.f_4 = "hei_dlc_apart_high_new (10)";
 			break;
 		
 		case 35:
-			Var1 = { func_158(37, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(37, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "hei_dlc_apart_high_new";
 			Var0.f_4 = "hei_dlc_apart_high_new (11)";
 			break;
 		
 		case 36:
-			Var1 = { func_158(38, 0) };
+			Var5 = { func_158(38, 0) };
 			Var0 = { -20.1f, -580.8f, 91.3f };
 			Var0.f_3 = "hei_dlc_apart_high_new";
 			Var0.f_4 = "hei_dlc_apart_high_new (12)";
 			break;
 		
 		case 37:
-			Var1 = { func_158(39, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(39, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "hei_dlc_apart_high_new";
 			Var0.f_4 = "hei_dlc_apart_high_new (13)";
 			break;
 		
 		case 38:
-			Var1 = { func_158(40, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(40, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "hei_dlc_apart_high_new";
 			Var0.f_4 = "hei_dlc_apart_high_new (14)";
 			break;
 		
 		case 39:
-			Var1 = { func_158(41, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(41, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "hei_dlc_apart_high_new";
 			Var0.f_4 = "hei_dlc_apart_high_new (15)";
 			break;
 		
 		case 40:
-			Var1 = { func_158(42, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(42, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "hei_dlc_apart_high_new";
 			Var0.f_4 = "hei_dlc_apart_high_new (16)";
 			break;
 		
 		case 41:
-			Var1 = { func_158(43, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(43, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "hei_dlc_apart_high_new";
 			Var0.f_4 = "hei_dlc_apart_high_new (17)";
 			break;
@@ -7265,379 +7265,379 @@ struct<5> func_157(int iParam0)//Position - 0x99D3
 			break;
 		
 		case 83:
-			Var1 = { func_158(87, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(87, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_01a_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 84:
-			Var1 = { func_158(87, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(87, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_01b_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 85:
-			Var1 = { func_158(87, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(87, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_01c_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 86:
-			Var1 = { func_158(87, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(87, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_02a_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 87:
-			Var1 = { func_158(87, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(87, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_02b_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 88:
-			Var1 = { func_158(87, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(87, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_02c_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 89:
-			Var1 = { func_158(87, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(87, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_03a_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 90:
-			Var1 = { func_158(87, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(87, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_03b_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 91:
-			Var1 = { func_158(87, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(87, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_03c_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 92:
-			Var1 = { func_158(88, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(88, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_01a_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 93:
-			Var1 = { func_158(88, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(88, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_01b_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 94:
-			Var1 = { func_158(88, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(88, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_01c_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 95:
-			Var1 = { func_158(88, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(88, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_02a_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 96:
-			Var1 = { func_158(88, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(88, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_02b_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 97:
-			Var1 = { func_158(88, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(88, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_02c_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 98:
-			Var1 = { func_158(88, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(88, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_03a_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 99:
-			Var1 = { func_158(88, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(88, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_03b_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 100:
-			Var1 = { func_158(88, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(88, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_03c_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 101:
-			Var1 = { func_158(89, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(89, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_01a_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 102:
-			Var1 = { func_158(89, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(89, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_01b_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 103:
-			Var1 = { func_158(89, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(89, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_01c_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 104:
-			Var1 = { func_158(89, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(89, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_02a_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 105:
-			Var1 = { func_158(89, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(89, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_02b_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 106:
-			Var1 = { func_158(89, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(89, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_02c_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 107:
-			Var1 = { func_158(89, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(89, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_03a_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 108:
-			Var1 = { func_158(89, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(89, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_03b_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 109:
-			Var1 = { func_158(89, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(89, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_03c_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 110:
-			Var1 = { func_158(90, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(90, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_01a_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 111:
-			Var1 = { func_158(90, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(90, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_01b_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 112:
-			Var1 = { func_158(90, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(90, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_01c_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 113:
-			Var1 = { func_158(90, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(90, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_02a_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 114:
-			Var1 = { func_158(90, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(90, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_02b_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 115:
-			Var1 = { func_158(90, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(90, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_02c_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 116:
-			Var1 = { func_158(90, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(90, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_03a_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 117:
-			Var1 = { func_158(90, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(90, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_03b_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 118:
-			Var1 = { func_158(90, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(90, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "ex_int_office_03c_dlc";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 119:
-			Var1 = { func_158(91, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(91, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "bkr_biker_dlc_int_01";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 120:
-			Var1 = { func_158(97, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(97, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "bkr_biker_dlc_int_02";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 121:
-			Var1 = { func_158(103, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(103, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "imp_impexp_int_01";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 122:
-			Var1 = { func_158(104, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(104, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "imp_impexp_int_01";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 123:
-			Var1 = { func_158(105, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(105, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "imp_impexp_int_01";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 124:
-			Var1 = { func_158(106, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(106, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "imp_impexp_int_01";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 125:
-			Var1 = { func_158(107, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(107, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "imp_impexp_int_01";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 126:
-			Var1 = { func_158(108, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(108, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "imp_impexp_int_01";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 127:
-			Var1 = { func_158(109, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(109, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "imp_impexp_int_01";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 128:
-			Var1 = { func_158(110, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(110, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "imp_impexp_int_01";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 129:
-			Var1 = { func_158(111, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(111, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "imp_impexp_int_01";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 130:
-			Var1 = { func_158(112, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(112, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "imp_impexp_int_01";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 131:
-			Var1 = { func_158(113, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(113, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "imp_impexp_int_01";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 132:
-			Var1 = { func_158(114, 0) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(114, 0) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "imp_impexp_int_01";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 133:
-			Var1 = { func_158(103, 1) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(103, 1) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "imp_imptexp_mod_int_01";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 134:
-			Var1 = { func_158(106, 1) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(106, 1) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "imp_imptexp_mod_int_01";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 135:
-			Var1 = { func_158(109, 1) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(109, 1) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "imp_imptexp_mod_int_01";
 			Var0.f_4 = Var0.f_3;
 			break;
 		
 		case 136:
-			Var1 = { func_158(112, 1) };
-			Var0 = { Var1 + Vector(1f, 0f, 0f) };
+			Var5 = { func_158(112, 1) };
+			Var0 = { Var5 + Vector(1f, 0f, 0f) };
 			Var0.f_3 = "imp_imptexp_mod_int_01";
 			Var0.f_4 = Var0.f_3;
 			break;

@@ -195,7 +195,7 @@ void __EntryFunction__()//Position - 0x0
 	func_142();
 	HUD::PAUSE_MENU_ACTIVATE_CONTEXT(874957556);
 	GRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(1);
-	switch (iScriptParam_114)
+	switch (iScriptParam_0)
 	{
 		case 3:
 			while (iVar0 == 0)

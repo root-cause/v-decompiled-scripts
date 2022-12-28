@@ -17,7 +17,7 @@
 	int iLocal_15 = 0;
 	float fLocal_16 = 0f;
 	float fLocal_17[8] = { 0f, 0f, 0f, 0f, 0f, 0f, 0f, 0f };
-	float fLocal_18 = 0f;
+	float fLocal_26 = 0f;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -33,7 +33,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_10 = 12;
 	iLocal_11 = 12;
 	fLocal_16 = -99f;
-	fLocal_18 = -1f;
+	fLocal_26 = -1f;
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(32))
 	{
@@ -152,13 +152,13 @@ void func_2()//Position - 0xE3
 			}
 			else
 			{
-				if (fLocal_18 == -1f)
+				if (fLocal_26 == -1f)
 				{
-					fLocal_18 = fVar3;
+					fLocal_26 = fVar3;
 				}
 				CAM::SET_GAMEPLAY_CAM_SHAKE_AMPLITUDE(((Global_44416 * fVar3) * fVar5));
 				CAM::SET_GAMEPLAY_CAM_MOTION_BLUR_SCALING_THIS_UPDATE(((Global_44415 * fVar3) * fVar5));
-				fLocal_18 = fVar3;
+				fLocal_26 = fVar3;
 			}
 		}
 		if (((Global_44415 * fVar3) * fVar5) < 1f)
@@ -259,7 +259,7 @@ void func_2()//Position - 0xE3
 		fLocal_17[iVar0] = 0f;
 		iVar0++;
 	}
-	fLocal_18 = -1f;
+	fLocal_26 = -1f;
 	fLocal_16 = -99f;
 	func_3(1);
 	iLocal_12 = 1;

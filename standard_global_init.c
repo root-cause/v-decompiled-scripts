@@ -50,7 +50,7 @@
 	char* sLocal_48 = NULL;
 	char* sLocal_49 = NULL;
 	struct<3> Local_50 = { 0, 0, 0 } ;
-	struct<3> Local_51 = { 0, 0, 0 } ;
+	struct<3> Local_53 = { 0, 0, 0 } ;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -83,7 +83,7 @@ void __EntryFunction__()//Position - 0x0
 	sLocal_48 = "CHECKPOINT_MISSED";
 	sLocal_49 = "CHECKPOINT_PERFECT";
 	Local_50 = { 1694.7395f, 3276.5024f, 41.2796f };
-	Local_51 = { 8.79494f, 0.59893f, 154.8464f };
+	Local_53 = { 8.79494f, 0.59893f, 154.8464f };
 	Global_0 = 0f;
 	Global_19 = { 6f, 6f, 2f };
 	Global_22 = { 4f, 4f, 2f };
@@ -358,26 +358,26 @@ void func_3()//Position - 0x710
 	}
 }
 
-void func_4(struct<3> Param0, struct<3> Param1, float fParam2, int iParam3, int iParam4)//Position - 0x761
+void func_4(struct<3> Param0, struct<3> Param3, float fParam6, int iParam7, int iParam8)//Position - 0x761
 {
-	if (iParam3 == 5)
+	if (iParam7 == 5)
 	{
 		return;
 	}
-	Global_95884[iParam3 /*9*/].f_8 = MISC::ADD_HOSPITAL_RESTART(Param1, fParam2, 0);
-	MISC::DISABLE_HOSPITAL_RESTART(Global_95884[iParam3 /*9*/].f_8, false);
-	Global_95884[iParam3 /*9*/] = { Param0 };
-	Global_95884[iParam3 /*9*/].f_3 = { Param1 };
-	Global_95884[iParam3 /*9*/].f_6 = fParam2;
-	Global_95884[iParam3 /*9*/].f_7 = iParam4;
-	func_12(iParam4, 0, 0);
-	func_11(iParam4, 0);
-	func_10(iParam4, 1);
-	func_9(iParam4, 0, 0);
-	func_8(iParam4, 1);
-	func_7(iParam4, Global_95884[iParam3 /*9*/]);
-	func_6(iParam4, 2);
-	func_5(iParam4, 61);
+	Global_95884[iParam7 /*9*/].f_8 = MISC::ADD_HOSPITAL_RESTART(Param3, fParam6, 0);
+	MISC::DISABLE_HOSPITAL_RESTART(Global_95884[iParam7 /*9*/].f_8, false);
+	Global_95884[iParam7 /*9*/] = { Param0 };
+	Global_95884[iParam7 /*9*/].f_3 = { Param3 };
+	Global_95884[iParam7 /*9*/].f_6 = fParam6;
+	Global_95884[iParam7 /*9*/].f_7 = iParam8;
+	func_12(iParam8, 0, 0);
+	func_11(iParam8, 0);
+	func_10(iParam8, 1);
+	func_9(iParam8, 0, 0);
+	func_8(iParam8, 1);
+	func_7(iParam8, Global_95884[iParam7 /*9*/]);
+	func_6(iParam8, 2);
+	func_5(iParam8, 61);
 }
 
 void func_5(int iParam0, int iParam1)//Position - 0x810
@@ -669,26 +669,26 @@ void func_15()//Position - 0xE71
 	}
 }
 
-void func_16(struct<3> Param0, struct<3> Param1, float fParam2, int iParam3, int iParam4)//Position - 0xEC2
+void func_16(struct<3> Param0, struct<3> Param3, float fParam6, int iParam7, int iParam8)//Position - 0xEC2
 {
-	if (iParam3 == 7)
+	if (iParam7 == 7)
 	{
 		return;
 	}
-	Global_95820[iParam3 /*9*/].f_8 = MISC::ADD_POLICE_RESTART(Param1, fParam2, 0);
-	MISC::DISABLE_POLICE_RESTART(Global_95820[iParam3 /*9*/].f_8, false);
-	Global_95820[iParam3 /*9*/] = { Param0 };
-	Global_95820[iParam3 /*9*/].f_3 = { Param1 };
-	Global_95820[iParam3 /*9*/].f_6 = fParam2;
-	Global_95820[iParam3 /*9*/].f_7 = iParam4;
-	func_12(iParam4, 0, 0);
-	func_11(iParam4, 0);
-	func_10(iParam4, 1);
-	func_9(iParam4, 0, 0);
-	func_8(iParam4, 1);
-	func_7(iParam4, Global_95820[iParam3 /*9*/]);
-	func_6(iParam4, 3);
-	func_5(iParam4, 60);
+	Global_95820[iParam7 /*9*/].f_8 = MISC::ADD_POLICE_RESTART(Param3, fParam6, 0);
+	MISC::DISABLE_POLICE_RESTART(Global_95820[iParam7 /*9*/].f_8, false);
+	Global_95820[iParam7 /*9*/] = { Param0 };
+	Global_95820[iParam7 /*9*/].f_3 = { Param3 };
+	Global_95820[iParam7 /*9*/].f_6 = fParam6;
+	Global_95820[iParam7 /*9*/].f_7 = iParam8;
+	func_12(iParam8, 0, 0);
+	func_11(iParam8, 0);
+	func_10(iParam8, 1);
+	func_9(iParam8, 0, 0);
+	func_8(iParam8, 1);
+	func_7(iParam8, Global_95820[iParam7 /*9*/]);
+	func_6(iParam8, 3);
+	func_5(iParam8, 60);
 }
 
 void func_17()//Position - 0xF71
@@ -876,9 +876,9 @@ Vector3 func_21(int iParam0, int iParam1)//Position - 0x181F
 	return Global_32543[iVar0 /*23*/][iParam1 /*3*/];
 }
 
-void func_22(int iParam0, struct<3> Param1, float fParam2, int iParam3)//Position - 0x185D
+void func_22(int iParam0, struct<3> Param1, float fParam4, int iParam5)//Position - 0x185D
 {
-	if (iParam0 == iParam3)
+	if (iParam0 == iParam5)
 	{
 		return;
 	}
@@ -886,13 +886,13 @@ void func_22(int iParam0, struct<3> Param1, float fParam2, int iParam3)//Positio
 	{
 		return;
 	}
-	if (iParam3 == 76)
+	if (iParam5 == 76)
 	{
 		return;
 	}
 	Global_43258[iParam0 /*5*/] = { Param1 };
-	Global_43258[iParam0 /*5*/].f_3 = fParam2;
-	Global_43258[iParam0 /*5*/].f_4 = iParam3;
+	Global_43258[iParam0 /*5*/].f_3 = fParam4;
+	Global_43258[iParam0 /*5*/].f_4 = iParam5;
 }
 
 void func_23()//Position - 0x18A6
@@ -1036,21 +1036,21 @@ void func_30()//Position - 0x1C08
 void func_31(int iParam0, char* sParam1, char* sParam2, char* sParam3, char* sParam4, char* sParam5)//Position - 0x1D20
 {
 	struct<2> Var0;
-	struct<2> Var1;
 	struct<2> Var2;
-	struct<2> Var3;
 	struct<2> Var4;
+	struct<2> Var6;
+	struct<2> Var8;
 	
 	StringCopy(&Var0, sParam1, 8);
-	StringCopy(&Var1, sParam2, 8);
-	StringCopy(&Var2, sParam3, 8);
-	StringCopy(&Var3, sParam4, 8);
-	StringCopy(&Var4, sParam5, 8);
+	StringCopy(&Var2, sParam2, 8);
+	StringCopy(&Var4, sParam3, 8);
+	StringCopy(&Var6, sParam4, 8);
+	StringCopy(&Var8, sParam5, 8);
 	Global_96710[iParam0 /*19*/].f_7[0 /*2*/] = { Var0 };
-	Global_96710[iParam0 /*19*/].f_7[1 /*2*/] = { Var1 };
-	Global_96710[iParam0 /*19*/].f_7[2 /*2*/] = { Var2 };
-	Global_96710[iParam0 /*19*/].f_7[3 /*2*/] = { Var3 };
-	Global_96710[iParam0 /*19*/].f_7[4 /*2*/] = { Var4 };
+	Global_96710[iParam0 /*19*/].f_7[1 /*2*/] = { Var2 };
+	Global_96710[iParam0 /*19*/].f_7[2 /*2*/] = { Var4 };
+	Global_96710[iParam0 /*19*/].f_7[3 /*2*/] = { Var6 };
+	Global_96710[iParam0 /*19*/].f_7[4 /*2*/] = { Var8 };
 }
 
 void func_32(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)//Position - 0x1DA5
@@ -1094,12 +1094,12 @@ void func_33()//Position - 0x1E5B
 	func_34(3, -1157.0675f, -1524.0396f, 9.6346f, -1156.341f, -1525.126f, 11.275f, 215f, "rm_Lounge");
 }
 
-void func_34(int iParam0, struct<3> Param1, struct<3> Param2, float fParam3, char* sParam4)//Position - 0x1F10
+void func_34(int iParam0, struct<3> Param1, struct<3> Param4, float fParam7, char* sParam8)//Position - 0x1F10
 {
 	Global_96627[iParam0 /*15*/] = { Param1 };
-	Global_96627[iParam0 /*15*/].f_3 = { Param2 };
-	Global_96627[iParam0 /*15*/].f_6 = fParam3;
-	StringCopy(&(Global_96627[iParam0 /*15*/].f_7), sParam4, 32);
+	Global_96627[iParam0 /*15*/].f_3 = { Param4 };
+	Global_96627[iParam0 /*15*/].f_6 = fParam7;
+	StringCopy(&(Global_96627[iParam0 /*15*/].f_7), sParam8, 32);
 }
 
 void func_35()//Position - 0x1F50
@@ -1862,17 +1862,17 @@ void func_66()//Position - 0x363C
 	func_67(242, 115.3514f, -1296.0975f, 28.2692f, 107, 115.3514f, -1296.0975f, 28.2692f, 107, 117.5668f, -1294.5807f, 28.2771f, 107, "");
 }
 
-void func_67(int iParam0, struct<3> Param1, int iParam2, struct<3> Param3, int iParam4, struct<3> Param5, int iParam6, char* sParam7)//Position - 0x40EF
+void func_67(int iParam0, struct<3> Param1, int iParam4, struct<3> Param5, int iParam8, struct<3> Param9, int iParam12, char* sParam13)//Position - 0x40EF
 {
 	func_12(iParam0, 0, 0);
 	func_11(iParam0, 1);
 	func_10(iParam0, 1);
 	func_9(iParam0, 1, 0);
 	func_6(iParam0, 4);
-	func_69(iParam0, Param1, iParam2, Param3, iParam4, Param5, iParam6);
-	if (!MISC::ARE_STRINGS_EQUAL(sParam7, ""))
+	func_69(iParam0, Param1, iParam4, Param5, iParam8, Param9, iParam12);
+	if (!MISC::ARE_STRINGS_EQUAL(sParam13, ""))
 	{
-		func_68(iParam0, sParam7);
+		func_68(iParam0, sParam13);
 	}
 }
 
@@ -1892,7 +1892,7 @@ void func_68(int iParam0, char* sParam1)//Position - 0x4149
 	}
 }
 
-void func_69(int iParam0, struct<3> Param1, var uParam2, struct<3> Param3, var uParam4, struct<3> Param5, var uParam6)//Position - 0x41A3
+void func_69(int iParam0, struct<3> Param1, var uParam4, struct<3> Param5, var uParam8, struct<3> Param9, var uParam12)//Position - 0x41A3
 {
 	int iVar0;
 	
@@ -1909,15 +1909,15 @@ void func_69(int iParam0, struct<3> Param1, var uParam2, struct<3> Param3, var u
 	MISC::SET_BIT(&(Global_32543[iVar0 /*23*/].f_11), 18);
 	MISC::SET_BIT(&(Global_32543[iVar0 /*23*/].f_11), 19);
 	Global_32543[iVar0 /*23*/][0 /*3*/] = { Param1 };
-	Global_32543[iVar0 /*23*/].f_12[0] = uParam2;
-	Global_32543[iVar0 /*23*/][1 /*3*/] = { Param3 };
-	Global_32543[iVar0 /*23*/].f_12[1] = uParam4;
-	Global_32543[iVar0 /*23*/][2 /*3*/] = { Param5 };
-	Global_32543[iVar0 /*23*/].f_12[2] = uParam6;
+	Global_32543[iVar0 /*23*/].f_12[0] = uParam4;
+	Global_32543[iVar0 /*23*/][1 /*3*/] = { Param5 };
+	Global_32543[iVar0 /*23*/].f_12[1] = uParam8;
+	Global_32543[iVar0 /*23*/][2 /*3*/] = { Param9 };
+	Global_32543[iVar0 /*23*/].f_12[2] = uParam12;
 	Global_38593 = 1;
 }
 
-void func_70(int iParam0, struct<3> Param1, char* sParam2, int iParam3)//Position - 0x425C
+void func_70(int iParam0, struct<3> Param1, char* sParam4, int iParam5)//Position - 0x425C
 {
 	func_12(iParam0, 0, 0);
 	func_11(iParam0, 1);
@@ -1925,13 +1925,13 @@ void func_70(int iParam0, struct<3> Param1, char* sParam2, int iParam3)//Positio
 	func_9(iParam0, 1, 0);
 	func_7(iParam0, Param1);
 	func_6(iParam0, 4);
-	if (!MISC::ARE_STRINGS_EQUAL(sParam2, ""))
+	if (!MISC::ARE_STRINGS_EQUAL(sParam4, ""))
 	{
-		func_68(iParam0, sParam2);
+		func_68(iParam0, sParam4);
 	}
-	if (iParam3 != 32)
+	if (iParam5 != 32)
 	{
-		func_5(iParam0, iParam3);
+		func_5(iParam0, iParam5);
 	}
 }
 
@@ -2034,45 +2034,45 @@ void func_71()//Position - 0x42B7
 	func_84(161, -742.1f, 5594.8f, 41.7f, "", 36, 0, 7, 1);
 }
 
-void func_72(int iParam0, struct<3> Param1, char* sParam2, int iParam3, int iParam4, int iParam5, int iParam6)//Position - 0x4C39
+void func_72(int iParam0, struct<3> Param1, char* sParam4, int iParam5, int iParam6, int iParam7, int iParam8)//Position - 0x4C39
 {
 	func_7(iParam0, Param1);
-	func_6(iParam0, iParam3);
+	func_6(iParam0, iParam5);
 	func_12(iParam0, 0, 0);
 	func_77(iParam0);
-	func_76(iParam0, iParam4);
+	func_76(iParam0, iParam6);
 	func_75(iParam0, 1);
-	if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam2))
+	if (!MISC::IS_STRING_NULL_OR_EMPTY(sParam4))
 	{
-		func_68(iParam0, sParam2);
+		func_68(iParam0, sParam4);
 	}
-	if (iParam5 != 32)
+	if (iParam7 != 32)
 	{
-		func_5(iParam0, iParam5);
+		func_5(iParam0, iParam7);
 	}
-	if (iParam6 != 7)
+	if (iParam8 != 7)
 	{
-		if (BitTest(iParam6, 0))
+		if (BitTest(iParam8, 0))
 		{
 			func_73(iParam0, 1, 0, 0);
-			if (BitTest(iParam6, 1))
+			if (BitTest(iParam8, 1))
 			{
 				func_73(iParam0, 1, 1, 1);
 			}
-			else if (BitTest(iParam6, 2))
+			else if (BitTest(iParam8, 2))
 			{
 				func_73(iParam0, 1, 2, 1);
 			}
 		}
-		else if (BitTest(iParam6, 1))
+		else if (BitTest(iParam8, 1))
 		{
 			func_73(iParam0, 1, 1, 0);
-			if (BitTest(iParam6, 2))
+			if (BitTest(iParam8, 2))
 			{
 				func_73(iParam0, 1, 2, 1);
 			}
 		}
-		else if (BitTest(iParam6, 2))
+		else if (BitTest(iParam8, 2))
 		{
 			func_73(iParam0, 1, 2, 0);
 		}
@@ -2271,7 +2271,7 @@ Vector3 func_79(int iParam0)//Position - 0x50FE
 	return 0f, 0f, 0f;
 }
 
-void func_80(int iParam0, struct<3> Param1, char* sParam2, int iParam3, bool bParam4, int iParam5)//Position - 0x5172
+void func_80(int iParam0, struct<3> Param1, char* sParam4, int iParam5, bool bParam6, int iParam7)//Position - 0x5172
 {
 	int iVar0;
 	int iVar1;
@@ -2283,7 +2283,7 @@ void func_80(int iParam0, struct<3> Param1, char* sParam2, int iParam3, bool bPa
 	if (iVar2 >= 5)
 	{
 	}
-	func_84(iParam0, Param1, sParam2, iParam3, bParam4, iParam5, 1);
+	func_84(iParam0, Param1, sParam4, iParam5, bParam6, iParam7, 1);
 	if (((Global_113648.f_2354[iVar2 /*2*/] >= 1 || func_83(108) == 1) || func_82((iVar0 + iVar2), 0)) || BitTest(Global_113648.f_18576[(iVar1 + iVar2) /*6*/], 3))
 	{
 		func_81(iParam0, 1);
@@ -2340,19 +2340,19 @@ int func_83(int iParam0)//Position - 0x529A
 	return Global_113648.f_9087.f_99.f_58[iParam0];
 }
 
-void func_84(int iParam0, struct<3> Param1, char* sParam2, int iParam3, bool bParam4, int iParam5, int iParam6)//Position - 0x52C7
+void func_84(int iParam0, struct<3> Param1, char* sParam4, int iParam5, bool bParam6, int iParam7, int iParam8)//Position - 0x52C7
 {
 	var uVar0;
 	
-	uVar0 = iParam6;
+	uVar0 = iParam8;
 	uVar0 = uVar0;
-	if (bParam4)
+	if (bParam6)
 	{
-		func_72(iParam0, Param1, sParam2, 6, 10, iParam3, iParam5);
+		func_72(iParam0, Param1, sParam4, 6, 10, iParam5, iParam7);
 	}
 	else
 	{
-		func_72(iParam0, Param1, sParam2, 6, 9, iParam3, iParam5);
+		func_72(iParam0, Param1, sParam4, 6, 9, iParam5, iParam7);
 	}
 }
 

@@ -151,7 +151,7 @@
 	var uLocal_149 = 0;
 	var uLocal_150 = 0;
 	struct<117> Local_151 = { 0, -1, 0, 0, 0, 0, 0, -1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1065353216, 1065353216, 0, 0, 0, 1065353216, 1065353216, 0, 0, 0, 1065353216, 1065353216, 0, 1040187392, 1040187392, -1, 0, 0, 0, 0, 0, 0, 1065353216, 1065353216, 0, 0, 0, 1065353216, 1065353216, 0, 0, 0, 1065353216, 1065353216, 0, 1040187392, 1040187392, -1, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 1073741824, -1073741824, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ;
-	struct<18> Local_152 = { 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ;
+	struct<18> ScriptParam_0 = { 0, 0, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 } ;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -183,7 +183,7 @@ void __EntryFunction__()//Position - 0x0
 	fLocal_62 = ((0.05f + 0.275f) - 0.01f);
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		func_120(ScriptParam_152);
+		func_120(ScriptParam_0);
 	}
 	else
 	{
@@ -341,21 +341,21 @@ void func_9(bool bParam0)//Position - 0x2A5
 	}
 }
 
-void func_10(char[64] cParam0, bool bParam1)//Position - 0x2BD
+void func_10(char[64] cParam0, bool bParam16)//Position - 0x2BD
 {
 	Local_151.f_9 = func_21(PLAYER::PLAYER_ID());
 	Local_151.f_76.f_36 = 11;
 	Local_151.f_76.f_35 = Local_151.f_9;
 	Local_151.f_76 = { cParam0 };
 	Local_151.f_76.f_33 = 1;
-	func_11(&(Local_151.f_76), bParam1);
+	func_11(&(Local_151.f_76), bParam16);
 }
 
 void func_11(var uParam0, bool bParam1)//Position - 0x300
 {
 	struct<39> Var0;
-	bool bVar1;
-	int iVar2;
+	bool bVar39;
+	int iVar40;
 	
 	Var0.f_0 = -1334461775;
 	Var0.f_1 = PLAYER::PLAYER_ID();
@@ -369,12 +369,12 @@ void func_11(var uParam0, bool bParam1)//Position - 0x300
 	{
 		func_19(&(uParam0->f_37), 0, 0);
 	}
-	bVar1 = true;
+	bVar39 = true;
 	if (MISC::ARE_STRINGS_EQUAL(&(uParam0->f_16), &(Var0.f_2)))
 	{
 		if (func_20(&(uParam0->f_37)) && !func_18(&(uParam0->f_37), 1000, 0))
 		{
-			bVar1 = false;
+			bVar39 = false;
 		}
 		else
 		{
@@ -387,17 +387,17 @@ void func_11(var uParam0, bool bParam1)//Position - 0x300
 		func_5(&(uParam0->f_37));
 	}
 	uParam0->f_32 = 0;
-	if (bVar1)
+	if (bVar39)
 	{
-		iVar2 = func_17(PLAYER::PLAYER_ID());
+		iVar40 = func_17(PLAYER::PLAYER_ID());
 		if (bParam1)
 		{
-			iVar2 = func_12(1, 1);
+			iVar40 = func_12(1, 1);
 		}
-		if (iVar2 != 0)
+		if (iVar40 != 0)
 		{
 			uParam0->f_32 = 1;
-			SCRIPT::SEND_TU_SCRIPT_EVENT(1, &Var0, 39, iVar2);
+			SCRIPT::SEND_TU_SCRIPT_EVENT(1, &Var0, 39, iVar40);
 		}
 	}
 }
@@ -624,15 +624,15 @@ void func_23()//Position - 0x642
 int func_24(int iParam0, int iParam1)//Position - 0x6E9
 {
 	struct<3> Var0;
-	float fVar1;
+	float fVar3;
 	
 	if ((!ENTITY::DOES_ENTITY_EXIST(iParam1) || !ENTITY::DOES_ENTITY_EXIST(PLAYER::GET_PLAYER_PED(iParam0))) || ENTITY::IS_ENTITY_DEAD(PLAYER::GET_PLAYER_PED(iParam0), false))
 	{
 		return 0;
 	}
 	Var0 = { ENTITY::GET_ENTITY_COORDS(PLAYER::GET_PLAYER_PED(iParam0), true) };
-	fVar1 = Var0.f_2;
-	if (fVar1 <= -48f)
+	fVar3 = Var0.f_2;
+	if (fVar3 <= -48f)
 	{
 		return MISC::GET_DISTANCE_BETWEEN_COORDS(Var0, ENTITY::GET_ENTITY_COORDS(iParam1, true), true) <= 4f;
 	}
@@ -2159,13 +2159,13 @@ void func_65(int iParam0)//Position - 0x1F12
 void func_66()//Position - 0x1F20
 {
 	struct<11> Var0;
-	struct<16> Var1;
+	struct<16> Var11;
 	
 	Var0.f_0 = -438538740;
 	Var0.f_2 = 1;
 	Var0.f_6 = MISC::ABSI(NETWORK::GET_TIME_DIFFERENCE(NETWORK::GET_NETWORK_TIME(), Local_151.f_13));
-	Var1 = { func_33(Local_151.f_2) };
-	Var0.f_8 = MISC::GET_HASH_KEY(func_70(&Var1));
+	Var11 = { func_33(Local_151.f_2) };
+	Var0.f_8 = MISC::GET_HASH_KEY(func_70(&Var11));
 	if (Local_151.f_2 == 19)
 	{
 		Var0.f_9 = 1;
@@ -2626,9 +2626,9 @@ int func_78(int iParam0)//Position - 0x2700
 void func_79(var uParam0, int iParam1)//Position - 0x2721
 {
 	struct<8> Var0;
-	bool bVar1;
-	bool bVar2;
-	int iVar3;
+	bool bVar8;
+	bool bVar9;
+	int iVar10;
 	
 	Var0.f_5 = 1073741824;
 	Var0.f_6 = -1073741824;
@@ -2640,13 +2640,13 @@ void func_79(var uParam0, int iParam1)//Position - 0x2721
 	Var0.f_5 = uParam0->f_6;
 	Var0.f_6 = uParam0->f_7;
 	Var0.f_7 = uParam0->f_8;
-	bVar1 = false;
+	bVar8 = false;
 	if (iParam1 == 11)
 	{
 		if (BitTest(Global_2657589[PLAYER::PLAYER_ID() /*466*/].f_439, 1))
 		{
 			MISC::CLEAR_BIT(&(Global_2657589[PLAYER::PLAYER_ID() /*466*/].f_439), 1);
-			bVar1 = true;
+			bVar8 = true;
 		}
 	}
 	uParam0->f_5 = 0;
@@ -2654,12 +2654,12 @@ void func_79(var uParam0, int iParam1)//Position - 0x2721
 	{
 		func_19(&(uParam0->f_1), 0, 0);
 	}
-	bVar2 = true;
-	if (*uParam0 == iParam1 && !bVar1)
+	bVar9 = true;
+	if (*uParam0 == iParam1 && !bVar8)
 	{
 		if (func_20(&(uParam0->f_1)) && !func_18(&(uParam0->f_1), 1000, 0))
 		{
-			bVar2 = false;
+			bVar9 = false;
 		}
 		else
 		{
@@ -2671,12 +2671,12 @@ void func_79(var uParam0, int iParam1)//Position - 0x2721
 		*uParam0 = iParam1;
 		func_5(&(uParam0->f_1));
 	}
-	if (bVar2)
+	if (bVar9)
 	{
-		iVar3 = func_17(PLAYER::PLAYER_ID());
-		if (iVar3 != -1)
+		iVar10 = func_17(PLAYER::PLAYER_ID());
+		if (iVar10 != -1)
 		{
-			SCRIPT::SEND_TU_SCRIPT_EVENT(1, &Var0, 8, iVar3);
+			SCRIPT::SEND_TU_SCRIPT_EVENT(1, &Var0, 8, iVar10);
 			uParam0->f_5 = 1;
 		}
 	}
@@ -2769,7 +2769,7 @@ void func_84()//Position - 0x2972
 void func_85(var uParam0, var uParam1, var uParam2, var uParam3)//Position - 0x29B6
 {
 	struct<6> Var0;
-	int iVar1;
+	int iVar6;
 	
 	Var0.f_0 = -283273310;
 	Var0.f_1 = PLAYER::PLAYER_ID();
@@ -2777,10 +2777,10 @@ void func_85(var uParam0, var uParam1, var uParam2, var uParam3)//Position - 0x2
 	Var0.f_3 = uParam1;
 	Var0.f_4 = uParam0;
 	Var0.f_5 = uParam2;
-	iVar1 = func_86(1);
-	if (!iVar1 == 0)
+	iVar6 = func_86(1);
+	if (!iVar6 == 0)
 	{
-		SCRIPT::SEND_TU_SCRIPT_EVENT(1, &Var0, 6, iVar1);
+		SCRIPT::SEND_TU_SCRIPT_EVENT(1, &Var0, 6, iVar6);
 	}
 }
 

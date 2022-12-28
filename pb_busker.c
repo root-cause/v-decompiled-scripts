@@ -45,17 +45,12 @@
 	int iLocal_43 = 0;
 	int iLocal_44 = 0;
 	struct<3> Local_45 = { 0, 0, 0 } ;
-	struct<3> Local_46 = { 0, 0, 0 } ;
-	int iLocal_47 = 0;
-	int iLocal_48 = 0;
-	int iLocal_49 = 0;
-	int iLocal_50 = 0;
-	struct<2> Local_51 = { 0, 5 } ;
-	var uLocal_52 = 0;
-	var uLocal_53 = 0;
-	var uLocal_54 = 0;
-	var uScriptParam_0 = 0;
-	var uScriptParam_1 = 0;
+	struct<3> Local_48 = { 0, 0, 0 } ;
+	int iLocal_51 = 0;
+	int iLocal_52 = 0;
+	int iLocal_53 = 0;
+	int iLocal_54 = 0;
+	struct<2> ScriptParam_0 = { 0, 5 } ;
 	var uScriptParam_2 = 0;
 	var uScriptParam_3 = 0;
 	var uScriptParam_4 = 0;
@@ -66,12 +61,17 @@
 	var uScriptParam_9 = 0;
 	var uScriptParam_10 = 0;
 	var uScriptParam_11 = 0;
-	var uScriptParam_12 = 5;
+	var uScriptParam_12 = 0;
 	var uScriptParam_13 = 0;
 	var uScriptParam_14 = 0;
 	var uScriptParam_15 = 0;
 	var uScriptParam_16 = 0;
-	var uScriptParam_17 = 0;
+	var uScriptParam_17 = 5;
+	var uScriptParam_18 = 0;
+	var uScriptParam_19 = 0;
+	var uScriptParam_20 = 0;
+	var uScriptParam_21 = 0;
+	var uScriptParam_22 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -100,7 +100,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_40 = 65;
 	iLocal_41 = 49;
 	iLocal_42 = 64;
-	Local_45 = { ScriptParam_51.f_1[0 /*3*/] };
+	Local_45 = { ScriptParam_0.f_1[0 /*3*/] };
 	func_23();
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(11))
 	{
@@ -126,7 +126,7 @@ void __EntryFunction__()//Position - 0x0
 						break;
 					
 					case 1:
-						if (iLocal_47 == 0)
+						if (iLocal_51 == 0)
 						{
 							func_1();
 						}
@@ -152,37 +152,37 @@ void func_1()//Position - 0xE7
 		if (ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), Local_45, 10f, 10f, 10f, false, true, 0) && !ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), Local_45, 3f, 3f, 3f, false, true, 0))
 		{
 			SYSTEM::SETTIMERB(0);
-			Local_46 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
-			TASK::OPEN_SEQUENCE_TASK(&iLocal_50);
-			TASK::TASK_TURN_PED_TO_FACE_COORD(0, Local_46, 0);
+			Local_48 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
+			TASK::OPEN_SEQUENCE_TASK(&iLocal_54);
+			TASK::TASK_TURN_PED_TO_FACE_COORD(0, Local_48, 0);
 			TASK::TASK_PLAY_ANIM(0, "amb@BUSKER", "SAX_loop_B", 8f, -8f, -1, 0, 0f, false, false, false);
-			TASK::CLOSE_SEQUENCE_TASK(iLocal_50);
-			if (!ENTITY::IS_ENTITY_DEAD(iLocal_48, false))
+			TASK::CLOSE_SEQUENCE_TASK(iLocal_54);
+			if (!ENTITY::IS_ENTITY_DEAD(iLocal_52, false))
 			{
-				TASK::TASK_PERFORM_SEQUENCE(iLocal_48, iLocal_50);
+				TASK::TASK_PERFORM_SEQUENCE(iLocal_52, iLocal_54);
 			}
-			TASK::CLEAR_SEQUENCE_TASK(&iLocal_50);
+			TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
 		}
 		if (ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), Local_45, 3f, 3f, 3f, false, true, 0))
 		{
-			Local_46 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
+			Local_48 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
 			SYSTEM::SETTIMERB(0);
-			TASK::OPEN_SEQUENCE_TASK(&iLocal_50);
-			TASK::TASK_TURN_PED_TO_FACE_COORD(0, Local_46, 0);
+			TASK::OPEN_SEQUENCE_TASK(&iLocal_54);
+			TASK::TASK_TURN_PED_TO_FACE_COORD(0, Local_48, 0);
 			TASK::TASK_PLAY_ANIM(0, "amb@BUSKER", "SAX_loop_A", 8f, -8f, -1, 0, 0f, false, false, false);
-			TASK::CLOSE_SEQUENCE_TASK(iLocal_50);
-			if (!ENTITY::IS_ENTITY_DEAD(iLocal_48, false))
+			TASK::CLOSE_SEQUENCE_TASK(iLocal_54);
+			if (!ENTITY::IS_ENTITY_DEAD(iLocal_52, false))
 			{
-				TASK::TASK_PERFORM_SEQUENCE(iLocal_48, iLocal_50);
+				TASK::TASK_PERFORM_SEQUENCE(iLocal_52, iLocal_54);
 			}
-			TASK::CLEAR_SEQUENCE_TASK(&iLocal_50);
+			TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
 		}
 	}
 }
 
 void func_2()//Position - 0x1FD
 {
-	iLocal_47 = MISC::GET_RANDOM_INT_IN_RANGE(0, 2);
+	iLocal_51 = MISC::GET_RANDOM_INT_IN_RANGE(0, 2);
 	if (ENTITY::IS_ENTITY_AT_COORD(PLAYER::PLAYER_PED_ID(), Local_45, 50f, 50f, 50f, false, true, 0))
 	{
 		STREAMING::REQUEST_MODEL(joaat("A_F_M_BevHills_02"));
@@ -196,24 +196,24 @@ void func_2()//Position - 0x1FD
 		{
 			SYSTEM::WAIT(0);
 		}
-		Local_46.f_2 = (Local_45.f_2 - 1f);
-		iLocal_48 = PED::CREATE_PED(19, joaat("G_M_Y_MexGoon_02"), Local_45.f_0, Local_45.f_1, Local_46.f_2, 0f, true, true);
-		if (!ENTITY::IS_ENTITY_DEAD(iLocal_48, false))
+		Local_48.f_2 = (Local_45.f_2 - 1f);
+		iLocal_52 = PED::CREATE_PED(19, joaat("G_M_Y_MexGoon_02"), Local_45.f_0, Local_45.f_1, Local_48.f_2, 0f, true, true);
+		if (!ENTITY::IS_ENTITY_DEAD(iLocal_52, false))
 		{
-			TASK::OPEN_SEQUENCE_TASK(&iLocal_50);
-			TASK::TASK_TURN_PED_TO_FACE_COORD(0, Local_46, 0);
+			TASK::OPEN_SEQUENCE_TASK(&iLocal_54);
+			TASK::TASK_TURN_PED_TO_FACE_COORD(0, Local_48, 0);
 			TASK::TASK_PLAY_ANIM(0, "amb@BUSKER", "SAX_loop_A", 8f, -8f, -1, 1, 0f, false, false, false);
-			TASK::CLOSE_SEQUENCE_TASK(iLocal_50);
-			TASK::TASK_PERFORM_SEQUENCE(iLocal_48, iLocal_50);
-			TASK::CLEAR_SEQUENCE_TASK(&iLocal_50);
+			TASK::CLOSE_SEQUENCE_TASK(iLocal_54);
+			TASK::TASK_PERFORM_SEQUENCE(iLocal_52, iLocal_54);
+			TASK::CLEAR_SEQUENCE_TASK(&iLocal_54);
 		}
-		if (iLocal_47 == 1)
+		if (iLocal_51 == 1)
 		{
-			Local_46 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iLocal_48, 3.8f, 0.8f, 0f) };
-			iLocal_49 = PED::CREATE_PED(5, joaat("A_F_M_BevHills_02"), Local_46, 0f, true, true);
-			if (!ENTITY::IS_ENTITY_DEAD(iLocal_49, false))
+			Local_48 = { ENTITY::GET_OFFSET_FROM_ENTITY_IN_WORLD_COORDS(iLocal_52, 3.8f, 0.8f, 0f) };
+			iLocal_53 = PED::CREATE_PED(5, joaat("A_F_M_BevHills_02"), Local_48, 0f, true, true);
+			if (!ENTITY::IS_ENTITY_DEAD(iLocal_53, false))
 			{
-				TASK::TASK_TURN_PED_TO_FACE_COORD(iLocal_49, Local_45, 0);
+				TASK::TASK_TURN_PED_TO_FACE_COORD(iLocal_53, Local_45, 0);
 			}
 		}
 		iLocal_44 = 1;

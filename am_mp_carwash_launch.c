@@ -50,7 +50,6 @@
 	var uLocal_48 = 0;
 	var uLocal_49 = 0;
 	struct<2> ScriptParam_0 = { 0, 5 } ;
-	var uScriptParam_1 = 0;
 	var uScriptParam_2 = 0;
 	var uScriptParam_3 = 0;
 	var uScriptParam_4 = 0;
@@ -65,12 +64,13 @@
 	var uScriptParam_13 = 0;
 	var uScriptParam_14 = 0;
 	var uScriptParam_15 = 0;
-	var uScriptParam_16 = 5;
-	var uScriptParam_17 = 0;
+	var uScriptParam_16 = 0;
+	var uScriptParam_17 = 5;
 	var uScriptParam_18 = 0;
 	var uScriptParam_19 = 0;
 	var uScriptParam_20 = 0;
 	var uScriptParam_21 = 0;
+	var uScriptParam_22 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -79,7 +79,7 @@ void __EntryFunction__()//Position - 0x0
 	int iVar1;
 	char* sVar2;
 	struct<3> Var3;
-	int iVar4;
+	int iVar6;
 	
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -107,7 +107,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_46 = 64;
 	iVar1 = joaat("carwash1");
 	sVar2 = "carwash1";
-	Var3 = { ScriptParam_50.f_1[0 /*3*/] };
+	Var3 = { ScriptParam_0.f_1[0 /*3*/] };
 	if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("am_mp_carwash_launch")) > 1)
 	{
 		SCRIPT::TERMINATE_THIS_THREAD();
@@ -130,23 +130,23 @@ void __EntryFunction__()//Position - 0x0
 			{
 				SYSTEM::WAIT(0);
 			}
-			SYSTEM::START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS(131838674, &ScriptParam_50, 23, 1424);
+			SYSTEM::START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS(131838674, &ScriptParam_0, 23, 1424);
 		}
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
 	if (func_12(PLAYER::PLAYER_PED_ID()))
 	{
 	}
-	iVar4 = 0;
-	while (iVar4 == 0)
+	iVar6 = 0;
+	while (iVar6 == 0)
 	{
 		if ((((((func_9(PLAYER::PLAYER_ID(), 1, 0) || func_8()) || !func_7(PLAYER::PLAYER_ID())) || func_6()) || func_5(PLAYER::PLAYER_ID())) || func_4(PLAYER::PLAYER_ID())) || func_2(PLAYER::PLAYER_ID()))
 		{
-			iVar4 = 0;
+			iVar6 = 0;
 		}
 		else
 		{
-			iVar4 = 1;
+			iVar6 = 1;
 		}
 		SYSTEM::WAIT(0);
 	}

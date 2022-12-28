@@ -74,7 +74,7 @@ void __EntryFunction__()//Position - 0x0
 	fLocal_31 = 140f;
 	fLocal_32 = 180f;
 	iLocal_35 = 3;
-	func_43(&uScriptParam_44);
+	func_43(&uScriptParam_0);
 	while (true)
 	{
 		func_42();
@@ -687,10 +687,10 @@ void func_43(var uParam0)//Position - 0x925
 	func_44(&uLocal_37, *uParam0, uParam0->f_3);
 }
 
-void func_44(var uParam0, struct<3> Param1, var uParam2)//Position - 0x943
+void func_44(var uParam0, struct<3> Param1, var uParam4)//Position - 0x943
 {
 	func_46(uParam0, Param1);
-	func_45(uParam0, uParam2);
+	func_45(uParam0, uParam4);
 	func_4(1, 1, 1, 0, 0, 0, 0);
 	ENTITY::SET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), Param1, true, false, false, true);
 	if (CAM::IS_SCREEN_FADED_OUT())

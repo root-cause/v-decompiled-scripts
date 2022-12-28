@@ -779,35 +779,35 @@ bool func_19()//Position - 0xAAB
 struct<4> func_20(var uParam0)//Position - 0xAB7
 {
 	struct<4> Var0;
-	int iVar1;
+	int iVar4;
 	
 	StringCopy(&Var0, "SUMMARY_", 16);
-	iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 24);
-	uParam0->f_15 = iVar1;
-	StringIntConCat(&Var0, iVar1, 16);
+	iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 24);
+	uParam0->f_15 = iVar4;
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
 struct<4> func_21(var uParam0)//Position - 0xAE0
 {
 	struct<4> Var0;
-	int iVar1;
+	int iVar4;
 	
 	StringCopy(&Var0, "COLLECT_", 16);
 	if (((func_22(110) || func_22(95)) || func_22(106)) || func_22(107))
 	{
 		StringCopy(&(uParam0->f_14), "Y", 4);
 		StringConCat(&Var0, "Y", 16);
-		iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 11);
+		iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 11);
 	}
 	else
 	{
 		StringCopy(&(uParam0->f_14), "N", 4);
 		StringConCat(&Var0, "N", 16);
-		iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 12);
+		iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 12);
 	}
-	StringIntConCat(&(uParam0->f_14), iVar1, 4);
-	StringIntConCat(&Var0, iVar1, 16);
+	StringIntConCat(&(uParam0->f_14), iVar4, 4);
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
@@ -823,16 +823,16 @@ int func_22(int iParam0)//Position - 0xB68
 struct<4> func_23(var uParam0)//Position - 0xB95
 {
 	struct<4> Var0;
-	int iVar1;
-	int iVar2;
-	int iVar3;
 	int iVar4;
+	int iVar5;
+	int iVar6;
+	int iVar7;
 	
 	StringCopy(&Var0, "RAND_", 16);
-	STATS::STAT_GET_INT(joaat("NUM_RNDPEOPLE_COMPLETED"), &iVar2, -1);
-	STATS::STAT_GET_INT(joaat("NUM_RNDEVENTS_COMPLETED"), &iVar3, -1);
-	iVar4 = (iVar2 + iVar3);
-	if (iVar4 > 10)
+	STATS::STAT_GET_INT(joaat("NUM_RNDPEOPLE_COMPLETED"), &iVar5, -1);
+	STATS::STAT_GET_INT(joaat("NUM_RNDEVENTS_COMPLETED"), &iVar6, -1);
+	iVar7 = (iVar5 + iVar6);
+	if (iVar7 > 10)
 	{
 		StringCopy(&(uParam0->f_13), "Y", 4);
 		StringConCat(&Var0, "Y", 16);
@@ -842,16 +842,16 @@ struct<4> func_23(var uParam0)//Position - 0xB95
 		StringCopy(&(uParam0->f_13), "N", 4);
 		StringConCat(&Var0, "N", 16);
 	}
-	iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
-	StringIntConCat(&(uParam0->f_13), iVar1, 4);
-	StringIntConCat(&Var0, iVar1, 16);
+	iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
+	StringIntConCat(&(uParam0->f_13), iVar4, 4);
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
 struct<4> func_24(var uParam0)//Position - 0xC0F
 {
 	struct<4> Var0;
-	int iVar1;
+	int iVar4;
 	
 	StringCopy(&Var0, "FIT_", 16);
 	if ((((((((func_25(1, 1) > 50 && func_25(1, 2) > 50) && func_25(1, 3) > 50) && func_25(0, 1) > 50) && func_25(0, 2) > 50) && func_25(0, 3) > 50) && func_25(2, 1) > 50) && func_25(2, 2) > 50) && func_25(2, 3) > 50)
@@ -864,9 +864,9 @@ struct<4> func_24(var uParam0)//Position - 0xC0F
 		StringCopy(&(uParam0->f_12), "N", 4);
 		StringConCat(&Var0, "N", 16);
 	}
-	iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 11);
-	StringIntConCat(&(uParam0->f_12), iVar1, 4);
-	StringIntConCat(&Var0, iVar1, 16);
+	iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 11);
+	StringIntConCat(&(uParam0->f_12), iVar4, 4);
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
@@ -1046,7 +1046,7 @@ void func_27(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0xD
 struct<4> func_28(var uParam0)//Position - 0xF68
 {
 	struct<4> Var0;
-	int iVar1;
+	int iVar4;
 	
 	StringCopy(&Var0, "YOGA_", 16);
 	if (func_29(300, 1))
@@ -1059,9 +1059,9 @@ struct<4> func_28(var uParam0)//Position - 0xF68
 		StringCopy(&(uParam0->f_11), "N", 4);
 		StringConCat(&Var0, "N", 16);
 	}
-	iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
-	StringIntConCat(&(uParam0->f_11), iVar1, 4);
-	StringIntConCat(&Var0, iVar1, 16);
+	iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
+	StringIntConCat(&(uParam0->f_11), iVar4, 4);
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
@@ -1080,54 +1080,54 @@ int func_29(int iParam0, int iParam1)//Position - 0xFC5
 struct<4> func_30(var uParam0)//Position - 0xFEC
 {
 	struct<4> Var0;
-	int iVar1;
-	int iVar2;
-	int iVar3;
+	int iVar4;
+	int iVar5;
+	int iVar6;
 	
 	StringCopy(&Var0, "VEHS_", 16);
-	STATS::STAT_GET_INT(joaat("SP0_NUMBER_STOLEN_COP_VEHICLE"), &iVar2, 0);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP0_NUMBER_STOLEN_CARS"), &iVar2, 0);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP0_NUMBER_STOLEN_BIKES"), &iVar2, 0);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP0_NUMBER_STOLEN_BOATS"), &iVar2, 0);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP0_NUMBER_STOLEN_HELIS"), &iVar2, 0);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP0_NUMBER_STOLEN_QUADBIKES"), &iVar2, 0);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP0_NUMBER_STOLEN_BICYCLES"), &iVar2, 0);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP1_NUMBER_STOLEN_COP_VEHICLE"), &iVar2, 1);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP1_NUMBER_STOLEN_CARS"), &iVar2, 1);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP1_NUMBER_STOLEN_BIKES"), &iVar2, 1);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP1_NUMBER_STOLEN_BOATS"), &iVar2, 1);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP1_NUMBER_STOLEN_HELIS"), &iVar2, 1);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP1_NUMBER_STOLEN_QUADBIKES"), &iVar2, 1);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP1_NUMBER_STOLEN_BICYCLES"), &iVar2, 1);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP2_NUMBER_STOLEN_COP_VEHICLE"), &iVar2, 2);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP2_NUMBER_STOLEN_CARS"), &iVar2, 2);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP2_NUMBER_STOLEN_BIKES"), &iVar2, 2);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP2_NUMBER_STOLEN_BOATS"), &iVar2, 2);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP2_NUMBER_STOLEN_HELIS"), &iVar2, 2);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP2_NUMBER_STOLEN_QUADBIKES"), &iVar2, 2);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP2_NUMBER_STOLEN_BICYCLES"), &iVar2, 2);
-	iVar3 = (iVar3 + iVar2);
-	if (iVar3 >= 100)
+	STATS::STAT_GET_INT(joaat("SP0_NUMBER_STOLEN_COP_VEHICLE"), &iVar5, 0);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP0_NUMBER_STOLEN_CARS"), &iVar5, 0);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP0_NUMBER_STOLEN_BIKES"), &iVar5, 0);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP0_NUMBER_STOLEN_BOATS"), &iVar5, 0);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP0_NUMBER_STOLEN_HELIS"), &iVar5, 0);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP0_NUMBER_STOLEN_QUADBIKES"), &iVar5, 0);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP0_NUMBER_STOLEN_BICYCLES"), &iVar5, 0);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP1_NUMBER_STOLEN_COP_VEHICLE"), &iVar5, 1);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP1_NUMBER_STOLEN_CARS"), &iVar5, 1);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP1_NUMBER_STOLEN_BIKES"), &iVar5, 1);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP1_NUMBER_STOLEN_BOATS"), &iVar5, 1);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP1_NUMBER_STOLEN_HELIS"), &iVar5, 1);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP1_NUMBER_STOLEN_QUADBIKES"), &iVar5, 1);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP1_NUMBER_STOLEN_BICYCLES"), &iVar5, 1);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP2_NUMBER_STOLEN_COP_VEHICLE"), &iVar5, 2);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP2_NUMBER_STOLEN_CARS"), &iVar5, 2);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP2_NUMBER_STOLEN_BIKES"), &iVar5, 2);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP2_NUMBER_STOLEN_BOATS"), &iVar5, 2);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP2_NUMBER_STOLEN_HELIS"), &iVar5, 2);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP2_NUMBER_STOLEN_QUADBIKES"), &iVar5, 2);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP2_NUMBER_STOLEN_BICYCLES"), &iVar5, 2);
+	iVar6 = (iVar6 + iVar5);
+	if (iVar6 >= 100)
 	{
 		StringCopy(&(uParam0->f_10), "Y", 4);
 		StringConCat(&Var0, "Y", 16);
@@ -1137,27 +1137,27 @@ struct<4> func_30(var uParam0)//Position - 0xFEC
 		StringCopy(&(uParam0->f_10), "N", 4);
 		StringConCat(&Var0, "N", 16);
 	}
-	iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
-	StringIntConCat(&(uParam0->f_10), iVar1, 4);
-	StringIntConCat(&Var0, iVar1, 16);
+	iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
+	StringIntConCat(&(uParam0->f_10), iVar4, 4);
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
 struct<4> func_31(var uParam0)//Position - 0x11E9
 {
 	struct<4> Var0;
-	int iVar1;
-	int iVar2;
-	int iVar3;
+	int iVar4;
+	int iVar5;
+	int iVar6;
 	
 	StringCopy(&Var0, "PEDS_", 16);
-	STATS::STAT_GET_INT(joaat("SP0_KILLS_INNOCENTS"), &iVar2, 0);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP1_KILLS_INNOCENTS"), &iVar2, 1);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP2_KILLS_INNOCENTS"), &iVar2, 2);
-	iVar3 = (iVar3 + iVar2);
-	if (iVar3 >= 100)
+	STATS::STAT_GET_INT(joaat("SP0_KILLS_INNOCENTS"), &iVar5, 0);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP1_KILLS_INNOCENTS"), &iVar5, 1);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP2_KILLS_INNOCENTS"), &iVar5, 2);
+	iVar6 = (iVar6 + iVar5);
+	if (iVar6 >= 100)
 	{
 		StringCopy(&(uParam0->f_9), "Y", 4);
 		StringConCat(&Var0, "Y", 16);
@@ -1167,21 +1167,21 @@ struct<4> func_31(var uParam0)//Position - 0x11E9
 		StringCopy(&(uParam0->f_9), "N", 4);
 		StringConCat(&Var0, "N", 16);
 	}
-	iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
-	StringIntConCat(&(uParam0->f_9), iVar1, 4);
-	StringIntConCat(&Var0, iVar1, 16);
+	iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
+	StringIntConCat(&(uParam0->f_9), iVar4, 4);
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
 struct<4> func_32(var uParam0)//Position - 0x127E
 {
 	struct<4> Var0;
-	int iVar1;
-	int iVar2;
+	int iVar4;
+	int iVar5;
 	
 	StringCopy(&Var0, "STOCK_", 16);
-	STATS::STAT_GET_INT(joaat("TIME_SPENT_ON_STOCKMARKET"), &iVar2, 0);
-	if (iVar2 >= 120000)
+	STATS::STAT_GET_INT(joaat("TIME_SPENT_ON_STOCKMARKET"), &iVar5, 0);
+	if (iVar5 >= 120000)
 	{
 		StringCopy(&(uParam0->f_8), "Y", 4);
 		StringConCat(&Var0, "Y", 16);
@@ -1191,16 +1191,16 @@ struct<4> func_32(var uParam0)//Position - 0x127E
 		StringCopy(&(uParam0->f_8), "N", 4);
 		StringConCat(&Var0, "N", 16);
 	}
-	iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
-	StringIntConCat(&(uParam0->f_8), iVar1, 4);
-	StringIntConCat(&Var0, iVar1, 16);
+	iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
+	StringIntConCat(&(uParam0->f_8), iVar4, 4);
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
 struct<4> func_33(var uParam0)//Position - 0x12E6
 {
 	struct<4> Var0;
-	int iVar1;
+	int iVar4;
 	
 	StringCopy(&Var0, "FAMILY_", 16);
 	if (func_34(8) && func_34(5))
@@ -1213,9 +1213,9 @@ struct<4> func_33(var uParam0)//Position - 0x12E6
 		StringCopy(&(uParam0->f_7), "N", 4);
 		StringConCat(&Var0, "N", 16);
 	}
-	iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
-	StringIntConCat(&(uParam0->f_7), iVar1, 4);
-	StringIntConCat(&Var0, iVar1, 16);
+	iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
+	StringIntConCat(&(uParam0->f_7), iVar4, 4);
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
@@ -1231,7 +1231,7 @@ int func_34(int iParam0)//Position - 0x134B
 struct<4> func_35(var uParam0)//Position - 0x1372
 {
 	struct<4> Var0;
-	int iVar1;
+	int iVar4;
 	
 	StringCopy(&Var0, "PROS_", 16);
 	if ((func_36(1) > 0 || func_36(0) > 0) || func_36(2) > 0)
@@ -1244,9 +1244,9 @@ struct<4> func_35(var uParam0)//Position - 0x1372
 		StringCopy(&(uParam0->f_6), "N", 4);
 		StringConCat(&Var0, "N", 16);
 	}
-	iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
-	StringIntConCat(&(uParam0->f_6), iVar1, 4);
-	StringIntConCat(&Var0, iVar1, 16);
+	iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
+	StringIntConCat(&(uParam0->f_6), iVar4, 4);
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
@@ -1272,158 +1272,158 @@ int func_36(int iParam0)//Position - 0x13E8
 struct<4> func_37(var uParam0)//Position - 0x1440
 {
 	struct<4> Var0;
-	int iVar1;
-	int iVar2;
-	int iVar3;
 	int iVar4;
 	int iVar5;
+	int iVar6;
+	int iVar7;
+	int iVar8;
 	
 	StringCopy(&Var0, "STRIP_", 16);
-	STATS::STAT_GET_INT(joaat("SP0_LAP_DANCED_BOUGHT"), &iVar2, 0);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP1_LAP_DANCED_BOUGHT"), &iVar2, 1);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP2_LAP_DANCED_BOUGHT"), &iVar2, 2);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP0_MONEY_SPENT_IN_STRIP_CLUBS"), &iVar4, 0);
-	iVar5 = (iVar5 + iVar4);
-	STATS::STAT_GET_INT(joaat("SP1_MONEY_SPENT_IN_STRIP_CLUBS"), &iVar4, 1);
-	iVar5 = (iVar5 + iVar4);
-	STATS::STAT_GET_INT(joaat("SP2_MONEY_SPENT_IN_STRIP_CLUBS"), &iVar4, 2);
-	iVar5 = (iVar5 + iVar4);
-	if (iVar3 >= 3 || iVar5 >= 100)
+	STATS::STAT_GET_INT(joaat("SP0_LAP_DANCED_BOUGHT"), &iVar5, 0);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP1_LAP_DANCED_BOUGHT"), &iVar5, 1);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP2_LAP_DANCED_BOUGHT"), &iVar5, 2);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP0_MONEY_SPENT_IN_STRIP_CLUBS"), &iVar7, 0);
+	iVar8 = (iVar8 + iVar7);
+	STATS::STAT_GET_INT(joaat("SP1_MONEY_SPENT_IN_STRIP_CLUBS"), &iVar7, 1);
+	iVar8 = (iVar8 + iVar7);
+	STATS::STAT_GET_INT(joaat("SP2_MONEY_SPENT_IN_STRIP_CLUBS"), &iVar7, 2);
+	iVar8 = (iVar8 + iVar7);
+	if (iVar6 >= 3 || iVar8 >= 100)
 	{
 		StringCopy(&(uParam0->f_5), "Y", 4);
 		StringConCat(&Var0, "Y", 16);
-		iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
+		iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
 	}
 	else
 	{
 		StringCopy(&(uParam0->f_5), "N", 4);
 		StringConCat(&Var0, "N", 16);
-		iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 12);
+		iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 12);
 	}
-	StringIntConCat(&(uParam0->f_5), iVar1, 4);
-	StringIntConCat(&Var0, iVar1, 16);
+	StringIntConCat(&(uParam0->f_5), iVar4, 4);
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
 struct<4> func_38(var uParam0)//Position - 0x1525
 {
 	struct<4> Var0;
-	int iVar1;
-	int iVar2;
-	int iVar3;
+	int iVar4;
+	int iVar5;
+	int iVar6;
 	
 	StringCopy(&Var0, "CASH_", 16);
-	STATS::STAT_GET_INT(joaat("SP0_MONEY_TOTAL_SPENT"), &iVar2, 0);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP1_MONEY_TOTAL_SPENT"), &iVar2, 1);
-	iVar3 = (iVar3 + iVar2);
-	STATS::STAT_GET_INT(joaat("SP2_MONEY_TOTAL_SPENT"), &iVar2, 2);
-	iVar3 = (iVar3 + iVar2);
-	if (iVar3 >= 1000000)
+	STATS::STAT_GET_INT(joaat("SP0_MONEY_TOTAL_SPENT"), &iVar5, 0);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP1_MONEY_TOTAL_SPENT"), &iVar5, 1);
+	iVar6 = (iVar6 + iVar5);
+	STATS::STAT_GET_INT(joaat("SP2_MONEY_TOTAL_SPENT"), &iVar5, 2);
+	iVar6 = (iVar6 + iVar5);
+	if (iVar6 >= 1000000)
 	{
 		StringCopy(&(uParam0->f_3), "SP", 8);
 		StringConCat(&Var0, "SP", 16);
-		iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 14);
+		iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 14);
 	}
 	else
 	{
 		StringCopy(&(uParam0->f_3), "SA", 8);
 		StringConCat(&Var0, "SA", 16);
-		iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
+		iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
 	}
-	StringIntConCat(&(uParam0->f_3), iVar1, 8);
-	StringIntConCat(&Var0, iVar1, 16);
+	StringIntConCat(&(uParam0->f_3), iVar4, 8);
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
 struct<4> func_39(var uParam0)//Position - 0x15C5
 {
 	struct<4> Var0;
-	int iVar1;
-	int iVar2;
-	int iVar3;
 	int iVar4;
+	int iVar5;
+	int iVar6;
+	int iVar7;
 	
 	StringCopy(&Var0, "CHAR_", 16);
-	iVar2 = 0;
-	iVar4 = 0;
-	STATS::STAT_GET_INT(joaat("SP0_TOTAL_PLAYING_TIME"), &iVar4, 0);
-	STATS::STAT_GET_INT(joaat("SP1_TOTAL_PLAYING_TIME"), &iVar3, 1);
-	if (iVar3 > iVar4)
+	iVar5 = 0;
+	iVar7 = 0;
+	STATS::STAT_GET_INT(joaat("SP0_TOTAL_PLAYING_TIME"), &iVar7, 0);
+	STATS::STAT_GET_INT(joaat("SP1_TOTAL_PLAYING_TIME"), &iVar6, 1);
+	if (iVar6 > iVar7)
 	{
-		iVar4 = iVar3;
-		iVar2 = 1;
+		iVar7 = iVar6;
+		iVar5 = 1;
 	}
-	STATS::STAT_GET_INT(joaat("SP2_TOTAL_PLAYING_TIME"), &iVar3, 2);
-	if (iVar3 > iVar4)
+	STATS::STAT_GET_INT(joaat("SP2_TOTAL_PLAYING_TIME"), &iVar6, 2);
+	if (iVar6 > iVar7)
 	{
-		iVar4 = iVar3;
-		iVar2 = 2;
+		iVar7 = iVar6;
+		iVar5 = 2;
 	}
-	if (iVar2 == 0)
+	if (iVar5 == 0)
 	{
 		StringCopy(&(uParam0->f_2), "M", 4);
 		StringConCat(&Var0, "M", 16);
-		iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
+		iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
 	}
-	else if (iVar2 == 1)
+	else if (iVar5 == 1)
 	{
 		StringCopy(&(uParam0->f_2), "F", 4);
 		StringConCat(&Var0, "F", 16);
-		iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
+		iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 13);
 	}
 	else
 	{
 		StringCopy(&(uParam0->f_2), "T", 4);
 		StringConCat(&Var0, "T", 16);
-		iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 12);
+		iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 12);
 	}
-	StringIntConCat(&(uParam0->f_2), iVar1, 4);
-	StringIntConCat(&Var0, iVar1, 16);
+	StringIntConCat(&(uParam0->f_2), iVar4, 4);
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
 struct<4> func_40(var uParam0)//Position - 0x1693
 {
 	struct<4> Var0;
-	int iVar1;
+	int iVar4;
 	
 	StringCopy(&Var0, "STORY_", 16);
 	if (func_22(135))
 	{
 		StringCopy(&(uParam0->f_1), "M", 4);
 		StringConCat(&Var0, "M", 16);
-		iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 11);
+		iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 11);
 	}
 	else if (func_22(136))
 	{
 		StringCopy(&(uParam0->f_1), "T", 4);
 		StringConCat(&Var0, "T", 16);
-		iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 10);
+		iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 10);
 	}
 	else
 	{
 		StringCopy(&(uParam0->f_1), "B", 4);
 		StringConCat(&Var0, "B", 16);
-		iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 11);
+		iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 11);
 	}
-	StringIntConCat(&(uParam0->f_1), iVar1, 4);
-	StringIntConCat(&Var0, iVar1, 16);
+	StringIntConCat(&(uParam0->f_1), iVar4, 4);
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 
 struct<4> func_41(var uParam0)//Position - 0x171E
 {
 	struct<4> Var0;
-	int iVar1;
+	int iVar4;
 	
 	StringCopy(&Var0, "INTRO_", 16);
-	iVar1 = MISC::GET_RANDOM_INT_IN_RANGE(1, 21);
-	*uParam0 = iVar1;
-	StringIntConCat(&Var0, iVar1, 16);
+	iVar4 = MISC::GET_RANDOM_INT_IN_RANGE(1, 21);
+	*uParam0 = iVar4;
+	StringIntConCat(&Var0, iVar4, 16);
 	return Var0;
 }
 

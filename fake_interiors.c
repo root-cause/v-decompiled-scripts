@@ -30,8 +30,8 @@
 	int iLocal_28 = 0;
 	int iLocal_29 = 0;
 	struct<3> Local_30 = { 0, 0, 0 } ;
-	int iLocal_31 = 0;
-	var uLocal_32 = 0;
+	int iLocal_33 = 0;
+	var uLocal_34 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -67,13 +67,13 @@ void __EntryFunction__()//Position - 0x0
 		}
 		if (func_23(PLAYER::PLAYER_ID()) && ENTITY::DOES_ENTITY_EXIST(func_22()))
 		{
-			iLocal_31 = func_22();
+			iLocal_33 = func_22();
 		}
 		else
 		{
-			iLocal_31 = PLAYER::PLAYER_PED_ID();
+			iLocal_33 = PLAYER::PLAYER_PED_ID();
 		}
-		if (ENTITY::IS_ENTITY_DEAD(iLocal_31, false))
+		if (ENTITY::IS_ENTITY_DEAD(iLocal_33, false))
 		{
 		}
 		func_1();
@@ -83,34 +83,34 @@ void __EntryFunction__()//Position - 0x0
 void func_1()//Position - 0xB1
 {
 	struct<3> Var0;
-	struct<3> Var1;
-	bool bVar2;
-	int iVar3;
+	struct<3> Var3;
+	bool bVar6;
+	int iVar7;
 	
 	func_21();
 	if (iLocal_29 != -1 && func_20(iLocal_29))
 	{
-		Var0 = { ENTITY::GET_ENTITY_COORDS(iLocal_31, false) };
-		Var1 = { func_19(iLocal_29) };
-		if (SYSTEM::VDIST2(Var1, Var0) < IntToFloat(func_18(iLocal_29)))
+		Var0 = { ENTITY::GET_ENTITY_COORDS(iLocal_33, false) };
+		Var3 = { func_19(iLocal_29) };
+		if (SYSTEM::VDIST2(Var3, Var0) < IntToFloat(func_18(iLocal_29)))
 		{
-			bVar2 = false;
-			iVar3 = 0;
-			iVar3 = 0;
-			while (iVar3 < func_17(iLocal_29))
+			bVar6 = false;
+			iVar7 = 0;
+			iVar7 = 0;
+			while (iVar7 < func_17(iLocal_29))
 			{
-				if (!bVar2)
+				if (!bVar6)
 				{
-					if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(iLocal_31, func_16(iLocal_29, iVar3), func_15(iLocal_29, iVar3), func_14(iLocal_29, iVar3), false, true, 0))
+					if (ENTITY::IS_ENTITY_IN_ANGLED_AREA(iLocal_33, func_16(iLocal_29, iVar7), func_15(iLocal_29, iVar7), func_14(iLocal_29, iVar7), false, true, 0))
 					{
-						bVar2 = true;
+						bVar6 = true;
 					}
 				}
-				iVar3++;
+				iVar7++;
 			}
-			if (bVar2)
+			if (bVar6)
 			{
-				HUD::SET_RADAR_AS_INTERIOR_THIS_FRAME(MISC::GET_HASH_KEY(func_13(iLocal_29)), Var1.f_0, Var1.f_1, func_12(iLocal_29), func_11(iLocal_29));
+				HUD::SET_RADAR_AS_INTERIOR_THIS_FRAME(MISC::GET_HASH_KEY(func_13(iLocal_29)), Var3.f_0, Var3.f_1, func_12(iLocal_29), func_11(iLocal_29));
 				func_10(iLocal_29);
 			}
 		}
@@ -119,29 +119,29 @@ void func_1()//Position - 0xB1
 	{
 		if (func_2())
 		{
-			if (BitTest(uLocal_32, 1))
+			if (BitTest(uLocal_34, 1))
 			{
-				MISC::CLEAR_BIT(&uLocal_32, 1);
+				MISC::CLEAR_BIT(&uLocal_34, 1);
 			}
 			if (HUD::IS_PAUSE_MENU_ACTIVE())
 			{
-				if (!BitTest(uLocal_32, 0))
+				if (!BitTest(uLocal_34, 0))
 				{
 					HUD::SET_MINIMAP_COMPONENT(15, true, -1);
-					MISC::SET_BIT(&uLocal_32, 0);
+					MISC::SET_BIT(&uLocal_34, 0);
 				}
 			}
-			else if (BitTest(uLocal_32, 0))
+			else if (BitTest(uLocal_34, 0))
 			{
 				HUD::SET_MINIMAP_COMPONENT(15, false, -1);
-				MISC::CLEAR_BIT(&uLocal_32, 0);
+				MISC::CLEAR_BIT(&uLocal_34, 0);
 			}
 		}
-		else if (!BitTest(uLocal_32, 1))
+		else if (!BitTest(uLocal_34, 1))
 		{
 			HUD::SET_MINIMAP_COMPONENT(15, false, -1);
-			MISC::CLEAR_BIT(&uLocal_32, 0);
-			MISC::SET_BIT(&uLocal_32, 1);
+			MISC::CLEAR_BIT(&uLocal_34, 0);
+			MISC::SET_BIT(&uLocal_34, 1);
 		}
 	}
 }
@@ -239,7 +239,7 @@ void func_10(int iParam0)//Position - 0x328
 {
 	struct<3> Var0;
 	
-	Var0 = { ENTITY::GET_ENTITY_COORDS(iLocal_31, false) };
+	Var0 = { ENTITY::GET_ENTITY_COORDS(iLocal_33, false) };
 	HUD::SET_FAKE_PAUSEMAP_PLAYER_POSITION_THIS_FRAME(Var0.f_0, Var0.f_1);
 	switch (iParam0)
 	{
@@ -250,7 +250,7 @@ void func_10(int iParam0)//Position - 0x328
 			break;
 		
 		case 2:
-			Var0 = { ENTITY::GET_ENTITY_COORDS(iLocal_31, false) };
+			Var0 = { ENTITY::GET_ENTITY_COORDS(iLocal_33, false) };
 			HUD::SET_FAKE_PAUSEMAP_PLAYER_POSITION_THIS_FRAME(Var0.f_0, Var0.f_1);
 			break;
 		
@@ -275,7 +275,7 @@ int func_11(int iParam0)//Position - 0x396
 			break;
 		
 		case 1:
-			Var0 = { ENTITY::GET_ENTITY_COORDS(iLocal_31, false) };
+			Var0 = { ENTITY::GET_ENTITY_COORDS(iLocal_33, false) };
 			if (Var0.f_2 < 9.7796f)
 			{
 				return 0;
@@ -291,7 +291,7 @@ int func_11(int iParam0)//Position - 0x396
 			break;
 		
 		case 2:
-			Var0 = { ENTITY::GET_ENTITY_COORDS(iLocal_31, false) };
+			Var0 = { ENTITY::GET_ENTITY_COORDS(iLocal_33, false) };
 			if (Var0.f_2 < 178.9f)
 			{
 				return 0;
@@ -803,7 +803,7 @@ void func_21()//Position - 0xCC3
 		}
 		else
 		{
-			Var0 = { ENTITY::GET_ENTITY_COORDS(iLocal_31, false) };
+			Var0 = { ENTITY::GET_ENTITY_COORDS(iLocal_33, false) };
 			if (SYSTEM::VDIST2(func_19(iLocal_28), Var0) < SYSTEM::VDIST2(func_19(iLocal_29), Var0))
 			{
 				iLocal_29 = iLocal_28;

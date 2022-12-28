@@ -1805,8 +1805,8 @@ int func_46(int iParam0, int iParam1)//Position - 0x17A3
 	int iVar2;
 	int iVar3;
 	char* sVar4;
-	int iVar5;
-	int iVar6;
+	int iVar20;
+	int iVar21;
 	
 	iVar0 = func_31(iParam1);
 	switch (iVar0)
@@ -1916,11 +1916,11 @@ int func_46(int iParam0, int iParam1)//Position - 0x17A3
 					iVar2 = 1;
 				}
 				func_47(&sVar4, iVar0, iParam0, iVar2, iVar3);
-				iVar5 = MISC::GET_HASH_KEY(&sVar4);
-				if (NETSHOPPING::NET_GAMESERVER_CATALOG_ITEM_KEY_IS_VALID(iVar5))
+				iVar20 = MISC::GET_HASH_KEY(&sVar4);
+				if (NETSHOPPING::NET_GAMESERVER_CATALOG_ITEM_KEY_IS_VALID(iVar20))
 				{
-					iVar6 = NETSHOPPING::NET_GAMESERVER_GET_PRICE(iVar5, joaat("CATEGORY_PROPERTIE"), true);
-					return iVar6;
+					iVar21 = NETSHOPPING::NET_GAMESERVER_GET_PRICE(iVar20, joaat("CATEGORY_PROPERTIE"), true);
+					return iVar21;
 				}
 			}
 			switch (iParam0)
@@ -12385,17 +12385,17 @@ void func_263()//Position - 0xB14B
 int func_264()//Position - 0xB165
 {
 	float fVar0[51];
-	float fVar1;
-	float fVar2;
-	float fVar3;
-	int iVar4;
-	float fVar5;
-	int iVar6;
+	float fVar52;
+	float fVar53;
+	float fVar54;
+	int iVar55;
+	float fVar56;
+	int iVar57;
 	
-	iVar4 = 0;
+	iVar55 = 0;
 	if (func_25() < 7)
 	{
-		fVar5 = 0f;
+		fVar56 = 0f;
 		switch (func_25())
 		{
 			case 0:
@@ -12403,81 +12403,81 @@ int func_264()//Position - 0xB165
 				{
 					return 23;
 				}
-				fVar5 = Global_262145.f_21748 /* Tunable: 579446729 */;
+				fVar56 = Global_262145.f_21748 /* Tunable: 579446729 */;
 				break;
 			
 			case 1:
-				fVar5 = Global_262145.f_21749 /* Tunable: 149375793 */;
+				fVar56 = Global_262145.f_21749 /* Tunable: 149375793 */;
 				break;
 			
 			case 2:
-				fVar5 = Global_262145.f_21750 /* Tunable: 539308860 */;
+				fVar56 = Global_262145.f_21750 /* Tunable: 539308860 */;
 				break;
 			
 			case 3:
-				fVar5 = Global_262145.f_21751 /* Tunable: -502945641 */;
+				fVar56 = Global_262145.f_21751 /* Tunable: -502945641 */;
 				break;
 			
 			case 4:
-				fVar5 = Global_262145.f_21752 /* Tunable: -939138400 */;
+				fVar56 = Global_262145.f_21752 /* Tunable: -939138400 */;
 				break;
 			
 			case 5:
-				fVar5 = Global_262145.f_21753 /* Tunable: 521979622 */;
+				fVar56 = Global_262145.f_21753 /* Tunable: 521979622 */;
 				break;
 			
 			case 6:
-				fVar5 = Global_262145.f_21754 /* Tunable: -99018256 */;
+				fVar56 = Global_262145.f_21754 /* Tunable: -99018256 */;
 				break;
 		}
-		if (fVar5 > MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 1f))
+		if (fVar56 > MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 1f))
 		{
-			iVar4 = 1;
+			iVar55 = 1;
 		}
 	}
-	iVar6 = 0;
-	while (iVar6 < 51)
+	iVar57 = 0;
+	while (iVar57 < 51)
 	{
-		if (!func_37(iVar6) && !func_23(iVar6))
+		if (!func_37(iVar57) && !func_23(iVar57))
 		{
 			if (func_25() < 7)
 			{
-				if (func_266(iVar6) == iVar4)
+				if (func_266(iVar57) == iVar55)
 				{
-					fVar0[iVar6] = func_265(iVar6);
+					fVar0[iVar57] = func_265(iVar57);
 				}
 				else
 				{
-					fVar0[iVar6] = 0f;
+					fVar0[iVar57] = 0f;
 				}
 			}
 			else
 			{
-				fVar0[iVar6] = func_265(iVar6);
+				fVar0[iVar57] = func_265(iVar57);
 			}
 		}
 		else
 		{
-			fVar0[iVar6] = 0f;
+			fVar0[iVar57] = 0f;
 		}
-		iVar6++;
+		iVar57++;
 	}
-	iVar6 = 0;
-	while (iVar6 < 51)
+	iVar57 = 0;
+	while (iVar57 < 51)
 	{
-		fVar2 = (fVar2 + fVar0[iVar6]);
-		iVar6++;
+		fVar53 = (fVar53 + fVar0[iVar57]);
+		iVar57++;
 	}
-	fVar3 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, fVar2);
-	iVar6 = 0;
-	while (iVar6 < 51)
+	fVar54 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, fVar53);
+	iVar57 = 0;
+	while (iVar57 < 51)
 	{
-		fVar1 = (fVar1 + fVar0[iVar6]);
-		if (fVar3 < fVar1)
+		fVar52 = (fVar52 + fVar0[iVar57]);
+		if (fVar54 < fVar52)
 		{
-			return iVar6;
+			return iVar57;
 		}
-		iVar6++;
+		iVar57++;
 	}
 	return -1;
 }
@@ -13866,22 +13866,22 @@ int func_293(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position - 
 			{
 				if (bParam2)
 				{
-					iVar0 = (iVar0 - Global_262145.f_21549 /* Tunable: -1148432846 */);
+					iVar0 = (iVar0 - Global_262145.f_21549 /* Tunable: GR_RESEARCH_UPGRADE_EQUIPMENT_REDUCTION_TIME */);
 				}
 				else
 				{
-					iVar0 = (iVar0 - Global_262145.f_21533 /* Tunable: 631477612 */);
+					iVar0 = (iVar0 - Global_262145.f_21533 /* Tunable: GR_MANU_UPGRADE_EQUIPMENT_REDUCTION_TIME */);
 				}
 			}
 			if (func_51(PLAYER::PLAYER_ID(), iParam0, 1))
 			{
 				if (bParam2)
 				{
-					iVar0 = (iVar0 - Global_262145.f_21550 /* Tunable: 510883248 */);
+					iVar0 = (iVar0 - Global_262145.f_21550 /* Tunable: GR_RESEARCH_UPGRADE_STAFF_REDUCTION_TIME */);
 				}
 				else
 				{
-					iVar0 = (iVar0 - Global_262145.f_21534 /* Tunable: 818645907 */);
+					iVar0 = (iVar0 - Global_262145.f_21534 /* Tunable: GR_MANU_UPGRADE_STAFF_REDUCTION_TIME */);
 				}
 			}
 			if (bParam2)
@@ -14706,12 +14706,12 @@ int func_311(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 	return -1;
 }
 
-void func_312(struct<67> Param0, var uParam1, var uParam2, var uParam3, var uParam4, var uParam5, var uParam6, var uParam7, var uParam8, var uParam9, var uParam10, var uParam11, var uParam12, var uParam13, var uParam14, var uParam15, var uParam16, var uParam17, var uParam18, int iParam19)//Position - 0xDB49
+void func_312(struct<67> Param0, var uParam67, var uParam68, var uParam69, var uParam70, var uParam71, var uParam72, var uParam73, var uParam74, var uParam75, var uParam76, var uParam77, var uParam78, var uParam79, var uParam80, var uParam81, var uParam82, var uParam83, var uParam84, int iParam85)//Position - 0xDB49
 {
 	struct<3> Var0;
-	int iVar1;
+	int iVar36;
 	
-	if (iParam19 < 0)
+	if (iParam85 < 0)
 	{
 		return;
 	}
@@ -14719,16 +14719,16 @@ void func_312(struct<67> Param0, var uParam1, var uParam2, var uParam3, var uPar
 	Var0.f_0 = -444617715;
 	Var0.f_1 = PLAYER::PLAYER_ID();
 	Var0.f_2 = { Param0.f_66 };
-	Var0.f_2.f_33 = iParam19;
-	iVar1 = func_314(Var0.f_1);
+	Var0.f_2.f_33 = iParam85;
+	iVar36 = func_314(Var0.f_1);
 	if ((Global_262145.f_24076 /* Tunable: BLOCK_NS_TRANS */ && !Global_262145.f_24077 /* Tunable: SC_RUN_TRANS */) && !Global_262145.f_24078 /* Tunable: BG_RUN_TRANS */)
 	{
 		return;
 	}
-	if (!iVar1 == 0)
+	if (!iVar36 == 0)
 	{
 		func_313();
-		SCRIPT::SEND_TU_SCRIPT_EVENT(1, &Var0, 36, iVar1);
+		SCRIPT::SEND_TU_SCRIPT_EVENT(1, &Var0, 36, iVar36);
 	}
 }
 
@@ -15967,10 +15967,10 @@ void func_338(var uParam0)//Position - 0xF193
 int func_339(int iParam0, int iParam1, bool bParam2)//Position - 0xF1A0
 {
 	struct<2> Var0;
-	int iVar1;
 	int iVar2;
-	float fVar3;
+	int iVar3;
 	float fVar4;
+	float fVar5;
 	
 	if (bParam2)
 	{
@@ -15982,15 +15982,15 @@ int func_339(int iParam0, int iParam1, bool bParam2)//Position - 0xF1A0
 		Var0.f_0 = Global_2764459[iParam0 /*2*/];
 		Var0.f_1 = Global_2764459[iParam0 /*2*/].f_1;
 	}
-	iVar1 = func_293(iParam1, 0, bParam2, 0);
-	iVar2 = func_340(iParam1, Var0, iParam0, bParam2);
-	if (iVar2 < 0)
+	iVar2 = func_293(iParam1, 0, bParam2, 0);
+	iVar3 = func_340(iParam1, Var0, iParam0, bParam2);
+	if (iVar3 < 0)
 	{
-		iVar2 = 0;
+		iVar3 = 0;
 	}
-	fVar3 = (1f - (SYSTEM::TO_FLOAT((iVar1 - iVar2)) / SYSTEM::TO_FLOAT(iVar1)));
-	fVar4 = SYSTEM::TO_FLOAT(func_290(iParam1, bParam2));
-	return SYSTEM::ROUND((fVar4 * fVar3));
+	fVar4 = (1f - (SYSTEM::TO_FLOAT((iVar2 - iVar3)) / SYSTEM::TO_FLOAT(iVar2)));
+	fVar5 = SYSTEM::TO_FLOAT(func_290(iParam1, bParam2));
+	return SYSTEM::ROUND((fVar5 * fVar4));
 }
 
 int func_340(int iParam0, var uParam1, var uParam2, int iParam3, bool bParam4)//Position - 0xF228
@@ -16258,23 +16258,23 @@ int func_350(int iParam0)//Position - 0xF641
 	bool bVar0;
 	int iVar1;
 	char* sVar2;
-	int iVar3;
-	int iVar4;
-	int iVar5;
-	int iVar6;
-	struct<3> Var7;
+	int iVar18;
+	int iVar19;
+	int iVar20;
+	int iVar21;
+	struct<3> Var22;
 	
 	bVar0 = true;
 	iVar1 = 1;
 	func_47(&sVar2, 5, iParam0, 1, 0);
-	iVar3 = func_46(iParam0, iLocal_123);
-	iVar4 = iParam0;
-	iVar5 = func_352(5, iVar4 + 1);
-	iVar6 = MISC::GET_HASH_KEY(&sVar2);
+	iVar18 = func_46(iParam0, iLocal_123);
+	iVar19 = iParam0;
+	iVar20 = func_352(5, iVar19 + 1);
+	iVar21 = MISC::GET_HASH_KEY(&sVar2);
 	if (func_49())
 	{
 		bVar0 = false;
-		while (!func_351(joaat("CATEGORY_INVENTORY_WAREHOUSE_INTERIOR"), joaat("NET_SHOP_ACTION_BUY_WAREHOUSE"), iVar6, 1, iVar3, &iLocal_112, iVar5, 3, 0, 0, 0))
+		while (!func_351(joaat("CATEGORY_INVENTORY_WAREHOUSE_INTERIOR"), joaat("NET_SHOP_ACTION_BUY_WAREHOUSE"), iVar21, 1, iVar18, &iLocal_112, iVar20, 3, 0, 0, 0))
 		{
 			SYSTEM::WAIT(0);
 			func_499();
@@ -16296,12 +16296,12 @@ int func_350(int iParam0)//Position - 0xF641
 	}
 	if (bVar0)
 	{
-		if (iVar3 > 0)
+		if (iVar18 > 0)
 		{
-			Var7.f_0 = MISC::GET_HASH_KEY(func_315(iLocal_123));
-			Var7.f_1 = 5;
-			Var7.f_2 = iParam0;
-			MONEY::NETWORK_SPENT_UPGRADE_BUSINESS_PROPERTY(iVar3, &Var7, 0, 1);
+			Var22.f_0 = MISC::GET_HASH_KEY(func_315(iLocal_123));
+			Var22.f_1 = 5;
+			Var22.f_2 = iParam0;
+			MONEY::NETWORK_SPENT_UPGRADE_BUSINESS_PROPERTY(iVar18, &Var22, 0, 1);
 		}
 		if (func_49())
 		{
@@ -16674,18 +16674,18 @@ void func_358()//Position - 0xFC61
 	int iVar2;
 	int iVar3;
 	struct<6> Var4;
-	struct<4> Var5;
-	struct<4> Var6;
-	int iVar7;
+	struct<4> Var10;
+	struct<4> Var14;
+	int iVar18;
 	
 	iVar0 = func_33(PLAYER::PLAYER_ID(), iLocal_123);
 	iVar1 = 0;
 	iVar2 = func_34(iLocal_115, 0);
 	iVar3 = func_34(iLocal_115, 1);
 	StringCopy(&Var4, "", 24);
-	StringCopy(&Var5, "RES_UNLCK_FT_D1" /* GXT: Assigned staff are progressing with the current research project. Select the Fast-track option to complete this research now. */, 16);
-	StringCopy(&Var6, "RES_UNLCK_LCK" /* GXT: LOCKED */, 16);
-	iVar7 = func_16();
+	StringCopy(&Var10, "RES_UNLCK_FT_D1" /* GXT: Assigned staff are progressing with the current research project. Select the Fast-track option to complete this research now. */, 16);
+	StringCopy(&Var14, "RES_UNLCK_LCK" /* GXT: LOCKED */, 16);
+	iVar18 = func_16();
 	if (iVar2 < iVar3)
 	{
 		func_360(&iVar2, &iVar3, iVar3);
@@ -16694,52 +16694,52 @@ void func_358()//Position - 0xFC61
 	{
 		iVar3 = -1;
 	}
-	if (iVar7 == -1)
+	if (iVar18 == -1)
 	{
-		StringCopy(&Var5, "DL_NO_PROJECT_D" /* GXT: No active research projects. */, 16);
-		StringCopy(&Var6, "DL_NO_PROJECT_T" /* GXT: Project: Inactive */, 16);
+		StringCopy(&Var10, "DL_NO_PROJECT_D" /* GXT: No active research projects. */, 16);
+		StringCopy(&Var14, "DL_NO_PROJECT_T" /* GXT: Project: Inactive */, 16);
 	}
 	else if (iVar0 == 0 && func_32(PLAYER::PLAYER_ID(), iLocal_123) == 0)
 	{
-		StringCopy(&Var5, "RES_UNLCK_FT_D5" /* GXT: Assign staff to research on the Manage Staff page in order for them to start researching the next project when supplies are available. */, 16);
-		StringCopy(&Var6, "DL_NO_PROJECT_T" /* GXT: Project: Inactive */, 16);
+		StringCopy(&Var10, "RES_UNLCK_FT_D5" /* GXT: Assign staff to research on the Manage Staff page in order for them to start researching the next project when supplies are available. */, 16);
+		StringCopy(&Var14, "DL_NO_PROJECT_T" /* GXT: Project: Inactive */, 16);
 	}
 	else if (iVar0 < 100)
 	{
 		if (iVar0 <= 0)
 		{
-			StringCopy(&Var6, "RES_NEXT_PROJ" /* GXT: Next Project: */, 16);
+			StringCopy(&Var14, "RES_NEXT_PROJ" /* GXT: Next Project: */, 16);
 			if (func_32(PLAYER::PLAYER_ID(), iLocal_123) == 0)
 			{
-				StringCopy(&Var5, "RES_UNLCK_FT_D3" /* GXT: Assign staff to research on the Manage Staff page in order for them to begin the next research project when supplies are available. */, 16);
+				StringCopy(&Var10, "RES_UNLCK_FT_D3" /* GXT: Assign staff to research on the Manage Staff page in order for them to begin the next research project when supplies are available. */, 16);
 			}
 			else
 			{
-				StringCopy(&Var5, "RES_UNLCK_FT_D2" /* GXT: Assigned staff have selected the next research project and will begin when supplies are available. */, 16);
+				StringCopy(&Var10, "RES_UNLCK_FT_D2" /* GXT: Assigned staff have selected the next research project and will begin when supplies are available. */, 16);
 			}
 		}
 		else
 		{
 			if (func_32(PLAYER::PLAYER_ID(), iLocal_123) == 0)
 			{
-				StringCopy(&Var5, "RES_UNLCK_FT_D4" /* GXT: Assign staff to research on the Manage Staff page to progress with the current research project. Select the Fast-track option to complete this research now. */, 16);
+				StringCopy(&Var10, "RES_UNLCK_FT_D4" /* GXT: Assign staff to research on the Manage Staff page to progress with the current research project. Select the Fast-track option to complete this research now. */, 16);
 			}
-			StringCopy(&Var6, "RES_CUR_PROJ" /* GXT: Current Project: */, 16);
+			StringCopy(&Var14, "RES_CUR_PROJ" /* GXT: Current Project: */, 16);
 		}
 		iVar1 = 1;
 		StringCopy(&Var4, "UA_UNLOCK_", 24);
-		StringIntConCat(&Var4, iVar7 + 1, 24);
+		StringIntConCat(&Var4, iVar18 + 1, 24);
 	}
 	else if (iVar0 >= 100)
 	{
 		iVar1 = 2;
 		StringCopy(&Var4, "UA_UNLOCK_", 24);
-		StringCopy(&Var5, "RES_UNLCK_D_", 16);
-		StringCopy(&Var6, "RES_CUR_PROJ" /* GXT: Current Project: */, 16);
-		StringIntConCat(&Var5, iVar7, 16);
-		StringIntConCat(&Var4, iVar7 + 1, 24);
+		StringCopy(&Var10, "RES_UNLCK_D_", 16);
+		StringCopy(&Var14, "RES_CUR_PROJ" /* GXT: Current Project: */, 16);
+		StringIntConCat(&Var10, iVar18, 16);
+		StringIntConCat(&Var4, iVar18 + 1, 24);
 	}
-	func_359(iVar2, iVar0, Var4, Var5, Var6, iVar1, iVar3);
+	func_359(iVar2, iVar0, Var4, Var10, Var14, iVar1, iVar3);
 }
 
 void func_359(int iParam0, int iParam1, char[4] cParam2, char[4] cParam3, char[4] cParam4, char[4] cParam5, char[4] cParam6, char[4] cParam7, char* sParam8, char[4] cParam9, char[4] cParam10, char[4] cParam11, char* sParam12, char[4] cParam13, char[4] cParam14, char[4] cParam15, int iParam16, int iParam17)//Position - 0xFDB6
@@ -16764,51 +16764,51 @@ void func_360(int iParam0, int iParam1, int iParam2)//Position - 0xFDF8
 void func_361()//Position - 0xFE0B
 {
 	struct<3> Var0;
-	int iVar1;
-	int iVar2;
 	int iVar3;
 	int iVar4;
-	char* sVar5;
-	char cVar6[24];
-	int iVar7;
-	int iVar8;
-	int iVar9;
-	int iVar10;
-	int iVar11;
-	int iVar12;
-	int iVar13;
+	int iVar5;
+	int iVar6;
+	char* sVar7;
+	char cVar8[24];
 	int iVar14;
 	int iVar15;
 	int iVar16;
 	int iVar17;
 	int iVar18;
+	int iVar19;
+	int iVar20;
+	int iVar21;
+	int iVar22;
+	int iVar23;
+	int iVar24;
+	int iVar25;
 	
 	Var0 = { func_393(iLocal_123) };
-	iVar1 = func_13(PLAYER::PLAYER_ID(), iLocal_123);
-	iVar2 = func_33(PLAYER::PLAYER_ID(), iLocal_123);
-	iVar3 = Global_1648664[5];
-	iVar4 = func_388(iLocal_123);
-	sVar5 = func_315(iLocal_123);
-	StringCopy(&cVar6, "UA_BUNKER_TXD_", 24);
-	iVar7 = func_32(PLAYER::PLAYER_ID(), iLocal_123);
-	StringIntConCat(&cVar6, (iLocal_123 - 21), 24);
-	iVar8 = func_19();
-	iVar9 = func_386(iVar8, 5);
-	iVar10 = func_384(iVar8, 5);
-	iVar11 = func_382(iVar8, 5);
-	iVar12 = func_380(iVar8, 5);
-	iVar13 = func_378(iVar8, 5);
-	iVar14 = func_376(iVar8, 5);
-	iVar15 = func_375(iVar10, iVar9);
-	iVar16 = func_375(iVar12, iVar11);
-	iVar17 = func_375(iVar13, iVar14);
-	iVar18 = func_373(iLocal_123);
-	iVar1 = func_239(iVar1, 0, 100);
-	iVar2 = func_239(iVar2, 0, 100);
+	iVar3 = func_13(PLAYER::PLAYER_ID(), iLocal_123);
+	iVar4 = func_33(PLAYER::PLAYER_ID(), iLocal_123);
+	iVar5 = Global_1648664[5];
+	iVar6 = func_388(iLocal_123);
+	sVar7 = func_315(iLocal_123);
+	StringCopy(&cVar8, "UA_BUNKER_TXD_", 24);
+	iVar14 = func_32(PLAYER::PLAYER_ID(), iLocal_123);
+	StringIntConCat(&cVar8, (iLocal_123 - 21), 24);
+	iVar15 = func_19();
+	iVar16 = func_386(iVar15, 5);
+	iVar17 = func_384(iVar15, 5);
+	iVar18 = func_382(iVar15, 5);
+	iVar19 = func_380(iVar15, 5);
+	iVar20 = func_378(iVar15, 5);
+	iVar21 = func_376(iVar15, 5);
+	iVar22 = func_375(iVar17, iVar16);
+	iVar23 = func_375(iVar19, iVar18);
+	iVar24 = func_375(iVar20, iVar21);
+	iVar25 = func_373(iLocal_123);
 	iVar3 = func_239(iVar3, 0, 100);
-	iVar17 = func_239(iVar17, 0, 100);
-	iVar16 = func_239(iVar16, 0, 100);
-	iVar15 = func_239(iVar15, 0, 100);
+	iVar4 = func_239(iVar4, 0, 100);
+	iVar5 = func_239(iVar5, 0, 100);
+	iVar24 = func_239(iVar24, 0, 100);
+	iVar23 = func_239(iVar23, 0, 100);
+	iVar22 = func_239(iVar22, 0, 100);
 	if (iLocal_123 == 31)
 	{
 		Var0 = { -3101.287f, 1362.6764f, 19.2333f };
@@ -16816,22 +16816,22 @@ void func_361()//Position - 0xFE0B
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_304, "SET_STATS");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_LITERAL_STRING(PLAYER::GET_PLAYER_NAME(PLAYER::PLAYER_ID()));
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_LITERAL_STRING(func_363(PLAYER::PLAYER_ID()));
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_LITERAL_STRING(&cVar6);
-	func_257(sVar5);
+	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_LITERAL_STRING(&cVar8);
+	func_257(sVar7);
 	func_257(ZONE::GET_NAME_OF_ZONE(Var0));
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar4);
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar1);
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar2);
+	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar6);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar3);
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar18);
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT((iVar10 + iVar12));
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar17);
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar16);
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar15);
+	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar4);
+	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar5);
+	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar25);
+	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT((iVar17 + iVar19));
+	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar24);
+	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar23);
+	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar22);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(func_362());
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(func_25());
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(func_21());
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar7);
+	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar14);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
 
@@ -17929,15 +17929,15 @@ int func_416(int iParam0)//Position - 0x110D6
 void func_417(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4, int iParam5, bool bParam6)//Position - 0x110FF
 {
 	struct<7> Var0;
-	int iVar1;
-	int iVar2;
-	int iVar3;
+	int iVar7;
+	int iVar8;
+	int iVar9;
 	
-	iVar1 = PLAYER::PLAYER_ID();
-	iVar2 = func_50(iVar1);
-	iVar3 = func_32(iVar1, iVar2);
+	iVar7 = PLAYER::PLAYER_ID();
+	iVar8 = func_50(iVar7);
+	iVar9 = func_32(iVar7, iVar8);
 	STATS::GET_BOSS_GOON_UUID(func_19(), &Var0, &(Var0.f_1));
-	Var0.f_2 = func_418(iVar3, bParam0, bParam2, bParam3, bParam4, iParam5, bParam6);
+	Var0.f_2 = func_418(iVar9, bParam0, bParam2, bParam3, bParam4, iParam5, bParam6);
 	if (iParam1 != -1)
 	{
 		Var0.f_3 = iParam1 + 1;
@@ -17950,11 +17950,11 @@ void func_417(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 	{
 		Var0.f_4 = 3;
 	}
-	else if (iVar3 == 2)
+	else if (iVar9 == 2)
 	{
 		Var0.f_4 = 2;
 	}
-	else if (iVar3 == 0)
+	else if (iVar9 == 0)
 	{
 		Var0.f_4 = 1;
 	}
@@ -17963,7 +17963,7 @@ void func_417(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam
 		Var0.f_4 = 0;
 	}
 	Var0.f_5 = Global_1648664[5];
-	Var0.f_6 = func_13(iVar1, iVar2);
+	Var0.f_6 = func_13(iVar7, iVar8);
 	STATS::PLAYSTATS_GUNRUNNING_RND(&Var0);
 }
 
@@ -18611,25 +18611,25 @@ void func_442(int iParam0)//Position - 0x11B7A
 	int iVar0;
 	bool bVar1;
 	struct<6> Var2;
-	struct<2> Var3;
-	struct<4> Var4;
+	struct<2> Var8;
+	struct<4> Var12;
 	
 	iVar0 = 2;
 	bVar1 = func_37(iParam0);
 	Var2 = { func_444(iParam0, !bVar1) };
-	StringCopy(&Var3, "RES_UNLCK_T_", 16);
-	Var4 = { func_443(iParam0, !bVar1) };
-	StringIntConCat(&Var3, iParam0, 16);
+	StringCopy(&Var8, "RES_UNLCK_T_", 16);
+	Var12 = { func_443(iParam0, !bVar1) };
+	StringIntConCat(&Var8, iParam0, 16);
 	if (!bVar1)
 	{
-		StringCopy(&Var3, "RES_UNLCK_LCK" /* GXT: LOCKED */, 16);
+		StringCopy(&Var8, "RES_UNLCK_LCK" /* GXT: LOCKED */, 16);
 		iVar0 = 1;
 	}
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_304, "ADD_RESEARCH_UNLOCKABLE");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar0);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_LITERAL_STRING(&Var2);
-	func_257(&Var3);
-	func_257(&Var4);
+	func_257(&Var8);
+	func_257(&Var12);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam0);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 }
@@ -19007,9 +19007,9 @@ void func_452()//Position - 0x12238
 int func_453()//Position - 0x12252
 {
 	struct<3> Var0;
-	var uVar1;
-	int iVar2;
-	int iVar3;
+	var uVar7;
+	int iVar9;
+	int iVar10;
 	
 	if (!func_49())
 	{
@@ -19017,16 +19017,16 @@ int func_453()//Position - 0x12252
 	}
 	iLocal_312 = -1;
 	iLocal_313 = -1;
-	iVar2 = 0;
-	while (iVar2 < 15)
+	iVar9 = 0;
+	while (iVar9 < 15)
 	{
-		if (Global_4535172[iVar2 /*85*/].f_66.f_4 == joaat("SERVICE_SPEND_BUSINESS"))
+		if (Global_4535172[iVar9 /*85*/].f_66.f_4 == joaat("SERVICE_SPEND_BUSINESS"))
 		{
-			iLocal_312 = iVar2;
+			iLocal_312 = iVar9;
 		}
 		else
 		{
-			iVar2++;
+			iVar9++;
 		}
 	}
 	if (iLocal_312 == -1)
@@ -19035,7 +19035,7 @@ int func_453()//Position - 0x12252
 		func_499();
 		return 0;
 	}
-	while (!func_8(&uVar1, 15000, 0))
+	while (!func_8(&uVar7, 15000, 0))
 	{
 		if (iLocal_313 == -1)
 		{
@@ -19044,12 +19044,12 @@ int func_453()//Position - 0x12252
 				iLocal_313 = Global_4535172[iLocal_312 /*85*/].f_66;
 			}
 		}
-		iVar3 = 0;
-		while (iVar3 < SCRIPT::GET_NUMBER_OF_EVENTS(1))
+		iVar10 = 0;
+		while (iVar10 < SCRIPT::GET_NUMBER_OF_EVENTS(1))
 		{
-			if (SCRIPT::GET_EVENT_AT_INDEX(1, iVar3) == 227)
+			if (SCRIPT::GET_EVENT_AT_INDEX(1, iVar10) == 227)
 			{
-				if (SCRIPT::GET_EVENT_DATA(1, iVar3, &Var0, 7))
+				if (SCRIPT::GET_EVENT_DATA(1, iVar10, &Var0, 7))
 				{
 					if (Var0.f_0 == iLocal_313 && Var0.f_0 != -1)
 					{
@@ -19064,7 +19064,7 @@ int func_453()//Position - 0x12252
 					}
 				}
 			}
-			iVar3++;
+			iVar10++;
 		}
 		SYSTEM::WAIT(0);
 		func_499();
@@ -19542,7 +19542,7 @@ void func_489()//Position - 0x12A91
 {
 	bool bVar0;
 	struct<4> Var1;
-	char* sVar2;
+	char* sVar5;
 	
 	if (BitTest(uLocal_111, 11))
 	{
@@ -19563,9 +19563,9 @@ void func_489()//Position - 0x12A91
 			{
 				MISC::CLEAR_BIT(&uLocal_111, 11);
 				Var1 = { func_443(iLocal_129, 0) };
-				MemCopy(&sVar2, {func_444(iLocal_129, 0)}, 4);
+				MemCopy(&sVar5, {func_444(iLocal_129, 0)}, 4);
 				func_486(1);
-				func_255(&Var1, "WHOUSE_CONF" /* GXT: Confirm */, "", 0, 0, -1, 0, &sVar2, "UA_FT_TITLE" /* GXT: Research Complete */);
+				func_255(&Var1, "WHOUSE_CONF" /* GXT: Confirm */, "", 0, 0, -1, 0, &sVar5, "UA_FT_TITLE" /* GXT: Research Complete */);
 			}
 			MISC::CLEAR_BIT(&uLocal_111, 12);
 		}

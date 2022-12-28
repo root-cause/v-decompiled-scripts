@@ -1,7 +1,7 @@
 #region Local Var
 	struct<2> ScriptParam_0 = { 0, 0 } ;
-	var uScriptParam_1 = 0;
 	var uScriptParam_2 = 0;
+	var uScriptParam_3 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0

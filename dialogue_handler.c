@@ -38,67 +38,67 @@
 	int iLocal_36 = 0;
 	int iLocal_37 = 0;
 	char cLocal_38[24] = "";
-	var uLocal_39 = 0;
-	var uLocal_40 = 0;
 	var uLocal_41 = 0;
-	char cLocal_42[24] = "";
+	var uLocal_42 = 0;
 	var uLocal_43 = 0;
-	var uLocal_44 = 0;
-	var uLocal_45 = 0;
-	char cLocal_46[64] = "";
+	char cLocal_44[24] = "";
 	var uLocal_47 = 0;
 	var uLocal_48 = 0;
 	var uLocal_49 = 0;
-	var uLocal_50 = 0;
-	var uLocal_51 = 0;
-	var uLocal_52 = 0;
-	var uLocal_53 = 0;
-	var uLocal_54 = 0;
-	char cLocal_55[24] = "";
-	var uLocal_56 = 0;
-	var uLocal_57 = 0;
+	char cLocal_50[64] = "";
 	var uLocal_58 = 0;
-	char* sLocal_59 = NULL;
-	char cLocal_60[24] = "";
+	var uLocal_59 = 0;
+	var uLocal_60 = 0;
 	var uLocal_61 = 0;
 	var uLocal_62 = 0;
 	var uLocal_63 = 0;
-	char* sLocal_64 = NULL;
-	char* sLocal_65 = NULL;
-	char* sLocal_66 = NULL;
-	bool bLocal_67 = 0;
-	bool bLocal_68 = 0;
-	bool bLocal_69 = 0;
-	char cLocal_70[24] = "";
+	var uLocal_64 = 0;
+	var uLocal_65 = 0;
+	char cLocal_66[24] = "";
+	var uLocal_69 = 0;
+	var uLocal_70 = 0;
 	var uLocal_71 = 0;
-	var uLocal_72 = 0;
-	var uLocal_73 = 0;
-	char* sLocal_74 = NULL;
-	int iLocal_75 = 0;
-	int iLocal_76 = 0;
-	int iLocal_77 = 0;
-	int iLocal_78 = 0;
-	int iLocal_79 = 0;
-	int iLocal_80 = 0;
-	int iLocal_81 = 0;
-	int iLocal_82 = 0;
-	int iLocal_83 = 0;
-	int iLocal_84 = 0;
-	int iLocal_85 = 0;
-	int iLocal_86 = 0;
-	int iLocal_87 = 0;
-	int iLocal_88 = 0;
-	int iLocal_89 = 0;
-	int iLocal_90 = 0;
-	int iLocal_91 = 0;
+	char* sLocal_72 = NULL;
+	char cLocal_73[24] = "";
+	var uLocal_76 = 0;
+	var uLocal_77 = 0;
+	var uLocal_78 = 0;
+	char* sLocal_79 = NULL;
+	char* sLocal_80 = NULL;
+	char* sLocal_81 = NULL;
+	bool bLocal_82 = 0;
+	bool bLocal_83 = 0;
+	bool bLocal_84 = 0;
+	char cLocal_85[24] = "";
+	var uLocal_88 = 0;
+	var uLocal_89 = 0;
+	var uLocal_90 = 0;
+	char* sLocal_91 = NULL;
 	int iLocal_92 = 0;
 	int iLocal_93 = 0;
-	var uLocal_94[30] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	var uLocal_95[30] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	var uLocal_96[30] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	var uLocal_97[30] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	int iLocal_94 = 0;
+	int iLocal_95 = 0;
+	int iLocal_96 = 0;
+	int iLocal_97 = 0;
 	int iLocal_98 = 0;
 	int iLocal_99 = 0;
+	int iLocal_100 = 0;
+	int iLocal_101 = 0;
+	int iLocal_102 = 0;
+	int iLocal_103 = 0;
+	int iLocal_104 = 0;
+	int iLocal_105 = 0;
+	int iLocal_106 = 0;
+	int iLocal_107 = 0;
+	int iLocal_108 = 0;
+	int iLocal_109 = 0;
+	int iLocal_110 = 0;
+	var uLocal_111[30] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	var uLocal_142[30] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	var uLocal_173[30] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	var uLocal_204[30] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+	int iLocal_235 = 0;
+	int iLocal_236 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -156,23 +156,23 @@ void __EntryFunction__()//Position - 0x0
 					MISC::SET_BIT(&Global_20591, 1);
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
-						iLocal_89 = NETWORK::GET_NETWORK_TIME();
+						iLocal_106 = NETWORK::GET_NETWORK_TIME();
 					}
 					else
 					{
-						iLocal_85 = MISC::GET_GAME_TIMER();
+						iLocal_102 = MISC::GET_GAME_TIMER();
 					}
 				}
 				if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 				{
-					iLocal_91 = NETWORK::GET_TIME_DIFFERENCE(NETWORK::GET_NETWORK_TIME(), iLocal_89);
+					iLocal_108 = NETWORK::GET_TIME_DIFFERENCE(NETWORK::GET_NETWORK_TIME(), iLocal_106);
 				}
 				else
 				{
-					iLocal_86 = MISC::GET_GAME_TIMER();
-					iLocal_91 = (iLocal_86 - iLocal_85);
+					iLocal_103 = MISC::GET_GAME_TIMER();
+					iLocal_108 = (iLocal_103 - iLocal_102);
 				}
-				if (iLocal_91 < 3000)
+				if (iLocal_108 < 3000)
 				{
 					if (func_113(&Global_21179, &Global_21795, &Global_21715, Global_21728, Global_22710, Global_22711, 0))
 					{
@@ -626,11 +626,11 @@ void func_7()//Position - 0x4D6
 								iVar0 = 0;
 								while (iVar0 < Global_22709 + 1)
 								{
-									uLocal_94[iVar0] = func_44(&(Global_21984[iVar0 /*6*/]));
-									uLocal_95[iVar0] = func_44(&(Global_22346[iVar0 /*6*/]));
+									uLocal_111[iVar0] = func_44(&(Global_21984[iVar0 /*6*/]));
+									uLocal_142[iVar0] = func_44(&(Global_22346[iVar0 /*6*/]));
 									iVar0++;
 								}
-								func_43(Global_22709, &Global_21014, Global_7568, &Global_21801, &uLocal_94, &uLocal_95, 9, 0, 0, 0, 0);
+								func_43(Global_22709, &Global_21014, Global_7568, &Global_21801, &uLocal_111, &uLocal_142, 9, 0, 0, 0, 0);
 							}
 							else if (Global_21723 == 2)
 							{
@@ -676,11 +676,11 @@ void func_7()//Position - 0x4D6
 								iVar1 = 0;
 								while (iVar1 < Global_22708 + 1)
 								{
-									uLocal_96[iVar1] = func_44(&(Global_22165[iVar1 /*6*/]));
-									uLocal_97[iVar1] = func_44(&(Global_22527[iVar1 /*6*/]));
+									uLocal_173[iVar1] = func_44(&(Global_22165[iVar1 /*6*/]));
+									uLocal_204[iVar1] = func_44(&(Global_22527[iVar1 /*6*/]));
 									iVar1++;
 								}
-								func_43(Global_22708, &Global_21014, Global_7568, &Global_21801, &uLocal_96, &uLocal_97, 9, 0, 0, 0, 0);
+								func_43(Global_22708, &Global_21014, Global_7568, &Global_21801, &uLocal_173, &uLocal_204, 9, 0, 0, 0, 0);
 							}
 							else if (Global_21723 == 2)
 							{
@@ -756,7 +756,7 @@ void func_7()//Position - 0x4D6
 						}
 						func_121(Global_20364, "SET_SOFT_KEYS", 1f, 0f, 1f, -1f, -1f, 0, 0, 0, 0, 0);
 						MISC::CLEAR_BIT(&Global_8253, 17);
-						iLocal_98 = 0;
+						iLocal_235 = 0;
 						iLocal_30 = 1;
 					}
 					func_16();
@@ -766,12 +766,12 @@ void func_7()//Position - 0x4D6
 						Global_21778 = 0;
 						func_45();
 						GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20364, "GET_CURRENT_SELECTION");
-						iLocal_99 = GRAPHICS::END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE();
-						while (!GRAPHICS::IS_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_READY(iLocal_99))
+						iLocal_236 = GRAPHICS::END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE();
+						while (!GRAPHICS::IS_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_READY(iLocal_236))
 						{
 							SYSTEM::WAIT(0);
 						}
-						iVar2 = GRAPHICS::GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT(iLocal_99);
+						iVar2 = GRAPHICS::GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT(iLocal_236);
 						switch (iVar2)
 						{
 							case 0:
@@ -1513,25 +1513,25 @@ void func_15()//Position - 0x1C27
 
 void func_16()//Position - 0x1CBA
 {
-	if (iLocal_98)
+	if (iLocal_235)
 	{
 		if (SYSTEM::TIMERA() > 50)
 		{
-			iLocal_98 = 0;
+			iLocal_235 = 0;
 		}
 	}
-	if (iLocal_98 == 0)
+	if (iLocal_235 == 0)
 	{
 		if (func_49(2, Global_20359, 0) || PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 181 /*INPUT_CELLPHONE_SCROLL_BACKWARD*/))
 		{
 			func_20();
-			iLocal_98 = 1;
+			iLocal_235 = 1;
 			SYSTEM::SETTIMERA(0);
 		}
 		if (func_49(2, Global_20360, 0) || PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 180 /*INPUT_CELLPHONE_SCROLL_FORWARD*/))
 		{
 			func_17();
-			iLocal_98 = 1;
+			iLocal_235 = 1;
 			SYSTEM::SETTIMERA(0);
 		}
 	}
@@ -1699,7 +1699,7 @@ void func_24()//Position - 0x1FF8
 int func_25(var uParam0, int iParam1, char* sParam2, var uParam3, var uParam4, var uParam5, var uParam6, int iParam7, int iParam8, int iParam9, int iParam10, bool bParam11)//Position - 0x2027
 {
 	var uVar0;
-	var uVar1;
+	var uVar11;
 	
 	func_42(uParam0, iParam1, sParam2, iParam9, iParam10, 0);
 	func_41();
@@ -1712,9 +1712,9 @@ int func_25(var uParam0, int iParam1, char* sParam2, var uParam3, var uParam4, v
 		Global_21737 = 0;
 	}
 	uVar0 = 10;
-	uVar1 = 10;
-	func_39(2, &uVar0, &uVar1, uParam3, uParam4, uParam5, uParam6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
-	return func_26(&uVar0, &uVar1, iParam7, bParam11);
+	uVar11 = 10;
+	func_39(2, &uVar0, &uVar11, uParam3, uParam4, uParam5, uParam6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+	return func_26(&uVar0, &uVar11, iParam7, bParam11);
 }
 
 int func_26(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 0x2086
@@ -2464,12 +2464,12 @@ int func_54()//Position - 0x2DA5
 {
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		iLocal_91 = NETWORK::GET_TIME_DIFFERENCE(NETWORK::GET_NETWORK_TIME(), iLocal_90);
+		iLocal_108 = NETWORK::GET_TIME_DIFFERENCE(NETWORK::GET_NETWORK_TIME(), iLocal_107);
 	}
 	else
 	{
-		iLocal_88 = MISC::GET_GAME_TIMER();
-		iLocal_91 = (iLocal_88 - iLocal_87);
+		iLocal_105 = MISC::GET_GAME_TIMER();
+		iLocal_108 = (iLocal_105 - iLocal_104);
 	}
 	return 0;
 }
@@ -2855,11 +2855,11 @@ void func_65()//Position - 0x3410
 {
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		iLocal_90 = NETWORK::GET_NETWORK_TIME();
+		iLocal_107 = NETWORK::GET_NETWORK_TIME();
 	}
 	else
 	{
-		iLocal_87 = MISC::GET_GAME_TIMER();
+		iLocal_104 = MISC::GET_GAME_TIMER();
 	}
 }
 
@@ -2937,21 +2937,21 @@ void func_68()//Position - 0x3617
 {
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		iLocal_92 = NETWORK::GET_TIME_DIFFERENCE(NETWORK::GET_NETWORK_TIME(), iLocal_78);
-		iLocal_93 = NETWORK::GET_TIME_DIFFERENCE(NETWORK::GET_NETWORK_TIME(), iLocal_81);
+		iLocal_109 = NETWORK::GET_TIME_DIFFERENCE(NETWORK::GET_NETWORK_TIME(), iLocal_95);
+		iLocal_110 = NETWORK::GET_TIME_DIFFERENCE(NETWORK::GET_NETWORK_TIME(), iLocal_98);
 	}
 	else
 	{
-		iLocal_77 = MISC::GET_GAME_TIMER();
-		iLocal_92 = (iLocal_77 - iLocal_76);
-		iLocal_80 = MISC::GET_GAME_TIMER();
-		iLocal_93 = (iLocal_80 - iLocal_79);
+		iLocal_94 = MISC::GET_GAME_TIMER();
+		iLocal_109 = (iLocal_94 - iLocal_93);
+		iLocal_97 = MISC::GET_GAME_TIMER();
+		iLocal_110 = (iLocal_97 - iLocal_96);
 	}
 	if (Global_21772 == 1)
 	{
 		if (func_48())
 		{
-			if (iLocal_92 > 4000)
+			if (iLocal_109 > 4000)
 			{
 				if (BitTest(Global_8253, 14))
 				{
@@ -2965,7 +2965,7 @@ void func_68()//Position - 0x3617
 				}
 			}
 		}
-		else if (iLocal_92 > 2000)
+		else if (iLocal_109 > 2000)
 		{
 			if (BitTest(Global_8253, 14))
 			{
@@ -2979,7 +2979,7 @@ void func_68()//Position - 0x3617
 			}
 		}
 	}
-	if (iLocal_93 > 10000)
+	if (iLocal_110 > 10000)
 	{
 		Global_20382 = 3;
 	}
@@ -3134,13 +3134,13 @@ void func_74()//Position - 0x38D8
 	int iVar12;
 	int iVar13;
 	
-	iLocal_75 = 0;
+	iLocal_92 = 0;
 	iVar0 = 1;
 	iVar1 = 1;
 	iVar2 = 0;
 	iLocal_29 = 0;
 	iLocal_31 = 0;
-	while (iLocal_75 < Global_21721)
+	while (iLocal_92 < Global_21721)
 	{
 		func_91();
 		func_90();
@@ -3148,22 +3148,22 @@ void func_74()//Position - 0x38D8
 		iVar13 = 0;
 		while (iVar2 < 70 && iLocal_29 == 0)
 		{
-			cLocal_42 = { Global_21344.f_6[iLocal_75 /*6*/] };
-			StringConCat(&cLocal_42, "A", 24);
-			Global_20593[iVar2 /*6*/] = { Global_21344.f_6[iLocal_75 /*6*/] };
+			cLocal_44 = { Global_21344.f_6[iLocal_92 /*6*/] };
+			StringConCat(&cLocal_44, "A", 24);
+			Global_20593[iVar2 /*6*/] = { Global_21344.f_6[iLocal_92 /*6*/] };
 			StringConCat(&(Global_20593[iVar2 /*6*/]), "_", 24);
 			StringIntConCat(&(Global_20593[iVar2 /*6*/]), iVar1, 24);
 			cLocal_38 = { Global_20593[iVar2 /*6*/] };
 			StringConCat(&cLocal_38, "A", 24);
 			if (HUD::DOES_TEXT_LABEL_EXIST(&cLocal_38))
 			{
-				StringCopy(&cLocal_46, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_38), 64);
+				StringCopy(&cLocal_50, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_38), 64);
 				iVar3 = func_88(iVar13);
 				iVar4 = func_87(iVar13);
 				iVar5 = func_85(iVar13);
-				bLocal_67 = func_84();
-				bLocal_68 = func_83();
-				bLocal_69 = func_82();
+				bLocal_82 = func_84();
+				bLocal_83 = func_83();
+				bLocal_84 = func_82();
 				bVar6 = func_81(iVar13);
 				bVar7 = func_80(iVar13);
 				bVar8 = func_79(iVar13);
@@ -3173,25 +3173,25 @@ void func_74()//Position - 0x38D8
 				bVar11 = func_75(iVar13);
 				if (HUD::DOES_TEXT_LABEL_EXIST(&(Global_20593[iVar2 /*6*/])))
 				{
-					if (MISC::ARE_STRINGS_EQUAL(&(Global_20593[iVar2 /*6*/]), &(Global_21344.f_187[iLocal_75 /*6*/])))
+					if (MISC::ARE_STRINGS_EQUAL(&(Global_20593[iVar2 /*6*/]), &(Global_21344.f_187[iLocal_92 /*6*/])))
 					{
 						if (iVar3 > 36 || iVar4 > 36)
 						{
 						}
-						AUDIO::ADD_LINE_TO_CONVERSATION(iVar3, &cLocal_46, &(Global_20593[iVar2 /*6*/]), iVar4, iVar5, false, bVar6, bVar7, bVar8, iVar12, bVar9, bVar10, bVar11);
+						AUDIO::ADD_LINE_TO_CONVERSATION(iVar3, &cLocal_50, &(Global_20593[iVar2 /*6*/]), iVar4, iVar5, false, bVar6, bVar7, bVar8, iVar12, bVar9, bVar10, bVar11);
 					}
 				}
 				iVar1 = (iVar1 + iVar0);
 			}
-			else if (HUD::DOES_TEXT_LABEL_EXIST(&cLocal_42))
+			else if (HUD::DOES_TEXT_LABEL_EXIST(&cLocal_44))
 			{
-				StringCopy(&cLocal_46, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_42), 64);
+				StringCopy(&cLocal_50, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_44), 64);
 				iVar3 = func_88(0);
 				iVar4 = func_87(0);
 				iVar5 = func_85(0);
-				bLocal_67 = func_84();
-				bLocal_68 = func_83();
-				bLocal_69 = func_82();
+				bLocal_82 = func_84();
+				bLocal_83 = func_83();
+				bLocal_84 = func_82();
 				bVar6 = func_81(0);
 				bVar7 = func_80(0);
 				bVar8 = func_79(0);
@@ -3199,7 +3199,7 @@ void func_74()//Position - 0x38D8
 				bVar9 = func_77(0);
 				bVar10 = func_76(0);
 				bVar11 = func_75(0);
-				AUDIO::ADD_LINE_TO_CONVERSATION(iVar3, &cLocal_46, &(Global_21344.f_6[iLocal_75 /*6*/]), iVar4, iVar5, true, bVar6, bVar7, bVar8, iVar12, bVar9, bVar10, bVar11);
+				AUDIO::ADD_LINE_TO_CONVERSATION(iVar3, &cLocal_50, &(Global_21344.f_6[iLocal_92 /*6*/]), iVar4, iVar5, true, bVar6, bVar7, bVar8, iVar12, bVar9, bVar10, bVar11);
 				StringCopy(&(Global_20593[iVar2 /*6*/]), "END", 24);
 				iLocal_29 = 1;
 			}
@@ -3214,7 +3214,7 @@ void func_74()//Position - 0x38D8
 			{
 			}
 		}
-		iLocal_75++;
+		iLocal_92++;
 		iLocal_29 = 0;
 		iVar1 = 1;
 		iVar13 = 0;
@@ -3222,9 +3222,9 @@ void func_74()//Position - 0x38D8
 	}
 	if (Global_21731 == 0)
 	{
-		AUDIO::SET_CONVERSATION_AUDIO_CONTROLLED_BY_ANIM(bLocal_68);
-		AUDIO::SET_CONVERSATION_AUDIO_PLACEHOLDER(bLocal_69);
-		AUDIO::START_SCRIPT_CONVERSATION(Global_21344.f_368, Global_21344.f_369, Global_21344.f_370, bLocal_67);
+		AUDIO::SET_CONVERSATION_AUDIO_CONTROLLED_BY_ANIM(bLocal_83);
+		AUDIO::SET_CONVERSATION_AUDIO_PLACEHOLDER(bLocal_84);
+		AUDIO::START_SCRIPT_CONVERSATION(Global_21344.f_368, Global_21344.f_369, Global_21344.f_370, bLocal_82);
 		Global_21725 = 4;
 	}
 }
@@ -3233,7 +3233,7 @@ int func_75(int iParam0)//Position - 0x3B57
 {
 	char* sVar0;
 	
-	sVar0 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_70), iParam0 * 7 + 6, iParam0 * 7 + 7);
+	sVar0 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_85), iParam0 * 7 + 6, iParam0 * 7 + 7);
 	if (MISC::ARE_STRINGS_EQUAL(sVar0, "0"))
 	{
 		return 0;
@@ -3245,7 +3245,7 @@ int func_76(int iParam0)//Position - 0x3B8C
 {
 	char* sVar0;
 	
-	sVar0 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_70), iParam0 * 7 + 5, iParam0 * 7 + 6);
+	sVar0 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_85), iParam0 * 7 + 5, iParam0 * 7 + 6);
 	if (MISC::ARE_STRINGS_EQUAL(sVar0, "0"))
 	{
 		return 0;
@@ -3257,7 +3257,7 @@ int func_77(int iParam0)//Position - 0x3BC1
 {
 	char* sVar0;
 	
-	sVar0 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_70), iParam0 * 7 + 4, iParam0 * 7 + 5);
+	sVar0 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_85), iParam0 * 7 + 4, iParam0 * 7 + 5);
 	if (MISC::ARE_STRINGS_EQUAL(sVar0, "0"))
 	{
 		return 0;
@@ -3269,7 +3269,7 @@ int func_78(int iParam0)//Position - 0x3BF6
 {
 	char* sVar0;
 	
-	sVar0 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_70), iParam0 * 7 + 3, iParam0 * 7 + 4);
+	sVar0 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_85), iParam0 * 7 + 3, iParam0 * 7 + 4);
 	if (MISC::ARE_STRINGS_EQUAL(sVar0, "0"))
 	{
 		return 1;
@@ -3297,7 +3297,7 @@ int func_79(int iParam0)//Position - 0x3C6C
 {
 	char* sVar0;
 	
-	sVar0 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_70), iParam0 * 7 + 2, iParam0 * 7 + 3);
+	sVar0 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_85), iParam0 * 7 + 2, iParam0 * 7 + 3);
 	if (MISC::ARE_STRINGS_EQUAL(sVar0, "0"))
 	{
 		return 0;
@@ -3309,7 +3309,7 @@ int func_80(int iParam0)//Position - 0x3CA1
 {
 	char* sVar0;
 	
-	sVar0 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_70), iParam0 * 7 + 1, iParam0 * 7 + 2);
+	sVar0 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_85), iParam0 * 7 + 1, iParam0 * 7 + 2);
 	if (MISC::ARE_STRINGS_EQUAL(sVar0, "0"))
 	{
 		return 0;
@@ -3321,7 +3321,7 @@ int func_81(int iParam0)//Position - 0x3CD6
 {
 	char* sVar0;
 	
-	sVar0 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_70), iParam0 * 7, iParam0 * 7 + 1);
+	sVar0 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_85), iParam0 * 7, iParam0 * 7 + 1);
 	if (MISC::ARE_STRINGS_EQUAL(sVar0, "0"))
 	{
 		return 0;
@@ -3333,7 +3333,7 @@ int func_82()//Position - 0x3D09
 {
 	char* sVar0;
 	
-	sVar0 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_60), 2, 3);
+	sVar0 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_73), 2, 3);
 	if (MISC::ARE_STRINGS_EQUAL(sVar0, "0"))
 	{
 		return 0;
@@ -3345,7 +3345,7 @@ int func_83()//Position - 0x3D34
 {
 	char* sVar0;
 	
-	sVar0 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_60), 1, 2);
+	sVar0 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_73), 1, 2);
 	if (MISC::ARE_STRINGS_EQUAL(sVar0, "0"))
 	{
 		return 0;
@@ -3357,7 +3357,7 @@ int func_84()//Position - 0x3D5F
 {
 	char* sVar0;
 	
-	sVar0 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_60), 0, 1);
+	sVar0 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_73), 0, 1);
 	if (MISC::ARE_STRINGS_EQUAL(sVar0, "0"))
 	{
 		return 0;
@@ -3369,7 +3369,7 @@ int func_85(int iParam0)//Position - 0x3D8A
 {
 	char* sVar0;
 	
-	sVar0 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_55), iParam0 * 3 + 2, iParam0 * 3 + 3);
+	sVar0 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_66), iParam0 * 3 + 2, iParam0 * 3 + 3);
 	return func_86(sVar0);
 }
 
@@ -3530,7 +3530,7 @@ int func_87(int iParam0)//Position - 0x404E
 {
 	char* sVar0;
 	
-	sVar0 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_55), iParam0 * 3 + 1, iParam0 * 3 + 2);
+	sVar0 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_66), iParam0 * 3 + 1, iParam0 * 3 + 2);
 	return func_86(sVar0);
 }
 
@@ -3538,18 +3538,18 @@ int func_88(int iParam0)//Position - 0x4074
 {
 	char* sVar0;
 	
-	sVar0 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_55), iParam0 * 3, iParam0 * 3 + 1);
+	sVar0 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_66), iParam0 * 3, iParam0 * 3 + 1);
 	return func_86(sVar0);
 }
 
 void func_89()//Position - 0x4098
 {
-	cLocal_70 = { Global_21344.f_6[iLocal_75 /*6*/] };
-	StringConCat(&cLocal_70, "LF", 24);
-	if (HUD::DOES_TEXT_LABEL_EXIST(&cLocal_70))
+	cLocal_85 = { Global_21344.f_6[iLocal_92 /*6*/] };
+	StringConCat(&cLocal_85, "LF", 24);
+	if (HUD::DOES_TEXT_LABEL_EXIST(&cLocal_85))
 	{
-		sLocal_74 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_70);
-		if (MISC::IS_STRING_NULL(sLocal_74))
+		sLocal_91 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_85);
+		if (MISC::IS_STRING_NULL(sLocal_91))
 		{
 		}
 	}
@@ -3557,20 +3557,20 @@ void func_89()//Position - 0x4098
 
 void func_90()//Position - 0x40D1
 {
-	cLocal_60 = { Global_21344.f_6[iLocal_75 /*6*/] };
-	StringConCat(&cLocal_60, "IF", 24);
-	if (HUD::DOES_TEXT_LABEL_EXIST(&cLocal_60))
+	cLocal_73 = { Global_21344.f_6[iLocal_92 /*6*/] };
+	StringConCat(&cLocal_73, "IF", 24);
+	if (HUD::DOES_TEXT_LABEL_EXIST(&cLocal_73))
 	{
-		sLocal_64 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_60), 0, 1);
-		if (MISC::IS_STRING_NULL(sLocal_64))
+		sLocal_79 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_73), 0, 1);
+		if (MISC::IS_STRING_NULL(sLocal_79))
 		{
 		}
-		sLocal_65 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_60), 1, 2);
-		if (MISC::IS_STRING_NULL(sLocal_65))
+		sLocal_80 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_73), 1, 2);
+		if (MISC::IS_STRING_NULL(sLocal_80))
 		{
 		}
-		sLocal_66 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_60), 2, 3);
-		if (MISC::IS_STRING_NULL(sLocal_66))
+		sLocal_81 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_73), 2, 3);
+		if (MISC::IS_STRING_NULL(sLocal_81))
 		{
 		}
 	}
@@ -3578,12 +3578,12 @@ void func_90()//Position - 0x40D1
 
 void func_91()//Position - 0x413E
 {
-	cLocal_55 = { Global_21344.f_6[iLocal_75 /*6*/] };
-	StringConCat(&cLocal_55, "SL", 24);
-	if (HUD::DOES_TEXT_LABEL_EXIST(&cLocal_55))
+	cLocal_66 = { Global_21344.f_6[iLocal_92 /*6*/] };
+	StringConCat(&cLocal_66, "SL", 24);
+	if (HUD::DOES_TEXT_LABEL_EXIST(&cLocal_66))
 	{
-		sLocal_59 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_55);
-		if (MISC::IS_STRING_NULL(sLocal_59))
+		sLocal_72 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_66);
+		if (MISC::IS_STRING_NULL(sLocal_72))
 		{
 		}
 	}
@@ -3592,16 +3592,16 @@ void func_91()//Position - 0x413E
 void func_92()//Position - 0x4177
 {
 	func_93();
-	AUDIO::SET_CONVERSATION_AUDIO_CONTROLLED_BY_ANIM(bLocal_68);
-	AUDIO::SET_CONVERSATION_AUDIO_PLACEHOLDER(bLocal_69);
+	AUDIO::SET_CONVERSATION_AUDIO_CONTROLLED_BY_ANIM(bLocal_83);
+	AUDIO::SET_CONVERSATION_AUDIO_PLACEHOLDER(bLocal_84);
 	if (Global_22717)
 	{
-		AUDIO::PRELOAD_SCRIPT_CONVERSATION(Global_21344.f_368, Global_21344.f_369, Global_21344.f_370, bLocal_67);
+		AUDIO::PRELOAD_SCRIPT_CONVERSATION(Global_21344.f_368, Global_21344.f_369, Global_21344.f_370, bLocal_82);
 		iLocal_36 = MISC::GET_GAME_TIMER();
 	}
 	else
 	{
-		AUDIO::START_SCRIPT_CONVERSATION(Global_21344.f_368, Global_21344.f_369, Global_21344.f_370, bLocal_67);
+		AUDIO::START_SCRIPT_CONVERSATION(Global_21344.f_368, Global_21344.f_369, Global_21344.f_370, bLocal_82);
 	}
 	Global_21725 = 4;
 }
@@ -3715,8 +3715,8 @@ void func_93()//Position - 0x41D2
 	Global_22735 = 0;
 	while (iVar2 < 70 && iLocal_29 == 0)
 	{
-		cLocal_42 = { Global_21344 };
-		StringConCat(&cLocal_42, "A", 24);
+		cLocal_44 = { Global_21344 };
+		StringConCat(&cLocal_44, "A", 24);
 		Global_20593[iVar2 /*6*/] = { Global_21344 };
 		StringConCat(&(Global_20593[iVar2 /*6*/]), "_", 24);
 		StringIntConCat(&(Global_20593[iVar2 /*6*/]), iVar1, 24);
@@ -3724,7 +3724,7 @@ void func_93()//Position - 0x41D2
 		StringConCat(&cLocal_38, "A", 24);
 		if (HUD::DOES_TEXT_LABEL_EXIST(&cLocal_38))
 		{
-			StringCopy(&cLocal_46, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_38), 64);
+			StringCopy(&cLocal_50, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_38), 64);
 			iVar3 = func_88(iVar2);
 			if (iVar3 == 9)
 			{
@@ -3734,9 +3734,9 @@ void func_93()//Position - 0x41D2
 			}
 			iVar4 = func_87(iVar2);
 			iVar5 = func_85(iVar2);
-			bLocal_67 = func_84();
-			bLocal_68 = func_83();
-			bLocal_69 = func_82();
+			bLocal_82 = func_84();
+			bLocal_83 = func_83();
+			bLocal_84 = func_82();
 			bVar6 = func_81(iVar2);
 			bVar7 = func_80(iVar2);
 			bVar8 = func_79(iVar2);
@@ -3751,14 +3751,14 @@ void func_93()//Position - 0x41D2
 					if (iVar3 > 36 || iVar4 > 36)
 					{
 					}
-					AUDIO::ADD_LINE_TO_CONVERSATION(iVar3, &cLocal_46, &(Global_20593[iVar2 /*6*/]), iVar4, iVar5, false, bVar6, bVar7, bVar8, iVar12, bVar9, bVar10, bVar11);
+					AUDIO::ADD_LINE_TO_CONVERSATION(iVar3, &cLocal_50, &(Global_20593[iVar2 /*6*/]), iVar4, iVar5, false, bVar6, bVar7, bVar8, iVar12, bVar9, bVar10, bVar11);
 				}
 				else if (MISC::ARE_STRINGS_EQUAL(&(Global_20593[iVar2 /*6*/]), &Global_22723))
 				{
 					if (iVar3 > 36 || iVar4 > 36)
 					{
 					}
-					AUDIO::ADD_LINE_TO_CONVERSATION(iVar3, &cLocal_46, &(Global_20593[iVar2 /*6*/]), iVar4, iVar5, false, bVar6, bVar7, bVar8, iVar12, bVar9, bVar10, bVar11);
+					AUDIO::ADD_LINE_TO_CONVERSATION(iVar3, &cLocal_50, &(Global_20593[iVar2 /*6*/]), iVar4, iVar5, false, bVar6, bVar7, bVar8, iVar12, bVar9, bVar10, bVar11);
 					Global_22735 = iVar2;
 					if (Global_22721 == 1)
 					{
@@ -3768,21 +3768,21 @@ void func_93()//Position - 0x41D2
 			}
 			else if (Global_22721 == 0 && Global_22715 == 0)
 			{
-				AUDIO::ADD_LINE_TO_CONVERSATION(iVar3, &cLocal_46, &cLocal_46, iVar4, iVar5, false, bVar6, bVar7, bVar8, iVar12, bVar9, bVar10, bVar11);
+				AUDIO::ADD_LINE_TO_CONVERSATION(iVar3, &cLocal_50, &cLocal_50, iVar4, iVar5, false, bVar6, bVar7, bVar8, iVar12, bVar9, bVar10, bVar11);
 			}
 			iVar1 = (iVar1 + iVar0);
 		}
 		else
 		{
-			if (HUD::DOES_TEXT_LABEL_EXIST(&cLocal_42))
+			if (HUD::DOES_TEXT_LABEL_EXIST(&cLocal_44))
 			{
-				StringCopy(&cLocal_46, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_42), 64);
+				StringCopy(&cLocal_50, HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_44), 64);
 				iVar3 = func_88(iVar2);
 				iVar4 = func_87(iVar2);
 				iVar5 = func_85(iVar2);
-				bLocal_67 = func_84();
-				bLocal_68 = func_83();
-				bLocal_69 = func_82();
+				bLocal_82 = func_84();
+				bLocal_83 = func_83();
+				bLocal_84 = func_82();
 				bVar6 = func_81(iVar2);
 				bVar7 = func_80(iVar2);
 				bVar8 = func_79(iVar2);
@@ -3790,7 +3790,7 @@ void func_93()//Position - 0x41D2
 				bVar9 = func_77(iVar2);
 				bVar10 = func_76(iVar2);
 				bVar11 = func_75(iVar2);
-				AUDIO::ADD_LINE_TO_CONVERSATION(iVar3, &cLocal_46, &Global_21344, iVar4, iVar5, true, bVar6, bVar7, bVar8, iVar12, bVar9, bVar10, bVar11);
+				AUDIO::ADD_LINE_TO_CONVERSATION(iVar3, &cLocal_50, &Global_21344, iVar4, iVar5, true, bVar6, bVar7, bVar8, iVar12, bVar9, bVar10, bVar11);
 			}
 			iLocal_29 = 1;
 		}
@@ -3846,12 +3846,12 @@ void func_94()//Position - 0x45EB
 
 void func_95()//Position - 0x46FB
 {
-	cLocal_70 = { Global_21344 };
-	StringConCat(&cLocal_70, "LF", 24);
-	if (HUD::DOES_TEXT_LABEL_EXIST(&cLocal_70))
+	cLocal_85 = { Global_21344 };
+	StringConCat(&cLocal_85, "LF", 24);
+	if (HUD::DOES_TEXT_LABEL_EXIST(&cLocal_85))
 	{
-		sLocal_74 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_70);
-		if (MISC::IS_STRING_NULL(sLocal_74))
+		sLocal_91 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_85);
+		if (MISC::IS_STRING_NULL(sLocal_91))
 		{
 		}
 	}
@@ -3859,20 +3859,20 @@ void func_95()//Position - 0x46FB
 
 void func_96()//Position - 0x472E
 {
-	cLocal_60 = { Global_21344 };
-	StringConCat(&cLocal_60, "IF", 24);
-	if (HUD::DOES_TEXT_LABEL_EXIST(&cLocal_60))
+	cLocal_73 = { Global_21344 };
+	StringConCat(&cLocal_73, "IF", 24);
+	if (HUD::DOES_TEXT_LABEL_EXIST(&cLocal_73))
 	{
-		sLocal_64 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_60), 0, 1);
-		if (MISC::IS_STRING_NULL(sLocal_64))
+		sLocal_79 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_73), 0, 1);
+		if (MISC::IS_STRING_NULL(sLocal_79))
 		{
 		}
-		sLocal_65 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_60), 1, 2);
-		if (MISC::IS_STRING_NULL(sLocal_65))
+		sLocal_80 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_73), 1, 2);
+		if (MISC::IS_STRING_NULL(sLocal_80))
 		{
 		}
-		sLocal_66 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_60), 2, 3);
-		if (MISC::IS_STRING_NULL(sLocal_66))
+		sLocal_81 = HUD::GET_CHARACTER_FROM_AUDIO_CONVERSATION_FILENAME(HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_73), 2, 3);
+		if (MISC::IS_STRING_NULL(sLocal_81))
 		{
 		}
 	}
@@ -3880,12 +3880,12 @@ void func_96()//Position - 0x472E
 
 void func_97()//Position - 0x4795
 {
-	cLocal_55 = { Global_21344 };
-	StringConCat(&cLocal_55, "SL", 24);
-	if (HUD::DOES_TEXT_LABEL_EXIST(&cLocal_55))
+	cLocal_66 = { Global_21344 };
+	StringConCat(&cLocal_66, "SL", 24);
+	if (HUD::DOES_TEXT_LABEL_EXIST(&cLocal_66))
 	{
-		sLocal_59 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_55);
-		if (MISC::IS_STRING_NULL(sLocal_59))
+		sLocal_72 = HUD::GET_FILENAME_FOR_AUDIO_CONVERSATION(&cLocal_66);
+		if (MISC::IS_STRING_NULL(sLocal_72))
 		{
 		}
 	}
@@ -4378,11 +4378,11 @@ void func_105()//Position - 0x4DE8
 			}
 			if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 			{
-				iLocal_84 = NETWORK::GET_NETWORK_TIME();
+				iLocal_101 = NETWORK::GET_NETWORK_TIME();
 			}
 			else
 			{
-				iLocal_82 = MISC::GET_GAME_TIMER();
+				iLocal_99 = MISC::GET_GAME_TIMER();
 			}
 			while (Global_20383.f_1 != 9 && Global_20366 == 0)
 			{
@@ -4399,16 +4399,16 @@ void func_105()//Position - 0x4DE8
 				}
 				if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 				{
-					iLocal_91 = NETWORK::GET_TIME_DIFFERENCE(NETWORK::GET_NETWORK_TIME(), iLocal_84);
+					iLocal_108 = NETWORK::GET_TIME_DIFFERENCE(NETWORK::GET_NETWORK_TIME(), iLocal_101);
 				}
 				else
 				{
-					iLocal_83 = MISC::GET_GAME_TIMER();
-					iLocal_91 = (iLocal_83 - iLocal_82);
+					iLocal_100 = MISC::GET_GAME_TIMER();
+					iLocal_108 = (iLocal_100 - iLocal_99);
 				}
 				if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) == 0)
 				{
-					if (iLocal_91 > 15000)
+					if (iLocal_108 > 15000)
 					{
 						Global_22741 = 1;
 						Global_20366 = 1;
@@ -4488,27 +4488,27 @@ void func_105()//Position - 0x4DE8
 			}
 			if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 			{
-				iLocal_84 = NETWORK::GET_NETWORK_TIME();
+				iLocal_101 = NETWORK::GET_NETWORK_TIME();
 			}
 			else
 			{
-				iLocal_82 = MISC::GET_GAME_TIMER();
+				iLocal_99 = MISC::GET_GAME_TIMER();
 			}
 			while (Global_20383.f_1 != 9 && Global_20366 == 0)
 			{
 				SYSTEM::WAIT(0);
 				if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 				{
-					iLocal_91 = NETWORK::GET_TIME_DIFFERENCE(NETWORK::GET_NETWORK_TIME(), iLocal_84);
+					iLocal_108 = NETWORK::GET_TIME_DIFFERENCE(NETWORK::GET_NETWORK_TIME(), iLocal_101);
 				}
 				else
 				{
-					iLocal_83 = MISC::GET_GAME_TIMER();
-					iLocal_91 = (iLocal_83 - iLocal_82);
+					iLocal_100 = MISC::GET_GAME_TIMER();
+					iLocal_108 = (iLocal_100 - iLocal_99);
 				}
 				if (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("cellphone_flashhand")) == 0)
 				{
-					if (iLocal_91 > 20000)
+					if (iLocal_108 > 20000)
 					{
 						Global_22741 = 1;
 						Global_20366 = 1;
@@ -4527,13 +4527,13 @@ void func_105()//Position - 0x4DE8
 			}
 			if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 			{
-				iLocal_78 = NETWORK::GET_NETWORK_TIME();
-				iLocal_81 = NETWORK::GET_NETWORK_TIME();
+				iLocal_95 = NETWORK::GET_NETWORK_TIME();
+				iLocal_98 = NETWORK::GET_NETWORK_TIME();
 			}
 			else
 			{
-				iLocal_76 = MISC::GET_GAME_TIMER();
-				iLocal_79 = MISC::GET_GAME_TIMER();
+				iLocal_93 = MISC::GET_GAME_TIMER();
+				iLocal_96 = MISC::GET_GAME_TIMER();
 			}
 		}
 	}
@@ -4560,12 +4560,12 @@ void func_107()//Position - 0x5288
 	}
 }
 
-float func_108(struct<3> Param0, struct<3> Param1, struct<3> Param2, struct<3> Param3, float fParam4, bool bParam5)//Position - 0x52D0
+float func_108(struct<3> Param0, struct<3> Param3, struct<3> Param6, struct<3> Param9, float fParam12, bool bParam13)//Position - 0x52D0
 {
 	struct<2> Var0;
-	float fVar1;
-	float fVar2;
 	float fVar3;
+	float fVar4;
+	float fVar5;
 	
 	if (Global_4542576 == 0)
 	{
@@ -4586,36 +4586,36 @@ float func_108(struct<3> Param0, struct<3> Param1, struct<3> Param2, struct<3> P
 	{
 		iLocal_18 = MISC::GET_GAME_TIMER();
 	}
-	fVar1 = func_110((SYSTEM::TO_FLOAT((MISC::GET_GAME_TIMER() - iLocal_18)) / fParam4), 0f, 1f);
-	if (fVar1 < 1f)
+	fVar3 = func_110((SYSTEM::TO_FLOAT((MISC::GET_GAME_TIMER() - iLocal_18)) / fParam12), 0f, 1f);
+	if (fVar3 < 1f)
 	{
-		fVar2 = fVar1;
-		if (bParam5)
+		fVar4 = fVar3;
+		if (bParam13)
 		{
-			fVar2 = (fVar2 - 1f);
-			fVar3 = 0.670158f;
-			fVar2 = (((fVar2 * fVar2) * (((fVar3 + 1f) * fVar2) + fVar3)) + 1f);
+			fVar4 = (fVar4 - 1f);
+			fVar5 = 0.670158f;
+			fVar4 = (((fVar4 * fVar4) * (((fVar5 + 1f) * fVar4) + fVar5)) + 1f);
 		}
 		else
 		{
-			fVar2 = SYSTEM::SIN((fVar1 * 90f));
+			fVar4 = SYSTEM::SIN((fVar3 * 90f));
 		}
-		Global_20311 = { func_109(Param0, Param1, fVar2) };
-		Global_20314 = { func_109(Param2, Param3, fVar2) };
+		Global_20311 = { func_109(Param0, Param3, fVar4) };
+		Global_20314 = { func_109(Param6, Param9, fVar4) };
 	}
 	else
 	{
-		Global_20311 = { Param1 };
-		Global_20314 = { Param3 };
+		Global_20311 = { Param3 };
+		Global_20314 = { Param9 };
 	}
 	MOBILE::SET_MOBILE_PHONE_POSITION(Global_20311);
 	MOBILE::SET_MOBILE_PHONE_ROTATION(Global_20314, 0);
-	return fVar1;
+	return fVar3;
 }
 
-Vector3 func_109(struct<3> Param0, struct<3> Param1, float fParam2)//Position - 0x53DF
+Vector3 func_109(struct<3> Param0, struct<3> Param3, float fParam6)//Position - 0x53DF
 {
-	return Param0 + Param1 - Param0 * Vector(fParam2, fParam2, fParam2);
+	return Param0 + Param3 - Param0 * Vector(fParam6, fParam6, fParam6);
 }
 
 float func_110(float fParam0, float fParam1, float fParam2)//Position - 0x53F9

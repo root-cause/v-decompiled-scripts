@@ -94,7 +94,7 @@
 void __EntryFunction__()//Position - 0x0
 {
 	struct<3> Var0;
-	struct<3> Var1;
+	struct<3> Var3;
 	
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -140,8 +140,8 @@ void __EntryFunction__()//Position - 0x0
 					if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 					{
 						Var0 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
-						Var1 = { 1749.71f, 3267.83f, 40.24f };
-						if (func_22(Var0, Var1, 75f))
+						Var3 = { 1749.71f, 3267.83f, 40.24f };
+						if (func_22(Var0, Var3, 75f))
 						{
 							if (func_21(&uLocal_38, Var0))
 							{
@@ -486,51 +486,51 @@ bool func_10(int iParam0)//Position - 0x8DC
 void func_11(int iParam0)//Position - 0x8E8
 {
 	struct<15> Var0;
-	int iVar1;
-	int iVar2;
+	int iVar15;
+	int iVar16;
 	
-	iVar1 = 0;
-	while (iVar1 < Global_113648.f_7690.f_650)
+	iVar15 = 0;
+	while (iVar15 < Global_113648.f_7690.f_650)
 	{
-		if (Global_113648.f_7690.f_199[iVar1 /*15*/] == iParam0)
+		if (Global_113648.f_7690.f_199[iVar15 /*15*/] == iParam0)
 		{
-			iVar2 = iVar1;
-			while (iVar2 <= (Global_113648.f_7690.f_650 - 2))
+			iVar16 = iVar15;
+			while (iVar16 <= (Global_113648.f_7690.f_650 - 2))
 			{
-				Global_113648.f_7690.f_199[iVar2 /*15*/] = { Global_113648.f_7690.f_199[iVar2 + 1 /*15*/] };
-				iVar2++;
+				Global_113648.f_7690.f_199[iVar16 /*15*/] = { Global_113648.f_7690.f_199[iVar16 + 1 /*15*/] };
+				iVar16++;
 			}
 			Global_113648.f_7690.f_199[(Global_113648.f_7690.f_650 - 1) /*15*/] = { Var0 };
 			Global_113648.f_7690.f_650 = (Global_113648.f_7690.f_650 - 1);
 			return;
 		}
-		iVar1++;
+		iVar15++;
 	}
 }
 
 void func_12(int iParam0)//Position - 0x995
 {
 	struct<15> Var0;
-	int iVar1;
-	int iVar2;
+	int iVar15;
+	int iVar16;
 	
-	iVar1 = 0;
-	while (iVar1 < Global_113648.f_7690.f_198)
+	iVar15 = 0;
+	while (iVar15 < Global_113648.f_7690.f_198)
 	{
-		if (Global_113648.f_7690.f_137[iVar1 /*15*/] == iParam0)
+		if (Global_113648.f_7690.f_137[iVar15 /*15*/] == iParam0)
 		{
-			func_13(Global_113648.f_7690.f_137[iVar1 /*15*/].f_6);
-			iVar2 = iVar1;
-			while (iVar2 <= (Global_113648.f_7690.f_198 - 2))
+			func_13(Global_113648.f_7690.f_137[iVar15 /*15*/].f_6);
+			iVar16 = iVar15;
+			while (iVar16 <= (Global_113648.f_7690.f_198 - 2))
 			{
-				Global_113648.f_7690.f_137[iVar2 /*15*/] = { Global_113648.f_7690.f_137[iVar2 + 1 /*15*/] };
-				iVar2++;
+				Global_113648.f_7690.f_137[iVar16 /*15*/] = { Global_113648.f_7690.f_137[iVar16 + 1 /*15*/] };
+				iVar16++;
 			}
 			Global_113648.f_7690.f_137[(Global_113648.f_7690.f_198 - 1) /*15*/] = { Var0 };
 			Global_113648.f_7690.f_198 = (Global_113648.f_7690.f_198 - 1);
 			return;
 		}
-		iVar1++;
+		iVar15++;
 	}
 }
 
@@ -665,7 +665,7 @@ void func_20(int iParam0)//Position - 0xBEB
 	}
 }
 
-bool func_21(var uParam0, struct<2> Param1, var uParam2)//Position - 0xCC3
+bool func_21(var uParam0, struct<2> Param1, var uParam3)//Position - 0xCC3
 {
 	bool bVar0;
 	int iVar1;
@@ -692,12 +692,12 @@ bool func_21(var uParam0, struct<2> Param1, var uParam2)//Position - 0xCC3
 	return bVar0;
 }
 
-bool func_22(struct<3> Param0, struct<3> Param1, float fParam2)//Position - 0xD7F
+bool func_22(struct<3> Param0, struct<3> Param3, float fParam6)//Position - 0xD7F
 {
 	struct<3> Var0;
 	
-	Var0 = { Param1 - Param0 };
-	return ((Var0.f_0 * Var0.f_0) + (Var0.f_1 * Var0.f_1)) <= (fParam2 * fParam2);
+	Var0 = { Param3 - Param0 };
+	return ((Var0.f_0 * Var0.f_0) + (Var0.f_1 * Var0.f_1)) <= (fParam6 * fParam6);
 }
 
 int func_23()//Position - 0xDA9

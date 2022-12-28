@@ -39,9 +39,9 @@
 	int iLocal_37 = 0;
 	int iLocal_38 = 0;
 	struct<3> Local_39 = { 0, 0, -1 } ;
-	struct<47> Local_40[50];
-	int iLocal_41 = 0;
-	var uLocal_42 = 0;
+	struct<47> Local_42[50];
+	int iScriptParam_0 = 0;
+	var uScriptParam_1 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -74,7 +74,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			if (NETWORK::NETWORK_IS_HOST_OF_THIS_SCRIPT())
 			{
-				Local_39.f_1 = func_46(iScriptParam_41);
+				Local_39.f_1 = func_46(iScriptParam_0);
 				Local_39.f_2 = func_45();
 				Local_39.f_0 = 1;
 			}
@@ -114,9 +114,9 @@ void func_1()//Position - 0xE4
 		iVar0 = func_2();
 		if (iVar0 > -1)
 		{
-			if (ENTITY::DOES_ENTITY_EXIST(Local_40[iVar0 /*47*/]) && !ENTITY::IS_ENTITY_DEAD(Local_40[iVar0 /*47*/], false))
+			if (ENTITY::DOES_ENTITY_EXIST(Local_42[iVar0 /*47*/]) && !ENTITY::IS_ENTITY_DEAD(Local_42[iVar0 /*47*/], false))
 			{
-				AUDIO::PLAY_STREAM_FROM_PED(Local_40[iVar0 /*47*/]);
+				AUDIO::PLAY_STREAM_FROM_PED(Local_42[iVar0 /*47*/]);
 				iLocal_38++;
 			}
 		}
@@ -144,9 +144,9 @@ int func_2()//Position - 0x16F
 	iVar3 = 0;
 	while (iVar3 < 50)
 	{
-		if (Local_40[iVar3 /*47*/].f_46 <= Local_39.f_1)
+		if (Local_42[iVar3 /*47*/].f_46 <= Local_39.f_1)
 		{
-			fVar1 = SYSTEM::VDIST(Local_40[iVar3 /*47*/].f_40, 945f, 15f, 117f);
+			fVar1 = SYSTEM::VDIST(Local_42[iVar3 /*47*/].f_40, 945f, 15f, 117f);
 			if (fVar1 < fVar0)
 			{
 				fVar0 = fVar1;
@@ -165,17 +165,17 @@ void func_3()//Position - 0x1D4
 	iVar0 = 0;
 	while (iVar0 < 50)
 	{
-		if (func_22(&(Local_40[iVar0 /*47*/])))
+		if (func_22(&(Local_42[iVar0 /*47*/])))
 		{
-			if (!ENTITY::DOES_ENTITY_EXIST(Local_40[iVar0 /*47*/]))
+			if (!ENTITY::DOES_ENTITY_EXIST(Local_42[iVar0 /*47*/]))
 			{
-				func_12(&(Local_40[iVar0 /*47*/]));
+				func_12(&(Local_42[iVar0 /*47*/]));
 			}
-			else if (ENTITY::IS_ENTITY_DEAD(Local_40[iVar0 /*47*/], false))
+			else if (ENTITY::IS_ENTITY_DEAD(Local_42[iVar0 /*47*/], false))
 			{
-				func_11(&(Local_40[iVar0 /*47*/]));
+				func_11(&(Local_42[iVar0 /*47*/]));
 			}
-			func_4(&(Local_40[iVar0 /*47*/]));
+			func_4(&(Local_42[iVar0 /*47*/]));
 		}
 		iVar0++;
 	}
@@ -198,10 +198,10 @@ void func_5(var uParam0)//Position - 0x262
 	int iVar3;
 	int iVar4;
 	int iVar5[4];
-	int iVar6;
-	int iVar7;
-	int iVar8;
-	int iVar9;
+	int iVar10;
+	int iVar11;
+	int iVar12;
+	int iVar13;
 	
 	sVar0 = func_10(uParam0);
 	sVar1 = func_8(uParam0);
@@ -229,20 +229,20 @@ void func_5(var uParam0)//Position - 0x262
 				iVar5[1] = 1;
 				iVar5[2] = 2;
 				iVar5[3] = 3;
-				iVar8 = 0;
-				while (iVar8 < 10)
+				iVar12 = 0;
+				while (iVar12 < 10)
 				{
-					iVar6 = MISC::GET_RANDOM_INT_IN_RANGE(0, 4);
-					iVar7 = MISC::GET_RANDOM_INT_IN_RANGE(0, 4);
-					iVar9 = iVar5[iVar6];
-					iVar5[iVar6] = iVar5[iVar7];
-					iVar5[iVar7] = iVar9;
-					iVar8++;
+					iVar10 = MISC::GET_RANDOM_INT_IN_RANGE(0, 4);
+					iVar11 = MISC::GET_RANDOM_INT_IN_RANGE(0, 4);
+					iVar13 = iVar5[iVar10];
+					iVar5[iVar10] = iVar5[iVar11];
+					iVar5[iVar11] = iVar13;
+					iVar12++;
 				}
-				iVar8 = 0;
-				while (iVar8 < 4)
+				iVar12 = 0;
+				while (iVar12 < 4)
 				{
-					switch (iVar5[iVar8])
+					switch (iVar5[iVar12])
 					{
 						case 0:
 							TASK::TASK_PLAY_ANIM(0, sVar0, "IDLE_A", 8f, -8f, -1, 0, 0f, false, false, false);
@@ -260,7 +260,7 @@ void func_5(var uParam0)//Position - 0x262
 							TASK::TASK_PLAY_ANIM(0, sVar0, "IDLE_D", 8f, -8f, -1, 0, 0f, false, false, false);
 							break;
 					}
-					iVar8++;
+					iVar12++;
 				}
 			}
 			TASK::SET_SEQUENCE_TO_REPEAT(iVar4, true);
@@ -1219,7 +1219,7 @@ void func_27()//Position - 0x13A8
 	iVar0 = 0;
 	while (iVar0 < 50)
 	{
-		func_11(&(Local_40[iVar0 /*47*/]));
+		func_11(&(Local_42[iVar0 /*47*/]));
 		iVar0++;
 	}
 }
@@ -1353,7 +1353,7 @@ void func_39()//Position - 0x1530
 	iVar0 = 0;
 	while (iVar0 < 50)
 	{
-		func_21(&(Local_40[iVar0 /*47*/]));
+		func_21(&(Local_42[iVar0 /*47*/]));
 		iVar0++;
 	}
 }
@@ -1365,7 +1365,7 @@ void func_40()//Position - 0x1555
 	iVar0 = 0;
 	while (iVar0 < 50)
 	{
-		func_41(&(Local_40[iVar0 /*47*/]), iVar0);
+		func_41(&(Local_42[iVar0 /*47*/]), iVar0);
 		iVar0++;
 	}
 }

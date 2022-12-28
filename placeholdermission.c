@@ -300,7 +300,7 @@ void func_13(var uParam0, int iParam1)//Position - 0x503
 	int iVar0;
 	int iVar1;
 	struct<3> Var2;
-	float fVar3;
+	float fVar5;
 	
 	if (iParam1 == 94)
 	{
@@ -316,8 +316,8 @@ void func_13(var uParam0, int iParam1)//Position - 0x503
 		else
 		{
 			Var2 = { 0f, 0f, 0f };
-			fVar3 = 0f;
-			if (!func_15(Global_113648.f_18535[iVar0], &Var2, &fVar3))
+			fVar5 = 0f;
+			if (!func_15(Global_113648.f_18535[iVar0], &Var2, &fVar5))
 			{
 				Global_113648.f_18535[iVar0] = 318;
 				func_14(&(uParam0->f_2296[iVar0]));

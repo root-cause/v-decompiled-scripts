@@ -225,8 +225,8 @@
 void __EntryFunction__()//Position - 0x0
 {
 	struct<3> Var0;
-	struct<3> Var1;
-	float fVar2;
+	struct<3> Var3;
+	float fVar6;
 	
 	iLocal_2 = 1;
 	iLocal_3 = 134;
@@ -260,7 +260,7 @@ void __EntryFunction__()//Position - 0x0
 	{
 		func_30();
 	}
-	iLocal_46 = uScriptParam_220;
+	iLocal_46 = uScriptParam_0;
 	STREAMING::REQUEST_ANIM_DICT("MISSHEIST_JEWEL@HACKING");
 	STREAMING::REQUEST_MODEL(joaat("prop_cs_walking_stick"));
 	STREAMING::REQUEST_MODEL(joaat("prop_laptop_lester2"));
@@ -308,10 +308,10 @@ void __EntryFunction__()//Position - 0x0
 					PED::SET_PED_CONFIG_FLAG(iLocal_46, 169, true);
 					ENTITY::SET_ENTITY_PROOFS(iLocal_46, true, true, true, true, true, false, false, false);
 					Var0 = { 707.32f, -966.83f, 30.413f };
-					Var1 = { 0f, 0f, -171.5f };
+					Var3 = { 0f, 0f, -171.5f };
 					TASK::OPEN_SEQUENCE_TASK(&iLocal_49);
-					TASK::TASK_PLAY_ANIM_ADVANCED(0, "MISSHEIST_JEWEL@HACKING", "HACK_INTRO", Var0, Var1, 8f, -8f, -1, 262152, 0f, 2, 0);
-					TASK::TASK_PLAY_ANIM_ADVANCED(0, "MISSHEIST_JEWEL@HACKING", "HACK_LOOP", Var0, Var1, 8f, -8f, -1, 262153, 0f, 2, 0);
+					TASK::TASK_PLAY_ANIM_ADVANCED(0, "MISSHEIST_JEWEL@HACKING", "HACK_INTRO", Var0, Var3, 8f, -8f, -1, 262152, 0f, 2, 0);
+					TASK::TASK_PLAY_ANIM_ADVANCED(0, "MISSHEIST_JEWEL@HACKING", "HACK_LOOP", Var0, Var3, 8f, -8f, -1, 262153, 0f, 2, 0);
 					TASK::CLOSE_SEQUENCE_TASK(iLocal_49);
 					TASK::TASK_PERFORM_SEQUENCE(iLocal_46, iLocal_49);
 					PED::FORCE_PED_AI_AND_ANIMATION_UPDATE(iLocal_46, false, false);
@@ -339,10 +339,10 @@ void __EntryFunction__()//Position - 0x0
 		{
 			if (!ENTITY::IS_ENTITY_DEAD(iLocal_46, false))
 			{
-				fVar2 = SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), ENTITY::GET_ENTITY_COORDS(iLocal_46, true));
+				fVar6 = SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), ENTITY::GET_ENTITY_COORDS(iLocal_46, true));
 				if (func_22() == 0)
 				{
-					if (fVar2 < 4f)
+					if (fVar6 < 4f)
 					{
 						if (MISC::GET_GAME_TIMER() > iLocal_217)
 						{
@@ -367,7 +367,7 @@ void __EntryFunction__()//Position - 0x0
 					}
 				}
 				func_1();
-				if (fVar2 > 2500f)
+				if (fVar6 > 2500f)
 				{
 					MISC::SET_BIT(&uLocal_216, 1);
 				}

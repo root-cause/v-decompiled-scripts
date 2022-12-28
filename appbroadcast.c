@@ -30,23 +30,23 @@
 	int* iLocal_28 = NULL;
 	var uLocal_29 = 0;
 	struct<2> Local_30 = { 0, 0 } ;
-	var uLocal_31 = 0;
 	var uLocal_32 = 0;
-	struct<2> Local_33 = { 0, 0 } ;
-	var uLocal_34 = 0;
-	var uLocal_35 = 0;
-	struct<2> Local_36 = { 0, 0 } ;
+	var uLocal_33 = 0;
+	struct<2> Local_34 = { 0, 0 } ;
+	var uLocal_36 = 0;
 	var uLocal_37 = 0;
-	var uLocal_38 = 0;
-	struct<2> Local_39 = { 0, 0 } ;
+	struct<2> Local_38 = { 0, 0 } ;
 	var uLocal_40 = 0;
 	var uLocal_41 = 0;
 	struct<2> Local_42 = { 0, 0 } ;
-	var uLocal_43 = 0;
 	var uLocal_44 = 0;
-	struct<2> Local_45 = { 0, 0 } ;
-	var uLocal_46 = 0;
-	var uLocal_47 = 0;
+	var uLocal_45 = 0;
+	struct<2> Local_46 = { 0, 0 } ;
+	var uLocal_48 = 0;
+	var uLocal_49 = 0;
+	struct<2> Local_50 = { 0, 0 } ;
+	var uLocal_52 = 0;
+	var uLocal_53 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -68,11 +68,11 @@ void __EntryFunction__()//Position - 0x0
 	fLocal_24 = 140f;
 	fLocal_25 = 180f;
 	StringCopy(&Local_30, "CELL_212" /* GXT: YES */, 16);
-	StringCopy(&Local_33, "CELL_213" /* GXT: NO */, 16);
-	StringCopy(&Local_36, "CELL_39" /* GXT: Broadcast */, 16);
-	StringCopy(&Local_39, "CELL_MP_300" /* GXT: Activate? */, 16);
-	StringCopy(&Local_42, "CELL_MP_301" /* GXT: Deactivate? */, 16);
-	StringCopy(&Local_45, "CELL_MP_302" /* GXT: Unavailable */, 16);
+	StringCopy(&Local_34, "CELL_213" /* GXT: NO */, 16);
+	StringCopy(&Local_38, "CELL_39" /* GXT: Broadcast */, 16);
+	StringCopy(&Local_42, "CELL_MP_300" /* GXT: Activate? */, 16);
+	StringCopy(&Local_46, "CELL_MP_301" /* GXT: Deactivate? */, 16);
+	StringCopy(&Local_50, "CELL_MP_302" /* GXT: Unavailable */, 16);
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
 	func_45(&iLocal_28);
 	func_36();
@@ -645,26 +645,26 @@ void func_36()//Position - 0x7C8
 	{
 		if (Global_2694463)
 		{
-			func_43(Global_20364, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(13), SYSTEM::TO_FLOAT(0), SYSTEM::TO_FLOAT(12), -1f, -1f, &Local_42, 0, 0, 0, 0);
+			func_43(Global_20364, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(13), SYSTEM::TO_FLOAT(0), SYSTEM::TO_FLOAT(12), -1f, -1f, &Local_46, 0, 0, 0, 0);
 		}
 		else
 		{
-			func_43(Global_20364, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(13), SYSTEM::TO_FLOAT(0), SYSTEM::TO_FLOAT(12), -1f, -1f, &Local_39, 0, 0, 0, 0);
+			func_43(Global_20364, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(13), SYSTEM::TO_FLOAT(0), SYSTEM::TO_FLOAT(12), -1f, -1f, &Local_42, 0, 0, 0, 0);
 		}
 	}
 	else
 	{
-		func_43(Global_20364, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(13), SYSTEM::TO_FLOAT(0), SYSTEM::TO_FLOAT(12), -1f, -1f, &Local_45, 0, 0, 0, 0);
+		func_43(Global_20364, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(13), SYSTEM::TO_FLOAT(0), SYSTEM::TO_FLOAT(12), -1f, -1f, &Local_50, 0, 0, 0, 0);
 	}
 	func_44(Global_20364, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(13), -1082130432, -1082130432, -1082130432, -1082130432);
-	func_40(&Local_36);
+	func_40(&Local_38);
 	if (func_16())
 	{
-		func_37(13, &Local_30, 1, "", 4, &Local_33, &iLocal_28);
+		func_37(13, &Local_30, 1, "", 4, &Local_34, &iLocal_28);
 	}
 	else
 	{
-		func_37(1, "", 1, "", 4, &Local_33, &iLocal_28);
+		func_37(1, "", 1, "", 4, &Local_34, &iLocal_28);
 	}
 }
 

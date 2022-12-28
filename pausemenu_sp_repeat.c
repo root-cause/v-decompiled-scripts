@@ -28,8 +28,8 @@
 	float fLocal_26 = 0f;
 	var uLocal_27 = 0;
 	struct<2> Local_28 = { 0, 0 } ;
-	struct<2> Local_29[94];
-	struct<4> Local_30 = { 0, 0, 0, 0 } ;
+	struct<2> Local_30[94];
+	struct<4> ScriptParam_0 = { 0, 0, 0, 0 } ;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -59,7 +59,7 @@ void __EntryFunction__()//Position - 0x0
 			{
 				SYSTEM::WAIT(0);
 			}
-			SYSTEM::START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS(-43879923, &ScriptParam_30, 4, 1424);
+			SYSTEM::START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS(-43879923, &ScriptParam_0, 4, 1424);
 		}
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
@@ -72,7 +72,7 @@ void __EntryFunction__()//Position - 0x0
 			{
 				SYSTEM::WAIT(0);
 			}
-			SYSTEM::START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS(1179280373, &ScriptParam_30, 4, 1424);
+			SYSTEM::START_NEW_SCRIPT_WITH_NAME_HASH_AND_ARGS(1179280373, &ScriptParam_0, 4, 1424);
 		}
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
@@ -80,18 +80,18 @@ void __EntryFunction__()//Position - 0x0
 	{
 		SCRIPT::TERMINATE_THIS_THREAD();
 	}
-	switch (ScriptParam_30.f_0)
+	switch (ScriptParam_0.f_0)
 	{
 		case 1:
-			switch (ScriptParam_30.f_1)
+			switch (ScriptParam_0.f_1)
 			{
 				case 75:
-					if (ScriptParam_30.f_2 == 5)
+					if (ScriptParam_0.f_2 == 5)
 					{
 						func_82(1, 0, 1);
 						func_81();
 					}
-					else if (ScriptParam_30.f_2 == 76)
+					else if (ScriptParam_0.f_2 == 76)
 					{
 						func_81();
 					}
@@ -102,7 +102,7 @@ void __EntryFunction__()//Position - 0x0
 					break;
 				
 				case 133:
-					if (ScriptParam_30.f_2 == 76)
+					if (ScriptParam_0.f_2 == 76)
 					{
 						func_81();
 					}
@@ -113,26 +113,26 @@ void __EntryFunction__()//Position - 0x0
 					break;
 				
 				case 76:
-					func_32(ScriptParam_30.f_3, 0);
+					func_32(ScriptParam_0.f_3, 0);
 					break;
 				
 				case 52:
-					if (ScriptParam_30.f_2 == 52)
+					if (ScriptParam_0.f_2 == 52)
 					{
-						HUD::SET_SAVEGAME_LIST_UNIQUE_ID(ScriptParam_30.f_3);
+						HUD::SET_SAVEGAME_LIST_UNIQUE_ID(ScriptParam_0.f_3);
 					}
 					break;
 				
 				case 154:
-					if (ScriptParam_30.f_2 == 154)
+					if (ScriptParam_0.f_2 == 154)
 					{
-						HUD::SET_SAVEGAME_LIST_UNIQUE_ID(ScriptParam_30.f_3);
+						HUD::SET_SAVEGAME_LIST_UNIQUE_ID(ScriptParam_0.f_3);
 					}
 					break;
 				
 				default:
 					func_31(1);
-					if ((ScriptParam_30.f_1 == 26 || ScriptParam_30.f_1 == 25) || ScriptParam_30.f_1 == 153)
+					if ((ScriptParam_0.f_1 == 26 || ScriptParam_0.f_1 == 25) || ScriptParam_0.f_1 == 153)
 					{
 						func_29(0, 1);
 						func_28(2, 0);
@@ -140,9 +140,9 @@ void __EntryFunction__()//Position - 0x0
 						Global_78808 = 0;
 						func_27(-1);
 					}
-					else if (ScriptParam_30.f_1 == 5)
+					else if (ScriptParam_0.f_1 == 5)
 					{
-						if (ScriptParam_30.f_2 == 75 || ScriptParam_30.f_2 == 133)
+						if (ScriptParam_0.f_2 == 75 || ScriptParam_0.f_2 == 133)
 						{
 						}
 						else
@@ -154,7 +154,7 @@ void __EntryFunction__()//Position - 0x0
 					{
 						func_29(0, 1);
 						func_28(2, 0);
-						if (!ScriptParam_30.f_1 == 52 && !ScriptParam_30.f_1 == 154)
+						if (!ScriptParam_0.f_1 == 52 && !ScriptParam_0.f_1 == 154)
 						{
 							func_28(1, 0);
 						}
@@ -166,7 +166,7 @@ void __EntryFunction__()//Position - 0x0
 			break;
 		
 		case 2:
-			switch (ScriptParam_30.f_1)
+			switch (ScriptParam_0.f_1)
 			{
 				case 5:
 					switch (Global_78808)
@@ -1010,7 +1010,7 @@ int func_34(int iParam0)//Position - 0xF35
 	iVar0 = 0;
 	while (iVar0 <= (94 - 1))
 	{
-		if (Local_29[iVar0 /*2*/] == iParam0)
+		if (Local_30[iVar0 /*2*/] == iParam0)
 		{
 			return iVar0;
 		}
@@ -1024,11 +1024,11 @@ void func_35()//Position - 0xF63
 	switch (Global_78808)
 	{
 		case 1:
-			Global_78809 = func_36(&Local_29, 1, 0, 1);
+			Global_78809 = func_36(&Local_30, 1, 0, 1);
 			break;
 		
 		case 7:
-			Global_78809 = func_36(&Local_29, 0, 1, 1);
+			Global_78809 = func_36(&Local_30, 0, 1, 1);
 			break;
 		
 		default:
@@ -1773,9 +1773,9 @@ void func_52(int iParam0, int iParam1)//Position - 0x1958
 int func_53(int iParam0, int iParam1, int iParam2)//Position - 0x1A18
 {
 	struct<13> Var0;
-	int iVar1;
-	int iVar2;
-	char* sVar3;
+	int iVar13;
+	int iVar14;
+	char* sVar15;
 	
 	if (iParam2 != 0)
 	{
@@ -1789,7 +1789,7 @@ int func_53(int iParam0, int iParam1, int iParam2)//Position - 0x1A18
 		return 1;
 	}
 	Var0 = { Global_63587[iParam0 /*13*/] };
-	iVar1 = func_63(iParam0);
+	iVar13 = func_63(iParam0);
 	switch (iParam0)
 	{
 		case 38:
@@ -1812,78 +1812,78 @@ int func_53(int iParam0, int iParam1, int iParam2)//Position - 0x1A18
 		case 99:
 		case 100:
 		case 101:
-			iVar1 = -1;
+			iVar13 = -1;
 			break;
 	}
-	iVar2 = func_72(iParam0);
-	sVar3 = func_62(iParam0);
-	if (iVar2 == -1)
+	iVar14 = func_72(iParam0);
+	sVar15 = func_62(iParam0);
+	if (iVar14 == -1)
 	{
-		func_61(iVar2, iParam1, 0, sVar3, iParam0, iParam2);
-		iVar1 = 0;
+		func_61(iVar14, iParam1, 0, sVar15, iParam0, iParam2);
+		iVar13 = 0;
 	}
 	else
 	{
 		switch (Var0.f_0)
 		{
 			case 1:
-				func_60(iVar2, iParam1, iVar1, "MTTIME", iParam0, iParam2);
+				func_60(iVar14, iParam1, iVar13, "MTTIME", iParam0, iParam2);
 				break;
 			
 			case 2:
-				func_60(iVar2, iParam1, iVar1, sVar3, iParam0, iParam2);
+				func_60(iVar14, iParam1, iVar13, sVar15, iParam0, iParam2);
 				break;
 			
 			case 3:
-				func_59(iParam1, iVar1, sVar3, iParam0, iParam2);
+				func_59(iParam1, iVar13, sVar15, iParam0, iParam2);
 				break;
 			
 			case 17:
 			case 4:
-				func_60(iVar2, iParam1, iVar1, sVar3, iParam0, iParam2);
+				func_60(iVar14, iParam1, iVar13, sVar15, iParam0, iParam2);
 				break;
 			
 			case 5:
-				func_58(iVar2, Var0.f_2, iParam1, iVar1, sVar3, iParam0, iParam2);
+				func_58(iVar14, Var0.f_2, iParam1, iVar13, sVar15, iParam0, iParam2);
 				break;
 			
 			case 6:
-				func_59(iParam1, iVar1, sVar3, iParam0, iParam2);
+				func_59(iParam1, iVar13, sVar15, iParam0, iParam2);
 				break;
 			
 			case 7:
-				func_57(iVar2, Var0.f_2, iParam1, iVar1, sVar3, iParam0, iParam2);
+				func_57(iVar14, Var0.f_2, iParam1, iVar13, sVar15, iParam0, iParam2);
 				break;
 			
 			case 8:
-				func_57(iVar2, Var0.f_2, iParam1, iVar1, sVar3, iParam0, iParam2);
+				func_57(iVar14, Var0.f_2, iParam1, iVar13, sVar15, iParam0, iParam2);
 				break;
 			
 			case 9:
-				func_58(iVar2, 100, iParam1, iVar1, sVar3, iParam0, iParam2);
+				func_58(iVar14, 100, iParam1, iVar13, sVar15, iParam0, iParam2);
 				break;
 			
 			case 16:
 			case 10:
 			case 14:
 			case 15:
-				func_56(iVar2, iParam1, iVar1, sVar3, iParam0, iParam2);
+				func_56(iVar14, iParam1, iVar13, sVar15, iParam0, iParam2);
 				break;
 			
 			case 11:
-				func_58(iVar2, 100, iParam1, iVar1, sVar3, iParam0, iParam2);
+				func_58(iVar14, 100, iParam1, iVar13, sVar15, iParam0, iParam2);
 				break;
 			
 			case 12:
 			case 13:
-				func_54(iVar2, iParam1, iVar1, sVar3, iParam0, iParam2);
+				func_54(iVar14, iParam1, iVar13, sVar15, iParam0, iParam2);
 				break;
 			
 			case 0:
 				break;
 			}
 	}
-	if (iVar1 == 0)
+	if (iVar13 == 0)
 	{
 		return 0;
 	}
@@ -5223,17 +5223,17 @@ struct<2> func_78(int iParam0, int iParam1)//Position - 0x4F74
 struct<2> func_79(int iParam0)//Position - 0x500A
 {
 	struct<2> Var0;
-	char[] cVar1[8];
+	char[] cVar2[8];
 	
 	StringCopy(&Var0, "", 8);
-	cVar1 = { func_80(iParam0) };
-	if (MISC::IS_STRING_NULL_OR_EMPTY(&cVar1))
+	cVar2 = { func_80(iParam0) };
+	if (MISC::IS_STRING_NULL_OR_EMPTY(&cVar2))
 	{
 	}
 	else
 	{
 		StringCopy(&Var0, "RC_", 8);
-		StringConCat(&Var0, &cVar1, 8);
+		StringConCat(&Var0, &cVar2, 8);
 	}
 	return Var0;
 }
@@ -5544,7 +5544,7 @@ void func_82(int iParam0, int iParam1, int iParam2)//Position - 0x54C5
 			func_77(1);
 			func_77(2);
 			func_83();
-			func_27(Local_29[0 /*2*/]);
+			func_27(Local_30[0 /*2*/]);
 		}
 		if (iParam1 == 1)
 		{
@@ -5584,7 +5584,7 @@ void func_83()//Position - 0x555F
 		iVar2 = 0;
 		iVar3 = 0;
 		iVar8 = -1;
-		iVar1 = Local_29[iVar0 /*2*/];
+		iVar1 = Local_30[iVar0 /*2*/];
 		Local_28 = { func_78(iVar1, Global_78808) };
 		iVar7 = 0;
 		while (iVar7 < func_75(iVar1, Global_78808))

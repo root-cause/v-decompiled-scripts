@@ -42,16 +42,16 @@
 	bool bLocal_40 = 0;
 	bool bLocal_41 = 0;
 	struct<8> Local_42 = { 0, 0, 0, 0, 0, 0, 0, 0 } ;
-	var uLocal_43 = 0;
-	var uLocal_44 = 0;
-	var uLocal_45 = 0;
-	var uLocal_46 = 0;
-	var uLocal_47 = 0;
-	struct<11> Local_48[50];
-	int iLocal_49 = 0;
-	int iLocal_50 = 0;
-	bool bLocal_51 = 0;
-	int* iLocal_52 = NULL;
+	var uLocal_50 = 0;
+	var uLocal_51 = 0;
+	var uLocal_52 = 0;
+	var uLocal_53 = 0;
+	var uLocal_54 = 0;
+	struct<11> Local_55[50];
+	int iLocal_606 = 0;
+	int iLocal_607 = 0;
+	bool bLocal_608 = 0;
+	int* iLocal_609 = NULL;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -78,7 +78,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_38 = 3;
 	bLocal_40 = true;
 	bLocal_41 = true;
-	iLocal_49 = 15;
+	iLocal_606 = 15;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(210))
 	{
 		func_53();
@@ -95,13 +95,13 @@ void __EntryFunction__()//Position - 0x0
 	{
 		SYSTEM::WAIT(0);
 		func_46(PLAYER::PLAYER_PED_ID());
-		if (func_16(&Local_42, &Local_48) || func_15(107) == 1)
+		if (func_16(&Local_42, &Local_55) || func_15(107) == 1)
 		{
-			if (!bLocal_51)
+			if (!bLocal_608)
 			{
-				bLocal_51 = func_11(joaat("TEXT_UFOPARTS_DONE"), 1, 2, 69, 5000, 10000, -1, 179, -1, 32, 1);
+				bLocal_608 = func_11(joaat("TEXT_UFOPARTS_DONE"), 1, 2, 69, 5000, 10000, -1, 179, -1, 32, 1);
 			}
-			if (bLocal_51)
+			if (bLocal_608)
 			{
 				if (!func_4() == 1)
 				{
@@ -475,7 +475,7 @@ int func_16(var uParam0, int iParam1)//Position - 0x86E
 			{
 				if (!bVar1)
 				{
-					if (uParam0->f_10 == iLocal_49)
+					if (uParam0->f_10 == iLocal_606)
 					{
 						func_43(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("PICKUP_CUSTOM_SCRIPT"), 1, 0, 2);
 						if (OBJECT::DOES_PICKUP_EXIST((iParam1[uParam0->f_10 /*11*/])->f_1))
@@ -506,13 +506,13 @@ int func_16(var uParam0, int iParam1)//Position - 0x86E
 		}
 		if (!Global_78819)
 		{
-			func_17(&(uParam0->f_11), &(uParam0->f_12), &(uParam0->f_9), 0, &iLocal_50, &iLocal_52, "SSHIP_TITLE" /* GXT: Part Collected~s~ */, "SSHIP_COLLECT" /* GXT: ~1~/50 spaceship parts collected. */);
+			func_17(&(uParam0->f_11), &(uParam0->f_12), &(uParam0->f_9), 0, &iLocal_607, &iLocal_609, "SSHIP_TITLE" /* GXT: Part Collected~s~ */, "SSHIP_COLLECT" /* GXT: ~1~/50 spaceship parts collected. */);
 		}
-		if (!bLocal_51)
+		if (!bLocal_608)
 		{
 			if (uParam0->f_1.f_4 >= uParam0->f_1.f_3)
 			{
-				bLocal_51 = func_11(joaat("TEXT_UFOPARTS_DONE"), 1, 2, 69, 5000, 10000, -1, 179, -1, 32, 1);
+				bLocal_608 = func_11(joaat("TEXT_UFOPARTS_DONE"), 1, 2, 69, 5000, 10000, -1, 179, -1, 32, 1);
 			}
 		}
 		if (!uParam0->f_12 && !uParam0->f_11)
@@ -1277,68 +1277,68 @@ void func_50()//Position - 0x167B
 {
 	int iVar0;
 	
-	iLocal_50 = 0;
+	iLocal_607 = 0;
 	Global_113648.f_10051.f_125.f_2 = 1;
 	iVar0 = 0;
 	while (iVar0 < 50)
 	{
-		Local_48[iVar0 /*11*/].f_3 = { func_51(iVar0, 0) };
-		Local_48[iVar0 /*11*/].f_10 = 0;
+		Local_55[iVar0 /*11*/].f_3 = { func_51(iVar0, 0) };
+		Local_55[iVar0 /*11*/].f_10 = 0;
 		iVar0++;
 	}
-	Local_48[0 /*11*/].f_9 = 179.4746f;
-	Local_48[1 /*11*/].f_9 = 198f;
-	Local_48[2 /*11*/].f_9 = 104f;
-	Local_48[3 /*11*/].f_9 = 321.5f;
-	Local_48[4 /*11*/].f_9 = 256.25f;
-	Local_48[5 /*11*/].f_9 = 286.5f;
-	Local_48[6 /*11*/].f_9 = 0f;
-	Local_48[6 /*11*/].f_6 = { 0f, 0f, 1f };
-	Local_48[7 /*11*/].f_9 = -165.6051f;
-	Local_48[8 /*11*/].f_9 = 91.5f;
-	Local_48[9 /*11*/].f_9 = 116f;
-	Local_48[10 /*11*/].f_9 = 15f;
-	Local_48[11 /*11*/].f_9 = 305.5f;
-	Local_48[12 /*11*/].f_9 = 0f;
-	Local_48[13 /*11*/].f_9 = 95f;
-	Local_48[14 /*11*/].f_9 = 40f;
-	Local_48[15 /*11*/].f_9 = 40f;
-	Local_48[16 /*11*/].f_9 = 40f;
-	Local_48[17 /*11*/].f_9 = 40f;
-	Local_48[18 /*11*/].f_9 = 40f;
-	Local_48[19 /*11*/].f_9 = 40f;
-	Local_48[20 /*11*/].f_9 = 40f;
-	Local_48[21 /*11*/].f_6 = { 90f, 0f, 57f };
-	Local_48[22 /*11*/].f_9 = 40f;
-	Local_48[23 /*11*/].f_9 = 40f;
-	Local_48[24 /*11*/].f_9 = 40f;
-	Local_48[25 /*11*/].f_9 = 40f;
-	Local_48[26 /*11*/].f_9 = 40f;
-	Local_48[27 /*11*/].f_9 = 40f;
-	Local_48[28 /*11*/].f_9 = 40f;
-	Local_48[29 /*11*/].f_9 = 40f;
-	Local_48[29 /*11*/].f_6 = { -24.35f, 15.74f, 14.31f };
-	Local_48[30 /*11*/].f_9 = 40f;
-	Local_48[31 /*11*/].f_9 = 40f;
-	Local_48[32 /*11*/].f_9 = 40f;
-	Local_48[33 /*11*/].f_9 = 40f;
-	Local_48[34 /*11*/].f_6 = { 0f, 0f, -15f };
-	Local_48[35 /*11*/].f_9 = 40f;
-	Local_48[36 /*11*/].f_9 = 40f;
-	Local_48[37 /*11*/].f_9 = 40f;
-	Local_48[38 /*11*/].f_9 = 40f;
-	Local_48[38 /*11*/].f_6 = { 20.18f, -0.87f, 20.46f };
-	Local_48[39 /*11*/].f_6 = { 0f, 0f, -4.39f };
-	Local_48[40 /*11*/].f_9 = 40f;
-	Local_48[41 /*11*/].f_9 = 80f;
-	Local_48[42 /*11*/].f_9 = 198f;
-	Local_48[43 /*11*/].f_9 = 198f;
-	Local_48[44 /*11*/].f_9 = 198f;
-	Local_48[45 /*11*/].f_9 = 198f;
-	Local_48[46 /*11*/].f_9 = 198f;
-	Local_48[47 /*11*/].f_9 = 198f;
-	Local_48[48 /*11*/].f_9 = 198f;
-	Local_48[49 /*11*/].f_9 = 198f;
+	Local_55[0 /*11*/].f_9 = 179.4746f;
+	Local_55[1 /*11*/].f_9 = 198f;
+	Local_55[2 /*11*/].f_9 = 104f;
+	Local_55[3 /*11*/].f_9 = 321.5f;
+	Local_55[4 /*11*/].f_9 = 256.25f;
+	Local_55[5 /*11*/].f_9 = 286.5f;
+	Local_55[6 /*11*/].f_9 = 0f;
+	Local_55[6 /*11*/].f_6 = { 0f, 0f, 1f };
+	Local_55[7 /*11*/].f_9 = -165.6051f;
+	Local_55[8 /*11*/].f_9 = 91.5f;
+	Local_55[9 /*11*/].f_9 = 116f;
+	Local_55[10 /*11*/].f_9 = 15f;
+	Local_55[11 /*11*/].f_9 = 305.5f;
+	Local_55[12 /*11*/].f_9 = 0f;
+	Local_55[13 /*11*/].f_9 = 95f;
+	Local_55[14 /*11*/].f_9 = 40f;
+	Local_55[15 /*11*/].f_9 = 40f;
+	Local_55[16 /*11*/].f_9 = 40f;
+	Local_55[17 /*11*/].f_9 = 40f;
+	Local_55[18 /*11*/].f_9 = 40f;
+	Local_55[19 /*11*/].f_9 = 40f;
+	Local_55[20 /*11*/].f_9 = 40f;
+	Local_55[21 /*11*/].f_6 = { 90f, 0f, 57f };
+	Local_55[22 /*11*/].f_9 = 40f;
+	Local_55[23 /*11*/].f_9 = 40f;
+	Local_55[24 /*11*/].f_9 = 40f;
+	Local_55[25 /*11*/].f_9 = 40f;
+	Local_55[26 /*11*/].f_9 = 40f;
+	Local_55[27 /*11*/].f_9 = 40f;
+	Local_55[28 /*11*/].f_9 = 40f;
+	Local_55[29 /*11*/].f_9 = 40f;
+	Local_55[29 /*11*/].f_6 = { -24.35f, 15.74f, 14.31f };
+	Local_55[30 /*11*/].f_9 = 40f;
+	Local_55[31 /*11*/].f_9 = 40f;
+	Local_55[32 /*11*/].f_9 = 40f;
+	Local_55[33 /*11*/].f_9 = 40f;
+	Local_55[34 /*11*/].f_6 = { 0f, 0f, -15f };
+	Local_55[35 /*11*/].f_9 = 40f;
+	Local_55[36 /*11*/].f_9 = 40f;
+	Local_55[37 /*11*/].f_9 = 40f;
+	Local_55[38 /*11*/].f_9 = 40f;
+	Local_55[38 /*11*/].f_6 = { 20.18f, -0.87f, 20.46f };
+	Local_55[39 /*11*/].f_6 = { 0f, 0f, -4.39f };
+	Local_55[40 /*11*/].f_9 = 40f;
+	Local_55[41 /*11*/].f_9 = 80f;
+	Local_55[42 /*11*/].f_9 = 198f;
+	Local_55[43 /*11*/].f_9 = 198f;
+	Local_55[44 /*11*/].f_9 = 198f;
+	Local_55[45 /*11*/].f_9 = 198f;
+	Local_55[46 /*11*/].f_9 = 198f;
+	Local_55[47 /*11*/].f_9 = 198f;
+	Local_55[48 /*11*/].f_9 = 198f;
+	Local_55[49 /*11*/].f_9 = 198f;
 }
 
 Vector3 func_51(int iParam0, int iParam1)//Position - 0x1988
@@ -1773,10 +1773,10 @@ void func_53()//Position - 0x222B
 	
 	Global_113648.f_10051.f_125.f_2 = 0;
 	iVar0 = 0;
-	while (iVar0 < Local_48.f_0)
+	while (iVar0 < Local_55.f_0)
 	{
-		func_40(&(Local_48[iVar0 /*11*/].f_2));
-		func_27(&(Local_48[iVar0 /*11*/].f_1));
+		func_40(&(Local_55[iVar0 /*11*/].f_2));
+		func_27(&(Local_55[iVar0 /*11*/].f_1));
 		iVar0++;
 	}
 	if (func_58(&(Local_42.f_1)) || func_15(107) == 1)

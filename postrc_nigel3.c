@@ -936,25 +936,25 @@ var func_30(int iParam0)//Position - 0xC11
 int func_31()//Position - 0xC20
 {
 	var uVar0[16];
-	int iVar1;
-	int iVar2;
+	int iVar17;
+	int iVar18;
 	
 	if (ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()) && !PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 	{
-		iVar1 = PED::GET_PED_NEARBY_PEDS(PLAYER::PLAYER_PED_ID(), &uVar0, -1);
-		iVar2 = 0;
-		while (iVar2 <= (iVar1 - 1))
+		iVar17 = PED::GET_PED_NEARBY_PEDS(PLAYER::PLAYER_PED_ID(), &uVar0, -1);
+		iVar18 = 0;
+		while (iVar18 <= (iVar17 - 1))
 		{
-			if (uVar0[iVar2] != 0 && ENTITY::DOES_ENTITY_EXIST(uVar0[iVar2]))
+			if (uVar0[iVar18] != 0 && ENTITY::DOES_ENTITY_EXIST(uVar0[iVar18]))
 			{
-				if (ENTITY::GET_ENTITY_MODEL(uVar0[iVar2]) == joaat("U_M_M_Aldinapoli"))
+				if (ENTITY::GET_ENTITY_MODEL(uVar0[iVar18]) == joaat("U_M_M_Aldinapoli"))
 				{
-					ENTITY::SET_ENTITY_AS_MISSION_ENTITY(uVar0[iVar2], true, true);
-					iLocal_188 = uVar0[iVar2];
+					ENTITY::SET_ENTITY_AS_MISSION_ENTITY(uVar0[iVar18], true, true);
+					iLocal_188 = uVar0[iVar18];
 					return 1;
 				}
 			}
-			iVar2++;
+			iVar18++;
 		}
 	}
 	return 0;

@@ -62,10 +62,10 @@ int func_1(var uParam0, var uParam1)//Position - 0x6D
 	int iVar1;
 	int iVar2;
 	struct<6> Var3;
-	int iVar4;
-	int iVar5;
-	int iVar6;
-	int iVar7;
+	int iVar9;
+	int iVar10;
+	int iVar11;
+	int iVar12;
 	
 	if (uParam0->f_2)
 	{
@@ -80,23 +80,23 @@ int func_1(var uParam0, var uParam1)//Position - 0x6D
 		{
 			return 0;
 		}
-		iVar4 = 5;
+		iVar9 = 5;
 		if (NETWORK::NETWORK_CAN_BAIL())
 		{
-			iVar5 = 2348;
-			iVar6 = (uParam0->f_4 + iVar4);
-			iVar7 = func_4(*uParam0);
+			iVar10 = 2348;
+			iVar11 = (uParam0->f_4 + iVar9);
+			iVar12 = func_4(*uParam0);
 			iVar2 = uParam0->f_4;
-			while (iVar2 <= iVar6)
+			while (iVar2 <= iVar11)
 			{
-				if (iVar2 < iVar5)
+				if (iVar2 < iVar10)
 				{
 					func_2(iVar2, &Var3);
 					if (iVar2 >= Var3.f_4 && iVar2 != 27)
 					{
-						if (iVar7 != 0 && Var3.f_5 != 0)
+						if (iVar12 != 0 && Var3.f_5 != 0)
 						{
-							if (NETWORK::NETWORK_ACCESS_TUNABLE_FLOAT_HASH(iVar7, Var3.f_5, &fVar0))
+							if (NETWORK::NETWORK_ACCESS_TUNABLE_FLOAT_HASH(iVar12, Var3.f_5, &fVar0))
 							{
 								if (fVar0 > Var3.f_1 || fVar0 < Var3.f_0)
 								{
@@ -105,7 +105,7 @@ int func_1(var uParam0, var uParam1)//Position - 0x6D
 									uParam0->f_1 = MISC::GET_GAME_TIMER();
 								}
 							}
-							else if (NETWORK::NETWORK_ACCESS_TUNABLE_INT_HASH(iVar7, Var3.f_5, &iVar1))
+							else if (NETWORK::NETWORK_ACCESS_TUNABLE_INT_HASH(iVar12, Var3.f_5, &iVar1))
 							{
 								if (iVar1 > Var3.f_3 || iVar1 < Var3.f_2)
 								{

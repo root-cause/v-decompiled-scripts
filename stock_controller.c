@@ -27,8 +27,8 @@
 	int iLocal_25 = 0;
 	int iLocal_26 = 0;
 	struct<3> Local_27 = { 0, 0, 0 } ;
-	struct<3> Local_28 = { 0, 0, 0 } ;
-	int iLocal_29 = 0;
+	struct<3> Local_30 = { 0, 0, 0 } ;
+	int iLocal_33 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -2927,13 +2927,13 @@ int func_62(var uParam0, int iParam1)//Position - 0x25D8
 	return iVar0;
 }
 
-bool func_63(struct<3> Param0, struct<3> Param1, bool bParam2)//Position - 0x3CC5
+bool func_63(struct<3> Param0, struct<3> Param3, bool bParam6)//Position - 0x3CC5
 {
-	if (bParam2)
+	if (bParam6)
 	{
-		return (Param0.f_0 == Param1.f_0 && Param0.f_1 == Param1.f_1);
+		return (Param0.f_0 == Param3.f_0 && Param0.f_1 == Param3.f_1);
 	}
-	return ((Param0.f_0 == Param1.f_0 && Param0.f_1 == Param1.f_1) && Param0.f_2 == Param1.f_2);
+	return ((Param0.f_0 == Param3.f_0 && Param0.f_1 == Param3.f_1) && Param0.f_2 == Param3.f_2);
 }
 
 int func_64()//Position - 0x3D0C
@@ -3803,37 +3803,37 @@ void func_80()//Position - 0x4AC3
 	
 	if (!PLAYER::IS_PLAYER_PLAYING(PLAYER::GET_PLAYER_INDEX()))
 	{
-		iLocal_29 = 0;
+		iLocal_33 = 0;
 		return;
 	}
 	if (func_82(PLAYER::GET_PLAYER_INDEX(), -1))
 	{
-		iLocal_29 = 0;
+		iLocal_33 = 0;
 		return;
 	}
 	if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::GET_PLAYER_PED(PLAYER::GET_PLAYER_INDEX()), false))
 	{
 		iVar0 = PED::GET_VEHICLE_PED_IS_IN(PLAYER::GET_PLAYER_PED(PLAYER::GET_PLAYER_INDEX()), false);
-		if (iLocal_29 != iVar0)
+		if (iLocal_33 != iVar0)
 		{
-			Local_27 = { Local_28 };
-			iLocal_29 = iVar0;
+			Local_27 = { Local_30 };
+			iLocal_33 = iVar0;
 		}
 		if (iVar0 == 0)
 		{
 			return;
 		}
 		Local_27 = { ENTITY::GET_ENTITY_COORDS(iVar0, true) };
-		if (iLocal_29 == 0)
+		if (iLocal_33 == 0)
 		{
-			Local_28 = { Local_27 };
-			iLocal_29 = iVar0;
+			Local_30 = { Local_27 };
+			iLocal_33 = iVar0;
 			return;
 		}
 		iVar1 = ENTITY::GET_ENTITY_MODEL(iVar0);
-		if (func_81(iVar1, MISC::GET_DISTANCE_BETWEEN_COORDS(Local_27, Local_28, false)))
+		if (func_81(iVar1, MISC::GET_DISTANCE_BETWEEN_COORDS(Local_27, Local_30, false)))
 		{
-			Local_28 = { Local_27 };
+			Local_30 = { Local_27 };
 		}
 	}
 }

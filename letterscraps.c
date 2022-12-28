@@ -44,22 +44,22 @@
 	int iLocal_42 = 0;
 	int iLocal_43 = 0;
 	struct<8> Local_44 = { 0, 0, 0, 0, 0, 0, 0, 0 } ;
-	var uLocal_45 = 0;
-	var uLocal_46 = 0;
-	var uLocal_47 = 0;
-	var uLocal_48 = 0;
-	var uLocal_49 = 0;
-	struct<11> Local_50[50];
-	int iLocal_51 = 0;
-	char* sLocal_52 = NULL;
-	int iLocal_53 = 0;
-	int* iLocal_54 = NULL;
-	int iLocal_55 = 0;
-	int iLocal_56 = 0;
-	char* sLocal_57[4] = { NULL, NULL, NULL, NULL };
-	int iLocal_58 = 0;
-	var uLocal_59 = 0;
-	int iLocal_60 = 0;
+	var uLocal_52 = 0;
+	var uLocal_53 = 0;
+	var uLocal_54 = 0;
+	var uLocal_55 = 0;
+	var uLocal_56 = 0;
+	struct<11> Local_57[50];
+	int iLocal_608 = 0;
+	char* sLocal_609 = NULL;
+	int iLocal_610 = 0;
+	int* iLocal_611 = NULL;
+	int iLocal_612 = 0;
+	int iLocal_613 = 0;
+	char* sLocal_614[4] = { NULL, NULL, NULL, NULL };
+	int iLocal_619 = 0;
+	var uLocal_620 = 0;
+	int iLocal_621 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -86,8 +86,8 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_38 = 3;
 	bLocal_40 = true;
 	bLocal_41 = true;
-	iLocal_51 = 4;
-	sLocal_52 = "id1_11_tunnel6_int";
+	iLocal_608 = 4;
+	sLocal_609 = "id1_11_tunnel6_int";
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(210))
 	{
 		func_73();
@@ -139,19 +139,19 @@ void func_1()//Position - 0xF8
 					{
 						if (((!AUDIO::IS_MOBILE_PHONE_CALL_ONGOING() && !func_14()) && !func_13()) && !func_12())
 						{
-							iLocal_58 = 0;
-							iLocal_56 = 0;
-							sLocal_57[0] = "LETTERS_PAGE_ONE" /* GXT: March 15th, 1975~n~~n~ATTN; David Richards~n~~n~My Dear David,~n~~n~Listen, I know you're a little offended by your discovery of my 'petit indiscretion' as the French would say, but I want you to understand – that's all it is – a little indiscretion. I agree whole heartedly with you – my actions were a little inhumane. But that's not a bad thing. Inhumanity is the very watchword, the very currency, the very life blood of the artist! My inhumanity makes me human. It's thanks to my inhumanity that I'm able to speak to people with the moral authority of the sinner and the creator, all at once. I had to kill her. And I had to do it in that way. The way that would hurt me most – by torturing her slowly and painfully, then sending momentos from our date to her family. */;
-							sLocal_57[1] = "LETTERS_PAGE_TWO" /* GXT: And in the years since, I've had to, at times, goad her family into further suffering. Just to prove how very much I understand suffering and how I can represent it best as an artist – isn't it better that one family suffers so the world can be free to enjoy, to learn and to be cleansed by my masterpieces? Don't even bother answering that. The answer is obvious and if you get it wrong, well, then you're less of a man than I thought.~n~~n~But let us not concern ourselves with such trivialities – we are artists, my friend. The last of a dying breed. I dread the day when you finally retire and Solomon takes over – sure I love the kid but he's a remorseless hack with none of your passion, your creative zeal. He's a weak livered moralizer hiding in the body of a Vinewood decadent. */;
-							sLocal_57[2] = "LETTERS_PAGE_THREE" /* GXT: He understands nothing about why we act as we do! Not because we can, but because we must. And that's the thing. Some people take advantage of their position in this town for pleasure – as if sleeping with multiple young girls, or torturing hitchhikers or eating dogs could ever be fun? It's awful. I only do it to experience it so my art is truer, deeper, more meaningful, and I believe you know that.~n~~n~I cannot wait for you to read my new draft of LEARED. I have really removed the cliches that ruined Shakespeare's plays and found the power, the moment, the thing we talked about that wonderful night in Mexico when we paid the hookers to stab each other. */;
-							sLocal_57[3] = "LETTERS_PAGE_FOUR" /* GXT: Anyway, I hope you and Rachel have worked through your problems. I look forward to making Friday supper again soon.  You've always been an inspiration to me.~n~~n~Your dear friend~n~~n~Dreyfuss */;
-							iLocal_55 = GRAPHICS::REQUEST_SCALEFORM_MOVIE("LETTER_SCRAPS");
-							while (!GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(iLocal_55))
+							iLocal_619 = 0;
+							iLocal_613 = 0;
+							sLocal_614[0] = "LETTERS_PAGE_ONE" /* GXT: March 15th, 1975~n~~n~ATTN; David Richards~n~~n~My Dear David,~n~~n~Listen, I know you're a little offended by your discovery of my 'petit indiscretion' as the French would say, but I want you to understand – that's all it is – a little indiscretion. I agree whole heartedly with you – my actions were a little inhumane. But that's not a bad thing. Inhumanity is the very watchword, the very currency, the very life blood of the artist! My inhumanity makes me human. It's thanks to my inhumanity that I'm able to speak to people with the moral authority of the sinner and the creator, all at once. I had to kill her. And I had to do it in that way. The way that would hurt me most – by torturing her slowly and painfully, then sending momentos from our date to her family. */;
+							sLocal_614[1] = "LETTERS_PAGE_TWO" /* GXT: And in the years since, I've had to, at times, goad her family into further suffering. Just to prove how very much I understand suffering and how I can represent it best as an artist – isn't it better that one family suffers so the world can be free to enjoy, to learn and to be cleansed by my masterpieces? Don't even bother answering that. The answer is obvious and if you get it wrong, well, then you're less of a man than I thought.~n~~n~But let us not concern ourselves with such trivialities – we are artists, my friend. The last of a dying breed. I dread the day when you finally retire and Solomon takes over – sure I love the kid but he's a remorseless hack with none of your passion, your creative zeal. He's a weak livered moralizer hiding in the body of a Vinewood decadent. */;
+							sLocal_614[2] = "LETTERS_PAGE_THREE" /* GXT: He understands nothing about why we act as we do! Not because we can, but because we must. And that's the thing. Some people take advantage of their position in this town for pleasure – as if sleeping with multiple young girls, or torturing hitchhikers or eating dogs could ever be fun? It's awful. I only do it to experience it so my art is truer, deeper, more meaningful, and I believe you know that.~n~~n~I cannot wait for you to read my new draft of LEARED. I have really removed the cliches that ruined Shakespeare's plays and found the power, the moment, the thing we talked about that wonderful night in Mexico when we paid the hookers to stab each other. */;
+							sLocal_614[3] = "LETTERS_PAGE_FOUR" /* GXT: Anyway, I hope you and Rachel have worked through your problems. I look forward to making Friday supper again soon.  You've always been an inspiration to me.~n~~n~Your dear friend~n~~n~Dreyfuss */;
+							iLocal_612 = GRAPHICS::REQUEST_SCALEFORM_MOVIE("LETTER_SCRAPS");
+							while (!GRAPHICS::HAS_SCALEFORM_MOVIE_LOADED(iLocal_612))
 							{
 								SYSTEM::WAIT(0);
 							}
-							GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_55, "SET_LETTER_TEXT");
-							func_11(sLocal_57[0]);
+							GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_612, "SET_LETTER_TEXT");
+							func_11(sLocal_614[0]);
 							GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							GRAPHICS::SET_SCRIPT_GFX_DRAW_BEHIND_PAUSEMENU(true);
 							func_7(1);
@@ -171,31 +171,31 @@ void func_1()//Position - 0xF8
 			HUD::DISABLE_FRONTEND_THIS_FRAME();
 			GRAPHICS::SET_SCRIPT_GFX_DRAW_BEHIND_PAUSEMENU(true);
 			GRAPHICS::SET_SCRIPT_GFX_DRAW_ORDER(1);
-			if (iLocal_56 < 4)
+			if (iLocal_613 < 4)
 			{
-				if (!iLocal_58)
+				if (!iLocal_619)
 				{
 					if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 190 /*INPUT_FRONTEND_RIGHT*/))
 					{
-						if (iLocal_56 >= 0 && iLocal_56 < 3)
+						if (iLocal_613 >= 0 && iLocal_613 < 3)
 						{
-							iLocal_56++;
-							GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_55, "SET_LETTER_TEXT");
-							func_11(sLocal_57[iLocal_56]);
+							iLocal_613++;
+							GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_612, "SET_LETTER_TEXT");
+							func_11(sLocal_614[iLocal_613]);
 							GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 						}
-						iLocal_58 = 1;
+						iLocal_619 = 1;
 					}
 					else if (PAD::IS_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 189 /*INPUT_FRONTEND_LEFT*/))
 					{
-						if (iLocal_56 > 0 && iLocal_56 < 4)
+						if (iLocal_613 > 0 && iLocal_613 < 4)
 						{
-							iLocal_56 = (iLocal_56 - 1);
-							GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_55, "SET_LETTER_TEXT");
-							func_11(sLocal_57[iLocal_56]);
+							iLocal_613 = (iLocal_613 - 1);
+							GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(iLocal_612, "SET_LETTER_TEXT");
+							func_11(sLocal_614[iLocal_613]);
 							GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 						}
-						iLocal_58 = 1;
+						iLocal_619 = 1;
 					}
 					else if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/))
 					{
@@ -204,9 +204,9 @@ void func_1()//Position - 0xF8
 				}
 				else if (!func_2())
 				{
-					iLocal_58 = 0;
+					iLocal_619 = 0;
 				}
-				GRAPHICS::DRAW_SCALEFORM_MOVIE_FULLSCREEN(iLocal_55, 255, 255, 255, 255, 0);
+				GRAPHICS::DRAW_SCALEFORM_MOVIE_FULLSCREEN(iLocal_612, 255, 255, 255, 255, 0);
 			}
 			else
 			{
@@ -509,13 +509,13 @@ void func_21()//Position - 0x712
 			func_61(&Local_44, 1, joaat("prop_ld_scrap"), "LETTERS_COLLECT" /* GXT: ~1~/50 letter scraps collected. */);
 			func_59(&Local_44, joaat("NUM_HIDDEN_PACKAGES_0"), 705, 50);
 			iLocal_43 = 1;
-			iLocal_60 = 1;
+			iLocal_621 = 1;
 			break;
 		
 		case 1:
 			if (!func_58(14) && !CAM::IS_SCREEN_FADED_OUT())
 			{
-				if (func_23(&Local_44, &Local_50) || uLocal_59)
+				if (func_23(&Local_44, &Local_57) || uLocal_620)
 				{
 					iLocal_43 = 2;
 				}
@@ -549,9 +549,9 @@ int func_23(var uParam0, int iParam1)//Position - 0x7DA
 	int iVar0;
 	bool bVar1;
 	struct<3> Var2;
-	bool bVar3;
+	bool bVar5;
 	
-	bVar3 = (!func_20() && !func_20());
+	bVar5 = (!func_20() && !func_20());
 	PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID());
 	Var2 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) };
 	iVar0 = 0;
@@ -566,12 +566,12 @@ int func_23(var uParam0, int iParam1)//Position - 0x7DA
 				{
 					func_55(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("PICKUP_CUSTOM_SCRIPT"), 0, 1, 2);
 				}
-				else if (uParam0->f_10 == iLocal_51)
+				else if (uParam0->f_10 == iLocal_608)
 				{
 					func_55(iParam1[uParam0->f_10 /*11*/], uParam0->f_7, joaat("PICKUP_CUSTOM_SCRIPT"), 0, 1, 2);
 					if (OBJECT::DOES_PICKUP_EXIST((iParam1[uParam0->f_10 /*11*/])->f_1))
 					{
-						INTERIOR::ADD_PICKUP_TO_INTERIOR_ROOM_BY_NAME((iParam1[uParam0->f_10 /*11*/])->f_1, sLocal_52);
+						INTERIOR::ADD_PICKUP_TO_INTERIOR_ROOM_BY_NAME((iParam1[uParam0->f_10 /*11*/])->f_1, sLocal_609);
 					}
 				}
 				else
@@ -584,7 +584,7 @@ int func_23(var uParam0, int iParam1)//Position - 0x7DA
 		{
 			if (func_38(uParam0, iParam1, Var2))
 			{
-				if (bVar3)
+				if (bVar5)
 				{
 					if (!func_37(33))
 					{
@@ -605,7 +605,7 @@ int func_23(var uParam0, int iParam1)//Position - 0x7DA
 	{
 		if (!Global_78819)
 		{
-			func_24(&(uParam0->f_11), &(uParam0->f_12), &(uParam0->f_9), 1, &iLocal_53, &iLocal_54, "LETTERS_TITLE" /* GXT: Scrap Collected~s~ */, "LETTERS_COLLECT" /* GXT: ~1~/50 letter scraps collected. */);
+			func_24(&(uParam0->f_11), &(uParam0->f_12), &(uParam0->f_9), 1, &iLocal_610, &iLocal_611, "LETTERS_TITLE" /* GXT: Scrap Collected~s~ */, "LETTERS_COLLECT" /* GXT: ~1~/50 letter scraps collected. */);
 		}
 	}
 	if (!uParam0->f_12 && !uParam0->f_11)
@@ -1513,72 +1513,72 @@ void func_62()//Position - 0x196F
 	iVar0 = 0;
 	while (iVar0 < 50)
 	{
-		Local_50[iVar0 /*11*/].f_3 = { func_63(iVar0, 0) };
-		Local_50[iVar0 /*11*/].f_10 = 0;
+		Local_57[iVar0 /*11*/].f_3 = { func_63(iVar0, 0) };
+		Local_57[iVar0 /*11*/].f_10 = 0;
 		iVar0++;
 	}
-	iLocal_53 = 0;
-	Local_50[0 /*11*/].f_9 = 179.4746f;
-	Local_50[1 /*11*/].f_6 = { 0f, 0f, 198f };
-	Local_50[2 /*11*/].f_9 = 104f;
-	Local_50[3 /*11*/].f_9 = 321.5f;
-	Local_50[4 /*11*/].f_6 = { 0f, 0f, 49f };
-	Local_50[5 /*11*/].f_6 = { 0f, 0f, 286.5f };
-	Local_50[6 /*11*/].f_9 = 278.0092f;
-	Local_50[7 /*11*/].f_6 = { 5.3f, -1801.4f, 15.57f };
-	Local_50[8 /*11*/].f_9 = 80.5f;
-	Local_50[9 /*11*/].f_9 = 116f;
-	Local_50[10 /*11*/].f_9 = 15f;
-	Local_50[11 /*11*/].f_9 = 305.5f;
-	Local_50[12 /*11*/].f_9 = 0f;
-	Local_50[13 /*11*/].f_9 = 95f;
-	Local_50[13 /*11*/].f_6 = { -0.91f, -0.03f, -0.81f };
-	Local_50[14 /*11*/].f_9 = 40f;
-	Local_50[15 /*11*/].f_9 = 40f;
-	Local_50[16 /*11*/].f_9 = 40f;
-	Local_50[17 /*11*/].f_9 = 90f;
-	Local_50[17 /*11*/].f_6 = { -0.55f, 0f, 0.78f };
-	Local_50[18 /*11*/].f_6 = { 0f, 0f, 0f };
-	Local_50[19 /*11*/].f_9 = 40f;
-	Local_50[20 /*11*/].f_6 = { 0f, 2f, 15f };
-	Local_50[21 /*11*/].f_9 = 40f;
-	Local_50[22 /*11*/].f_9 = 40f;
-	Local_50[23 /*11*/].f_9 = 40f;
-	Local_50[24 /*11*/].f_9 = 40f;
-	Local_50[25 /*11*/].f_9 = 40f;
-	Local_50[26 /*11*/].f_9 = 40f;
-	Local_50[26 /*11*/].f_6 = { -6f, 10f, 0f };
-	Local_50[27 /*11*/].f_9 = 40f;
-	Local_50[27 /*11*/].f_6 = { -4.66f, 8.7f, 67.03f };
-	Local_50[28 /*11*/].f_9 = 40f;
-	Local_50[28 /*11*/].f_6 = { 1.54f, -8.31f, -19.94f };
-	Local_50[29 /*11*/].f_9 = 40f;
-	Local_50[30 /*11*/].f_9 = 40f;
-	Local_50[30 /*11*/].f_6 = { 27.21f, -3.11f, -2.09f };
-	Local_50[31 /*11*/].f_9 = 40f;
-	Local_50[32 /*11*/].f_9 = 40f;
-	Local_50[33 /*11*/].f_9 = 40f;
-	Local_50[33 /*11*/].f_6 = { -9.89f, 0.3f, -0.01f };
-	Local_50[34 /*11*/].f_9 = 40f;
-	Local_50[35 /*11*/].f_9 = 40f;
-	Local_50[36 /*11*/].f_9 = 40f;
-	Local_50[36 /*11*/].f_6 = { 6.5f, -4.41f, -0.62f };
-	Local_50[37 /*11*/].f_6 = { -9f, 5.3f, -2f };
-	Local_50[38 /*11*/].f_9 = 40f;
-	Local_50[38 /*11*/].f_6 = { -13.32f, -0.57f, -0.15f };
-	Local_50[39 /*11*/].f_9 = 40f;
-	Local_50[39 /*11*/].f_6 = { 4.71f, -21.26f, -0.06f };
-	Local_50[40 /*11*/].f_9 = 40f;
-	Local_50[41 /*11*/].f_9 = 80f;
-	Local_50[42 /*11*/].f_6 = { -2f, 9f, 1f };
-	Local_50[43 /*11*/].f_9 = 198f;
-	Local_50[44 /*11*/].f_9 = 198f;
-	Local_50[44 /*11*/].f_6 = { 0f, -20f, 0f };
-	Local_50[45 /*11*/].f_9 = 198f;
-	Local_50[46 /*11*/].f_9 = 198f;
-	Local_50[47 /*11*/].f_9 = 198f;
-	Local_50[48 /*11*/].f_9 = 198f;
-	Local_50[49 /*11*/].f_9 = 198f;
+	iLocal_610 = 0;
+	Local_57[0 /*11*/].f_9 = 179.4746f;
+	Local_57[1 /*11*/].f_6 = { 0f, 0f, 198f };
+	Local_57[2 /*11*/].f_9 = 104f;
+	Local_57[3 /*11*/].f_9 = 321.5f;
+	Local_57[4 /*11*/].f_6 = { 0f, 0f, 49f };
+	Local_57[5 /*11*/].f_6 = { 0f, 0f, 286.5f };
+	Local_57[6 /*11*/].f_9 = 278.0092f;
+	Local_57[7 /*11*/].f_6 = { 5.3f, -1801.4f, 15.57f };
+	Local_57[8 /*11*/].f_9 = 80.5f;
+	Local_57[9 /*11*/].f_9 = 116f;
+	Local_57[10 /*11*/].f_9 = 15f;
+	Local_57[11 /*11*/].f_9 = 305.5f;
+	Local_57[12 /*11*/].f_9 = 0f;
+	Local_57[13 /*11*/].f_9 = 95f;
+	Local_57[13 /*11*/].f_6 = { -0.91f, -0.03f, -0.81f };
+	Local_57[14 /*11*/].f_9 = 40f;
+	Local_57[15 /*11*/].f_9 = 40f;
+	Local_57[16 /*11*/].f_9 = 40f;
+	Local_57[17 /*11*/].f_9 = 90f;
+	Local_57[17 /*11*/].f_6 = { -0.55f, 0f, 0.78f };
+	Local_57[18 /*11*/].f_6 = { 0f, 0f, 0f };
+	Local_57[19 /*11*/].f_9 = 40f;
+	Local_57[20 /*11*/].f_6 = { 0f, 2f, 15f };
+	Local_57[21 /*11*/].f_9 = 40f;
+	Local_57[22 /*11*/].f_9 = 40f;
+	Local_57[23 /*11*/].f_9 = 40f;
+	Local_57[24 /*11*/].f_9 = 40f;
+	Local_57[25 /*11*/].f_9 = 40f;
+	Local_57[26 /*11*/].f_9 = 40f;
+	Local_57[26 /*11*/].f_6 = { -6f, 10f, 0f };
+	Local_57[27 /*11*/].f_9 = 40f;
+	Local_57[27 /*11*/].f_6 = { -4.66f, 8.7f, 67.03f };
+	Local_57[28 /*11*/].f_9 = 40f;
+	Local_57[28 /*11*/].f_6 = { 1.54f, -8.31f, -19.94f };
+	Local_57[29 /*11*/].f_9 = 40f;
+	Local_57[30 /*11*/].f_9 = 40f;
+	Local_57[30 /*11*/].f_6 = { 27.21f, -3.11f, -2.09f };
+	Local_57[31 /*11*/].f_9 = 40f;
+	Local_57[32 /*11*/].f_9 = 40f;
+	Local_57[33 /*11*/].f_9 = 40f;
+	Local_57[33 /*11*/].f_6 = { -9.89f, 0.3f, -0.01f };
+	Local_57[34 /*11*/].f_9 = 40f;
+	Local_57[35 /*11*/].f_9 = 40f;
+	Local_57[36 /*11*/].f_9 = 40f;
+	Local_57[36 /*11*/].f_6 = { 6.5f, -4.41f, -0.62f };
+	Local_57[37 /*11*/].f_6 = { -9f, 5.3f, -2f };
+	Local_57[38 /*11*/].f_9 = 40f;
+	Local_57[38 /*11*/].f_6 = { -13.32f, -0.57f, -0.15f };
+	Local_57[39 /*11*/].f_9 = 40f;
+	Local_57[39 /*11*/].f_6 = { 4.71f, -21.26f, -0.06f };
+	Local_57[40 /*11*/].f_9 = 40f;
+	Local_57[41 /*11*/].f_9 = 80f;
+	Local_57[42 /*11*/].f_6 = { -2f, 9f, 1f };
+	Local_57[43 /*11*/].f_9 = 198f;
+	Local_57[44 /*11*/].f_9 = 198f;
+	Local_57[44 /*11*/].f_6 = { 0f, -20f, 0f };
+	Local_57[45 /*11*/].f_9 = 198f;
+	Local_57[46 /*11*/].f_9 = 198f;
+	Local_57[47 /*11*/].f_9 = 198f;
+	Local_57[48 /*11*/].f_9 = 198f;
+	Local_57[49 /*11*/].f_9 = 198f;
 }
 
 Vector3 func_63(int iParam0, int iParam1)//Position - 0x1D65
@@ -2285,15 +2285,15 @@ void func_73()//Position - 0x2C6F
 	int iVar0;
 	
 	GRAPHICS::SET_SCRIPT_GFX_DRAW_BEHIND_PAUSEMENU(false);
-	GRAPHICS::SET_SCALEFORM_MOVIE_AS_NO_LONGER_NEEDED(&iLocal_55);
+	GRAPHICS::SET_SCALEFORM_MOVIE_AS_NO_LONGER_NEEDED(&iLocal_612);
 	MISC::SET_GAME_PAUSED(false);
 	Global_113648.f_10051.f_122.f_2 = 0;
 	iVar0 = 0;
-	while (iVar0 < Local_50.f_0)
+	while (iVar0 < Local_57.f_0)
 	{
-		func_52(&(Local_50[iVar0 /*11*/].f_2));
-		func_39(&(Local_50[iVar0 /*11*/].f_1));
-		Local_50[iVar0 /*11*/].f_1 = 0;
+		func_52(&(Local_57[iVar0 /*11*/].f_2));
+		func_39(&(Local_57[iVar0 /*11*/].f_1));
+		Local_57[iVar0 /*11*/].f_1 = 0;
 		iVar0++;
 	}
 	if (func_71(106) == 1)
@@ -2312,7 +2312,7 @@ void func_73()//Position - 0x2C6F
 	{
 		func_72(12);
 	}
-	if (iLocal_60)
+	if (iLocal_621)
 	{
 		STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(Local_44.f_7);
 	}

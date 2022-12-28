@@ -18,10 +18,10 @@
 	var uLocal_16 = 0;
 	int iLocal_17 = 0;
 	var uLocal_18[3] = { 0, 0, 0 };
-	int iLocal_19 = 0;
-	var uLocal_20[3] = { 0, 0, 0 };
-	int iLocal_21 = 0;
 	int iLocal_22 = 0;
+	var uLocal_23[3] = { 0, 0, 0 };
+	int iLocal_27 = 0;
+	int iLocal_28 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -45,7 +45,7 @@ void __EntryFunction__()//Position - 0x0
 	while (true)
 	{
 		SYSTEM::WAIT(250);
-		switch (iLocal_21)
+		switch (iLocal_27)
 		{
 			case 0:
 				if (uLocal_18[0])
@@ -62,46 +62,46 @@ void __EntryFunction__()//Position - 0x0
 					Global_22844[1 /*42*/].f_37[2] = 0;
 					Global_22844[1 /*42*/].f_32[2] = 3;
 					Global_22844[1 /*42*/].f_27[2] = 0;
-					iLocal_19 = 0;
-					while (iLocal_19 < Global_22844[1 /*42*/].f_32[1])
+					iLocal_22 = 0;
+					while (iLocal_22 < Global_22844[1 /*42*/].f_32[1])
 					{
-						Global_32218[iLocal_19] = 0;
-						Global_32214[iLocal_19] = 0;
-						iLocal_19++;
+						Global_32218[iLocal_22] = 0;
+						Global_32214[iLocal_22] = 0;
+						iLocal_22++;
 					}
 					func_4(1, 1, 1, 1);
 					func_3("CL_ADDED" /* GXT: Job ~a~ added to phone checklist */, "CL_C1A" /* GXT: Killer photo */, 3000, 1);
-					iLocal_21 = 1;
+					iLocal_27 = 1;
 				}
 				break;
 			
 			case 1:
-				iLocal_19 = 0;
-				while (iLocal_19 < Global_22844[1 /*42*/].f_32[1])
+				iLocal_22 = 0;
+				while (iLocal_22 < Global_22844[1 /*42*/].f_32[1])
 				{
 					if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 					{
-						if (ENTITY::DOES_ENTITY_EXIST(uLocal_20[iLocal_19]))
+						if (ENTITY::DOES_ENTITY_EXIST(uLocal_23[iLocal_22]))
 						{
-							if (PED::IS_PED_INJURED(uLocal_20[iLocal_19]))
+							if (PED::IS_PED_INJURED(uLocal_23[iLocal_22]))
 							{
-								if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(uLocal_20[iLocal_19], PLAYER::PLAYER_PED_ID(), true))
+								if (ENTITY::HAS_ENTITY_BEEN_DAMAGED_BY_ENTITY(uLocal_23[iLocal_22], PLAYER::PLAYER_PED_ID(), true))
 								{
-									if (!Global_32214[iLocal_19])
+									if (!Global_32214[iLocal_22])
 									{
 										Global_22844[1 /*42*/].f_27[1]++;
 										func_2("CL_C1A_J1" /* GXT: Gang members killed ~1~/~1~ */, Global_22844[1 /*42*/].f_27[1], Global_22844[1 /*42*/].f_32[1], 2000, 1);
-										Global_32214[iLocal_19] = 1;
+										Global_32214[iLocal_22] = 1;
 									}
-									if (ENTITY::IS_ENTITY_DEAD(uLocal_20[iLocal_19], false))
+									if (ENTITY::IS_ENTITY_DEAD(uLocal_23[iLocal_22], false))
 									{
-										if (!Global_32218[iLocal_19])
+										if (!Global_32218[iLocal_22])
 										{
-											if (MOBILE::CELL_CAM_IS_CHAR_VISIBLE_NO_FACE_CHECK(uLocal_20[iLocal_19]) && func_1())
+											if (MOBILE::CELL_CAM_IS_CHAR_VISIBLE_NO_FACE_CHECK(uLocal_23[iLocal_22]) && func_1())
 											{
 												Global_22844[1 /*42*/].f_27[2]++;
 												func_2("CL_C1A_J2" /* GXT: Photos taken of dead gang members ~1~/~1~ */, Global_22844[1 /*42*/].f_27[2], Global_22844[1 /*42*/].f_32[2], 2000, 1);
-												Global_32218[iLocal_19] = 1;
+												Global_32218[iLocal_22] = 1;
 											}
 										}
 									}
@@ -109,13 +109,13 @@ void __EntryFunction__()//Position - 0x0
 									{
 										func_3("CL_COMPLETE" /* GXT: ~a~ job complete. */, "CL_C1A" /* GXT: Killer photo */, 3000, 1);
 										Global_22844[1 /*42*/].f_8 = 1;
-										iLocal_21 = 2;
+										iLocal_27 = 2;
 									}
 								}
 							}
 						}
 					}
-					iLocal_19++;
+					iLocal_22++;
 				}
 				break;
 			
@@ -123,7 +123,7 @@ void __EntryFunction__()//Position - 0x0
 				break;
 		}
 		SYSTEM::WAIT(250);
-		switch (iLocal_22)
+		switch (iLocal_28)
 		{
 			case 0:
 				if (uLocal_18[1])
@@ -146,7 +146,7 @@ void __EntryFunction__()//Position - 0x0
 					Global_22844[2 /*42*/].f_27[3] = -1;
 					func_4(136, 2, 1, 1);
 					func_3("CL_ADDED" /* GXT: Job ~a~ added to phone checklist */, "CL_C1B" /* GXT: Bike Pro */, 3000, 1);
-					iLocal_22 = 1;
+					iLocal_28 = 1;
 				}
 				break;
 			
@@ -164,7 +164,7 @@ void __EntryFunction__()//Position - 0x0
 				{
 					func_3("CL_COMPLETE" /* GXT: ~a~ job complete. */, "CL_C1B" /* GXT: Bike Pro */, 3000, 1);
 					Global_22844[2 /*42*/].f_8 = 1;
-					iLocal_22 = 2;
+					iLocal_28 = 2;
 				}
 				break;
 			
@@ -306,44 +306,44 @@ int func_8()//Position - 0x5A3
 	return 1;
 }
 
-int func_9(struct<6> Param0, struct<6> Param1)//Position - 0x67D
+int func_9(struct<6> Param0, struct<6> Param6)//Position - 0x67D
 {
 	struct<4> Var0;
-	struct<4> Var1;
-	int iVar2;
-	int iVar3;
+	struct<4> Var6;
+	int iVar12;
+	int iVar13;
 	
-	if (Param0.f_5 < Param1.f_5)
+	if (Param0.f_5 < Param6.f_5)
 	{
 		return 0;
 	}
-	if (Param0.f_5 > Param1.f_5)
+	if (Param0.f_5 > Param6.f_5)
 	{
 		return 1;
 	}
-	if (Param0.f_5 == Param1.f_5)
+	if (Param0.f_5 == Param6.f_5)
 	{
-		if (Param0.f_4 < Param1.f_4)
+		if (Param0.f_4 < Param6.f_4)
 		{
 			return 0;
 		}
-		if (Param0.f_4 > Param1.f_4)
+		if (Param0.f_4 > Param6.f_4)
 		{
 			return 1;
 		}
-		if (Param0.f_4 == Param1.f_4)
+		if (Param0.f_4 == Param6.f_4)
 		{
 			Var0.f_0 = Param0.f_0;
 			Var0.f_1 = Param0.f_1 * 60;
 			Var0.f_2 = Param0.f_2 * 3600;
 			Var0.f_3 = (Param0.f_3 * 86400);
-			iVar2 = (((Var0.f_0 + Var0.f_1) + Var0.f_2) + Var0.f_3);
-			Var1.f_0 = Param1.f_0;
-			Var1.f_1 = Param1.f_1 * 60;
-			Var1.f_2 = Param1.f_2 * 3600;
-			Var1.f_3 = (Param1.f_3 * 86400);
-			iVar3 = (((Var1.f_0 + Var1.f_1) + Var1.f_2) + Var1.f_3);
-			if (iVar2 > iVar3 || iVar2 == iVar3)
+			iVar12 = (((Var0.f_0 + Var0.f_1) + Var0.f_2) + Var0.f_3);
+			Var6.f_0 = Param6.f_0;
+			Var6.f_1 = Param6.f_1 * 60;
+			Var6.f_2 = Param6.f_2 * 3600;
+			Var6.f_3 = (Param6.f_3 * 86400);
+			iVar13 = (((Var6.f_0 + Var6.f_1) + Var6.f_2) + Var6.f_3);
+			if (iVar12 > iVar13 || iVar12 == iVar13)
 			{
 				return 1;
 			}

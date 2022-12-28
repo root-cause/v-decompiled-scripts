@@ -61,43 +61,26 @@
 	var uLocal_59 = 0;
 	var uLocal_60 = 0;
 	struct<3> Local_61 = { 0, 0, 0 } ;
-	struct<3> Local_62 = { 0, 0, 0 } ;
-	int iLocal_63 = 0;
-	var uLocal_64 = 0;
-	int iLocal_65 = 0;
-	int iLocal_66 = 0;
+	struct<3> Local_64 = { 0, 0, 0 } ;
 	int iLocal_67 = 0;
-	int* iLocal_68 = NULL;
+	var uLocal_68 = 0;
 	int iLocal_69 = 0;
-	struct<3> Local_70 = { 0, 0, 0 } ;
-	struct<3> Local_71 = { 0, 0, 0 } ;
-	int iLocal_72 = 0;
-	float fLocal_73 = 0f;
-	int iLocal_74 = 0;
-	struct<3> Local_75 = { 0, 0, 0 } ;
-	var uLocal_76 = 0;
-	int iLocal_77 = 0;
-	int iLocal_78 = 0;
-	int iLocal_79 = 0;
-	char cLocal_80[64] = "";
-	var uLocal_81 = 0;
-	var uLocal_82 = 0;
-	var uLocal_83 = 0;
-	var uLocal_84 = 0;
-	var uLocal_85 = 0;
+	int iLocal_70 = 0;
+	int iLocal_71 = 0;
+	int* iLocal_72 = NULL;
+	int iLocal_73 = 0;
+	struct<3> Local_74 = { 0, 0, 0 } ;
+	struct<3> Local_77 = { 0, 0, 0 } ;
+	int iLocal_80 = 0;
+	float fLocal_81 = 0f;
+	int iLocal_82 = 0;
+	struct<3> Local_83 = { 0, 0, 0 } ;
 	var uLocal_86 = 0;
-	var uLocal_87 = 0;
-	var uLocal_88 = 0;
-	char cLocal_89[64] = "";
-	var uLocal_90 = 0;
-	var uLocal_91 = 0;
-	var uLocal_92 = 0;
-	var uLocal_93 = 0;
-	var uLocal_94 = 0;
-	var uLocal_95 = 0;
-	var uLocal_96 = 0;
-	var uLocal_97 = 0;
-	char cLocal_98[64] = "";
+	int iLocal_87 = 0;
+	int iLocal_88 = 0;
+	int iLocal_89 = 0;
+	char cLocal_90[64] = "";
+	var uLocal_98 = 0;
 	var uLocal_99 = 0;
 	var uLocal_100 = 0;
 	var uLocal_101 = 0;
@@ -105,14 +88,7 @@
 	var uLocal_103 = 0;
 	var uLocal_104 = 0;
 	var uLocal_105 = 0;
-	var uLocal_106 = 0;
-	struct<3> Local_107 = { 0, 0, 0 } ;
-	float fLocal_108 = 0f;
-	float fLocal_109 = 0f;
-	char* sLocal_110 = NULL;
-	var uLocal_111 = 0;
-	var uLocal_112 = 0;
-	var uLocal_113 = 0;
+	char cLocal_106[64] = "";
 	var uLocal_114 = 0;
 	var uLocal_115 = 0;
 	var uLocal_116 = 0;
@@ -121,14 +97,7 @@
 	var uLocal_119 = 0;
 	var uLocal_120 = 0;
 	var uLocal_121 = 0;
-	var uLocal_122 = 0;
-	var uLocal_123 = 0;
-	var uLocal_124 = 0;
-	var uLocal_125 = 0;
-	char[] cLocal_126[8] = 0;
-	var uLocal_127 = 0;
-	var uLocal_128 = 0;
-	var uLocal_129 = 0;
+	char cLocal_122[64] = "";
 	var uLocal_130 = 0;
 	var uLocal_131 = 0;
 	var uLocal_132 = 0;
@@ -137,12 +106,10 @@
 	var uLocal_135 = 0;
 	var uLocal_136 = 0;
 	var uLocal_137 = 0;
-	var uLocal_138 = 0;
-	var uLocal_139 = 0;
-	var uLocal_140 = 0;
-	var uLocal_141 = 0;
-	char cLocal_142[64] = "";
-	var uLocal_143 = 0;
+	struct<3> Local_138 = { 0, 0, 0 } ;
+	float fLocal_141 = 0f;
+	float fLocal_142 = 0f;
+	char* sLocal_143 = NULL;
 	var uLocal_144 = 0;
 	var uLocal_145 = 0;
 	var uLocal_146 = 0;
@@ -150,7 +117,7 @@
 	var uLocal_148 = 0;
 	var uLocal_149 = 0;
 	var uLocal_150 = 0;
-	char cLocal_151[64] = "";
+	var uLocal_151 = 0;
 	var uLocal_152 = 0;
 	var uLocal_153 = 0;
 	var uLocal_154 = 0;
@@ -158,8 +125,8 @@
 	var uLocal_156 = 0;
 	var uLocal_157 = 0;
 	var uLocal_158 = 0;
-	var uLocal_159 = 0;
-	char cLocal_160[64] = "";
+	char[] cLocal_159[8] = 0;
+	var uLocal_160 = 0;
 	var uLocal_161 = 0;
 	var uLocal_162 = 0;
 	var uLocal_163 = 0;
@@ -168,8 +135,41 @@
 	var uLocal_166 = 0;
 	var uLocal_167 = 0;
 	var uLocal_168 = 0;
-	int iLocal_169 = 0;
-	int iLocal_170 = 0;
+	var uLocal_169 = 0;
+	var uLocal_170 = 0;
+	var uLocal_171 = 0;
+	var uLocal_172 = 0;
+	var uLocal_173 = 0;
+	var uLocal_174 = 0;
+	char cLocal_175[64] = "";
+	var uLocal_183 = 0;
+	var uLocal_184 = 0;
+	var uLocal_185 = 0;
+	var uLocal_186 = 0;
+	var uLocal_187 = 0;
+	var uLocal_188 = 0;
+	var uLocal_189 = 0;
+	var uLocal_190 = 0;
+	char cLocal_191[64] = "";
+	var uLocal_199 = 0;
+	var uLocal_200 = 0;
+	var uLocal_201 = 0;
+	var uLocal_202 = 0;
+	var uLocal_203 = 0;
+	var uLocal_204 = 0;
+	var uLocal_205 = 0;
+	var uLocal_206 = 0;
+	char cLocal_207[64] = "";
+	var uLocal_215 = 0;
+	var uLocal_216 = 0;
+	var uLocal_217 = 0;
+	var uLocal_218 = 0;
+	var uLocal_219 = 0;
+	var uLocal_220 = 0;
+	var uLocal_221 = 0;
+	var uLocal_222 = 0;
+	int iLocal_223 = 0;
+	int iLocal_224 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -199,12 +199,12 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_41 = 49;
 	iLocal_42 = 64;
 	Local_61 = { 0f, 0f, 0f };
-	Local_62 = { 0f, 0f, 0f };
-	iLocal_63 = -1;
-	iLocal_66 = 318;
-	iLocal_67 = 1;
-	fLocal_108 = -1f;
-	fLocal_109 = -1f;
+	Local_64 = { 0f, 0f, 0f };
+	iLocal_67 = -1;
+	iLocal_70 = 318;
+	iLocal_71 = 1;
+	fLocal_141 = -1f;
+	fLocal_142 = -1f;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(3))
 	{
 		func_66();
@@ -213,22 +213,22 @@ void __EntryFunction__()//Position - 0x0
 	func_54();
 	func_53();
 	func_49();
-	while (iLocal_67 && func_39(5, 0))
+	while (iLocal_71 && func_39(5, 0))
 	{
 		SYSTEM::WAIT(0);
-		switch (iLocal_65)
+		switch (iLocal_69)
 		{
 			case 0:
 				if (func_37())
 				{
-					iLocal_65 = 1;
+					iLocal_69 = 1;
 				}
 				break;
 			
 			case 1:
 				if (func_2())
 				{
-					iLocal_65 = 2;
+					iLocal_69 = 2;
 				}
 				break;
 			
@@ -242,123 +242,123 @@ void __EntryFunction__()//Position - 0x0
 
 void func_1()//Position - 0x103
 {
-	iLocal_67 = 0;
+	iLocal_71 = 0;
 }
 
 int func_2()//Position - 0x10E
 {
 	struct<3> Var0;
-	float fVar1;
+	float fVar3;
 	
-	if (!MISC::IS_STRING_NULL_OR_EMPTY(&cLocal_80))
+	if (!MISC::IS_STRING_NULL_OR_EMPTY(&cLocal_90))
 	{
-		if (!GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(iLocal_77))
+		if (!GRAPHICS::DOES_PARTICLE_FX_LOOPED_EXIST(iLocal_87))
 		{
-			Var0 = { Vector(32.856f, 3819.65f, 1971.62f) - Local_75 };
-			iLocal_77 = GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD(&cLocal_80, Local_75 + Var0, 0f, 0f, 0f, 1f, false, false, false, false);
+			Var0 = { Vector(32.856f, 3819.65f, 1971.62f) - Local_83 };
+			iLocal_87 = GRAPHICS::START_PARTICLE_FX_LOOPED_AT_COORD(&cLocal_90, Local_83 + Var0, 0f, 0f, 0f, 1f, false, false, false, false);
 		}
 	}
 	if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
 	{
-		if (ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), &sLocal_110, &cLocal_126, 2))
+		if (ENTITY::IS_ENTITY_PLAYING_ANIM(PLAYER::PLAYER_PED_ID(), &sLocal_143, &cLocal_159, 2))
 		{
-			fVar1 = PED::GET_SYNCHRONIZED_SCENE_PHASE(Global_98011);
-			switch (iLocal_170)
+			fVar3 = PED::GET_SYNCHRONIZED_SCENE_PHASE(Global_98011);
+			switch (iLocal_224)
 			{
 				case 0:
-					if (fLocal_108 < 0f)
+					if (fLocal_141 < 0f)
 					{
-						iLocal_170++;
+						iLocal_224++;
 						return 0;
 					}
-					if (fVar1 > fLocal_108)
+					if (fVar3 > fLocal_141)
 					{
-						if (!ENTITY::DOES_ENTITY_EXIST(iLocal_68) || iLocal_79 != -1)
+						if (!ENTITY::DOES_ENTITY_EXIST(iLocal_72) || iLocal_89 != -1)
 						{
-							if (GRAPHICS::START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE(&cLocal_89, PLAYER::PLAYER_PED_ID(), 0f, 0f, 0f, 0f, 0f, 0f, iLocal_79, 1f, false, false, false))
+							if (GRAPHICS::START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE(&cLocal_106, PLAYER::PLAYER_PED_ID(), 0f, 0f, 0f, 0f, 0f, 0f, iLocal_89, 1f, false, false, false))
 							{
-								if (MISC::ARE_STRINGS_EQUAL(&cLocal_89, "scr_meth_pipe_smoke"))
+								if (MISC::ARE_STRINGS_EQUAL(&cLocal_106, "scr_meth_pipe_smoke"))
 								{
 									func_17(PLAYER::PLAYER_PED_ID(), 0, 1, 0, -1);
 								}
-								iLocal_169 = AUDIO::GET_SOUND_ID();
-								AUDIO::PLAY_SOUND_FROM_ENTITY(iLocal_169, &cLocal_160, PLAYER::PLAYER_PED_ID(), &cLocal_151, false, 0);
-								iLocal_170++;
+								iLocal_223 = AUDIO::GET_SOUND_ID();
+								AUDIO::PLAY_SOUND_FROM_ENTITY(iLocal_223, &cLocal_207, PLAYER::PLAYER_PED_ID(), &cLocal_191, false, 0);
+								iLocal_224++;
 							}
 						}
-						else if (GRAPHICS::START_PARTICLE_FX_NON_LOOPED_ON_ENTITY(&cLocal_89, iLocal_68, 0f, 0f, -1f, 0f, 0f, 0f, 1f, false, false, false))
+						else if (GRAPHICS::START_PARTICLE_FX_NON_LOOPED_ON_ENTITY(&cLocal_106, iLocal_72, 0f, 0f, -1f, 0f, 0f, 0f, 1f, false, false, false))
 						{
-							if (MISC::ARE_STRINGS_EQUAL(&cLocal_89, "scr_meth_pipe_smoke"))
+							if (MISC::ARE_STRINGS_EQUAL(&cLocal_106, "scr_meth_pipe_smoke"))
 							{
 								func_17(PLAYER::PLAYER_PED_ID(), 0, 1, 0, -1);
 							}
-							iLocal_169 = AUDIO::GET_SOUND_ID();
-							AUDIO::PLAY_SOUND_FROM_ENTITY(iLocal_169, &cLocal_160, PLAYER::PLAYER_PED_ID(), &cLocal_151, false, 0);
-							iLocal_170++;
+							iLocal_223 = AUDIO::GET_SOUND_ID();
+							AUDIO::PLAY_SOUND_FROM_ENTITY(iLocal_223, &cLocal_207, PLAYER::PLAYER_PED_ID(), &cLocal_191, false, 0);
+							iLocal_224++;
 						}
 					}
 					break;
 				
 				case 1:
-					if (fLocal_109 < 0f)
+					if (fLocal_142 < 0f)
 					{
-						iLocal_170++;
+						iLocal_224++;
 						return 0;
 					}
-					if (fVar1 > fLocal_109)
+					if (fVar3 > fLocal_142)
 					{
-						if (!ENTITY::DOES_ENTITY_EXIST(iLocal_68) || iLocal_79 != -1)
+						if (!ENTITY::DOES_ENTITY_EXIST(iLocal_72) || iLocal_89 != -1)
 						{
-							if (GRAPHICS::START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE(&cLocal_89, PLAYER::PLAYER_PED_ID(), 0f, 0f, 0f, 0f, 0f, 0f, iLocal_79, 1f, false, false, false))
+							if (GRAPHICS::START_PARTICLE_FX_NON_LOOPED_ON_PED_BONE(&cLocal_106, PLAYER::PLAYER_PED_ID(), 0f, 0f, 0f, 0f, 0f, 0f, iLocal_89, 1f, false, false, false))
 							{
-								if (MISC::ARE_STRINGS_EQUAL(&cLocal_89, "scr_meth_pipe_smoke"))
+								if (MISC::ARE_STRINGS_EQUAL(&cLocal_106, "scr_meth_pipe_smoke"))
 								{
 									func_17(PLAYER::PLAYER_PED_ID(), 0, 1, 0, -1);
 								}
-								iLocal_169 = AUDIO::GET_SOUND_ID();
-								AUDIO::PLAY_SOUND_FROM_ENTITY(iLocal_169, &cLocal_160, PLAYER::PLAYER_PED_ID(), &cLocal_151, false, 0);
-								iLocal_170++;
+								iLocal_223 = AUDIO::GET_SOUND_ID();
+								AUDIO::PLAY_SOUND_FROM_ENTITY(iLocal_223, &cLocal_207, PLAYER::PLAYER_PED_ID(), &cLocal_191, false, 0);
+								iLocal_224++;
 							}
 						}
-						else if (GRAPHICS::START_PARTICLE_FX_NON_LOOPED_ON_ENTITY(&cLocal_89, iLocal_68, 0f, 0f, -1f, 0f, 0f, 0f, 1f, false, false, false))
+						else if (GRAPHICS::START_PARTICLE_FX_NON_LOOPED_ON_ENTITY(&cLocal_106, iLocal_72, 0f, 0f, -1f, 0f, 0f, 0f, 1f, false, false, false))
 						{
-							if (MISC::ARE_STRINGS_EQUAL(&cLocal_89, "scr_meth_pipe_smoke"))
+							if (MISC::ARE_STRINGS_EQUAL(&cLocal_106, "scr_meth_pipe_smoke"))
 							{
 								func_17(PLAYER::PLAYER_PED_ID(), 0, 1, 0, -1);
 							}
-							iLocal_169 = AUDIO::GET_SOUND_ID();
-							AUDIO::PLAY_SOUND_FROM_ENTITY(iLocal_169, &cLocal_160, PLAYER::PLAYER_PED_ID(), &cLocal_151, false, 0);
-							iLocal_170++;
+							iLocal_223 = AUDIO::GET_SOUND_ID();
+							AUDIO::PLAY_SOUND_FROM_ENTITY(iLocal_223, &cLocal_207, PLAYER::PLAYER_PED_ID(), &cLocal_191, false, 0);
+							iLocal_224++;
 						}
 					}
 					break;
 				
 				case 2:
-					if (!MISC::IS_STRING_NULL_OR_EMPTY(&cLocal_98))
+					if (!MISC::IS_STRING_NULL_OR_EMPTY(&cLocal_122))
 					{
-						if (GRAPHICS::START_PARTICLE_FX_NON_LOOPED_AT_COORD(&cLocal_98, Local_75 + Local_107, 0f, 0f, 0f, 1f, false, false, false))
+						if (GRAPHICS::START_PARTICLE_FX_NON_LOOPED_AT_COORD(&cLocal_122, Local_83 + Local_138, 0f, 0f, 0f, 1f, false, false, false))
 						{
-							iLocal_170++;
+							iLocal_224++;
 						}
 					}
 					else
 					{
-						iLocal_170++;
+						iLocal_224++;
 					}
 					break;
 				
 				case 3:
 					break;
 			}
-			if (ENTITY::DOES_ENTITY_EXIST(iLocal_68))
+			if (ENTITY::DOES_ENTITY_EXIST(iLocal_72))
 			{
-				if (ENTITY::IS_ENTITY_ATTACHED(iLocal_68))
+				if (ENTITY::IS_ENTITY_ATTACHED(iLocal_72))
 				{
-					if (iLocal_74 != -1)
+					if (iLocal_82 != -1)
 					{
-						if (fVar1 > fLocal_73)
+						if (fVar3 > fLocal_81)
 						{
-							func_3(&iLocal_68, iLocal_74);
+							func_3(&iLocal_72, iLocal_82);
 						}
 					}
 				}
@@ -366,20 +366,20 @@ int func_2()//Position - 0x10E
 		}
 		else
 		{
-			if (iLocal_78 != 0)
+			if (iLocal_88 != 0)
 			{
-				GRAPHICS::STOP_PARTICLE_FX_LOOPED(iLocal_78, false);
-				iLocal_78 = 0;
-				AUDIO::STOP_SOUND(iLocal_169);
-				AUDIO::RELEASE_SOUND_ID(iLocal_169);
+				GRAPHICS::STOP_PARTICLE_FX_LOOPED(iLocal_88, false);
+				iLocal_88 = 0;
+				AUDIO::STOP_SOUND(iLocal_223);
+				AUDIO::RELEASE_SOUND_ID(iLocal_223);
 			}
-			if (ENTITY::DOES_ENTITY_EXIST(iLocal_68))
+			if (ENTITY::DOES_ENTITY_EXIST(iLocal_72))
 			{
-				if (ENTITY::IS_ENTITY_ATTACHED(iLocal_68))
+				if (ENTITY::IS_ENTITY_ATTACHED(iLocal_72))
 				{
-					if (iLocal_74 != -1)
+					if (iLocal_82 != -1)
 					{
-						func_3(&iLocal_68, iLocal_74);
+						func_3(&iLocal_72, iLocal_82);
 					}
 				}
 			}
@@ -398,27 +398,27 @@ int func_3(int* iParam0, int iParam1)//Position - 0x3E7
 {
 	int iVar0;
 	struct<3> Var1;
-	struct<3> Var2;
-	struct<3> Var3;
 	struct<3> Var4;
-	int iVar5;
-	struct<3> Var6;
 	struct<3> Var7;
-	struct<3> Var8;
-	struct<3> Var9;
-	char* sVar10;
-	struct<3> Var11;
-	struct<3> Var12;
-	char* sVar13;
-	int iVar14;
-	char* sVar15;
-	char[] cVar16[8];
-	int iVar17;
-	char* sVar18;
-	char[] cVar19[8];
-	char[] cVar20[8];
-	var uVar21;
-	var uVar22;
+	struct<3> Var10;
+	int iVar13;
+	struct<3> Var14;
+	struct<3> Var17;
+	struct<3> Var20;
+	struct<3> Var23;
+	char* sVar26;
+	struct<3> Var27;
+	struct<3> Var30;
+	char* sVar33;
+	int iVar34;
+	char* sVar35;
+	char[] cVar51[8];
+	int iVar67;
+	char* sVar68;
+	char[] cVar84[8];
+	char[] cVar100[8];
+	var uVar116;
+	var uVar117;
 	
 	iVar0 = func_15();
 	switch (iParam1)
@@ -436,9 +436,9 @@ int func_3(int* iParam0, int iParam1)//Position - 0x3E7
 			if (ENTITY::GET_ENTITY_MODEL(*iParam0) == joaat("prop_iron_01"))
 			{
 				Var1 = { ENTITY::GET_ENTITY_COORDS(*iParam0, true) };
-				Var2 = { ENTITY::GET_ENTITY_ROTATION(*iParam0, 2) };
+				Var4 = { ENTITY::GET_ENTITY_ROTATION(*iParam0, 2) };
 				ENTITY::SET_ENTITY_COORDS(*iParam0, Var1 + Vector(0.1f, 0f, 0f), true, false, false, true);
-				ENTITY::SET_ENTITY_ROTATION(*iParam0, Var2.f_0, Var2.f_1, Var2.f_2, 2, true);
+				ENTITY::SET_ENTITY_ROTATION(*iParam0, Var4.f_0, Var4.f_1, Var4.f_2, 2, true);
 			}
 			if (ENTITY::GET_ENTITY_MODEL(*iParam0) != joaat("p_defilied_ragdoll_01_s"))
 			{
@@ -484,29 +484,29 @@ int func_3(int* iParam0, int iParam1)//Position - 0x3E7
 			break;
 		
 		case 4:
-			Var3 = { ENTITY::GET_ENTITY_COORDS(*iParam0, true) };
-			Var4 = { ENTITY::GET_ENTITY_ROTATION(*iParam0, 2) };
-			iVar5 = 0;
+			Var7 = { ENTITY::GET_ENTITY_COORDS(*iParam0, true) };
+			Var10 = { ENTITY::GET_ENTITY_ROTATION(*iParam0, 2) };
+			iVar13 = 0;
 			switch (ENTITY::GET_ENTITY_MODEL(*iParam0))
 			{
 				case joaat("p_laptop_02_s"):
-					iVar5 = joaat("prop_laptop_02_closed");
+					iVar13 = joaat("prop_laptop_02_closed");
 					break;
 				
 				case joaat("v_ilev_m_dinechair"):
-					iVar5 = joaat("p_dinechair_01_s");
+					iVar13 = joaat("p_dinechair_01_s");
 					break;
 				
 				case joaat("prop_acc_guitar_01"):
-					iVar5 = joaat("prop_acc_guitar_01_d1");
+					iVar13 = joaat("prop_acc_guitar_01_d1");
 					break;
 				
 				case joaat("p_defilied_ragdoll_01_s"):
-					iVar5 = joaat("prop_defilied_ragdoll_01");
+					iVar13 = joaat("prop_defilied_ragdoll_01");
 					break;
 				
 				case joaat("p_hand_toilet_s"):
-					iVar5 = joaat("prop_toiletfoot_static");
+					iVar13 = joaat("prop_toiletfoot_static");
 					break;
 				
 				case joaat("prop_laptop_02_closed"):
@@ -518,21 +518,21 @@ int func_3(int* iParam0, int iParam1)//Position - 0x3E7
 					break;
 				
 				case joaat("prop_toiletfoot_static"):
-					Var6 = { 1971.669f, 3819.449f, 32.766f };
-					Var7 = { 0f, 0f, 53.6f };
-					ENTITY::SET_ENTITY_COORDS(*iParam0, Var6, true, false, false, true);
-					ENTITY::SET_ENTITY_ROTATION(*iParam0, Var7, 2, true);
+					Var14 = { 1971.669f, 3819.449f, 32.766f };
+					Var17 = { 0f, 0f, 53.6f };
+					ENTITY::SET_ENTITY_COORDS(*iParam0, Var14, true, false, false, true);
+					ENTITY::SET_ENTITY_ROTATION(*iParam0, Var17, 2, true);
 					ENTITY::FREEZE_ENTITY_POSITION(*iParam0, true);
 					return 1;
 					break;
 				
 				default:
-					iVar5 = 0;
+					iVar13 = 0;
 					return 0;
 					break;
 			}
-			STREAMING::REQUEST_MODEL(iVar5);
-			while (!STREAMING::HAS_MODEL_LOADED(iVar5))
+			STREAMING::REQUEST_MODEL(iVar13);
+			while (!STREAMING::HAS_MODEL_LOADED(iVar13))
 			{
 				HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
 				HUD::HIDE_HUD_COMPONENT_THIS_FRAME(18);
@@ -551,9 +551,9 @@ int func_3(int* iParam0, int iParam1)//Position - 0x3E7
 				func_7(1);
 			}
 			OBJECT::DELETE_OBJECT(iParam0);
-			*iParam0 = OBJECT::CREATE_OBJECT(iVar5, Var3, true, true, false);
-			ENTITY::SET_ENTITY_ROTATION(*iParam0, Var4, 2, true);
-			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iVar5);
+			*iParam0 = OBJECT::CREATE_OBJECT(iVar13, Var7, true, true, false);
+			ENTITY::SET_ENTITY_ROTATION(*iParam0, Var10, 2, true);
+			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iVar13);
 			return 1;
 			break;
 		
@@ -589,25 +589,25 @@ int func_3(int* iParam0, int iParam1)//Position - 0x3E7
 			break;
 		
 		case 8:
-			Var8 = { ENTITY::GET_ENTITY_COORDS(*iParam0, true) };
-			Var9 = { ENTITY::GET_ENTITY_ROTATION(*iParam0, 2) };
-			sVar10 = "";
+			Var20 = { ENTITY::GET_ENTITY_COORDS(*iParam0, true) };
+			Var23 = { ENTITY::GET_ENTITY_ROTATION(*iParam0, 2) };
+			sVar26 = "";
 			switch (ENTITY::GET_ENTITY_MODEL(*iParam0))
 			{
 				case joaat("prop_cs_beer_bot_01"):
-					sVar10 = "scr_pts_glass_bottle";
+					sVar26 = "scr_pts_glass_bottle";
 					break;
 				
 				case joaat("prop_pineapple"):
-					sVar10 = "ent_dst_pineapple";
+					sVar26 = "ent_dst_pineapple";
 					break;
 				
 				case joaat("prop_acc_guitar_01"):
-					sVar10 = "scr_pts_guitar_break";
+					sVar26 = "scr_pts_guitar_break";
 					break;
 				
 				default:
-					sVar10 = "";
+					sVar26 = "";
 					return 0;
 					break;
 			}
@@ -630,32 +630,32 @@ int func_3(int* iParam0, int iParam1)//Position - 0x3E7
 			{
 				func_7(1);
 			}
-			GRAPHICS::START_PARTICLE_FX_NON_LOOPED_AT_COORD(sVar10, Var8, Var9, 1f, false, false, false);
+			GRAPHICS::START_PARTICLE_FX_NON_LOOPED_AT_COORD(sVar26, Var20, Var23, 1f, false, false, false);
 			OBJECT::DELETE_OBJECT(iParam0);
 			return 1;
 			break;
 		
 		case 9:
-			Var11 = { ENTITY::GET_ENTITY_COORDS(*iParam0, true) };
-			Var12 = { ENTITY::GET_ENTITY_ROTATION(*iParam0, 2) };
-			sVar13 = "";
+			Var27 = { ENTITY::GET_ENTITY_COORDS(*iParam0, true) };
+			Var30 = { ENTITY::GET_ENTITY_ROTATION(*iParam0, 2) };
+			sVar33 = "";
 			switch (ENTITY::GET_ENTITY_MODEL(*iParam0))
 			{
 				case joaat("prop_cs_beer_bot_01"):
-					sVar13 = "scr_pts_glass_bottle";
+					sVar33 = "scr_pts_glass_bottle";
 					break;
 				
 				case joaat("prop_pineapple"):
-					sVar13 = "ent_dst_pineapple";
+					sVar33 = "ent_dst_pineapple";
 					break;
 				
 				case joaat("prop_acc_guitar_01"):
 				case joaat("prop_acc_guitar_01_d1"):
-					sVar13 = "scr_pts_guitar_break";
+					sVar33 = "scr_pts_guitar_break";
 					break;
 				
 				default:
-					sVar13 = "";
+					sVar33 = "";
 					return 0;
 					break;
 			}
@@ -671,7 +671,7 @@ int func_3(int* iParam0, int iParam1)//Position - 0x3E7
 				}
 				SYSTEM::WAIT(0);
 			}
-			iVar14 = 0;
+			iVar34 = 0;
 			switch (ENTITY::GET_ENTITY_MODEL(*iParam0))
 			{
 				case joaat("prop_acc_guitar_01_d1"):
@@ -679,28 +679,28 @@ int func_3(int* iParam0, int iParam1)//Position - 0x3E7
 					break;
 				
 				case joaat("p_laptop_02_s"):
-					iVar14 = joaat("prop_laptop_02_closed");
+					iVar34 = joaat("prop_laptop_02_closed");
 					break;
 				
 				case joaat("v_ilev_m_dinechair"):
-					iVar14 = joaat("p_dinechair_01_s");
+					iVar34 = joaat("p_dinechair_01_s");
 					break;
 				
 				case joaat("prop_acc_guitar_01"):
-					iVar14 = joaat("prop_acc_guitar_01_d1");
+					iVar34 = joaat("prop_acc_guitar_01_d1");
 					break;
 				
 				case joaat("p_defilied_ragdoll_01_s"):
-					iVar14 = joaat("prop_defilied_ragdoll_01");
+					iVar34 = joaat("prop_defilied_ragdoll_01");
 					break;
 				
 				default:
-					iVar14 = 0;
+					iVar34 = 0;
 					return 0;
 					break;
 			}
-			STREAMING::REQUEST_MODEL(iVar14);
-			while (!STREAMING::HAS_MODEL_LOADED(iVar14))
+			STREAMING::REQUEST_MODEL(iVar34);
+			while (!STREAMING::HAS_MODEL_LOADED(iVar34))
 			{
 				HUD::HIDE_HUD_AND_RADAR_THIS_FRAME();
 				HUD::HIDE_HUD_COMPONENT_THIS_FRAME(18);
@@ -718,21 +718,21 @@ int func_3(int* iParam0, int iParam1)//Position - 0x3E7
 			{
 				func_7(1);
 			}
-			GRAPHICS::START_PARTICLE_FX_NON_LOOPED_AT_COORD(sVar13, Var11, Var12, 1f, false, false, false);
+			GRAPHICS::START_PARTICLE_FX_NON_LOOPED_AT_COORD(sVar33, Var27, Var30, 1f, false, false, false);
 			OBJECT::DELETE_OBJECT(iParam0);
-			*iParam0 = OBJECT::CREATE_OBJECT(iVar14, Var11, true, true, false);
-			ENTITY::SET_ENTITY_ROTATION(*iParam0, Var12, 2, true);
-			if (func_6(iVar0, &sVar15, &cVar16, &iVar17))
+			*iParam0 = OBJECT::CREATE_OBJECT(iVar34, Var27, true, true, false);
+			ENTITY::SET_ENTITY_ROTATION(*iParam0, Var30, 2, true);
+			if (func_6(iVar0, &sVar35, &cVar51, &iVar67))
 			{
-				if (func_4(iVar0, &sVar18, &cVar19, &cVar20, &uVar21, &uVar22))
+				if (func_4(iVar0, &sVar68, &cVar84, &cVar100, &uVar116, &uVar117))
 				{
-					if (!ENTITY::IS_ENTITY_PLAYING_ANIM(*iParam0, &sVar18, &sVar15, 2))
+					if (!ENTITY::IS_ENTITY_PLAYING_ANIM(*iParam0, &sVar68, &sVar35, 2))
 					{
-						ENTITY::PLAY_SYNCHRONIZED_ENTITY_ANIM(*iParam0, Global_98011, &sVar15, &sVar18, 1000f, -8f, iVar17, 1000f);
+						ENTITY::PLAY_SYNCHRONIZED_ENTITY_ANIM(*iParam0, Global_98011, &sVar35, &sVar68, 1000f, -8f, iVar67, 1000f);
 					}
 				}
 			}
-			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iVar14);
+			STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iVar34);
 			return 1;
 			break;
 	}
@@ -2660,38 +2660,38 @@ int func_36(int iParam0)//Position - 0x2D4A
 
 int func_37()//Position - 0x2D8D
 {
-	if (!iLocal_69 == 0)
+	if (!iLocal_73 == 0)
 	{
-		if (!ENTITY::DOES_ENTITY_EXIST(iLocal_68))
+		if (!ENTITY::DOES_ENTITY_EXIST(iLocal_72))
 		{
-			STREAMING::REQUEST_MODEL(iLocal_69);
-			if (!STREAMING::HAS_MODEL_LOADED(iLocal_69))
+			STREAMING::REQUEST_MODEL(iLocal_73);
+			if (!STREAMING::HAS_MODEL_LOADED(iLocal_73))
 			{
-				STREAMING::REQUEST_MODEL(iLocal_69);
+				STREAMING::REQUEST_MODEL(iLocal_73);
 			}
-			else if (iLocal_72 != -1)
+			else if (iLocal_80 != -1)
 			{
-				iLocal_68 = OBJECT::CREATE_OBJECT(iLocal_69, Local_75, true, true, false);
-				ENTITY::ATTACH_ENTITY_TO_ENTITY(iLocal_68, PLAYER::PLAYER_PED_ID(), PED::GET_PED_BONE_INDEX(PLAYER::PLAYER_PED_ID(), iLocal_72), Local_70, Local_71, false, false, false, false, 2, true, 0);
+				iLocal_72 = OBJECT::CREATE_OBJECT(iLocal_73, Local_83, true, true, false);
+				ENTITY::ATTACH_ENTITY_TO_ENTITY(iLocal_72, PLAYER::PLAYER_PED_ID(), PED::GET_PED_BONE_INDEX(PLAYER::PLAYER_PED_ID(), iLocal_80), Local_74, Local_77, false, false, false, false, 2, true, 0);
 			}
 			else
 			{
-				iLocal_68 = OBJECT::CREATE_OBJECT(iLocal_69, Local_75 + Local_70, true, true, false);
-				ENTITY::SET_ENTITY_COORDS(iLocal_68, Local_75 + Local_70, true, false, false, true);
-				ENTITY::SET_ENTITY_ROTATION(iLocal_68, Vector(uLocal_76, 0f, 0f) + Local_71, 2, true);
-				ENTITY::FREEZE_ENTITY_POSITION(iLocal_68, true);
+				iLocal_72 = OBJECT::CREATE_OBJECT(iLocal_73, Local_83 + Local_74, true, true, false);
+				ENTITY::SET_ENTITY_COORDS(iLocal_72, Local_83 + Local_74, true, false, false, true);
+				ENTITY::SET_ENTITY_ROTATION(iLocal_72, Vector(uLocal_86, 0f, 0f) + Local_77, 2, true);
+				ENTITY::FREEZE_ENTITY_POSITION(iLocal_72, true);
 			}
 		}
 	}
 	if (!func_38())
 	{
-		if (ENTITY::DOES_ENTITY_EXIST(iLocal_68))
+		if (ENTITY::DOES_ENTITY_EXIST(iLocal_72))
 		{
-			if (iLocal_72 != -1)
+			if (iLocal_80 != -1)
 			{
-				if (!ENTITY::IS_ENTITY_ATTACHED_TO_ENTITY(iLocal_68, PLAYER::PLAYER_PED_ID()))
+				if (!ENTITY::IS_ENTITY_ATTACHED_TO_ENTITY(iLocal_72, PLAYER::PLAYER_PED_ID()))
 				{
-					ENTITY::ATTACH_ENTITY_TO_ENTITY(iLocal_68, PLAYER::PLAYER_PED_ID(), PED::GET_PED_BONE_INDEX(PLAYER::PLAYER_PED_ID(), iLocal_72), Local_70, Local_71, false, false, false, false, 2, true, 0);
+					ENTITY::ATTACH_ENTITY_TO_ENTITY(iLocal_72, PLAYER::PLAYER_PED_ID(), PED::GET_PED_BONE_INDEX(PLAYER::PLAYER_PED_ID(), iLocal_80), Local_74, Local_77, false, false, false, false, 2, true, 0);
 				}
 			}
 		}
@@ -2729,7 +2729,7 @@ int func_38()//Position - 0x2E87
 int func_39(int iParam0, int iParam1)//Position - 0x2EDC
 {
 	struct<3> Var0;
-	float fVar1;
+	float fVar3;
 	
 	if (STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS())
 	{
@@ -2758,8 +2758,8 @@ int func_39(int iParam0, int iParam1)//Position - 0x2EDC
 		if (ENTITY::DOES_ENTITY_EXIST(iParam1))
 		{
 			Var0 = { ENTITY::GET_ENTITY_COORDS(iParam1, false) };
-			fVar1 = SYSTEM::VDIST(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), Var0);
-			if (fVar1 > 250f)
+			fVar3 = SYSTEM::VDIST(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), Var0);
+			if (fVar3 > 250f)
 			{
 				if (!ENTITY::IS_ENTITY_DEAD(iParam1, false))
 				{
@@ -2950,24 +2950,24 @@ void func_53()//Position - 0x3214
 		{
 			bVar1 = false;
 		}
-		if (!MISC::IS_STRING_NULL_OR_EMPTY(&cLocal_142))
+		if (!MISC::IS_STRING_NULL_OR_EMPTY(&cLocal_175))
 		{
-			if (!AUDIO::REQUEST_AMBIENT_AUDIO_BANK(&cLocal_142, false, -1))
+			if (!AUDIO::REQUEST_AMBIENT_AUDIO_BANK(&cLocal_175, false, -1))
 			{
 				bVar1 = false;
 			}
 		}
-		if (!iLocal_69 == 0)
+		if (!iLocal_73 == 0)
 		{
-			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_68))
+			if (!ENTITY::DOES_ENTITY_EXIST(iLocal_72))
 			{
-				STREAMING::REQUEST_MODEL(iLocal_69);
-				if (!STREAMING::HAS_MODEL_LOADED(iLocal_69))
+				STREAMING::REQUEST_MODEL(iLocal_73);
+				if (!STREAMING::HAS_MODEL_LOADED(iLocal_73))
 				{
 					bVar1 = false;
-					STREAMING::REQUEST_MODEL(iLocal_69);
+					STREAMING::REQUEST_MODEL(iLocal_73);
 				}
-				else if (iLocal_72 != -1)
+				else if (iLocal_80 != -1)
 				{
 					if (STREAMING::IS_PLAYER_SWITCH_IN_PROGRESS() && (STREAMING::GET_PLAYER_SWITCH_STATE() != 8 || STREAMING::GET_PLAYER_SWITCH_STATE() == 1))
 					{
@@ -2975,16 +2975,16 @@ void func_53()//Position - 0x3214
 					}
 					else
 					{
-						iLocal_68 = OBJECT::CREATE_OBJECT(iLocal_69, Local_75, true, true, false);
-						ENTITY::ATTACH_ENTITY_TO_ENTITY(iLocal_68, PLAYER::PLAYER_PED_ID(), PED::GET_PED_BONE_INDEX(PLAYER::PLAYER_PED_ID(), iLocal_72), Local_70, Local_71, false, false, false, false, 2, true, 0);
+						iLocal_72 = OBJECT::CREATE_OBJECT(iLocal_73, Local_83, true, true, false);
+						ENTITY::ATTACH_ENTITY_TO_ENTITY(iLocal_72, PLAYER::PLAYER_PED_ID(), PED::GET_PED_BONE_INDEX(PLAYER::PLAYER_PED_ID(), iLocal_80), Local_74, Local_77, false, false, false, false, 2, true, 0);
 					}
 				}
 				else
 				{
-					iLocal_68 = OBJECT::CREATE_OBJECT(iLocal_69, Local_75 + Local_70, true, true, false);
-					ENTITY::SET_ENTITY_COORDS(iLocal_68, Local_75 + Local_70, true, false, false, true);
-					ENTITY::SET_ENTITY_ROTATION(iLocal_68, Vector(uLocal_76, 0f, 0f) + Local_71, 2, true);
-					ENTITY::FREEZE_ENTITY_POSITION(iLocal_68, true);
+					iLocal_72 = OBJECT::CREATE_OBJECT(iLocal_73, Local_83 + Local_74, true, true, false);
+					ENTITY::SET_ENTITY_COORDS(iLocal_72, Local_83 + Local_74, true, false, false, true);
+					ENTITY::SET_ENTITY_ROTATION(iLocal_72, Vector(uLocal_86, 0f, 0f) + Local_77, 2, true);
+					ENTITY::FREEZE_ENTITY_POSITION(iLocal_72, true);
 				}
 			}
 		}
@@ -2999,471 +2999,471 @@ void func_53()//Position - 0x3214
 void func_54()//Position - 0x3365
 {
 	char[] cVar0[8];
-	struct<109> Var1;
-	struct<97> Var2;
-	char[] cVar3[8];
-	var uVar4;
-	var uVar5;
+	struct<109> Var8;
+	struct<97> Var117;
+	char[] cVar237[8];
+	var uVar253;
+	var uVar254;
 	
-	iLocal_66 = Global_100084;
-	func_58(iLocal_66, &Local_75, &uLocal_76, &cVar0);
-	switch (iLocal_66)
+	iLocal_70 = Global_100084;
+	func_58(iLocal_70, &Local_83, &uLocal_86, &cVar0);
+	switch (iLocal_70)
 	{
 		case 273:
 		case 274:
-			StringCopy(&cLocal_142, "TREVOR_PUKEINTOFOUNT", 64);
-			StringCopy(&cLocal_151, "TREVOR_PUKEINTOFOUNT_SOUNDS", 64);
-			StringCopy(&cLocal_160, "Puke", 64);
-			fLocal_108 = 0.19f;
-			fLocal_109 = 0.33f;
-			iLocal_79 = 31086;
-			StringCopy(&cLocal_80, "", 64);
-			StringCopy(&cLocal_89, "scr_trev_amb_puke", 64);
-			StringCopy(&cLocal_98, "scr_pts_vomit_water", 64);
-			if (iLocal_66 == 273)
+			StringCopy(&cLocal_175, "TREVOR_PUKEINTOFOUNT", 64);
+			StringCopy(&cLocal_191, "TREVOR_PUKEINTOFOUNT_SOUNDS", 64);
+			StringCopy(&cLocal_207, "Puke", 64);
+			fLocal_141 = 0.19f;
+			fLocal_142 = 0.33f;
+			iLocal_89 = 31086;
+			StringCopy(&cLocal_90, "", 64);
+			StringCopy(&cLocal_106, "scr_trev_amb_puke", 64);
+			StringCopy(&cLocal_122, "scr_pts_vomit_water", 64);
+			if (iLocal_70 == 273)
 			{
-				Local_107 = { Vector((34.97325f + 0.25f), -441.7662f, -118.32176f) - Local_75 };
+				Local_138 = { Vector((34.97325f + 0.25f), -441.7662f, -118.32176f) - Local_83 };
 			}
-			else if (iLocal_66 == 274)
+			else if (iLocal_70 == 274)
 			{
-				Local_107 = { 0.125f, -1.1486f, (0.0588f + 0.1f) };
+				Local_138 = { 0.125f, -1.1486f, (0.0588f + 0.1f) };
 			}
 			else
 			{
-				Local_107 = { -0.125f, 1.1486f, -0.0588f };
+				Local_138 = { -0.125f, 1.1486f, -0.0588f };
 			}
 			break;
 		
 		case 245:
 		case 40:
-			StringCopy(&cLocal_142, "", 64);
-			StringCopy(&cLocal_151, "", 64);
-			StringCopy(&cLocal_160, "", 64);
-			fLocal_108 = 0.19f;
-			fLocal_109 = 0.47f;
-			iLocal_79 = 31086;
-			StringCopy(&cLocal_80, "", 64);
-			StringCopy(&cLocal_89, "scr_meth_pipe_smoke", 64);
-			StringCopy(&cLocal_98, "", 64);
+			StringCopy(&cLocal_175, "", 64);
+			StringCopy(&cLocal_191, "", 64);
+			StringCopy(&cLocal_207, "", 64);
+			fLocal_141 = 0.19f;
+			fLocal_142 = 0.47f;
+			iLocal_89 = 31086;
+			StringCopy(&cLocal_90, "", 64);
+			StringCopy(&cLocal_106, "scr_meth_pipe_smoke", 64);
+			StringCopy(&cLocal_122, "", 64);
 			break;
 		
 		case 310:
-			StringCopy(&cLocal_142, "", 64);
-			StringCopy(&cLocal_151, "", 64);
-			StringCopy(&cLocal_160, "", 64);
-			fLocal_108 = 0.22f;
-			fLocal_109 = 0.24f;
-			iLocal_79 = -1;
-			StringCopy(&cLocal_80, "", 64);
-			StringCopy(&cLocal_89, "scr_pts_digging", 64);
-			StringCopy(&cLocal_98, "", 64);
-			iLocal_69 = joaat("prop_tool_shovel");
-			Local_70 = { 0f, 0f, -0.045f };
-			Local_71 = { 0f, 180f, 0f };
-			iLocal_72 = 28422;
-			fLocal_73 = 0.7f;
-			iLocal_74 = 0;
+			StringCopy(&cLocal_175, "", 64);
+			StringCopy(&cLocal_191, "", 64);
+			StringCopy(&cLocal_207, "", 64);
+			fLocal_141 = 0.22f;
+			fLocal_142 = 0.24f;
+			iLocal_89 = -1;
+			StringCopy(&cLocal_90, "", 64);
+			StringCopy(&cLocal_106, "scr_pts_digging", 64);
+			StringCopy(&cLocal_122, "", 64);
+			iLocal_73 = joaat("prop_tool_shovel");
+			Local_74 = { 0f, 0f, -0.045f };
+			Local_77 = { 0f, 180f, 0f };
+			iLocal_80 = 28422;
+			fLocal_81 = 0.7f;
+			iLocal_82 = 0;
 			break;
 		
 		case 311:
-			StringCopy(&cLocal_142, "", 64);
-			StringCopy(&cLocal_151, "", 64);
-			StringCopy(&cLocal_160, "", 64);
-			fLocal_108 = 0.5f;
-			fLocal_109 = 0.55f;
-			iLocal_79 = 52301;
-			StringCopy(&cLocal_80, "scr_pts_flush", 64);
-			StringCopy(&cLocal_89, "scr_pts_footsplash", 64);
-			StringCopy(&cLocal_98, "", 64);
+			StringCopy(&cLocal_175, "", 64);
+			StringCopy(&cLocal_191, "", 64);
+			StringCopy(&cLocal_207, "", 64);
+			fLocal_141 = 0.5f;
+			fLocal_142 = 0.55f;
+			iLocal_89 = 52301;
+			StringCopy(&cLocal_90, "scr_pts_flush", 64);
+			StringCopy(&cLocal_106, "scr_pts_footsplash", 64);
+			StringCopy(&cLocal_122, "", 64);
 			break;
 		
 		case 315:
-			StringCopy(&cLocal_142, "", 64);
-			StringCopy(&cLocal_151, "", 64);
-			StringCopy(&cLocal_160, "", 64);
-			fLocal_108 = 0.15f;
-			fLocal_109 = -1f;
-			iLocal_79 = 31086;
-			StringCopy(&cLocal_80, "", 64);
-			StringCopy(&cLocal_89, "scr_pts_headsplash_trev", 64);
-			StringCopy(&cLocal_98, "", 64);
-			iLocal_69 = joaat("prop_cs_sink_filler_02");
-			Local_70 = { -0.54f, 0.08f, -0.13f };
-			Local_71 = { 0f, 0f, -12f };
-			iLocal_72 = -1;
-			fLocal_73 = 0.7f;
-			iLocal_74 = -1;
+			StringCopy(&cLocal_175, "", 64);
+			StringCopy(&cLocal_191, "", 64);
+			StringCopy(&cLocal_207, "", 64);
+			fLocal_141 = 0.15f;
+			fLocal_142 = -1f;
+			iLocal_89 = 31086;
+			StringCopy(&cLocal_90, "", 64);
+			StringCopy(&cLocal_106, "scr_pts_headsplash_trev", 64);
+			StringCopy(&cLocal_122, "", 64);
+			iLocal_73 = joaat("prop_cs_sink_filler_02");
+			Local_74 = { -0.54f, 0.08f, -0.13f };
+			Local_77 = { 0f, 0f, -12f };
+			iLocal_80 = -1;
+			fLocal_81 = 0.7f;
+			iLocal_82 = -1;
 			break;
 		
 		case 124:
-			StringCopy(&cLocal_142, "", 64);
-			StringCopy(&cLocal_151, "", 64);
-			StringCopy(&cLocal_160, "", 64);
-			fLocal_108 = 0.07f;
-			fLocal_109 = -1f;
-			iLocal_79 = 60309;
-			StringCopy(&cLocal_80, "", 64);
-			StringCopy(&cLocal_89, "scr_pts_headsplash", 64);
-			StringCopy(&cLocal_98, "", 64);
-			iLocal_69 = joaat("prop_cs_sink_filler_03");
-			Local_70 = { -0.72f, 0.9f, 0.21f };
-			Local_71 = { 0f, 0f, 9f };
-			iLocal_72 = -1;
-			fLocal_73 = 0.7f;
-			iLocal_74 = -1;
+			StringCopy(&cLocal_175, "", 64);
+			StringCopy(&cLocal_191, "", 64);
+			StringCopy(&cLocal_207, "", 64);
+			fLocal_141 = 0.07f;
+			fLocal_142 = -1f;
+			iLocal_89 = 60309;
+			StringCopy(&cLocal_90, "", 64);
+			StringCopy(&cLocal_106, "scr_pts_headsplash", 64);
+			StringCopy(&cLocal_122, "", 64);
+			iLocal_73 = joaat("prop_cs_sink_filler_03");
+			Local_74 = { -0.72f, 0.9f, 0.21f };
+			Local_77 = { 0f, 0f, 9f };
+			iLocal_80 = -1;
+			fLocal_81 = 0.7f;
+			iLocal_82 = -1;
 			break;
 		
 		default:
 			break;
 	}
-	Var1.f_1 = -1;
-	Var1.f_17 = 4;
-	Var1.f_17.f_8 = 4;
-	Var1.f_17.f_13 = 4;
-	Var1.f_17.f_18 = 4;
-	Var1.f_17.f_24 = 4;
-	Var1.f_17.f_29 = 4;
-	Var1.f_17.f_34 = 4;
-	Var1.f_62 = 8;
-	Var1.f_96.f_7 = 21;
-	Var1.f_96.f_8 = 6;
-	Var2.f_1 = -1;
-	Var2.f_17 = 4;
-	Var2.f_17.f_8 = 4;
-	Var2.f_17.f_13 = 4;
-	Var2.f_17.f_18 = 4;
-	Var2.f_17.f_24 = 4;
-	Var2.f_17.f_29 = 4;
-	Var2.f_17.f_34 = 4;
-	Var2.f_62 = 8;
-	Var2.f_96.f_7 = 21;
-	Var2.f_96.f_8 = 6;
-	Var1.f_0 = 0;
-	Var1.f_2 = iLocal_66;
-	Var1.f_3 = Global_98159.f_45;
-	func_55(Var1, &Var2);
-	func_4(iLocal_66, &sLocal_110, &cVar3, &cLocal_126, &uVar4, &uVar5);
+	Var8.f_1 = -1;
+	Var8.f_17 = 4;
+	Var8.f_17.f_8 = 4;
+	Var8.f_17.f_13 = 4;
+	Var8.f_17.f_18 = 4;
+	Var8.f_17.f_24 = 4;
+	Var8.f_17.f_29 = 4;
+	Var8.f_17.f_34 = 4;
+	Var8.f_62 = 8;
+	Var8.f_96.f_7 = 21;
+	Var8.f_96.f_8 = 6;
+	Var117.f_1 = -1;
+	Var117.f_17 = 4;
+	Var117.f_17.f_8 = 4;
+	Var117.f_17.f_13 = 4;
+	Var117.f_17.f_18 = 4;
+	Var117.f_17.f_24 = 4;
+	Var117.f_17.f_29 = 4;
+	Var117.f_17.f_34 = 4;
+	Var117.f_62 = 8;
+	Var117.f_96.f_7 = 21;
+	Var117.f_96.f_8 = 6;
+	Var8.f_0 = 0;
+	Var8.f_2 = iLocal_70;
+	Var8.f_3 = Global_98159.f_45;
+	func_55(Var8, &Var117);
+	func_4(iLocal_70, &sLocal_143, &cVar237, &cLocal_159, &uVar253, &uVar254);
 }
 
-int func_55(struct<109> Param0, var uParam1)//Position - 0x36FC
+int func_55(struct<109> Param0, var uParam109)//Position - 0x36FC
 {
-	uParam1->f_119 = 0;
+	uParam109->f_119 = 0;
 	switch (Param0.f_2)
 	{
 		case 0:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_ANY");
-			uParam1->f_110 = joaat("SCRIPT_TASK_ANY");
-			func_57(uParam1);
-			uParam1->f_118 = 0;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_ANY");
+			uParam109->f_110 = joaat("SCRIPT_TASK_ANY");
+			func_57(uParam109);
+			uParam109->f_118 = 0;
 			return 0;
 			break;
 		
 		case 1:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
-			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
-			func_57(uParam1);
-			uParam1->f_118 = 0;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam109->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
+			func_57(uParam109);
+			uParam109->f_118 = 0;
 			return 1;
 			break;
 		
 		case 2:
-			*uParam1 = { Global_98792[0 /*109*/] };
-			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
-			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
-			func_57(uParam1);
-			uParam1->f_118 = Global_100380[0];
+			*uParam109 = { Global_98792[0 /*109*/] };
+			uParam109->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam109->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
+			func_57(uParam109);
+			uParam109->f_118 = Global_100380[0];
 			return 1;
 			break;
 		
 		case 3:
-			*uParam1 = { Global_98792[1 /*109*/] };
-			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
-			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
-			func_57(uParam1);
-			uParam1->f_118 = Global_100380[1];
+			*uParam109 = { Global_98792[1 /*109*/] };
+			uParam109->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam109->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
+			func_57(uParam109);
+			uParam109->f_118 = Global_100380[1];
 			return 1;
 			break;
 		
 		case 4:
-			*uParam1 = { Global_98792[2 /*109*/] };
-			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
-			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
-			func_57(uParam1);
-			uParam1->f_118 = Global_100380[2];
+			*uParam109 = { Global_98792[2 /*109*/] };
+			uParam109->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam109->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
+			func_57(uParam109);
+			uParam109->f_118 = Global_100380[2];
 			return 1;
 			break;
 		
 		case 5:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
-			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
-			func_57(uParam1);
-			uParam1->f_118 = Global_100380[Param0.f_3];
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam109->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
+			func_57(uParam109);
+			uParam109->f_118 = Global_100380[Param0.f_3];
 			return 1;
 			break;
 		
 		case 6:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
-			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
-			func_57(uParam1);
-			uParam1->f_118 = Global_100380[Param0.f_3];
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam109->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
+			func_57(uParam109);
+			uParam109->f_118 = Global_100380[Param0.f_3];
 			return 1;
 			break;
 		
 		case 7:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
-			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
-			func_57(uParam1);
-			uParam1->f_118 = Global_100380[Param0.f_3];
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam109->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
+			func_57(uParam109);
+			uParam109->f_118 = Global_100380[Param0.f_3];
 			return 1;
 			break;
 		
 		case 8:
 		case 9:
 		case 10:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_USE_MOBILE_PHONE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_USE_MOBILE_PHONE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_USE_MOBILE_PHONE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_USE_MOBILE_PHONE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 11:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 14:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 13:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 15:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 54:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 55:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_USE_MOBILE_PHONE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_USE_MOBILE_PHONE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_USE_MOBILE_PHONE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_USE_MOBILE_PHONE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 56:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 57:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 12:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
-			uParam1->f_110 = joaat("SCRIPT_TASK_LEAVE_VEHICLE");
-			func_56(uParam1, 144, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_STAND_STILL"), 0f, 0f, 0f, 0f);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam109->f_110 = joaat("SCRIPT_TASK_LEAVE_VEHICLE");
+			func_56(uParam109, 144, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_STAND_STILL"), 0f, 0f, 0f, 0f);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 16:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 17:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 18:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 19:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 20:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 22:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 74:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 67:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
-			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam109->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 58:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 59:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 60:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 25:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 26:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 27:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 28:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 38:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 40:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
@@ -3471,297 +3471,297 @@ int func_55(struct<109> Param0, var uParam1)//Position - 0x36FC
 		case 43:
 		case 44:
 		case 45:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_PUT_PED_DIRECTLY_INTO_COVER");
-			uParam1->f_110 = joaat("SCRIPT_TASK_PUT_PED_DIRECTLY_INTO_COVER");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_PUT_PED_DIRECTLY_INTO_COVER");
+			uParam109->f_110 = joaat("SCRIPT_TASK_PUT_PED_DIRECTLY_INTO_COVER");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 47:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 49:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 48:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
-			uParam1->f_110 = joaat("SCRIPT_TASK_ENTER_VEHICLE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam109->f_110 = joaat("SCRIPT_TASK_ENTER_VEHICLE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 50:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 51:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 52:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 66:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 61:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 62:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 63:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 69:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 64:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 65:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 234:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 316:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 315:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 75:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
-			func_56(uParam1, 30, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_STAND_STILL"), 0f, 0f, 0f, 0f);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
+			func_56(uParam109, 30, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_STAND_STILL"), 0f, 0f, 0f, 0f);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 76:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 77:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -0.7035f, -0.0282f, 0f, 0f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -0.7035f, -0.0282f, 0f, 0f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 78:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -3.03f, -0.72f, 0.08f, 168f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -3.03f, -0.72f, 0.08f, 168f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 79:
 		case 80:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 17, joaat("SCRIPT_TASK_PLAY_ANIM"), joaat("SCRIPT_TASK_PLAY_ANIM"), Vector(2.6407f, 8.164f, -14.1564f) + Vector(-1f, 0.03f, -2.16f), (-66f + -56f));
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 17, joaat("SCRIPT_TASK_PLAY_ANIM"), joaat("SCRIPT_TASK_PLAY_ANIM"), Vector(2.6407f, 8.164f, -14.1564f) + Vector(-1f, 0.03f, -2.16f), (-66f + -56f));
 			if (Param0.f_2 == 80)
 			{
-				func_57(uParam1);
+				func_57(uParam109);
 			}
-			uParam1->f_118 = 1;
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 124:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 82:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 84:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 83:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 85:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 291:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 86:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 87:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 88:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 89:
 		case 90:
 		case 127:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
@@ -3770,73 +3770,73 @@ int func_55(struct<109> Param0, var uParam1)//Position - 0x36FC
 		case 93:
 		case 104:
 		case 81:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			if (Param0.f_2 == 92)
 			{
-				uParam1->f_118 = 1;
+				uParam109->f_118 = 1;
 			}
 			if (Param0.f_2 == 104)
 			{
-				uParam1->f_118 = 0;
+				uParam109->f_118 = 0;
 			}
 			if (Param0.f_2 == 81)
 			{
-				func_57(uParam1);
-				uParam1->f_118 = 1;
+				func_57(uParam109);
+				uParam109->f_118 = 1;
 			}
 			return 1;
 			break;
 		
 		case 94:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
 			if (Param0.f_2 == 94)
 			{
-				func_56(uParam1, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -1.71f, 1.05f, 0f, -138f);
+				func_56(uParam109, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -1.71f, 1.05f, 0f, -138f);
 			}
-			uParam1->f_118 = 1;
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 95:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 96:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 134:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 108:
 		case 109:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
@@ -3849,11 +3849,11 @@ int func_55(struct<109> Param0, var uParam1)//Position - 0x36FC
 		case 137:
 		case 138:
 		case 139:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
@@ -3867,148 +3867,148 @@ int func_55(struct<109> Param0, var uParam1)//Position - 0x36FC
 		case 147:
 		case 148:
 		case 149:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 150:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 20, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0.98f, 0.8017f, -0.42f, -180f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 20, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0.98f, 0.8017f, -0.42f, -180f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 118:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 119:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 120:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 114:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 105:
 		case 106:
 		case 107:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
-			uParam1->f_110 = joaat("SCRIPT_TASK_PLAY_ANIM");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam109->f_110 = joaat("SCRIPT_TASK_PLAY_ANIM");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 98:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0f, 0f, 0f, 0f);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0f, 0f, 0f, 0f);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 99:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
-			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
-			func_56(uParam1, 15, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_LEAVE_VEHICLE"), 0f, 0f, 0f, 0f);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam109->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
+			func_56(uParam109, 15, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_LEAVE_VEHICLE"), 0f, 0f, 0f, 0f);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 100:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
-			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
-			func_56(uParam1, 15, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_LEAVE_VEHICLE"), 0f, 0f, 0f, 0f);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam109->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
+			func_56(uParam109, 15, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_LEAVE_VEHICLE"), 0f, 0f, 0f, 0f);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 101:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
-			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
-			func_56(uParam1, 14, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_LEAVE_VEHICLE"), 0f, 0f, 0f, 0f);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam109->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
+			func_56(uParam109, 14, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_LEAVE_VEHICLE"), 0f, 0f, 0f, 0f);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 102:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
-			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
-			func_56(uParam1, 14, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_LEAVE_VEHICLE"), 0f, 0f, 0f, 0f);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam109->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
+			func_56(uParam109, 14, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_LEAVE_VEHICLE"), 0f, 0f, 0f, 0f);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 103:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 121:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 122:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -2.04f, -0.15f, 0f, 14.4f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -2.04f, -0.15f, 0f, 14.4f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 125:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
@@ -4017,283 +4017,283 @@ int func_55(struct<109> Param0, var uParam1)//Position - 0x36FC
 		case 117:
 		case 97:
 		case 162:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 110:
 		case 111:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 131:
 		case 132:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 126:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 128:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 129:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 130:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 133:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 151:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -1.71f, 1.05f, 0f, -138f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -1.71f, 1.05f, 0f, -138f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 152:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1.1779f, 2.4276f, 0f, 162.1022f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1.1779f, 2.4276f, 0f, 162.1022f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 153:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_118 = 1;
-			func_57(uParam1);
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_118 = 1;
+			func_57(uParam109);
 			return 1;
 			break;
 		
 		case 154:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_118 = 1;
-			func_57(uParam1);
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_118 = 1;
+			func_57(uParam109);
 			return 1;
 			break;
 		
 		case 155:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), 0f, MISC::GET_RANDOM_FLOAT_IN_RANGE(-180f, 180f));
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), 0f, MISC::GET_RANDOM_FLOAT_IN_RANGE(-180f, 180f));
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 156:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 14, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0.3427f, 1.1592f, 1.0351f, 139.912f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 14, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0.3427f, 1.1592f, 1.0351f, 139.912f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 157:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 158:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), 0f, MISC::GET_RANDOM_FLOAT_IN_RANGE(-180f, 180f));
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), 0f, MISC::GET_RANDOM_FLOAT_IN_RANGE(-180f, 180f));
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 159:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_118 = 1;
-			func_57(uParam1);
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_118 = 1;
+			func_57(uParam109);
 			return 1;
 			break;
 		
 		case 160:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_118 = 1;
-			func_57(uParam1);
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_118 = 1;
+			func_57(uParam109);
 			return 1;
 			break;
 		
 		case 161:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 163:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -3.03f, -0.72f, 0.08f, 168f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -3.03f, -0.72f, 0.08f, 168f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 164:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_118 = 1;
-			func_57(uParam1);
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_118 = 1;
+			func_57(uParam109);
 			return 1;
 			break;
 		
 		case 165:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 166:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 167:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 14, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -0.8472f, 0.155f, 0f, 152.556f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 14, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -0.8472f, 0.155f, 0f, 152.556f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 168:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 169:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 14, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -0.3577f, -0.8968f, -0.0003f, 0f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 14, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -0.3577f, -0.8968f, -0.0003f, 0f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 170:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0f, 0f, 0f, 0f);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 17, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0f, 0f, 0f, 0f);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 171:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 14, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0f, 0f, 0f, 0f);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 14, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0f, 0f, 0f, 0f);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 172:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 15, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0f, 0f, 0f, 0f);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 15, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0f, 0f, 0f, 0f);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 173:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 174:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
-			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
-			func_57(uParam1);
-			uParam1->f_118 = 0;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam109->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
+			func_57(uParam109);
+			uParam109->f_118 = 0;
 			return 1;
 			break;
 	}
@@ -4301,221 +4301,221 @@ int func_55(struct<109> Param0, var uParam1)//Position - 0x36FC
 	{
 		case 175:
 		case 176:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_118 = 1;
-			func_57(uParam1);
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_118 = 1;
+			func_57(uParam109);
 			return 1;
 			break;
 		
 		case 177:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_118 = 1;
-			func_57(uParam1);
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_118 = 1;
+			func_57(uParam109);
 			return 1;
 			break;
 		
 		case 178:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_118 = 1;
-			func_57(uParam1);
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_118 = 1;
+			func_57(uParam109);
 			return 1;
 			break;
 		
 		case 179:
 		case 180:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_118 = 1;
-			func_57(uParam1);
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_118 = 1;
+			func_57(uParam109);
 			return 1;
 			break;
 		
 		case 181:
 		case 182:
 		case 183:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_118 = 1;
-			func_57(uParam1);
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_118 = 1;
+			func_57(uParam109);
 			return 1;
 			break;
 		
 		case 192:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1f, 1f, 0f, 0f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1f, 1f, 0f, 0f);
+			uParam109->f_118 = 1;
 			if (Global_3)
 			{
-				uParam1->f_118 = 1;
+				uParam109->f_118 = 1;
 			}
 			return 1;
 			break;
 		
 		case 193:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 144, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 4.2943f, -6.7858f, 0f, -133.5332f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 144, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 4.2943f, -6.7858f, 0f, -133.5332f);
+			uParam109->f_118 = 1;
 			if (Global_3)
 			{
-				uParam1->f_118 = 1;
+				uParam109->f_118 = 1;
 			}
 			return 1;
 			break;
 		
 		case 194:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_PLAY_ANIM");
-			uParam1->f_110 = joaat("SCRIPT_TASK_PLAY_ANIM");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_PLAY_ANIM");
+			uParam109->f_110 = joaat("SCRIPT_TASK_PLAY_ANIM");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			if (Global_3)
 			{
-				uParam1->f_118 = 1;
+				uParam109->f_118 = 1;
 			}
 			return 1;
 			break;
 		
 		case 195:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_PLAY_ANIM");
-			uParam1->f_110 = joaat("SCRIPT_TASK_PLAY_ANIM");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_PLAY_ANIM");
+			uParam109->f_110 = joaat("SCRIPT_TASK_PLAY_ANIM");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			if (Global_3)
 			{
-				uParam1->f_118 = 1;
+				uParam109->f_118 = 1;
 			}
 			return 1;
 			break;
 		
 		case 198:
 		case 199:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 200:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 201:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 202:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 184:
 		case 185:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 186:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 187:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 188:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 189:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 190:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 191:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 196:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 43, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), 0f, MISC::GET_RANDOM_FLOAT_IN_RANGE(-180f, 180f));
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 43, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), 0f, MISC::GET_RANDOM_FLOAT_IN_RANGE(-180f, 180f));
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 197:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
@@ -4524,16 +4524,16 @@ int func_55(struct<109> Param0, var uParam1)//Position - 0x36FC
 		case 207:
 		case 204:
 		case 205:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 3.4381f, -0.8269f, 0f, -87.6612f);
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 3.4381f, -0.8269f, 0f, -87.6612f);
 			if (Param0.f_2 != 205)
 			{
-				uParam1->f_112 = { 3.4381f, -0.8269f, 0f };
-				uParam1->f_115 = -87.6612f;
+				uParam109->f_112 = { 3.4381f, -0.8269f, 0f };
+				uParam109->f_115 = -87.6612f;
 			}
-			uParam1->f_118 = 1;
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
@@ -4541,20 +4541,20 @@ int func_55(struct<109> Param0, var uParam1)//Position - 0x36FC
 		case 208:
 		case 209:
 		case 210:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 24:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
@@ -4562,51 +4562,51 @@ int func_55(struct<109> Param0, var uParam1)//Position - 0x36FC
 		case 213:
 		case 216:
 		case 217:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 212:
 		case 214:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 			break;
 		
 		case 215:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 3.4381f, -0.8269f, 0f, -87.6612f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 3.4381f, -0.8269f, 0f, -87.6612f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 221:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -0.7949f, -0.508f, 0f, 0f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), -0.7949f, -0.508f, 0f, 0f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 222:
 		case 223:
 		case 224:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
@@ -4615,141 +4615,141 @@ int func_55(struct<109> Param0, var uParam1)//Position - 0x36FC
 		case 228:
 		case 229:
 		case 230:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_118 = 1;
-			func_57(uParam1);
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_118 = 1;
+			func_57(uParam109);
 			return 1;
 			break;
 		
 		case 218:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 19, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1.29f, 1.41f, 0f, 57.52f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 19, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1.29f, 1.41f, 0f, 57.52f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 219:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 19, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1.29f, 1.41f, 0f, 57.52f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 19, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1.29f, 1.41f, 0f, 57.52f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 220:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 19, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0.5504f, -0.2322f, 0f, -9.9741f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 19, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0.5504f, -0.2322f, 0f, -9.9741f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 225:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 19, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1.23f, 0.6f, -1f, 34.56f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 19, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1.23f, 0.6f, -1f, 34.56f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 231:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
-			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
-			func_57(uParam1);
-			uParam1->f_118 = 0;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam109->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
+			func_57(uParam109);
+			uParam109->f_118 = 0;
 			return 1;
 			break;
 		
 		case 232:
 		case 233:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 235:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 236:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1.5033f, 1.2118f, 0f, -78.0449f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1.5033f, 1.2118f, 0f, -78.0449f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 237:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1.5033f, 1.2118f, 0f, -78.0449f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1.5033f, 1.2118f, 0f, -78.0449f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 238:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 239:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 240:
 		case 241:
 		case 242:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_PLAY_ANIM");
-			uParam1->f_110 = joaat("SCRIPT_TASK_PLAY_ANIM");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_PLAY_ANIM");
+			uParam109->f_110 = joaat("SCRIPT_TASK_PLAY_ANIM");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 273:
 		case 274:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 245:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
@@ -4757,47 +4757,47 @@ int func_55(struct<109> Param0, var uParam1)//Position - 0x36FC
 		case 251:
 		case 252:
 		case 253:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 243:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 244:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 271:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_118 = 1;
-			func_57(uParam1);
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_118 = 1;
+			func_57(uParam109);
 			return 1;
 			break;
 		
 		case 280:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_118 = 1;
-			func_57(uParam1);
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_118 = 1;
+			func_57(uParam109);
 			return 1;
 			break;
 		
@@ -4808,108 +4808,108 @@ int func_55(struct<109> Param0, var uParam1)//Position - 0x36FC
 		case 268:
 		case 269:
 		case 270:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_PLAY_ANIM");
-			uParam1->f_110 = joaat("SCRIPT_TASK_PLAY_ANIM");
-			uParam1->f_118 = 1;
-			func_57(uParam1);
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_PLAY_ANIM");
+			uParam109->f_110 = joaat("SCRIPT_TASK_PLAY_ANIM");
+			uParam109->f_118 = 1;
+			func_57(uParam109);
 			if (Param0.f_2 == 265)
 			{
-				uParam1->f_118 = 1;
+				uParam109->f_118 = 1;
 			}
 			if (Param0.f_2 == 268)
 			{
-				uParam1->f_118 = 0;
+				uParam109->f_118 = 0;
 			}
 			if (Param0.f_2 == 267)
 			{
-				func_56(uParam1, 144, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD"), -2.4166f, -0.15f, 0f, -148.7555f);
+				func_56(uParam109, 144, joaat("SCRIPT_TASK_STAND_STILL"), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD"), -2.4166f, -0.15f, 0f, -148.7555f);
 			}
 			if (Param0.f_2 == 266)
 			{
-				func_56(uParam1, 144, joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD"), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD"), -5.7915f, -11.0439f, 0.67f, -72.589f);
+				func_56(uParam109, 144, joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD"), joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD"), -5.7915f, -11.0439f, 0.67f, -72.589f);
 			}
 			return 1;
 			break;
 		
 		case 246:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 247:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 263:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 278:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 279:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_PLAY_ANIM");
-			uParam1->f_110 = joaat("SCRIPT_TASK_PLAY_ANIM");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_PLAY_ANIM");
+			uParam109->f_110 = joaat("SCRIPT_TASK_PLAY_ANIM");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 264:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 255:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 248:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), 0f, MISC::GET_RANDOM_FLOAT_IN_RANGE(-180f, 180f));
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), 0f, MISC::GET_RANDOM_FLOAT_IN_RANGE(-180f, 180f));
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 249:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), 0f, MISC::GET_RANDOM_FLOAT_IN_RANGE(-180f, 180f));
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), MISC::GET_RANDOM_FLOAT_IN_RANGE(-5f, 5f), 0f, MISC::GET_RANDOM_FLOAT_IN_RANGE(-180f, 180f));
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
@@ -4917,153 +4917,153 @@ int func_55(struct<109> Param0, var uParam1)//Position - 0x36FC
 		case 282:
 		case 283:
 		case 284:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 275:
 		case 276:
 		case 277:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 		
 		case 254:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 285:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 256:
 		case 257:
 		case 258:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
-			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam109->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 259:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 260:
 		case 261:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
-			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam109->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 286:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 287:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 288:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 262:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0f, 0f, 0f, 0f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 144, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0f, 0f, 0f, 0f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 289:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 144, joaat("SCRIPT_TASK_PLAY_ANIM"), joaat("SCRIPT_TASK_PLAY_ANIM"), -3.264f, -14.7895f, 14.1815f, -0.6311f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 144, joaat("SCRIPT_TASK_PLAY_ANIM"), joaat("SCRIPT_TASK_PLAY_ANIM"), -3.264f, -14.7895f, 14.1815f, -0.6311f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 290:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 292:
 		case 295:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 32, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0f, 0f, 0f, 0f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 32, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0f, 0f, 0f, 0f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 293:
 		case 294:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 32, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0f, 0f, 0f, 0f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 32, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0f, 0f, 0f, 0f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 299:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 32, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0.24f, 0.33f, -0.5f, -11.88f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 32, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0.24f, 0.33f, -0.5f, -11.88f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
@@ -5071,139 +5071,139 @@ int func_55(struct<109> Param0, var uParam1)//Position - 0x36FC
 		case 301:
 		case 302:
 		case 303:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 32, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0.24f, 0.33f, -0.5f, -11.88f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 32, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0.24f, 0.33f, -0.5f, -11.88f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 296:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 32, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1.41f, 1.35f, 0f, 168f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 32, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1.41f, 1.35f, 0f, 168f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 297:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 32, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1.7491f, 0.6423f, 0f, 166.479f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 32, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 1.7491f, 0.6423f, 0f, 166.479f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 298:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_56(uParam1, 32, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0.72f, -0.69f, 0f, 172.44f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_56(uParam109, 32, joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE"), 0.72f, -0.69f, 0f, 172.44f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 304:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 305:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_PLAY_ANIM");
-			uParam1->f_110 = joaat("SCRIPT_TASK_PLAY_ANIM");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_PLAY_ANIM");
+			uParam109->f_110 = joaat("SCRIPT_TASK_PLAY_ANIM");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 306:
 		case 307:
 		case 308:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
-			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam109->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 309:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
-			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_STAND_STILL");
+			uParam109->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 310:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 311:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			uParam1->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
-			func_57(uParam1);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			uParam109->f_110 = joaat("SCRIPT_TASK_SYNCHRONIZED_SCENE");
+			func_57(uParam109);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 312:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_AIM_GUN_AT_ENTITY");
-			uParam1->f_110 = joaat("SCRIPT_TASK_AIM_GUN_AT_ENTITY");
-			func_56(uParam1, 144, joaat("SCRIPT_TASK_COWER"), joaat("SCRIPT_TASK_HANDS_UP"), -9.5443f, -3.191f, -0.3f, 180f);
-			uParam1->f_118 = 1;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_AIM_GUN_AT_ENTITY");
+			uParam109->f_110 = joaat("SCRIPT_TASK_AIM_GUN_AT_ENTITY");
+			func_56(uParam109, 144, joaat("SCRIPT_TASK_COWER"), joaat("SCRIPT_TASK_HANDS_UP"), -9.5443f, -3.191f, -0.3f, 180f);
+			uParam109->f_118 = 1;
 			return 1;
 			break;
 		
 		case 313:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
-			func_57(uParam1);
-			uParam1->f_118 = 0;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_GO_STRAIGHT_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_STAND_STILL");
+			func_57(uParam109);
+			uParam109->f_118 = 0;
 			return 1;
 			break;
 		
 		case 314:
-			*uParam1 = { Param0 };
-			uParam1->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			uParam1->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
-			func_57(uParam1);
-			uParam1->f_118 = 2;
+			*uParam109 = { Param0 };
+			uParam109->f_109 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			uParam109->f_110 = joaat("SCRIPT_TASK_VEHICLE_DRIVE_TO_COORD");
+			func_57(uParam109);
+			uParam109->f_118 = 2;
 			return 1;
 			break;
 	}
-	*uParam1 = { Param0 };
-	uParam1->f_109 = joaat("SCRIPT_TASK_ANY");
-	uParam1->f_110 = joaat("SCRIPT_TASK_ANY");
-	func_57(uParam1);
-	uParam1->f_118 = 0;
+	*uParam109 = { Param0 };
+	uParam109->f_109 = joaat("SCRIPT_TASK_ANY");
+	uParam109->f_110 = joaat("SCRIPT_TASK_ANY");
+	func_57(uParam109);
+	uParam109->f_118 = 0;
 	return 0;
 }
 
-void func_56(var uParam0, int iParam1, int iParam2, int iParam3, struct<3> Param4, float fParam5)//Position - 0x6A78
+void func_56(var uParam0, int iParam1, int iParam2, int iParam3, struct<3> Param4, float fParam7)//Position - 0x6A78
 {
 	uParam0->f_111 = iParam1;
 	uParam0->f_116 = iParam2;
 	uParam0->f_117 = iParam3;
 	uParam0->f_112 = { Param4 };
-	uParam0->f_115 = fParam5;
+	uParam0->f_115 = fParam7;
 }
 
 void func_57(var uParam0)//Position - 0x6AA2
@@ -5293,10 +5293,10 @@ bool func_59(var uParam0)//Position - 0x6CB3
 {
 	int iVar0;
 	struct<3> Var1;
-	float fVar2;
-	int iVar3;
-	struct<3> Var4;
-	float fVar5;
+	float fVar4;
+	int iVar5;
+	struct<3> Var6;
+	float fVar9;
 	
 	iVar0 = Global_113648.f_2365.f_539.f_4323;
 	Var1 = { Global_113648.f_2365.f_539.f_2300[iVar0 /*3*/] };
@@ -5305,47 +5305,47 @@ bool func_59(var uParam0)//Position - 0x6CB3
 		Var1 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false) };
 	}
 	*uParam0 = 5;
-	fVar2 = 9999999f;
-	iVar3 = 0;
-	while (iVar3 < 5)
+	fVar4 = 9999999f;
+	iVar5 = 0;
+	while (iVar5 < 5)
 	{
-		if (BitTest(Global_113648.f_7231.f_11[iVar3], 0))
+		if (BitTest(Global_113648.f_7231.f_11[iVar5], 0))
 		{
-			Var4 = { Global_95884[iVar3 /*9*/].f_3 };
-			fVar5 = SYSTEM::VDIST(Var1, Var4);
-			if (fVar5 > 150f)
+			Var6 = { Global_95884[iVar5 /*9*/].f_3 };
+			fVar9 = SYSTEM::VDIST(Var1, Var6);
+			if (fVar9 > 150f)
 			{
-				if (fVar5 < fVar2)
+				if (fVar9 < fVar4)
 				{
-					*uParam0 = iVar3;
-					fVar2 = fVar5;
+					*uParam0 = iVar5;
+					fVar4 = fVar9;
 				}
 			}
 		}
-		iVar3++;
+		iVar5++;
 	}
 	return *uParam0 != 5;
 }
 
-bool func_60(struct<3> Param0, struct<3> Param1, bool bParam2)//Position - 0x6D6B
+bool func_60(struct<3> Param0, struct<3> Param3, bool bParam6)//Position - 0x6D6B
 {
-	if (bParam2)
+	if (bParam6)
 	{
-		return (Param0.f_0 == Param1.f_0 && Param0.f_1 == Param1.f_1);
+		return (Param0.f_0 == Param3.f_0 && Param0.f_1 == Param3.f_1);
 	}
-	return ((Param0.f_0 == Param1.f_0 && Param0.f_1 == Param1.f_1) && Param0.f_2 == Param1.f_2);
+	return ((Param0.f_0 == Param3.f_0 && Param0.f_1 == Param3.f_1) && Param0.f_2 == Param3.f_2);
 }
 
 int func_61(int iParam0, var uParam1, char* sParam2)//Position - 0x6DB2
 {
 	struct<3> Var0;
-	int iVar1;
-	var uVar2;
-	float fVar3;
-	struct<3> Var4;
-	struct<3> Var5;
-	struct<3> Var6;
-	struct<3> Var7;
+	int iVar3;
+	var uVar4;
+	float fVar7;
+	struct<3> Var8;
+	struct<3> Var11;
+	struct<3> Var14;
+	struct<3> Var17;
 	
 	switch (iParam0)
 	{
@@ -5354,10 +5354,10 @@ int func_61(int iParam0, var uParam1, char* sParam2)//Position - 0x6DB2
 			break;
 		
 		case 1:
-			func_59(&iVar1);
-			if (iVar1 < 5)
+			func_59(&iVar3);
+			if (iVar3 < 5)
 			{
-				*uParam1 = Global_95884[iVar1 /*9*/].f_6;
+				*uParam1 = Global_95884[iVar3 /*9*/].f_6;
 				StringCopy(sParam2, "", 32);
 				return 1;
 			}
@@ -6476,9 +6476,9 @@ int func_61(int iParam0, var uParam1, char* sParam2)//Position - 0x6DB2
 			break;
 		
 		case 168:
-			if (func_62(0, 25, &uVar2, &fVar3))
+			if (func_62(0, 25, &uVar4, &fVar7))
 			{
-				*uParam1 = (fVar3 + 222.8314f);
+				*uParam1 = (fVar7 + 222.8314f);
 				StringCopy(sParam2, "v_michael", 32);
 				return 1;
 			}
@@ -7292,29 +7292,29 @@ int func_61(int iParam0, var uParam1, char* sParam2)//Position - 0x6DB2
 			break;
 		
 		case 306:
-			Var4 = { -7.4998f, 7.4995f, -0.5258f };
-			*uParam1 = MISC::GET_HEADING_FROM_VECTOR_2D(-Var4.f_0, -Var4.f_1);
+			Var8 = { -7.4998f, 7.4995f, -0.5258f };
+			*uParam1 = MISC::GET_HEADING_FROM_VECTOR_2D(-Var8.f_0, -Var8.f_1);
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
 		
 		case 307:
-			Var5 = { 10.6345f, 0.7246f, 1.2508f };
-			*uParam1 = MISC::GET_HEADING_FROM_VECTOR_2D(-Var5.f_0, -Var5.f_1);
+			Var11 = { 10.6345f, 0.7246f, 1.2508f };
+			*uParam1 = MISC::GET_HEADING_FROM_VECTOR_2D(-Var11.f_0, -Var11.f_1);
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
 		
 		case 308:
-			Var6 = { -3.4271f, -13.6787f, -1.4107f };
-			*uParam1 = MISC::GET_HEADING_FROM_VECTOR_2D(-Var6.f_0, -Var6.f_1);
+			Var14 = { -3.4271f, -13.6787f, -1.4107f };
+			*uParam1 = MISC::GET_HEADING_FROM_VECTOR_2D(-Var14.f_0, -Var14.f_1);
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
 		
 		case 309:
-			Var7 = { -19.6582f, 7.896f, 0.1334f };
-			*uParam1 = MISC::GET_HEADING_FROM_VECTOR_2D(-Var7.f_0, -Var7.f_1);
+			Var17 = { -19.6582f, 7.896f, 0.1334f };
+			*uParam1 = MISC::GET_HEADING_FROM_VECTOR_2D(-Var17.f_0, -Var17.f_1);
 			StringCopy(sParam2, "", 32);
 			return 1;
 			break;
@@ -9241,19 +9241,19 @@ char* func_65(int iParam0)//Position - 0xBB95
 
 void func_66()//Position - 0xBC27
 {
-	if (ENTITY::DOES_ENTITY_EXIST(iLocal_68))
+	if (ENTITY::DOES_ENTITY_EXIST(iLocal_72))
 	{
-		if (iLocal_74 != -1)
+		if (iLocal_82 != -1)
 		{
-			func_3(&iLocal_68, iLocal_74);
+			func_3(&iLocal_72, iLocal_82);
 		}
 	}
-	if (iLocal_78 != 0)
+	if (iLocal_88 != 0)
 	{
-		GRAPHICS::STOP_PARTICLE_FX_LOOPED(iLocal_78, false);
-		iLocal_78 = 0;
-		AUDIO::STOP_SOUND(iLocal_169);
-		AUDIO::RELEASE_SOUND_ID(iLocal_169);
+		GRAPHICS::STOP_PARTICLE_FX_LOOPED(iLocal_88, false);
+		iLocal_88 = 0;
+		AUDIO::STOP_SOUND(iLocal_223);
+		AUDIO::RELEASE_SOUND_ID(iLocal_223);
 	}
 	MISC::SET_GAME_PAUSED(false);
 	SCRIPT::TERMINATE_THIS_THREAD();

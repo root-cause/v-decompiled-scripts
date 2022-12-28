@@ -86,28 +86,28 @@
 	var uLocal_84 = 0;
 	int iLocal_85 = 0;
 	struct<2> Local_86 = { 0, 0 } ;
-	var uLocal_87 = 0;
 	var uLocal_88 = 0;
-	struct<2> Local_89 = { 0, 0 } ;
-	var uLocal_90 = 0;
-	var uLocal_91 = 0;
-	struct<2> Local_92 = { 0, 0 } ;
+	var uLocal_89 = 0;
+	struct<2> Local_90 = { 0, 0 } ;
+	var uLocal_92 = 0;
 	var uLocal_93 = 0;
-	var uLocal_94 = 0;
-	struct<2> Local_95 = { 0, 0 } ;
+	struct<2> Local_94 = { 0, 0 } ;
 	var uLocal_96 = 0;
 	var uLocal_97 = 0;
 	struct<2> Local_98 = { 0, 0 } ;
-	var uLocal_99 = 0;
 	var uLocal_100 = 0;
-	struct<2> Local_101 = { 0, 0 } ;
-	var uLocal_102 = 0;
-	var uLocal_103 = 0;
-	int iLocal_104 = 0;
-	int iLocal_105 = 0;
-	int iLocal_106 = 0;
-	int* iLocal_107 = NULL;
+	var uLocal_101 = 0;
+	struct<2> Local_102 = { 0, 0 } ;
+	var uLocal_104 = 0;
+	var uLocal_105 = 0;
+	struct<2> Local_106 = { 0, 0 } ;
 	var uLocal_108 = 0;
+	var uLocal_109 = 0;
+	int iLocal_110 = 0;
+	int iLocal_111 = 0;
+	int iLocal_112 = 0;
+	int* iLocal_113 = NULL;
+	var uLocal_114 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -138,14 +138,14 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_43 = 64;
 	fLocal_47 = ((0.05f + 0.275f) - 0.01f);
 	StringCopy(&Local_86, "CELL_206" /* GXT: BACK */, 16);
-	StringCopy(&Local_89, "CELL_214" /* GXT: OPTIONS */, 16);
-	StringCopy(&Local_92, "CELL_243" /* GXT: ACCEPT JOB */, 16);
-	StringCopy(&Local_95, "CELL_244" /* GXT: CANCEL JOB */, 16);
-	StringCopy(&Local_98, "CELL_265" /* GXT: INVITATION */, 16);
-	StringCopy(&Local_101, "CELL_300" /* GXT: CHAR_DEFAULT */, 16);
+	StringCopy(&Local_90, "CELL_214" /* GXT: OPTIONS */, 16);
+	StringCopy(&Local_94, "CELL_243" /* GXT: ACCEPT JOB */, 16);
+	StringCopy(&Local_98, "CELL_244" /* GXT: CANCEL JOB */, 16);
+	StringCopy(&Local_102, "CELL_265" /* GXT: INVITATION */, 16);
+	StringCopy(&Local_106, "CELL_300" /* GXT: CHAR_DEFAULT */, 16);
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
-	func_98(&iLocal_107);
-	iLocal_104 = 0;
+	func_98(&iLocal_113);
+	iLocal_110 = 0;
 	func_96();
 	func_95(Global_20364, "SET_THEME", SYSTEM::TO_FLOAT(5), -1082130432, -1082130432, -1082130432, -1082130432);
 	func_85(0);
@@ -227,18 +227,18 @@ void func_5()//Position - 0x1F7
 	int iVar0;
 	
 	Global_1890001.f_6 = 1;
-	if (iLocal_106)
+	if (iLocal_112)
 	{
 		if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, Global_20352))
 		{
-			iLocal_106 = 0;
+			iLocal_112 = 0;
 		}
 		return;
 	}
 	if (PAD::IS_CONTROL_JUST_RELEASED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 	{
 		iLocal_85 = 1;
-		iVar0 = func_29(iLocal_104, 0);
+		iVar0 = func_29(iLocal_110, 0);
 		func_6(iVar0);
 		return;
 	}
@@ -255,7 +255,7 @@ void func_6(int iParam0)//Position - 0x25E
 	int iVar0;
 	
 	iVar0 = Global_1890001.f_7[iParam0 /*8*/].f_2;
-	if (Global_1890001.f_7[iParam0 /*8*/].f_1 == 1 && iLocal_105 == iVar0)
+	if (Global_1890001.f_7[iParam0 /*8*/].f_1 == 1 && iLocal_111 == iVar0)
 	{
 		func_26(iVar0, Global_1890001.f_7[iParam0 /*8*/].f_6);
 		func_13(iParam0);
@@ -855,35 +855,35 @@ void func_31()//Position - 0xD8A
 	int iVar0;
 	int iVar1;
 	
-	iVar0 = func_29(iLocal_104, 0);
-	if (iLocal_104 == -1)
+	iVar0 = func_29(iLocal_110, 0);
+	if (iLocal_110 == -1)
 	{
 		func_85(1);
 		return;
 	}
 	iVar1 = Global_1890001.f_7[iVar0 /*8*/].f_2;
-	if (!func_46(iVar1, 0, 1) || iLocal_105 != iVar1)
+	if (!func_46(iVar1, 0, 1) || iLocal_111 != iVar1)
 	{
 		func_85(1);
 		return;
 	}
-	func_41(&iLocal_107);
-	if (func_39(&iLocal_107))
+	func_41(&iLocal_113);
+	if (func_39(&iLocal_113))
 	{
 		func_85(1);
 		return;
 	}
-	if (func_38(&iLocal_107))
+	if (func_38(&iLocal_113))
 	{
 		func_13(iVar0);
 		func_85(1);
 		return;
 	}
-	if (func_34(&iLocal_107))
+	if (func_34(&iLocal_113))
 	{
 		if (func_33())
 		{
-			iLocal_106 = 1;
+			iLocal_112 = 1;
 			iLocal_85 = 3;
 		}
 		else if (Global_1890001.f_7[iVar0 /*8*/] == 0)
@@ -1140,9 +1140,9 @@ void func_47()//Position - 0x117B
 	
 	if (func_30() > 1)
 	{
-		func_41(&iLocal_107);
+		func_41(&iLocal_113);
 	}
-	if (func_34(&iLocal_107))
+	if (func_34(&iLocal_113))
 	{
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20364, "GET_CURRENT_SELECTION");
 		iVar0 = GRAPHICS::END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE();
@@ -1150,8 +1150,8 @@ void func_47()//Position - 0x117B
 		{
 			SYSTEM::WAIT(0);
 		}
-		iLocal_104 = GRAPHICS::GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT(iVar0);
-		iVar1 = func_29(iLocal_104, 0);
+		iLocal_110 = GRAPHICS::GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT(iVar0);
+		iVar1 = func_29(iLocal_110, 0);
 		switch (Global_1890001.f_7[iVar1 /*8*/].f_1)
 		{
 			case 0:
@@ -1167,7 +1167,7 @@ void func_47()//Position - 0x117B
 		Global_20383.f_1 = 8;
 		return;
 	}
-	if (func_38(&iLocal_107))
+	if (func_38(&iLocal_113))
 	{
 		GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20364, "GET_CURRENT_SELECTION");
 		iVar2 = GRAPHICS::END_SCALEFORM_MOVIE_METHOD_RETURN_VALUE();
@@ -1175,8 +1175,8 @@ void func_47()//Position - 0x117B
 		{
 			SYSTEM::WAIT(0);
 		}
-		iLocal_104 = GRAPHICS::GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT(iVar2);
-		iVar3 = func_29(iLocal_104, 0);
+		iLocal_110 = GRAPHICS::GET_SCALEFORM_MOVIE_METHOD_RETURN_VALUE_INT(iVar2);
+		iVar3 = func_29(iLocal_110, 0);
 		switch (Global_1890001.f_7[iVar3 /*8*/].f_1)
 		{
 			case 0:
@@ -1215,13 +1215,13 @@ void func_49()//Position - 0x12A4
 	int iVar3;
 	int iVar4;
 	struct<16> Var5;
-	var uVar6[3];
-	bool bVar7;
-	int iVar8;
-	int iVar9;
-	char cVar10[16];
-	struct<16> Var11;
-	char cVar12[16];
+	var uVar21[3];
+	bool bVar25;
+	int iVar26;
+	int iVar27;
+	char cVar28[16];
+	struct<16> Var32;
+	char cVar48[16];
 	
 	if (Global_20383.f_1 != 8)
 	{
@@ -1229,8 +1229,8 @@ void func_49()//Position - 0x12A4
 	}
 	func_95(Global_20364, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(26), -1082130432, -1082130432, -1082130432, -1082130432);
 	bVar0 = false;
-	iVar3 = func_29(iLocal_104, 0);
-	iLocal_105 = Global_1890001.f_7[iVar3 /*8*/].f_2;
+	iVar3 = func_29(iLocal_110, 0);
+	iLocal_111 = Global_1890001.f_7[iVar3 /*8*/].f_2;
 	iVar4 = Global_1890001.f_7[iVar3 /*8*/].f_2;
 	GRAPHICS::BEGIN_SCALEFORM_MOVIE_METHOD(Global_20364, "SET_DATA_SLOT");
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(26);
@@ -1252,26 +1252,26 @@ void func_49()//Position - 0x12A4
 	{
 		if (Global_262145.f_15419 /* Tunable: EXEC_VIP2_DISABLE_INVITE_INFO */)
 		{
-			bVar7 = func_75(iVar4);
-			iVar8 = 0;
-			while (iVar8 < 3)
+			bVar25 = func_75(iVar4);
+			iVar26 = 0;
+			while (iVar26 < 3)
 			{
-				if (iVar9 < 3)
+				if (iVar27 < 3)
 				{
-					if (Global_1894573[iVar4 /*608*/].f_10.f_11[iVar8] != func_14())
+					if (Global_1894573[iVar4 /*608*/].f_10.f_11[iVar26] != func_14())
 					{
-						if (func_46(Global_1894573[iVar4 /*608*/].f_10.f_11[iVar8], 0, 1))
+						if (func_46(Global_1894573[iVar4 /*608*/].f_10.f_11[iVar26], 0, 1))
 						{
-							uVar6[iVar9] = Global_1894573[iVar4 /*608*/].f_10.f_11[iVar8];
-							iVar9++;
+							uVar21[iVar27] = Global_1894573[iVar4 /*608*/].f_10.f_11[iVar26];
+							iVar27++;
 						}
 					}
 				}
-				iVar8++;
+				iVar26++;
 			}
-			if (iVar9 == 0)
+			if (iVar27 == 0)
 			{
-				if (bVar7)
+				if (bVar25)
 				{
 					func_22("BA_APP_BODYCTA" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become an Associate.~s~ */);
 				}
@@ -1282,40 +1282,40 @@ void func_49()//Position - 0x12A4
 			}
 			else
 			{
-				StringCopy(&cVar10, "BA_APP_BODY_T4" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become a Bodyguard.~n~~n~Other Bodyguards:~n~~a~~s~ */, 16);
-				if (bVar7)
+				StringCopy(&cVar28, "BA_APP_BODY_T4" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become a Bodyguard.~n~~n~Other Bodyguards:~n~~a~~s~ */, 16);
+				if (bVar25)
 				{
-					StringCopy(&cVar10, "BA_APP_BODYCT4" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become an Associate.~n~~n~Other Associates:~n~~a~~s~ */, 16);
+					StringCopy(&cVar28, "BA_APP_BODYCT4" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become an Associate.~n~~n~Other Associates:~n~~a~~s~ */, 16);
 				}
-				if (iVar9 == 2)
+				if (iVar27 == 2)
 				{
-					if (bVar7)
+					if (bVar25)
 					{
-						StringCopy(&cVar10, "BA_APP_BODYCT5" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become an Associate.~n~~n~Other Associates:~n~~a~~n~~a~~s~ */, 16);
+						StringCopy(&cVar28, "BA_APP_BODYCT5" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become an Associate.~n~~n~Other Associates:~n~~a~~n~~a~~s~ */, 16);
 					}
 					else
 					{
-						StringCopy(&cVar10, "BA_APP_BODY_T5" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become a Bodyguard.~n~~n~Other Bodyguards:~n~~a~~n~~a~~s~ */, 16);
+						StringCopy(&cVar28, "BA_APP_BODY_T5" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become a Bodyguard.~n~~n~Other Bodyguards:~n~~a~~n~~a~~s~ */, 16);
 					}
 				}
-				else if (iVar9 > 2)
+				else if (iVar27 > 2)
 				{
-					if (bVar7)
+					if (bVar25)
 					{
-						StringCopy(&cVar10, "BA_APP_BODYCT6" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become an Associate.~n~~n~Other Associates:~n~~a~~n~~a~~n~~a~~s~ */, 16);
+						StringCopy(&cVar28, "BA_APP_BODYCT6" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become an Associate.~n~~n~Other Associates:~n~~a~~n~~a~~n~~a~~s~ */, 16);
 					}
 					else
 					{
-						StringCopy(&cVar10, "BA_APP_BODY_T6" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become a Bodyguard.~n~~n~Other Bodyguards:~n~~a~~n~~a~~n~~a~~s~ */, 16);
+						StringCopy(&cVar28, "BA_APP_BODY_T6" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become a Bodyguard.~n~~n~Other Bodyguards:~n~~a~~n~~a~~n~~a~~s~ */, 16);
 					}
 				}
-				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(&cVar10);
-				iVar8 = 0;
-				while (iVar8 < iVar9)
+				GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(&cVar28);
+				iVar26 = 0;
+				while (iVar26 < iVar27)
 				{
-					Var11 = { func_82(uVar6[iVar8]) };
-					HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&Var11);
-					iVar8++;
+					Var32 = { func_82(uVar21[iVar26]) };
+					HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&Var32);
+					iVar26++;
 				}
 				GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 			}
@@ -1326,22 +1326,22 @@ void func_49()//Position - 0x12A4
 			{
 				if (Global_1890001.f_88[iVar3 /*5*/].f_2)
 				{
-					StringCopy(&cVar12, "BA_APP_BODY_T9" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become an Associate.~n~~n~- Wage: $~1~ ~n~- Associate(s): ~1~ ~n~- Yacht: Yes~n~- Office: Yes ~n~- Warehouse(s): ~1~ ~n~- Vehicle(s): ~1~ */, 16);
+					StringCopy(&cVar48, "BA_APP_BODY_T9" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become an Associate.~n~~n~- Wage: $~1~ ~n~- Associate(s): ~1~ ~n~- Yacht: Yes~n~- Office: Yes ~n~- Warehouse(s): ~1~ ~n~- Vehicle(s): ~1~ */, 16);
 				}
 				else
 				{
-					StringCopy(&cVar12, "BA_APP_BODY_T8" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become a Bodyguard.~n~~n~- Wage: $~1~ ~n~- Bodyguard(s): ~1~ ~n~- Yacht: Yes~n~- Office: No ~n~- Warehouse(s): ~1~ ~n~- Vehicle(s): ~1~ */, 16);
+					StringCopy(&cVar48, "BA_APP_BODY_T8" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become a Bodyguard.~n~~n~- Wage: $~1~ ~n~- Bodyguard(s): ~1~ ~n~- Yacht: Yes~n~- Office: No ~n~- Warehouse(s): ~1~ ~n~- Vehicle(s): ~1~ */, 16);
 				}
 			}
 			else if (Global_1890001.f_88[iVar3 /*5*/].f_2)
 			{
-				StringCopy(&cVar12, "BA_APP_BODY_T7" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become an Associate.~n~~n~- Wage: $~1~ ~n~- Associate(s): ~1~ ~n~- Yacht: No~n~- Office: Yes ~n~- Warehouse(s): ~1~ ~n~- Vehicle(s): ~1~ */, 16);
+				StringCopy(&cVar48, "BA_APP_BODY_T7" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become an Associate.~n~~n~- Wage: $~1~ ~n~- Associate(s): ~1~ ~n~- Yacht: No~n~- Office: Yes ~n~- Warehouse(s): ~1~ ~n~- Vehicle(s): ~1~ */, 16);
 			}
 			else
 			{
-				StringCopy(&cVar12, "BA_APP_BODY_T10" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become a Bodyguard.~n~~n~- Wage: $~1~ ~n~- Bodyguard(s): ~1~ ~n~- Yacht: No~n~- Office: No~n~- Warehouse(s): ~1~ ~n~- Vehicle(s): ~1~ */, 16);
+				StringCopy(&cVar48, "BA_APP_BODY_T10" /* GXT: ~HUD_COLOUR_WHITE~Wants you to become a Bodyguard.~n~~n~- Wage: $~1~ ~n~- Bodyguard(s): ~1~ ~n~- Yacht: No~n~- Office: No~n~- Warehouse(s): ~1~ ~n~- Vehicle(s): ~1~ */, 16);
 			}
-			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(&cVar12);
+			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING(&cVar48);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(Global_1890001.f_88[iVar3 /*5*/]);
 			HUD::ADD_TEXT_COMPONENT_INTEGER(func_74(iVar4));
 			HUD::ADD_TEXT_COMPONENT_INTEGER(Global_1890001.f_88[iVar3 /*5*/].f_3);
@@ -1374,12 +1374,12 @@ void func_49()//Position - 0x12A4
 	}
 	else
 	{
-		func_22(&Local_101);
+		func_22(&Local_106);
 	}
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	func_95(Global_20364, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(26), -1082130432, -1082130432, -1082130432, -1082130432);
-	func_53(&Local_98);
-	func_50(13, &Local_92, 12, &Local_95, 4, &Local_86, &iLocal_107);
+	func_53(&Local_102);
+	func_50(13, &Local_94, 12, &Local_98, 4, &Local_86, &iLocal_113);
 	iLocal_85 = 1;
 }
 
@@ -1549,9 +1549,9 @@ int func_58(int iParam0)//Position - 0x183B
 void func_59(int iParam0)//Position - 0x18BA
 {
 	char cVar0[64];
-	char cVar1[64];
-	int iVar2;
-	int iVar3;
+	char cVar16[64];
+	int iVar32;
+	int iVar33;
 	
 	if (iParam0 >= Global_1666829)
 	{
@@ -1562,20 +1562,20 @@ void func_59(int iParam0)//Position - 0x18BA
 		StringCopy(&cVar0, "CHAR_DEFAULT", 64);
 		if (Global_1666668[iParam0 /*5*/].f_2 != 0)
 		{
-			StringCopy(&cVar1, PED::GET_PEDHEADSHOT_TXD_STRING(Global_1666668[iParam0 /*5*/].f_2), 64);
-			HUD::THEFEED_UPDATE_ITEM_TEXTURE(&cVar1, &cVar1, &cVar0, &cVar0);
+			StringCopy(&cVar16, PED::GET_PEDHEADSHOT_TXD_STRING(Global_1666668[iParam0 /*5*/].f_2), 64);
+			HUD::THEFEED_UPDATE_ITEM_TEXTURE(&cVar16, &cVar16, &cVar0, &cVar0);
 		}
 		PED::UNREGISTER_PEDHEADSHOT(Global_1666668[iParam0 /*5*/].f_2);
 	}
-	iVar2 = iParam0;
-	iVar3 = iVar2 + 1;
-	while (iVar3 < Global_1666829)
+	iVar32 = iParam0;
+	iVar33 = iVar32 + 1;
+	while (iVar33 < Global_1666829)
 	{
-		Global_1666668[iVar2 /*5*/] = { Global_1666668[iVar3 /*5*/] };
-		iVar2++;
-		iVar3++;
+		Global_1666668[iVar32 /*5*/] = { Global_1666668[iVar33 /*5*/] };
+		iVar32++;
+		iVar33++;
 	}
-	func_60(&(Global_1666668[iVar2 /*5*/]));
+	func_60(&(Global_1666668[iVar32 /*5*/]));
 	Global_1666829 = (Global_1666829 - 1);
 }
 
@@ -1945,7 +1945,7 @@ void func_85(bool bParam0)//Position - 0x1EEE
 	int iVar1;
 	bool bVar2;
 	
-	iLocal_105 = func_14();
+	iLocal_111 = func_14();
 	if (!Global_20383.f_1 == 7)
 	{
 		Global_20383.f_1 = 7;
@@ -1953,7 +1953,7 @@ void func_85(bool bParam0)//Position - 0x1EEE
 	iVar0 = 0;
 	if (bParam0)
 	{
-		iVar0 = iLocal_104;
+		iVar0 = iLocal_110;
 	}
 	if (iVar0 >= Global_1665288)
 	{
@@ -1982,11 +1982,11 @@ void func_85(bool bParam0)//Position - 0x1EEE
 	}
 	if (bVar2)
 	{
-		func_50(13, &Local_89, 12, &Local_95, 4, &Local_86, &iLocal_107);
+		func_50(13, &Local_90, 12, &Local_98, 4, &Local_86, &iLocal_113);
 	}
 	else
 	{
-		func_50(1, "", 1, "", 4, &Local_86, &iLocal_107);
+		func_50(1, "", 1, "", 4, &Local_86, &iLocal_113);
 	}
 	iLocal_85 = 0;
 }
@@ -2054,8 +2054,8 @@ void func_87()//Position - 0x208D
 int func_88(int iParam0, int iParam1)//Position - 0x20EB
 {
 	struct<16> Var0;
-	int iVar1;
-	int iVar2;
+	int iVar16;
+	int iVar17;
 	
 	if (Global_1890001.f_7[iParam0 /*8*/].f_2 == func_14() || !func_46(Global_1890001.f_7[iParam0 /*8*/].f_2, 0, 1))
 	{
@@ -2069,13 +2069,13 @@ int func_88(int iParam0, int iParam1)//Position - 0x20EB
 	GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("BA_APP_BODY_DM1" /* GXT: Has challenged you to an Executive Deathmatch. */);
 	GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(-1);
-	iVar1 = 1;
-	iVar2 = func_79(Global_1890001.f_7[iParam0 /*8*/].f_2);
-	if (iVar2 != -1)
+	iVar16 = 1;
+	iVar17 = func_79(Global_1890001.f_7[iParam0 /*8*/].f_2);
+	if (iVar17 != -1)
 	{
-		iVar1 = func_77(iVar2);
+		iVar16 = func_77(iVar17);
 	}
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar1);
+	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar16);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	return 1;
@@ -2089,10 +2089,10 @@ void func_89(char* sParam0)//Position - 0x219A
 int func_90(int iParam0, int iParam1)//Position - 0x21A8
 {
 	struct<16> Var0;
-	bool bVar1;
-	int iVar2;
-	int iVar3;
-	int iVar4;
+	bool bVar16;
+	int iVar17;
+	int iVar18;
+	int iVar19;
 	
 	if (Global_1890001.f_7[iParam0 /*8*/].f_2 == func_14() || !func_46(Global_1890001.f_7[iParam0 /*8*/].f_2, 0, 1))
 	{
@@ -2103,11 +2103,11 @@ int func_90(int iParam0, int iParam1)//Position - 0x21A8
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iParam1);
 	Var0 = { func_82(Global_1890001.f_7[iParam0 /*8*/].f_2) };
 	func_89(&Var0);
-	bVar1 = func_75(Global_1890001.f_7[iParam0 /*8*/].f_2);
-	iVar2 = func_74(Global_1890001.f_7[iParam0 /*8*/].f_2);
-	if (iVar2 == 0)
+	bVar16 = func_75(Global_1890001.f_7[iParam0 /*8*/].f_2);
+	iVar17 = func_74(Global_1890001.f_7[iParam0 /*8*/].f_2);
+	if (iVar17 == 0)
 	{
-		if (bVar1)
+		if (bVar16)
 		{
 			func_22("BA_APP_BODYCT" /* GXT: Wants you to become an Associate. */);
 		}
@@ -2116,9 +2116,9 @@ int func_90(int iParam0, int iParam1)//Position - 0x21A8
 			func_22("BA_APP_BODY_T" /* GXT: Wants you to become a Bodyguard. */);
 		}
 	}
-	else if (iVar2 == 1)
+	else if (iVar17 == 1)
 	{
-		if (bVar1)
+		if (bVar16)
 		{
 			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("BA_APP_BODYCT3" /* GXT: Wants you to become an Associate.~n~~1~ other in this Organization. */);
 		}
@@ -2126,12 +2126,12 @@ int func_90(int iParam0, int iParam1)//Position - 0x21A8
 		{
 			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("BA_APP_BODY_T3" /* GXT: Wants you to become a Bodyguard.~n~~1~ other in this Organization. */);
 		}
-		HUD::ADD_TEXT_COMPONENT_INTEGER(iVar2);
+		HUD::ADD_TEXT_COMPONENT_INTEGER(iVar17);
 		GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 	}
 	else
 	{
-		if (bVar1)
+		if (bVar16)
 		{
 			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("BA_APP_BODYCT2" /* GXT: Wants you to become an Associate.~n~~1~ others in this Organization. */);
 		}
@@ -2139,17 +2139,17 @@ int func_90(int iParam0, int iParam1)//Position - 0x21A8
 		{
 			GRAPHICS::BEGIN_TEXT_COMMAND_SCALEFORM_STRING("BA_APP_BODY_T2" /* GXT: Wants you to become a Bodyguard.~n~~1~ others in this Organization. */);
 		}
-		HUD::ADD_TEXT_COMPONENT_INTEGER(iVar2);
+		HUD::ADD_TEXT_COMPONENT_INTEGER(iVar17);
 		GRAPHICS::END_TEXT_COMMAND_SCALEFORM_STRING();
 	}
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(-1);
-	iVar3 = 1;
-	iVar4 = func_79(Global_1890001.f_7[iParam0 /*8*/].f_2);
-	if (iVar4 != -1)
+	iVar18 = 1;
+	iVar19 = func_79(Global_1890001.f_7[iParam0 /*8*/].f_2);
+	if (iVar19 != -1)
 	{
-		iVar3 = func_77(iVar4);
+		iVar18 = func_77(iVar19);
 	}
-	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar3);
+	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar18);
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_BOOL(true);
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	return 1;
@@ -2170,7 +2170,7 @@ void func_91()//Position - 0x22DD
 	GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 	func_95(Global_20364, "DISPLAY_VIEW", SYSTEM::TO_FLOAT(26), -1082130432, -1082130432, -1082130432, -1082130432);
 	func_53("CELL_BOSSAGE" /* GXT: SecuroServ */);
-	func_50(1, "", 1, "", 4, &Local_86, &iLocal_107);
+	func_50(1, "", 1, "", 4, &Local_86, &iLocal_113);
 	iLocal_85 = 2;
 }
 

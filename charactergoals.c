@@ -19,9 +19,9 @@
 	int iLocal_17 = 0;
 	int iLocal_18 = 0;
 	int iLocal_19[2] = { 0, 0 };
-	int iLocal_20 = 0;
-	int iLocal_21 = 0;
 	int iLocal_22 = 0;
+	int iLocal_23 = 0;
+	int iLocal_24 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -80,15 +80,15 @@ void __EntryFunction__()//Position - 0x0
 						func_37("PA_COMPLETE" /* GXT: Goal achieved ~a~ */, "PA_TREV1" /* GXT: Earn one million dollars. */, 2000, 1);
 						Global_22844[3 /*42*/].f_37[1] = 1;
 						Global_22844[3 /*42*/].f_8 = 1;
-						iLocal_22 = MISC::GET_GAME_TIMER();
+						iLocal_24 = MISC::GET_GAME_TIMER();
 						iLocal_18 = 2;
 					}
 					else if (func_38(2, 499999))
 					{
-						if (!iLocal_20)
+						if (!iLocal_22)
 						{
 							func_36("PA_TREV1" /* GXT: Earn one million dollars. */, 2000, 1);
-							iLocal_20 = 1;
+							iLocal_22 = 1;
 						}
 					}
 					if (iLocal_19[1])
@@ -100,8 +100,8 @@ void __EntryFunction__()//Position - 0x0
 				break;
 			
 			case 2:
-				iLocal_21 = MISC::GET_GAME_TIMER();
-				if ((iLocal_21 - iLocal_22) < 5000)
+				iLocal_23 = MISC::GET_GAME_TIMER();
+				if ((iLocal_23 - iLocal_24) < 5000)
 				{
 					func_39("PA_TREV1A" /* GXT: Current wealth $~1~. */, Global_22844[3 /*42*/].f_27[1]);
 				}
@@ -1397,44 +1397,44 @@ int func_46()//Position - 0x17CC
 	return 1;
 }
 
-int func_47(struct<6> Param0, struct<6> Param1)//Position - 0x18A6
+int func_47(struct<6> Param0, struct<6> Param6)//Position - 0x18A6
 {
 	struct<4> Var0;
-	struct<4> Var1;
-	int iVar2;
-	int iVar3;
+	struct<4> Var6;
+	int iVar12;
+	int iVar13;
 	
-	if (Param0.f_5 < Param1.f_5)
+	if (Param0.f_5 < Param6.f_5)
 	{
 		return 0;
 	}
-	if (Param0.f_5 > Param1.f_5)
+	if (Param0.f_5 > Param6.f_5)
 	{
 		return 1;
 	}
-	if (Param0.f_5 == Param1.f_5)
+	if (Param0.f_5 == Param6.f_5)
 	{
-		if (Param0.f_4 < Param1.f_4)
+		if (Param0.f_4 < Param6.f_4)
 		{
 			return 0;
 		}
-		if (Param0.f_4 > Param1.f_4)
+		if (Param0.f_4 > Param6.f_4)
 		{
 			return 1;
 		}
-		if (Param0.f_4 == Param1.f_4)
+		if (Param0.f_4 == Param6.f_4)
 		{
 			Var0.f_0 = Param0.f_0;
 			Var0.f_1 = Param0.f_1 * 60;
 			Var0.f_2 = Param0.f_2 * 3600;
 			Var0.f_3 = (Param0.f_3 * 86400);
-			iVar2 = (((Var0.f_0 + Var0.f_1) + Var0.f_2) + Var0.f_3);
-			Var1.f_0 = Param1.f_0;
-			Var1.f_1 = Param1.f_1 * 60;
-			Var1.f_2 = Param1.f_2 * 3600;
-			Var1.f_3 = (Param1.f_3 * 86400);
-			iVar3 = (((Var1.f_0 + Var1.f_1) + Var1.f_2) + Var1.f_3);
-			if (iVar2 > iVar3 || iVar2 == iVar3)
+			iVar12 = (((Var0.f_0 + Var0.f_1) + Var0.f_2) + Var0.f_3);
+			Var6.f_0 = Param6.f_0;
+			Var6.f_1 = Param6.f_1 * 60;
+			Var6.f_2 = Param6.f_2 * 3600;
+			Var6.f_3 = (Param6.f_3 * 86400);
+			iVar13 = (((Var6.f_0 + Var6.f_1) + Var6.f_2) + Var6.f_3);
+			if (iVar12 > iVar13 || iVar12 == iVar13)
 			{
 				return 1;
 			}

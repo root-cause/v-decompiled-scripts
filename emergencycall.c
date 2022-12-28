@@ -45,8 +45,8 @@
 	int iLocal_43 = 0;
 	int iLocal_44 = 0;
 	struct<3> Local_45 = { 0, 0, 0 } ;
-	int iLocal_46 = 0;
-	int iLocal_47 = 0;
+	int iLocal_48 = 0;
+	int iLocal_49 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -97,15 +97,15 @@ void __EntryFunction__()//Position - 0x0
 					func_8();
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
-						if (MISC::CREATE_INCIDENT_WITH_ENTITY(7, PLAYER::PLAYER_PED_ID(), 2, 3f, &iLocal_47, 0, 0))
+						if (MISC::CREATE_INCIDENT_WITH_ENTITY(7, PLAYER::PLAYER_PED_ID(), 2, 3f, &iLocal_49, 0, 0))
 						{
-							iLocal_46 = MISC::GET_GAME_TIMER();
+							iLocal_48 = MISC::GET_GAME_TIMER();
 							iLocal_43 = 5;
 						}
 					}
-					else if (MISC::CREATE_INCIDENT(7, Local_45, 2, 3f, &iLocal_47, 0, 0))
+					else if (MISC::CREATE_INCIDENT(7, Local_45, 2, 3f, &iLocal_49, 0, 0))
 					{
-						iLocal_46 = MISC::GET_GAME_TIMER();
+						iLocal_48 = MISC::GET_GAME_TIMER();
 						iLocal_43 = 5;
 					}
 					break;
@@ -122,15 +122,15 @@ void __EntryFunction__()//Position - 0x0
 							}
 							iLocal_43 = 5;
 						}
-						else if (MISC::CREATE_INCIDENT_WITH_ENTITY(5, PLAYER::PLAYER_PED_ID(), 2, 3f, &iLocal_47, 0, 0))
+						else if (MISC::CREATE_INCIDENT_WITH_ENTITY(5, PLAYER::PLAYER_PED_ID(), 2, 3f, &iLocal_49, 0, 0))
 						{
-							iLocal_46 = MISC::GET_GAME_TIMER();
+							iLocal_48 = MISC::GET_GAME_TIMER();
 							iLocal_43 = 5;
 						}
 					}
-					else if (MISC::CREATE_INCIDENT(5, Local_45, 2, 3f, &iLocal_47, 0, 0))
+					else if (MISC::CREATE_INCIDENT(5, Local_45, 2, 3f, &iLocal_49, 0, 0))
 					{
-						iLocal_46 = MISC::GET_GAME_TIMER();
+						iLocal_48 = MISC::GET_GAME_TIMER();
 						iLocal_43 = 5;
 					}
 					break;
@@ -139,13 +139,13 @@ void __EntryFunction__()//Position - 0x0
 					func_8();
 					if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 					{
-						if (MISC::CREATE_INCIDENT_WITH_ENTITY(3, PLAYER::PLAYER_PED_ID(), 4, 3f, &iLocal_47, 0, 0))
+						if (MISC::CREATE_INCIDENT_WITH_ENTITY(3, PLAYER::PLAYER_PED_ID(), 4, 3f, &iLocal_49, 0, 0))
 						{
-							iLocal_46 = MISC::GET_GAME_TIMER();
+							iLocal_48 = MISC::GET_GAME_TIMER();
 							iLocal_43 = 5;
 						}
 					}
-					else if (MISC::CREATE_INCIDENT(3, Local_45, 4, 3f, &iLocal_47, 0, 0))
+					else if (MISC::CREATE_INCIDENT(3, Local_45, 4, 3f, &iLocal_49, 0, 0))
 					{
 						if (Global_97178.f_358 == MISC::GET_HASH_KEY("AGENCY_PREP_1") || (SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(MISC::GET_HASH_KEY("agency_prep1")) > 0 && func_3(0)))
 						{
@@ -155,13 +155,13 @@ void __EntryFunction__()//Position - 0x0
 						{
 							Global_97108 = 1;
 						}
-						iLocal_46 = MISC::GET_GAME_TIMER();
+						iLocal_48 = MISC::GET_GAME_TIMER();
 						iLocal_43 = 5;
 					}
 					break;
 				
 				case 5:
-					if (MISC::GET_GAME_TIMER() > (iLocal_46 + 60000) || !MISC::IS_INCIDENT_VALID(iLocal_47))
+					if (MISC::GET_GAME_TIMER() > (iLocal_48 + 60000) || !MISC::IS_INCIDENT_VALID(iLocal_49))
 					{
 						func_1();
 					}
@@ -169,9 +169,9 @@ void __EntryFunction__()//Position - 0x0
 					{
 						if (!PLAYER::IS_PLAYER_CONTROL_ON(PLAYER::PLAYER_ID()))
 						{
-							if (MISC::IS_INCIDENT_VALID(iLocal_47))
+							if (MISC::IS_INCIDENT_VALID(iLocal_49))
 							{
-								MISC::DELETE_INCIDENT(iLocal_47);
+								MISC::DELETE_INCIDENT(iLocal_49);
 							}
 						}
 					}
@@ -244,7 +244,7 @@ int func_7(int iParam0, int iParam1)//Position - 0x343
 
 void func_8()//Position - 0x37E
 {
-	if (MISC::GET_GAME_TIMER() > iLocal_46 + 30000)
+	if (MISC::GET_GAME_TIMER() > iLocal_48 + 30000)
 	{
 		iLocal_43 = 5;
 	}
@@ -258,7 +258,7 @@ void func_9()//Position - 0x395
 	{
 		case 0:
 			iLocal_44 = 1;
-			iLocal_46 = MISC::GET_GAME_TIMER();
+			iLocal_48 = MISC::GET_GAME_TIMER();
 			break;
 		
 		case 1:
@@ -277,9 +277,9 @@ void func_9()//Position - 0x395
 				{
 					iLocal_43 = 2;
 				}
-				if (MISC::GET_GAME_TIMER() > iLocal_46 + 30000)
+				if (MISC::GET_GAME_TIMER() > iLocal_48 + 30000)
 				{
-					iLocal_46 = MISC::GET_GAME_TIMER();
+					iLocal_48 = MISC::GET_GAME_TIMER();
 					func_12(0);
 				}
 			}
@@ -291,7 +291,7 @@ void func_9()//Position - 0x395
 			{
 				func_10(PLAYER::PLAYER_PED_ID(), &Local_45, &uVar0);
 			}
-			iLocal_46 = MISC::GET_GAME_TIMER();
+			iLocal_48 = MISC::GET_GAME_TIMER();
 			break;
 	}
 }
@@ -303,114 +303,114 @@ void func_10(int iParam0, var* uParam1, var uParam2)//Position - 0x42E
 	var uVar2;
 	var uVar3;
 	var uVar4;
-	var uVar5;
-	struct<3> Var6;
-	float fVar7;
-	float fVar8;
-	float fVar9;
-	float fVar10;
-	float fVar11;
-	float fVar12;
-	int iVar13;
-	int iVar14;
-	int iVar15;
-	var uVar16;
-	struct<3> Var17;
-	var uVar18;
+	var uVar7;
+	struct<3> Var10;
+	float fVar13;
+	float fVar14;
+	float fVar15;
+	float fVar16;
+	float fVar17;
+	float fVar18;
+	int iVar19;
+	int iVar20;
+	int iVar21;
+	var uVar22;
+	struct<3> Var25;
+	var uVar28;
 	
-	fVar12 = 5f;
+	fVar18 = 5f;
 	iVar0 = 1;
-	iVar13 = 0;
-	while (iVar13 < 2)
+	iVar19 = 0;
+	while (iVar19 < 2)
 	{
-		switch (iVar13)
+		switch (iVar19)
 		{
 			case 0:
-				PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE_WITH_HEADING(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), iVar0, uParam1, &fVar10, &iVar1, 5, 3f, 0f);
-				PATHFIND::GET_CLOSEST_ROAD(*uParam1, 1f, 1, &uVar4, &uVar5, &uVar2, &uVar3, &fVar7, false);
+				PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE_WITH_HEADING(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), iVar0, uParam1, &fVar16, &iVar1, 5, 3f, 0f);
+				PATHFIND::GET_CLOSEST_ROAD(*uParam1, 1f, 1, &uVar4, &uVar7, &uVar2, &uVar3, &fVar13, false);
 				if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), -3044.66f, 596.43f, 6.58f, true) < 25f)
 				{
 					*uParam1 = { -3031.38f, 605.32f, 6.86f };
 				}
-				Var6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) - ENTITY::GET_ENTITY_COORDS(iParam0, true) };
-				fVar8 = MISC::GET_HEADING_FROM_VECTOR_2D(Var6.f_0, Var6.f_1);
-				fVar9 = (fVar10 + 180f);
-				if (fVar9 > 360f)
+				Var10 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true) - ENTITY::GET_ENTITY_COORDS(iParam0, true) };
+				fVar14 = MISC::GET_HEADING_FROM_VECTOR_2D(Var10.f_0, Var10.f_1);
+				fVar15 = (fVar16 + 180f);
+				if (fVar15 > 360f)
 				{
-					fVar9 = (fVar9 - 360f);
+					fVar15 = (fVar15 - 360f);
 				}
-				if (func_11(fVar8, fVar10, 90f))
+				if (func_11(fVar14, fVar16, 90f))
 				{
-					*uParam2 = fVar10;
+					*uParam2 = fVar16;
 				}
 				else
 				{
-					*uParam2 = fVar9;
+					*uParam2 = fVar15;
 				}
-				if (fVar7 < 0f)
+				if (fVar13 < 0f)
 				{
-					fVar11 = 0f;
+					fVar17 = 0f;
 				}
 				else if (PATHFIND::GET_VEHICLE_NODE_IS_SWITCHED_OFF(PATHFIND::GET_NTH_CLOSEST_VEHICLE_NODE_ID(*uParam1, 1, 1, 3f, 0f)))
 				{
-					fVar11 = 0f;
+					fVar17 = 0f;
 				}
 				else
 				{
-					fVar11 = (fVar12 * SYSTEM::TO_FLOAT((iVar1 / 2)));
-					if (fVar11 == 0f)
+					fVar17 = (fVar18 * SYSTEM::TO_FLOAT((iVar1 / 2)));
+					if (fVar17 == 0f)
 					{
-						fVar11 = (fVar11 + fVar12);
+						fVar17 = (fVar17 + fVar18);
 					}
 					if (iVar1 == 5)
 					{
-						fVar11 = (fVar11 + fVar12);
+						fVar17 = (fVar17 + fVar18);
 					}
 					if (MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), 294f, -895f, 28f, true) < 25f || MISC::GET_DISTANCE_BETWEEN_COORDS(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), -713.01f, -819.64f, 22.63f, true) < 25f)
 					{
-						fVar11 = (fVar11 + 5f);
+						fVar17 = (fVar17 + 5f);
 					}
 					else
 					{
-						fVar11 = (fVar11 + 3.75f);
+						fVar17 = (fVar17 + 3.75f);
 					}
-					fVar11 = (fVar11 + (fVar7 / 2f));
+					fVar17 = (fVar17 + (fVar13 / 2f));
 				}
-				if (SYSTEM::VDIST(OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(*uParam1, *uParam2, fVar11, 0f, 0f), ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true)) > SYSTEM::VDIST(OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(*uParam1, *uParam2, -fVar11, 0f, 0f), ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true)))
+				if (SYSTEM::VDIST(OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(*uParam1, *uParam2, fVar17, 0f, 0f), ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true)) > SYSTEM::VDIST(OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(*uParam1, *uParam2, -fVar17, 0f, 0f), ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true)))
 				{
-					fVar11 = -fVar11;
+					fVar17 = -fVar17;
 				}
-				*uParam1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(*uParam1, *uParam2, fVar11, 0f, 0f) };
-				iVar14 = SHAPETEST::START_SHAPE_TEST_CAPSULE(*uParam1 + FtoV((uParam1->f_2 + 4.5f)), *uParam1 + Vector(4.5f, 0.5f, 0.5f), 2.5f, 1, 0, 4);
-				iVar13++;
+				*uParam1 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(*uParam1, *uParam2, fVar17, 0f, 0f) };
+				iVar20 = SHAPETEST::START_SHAPE_TEST_CAPSULE(*uParam1 + FtoV((uParam1->f_2 + 4.5f)), *uParam1 + Vector(4.5f, 0.5f, 0.5f), 2.5f, 1, 0, 4);
+				iVar19++;
 				break;
 			
 			case 1:
 				if (iVar0 <= 2)
 				{
-					if (SHAPETEST::GET_SHAPE_TEST_RESULT(iVar14, &iVar15, &Var17, &uVar16, &uVar18) == 2)
+					if (SHAPETEST::GET_SHAPE_TEST_RESULT(iVar20, &iVar21, &Var25, &uVar22, &uVar28) == 2)
 					{
-						if (iVar15 != 0)
+						if (iVar21 != 0)
 						{
-							if (Var17.f_2 > (uParam1->f_2 + 8.5f))
+							if (Var25.f_2 > (uParam1->f_2 + 8.5f))
 							{
-								iVar13++;
+								iVar19++;
 							}
 							else
 							{
 								iVar0++;
-								iVar13 = 0;
+								iVar19 = 0;
 							}
 						}
 						else
 						{
-							iVar13++;
+							iVar19++;
 						}
 					}
 				}
 				else
 				{
-					iVar13++;
+					iVar19++;
 				}
 				break;
 			

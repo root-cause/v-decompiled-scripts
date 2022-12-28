@@ -19,8 +19,8 @@
 	int iLocal_17 = 0;
 	int iLocal_18 = 0;
 	struct<3> Local_19 = { 0, 0, 0 } ;
-	int iLocal_20 = 0;
-	int iLocal_21 = 0;
+	int iLocal_22 = 0;
+	int iScriptParam_0 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -48,7 +48,7 @@ void __EntryFunction__()//Position - 0x0
 			NETWORK::NETWORK_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT(32, false, -1);
 			func_22(0, -1, 0);
 			MISC::SET_THIS_SCRIPT_CAN_BE_PAUSED(false);
-			iLocal_20 = 1;
+			iLocal_22 = 1;
 		}
 	}
 	else if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(2))
@@ -58,29 +58,29 @@ void __EntryFunction__()//Position - 0x0
 	while (true)
 	{
 		SYSTEM::WAIT(0);
-		if (iLocal_20 == 1)
+		if (iLocal_22 == 1)
 		{
 			if (func_14())
 			{
 				func_25();
 			}
 		}
-		if (ENTITY::DOES_ENTITY_EXIST(iScriptParam_21))
+		if (ENTITY::DOES_ENTITY_EXIST(iScriptParam_0))
 		{
-			if (BRAIN::IS_OBJECT_WITHIN_BRAIN_ACTIVATION_RANGE(iScriptParam_21))
+			if (BRAIN::IS_OBJECT_WITHIN_BRAIN_ACTIVATION_RANGE(iScriptParam_0))
 			{
 				switch (iLocal_18)
 				{
 					case 0:
-						if (ENTITY::DOES_ENTITY_HAVE_DRAWABLE(iScriptParam_21))
+						if (ENTITY::DOES_ENTITY_HAVE_DRAWABLE(iScriptParam_0))
 						{
-							Local_19 = { ENTITY::GET_ENTITY_COORDS(iScriptParam_21, true) };
+							Local_19 = { ENTITY::GET_ENTITY_COORDS(iScriptParam_0, true) };
 							iLocal_18 = 1;
 						}
 						break;
 					
 					case 1:
-						if ((OBJECT::HAS_OBJECT_BEEN_BROKEN(iScriptParam_21, 0) && ENTITY::IS_ENTITY_VISIBLE(iScriptParam_21)) && !ENTITY::IS_ENTITY_A_MISSION_ENTITY(iScriptParam_21))
+						if ((OBJECT::HAS_OBJECT_BEEN_BROKEN(iScriptParam_0, 0) && ENTITY::IS_ENTITY_VISIBLE(iScriptParam_0)) && !ENTITY::IS_ENTITY_A_MISSION_ENTITY(iScriptParam_0))
 						{
 							func_1();
 							iLocal_18 = 2;
@@ -136,69 +136,69 @@ void func_1()//Position - 0x111
 	}
 }
 
-struct<5> func_2(int iParam0, struct<3> Param1, int iParam2, int iParam3, int iParam4, bool bParam5, bool bParam6)//Position - 0x1C5
+struct<5> func_2(int iParam0, struct<3> Param1, int iParam4, int iParam5, int iParam6, bool bParam7, bool bParam8)//Position - 0x1C5
 {
 	struct<5> Var0;
 	
 	Var0 = 123;
 	if (func_12() && func_11(iParam0))
 	{
-		Var0 = { func_3(iParam0, Param1, iParam2, iParam3, iParam4, bParam5) };
+		Var0 = { func_3(iParam0, Param1, iParam4, iParam5, iParam6, bParam7) };
 	}
 	else
 	{
-		Var0.f_4 = OBJECT::CREATE_AMBIENT_PICKUP(iParam0, Param1, iParam2, iParam3, iParam4, bParam5, bParam6);
+		Var0.f_4 = OBJECT::CREATE_AMBIENT_PICKUP(iParam0, Param1, iParam4, iParam5, iParam6, bParam7, bParam8);
 	}
 	return Var0;
 }
 
-struct<5> func_3(int iParam0, struct<3> Param1, int iParam2, int iParam3, int iParam4, bool bParam5)//Position - 0x21C
+struct<5> func_3(int iParam0, struct<3> Param1, int iParam4, int iParam5, int iParam6, bool bParam7)//Position - 0x21C
 {
 	struct<5> Var0;
-	int iVar1;
-	struct<5> Var2;
-	int iVar3;
+	int iVar5;
+	struct<5> Var6;
+	int iVar11;
 	
 	Var0 = 123;
 	if (func_10() == -1)
 	{
 		return Var0;
 	}
-	iVar1 = func_9(-1);
-	if (iVar1 == -1)
+	iVar5 = func_9(-1);
+	if (iVar5 == -1)
 	{
 		return Var0;
 	}
-	Var2 = 123;
-	Var2.f_0 = iParam0;
-	Var2.f_1 = { Param1 };
-	if (func_4(&Var2) != -1)
+	Var6 = 123;
+	Var6.f_0 = iParam0;
+	Var6.f_1 = { Param1 };
+	if (func_4(&Var6) != -1)
 	{
 		return Var0;
 	}
-	MISC::SET_BIT(&iParam2, 5);
-	Var2.f_4 = OBJECT::CREATE_NON_NETWORKED_AMBIENT_PICKUP(iParam0, Param1, iParam2, iParam3, iParam4, bParam5, false);
-	iVar3 = PLAYER::NETWORK_PLAYER_ID_TO_INT();
-	if (bParam5)
+	MISC::SET_BIT(&iParam4, 5);
+	Var6.f_4 = OBJECT::CREATE_NON_NETWORKED_AMBIENT_PICKUP(iParam0, Param1, iParam4, iParam5, iParam6, bParam7, false);
+	iVar11 = PLAYER::NETWORK_PLAYER_ID_TO_INT();
+	if (bParam7)
 	{
-		Global_1914091[iVar3 /*297*/].f_98.f_21[iVar1 /*14*/].f_12 = SCRIPT::GET_HASH_OF_THIS_SCRIPT_NAME();
-		Global_1914091[iVar3 /*297*/].f_98.f_21[iVar1 /*14*/].f_13 = NETWORK::NETWORK_GET_POSITION_HASH_OF_THIS_SCRIPT();
-		if (Global_1914091[iVar3 /*297*/].f_98.f_21[iVar1 /*14*/].f_13 == 0)
+		Global_1914091[iVar11 /*297*/].f_98.f_21[iVar5 /*14*/].f_12 = SCRIPT::GET_HASH_OF_THIS_SCRIPT_NAME();
+		Global_1914091[iVar11 /*297*/].f_98.f_21[iVar5 /*14*/].f_13 = NETWORK::NETWORK_GET_POSITION_HASH_OF_THIS_SCRIPT();
+		if (Global_1914091[iVar11 /*297*/].f_98.f_21[iVar5 /*14*/].f_13 == 0)
 		{
-			Global_1914091[iVar3 /*297*/].f_98.f_21[iVar1 /*14*/].f_13 = NETWORK::NETWORK_GET_INSTANCE_ID_OF_THIS_SCRIPT();
-			Global_1914091[iVar3 /*297*/].f_98.f_21[iVar1 /*14*/].f_11 = 1;
+			Global_1914091[iVar11 /*297*/].f_98.f_21[iVar5 /*14*/].f_13 = NETWORK::NETWORK_GET_INSTANCE_ID_OF_THIS_SCRIPT();
+			Global_1914091[iVar11 /*297*/].f_98.f_21[iVar5 /*14*/].f_11 = 1;
 		}
 		else
 		{
-			Global_1914091[iVar3 /*297*/].f_98.f_21[iVar1 /*14*/].f_11 = 2;
+			Global_1914091[iVar11 /*297*/].f_98.f_21[iVar5 /*14*/].f_11 = 2;
 		}
 	}
-	Global_1914091[iVar3 /*297*/].f_98.f_21[iVar1 /*14*/] = { Var2 };
-	Global_1914091[iVar3 /*297*/].f_98.f_21[iVar1 /*14*/].f_5 = { Param1 };
-	Global_1914091[iVar3 /*297*/].f_98.f_21[iVar1 /*14*/].f_8 = iParam2;
-	Global_1914091[iVar3 /*297*/].f_98.f_21[iVar1 /*14*/].f_9 = iParam3;
-	Global_1914091[iVar3 /*297*/].f_98.f_21[iVar1 /*14*/].f_10 = iParam4;
-	return Var2;
+	Global_1914091[iVar11 /*297*/].f_98.f_21[iVar5 /*14*/] = { Var6 };
+	Global_1914091[iVar11 /*297*/].f_98.f_21[iVar5 /*14*/].f_5 = { Param1 };
+	Global_1914091[iVar11 /*297*/].f_98.f_21[iVar5 /*14*/].f_8 = iParam4;
+	Global_1914091[iVar11 /*297*/].f_98.f_21[iVar5 /*14*/].f_9 = iParam5;
+	Global_1914091[iVar11 /*297*/].f_98.f_21[iVar5 /*14*/].f_10 = iParam6;
+	return Var6;
 }
 
 int func_4(var uParam0)//Position - 0x399
@@ -230,13 +230,13 @@ int func_5(var uParam0, var uParam1)//Position - 0x3DC
 	return 0;
 }
 
-bool func_6(struct<3> Param0, struct<3> Param1, bool bParam2)//Position - 0x417
+bool func_6(struct<3> Param0, struct<3> Param3, bool bParam6)//Position - 0x417
 {
-	if (bParam2)
+	if (bParam6)
 	{
-		return (Param0.f_0 == Param1.f_0 && Param0.f_1 == Param1.f_1);
+		return (Param0.f_0 == Param3.f_0 && Param0.f_1 == Param3.f_1);
 	}
-	return ((Param0.f_0 == Param1.f_0 && Param0.f_1 == Param1.f_1) && Param0.f_2 == Param1.f_2);
+	return ((Param0.f_0 == Param3.f_0 && Param0.f_1 == Param3.f_1) && Param0.f_2 == Param3.f_2);
 }
 
 int func_7(var uParam0)//Position - 0x45E

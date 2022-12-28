@@ -58,7 +58,7 @@
 	int iLocal_56 = 0;
 	int iLocal_57 = 0;
 	struct<3> Local_58[32];
-	struct<21> Local_59 = { 0, -1, -1, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, -1, 0, 0, -1, -1 } ;
+	struct<21> ScriptParam_0 = { 0, -1, -1, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, -1, 0, 0, -1, -1 } ;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -89,7 +89,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_43 = 64;
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		func_51(ScriptParam_59);
+		func_51(ScriptParam_0);
 	}
 	else
 	{
@@ -319,14 +319,14 @@ int func_4()//Position - 0x420
 void func_5()//Position - 0x46E
 {
 	struct<2> Var0;
-	int iVar1;
+	int iVar2;
 	
 	Var0.f_0 = -1763294690;
 	Var0.f_1 = PLAYER::PLAYER_ID();
-	iVar1 = func_6(1, 1);
-	if (iVar1 != 0)
+	iVar2 = func_6(1, 1);
+	if (iVar2 != 0)
 	{
-		SCRIPT::SEND_TU_SCRIPT_EVENT(1, &Var0, 2, iVar1);
+		SCRIPT::SEND_TU_SCRIPT_EVENT(1, &Var0, 2, iVar2);
 	}
 }
 
@@ -467,10 +467,10 @@ int func_13()//Position - 0x62B
 	int iVar2;
 	int iVar3;
 	struct<3> Var4;
-	struct<3> Var5;
-	struct<3> Var6;
-	float fVar7;
-	float fVar8;
+	struct<3> Var7;
+	struct<3> Var10;
+	float fVar13;
+	float fVar14;
 	
 	iVar0 = func_14();
 	iVar1 = PLAYER::NETWORK_PLAYER_ID_TO_INT();
@@ -506,17 +506,17 @@ int func_13()//Position - 0x62B
 						return func_12(iVar1);
 					}
 					Var4 = { ENTITY::GET_ENTITY_COORDS(func_12(iVar1), false) };
-					Var5 = { ENTITY::GET_ENTITY_COORDS(iVar0, false) };
-					Var6 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false) };
-					fVar7 = SYSTEM::VDIST(Var4, Var6);
-					fVar8 = SYSTEM::VDIST(Var6, Var5);
-					if (fVar7 > fVar8)
+					Var7 = { ENTITY::GET_ENTITY_COORDS(iVar0, false) };
+					Var10 = { ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false) };
+					fVar13 = SYSTEM::VDIST(Var4, Var10);
+					fVar14 = SYSTEM::VDIST(Var10, Var7);
+					if (fVar13 > fVar14)
 					{
-						if ((fVar7 - fVar8) > 25f)
+						if ((fVar13 - fVar14) > 25f)
 						{
 							return iVar0;
 						}
-						else if (fVar8 < 6f && fVar7 > 11f)
+						else if (fVar14 < 6f && fVar13 > 11f)
 						{
 							return iVar0;
 						}
@@ -540,33 +540,33 @@ int func_14()//Position - 0x791
 {
 	int iVar0;
 	var uVar1[8];
-	int iVar2;
-	int iVar3;
+	int iVar10;
+	int iVar11;
 	
 	iVar0 = 0;
-	iVar2 = PED::GET_PED_NEARBY_PEDS(PLAYER::PLAYER_PED_ID(), &uVar1, -1);
-	if (iVar2 > 0)
+	iVar10 = PED::GET_PED_NEARBY_PEDS(PLAYER::PLAYER_PED_ID(), &uVar1, -1);
+	if (iVar10 > 0)
 	{
-		iVar3 = 0;
-		while (iVar3 <= 7)
+		iVar11 = 0;
+		while (iVar11 <= 7)
 		{
-			if (!PED::IS_PED_INJURED(uVar1[iVar3]))
+			if (!PED::IS_PED_INJURED(uVar1[iVar11]))
 			{
-				if (PED::IS_PED_USING_SCENARIO(uVar1[iVar3], "WORLD_HUMAN_PROSTITUTE_HIGH_CLASS") || PED::IS_PED_USING_SCENARIO(uVar1[iVar3], "WORLD_HUMAN_PROSTITUTE_LOW_CLASS"))
+				if (PED::IS_PED_USING_SCENARIO(uVar1[iVar11], "WORLD_HUMAN_PROSTITUTE_HIGH_CLASS") || PED::IS_PED_USING_SCENARIO(uVar1[iVar11], "WORLD_HUMAN_PROSTITUTE_LOW_CLASS"))
 				{
-					if (func_16(uVar1[iVar3]))
+					if (func_16(uVar1[iVar11]))
 					{
-						if (!func_15(uVar1[iVar3]))
+						if (!func_15(uVar1[iVar11]))
 						{
-							if (!PED::IS_PED_FLEEING(uVar1[iVar3]))
+							if (!PED::IS_PED_FLEEING(uVar1[iVar11]))
 							{
-								return uVar1[iVar3];
+								return uVar1[iVar11];
 							}
 						}
 					}
 				}
 			}
-			iVar3++;
+			iVar11++;
 		}
 	}
 	return iVar0;
@@ -1347,7 +1347,7 @@ bool func_53(bool bParam0)//Position - 0x13DA
 	return Global_1575035;
 }
 
-void func_54(int iParam0, struct<17> Param1, var uParam2, var uParam3, var uParam4, var uParam5)//Position - 0x13EB
+void func_54(int iParam0, struct<17> Param1, var uParam18, var uParam19, var uParam20, var uParam21)//Position - 0x13EB
 {
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{

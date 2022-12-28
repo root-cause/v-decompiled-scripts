@@ -49,7 +49,7 @@
 	int iLocal_47 = 0;
 	int iLocal_48 = 0;
 	struct<3> Local_49 = { 0, 0, 0 } ;
-	struct<3> Local_50 = { 0, 0, 0 } ;
+	struct<3> Local_52 = { 0, 0, 0 } ;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -77,7 +77,7 @@ void __EntryFunction__()//Position - 0x0
 	sLocal_44 = "RCMBarryLeadInOut";
 	sLocal_45 = "idle";
 	Local_49 = { 189.5964f, -956.0344f, 29.5771f };
-	Local_50 = { 190.2424f, -956.379f, 28.63f };
+	Local_52 = { 190.2424f, -956.379f, 28.63f };
 	PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 26 /*INPUT_LOOK_BEHIND*/, true);
 	if (func_25(PLAYER::PLAYER_PED_ID()))
 	{
@@ -102,7 +102,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_46 = MISC::GET_GAME_TIMER() + 13000;
 	iLocal_47 = MISC::GET_RANDOM_INT_IN_RANGE(0, 5);
 	func_19();
-	while (!func_13(&iLocal_43, 49, Local_50, func_18(1.12f), 0))
+	while (!func_13(&iLocal_43, 49, Local_52, func_18(1.12f), 0))
 	{
 		PAD::DISABLE_CONTROL_ACTION(0 /*PLAYER_CONTROL*/, 26 /*INPUT_LOOK_BEHIND*/, true);
 		SYSTEM::WAIT(0);
@@ -126,7 +126,7 @@ void __EntryFunction__()//Position - 0x0
 		if (func_3())
 		{
 		}
-		if (func_2(PLAYER::PLAYER_PED_ID(), Local_50, 1) > 70f)
+		if (func_2(PLAYER::PLAYER_PED_ID(), Local_52, 1) > 70f)
 		{
 			func_1(&iLocal_40, 0);
 			func_1(&iLocal_41, 0);
@@ -156,7 +156,7 @@ void func_1(int* iParam0, bool bParam1)//Position - 0x1D9
 	}
 }
 
-float func_2(int iParam0, struct<3> Param1, bool bParam2)//Position - 0x214
+float func_2(int iParam0, struct<3> Param1, bool bParam4)//Position - 0x214
 {
 	struct<3> Var0;
 	
@@ -168,7 +168,7 @@ float func_2(int iParam0, struct<3> Param1, bool bParam2)//Position - 0x214
 	{
 		Var0 = { ENTITY::GET_ENTITY_COORDS(iParam0, false) };
 	}
-	return MISC::GET_DISTANCE_BETWEEN_COORDS(Var0, Param1, bParam2);
+	return MISC::GET_DISTANCE_BETWEEN_COORDS(Var0, Param1, bParam4);
 }
 
 int func_3()//Position - 0x24E
@@ -303,7 +303,7 @@ void func_7(var uParam0, int iParam1, int iParam2, char* sParam3, int iParam4, i
 float func_8(int iParam0, int iParam1, bool bParam2)//Position - 0x470
 {
 	struct<3> Var0;
-	struct<3> Var1;
+	struct<3> Var3;
 	
 	if (!ENTITY::IS_ENTITY_DEAD(iParam0, false))
 	{
@@ -315,13 +315,13 @@ float func_8(int iParam0, int iParam1, bool bParam2)//Position - 0x470
 	}
 	if (!ENTITY::IS_ENTITY_DEAD(iParam1, false))
 	{
-		Var1 = { ENTITY::GET_ENTITY_COORDS(iParam1, true) };
+		Var3 = { ENTITY::GET_ENTITY_COORDS(iParam1, true) };
 	}
 	else
 	{
-		Var1 = { ENTITY::GET_ENTITY_COORDS(iParam1, false) };
+		Var3 = { ENTITY::GET_ENTITY_COORDS(iParam1, false) };
 	}
-	return MISC::GET_DISTANCE_BETWEEN_COORDS(Var0, Var1, bParam2);
+	return MISC::GET_DISTANCE_BETWEEN_COORDS(Var0, Var3, bParam2);
 }
 
 int func_9()//Position - 0x4CE
@@ -347,7 +347,7 @@ int func_10(int iParam0)//Position - 0x4F0
 
 void func_11()//Position - 0x511
 {
-	if (FIRE::IS_EXPLOSION_IN_SPHERE(-1, Local_50, 5f))
+	if (FIRE::IS_EXPLOSION_IN_SPHERE(-1, Local_52, 5f))
 	{
 		if (func_10(iLocal_43))
 		{
@@ -381,7 +381,7 @@ void func_12()//Position - 0x561
 		PED::SET_PED_RELATIONSHIP_GROUP_HASH(iLocal_43, joaat("PLAYER"));
 		ENTITY::SET_ENTITY_COLLISION(iLocal_43, false, false);
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_43, true);
-		ENTITY::SET_ENTITY_COORDS(iLocal_43, Local_50, true, false, false, true);
+		ENTITY::SET_ENTITY_COORDS(iLocal_43, Local_52, true, false, false, true);
 		ENTITY::SET_ENTITY_HEADING(iLocal_43, func_18(1.12f));
 		ENTITY::FREEZE_ENTITY_POSITION(iLocal_43, true);
 		TASK::TASK_PLAY_ANIM(iLocal_43, sLocal_44, sLocal_45, 8f, -8f, -1, 9, 0f, false, false, false);
@@ -389,7 +389,7 @@ void func_12()//Position - 0x561
 	}
 }
 
-int func_13(int* iParam0, int iParam1, struct<3> Param2, float fParam3, bool bParam4)//Position - 0x613
+int func_13(int* iParam0, int iParam1, struct<3> Param2, float fParam5, bool bParam6)//Position - 0x613
 {
 	int iVar0;
 	
@@ -403,7 +403,7 @@ int func_13(int* iParam0, int iParam1, struct<3> Param2, float fParam3, bool bPa
 			{
 				PED::DELETE_PED(iParam0);
 			}
-			*iParam0 = PED::CREATE_PED(26, iVar0, Param2, fParam3, false, false);
+			*iParam0 = PED::CREATE_PED(26, iVar0, Param2, fParam5, false, false);
 			PED::SET_PED_DEFAULT_COMPONENT_VARIATION(*iParam0);
 			if (iVar0 == joaat("IG_LamarDavis"))
 			{
@@ -413,7 +413,7 @@ int func_13(int* iParam0, int iParam1, struct<3> Param2, float fParam3, bool bPa
 				}
 			}
 			func_14(*iParam0, iParam1);
-			if (bParam4)
+			if (bParam6)
 			{
 				STREAMING::SET_MODEL_AS_NO_LONGER_NEEDED(iVar0);
 			}
@@ -539,11 +539,11 @@ void func_19()//Position - 0x738
 	}
 }
 
-void func_20(int* iParam0, int iParam1, struct<3> Param2, float fParam3)//Position - 0x969
+void func_20(int* iParam0, int iParam1, struct<3> Param2, float fParam5)//Position - 0x969
 {
 	func_21(iParam0);
 	*iParam0 = OBJECT::CREATE_OBJECT(iParam1, Param2, true, true, false);
-	ENTITY::SET_ENTITY_HEADING(*iParam0, fParam3);
+	ENTITY::SET_ENTITY_HEADING(*iParam0, fParam5);
 }
 
 void func_21(int* iParam0)//Position - 0x990

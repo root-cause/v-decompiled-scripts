@@ -49,7 +49,7 @@
 	bool bLocal_47 = 0;
 	var uLocal_48 = 0;
 	struct<11> Local_49[10];
-	char* sLocal_50[10] = { NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL };
+	char* sLocal_160[10] = { NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL };
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -119,7 +119,7 @@ void func_1()//Position - 0xCE
 			{
 				if (!func_43(36) && (MISC::GET_GAME_TIMER() - iLocal_42) > iLocal_43)
 				{
-					func_42(0, 60, sLocal_50[0], 1, 0, 0, 0, 0, 1);
+					func_42(0, 60, sLocal_160[0], 1, 0, 0, 0, 0, 1);
 					func_41(36);
 					iLocal_42 = -1;
 				}
@@ -130,7 +130,7 @@ void func_1()//Position - 0xCE
 				{
 					if ((MISC::GET_GAME_TIMER() - iLocal_42) > 15000)
 					{
-						func_42(0, 60, sLocal_50[iLocal_41], 1, 0, 0, 0, 0, 1);
+						func_42(0, 60, sLocal_160[iLocal_41], 1, 0, 0, 0, 0, 1);
 						iLocal_42 = -1;
 					}
 				}
@@ -532,14 +532,14 @@ void func_14(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4)
 	int iVar1;
 	int iVar2;
 	struct<16> Var3;
-	int iVar4;
-	int iVar5;
-	bool bVar6;
-	bool bVar7;
-	int iVar8;
-	int iVar9;
-	int iVar10;
-	int iVar11;
+	int iVar19;
+	int iVar20;
+	bool bVar21;
+	bool bVar22;
+	int iVar23;
+	int iVar24;
+	int iVar25;
+	int iVar26;
 	
 	if (!iParam0 < 3)
 	{
@@ -549,27 +549,27 @@ void func_14(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4)
 	StringCopy(&Var3, "UNSET", 64);
 	if (!bParam2)
 	{
-		iVar4 = (Global_47790[iParam1 /*46*/].f_42 - 1);
-		if (iVar4 < 0)
+		iVar19 = (Global_47790[iParam1 /*46*/].f_42 - 1);
+		if (iVar19 < 0)
 		{
 			return;
 		}
-		iVar5 = Global_47790[iParam1 /*46*/].f_32[iVar4];
-		iVar2 = iVar5;
-		Var3 = { func_25(Global_44465[iVar5 /*12*/].f_1) };
-		if (Global_44465[iVar5 /*12*/].f_2 == iParam0 && !Global_44465[iVar5 /*12*/].f_3 == iParam0)
+		iVar20 = Global_47790[iParam1 /*46*/].f_32[iVar19];
+		iVar2 = iVar20;
+		Var3 = { func_25(Global_44465[iVar20 /*12*/].f_1) };
+		if (Global_44465[iVar20 /*12*/].f_2 == iParam0 && !Global_44465[iVar20 /*12*/].f_3 == iParam0)
 		{
 			return;
 		}
-		iVar1 = Global_44465[iVar5 /*12*/].f_2;
+		iVar1 = Global_44465[iVar20 /*12*/].f_2;
 		iVar0 = Global_53403[iParam0 /*120*/];
-		bVar6 = false;
+		bVar21 = false;
 		while (iVar0 >= 16)
 		{
 			iVar0 = (iVar0 - 16);
-			bVar6 = true;
+			bVar21 = true;
 		}
-		if (bVar6)
+		if (bVar21)
 		{
 			if (!Global_53403[iParam0 /*120*/].f_69[iVar0])
 			{
@@ -602,7 +602,7 @@ void func_14(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4)
 				}
 		}
 		Global_53403[iParam0 /*120*/].f_18[iVar0] = iParam1;
-		Global_53403[iParam0 /*120*/].f_1[iVar0] = iVar4;
+		Global_53403[iParam0 /*120*/].f_1[iVar0] = iVar19;
 		Global_53403[iParam0 /*120*/].f_35[iVar0] = 0;
 		Global_53403[iParam0 /*120*/].f_86[iVar0] = 0;
 		Global_53403[iParam0 /*120*/].f_69[iVar0] = 0;
@@ -611,13 +611,13 @@ void func_14(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4)
 	else
 	{
 		iVar0 = Global_53403[iParam0 /*120*/];
-		bVar7 = false;
+		bVar22 = false;
 		while (iVar0 >= 16)
 		{
 			iVar0 = (iVar0 - 16);
-			bVar7 = true;
+			bVar22 = true;
 		}
-		if (bVar7)
+		if (bVar22)
 		{
 			if (!Global_53403[iParam0 /*120*/].f_69[iVar0])
 			{
@@ -649,38 +649,38 @@ void func_14(int iParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4)
 					}
 				}
 		}
-		iVar8 = -1;
-		iVar9 = 0;
-		iVar9 = 0;
-		while (iVar9 < 7)
+		iVar23 = -1;
+		iVar24 = 0;
+		iVar24 = 0;
+		while (iVar24 < 7)
 		{
-			if (Global_53765[iVar9 /*203*/].f_1 == iParam1 && Global_53765[iVar9 /*203*/].f_9 > 0)
+			if (Global_53765[iVar24 /*203*/].f_1 == iParam1 && Global_53765[iVar24 /*203*/].f_9 > 0)
 			{
-				iVar8 = iVar9;
+				iVar23 = iVar24;
 			}
-			iVar9++;
+			iVar24++;
 		}
-		if (iVar8 == -1)
+		if (iVar23 == -1)
 		{
 			return;
 		}
-		Global_53403[iParam0 /*120*/].f_18[iVar0] = Global_53765[iVar8 /*203*/].f_1;
-		Global_53403[iParam0 /*120*/].f_1[iVar0] = (Global_53765[iVar8 /*203*/].f_9 - 1);
+		Global_53403[iParam0 /*120*/].f_18[iVar0] = Global_53765[iVar23 /*203*/].f_1;
+		Global_53403[iParam0 /*120*/].f_1[iVar0] = (Global_53765[iVar23 /*203*/].f_9 - 1);
 		Global_53403[iParam0 /*120*/].f_35[iVar0] = 0;
 		Global_53403[iParam0 /*120*/].f_86[iVar0] = 1;
 		Global_53403[iParam0 /*120*/].f_69[iVar0] = 0;
 		Global_53403[iParam0 /*120*/]++;
-		iVar10 = Global_53403[iParam0 /*120*/].f_1[iVar0];
-		iVar11 = Global_53765[iVar8 /*203*/].f_10[iVar10 /*48*/];
-		iVar2 = iVar11;
-		iVar1 = Global_44465[iVar11 /*12*/].f_2;
-		if (Global_53765[iVar8 /*203*/].f_10[(Global_53765[iVar8 /*203*/].f_9 - 1) /*48*/].f_1)
+		iVar25 = Global_53403[iParam0 /*120*/].f_1[iVar0];
+		iVar26 = Global_53765[iVar23 /*203*/].f_10[iVar25 /*48*/];
+		iVar2 = iVar26;
+		iVar1 = Global_44465[iVar26 /*12*/].f_2;
+		if (Global_53765[iVar23 /*203*/].f_10[(Global_53765[iVar23 /*203*/].f_9 - 1) /*48*/].f_1)
 		{
-			MemCopy(&Var3, {Global_53765[iVar8 /*203*/].f_10[(Global_53765[iVar8 /*203*/].f_9 - 1) /*48*/].f_2}, 16);
+			MemCopy(&Var3, {Global_53765[iVar23 /*203*/].f_10[(Global_53765[iVar23 /*203*/].f_9 - 1) /*48*/].f_2}, 16);
 		}
 		else
 		{
-			Var3 = { func_25(Global_44465[iVar11 /*12*/].f_1) };
+			Var3 = { func_25(Global_44465[iVar26 /*12*/].f_1) };
 		}
 	}
 	if (!bParam4)
@@ -1291,7 +1291,7 @@ var func_24(int iParam0)//Position - 0x1714
 struct<16> func_25(int iParam0)//Position - 0x1723
 {
 	struct<16> Var0;
-	struct<16> Var1;
+	struct<16> Var16;
 	
 	if (iParam0 > -1)
 	{
@@ -1299,8 +1299,8 @@ struct<16> func_25(int iParam0)//Position - 0x1723
 		StringIntConCat(&Var0, iParam0, 64);
 		return Var0;
 	}
-	StringCopy(&Var1, "FAIL", 64);
-	return Var1;
+	StringCopy(&Var16, "FAIL", 64);
+	return Var16;
 }
 
 int func_26(int iParam0, bool bParam1)//Position - 0x1754
@@ -1588,9 +1588,9 @@ void func_33(struct<3> Param0)//Position - 0x1C05
 	}
 }
 
-bool func_34(int iParam0, struct<3> Param1, float fParam2, bool bParam3)//Position - 0x1C30
+bool func_34(int iParam0, struct<3> Param1, float fParam4, bool bParam5)//Position - 0x1C30
 {
-	return SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(iParam0, bParam3), Param1) <= (fParam2 * fParam2);
+	return SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(iParam0, bParam5), Param1) <= (fParam4 * fParam4);
 }
 
 int func_35()//Position - 0x1C4E
@@ -1776,33 +1776,33 @@ void func_46()//Position - 0x1F1E
 	iVar0 = 0;
 	if (Global_113648.f_18576.f_388)
 	{
-		sLocal_50[0] = "TRACT_HINT1B" /* GXT: Kifflom.  The ingratitude and self-centeredness of your actions is unforgiveable in my eyes but Kraff is not without mercy.  To have a chance of redeeming yourself, you must write the tract, which has already been written... WE WORSHIP KRAFF WHERE THE EARTH REACHES OUT TO THE 9Th PARADIGM. */;
+		sLocal_160[0] = "TRACT_HINT1B" /* GXT: Kifflom.  The ingratitude and self-centeredness of your actions is unforgiveable in my eyes but Kraff is not without mercy.  To have a chance of redeeming yourself, you must write the tract, which has already been written... WE WORSHIP KRAFF WHERE THE EARTH REACHES OUT TO THE 9Th PARADIGM. */;
 		iLocal_43 = 300000;
 	}
 	else
 	{
-		sLocal_50[0] = "TRACT_HINT1" /* GXT: Kifflom, brother. You are now truly one of us and are ready to write the tract, which has already been written...WE WORSHIP KRAFF WHERE THE EARTH REACHES OUT TO THE 9Th PARADIGM. */;
+		sLocal_160[0] = "TRACT_HINT1" /* GXT: Kifflom, brother. You are now truly one of us and are ready to write the tract, which has already been written...WE WORSHIP KRAFF WHERE THE EARTH REACHES OUT TO THE 9Th PARADIGM. */;
 		iLocal_43 = 16000;
 	}
 	Local_49[0 /*11*/].f_3 = { 501.9415f, 5604.429f, 796.9146f };
 	Local_49[1 /*11*/].f_3 = { 2658.18f, -1361.14f, -21.63f };
-	sLocal_50[1] = "TRACT_HINT2" /* GXT: Where the first of the fleet succumbed to the waves, there the message is seeded. */;
+	sLocal_160[1] = "TRACT_HINT2" /* GXT: Where the first of the fleet succumbed to the waves, there the message is seeded. */;
 	Local_49[2 /*11*/].f_3 = { 24.7139f, 7644.334f, 18.0792f };
-	sLocal_50[2] = "TRACT_HINT3" /* GXT: When they sail from the North, they will find this offering. */;
+	sLocal_160[2] = "TRACT_HINT3" /* GXT: When they sail from the North, they will find this offering. */;
 	Local_49[3 /*11*/].f_3 = { -263.55f, 4729.6f, 137.37f };
-	sLocal_50[3] = "TRACT_HINT4" /* GXT: In the core of the mountain, where the blast is not felt, there you shall find it. */;
+	sLocal_160[3] = "TRACT_HINT4" /* GXT: In the core of the mountain, where the blast is not felt, there you shall find it. */;
 	Local_49[4 /*11*/].f_3 = { -771.98f, -685.22f, 28.86f };
-	sLocal_50[4] = "TRACT_HINT5" /* GXT: In the rubble of the old religion, will be the basis for the new. */;
+	sLocal_160[4] = "TRACT_HINT5" /* GXT: In the rubble of the old religion, will be the basis for the new. */;
 	Local_49[5 /*11*/].f_3 = { -1605.03f, 5256.55f, 1.08f };
-	sLocal_50[5] = "TRACT_HINT6" /* GXT: Where the first fleet sailed, the new fleet will find its map. */;
+	sLocal_160[5] = "TRACT_HINT6" /* GXT: Where the first fleet sailed, the new fleet will find its map. */;
 	Local_49[6 /*11*/].f_3 = { -1804.5464f, 403.9298f, 112.1966f };
-	sLocal_50[6] = "TRACT_HINT7" /* GXT: What dwelling is worthy of Kraff? He is humble, yet we exalt him. */;
+	sLocal_160[6] = "TRACT_HINT7" /* GXT: What dwelling is worthy of Kraff? He is humble, yet we exalt him. */;
 	Local_49[7 /*11*/].f_3 = { 484.2701f, 5617.175f, 787.4708f };
-	sLocal_50[7] = "TRACT_HINT8" /* GXT: We are not dinosaurs, nor plants, but a tree in the jet stream may hold Kraff's true word. */;
+	sLocal_160[7] = "TRACT_HINT8" /* GXT: We are not dinosaurs, nor plants, but a tree in the jet stream may hold Kraff's true word. */;
 	Local_49[8 /*11*/].f_3 = { -75.1004f, -819.0673f, 325.3656f };
-	sLocal_50[8] = "TRACT_HINT9" /* GXT: The tallest obelisk of glass and steel holds no comparison to the word of Kraff. */;
+	sLocal_160[8] = "TRACT_HINT9" /* GXT: The tallest obelisk of glass and steel holds no comparison to the word of Kraff. */;
 	Local_49[9 /*11*/].f_3 = { -1725.34f, -189.95f, 57.52f };
-	sLocal_50[9] = "TRACT_HINT10" /* GXT: Where they discard their earthly prisons, there you may find the germ of a higher civilization. */;
+	sLocal_160[9] = "TRACT_HINT10" /* GXT: Where they discard their earthly prisons, there you may find the germ of a higher civilization. */;
 	iLocal_42 = MISC::GET_GAME_TIMER();
 	iVar0 = 0;
 	while (iVar0 < 10)

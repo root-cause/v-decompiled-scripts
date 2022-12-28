@@ -35,16 +35,16 @@
 	float fLocal_33 = 0f;
 	float fLocal_34 = 0f;
 	var uLocal_35[20] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-	int iLocal_36 = 0;
-	int iLocal_37 = 0;
-	int iLocal_38 = 0;
-	bool bLocal_39 = 0;
-	int iLocal_40 = 0;
-	bool bLocal_41 = 0;
-	var uLocal_42 = 0;
-	float fLocal_43 = 0f;
-	int iLocal_44 = 0;
-	struct<3> Local_45 = { 0, 0, 0 } ;
+	int iLocal_56 = 0;
+	int iLocal_57 = 0;
+	int iLocal_58 = 0;
+	bool bLocal_59 = 0;
+	int iLocal_60 = 0;
+	bool bLocal_61 = 0;
+	var uLocal_62 = 0;
+	float fLocal_63 = 0f;
+	int iLocal_64 = 0;
+	struct<3> Local_65 = { 0, 0, 0 } ;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -69,42 +69,42 @@ void __EntryFunction__()//Position - 0x0
 	fLocal_29 = 0f;
 	fLocal_33 = -0.0375f;
 	fLocal_34 = 0.17f;
-	fLocal_43 = 277.7314f;
-	Local_45 = { -196.045f, -580.13f, 135.0004f };
+	fLocal_63 = 277.7314f;
+	Local_65 = { -196.045f, -580.13f, 135.0004f };
 	CAM::DO_SCREEN_FADE_OUT(800);
 	func_16();
 	while (true)
 	{
 		GRAPHICS::DISABLE_OCCLUSION_THIS_FRAME();
 		func_15();
-		if (func_7() || uLocal_42)
+		if (func_7() || uLocal_62)
 		{
 			func_3();
 		}
-		if (!iLocal_38)
+		if (!iLocal_58)
 		{
-			if (!iLocal_37 && CAM::IS_SCREEN_FADED_OUT())
+			if (!iLocal_57 && CAM::IS_SCREEN_FADED_OUT())
 			{
-				ENTITY::SET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), Local_45, true, false, false, true);
-				ENTITY::SET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID(), fLocal_43);
-				STREAMING::NEW_LOAD_SCENE_START_SPHERE(Local_45, 2500f, 0);
+				ENTITY::SET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), Local_65, true, false, false, true);
+				ENTITY::SET_ENTITY_HEADING(PLAYER::PLAYER_PED_ID(), fLocal_63);
+				STREAMING::NEW_LOAD_SCENE_START_SPHERE(Local_65, 2500f, 0);
 				CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
-				iLocal_37 = 1;
+				iLocal_57 = 1;
 			}
 			else if (STREAMING::IS_NEW_LOAD_SCENE_ACTIVE())
 			{
-				if (!bLocal_41)
+				if (!bLocal_61)
 				{
-					bLocal_41 = func_2();
+					bLocal_61 = func_2();
 				}
-				else if (!bLocal_39)
+				else if (!bLocal_59)
 				{
-					bLocal_39 = func_1();
+					bLocal_59 = func_1();
 				}
 				else
 				{
 					CAM::DO_SCREEN_FADE_IN(800);
-					iLocal_38 = 1;
+					iLocal_58 = 1;
 				}
 			}
 		}
@@ -113,13 +113,13 @@ void __EntryFunction__()//Position - 0x0
 
 int func_1()//Position - 0x121
 {
-	if (!INTERIOR::IS_INTERIOR_ENTITY_SET_ACTIVE(iLocal_44, "garage_decor_01"))
+	if (!INTERIOR::IS_INTERIOR_ENTITY_SET_ACTIVE(iLocal_64, "garage_decor_01"))
 	{
-		INTERIOR::ACTIVATE_INTERIOR_ENTITY_SET(iLocal_44, "garage_decor_01");
+		INTERIOR::ACTIVATE_INTERIOR_ENTITY_SET(iLocal_64, "garage_decor_01");
 	}
 	else
 	{
-		INTERIOR::REFRESH_INTERIOR(iLocal_44);
+		INTERIOR::REFRESH_INTERIOR(iLocal_64);
 		return 1;
 	}
 	return 0;
@@ -127,17 +127,17 @@ int func_1()//Position - 0x121
 
 int func_2()//Position - 0x14B
 {
-	iLocal_44 = INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID());
-	if (INTERIOR::IS_VALID_INTERIOR(iLocal_44))
+	iLocal_64 = INTERIOR::GET_INTERIOR_FROM_ENTITY(PLAYER::PLAYER_PED_ID());
+	if (INTERIOR::IS_VALID_INTERIOR(iLocal_64))
 	{
-		if (!iLocal_40)
+		if (!iLocal_60)
 		{
-			INTERIOR::PIN_INTERIOR_IN_MEMORY(iLocal_44);
-			iLocal_40 = 1;
+			INTERIOR::PIN_INTERIOR_IN_MEMORY(iLocal_64);
+			iLocal_60 = 1;
 		}
-		else if (INTERIOR::IS_INTERIOR_READY(iLocal_44))
+		else if (INTERIOR::IS_INTERIOR_READY(iLocal_64))
 		{
-			INTERIOR::UNPIN_INTERIOR(iLocal_44);
+			INTERIOR::UNPIN_INTERIOR(iLocal_64);
 			return 1;
 		}
 	}
@@ -149,7 +149,7 @@ void func_3()//Position - 0x18C
 	int iVar0;
 	
 	iVar0 = 0;
-	while (iVar0 < iLocal_36)
+	while (iVar0 < iLocal_56)
 	{
 		func_5(iVar0);
 		iVar0++;
