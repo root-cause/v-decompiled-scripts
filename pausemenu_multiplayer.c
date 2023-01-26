@@ -79161,7 +79161,7 @@ int func_1272(int iParam0)//Position - 0x81A32
 
 bool func_1273()//Position - 0x81B5D
 {
-	return Global_262145.f_33716 /* Tunable: -713774654 */;
+	return Global_262145.f_33716 /* Tunable: XM22_STORY_PART_TWO_ENABLED */;
 }
 
 int func_1274(int iParam0)//Position - 0x81B6F
@@ -79193,7 +79193,7 @@ int func_1276(int iParam0)//Position - 0x81BE6
 
 bool func_1277()//Position - 0x81C05
 {
-	return Global_262145.f_33715 /* Tunable: -1128026461 */;
+	return Global_262145.f_33715 /* Tunable: XM22_STORY_PART_ONE_ENABLED */;
 }
 
 int func_1278(int iParam0)//Position - 0x81C17

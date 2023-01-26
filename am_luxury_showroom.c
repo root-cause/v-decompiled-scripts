@@ -50723,59 +50723,59 @@ int func_360(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 1:
-						return Global_262145.f_22584 /* Tunable: -488069750 */;
+						return Global_262145.f_22584 /* Tunable: SMUG_MODS_STANDARD_PRICE_CHAFF */;
 						break;
 					
 					case 2:
-						return Global_262145.f_22585 /* Tunable: -476186113 */;
+						return Global_262145.f_22585 /* Tunable: SMUG_MODS_STANDARD_PRICE_DECOY_FLARES */;
 						break;
 					
 					case 29:
-						return Global_262145.f_22590 /* Tunable: 193964753 */;
+						return Global_262145.f_22590 /* Tunable: SMUG_MODS_STANDARD_PRICE_SMOKE */;
 						break;
 					
 					case 30:
-						return Global_262145.f_22590 /* Tunable: 193964753 */;
+						return Global_262145.f_22590 /* Tunable: SMUG_MODS_STANDARD_PRICE_SMOKE */;
 						break;
 					
 					case 31:
-						return Global_262145.f_22590 /* Tunable: 193964753 */;
+						return Global_262145.f_22590 /* Tunable: SMUG_MODS_STANDARD_PRICE_SMOKE */;
 						break;
 					
 					case 32:
-						return Global_262145.f_22590 /* Tunable: 193964753 */;
+						return Global_262145.f_22590 /* Tunable: SMUG_MODS_STANDARD_PRICE_SMOKE */;
 						break;
 					
 					case 33:
-						return Global_262145.f_22590 /* Tunable: 193964753 */;
+						return Global_262145.f_22590 /* Tunable: SMUG_MODS_STANDARD_PRICE_SMOKE */;
 						break;
 					
 					case 34:
-						return Global_262145.f_22590 /* Tunable: 193964753 */;
+						return Global_262145.f_22590 /* Tunable: SMUG_MODS_STANDARD_PRICE_SMOKE */;
 						break;
 					
 					case 35:
-						return Global_262145.f_22590 /* Tunable: 193964753 */;
+						return Global_262145.f_22590 /* Tunable: SMUG_MODS_STANDARD_PRICE_SMOKE */;
 						break;
 					
 					case 36:
-						return Global_262145.f_22590 /* Tunable: 193964753 */;
+						return Global_262145.f_22590 /* Tunable: SMUG_MODS_STANDARD_PRICE_SMOKE */;
 						break;
 					
 					case 37:
-						return Global_262145.f_22590 /* Tunable: 193964753 */;
+						return Global_262145.f_22590 /* Tunable: SMUG_MODS_STANDARD_PRICE_SMOKE */;
 						break;
 					
 					case 38:
-						return Global_262145.f_22590 /* Tunable: 193964753 */;
+						return Global_262145.f_22590 /* Tunable: SMUG_MODS_STANDARD_PRICE_SMOKE */;
 						break;
 					
 					case 39:
-						return Global_262145.f_22590 /* Tunable: 193964753 */;
+						return Global_262145.f_22590 /* Tunable: SMUG_MODS_STANDARD_PRICE_SMOKE */;
 						break;
 					
 					case 40:
-						return Global_262145.f_22590 /* Tunable: 193964753 */;
+						return Global_262145.f_22590 /* Tunable: SMUG_MODS_STANDARD_PRICE_SMOKE */;
 						break;
 				}
 			}
@@ -50784,59 +50784,59 @@ int func_360(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 1:
-						return Global_262145.f_22596 /* Tunable: -35648369 */;
+						return Global_262145.f_22596 /* Tunable: SMUG_MODS_HEAVY_PRICE_CHAFF */;
 						break;
 					
 					case 2:
-						return Global_262145.f_22597 /* Tunable: 1890870117 */;
+						return Global_262145.f_22597 /* Tunable: SMUG_MODS_HEAVY_PRICE_DECOY_FLARES */;
 						break;
 					
 					case 29:
-						return Global_262145.f_22602 /* Tunable: -2127562694 */;
+						return Global_262145.f_22602 /* Tunable: SMUG_MODS_HEAVY_PRICE_SMOKE */;
 						break;
 					
 					case 30:
-						return Global_262145.f_22602 /* Tunable: -2127562694 */;
+						return Global_262145.f_22602 /* Tunable: SMUG_MODS_HEAVY_PRICE_SMOKE */;
 						break;
 					
 					case 31:
-						return Global_262145.f_22602 /* Tunable: -2127562694 */;
+						return Global_262145.f_22602 /* Tunable: SMUG_MODS_HEAVY_PRICE_SMOKE */;
 						break;
 					
 					case 32:
-						return Global_262145.f_22602 /* Tunable: -2127562694 */;
+						return Global_262145.f_22602 /* Tunable: SMUG_MODS_HEAVY_PRICE_SMOKE */;
 						break;
 					
 					case 33:
-						return Global_262145.f_22602 /* Tunable: -2127562694 */;
+						return Global_262145.f_22602 /* Tunable: SMUG_MODS_HEAVY_PRICE_SMOKE */;
 						break;
 					
 					case 34:
-						return Global_262145.f_22602 /* Tunable: -2127562694 */;
+						return Global_262145.f_22602 /* Tunable: SMUG_MODS_HEAVY_PRICE_SMOKE */;
 						break;
 					
 					case 35:
-						return Global_262145.f_22602 /* Tunable: -2127562694 */;
+						return Global_262145.f_22602 /* Tunable: SMUG_MODS_HEAVY_PRICE_SMOKE */;
 						break;
 					
 					case 36:
-						return Global_262145.f_22602 /* Tunable: -2127562694 */;
+						return Global_262145.f_22602 /* Tunable: SMUG_MODS_HEAVY_PRICE_SMOKE */;
 						break;
 					
 					case 37:
-						return Global_262145.f_22602 /* Tunable: -2127562694 */;
+						return Global_262145.f_22602 /* Tunable: SMUG_MODS_HEAVY_PRICE_SMOKE */;
 						break;
 					
 					case 38:
-						return Global_262145.f_22602 /* Tunable: -2127562694 */;
+						return Global_262145.f_22602 /* Tunable: SMUG_MODS_HEAVY_PRICE_SMOKE */;
 						break;
 					
 					case 39:
-						return Global_262145.f_22602 /* Tunable: -2127562694 */;
+						return Global_262145.f_22602 /* Tunable: SMUG_MODS_HEAVY_PRICE_SMOKE */;
 						break;
 					
 					case 40:
-						return Global_262145.f_22602 /* Tunable: -2127562694 */;
+						return Global_262145.f_22602 /* Tunable: SMUG_MODS_HEAVY_PRICE_SMOKE */;
 						break;
 				}
 			}
@@ -51949,11 +51949,11 @@ int func_360(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						break;
 					
 					case 1:
-						return Global_262145.f_22591 /* Tunable: -1436692147 */;
+						return Global_262145.f_22591 /* Tunable: SMUG_MODS_STANDARD_PRICE_ROCKET_ASSISTED_TAKE_OFF */;
 						break;
 					
 					case 2:
-						return Global_262145.f_22592 /* Tunable: -887352848 */;
+						return Global_262145.f_22592 /* Tunable: SMUG_MODS_STANDARD_SILENT_ROTOR */;
 						break;
 				}
 			}
@@ -51966,11 +51966,11 @@ int func_360(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 						break;
 					
 					case 1:
-						return Global_262145.f_22595 /* Tunable: 351434341 */;
+						return Global_262145.f_22595 /* Tunable: SMUG_MODS_HEAVY_PRICE_ROCKET_ASSISTED_TAKE_OFF */;
 						break;
 					
 					case 2:
-						return Global_262145.f_22592 /* Tunable: -887352848 */;
+						return Global_262145.f_22592 /* Tunable: SMUG_MODS_STANDARD_SILENT_ROTOR */;
 						break;
 				}
 			}
@@ -54893,19 +54893,19 @@ int func_360(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 1:
-						return Global_262145.f_22588 /* Tunable: 764454487 */;
+						return Global_262145.f_22588 /* Tunable: SMUG_MODS_STANDARD_PRICE_STANDARD_BOMBS */;
 						break;
 					
 					case 2:
-						return Global_262145.f_22587 /* Tunable: -2014001243 */;
+						return Global_262145.f_22587 /* Tunable: SMUG_MODS_STANDARD_PRICE_INCENDIARY_BOMBS */;
 						break;
 					
 					case 3:
-						return Global_262145.f_22586 /* Tunable: -912835065 */;
+						return Global_262145.f_22586 /* Tunable: SMUG_MODS_STANDARD_PRICE_GAS_BOMBS */;
 						break;
 					
 					case 4:
-						return Global_262145.f_22589 /* Tunable: 742471171 */;
+						return Global_262145.f_22589 /* Tunable: SMUG_MODS_STANDARD_PRICE_CLUSTER_BOMBS */;
 						break;
 				}
 			}
@@ -54915,19 +54915,19 @@ int func_360(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 1:
-						return Global_262145.f_22600 /* Tunable: -1150010085 */;
+						return Global_262145.f_22600 /* Tunable: SMUG_MODS_HEAVY_PRICE_STANDARD_BOMBS */;
 						break;
 					
 					case 2:
-						return Global_262145.f_22599 /* Tunable: 1975667705 */;
+						return Global_262145.f_22599 /* Tunable: SMUG_MODS_HEAVY_PRICE_INCENDIARY_BOMBS */;
 						break;
 					
 					case 3:
-						return Global_262145.f_22598 /* Tunable: 2031286533 */;
+						return Global_262145.f_22598 /* Tunable: SMUG_MODS_HEAVY_PRICE_GAS_BOMBS */;
 						break;
 					
 					case 4:
-						return Global_262145.f_22601 /* Tunable: -979574552 */;
+						return Global_262145.f_22601 /* Tunable: SMUG_MODS_HEAVY_PRICE_CLUSTER_BOMBS */;
 						break;
 				}
 			}
@@ -55820,59 +55820,59 @@ int func_360(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 1:
-						return Global_262145.f_22584 /* Tunable: -488069750 */;
+						return Global_262145.f_22584 /* Tunable: SMUG_MODS_STANDARD_PRICE_CHAFF */;
 						break;
 					
 					case 2:
-						return Global_262145.f_22585 /* Tunable: -476186113 */;
+						return Global_262145.f_22585 /* Tunable: SMUG_MODS_STANDARD_PRICE_DECOY_FLARES */;
 						break;
 					
 					case 29:
-						return Global_262145.f_22590 /* Tunable: 193964753 */;
+						return Global_262145.f_22590 /* Tunable: SMUG_MODS_STANDARD_PRICE_SMOKE */;
 						break;
 					
 					case 30:
-						return Global_262145.f_22590 /* Tunable: 193964753 */;
+						return Global_262145.f_22590 /* Tunable: SMUG_MODS_STANDARD_PRICE_SMOKE */;
 						break;
 					
 					case 31:
-						return Global_262145.f_22590 /* Tunable: 193964753 */;
+						return Global_262145.f_22590 /* Tunable: SMUG_MODS_STANDARD_PRICE_SMOKE */;
 						break;
 					
 					case 32:
-						return Global_262145.f_22590 /* Tunable: 193964753 */;
+						return Global_262145.f_22590 /* Tunable: SMUG_MODS_STANDARD_PRICE_SMOKE */;
 						break;
 					
 					case 33:
-						return Global_262145.f_22590 /* Tunable: 193964753 */;
+						return Global_262145.f_22590 /* Tunable: SMUG_MODS_STANDARD_PRICE_SMOKE */;
 						break;
 					
 					case 34:
-						return Global_262145.f_22590 /* Tunable: 193964753 */;
+						return Global_262145.f_22590 /* Tunable: SMUG_MODS_STANDARD_PRICE_SMOKE */;
 						break;
 					
 					case 35:
-						return Global_262145.f_22590 /* Tunable: 193964753 */;
+						return Global_262145.f_22590 /* Tunable: SMUG_MODS_STANDARD_PRICE_SMOKE */;
 						break;
 					
 					case 36:
-						return Global_262145.f_22590 /* Tunable: 193964753 */;
+						return Global_262145.f_22590 /* Tunable: SMUG_MODS_STANDARD_PRICE_SMOKE */;
 						break;
 					
 					case 37:
-						return Global_262145.f_22590 /* Tunable: 193964753 */;
+						return Global_262145.f_22590 /* Tunable: SMUG_MODS_STANDARD_PRICE_SMOKE */;
 						break;
 					
 					case 38:
-						return Global_262145.f_22590 /* Tunable: 193964753 */;
+						return Global_262145.f_22590 /* Tunable: SMUG_MODS_STANDARD_PRICE_SMOKE */;
 						break;
 					
 					case 39:
-						return Global_262145.f_22590 /* Tunable: 193964753 */;
+						return Global_262145.f_22590 /* Tunable: SMUG_MODS_STANDARD_PRICE_SMOKE */;
 						break;
 					
 					case 40:
-						return Global_262145.f_22590 /* Tunable: 193964753 */;
+						return Global_262145.f_22590 /* Tunable: SMUG_MODS_STANDARD_PRICE_SMOKE */;
 						break;
 				}
 			}
@@ -55881,59 +55881,59 @@ int func_360(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 				switch (iParam1)
 				{
 					case 1:
-						return Global_262145.f_22596 /* Tunable: -35648369 */;
+						return Global_262145.f_22596 /* Tunable: SMUG_MODS_HEAVY_PRICE_CHAFF */;
 						break;
 					
 					case 2:
-						return Global_262145.f_22597 /* Tunable: 1890870117 */;
+						return Global_262145.f_22597 /* Tunable: SMUG_MODS_HEAVY_PRICE_DECOY_FLARES */;
 						break;
 					
 					case 29:
-						return Global_262145.f_22602 /* Tunable: -2127562694 */;
+						return Global_262145.f_22602 /* Tunable: SMUG_MODS_HEAVY_PRICE_SMOKE */;
 						break;
 					
 					case 30:
-						return Global_262145.f_22602 /* Tunable: -2127562694 */;
+						return Global_262145.f_22602 /* Tunable: SMUG_MODS_HEAVY_PRICE_SMOKE */;
 						break;
 					
 					case 31:
-						return Global_262145.f_22602 /* Tunable: -2127562694 */;
+						return Global_262145.f_22602 /* Tunable: SMUG_MODS_HEAVY_PRICE_SMOKE */;
 						break;
 					
 					case 32:
-						return Global_262145.f_22602 /* Tunable: -2127562694 */;
+						return Global_262145.f_22602 /* Tunable: SMUG_MODS_HEAVY_PRICE_SMOKE */;
 						break;
 					
 					case 33:
-						return Global_262145.f_22602 /* Tunable: -2127562694 */;
+						return Global_262145.f_22602 /* Tunable: SMUG_MODS_HEAVY_PRICE_SMOKE */;
 						break;
 					
 					case 34:
-						return Global_262145.f_22602 /* Tunable: -2127562694 */;
+						return Global_262145.f_22602 /* Tunable: SMUG_MODS_HEAVY_PRICE_SMOKE */;
 						break;
 					
 					case 35:
-						return Global_262145.f_22602 /* Tunable: -2127562694 */;
+						return Global_262145.f_22602 /* Tunable: SMUG_MODS_HEAVY_PRICE_SMOKE */;
 						break;
 					
 					case 36:
-						return Global_262145.f_22602 /* Tunable: -2127562694 */;
+						return Global_262145.f_22602 /* Tunable: SMUG_MODS_HEAVY_PRICE_SMOKE */;
 						break;
 					
 					case 37:
-						return Global_262145.f_22602 /* Tunable: -2127562694 */;
+						return Global_262145.f_22602 /* Tunable: SMUG_MODS_HEAVY_PRICE_SMOKE */;
 						break;
 					
 					case 38:
-						return Global_262145.f_22602 /* Tunable: -2127562694 */;
+						return Global_262145.f_22602 /* Tunable: SMUG_MODS_HEAVY_PRICE_SMOKE */;
 						break;
 					
 					case 39:
-						return Global_262145.f_22602 /* Tunable: -2127562694 */;
+						return Global_262145.f_22602 /* Tunable: SMUG_MODS_HEAVY_PRICE_SMOKE */;
 						break;
 					
 					case 40:
-						return Global_262145.f_22602 /* Tunable: -2127562694 */;
+						return Global_262145.f_22602 /* Tunable: SMUG_MODS_HEAVY_PRICE_SMOKE */;
 						break;
 				}
 			}
@@ -59755,71 +59755,71 @@ int func_378(int iParam0, bool bParam1)//Position - 0x4569C
 			switch (iParam0)
 			{
 				case 69:
-					return Global_262145.f_20096 /* Tunable: 1445507172 */;
+					return Global_262145.f_20096 /* Tunable: SUPERMOD_SLOT_IE_BIKE_STOCK_SEATS */;
 					break;
 				
 				case 70:
-					return Global_262145.f_20097 /* Tunable: -856146197 */;
+					return Global_262145.f_20097 /* Tunable: SUPERMOD_SLOT_IE_BIKE_STOCK_STEERING_WHEEL */;
 					break;
 				
 				case 71:
-					return Global_262145.f_20098 /* Tunable: 1037397158 */;
+					return Global_262145.f_20098 /* Tunable: SUPERMOD_SLOT_IE_BIKE_STOCK_COLUMN_SHIFT_LEVER */;
 					break;
 				
 				case 72:
-					return Global_262145.f_20099 /* Tunable: -1432880770 */;
+					return Global_262145.f_20099 /* Tunable: SUPERMOD_SLOT_IE_BIKE_STOCK_PLAQUE */;
 					break;
 				
 				case 73:
-					return Global_262145.f_20100 /* Tunable: 1010197085 */;
+					return Global_262145.f_20100 /* Tunable: SUPERMOD_SLOT_IE_BIKE_STOCK_ICE */;
 					break;
 				
 				case 74:
-					return Global_262145.f_20101 /* Tunable: 816086112 */;
+					return Global_262145.f_20101 /* Tunable: SUPERMOD_SLOT_IE_BIKE_STOCK_TRUNK */;
 					break;
 				
 				case 76:
-					return Global_262145.f_20103 /* Tunable: -1154555129 */;
+					return Global_262145.f_20103 /* Tunable: SUPERMOD_SLOT_IE_BIKE_STOCK_ENGINE_BAY */;
 					break;
 				
 				case 77:
-					return Global_262145.f_20104 /* Tunable: -1410017933 */;
+					return Global_262145.f_20104 /* Tunable: SUPERMOD_SLOT_IE_BIKE_STOCK_AIR_FILTER */;
 					break;
 				
 				case 78:
-					return Global_262145.f_20105 /* Tunable: 11244684 */;
+					return Global_262145.f_20105 /* Tunable: SUPERMOD_SLOT_IE_BIKE_STOCK_FITTINGS */;
 					break;
 				
 				case 79:
-					return Global_262145.f_20109 /* Tunable: -1464553306 */;
+					return Global_262145.f_20109 /* Tunable: SUPERMOD_SLOT_IE_BIKE_STOCK_CHASSIS_ARCH_COVERS */;
 					break;
 				
 				case 80:
-					return Global_262145.f_20107 /* Tunable: 1582483569 */;
+					return Global_262145.f_20107 /* Tunable: SUPERMOD_SLOT_IE_BIKE_STOCK_CHASSIS_AERIALS */;
 					break;
 				
 				case 81:
-					return Global_262145.f_20108 /* Tunable: -239193808 */;
+					return Global_262145.f_20108 /* Tunable: SUPERMOD_SLOT_IE_BIKE_STOCK_CHASSIS_TRIM */;
 					break;
 				
 				case 82:
-					return Global_262145.f_20106 /* Tunable: 1823632455 */;
+					return Global_262145.f_20106 /* Tunable: SUPERMOD_SLOT_IE_BIKE_STOCK_CHASSIS_TANK */;
 					break;
 				
 				case 83:
-					return Global_262145.f_20110 /* Tunable: -1821251827 */;
+					return Global_262145.f_20110 /* Tunable: SUPERMOD_SLOT_IE_BIKE_STOCK_LEFT_DOOR */;
 					break;
 				
 				case 84:
-					return Global_262145.f_20111 /* Tunable: 370354328 */;
+					return Global_262145.f_20111 /* Tunable: SUPERMOD_SLOT_IE_BIKE_STOCK_RIGHT_DOOR */;
 					break;
 				
 				case 85:
-					return Global_262145.f_20112 /* Tunable: -2108112334 */;
+					return Global_262145.f_20112 /* Tunable: SUPERMOD_SLOT_IE_BIKE_STOCK_LIVERY */;
 					break;
 				
 				case 75:
-					return Global_262145.f_20102 /* Tunable: -1027037427 */;
+					return Global_262145.f_20102 /* Tunable: SUPERMOD_SLOT_IE_BIKE_STOCK_HYDRAULICS */;
 					break;
 			}
 			break;
@@ -59839,97 +59839,97 @@ int func_378(int iParam0, bool bParam1)//Position - 0x4569C
 			switch (iParam0)
 			{
 				case 62:
-					return Global_262145.f_20067 /* Tunable: -684642722 */;
+					return Global_262145.f_20067 /* Tunable: SUPERMOD_SLOT_IE_HIGH_STOCK_PLATEHOLDER */;
 					break;
 				
 				case 63:
-					return Global_262145.f_20068 /* Tunable: 1925867620 */;
+					return Global_262145.f_20068 /* Tunable: SUPERMOD_SLOT_IE_HIGH_STOCK_VANITY_PLATE */;
 					break;
 				
 				case 91:
 				case 64:
-					return Global_262145.f_20069 /* Tunable: 339608329 */;
+					return Global_262145.f_20069 /* Tunable: SUPERMOD_SLOT_IE_HIGH_STOCK_INTERIOR_TRIM */;
 					break;
 				
 				case 66:
-					return Global_262145.f_20070 /* Tunable: -596774436 */;
+					return Global_262145.f_20070 /* Tunable: SUPERMOD_SLOT_IE_HIGH_STOCK_INTERIOR_DASH */;
 					break;
 				
 				case 90:
 				case 67:
-					return Global_262145.f_20071 /* Tunable: 1515550924 */;
+					return Global_262145.f_20071 /* Tunable: SUPERMOD_SLOT_IE_HIGH_STOCK_INTERIOR_DIALS */;
 					break;
 				
 				case 68:
-					return Global_262145.f_20072 /* Tunable: -1793961142 */;
+					return Global_262145.f_20072 /* Tunable: SUPERMOD_SLOT_IE_HIGH_STOCK_INTERIOR_DOORS */;
 					break;
 				
 				case 69:
-					return Global_262145.f_20073 /* Tunable: 1103095492 */;
+					return Global_262145.f_20073 /* Tunable: SUPERMOD_SLOT_IE_HIGH_STOCK_SEATS */;
 					break;
 				
 				case 70:
-					return Global_262145.f_20074 /* Tunable: 1080765076 */;
+					return Global_262145.f_20074 /* Tunable: SUPERMOD_SLOT_IE_HIGH_STOCK_STEERING_WHEEL */;
 					break;
 				
 				case 71:
-					return Global_262145.f_20075 /* Tunable: -1372931791 */;
+					return Global_262145.f_20075 /* Tunable: SUPERMOD_SLOT_IE_HIGH_STOCK_COLUMN_SHIFT_LEVER */;
 					break;
 				
 				case 72:
-					return Global_262145.f_20076 /* Tunable: -1077131506 */;
+					return Global_262145.f_20076 /* Tunable: SUPERMOD_SLOT_IE_HIGH_STOCK_PLAQUE */;
 					break;
 				
 				case 73:
-					return Global_262145.f_20077 /* Tunable: -1928327745 */;
+					return Global_262145.f_20077 /* Tunable: SUPERMOD_SLOT_IE_HIGH_STOCK_ICE */;
 					break;
 				
 				case 74:
-					return Global_262145.f_20078 /* Tunable: 484439205 */;
+					return Global_262145.f_20078 /* Tunable: SUPERMOD_SLOT_IE_HIGH_STOCK_TRUNK */;
 					break;
 				
 				case 76:
-					return Global_262145.f_20080 /* Tunable: -48548099 */;
+					return Global_262145.f_20080 /* Tunable: SUPERMOD_SLOT_IE_HIGH_STOCK_ENGINE_BAY */;
 					break;
 				
 				case 77:
-					return Global_262145.f_20081 /* Tunable: 761797683 */;
+					return Global_262145.f_20081 /* Tunable: SUPERMOD_SLOT_IE_HIGH_STOCK_AIR_FILTER */;
 					break;
 				
 				case 78:
-					return Global_262145.f_20082 /* Tunable: -1663585280 */;
+					return Global_262145.f_20082 /* Tunable: SUPERMOD_SLOT_IE_HIGH_STOCK_FITTINGS */;
 					break;
 				
 				case 79:
-					return Global_262145.f_20086 /* Tunable: 1085204362 */;
+					return Global_262145.f_20086 /* Tunable: SUPERMOD_SLOT_IE_HIGH_STOCK_CHASSIS_ARCH_COVERS */;
 					break;
 				
 				case 80:
-					return Global_262145.f_20084 /* Tunable: -229767553 */;
+					return Global_262145.f_20084 /* Tunable: SUPERMOD_SLOT_IE_HIGH_STOCK_CHASSIS_AERIALS */;
 					break;
 				
 				case 81:
-					return Global_262145.f_20085 /* Tunable: -1543635993 */;
+					return Global_262145.f_20085 /* Tunable: SUPERMOD_SLOT_IE_HIGH_STOCK_CHASSIS_TRIM */;
 					break;
 				
 				case 82:
-					return Global_262145.f_20083 /* Tunable: -742153899 */;
+					return Global_262145.f_20083 /* Tunable: SUPERMOD_SLOT_IE_HIGH_STOCK_CHASSIS_TANK */;
 					break;
 				
 				case 83:
-					return Global_262145.f_20087 /* Tunable: -1601135106 */;
+					return Global_262145.f_20087 /* Tunable: SUPERMOD_SLOT_IE_HIGH_STOCK_LEFT_DOOR */;
 					break;
 				
 				case 84:
-					return Global_262145.f_20088 /* Tunable: -480527199 */;
+					return Global_262145.f_20088 /* Tunable: SUPERMOD_SLOT_IE_HIGH_STOCK_RIGHT_DOOR */;
 					break;
 				
 				case 85:
-					return Global_262145.f_20089 /* Tunable: 402681162 */;
+					return Global_262145.f_20089 /* Tunable: SUPERMOD_SLOT_IE_HIGH_STOCK_LIVERY */;
 					break;
 				
 				case 75:
-					return Global_262145.f_20079 /* Tunable: -1958729104 */;
+					return Global_262145.f_20079 /* Tunable: SUPERMOD_SLOT_IE_HIGH_STOCK_HYDRAULICS */;
 					break;
 			}
 			break;
@@ -59941,97 +59941,97 @@ int func_378(int iParam0, bool bParam1)//Position - 0x4569C
 			switch (iParam0)
 			{
 				case 62:
-					return Global_262145.f_20113 /* Tunable: -452660830 */;
+					return Global_262145.f_20113 /* Tunable: SUPERMOD_SLOT_IE_RETRO_STOCK_PLATEHOLDER */;
 					break;
 				
 				case 63:
-					return Global_262145.f_20114 /* Tunable: -1040254992 */;
+					return Global_262145.f_20114 /* Tunable: SUPERMOD_SLOT_IE_RETRO_STOCK_VANITY_PLATE */;
 					break;
 				
 				case 91:
 				case 64:
-					return Global_262145.f_20115 /* Tunable: 987257936 */;
+					return Global_262145.f_20115 /* Tunable: SUPERMOD_SLOT_IE_RETRO_STOCK_INTERIOR_TRIM */;
 					break;
 				
 				case 66:
-					return Global_262145.f_20116 /* Tunable: 1002485689 */;
+					return Global_262145.f_20116 /* Tunable: SUPERMOD_SLOT_IE_RETRO_STOCK_INTERIOR_DASH */;
 					break;
 				
 				case 90:
 				case 67:
-					return Global_262145.f_20117 /* Tunable: 805748362 */;
+					return Global_262145.f_20117 /* Tunable: SUPERMOD_SLOT_IE_RETRO_STOCK_INTERIOR_DIALS */;
 					break;
 				
 				case 68:
-					return Global_262145.f_20118 /* Tunable: 1847886015 */;
+					return Global_262145.f_20118 /* Tunable: SUPERMOD_SLOT_IE_RETRO_STOCK_INTERIOR_DOORS */;
 					break;
 				
 				case 69:
-					return Global_262145.f_20119 /* Tunable: 1494198675 */;
+					return Global_262145.f_20119 /* Tunable: SUPERMOD_SLOT_IE_RETRO_STOCK_SEATS */;
 					break;
 				
 				case 70:
-					return Global_262145.f_20120 /* Tunable: 1782291700 */;
+					return Global_262145.f_20120 /* Tunable: SUPERMOD_SLOT_IE_RETRO_STOCK_STEERING_WHEEL */;
 					break;
 				
 				case 71:
-					return Global_262145.f_20121 /* Tunable: -2106845075 */;
+					return Global_262145.f_20121 /* Tunable: SUPERMOD_SLOT_IE_RETRO_STOCK_COLUMN_SHIFT_LEVER */;
 					break;
 				
 				case 72:
-					return Global_262145.f_20122 /* Tunable: -2110894619 */;
+					return Global_262145.f_20122 /* Tunable: SUPERMOD_SLOT_IE_RETRO_STOCK_PLAQUE */;
 					break;
 				
 				case 73:
-					return Global_262145.f_20123 /* Tunable: 1336779007 */;
+					return Global_262145.f_20123 /* Tunable: SUPERMOD_SLOT_IE_RETRO_STOCK_ICE */;
 					break;
 				
 				case 74:
-					return Global_262145.f_20124 /* Tunable: -1613649786 */;
+					return Global_262145.f_20124 /* Tunable: SUPERMOD_SLOT_IE_RETRO_STOCK_TRUNK */;
 					break;
 				
 				case 76:
-					return Global_262145.f_20126 /* Tunable: 646141340 */;
+					return Global_262145.f_20126 /* Tunable: SUPERMOD_SLOT_IE_RETRO_STOCK_ENGINE_BAY */;
 					break;
 				
 				case 77:
-					return Global_262145.f_20127 /* Tunable: 1792860035 */;
+					return Global_262145.f_20127 /* Tunable: SUPERMOD_SLOT_IE_RETRO_STOCK_AIR_FILTER */;
 					break;
 				
 				case 78:
-					return Global_262145.f_20128 /* Tunable: 1881595650 */;
+					return Global_262145.f_20128 /* Tunable: SUPERMOD_SLOT_IE_RETRO_STOCK_FITTINGS */;
 					break;
 				
 				case 79:
-					return Global_262145.f_20132 /* Tunable: 1960776133 */;
+					return Global_262145.f_20132 /* Tunable: SUPERMOD_SLOT_IE_RETRO_STOCK_CHASSIS_ARCH_COVERS */;
 					break;
 				
 				case 80:
-					return Global_262145.f_20130 /* Tunable: 461703080 */;
+					return Global_262145.f_20130 /* Tunable: SUPERMOD_SLOT_IE_RETRO_STOCK_CHASSIS_AERIALS */;
 					break;
 				
 				case 81:
-					return Global_262145.f_20131 /* Tunable: 660959725 */;
+					return Global_262145.f_20131 /* Tunable: SUPERMOD_SLOT_IE_RETRO_STOCK_CHASSIS_TRIM */;
 					break;
 				
 				case 82:
-					return Global_262145.f_20129 /* Tunable: 1925483934 */;
+					return Global_262145.f_20129 /* Tunable: SUPERMOD_SLOT_IE_RETRO_STOCK_CHASSIS_TANK */;
 					break;
 				
 				case 83:
-					return Global_262145.f_20133 /* Tunable: 2078440783 */;
+					return Global_262145.f_20133 /* Tunable: SUPERMOD_SLOT_IE_RETRO_STOCK_LEFT_DOOR */;
 					break;
 				
 				case 84:
-					return Global_262145.f_20134 /* Tunable: -1773111197 */;
+					return Global_262145.f_20134 /* Tunable: SUPERMOD_SLOT_IE_RETRO_STOCK_RIGHT_DOOR */;
 					break;
 				
 				case 85:
-					return Global_262145.f_20135 /* Tunable: -1107164143 */;
+					return Global_262145.f_20135 /* Tunable: SUPERMOD_SLOT_IE_RETRO_STOCK_LIVERY */;
 					break;
 				
 				case 75:
-					return Global_262145.f_20125 /* Tunable: -288665391 */;
+					return Global_262145.f_20125 /* Tunable: SUPERMOD_SLOT_IE_RETRO_STOCK_HYDRAULICS */;
 					break;
 			}
 			break;
@@ -65990,9 +65990,9 @@ int func_407(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 					iVar1 = 500000;
 					if (bVar0)
 					{
-						if (Global_262145.f_22558 /* Tunable: 821338091 */ >= 0)
+						if (Global_262145.f_22558 /* Tunable: SMUG_VEHICLES_TRADE_PRICE_PEGASSI_ULTRALIGHT */ >= 0)
 						{
-							iVar1 = Global_262145.f_22558 /* Tunable: 821338091 */;
+							iVar1 = Global_262145.f_22558 /* Tunable: SMUG_VEHICLES_TRADE_PRICE_PEGASSI_ULTRALIGHT */;
 						}
 					}
 				}
@@ -66001,9 +66001,9 @@ int func_407(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(500000) * ((100f + SYSTEM::TO_FLOAT(33)) / 100f)));
 					if (bVar0)
 					{
-						if (Global_262145.f_22578 /* Tunable: 1095639582 */ >= 0)
+						if (Global_262145.f_22578 /* Tunable: SMUG_VEHICLES_BUY_IT_NOW_PRICE_PEGASSI_ULTRALIGHT */ >= 0)
 						{
-							iVar1 = Global_262145.f_22578 /* Tunable: 1095639582 */;
+							iVar1 = Global_262145.f_22578 /* Tunable: SMUG_VEHICLES_BUY_IT_NOW_PRICE_PEGASSI_ULTRALIGHT */;
 						}
 					}
 				}

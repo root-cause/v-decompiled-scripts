@@ -168495,11 +168495,11 @@ int func_3084(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position -
 			iVar0 = Global_262145.f_17391 /* Tunable: BIKER_WEED_PRODUCTION_TIME */;
 			if (func_2460(PLAYER::PLAYER_ID(), iParam0, 0))
 			{
-				iVar0 = (iVar0 - Global_262145.f_17401 /* Tunable: -1694873660 */);
+				iVar0 = (iVar0 - Global_262145.f_17401 /* Tunable: BIKER_WEED_UPGRADE_EQUIPMENT_REDUCTION_TIME */);
 			}
 			if (func_2460(PLAYER::PLAYER_ID(), iParam0, 1))
 			{
-				iVar0 = (iVar0 - Global_262145.f_17407 /* Tunable: 1575359233 */);
+				iVar0 = (iVar0 - Global_262145.f_17407 /* Tunable: BIKER_WEED_UPGRADE_STAFF_REDUCTION_TIME */);
 			}
 			if (Global_262145.f_33039 /* Tunable: 335485367 */ && !func_534(34716, -1))
 			{
@@ -168511,7 +168511,7 @@ int func_3084(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position -
 			iVar0 = Global_262145.f_17396 /* Tunable: BIKER_ACID_PRODUCTION_TIME */;
 			if (func_3083(PLAYER::PLAYER_ID()))
 			{
-				iVar0 = (iVar0 - Global_262145.f_17402 /* Tunable: 494316332 */);
+				iVar0 = (iVar0 - Global_262145.f_17402 /* Tunable: BIKER_ACID_UPGRADE_EQUIPMENT_REDUCTION_TIME */);
 			}
 			if (func_3085(1))
 			{
@@ -168523,11 +168523,11 @@ int func_3084(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position -
 			iVar0 = Global_262145.f_17392 /* Tunable: BIKER_METH_PRODUCTION_TIME */;
 			if (func_2460(PLAYER::PLAYER_ID(), iParam0, 0))
 			{
-				iVar0 = (iVar0 - Global_262145.f_17400 /* Tunable: 1944848251 */);
+				iVar0 = (iVar0 - Global_262145.f_17400 /* Tunable: BIKER_METH_UPGRADE_EQUIPMENT_REDUCTION_TIME */);
 			}
 			if (func_2460(PLAYER::PLAYER_ID(), iParam0, 1))
 			{
-				iVar0 = (iVar0 - Global_262145.f_17406 /* Tunable: 1577999189 */);
+				iVar0 = (iVar0 - Global_262145.f_17406 /* Tunable: BIKER_METH_UPGRADE_STAFF_REDUCTION_TIME */);
 			}
 			if (Global_262145.f_33040 /* Tunable: -801385760 */ && !func_534(34719, -1))
 			{
@@ -168539,11 +168539,11 @@ int func_3084(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position -
 			iVar0 = Global_262145.f_17393 /* Tunable: BIKER_CRACK_PRODUCTION_TIME */;
 			if (func_2460(PLAYER::PLAYER_ID(), iParam0, 0))
 			{
-				iVar0 = (iVar0 - Global_262145.f_17399 /* Tunable: 2070857577 */);
+				iVar0 = (iVar0 - Global_262145.f_17399 /* Tunable: BIKER_CRACK_UPGRADE_EQUIPMENT_REDUCTION_TIME */);
 			}
 			if (func_2460(PLAYER::PLAYER_ID(), iParam0, 1))
 			{
-				iVar0 = (iVar0 - Global_262145.f_17405 /* Tunable: -1539796661 */);
+				iVar0 = (iVar0 - Global_262145.f_17405 /* Tunable: BIKER_CRACK_UPGRADE_STAFF_REDUCTION_TIME */);
 			}
 			if (Global_262145.f_33041 /* Tunable: -660655388 */ && !func_534(34717, -1))
 			{
@@ -168555,11 +168555,11 @@ int func_3084(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position -
 			iVar0 = Global_262145.f_17394 /* Tunable: BIKER_FAKEIDS_PRODUCTION_TIME */;
 			if (func_2460(PLAYER::PLAYER_ID(), iParam0, 0))
 			{
-				iVar0 = (iVar0 - Global_262145.f_17397 /* Tunable: 1672482518 */);
+				iVar0 = (iVar0 - Global_262145.f_17397 /* Tunable: BIKER_FAKEIDS_UPGRADE_EQUIPMENT_REDUCTION_TIME */);
 			}
 			if (func_2460(PLAYER::PLAYER_ID(), iParam0, 1))
 			{
-				iVar0 = (iVar0 - Global_262145.f_17403 /* Tunable: -518264160 */);
+				iVar0 = (iVar0 - Global_262145.f_17403 /* Tunable: BIKER_FAKEIDS_UPGRADE_STAFF_REDUCTION_TIME */);
 			}
 			if (Global_262145.f_33042 /* Tunable: 1893606490 */ && !func_534(34718, -1))
 			{
@@ -168571,11 +168571,11 @@ int func_3084(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position -
 			iVar0 = Global_262145.f_17395 /* Tunable: BIKER_COUNTERCASH_PRODUCTION_TIME */;
 			if (func_2460(PLAYER::PLAYER_ID(), iParam0, 0))
 			{
-				iVar0 = (iVar0 - Global_262145.f_17398 /* Tunable: 1690071006 */);
+				iVar0 = (iVar0 - Global_262145.f_17398 /* Tunable: BIKER_COUNTERCASH_UPGRADE_EQUIPMENT_REDUCTION_TIME */);
 			}
 			if (func_2460(PLAYER::PLAYER_ID(), iParam0, 1))
 			{
-				iVar0 = (iVar0 - Global_262145.f_17404 /* Tunable: -1454958662 */);
+				iVar0 = (iVar0 - Global_262145.f_17404 /* Tunable: BIKER_COUNTERCASH_UPGRADE_STAFF_REDUCTION_TIME */);
 			}
 			if (Global_262145.f_33043 /* Tunable: 1786115839 */ && !func_534(34720, -1))
 			{

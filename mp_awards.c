@@ -15670,7 +15670,7 @@ bool func_122()//Position - 0x102A1
 
 bool func_123()//Position - 0x102B7
 {
-	return Global_262145.f_33716 /* Tunable: -713774654 */;
+	return Global_262145.f_33716 /* Tunable: XM22_STORY_PART_TWO_ENABLED */;
 }
 
 void func_124(var uParam0, var uParam1)//Position - 0x102C9

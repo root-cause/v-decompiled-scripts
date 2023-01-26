@@ -174925,9 +174925,9 @@ void func_1315()//Position - 0xD230C
 					break;
 				
 				case 56:
-					if (func_208(41235, -1) < Global_262145.f_33898 /* Tunable: -335987326 */)
+					if (func_208(41235, -1) < Global_262145.f_33898 /* Tunable: XM22_GUN_VAN_STOCK_ID */)
 					{
-						func_346(41235, Global_262145.f_33898 /* Tunable: -335987326 */, -1);
+						func_346(41235, Global_262145.f_33898 /* Tunable: XM22_GUN_VAN_STOCK_ID */, -1);
 						func_1317(Local_1269.f_4, "NEW_STOCK");
 					}
 					else if ((BitTest(Local_1269.f_10, 21) || Local_1269.f_11 == 0f) || MISC::GET_RANDOM_INT_IN_RANGE(0, 5) < 4)

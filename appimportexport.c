@@ -16154,9 +16154,9 @@ int func_275(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 					iVar1 = 500000;
 					if (bVar0)
 					{
-						if (Global_262145.f_22558 /* Tunable: 821338091 */ >= 0)
+						if (Global_262145.f_22558 /* Tunable: SMUG_VEHICLES_TRADE_PRICE_PEGASSI_ULTRALIGHT */ >= 0)
 						{
-							iVar1 = Global_262145.f_22558 /* Tunable: 821338091 */;
+							iVar1 = Global_262145.f_22558 /* Tunable: SMUG_VEHICLES_TRADE_PRICE_PEGASSI_ULTRALIGHT */;
 						}
 					}
 				}
@@ -16165,9 +16165,9 @@ int func_275(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(500000) * ((100f + SYSTEM::TO_FLOAT(33)) / 100f)));
 					if (bVar0)
 					{
-						if (Global_262145.f_22578 /* Tunable: 1095639582 */ >= 0)
+						if (Global_262145.f_22578 /* Tunable: SMUG_VEHICLES_BUY_IT_NOW_PRICE_PEGASSI_ULTRALIGHT */ >= 0)
 						{
-							iVar1 = Global_262145.f_22578 /* Tunable: 1095639582 */;
+							iVar1 = Global_262145.f_22578 /* Tunable: SMUG_VEHICLES_BUY_IT_NOW_PRICE_PEGASSI_ULTRALIGHT */;
 						}
 					}
 				}

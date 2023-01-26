@@ -14748,7 +14748,7 @@ int func_306(int iParam0, int iParam1, int iParam2)//Position - 0x10A99
 			return func_308(iParam1, iParam2);
 		
 		case 304:
-			if (Global_262145.f_34060 /* Tunable: -1362620970 */)
+			if (Global_262145.f_34060 /* Tunable: ENABLE_SETUP_SOLO_DLC22022 */)
 			{
 				if (func_23(iParam2) && func_307(iParam2) > 0)
 				{

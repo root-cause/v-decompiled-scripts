@@ -78494,7 +78494,7 @@ int func_1086(int iParam0)//Position - 0x5AC73
 			return Global_262145.f_21528 /* Tunable: GR_MC_MEMBER_RESUPPLY_PARTICIPATION_TIME_CAP */;
 		
 		case 230:
-			return Global_262145.f_22807 /* Tunable: -276596795 */;
+			return Global_262145.f_22807 /* Tunable: SMUG_SELL_MC_MEMBER_PARTICIPATION_TIME_CAP */;
 		
 		case 229:
 			return Global_262145.f_22709 /* Tunable: 673226777 */;
@@ -79592,14 +79592,14 @@ void func_1107(int iParam0, var uParam1, int iParam2, var uParam3, var uParam4)/
 				fVar14 = Global_262145.f_22757 /* Tunable: SMUG_SELL_MC_MEMBER_REWARD_PERCENTAGE */;
 				if (!bVar16)
 				{
-					fVar14 = Global_262145.f_22758 /* Tunable: 304396062 */;
+					fVar14 = Global_262145.f_22758 /* Tunable: SMUG_SELL_ORG_MEMBER_REWARD_PERCENTAGE */;
 				}
 				iVar3 = SYSTEM::CEIL((IntToFloat(*iParam2) * fVar14));
 				*iParam2 = iVar3;
 				iVar4 = Global_262145.f_22759 /* Tunable: SMUG_SELL_MC_MEMBER_REWARD_CAP */;
 				if (!bVar16)
 				{
-					iVar4 = Global_262145.f_22760 /* Tunable: -1446893415 */;
+					iVar4 = Global_262145.f_22760 /* Tunable: SMUG_SELL_ORG_MEMBER_REWARD_CAP */;
 				}
 				if (*iParam2 > iVar4)
 				{
@@ -79743,14 +79743,14 @@ void func_1110(int iParam0, var uParam1, int iParam2, var uParam3)//Position - 0
 				fVar14 = Global_262145.f_21513 /* Tunable: GR_MC_MEMBER_SELL_REWARD_PERCENTAGE */;
 				if (!bVar17)
 				{
-					fVar14 = Global_262145.f_21514 /* Tunable: -1471492989 */;
+					fVar14 = Global_262145.f_21514 /* Tunable: GR_ORG_MEMBER_SELL_REWARD_PERCENTAGE */;
 				}
 				iVar3 = SYSTEM::CEIL((IntToFloat(*iParam2) * fVar14));
 				*iParam2 = iVar3;
 				iVar4 = Global_262145.f_21515 /* Tunable: GR_MC_MEMBER_SELL_REWARD_CAP */;
 				if (!bVar17)
 				{
-					iVar4 = Global_262145.f_21516 /* Tunable: 301168766 */;
+					iVar4 = Global_262145.f_21516 /* Tunable: GR_ORG_MEMBER_SELL_REWARD_CAP */;
 				}
 				if (*iParam2 > iVar4)
 				{
@@ -173665,11 +173665,11 @@ int func_2341(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position -
 			iVar0 = Global_262145.f_17391 /* Tunable: BIKER_WEED_PRODUCTION_TIME */;
 			if (func_683(PLAYER::PLAYER_ID(), iParam0, 0))
 			{
-				iVar0 = (iVar0 - Global_262145.f_17401 /* Tunable: -1694873660 */);
+				iVar0 = (iVar0 - Global_262145.f_17401 /* Tunable: BIKER_WEED_UPGRADE_EQUIPMENT_REDUCTION_TIME */);
 			}
 			if (func_683(PLAYER::PLAYER_ID(), iParam0, 1))
 			{
-				iVar0 = (iVar0 - Global_262145.f_17407 /* Tunable: 1575359233 */);
+				iVar0 = (iVar0 - Global_262145.f_17407 /* Tunable: BIKER_WEED_UPGRADE_STAFF_REDUCTION_TIME */);
 			}
 			if (Global_262145.f_33039 /* Tunable: 335485367 */ && !func_678(34716, -1))
 			{
@@ -173681,7 +173681,7 @@ int func_2341(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position -
 			iVar0 = Global_262145.f_17396 /* Tunable: BIKER_ACID_PRODUCTION_TIME */;
 			if (func_682(PLAYER::PLAYER_ID()))
 			{
-				iVar0 = (iVar0 - Global_262145.f_17402 /* Tunable: 494316332 */);
+				iVar0 = (iVar0 - Global_262145.f_17402 /* Tunable: BIKER_ACID_UPGRADE_EQUIPMENT_REDUCTION_TIME */);
 			}
 			if (func_2342(1))
 			{
@@ -173693,11 +173693,11 @@ int func_2341(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position -
 			iVar0 = Global_262145.f_17392 /* Tunable: BIKER_METH_PRODUCTION_TIME */;
 			if (func_683(PLAYER::PLAYER_ID(), iParam0, 0))
 			{
-				iVar0 = (iVar0 - Global_262145.f_17400 /* Tunable: 1944848251 */);
+				iVar0 = (iVar0 - Global_262145.f_17400 /* Tunable: BIKER_METH_UPGRADE_EQUIPMENT_REDUCTION_TIME */);
 			}
 			if (func_683(PLAYER::PLAYER_ID(), iParam0, 1))
 			{
-				iVar0 = (iVar0 - Global_262145.f_17406 /* Tunable: 1577999189 */);
+				iVar0 = (iVar0 - Global_262145.f_17406 /* Tunable: BIKER_METH_UPGRADE_STAFF_REDUCTION_TIME */);
 			}
 			if (Global_262145.f_33040 /* Tunable: -801385760 */ && !func_678(34719, -1))
 			{
@@ -173709,11 +173709,11 @@ int func_2341(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position -
 			iVar0 = Global_262145.f_17393 /* Tunable: BIKER_CRACK_PRODUCTION_TIME */;
 			if (func_683(PLAYER::PLAYER_ID(), iParam0, 0))
 			{
-				iVar0 = (iVar0 - Global_262145.f_17399 /* Tunable: 2070857577 */);
+				iVar0 = (iVar0 - Global_262145.f_17399 /* Tunable: BIKER_CRACK_UPGRADE_EQUIPMENT_REDUCTION_TIME */);
 			}
 			if (func_683(PLAYER::PLAYER_ID(), iParam0, 1))
 			{
-				iVar0 = (iVar0 - Global_262145.f_17405 /* Tunable: -1539796661 */);
+				iVar0 = (iVar0 - Global_262145.f_17405 /* Tunable: BIKER_CRACK_UPGRADE_STAFF_REDUCTION_TIME */);
 			}
 			if (Global_262145.f_33041 /* Tunable: -660655388 */ && !func_678(34717, -1))
 			{
@@ -173725,11 +173725,11 @@ int func_2341(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position -
 			iVar0 = Global_262145.f_17394 /* Tunable: BIKER_FAKEIDS_PRODUCTION_TIME */;
 			if (func_683(PLAYER::PLAYER_ID(), iParam0, 0))
 			{
-				iVar0 = (iVar0 - Global_262145.f_17397 /* Tunable: 1672482518 */);
+				iVar0 = (iVar0 - Global_262145.f_17397 /* Tunable: BIKER_FAKEIDS_UPGRADE_EQUIPMENT_REDUCTION_TIME */);
 			}
 			if (func_683(PLAYER::PLAYER_ID(), iParam0, 1))
 			{
-				iVar0 = (iVar0 - Global_262145.f_17403 /* Tunable: -518264160 */);
+				iVar0 = (iVar0 - Global_262145.f_17403 /* Tunable: BIKER_FAKEIDS_UPGRADE_STAFF_REDUCTION_TIME */);
 			}
 			if (Global_262145.f_33042 /* Tunable: 1893606490 */ && !func_678(34718, -1))
 			{
@@ -173741,11 +173741,11 @@ int func_2341(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position -
 			iVar0 = Global_262145.f_17395 /* Tunable: BIKER_COUNTERCASH_PRODUCTION_TIME */;
 			if (func_683(PLAYER::PLAYER_ID(), iParam0, 0))
 			{
-				iVar0 = (iVar0 - Global_262145.f_17398 /* Tunable: 1690071006 */);
+				iVar0 = (iVar0 - Global_262145.f_17398 /* Tunable: BIKER_COUNTERCASH_UPGRADE_EQUIPMENT_REDUCTION_TIME */);
 			}
 			if (func_683(PLAYER::PLAYER_ID(), iParam0, 1))
 			{
-				iVar0 = (iVar0 - Global_262145.f_17404 /* Tunable: -1454958662 */);
+				iVar0 = (iVar0 - Global_262145.f_17404 /* Tunable: BIKER_COUNTERCASH_UPGRADE_STAFF_REDUCTION_TIME */);
 			}
 			if (Global_262145.f_33043 /* Tunable: 1786115839 */ && !func_678(34720, -1))
 			{

@@ -66084,7 +66084,7 @@ int func_420(int iParam0, int iParam1, int iParam2)//Position - 0x4D191
 				case joaat("DLC_MP_X17_F_BERD_6_1"):
 				case joaat("DLC_MP_X17_F_BERD_6_2"):
 				case joaat("DLC_MP_X17_F_BERD_6_3"):
-					if (Global_262145.f_23055 /* Tunable: -1018881951 */)
+					if (Global_262145.f_23055 /* Tunable: XMAS2017_MASKS */)
 					{
 						return 0;
 					}
@@ -66765,7 +66765,7 @@ int func_420(int iParam0, int iParam1, int iParam2)//Position - 0x4D191
 			{
 				case joaat("DLC_MP_BIKER_M_DECL_0_0"):
 				case joaat("DLC_MP_BIKER_F_DECL_0_0"):
-					if ((!func_417(iParam1, 1, 1, 1, -1) && !func_216(9375, -1)) && !Global_262145.f_17545 /* Tunable: 559860177 */)
+					if ((!func_417(iParam1, 1, 1, 1, -1) && !func_216(9375, -1)) && !Global_262145.f_17545 /* Tunable: HOODIE_STEEL_HORSE_LOGO_BLACK */)
 					{
 						return 1;
 					}
@@ -66777,7 +66777,7 @@ int func_420(int iParam0, int iParam1, int iParam2)//Position - 0x4D191
 				
 				case joaat("DLC_MP_BIKER_M_DECL_0_1"):
 				case joaat("DLC_MP_BIKER_F_DECL_0_1"):
-					if ((!func_417(iParam1, 1, 1, 1, -1) && !func_216(9376, -1)) && !Global_262145.f_17546 /* Tunable: -1239730604 */)
+					if ((!func_417(iParam1, 1, 1, 1, -1) && !func_216(9376, -1)) && !Global_262145.f_17546 /* Tunable: HOODIE_STEEL_HORSE_LOGO_WHITE */)
 					{
 						return 1;
 					}
@@ -66829,7 +66829,7 @@ int func_420(int iParam0, int iParam1, int iParam2)//Position - 0x4D191
 					{
 						return 0;
 					}
-					if ((!func_417(iParam1, 1, 1, 1, -1) && !func_216(9380, -1)) && !Global_262145.f_17550 /* Tunable: -1528114388 */)
+					if ((!func_417(iParam1, 1, 1, 1, -1) && !func_216(9380, -1)) && !Global_262145.f_17550 /* Tunable: HOODIE_NAGASAKI_RED_STAR_LOGO_WHITE */)
 					{
 						return 1;
 					}

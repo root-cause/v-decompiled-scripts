@@ -81168,7 +81168,7 @@ void func_562(var uParam0, struct<4> Param1)//Position - 0x5A2DC
 				break;
 			
 			case joaat("TAT_BI_036"):
-				*uParam0 = Global_262145.f_18974 /* Tunable: -193252292 */;
+				*uParam0 = Global_262145.f_18974 /* Tunable: TATTOO_SKULL_AND_SWORD */;
 				break;
 			
 			case joaat("TAT_BI_037"):
@@ -83955,7 +83955,7 @@ int func_563(int iParam0, struct<4> Param1)//Position - 0x5CEF6
 				break;
 			
 			case joaat("TAT_BI_036"):
-				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_18974 /* Tunable: -193252292 */) * Global_262145.f_15027 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
+				iParam0 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(Global_262145.f_18974 /* Tunable: TATTOO_SKULL_AND_SWORD */) * Global_262145.f_15027 /* Tunable: MALE_AND_FEMALE_TATTOOS_ALL_TATTOOS */));
 				break;
 			
 			case joaat("TAT_BI_037"):

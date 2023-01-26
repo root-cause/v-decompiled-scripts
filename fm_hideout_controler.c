@@ -151021,7 +151021,7 @@ int func_1687(int iParam0)//Position - 0xBFCDD
 
 int func_1688(int iParam0, int iParam1, int iParam2)//Position - 0xBFD1D
 {
-	if (MISC::ARE_STRINGS_EQUAL(func_1689(iParam0, iParam1), "FMMC_SEL_DEF") || (!Global_262145.f_16046 /* Tunable: -1915478646 */ && MISC::ARE_STRINGS_EQUAL(func_1689(iParam0, iParam1), "MC_STNT_USA")))
+	if (MISC::ARE_STRINGS_EQUAL(func_1689(iParam0, iParam1), "FMMC_SEL_DEF") || (!Global_262145.f_16046 /* Tunable: ENABLE_CREATOR_AMERICAN_FLAG_STUNT_RACES */ && MISC::ARE_STRINGS_EQUAL(func_1689(iParam0, iParam1), "MC_STNT_USA")))
 	{
 		return 0;
 	}
