@@ -17454,9 +17454,9 @@ int func_274(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 					iVar1 = 487500;
 					if (bVar0)
 					{
-						if (Global_262145.f_28517 /* Tunable: 256069819 */ >= 0)
+						if (Global_262145.f_28517 /* Tunable: CH_TRADE_PRICE_SENTINAL3 */ >= 0)
 						{
-							iVar1 = Global_262145.f_28517 /* Tunable: 256069819 */;
+							iVar1 = Global_262145.f_28517 /* Tunable: CH_TRADE_PRICE_SENTINAL3 */;
 						}
 					}
 				}
@@ -17473,9 +17473,9 @@ int func_274(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 					iVar2 = 487500;
 					if (bVar0)
 					{
-						if (Global_262145.f_28517 /* Tunable: 256069819 */ >= 0)
+						if (Global_262145.f_28517 /* Tunable: CH_TRADE_PRICE_SENTINAL3 */ >= 0)
 						{
-							iVar2 = Global_262145.f_28517 /* Tunable: 256069819 */;
+							iVar2 = Global_262145.f_28517 /* Tunable: CH_TRADE_PRICE_SENTINAL3 */;
 						}
 					}
 				}
@@ -20296,7 +20296,7 @@ int func_274(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				break;
 			
 			case joaat("sentinel4"):
-				iVar1 = (Global_262145.f_28517 /* Tunable: 256069819 */ + func_277(iParam1));
+				iVar1 = (Global_262145.f_28517 /* Tunable: CH_TRADE_PRICE_SENTINAL3 */ + func_277(iParam1));
 				break;
 			
 			case joaat("brickade2"):

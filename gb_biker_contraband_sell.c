@@ -48284,16 +48284,16 @@ int func_704(int iParam0, int iParam1, int iParam2)//Position - 0x3ED8B
 					return 0;
 				
 				case 2:
-					return Global_262145.f_28684 /* Tunable: 1609911012 */;
+					return Global_262145.f_28684 /* Tunable: ARCADE_SHARPSHOOTER_BRONZE_SCORE */;
 				
 				case 3:
-					return Global_262145.f_28685 /* Tunable: -68365255 */;
+					return Global_262145.f_28685 /* Tunable: ARCADE_SHARPSHOOTER_SILVER_SCORE */;
 				
 				case 4:
-					return Global_262145.f_28686 /* Tunable: 1302605276 */;
+					return Global_262145.f_28686 /* Tunable: ARCADE_SHARPSHOOTER_GOLD_SCORE */;
 				
 				case 5:
-					return Global_262145.f_28687 /* Tunable: 1897527067 */;
+					return Global_262145.f_28687 /* Tunable: ARCADE_SHARPSHOOTER_PLATINUM_SCORE */;
 				
 				default:
 			}
@@ -48309,16 +48309,16 @@ int func_704(int iParam0, int iParam1, int iParam2)//Position - 0x3ED8B
 					return 0;
 				
 				case 2:
-					return Global_262145.f_28851 /* Tunable: -115509788 */;
+					return Global_262145.f_28851 /* Tunable: ARCADE_RACECHAMP_BRONZE_SCORE */;
 				
 				case 3:
-					return Global_262145.f_28852 /* Tunable: -1829268 */;
+					return Global_262145.f_28852 /* Tunable: ARCADE_RACECHAMP_SILVER_SCORE */;
 				
 				case 4:
-					return Global_262145.f_28853 /* Tunable: 1440688049 */;
+					return Global_262145.f_28853 /* Tunable: ARCADE_RACECHAMP_GOLD_SCORE */;
 				
 				case 5:
-					return Global_262145.f_28854 /* Tunable: 1927470758 */;
+					return Global_262145.f_28854 /* Tunable: ARCADE_RACECHAMP_PLATINUM_SCORE */;
 				
 				default:
 			}
@@ -48334,16 +48334,16 @@ int func_704(int iParam0, int iParam1, int iParam2)//Position - 0x3ED8B
 					return 0;
 				
 				case 2:
-					return Global_262145.f_28885 /* Tunable: -544066833 */;
+					return Global_262145.f_28885 /* Tunable: ARCADE_PLAT_SWORD_BRONZE_SCORE */;
 				
 				case 3:
-					return Global_262145.f_28886 /* Tunable: -2047978964 */;
+					return Global_262145.f_28886 /* Tunable: ARCADE_PLAT_SWORD_SILVER_SCORE */;
 				
 				case 4:
-					return Global_262145.f_28887 /* Tunable: 1531249671 */;
+					return Global_262145.f_28887 /* Tunable: ARCADE_PLAT_SWORD_GOLD_SCORE */;
 				
 				case 5:
-					return Global_262145.f_28888 /* Tunable: -1453293483 */;
+					return Global_262145.f_28888 /* Tunable: ARCADE_PLAT_SWORD_PLATINUM_SCORE */;
 				
 				default:
 			}
@@ -48359,16 +48359,16 @@ int func_704(int iParam0, int iParam1, int iParam2)//Position - 0x3ED8B
 					return 0;
 				
 				case 2:
-					return Global_262145.f_28889 /* Tunable: 598612790 */;
+					return Global_262145.f_28889 /* Tunable: ARCADE_COIN_PURSE_BRONZE_SCORE */;
 				
 				case 3:
-					return Global_262145.f_28890 /* Tunable: 1078233149 */;
+					return Global_262145.f_28890 /* Tunable: ARCADE_COIN_PURSE_SILVER_SCORE */;
 				
 				case 4:
-					return Global_262145.f_28891 /* Tunable: 1551564012 */;
+					return Global_262145.f_28891 /* Tunable: ARCADE_COIN_PURSE_GOLD_SCORE */;
 				
 				case 5:
-					return Global_262145.f_28892 /* Tunable: -693952313 */;
+					return Global_262145.f_28892 /* Tunable: ARCADE_COIN_PURSE_PLATINUM_SCORE */;
 				
 				default:
 			}
@@ -48409,16 +48409,16 @@ int func_704(int iParam0, int iParam1, int iParam2)//Position - 0x3ED8B
 					return 0;
 				
 				case 2:
-					return Global_262145.f_28855 /* Tunable: 1179057810 */;
+					return Global_262145.f_28855 /* Tunable: ARCADE_MASTERFUL_BRONZE_SCORE */;
 				
 				case 3:
-					return Global_262145.f_28856 /* Tunable: -1060787570 */;
+					return Global_262145.f_28856 /* Tunable: ARCADE_MASTERFUL_SILVER_SCORE */;
 				
 				case 4:
-					return Global_262145.f_28857 /* Tunable: -672936783 */;
+					return Global_262145.f_28857 /* Tunable: ARCADE_MASTERFUL_GOLD_SCORE */;
 				
 				case 5:
-					return Global_262145.f_28858 /* Tunable: -193315003 */;
+					return Global_262145.f_28858 /* Tunable: ARCADE_MASTERFUL_PLATINUM_SCORE */;
 				
 				default:
 			}
@@ -120923,7 +120923,7 @@ void func_1125(int iParam0, var uParam1, int iParam2, var uParam3)//Position - 0
 			if (iVar15 == PLAYER::PLAYER_ID())
 			{
 				func_977(iVar16, iVar2);
-				if (func_1129(iVar16) >= Global_262145.f_21055 /* Tunable: -376544159 */ || iVar2 >= Global_262145.f_21055 /* Tunable: -376544159 */)
+				if (func_1129(iVar16) >= Global_262145.f_21055 /* Tunable: AMOUNT_AWARD_SELLMISSION_EARNINGS */ || iVar2 >= Global_262145.f_21055 /* Tunable: AMOUNT_AWARD_SELLMISSION_EARNINGS */)
 				{
 					func_1126(5);
 				}
@@ -121021,9 +121021,9 @@ void func_1126(int iParam0)//Position - 0x9250D
 			break;
 		
 		case 3:
-			if (Global_262145.f_21049 /* Tunable: -1826409358 */)
+			if (Global_262145.f_21049 /* Tunable: ENABLE_AWARD_COVOPMISSION */)
 			{
-				if (func_1128(Global_262145.f_21050 /* Tunable: -1246765887 */))
+				if (func_1128(Global_262145.f_21050 /* Tunable: ITEM_AWARD_COVOPMISSION */))
 				{
 					func_1127("CLOTHAWDSTRAP2" /* GXT: You have received an award item for ~a~. */, "CLOTHAWDDESC5" /* GXT: completing a Mobile Operations Mission */, 0, 0, 0);
 				}
@@ -121031,9 +121031,9 @@ void func_1126(int iParam0)//Position - 0x9250D
 			break;
 		
 		case 4:
-			if (Global_262145.f_21051 /* Tunable: 1119356491 */)
+			if (Global_262145.f_21051 /* Tunable: ENABLE_AWARD_7COVOPMISSION */)
 			{
-				if (func_1128(Global_262145.f_21052 /* Tunable: 610099915 */))
+				if (func_1128(Global_262145.f_21052 /* Tunable: ITEM_AWARD_7COVOPMISSION */))
 				{
 					func_1127("CLOTHAWDSTRAP2" /* GXT: You have received an award item for ~a~. */, "CLOTHAWDDESC6" /* GXT: completing all 7 Mobile Operations Missions */, 0, 0, 0);
 				}
@@ -121045,7 +121045,7 @@ void func_1126(int iParam0)//Position - 0x9250D
 			{
 				if (func_1128(Global_262145.f_21054 /* Tunable: ITEM_AWARD_SELLMISSION_EARNINGS */))
 				{
-					func_1028("CLOTHAWDSTRAP3" /* GXT: You have received an award item for making $~1~ from Sell Missions. */, Global_262145.f_21055 /* Tunable: -376544159 */, 0);
+					func_1028("CLOTHAWDSTRAP3" /* GXT: You have received an award item for making $~1~ from Sell Missions. */, Global_262145.f_21055 /* Tunable: AMOUNT_AWARD_SELLMISSION_EARNINGS */, 0);
 				}
 			}
 			break;
@@ -121091,9 +121091,9 @@ void func_1126(int iParam0)//Position - 0x9250D
 			break;
 		
 		case 10:
-			if (Global_262145.f_21065 /* Tunable: -1306416316 */)
+			if (Global_262145.f_21065 /* Tunable: ENABLE_AWARD_PURCH_SINGLEWEAPONIZEDVEHICLE */)
 			{
-				if (func_1128(Global_262145.f_21066 /* Tunable: -1758383282 */))
+				if (func_1128(Global_262145.f_21066 /* Tunable: ITEM_AWARD_PURCH_SINGLEWEAPONIZEDVEHICLE */))
 				{
 					func_1127("CLOTHAWDSTRAP2" /* GXT: You have received an award item for ~a~. */, "CLOTHAWDDESC11" /* GXT: purchasing a Weaponized Vehicle */, 0, 0, 0);
 				}
@@ -121101,9 +121101,9 @@ void func_1126(int iParam0)//Position - 0x9250D
 			break;
 		
 		case 11:
-			if (Global_262145.f_21067 /* Tunable: 1340758163 */)
+			if (Global_262145.f_21067 /* Tunable: ENABLE_AWARD_PURCH_ALLWEAPONIZEDVEHICLE */)
 			{
-				if (func_1128(Global_262145.f_21068 /* Tunable: 760076687 */))
+				if (func_1128(Global_262145.f_21068 /* Tunable: ITEM_AWARD_PURCH_ALLWEAPONIZEDVEHICLE */))
 				{
 					func_1127("CLOTHAWDSTRAP2" /* GXT: You have received an award item for ~a~. */, "CLOTHAWDDESC12" /* GXT: purchasing all the following Gunrunning vehicles:~n~APC~n~Dune FAV~n~Half-track~n~Oppressor~n~Weaponized Tampa~n~Anti-Aircraft Trailer */, 0, 0, 0);
 				}
@@ -121111,9 +121111,9 @@ void func_1126(int iParam0)//Position - 0x9250D
 			break;
 		
 		case 12:
-			if (Global_262145.f_21069 /* Tunable: 583915737 */)
+			if (Global_262145.f_21069 /* Tunable: ENABLE_AWARD_PURCH_UPGRADEWEAPONIZEDVEHICLE */)
 			{
-				if (func_1128(Global_262145.f_21070 /* Tunable: -920323688 */))
+				if (func_1128(Global_262145.f_21070 /* Tunable: ITEM_AWARD_PURCH_UPGRADEWEAPONIZEDVEHICLE */))
 				{
 					func_1127("CLOTHAWDSTRAP2" /* GXT: You have received an award item for ~a~. */, "CLOTHAWDDESC13" /* GXT: purchasing a Weaponized Vehicle upgrade */, 0, 0, 0);
 				}

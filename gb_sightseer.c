@@ -61681,7 +61681,7 @@ void func_718(int iParam0, var uParam1, int iParam2, var uParam3)//Position - 0x
 			if (iVar15 == PLAYER::PLAYER_ID())
 			{
 				func_728(iVar16, iVar2);
-				if (func_724(iVar16) >= Global_262145.f_21055 /* Tunable: -376544159 */ || iVar2 >= Global_262145.f_21055 /* Tunable: -376544159 */)
+				if (func_724(iVar16) >= Global_262145.f_21055 /* Tunable: AMOUNT_AWARD_SELLMISSION_EARNINGS */ || iVar2 >= Global_262145.f_21055 /* Tunable: AMOUNT_AWARD_SELLMISSION_EARNINGS */)
 				{
 					func_719(5);
 				}
@@ -61779,9 +61779,9 @@ void func_719(int iParam0)//Position - 0x407E3
 			break;
 		
 		case 3:
-			if (Global_262145.f_21049 /* Tunable: -1826409358 */)
+			if (Global_262145.f_21049 /* Tunable: ENABLE_AWARD_COVOPMISSION */)
 			{
-				if (func_721(Global_262145.f_21050 /* Tunable: -1246765887 */))
+				if (func_721(Global_262145.f_21050 /* Tunable: ITEM_AWARD_COVOPMISSION */))
 				{
 					func_720("CLOTHAWDSTRAP2" /* GXT: You have received an award item for ~a~. */, "CLOTHAWDDESC5" /* GXT: completing a Mobile Operations Mission */, 0, 0, 0);
 				}
@@ -61789,9 +61789,9 @@ void func_719(int iParam0)//Position - 0x407E3
 			break;
 		
 		case 4:
-			if (Global_262145.f_21051 /* Tunable: 1119356491 */)
+			if (Global_262145.f_21051 /* Tunable: ENABLE_AWARD_7COVOPMISSION */)
 			{
-				if (func_721(Global_262145.f_21052 /* Tunable: 610099915 */))
+				if (func_721(Global_262145.f_21052 /* Tunable: ITEM_AWARD_7COVOPMISSION */))
 				{
 					func_720("CLOTHAWDSTRAP2" /* GXT: You have received an award item for ~a~. */, "CLOTHAWDDESC6" /* GXT: completing all 7 Mobile Operations Missions */, 0, 0, 0);
 				}
@@ -61803,7 +61803,7 @@ void func_719(int iParam0)//Position - 0x407E3
 			{
 				if (func_721(Global_262145.f_21054 /* Tunable: ITEM_AWARD_SELLMISSION_EARNINGS */))
 				{
-					func_620("CLOTHAWDSTRAP3" /* GXT: You have received an award item for making $~1~ from Sell Missions. */, Global_262145.f_21055 /* Tunable: -376544159 */, 0);
+					func_620("CLOTHAWDSTRAP3" /* GXT: You have received an award item for making $~1~ from Sell Missions. */, Global_262145.f_21055 /* Tunable: AMOUNT_AWARD_SELLMISSION_EARNINGS */, 0);
 				}
 			}
 			break;
@@ -61849,9 +61849,9 @@ void func_719(int iParam0)//Position - 0x407E3
 			break;
 		
 		case 10:
-			if (Global_262145.f_21065 /* Tunable: -1306416316 */)
+			if (Global_262145.f_21065 /* Tunable: ENABLE_AWARD_PURCH_SINGLEWEAPONIZEDVEHICLE */)
 			{
-				if (func_721(Global_262145.f_21066 /* Tunable: -1758383282 */))
+				if (func_721(Global_262145.f_21066 /* Tunable: ITEM_AWARD_PURCH_SINGLEWEAPONIZEDVEHICLE */))
 				{
 					func_720("CLOTHAWDSTRAP2" /* GXT: You have received an award item for ~a~. */, "CLOTHAWDDESC11" /* GXT: purchasing a Weaponized Vehicle */, 0, 0, 0);
 				}
@@ -61859,9 +61859,9 @@ void func_719(int iParam0)//Position - 0x407E3
 			break;
 		
 		case 11:
-			if (Global_262145.f_21067 /* Tunable: 1340758163 */)
+			if (Global_262145.f_21067 /* Tunable: ENABLE_AWARD_PURCH_ALLWEAPONIZEDVEHICLE */)
 			{
-				if (func_721(Global_262145.f_21068 /* Tunable: 760076687 */))
+				if (func_721(Global_262145.f_21068 /* Tunable: ITEM_AWARD_PURCH_ALLWEAPONIZEDVEHICLE */))
 				{
 					func_720("CLOTHAWDSTRAP2" /* GXT: You have received an award item for ~a~. */, "CLOTHAWDDESC12" /* GXT: purchasing all the following Gunrunning vehicles:~n~APC~n~Dune FAV~n~Half-track~n~Oppressor~n~Weaponized Tampa~n~Anti-Aircraft Trailer */, 0, 0, 0);
 				}
@@ -61869,9 +61869,9 @@ void func_719(int iParam0)//Position - 0x407E3
 			break;
 		
 		case 12:
-			if (Global_262145.f_21069 /* Tunable: 583915737 */)
+			if (Global_262145.f_21069 /* Tunable: ENABLE_AWARD_PURCH_UPGRADEWEAPONIZEDVEHICLE */)
 			{
-				if (func_721(Global_262145.f_21070 /* Tunable: -920323688 */))
+				if (func_721(Global_262145.f_21070 /* Tunable: ITEM_AWARD_PURCH_UPGRADEWEAPONIZEDVEHICLE */))
 				{
 					func_720("CLOTHAWDSTRAP2" /* GXT: You have received an award item for ~a~. */, "CLOTHAWDDESC13" /* GXT: purchasing a Weaponized Vehicle upgrade */, 0, 0, 0);
 				}
