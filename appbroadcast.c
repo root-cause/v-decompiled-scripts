@@ -128,17 +128,17 @@ void func_3()//Position - 0x14A
 	{
 		if (func_16())
 		{
-			if (Global_2694463)
+			if (Global_2694465)
 			{
 				NETWORK::NETWORK_OVERRIDE_SEND_RESTRICTIONS_ALL(false);
-				func_10(-1011984062, func_11(1, 1));
-				Global_2694463 = 0;
+				func_10(1583221826, func_11(1, 1));
+				Global_2694465 = 0;
 			}
 			else
 			{
 				NETWORK::NETWORK_OVERRIDE_SEND_RESTRICTIONS_ALL(true);
-				func_10(213830448, func_11(1, 1));
-				Global_2694463 = 1;
+				func_10(1217051745, func_11(1, 1));
+				Global_2694465 = 1;
 			}
 			func_4(0);
 			return;
@@ -270,7 +270,7 @@ void func_10(int iParam0, int iParam1)//Position - 0x33F
 {
 	struct<4> Var0;
 	
-	Var0.f_0 = 113023613;
+	Var0.f_0 = -1428749433;
 	Var0.f_1 = PLAYER::PLAYER_ID();
 	Var0.f_2 = iParam0;
 	Var0.f_3 = MISC::GET_RANDOM_INT_IN_RANGE(0, 9999);
@@ -439,7 +439,7 @@ int func_19(int iParam0, int iParam1)//Position - 0x549
 	int iVar0;
 	var uVar1;
 	
-	iVar0 = Global_2848280[iParam0 /*3*/][func_20(iParam1)];
+	iVar0 = Global_2848282[iParam0 /*3*/][func_20(iParam1)];
 	if (STATS::STAT_GET_BOOL(iVar0, &uVar1, -1))
 	{
 		return uVar1;
@@ -458,13 +458,13 @@ int func_20(var uParam0)//Position - 0x575
 		iVar1 = func_14();
 		if (iVar1 > -1)
 		{
-			Global_2804739 = 0;
+			Global_2804741 = 0;
 			iVar0 = iVar1;
 		}
 		else
 		{
 			iVar0 = 0;
-			Global_2804739 = 1;
+			Global_2804741 = 1;
 		}
 	}
 	return iVar0;
@@ -643,7 +643,7 @@ void func_36()//Position - 0x7C8
 	func_44(Global_20364, "SET_DATA_SLOT_EMPTY", SYSTEM::TO_FLOAT(13), -1082130432, -1082130432, -1082130432, -1082130432);
 	if (func_16())
 	{
-		if (Global_2694463)
+		if (Global_2694465)
 		{
 			func_43(Global_20364, "SET_DATA_SLOT", SYSTEM::TO_FLOAT(13), SYSTEM::TO_FLOAT(0), SYSTEM::TO_FLOAT(12), -1f, -1f, &Local_46, 0, 0, 0, 0);
 		}

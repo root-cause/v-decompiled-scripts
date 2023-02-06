@@ -459,7 +459,7 @@ int func_16()//Position - 0x5A7
 	{
 		return 1;
 	}
-	if (Global_2672505.f_60)
+	if (Global_2672505.f_61)
 	{
 		return 1;
 	}

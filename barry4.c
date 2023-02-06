@@ -4644,7 +4644,7 @@ void func_69(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)/
 	if (bParam4)
 	{
 	}
-	iVar0 = Global_2805027[iParam0 /*3*/][func_70(iParam2)];
+	iVar0 = Global_2805029[iParam0 /*3*/][func_70(iParam2)];
 	if (iVar0 != 0)
 	{
 		STATS::STAT_SET_INT(iVar0, iParam1, bParam3);
@@ -4662,13 +4662,13 @@ int func_70(var uParam0)//Position - 0x597F
 		iVar1 = func_11();
 		if (iVar1 > -1)
 		{
-			Global_2804739 = 0;
+			Global_2804741 = 0;
 			iVar0 = iVar1;
 		}
 		else
 		{
 			iVar0 = 0;
-			Global_2804739 = 1;
+			Global_2804741 = 1;
 		}
 	}
 	return iVar0;
@@ -4684,7 +4684,7 @@ int func_71(int iParam0, int iParam1, int iParam2)//Position - 0x59B3
 		if (iParam2 == 0)
 		{
 		}
-		iVar0 = Global_2805027[iParam0 /*3*/][func_70(iParam1)];
+		iVar0 = Global_2805029[iParam0 /*3*/][func_70(iParam1)];
 		if (STATS::STAT_GET_INT(iVar0, &uVar1, -1))
 		{
 			return uVar1;
@@ -38422,7 +38422,7 @@ int func_275(int iParam0, bool bParam1)//Position - 0x2BF1A
 		case joaat("insurgent"):
 			if (func_277(ENTITY::GET_ENTITY_MODEL(iParam0), 0))
 			{
-				if (Global_2793044.f_304 == iParam0)
+				if (Global_2793046.f_304 == iParam0)
 				{
 					return 1;
 				}
@@ -38445,7 +38445,7 @@ int func_276(int iParam0)//Position - 0x2BF75
 		iVar0 = 0;
 		while (iVar0 < 32)
 		{
-			if (Global_2672505.f_220[iVar0] == iParam0)
+			if (Global_2672505.f_221[iVar0] == iParam0)
 			{
 				return iVar0;
 			}
@@ -39713,14 +39713,14 @@ int func_301(int iParam0, int iParam1)//Position - 0x2D8B7
 	int iVar0;
 	int iVar1;
 	
-	if ((!Global_2764242 && iParam1 >= 0) && iParam1 <= 415)
+	if ((!Global_2764244 && iParam1 >= 0) && iParam1 <= 415)
 	{
 		if (BitTest(Global_1586468[iParam1 /*142*/].f_103, 2))
 		{
 			return 1;
 		}
 	}
-	if (Global_2764241)
+	if (Global_2764243)
 	{
 		return 1;
 	}
@@ -44223,7 +44223,7 @@ int func_343(int iParam0)//Position - 0x34434
 
 bool func_344(int iParam0)//Position - 0x34452
 {
-	return func_345(&(Global_2672505.f_183), iParam0);
+	return func_345(&(Global_2672505.f_184), iParam0);
 }
 
 var func_345(var uParam0, var uParam1)//Position - 0x34466

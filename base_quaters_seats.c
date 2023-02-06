@@ -692,7 +692,7 @@ int func_20(int iParam0)//Position - 0xA76
 
 int func_21()//Position - 0xAD3
 {
-	if (Global_2672505.f_946.f_5 == -1)
+	if (Global_2672505.f_947.f_5 == -1)
 	{
 		return 0;
 	}
@@ -779,18 +779,18 @@ void func_28(bool bParam0)//Position - 0xCD8
 	{
 		if (func_29())
 		{
-			Global_2683862.f_41 = 1;
+			Global_2683864.f_41 = 1;
 		}
 	}
 	else
 	{
-		Global_2683862.f_41 = 0;
+		Global_2683864.f_41 = 0;
 	}
 }
 
 bool func_29()//Position - 0xCFD
 {
-	return BitTest(Global_2683862.f_2, 11);
+	return BitTest(Global_2683864.f_2, 11);
 }
 
 void func_30()//Position - 0xD0E
@@ -1412,7 +1412,7 @@ int func_61()//Position - 0x169E
 	{
 		return 1;
 	}
-	if (Global_2696915)
+	if (Global_2696917)
 	{
 		return 1;
 	}
@@ -1462,7 +1462,7 @@ int func_62()//Position - 0x1722
 
 int func_63()//Position - 0x1755
 {
-	switch (Global_2697019)
+	switch (Global_2697021)
 	{
 		case 0:
 			return joaat("freemode");
@@ -1479,7 +1479,7 @@ int func_64()//Position - 0x1779
 
 bool func_65()//Position - 0x1784
 {
-	return Global_2683862.f_698;
+	return Global_2683864.f_698;
 }
 
 int func_66(int iParam0)//Position - 0x1793
@@ -1493,12 +1493,12 @@ int func_66(int iParam0)//Position - 0x1793
 
 bool func_67()//Position - 0x17AA
 {
-	return Global_2694524;
+	return Global_2694526;
 }
 
 bool func_68()//Position - 0x17B6
 {
-	return Global_2683862.f_693;
+	return Global_2683864.f_693;
 }
 
 bool func_69(int iParam0)//Position - 0x17C5

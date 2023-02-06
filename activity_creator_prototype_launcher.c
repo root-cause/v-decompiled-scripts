@@ -274,7 +274,7 @@ int func_4(int iParam0)//Position - 0x1CE
 
 bool func_5()//Position - 0x1E5
 {
-	return Global_2683862.f_693;
+	return Global_2683864.f_693;
 }
 
 bool func_6(bool bParam0)//Position - 0x1F4

@@ -206,7 +206,7 @@ void __EntryFunction__()//Position - 0x0
 						SOCIALCLUB::SC_EMAIL_SET_CURRENT_EMAIL_TAG("gta5mkt_cn");
 						break;
 				}
-				if (Global_2793044.f_5057)
+				if (Global_2793046.f_5057)
 				{
 					SOCIALCLUB::SC_EMAIL_RETRIEVE_EMAILS(0, 1);
 				}
@@ -277,7 +277,7 @@ void __EntryFunction__()//Position - 0x0
 				func_88(0);
 			}
 		}
-		if (Global_2793044.f_4642 == 1)
+		if (Global_2793046.f_4642 == 1)
 		{
 			if (Global_20383.f_1 > 3)
 			{
@@ -1866,7 +1866,7 @@ void func_33(int iParam0)//Position - 0x1ED4
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar2);
 								GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							}
-							if (Global_2694519)
+							if (Global_2694521)
 							{
 								if (iVar1 == 14)
 								{
@@ -2504,7 +2504,7 @@ void func_53()//Position - 0x2A1B
 			switch (Global_4541032[Global_4542281 /*104*/].f_32)
 			{
 				case 4:
-					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_2793044.f_1755[iVar16 /*4*/]));
+					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_2793046.f_1755[iVar16 /*4*/]));
 					break;
 				
 				case 5:
@@ -2839,7 +2839,7 @@ void func_58()//Position - 0x321F
 			switch (Global_113648.f_14143[Global_22792 /*104*/].f_32)
 			{
 				case 4:
-					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_2793044.f_1755[iVar16 /*4*/]));
+					HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_2793046.f_1755[iVar16 /*4*/]));
 					break;
 				
 				case 5:
@@ -7227,7 +7227,7 @@ int func_128(int iParam0, int iParam1, int iParam2)//Position - 0x9ADB
 		if (iParam2 == 0)
 		{
 		}
-		iVar0 = Global_2805027[iParam0 /*3*/][func_129(iParam1)];
+		iVar0 = Global_2805029[iParam0 /*3*/][func_129(iParam1)];
 		if (STATS::STAT_GET_INT(iVar0, &uVar1, -1))
 		{
 			return uVar1;
@@ -7247,13 +7247,13 @@ int func_129(var uParam0)//Position - 0x9B18
 		iVar1 = func_130();
 		if (iVar1 > -1)
 		{
-			Global_2804739 = 0;
+			Global_2804741 = 0;
 			iVar0 = iVar1;
 		}
 		else
 		{
 			iVar0 = 0;
-			Global_2804739 = 1;
+			Global_2804741 = 1;
 		}
 	}
 	return iVar0;
@@ -7270,7 +7270,7 @@ void func_131()//Position - 0x9B58
 	{
 		Global_8260[14 /*15*/].f_4 = -99;
 		Global_8260[4 /*15*/].f_4 = -99;
-		if (Global_2694519)
+		if (Global_2694521)
 		{
 			if (func_34(14))
 			{

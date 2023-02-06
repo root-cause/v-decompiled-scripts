@@ -585,7 +585,7 @@ void func_15()//Position - 0x9DE
 	{
 		Global_8260[14 /*15*/].f_4 = -99;
 		Global_8260[4 /*15*/].f_4 = -99;
-		if (Global_2694519)
+		if (Global_2694521)
 		{
 			if (func_17(14))
 			{

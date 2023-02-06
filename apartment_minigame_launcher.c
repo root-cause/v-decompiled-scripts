@@ -494,17 +494,17 @@ void func_3()//Position - 0x4B3
 		switch (SCRIPT::GET_EVENT_AT_INDEX(1, iVar2))
 		{
 			case 174:
-				Local_117.f_0 = 113023613;
+				Local_117.f_0 = -1428749433;
 				if (func_23(iVar2, &Local_117, 1))
 				{
 					switch (Local_117.f_0)
 					{
-						case 1142429368:
+						case -556935973:
 							iVar0 = Local_117.f_3;
 							iVar1 = Local_117.f_4;
 							break;
 						
-						case -631614957:
+						case 290867572:
 							if (func_22(Local_117.f_2, 1))
 							{
 								if (iLocal_381[Local_117.f_3] <= Local_338[Local_117.f_3 /*21*/].f_11)
@@ -546,7 +546,7 @@ void func_3()//Position - 0x4B3
 					{
 						if (Local_384[bVar3 /*5*/].f_1 == iVar4 && func_19(&(Local_384[bVar3 /*5*/]), 1))
 						{
-							func_18(-727029014, NETWORK::NETWORK_GET_PLAYER_INDEX(iVar5), iVar4);
+							func_18(101214790, NETWORK::NETWORK_GET_PLAYER_INDEX(iVar5), iVar4);
 							bVar6 = true;
 						}
 					}
@@ -661,7 +661,7 @@ void func_4(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4, b
 {
 	struct<6> Var0;
 	
-	Var0.f_0 = 526302252;
+	Var0.f_0 = 1744502637;
 	Var0.f_1 = PLAYER::PLAYER_ID();
 	func_6(&(Var0.f_2), 4, bParam3);
 	func_6(&(Var0.f_2), 2, bParam4);
@@ -1066,7 +1066,7 @@ void func_21(int iParam0, var uParam1, bool bParam2)//Position - 0x11E0
 {
 	struct<5> Var0;
 	
-	Var0.f_0 = -355443351;
+	Var0.f_0 = 1255645672;
 	Var0.f_1 = PLAYER::PLAYER_ID();
 	func_6(&(Var0.f_2), 0, bParam2);
 	func_6(&(Var0.f_2), 3, 0);
@@ -1473,7 +1473,7 @@ void func_34(bool bParam0, bool bParam1)//Position - 0x1939
 	iVar0 = 0;
 	while (iVar0 < 40)
 	{
-		StringCopy(&(Global_2695070[iVar0 /*16*/]), "", 64);
+		StringCopy(&(Global_2695072[iVar0 /*16*/]), "", 64);
 		iVar0++;
 	}
 	iVar0 = 0;
@@ -1759,9 +1759,9 @@ int func_36(char* sParam0, int iParam1, struct<17> Param2, var uParam19, var uPa
 
 void func_37()//Position - 0x1FEA
 {
-	if (Global_2793044.f_4058 != 0)
+	if (Global_2793046.f_4058 != 0)
 	{
-		Global_2793044.f_4058 = 5;
+		Global_2793046.f_4058 = 5;
 	}
 }
 
@@ -2292,7 +2292,7 @@ void func_48(int iParam0, var uParam1)//Position - 0x2BDE
 {
 	struct<5> Var0;
 	
-	Var0.f_0 = 1142429368;
+	Var0.f_0 = -556935973;
 	Var0.f_1 = PLAYER::PLAYER_ID();
 	Var0.f_3 = uParam1;
 	Var0.f_4 = iParam0;
@@ -3230,7 +3230,7 @@ void func_51(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 											{
 												if (MISC::GET_HASH_KEY(&(Global_23270.f_79[iVar24 /*6*/])) != 0)
 												{
-													HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_2695070[(iVar23 + iVar29) /*16*/]));
+													HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_2695072[(iVar23 + iVar29) /*16*/]));
 												}
 												iVar29++;
 											}
@@ -3238,7 +3238,7 @@ void func_51(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 											{
 												if (MISC::GET_HASH_KEY(&(Global_23270.f_79[iVar24 /*6*/])) != 0)
 												{
-													HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_2695070[(iVar23 + iVar29) /*16*/]));
+													HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_2695072[(iVar23 + iVar29) /*16*/]));
 												}
 												iVar29++;
 											}
@@ -3246,7 +3246,7 @@ void func_51(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 											{
 												if (MISC::GET_HASH_KEY(&(Global_23270.f_79[iVar24 /*6*/])) != 0)
 												{
-													HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_2695070[(iVar23 + iVar29) /*16*/]));
+													HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_2695072[(iVar23 + iVar29) /*16*/]));
 												}
 												iVar29++;
 											}
@@ -3254,7 +3254,7 @@ void func_51(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 											{
 												if (MISC::GET_HASH_KEY(&(Global_23270.f_79[iVar24 /*6*/])) != 0)
 												{
-													HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_2695070[(iVar23 + iVar29) /*16*/]));
+													HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_2695072[(iVar23 + iVar29) /*16*/]));
 												}
 												iVar29++;
 											}
@@ -3426,7 +3426,7 @@ void func_51(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 										{
 											if (MISC::GET_HASH_KEY(&(Global_23270.f_79[iVar24 /*6*/])) != 0 && iVar5 == 1)
 											{
-												HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_2695070[(iVar23 + iVar29) /*16*/]));
+												HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_2695072[(iVar23 + iVar29) /*16*/]));
 											}
 											iVar29++;
 											iVar31 = 5;
@@ -3435,7 +3435,7 @@ void func_51(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 										{
 											if (MISC::GET_HASH_KEY(&(Global_23270.f_79[iVar24 /*6*/])) != 0 && iVar5 == 1)
 											{
-												HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_2695070[(iVar23 + iVar29) /*16*/]));
+												HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_2695072[(iVar23 + iVar29) /*16*/]));
 											}
 											iVar29++;
 											iVar31 = 6;
@@ -3444,7 +3444,7 @@ void func_51(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 										{
 											if (MISC::GET_HASH_KEY(&(Global_23270.f_79[iVar24 /*6*/])) != 0 && iVar5 == 1)
 											{
-												HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_2695070[(iVar23 + iVar29) /*16*/]));
+												HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_2695072[(iVar23 + iVar29) /*16*/]));
 											}
 											iVar29++;
 											iVar31 = 7;
@@ -3453,7 +3453,7 @@ void func_51(bool bParam0, int iParam1, bool bParam2, bool bParam3, bool bParam4
 										{
 											if (MISC::GET_HASH_KEY(&(Global_23270.f_79[iVar24 /*6*/])) != 0 && iVar5 == 1)
 											{
-												HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_2695070[(iVar23 + iVar29) /*16*/]));
+												HUD::ADD_TEXT_COMPONENT_SUBSTRING_PLAYER_NAME(&(Global_2695072[(iVar23 + iVar29) /*16*/]));
 											}
 											iVar29++;
 											iVar31 = 9;
@@ -5317,7 +5317,7 @@ float func_85(int iParam0)//Position - 0x7657
 
 int func_86(bool bParam0, bool bParam1)//Position - 0x772B
 {
-	if (Global_2672505.f_1684.f_701 != 0)
+	if (Global_2672505.f_1685.f_701 != 0)
 	{
 		return 1;
 	}
@@ -5814,7 +5814,7 @@ void func_105(int iParam0, var uParam1, bool bParam2)//Position - 0x80BA
 {
 	struct<5> Var0;
 	
-	Var0.f_0 = -631614957;
+	Var0.f_0 = 290867572;
 	Var0.f_1 = PLAYER::PLAYER_ID();
 	Var0.f_3 = uParam1;
 	Var0.f_4 = iParam0;
@@ -6083,7 +6083,7 @@ int func_113()//Position - 0x850C
 
 int func_114()//Position - 0x8528
 {
-	return Global_2694553;
+	return Global_2694555;
 }
 
 void func_115(var uParam0, int iParam1)//Position - 0x8534
@@ -6175,7 +6175,7 @@ var func_119()//Position - 0x86DE
 
 int func_120()//Position - 0x86EA
 {
-	if (Global_2672505.f_946.f_5 == -1)
+	if (Global_2672505.f_947.f_5 == -1)
 	{
 		return 0;
 	}
@@ -6266,7 +6266,7 @@ void func_124(var uParam0, var uParam1, var uParam2, var uParam3)//Position - 0x
 				{
 					switch (Var5.f_0)
 					{
-						case -355443351:
+						case 1255645672:
 							if (Var5.f_3 == (uParam0[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/])->f_1 && Var5.f_4 == PLAYER::GET_PLAYER_INDEX())
 							{
 								uParam1->f_1 = 1;
@@ -6276,7 +6276,7 @@ void func_124(var uParam0, var uParam1, var uParam2, var uParam3)//Position - 0x
 							}
 							break;
 						
-						case -727029014:
+						case 101214790:
 							if (Var5.f_3 == (uParam0[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/])->f_1 && Var5.f_4 == PLAYER::GET_PLAYER_INDEX())
 							{
 								uParam1->f_2 = Var5.f_3;
@@ -6285,7 +6285,7 @@ void func_124(var uParam0, var uParam1, var uParam2, var uParam3)//Position - 0x
 							}
 							break;
 						
-						case 526302252:
+						case 1744502637:
 							if (Var5.f_4 == PLAYER::GET_PLAYER_INDEX())
 							{
 								if (Var5.f_3 >= 0 && Var5.f_3 <= 1)
@@ -6313,7 +6313,7 @@ void func_124(var uParam0, var uParam1, var uParam2, var uParam3)//Position - 0x
 				{
 					switch (Var0.f_0)
 					{
-						case 255859180:
+						case -87390611:
 							if (Var0.f_3 == uParam1->f_6 && Var0.f_2 != PLAYER::PLAYER_ID())
 							{
 								if (!(func_19(uParam0[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/], 2) && (uParam0[NETWORK::PARTICIPANT_ID_TO_INT() /*5*/])->f_1 == Var0.f_4))
@@ -6674,7 +6674,7 @@ int func_144(int iParam0)//Position - 0x9109
 
 bool func_145()//Position - 0x9120
 {
-	return Global_2683862.f_693;
+	return Global_2683864.f_693;
 }
 
 int func_146(int iParam0, int iParam1, bool bParam2)//Position - 0x912F
@@ -8382,7 +8382,7 @@ int func_169()//Position - 0xAA75
 	{
 		return 1;
 	}
-	if (Global_2696915)
+	if (Global_2696917)
 	{
 		return 1;
 	}
@@ -8432,7 +8432,7 @@ int func_170()//Position - 0xAAF9
 
 int func_171()//Position - 0xAB2C
 {
-	switch (Global_2697019)
+	switch (Global_2697021)
 	{
 		case 0:
 			return joaat("freemode");
@@ -8449,12 +8449,12 @@ int func_172()//Position - 0xAB50
 
 bool func_173()//Position - 0xAB5B
 {
-	return Global_2683862.f_698;
+	return Global_2683864.f_698;
 }
 
 bool func_174()//Position - 0xAB6A
 {
-	return Global_2694524;
+	return Global_2694526;
 }
 
 void func_175(int* iParam0)//Position - 0xAB76

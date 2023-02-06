@@ -1864,15 +1864,15 @@ void func_32()//Position - 0x1A97
 
 void func_33()//Position - 0x1A9F
 {
-	if (Global_2672505.f_946.f_10)
+	if (Global_2672505.f_947.f_10)
 	{
-		Global_2672505.f_946.f_10 = 0;
+		Global_2672505.f_947.f_10 = 0;
 	}
 }
 
 void func_34()//Position - 0x1ABD
 {
-	Global_2672505.f_946.f_9 = 0;
+	Global_2672505.f_947.f_9 = 0;
 }
 
 void func_35()//Position - 0x1ACF
@@ -3195,7 +3195,7 @@ int func_56(int iParam0, int iParam1, int iParam2)//Position - 0x2FB4
 		if (iParam2 == 0)
 		{
 		}
-		iVar0 = Global_2805027[iParam0 /*3*/][func_57(iParam1)];
+		iVar0 = Global_2805029[iParam0 /*3*/][func_57(iParam1)];
 		if (STATS::STAT_GET_INT(iVar0, &uVar1, -1))
 		{
 			return uVar1;
@@ -3215,13 +3215,13 @@ int func_57(var uParam0)//Position - 0x2FF1
 		iVar1 = func_58();
 		if (iVar1 > -1)
 		{
-			Global_2804739 = 0;
+			Global_2804741 = 0;
 			iVar0 = iVar1;
 		}
 		else
 		{
 			iVar0 = 0;
-			Global_2804739 = 1;
+			Global_2804741 = 1;
 		}
 	}
 	return iVar0;
@@ -35270,7 +35270,7 @@ int func_127(int iParam0, int iParam1)//Position - 0x22EE3
 	int iVar0;
 	var uVar1;
 	
-	iVar0 = Global_2805027[iParam0 /*3*/][func_57(iParam1)];
+	iVar0 = Global_2805029[iParam0 /*3*/][func_57(iParam1)];
 	if (HUD::GET_MENU_PED_INT_STAT(iVar0, &uVar1))
 	{
 		return uVar1;
@@ -35637,7 +35637,7 @@ float func_135(int iParam0, int iParam1)//Position - 0x23873
 	int iVar0;
 	var uVar1;
 	
-	iVar0 = Global_2847604[iParam0 /*3*/][func_57(iParam1)];
+	iVar0 = Global_2847606[iParam0 /*3*/][func_57(iParam1)];
 	if (HUD::GET_MENU_PED_FLOAT_STAT(iVar0, &uVar1))
 	{
 		return uVar1;
@@ -35719,7 +35719,7 @@ int func_137(int iParam0, int iParam1)//Position - 0x2398A
 	int iVar0;
 	var uVar1;
 	
-	iVar0 = Global_2848280[iParam0 /*3*/][func_57(iParam1)];
+	iVar0 = Global_2848282[iParam0 /*3*/][func_57(iParam1)];
 	if (STATS::STAT_GET_BOOL(iVar0, &uVar1, -1))
 	{
 		return uVar1;
@@ -35732,7 +35732,7 @@ float func_138(int iParam0, int iParam1)//Position - 0x239B6
 	int iVar0;
 	var uVar1;
 	
-	iVar0 = Global_2847604[iParam0 /*3*/][func_57(iParam1)];
+	iVar0 = Global_2847606[iParam0 /*3*/][func_57(iParam1)];
 	if (STATS::STAT_GET_FLOAT(iVar0, &uVar1, -1))
 	{
 		return uVar1;
@@ -35984,7 +35984,7 @@ void func_144(int iParam0, bool bParam1, int iParam2, bool bParam3)//Position - 
 	
 	if (func_145())
 	{
-		iVar0 = Global_2848280[iParam0 /*3*/][func_57(iParam2)];
+		iVar0 = Global_2848282[iParam0 /*3*/][func_57(iParam2)];
 		if (iVar0 != 0)
 		{
 			STATS::STAT_SET_BOOL(iVar0, bParam1, bParam3);
@@ -37210,7 +37210,7 @@ void func_149(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 	if (bParam4)
 	{
 	}
-	iVar0 = Global_2805027[iParam0 /*3*/][func_57(iParam2)];
+	iVar0 = Global_2805029[iParam0 /*3*/][func_57(iParam2)];
 	if (iVar0 != 0)
 	{
 		STATS::STAT_SET_INT(iVar0, iParam1, bParam3);
@@ -47307,7 +47307,7 @@ int func_183(int iParam0, int iParam1)//Position - 0x36777
 	int iVar0;
 	var uVar1;
 	
-	iVar0 = Global_2850649[iParam0 /*3*/][func_57(iParam1)];
+	iVar0 = Global_2850651[iParam0 /*3*/][func_57(iParam1)];
 	if (STATS::STAT_GET_BOOL(iVar0, &uVar1, -1))
 	{
 		return uVar1;
@@ -50905,7 +50905,7 @@ int func_185(int iParam0, int iParam1)//Position - 0x394EF
 	int iVar0;
 	var uVar1;
 	
-	iVar0 = Global_2850192[iParam0 /*3*/][func_57(iParam1)];
+	iVar0 = Global_2850194[iParam0 /*3*/][func_57(iParam1)];
 	if (STATS::STAT_GET_INT(iVar0, &uVar1, -1))
 	{
 		return uVar1;
@@ -54951,7 +54951,7 @@ int func_206(int iParam0)//Position - 0x3F2FD
 	{
 		return -1;
 	}
-	return Global_2684799.f_6316[iParam0];
+	return Global_2684801.f_6316[iParam0];
 }
 
 int func_207(bool bParam0)//Position - 0x3F334
@@ -71876,7 +71876,7 @@ int func_264()//Position - 0x559A1
 
 var func_265()//Position - 0x559AE
 {
-	return Global_2684799.f_6326;
+	return Global_2684801.f_6326;
 }
 
 int func_266(int iParam0, var uParam1, int iParam2, int iParam3)//Position - 0x559BD
@@ -72971,11 +72971,11 @@ int func_266(int iParam0, var uParam1, int iParam2, int iParam3)//Position - 0x5
 
 int func_267(int iParam0)//Position - 0x56D03
 {
-	if (iParam0 <= -1 || iParam0 >= Global_2684799.f_6321)
+	if (iParam0 <= -1 || iParam0 >= Global_2684801.f_6321)
 	{
 		return -1;
 	}
-	return Global_2684799.f_6321[iParam0];
+	return Global_2684801.f_6321[iParam0];
 }
 
 void func_268(bool bParam0)//Position - 0x56D31
@@ -73987,7 +73987,7 @@ void func_310(bool bParam0)//Position - 0x57C67
 
 void func_311()//Position - 0x57CA4
 {
-	Global_2672505.f_946.f_9 = 1;
+	Global_2672505.f_947.f_9 = 1;
 }
 
 void func_312(bool bParam0, bool bParam1, int iParam2, bool bParam3, bool bParam4, bool bParam5, bool bParam6)//Position - 0x57CB6
@@ -75703,7 +75703,7 @@ int func_354(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 			Global_4536674 = 1;
 			return 0;
 		}
-		if (Global_2695819)
+		if (Global_2695821)
 		{
 			if (iParam3 == joaat("CATEGORY_WEAPON_AMMO") || iParam3 == joaat("CATEGORY_MART"))
 			{
@@ -75886,8 +75886,8 @@ int func_359(int iParam0)//Position - 0x5A03D
 
 void func_360(int iParam0, int iParam1)//Position - 0x5A068
 {
-	Global_2697013 = iParam1;
-	Global_2697012 = iParam0;
+	Global_2697015 = iParam1;
+	Global_2697014 = iParam0;
 }
 
 int func_361(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5, bool bParam6, int iParam7, var uParam8, int iParam9, int iParam10)//Position - 0x5A07C
@@ -75944,7 +75944,7 @@ void func_362(struct<67> Param0, var uParam67, var uParam68, var uParam69, var u
 		return;
 	}
 	Var0.f_2 = 2147483647;
-	Var0.f_0 = -444617715;
+	Var0.f_0 = 45913685;
 	Var0.f_1 = PLAYER::PLAYER_ID();
 	Var0.f_2 = { Param0.f_66 };
 	Var0.f_2.f_33 = iParam85;
@@ -76114,9 +76114,9 @@ int func_368()//Position - 0x5A3C8
 
 void func_369()//Position - 0x5A426
 {
-	if (!Global_2672505.f_946.f_10)
+	if (!Global_2672505.f_947.f_10)
 	{
-		Global_2672505.f_946.f_10 = 1;
+		Global_2672505.f_947.f_10 = 1;
 	}
 }
 
@@ -76381,7 +76381,7 @@ void func_385(int iParam0, int iParam1, int iParam2)//Position - 0x5A96B
 		{
 			iVar0 = 18;
 			HUD::SET_WARNING_MESSAGE_WITH_HEADER("BRSCRWTEX" /* GXT: Alert */, "BRDISTEX" /* GXT: You have insufficient funds. You can add GTA Dollars to your in-game account. */, iVar0, "BRSHETEX" /* GXT: Would you like to visit the Store? */, false, -1, 0, 0, true, 0);
-			Global_2695712 = iParam1;
+			Global_2695714 = iParam1;
 			Global_100733.f_1474 = 1;
 			Global_100733.f_1475 = iParam2;
 		}
@@ -76403,12 +76403,12 @@ int func_386()//Position - 0x5AA46
 
 bool func_387()//Position - 0x5AA66
 {
-	return Global_2695031;
+	return Global_2695033;
 }
 
 bool func_388()//Position - 0x5AA72
 {
-	return Global_2695819;
+	return Global_2695821;
 }
 
 int func_389(int iParam0, bool bParam1, bool bParam2)//Position - 0x5AA7E
@@ -76894,7 +76894,7 @@ int func_417(int iParam0)//Position - 0x5B272
 	}
 	if (iParam0 == PLAYER::PLAYER_ID())
 	{
-		return Global_2764905;
+		return Global_2764907;
 	}
 	else
 	{
@@ -76921,7 +76921,7 @@ int func_417(int iParam0)//Position - 0x5B272
 
 bool func_418()//Position - 0x5B2DE
 {
-	return Global_2793044.f_5151;
+	return Global_2793046.f_5151;
 }
 
 int func_419(int iParam0)//Position - 0x5B2ED
@@ -78099,7 +78099,7 @@ int func_492()//Position - 0x5C561
 	
 	if (func_493())
 	{
-		iVar0 = MISC::ABSI((MISC::GET_GAME_TIMER() - Global_2694452));
+		iVar0 = MISC::ABSI((MISC::GET_GAME_TIMER() - Global_2694454));
 		return iVar0;
 	}
 	return 0;
@@ -78107,9 +78107,9 @@ int func_492()//Position - 0x5C561
 
 int func_493()//Position - 0x5C585
 {
-	if (Global_2694444)
+	if (Global_2694446)
 	{
-		return Global_2694443;
+		return Global_2694445;
 	}
 	return 0;
 }
@@ -78127,7 +78127,7 @@ int func_494()//Position - 0x5C59C
 	{
 		return 1;
 	}
-	if (Global_2696915)
+	if (Global_2696917)
 	{
 		return 1;
 	}
@@ -78177,7 +78177,7 @@ int func_495()//Position - 0x5C620
 
 int func_496()//Position - 0x5C653
 {
-	switch (Global_2697019)
+	switch (Global_2697021)
 	{
 		case 0:
 			return joaat("freemode");
@@ -78189,7 +78189,7 @@ int func_496()//Position - 0x5C653
 
 bool func_497()//Position - 0x5C677
 {
-	return Global_2683862.f_698;
+	return Global_2683864.f_698;
 }
 
 int func_498(int iParam0)//Position - 0x5C686
@@ -78203,12 +78203,12 @@ int func_498(int iParam0)//Position - 0x5C686
 
 bool func_499()//Position - 0x5C69D
 {
-	return Global_2694524;
+	return Global_2694526;
 }
 
 bool func_500()//Position - 0x5C6A9
 {
-	return Global_2683862.f_693;
+	return Global_2683864.f_693;
 }
 
 int func_501(int iParam0, bool bParam1)//Position - 0x5C6B8

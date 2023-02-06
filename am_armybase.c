@@ -203,7 +203,7 @@ void __EntryFunction__()//Position - 0x0
 			{
 				if (func_20(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), 3, 1000, 0) || func_19(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), 1000))
 				{
-					if (!BitTest(Global_2793044.f_4654, 0))
+					if (!BitTest(Global_2793046.f_4654, 0))
 					{
 						if (!ENTITY::IS_ENTITY_DEAD(PLAYER::PLAYER_PED_ID(), false))
 						{
@@ -250,10 +250,10 @@ void __EntryFunction__()//Position - 0x0
 							}
 							else
 							{
-								if (Global_2793044.f_6853)
+								if (Global_2793046.f_6853)
 								{
 									bLocal_567 = false;
-									Global_2793044.f_6853 = 0;
+									Global_2793046.f_6853 = 0;
 								}
 								if (PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID()) == 0 && !iLocal_571)
 								{
@@ -409,9 +409,9 @@ int func_2()//Position - 0x4FD
 				}
 			}
 		}
-		if (Global_2793044.f_6851 || Global_2793044.f_6852)
+		if (Global_2793046.f_6851 || Global_2793046.f_6852)
 		{
-			if (Global_2793044.f_6852)
+			if (Global_2793046.f_6852)
 			{
 				bLocal_568 = false;
 				bLocal_569 = true;
@@ -421,8 +421,8 @@ int func_2()//Position - 0x4FD
 				bLocal_568 = true;
 				bLocal_569 = false;
 			}
-			Global_2793044.f_6851 = 0;
-			Global_2793044.f_6852 = 0;
+			Global_2793046.f_6851 = 0;
+			Global_2793046.f_6852 = 0;
 			return 1;
 		}
 	}
@@ -613,8 +613,8 @@ void func_18()//Position - 0xA2A
 	{
 		PLAYER::SET_MAX_WANTED_LEVEL(5);
 	}
-	Global_2793044.f_6851 = 0;
-	Global_2793044.f_6852 = 0;
+	Global_2793046.f_6851 = 0;
+	Global_2793046.f_6852 = 0;
 	iLocal_570 = 0;
 	bLocal_567 = false;
 	bLocal_568 = false;
@@ -923,7 +923,7 @@ int func_20(struct<3> Param0, int iParam3, int iParam4, bool bParam5)//Position 
 
 bool func_21()//Position - 0x1B0F
 {
-	return Global_2793044.f_6854;
+	return Global_2793046.f_6854;
 }
 
 int func_22(int iParam0)//Position - 0x1B1E
@@ -937,7 +937,7 @@ int func_22(int iParam0)//Position - 0x1B1E
 	}
 	if (iParam0 == PLAYER::PLAYER_ID())
 	{
-		return Global_2764905;
+		return Global_2764907;
 	}
 	else
 	{
@@ -1576,7 +1576,7 @@ void func_50(bool bParam0, bool bParam1)//Position - 0x2902
 		if (!func_63(16000, -1))
 		{
 			func_62(16000, 1, -1);
-			if (Global_2793044.f_6859)
+			if (Global_2793046.f_6859)
 			{
 				if (func_56())
 				{
@@ -1592,7 +1592,7 @@ void func_50(bool bParam0, bool bParam1)//Position - 0x2902
 		else if (!func_63(16001, -1))
 		{
 			func_62(16001, 1, -1);
-			if (Global_2793044.f_6859)
+			if (Global_2793046.f_6859)
 			{
 				if (func_56())
 				{
@@ -1612,7 +1612,7 @@ void func_50(bool bParam0, bool bParam1)//Position - 0x2902
 		if (!func_63(15999, -1))
 		{
 			func_62(15999, 1, -1);
-			if (Global_2793044.f_6859)
+			if (Global_2793046.f_6859)
 			{
 				if (func_56())
 				{
@@ -1630,7 +1630,7 @@ void func_50(bool bParam0, bool bParam1)//Position - 0x2902
 			if (!func_63(16002, -1))
 			{
 				func_62(16002, 1, -1);
-				if (Global_2793044.f_6859)
+				if (Global_2793046.f_6859)
 				{
 					if (func_56())
 					{
@@ -1649,7 +1649,7 @@ void func_50(bool bParam0, bool bParam1)//Position - 0x2902
 			if (func_52(18097, -1) == 0)
 			{
 				func_51(18097, 1, -1);
-				if (Global_2793044.f_6859)
+				if (Global_2793046.f_6859)
 				{
 					if (func_56())
 					{
@@ -3503,7 +3503,7 @@ int func_132(var uParam0, int iParam1, struct<3> Param2, float fParam5, bool bPa
 	if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 	{
 		*uParam0 = NETWORK::VEH_TO_NET(iVar1);
-		Global_2793044.f_6736 = iVar1;
+		Global_2793046.f_6736 = iVar1;
 		if (NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(*uParam0))
 		{
 			if (bParam15)
@@ -3928,9 +3928,9 @@ void func_147()//Position - 0x5470
 	{
 		if (func_148())
 		{
-			if (!Global_2793044.f_6860)
+			if (!Global_2793046.f_6860)
 			{
-				Global_2793044.f_6860 = 1;
+				Global_2793046.f_6860 = 1;
 				func_53("BASE_EXP_WARN" /* GXT: WARNING: Your clearance level does not permit you to fire explosives inside Fort Zancudo. Continuing to fire explosives will result in a Wanted Level. */, -1);
 			}
 			if (!iLocal_572)
@@ -4488,7 +4488,7 @@ int func_160()//Position - 0x649F
 	{
 		return 1;
 	}
-	if (Global_2696915)
+	if (Global_2696917)
 	{
 		return 1;
 	}
@@ -4538,7 +4538,7 @@ int func_161()//Position - 0x6523
 
 int func_162()//Position - 0x6556
 {
-	switch (Global_2697019)
+	switch (Global_2697021)
 	{
 		case 0:
 			return joaat("freemode");
@@ -4555,7 +4555,7 @@ int func_163()//Position - 0x657A
 
 bool func_164()//Position - 0x6585
 {
-	return Global_2683862.f_698;
+	return Global_2683864.f_698;
 }
 
 int func_165(int iParam0)//Position - 0x6594
@@ -4569,12 +4569,12 @@ int func_165(int iParam0)//Position - 0x6594
 
 bool func_166()//Position - 0x65AB
 {
-	return Global_2694524;
+	return Global_2694526;
 }
 
 bool func_167()//Position - 0x65B7
 {
-	return Global_2683862.f_693;
+	return Global_2683864.f_693;
 }
 
 void func_168()//Position - 0x65C6
@@ -4842,7 +4842,7 @@ void func_180(struct<21> Param0)//Position - 0x6935
 	{
 		func_177();
 	}
-	Global_2793044.f_6853 = 0;
+	Global_2793046.f_6853 = 0;
 }
 
 int func_181()//Position - 0x6996

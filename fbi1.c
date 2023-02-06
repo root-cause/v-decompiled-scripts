@@ -1209,14 +1209,14 @@ int func_12(int iParam0, int iParam1)//Position - 0x1271
 	int iVar0;
 	int iVar1;
 	
-	if ((!Global_2764242 && iParam1 >= 0) && iParam1 <= 415)
+	if ((!Global_2764244 && iParam1 >= 0) && iParam1 <= 415)
 	{
 		if (BitTest(Global_1586468[iParam1 /*142*/].f_103, 2))
 		{
 			return 1;
 		}
 	}
-	if (Global_2764241)
+	if (Global_2764243)
 	{
 		return 1;
 	}
@@ -8284,7 +8284,7 @@ int func_96(int iParam0, bool bParam1)//Position - 0xBA3C
 		case joaat("insurgent"):
 			if (func_98(ENTITY::GET_ENTITY_MODEL(iParam0), 0))
 			{
-				if (Global_2793044.f_304 == iParam0)
+				if (Global_2793046.f_304 == iParam0)
 				{
 					return 1;
 				}
@@ -8307,7 +8307,7 @@ int func_97(int iParam0)//Position - 0xBA97
 		iVar0 = 0;
 		while (iVar0 < 32)
 		{
-			if (Global_2672505.f_220[iVar0] == iParam0)
+			if (Global_2672505.f_221[iVar0] == iParam0)
 			{
 				return iVar0;
 			}
@@ -10207,7 +10207,7 @@ int func_146(int iParam0, int iParam1, int iParam2)//Position - 0xEB94
 		if (iParam2 == 0)
 		{
 		}
-		iVar0 = Global_2805027[iParam0 /*3*/][func_147(iParam1)];
+		iVar0 = Global_2805029[iParam0 /*3*/][func_147(iParam1)];
 		if (STATS::STAT_GET_INT(iVar0, &uVar1, -1))
 		{
 			return uVar1;
@@ -10227,13 +10227,13 @@ int func_147(var uParam0)//Position - 0xEBD1
 		iVar1 = func_67();
 		if (iVar1 > -1)
 		{
-			Global_2804739 = 0;
+			Global_2804741 = 0;
 			iVar0 = iVar1;
 		}
 		else
 		{
 			iVar0 = 0;
-			Global_2804739 = 1;
+			Global_2804741 = 1;
 		}
 	}
 	return iVar0;
@@ -10244,7 +10244,7 @@ int func_148(int iParam0, int iParam1)//Position - 0xEC05
 	int iVar0;
 	var uVar1;
 	
-	iVar0 = Global_2848280[iParam0 /*3*/][func_147(iParam1)];
+	iVar0 = Global_2848282[iParam0 /*3*/][func_147(iParam1)];
 	if (STATS::STAT_GET_BOOL(iVar0, &uVar1, -1))
 	{
 		return uVar1;
@@ -21078,7 +21078,7 @@ void func_270(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 	if (bParam4)
 	{
 	}
-	iVar0 = Global_2805027[iParam0 /*3*/][func_147(iParam2)];
+	iVar0 = Global_2805029[iParam0 /*3*/][func_147(iParam2)];
 	if (iVar0 != 0)
 	{
 		STATS::STAT_SET_INT(iVar0, iParam1, bParam3);
@@ -53030,7 +53030,7 @@ void func_489(int iParam0, bool bParam1, int iParam2, bool bParam3)//Position - 
 	
 	if (func_490())
 	{
-		iVar0 = Global_2848280[iParam0 /*3*/][func_147(iParam2)];
+		iVar0 = Global_2848282[iParam0 /*3*/][func_147(iParam2)];
 		if (iVar0 != 0)
 		{
 			STATS::STAT_SET_BOOL(iVar0, bParam1, bParam3);
@@ -58158,7 +58158,7 @@ int func_519(int iParam0, int iParam1)//Position - 0x4A376
 	int iVar0;
 	var uVar1;
 	
-	iVar0 = Global_2805027[iParam0 /*3*/][func_147(iParam1)];
+	iVar0 = Global_2805029[iParam0 /*3*/][func_147(iParam1)];
 	if (HUD::GET_MENU_PED_INT_STAT(iVar0, &uVar1))
 	{
 		return uVar1;
@@ -58525,7 +58525,7 @@ float func_527(int iParam0, int iParam1)//Position - 0x4AD1A
 	int iVar0;
 	var uVar1;
 	
-	iVar0 = Global_2847604[iParam0 /*3*/][func_147(iParam1)];
+	iVar0 = Global_2847606[iParam0 /*3*/][func_147(iParam1)];
 	if (HUD::GET_MENU_PED_FLOAT_STAT(iVar0, &uVar1))
 	{
 		return uVar1;
@@ -58616,7 +58616,7 @@ float func_530(int iParam0, int iParam1)//Position - 0x4AE59
 	int iVar0;
 	var uVar1;
 	
-	iVar0 = Global_2847604[iParam0 /*3*/][func_147(iParam1)];
+	iVar0 = Global_2847606[iParam0 /*3*/][func_147(iParam1)];
 	if (STATS::STAT_GET_FLOAT(iVar0, &uVar1, -1))
 	{
 		return uVar1;
@@ -65453,7 +65453,7 @@ int func_547(int iParam0, int iParam1)//Position - 0x5757E
 	int iVar0;
 	var uVar1;
 	
-	iVar0 = Global_2850649[iParam0 /*3*/][func_147(iParam1)];
+	iVar0 = Global_2850651[iParam0 /*3*/][func_147(iParam1)];
 	if (STATS::STAT_GET_BOOL(iVar0, &uVar1, -1))
 	{
 		return uVar1;
@@ -69051,7 +69051,7 @@ int func_549(int iParam0, int iParam1)//Position - 0x5A2FE
 	int iVar0;
 	var uVar1;
 	
-	iVar0 = Global_2850192[iParam0 /*3*/][func_147(iParam1)];
+	iVar0 = Global_2850194[iParam0 /*3*/][func_147(iParam1)];
 	if (STATS::STAT_GET_INT(iVar0, &uVar1, -1))
 	{
 		return uVar1;
@@ -73087,7 +73087,7 @@ int func_568(int iParam0)//Position - 0x60421
 	{
 		return -1;
 	}
-	return Global_2684799.f_6316[iParam0];
+	return Global_2684801.f_6316[iParam0];
 }
 
 int func_569(bool bParam0)//Position - 0x60458
@@ -115494,7 +115494,7 @@ void func_717(int iParam0)//Position - 0x8EF23
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar2);
 								GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							}
-							if (Global_2694519)
+							if (Global_2694521)
 							{
 								if (iVar1 == 14)
 								{

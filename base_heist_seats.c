@@ -313,7 +313,7 @@ int func_15(int iParam0)//Position - 0x364
 
 int func_16()//Position - 0x3BB
 {
-	if (Global_2672505.f_946.f_5 == -1)
+	if (Global_2672505.f_947.f_5 == -1)
 	{
 		return 0;
 	}
@@ -731,7 +731,7 @@ int func_28(int iParam0)//Position - 0xCC0
 
 int func_29()//Position - 0xD1D
 {
-	if (Global_2672505.f_946.f_5 == -1)
+	if (Global_2672505.f_947.f_5 == -1)
 	{
 		return 0;
 	}
@@ -813,18 +813,18 @@ void func_35(bool bParam0)//Position - 0xF20
 	{
 		if (func_36())
 		{
-			Global_2683862.f_41 = 1;
+			Global_2683864.f_41 = 1;
 		}
 	}
 	else
 	{
-		Global_2683862.f_41 = 0;
+		Global_2683864.f_41 = 0;
 	}
 }
 
 bool func_36()//Position - 0xF45
 {
-	return BitTest(Global_2683862.f_2, 11);
+	return BitTest(Global_2683864.f_2, 11);
 }
 
 void func_37()//Position - 0xF56
@@ -1410,7 +1410,7 @@ int func_66()//Position - 0x18A9
 	{
 		return 1;
 	}
-	if (Global_2696915)
+	if (Global_2696917)
 	{
 		return 1;
 	}
@@ -1460,7 +1460,7 @@ int func_67()//Position - 0x192D
 
 int func_68()//Position - 0x1960
 {
-	switch (Global_2697019)
+	switch (Global_2697021)
 	{
 		case 0:
 			return joaat("freemode");
@@ -1477,7 +1477,7 @@ int func_69()//Position - 0x1984
 
 bool func_70()//Position - 0x198F
 {
-	return Global_2683862.f_698;
+	return Global_2683864.f_698;
 }
 
 int func_71(int iParam0)//Position - 0x199E
@@ -1491,12 +1491,12 @@ int func_71(int iParam0)//Position - 0x199E
 
 bool func_72()//Position - 0x19B5
 {
-	return Global_2694524;
+	return Global_2694526;
 }
 
 bool func_73()//Position - 0x19C1
 {
-	return Global_2683862.f_693;
+	return Global_2683864.f_693;
 }
 
 bool func_74(int iParam0)//Position - 0x19D0

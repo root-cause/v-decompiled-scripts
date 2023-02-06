@@ -5561,7 +5561,7 @@ void func_71(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)/
 	if (bParam4)
 	{
 	}
-	iVar0 = Global_2805027[iParam0 /*3*/][func_72(iParam2)];
+	iVar0 = Global_2805029[iParam0 /*3*/][func_72(iParam2)];
 	if (iVar0 != 0)
 	{
 		STATS::STAT_SET_INT(iVar0, iParam1, bParam3);
@@ -5579,13 +5579,13 @@ int func_72(var uParam0)//Position - 0x5D6B
 		iVar1 = func_13();
 		if (iVar1 > -1)
 		{
-			Global_2804739 = 0;
+			Global_2804741 = 0;
 			iVar0 = iVar1;
 		}
 		else
 		{
 			iVar0 = 0;
-			Global_2804739 = 1;
+			Global_2804741 = 1;
 		}
 	}
 	return iVar0;
@@ -5601,7 +5601,7 @@ int func_73(int iParam0, int iParam1, int iParam2)//Position - 0x5D9F
 		if (iParam2 == 0)
 		{
 		}
-		iVar0 = Global_2805027[iParam0 /*3*/][func_72(iParam1)];
+		iVar0 = Global_2805029[iParam0 /*3*/][func_72(iParam1)];
 		if (STATS::STAT_GET_INT(iVar0, &uVar1, -1))
 		{
 			return uVar1;
@@ -41844,14 +41844,14 @@ int func_352(int iParam0, int iParam1)//Position - 0x2FA65
 	int iVar0;
 	int iVar1;
 	
-	if ((!Global_2764242 && iParam1 >= 0) && iParam1 <= 415)
+	if ((!Global_2764244 && iParam1 >= 0) && iParam1 <= 415)
 	{
 		if (BitTest(Global_1586468[iParam1 /*142*/].f_103, 2))
 		{
 			return 1;
 		}
 	}
-	if (Global_2764241)
+	if (Global_2764243)
 	{
 		return 1;
 	}
@@ -46551,7 +46551,7 @@ int func_406(int iParam0, int iParam1)//Position - 0x371BB
 	int iVar0;
 	var uVar1;
 	
-	iVar0 = Global_2848280[iParam0 /*3*/][func_72(iParam1)];
+	iVar0 = Global_2848282[iParam0 /*3*/][func_72(iParam1)];
 	if (STATS::STAT_GET_BOOL(iVar0, &uVar1, -1))
 	{
 		return uVar1;
@@ -50645,7 +50645,7 @@ void func_459(var uParam0, int iParam1, bool bParam2)//Position - 0x3C609
 	
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (BitTest(Global_2793044.f_4690, 26))
+		if (BitTest(Global_2793046.f_4690, 26))
 		{
 			return;
 		}
@@ -51211,7 +51211,7 @@ int func_470(int iParam0, bool bParam1)//Position - 0x3CF81
 
 var func_471()//Position - 0x3D006
 {
-	return Global_2683862.f_19;
+	return Global_2683864.f_19;
 }
 
 bool func_472(int iParam0)//Position - 0x3D014
@@ -51221,7 +51221,7 @@ bool func_472(int iParam0)//Position - 0x3D014
 
 var func_473()//Position - 0x3D021
 {
-	return Global_2683862.f_18;
+	return Global_2683864.f_18;
 }
 
 bool func_474()//Position - 0x3D02F
@@ -55927,7 +55927,7 @@ int func_570(int iParam0)//Position - 0x448FE
 
 bool func_571(int iParam0)//Position - 0x4491C
 {
-	return func_572(&(Global_2672505.f_183), iParam0);
+	return func_572(&(Global_2672505.f_184), iParam0);
 }
 
 var func_572(var uParam0, var uParam1)//Position - 0x44930

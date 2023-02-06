@@ -3061,7 +3061,7 @@ int func_32(int iParam0, int iParam1, int iParam2)//Position - 0x2C48
 		if (iParam2 == 0)
 		{
 		}
-		iVar0 = Global_2805027[iParam0 /*3*/][func_33(iParam1)];
+		iVar0 = Global_2805029[iParam0 /*3*/][func_33(iParam1)];
 		if (STATS::STAT_GET_INT(iVar0, &uVar1, -1))
 		{
 			return uVar1;
@@ -3081,13 +3081,13 @@ int func_33(var uParam0)//Position - 0x2C85
 		iVar1 = func_143();
 		if (iVar1 > -1)
 		{
-			Global_2804739 = 0;
+			Global_2804741 = 0;
 			iVar0 = iVar1;
 		}
 		else
 		{
 			iVar0 = 0;
-			Global_2804739 = 1;
+			Global_2804741 = 1;
 		}
 	}
 	return iVar0;
@@ -3139,7 +3139,7 @@ int func_37(int iParam0, int iParam1)//Position - 0x2D62
 	int iVar0;
 	var uVar1;
 	
-	iVar0 = Global_2848280[iParam0 /*3*/][func_33(iParam1)];
+	iVar0 = Global_2848282[iParam0 /*3*/][func_33(iParam1)];
 	if (STATS::STAT_GET_BOOL(iVar0, &uVar1, -1))
 	{
 		return uVar1;
@@ -8436,7 +8436,7 @@ void func_59(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)/
 	if (bParam4)
 	{
 	}
-	iVar0 = Global_2805027[iParam0 /*3*/][func_33(iParam2)];
+	iVar0 = Global_2805029[iParam0 /*3*/][func_33(iParam2)];
 	if (iVar0 != 0)
 	{
 		STATS::STAT_SET_INT(iVar0, iParam1, bParam3);
@@ -8876,11 +8876,11 @@ void func_73(int iParam0, int iParam1, bool bParam2)//Position - 0x7E71
 	{
 		if (bParam2)
 		{
-			MISC::SET_BIT(&(Global_2803653.f_991[func_74(iParam0, iParam1)]), func_28(iVar0));
+			MISC::SET_BIT(&(Global_2803655.f_991[func_74(iParam0, iParam1)]), func_28(iVar0));
 		}
 		else
 		{
-			MISC::CLEAR_BIT(&(Global_2803653.f_991[func_74(iParam0, iParam1)]), func_28(iVar0));
+			MISC::CLEAR_BIT(&(Global_2803655.f_991[func_74(iParam0, iParam1)]), func_28(iVar0));
 		}
 	}
 }
@@ -9770,7 +9770,7 @@ var func_81(int iParam0, int iParam1)//Position - 0x8C4B
 {
 	var uVar0;
 	
-	uVar0 = Global_2803653.f_991[func_74(iParam0, iParam1)];
+	uVar0 = Global_2803655.f_991[func_74(iParam0, iParam1)];
 	return uVar0;
 }
 
@@ -11609,7 +11609,7 @@ int func_99(int iParam0, int iParam1)//Position - 0xB056
 	int iVar0;
 	var uVar1;
 	
-	iVar0 = Global_2850649[iParam0 /*3*/][func_33(iParam1)];
+	iVar0 = Global_2850651[iParam0 /*3*/][func_33(iParam1)];
 	if (STATS::STAT_GET_BOOL(iVar0, &uVar1, -1))
 	{
 		return uVar1;

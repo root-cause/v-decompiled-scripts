@@ -6295,7 +6295,7 @@ int func_116(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 			Global_4536674 = 1;
 			return 0;
 		}
-		if (Global_2695819)
+		if (Global_2695821)
 		{
 			if (iParam3 == joaat("CATEGORY_WEAPON_AMMO") || iParam3 == joaat("CATEGORY_MART"))
 			{
@@ -6478,8 +6478,8 @@ int func_121(int iParam0)//Position - 0x9B60
 
 void func_122(int iParam0, int iParam1)//Position - 0x9B8B
 {
-	Global_2697013 = iParam1;
-	Global_2697012 = iParam0;
+	Global_2697015 = iParam1;
+	Global_2697014 = iParam0;
 }
 
 int func_123(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5, bool bParam6, int iParam7, var uParam8, int iParam9, int iParam10)//Position - 0x9B9F
@@ -6536,7 +6536,7 @@ void func_124(struct<67> Param0, var uParam67, var uParam68, var uParam69, var u
 		return;
 	}
 	Var0.f_2 = 2147483647;
-	Var0.f_0 = -444617715;
+	Var0.f_0 = 45913685;
 	Var0.f_1 = PLAYER::PLAYER_ID();
 	Var0.f_2 = { Param0.f_66 };
 	Var0.f_2.f_33 = iParam85;
@@ -7167,7 +7167,7 @@ void func_136(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)
 	if (bParam4)
 	{
 	}
-	iVar0 = Global_2805027[iParam0 /*3*/][func_137(iParam2)];
+	iVar0 = Global_2805029[iParam0 /*3*/][func_137(iParam2)];
 	if (iVar0 != 0)
 	{
 		STATS::STAT_SET_INT(iVar0, iParam1, bParam3);
@@ -7185,13 +7185,13 @@ int func_137(var uParam0)//Position - 0xA9C9
 		iVar1 = func_10();
 		if (iVar1 > -1)
 		{
-			Global_2804739 = 0;
+			Global_2804741 = 0;
 			iVar0 = iVar1;
 		}
 		else
 		{
 			iVar0 = 0;
-			Global_2804739 = 1;
+			Global_2804741 = 1;
 		}
 	}
 	return iVar0;
@@ -7312,7 +7312,7 @@ int func_140(int iParam0, int iParam1, int iParam2)//Position - 0xABC3
 		if (iParam2 == 0)
 		{
 		}
-		iVar0 = Global_2805027[iParam0 /*3*/][func_137(iParam1)];
+		iVar0 = Global_2805029[iParam0 /*3*/][func_137(iParam1)];
 		if (STATS::STAT_GET_INT(iVar0, &uVar1, -1))
 		{
 			return uVar1;
@@ -39226,7 +39226,7 @@ int func_373()//Position - 0x2D08F
 	{
 		return 1;
 	}
-	if (Global_2696915)
+	if (Global_2696917)
 	{
 		return 1;
 	}
@@ -39276,7 +39276,7 @@ int func_374()//Position - 0x2D113
 
 int func_375()//Position - 0x2D146
 {
-	switch (Global_2697019)
+	switch (Global_2697021)
 	{
 		case 0:
 			return joaat("freemode");
@@ -39288,7 +39288,7 @@ int func_375()//Position - 0x2D146
 
 bool func_376()//Position - 0x2D16A
 {
-	return Global_2683862.f_698;
+	return Global_2683864.f_698;
 }
 
 int func_377(int iParam0)//Position - 0x2D179
@@ -39302,12 +39302,12 @@ int func_377(int iParam0)//Position - 0x2D179
 
 bool func_378()//Position - 0x2D190
 {
-	return Global_2694524;
+	return Global_2694526;
 }
 
 bool func_379()//Position - 0x2D19C
 {
-	return Global_2683862.f_693;
+	return Global_2683864.f_693;
 }
 
 void func_380(var uParam0, int iParam1)//Position - 0x2D1AB

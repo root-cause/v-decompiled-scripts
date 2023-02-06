@@ -5791,7 +5791,7 @@ void func_83(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)/
 	if (bParam4)
 	{
 	}
-	iVar0 = Global_2805027[iParam0 /*3*/][func_84(iParam2)];
+	iVar0 = Global_2805029[iParam0 /*3*/][func_84(iParam2)];
 	if (iVar0 != 0)
 	{
 		STATS::STAT_SET_INT(iVar0, iParam1, bParam3);
@@ -5809,13 +5809,13 @@ int func_84(var uParam0)//Position - 0x618F
 		iVar1 = func_25();
 		if (iVar1 > -1)
 		{
-			Global_2804739 = 0;
+			Global_2804741 = 0;
 			iVar0 = iVar1;
 		}
 		else
 		{
 			iVar0 = 0;
-			Global_2804739 = 1;
+			Global_2804741 = 1;
 		}
 	}
 	return iVar0;
@@ -5831,7 +5831,7 @@ int func_85(int iParam0, int iParam1, int iParam2)//Position - 0x61C3
 		if (iParam2 == 0)
 		{
 		}
-		iVar0 = Global_2805027[iParam0 /*3*/][func_84(iParam1)];
+		iVar0 = Global_2805029[iParam0 /*3*/][func_84(iParam1)];
 		if (STATS::STAT_GET_INT(iVar0, &uVar1, -1))
 		{
 			return uVar1;
@@ -36783,7 +36783,7 @@ void func_267(int iParam0)//Position - 0x2894D
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar2);
 								GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							}
-							if (Global_2694519)
+							if (Global_2694521)
 							{
 								if (iVar1 == 14)
 								{
@@ -40946,7 +40946,7 @@ int func_375(int iParam0, int iParam1)//Position - 0x2E87A
 	int iVar0;
 	var uVar1;
 	
-	iVar0 = Global_2848280[iParam0 /*3*/][func_84(iParam1)];
+	iVar0 = Global_2848282[iParam0 /*3*/][func_84(iParam1)];
 	if (STATS::STAT_GET_BOOL(iVar0, &uVar1, -1))
 	{
 		return uVar1;
@@ -47258,15 +47258,15 @@ void func_481(int iParam0, int iParam1, bool bParam2)//Position - 0x36B94
 			iVar0 = iParam1;
 			func_486(iParam0, iVar0, 1);
 			func_485(iParam0, iVar0, 1);
-			if (iParam0 == 172 && !Global_2793044.f_6891)
+			if (iParam0 == 172 && !Global_2793046.f_6891)
 			{
 				bParam2 = false;
 			}
-			if (iParam0 == 171 && !Global_2793044.f_6890)
+			if (iParam0 == 171 && !Global_2793046.f_6890)
 			{
 				bParam2 = false;
 			}
-			if (iParam0 == 173 && !Global_2793044.f_6890)
+			if (iParam0 == 173 && !Global_2793046.f_6890)
 			{
 				bParam2 = false;
 			}

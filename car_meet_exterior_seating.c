@@ -398,7 +398,7 @@ void func_2(var uParam0, int iParam1)//Position - 0x135
 
 void func_3(int iParam0)//Position - 0x143
 {
-	Global_2694553 = iParam0;
+	Global_2694555 = iParam0;
 	Global_1853910[PLAYER::PLAYER_ID() /*862*/].f_855 = iParam0;
 }
 
@@ -821,7 +821,7 @@ void func_15(var uParam0)//Position - 0x9C8
 		fVar3 = SYSTEM::VMAG(Var0);
 		if ((uParam0->f_13 == 6 && !ENTITY::HAS_ANIM_EVENT_FIRED(PLAYER::PLAYER_PED_ID(), MISC::GET_HASH_KEY("BLOCK_INTERRUPT"))) && !func_23(&(uParam0->f_7), 12))
 		{
-			if ((fVar3 >= 0.35f && !Global_2766478) && !Global_2766481)
+			if ((fVar3 >= 0.35f && !Global_2766480) && !Global_2766483)
 			{
 				func_20(uParam0);
 			}
@@ -834,7 +834,7 @@ void func_15(var uParam0)//Position - 0x9C8
 		{
 			func_4(uParam0, 1);
 		}
-		else if (Global_2766478 || Global_2766481)
+		else if (Global_2766480 || Global_2766483)
 		{
 			func_4(uParam0, 1);
 		}
@@ -958,7 +958,7 @@ int func_17(int iParam0)//Position - 0xCCA
 
 int func_18()//Position - 0xD27
 {
-	if (Global_2672505.f_946.f_5 == -1)
+	if (Global_2672505.f_947.f_5 == -1)
 	{
 		return 0;
 	}
@@ -1087,18 +1087,18 @@ void func_28(bool bParam0)//Position - 0xFB9
 	{
 		if (func_29())
 		{
-			Global_2683862.f_41 = 1;
+			Global_2683864.f_41 = 1;
 		}
 	}
 	else
 	{
-		Global_2683862.f_41 = 0;
+		Global_2683864.f_41 = 0;
 	}
 }
 
 bool func_29()//Position - 0xFDE
 {
-	return BitTest(Global_2683862.f_2, 11);
+	return BitTest(Global_2683864.f_2, 11);
 }
 
 void func_30()//Position - 0xFEF
@@ -1958,7 +1958,7 @@ int func_65()//Position - 0x1D59
 	{
 		return 1;
 	}
-	if (Global_2696915)
+	if (Global_2696917)
 	{
 		return 1;
 	}
@@ -2008,7 +2008,7 @@ int func_66()//Position - 0x1DDD
 
 int func_67()//Position - 0x1E10
 {
-	switch (Global_2697019)
+	switch (Global_2697021)
 	{
 		case 0:
 			return joaat("freemode");
@@ -2025,7 +2025,7 @@ int func_68()//Position - 0x1E34
 
 bool func_69()//Position - 0x1E3F
 {
-	return Global_2683862.f_698;
+	return Global_2683864.f_698;
 }
 
 int func_70(int iParam0)//Position - 0x1E4E
@@ -2039,12 +2039,12 @@ int func_70(int iParam0)//Position - 0x1E4E
 
 bool func_71()//Position - 0x1E65
 {
-	return Global_2694524;
+	return Global_2694526;
 }
 
 bool func_72()//Position - 0x1E71
 {
-	return Global_2683862.f_693;
+	return Global_2683864.f_693;
 }
 
 Vector3 func_73(int iParam0)//Position - 0x1E80

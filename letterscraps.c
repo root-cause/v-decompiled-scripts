@@ -405,7 +405,7 @@ int func_13()//Position - 0x552
 	iVar1 = 0;
 	while (iVar1 <= 9)
 	{
-		if (Global_2694418[iVar1] != 0)
+		if (Global_2694420[iVar1] != 0)
 		{
 			Global_1577845 = iVar1;
 			iVar0 = 1;

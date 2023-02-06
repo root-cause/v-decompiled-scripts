@@ -678,7 +678,7 @@ bool func_3()//Position - 0x2B9
 	{
 		return SCRIPT::GET_NUMBER_OF_THREADS_RUNNING_THE_SCRIPT_WITH_THIS_HASH(joaat("stripclub")) == 0;
 	}
-	if (func_4(PLAYER::PLAYER_ID()) == 185 && Global_2793044.f_4676 == 2)
+	if (func_4(PLAYER::PLAYER_ID()) == 185 && Global_2793046.f_4676 == 2)
 	{
 		return 1;
 	}
@@ -1680,13 +1680,13 @@ int func_51(int iParam0)//Position - 0x149E
 		iVar1 = func_52();
 		if (iVar1 > -1)
 		{
-			Global_2804739 = 0;
+			Global_2804741 = 0;
 			iVar0 = iVar1;
 		}
 		else
 		{
 			iVar0 = 0;
-			Global_2804739 = 1;
+			Global_2804741 = 1;
 		}
 	}
 	return iVar0;
@@ -2682,7 +2682,7 @@ int func_94()//Position - 0x240C
 {
 	if (bLocal_339)
 	{
-		if (func_4(PLAYER::PLAYER_ID()) == 185 && Global_2793044.f_4676 == 2)
+		if (func_4(PLAYER::PLAYER_ID()) == 185 && Global_2793046.f_4676 == 2)
 		{
 			return 0;
 		}
@@ -2995,7 +2995,7 @@ int func_108()//Position - 0x28B8
 	{
 		return 1;
 	}
-	if (Global_2696915)
+	if (Global_2696917)
 	{
 		return 1;
 	}
@@ -3045,7 +3045,7 @@ int func_109()//Position - 0x293C
 
 int func_110()//Position - 0x296F
 {
-	switch (Global_2697019)
+	switch (Global_2697021)
 	{
 		case 0:
 			return joaat("freemode");
@@ -3057,7 +3057,7 @@ int func_110()//Position - 0x296F
 
 bool func_111()//Position - 0x2993
 {
-	return Global_2683862.f_698;
+	return Global_2683864.f_698;
 }
 
 int func_112(int iParam0)//Position - 0x29A2
@@ -3071,12 +3071,12 @@ int func_112(int iParam0)//Position - 0x29A2
 
 bool func_113()//Position - 0x29B9
 {
-	return Global_2694524;
+	return Global_2694526;
 }
 
 bool func_114()//Position - 0x29C5
 {
-	return Global_2683862.f_693;
+	return Global_2683864.f_693;
 }
 
 void func_115(var uParam0)//Position - 0x29D4

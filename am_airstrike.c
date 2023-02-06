@@ -389,7 +389,7 @@ void func_1()//Position - 0x129
 	{
 		Local_242.f_0 = 3;
 	}
-	if (Global_2764906.f_224 || func_2(PLAYER::PLAYER_ID()))
+	if (Global_2764908.f_224 || func_2(PLAYER::PLAYER_ID()))
 	{
 		Local_242.f_0 = 3;
 	}
@@ -406,7 +406,7 @@ int func_2(int iParam0)//Position - 0x26A
 	}
 	if (iParam0 == PLAYER::PLAYER_ID())
 	{
-		return Global_2764905;
+		return Global_2764907;
 	}
 	else
 	{
@@ -1949,7 +1949,7 @@ char* func_60()//Position - 0x229D
 
 bool func_61()//Position - 0x22B5
 {
-	return Global_2683862.f_24;
+	return Global_2683864.f_24;
 }
 
 void func_62()//Position - 0x22C3
@@ -2147,7 +2147,7 @@ int func_69(var uParam0, int iParam1, struct<3> Param2, float fParam5, bool bPar
 	if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 	{
 		*uParam0 = NETWORK::VEH_TO_NET(iVar1);
-		Global_2793044.f_6736 = iVar1;
+		Global_2793046.f_6736 = iVar1;
 		if (NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(*uParam0))
 		{
 			if (bParam15)
@@ -2454,7 +2454,7 @@ Vector3 func_78(int iParam0)//Position - 0x2CD4
 
 var func_79()//Position - 0x2D27
 {
-	return Global_2683862.f_19;
+	return Global_2683864.f_19;
 }
 
 int func_80(struct<3> Param0, float fParam3, bool bParam4, bool bParam5, bool bParam6, bool bParam7, int iParam8, var uParam9, int iParam10)//Position - 0x2D35
@@ -2502,8 +2502,8 @@ int func_81(int iParam0)//Position - 0x2E39
 	{
 		return 1;
 	}
-	Global_2764201 = { func_84(iParam0) };
-	if (NETWORK::NETWORK_IS_FRIEND(&Global_2764201))
+	Global_2764203 = { func_84(iParam0) };
+	if (NETWORK::NETWORK_IS_FRIEND(&Global_2764203))
 	{
 		return 1;
 	}
@@ -2550,15 +2550,15 @@ int func_85(int iParam0, int iParam1)//Position - 0x2EE5
 {
 	if (NETWORK::NETWORK_CLAN_SERVICE_IS_VALID())
 	{
-		Global_2764201 = { func_84(iParam0) };
-		Global_2764214 = { func_84(iParam1) };
-		if (NETWORK::NETWORK_CLAN_PLAYER_IS_ACTIVE(&Global_2764201))
+		Global_2764203 = { func_84(iParam0) };
+		Global_2764216 = { func_84(iParam1) };
+		if (NETWORK::NETWORK_CLAN_PLAYER_IS_ACTIVE(&Global_2764203))
 		{
-			if (NETWORK::NETWORK_CLAN_PLAYER_IS_ACTIVE(&Global_2764214))
+			if (NETWORK::NETWORK_CLAN_PLAYER_IS_ACTIVE(&Global_2764216))
 			{
-				NETWORK::NETWORK_CLAN_PLAYER_GET_DESC(&Global_2764131, 35, &Global_2764201);
-				NETWORK::NETWORK_CLAN_PLAYER_GET_DESC(&Global_2764166, 35, &Global_2764214);
-				if (Global_2764131 == Global_2764166)
+				NETWORK::NETWORK_CLAN_PLAYER_GET_DESC(&Global_2764133, 35, &Global_2764203);
+				NETWORK::NETWORK_CLAN_PLAYER_GET_DESC(&Global_2764168, 35, &Global_2764216);
+				if (Global_2764133 == Global_2764168)
 				{
 					return 1;
 				}
@@ -2628,7 +2628,7 @@ void func_91(int iParam0)//Position - 0x3082
 {
 	if (iParam0 == 3)
 	{
-		Global_2793044.f_4487 = 0;
+		Global_2793046.f_4487 = 0;
 	}
 	Local_242.f_2.f_2 = iParam0;
 }
@@ -2747,7 +2747,7 @@ void func_98(var uParam0, int iParam1, int iParam2, char* sParam3, int iParam4, 
 
 void func_99()//Position - 0x32CF
 {
-	Global_2793044.f_4486 = Local_242.f_53;
+	Global_2793046.f_4486 = Local_242.f_53;
 }
 
 int func_100()//Position - 0x32E2
@@ -2786,7 +2786,7 @@ void func_105(int iParam0, int iParam1, var uParam2)//Position - 0x3392
 {
 	struct<4> Var0;
 	
-	Var0.f_0 = 1168623138;
+	Var0.f_0 = -379103418;
 	Var0.f_1 = PLAYER::PLAYER_ID();
 	Var0.f_3 = iParam1;
 	Var0.f_2 = uParam2;
@@ -2838,7 +2838,7 @@ int func_107()//Position - 0x342F
 	{
 		return 1;
 	}
-	if (Global_2696915)
+	if (Global_2696917)
 	{
 		return 1;
 	}
@@ -2888,7 +2888,7 @@ int func_108()//Position - 0x34B3
 
 int func_109()//Position - 0x34E6
 {
-	switch (Global_2697019)
+	switch (Global_2697021)
 	{
 		case 0:
 			return joaat("freemode");
@@ -2905,7 +2905,7 @@ int func_110()//Position - 0x350A
 
 bool func_111()//Position - 0x3515
 {
-	return Global_2683862.f_698;
+	return Global_2683864.f_698;
 }
 
 int func_112(int iParam0)//Position - 0x3524
@@ -2919,12 +2919,12 @@ int func_112(int iParam0)//Position - 0x3524
 
 bool func_113()//Position - 0x353B
 {
-	return Global_2694524;
+	return Global_2694526;
 }
 
 bool func_114()//Position - 0x3547
 {
-	return Global_2683862.f_693;
+	return Global_2683864.f_693;
 }
 
 void func_115()//Position - 0x3556

@@ -528,7 +528,7 @@ void func_20(int iParam0)//Position - 0x607
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar2);
 								GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							}
-							if (Global_2694519)
+							if (Global_2694521)
 							{
 								if (iVar1 == 14)
 								{
@@ -796,7 +796,7 @@ void func_26(int iParam0, var uParam1)//Position - 0xCAA
 		if (NETWORK::NETWORK_IS_PLAYER_ACTIVE(iParam0))
 		{
 			Global_1894573[PLAYER::PLAYER_ID() /*608*/].f_10.f_26 = iParam0;
-			Global_2793044.f_5225.f_225 = uParam1;
+			Global_2793046.f_5225.f_225 = uParam1;
 			func_27(func_28(iParam0));
 		}
 	}
@@ -806,7 +806,7 @@ void func_27(int iParam0)//Position - 0xCFA
 {
 	struct<2> Var0;
 	
-	Var0.f_0 = 1848110702;
+	Var0.f_0 = 1053257221;
 	Var0.f_1 = PLAYER::PLAYER_ID();
 	if (!iParam0 == 0)
 	{

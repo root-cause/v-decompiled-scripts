@@ -5591,14 +5591,14 @@ int func_120(int iParam0, int iParam1)//Position - 0x50A5
 	int iVar0;
 	int iVar1;
 	
-	if ((!Global_2764242 && iParam1 >= 0) && iParam1 <= 415)
+	if ((!Global_2764244 && iParam1 >= 0) && iParam1 <= 415)
 	{
 		if (BitTest(Global_1586468[iParam1 /*142*/].f_103, 2))
 		{
 			return 1;
 		}
 	}
-	if (Global_2764241)
+	if (Global_2764243)
 	{
 		return 1;
 	}
@@ -11922,7 +11922,7 @@ int func_209(int iParam0)//Position - 0xE73E
 
 bool func_210(int iParam0)//Position - 0xE75C
 {
-	return func_211(&(Global_2672505.f_183), iParam0);
+	return func_211(&(Global_2672505.f_184), iParam0);
 }
 
 var func_211(var uParam0, var uParam1)//Position - 0xE770

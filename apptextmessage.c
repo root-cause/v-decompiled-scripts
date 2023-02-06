@@ -104,7 +104,7 @@ void __EntryFunction__()//Position - 0x0
 				case 7:
 					if (Global_22791 == 0)
 					{
-						if (Global_2803652 == 0)
+						if (Global_2803654 == 0)
 						{
 							func_38();
 							func_33();
@@ -861,7 +861,7 @@ void func_14(int iParam0)//Position - 0x10D6
 								GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar2);
 								GRAPHICS::END_SCALEFORM_MOVIE_METHOD();
 							}
-							if (Global_2694519)
+							if (Global_2694521)
 							{
 								if (iVar1 == 14)
 								{
@@ -1811,7 +1811,7 @@ void func_33()//Position - 0x1E08
 				}
 			}
 		}
-		if (Global_2803652 == 0)
+		if (Global_2803654 == 0)
 		{
 			if (Global_78558)
 			{
@@ -1819,7 +1819,7 @@ void func_33()//Position - 0x1E08
 				if (func_3(2, Global_20355, 0))
 				{
 					Global_20361 = 1;
-					Global_2803652 = 1;
+					Global_2803654 = 1;
 				}
 			}
 		}
@@ -1958,7 +1958,7 @@ void func_36(int iParam0)//Position - 0x2914
 		switch (Global_113648.f_14143[iParam0 /*104*/].f_32)
 		{
 			case 4:
-				HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_2793044.f_1755[iVar0 /*4*/]));
+				HUD::ADD_TEXT_COMPONENT_SUBSTRING_TEXT_LABEL(&(Global_2793046.f_1755[iVar0 /*4*/]));
 				break;
 			
 			case 5:

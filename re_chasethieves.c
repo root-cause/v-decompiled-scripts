@@ -2461,7 +2461,7 @@ void func_48(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4)/
 	if (bParam4)
 	{
 	}
-	iVar0 = Global_2805027[iParam0 /*3*/][func_49(iParam2)];
+	iVar0 = Global_2805029[iParam0 /*3*/][func_49(iParam2)];
 	if (iVar0 != 0)
 	{
 		STATS::STAT_SET_INT(iVar0, iParam1, bParam3);
@@ -2479,13 +2479,13 @@ int func_49(var uParam0)//Position - 0x2545
 		iVar1 = func_50();
 		if (iVar1 > -1)
 		{
-			Global_2804739 = 0;
+			Global_2804741 = 0;
 			iVar0 = iVar1;
 		}
 		else
 		{
 			iVar0 = 0;
-			Global_2804739 = 1;
+			Global_2804741 = 1;
 		}
 	}
 	return iVar0;
@@ -2620,7 +2620,7 @@ int func_54(int iParam0, int iParam1, int iParam2)//Position - 0x2769
 		if (iParam2 == 0)
 		{
 		}
-		iVar0 = Global_2805027[iParam0 /*3*/][func_49(iParam1)];
+		iVar0 = Global_2805029[iParam0 /*3*/][func_49(iParam1)];
 		if (STATS::STAT_GET_INT(iVar0, &uVar1, -1))
 		{
 			return uVar1;
@@ -34411,7 +34411,7 @@ int func_278(int iParam0, bool bParam1)//Position - 0x2451B
 
 var func_279()//Position - 0x245A0
 {
-	return Global_2683862.f_19;
+	return Global_2683864.f_19;
 }
 
 bool func_280(int iParam0)//Position - 0x245AE
@@ -34421,7 +34421,7 @@ bool func_280(int iParam0)//Position - 0x245AE
 
 var func_281()//Position - 0x245BB
 {
-	return Global_2683862.f_18;
+	return Global_2683864.f_18;
 }
 
 bool func_282()//Position - 0x245C9
@@ -34832,7 +34832,7 @@ void func_294(var uParam0, int iParam1, bool bParam2)//Position - 0x24C8B
 	
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (BitTest(Global_2793044.f_4690, 26))
+		if (BitTest(Global_2793046.f_4690, 26))
 		{
 			return;
 		}

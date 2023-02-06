@@ -1717,7 +1717,7 @@ int func_44(int iParam0, int iParam1, int iParam2)//Position - 0x1B88
 		if (iParam2 == 0)
 		{
 		}
-		iVar0 = Global_2805027[iParam0 /*3*/][func_45(iParam1)];
+		iVar0 = Global_2805029[iParam0 /*3*/][func_45(iParam1)];
 		if (STATS::STAT_GET_INT(iVar0, &uVar1, -1))
 		{
 			return uVar1;
@@ -1737,13 +1737,13 @@ int func_45(var uParam0)//Position - 0x1BC5
 		iVar1 = func_46();
 		if (iVar1 > -1)
 		{
-			Global_2804739 = 0;
+			Global_2804741 = 0;
 			iVar0 = iVar1;
 		}
 		else
 		{
 			iVar0 = 0;
-			Global_2804739 = 1;
+			Global_2804741 = 1;
 		}
 	}
 	return iVar0;

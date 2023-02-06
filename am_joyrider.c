@@ -537,7 +537,7 @@ int func_13(var uParam0, int iParam1, struct<3> Param2, float fParam5, bool bPar
 	if (ENTITY::DOES_ENTITY_EXIST(iVar1))
 	{
 		*uParam0 = NETWORK::VEH_TO_NET(iVar1);
-		Global_2793044.f_6736 = iVar1;
+		Global_2793046.f_6736 = iVar1;
 		if (NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(*uParam0))
 		{
 			if (bParam15)
@@ -898,7 +898,7 @@ int func_24(struct<3> Param0)//Position - 0xF3D
 
 var func_25()//Position - 0xF67
 {
-	return Global_2683862.f_19;
+	return Global_2683864.f_19;
 }
 
 int func_26(struct<3> Param0, float fParam3, bool bParam4, bool bParam5, bool bParam6, bool bParam7, int iParam8, var uParam9, int iParam10)//Position - 0xF75
@@ -946,8 +946,8 @@ int func_27(int iParam0)//Position - 0x1079
 	{
 		return 1;
 	}
-	Global_2764201 = { func_31(iParam0) };
-	if (NETWORK::NETWORK_IS_FRIEND(&Global_2764201))
+	Global_2764203 = { func_31(iParam0) };
+	if (NETWORK::NETWORK_IS_FRIEND(&Global_2764203))
 	{
 		return 1;
 	}
@@ -999,15 +999,15 @@ int func_32(int iParam0, int iParam1)//Position - 0x112E
 {
 	if (NETWORK::NETWORK_CLAN_SERVICE_IS_VALID())
 	{
-		Global_2764201 = { func_31(iParam0) };
-		Global_2764214 = { func_31(iParam1) };
-		if (NETWORK::NETWORK_CLAN_PLAYER_IS_ACTIVE(&Global_2764201))
+		Global_2764203 = { func_31(iParam0) };
+		Global_2764216 = { func_31(iParam1) };
+		if (NETWORK::NETWORK_CLAN_PLAYER_IS_ACTIVE(&Global_2764203))
 		{
-			if (NETWORK::NETWORK_CLAN_PLAYER_IS_ACTIVE(&Global_2764214))
+			if (NETWORK::NETWORK_CLAN_PLAYER_IS_ACTIVE(&Global_2764216))
 			{
-				NETWORK::NETWORK_CLAN_PLAYER_GET_DESC(&Global_2764131, 35, &Global_2764201);
-				NETWORK::NETWORK_CLAN_PLAYER_GET_DESC(&Global_2764166, 35, &Global_2764214);
-				if (Global_2764131 == Global_2764166)
+				NETWORK::NETWORK_CLAN_PLAYER_GET_DESC(&Global_2764133, 35, &Global_2764203);
+				NETWORK::NETWORK_CLAN_PLAYER_GET_DESC(&Global_2764168, 35, &Global_2764216);
+				if (Global_2764133 == Global_2764168)
 				{
 					return 1;
 				}
@@ -1389,7 +1389,7 @@ int func_48()//Position - 0x1852
 	{
 		return 1;
 	}
-	if (Global_2696915)
+	if (Global_2696917)
 	{
 		return 1;
 	}
@@ -1439,7 +1439,7 @@ int func_49()//Position - 0x18D6
 
 int func_50()//Position - 0x1909
 {
-	switch (Global_2697019)
+	switch (Global_2697021)
 	{
 		case 0:
 			return joaat("freemode");
@@ -1456,7 +1456,7 @@ int func_51()//Position - 0x192D
 
 bool func_52()//Position - 0x1938
 {
-	return Global_2683862.f_698;
+	return Global_2683864.f_698;
 }
 
 int func_53(int iParam0)//Position - 0x1947
@@ -1470,12 +1470,12 @@ int func_53(int iParam0)//Position - 0x1947
 
 bool func_54()//Position - 0x195E
 {
-	return Global_2694524;
+	return Global_2694526;
 }
 
 bool func_55()//Position - 0x196A
 {
-	return Global_2683862.f_693;
+	return Global_2683864.f_693;
 }
 
 void func_56()//Position - 0x1979
@@ -1543,7 +1543,7 @@ void func_61(struct<21> Param0)//Position - 0x1A50
 		MISC::SET_THIS_SCRIPT_CAN_BE_PAUSED(false);
 		if (NETWORK::NETWORK_IS_HOST_OF_THIS_SCRIPT())
 		{
-			if (Global_2793044.f_4481 == 0)
+			if (Global_2793046.f_4481 == 0)
 			{
 				iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(0, 7);
 				switch (iVar0)
@@ -1579,8 +1579,8 @@ void func_61(struct<21> Param0)//Position - 0x1A50
 			}
 			else
 			{
-				Local_61.f_4 = Global_2793044.f_4481;
-				Global_2793044.f_4481 = 0;
+				Local_61.f_4 = Global_2793046.f_4481;
+				Global_2793046.f_4481 = 0;
 			}
 			VEHICLE::SET_VEHICLE_MODEL_IS_SUPPRESSED(Local_61.f_4, true);
 			Local_61.f_5 = func_62(1);

@@ -460,7 +460,7 @@ void func_2(int iParam0)//Position - 0x4F4
 
 bool func_3()//Position - 0x528
 {
-	return Global_2672505.f_2513[0 /*80*/].f_1 != 0;
+	return Global_2672505.f_2514[0 /*80*/].f_1 != 0;
 }
 
 bool func_4(bool bParam0)//Position - 0x53E
@@ -887,7 +887,7 @@ void func_26()//Position - 0xB3E
 	{
 		if (func_31(0))
 		{
-			if (!MISC::IS_STRING_NULL_OR_EMPTY(&(Global_2683862.f_785.f_12)))
+			if (!MISC::IS_STRING_NULL_OR_EMPTY(&(Global_2683864.f_785.f_12)))
 			{
 				func_30();
 				func_27(6, 0, 0);
@@ -1035,16 +1035,16 @@ var func_29()//Position - 0xD90
 
 void func_30()//Position - 0xD9C
 {
-	Global_2683862.f_785.f_28 = 0;
+	Global_2683864.f_785.f_28 = 0;
 }
 
 bool func_31(bool bParam0)//Position - 0xDAE
 {
 	if (bParam0)
 	{
-		return (Global_2683862.f_785.f_28 && MISC::GET_HASH_KEY(SCRIPT::GET_THIS_SCRIPT_NAME()) == Global_2683862.f_785.f_31);
+		return (Global_2683864.f_785.f_28 && MISC::GET_HASH_KEY(SCRIPT::GET_THIS_SCRIPT_NAME()) == Global_2683864.f_785.f_31);
 	}
-	return Global_2683862.f_785.f_28;
+	return Global_2683864.f_785.f_28;
 }
 
 bool func_32()//Position - 0xDEA

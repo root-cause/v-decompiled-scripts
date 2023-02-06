@@ -331,7 +331,7 @@ void func_4()//Position - 0x4E2
 
 bool func_5()//Position - 0x518
 {
-	return Global_2766478;
+	return Global_2766480;
 }
 
 int func_6(int iParam0)//Position - 0x524

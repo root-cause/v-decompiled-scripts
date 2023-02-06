@@ -326,7 +326,7 @@ void func_6(var uParam0, struct<3> Param1)//Position - 0x30E
 	if (iVar2 != 0)
 	{
 		Var3.f_2 = 123;
-		Var3.f_0 = 1883636994;
+		Var3.f_0 = -285086167;
 		Var3.f_1 = PLAYER::PLAYER_ID();
 		Var3.f_2 = { *uParam0 };
 		Var3.f_7 = { Param1 };
@@ -848,7 +848,7 @@ int func_32()//Position - 0xD0D
 	{
 		return 1;
 	}
-	if (Global_2696915)
+	if (Global_2696917)
 	{
 		return 1;
 	}
@@ -898,7 +898,7 @@ int func_33()//Position - 0xD91
 
 int func_34()//Position - 0xDC4
 {
-	switch (Global_2697019)
+	switch (Global_2697021)
 	{
 		case 0:
 			return joaat("freemode");
@@ -915,7 +915,7 @@ int func_35()//Position - 0xDE8
 
 bool func_36()//Position - 0xDF3
 {
-	return Global_2683862.f_698;
+	return Global_2683864.f_698;
 }
 
 int func_37(int iParam0)//Position - 0xE02
@@ -929,12 +929,12 @@ int func_37(int iParam0)//Position - 0xE02
 
 bool func_38()//Position - 0xE19
 {
-	return Global_2694524;
+	return Global_2694526;
 }
 
 bool func_39()//Position - 0xE25
 {
-	return Global_2683862.f_693;
+	return Global_2683864.f_693;
 }
 
 void func_40()//Position - 0xE34

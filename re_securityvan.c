@@ -5574,7 +5574,7 @@ int func_115(int iParam0, bool bParam1)//Position - 0x71A0
 
 var func_116()//Position - 0x7225
 {
-	return Global_2683862.f_19;
+	return Global_2683864.f_19;
 }
 
 bool func_117(int iParam0)//Position - 0x7233
@@ -5584,7 +5584,7 @@ bool func_117(int iParam0)//Position - 0x7233
 
 var func_118()//Position - 0x7240
 {
-	return Global_2683862.f_18;
+	return Global_2683864.f_18;
 }
 
 bool func_119()//Position - 0x724E
@@ -6221,7 +6221,7 @@ void func_135(var uParam0, int iParam1, bool bParam2)//Position - 0x7D6A
 	
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (BitTest(Global_2793044.f_4690, 26))
+		if (BitTest(Global_2793046.f_4690, 26))
 		{
 			return;
 		}

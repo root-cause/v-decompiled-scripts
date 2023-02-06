@@ -851,7 +851,7 @@ int func_34()//Position - 0x14F9
 	{
 		return 1;
 	}
-	if (Global_2696915)
+	if (Global_2696917)
 	{
 		return 1;
 	}
@@ -901,7 +901,7 @@ int func_35()//Position - 0x157D
 
 int func_36()//Position - 0x15B0
 {
-	switch (Global_2697019)
+	switch (Global_2697021)
 	{
 		case 0:
 			return joaat("freemode");
@@ -913,7 +913,7 @@ int func_36()//Position - 0x15B0
 
 bool func_37()//Position - 0x15D4
 {
-	return Global_2683862.f_698;
+	return Global_2683864.f_698;
 }
 
 int func_38(int iParam0)//Position - 0x15E3
@@ -927,12 +927,12 @@ int func_38(int iParam0)//Position - 0x15E3
 
 bool func_39()//Position - 0x15FA
 {
-	return Global_2694524;
+	return Global_2694526;
 }
 
 bool func_40()//Position - 0x1606
 {
-	return Global_2683862.f_693;
+	return Global_2683864.f_693;
 }
 
 void func_41()//Position - 0x1615

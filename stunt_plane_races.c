@@ -7240,7 +7240,7 @@ var func_115(int iParam0, int iParam1)//Position - 0x6A5C
 
 bool func_116(int iParam0)//Position - 0x6A74
 {
-	return func_117(&(Global_2672505.f_183), iParam0);
+	return func_117(&(Global_2672505.f_184), iParam0);
 }
 
 var func_117(var uParam0, var uParam1)//Position - 0x6A88
@@ -9915,7 +9915,7 @@ void func_209(var uParam0, int iParam1, bool bParam2)//Position - 0x9A6F
 	
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		if (BitTest(Global_2793044.f_4690, 26))
+		if (BitTest(Global_2793046.f_4690, 26))
 		{
 			return;
 		}
@@ -10598,7 +10598,7 @@ int func_227(int iParam0, bool bParam1)//Position - 0xA67A
 
 var func_228()//Position - 0xA6FF
 {
-	return Global_2683862.f_19;
+	return Global_2683864.f_19;
 }
 
 bool func_229(int iParam0)//Position - 0xA70D
@@ -10608,7 +10608,7 @@ bool func_229(int iParam0)//Position - 0xA70D
 
 var func_230()//Position - 0xA71A
 {
-	return Global_2683862.f_18;
+	return Global_2683864.f_18;
 }
 
 bool func_231()//Position - 0xA728
@@ -14265,7 +14265,7 @@ void func_376(var uParam0, int iParam1)//Position - 0xEBDB
 	{
 		func_377(&(Global_2103068.f_49));
 	}
-	Global_2793044.f_4062 = 0;
+	Global_2793046.f_4062 = 0;
 }
 
 void func_377(var uParam0)//Position - 0xEC86
@@ -16537,7 +16537,7 @@ bool func_457()//Position - 0x126FC
 
 var func_458()//Position - 0x1270C
 {
-	return Global_2692733.f_3;
+	return Global_2692735.f_3;
 }
 
 int func_459(int iParam0)//Position - 0x1271A
@@ -16948,7 +16948,7 @@ int func_470(int iParam0, var uParam1, var uParam2, int iParam3, int iParam4, bo
 		}
 		if (!bParam6)
 		{
-			if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && Global_2692733.f_3)
+			if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && Global_2692735.f_3)
 			{
 				STATS::LEADERBOARDS2_WRITE_DATA_FOR_EVENT_TYPE(&Var0, &(Global_1935368.f_10));
 			}
@@ -19586,7 +19586,7 @@ int func_489()//Position - 0x18983
 
 bool func_490()//Position - 0x189A3
 {
-	return Global_2695031;
+	return Global_2695033;
 }
 
 bool func_491()//Position - 0x189AF
@@ -25175,7 +25175,7 @@ void func_558(int iParam0)//Position - 0x1FCC5
 
 void func_559()//Position - 0x1FCF8
 {
-	Global_2793044.f_4629 = 0;
+	Global_2793046.f_4629 = 0;
 }
 
 void func_560(bool bParam0)//Position - 0x1FD08

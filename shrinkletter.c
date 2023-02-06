@@ -773,7 +773,7 @@ int func_18()//Position - 0xA8B
 
 bool func_19()//Position - 0xAAB
 {
-	return Global_2695031;
+	return Global_2695033;
 }
 
 struct<4> func_20(var uParam0)//Position - 0xAB7

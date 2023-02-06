@@ -1930,7 +1930,7 @@ int func_46()//Position - 0x1DC7
 	{
 		return 1;
 	}
-	if (Global_2672505.f_60)
+	if (Global_2672505.f_61)
 	{
 		return 1;
 	}
