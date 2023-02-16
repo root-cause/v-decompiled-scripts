@@ -16397,7 +16397,7 @@ void func_372(var uParam0, var uParam1)//Position - 0x1523F
 		func_380(iVar4, iVar5, joaat("XP_MULTIPLIER"), &fVar0, 1);
 		func_380(iVar4, iVar5, joaat("FAKE_XP_MULTIPLIER"), &fVar3, 1);
 		func_380(iVar4, iVar5, joaat("CASH_MULTIPLIER"), &fVar1, 1);
-		func_380(iVar4, iVar5, -1245438974, &fVar2, 1);
+		func_380(iVar4, iVar5, joaat("FAKE_CASH_MULTIPLIER"), &fVar2, 1);
 		if (fVar3 > 0f)
 		{
 			fVar0 = fVar3;

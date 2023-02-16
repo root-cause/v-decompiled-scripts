@@ -20269,10 +20269,10 @@ int func_526(var uParam0)//Position - 0x14F51
 		*uParam0 = Global_262145.f_28411 /* Tunable: -608294742 */;
 		return 1;
 	}
-	uVar0[0] = Global_262145.f_28809 /* Tunable: 495480998 */;
-	uVar0[1] = Global_262145.f_28811 /* Tunable: -181620241 */;
-	uVar0[2] = Global_262145.f_28810 /* Tunable: -1192586160 */;
-	uVar0[3] = Global_262145.f_28812 /* Tunable: -2126562382 */;
+	uVar0[0] = Global_262145.f_28809 /* Tunable: CH_VAULT_WEIGHTING_CASH */;
+	uVar0[1] = Global_262145.f_28811 /* Tunable: CH_VAULT_WEIGHTING_GOLD */;
+	uVar0[2] = Global_262145.f_28810 /* Tunable: CH_VAULT_WEIGHTING_ART */;
+	uVar0[3] = Global_262145.f_28812 /* Tunable: CH_VAULT_WEIGHTING_DIAMONDS */;
 	iVar8 = 0;
 	while (iVar8 <= 3)
 	{
@@ -29428,19 +29428,19 @@ int func_794(var uParam0)//Position - 0x2089A
 			case 0:
 			case 1:
 			case 2:
-				fVar1 = Global_262145.f_28788 /* Tunable: -1464804051 */;
+				fVar1 = Global_262145.f_28788 /* Tunable: CH_BUYER_MOD_SHORT */;
 				break;
 			
 			case 3:
 			case 4:
 			case 5:
-				fVar1 = Global_262145.f_28789 /* Tunable: -1142309917 */;
+				fVar1 = Global_262145.f_28789 /* Tunable: CH_BUYER_MOD_MED */;
 				break;
 			
 			case 6:
 			case 7:
 			case 8:
-				fVar1 = Global_262145.f_28790 /* Tunable: -763558684 */;
+				fVar1 = Global_262145.f_28790 /* Tunable: CH_BUYER_MOD_LONG */;
 				break;
 		}
 		iVar0 = SYSTEM::ROUND((IntToFloat(iVar0) * fVar1));

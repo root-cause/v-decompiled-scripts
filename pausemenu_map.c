@@ -632,7 +632,7 @@ void func_6(int iParam0, char* sParam1, char* sParam2, int iParam3, char* sParam
 				func_9(iVar9, iVar10, joaat("XP_MULTIPLIER"), &fVar1, 1);
 				func_9(iVar9, iVar10, joaat("FAKE_XP_MULTIPLIER"), &fVar4, 1);
 				func_9(iVar9, iVar10, joaat("CASH_MULTIPLIER"), &fVar2, 1);
-				func_9(iVar9, iVar10, -1245438974, &fVar5, 1);
+				func_9(iVar9, iVar10, joaat("FAKE_CASH_MULTIPLIER"), &fVar5, 1);
 				if (func_8(iParam12))
 				{
 					func_9(iVar9, iVar10, joaat("AP_MULTIPLIER"), &fVar3, 1);
