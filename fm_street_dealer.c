@@ -10504,7 +10504,7 @@ float func_277()//Position - 0xCD61
 
 int func_278(int iParam0)//Position - 0xCD6E
 {
-	if (!Global_262145.f_34062 /* Tunable: ENABLE_STREETDEALERS_DLC22022 */)
+	if (!Global_262145.f_34063 /* Tunable: ENABLE_STREETDEALERS_DLC22022 */)
 	{
 		return 0;
 	}

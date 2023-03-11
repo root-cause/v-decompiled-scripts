@@ -9737,7 +9737,7 @@ void func_295(var uParam0, int iParam1, int iParam2)//Position - 0xB6F0
 
 int func_296(int iParam0)//Position - 0xB941
 {
-	if (Global_262145.f_33902 /* Tunable: 1308841934 */ == -1)
+	if (Global_262145.f_33903 /* Tunable: 1308841934 */ == -1)
 	{
 		return 0;
 	}

@@ -48,7 +48,7 @@ void __EntryFunction__()//Position - 0x0
 		{
 			func_6();
 		}
-		if (func_1(&uLocal_21, &Global_297007))
+		if (func_1(&uLocal_21, &Global_297008))
 		{
 			func_6();
 		}

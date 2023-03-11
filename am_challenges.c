@@ -8180,12 +8180,12 @@ int func_209(int iParam0, int iParam1)//Position - 0x7694
 			}
 			return iVar3;
 		}
-		if (Global_297010[iVar3] == iParam0)
+		if (Global_297011[iVar3] == iParam0)
 		{
 			iVar1 = iVar3;
 			iVar2 = iVar3;
 		}
-		else if (Global_297010[iVar3] < iParam0)
+		else if (Global_297011[iVar3] < iParam0)
 		{
 			if (iVar2 == iVar3)
 			{
@@ -8620,7 +8620,7 @@ int func_222(int iParam0, bool bParam1, int iParam2)//Position - 0x7E31
 	{
 		iParam0 = 8000;
 	}
-	return Global_297010[iParam0];
+	return Global_297011[iParam0];
 }
 
 int func_223()//Position - 0x7E59

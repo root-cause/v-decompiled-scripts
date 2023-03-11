@@ -15350,7 +15350,7 @@ void func_550(var uParam0, int iParam1, int iParam2)//Position - 0x11BF3
 
 int func_551(int iParam0)//Position - 0x11E2B
 {
-	if (Global_262145.f_33902 /* Tunable: 1308841934 */ == -1)
+	if (Global_262145.f_33903 /* Tunable: 1308841934 */ == -1)
 	{
 		return 0;
 	}

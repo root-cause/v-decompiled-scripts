@@ -30660,7 +30660,7 @@ Vector3 func_840()//Position - 0x21F58
 
 int func_841(int iParam0)//Position - 0x21F6F
 {
-	if (Global_262145.f_33902 /* Tunable: 1308841934 */ == -1)
+	if (Global_262145.f_33903 /* Tunable: 1308841934 */ == -1)
 	{
 		return 0;
 	}

@@ -12123,7 +12123,7 @@ int func_239(int iParam0)//Position - 0xA572
 			return Global_262145.f_21421 /* Tunable: GR_BUNKER_PROPERTY_CHUMASH_BUNKER */;
 		
 		case 32:
-			return Global_262145.f_33917 /* Tunable: XM22_BIN_PRICE_BRICKADE2 */;
+			return Global_262145.f_33918 /* Tunable: XM22_BIN_PRICE_BRICKADE2 */;
 		
 		default:
 	}
