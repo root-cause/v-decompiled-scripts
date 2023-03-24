@@ -11765,11 +11765,11 @@ int func_238(bool bParam0, int iParam1, bool bParam2, bool bParam3)//Position - 
 	{
 		if (bParam0)
 		{
-			iVar0 = Global_262145.f_21556 /* Tunable: 262971166 */;
+			iVar0 = Global_262145.f_21556 /* Tunable: GR_PURCHASE_SUPPLIES_COST_PER_SEGMENT_BASE */;
 		}
 		else
 		{
-			iVar0 = Global_262145.f_21555 /* Tunable: 970448219 */;
+			iVar0 = Global_262145.f_21555 /* Tunable: GR_PURCHASE_SUPPLIES_COST_PER_SEGMENT */;
 		}
 	}
 	else if (bParam3)
