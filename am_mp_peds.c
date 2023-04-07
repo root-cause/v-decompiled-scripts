@@ -18748,7 +18748,7 @@ void func_383(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 0
 					func_39(&(uParam0->f_11), 49);
 					func_39(&(uParam0->f_11), 23);
 					func_39(&(uParam0->f_11), 24);
-					if (func_388() || !Global_262145.f_31911 /* Tunable: 809031172 */)
+					if (func_388() || !Global_262145.f_31911 /* Tunable: ENABLE_FIXER_STUDIO_APPEARANCE */)
 					{
 						func_39(&(uParam0->f_11), 0);
 					}
@@ -18861,7 +18861,7 @@ void func_383(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 0
 					func_39(&(uParam0->f_11), 49);
 					func_39(&(uParam0->f_11), 23);
 					func_39(&(uParam0->f_11), 24);
-					if (func_388() || !Global_262145.f_31911 /* Tunable: 809031172 */)
+					if (func_388() || !Global_262145.f_31911 /* Tunable: ENABLE_FIXER_STUDIO_APPEARANCE */)
 					{
 						func_39(&(uParam0->f_11), 0);
 					}
