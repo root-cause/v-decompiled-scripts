@@ -11,20 +11,18 @@
 	int iLocal_9 = 0;
 	int iLocal_10 = 0;
 	int iLocal_11 = 0;
-	var uLocal_12 = 0;
+	float fLocal_12 = 0f;
 	var uLocal_13 = 0;
-	float fLocal_14 = 0f;
-	var uLocal_15 = 0;
+	var uLocal_14 = 0;
+	int iLocal_15 = 0;
 	var uLocal_16 = 0;
-	int iLocal_17 = 0;
-	var uLocal_18 = 0;
+	var uLocal_17 = 0;
+	char* sLocal_18 = NULL;
 	var uLocal_19 = 0;
-	char* sLocal_20 = NULL;
+	var uLocal_20 = 0;
 	var uLocal_21 = 0;
 	var uLocal_22 = 0;
 	var uLocal_23 = 0;
-	var uLocal_24 = 0;
-	var uLocal_25 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -39,16 +37,16 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_9 = 1;
 	iLocal_10 = 12;
 	iLocal_11 = 12;
-	fLocal_14 = 0.001f;
-	iLocal_17 = -1;
-	sLocal_20 = "NULL";
+	fLocal_12 = 0.001f;
+	iLocal_15 = -1;
+	sLocal_18 = "NULL";
 	while (true)
 	{
-		if (func_7() || Global_1961986 == 1)
+		if (func_7() || Global_1962785 == 1)
 		{
 			func_6();
 		}
-		if (func_1(&uLocal_21, &Global_297008))
+		if (func_1(&uLocal_19, &Global_298026))
 		{
 			func_6();
 		}
@@ -21349,11 +21347,11 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 
 int func_3()//Position - 0x1D148
 {
-	if (Global_2691796)
+	if (Global_2691837)
 	{
 		return 32;
 	}
-	return (32 - Global_2691797);
+	return (32 - Global_2691838);
 }
 
 int func_4(int iParam0)//Position - 0x1D163
@@ -21501,7 +21499,7 @@ void func_6()//Position - 0x1D3F0
 
 int func_7()//Position - 0x1D3FC
 {
-	if (Global_1575035 == 0)
+	if (Global_1575038 == 0)
 	{
 		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
@@ -21512,7 +21510,7 @@ int func_7()//Position - 0x1D3FC
 	{
 		return 1;
 	}
-	if (Global_2696917)
+	if (Global_2696994)
 	{
 		return 1;
 	}
@@ -21562,7 +21560,7 @@ int func_8()//Position - 0x1D480
 
 int func_9()//Position - 0x1D4B3
 {
-	switch (Global_2697021)
+	switch (Global_2697098)
 	{
 		case 0:
 			return joaat("freemode");
@@ -21574,12 +21572,12 @@ int func_9()//Position - 0x1D4B3
 
 int func_10()//Position - 0x1D4D7
 {
-	return Global_32163;
+	return Global_32283;
 }
 
 bool func_11()//Position - 0x1D4E2
 {
-	return Global_2683864.f_698;
+	return Global_2683883.f_698;
 }
 
 int func_12(int iParam0)//Position - 0x1D4F1
@@ -21593,11 +21591,11 @@ int func_12(int iParam0)//Position - 0x1D4F1
 
 bool func_13()//Position - 0x1D508
 {
-	return Global_2694526;
+	return Global_2694576;
 }
 
 bool func_14()//Position - 0x1D514
 {
-	return Global_2683864.f_693;
+	return Global_2683883.f_693;
 }
 

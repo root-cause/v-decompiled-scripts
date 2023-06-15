@@ -11,47 +11,45 @@
 	int iLocal_9 = 0;
 	int iLocal_10 = 0;
 	int iLocal_11 = 0;
-	var uLocal_12 = 0;
+	float fLocal_12 = 0f;
 	var uLocal_13 = 0;
-	float fLocal_14 = 0f;
-	var uLocal_15 = 0;
+	var uLocal_14 = 0;
+	int iLocal_15 = 0;
 	var uLocal_16 = 0;
-	int iLocal_17 = 0;
-	var uLocal_18 = 0;
-	var uLocal_19 = 0;
-	char* sLocal_20 = NULL;
-	float fLocal_21 = 0f;
+	var uLocal_17 = 0;
+	char* sLocal_18 = NULL;
+	float fLocal_19 = 0f;
+	var uLocal_20 = 0;
+	var uLocal_21 = 0;
 	var uLocal_22 = 0;
-	var uLocal_23 = 0;
-	var uLocal_24 = 0;
-	float fLocal_25 = 0f;
-	float fLocal_26 = 0f;
+	float fLocal_23 = 0f;
+	float fLocal_24 = 0f;
+	var uLocal_25 = 0;
+	var uLocal_26 = 0;
 	var uLocal_27 = 0;
-	var uLocal_28 = 0;
-	var uLocal_29 = 0;
+	float fLocal_28 = 0f;
+	float fLocal_29 = 0f;
 	float fLocal_30 = 0f;
-	float fLocal_31 = 0f;
-	float fLocal_32 = 0f;
+	var uLocal_31 = 0;
+	var uLocal_32 = 0;
 	var uLocal_33 = 0;
-	var uLocal_34 = 0;
+	int iLocal_34 = 0;
 	var uLocal_35 = 0;
-	int iLocal_36 = 0;
+	var uLocal_36 = 0;
 	var uLocal_37 = 0;
-	var uLocal_38 = 0;
-	var uLocal_39 = 0;
+	int iLocal_38 = 0;
+	int iLocal_39 = 0;
 	int iLocal_40 = 0;
 	int iLocal_41 = 0;
-	int iLocal_42 = 0;
-	int iLocal_43 = 0;
+	var uLocal_42 = 0;
+	var uLocal_43 = 0;
 	var uLocal_44 = 0;
-	var uLocal_45 = 0;
-	var uLocal_46 = 0;
+	char* sLocal_45 = NULL;
+	char* sLocal_46 = NULL;
 	char* sLocal_47 = NULL;
-	char* sLocal_48 = NULL;
-	char* sLocal_49 = NULL;
-	struct<3> Local_50 = { 0, 0, 0 } ;
-	struct<3> Local_53 = { 0, 0, 0 } ;
-	int iLocal_56 = 0;
+	struct<3> Local_48 = { 0, 0, 0 } ;
+	struct<3> Local_51 = { 0, 0, 0 } ;
+	int iLocal_54 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -71,32 +69,32 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_9 = 1;
 	iLocal_10 = 12;
 	iLocal_11 = 12;
-	fLocal_14 = 0.001f;
-	iLocal_17 = -1;
-	sLocal_20 = "NULL";
-	fLocal_21 = 0f;
-	fLocal_25 = -0.0375f;
-	fLocal_26 = 0.17f;
-	fLocal_30 = 80f;
-	fLocal_31 = 140f;
-	fLocal_32 = 180f;
-	iLocal_36 = 3;
-	iLocal_40 = 1;
-	iLocal_41 = 65;
-	iLocal_42 = 49;
-	iLocal_43 = 64;
-	sLocal_47 = "CHECKPOINT_NORMAL";
-	sLocal_48 = "CHECKPOINT_MISSED";
-	sLocal_49 = "CHECKPOINT_PERFECT";
-	Local_50 = { 1694.7395f, 3276.5024f, 41.2796f };
-	Local_53 = { 8.79494f, 0.59893f, 154.8464f };
+	fLocal_12 = 0.001f;
+	iLocal_15 = -1;
+	sLocal_18 = "NULL";
+	fLocal_19 = 0f;
+	fLocal_23 = -0.0375f;
+	fLocal_24 = 0.17f;
+	fLocal_28 = 80f;
+	fLocal_29 = 140f;
+	fLocal_30 = 180f;
+	iLocal_34 = 3;
+	iLocal_38 = 1;
+	iLocal_39 = 65;
+	iLocal_40 = 49;
+	iLocal_41 = 64;
+	sLocal_45 = "CHECKPOINT_NORMAL";
+	sLocal_46 = "CHECKPOINT_MISSED";
+	sLocal_47 = "CHECKPOINT_PERFECT";
+	Local_48 = { 1694.7395f, 3276.5024f, 41.2796f };
+	Local_51 = { 8.79494f, 0.59893f, 154.8464f };
 	func_82(0);
 	MISC::NETWORK_SET_SCRIPT_IS_SAFE_FOR_NETWORK_GAME();
 	HUD::SET_PLAYER_IS_IN_DIRECTOR_MODE(false);
 	MISC::SET_PLAYER_IS_IN_ANIMAL_FORM(false);
 	STREAMING::REMOVE_IPL("prologue_DistantLights");
 	STREAMING::REMOVE_IPL("prologue_LODLights");
-	iLocal_56 = 0;
+	iLocal_54 = 0;
 	bVar0 = func_81();
 	if (MISC::IS_COMMANDLINE_END_USER_BENCHMARK() || MISC::LANDING_SCREEN_STARTED_END_USER_BENCHMARK())
 	{
@@ -108,9 +106,9 @@ void __EntryFunction__()//Position - 0x0
 	}
 	MISC::SET_INSTANCE_PRIORITY_MODE(0);
 	func_77();
-	Global_4543155 = 0;
-	MISC::SET_BIT(&Global_4543155, 0);
-	MISC::SET_BIT(&Global_4543155, 1);
+	Global_4543160 = 0;
+	MISC::SET_BIT(&Global_4543160, 0);
+	MISC::SET_BIT(&Global_4543160, 1);
 	iVar1 = 0;
 	while (iVar1 < 131)
 	{
@@ -118,7 +116,7 @@ void __EntryFunction__()//Position - 0x0
 		iVar1++;
 	}
 	func_33();
-	switch (iLocal_56)
+	switch (iLocal_54)
 	{
 		case 0:
 			func_32(joaat("standard_global_init"), 1424);
@@ -126,37 +124,37 @@ void __EntryFunction__()//Position - 0x0
 			break;
 	}
 	SYSTEM::WAIT(0);
-	Global_78560 = 1;
+	Global_78691 = 1;
 	Global_2 = bVar0;
 	CAM::SET_GAMEPLAY_CAM_RELATIVE_HEADING(0f);
-	switch (iLocal_56)
+	switch (iLocal_54)
 	{
 		case 0:
 			Global_2883694 = 0;
 			Global_2883693 = 0;
 			func_32(joaat("standard_global_reg"), 1424);
 			SCRIPT::SET_SCRIPT_AS_NO_LONGER_NEEDED("standard_global_reg");
-			while ((!BitTest(Global_4543155, 0) || !BitTest(Global_4543155, 1)) || !BitTest(Global_4543155, 2))
+			while ((!BitTest(Global_4543160, 0) || !BitTest(Global_4543160, 1)) || !BitTest(Global_4543160, 2))
 			{
-				if (!BitTest(Global_4543155, 0))
+				if (!BitTest(Global_4543160, 0))
 				{
 				}
-				if (!BitTest(Global_4543155, 1))
+				if (!BitTest(Global_4543160, 1))
 				{
 				}
-				if (!BitTest(Global_4543155, 2))
+				if (!BitTest(Global_4543160, 2))
 				{
 				}
 				SYSTEM::WAIT(0);
 			}
-			MISC::START_SAVE_DATA(&Global_113648, 1, true);
-			MISC::REGISTER_FLOAT_TO_SAVE(&Global_113648, "fSaveVersion");
+			MISC::START_SAVE_DATA(&Global_113810, 1, true);
+			MISC::REGISTER_FLOAT_TO_SAVE(&Global_113810, "fSaveVersion");
 			MISC::STOP_SAVE_DATA();
 			if (Global_1)
 			{
-				Global_0 = Global_113648;
+				Global_0 = Global_113810;
 			}
-			Global_113648 = 1.7f;
+			Global_113810 = 1.7f;
 			if (Global_1)
 			{
 				if (Global_0 != 1.7f)
@@ -265,8 +263,8 @@ void func_1()//Position - 0x308
 
 void func_2()//Position - 0xA25
 {
-	Global_152519 = 1;
-	Global_152520 = 1;
+	Global_152682 = 1;
+	Global_152683 = 1;
 }
 
 void func_3(var uParam0, int iParam1)//Position - 0xA37
@@ -1404,7 +1402,7 @@ void func_21(float fParam0)//Position - 0x2BA7
 
 void func_22()//Position - 0x2C09
 {
-	Global_113648.f_26436.f_4 = 0;
+	Global_113810.f_26437.f_4 = 0;
 }
 
 void func_23()//Position - 0x2C1B
@@ -1418,7 +1416,7 @@ void func_23()//Position - 0x2C1B
 	STATS::STAT_GET_INT(joaat("CONTENT_HELI_VEH"), &iVar2, -1);
 	if ((iVar0 >= 0 && iVar1 >= 0) && iVar2 >= 0)
 	{
-		Global_113648.f_668.f_1314 = (Global_113648.f_668.f_1314 - iVar0);
+		Global_113810.f_668.f_1315 = (Global_113810.f_668.f_1315 - iVar0);
 	}
 }
 
@@ -1434,11 +1432,11 @@ void func_24()//Position - 0x2C7A
 		iVar1 = 171;
 		while (iVar1 <= 198)
 		{
-			if (BitTest(Global_113648.f_25184[iVar1], bVar0))
+			if (BitTest(Global_113810.f_25185[iVar1], bVar0))
 			{
-				MISC::CLEAR_BIT(&(Global_113648.f_25184[iVar1]), bVar0);
+				MISC::CLEAR_BIT(&(Global_113810.f_25185[iVar1]), bVar0);
 				iVar2 = (iVar1 + (198 - 171)) + 1;
-				MISC::SET_BIT(&(Global_113648.f_25184[iVar2]), bVar0);
+				MISC::SET_BIT(&(Global_113810.f_25185[iVar2]), bVar0);
 			}
 			iVar1++;
 		}
@@ -1450,7 +1448,7 @@ void func_25()//Position - 0x2CE6
 {
 	if ((((func_26(54) || func_26(55)) || func_26(56)) || func_26(57)) || func_26(58))
 	{
-		MISC::SET_BIT(&(Global_113648.f_10018.f_25), 6);
+		MISC::SET_BIT(&(Global_113810.f_10019.f_25), 6);
 	}
 }
 
@@ -1460,7 +1458,7 @@ int func_26(int iParam0)//Position - 0x2D35
 	{
 		return 0;
 	}
-	return Global_113648.f_9087.f_330[iParam0 /*6*/];
+	return Global_113810.f_9088.f_330[iParam0 /*6*/];
 }
 
 void func_27()//Position - 0x2D61
@@ -1469,39 +1467,39 @@ void func_27()//Position - 0x2D61
 
 void func_28()//Position - 0x2D69
 {
-	if (Global_113648.f_9087.f_99.f_205[7] != 0)
+	if (Global_113810.f_9088.f_99.f_205[7] != 0)
 	{
-		if (!Global_113648.f_9087.f_330[86 /*6*/])
+		if (!Global_113810.f_9088.f_330[86 /*6*/])
 		{
-			Global_113648.f_9087.f_330[86 /*6*/] = 1;
+			Global_113810.f_9088.f_330[86 /*6*/] = 1;
 		}
 	}
-	if (Global_113648.f_9087.f_99.f_205[8] != 0)
+	if (Global_113810.f_9088.f_99.f_205[8] != 0)
 	{
-		if (!Global_113648.f_9087.f_330[71 /*6*/])
+		if (!Global_113810.f_9088.f_330[71 /*6*/])
 		{
-			Global_113648.f_9087.f_330[71 /*6*/] = 1;
+			Global_113810.f_9088.f_330[71 /*6*/] = 1;
 		}
 	}
-	if (Global_113648.f_9087.f_99.f_205[9] != 0)
+	if (Global_113810.f_9088.f_99.f_205[9] != 0)
 	{
-		if (!Global_113648.f_9087.f_330[91 /*6*/])
+		if (!Global_113810.f_9088.f_330[91 /*6*/])
 		{
-			Global_113648.f_9087.f_330[91 /*6*/] = 1;
+			Global_113810.f_9088.f_330[91 /*6*/] = 1;
 		}
 	}
-	if (Global_113648.f_9087.f_99.f_205[10] != 0)
+	if (Global_113810.f_9088.f_99.f_205[10] != 0)
 	{
-		if (!Global_113648.f_9087.f_330[67 /*6*/])
+		if (!Global_113810.f_9088.f_330[67 /*6*/])
 		{
-			Global_113648.f_9087.f_330[67 /*6*/] = 1;
+			Global_113810.f_9088.f_330[67 /*6*/] = 1;
 		}
 	}
-	if (Global_113648.f_9087.f_99.f_205[11] != 0)
+	if (Global_113810.f_9088.f_99.f_205[11] != 0)
 	{
-		if (!Global_113648.f_9087.f_330[77 /*6*/])
+		if (!Global_113810.f_9088.f_330[77 /*6*/])
 		{
-			Global_113648.f_9087.f_330[77 /*6*/] = 1;
+			Global_113810.f_9088.f_330[77 /*6*/] = 1;
 		}
 	}
 	func_29(195, 198);
@@ -1521,33 +1519,33 @@ void func_29(int iParam0, int iParam1)//Position - 0x2E89
 	var uVar10;
 	var uVar11;
 	
-	Var0 = { Global_113648.f_10196[iParam0 /*12*/] };
-	uVar4 = Global_113648.f_10196[iParam0 /*12*/].f_4;
-	uVar5 = Global_113648.f_10196[iParam0 /*12*/].f_5;
-	uVar6 = Global_113648.f_10196[iParam0 /*12*/].f_6;
-	uVar7 = Global_113648.f_10196[iParam0 /*12*/].f_7;
-	uVar8 = Global_113648.f_10196[iParam0 /*12*/].f_8;
-	uVar9 = Global_113648.f_10196[iParam0 /*12*/].f_9;
-	uVar10 = Global_113648.f_10196[iParam0 /*12*/].f_10;
-	uVar11 = Global_113648.f_10196[iParam0 /*12*/].f_11;
-	Global_113648.f_10196[iParam0 /*12*/] = { Global_113648.f_10196[iParam1 /*12*/] };
-	Global_113648.f_10196[iParam0 /*12*/].f_4 = Global_113648.f_10196[iParam1 /*12*/].f_4;
-	Global_113648.f_10196[iParam0 /*12*/].f_5 = Global_113648.f_10196[iParam1 /*12*/].f_5;
-	Global_113648.f_10196[iParam0 /*12*/].f_6 = Global_113648.f_10196[iParam1 /*12*/].f_6;
-	Global_113648.f_10196[iParam0 /*12*/].f_7 = Global_113648.f_10196[iParam1 /*12*/].f_7;
-	Global_113648.f_10196[iParam0 /*12*/].f_8 = Global_113648.f_10196[iParam1 /*12*/].f_8;
-	Global_113648.f_10196[iParam0 /*12*/].f_9 = Global_113648.f_10196[iParam1 /*12*/].f_9;
-	Global_113648.f_10196[iParam0 /*12*/].f_10 = Global_113648.f_10196[iParam1 /*12*/].f_10;
-	Global_113648.f_10196[iParam0 /*12*/].f_11 = Global_113648.f_10196[iParam1 /*12*/].f_11;
-	Global_113648.f_10196[iParam1 /*12*/] = { Var0 };
-	Global_113648.f_10196[iParam1 /*12*/].f_4 = uVar4;
-	Global_113648.f_10196[iParam1 /*12*/].f_5 = uVar5;
-	Global_113648.f_10196[iParam1 /*12*/].f_6 = uVar6;
-	Global_113648.f_10196[iParam1 /*12*/].f_7 = uVar7;
-	Global_113648.f_10196[iParam1 /*12*/].f_8 = uVar8;
-	Global_113648.f_10196[iParam1 /*12*/].f_9 = uVar9;
-	Global_113648.f_10196[iParam1 /*12*/].f_10 = uVar10;
-	Global_113648.f_10196[iParam1 /*12*/].f_11 = uVar11;
+	Var0 = { Global_113810.f_10197[iParam0 /*12*/] };
+	uVar4 = Global_113810.f_10197[iParam0 /*12*/].f_4;
+	uVar5 = Global_113810.f_10197[iParam0 /*12*/].f_5;
+	uVar6 = Global_113810.f_10197[iParam0 /*12*/].f_6;
+	uVar7 = Global_113810.f_10197[iParam0 /*12*/].f_7;
+	uVar8 = Global_113810.f_10197[iParam0 /*12*/].f_8;
+	uVar9 = Global_113810.f_10197[iParam0 /*12*/].f_9;
+	uVar10 = Global_113810.f_10197[iParam0 /*12*/].f_10;
+	uVar11 = Global_113810.f_10197[iParam0 /*12*/].f_11;
+	Global_113810.f_10197[iParam0 /*12*/] = { Global_113810.f_10197[iParam1 /*12*/] };
+	Global_113810.f_10197[iParam0 /*12*/].f_4 = Global_113810.f_10197[iParam1 /*12*/].f_4;
+	Global_113810.f_10197[iParam0 /*12*/].f_5 = Global_113810.f_10197[iParam1 /*12*/].f_5;
+	Global_113810.f_10197[iParam0 /*12*/].f_6 = Global_113810.f_10197[iParam1 /*12*/].f_6;
+	Global_113810.f_10197[iParam0 /*12*/].f_7 = Global_113810.f_10197[iParam1 /*12*/].f_7;
+	Global_113810.f_10197[iParam0 /*12*/].f_8 = Global_113810.f_10197[iParam1 /*12*/].f_8;
+	Global_113810.f_10197[iParam0 /*12*/].f_9 = Global_113810.f_10197[iParam1 /*12*/].f_9;
+	Global_113810.f_10197[iParam0 /*12*/].f_10 = Global_113810.f_10197[iParam1 /*12*/].f_10;
+	Global_113810.f_10197[iParam0 /*12*/].f_11 = Global_113810.f_10197[iParam1 /*12*/].f_11;
+	Global_113810.f_10197[iParam1 /*12*/] = { Var0 };
+	Global_113810.f_10197[iParam1 /*12*/].f_4 = uVar4;
+	Global_113810.f_10197[iParam1 /*12*/].f_5 = uVar5;
+	Global_113810.f_10197[iParam1 /*12*/].f_6 = uVar6;
+	Global_113810.f_10197[iParam1 /*12*/].f_7 = uVar7;
+	Global_113810.f_10197[iParam1 /*12*/].f_8 = uVar8;
+	Global_113810.f_10197[iParam1 /*12*/].f_9 = uVar9;
+	Global_113810.f_10197[iParam1 /*12*/].f_10 = uVar10;
+	Global_113810.f_10197[iParam1 /*12*/].f_11 = uVar11;
 }
 
 void func_30()//Position - 0x308D
@@ -1557,11 +1555,11 @@ void func_30()//Position - 0x308D
 	iVar0 = 0;
 	while (iVar0 < 16)
 	{
-		if (!func_31(Global_113648.f_24906[iVar0 /*4*/]))
+		if (!func_31(Global_113810.f_24907[iVar0 /*4*/]))
 		{
-			if (Global_113648.f_24906[iVar0 /*4*/] != 145)
+			if (Global_113810.f_24907[iVar0 /*4*/] != 145)
 			{
-				Global_113648.f_24906[iVar0 /*4*/] = 145;
+				Global_113810.f_24907[iVar0 /*4*/] = 145;
 			}
 		}
 		iVar0++;
@@ -12016,7 +12014,7 @@ struct<4> func_65(int iParam0)//Position - 0x21580
 			break;
 		
 		case 43:
-			StringCopy(&Var0, "MP_PROP_43DES" /* GXT: Parquet flooring, granite countertops, floating fireplace, bland modern art, walk-in closet, towel warmers, leather headboard, man cave...this luxury condo in Tinsel Towers on Boulevard Del Perro checks all the boxes on the new-money millionaire ticklist.~n~Includes 10-car garage. */, 16);
+			StringCopy(&Var0, "MP_PROP_43DES" /* GXT: Parquet flooring, granite counter tops, floating fireplace, bland modern art, walk-in closet, towel warmers, leather headboard, man cave...this luxury condo in Tinsel Towers on Boulevard Del Perro checks all the boxes on the new-money millionaire tick list.~n~Includes 10-car garage. */, 16);
 			break;
 		
 		case 44:
@@ -12144,7 +12142,7 @@ struct<4> func_65(int iParam0)//Position - 0x21580
 			break;
 		
 		case 85:
-			StringCopy(&Var0, "MP_PROP_81DES" /* GXT: Let's face it: we had you at the pricetag. The fact that this happens to be one of the most decadent living spaces for hundreds of miles doesn't really matter. Just like its new owner, something this expensive doesn't need to be 'nice' or 'useful'. You're a perfect match. What are you waiting for? Access to our same-day redecorating service included as standard. Part of Executives and Other Criminals. */, 16);
+			StringCopy(&Var0, "MP_PROP_81DES" /* GXT: Let's face it: we had you at the price tag. The fact that this happens to be one of the most decadent living spaces for hundreds of miles doesn't really matter. Just like its new owner, something this expensive doesn't need to be 'nice' or 'useful'. You're a perfect match. What are you waiting for? Access to our same-day redecorating service included as standard. Part of Executives and Other Criminals. */, 16);
 			break;
 		
 		case 73:
@@ -12248,7 +12246,7 @@ struct<4> func_65(int iParam0)//Position - 0x21580
 			break;
 		
 		case 102:
-			StringCopy(&Var0, "MP_CLUBH12DES" /* GXT: You know times are tough when not even a million hipsters getting a tattoo of a swallow in flight on their taint could save this place from going under. Bad news for those who wanted to follow up with that bold yet simple triangle design, but the rock bottom pricetag is good news for you. */, 16);
+			StringCopy(&Var0, "MP_CLUBH12DES" /* GXT: You know times are tough when not even a million hipsters getting a tattoo of a swallow in flight on their taint could save this place from going under. Bad news for those who wanted to follow up with that bold yet simple triangle design, but the rock bottom price tag is good news for you. */, 16);
 			break;
 	}
 	return Var0;
@@ -12977,178 +12975,178 @@ int func_67(int iParam0)//Position - 0x2239B
 			break;
 		
 		case 61:
-			return Global_262145.f_7063[0];
+			return Global_262145.f_7146[0];
 			break;
 		
 		case 62:
-			return Global_262145.f_7063[1];
+			return Global_262145.f_7146[1];
 			break;
 		
 		case 63:
-			return Global_262145.f_7063[2];
+			return Global_262145.f_7146[2];
 			break;
 		
 		case 64:
-			return Global_262145.f_7063[3];
+			return Global_262145.f_7146[3];
 			break;
 		
 		case 65:
-			return Global_262145.f_7063[4];
+			return Global_262145.f_7146[4];
 			break;
 		
 		case 66:
-			return Global_262145.f_8290 /* Tunable: PROPERTY_3_ACE_JONES_DR */;
+			return Global_262145.f_8461 /* Tunable: PROPERTY_3_ACE_JONES_DR */;
 			break;
 		
 		case 67:
-			return Global_262145.f_8291 /* Tunable: PROPERTY_12_SUSTANCIA_RD */;
+			return Global_262145.f_8462 /* Tunable: PROPERTY_12_SUSTANCIA_RD */;
 			break;
 		
 		case 68:
-			return Global_262145.f_8292 /* Tunable: PROPERTY_4584_PROCOPIO_DR */;
+			return Global_262145.f_8463 /* Tunable: PROPERTY_4584_PROCOPIO_DR */;
 			break;
 		
 		case 69:
-			return Global_262145.f_8293 /* Tunable: PROPERTY_4401_PROCOPIO_DR */;
+			return Global_262145.f_8464 /* Tunable: PROPERTY_4401_PROCOPIO_DR */;
 			break;
 		
 		case 70:
-			return Global_262145.f_8294 /* Tunable: PROPERTY_0232_PALETO_BLVD */;
+			return Global_262145.f_8465 /* Tunable: PROPERTY_0232_PALETO_BLVD */;
 			break;
 		
 		case 71:
-			return Global_262145.f_8295 /* Tunable: PROPERTY_140_ZANCUDO_AVE */;
+			return Global_262145.f_8466 /* Tunable: PROPERTY_140_ZANCUDO_AVE */;
 			break;
 		
 		case 72:
-			return Global_262145.f_8296 /* Tunable: PROPERTY_1893_GRAPESEED_AVE */;
+			return Global_262145.f_8467 /* Tunable: PROPERTY_1893_GRAPESEED_AVE */;
 			break;
 		
 		case 73:
-			return Global_262145.f_13315 /* Tunable: APARTMENT_CAR_MODSSTILT_3655_WILD_OATS_DRIVE */;
+			return Global_262145.f_13488 /* Tunable: APARTMENT_CAR_MODSSTILT_3655_WILD_OATS_DRIVE */;
 		
 		case 74:
-			return Global_262145.f_13316 /* Tunable: APARTMENT_CAR_MODSSTILT_2044_NORTH_CONKER_AVENUE */;
+			return Global_262145.f_13489 /* Tunable: APARTMENT_CAR_MODSSTILT_2044_NORTH_CONKER_AVENUE */;
 		
 		case 75:
-			return Global_262145.f_13317 /* Tunable: APARTMENT_CAR_MODSSTILT_2868_HILLCREST_AVENUE */;
+			return Global_262145.f_13490 /* Tunable: APARTMENT_CAR_MODSSTILT_2868_HILLCREST_AVENUE */;
 		
 		case 76:
-			return Global_262145.f_13318 /* Tunable: APARTMENT_CAR_MODSSTILT_2862_HILLCREST_AVENUE */;
+			return Global_262145.f_13491 /* Tunable: APARTMENT_CAR_MODSSTILT_2862_HILLCREST_AVENUE */;
 		
 		case 77:
-			return Global_262145.f_13319 /* Tunable: APARTMENT_CAR_MODSSTILT_3677_WHISPYMOUND_DRIVE */;
+			return Global_262145.f_13492 /* Tunable: APARTMENT_CAR_MODSSTILT_3677_WHISPYMOUND_DRIVE */;
 		
 		case 78:
-			return Global_262145.f_13320 /* Tunable: APARTMENT_CAR_MODSSTILT_2117_MILTON_ROAD */;
+			return Global_262145.f_13493 /* Tunable: APARTMENT_CAR_MODSSTILT_2117_MILTON_ROAD */;
 		
 		case 79:
-			return Global_262145.f_13321 /* Tunable: APARTMENT_CAR_MODSSTILT_2866_HILLCREST_AVENUE */;
+			return Global_262145.f_13494 /* Tunable: APARTMENT_CAR_MODSSTILT_2866_HILLCREST_AVENUE */;
 		
 		case 80:
-			return Global_262145.f_13322 /* Tunable: APARTMENT_CAR_MODSSTILT_2874_HILLCREST_AVENUE */;
+			return Global_262145.f_13495 /* Tunable: APARTMENT_CAR_MODSSTILT_2874_HILLCREST_AVENUE */;
 		
 		case 81:
-			return Global_262145.f_13323 /* Tunable: APARTMENT_CAR_MODSSTILT_2113_MAD_WAYNE_THUNDER_DRIVE */;
+			return Global_262145.f_13496 /* Tunable: APARTMENT_CAR_MODSSTILT_2113_MAD_WAYNE_THUNDER_DRIVE */;
 		
 		case 82:
-			return Global_262145.f_13324 /* Tunable: APARTMENT_CAR_MODSSTILT_2045_NORTH_CONKER_AVENUE */;
+			return Global_262145.f_13497 /* Tunable: APARTMENT_CAR_MODSSTILT_2045_NORTH_CONKER_AVENUE */;
 		
 		case 83:
-			return Global_262145.f_13312 /* Tunable: APARTMENT_CAR_MODSECLIPSE_TOWERS_PENTHOUSE_SUITE_1 */;
+			return Global_262145.f_13485 /* Tunable: APARTMENT_CAR_MODSECLIPSE_TOWERS_PENTHOUSE_SUITE_1 */;
 		
 		case 84:
-			return Global_262145.f_13313 /* Tunable: APARTMENT_CAR_MODSECLIPSE_TOWERS_PENTHOUSE_SUITE_2 */;
+			return Global_262145.f_13486 /* Tunable: APARTMENT_CAR_MODSECLIPSE_TOWERS_PENTHOUSE_SUITE_2 */;
 		
 		case 85:
-			return Global_262145.f_13314 /* Tunable: APARTMENT_CAR_MODSECLIPSE_TOWERS_PENTHOUSE_SUITE_3 */;
+			return Global_262145.f_13487 /* Tunable: APARTMENT_CAR_MODSECLIPSE_TOWERS_PENTHOUSE_SUITE_3 */;
 		
 		case 86:
 			return 27000000;
 		
 		case 87:
-			return Global_262145.f_15892 /* Tunable: EXEC1_OFFICE1_LOMBANK */;
+			return Global_262145.f_16072 /* Tunable: EXEC1_OFFICE1_LOMBANK */;
 		
 		case 88:
-			return Global_262145.f_15893 /* Tunable: EXEC1_OFFICE2_MAZE1 */;
+			return Global_262145.f_16073 /* Tunable: EXEC1_OFFICE2_MAZE1 */;
 		
 		case 89:
-			return Global_262145.f_15894 /* Tunable: EXEC1_OFFICE3_ARCADIUS */;
+			return Global_262145.f_16074 /* Tunable: EXEC1_OFFICE3_ARCADIUS */;
 		
 		case 90:
-			return Global_262145.f_15895 /* Tunable: EXEC1_OFFICE4_MAZE2 */;
+			return Global_262145.f_16075 /* Tunable: EXEC1_OFFICE4_MAZE2 */;
 		
 		case 91:
-			return Global_262145.f_17987 /* Tunable: 819519215 */;
+			return Global_262145.f_18167 /* Tunable: 819519215 */;
 		
 		case 92:
-			return Global_262145.f_17989 /* Tunable: 471352940 */;
+			return Global_262145.f_18169 /* Tunable: 471352940 */;
 		
 		case 93:
-			return Global_262145.f_17985 /* Tunable: 2023136086 */;
+			return Global_262145.f_18165 /* Tunable: 2023136086 */;
 		
 		case 94:
-			return Global_262145.f_17994 /* Tunable: 217858651 */;
+			return Global_262145.f_18174 /* Tunable: 217858651 */;
 		
 		case 95:
-			return Global_262145.f_17991 /* Tunable: -1058611921 */;
+			return Global_262145.f_18171 /* Tunable: -1058611921 */;
 		
 		case 96:
-			return Global_262145.f_17993 /* Tunable: -1767762009 */;
+			return Global_262145.f_18173 /* Tunable: -1767762009 */;
 		
 		case 97:
-			return Global_262145.f_17986 /* Tunable: -1390109608 */;
+			return Global_262145.f_18166 /* Tunable: -1390109608 */;
 		
 		case 98:
-			return Global_262145.f_17984 /* Tunable: 2033735347 */;
+			return Global_262145.f_18164 /* Tunable: 2033735347 */;
 		
 		case 99:
-			return Global_262145.f_17983 /* Tunable: -1219608517 */;
+			return Global_262145.f_18163 /* Tunable: -1219608517 */;
 		
 		case 100:
-			return Global_262145.f_17992 /* Tunable: 1669688233 */;
+			return Global_262145.f_18172 /* Tunable: 1669688233 */;
 		
 		case 101:
-			return Global_262145.f_17990 /* Tunable: 1241258301 */;
+			return Global_262145.f_18170 /* Tunable: 1241258301 */;
 		
 		case 102:
-			return Global_262145.f_17988 /* Tunable: 813618473 */;
+			return Global_262145.f_18168 /* Tunable: 813618473 */;
 		
 		case 103:
-			return Global_262145.f_19655 /* Tunable: IMPEXP_GARAGE_LEVEL1 */;
+			return Global_262145.f_19835 /* Tunable: IMPEXP_GARAGE_LEVEL1 */;
 		
 		case 104:
-			return Global_262145.f_19548 /* Tunable: IMPEXP_GARAGE_LEVEL2_COST */;
+			return Global_262145.f_19728 /* Tunable: IMPEXP_GARAGE_LEVEL2_COST */;
 		
 		case 105:
-			return Global_262145.f_19549 /* Tunable: IMPEXP_GARAGE_LEVEL3_COST */;
+			return Global_262145.f_19729 /* Tunable: IMPEXP_GARAGE_LEVEL3_COST */;
 		
 		case 106:
-			return Global_262145.f_19655 /* Tunable: IMPEXP_GARAGE_LEVEL1 */;
+			return Global_262145.f_19835 /* Tunable: IMPEXP_GARAGE_LEVEL1 */;
 		
 		case 107:
-			return Global_262145.f_19548 /* Tunable: IMPEXP_GARAGE_LEVEL2_COST */;
+			return Global_262145.f_19728 /* Tunable: IMPEXP_GARAGE_LEVEL2_COST */;
 		
 		case 108:
-			return Global_262145.f_19549 /* Tunable: IMPEXP_GARAGE_LEVEL3_COST */;
+			return Global_262145.f_19729 /* Tunable: IMPEXP_GARAGE_LEVEL3_COST */;
 		
 		case 109:
-			return Global_262145.f_19655 /* Tunable: IMPEXP_GARAGE_LEVEL1 */;
+			return Global_262145.f_19835 /* Tunable: IMPEXP_GARAGE_LEVEL1 */;
 		
 		case 110:
-			return Global_262145.f_19548 /* Tunable: IMPEXP_GARAGE_LEVEL2_COST */;
+			return Global_262145.f_19728 /* Tunable: IMPEXP_GARAGE_LEVEL2_COST */;
 		
 		case 111:
-			return Global_262145.f_19549 /* Tunable: IMPEXP_GARAGE_LEVEL3_COST */;
+			return Global_262145.f_19729 /* Tunable: IMPEXP_GARAGE_LEVEL3_COST */;
 		
 		case 112:
-			return Global_262145.f_19655 /* Tunable: IMPEXP_GARAGE_LEVEL1 */;
+			return Global_262145.f_19835 /* Tunable: IMPEXP_GARAGE_LEVEL1 */;
 		
 		case 113:
-			return Global_262145.f_19548 /* Tunable: IMPEXP_GARAGE_LEVEL2_COST */;
+			return Global_262145.f_19728 /* Tunable: IMPEXP_GARAGE_LEVEL2_COST */;
 		
 		case 114:
-			return Global_262145.f_19549 /* Tunable: IMPEXP_GARAGE_LEVEL3_COST */;
+			return Global_262145.f_19729 /* Tunable: IMPEXP_GARAGE_LEVEL3_COST */;
 		
 		case 115:
 			return 3000000;
@@ -13273,7 +13271,7 @@ int func_74()//Position - 0x22D60
 	}
 	if (STATS::STAT_SLOT_IS_LOADED(0))
 	{
-		if (Global_152525.f_3)
+		if (Global_152688.f_3)
 		{
 			iVar2 = joaat("MPPLY_PLAT_UP_LB_CHECK");
 			if (STATS::STAT_GET_INT(iVar2, &uVar1, -1))
@@ -13325,11 +13323,11 @@ int func_75()//Position - 0x22E99
 {
 	int iVar0;
 	
-	if (Global_152523 == 2)
+	if (Global_152686 == 2)
 	{
 		return 1;
 	}
-	else if (Global_152523 == 3)
+	else if (Global_152686 == 3)
 	{
 		return 0;
 	}

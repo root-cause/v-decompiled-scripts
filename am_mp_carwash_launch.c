@@ -11,44 +11,42 @@
 	int iLocal_9 = 0;
 	int iLocal_10 = 0;
 	int iLocal_11 = 0;
-	var uLocal_12 = 0;
+	float fLocal_12 = 0f;
 	var uLocal_13 = 0;
-	float fLocal_14 = 0f;
-	var uLocal_15 = 0;
+	var uLocal_14 = 0;
+	int iLocal_15 = 0;
 	var uLocal_16 = 0;
-	int iLocal_17 = 0;
+	var uLocal_17 = 0;
 	var uLocal_18 = 0;
 	var uLocal_19 = 0;
 	var uLocal_20 = 0;
-	var uLocal_21 = 0;
+	char* sLocal_21 = NULL;
 	var uLocal_22 = 0;
-	char* sLocal_23 = NULL;
-	var uLocal_24 = 0;
-	var uLocal_25 = 0;
+	var uLocal_23 = 0;
+	float fLocal_24 = 0f;
+	float fLocal_25 = 0f;
 	float fLocal_26 = 0f;
-	float fLocal_27 = 0f;
-	float fLocal_28 = 0f;
-	var uLocal_29 = 0;
+	var uLocal_27 = 0;
+	var uLocal_28 = 0;
+	float fLocal_29 = 0f;
 	var uLocal_30 = 0;
-	float fLocal_31 = 0f;
+	var uLocal_31 = 0;
 	var uLocal_32 = 0;
-	var uLocal_33 = 0;
-	var uLocal_34 = 0;
-	float fLocal_35 = 0f;
-	float fLocal_36 = 0f;
-	var uLocal_37 = 0;
+	float fLocal_33 = 0f;
+	float fLocal_34 = 0f;
+	var uLocal_35 = 0;
+	var uLocal_36 = 0;
+	int iLocal_37 = 0;
 	var uLocal_38 = 0;
-	int iLocal_39 = 0;
+	var uLocal_39 = 0;
 	var uLocal_40 = 0;
-	var uLocal_41 = 0;
-	var uLocal_42 = 0;
+	int iLocal_41 = 0;
+	int iLocal_42 = 0;
 	int iLocal_43 = 0;
 	int iLocal_44 = 0;
-	int iLocal_45 = 0;
-	int iLocal_46 = 0;
+	var uLocal_45 = 0;
+	var uLocal_46 = 0;
 	var uLocal_47 = 0;
-	var uLocal_48 = 0;
-	var uLocal_49 = 0;
 	struct<2> ScriptParam_0 = { 0, 5 } ;
 	var uScriptParam_2 = 0;
 	var uScriptParam_3 = 0;
@@ -91,20 +89,20 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_9 = 1;
 	iLocal_10 = 12;
 	iLocal_11 = 12;
-	fLocal_14 = 0.001f;
-	iLocal_17 = -1;
-	sLocal_23 = "NULL";
-	fLocal_26 = 80f;
-	fLocal_27 = 140f;
-	fLocal_28 = 180f;
-	fLocal_31 = 0f;
-	fLocal_35 = -0.0375f;
-	fLocal_36 = 0.17f;
-	iLocal_39 = 3;
-	iLocal_43 = 1;
-	iLocal_44 = 65;
-	iLocal_45 = 49;
-	iLocal_46 = 64;
+	fLocal_12 = 0.001f;
+	iLocal_15 = -1;
+	sLocal_21 = "NULL";
+	fLocal_24 = 80f;
+	fLocal_25 = 140f;
+	fLocal_26 = 180f;
+	fLocal_29 = 0f;
+	fLocal_33 = -0.0375f;
+	fLocal_34 = 0.17f;
+	iLocal_37 = 3;
+	iLocal_41 = 1;
+	iLocal_42 = 65;
+	iLocal_43 = 49;
+	iLocal_44 = 64;
 	iVar1 = joaat("carwash1");
 	sVar2 = "carwash1";
 	Var3 = { ScriptParam_0.f_1[0 /*3*/] };
@@ -182,14 +180,14 @@ Vector3 func_1(int iParam0)//Position - 0x1FF
 	int iVar0;
 	
 	iVar0 = iParam0;
-	return Global_32543[iVar0 /*23*/][0 /*3*/];
+	return Global_32663[iVar0 /*23*/][0 /*3*/];
 }
 
 int func_2(int iParam0)//Position - 0x217
 {
 	if (iParam0 != func_3())
 	{
-		return BitTest(Global_2657589[iParam0 /*466*/].f_321.f_5, 4);
+		return BitTest(Global_2657704[iParam0 /*463*/].f_321.f_5, 4);
 	}
 	return 0;
 }
@@ -203,7 +201,7 @@ int func_4(int iParam0)//Position - 0x245
 {
 	if (iParam0 != func_3())
 	{
-		return BitTest(Global_1853910[iParam0 /*862*/].f_267.f_428.f_2, 16);
+		return BitTest(Global_1853988[iParam0 /*867*/].f_267.f_429.f_2, 16);
 	}
 	return 0;
 }
@@ -212,27 +210,27 @@ int func_5(int iParam0)//Position - 0x26E
 {
 	if (iParam0 != func_3())
 	{
-		return BitTest(Global_1853910[iParam0 /*862*/].f_267.f_365, 29);
+		return BitTest(Global_1853988[iParam0 /*867*/].f_267.f_366, 29);
 	}
 	return 0;
 }
 
 var func_6()//Position - 0x295
 {
-	return BitTest(Global_1853910[PLAYER::PLAYER_ID() /*862*/].f_36.f_18, 0);
+	return BitTest(Global_1853988[PLAYER::PLAYER_ID() /*867*/].f_36.f_18, 0);
 }
 
 bool func_7(int iParam0)//Position - 0x2AE
 {
-	return BitTest(Global_1853910[iParam0 /*862*/].f_139, 6);
+	return BitTest(Global_1853988[iParam0 /*867*/].f_139, 6);
 }
 
 int func_8()//Position - 0x2C3
 {
 	int iVar0;
 	
-	iVar0 = Global_2672505;
-	if (BitTest(Global_1890444[iVar0 /*129*/].f_14, 0) && Global_1890444[iVar0 /*129*/].f_23 == 2)
+	iVar0 = Global_2672524;
+	if (BitTest(Global_1890739[iVar0 /*138*/].f_14, 0) && Global_1890739[iVar0 /*138*/].f_23 == 2)
 	{
 		return 1;
 	}
@@ -251,7 +249,7 @@ int func_9(int iParam0, bool bParam1, bool bParam2)//Position - 0x2F6
 	if (!bParam2)
 	{
 	}
-	if (Global_1853910[iParam0 /*862*/] == -1)
+	if (Global_1853988[iParam0 /*867*/] == -1)
 	{
 		return 0;
 	}
@@ -265,7 +263,7 @@ bool func_10(int iParam0)//Position - 0x328
 
 var func_11(int iParam0)//Position - 0x336
 {
-	return BitTest(Global_1853910[iParam0 /*862*/].f_11.f_1, 0);
+	return BitTest(Global_1853988[iParam0 /*867*/].f_11.f_1, 0);
 }
 
 bool func_12(int iParam0)//Position - 0x34D

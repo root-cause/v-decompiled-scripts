@@ -11,12 +11,10 @@
 	int iLocal_9 = 0;
 	int iLocal_10 = 0;
 	int iLocal_11 = 0;
-	var uLocal_12 = 0;
+	float fLocal_12 = 0f;
 	var uLocal_13 = 0;
-	float fLocal_14 = 0f;
-	var uLocal_15 = 0;
-	var uLocal_16 = 0;
-	int iLocal_17 = 0;
+	var uLocal_14 = 0;
+	int iLocal_15 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -34,8 +32,8 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_9 = 1;
 	iLocal_10 = 12;
 	iLocal_11 = 12;
-	fLocal_14 = 0.001f;
-	iLocal_17 = -1;
+	fLocal_12 = 0.001f;
+	iLocal_15 = -1;
 	iVar0 = -1;
 	bVar1 = false;
 	if (PLAYER::HAS_FORCE_CLEANUP_OCCURRED(3))
@@ -120,7 +118,7 @@ int func_2(int iParam0)//Position - 0x10F
 
 var func_3(int iParam0)//Position - 0x134
 {
-	return Global_2028[iParam0 /*29*/];
+	return Global_2058[iParam0 /*29*/];
 }
 
 bool func_4(int iParam0)//Position - 0x143
