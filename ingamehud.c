@@ -18865,10 +18865,10 @@ int func_477(int iParam0)//Position - 0x1775D
 			return joaat("ulp");
 		
 		case 188:
-			return 1747983921;
+			return joaat("dax");
 		
 		case 190:
-			return 1275694316;
+			return joaat("charlie");
 		
 		case 145:
 			return 0;

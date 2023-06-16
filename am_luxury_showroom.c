@@ -49137,52 +49137,52 @@ int func_368(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x3
 					}
 					break;
 				
-				case -483588060:
+				case joaat("STT_LIV_13"):
 					if (iVar0 == joaat("stingertt"))
 					{
 						return 1;
 					}
 					break;
 				
-				case 1669074020:
-				case 979450411:
+				case joaat("BRIGHAM_LIV10"):
+				case joaat("BRIGHAM_LIV11"):
 					if (iVar0 == joaat("brigham"))
 					{
 						return 1;
 					}
 					break;
 				
-				case -1068838616:
+				case joaat("CLIQUE2_LIV9"):
 					if (iVar0 == joaat("clique2"))
 					{
 						return 1;
 					}
 					break;
 				
-				case 1621719513:
+				case joaat("GAUNT6_LIV10"):
 					if (iVar0 == joaat("gauntlet6"))
 					{
 						return 1;
 					}
 					break;
 				
-				case 1789148436:
-				case 1796029922:
+				case joaat("COUREUR_LIV7"):
+				case joaat("COUREUR_LIV9"):
 					if (iVar0 == joaat("coureur"))
 					{
 						return 1;
 					}
 					break;
 				
-				case 1612423870:
+				case joaat("L35_LIV10"):
 					if (iVar0 == joaat("l35"))
 					{
 						return 1;
 					}
 					break;
 				
-				case -247441846:
-				case 326135439:
+				case joaat("MONSTROC_LIV7"):
+				case joaat("MONSTROC_LIV10"):
 					if (iVar0 == joaat("monstrociti"))
 					{
 						return 1;

@@ -56781,7 +56781,7 @@ int func_800(var uParam0, char* sParam1, int iParam2, bool bParam3)//Position - 
 		else
 		{
 			func_801(iVar0, 0);
-			MONEY::NETWORK_EARN_CASINO_AWARD(iVar0, 707098906);
+			MONEY::NETWORK_EARN_CASINO_AWARD(iVar0, joaat("MP_AWARD_LUCKY_LUCKY"));
 			if (bParam3)
 			{
 				StringCopy(sParam1, func_804(), 64);
