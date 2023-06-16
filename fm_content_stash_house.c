@@ -195970,25 +195970,25 @@ int func_3768()//Position - 0xF62CE
 	switch (Local_3334.f_0)
 	{
 		case 304:
-			return 974061886;
+			return joaat("XPCATEGORY_FM_CONTENT_ACID_LAB_SETUP");
 		
 		case 305:
-			return 1224630867;
+			return joaat("XPCATEGORY_FM_CONTENT_ACID_LAB_SOURCE");
 		
 		case 306:
-			return -1470867038;
+			return joaat("XPCATEGORY_FM_CONTENT_ACID_LAB_SELL");
 		
 		case 307:
-			return -1966736813;
+			return joaat("XPCATEGORY_FM_CONTENT_DRUG_LAB_WORK");
 		
 		case 308:
-			return 2058801719;
+			return joaat("XPCATEGORY_FM_CONTENT_STASH_HOUSE");
 		
 		case 310:
-			return 2011191425;
+			return joaat("XPCATEGORY_FM_CONTENT_XMAS_MUGGER");
 		
 		case 311:
-			return -583337753;
+			return joaat("XPCATEGORY_FM_CONTENT_BANK_SHOOTOUT");
 		
 		default:
 	}
@@ -198811,11 +198811,11 @@ void func_3866(bool bParam0, bool bParam1)//Position - 0xF9404
 			break;
 		
 		case 3:
-			Global_1949268.f_29 = joaat("Meth");
+			Global_1949268.f_29 = joaat("METH");
 			break;
 		
 		case 1:
-			Global_1949268.f_29 = joaat("Weed");
+			Global_1949268.f_29 = joaat("WEED");
 			break;
 		
 		case 4:

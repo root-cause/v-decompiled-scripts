@@ -89378,7 +89378,7 @@ void func_632()//Position - 0x71B5D
 											if (!func_1303(Local_142.f_0, 1))
 											{
 												iVar110 = func_956(&Local_142);
-												iVar111 = 786385660;
+												iVar111 = joaat("gunshop");
 											}
 											else
 											{
@@ -89650,7 +89650,7 @@ void func_632()//Position - 0x71B5D
 											if (!func_1303(Local_142.f_0, 1))
 											{
 												iVar120 = func_956(&Local_142);
-												iVar121 = 786385660;
+												iVar121 = joaat("gunshop");
 											}
 											else
 											{
@@ -90159,7 +90159,7 @@ void func_632()//Position - 0x71B5D
 										if (!func_1303(Local_142.f_0, 1))
 										{
 											iVar127 = func_956(&Local_142);
-											iVar128 = 786385660;
+											iVar128 = joaat("gunshop");
 										}
 										else
 										{
@@ -149846,7 +149846,7 @@ int func_956(int iParam0)//Position - 0xB5A4E
 			return joaat("GUN_VAN");
 		
 		case 60:
-			return 365593163;
+			return joaat("GUN_SHOP_ARMORY_HANGAR");
 		
 		default:
 	}

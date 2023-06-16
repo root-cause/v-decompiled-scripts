@@ -4046,34 +4046,34 @@ int func_98(int iParam0)//Position - 0x47C8
 		case joaat("SM2U4AU"):
 		case joaat("SM2U5AU"):
 		case joaat("SM2U6AU"):
-		case 1194496889:
-		case -147438928:
-		case 494169967:
-		case 549653660:
-		case 39587133:
-		case 1013082963:
-		case 952237143:
-		case 1073149438:
-		case 391502992:
-		case -1192647115:
-		case 1657711155:
+		case joaat("XM31AUD"):
+		case joaat("XM32AUD"):
+		case joaat("XM33AUD"):
+		case joaat("XM34AUD"):
+		case joaat("XM35AUD"):
+		case joaat("XM36AUD"):
+		case joaat("XM37AUD"):
+		case joaat("XM38AUD"):
+		case joaat("XM39AUD"):
+		case joaat("XM310AU"):
+		case joaat("XM311AU"):
 		case joaat("XM3IGAU"):
 		case joaat("XM3LAAU"):
 		case joaat("XM3DXAU"):
-		case -266249619:
-		case 1616674547:
-		case -1250679862:
+		case joaat("XM3GVAU"):
+		case joaat("XM3LRAU"):
+		case joaat("XM3LDAU"):
 		case joaat("XM3RNAU"):
 		case joaat("XM3TXAU"):
-		case 979781164:
-		case 438323893:
-		case -959327640:
-		case 690539531:
-		case -1415949907:
-		case -664409440:
-		case 1563674548:
-		case 384471949:
-		case 505411200:
+		case joaat("SR2CHAU"):
+		case joaat("SR21AUD"):
+		case joaat("SR22AUD"):
+		case joaat("SR23AUD"):
+		case joaat("SR24AUD"):
+		case joaat("SR25AUD"):
+		case joaat("SR26AUD"):
+		case joaat("SR2RNAU"):
+		case joaat("SR2ROAU"):
 			return 1;
 		
 		default:

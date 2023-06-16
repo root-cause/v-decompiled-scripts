@@ -30723,7 +30723,7 @@ void func_665(int iParam0, int iParam1, var uParam2)//Position - 0x2CB8B
 	ENTITY::SET_ENTITY_MAX_HEALTH(iParam1, 400);
 	ENTITY::SET_ENTITY_HEALTH(iParam1, 400, 0);
 	ENTITY::SET_ENTITY_VISIBLE(iParam1, false, false);
-	AUDIO::USE_FOOTSTEP_SCRIPT_SWEETENERS(iParam1, true, 2097125613);
+	AUDIO::USE_FOOTSTEP_SCRIPT_SWEETENERS(iParam1, true, joaat("dlc_xm3_mugger_footsteps_sounds"));
 }
 
 int func_666(var uParam0)//Position - 0x2CCC1
@@ -166744,25 +166744,25 @@ int func_2861()//Position - 0xD0DFB
 	switch (Local_1462.f_0)
 	{
 		case 304:
-			return 974061886;
+			return joaat("XPCATEGORY_FM_CONTENT_ACID_LAB_SETUP");
 		
 		case 305:
-			return 1224630867;
+			return joaat("XPCATEGORY_FM_CONTENT_ACID_LAB_SOURCE");
 		
 		case 306:
-			return -1470867038;
+			return joaat("XPCATEGORY_FM_CONTENT_ACID_LAB_SELL");
 		
 		case 307:
-			return -1966736813;
+			return joaat("XPCATEGORY_FM_CONTENT_DRUG_LAB_WORK");
 		
 		case 308:
-			return 2058801719;
+			return joaat("XPCATEGORY_FM_CONTENT_STASH_HOUSE");
 		
 		case 310:
-			return 2011191425;
+			return joaat("XPCATEGORY_FM_CONTENT_XMAS_MUGGER");
 		
 		case 311:
-			return -583337753;
+			return joaat("XPCATEGORY_FM_CONTENT_BANK_SHOOTOUT");
 		
 		default:
 	}

@@ -40624,7 +40624,7 @@ void func_628(int iParam0, int iParam1)//Position - 0x2E6F3
 		iVar0++;
 	}
 	iVar1 = joaat("armor");
-	iVar2 = -472400371;
+	iVar2 = joaat("lucky_wheel");
 	iVar3 = joaat("get");
 	iVar4 = joaat("SIMPLE_INTERIOR_CASINO");
 	if (func_634(156))
@@ -44196,39 +44196,39 @@ void func_659()//Position - 0x32267
 	}
 	func_220(1276, iVar0, -1);
 	func_188(16, 1, -1);
-	func_629(1, -251807494, joaat("snack"), iVar0, joaat("SIMPLE_INTERIOR_CASINO"), joaat("get"), 0, -472400371);
+	func_629(1, -251807494, joaat("snack"), iVar0, joaat("SIMPLE_INTERIOR_CASINO"), joaat("get"), 0, joaat("lucky_wheel"));
 	if (func_22(1277, -1) < 15)
 	{
 		iVar0 = (15 - func_22(1277, -1));
 	}
 	func_220(1277, iVar0, -1);
 	func_188(15, 1, -1);
-	func_629(1, 1199442189, joaat("snack"), iVar0, joaat("SIMPLE_INTERIOR_CASINO"), joaat("get"), 0, -472400371);
+	func_629(1, 1199442189, joaat("snack"), iVar0, joaat("SIMPLE_INTERIOR_CASINO"), joaat("get"), 0, joaat("lucky_wheel"));
 	if (func_22(1278, -1) < 5)
 	{
 		iVar0 = (5 - func_22(1278, -1));
 	}
 	func_188(14, 1, -1);
 	func_220(1278, iVar0, -1);
-	func_629(1, 1486811039, joaat("snack"), iVar0, joaat("SIMPLE_INTERIOR_CASINO"), joaat("get"), 0, -472400371);
+	func_629(1, 1486811039, joaat("snack"), iVar0, joaat("SIMPLE_INTERIOR_CASINO"), joaat("get"), 0, joaat("lucky_wheel"));
 	if (func_22(1098, -1) < 20)
 	{
 		iVar0 = (20 - func_22(1098, -1));
 	}
 	func_220(1098, iVar0, -1);
-	func_629(1, -181862273, joaat("snack"), iVar0, joaat("SIMPLE_INTERIOR_CASINO"), joaat("get"), 0, -472400371);
+	func_629(1, -181862273, joaat("snack"), iVar0, joaat("SIMPLE_INTERIOR_CASINO"), joaat("get"), 0, joaat("lucky_wheel"));
 	if (func_22(62, -1) < 10)
 	{
 		iVar0 = (10 - func_22(62, -1));
 	}
 	func_220(62, iVar0, -1);
-	func_629(1, -39155154, joaat("snack"), iVar0, joaat("SIMPLE_INTERIOR_CASINO"), joaat("get"), 0, -472400371);
+	func_629(1, -39155154, joaat("snack"), iVar0, joaat("SIMPLE_INTERIOR_CASINO"), joaat("get"), 0, joaat("lucky_wheel"));
 	if (func_22(63, -1) < 10)
 	{
 		iVar0 = (10 - func_22(63, -1));
 	}
 	func_220(63, iVar0, -1);
-	func_629(1, -1600998734, joaat("snack"), iVar0, joaat("SIMPLE_INTERIOR_CASINO"), joaat("get"), 0, -472400371);
+	func_629(1, -1600998734, joaat("snack"), iVar0, joaat("SIMPLE_INTERIOR_CASINO"), joaat("get"), 0, joaat("lucky_wheel"));
 }
 
 char* func_660(int iParam0)//Position - 0x3241B
@@ -44301,7 +44301,7 @@ void func_662(int iParam0)//Position - 0x324CC
 			}
 			func_220(1276, iVar0, -1);
 			func_188(16, 1, -1);
-			func_629(1, -251807494, joaat("snack"), iVar0, joaat("SIMPLE_INTERIOR_CASINO"), joaat("get"), 0, -472400371);
+			func_629(1, -251807494, joaat("snack"), iVar0, joaat("SIMPLE_INTERIOR_CASINO"), joaat("get"), 0, joaat("lucky_wheel"));
 			break;
 		
 		case 1:
@@ -44311,7 +44311,7 @@ void func_662(int iParam0)//Position - 0x324CC
 			}
 			func_220(1277, iVar0, -1);
 			func_188(15, 1, -1);
-			func_629(1, 1199442189, joaat("snack"), iVar0, joaat("SIMPLE_INTERIOR_CASINO"), joaat("get"), 0, -472400371);
+			func_629(1, 1199442189, joaat("snack"), iVar0, joaat("SIMPLE_INTERIOR_CASINO"), joaat("get"), 0, joaat("lucky_wheel"));
 			break;
 		
 		case 2:
@@ -44321,7 +44321,7 @@ void func_662(int iParam0)//Position - 0x324CC
 			}
 			func_188(14, 1, -1);
 			func_220(1278, iVar0, -1);
-			func_629(1, 1486811039, joaat("snack"), iVar0, joaat("SIMPLE_INTERIOR_CASINO"), joaat("get"), 0, -472400371);
+			func_629(1, 1486811039, joaat("snack"), iVar0, joaat("SIMPLE_INTERIOR_CASINO"), joaat("get"), 0, joaat("lucky_wheel"));
 			break;
 		
 		case 4:
@@ -44330,7 +44330,7 @@ void func_662(int iParam0)//Position - 0x324CC
 				iVar0 = (20 - func_22(1098, -1));
 			}
 			func_220(1098, iVar0, -1);
-			func_629(1, -181862273, joaat("snack"), iVar0, joaat("SIMPLE_INTERIOR_CASINO"), joaat("get"), 0, -472400371);
+			func_629(1, -181862273, joaat("snack"), iVar0, joaat("SIMPLE_INTERIOR_CASINO"), joaat("get"), 0, joaat("lucky_wheel"));
 			break;
 		
 		case 0:
@@ -44339,7 +44339,7 @@ void func_662(int iParam0)//Position - 0x324CC
 				iVar0 = (10 - func_22(62, -1));
 			}
 			func_220(62, iVar0, -1);
-			func_629(1, -39155154, joaat("snack"), iVar0, joaat("SIMPLE_INTERIOR_CASINO"), joaat("get"), 0, -472400371);
+			func_629(1, -39155154, joaat("snack"), iVar0, joaat("SIMPLE_INTERIOR_CASINO"), joaat("get"), 0, joaat("lucky_wheel"));
 			break;
 		
 		case 5:
@@ -44348,7 +44348,7 @@ void func_662(int iParam0)//Position - 0x324CC
 				iVar0 = (10 - func_22(63, -1));
 			}
 			func_220(63, iVar0, -1);
-			func_629(1, -1600998734, joaat("snack"), iVar0, joaat("SIMPLE_INTERIOR_CASINO"), joaat("get"), 0, -472400371);
+			func_629(1, -1600998734, joaat("snack"), iVar0, joaat("SIMPLE_INTERIOR_CASINO"), joaat("get"), 0, joaat("lucky_wheel"));
 			break;
 	}
 }

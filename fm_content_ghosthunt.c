@@ -28932,7 +28932,7 @@ void func_601(int iParam0, bool bParam1)//Position - 0x2A846
 		{
 			MONEY::NETWORK_EARN_COLLECTABLE_COMPLETED_COLLECTION(iVar1, MISC::GET_HASH_KEY("COLLECTABLE_GHOSTHUNT"));
 		}
-		func_658(0, PLAYER::PLAYER_PED_ID(), "GAINXP_FMBRON" /* GXT: Unlocked Bronze Award: ~1~ RP. */, joaat("XPTYPE_COLLECT"), 4579886, 500, 1, -1, 0, 0, 0);
+		func_658(0, PLAYER::PLAYER_PED_ID(), "GAINXP_FMBRON" /* GXT: Unlocked Bronze Award: ~1~ RP. */, joaat("XPTYPE_COLLECT"), joaat("XPCATEGORY_COLLECTABLES_GHOSTHUNT"), 500, 1, -1, 0, 0, 0);
 		if (Global_2765084.f_611 < 10)
 		{
 			func_657(112, func_720(), "SUM23GHSHABOD1" /* GXT: ~1~/10 Ghosts photographed */, "SUM23GHSHARDHE" /* GXT: GHOSTS EXPOSED */, 1, -1, -1082130432, 2, 0);
@@ -169865,25 +169865,25 @@ int func_2991()//Position - 0xD4E92
 	switch (Local_1384.f_0)
 	{
 		case 304:
-			return 974061886;
+			return joaat("XPCATEGORY_FM_CONTENT_ACID_LAB_SETUP");
 		
 		case 305:
-			return 1224630867;
+			return joaat("XPCATEGORY_FM_CONTENT_ACID_LAB_SOURCE");
 		
 		case 306:
-			return -1470867038;
+			return joaat("XPCATEGORY_FM_CONTENT_ACID_LAB_SELL");
 		
 		case 307:
-			return -1966736813;
+			return joaat("XPCATEGORY_FM_CONTENT_DRUG_LAB_WORK");
 		
 		case 308:
-			return 2058801719;
+			return joaat("XPCATEGORY_FM_CONTENT_STASH_HOUSE");
 		
 		case 310:
-			return 2011191425;
+			return joaat("XPCATEGORY_FM_CONTENT_XMAS_MUGGER");
 		
 		case 311:
-			return -583337753;
+			return joaat("XPCATEGORY_FM_CONTENT_BANK_SHOOTOUT");
 		
 		default:
 	}
