@@ -17600,7 +17600,7 @@ bool func_447(var uParam0, bool bParam1, bool bParam2, int iParam3)//Position - 
 	else if (bParam2)
 	{
 		iVar0 = joaat("HANGAR_CONTRABAND_MISSION_2_t0_v0");
-		uVar1 = Global_262145.f_16063 /* Tunable: 496499140 */;
+		uVar1 = Global_262145.f_16063 /* Tunable: SMUGGLER_SKIP_SETUP_COST */;
 	}
 	else
 	{
@@ -17641,7 +17641,7 @@ bool func_447(var uParam0, bool bParam1, bool bParam2, int iParam3)//Position - 
 					if (bParam2)
 					{
 						NETSHOPPING::NET_GAMESERVER_SET_TELEMETRY_NONCE_SEED(func_393(func_400()));
-						MONEY::_NETWORK_SPENT_SKIP_CARGO_SOURCE_SETUP(Global_262145.f_16063 /* Tunable: 496499140 */, false, true, iParam3);
+						MONEY::_NETWORK_SPENT_SKIP_CARGO_SOURCE_SETUP(Global_262145.f_16063 /* Tunable: SMUGGLER_SKIP_SETUP_COST */, false, true, iParam3);
 					}
 					func_385(func_400());
 					func_448(iVar0);

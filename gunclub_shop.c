@@ -36356,7 +36356,7 @@ bool func_242(int iParam0, var uParam1, var uParam2, var uParam3, int iParam4)//
 			
 			case joaat("WEAPON_DOUBLEACTION"):
 				*uParam1 = 1000;
-				*uParam2 = Global_262145.f_23111 /* Tunable: 907871281 */;
+				*uParam2 = Global_262145.f_23111 /* Tunable: GANGOPS_DOUBLE_ACTION_REVOLVER_AMMO */;
 				iVar40 = 8;
 				break;
 			

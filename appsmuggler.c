@@ -11769,7 +11769,7 @@ bool func_254(var uParam0, bool bParam1, bool bParam2, int iParam3)//Position - 
 	else if (bParam2)
 	{
 		iVar0 = joaat("HANGAR_CONTRABAND_MISSION_2_t0_v0");
-		uVar1 = Global_262145.f_16063 /* Tunable: 496499140 */;
+		uVar1 = Global_262145.f_16063 /* Tunable: SMUGGLER_SKIP_SETUP_COST */;
 	}
 	else
 	{
@@ -11810,7 +11810,7 @@ bool func_254(var uParam0, bool bParam1, bool bParam2, int iParam3)//Position - 
 					if (bParam2)
 					{
 						NETSHOPPING::NET_GAMESERVER_SET_TELEMETRY_NONCE_SEED(func_256(func_272()));
-						MONEY::_NETWORK_SPENT_SKIP_CARGO_SOURCE_SETUP(Global_262145.f_16063 /* Tunable: 496499140 */, false, true, iParam3);
+						MONEY::_NETWORK_SPENT_SKIP_CARGO_SOURCE_SETUP(Global_262145.f_16063 /* Tunable: SMUGGLER_SKIP_SETUP_COST */, false, true, iParam3);
 					}
 					func_259(func_272());
 					func_255(iVar0);
@@ -13995,7 +13995,7 @@ void func_334()//Position - 0xC286
 	int iVar2;
 	
 	bVar0 = false;
-	HUD::SET_WARNING_MESSAGE_WITH_HEADER("HAPP_SKP_W_T" /* GXT: Pay For Supplies */, "HAPP_SKP_W_M" /* GXT: Are you sure you want to pay $~1~ to acquire the supplies needed to begin the Air-Freight Business? */, 36, 0, true, Global_262145.f_16063 /* Tunable: 496499140 */, 0, 0, true, 0);
+	HUD::SET_WARNING_MESSAGE_WITH_HEADER("HAPP_SKP_W_T" /* GXT: Pay For Supplies */, "HAPP_SKP_W_M" /* GXT: Are you sure you want to pay $~1~ to acquire the supplies needed to begin the Air-Freight Business? */, 36, 0, true, Global_262145.f_16063 /* Tunable: SMUGGLER_SKIP_SETUP_COST */, 0, 0, true, 0);
 	func_332(2, 202, 1);
 	if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 202 /*INPUT_FRONTEND_CANCEL*/))
 	{
@@ -14004,7 +14004,7 @@ void func_334()//Position - 0xC286
 	func_332(2, 201, 1);
 	if (PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 201 /*INPUT_FRONTEND_ACCEPT*/))
 	{
-		if (MONEY::NETWORK_CAN_SPEND_MONEY(Global_262145.f_16063 /* Tunable: 496499140 */, false, true, false, -1, 0))
+		if (MONEY::NETWORK_CAN_SPEND_MONEY(Global_262145.f_16063 /* Tunable: SMUGGLER_SKIP_SETUP_COST */, false, true, false, -1, 0))
 		{
 			bVar0 = true;
 		}
@@ -14149,7 +14149,7 @@ int func_341(var uParam0, var uParam1)//Position - 0xC509
 			}
 			else
 			{
-				MONEY::_NETWORK_SPENT_SKIP_CARGO_SOURCE_SETUP(Global_262145.f_16063 /* Tunable: 496499140 */, false, true, iLocal_141);
+				MONEY::_NETWORK_SPENT_SKIP_CARGO_SOURCE_SETUP(Global_262145.f_16063 /* Tunable: SMUGGLER_SKIP_SETUP_COST */, false, true, iLocal_141);
 				*uParam0 = 1;
 			}
 			break;
