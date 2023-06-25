@@ -30886,7 +30886,7 @@ int func_676(int iParam0, var uParam1, int iParam2, bool bParam3)//Position - 0x
 
 int func_677()//Position - 0x2C5C2
 {
-	return Global_262145.f_35136 /* Tunable: -1775750208 */;
+	return Global_262145.f_35136 /* Tunable: BIKE_TIME_TRIAL_RETURN_TO_BIKE_TIME_MS */;
 }
 
 int func_678()//Position - 0x2C5D4
@@ -33747,12 +33747,12 @@ void func_847(var uParam0, var uParam1, int iParam2, char* sParam3, char* sParam
 
 void func_848()//Position - 0x302AA
 {
-	Local_115.f_11 = (Global_262145.f_35132 /* Tunable: 2047674401 */ * func_917(func_764()));
-	Local_115.f_12 = (Global_262145.f_35134 /* Tunable: 121727119 */ * func_917(func_764()));
+	Local_115.f_11 = (Global_262145.f_35132 /* Tunable: BIKE_TIME_TRIAL_REWARD_CASH_DEFAULT */ * func_917(func_764()));
+	Local_115.f_12 = (Global_262145.f_35134 /* Tunable: BIKE_TIME_TRIAL_REWARD_RP_DEFAULT */ * func_917(func_764()));
 	if (Local_115.f_4 < func_764())
 	{
-		Local_115.f_11 = (Local_115.f_11 + Global_262145.f_35133 /* Tunable: -108364973 */);
-		Local_115.f_12 = (Local_115.f_12 + Global_262145.f_35135 /* Tunable: -62740452 */);
+		Local_115.f_11 = (Local_115.f_11 + Global_262145.f_35133 /* Tunable: BIKE_TIME_TRIAL_REWARD_CASH_COMPLETED */);
+		Local_115.f_12 = (Local_115.f_12 + Global_262145.f_35135 /* Tunable: BIKE_TIME_TRIAL_REWARD_RP_COMPLETED */);
 		if (!func_916())
 		{
 			func_915(1);

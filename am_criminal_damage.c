@@ -5351,7 +5351,7 @@ void func_112(int iParam0, var uParam1, int iParam2)//Position - 0x3C75
 					break;
 				
 				case joaat("CLO_SCM_EY_0_13"):
-					*uParam1 = Global_262145.f_35683 /* Tunable: 199282155 */;
+					*uParam1 = Global_262145.f_35683 /* Tunable: SU23_GREEN_LIGHNING_ROUND_SHADES */;
 					break;
 				
 				case joaat("CLO_SCM_EY_0_14"):
@@ -6275,7 +6275,7 @@ void func_112(int iParam0, var uParam1, int iParam2)//Position - 0x3C75
 					break;
 				
 				case joaat("CLO_SCF_EY_0_13"):
-					*uParam1 = Global_262145.f_35683 /* Tunable: 199282155 */;
+					*uParam1 = Global_262145.f_35683 /* Tunable: SU23_GREEN_LIGHNING_ROUND_SHADES */;
 					break;
 				
 				case joaat("CLO_SCF_EY_0_14"):
