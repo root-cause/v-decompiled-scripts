@@ -43990,7 +43990,7 @@ void func_425(var uParam0, var uParam1)//Position - 0x3325B
 						GRAPHICS::SET_CHECKPOINT_RGBA2(uParam0->f_4, iVar8, iVar9, iVar10, iVar11);
 					}
 				}
-				HUD::SET_BLIP_SPRITE(uParam0->f_2, 38);
+				HUD::SET_BLIP_SPRITE(uParam0->f_2, 38 /*RADAR_RACEFLAG*/);
 				bVar5 = false;
 			}
 			else
@@ -44077,7 +44077,7 @@ void func_425(var uParam0, var uParam1)//Position - 0x3325B
 				if (uParam0->f_11 == uParam1->f_127)
 				{
 					uParam0->f_3 = HUD::ADD_BLIP_FOR_COORD(uParam1->f_4[uParam0->f_10 /*3*/]);
-					HUD::SET_BLIP_SPRITE(uParam0->f_3, 38);
+					HUD::SET_BLIP_SPRITE(uParam0->f_3, 38 /*RADAR_RACEFLAG*/);
 					HUD::SET_BLIP_DISPLAY(uParam0->f_3, 2);
 					HUD::SET_BLIP_SCALE(uParam0->f_3, 1.2f);
 					HUD::SHOW_HEIGHT_ON_BLIP(uParam0->f_3, false);

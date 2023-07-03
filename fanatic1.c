@@ -41642,7 +41642,7 @@ void func_400()//Position - 0x30B1D
 					if (iLocal_707 + 1 == (iLocal_675 - 1))
 					{
 						HUD::SET_BLIP_SCALE(iLocal_671, 1.2f);
-						HUD::SET_BLIP_SPRITE(iLocal_671, 38);
+						HUD::SET_BLIP_SPRITE(iLocal_671, 38 /*RADAR_RACEFLAG*/);
 						HUD::SHOW_HEIGHT_ON_BLIP(iLocal_671, false);
 					}
 					else
@@ -41659,7 +41659,7 @@ void func_400()//Position - 0x30B1D
 					GRAPHICS::SET_CHECKPOINT_CYLINDER_HEIGHT(iLocal_672, 1.6f, 1.6f, 100f);
 					iLocal_670 = HUD::ADD_BLIP_FOR_COORD(Local_676[iLocal_707 /*3*/]);
 					HUD::SET_BLIP_SCALE(iLocal_670, 1.2f);
-					HUD::SET_BLIP_SPRITE(iLocal_670, 38);
+					HUD::SET_BLIP_SPRITE(iLocal_670, 38 /*RADAR_RACEFLAG*/);
 					HUD::SHOW_HEIGHT_ON_BLIP(iLocal_670, false);
 				}
 			}

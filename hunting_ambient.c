@@ -105536,7 +105536,7 @@ void func_714()//Position - 0x7DC1A
 						{
 							iVar15 = HUD::ADD_BLIP_FOR_ENTITY(iVar5);
 							HUD::SET_BLIP_PRIORITY(iVar15, 5);
-							HUD::SET_BLIP_SPRITE(iVar15, 274);
+							HUD::SET_BLIP_SPRITE(iVar15, 274 /*RADAR_DEAD*/);
 							HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iVar15, "HUNT_KILL_BLIP");
 							HUD::SET_BLIP_ALPHA(iVar15, 75);
 						}

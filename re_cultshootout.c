@@ -3406,7 +3406,7 @@ void func_96()//Position - 0x3795
 		TASK::TASK_GUARD_CURRENT_POSITION(iLocal_101[5], 0f, 3f, true);
 		PED::SET_PED_NAME_DEBUG(iLocal_101[5], "piDrugCult[5]");
 		iLocal_112 = func_97(Local_49, 0);
-		HUD::SET_BLIP_SPRITE(iLocal_112, 140);
+		HUD::SET_BLIP_SPRITE(iLocal_112, 140 /*RADAR_WEED_STASH*/);
 		func_57("DRUG_BLIP_START" /* GXT: This is a Weed Farm - you can raid it and steal their takings. */, -1);
 		iLocal_44 = 1;
 	}

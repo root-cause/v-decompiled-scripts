@@ -47378,7 +47378,7 @@ void func_478(int iParam0)//Position - 0x37FEC
 		if (!HUD::DOES_BLIP_EXIST(iLocal_338))
 		{
 			iLocal_338 = func_479(-1377.18f, 55.39f, 53.7f, 0);
-			HUD::SET_BLIP_SPRITE(iLocal_338, 109);
+			HUD::SET_BLIP_SPRITE(iLocal_338, 109 /*RADAR_GOLF*/);
 		}
 		iLocal_688 = 0;
 	}

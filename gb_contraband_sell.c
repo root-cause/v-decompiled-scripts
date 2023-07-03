@@ -158295,7 +158295,7 @@ void func_1836()//Position - 0xC632F
 								Local_121.f_133[iVar0] = HUD::ADD_BLIP_FOR_ENTITY(iVar1);
 								if (func_11())
 								{
-									HUD::SET_BLIP_SPRITE(Local_121.f_133[iVar0], 432);
+									HUD::SET_BLIP_SPRITE(Local_121.f_133[iVar0], 432 /*RADAR_TEMP_4*/);
 									HUD::SET_BLIP_NAME_FROM_TEXT_FILE(Local_121.f_133[iVar0], "DCONTRA_BLP" /* GXT: Enemy */);
 								}
 								else
@@ -158603,12 +158603,12 @@ void func_1842()//Position - 0xC678D
 								}
 								if (func_11())
 								{
-									HUD::SET_BLIP_SPRITE(Local_121.f_119[bVar0], 432);
+									HUD::SET_BLIP_SPRITE(Local_121.f_119[bVar0], 432 /*RADAR_TEMP_4*/);
 									HUD::SET_BLIP_NAME_FROM_TEXT_FILE(Local_121.f_119[bVar0], "DCONTRA_BLP" /* GXT: Enemy */);
 								}
 								else
 								{
-									HUD::SET_BLIP_SPRITE(Local_121.f_119[bVar0], 270);
+									HUD::SET_BLIP_SPRITE(Local_121.f_119[bVar0], 270 /*RADAR_AI*/);
 								}
 								func_1837(&(Local_121.f_119[bVar0]), 6);
 								HUD::SET_BLIP_SCALE(Local_121.f_119[bVar0], 0.7f);

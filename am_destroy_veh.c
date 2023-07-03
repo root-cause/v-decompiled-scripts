@@ -5592,11 +5592,11 @@ void func_213()//Position - 0x614D
 			iLocal_235 = HUD::ADD_BLIP_FOR_ENTITY(NETWORK::NET_TO_VEH(Local_86.f_2));
 			if (!VEHICLE::IS_THIS_MODEL_A_BIKE(Local_86.f_10))
 			{
-				HUD::SET_BLIP_SPRITE(iLocal_235, 225);
+				HUD::SET_BLIP_SPRITE(iLocal_235, 225 /*RADAR_GANG_VEHICLE*/);
 			}
 			else
 			{
-				HUD::SET_BLIP_SPRITE(iLocal_235, 348);
+				HUD::SET_BLIP_SPRITE(iLocal_235, 348 /*RADAR_GANG_BIKE*/);
 			}
 			HUD::SET_BLIP_COLOUR(iLocal_235, 1);
 			HUD::SET_BLIP_FLASH_TIMER(iLocal_235, 7000);

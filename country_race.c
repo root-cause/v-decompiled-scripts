@@ -21110,7 +21110,7 @@ void func_327(var uParam0, struct<3> Param1, bool bParam4)//Position - 0x1D3BC
 		}
 		else if (uParam0->f_3 == Local_52.f_65)
 		{
-			HUD::SET_BLIP_SPRITE(uParam0->f_15, 38);
+			HUD::SET_BLIP_SPRITE(uParam0->f_15, 38 /*RADAR_RACEFLAG*/);
 			HUD::SET_BLIP_SCALE(uParam0->f_15, 1.2f);
 		}
 		HUD::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_15, "BLIP_CPOINT" /* GXT: Checkpoint */);
@@ -21192,7 +21192,7 @@ void func_328(var uParam0, bool bParam1, bool bParam2)//Position - 0x1D432
 		}
 		else
 		{
-			HUD::SET_BLIP_SPRITE(uParam0->f_14, 38);
+			HUD::SET_BLIP_SPRITE(uParam0->f_14, 38 /*RADAR_RACEFLAG*/);
 			HUD::SET_BLIP_SCALE(uParam0->f_14, 1.2f);
 			HUD::SET_BLIP_PRIORITY(uParam0->f_14, 9);
 			uParam0->f_16 = GRAPHICS::CREATE_CHECKPOINT(10, Var10 + Vector(fVar20, 0f, 0f), Var13, fVar19, iVar0, iVar1, iVar2, iVar3, 0);

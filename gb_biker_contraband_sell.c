@@ -131617,7 +131617,7 @@ void func_1471()//Position - 0x9EE29
 								{
 									Local_136.f_212[bVar1] = HUD::ADD_BLIP_FOR_ENTITY(func_527(bVar1));
 								}
-								HUD::SET_BLIP_SPRITE(Local_136.f_212[bVar1], 270);
+								HUD::SET_BLIP_SPRITE(Local_136.f_212[bVar1], 270 /*RADAR_AI*/);
 								func_1448(&(Local_136.f_212[bVar1]), 6);
 								HUD::SET_BLIP_SCALE(Local_136.f_212[bVar1], 0.7f);
 							}
@@ -131639,7 +131639,7 @@ void func_1471()//Position - 0x9EE29
 								}
 								if (func_23())
 								{
-									HUD::SET_BLIP_SPRITE(Local_136.f_212[bVar1], 480);
+									HUD::SET_BLIP_SPRITE(Local_136.f_212[bVar1], 480 /*RADAR_VIP*/);
 									HUD::SET_BLIP_SCALE(Local_136.f_212[bVar1], 1f);
 								}
 								else

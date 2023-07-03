@@ -132036,7 +132036,7 @@ void func_945()//Position - 0xA4CA1
 				if (!HUD::DOES_BLIP_EXIST(iLocal_11925))
 				{
 					iLocal_11925 = func_946(iLocal_11926, 0, 0);
-					HUD::SET_BLIP_SPRITE(iLocal_11925, 225);
+					HUD::SET_BLIP_SPRITE(iLocal_11925, 225 /*RADAR_GANG_VEHICLE*/);
 					HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_11925, "CM_GARGVEH" /* GXT: Garage Vehicle */);
 				}
 				iLocal_11929++;

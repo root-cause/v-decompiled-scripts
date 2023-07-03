@@ -1823,7 +1823,7 @@ int func_1(int iParam0, struct<5> Param1, var uParam6, var uParam7, var uParam8,
 					if (!HUD::DOES_BLIP_EXIST(iLocal_286))
 					{
 						iLocal_286 = func_61(Local_268, 0);
-						HUD::SET_BLIP_SPRITE(iLocal_286, 269);
+						HUD::SET_BLIP_SPRITE(iLocal_286, 269 /*RADAR_ALTRUIST*/);
 						func_58();
 					}
 				}

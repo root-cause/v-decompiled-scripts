@@ -20705,7 +20705,7 @@ void func_502()//Position - 0x1903C
 				iLocal_279 = HUD::ADD_BLIP_FOR_ENTITY(iLocal_1202);
 				if (HUD::DOES_BLIP_EXIST(iLocal_279))
 				{
-					HUD::SET_BLIP_SPRITE(iLocal_279, 422);
+					HUD::SET_BLIP_SPRITE(iLocal_279, 422 /*RADAR_PLAYER_HELI*/);
 					HUD::SHOW_HEIGHT_ON_BLIP(iLocal_279, false);
 					HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_279, "HTX_BLIP" /* GXT: Helicopter */);
 					iLocal_280 = 1;

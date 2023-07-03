@@ -155,7 +155,7 @@ void func_1()//Position - 0xEB
 				else if (!HUD::DOES_BLIP_EXIST(iLocal_385))
 				{
 					iLocal_385 = func_2(iLocal_384, 0, 0);
-					HUD::SET_BLIP_SPRITE(iLocal_385, 308);
+					HUD::SET_BLIP_SPRITE(iLocal_385, 308 /*RADAR_SUB*/);
 				}
 			}
 			else

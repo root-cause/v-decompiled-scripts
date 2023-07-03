@@ -27482,7 +27482,7 @@ void func_573()//Position - 0x28B2F
 		else if (!HUD::DOES_BLIP_EXIST(Local_115.f_24.f_4))
 		{
 			Local_115.f_24.f_4 = HUD::ADD_BLIP_FOR_ENTITY(Local_115.f_24);
-			HUD::SET_BLIP_SPRITE(Local_115.f_24.f_4, 781);
+			HUD::SET_BLIP_SPRITE(Local_115.f_24.f_4, 781 /*RADAR_PRIZE_CAR*/);
 			func_574(&(Local_115.f_24.f_4), 18);
 			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(Local_115.f_24.f_4, "XM_PRESENT" /* GXT: Present */);
 		}

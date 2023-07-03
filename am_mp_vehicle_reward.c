@@ -95176,14 +95176,14 @@ void func_745(int iParam0, var uParam1)//Position - 0x70DCC
 	{
 		case 0:
 			HUD::SET_BLIP_FLASH_TIMER(*uParam1, 5000);
-			HUD::SET_BLIP_SPRITE(*uParam1, 306);
+			HUD::SET_BLIP_SPRITE(*uParam1, 306 /*RADAR_CRATEDROP*/);
 			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(*uParam1, "CAS_VEH_PN" /* GXT: Bonus Item */);
 			HUD::SET_BLIP_DISPLAY(*uParam1, 4);
 			break;
 		
 		case 1:
 			HUD::SET_BLIP_FLASH_TIMER(*uParam1, 5000);
-			HUD::SET_BLIP_SPRITE(*uParam1, 225);
+			HUD::SET_BLIP_SPRITE(*uParam1, 225 /*RADAR_GANG_VEHICLE*/);
 			func_736(uParam1, 12);
 			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(*uParam1, "CAS_VEH_PN" /* GXT: Bonus Item */);
 			HUD::SET_BLIP_DISPLAY(*uParam1, 4);
@@ -95191,7 +95191,7 @@ void func_745(int iParam0, var uParam1)//Position - 0x70DCC
 		
 		case 2:
 			HUD::SET_BLIP_FLASH_TIMER(*uParam1, 5000);
-			HUD::SET_BLIP_SPRITE(*uParam1, 225);
+			HUD::SET_BLIP_SPRITE(*uParam1, 225 /*RADAR_GANG_VEHICLE*/);
 			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(*uParam1, "CAS_VEH_PN" /* GXT: Bonus Item */);
 			HUD::SET_BLIP_DISPLAY(*uParam1, 4);
 			break;

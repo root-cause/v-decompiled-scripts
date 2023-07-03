@@ -38531,7 +38531,7 @@ void func_296()//Position - 0x2B8E5
 						{
 							HUD::SET_BLIP_SCALE(iLocal_935, fLocal_146);
 							HUD::SET_BLIP_PRIORITY(iLocal_935, 7);
-							HUD::SET_BLIP_SPRITE(iLocal_935, 353);
+							HUD::SET_BLIP_SPRITE(iLocal_935, 353 /*RADAR_ENEMY_HELI_SPIN*/);
 							HUD::SET_BLIP_COLOUR(iLocal_935, 1);
 						}
 						else

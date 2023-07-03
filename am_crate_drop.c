@@ -6407,7 +6407,7 @@ void func_199(int iParam0)//Position - 0xA263
 	{
 		iLocal_407[iParam0] = HUD::ADD_BLIP_FOR_ENTITY(NETWORK::NET_TO_OBJ(Local_86.f_2.f_1[iParam0 /*66*/].f_1));
 		HUD::SET_BLIP_SCALE(iLocal_407[iParam0], 1.2f);
-		HUD::SET_BLIP_SPRITE(iLocal_407[iParam0], 306);
+		HUD::SET_BLIP_SPRITE(iLocal_407[iParam0], 306 /*RADAR_CRATEDROP*/);
 		HUD::SET_BLIP_COLOUR(iLocal_407[iParam0], 2);
 		HUD::SET_BLIP_ALPHA(iLocal_407[iParam0], 120);
 		HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_407[iParam0], "ACD_BLIPN" /* GXT: Crate */);

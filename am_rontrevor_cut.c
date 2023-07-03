@@ -960,7 +960,7 @@ void func_19()//Position - 0x7F6
 								{
 									func_1194("FM_RCUT_TBLP" /* GXT: ~s~TP Industries ~BLIP_TREVOR_FAMILY~ is marked on the Map. */, -1);
 									Global_1935831 = HUD::ADD_BLIP_FOR_COORD(Global_1935832);
-									HUD::SET_BLIP_SPRITE(Global_1935831, 79);
+									HUD::SET_BLIP_SPRITE(Global_1935831, 79 /*RADAR_TREVOR_FAMILY*/);
 									HUD::SET_BLIP_FLASHES(Global_1935831, true);
 									HUD::SET_BLIP_FLASH_TIMER(Global_1935831, 7000);
 									MISC::SET_BIT(&uLocal_238, 9);
@@ -1001,7 +1001,7 @@ void func_19()//Position - 0x7F6
 								if (!HUD::DOES_BLIP_EXIST(Global_1935831))
 								{
 									Global_1935831 = HUD::ADD_BLIP_FOR_COORD(Global_1935832);
-									HUD::SET_BLIP_SPRITE(Global_1935831, 79);
+									HUD::SET_BLIP_SPRITE(Global_1935831, 79 /*RADAR_TREVOR_FAMILY*/);
 								}
 								func_1189(&uLocal_240);
 							}

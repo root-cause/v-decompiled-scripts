@@ -29690,7 +29690,7 @@ void func_619()//Position - 0x2B19A
 	if (!HUD::DOES_BLIP_EXIST(Local_115.f_7))
 	{
 		Local_115.f_7 = HUD::ADD_BLIP_FOR_ENTITY(func_614());
-		HUD::SET_BLIP_SPRITE(Local_115.f_7, 859);
+		HUD::SET_BLIP_SPRITE(Local_115.f_7, 859 /*RADAR_BICYCLE*/);
 		func_620(&(Local_115.f_7), 9);
 		HUD::SET_BLIP_PRIORITY(Local_115.f_7, 12);
 		HUD::SET_BLIP_NAME_FROM_TEXT_FILE(Local_115.f_7, "BTT_BLP_VEH" /* GXT: Bicycle */);

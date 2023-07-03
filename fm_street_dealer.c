@@ -10605,7 +10605,7 @@ void func_283()//Position - 0xCF26
 		return;
 	}
 	Local_228.f_11 = HUD::ADD_BLIP_FOR_COORD(Local_228.f_2);
-	HUD::SET_BLIP_SPRITE(Local_228.f_11, 47);
+	HUD::SET_BLIP_SPRITE(Local_228.f_11, 47 /*RADAR_SNITCH*/);
 	func_280(&(Local_228.f_11), 29);
 	HUD::SET_BLIP_PRIORITY(Local_228.f_11, 9);
 	HUD::SET_BLIP_NAME_FROM_TEXT_FILE(Local_228.f_11, "SDEAL_BLIP_NAME" /* GXT: Street Dealer */);

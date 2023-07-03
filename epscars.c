@@ -2799,7 +2799,7 @@ void func_67(int iParam0)//Position - 0x307E
 				iLocal_90 = HUD::ADD_BLIP_FOR_COORD(Local_38);
 				if (HUD::DOES_BLIP_EXIST(iLocal_90))
 				{
-					HUD::SET_BLIP_SPRITE(iLocal_90, 206);
+					HUD::SET_BLIP_SPRITE(iLocal_90, 206 /*RADAR_EPSILON*/);
 					HUD::SET_BLIP_COLOUR(iLocal_90, 42);
 				}
 			}

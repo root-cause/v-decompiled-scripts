@@ -783,7 +783,7 @@ void func_20()//Position - 0x865
 		}
 		if (HUD::DOES_BLIP_EXIST(Global_77479.f_583))
 		{
-			HUD::SET_BLIP_SPRITE(Global_77479.f_583, 225);
+			HUD::SET_BLIP_SPRITE(Global_77479.f_583, 225 /*RADAR_GANG_VEHICLE*/);
 			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(Global_77479.f_583, "PVEHICLE" /* GXT: Personal Vehicle */);
 			HUD::SET_BLIP_AS_SHORT_RANGE(Global_77479.f_583, false);
 			HUD::SET_BLIP_PRIORITY(Global_77479.f_583, 3);
@@ -33743,7 +33743,7 @@ void func_425()//Position - 0x2C7EE
 			if (((func_27(15) || func_27(12)) && iLocal_665 != 3) && !PLAYER::IS_PLAYER_WANTED_LEVEL_GREATER(PLAYER::PLAYER_ID(), 0))
 			{
 				iLocal_855 = func_459(428.37f, -1013.5f, 27.93f, 0);
-				HUD::SET_BLIP_SPRITE(iLocal_855, 225);
+				HUD::SET_BLIP_SPRITE(iLocal_855, 225 /*RADAR_GANG_VEHICLE*/);
 				HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_855, "IMPOUND_BLIPNAME" /* GXT: Vehicle Impound */);
 				HUD::SET_BLIP_AS_SHORT_RANGE(iLocal_855, true);
 			}

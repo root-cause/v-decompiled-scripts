@@ -3489,7 +3489,7 @@ void func_104()//Position - 0x3ECB
 		if (!HUD::DOES_BLIP_EXIST(Local_131.f_109))
 		{
 			Local_131.f_108 = func_106(Var0, 0);
-			HUD::SET_BLIP_SPRITE(Local_131.f_108, 425);
+			HUD::SET_BLIP_SPRITE(Local_131.f_108, 425 /*RADAR_CENTRE_STROKE*/);
 			HUD::SHOW_HEIGHT_ON_BLIP(Local_131.f_108, false);
 			HUD::SET_BLIP_DISPLAY(Local_131.f_108, 4);
 			HUD::SET_BLIP_COLOUR(Local_131.f_108, func_105(2));
@@ -3497,7 +3497,7 @@ void func_104()//Position - 0x3ECB
 			HUD::SET_BLIP_SCALE(Local_131.f_108, 0.54f);
 			HUD::SET_BLIP_PRIORITY(Local_131.f_108, 13 + 1);
 			Local_131.f_109 = func_106(Var0, 0);
-			HUD::SET_BLIP_SPRITE(Local_131.f_109, 425);
+			HUD::SET_BLIP_SPRITE(Local_131.f_109, 425 /*RADAR_CENTRE_STROKE*/);
 			HUD::SHOW_HEIGHT_ON_BLIP(Local_131.f_109, false);
 			HUD::SET_BLIP_DISPLAY(Local_131.f_109, 4);
 			HUD::SET_BLIP_COLOUR(Local_131.f_109, func_105(18));

@@ -37317,7 +37317,7 @@ int func_285(var uParam0)//Position - 0x2A0DE
 			HUD::SHOW_HEIGHT_ON_BLIP(iLocal_292, false);
 			if (iLocal_299 == (iLocal_298 - 1))
 			{
-				HUD::SET_BLIP_SPRITE(iLocal_292, 38);
+				HUD::SET_BLIP_SPRITE(iLocal_292, 38 /*RADAR_RACEFLAG*/);
 			}
 			if (iLocal_299 < (iLocal_298 - 1))
 			{
@@ -37326,7 +37326,7 @@ int func_285(var uParam0)//Position - 0x2A0DE
 				if (iLocal_299 == (iLocal_298 - 2))
 				{
 					HUD::SET_BLIP_SCALE(iLocal_293, 1.2f);
-					HUD::SET_BLIP_SPRITE(iLocal_293, 38);
+					HUD::SET_BLIP_SPRITE(iLocal_293, 38 /*RADAR_RACEFLAG*/);
 					HUD::SHOW_HEIGHT_ON_BLIP(iLocal_293, false);
 				}
 				else
@@ -40619,7 +40619,7 @@ void func_370(var uParam0)//Position - 0x2E8D2
 		if (iLocal_299 == (iLocal_298 - 2))
 		{
 			HUD::SET_BLIP_SCALE(iLocal_293, 1.2f);
-			HUD::SET_BLIP_SPRITE(iLocal_293, 38);
+			HUD::SET_BLIP_SPRITE(iLocal_293, 38 /*RADAR_RACEFLAG*/);
 			HUD::SHOW_HEIGHT_ON_BLIP(iLocal_293, false);
 		}
 		else
@@ -46553,13 +46553,13 @@ void func_466()//Position - 0x36F8D
 					HUD::SET_BLIP_COLOUR(iLocal_292, 5);
 					if (iLocal_299 == (iLocal_298 - 1))
 					{
-						HUD::SET_BLIP_SPRITE(iLocal_292, 38);
+						HUD::SET_BLIP_SPRITE(iLocal_292, 38 /*RADAR_RACEFLAG*/);
 					}
 					if (iLocal_299 == (iLocal_298 - 2))
 					{
 						iLocal_293 = func_287(Local_202[iLocal_299 + 1 /*3*/], 5, 0);
 						HUD::SET_BLIP_SCALE(iLocal_293, 1.2f);
-						HUD::SET_BLIP_SPRITE(iLocal_293, 38);
+						HUD::SET_BLIP_SPRITE(iLocal_293, 38 /*RADAR_RACEFLAG*/);
 						HUD::SHOW_HEIGHT_ON_BLIP(iLocal_293, false);
 					}
 					else if (iLocal_299 < (iLocal_298 - 1))

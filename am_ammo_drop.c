@@ -1639,13 +1639,13 @@ void func_42()//Position - 0x1922
 		iLocal_180 = HUD::ADD_BLIP_FOR_ENTITY(NETWORK::NET_TO_OBJ(Local_59.f_4));
 		if (Local_59.f_18)
 		{
-			HUD::SET_BLIP_SPRITE(iLocal_180, 84);
+			HUD::SET_BLIP_SPRITE(iLocal_180, 84 /*RADAR_RAMPAGE*/);
 			HUD::SET_BLIP_SCALE(iLocal_180, 1.2f);
 			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_180, "AMD_BLIPBALL" /* GXT: Ballistic Armor and Minigun */);
 		}
 		else
 		{
-			HUD::SET_BLIP_SPRITE(iLocal_180, 351);
+			HUD::SET_BLIP_SPRITE(iLocal_180, 351 /*RADAR_GANG_ATTACK_PACKAGE*/);
 			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_180, "AMD_BLIPN" /* GXT: Ammo Crate */);
 			HUD::SET_BLIP_SCALE(iLocal_180, 0.7f);
 		}

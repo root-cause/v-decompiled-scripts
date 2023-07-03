@@ -213,7 +213,7 @@ void func_3(var uParam0, var uParam1)//Position - 0x1B3
 	if (!HUD::DOES_BLIP_EXIST(*uParam0))
 	{
 		*uParam1 = func_5(Var0, 0);
-		HUD::SET_BLIP_SPRITE(*uParam1, 425);
+		HUD::SET_BLIP_SPRITE(*uParam1, 425 /*RADAR_CENTRE_STROKE*/);
 		HUD::SHOW_HEIGHT_ON_BLIP(*uParam1, false);
 		HUD::SET_BLIP_DISPLAY(*uParam1, 4);
 		HUD::SET_BLIP_COLOUR(*uParam1, func_4(2));
@@ -221,7 +221,7 @@ void func_3(var uParam0, var uParam1)//Position - 0x1B3
 		HUD::SET_BLIP_SCALE(*uParam1, 0.54f);
 		HUD::SET_BLIP_PRIORITY(*uParam1, 13 + 1);
 		*uParam0 = func_5(Var0, 0);
-		HUD::SET_BLIP_SPRITE(*uParam0, 425);
+		HUD::SET_BLIP_SPRITE(*uParam0, 425 /*RADAR_CENTRE_STROKE*/);
 		HUD::SHOW_HEIGHT_ON_BLIP(*uParam0, false);
 		HUD::SET_BLIP_DISPLAY(*uParam0, 4);
 		HUD::SET_BLIP_COLOUR(*uParam0, func_4(18));

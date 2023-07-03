@@ -114001,7 +114001,7 @@ void func_760(int iParam0, bool bParam1)//Position - 0x79321
 	HUD::SET_BLIP_COLOUR(Local_2280.f_215[iParam0 /*7*/], iVar4);
 	if (Local_2280.f_215[iParam0 /*7*/].f_5 == 8)
 	{
-		HUD::SET_BLIP_SPRITE(Local_2280.f_215[iParam0 /*7*/], 38);
+		HUD::SET_BLIP_SPRITE(Local_2280.f_215[iParam0 /*7*/], 38 /*RADAR_RACEFLAG*/);
 		HUD::BEGIN_TEXT_COMMAND_SET_BLIP_NAME("PS_sFINISH");
 		HUD::END_TEXT_COMMAND_SET_BLIP_NAME(Local_2280.f_215[iParam0 /*7*/]);
 	}
@@ -159044,7 +159044,7 @@ int func_1698(int iParam0, struct<3> Param1, struct<3> Param4, var uParam7)//Pos
 	HUD::SET_BLIP_COLOUR(*uParam7, iVar6);
 	if (iParam0 == 8)
 	{
-		HUD::SET_BLIP_SPRITE(*uParam7, 38);
+		HUD::SET_BLIP_SPRITE(*uParam7, 38 /*RADAR_RACEFLAG*/);
 		HUD::BEGIN_TEXT_COMMAND_SET_BLIP_NAME("PS_sFINISH");
 		HUD::END_TEXT_COMMAND_SET_BLIP_NAME(*uParam7);
 	}

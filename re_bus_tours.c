@@ -7134,7 +7134,7 @@ void func_186()//Position - 0x89CC
 			if (!HUD::DOES_BLIP_EXIST(iLocal_309))
 			{
 				iLocal_309 = HUD::ADD_BLIP_FOR_ENTITY(iLocal_304);
-				HUD::SET_BLIP_SPRITE(iLocal_309, 85);
+				HUD::SET_BLIP_SPRITE(iLocal_309, 85 /*RADAR_VINEWOOD_TOURS*/);
 			}
 			func_187();
 			iLocal_46 = 1;

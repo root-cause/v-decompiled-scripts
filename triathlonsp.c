@@ -89328,7 +89328,7 @@ int func_403(int* iParam0, struct<3> Param1, var uParam4, float fParam5, int iPa
 	}
 	if (iParam6 == (iParam7 - 1))
 	{
-		HUD::SET_BLIP_SPRITE(*iParam0, 38);
+		HUD::SET_BLIP_SPRITE(*iParam0, 38 /*RADAR_RACEFLAG*/);
 	}
 	HUD::SET_BLIP_SCALE(*iParam0, fParam5);
 	HUD::SET_BLIP_DISPLAY(*iParam0, 4);

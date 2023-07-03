@@ -1882,7 +1882,7 @@ void func_50()//Position - 0x1C13
 		if (!HUD::DOES_BLIP_EXIST(iLocal_91))
 		{
 			iLocal_91 = HUD::ADD_BLIP_FOR_ENTITY(Global_112841);
-			HUD::SET_BLIP_SPRITE(iLocal_91, 198);
+			HUD::SET_BLIP_SPRITE(iLocal_91, 198 /*RADAR_TAXI*/);
 			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_91, "TXM_BLIP" /* GXT: Taxi */);
 			HUD::SET_BLIP_FLASHES(iLocal_91, true);
 			HUD::SET_BLIP_FLASH_TIMER(iLocal_91, 10000);

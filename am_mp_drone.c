@@ -7985,7 +7985,7 @@ void func_273()//Position - 0x9AAD
 				if (func_31() && !HUD::DOES_BLIP_EXIST(Local_195.f_172))
 				{
 					Local_195.f_172 = func_284(PLAYER::PLAYER_PED_ID(), 0, 0);
-					HUD::SET_BLIP_SPRITE(Local_195.f_172, 6);
+					HUD::SET_BLIP_SPRITE(Local_195.f_172, 6 /*RADAR_CENTRE*/);
 					HUD::SHOW_HEIGHT_ON_BLIP(Local_195.f_172, false);
 					HUD::SET_BLIP_SCALE(Local_195.f_172, 0.7f);
 					HUD::SET_BLIP_PRIORITY(Local_195.f_172, (13 - 1));

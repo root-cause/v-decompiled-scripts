@@ -78951,12 +78951,12 @@ void func_966()//Position - 0x53380
 							if (func_1018() == Local_94.f_118)
 							{
 								HUD::SET_BLIP_PRIORITY(iLocal_1430[bVar0], 12);
-								HUD::SET_BLIP_SPRITE(iLocal_1430[bVar0], 432);
+								HUD::SET_BLIP_SPRITE(iLocal_1430[bVar0], 432 /*RADAR_TEMP_4*/);
 								func_981(&(iLocal_1430[bVar0]), 6);
 							}
 							else
 							{
-								HUD::SET_BLIP_SPRITE(iLocal_1430[bVar0], 480);
+								HUD::SET_BLIP_SPRITE(iLocal_1430[bVar0], 480 /*RADAR_VIP*/);
 								func_981(&(iLocal_1430[bVar0]), 9);
 							}
 							HUD::SET_BLIP_FLASHES(iLocal_1430[bVar0], true);

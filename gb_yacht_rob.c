@@ -77331,7 +77331,7 @@ void func_932()//Position - 0x51449
 						if (!HUD::DOES_BLIP_EXIST(iLocal_206[iVar0]))
 						{
 							iLocal_206[iVar0] = HUD::ADD_BLIP_FOR_ENTITY(NETWORK::NET_TO_VEH(Local_225.f_65[iVar0]));
-							HUD::SET_BLIP_SPRITE(iLocal_206[iVar0], 427);
+							HUD::SET_BLIP_SPRITE(iLocal_206[iVar0], 427 /*RADAR_PLAYER_BOAT*/);
 							HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_206[iVar0], "GB_YA_BN2" /* GXT: Seashark */);
 							HUD::SET_BLIP_ROTATION(iLocal_206[iVar0], SYSTEM::ROUND(ENTITY::GET_ENTITY_HEADING(NETWORK::NET_TO_VEH(Local_225.f_65[iVar0]))));
 							HUD::SET_BLIP_PRIORITY(iLocal_206[iVar0], 10);
@@ -77359,7 +77359,7 @@ void func_932()//Position - 0x51449
 						if (!HUD::DOES_BLIP_EXIST(iLocal_211[iVar0]))
 						{
 							iLocal_211[iVar0] = HUD::ADD_BLIP_FOR_ENTITY(NETWORK::NET_TO_VEH(Local_225.f_70[iVar0]));
-							HUD::SET_BLIP_SPRITE(iLocal_211[iVar0], 64);
+							HUD::SET_BLIP_SPRITE(iLocal_211[iVar0], 64 /*RADAR_HELICOPTER*/);
 							HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_211[iVar0], "GB_YA_BN3" /* GXT: Maverick */);
 							HUD::SET_BLIP_PRIORITY(iLocal_211[iVar0], 10);
 							HUD::SET_BLIP_AS_SHORT_RANGE(iLocal_211[iVar0], true);
@@ -77381,7 +77381,7 @@ void func_933()//Position - 0x5162C
 	if (!HUD::DOES_BLIP_EXIST(iLocal_205))
 	{
 		iLocal_205 = func_934(Local_225.f_13, 0);
-		HUD::SET_BLIP_SPRITE(iLocal_205, 455);
+		HUD::SET_BLIP_SPRITE(iLocal_205, 455 /*RADAR_YACHT*/);
 		HUD::SET_BLIP_PRIORITY(iLocal_205, 12);
 		HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_205, "GB_YA_BN0" /* GXT: Organization VIP Yacht */);
 		HUD::SET_BLIP_SCALE(iLocal_205, 1.25f);

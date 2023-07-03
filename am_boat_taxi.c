@@ -5528,7 +5528,7 @@ void func_134()//Position - 0x57E2
 		if (func_74(Local_62.f_2))
 		{
 			iLocal_183 = HUD::ADD_BLIP_FOR_ENTITY(NETWORK::NET_TO_VEH(Local_62.f_2));
-			HUD::SET_BLIP_SPRITE(iLocal_183, 356);
+			HUD::SET_BLIP_SPRITE(iLocal_183, 356 /*RADAR_DOCK*/);
 			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_183, "BTX_BLIP" /* GXT: Boat */);
 			HUD::SET_BLIP_FLASHES(iLocal_183, true);
 			HUD::SET_BLIP_CATEGORY(iLocal_183, 6);

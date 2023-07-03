@@ -111782,7 +111782,7 @@ void func_1051(int iParam0)//Position - 0x8427C
 	if (!HUD::DOES_BLIP_EXIST(iLocal_1025[iParam0]))
 	{
 		iLocal_1025[iParam0] = HUD::ADD_BLIP_FOR_ENTITY(NETWORK::NET_TO_PED(Local_1222.f_24[iParam0 /*2*/]));
-		HUD::SET_BLIP_SPRITE(iLocal_1025[iParam0], 432);
+		HUD::SET_BLIP_SPRITE(iLocal_1025[iParam0], 432 /*RADAR_TEMP_4*/);
 		HUD::SET_BLIP_SCALE(iLocal_1025[iParam0], 0.7f);
 		func_1052(&(iLocal_1025[iParam0]), 6);
 		HUD::SET_BLIP_PRIORITY(iLocal_1025[iParam0], 12);

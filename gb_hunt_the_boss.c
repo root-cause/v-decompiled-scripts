@@ -75818,7 +75818,7 @@ void func_855()//Position - 0x4ED2B
 						HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_104, "GB_HTB_BLIP1" /* GXT: Executive Search */);
 						HUD::SET_BLIP_FLASHES(iLocal_104, true);
 						HUD::SET_BLIP_FLASH_TIMER(iLocal_104, 7000);
-						HUD::SET_BLIP_SPRITE(iLocal_104, 458);
+						HUD::SET_BLIP_SPRITE(iLocal_104, 458 /*RADAR_HUNT_THE_BOSS*/);
 						HUD::SET_BLIP_PRIORITY(iLocal_104, 12);
 						HUD::SET_BLIP_SCALE(iLocal_104, Global_262145.f_13003 /* Tunable: GANGBOSS_JOB_BLIP_SCALE */);
 						func_871(&iLocal_104, iLocal_95);
@@ -75910,7 +75910,7 @@ void func_855()//Position - 0x4ED2B
 					HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_104, "GB_HTB_BLIP1" /* GXT: Executive Search */);
 					HUD::SET_BLIP_FLASHES(iLocal_104, true);
 					HUD::SET_BLIP_FLASH_TIMER(iLocal_104, 7000);
-					HUD::SET_BLIP_SPRITE(iLocal_104, 458);
+					HUD::SET_BLIP_SPRITE(iLocal_104, 458 /*RADAR_HUNT_THE_BOSS*/);
 					HUD::SET_BLIP_PRIORITY(iLocal_104, 12);
 					HUD::SET_BLIP_SCALE(iLocal_104, Global_262145.f_13003 /* Tunable: GANGBOSS_JOB_BLIP_SCALE */);
 					func_871(&iLocal_104, iLocal_95);

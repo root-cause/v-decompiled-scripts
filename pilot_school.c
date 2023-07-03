@@ -95131,7 +95131,7 @@ void func_484(int iParam0, bool bParam1)//Position - 0x695F3
 	HUD::SET_BLIP_COLOUR(Local_869.f_181[iParam0 /*6*/], iVar4);
 	if (Local_869.f_181[iParam0 /*6*/].f_5 == 8)
 	{
-		HUD::SET_BLIP_SPRITE(Local_869.f_181[iParam0 /*6*/], 38);
+		HUD::SET_BLIP_SPRITE(Local_869.f_181[iParam0 /*6*/], 38 /*RADAR_RACEFLAG*/);
 		HUD::BEGIN_TEXT_COMMAND_SET_BLIP_NAME("PS_sFINISH");
 		HUD::END_TEXT_COMMAND_SET_BLIP_NAME(Local_869.f_181[iParam0 /*6*/]);
 	}

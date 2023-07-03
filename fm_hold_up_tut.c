@@ -4573,7 +4573,7 @@ void func_96(var uParam0)//Position - 0x4820
 						{
 							PATHFIND::SET_IGNORE_NO_GPS_FLAG_UNTIL_FIRST_NORMAL_NODE(true);
 							uParam0->f_5 = HUD::ADD_BLIP_FOR_COORD(Var1);
-							HUD::SET_BLIP_SPRITE(uParam0->f_5, 52);
+							HUD::SET_BLIP_SPRITE(uParam0->f_5, 52 /*RADAR_CRIM_HOLDUPS*/);
 							HUD::SET_BLIP_SCALE(uParam0->f_5, 1f);
 							HUD::SET_BLIP_PRIORITY(uParam0->f_5, 7);
 							HUD::SET_BLIP_ROUTE(uParam0->f_5, true);

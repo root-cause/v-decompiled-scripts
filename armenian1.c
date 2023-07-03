@@ -1213,7 +1213,7 @@ void func_2()//Position - 0x891
 					if (!HUD::DOES_BLIP_EXIST(iLocal_2850))
 					{
 						iLocal_2850 = func_50(-14.3803f, -1438.5143f, 30.1015f, 0);
-						HUD::SET_BLIP_SPRITE(iLocal_2850, 40);
+						HUD::SET_BLIP_SPRITE(iLocal_2850, 40 /*RADAR_SAFEHOUSE*/);
 						HUD::SET_BLIP_FLASHES(iLocal_2850, true);
 					}
 					SYSTEM::SETTIMERB(0);

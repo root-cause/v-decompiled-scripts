@@ -3700,7 +3700,7 @@ void func_76()//Position - 0x299A
 								if (!HUD::DOES_BLIP_EXIST(iLocal_101))
 								{
 									iLocal_101 = func_144(Local_85, 0);
-									HUD::SET_BLIP_SPRITE(iLocal_101, 269);
+									HUD::SET_BLIP_SPRITE(iLocal_101, 269 /*RADAR_ALTRUIST*/);
 									func_142();
 								}
 							}
@@ -3931,7 +3931,7 @@ void func_76()//Position - 0x299A
 											if (!HUD::DOES_BLIP_EXIST(iLocal_101))
 											{
 												iLocal_101 = func_144(Local_85, 0);
-												HUD::SET_BLIP_SPRITE(iLocal_101, 269);
+												HUD::SET_BLIP_SPRITE(iLocal_101, 269 /*RADAR_ALTRUIST*/);
 												func_142();
 											}
 										}

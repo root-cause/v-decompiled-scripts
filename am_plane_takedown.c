@@ -4704,12 +4704,12 @@ void func_191()//Position - 0x513A
 			iLocal_213 = HUD::ADD_BLIP_FOR_ENTITY(NETWORK::NET_TO_VEH(Local_86.f_2));
 			if (!BitTest(Local_86.f_1, 0))
 			{
-				HUD::SET_BLIP_SPRITE(iLocal_213, 307);
+				HUD::SET_BLIP_SPRITE(iLocal_213, 307 /*RADAR_PLANE_DROP*/);
 				HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_213, "PTD_BLIPN" /* GXT: Smuggler Plane */);
 			}
 			else
 			{
-				HUD::SET_BLIP_SPRITE(iLocal_213, 64);
+				HUD::SET_BLIP_SPRITE(iLocal_213, 64 /*RADAR_HELICOPTER*/);
 				HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_213, "PTD_BLIPH" /* GXT: Smuggler Helicopter */);
 			}
 			HUD::SET_BLIP_COLOUR(iLocal_213, 1);

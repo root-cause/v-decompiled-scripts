@@ -135082,7 +135082,7 @@ void func_1566()//Position - 0xAC261
 			if (!ENTITY::IS_ENTITY_DEAD(NETWORK::NET_TO_VEH(Local_94.f_2), false))
 			{
 				iLocal_2142 = HUD::ADD_BLIP_FOR_ENTITY(NETWORK::NET_TO_VEH(Local_94.f_2));
-				HUD::SET_BLIP_SPRITE(iLocal_2142, 433);
+				HUD::SET_BLIP_SPRITE(iLocal_2142, 433 /*RADAR_TEMP_5*/);
 				HUD::SET_BLIP_FLASH_TIMER(iLocal_2142, 7000);
 				HUD::SET_BLIP_PRIORITY(iLocal_2142, 10);
 				HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_2142, "HTV_BLIP" /* GXT: Moving Target */);
@@ -136452,7 +136452,7 @@ void func_1594(int iParam0)//Position - 0xADB08
 			if (!ENTITY::IS_ENTITY_DEAD(NETWORK::NET_TO_VEH(Local_94.f_2), false))
 			{
 				iLocal_2141 = HUD::ADD_BLIP_FOR_ENTITY(NETWORK::NET_TO_VEH(Local_94.f_2));
-				HUD::SET_BLIP_SPRITE(iLocal_2141, 432);
+				HUD::SET_BLIP_SPRITE(iLocal_2141, 432 /*RADAR_TEMP_4*/);
 				if (iParam0 == 1)
 				{
 					func_1564(&iLocal_2141, 29);

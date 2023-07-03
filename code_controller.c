@@ -36854,7 +36854,7 @@ void func_408()//Position - 0x2947C
 {
 	int iVar0;
 	
-	iVar0 = HUD::GET_FIRST_BLIP_INFO_ID(66);
+	iVar0 = HUD::GET_FIRST_BLIP_INFO_ID(66 /*RADAR_RANDOM_CHARACTER*/);
 	if (HUD::DOES_BLIP_EXIST(iVar0))
 	{
 		HUD::SET_BLIP_FLASHES(iVar0, true);

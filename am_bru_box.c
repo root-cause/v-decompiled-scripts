@@ -8290,7 +8290,7 @@ void func_213()//Position - 0xAA00
 			{
 				HUD::SET_BLIP_SCALE(iLocal_169, 1.2f);
 			}
-			HUD::SET_BLIP_SPRITE(iLocal_169, 403);
+			HUD::SET_BLIP_SPRITE(iLocal_169, 403 /*RADAR_TESTOSTERONE*/);
 			HUD::SET_BLIP_COLOUR(iLocal_169, 2);
 			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_169, "ABB_BLIPN" /* GXT: Bull Shark Testosterone */);
 		}

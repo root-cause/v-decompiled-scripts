@@ -58645,7 +58645,7 @@ void func_633(bool bParam0)//Position - 0x3BDBB
 			iLocal_168 = HUD::ADD_BLIP_FOR_ENTITY(func_997());
 			if (bParam0)
 			{
-				HUD::SET_BLIP_SPRITE(iLocal_168, 68);
+				HUD::SET_BLIP_SPRITE(iLocal_168, 68 /*RADAR_TOW_TRUCK*/);
 				func_631(&iLocal_168, 18);
 			}
 			else
@@ -58666,7 +58666,7 @@ void func_634(bool bParam0)//Position - 0x3BE14
 		if (!func_510())
 		{
 			iLocal_167 = HUD::ADD_BLIP_FOR_ENTITY(func_971());
-			HUD::SET_BLIP_SPRITE(iLocal_167, 481);
+			HUD::SET_BLIP_SPRITE(iLocal_167, 481 /*RADAR_CARGOBOB*/);
 			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_167, "GB_AIRF_CARGOBOB" /* GXT: Cargobob */);
 			HUD::SET_BLIP_PRIORITY(iLocal_167, 10);
 			HUD::SET_BLIP_AS_SHORT_RANGE(iLocal_167, false);
@@ -58686,7 +58686,7 @@ void func_634(bool bParam0)//Position - 0x3BE14
 		}
 		else if (HUD::GET_BLIP_SPRITE(iLocal_167) != 481)
 		{
-			HUD::SET_BLIP_SPRITE(iLocal_167, 481);
+			HUD::SET_BLIP_SPRITE(iLocal_167, 481 /*RADAR_CARGOBOB*/);
 		}
 	}
 }
@@ -58707,7 +58707,7 @@ void func_635()//Position - 0x3BE9F
 					if (Local_232.f_31[iVar0 /*17*/].f_9 == 1 && func_42(PLAYER::PLAYER_PED_ID(), func_21(iVar0), 0) <= 100f)
 					{
 						uLocal_170[iVar0] = func_640(func_21(iVar0), 1, 145);
-						HUD::SET_BLIP_SPRITE(uLocal_170[iVar0], 270);
+						HUD::SET_BLIP_SPRITE(uLocal_170[iVar0], 270 /*RADAR_AI*/);
 						func_631(&(uLocal_170[iVar0]), 6);
 					}
 				}
@@ -58735,7 +58735,7 @@ void func_635()//Position - 0x3BE9F
 				if (func_19(func_21(2), func_20(), 1))
 				{
 					iLocal_175 = func_636(func_73(), 1, 0);
-					HUD::SET_BLIP_SPRITE(iLocal_175, 353);
+					HUD::SET_BLIP_SPRITE(iLocal_175, 353 /*RADAR_ENEMY_HELI_SPIN*/);
 					func_631(&iLocal_175, 6);
 				}
 			}

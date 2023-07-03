@@ -99,7 +99,7 @@ void __EntryFunction__()//Position - 0x0
 				CAM::SET_CAM_FAR_CLIP(iLocal_17, 0.02f);
 				CAM::RENDER_SCRIPT_CAMS(true, false, 3000, true, false, 0);
 			}
-			HUD::SET_BLIP_SPRITE(iLocal_18, 66);
+			HUD::SET_BLIP_SPRITE(iLocal_18, 66 /*RADAR_RANDOM_CHARACTER*/);
 		}
 		iLocal_19 = 1;
 		GRAPHICS::DRAW_SCALEFORM_MOVIE(iLocal_16, 0.5f, 0.5f, 1f, 1f, 255, 255, 255, 0, 0);

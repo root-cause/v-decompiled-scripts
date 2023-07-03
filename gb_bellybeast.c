@@ -58970,7 +58970,7 @@ void func_694()//Position - 0x3BD0A
 				if (!HUD::DOES_BLIP_EXIST(iLocal_97[bVar1]))
 				{
 					iLocal_97[bVar1] = HUD::ADD_BLIP_FOR_ENTITY(NETWORK::NET_TO_VEH(func_28(bVar1)));
-					HUD::SET_BLIP_SPRITE(iLocal_97[bVar1], 461);
+					HUD::SET_BLIP_SPRITE(iLocal_97[bVar1], 461 /*RADAR_BELLY_OF_THE_BEAST*/);
 					if (func_865(func_7(), 1))
 					{
 						func_696(&(iLocal_97[bVar1]), 9);

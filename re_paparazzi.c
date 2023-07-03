@@ -7354,7 +7354,7 @@ void func_170()//Position - 0x971A
 		{
 			func_173();
 			iLocal_362 = func_172(-1034.6f, 4918.6f, 205.9f, 0);
-			HUD::SET_BLIP_SPRITE(iLocal_362, 269);
+			HUD::SET_BLIP_SPRITE(iLocal_362, 269 /*RADAR_ALTRUIST*/);
 			func_171();
 		}
 	}

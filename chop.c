@@ -3705,7 +3705,7 @@ void func_58()//Position - 0x4370
 			func_62(138, 0, 0);
 		}
 		iLocal_68 = func_59(iLocal_67, 0, 145);
-		HUD::SET_BLIP_SPRITE(iLocal_68, 273);
+		HUD::SET_BLIP_SPRITE(iLocal_68, 273 /*RADAR_CHOP*/);
 	}
 }
 

@@ -18942,7 +18942,7 @@ void func_509()//Position - 0x1866A
 			{
 				HUD::GET_HUD_COLOUR(12, &iVar3, &iVar4, &iVar5, &uVar6);
 				iLocal_247 = HUD::ADD_BLIP_FOR_COORD(Var0);
-				HUD::SET_BLIP_SPRITE(iLocal_247, 38);
+				HUD::SET_BLIP_SPRITE(iLocal_247, 38 /*RADAR_RACEFLAG*/);
 				HUD::SET_BLIP_SCALE(iLocal_247, 1.2f);
 				HUD::SET_BLIP_PRIORITY(iLocal_247, 5);
 				HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_247, "R2P_BLIP" /* GXT: Finish Line */);

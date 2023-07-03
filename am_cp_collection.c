@@ -14261,7 +14261,7 @@ void func_365(int* iParam0, struct<3> Param1, var uParam4, var uParam5, int iPar
 			if (!func_440(Var0, 0f, 0f, 0f, 0) && !func_440(Var0, 0f, 0f, -2000f, 0))
 			{
 				*iParam0 = HUD::ADD_BLIP_FOR_COORD(Var0);
-				HUD::SET_BLIP_SPRITE(*iParam0, 431);
+				HUD::SET_BLIP_SPRITE(*iParam0, 431 /*RADAR_TEMP_3*/);
 				HUD::SET_BLIP_PRIORITY(*iParam0, 9);
 				HUD::SET_BLIP_NAME_FROM_TEXT_FILE(*iParam0, "CPC_BLIP" /* GXT: Checkpoint */);
 				func_372(*iParam0, 25, 1152319488, 1137180672);

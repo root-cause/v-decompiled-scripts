@@ -1010,7 +1010,7 @@ void func_19()//Position - 0x830
 									if (!HUD::DOES_BLIP_EXIST(Global_1935835))
 									{
 										Global_1935835 = HUD::ADD_BLIP_FOR_COORD(Global_1935836);
-										HUD::SET_BLIP_SPRITE(Global_1935835, 77);
+										HUD::SET_BLIP_SPRITE(Global_1935835, 77 /*RADAR_LESTER_FAMILY*/);
 										HUD::SET_BLIP_FLASHES(Global_1935835, true);
 										HUD::SET_BLIP_FLASH_TIMER(Global_1935835, 7000);
 									}
@@ -1052,7 +1052,7 @@ void func_19()//Position - 0x830
 								if (!HUD::DOES_BLIP_EXIST(Global_1935835))
 								{
 									Global_1935835 = HUD::ADD_BLIP_FOR_COORD(Global_1935836);
-									HUD::SET_BLIP_SPRITE(Global_1935835, 77);
+									HUD::SET_BLIP_SPRITE(Global_1935835, 77 /*RADAR_LESTER_FAMILY*/);
 								}
 							}
 						}

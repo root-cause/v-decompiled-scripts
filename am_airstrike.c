@@ -1745,7 +1745,7 @@ void func_54()//Position - 0x1E3B
 				if (!HUD::DOES_BLIP_EXIST(iLocal_45))
 				{
 					iLocal_45 = HUD::ADD_BLIP_FOR_ENTITY(iVar0);
-					HUD::SET_BLIP_SPRITE(iLocal_45, 16);
+					HUD::SET_BLIP_SPRITE(iLocal_45, 16 /*RADAR_POLICE_PLANE_MOVE*/);
 					HUD::SET_BLIP_NAME_FROM_TEXT_FILE(iLocal_45, func_60());
 					HUD::SHOW_HEIGHT_ON_BLIP(iLocal_45, false);
 				}

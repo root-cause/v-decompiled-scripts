@@ -10462,7 +10462,7 @@ void func_198(int iParam0)//Position - 0xE28A
 					if (!BitTest(Local_728[iParam0 /*18*/].f_1, bVar0))
 					{
 						iLocal_1317[bVar0] = HUD::ADD_BLIP_FOR_ENTITY(NETWORK::NET_TO_VEH(Local_94.f_7[bVar0]));
-						HUD::SET_BLIP_SPRITE(iLocal_1317[bVar0], 429);
+						HUD::SET_BLIP_SPRITE(iLocal_1317[bVar0], 429 /*RADAR_TEMP_1*/);
 						func_199(&(iLocal_1317[bVar0]), 29);
 						if (func_775())
 						{
@@ -30653,7 +30653,7 @@ void func_780()//Position - 0x24EB6
 							if (!BitTest(Local_94.f_13, bVar0))
 							{
 								iLocal_1317[bVar0] = HUD::ADD_BLIP_FOR_ENTITY(NETWORK::NET_TO_VEH(Local_94.f_7[bVar0]));
-								HUD::SET_BLIP_SPRITE(iLocal_1317[bVar0], 429);
+								HUD::SET_BLIP_SPRITE(iLocal_1317[bVar0], 429 /*RADAR_TEMP_1*/);
 								func_199(&(iLocal_1317[bVar0]), 29);
 								if (!BitTest(uLocal_1305, 20))
 								{

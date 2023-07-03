@@ -170382,7 +170382,7 @@ void func_1790()//Position - 0xD1DFE
 									iLocal_4726 = HUD::ADD_BLIP_FOR_COORD(func_762(PLAYER::PLAYER_ID()));
 									HUD::SET_BLIP_PRIORITY(iLocal_4726, 13);
 									HUD::SET_BLIP_AS_SHORT_RANGE(iLocal_4726, false);
-									HUD::SET_BLIP_SPRITE(iLocal_4726, 442);
+									HUD::SET_BLIP_SPRITE(iLocal_4726, 442 /*RADAR_BEAST*/);
 									func_1804(&iLocal_4726, 21);
 									func_62(&uLocal_3491, 0, 0);
 									HUD::SET_BLIP_COORDS(iLocal_4726, func_762(PLAYER::PLAYER_ID()));

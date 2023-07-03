@@ -4351,7 +4351,7 @@ void func_143()//Position - 0x47FB
 		if (!HUD::DOES_BLIP_EXIST(Global_1935839))
 		{
 			Global_1935839 = HUD::ADD_BLIP_FOR_COORD(Global_1935840);
-			HUD::SET_BLIP_SPRITE(Global_1935839, 293);
+			HUD::SET_BLIP_SPRITE(Global_1935839, 293 /*RADAR_SIMEON_FAMILY*/);
 			HUD::SET_BLIP_SCALE(Global_1935839, 1f);
 			HUD::SET_BLIP_AS_SHORT_RANGE(Global_1935839, false);
 			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(Global_1935839, "IMPEX_BLIP_FM" /* GXT: Simeon */);
@@ -6667,12 +6667,12 @@ void func_181()//Position - 0x79A4
 									Global_1935850 = HUD::ADD_BLIP_FOR_ENTITY(NETWORK::NET_TO_VEH(Local_383.f_22));
 									if (VEHICLE::IS_THIS_MODEL_A_BIKE(ENTITY::GET_ENTITY_MODEL(NETWORK::NET_TO_VEH(Local_383.f_22))))
 									{
-										HUD::SET_BLIP_SPRITE(Global_1935850, 348);
+										HUD::SET_BLIP_SPRITE(Global_1935850, 348 /*RADAR_GANG_BIKE*/);
 										func_170("IMPEX_HIPB_INT" /* GXT: Simeon wants a specific vehicle ~HUD_COLOUR_GREEN~~BLIP_GANG_BIKE~ ~s~delivered. Get it resprayed ~BLIP_CAR_MOD_SHOP~ and deliver it to him at the docks for cash. */, -1);
 									}
 									else
 									{
-										HUD::SET_BLIP_SPRITE(Global_1935850, 225);
+										HUD::SET_BLIP_SPRITE(Global_1935850, 225 /*RADAR_GANG_VEHICLE*/);
 										func_170("IMPEX_HIPR_INT" /* GXT: Simeon wants a specific vehicle ~HUD_COLOUR_GREEN~~BLIP_GANG_VEHICLE~ ~s~delivered. Get it resprayed ~BLIP_CAR_MOD_SHOP~ and deliver it to him at the docks for cash. */, -1);
 									}
 									HUD::SET_BLIP_COLOUR(Global_1935850, 2);
@@ -10126,11 +10126,11 @@ void func_259()//Position - 0xC29E
 	Global_1935850 = HUD::ADD_BLIP_FOR_ENTITY(NETWORK::NET_TO_VEH(Local_383.f_22));
 	if (VEHICLE::IS_THIS_MODEL_A_BIKE(ENTITY::GET_ENTITY_MODEL(NETWORK::NET_TO_VEH(Local_383.f_22))))
 	{
-		HUD::SET_BLIP_SPRITE(Global_1935850, 348);
+		HUD::SET_BLIP_SPRITE(Global_1935850, 348 /*RADAR_GANG_BIKE*/);
 	}
 	else
 	{
-		HUD::SET_BLIP_SPRITE(Global_1935850, 225);
+		HUD::SET_BLIP_SPRITE(Global_1935850, 225 /*RADAR_GANG_VEHICLE*/);
 	}
 	HUD::SET_BLIP_COLOUR(Global_1935850, 2);
 	HUD::SET_BLIP_NAME_FROM_TEXT_FILE(Global_1935850, "IMPEX_HIPR_BLP" /* GXT: High Priority Vehicle */);

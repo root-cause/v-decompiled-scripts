@@ -138749,7 +138749,7 @@ void func_1542(bool bParam0)//Position - 0xAC7DB
 			if (((!func_1537(Global_112519.f_35, 512) && !func_1537(Global_112519.f_35, 1024)) && !func_1537(Global_112519.f_35, 8388608)) && !bVar17)
 			{
 				Global_112519.f_31 = func_1610(func_1612(Global_112519.f_20, Global_112519.f_21, Global_112519.f_29), 0);
-				HUD::SET_BLIP_SPRITE(Global_112519.f_31, 267);
+				HUD::SET_BLIP_SPRITE(Global_112519.f_31, 267 /*RADAR_PROPERTY*/);
 				switch (Global_113810.f_24907[Global_112519.f_20 /*4*/])
 				{
 					case 0:

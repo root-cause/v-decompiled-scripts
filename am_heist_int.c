@@ -1114,7 +1114,7 @@ void func_24()//Position - 0x9C8
 									if (!HUD::DOES_BLIP_EXIST(Global_1935843))
 									{
 										Global_1935843 = HUD::ADD_BLIP_FOR_COORD(Global_1935844);
-										HUD::SET_BLIP_SPRITE(Global_1935843, 77);
+										HUD::SET_BLIP_SPRITE(Global_1935843, 77 /*RADAR_LESTER_FAMILY*/);
 										func_1196(&Global_1935843, 18);
 										HUD::SET_BLIP_NAME_FROM_TEXT_FILE(Global_1935843, "DLCC_CASHT_CT" /* GXT: Lester Crest */);
 										HUD::SET_BLIP_AS_SHORT_RANGE(Global_1935843, true);
@@ -1158,7 +1158,7 @@ void func_24()//Position - 0x9C8
 								if (!HUD::DOES_BLIP_EXIST(Global_1935843))
 								{
 									Global_1935843 = HUD::ADD_BLIP_FOR_COORD(Global_1935844);
-									HUD::SET_BLIP_SPRITE(Global_1935843, 77);
+									HUD::SET_BLIP_SPRITE(Global_1935843, 77 /*RADAR_LESTER_FAMILY*/);
 									func_1196(&Global_1935843, 18);
 									HUD::SET_BLIP_NAME_FROM_TEXT_FILE(Global_1935843, "DLCC_CASHT_CT" /* GXT: Lester Crest */);
 									HUD::SET_BLIP_AS_SHORT_RANGE(Global_1935843, true);

@@ -116580,15 +116580,15 @@ void func_850(var uParam0)//Position - 0x8DB5E
 				{
 					if (*uParam0 == 0)
 					{
-						HUD::SET_BLIP_SPRITE(uParam0->f_4, 78);
+						HUD::SET_BLIP_SPRITE(uParam0->f_4, 78 /*RADAR_MICHAEL_FAMILY*/);
 					}
 					else if (*uParam0 == 1)
 					{
-						HUD::SET_BLIP_SPRITE(uParam0->f_4, 88);
+						HUD::SET_BLIP_SPRITE(uParam0->f_4, 88 /*RADAR_FRANKLIN_FAMILY*/);
 					}
 					else if (*uParam0 == 2)
 					{
-						HUD::SET_BLIP_SPRITE(uParam0->f_4, 79);
+						HUD::SET_BLIP_SPRITE(uParam0->f_4, 79 /*RADAR_TREVOR_FAMILY*/);
 					}
 					HUD::SET_BLIP_COLOUR(uParam0->f_4, 3);
 				}
@@ -123986,7 +123986,7 @@ int func_1033(var uParam0)//Position - 0x990C6
 		if (HUD::DOES_BLIP_EXIST(uParam0->f_11))
 		{
 			HUD::SET_BLIP_AS_FRIENDLY(uParam0->f_11, true);
-			HUD::SET_BLIP_SPRITE(uParam0->f_11, 280);
+			HUD::SET_BLIP_SPRITE(uParam0->f_11, 280 /*RADAR_FRIEND*/);
 			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(uParam0->f_11, "FR_PKUPBLIP" /* GXT: Friend Meeting Place */);
 		}
 		return uParam0->f_11;

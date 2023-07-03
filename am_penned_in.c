@@ -82515,11 +82515,11 @@ void func_1129()//Position - 0x52824
 			iLocal_571 = HUD::ADD_BLIP_FOR_COORD(func_565());
 			if (Local_94.f_197 == 2)
 			{
-				HUD::SET_BLIP_SPRITE(iLocal_571, 493);
+				HUD::SET_BLIP_SPRITE(iLocal_571, 493 /*RADAR_BIKER_CAGED_IN*/);
 			}
 			else
 			{
-				HUD::SET_BLIP_SPRITE(iLocal_571, 441);
+				HUD::SET_BLIP_SPRITE(iLocal_571, 441 /*RADAR_PENNED_IN*/);
 			}
 			HUD::SET_BLIP_FLASHES(iLocal_571, true);
 			HUD::SET_BLIP_FLASH_TIMER(iLocal_571, 7000);

@@ -127177,7 +127177,7 @@ void func_1367()//Position - 0xA2A76
 					if (NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_94.f_2))
 					{
 						iLocal_2220 = HUD::ADD_BLIP_FOR_ENTITY(NETWORK::NET_TO_ENT(Local_94.f_2));
-						HUD::SET_BLIP_SPRITE(iLocal_2220, 440);
+						HUD::SET_BLIP_SPRITE(iLocal_2220, 440 /*RADAR_DEAD_DROP*/);
 						HUD::SHOW_HEIGHT_ON_BLIP(iLocal_2220, true);
 						HUD::SET_BLIP_EXTENDED_HEIGHT_THRESHOLD(iLocal_2220, true);
 						HUD::SET_BLIP_PRIORITY(iLocal_2220, 10);
@@ -133125,13 +133125,13 @@ void func_1553()//Position - 0xA8D79
 			if (BitTest(Local_94.f_1, 1))
 			{
 				iLocal_2221 = HUD::ADD_BLIP_FOR_ENTITY(NETWORK::NET_TO_ENT(Local_94.f_2));
-				HUD::SET_BLIP_SPRITE(iLocal_2221, 440);
+				HUD::SET_BLIP_SPRITE(iLocal_2221, 440 /*RADAR_DEAD_DROP*/);
 				func_1356(&iLocal_2221, 29);
 			}
 			else
 			{
 				iLocal_2221 = HUD::ADD_BLIP_FOR_ENTITY(NETWORK::NET_TO_ENT(Local_94.f_2));
-				HUD::SET_BLIP_SPRITE(iLocal_2221, 440);
+				HUD::SET_BLIP_SPRITE(iLocal_2221, 440 /*RADAR_DEAD_DROP*/);
 				func_1356(&iLocal_2221, 18);
 			}
 			if (HUD::DOES_BLIP_EXIST(iLocal_2221))
@@ -133150,7 +133150,7 @@ void func_1553()//Position - 0xA8D79
 	{
 		if (HUD::GET_BLIP_SPRITE(iLocal_2221) != 440)
 		{
-			HUD::SET_BLIP_SPRITE(iLocal_2221, 440);
+			HUD::SET_BLIP_SPRITE(iLocal_2221, 440 /*RADAR_DEAD_DROP*/);
 		}
 		if (HUD::GET_BLIP_COLOUR(iLocal_2221) != func_1357(29))
 		{
@@ -133161,7 +133161,7 @@ void func_1553()//Position - 0xA8D79
 	{
 		if (HUD::GET_BLIP_SPRITE(iLocal_2221) != 440)
 		{
-			HUD::SET_BLIP_SPRITE(iLocal_2221, 440);
+			HUD::SET_BLIP_SPRITE(iLocal_2221, 440 /*RADAR_DEAD_DROP*/);
 		}
 		if (HUD::GET_BLIP_COLOUR(iLocal_2221) != func_1357(29))
 		{

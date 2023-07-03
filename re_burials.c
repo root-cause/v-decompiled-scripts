@@ -4305,7 +4305,7 @@ void func_92()//Position - 0x4740
 						if (!HUD::DOES_BLIP_EXIST(iLocal_136))
 						{
 							iLocal_136 = func_66(Local_140, 0);
-							HUD::SET_BLIP_SPRITE(iLocal_136, 269);
+							HUD::SET_BLIP_SPRITE(iLocal_136, 269 /*RADAR_ALTRUIST*/);
 							func_94();
 						}
 					}

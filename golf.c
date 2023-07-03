@@ -120945,7 +120945,7 @@ void func_1225(var uParam0, var uParam1)//Position - 0x9386B
 		HUD::REMOVE_BLIP(&(uParam1->f_56));
 	}
 	uParam1->f_56 = func_1232(func_557(uParam1, iVar0), 0);
-	HUD::SET_BLIP_SPRITE(uParam1->f_56, 358);
+	HUD::SET_BLIP_SPRITE(uParam1->f_56, 358 /*RADAR_GOLF_FLAG*/);
 	func_1226(iVar0, bVar1);
 	HUD::SET_RADAR_ZOOM(SYSTEM::CEIL((1100f * fLocal_385)));
 	HUD::LOCK_MINIMAP_POSITION(fLocal_383, fLocal_384);

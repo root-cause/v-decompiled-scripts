@@ -16193,7 +16193,7 @@ void func_509(int iParam0)//Position - 0x13020
 		{
 			HUD::SET_BLIP_NAME_FROM_TEXT_FILE(func_90(iParam0), "KOTC_AREANAME" /* GXT: King of the Castle */);
 		}
-		HUD::SET_BLIP_SPRITE(func_90(iParam0), 438);
+		HUD::SET_BLIP_SPRITE(func_90(iParam0), 438 /*RADAR_KING_OF_THE_CASTLE*/);
 		func_510(&(Local_1239[iParam0 /*68*/].f_27), func_85(iParam0, 1));
 		if (!BitTest(bLocal_553, 13))
 		{

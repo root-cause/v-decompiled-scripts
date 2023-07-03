@@ -44478,7 +44478,7 @@ void func_313(struct<3> Param0)//Position - 0x339BF
 									PED::SET_BLOCKING_OF_NON_TEMPORARY_EVENTS(Local_1861[iVar0 /*25*/], true);
 									AUDIO::BLIP_SIREN(iLocal_782);
 									Local_1861[0 /*25*/].f_1 = func_178(iLocal_782, 1, 0);
-									HUD::SET_BLIP_SPRITE(Local_1861[0 /*25*/].f_1, 15);
+									HUD::SET_BLIP_SPRITE(Local_1861[0 /*25*/].f_1, 15 /*RADAR_POLICE_HELI_SPIN*/);
 									fLocal_277 = 1f;
 									Local_1861[iVar0 /*25*/].f_7 = 0;
 									Local_1861[iVar0 /*25*/].f_5++;

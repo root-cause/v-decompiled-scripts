@@ -8631,13 +8631,13 @@ void func_178(int iParam0, int iParam1)//Position - 0xBCF5
 	{
 		case 0:
 			*iParam1 = func_179(-1604.668f, 5239.1f, 3.01f, 0);
-			HUD::SET_BLIP_SPRITE(*iParam1, 66);
+			HUD::SET_BLIP_SPRITE(*iParam1, 66 /*RADAR_RANDOM_CHARACTER*/);
 			HUD::SET_BLIP_COLOUR(*iParam1, 42);
 			break;
 		
 		case 1:
 			*iParam1 = func_179(-1592.84f, 5214.04f, 3.01f, 0);
-			HUD::SET_BLIP_SPRITE(*iParam1, 400);
+			HUD::SET_BLIP_SPRITE(*iParam1, 400 /*RADAR_ABIGAIL*/);
 			HUD::SET_BLIP_COLOUR(*iParam1, 42);
 			break;
 		
@@ -8646,11 +8646,11 @@ void func_178(int iParam0, int iParam1)//Position - 0xBCF5
 			*iParam1 = func_179(190.26f, -956.35f, 29.63f, 0);
 			if ((BitTest(Global_113810.f_18577[2 /*6*/], 3) || BitTest(Global_113810.f_18577[4 /*6*/], 3)) || BitTest(Global_113810.f_18577[4 /*6*/], 3))
 			{
-				HUD::SET_BLIP_SPRITE(*iParam1, 381);
+				HUD::SET_BLIP_SPRITE(*iParam1, 381 /*RADAR_BARRY*/);
 			}
 			else
 			{
-				HUD::SET_BLIP_SPRITE(*iParam1, 66);
+				HUD::SET_BLIP_SPRITE(*iParam1, 66 /*RADAR_RANDOM_CHARACTER*/);
 			}
 			if (iParam0 == 2)
 			{
@@ -8666,18 +8666,18 @@ void func_178(int iParam0, int iParam1)//Position - 0xBCF5
 			*iParam1 = func_179(414f, -761f, 29f, 0);
 			if (BitTest(Global_113810.f_18577[2 /*6*/], 3) || BitTest(Global_113810.f_18577[3 /*6*/], 3))
 			{
-				HUD::SET_BLIP_SPRITE(*iParam1, 381);
+				HUD::SET_BLIP_SPRITE(*iParam1, 381 /*RADAR_BARRY*/);
 			}
 			else
 			{
-				HUD::SET_BLIP_SPRITE(*iParam1, 66);
+				HUD::SET_BLIP_SPRITE(*iParam1, 66 /*RADAR_RANDOM_CHARACTER*/);
 			}
 			HUD::SET_BLIP_COLOUR(*iParam1, 43);
 			break;
 		
 		case 9:
 			*iParam1 = func_179(-1622.89f, 4204.87f, 83.3f, 0);
-			HUD::SET_BLIP_SPRITE(*iParam1, 66);
+			HUD::SET_BLIP_SPRITE(*iParam1, 66 /*RADAR_RANDOM_CHARACTER*/);
 			HUD::SET_BLIP_COLOUR(*iParam1, 42);
 			break;
 		
@@ -8696,7 +8696,7 @@ void func_178(int iParam0, int iParam1)//Position - 0xBCF5
 			{
 				*iParam1 = func_179(637.02f, 119.7093f, 89.5f, 0);
 			}
-			HUD::SET_BLIP_SPRITE(*iParam1, 206);
+			HUD::SET_BLIP_SPRITE(*iParam1, 206 /*RADAR_EPSILON*/);
 			HUD::SET_BLIP_COLOUR(*iParam1, 42);
 			break;
 		
@@ -8710,7 +8710,7 @@ void func_178(int iParam0, int iParam1)//Position - 0xBCF5
 			{
 				*iParam1 = func_179(-63.8f, -809.5f, 321.8f, 0);
 			}
-			HUD::SET_BLIP_SPRITE(*iParam1, 382);
+			HUD::SET_BLIP_SPRITE(*iParam1, 382 /*RADAR_DOM*/);
 			HUD::SET_BLIP_COLOUR(*iParam1, 43);
 			break;
 		
@@ -8726,11 +8726,11 @@ void func_178(int iParam0, int iParam1)//Position - 0xBCF5
 			}
 			if ((BitTest(Global_113810.f_18577[21 /*6*/], 3) || BitTest(Global_113810.f_18577[22 /*6*/], 3)) || BitTest(Global_113810.f_18577[23 /*6*/], 3))
 			{
-				HUD::SET_BLIP_SPRITE(*iParam1, 405);
+				HUD::SET_BLIP_SPRITE(*iParam1, 405 /*RADAR_FANATIC*/);
 			}
 			else
 			{
-				HUD::SET_BLIP_SPRITE(*iParam1, 66);
+				HUD::SET_BLIP_SPRITE(*iParam1, 66 /*RADAR_RANDOM_CHARACTER*/);
 			}
 			if (iParam0 == 21)
 			{
@@ -8744,31 +8744,31 @@ void func_178(int iParam0, int iParam1)//Position - 0xBCF5
 		
 		case 27:
 			*iParam1 = func_179(-1104.93f, 291.25f, 64.3f, 0);
-			HUD::SET_BLIP_SPRITE(*iParam1, 66);
+			HUD::SET_BLIP_SPRITE(*iParam1, 66 /*RADAR_RANDOM_CHARACTER*/);
 			HUD::SET_BLIP_COLOUR(*iParam1, 44);
 			break;
 		
 		case 30:
 			*iParam1 = func_179(-1104.93f, 291.25f, 64.3f, 0);
-			HUD::SET_BLIP_SPRITE(*iParam1, 385);
+			HUD::SET_BLIP_SPRITE(*iParam1, 385 /*RADAR_JOSH*/);
 			HUD::SET_BLIP_COLOUR(*iParam1, 44);
 			break;
 		
 		case 34:
 			*iParam1 = func_179(-303.82f, 6211.29f, 31.05f, 0);
-			HUD::SET_BLIP_SPRITE(*iParam1, 386);
+			HUD::SET_BLIP_SPRITE(*iParam1, 386 /*RADAR_MINUTE*/);
 			HUD::SET_BLIP_COLOUR(*iParam1, 44);
 			break;
 		
 		case 43:
 			*iParam1 = func_179(-44.75f, -1288.67f, 28.21f, 0);
-			HUD::SET_BLIP_SPRITE(*iParam1, 149);
+			HUD::SET_BLIP_SPRITE(*iParam1, 149 /*RADAR_CELEBRITY_THEFT*/);
 			HUD::SET_BLIP_COLOUR(*iParam1, 44);
 			break;
 		
 		case 46:
 			*iParam1 = func_179(-149.75f, 285.81f, 93.67f, 0);
-			HUD::SET_BLIP_SPRITE(*iParam1, 66);
+			HUD::SET_BLIP_SPRITE(*iParam1, 66 /*RADAR_RANDOM_CHARACTER*/);
 			HUD::SET_BLIP_COLOUR(*iParam1, 43);
 			break;
 		
@@ -8782,7 +8782,7 @@ void func_178(int iParam0, int iParam1)//Position - 0xBCF5
 			{
 				*iParam1 = func_179(-257.22f, 292.85f, 90.63f, 0);
 			}
-			HUD::SET_BLIP_SPRITE(*iParam1, 389);
+			HUD::SET_BLIP_SPRITE(*iParam1, 389 /*RADAR_PAPARAZZO*/);
 			HUD::SET_BLIP_COLOUR(*iParam1, 43);
 			break;
 	}
