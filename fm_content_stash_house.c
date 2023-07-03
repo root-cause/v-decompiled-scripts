@@ -198819,15 +198819,15 @@ void func_3866(bool bParam0, bool bParam1)//Position - 0xF9404
 			break;
 		
 		case 4:
-			Global_1949268.f_29 = -1016367921;
+			Global_1949268.f_29 = joaat("Crack");
 			break;
 		
 		case 2:
-			Global_1949268.f_29 = 2022426206;
+			Global_1949268.f_29 = joaat("FAKE_MONEY");
 			break;
 		
 		case 0:
-			Global_1949268.f_29 = -1892245545;
+			Global_1949268.f_29 = joaat("FAKE_IDS");
 			break;
 		
 		case 6:

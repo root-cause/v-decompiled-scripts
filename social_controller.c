@@ -2607,7 +2607,7 @@ void func_56(var uParam0, bool bParam1)//Position - 0x2747
 							{
 								switch (iVar2)
 								{
-									case -877581966:
+									case joaat("crew_message"):
 										if (MISC::GET_PROFILE_SETTING(802) == 1)
 										{
 											SOCIALCLUB::SC_INBOX_MESSAGE_DO_APPLY(iVar1);
@@ -2618,7 +2618,7 @@ void func_56(var uParam0, bool bParam1)//Position - 0x2747
 										}
 										break;
 									
-									case 1988401830:
+									case joaat("gs_award"):
 										func_167(iVar1, 0);
 										break;
 									}
@@ -2644,7 +2644,7 @@ void func_56(var uParam0, bool bParam1)//Position - 0x2747
 					iVar2 = SOCIALCLUB::SC_INBOX_GET_MESSAGE_TYPE_AT_INDEX(iVar1);
 					switch (iVar2)
 					{
-						case -877581966:
+						case joaat("crew_message"):
 							if (bParam1)
 							{
 								if (func_54() && func_51())
@@ -2665,10 +2665,10 @@ void func_56(var uParam0, bool bParam1)//Position - 0x2747
 							}
 							break;
 						
-						case -302691102:
+						case joaat("StatUpdate"):
 							break;
 						
-						case -1940449706:
+						case joaat("mission_verified"):
 							if (bParam1)
 							{
 								if (!uParam0->f_167)
@@ -2700,7 +2700,7 @@ void func_56(var uParam0, bool bParam1)//Position - 0x2747
 							}
 							break;
 						
-						case 1894043873:
+						case joaat("rockstar_message"):
 							if ((func_54() && func_51()) && Global_262145.f_25488 /* Tunable: 1042335322 */)
 							{
 								SOCIALCLUB::SC_INBOX_MESSAGE_DO_APPLY(iVar1);
@@ -2715,7 +2715,7 @@ void func_56(var uParam0, bool bParam1)//Position - 0x2747
 							}
 							break;
 						
-						case 563149281:
+						case joaat("UGCStatUpdate"):
 							if (bParam1)
 							{
 								if (!uParam0->f_167)
@@ -2757,7 +2757,7 @@ void func_56(var uParam0, bool bParam1)//Position - 0x2747
 							}
 							break;
 						
-						case -89752472:
+						case joaat("mission_published"):
 							if (bParam1)
 							{
 								if (!uParam0->f_167)
@@ -2837,7 +2837,7 @@ void func_56(var uParam0, bool bParam1)//Position - 0x2747
 							SOCIALCLUB::SC_INBOX_SET_MESSAGE_AS_READ_AT_INDEX(iVar1);
 							break;
 						
-						case 1988401830:
+						case joaat("gs_award"):
 							func_167(iVar1, 0);
 							break;
 						
@@ -5338,11 +5338,11 @@ void func_167(int iParam0, int iParam1)//Position - 0x557C
 
 int func_168(int iParam0)//Position - 0x567B
 {
-	if (iParam0 == -877581966)
+	if (iParam0 == joaat("crew_message"))
 	{
 		return 1;
 	}
-	if (iParam0 == 1988401830)
+	if (iParam0 == joaat("gs_award"))
 	{
 		return 1;
 	}
