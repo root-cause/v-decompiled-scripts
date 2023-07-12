@@ -2786,7 +2786,7 @@ void func_56(var uParam0, bool bParam1)//Position - 0x2747
 							}
 							break;
 						
-						case 1662919852:
+						case joaat("crew_challenge_ended"):
 							SOCIALCLUB::SC_INBOX_SET_MESSAGE_AS_READ_AT_INDEX(iVar1);
 							break;
 						
@@ -2822,7 +2822,7 @@ void func_56(var uParam0, bool bParam1)//Position - 0x2747
 							}
 							break;
 						
-						case -775483672:
+						case joaat("tournament_winner_message"):
 							if (func_54() && func_51())
 							{
 								if (bParam1)

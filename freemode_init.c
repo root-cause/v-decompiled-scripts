@@ -5011,7 +5011,7 @@ void func_171(int iParam0)//Position - 0x560E
 			iVar1 = -1123673972;
 			break;
 		
-		case -1132415669:
+		case joaat("E1Aa87D7tkavytEqudMu7A"):
 			iVar1 = 1167917655;
 			break;
 		

@@ -41028,7 +41028,7 @@ void func_129(int iParam0, var uParam1, int iParam2)//Position - 0x35F57
 					break;
 				
 				case joaat("CLO_SMM_B_3_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22556 /* Tunable: 749770636 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22556 /* Tunable: SMUG_MALE_AND_FEMALE_MASKS_SAN_ANDREAS_REPUBLIC_TIGHT_SKI */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_3_18"):
@@ -41719,7 +41719,7 @@ void func_129(int iParam0, var uParam1, int iParam2)//Position - 0x35F57
 					break;
 				
 				case joaat("CLO_SMM_PH_1_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22352 /* Tunable: -1530220146 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22352 /* Tunable: SMUG_MALE_AND_FEMALE_HAT_GRAY_AND_RED_PEAKED_CAP */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_PH_1_7"):
@@ -43208,7 +43208,7 @@ void func_129(int iParam0, var uParam1, int iParam2)//Position - 0x35F57
 					break;
 				
 				case joaat("CLO_SMF_B_3_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22556 /* Tunable: 749770636 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22556 /* Tunable: SMUG_MALE_AND_FEMALE_MASKS_SAN_ANDREAS_REPUBLIC_TIGHT_SKI */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_3_18"):
@@ -43899,7 +43899,7 @@ void func_129(int iParam0, var uParam1, int iParam2)//Position - 0x35F57
 					break;
 				
 				case joaat("CLO_SMF_PH_1_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22352 /* Tunable: -1530220146 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22352 /* Tunable: SMUG_MALE_AND_FEMALE_HAT_GRAY_AND_RED_PEAKED_CAP */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_PH_1_7"):

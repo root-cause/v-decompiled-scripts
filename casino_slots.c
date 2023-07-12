@@ -2502,7 +2502,7 @@ void func_60()//Position - 0x2703
 	}
 	if (Global_262145.f_27014 /* Tunable: ENABLE_SLOT_MACHINE_HEAVY */)
 	{
-		Var0.f_0 = -1867894674;
+		Var0.f_0 = joaat("SLOTMACHINE");
 		Var0.f_1 = joaat("standard");
 		Var0.f_2 = iLocal_2121;
 		if (func_196())

@@ -57139,7 +57139,7 @@ float func_534()//Position - 0x37EF1
 	{
 		return Global_262145.f_11792 /* Tunable: PENNED_IN_PEN_FINISHING_SIZE */;
 	}
-	return Global_262145.f_19012 /* Tunable: 1788821790 */;
+	return Global_262145.f_19012 /* Tunable: BIKER_CAGED_IN_AREA_END_SIZE */;
 }
 
 float func_535()//Position - 0x37F15
@@ -83540,7 +83540,7 @@ float func_1169()//Position - 0x53717
 	{
 		return Global_262145.f_11791 /* Tunable: PENNED_IN_PEN_STARTING_SIZE */;
 	}
-	return Global_262145.f_19011 /* Tunable: 875192165 */;
+	return Global_262145.f_19011 /* Tunable: BIKER_CAGED_IN_AREA_START_SIZE */;
 }
 
 void func_1170()//Position - 0x5373B

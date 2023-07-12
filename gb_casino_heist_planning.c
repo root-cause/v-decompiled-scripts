@@ -29585,16 +29585,16 @@ int func_804(int iParam0)//Position - 0x20F60
 	switch (iParam0)
 	{
 		case 0:
-			return Global_262145.f_29012 /* Tunable: -1638885821 */;
+			return Global_262145.f_29012 /* Tunable: CH_VAULT_MAX_TAKE_CASH */;
 		
 		case 1:
-			return Global_262145.f_29014 /* Tunable: -582734553 */;
+			return Global_262145.f_29014 /* Tunable: CH_VAULT_MAX_TAKE_GOLD */;
 		
 		case 2:
-			return Global_262145.f_29013 /* Tunable: 1934398910 */;
+			return Global_262145.f_29013 /* Tunable: CH_VAULT_MAX_TAKE_ART */;
 		
 		case 3:
-			return Global_262145.f_29015 /* Tunable: 1277889925 */;
+			return Global_262145.f_29015 /* Tunable: CH_VAULT_MAX_TAKE_DIAMONDS */;
 		
 		default:
 	}

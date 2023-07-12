@@ -92661,7 +92661,7 @@ void func_1519()//Position - 0x93855
 				iLocal_199 = 5;
 				iLocal_198 = -1;
 			}
-			if (Global_262145.f_24261 /* Tunable: ENABLE_TA_MENU */ && Global_262145.f_24180 /* Tunable: -793096515 */)
+			if (Global_262145.f_24261 /* Tunable: ENABLE_TA_MENU */ && Global_262145.f_24180 /* Tunable: ENABLE_AC_ASSAULT_RACE_CREATOR */)
 			{
 				iLocal_216 = 0;
 				iLocal_201 = 1;
@@ -92694,7 +92694,7 @@ void func_1519()//Position - 0x93855
 					iLocal_218 = -1;
 				}
 			}
-			else if ((Global_262145.f_24261 /* Tunable: ENABLE_TA_MENU */ && iLocal_1128[2] != iLocal_196) && !Global_262145.f_24180 /* Tunable: -793096515 */)
+			else if ((Global_262145.f_24261 /* Tunable: ENABLE_TA_MENU */ && iLocal_1128[2] != iLocal_196) && !Global_262145.f_24180 /* Tunable: ENABLE_AC_ASSAULT_RACE_CREATOR */)
 			{
 				iLocal_216 = 0;
 				iLocal_201 = 1;
@@ -94257,11 +94257,11 @@ void func_1536()//Position - 0x95EA8
 							func_1549(0, iLocal_213, bLocal_1145, iLocal_213, func_352(PLAYER::PLAYER_ID()), "PM_ADD_CTF" /* GXT: Add Capture */, 0, 0, 0);
 							func_1549(0, iLocal_212, bLocal_1145, iLocal_212, func_352(PLAYER::PLAYER_ID()), "PM_ADD_LTS" /* GXT: Add Last Team Standing */, 0, 0, 0);
 							func_1549(0, iLocal_206, bLocal_1145, iLocal_206, func_352(PLAYER::PLAYER_ID()), "PM_ADD_MISSIONS" /* GXT: Add Mission */, 0, 0, 0);
-							if (Global_262145.f_24261 /* Tunable: ENABLE_TA_MENU */ && Global_262145.f_24180 /* Tunable: -793096515 */)
+							if (Global_262145.f_24261 /* Tunable: ENABLE_TA_MENU */ && Global_262145.f_24180 /* Tunable: ENABLE_AC_ASSAULT_RACE_CREATOR */)
 							{
 								func_1549(0, iLocal_216, bLocal_1145, iLocal_216, func_353(2, 0, 0), "PM_INF_TAR_ADD" /* GXT: Add Target Assault Races */, 0, 0, 0);
 							}
-							else if ((Global_262145.f_24261 /* Tunable: ENABLE_TA_MENU */ && iLocal_1128[2] != iLocal_196) && !Global_262145.f_24180 /* Tunable: -793096515 */)
+							else if ((Global_262145.f_24261 /* Tunable: ENABLE_TA_MENU */ && iLocal_1128[2] != iLocal_196) && !Global_262145.f_24180 /* Tunable: ENABLE_AC_ASSAULT_RACE_CREATOR */)
 							{
 								func_1549(0, iLocal_216, bLocal_1145, iLocal_216, func_353(2, 0, 0), "PM_INF_TAR_ADD" /* GXT: Add Target Assault Races */, 0, 0, 0);
 							}
@@ -95177,7 +95177,7 @@ void func_1545()//Position - 0x98321
 	int iVar0;
 	
 	iVar0 = 0;
-	if (Global_262145.f_24180 /* Tunable: -793096515 */)
+	if (Global_262145.f_24180 /* Tunable: ENABLE_AC_ASSAULT_RACE_CREATOR */)
 	{
 		iLocal_219 = iVar0;
 		iVar0++;
@@ -95234,7 +95234,7 @@ void func_1545()//Position - 0x98321
 		iLocal_230 = iVar0;
 		iVar0++;
 	}
-	else if (iLocal_1128[2] != iLocal_196 && !Global_262145.f_24180 /* Tunable: -793096515 */)
+	else if (iLocal_1128[2] != iLocal_196 && !Global_262145.f_24180 /* Tunable: ENABLE_AC_ASSAULT_RACE_CREATOR */)
 	{
 		iLocal_219 = 0;
 		iLocal_220 = 1;

@@ -516,7 +516,7 @@ void func_7()//Position - 0x2D5
 		}
 		if (Global_2694526)
 		{
-			if (func_12(&uLocal_305, Global_262145.f_17620 /* Tunable: -447825740 */, 0))
+			if (func_12(&uLocal_305, Global_262145.f_17620 /* Tunable: CASINO_PRIORITY_SAVE_COOLDOWN */, 0))
 			{
 				if (NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 				{
@@ -667,7 +667,7 @@ void func_16()//Position - 0x566
 		{
 			if (Global_2694524)
 			{
-				if (func_12(&uLocal_303, Global_262145.f_17618 /* Tunable: -1662356006 */, 0))
+				if (func_12(&uLocal_303, Global_262145.f_17618 /* Tunable: BIKER_MINOR_SAVE_COOLDOWN */, 0))
 				{
 					func_9(-174779026, 7, 0);
 					Global_2694524 = 0;
@@ -677,7 +677,7 @@ void func_16()//Position - 0x566
 			}
 			if (Global_2694525)
 			{
-				if (func_12(&uLocal_303, Global_262145.f_17619 /* Tunable: 1376488954 */, 0))
+				if (func_12(&uLocal_303, Global_262145.f_17619 /* Tunable: BIKER_MAJOR_SAVE_COOLDOWN */, 0))
 				{
 					if (NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 					{

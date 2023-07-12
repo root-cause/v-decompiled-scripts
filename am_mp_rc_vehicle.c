@@ -120674,7 +120674,7 @@ int func_1226(int iParam0)//Position - 0x9B9A8
 			}
 			else
 			{
-				return Global_262145.f_19434 /* Tunable: 1817232900 */;
+				return Global_262145.f_19434 /* Tunable: SV_MECHANIC_COOLDOWN */;
 			}
 			break;
 		

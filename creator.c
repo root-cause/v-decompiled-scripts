@@ -110789,7 +110789,7 @@ int func_839()//Position - 0x85E33
 	{
 		return 1;
 	}
-	if (!Global_262145.f_24180 /* Tunable: -793096515 */)
+	if (!Global_262145.f_24180 /* Tunable: ENABLE_AC_ASSAULT_RACE_CREATOR */)
 	{
 		return 0;
 	}
