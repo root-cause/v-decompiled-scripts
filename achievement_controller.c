@@ -115,14 +115,14 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_65 = 0;
 	func_186(iLocal_66);
 	func_185();
-	func_183(&Global_4542602);
-	func_182(&Global_4542602, 1);
+	func_183(&Global_4543283);
+	func_182(&Global_4543283, 1);
 	func_180(&iLocal_67);
 	while (true)
 	{
-		if (Global_32534 != iLocal_65)
+		if (Global_33079 != iLocal_65)
 		{
-			if (iLocal_65 == 0 && Global_32534 != 0)
+			if (iLocal_65 == 0 && Global_33079 != 0)
 			{
 				if (MISC::IS_PS3_VERSION() || func_179())
 				{
@@ -133,11 +133,11 @@ void __EntryFunction__()//Position - 0x0
 					func_178("CHEAT_ACHIEVE" /* GXT: Cheats have been activated. Achievements will not be awarded for the duration of this session. */, -1);
 				}
 			}
-			if (iLocal_65 != 0 && Global_32534 == 0)
+			if (iLocal_65 != 0 && Global_33079 == 0)
 			{
 			}
 		}
-		iLocal_65 = Global_32534;
+		iLocal_65 = Global_33079;
 		if (!func_177(14))
 		{
 			if (!PLAYER::HAS_ACHIEVEMENT_BEEN_PASSED(24))
@@ -148,7 +148,7 @@ void __EntryFunction__()//Position - 0x0
 			{
 				func_166();
 			}
-			if (Global_32293)
+			if (Global_32838)
 			{
 				if (!PLAYER::HAS_ACHIEVEMENT_BEEN_PASSED(12))
 				{
@@ -163,7 +163,7 @@ void __EntryFunction__()//Position - 0x0
 						func_144(12, 1);
 					}
 				}
-				Global_32293 = 0;
+				Global_32838 = 0;
 			}
 			if (ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()))
 			{
@@ -188,12 +188,12 @@ void __EntryFunction__()//Position - 0x0
 					}
 				}
 			}
-			func_123(&Global_4542602);
+			func_123(&Global_4543283);
 			func_1();
 		}
 		else
 		{
-			func_123(&Global_4542602);
+			func_123(&Global_4543283);
 			func_1();
 		}
 		SYSTEM::WAIT(0);
@@ -205,11 +205,11 @@ void func_1()//Position - 0x20A
 	bool bVar0;
 	int iVar1;
 	
-	if (!func_122(&Global_4542602))
+	if (!func_122(&Global_4543283))
 	{
 		return;
 	}
-	if (!Global_78689)
+	if (!Global_79248)
 	{
 		if (iLocal_72)
 		{
@@ -319,7 +319,7 @@ void func_2()//Position - 0x29A
 	}
 	if (!PLAYER::HAS_ACHIEVEMENT_BEEN_PASSED(41))
 	{
-		if (BitTest(Global_2794162.f_2327.f_18, 1))
+		if (BitTest(Global_2738587.f_2327.f_18, 1))
 		{
 			func_144(41, 1);
 		}
@@ -361,7 +361,7 @@ int func_3(bool bParam0)//Position - 0x438
 	{
 		return 0;
 	}
-	if (!Global_78689)
+	if (!Global_79248)
 	{
 		return 0;
 	}
@@ -426,13 +426,13 @@ int func_6(var uParam0)//Position - 0x4EC
 		iVar1 = func_7();
 		if (iVar1 > -1)
 		{
-			Global_2805862 = 0;
+			Global_2750546 = 0;
 			iVar0 = iVar1;
 		}
 		else
 		{
 			iVar0 = 0;
-			Global_2805862 = 1;
+			Global_2750546 = 1;
 		}
 	}
 	return iVar0;
@@ -440,7 +440,7 @@ int func_6(var uParam0)//Position - 0x4EC
 
 int func_7()//Position - 0x520
 {
-	return Global_1574918;
+	return Global_1574925;
 }
 
 bool func_8(int iParam0, int iParam1)//Position - 0x52C
@@ -466,7 +466,7 @@ int func_9(bool bParam0)//Position - 0x548
 	{
 		return 0;
 	}
-	if (!Global_78689)
+	if (!Global_79248)
 	{
 		return 0;
 	}
@@ -536,7 +536,7 @@ int func_11(int iParam0, int iParam1)//Position - 0x63E
 	int iVar0;
 	var uVar1;
 	
-	if (iParam0 != 14385)
+	if (iParam0 != 14626)
 	{
 		iVar0 = func_12(iParam0, iParam1);
 		if (STATS::STAT_GET_INT(iVar0, &uVar1, -1))
@@ -595,7 +595,7 @@ int func_16(bool bParam0)//Position - 0x6DA
 	{
 		return 0;
 	}
-	if (!Global_78689)
+	if (!Global_79248)
 	{
 		return 0;
 	}
@@ -1261,27 +1261,59 @@ bool func_26(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0x
 			break;
 		
 		case joaat("WEAPON_COMBATPISTOL"):
-			switch (iParam2)
+			if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 			{
-				case 0:
-					func_103(uParam0, joaat("COMPONENT_COMBATPISTOL_CLIP_01"), joaat("WAPClip"), 1, 1);
-					break;
-				
-				case 1:
-					func_103(uParam0, joaat("COMPONENT_COMBATPISTOL_CLIP_02"), joaat("WAPClip"), 2, 0);
-					break;
-				
-				case 2:
-					func_103(uParam0, joaat("COMPONENT_AT_PI_FLSH"), joaat("WAPFlshLasr"), 1, 0);
-					break;
-				
-				case 3:
-					func_103(uParam0, joaat("COMPONENT_AT_PI_SUPP"), joaat("WAPSupp"), 1, 0);
-					break;
-				
-				case 4:
-					func_103(uParam0, joaat("COMPONENT_COMBATPISTOL_VARMOD_LOWRIDER"), joaat("gun_root"), 1, 0);
-					break;
+				switch (iParam2)
+				{
+					case 0:
+						func_103(uParam0, joaat("COMPONENT_COMBATPISTOL_CLIP_01"), joaat("WAPClip"), 1, 1);
+						break;
+					
+					case 1:
+						func_103(uParam0, joaat("COMPONENT_COMBATPISTOL_CLIP_02"), joaat("WAPClip"), 2, 0);
+						break;
+					
+					case 2:
+						func_103(uParam0, joaat("COMPONENT_AT_PI_FLSH"), joaat("WAPFlshLasr"), 1, 0);
+						break;
+					
+					case 3:
+						func_103(uParam0, joaat("COMPONENT_AT_PI_SUPP"), joaat("WAPSupp"), 1, 0);
+						break;
+					
+					case 4:
+						func_103(uParam0, joaat("COMPONENT_COMBATPISTOL_VARMOD_LOWRIDER"), joaat("gun_root"), 1, 0);
+						break;
+					
+					case 5:
+						func_103(uParam0, joaat("COMPONENT_COMBATPISTOL_VARMOD_XMAS23"), joaat("gun_root"), 2, 0);
+						break;
+				}
+			}
+			else
+			{
+				switch (iParam2)
+				{
+					case 0:
+						func_103(uParam0, joaat("COMPONENT_COMBATPISTOL_CLIP_01"), joaat("WAPClip"), 1, 1);
+						break;
+					
+					case 1:
+						func_103(uParam0, joaat("COMPONENT_COMBATPISTOL_CLIP_02"), joaat("WAPClip"), 2, 0);
+						break;
+					
+					case 2:
+						func_103(uParam0, joaat("COMPONENT_AT_PI_FLSH"), joaat("WAPFlshLasr"), 1, 0);
+						break;
+					
+					case 3:
+						func_103(uParam0, joaat("COMPONENT_AT_PI_SUPP"), joaat("WAPSupp"), 1, 0);
+						break;
+					
+					case 4:
+						func_103(uParam0, joaat("COMPONENT_COMBATPISTOL_VARMOD_LOWRIDER"), joaat("gun_root"), 1, 0);
+						break;
+					}
 			}
 			break;
 		
@@ -2018,6 +2050,10 @@ bool func_26(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0x
 						case 3:
 							func_103(uParam0, joaat("COMPONENT_AT_SCOPE_MAX"), joaat("WAPScop"), 2, 0);
 							break;
+						
+						case 4:
+							func_103(uParam0, joaat("COMPONENT_HEAVYSNIPER_VARMOD_XMAS23"), joaat("gun_root"), 1, 0);
+							break;
 					}
 				}
 				else
@@ -2040,6 +2076,27 @@ bool func_26(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0x
 							func_103(uParam0, joaat("COMPONENT_GUNRUN_MK2_UPGRADE"), joaat("Gun_GripR"), 1, 0);
 							break;
 						}
+				}
+			}
+			else if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
+			{
+				switch (iParam2)
+				{
+					case 0:
+						func_103(uParam0, joaat("COMPONENT_HEAVYSNIPER_CLIP_01"), joaat("WAPClip"), 1, 1);
+						break;
+					
+					case 1:
+						func_103(uParam0, joaat("COMPONENT_AT_SCOPE_LARGE"), joaat("WAPScop"), 1, 1);
+						break;
+					
+					case 2:
+						func_103(uParam0, joaat("COMPONENT_AT_SCOPE_MAX"), joaat("WAPScop"), 2, 0);
+						break;
+					
+					case 3:
+						func_103(uParam0, joaat("COMPONENT_HEAVYSNIPER_VARMOD_XMAS23"), joaat("gun_root"), 1, 0);
+						break;
 				}
 			}
 			else
@@ -3125,6 +3182,10 @@ bool func_26(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0x
 						case 8:
 							func_103(uParam0, joaat("COMPONENT_SPECIALCARBINE_VARMOD_LOWRIDER"), joaat("gun_root"), 1, 0);
 							break;
+						
+						case 9:
+							func_103(uParam0, joaat("COMPONENT_SPECIALCARBINE_VARMOD_XMAS23"), joaat("gun_root"), 2, 0);
+							break;
 					}
 				}
 				else
@@ -3167,6 +3228,47 @@ bool func_26(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0x
 							func_103(uParam0, joaat("COMPONENT_GUNRUN_MK2_UPGRADE"), joaat("Gun_GripR"), 1, 0);
 							break;
 						}
+				}
+			}
+			else if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
+			{
+				switch (iParam2)
+				{
+					case 0:
+						func_103(uParam0, joaat("COMPONENT_SPECIALCARBINE_CLIP_01"), joaat("WAPClip"), 1, 1);
+						break;
+					
+					case 1:
+						func_103(uParam0, joaat("COMPONENT_SPECIALCARBINE_CLIP_02"), joaat("WAPClip"), 2, 0);
+						break;
+					
+					case 2:
+						func_103(uParam0, joaat("COMPONENT_SPECIALCARBINE_CLIP_03"), joaat("WAPClip"), 3, 0);
+						break;
+					
+					case 3:
+						func_103(uParam0, joaat("COMPONENT_AT_AR_FLSH"), joaat("WAPFlsh"), 1, 0);
+						break;
+					
+					case 4:
+						func_103(uParam0, joaat("COMPONENT_AT_SCOPE_MEDIUM"), joaat("WAPScop"), 1, 0);
+						break;
+					
+					case 5:
+						func_103(uParam0, joaat("COMPONENT_AT_AR_SUPP_02"), joaat("WAPSupp"), 1, 0);
+						break;
+					
+					case 6:
+						func_103(uParam0, joaat("COMPONENT_AT_AR_AFGRIP"), joaat("WAPGrip"), 1, 0);
+						break;
+					
+					case 7:
+						func_103(uParam0, joaat("COMPONENT_SPECIALCARBINE_VARMOD_LOWRIDER"), joaat("gun_root"), 1, 0);
+						break;
+					
+					case 8:
+						func_103(uParam0, joaat("COMPONENT_SPECIALCARBINE_VARMOD_XMAS23"), joaat("gun_root"), 2, 0);
+						break;
 				}
 			}
 			else
@@ -4574,6 +4676,23 @@ bool func_26(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0x
 			}
 			break;
 		
+		case joaat("WEAPON_BATTLERIFLE"):
+			switch (iParam2)
+			{
+				case 0:
+					func_103(uParam0, joaat("COMPONENT_BATTLERIFLE_CLIP_01"), joaat("WAPClip"), 1, 1);
+					break;
+				
+				case 1:
+					func_103(uParam0, joaat("COMPONENT_BATTLERIFLE_CLIP_02"), joaat("WAPClip"), 2, 0);
+					break;
+				
+				case 2:
+					func_103(uParam0, joaat("COMPONENT_AT_AR_SUPP"), joaat("WAPSupp"), 3, 0);
+					break;
+			}
+			break;
+		
 		default:
 			iVar51 = func_104(iParam1, &uVar54);
 			if (iVar51 != -1)
@@ -4692,7 +4811,7 @@ bool func_26(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0x
 	return uParam0->f_4 != joaat("WAPInvalid");
 }
 
-int func_27(int iParam0, int iParam1)//Position - 0x6659
+int func_27(int iParam0, int iParam1)//Position - 0x6924
 {
 	int iVar0;
 	float fVar1;
@@ -5467,21 +5586,21 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 					
 					case joaat("COMPONENT_AT_PI_FLSH"):
 						iVar0 = 1675;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4347 /* Tunable: WEAPONADDON_PISTOL_FLSH_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4170 /* Tunable: WEAPONADDON_PISTOL_FLSH_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_PI_SUPP_02"):
 						iVar0 = 12050;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4348 /* Tunable: WEAPONADDON_PISTOL_ENGRAVED_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4171 /* Tunable: WEAPONADDON_PISTOL_ENGRAVED_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_PISTOL_VARMOD_LUXE"):
-						iVar0 = Global_262145.f_11212 /* Tunable: LUXE1_ADDONSPISTOL_YUSUF_AMIR_LUXURY_FINISH */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4425));
+						iVar0 = Global_262145.f_11239 /* Tunable: LUXE1_ADDONSPISTOL_YUSUF_AMIR_LUXURY_FINISH */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4248));
 						break;
 					
 					case joaat("COMPONENT_GUNRUN_MK2_UPGRADE"):
-						iVar0 = Global_262145.f_21373 /* Tunable: GR_WEAPON_UPGRADES_PISTOL_MK_II */;
+						iVar0 = Global_262145.f_21403 /* Tunable: GR_WEAPON_UPGRADES_PISTOL_MK_II */;
 						break;
 				}
 				break;
@@ -5494,23 +5613,27 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_COMBATPISTOL_CLIP_02"):
-						iVar0 = Global_262145.f_21259 /* Tunable: -1714511790 */;
+						iVar0 = Global_262145.f_21289 /* Tunable: -1714511790 */;
 						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2896 /* Tunable: WEAPONADDON_COMBATPISTOL_CLIP_02_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_PI_FLSH"):
 						iVar0 = 1825;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4349 /* Tunable: WEAPONADDON_COMBATPISTOL_FLSH_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4172 /* Tunable: WEAPONADDON_COMBATPISTOL_FLSH_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_PI_SUPP"):
-						iVar0 = Global_262145.f_21260 /* Tunable: -83416429 */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4350 /* Tunable: WEAPONADDON_COMBATPISTOL_SUPP_EXPENDITURE_TUNABLE */));
+						iVar0 = Global_262145.f_21290 /* Tunable: -83416429 */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4173 /* Tunable: WEAPONADDON_COMBATPISTOL_SUPP_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_COMBATPISTOL_VARMOD_LOWRIDER"):
-						iVar0 = Global_262145.f_12604 /* Tunable: WEAPONADDONCOMBAT_PISTOL_YUSUF_AMIR_LUXURY_FINISH */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4420 /* Tunable: WEAPONADDON_COMBATPISTOL_ENGRAVED_EXPENDITURE_TUNABLE */));
+						iVar0 = Global_262145.f_12631 /* Tunable: WEAPONADDONCOMBAT_PISTOL_YUSUF_AMIR_LUXURY_FINISH */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4243 /* Tunable: WEAPONADDON_COMBATPISTOL_ENGRAVED_EXPENDITURE_TUNABLE */));
+						break;
+					
+					case joaat("COMPONENT_COMBATPISTOL_VARMOD_XMAS23"):
+						iVar0 = 0;
 						break;
 				}
 				break;
@@ -5529,21 +5652,21 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 					
 					case joaat("COMPONENT_AT_PI_FLSH"):
 						iVar0 = 1975;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4351 /* Tunable: WEAPONADDON_APPISTOL_FLSH_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4174 /* Tunable: WEAPONADDON_APPISTOL_FLSH_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_PI_SUPP"):
 						iVar0 = 12200;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4352 /* Tunable: WEAPONADDON_APPISTOL_SUPP_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4175 /* Tunable: WEAPONADDON_APPISTOL_SUPP_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_APPISTOL_VARMOD_LUXE"):
-						iVar0 = Global_262145.f_11211 /* Tunable: LUXE1_ADDONSAP_PISTOL_GILDED_GUN_METAL_FINISH */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4414 /* Tunable: WEAPONADDON_APPPISTOL_ENGRAVED_EXPENDITURE_TUNABLE */));
+						iVar0 = Global_262145.f_11238 /* Tunable: LUXE1_ADDONSAP_PISTOL_GILDED_GUN_METAL_FINISH */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4237 /* Tunable: WEAPONADDON_APPPISTOL_ENGRAVED_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_APPISTOL_VARMOD_SECURITY"):
-						iVar0 = Global_262145.f_32220 /* Tunable: FIXER_THE_STUDIO_FINISH */;
+						iVar0 = Global_262145.f_32335 /* Tunable: FIXER_THE_STUDIO_FINISH */;
 						break;
 				}
 				break;
@@ -5562,26 +5685,26 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 					
 					case joaat("COMPONENT_AT_PI_FLSH"):
 						iVar0 = 1900;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4355 /* Tunable: WEAPONADDON_MICROSMG_FLSH_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4178 /* Tunable: WEAPONADDON_MICROSMG_FLSH_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MACRO"):
 						iVar0 = 10800;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4357 /* Tunable: WEAPONADDON_MICROSMG_SCOPE_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4180 /* Tunable: WEAPONADDON_MICROSMG_SCOPE_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP_02"):
 						iVar0 = 12150;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4356 /* Tunable: WEAPONADDON_MICROSMG_SUPP_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4179 /* Tunable: WEAPONADDON_MICROSMG_SUPP_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_MICROSMG_VARMOD_LUXE"):
-						iVar0 = Global_262145.f_11215 /* Tunable: LUXE1_ADDONSMICRO_SMG_YUSUF_AMIR_LUXURY_FINISH */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4424 /* Tunable: WEAPONADDON_MICROSMG_ENGRAVED_EXPENDITURE_TUNABLE */));
+						iVar0 = Global_262145.f_11242 /* Tunable: LUXE1_ADDONSMICRO_SMG_YUSUF_AMIR_LUXURY_FINISH */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4247 /* Tunable: WEAPONADDON_MICROSMG_ENGRAVED_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_MICROSMG_VARMOD_SECURITY"):
-						iVar0 = Global_262145.f_32219 /* Tunable: FIXER_THE_WEED_FINISH */;
+						iVar0 = Global_262145.f_32334 /* Tunable: FIXER_THE_WEED_FINISH */;
 						break;
 					
 					case joaat("COMPONENT_MICROSMG_VARMOD_XM3"):
@@ -5607,31 +5730,31 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_SMG_CLIP_03"):
-						iVar0 = Global_262145.f_16767 /* Tunable: ADDONS_SMG_DRUM_MAGAZINE */;
+						iVar0 = Global_262145.f_16795 /* Tunable: ADDONS_SMG_DRUM_MAGAZINE */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
 						iVar0 = 2050;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4358 /* Tunable: WEAPONADDON_SMG_FLSH_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4181 /* Tunable: WEAPONADDON_SMG_FLSH_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MACRO_02"):
 						iVar0 = 10825;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4360 /* Tunable: WEAPONADDON_SMG_SCOPE_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4183 /* Tunable: WEAPONADDON_SMG_SCOPE_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_PI_SUPP"):
 						iVar0 = 12250;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4359 /* Tunable: WEAPONADDON_SMG_SUPP_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4182 /* Tunable: WEAPONADDON_SMG_SUPP_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_SMG_VARMOD_LUXE"):
-						iVar0 = Global_262145.f_11214 /* Tunable: LUXE1_ADDONSSMG_YUSUF_AMIR_LUXURY_FINISH */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4429 /* Tunable: WEAPONADDON_SMG_ENGRAVED_EXPENDITURE_TUNABLE */));
+						iVar0 = Global_262145.f_11241 /* Tunable: LUXE1_ADDONSSMG_YUSUF_AMIR_LUXURY_FINISH */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4252 /* Tunable: WEAPONADDON_SMG_ENGRAVED_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_GUNRUN_MK2_UPGRADE"):
-						iVar0 = Global_262145.f_21374 /* Tunable: GR_WEAPON_UPGRADES_SMG_MK_II */;
+						iVar0 = Global_262145.f_21404 /* Tunable: GR_WEAPON_UPGRADES_SMG_MK_II */;
 						break;
 				}
 				break;
@@ -5649,36 +5772,36 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_ASSAULTRIFLE_CLIP_03"):
-						iVar0 = Global_262145.f_16762 /* Tunable: ADDONS_ASSAULT_RIFLE_DRUM_MAGAZINE */;
+						iVar0 = Global_262145.f_16790 /* Tunable: ADDONS_ASSAULT_RIFLE_DRUM_MAGAZINE */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_AFGRIP"):
 						iVar0 = 4200;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4368 /* Tunable: WEAPONADDON_ASSRIFLE_GRIP_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4191 /* Tunable: WEAPONADDON_ASSRIFLE_GRIP_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
 						iVar0 = 2125;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4365 /* Tunable: WEAPONADDON_ASSRIFLE_FLSH_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4188 /* Tunable: WEAPONADDON_ASSRIFLE_FLSH_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MACRO"):
 						iVar0 = 10850;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4367 /* Tunable: WEAPONADDON_ASSRIFLE_SCOPE_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4190 /* Tunable: WEAPONADDON_ASSRIFLE_SCOPE_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP_02"):
 						iVar0 = 12300;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4366 /* Tunable: WEAPONADDON_ASSRIFLE_SUPP_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4189 /* Tunable: WEAPONADDON_ASSRIFLE_SUPP_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_ASSAULTRIFLE_VARMOD_LUXE"):
-						iVar0 = Global_262145.f_11208 /* Tunable: LUXE1_KIT_ASSAULT_RIFLE_YUSUF_AMIR_LUXURY_FINISH */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4415 /* Tunable: WEAPONADDON_ASSAULTRIFLE_ENGRAVED_EXPENDITURE_TUNABLE */));
+						iVar0 = Global_262145.f_11235 /* Tunable: LUXE1_KIT_ASSAULT_RIFLE_YUSUF_AMIR_LUXURY_FINISH */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4238 /* Tunable: WEAPONADDON_ASSAULTRIFLE_ENGRAVED_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_GUNRUN_MK2_UPGRADE"):
-						iVar0 = Global_262145.f_21376 /* Tunable: GR_WEAPON_UPGRADES_ASSAULT_RIFLE_MK_II */;
+						iVar0 = Global_262145.f_21406 /* Tunable: GR_WEAPON_UPGRADES_ASSAULT_RIFLE_MK_II */;
 						break;
 				}
 				break;
@@ -5696,36 +5819,36 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_CARBINERIFLE_CLIP_03"):
-						iVar0 = Global_262145.f_16761 /* Tunable: ADDONS_CARBINE_RIFLE_BOX_MAGAZINE */;
+						iVar0 = Global_262145.f_16789 /* Tunable: ADDONS_CARBINE_RIFLE_BOX_MAGAZINE */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_AFGRIP"):
 						iVar0 = 4350;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4376 /* Tunable: WEAPONADDON_CARBINERRIFLE_GRIP_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4199 /* Tunable: WEAPONADDON_CARBINERRIFLE_GRIP_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
 						iVar0 = 2350;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4373 /* Tunable: WEAPONADDON_CARBINERRIFLE_FLSH_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4196 /* Tunable: WEAPONADDON_CARBINERRIFLE_FLSH_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MEDIUM"):
 						iVar0 = 10900;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4375 /* Tunable: WEAPONADDON_CARBINERRIFLE_SCOPE_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4198 /* Tunable: WEAPONADDON_CARBINERRIFLE_SCOPE_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP"):
 						iVar0 = 12450;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4374 /* Tunable: WEAPONADDON_CARBINERRIFLE_SUPP_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4197 /* Tunable: WEAPONADDON_CARBINERRIFLE_SUPP_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_CARBINERIFLE_VARMOD_LUXE"):
-						iVar0 = Global_262145.f_11210 /* Tunable: LUXE1_ADDONSCARBINE_RIFLE_YUSUF_AMIR_LUXURY_FINISH */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4418 /* Tunable: WEAPONADDON_CARBINERILE_ENGRAVED_EXPENDITURE_TUNABLE */));
+						iVar0 = Global_262145.f_11237 /* Tunable: LUXE1_ADDONSCARBINE_RIFLE_YUSUF_AMIR_LUXURY_FINISH */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4241 /* Tunable: WEAPONADDON_CARBINERILE_ENGRAVED_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_GUNRUN_MK2_UPGRADE"):
-						iVar0 = Global_262145.f_21377 /* Tunable: GR_WEAPON_UPGRADES_CARBINE_RIFLE_MK_II */;
+						iVar0 = Global_262145.f_21407 /* Tunable: GR_WEAPON_UPGRADES_CARBINE_RIFLE_MK_II */;
 						break;
 					
 					case joaat("COMPONENT_CARBINERIFLE_VARMOD_MICH"):
@@ -5748,22 +5871,22 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
 						iVar0 = 2425;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4378 /* Tunable: WEAPONADDON_ADVANCEDRIFLE_FLSH_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4201 /* Tunable: WEAPONADDON_ADVANCEDRIFLE_FLSH_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_SMALL"):
 						iVar0 = 10950;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4380 /* Tunable: WEAPONADDON_ADVANCEDRIFLE_SCOPE_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4203 /* Tunable: WEAPONADDON_ADVANCEDRIFLE_SCOPE_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP"):
 						iVar0 = 12500;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4379 /* Tunable: WEAPONADDON_ADVANCEDRIFLE_SUPP_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4202 /* Tunable: WEAPONADDON_ADVANCEDRIFLE_SUPP_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_ADVANCEDRIFLE_VARMOD_LUXE"):
-						iVar0 = Global_262145.f_11209 /* Tunable: LUXE1_ADDONSADVANCED_RIFLE_GILDED_GUN_METAL_FINISH */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4413 /* Tunable: WEAPONADDON_ADVANCEDRIFLE_ENGRAVED_EXPENDITURE_TUNABLE */));
+						iVar0 = Global_262145.f_11236 /* Tunable: LUXE1_ADDONSADVANCED_RIFLE_GILDED_GUN_METAL_FINISH */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4236 /* Tunable: WEAPONADDON_ADVANCEDRIFLE_ENGRAVED_EXPENDITURE_TUNABLE */));
 						break;
 				}
 				break;
@@ -5782,12 +5905,12 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 					
 					case joaat("COMPONENT_AT_SCOPE_SMALL_02"):
 						iVar0 = 10925;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4381 /* Tunable: WEAPONADDON_MACHINEGUN_SCOPE_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4204 /* Tunable: WEAPONADDON_MACHINEGUN_SCOPE_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_MG_VARMOD_LOWRIDER"):
-						iVar0 = Global_262145.f_12605 /* Tunable: WEAPONADDONMG_YUSUF_AMIR_LUXURY_FINISH */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4423 /* Tunable: WEAPONADDON_MG_ENGRAVED_EXPENDITURE_TUNABLE */));
+						iVar0 = Global_262145.f_12632 /* Tunable: WEAPONADDONMG_YUSUF_AMIR_LUXURY_FINISH */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4246 /* Tunable: WEAPONADDON_MG_ENGRAVED_EXPENDITURE_TUNABLE */));
 						break;
 				}
 				break;
@@ -5806,21 +5929,21 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 					
 					case joaat("COMPONENT_AT_AR_AFGRIP"):
 						iVar0 = 4425;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4403 /* Tunable: WEAPONADDON_COMBATMG_GRIP_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4226 /* Tunable: WEAPONADDON_COMBATMG_GRIP_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MEDIUM"):
 						iVar0 = 10975;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4404 /* Tunable: WEAPONADDON_COMBATMG_SCOPE_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4227 /* Tunable: WEAPONADDON_COMBATMG_SCOPE_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_COMBATMG_VARMOD_LOWRIDER"):
-						iVar0 = Global_262145.f_12606 /* Tunable: WEAPONADDONCOMBAT_MG_ETCHED_GUN_METAL_FINISH */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4419 /* Tunable: WEAPONADDON_COMBATMG_ENGRAVED_EXPENDITURE_TUNABLE */));
+						iVar0 = Global_262145.f_12633 /* Tunable: WEAPONADDONCOMBAT_MG_ETCHED_GUN_METAL_FINISH */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4242 /* Tunable: WEAPONADDON_COMBATMG_ENGRAVED_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_GUNRUN_MK2_UPGRADE"):
-						iVar0 = Global_262145.f_21375 /* Tunable: GR_WEAPON_UPGRADES_COMBAT_MG_MK_II */;
+						iVar0 = Global_262145.f_21405 /* Tunable: GR_WEAPON_UPGRADES_COMBAT_MG_MK_II */;
 						break;
 				}
 				break;
@@ -5830,25 +5953,25 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 				{
 					case joaat("COMPONENT_AT_AR_FLSH"):
 						iVar0 = 1750;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4385 /* Tunable: WEAPONADDON_PUMPSHOTGUN_FLSH_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4208 /* Tunable: WEAPONADDON_PUMPSHOTGUN_FLSH_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_SR_SUPP"):
 						iVar0 = 12350;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4386 /* Tunable: WEAPONADDON_PUMPSHOTGUN_SUPP_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4209 /* Tunable: WEAPONADDON_PUMPSHOTGUN_SUPP_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_PUMPSHOTGUN_VARMOD_LOWRIDER"):
-						iVar0 = Global_262145.f_12601 /* Tunable: WEAPONADDONPUMP_SHOTGUN_YUSUF_AMIR_LUXURY_FINISH */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4427 /* Tunable: WEAPONADDON_PUMPSHOTGUN_ENGRAVED_EXPENDITURE_TUNABLE */));
+						iVar0 = Global_262145.f_12628 /* Tunable: WEAPONADDONPUMP_SHOTGUN_YUSUF_AMIR_LUXURY_FINISH */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4250 /* Tunable: WEAPONADDON_PUMPSHOTGUN_ENGRAVED_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_GUNRUN_MK2_UPGRADE"):
-						iVar0 = Global_262145.f_23113 /* Tunable: GO_WEAPON_UPGRADES_PUMP_SHOTGUN_MK_II */;
+						iVar0 = Global_262145.f_23143 /* Tunable: GO_WEAPON_UPGRADES_PUMP_SHOTGUN_MK_II */;
 						break;
 					
 					case joaat("COMPONENT_PUMPSHOTGUN_VARMOD_SECURITY"):
-						iVar0 = Global_262145.f_32217 /* Tunable: FIXER_THE_BONE_FINISH */;
+						iVar0 = Global_262145.f_32332 /* Tunable: FIXER_THE_BONE_FINISH */;
 						break;
 					
 					case joaat("COMPONENT_PUMPSHOTGUN_VARMOD_XM3"):
@@ -5871,17 +5994,17 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 					
 					case joaat("COMPONENT_AT_AR_AFGRIP"):
 						iVar0 = 4275;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4389 /* Tunable: WEAPONADDON_ASSHOTGUN_GRIP_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4212 /* Tunable: WEAPONADDON_ASSHOTGUN_GRIP_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
 						iVar0 = 2200;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4390 /* Tunable: WEAPONADDON_ASSHOTGUN_FLSH_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4213 /* Tunable: WEAPONADDON_ASSHOTGUN_FLSH_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP"):
 						iVar0 = 12350;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4391 /* Tunable: WEAPONADDON_ASSHOTGUN_SUPP_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4214 /* Tunable: WEAPONADDON_ASSHOTGUN_SUPP_EXPENDITURE_TUNABLE */));
 						break;
 				}
 				break;
@@ -5895,22 +6018,22 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 					
 					case joaat("COMPONENT_AT_SCOPE_LARGE"):
 						iVar0 = 12400;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4392 /* Tunable: WEAPONADDON_SNIPER_SCOPE1_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4215 /* Tunable: WEAPONADDON_SNIPER_SCOPE1_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MAX"):
 						iVar0 = 12500;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4393 /* Tunable: WEAPONADDON_SNIPER_SCOPE2_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4216 /* Tunable: WEAPONADDON_SNIPER_SCOPE2_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP_02"):
 						iVar0 = 12050;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4394 /* Tunable: WEAPONADDON_SNIPER_SUPP_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4217 /* Tunable: WEAPONADDON_SNIPER_SUPP_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_SNIPERRIFLE_VARMOD_LUXE"):
-						iVar0 = Global_262145.f_11217 /* Tunable: LUXE1_ADDONSSNIPER_RIFLE_ETCHED_WOOD_GRIP_FINISH */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4430 /* Tunable: WEAPONADDON_SNIPERRIFLE_ENGRAVED_EXPENDITURE_TUNABLE */));
+						iVar0 = Global_262145.f_11244 /* Tunable: LUXE1_ADDONSSNIPER_RIFLE_ETCHED_WOOD_GRIP_FINISH */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4253 /* Tunable: WEAPONADDON_SNIPERRIFLE_ENGRAVED_EXPENDITURE_TUNABLE */));
 						break;
 				}
 				break;
@@ -5924,16 +6047,20 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 					
 					case joaat("COMPONENT_AT_SCOPE_LARGE"):
 						iVar0 = 99;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4395 /* Tunable: WEAPONADDON_HEAVYSNIPER_SCOPE1_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4218 /* Tunable: WEAPONADDON_HEAVYSNIPER_SCOPE1_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MAX"):
 						iVar0 = 12500;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4396 /* Tunable: WEAPONADDON_HEAVYSNIPER_SCOPE2_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4219 /* Tunable: WEAPONADDON_HEAVYSNIPER_SCOPE2_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_GUNRUN_MK2_UPGRADE"):
-						iVar0 = Global_262145.f_21378 /* Tunable: GR_WEAPON_UPGRADES_HEAVY_SNIPER_MK_II */;
+						iVar0 = Global_262145.f_21408 /* Tunable: GR_WEAPON_UPGRADES_HEAVY_SNIPER_MK_II */;
+						break;
+					
+					case joaat("COMPONENT_HEAVYSNIPER_VARMOD_XMAS23"):
+						iVar0 = 0;
 						break;
 				}
 				break;
@@ -5943,17 +6070,17 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 				{
 					case joaat("COMPONENT_AT_AR_AFGRIP"):
 						iVar0 = 4500;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4405 /* Tunable: WEAPONADDON_GRENADELAUNCHER_GRIP_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4228 /* Tunable: WEAPONADDON_GRENADELAUNCHER_GRIP_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
 						iVar0 = 2500;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4401 /* Tunable: WEAPONADDON_GRENADELAUNCHER_FLSH_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4224 /* Tunable: WEAPONADDON_GRENADELAUNCHER_FLSH_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_SMALL"):
 						iVar0 = 11000;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4402 /* Tunable: WEAPONADDON_GRENADELAUNCHER_SCOPE_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4225 /* Tunable: WEAPONADDON_GRENADELAUNCHER_SCOPE_EXPENDITURE_TUNABLE */));
 						break;
 				}
 				break;
@@ -5981,22 +6108,22 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
 						iVar0 = 2275;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4361 /* Tunable: WEAPONADDON_ASSSMG_FLSH_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4184 /* Tunable: WEAPONADDON_ASSSMG_FLSH_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MACRO"):
 						iVar0 = 10875;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4364 /* Tunable: WEAPONADDON_ASSSMG_SCOPE_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4187 /* Tunable: WEAPONADDON_ASSSMG_SCOPE_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP_02"):
 						iVar0 = 12400;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4362 /* Tunable: WEAPONADDON_ASSSMG_SUPP_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4185 /* Tunable: WEAPONADDON_ASSSMG_SUPP_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_ASSAULTSMG_VARMOD_LOWRIDER"):
-						iVar0 = Global_262145.f_12602 /* Tunable: WEAPONADDONASSAULT_SMG_YUSUF_AMIR_LUXURY_FINISH */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4363));
+						iVar0 = Global_262145.f_12629 /* Tunable: WEAPONADDONASSAULT_SMG_YUSUF_AMIR_LUXURY_FINISH */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4186));
 						break;
 				}
 				break;
@@ -6009,7 +6136,7 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_GUSENBERG_CLIP_02"):
-						iVar0 = Global_262145.f_7144 /* Tunable: VALENTINE_GUSENBERG_WEAPONMOD_EXTENDED_CLIP */;
+						iVar0 = Global_262145.f_7133 /* Tunable: VALENTINE_GUSENBERG_WEAPONMOD_EXTENDED_CLIP */;
 						break;
 				}
 				break;
@@ -6022,15 +6149,15 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_SNSPISTOL_CLIP_02"):
-						iVar0 = Global_262145.f_7811 /* Tunable: DLC_WEAPON_ADDON_SNS_PISTOL_EXTENDED_CLIP */;
+						iVar0 = Global_262145.f_7817 /* Tunable: DLC_WEAPON_ADDON_SNS_PISTOL_EXTENDED_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_SNSPISTOL_VARMOD_LOWRIDER"):
-						iVar0 = Global_262145.f_12603 /* Tunable: WEAPONADDONSNS_PISTOL_ETCHED_WOOD_GRIP_FINISH */;
+						iVar0 = Global_262145.f_12630 /* Tunable: WEAPONADDONSNS_PISTOL_ETCHED_WOOD_GRIP_FINISH */;
 						break;
 					
 					case joaat("COMPONENT_GUNRUN_MK2_UPGRADE"):
-						iVar0 = Global_262145.f_23118 /* Tunable: GO_WEAPON_UPGRADES_SNS_PISTOL_MK_II */;
+						iVar0 = Global_262145.f_23148 /* Tunable: GO_WEAPON_UPGRADES_SNS_PISTOL_MK_II */;
 						break;
 				}
 				break;
@@ -6043,35 +6170,39 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_SPECIALCARBINE_CLIP_02"):
-						iVar0 = Global_262145.f_7816 /* Tunable: DLC_WEAPON_ADDON_SPECIAL_CARBINE_EXTENDED_CLIP */;
+						iVar0 = Global_262145.f_7822 /* Tunable: DLC_WEAPON_ADDON_SPECIAL_CARBINE_EXTENDED_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_SPECIALCARBINE_CLIP_03"):
-						iVar0 = Global_262145.f_16764 /* Tunable: ADDONS_SPECIAL_CARBINE_DRUM_MAGAZINE */;
+						iVar0 = Global_262145.f_16792 /* Tunable: ADDONS_SPECIAL_CARBINE_DRUM_MAGAZINE */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
-						iVar0 = Global_262145.f_7819 /* Tunable: DLC_WEAPON_ADDON_SPECIAL_CARBINE_FLASHLIGHT */;
+						iVar0 = Global_262145.f_7825 /* Tunable: DLC_WEAPON_ADDON_SPECIAL_CARBINE_FLASHLIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MEDIUM"):
-						iVar0 = Global_262145.f_7815 /* Tunable: DLC_WEAPON_ADDON_SPECIAL_CARBINE_SCOPE */;
+						iVar0 = Global_262145.f_7821 /* Tunable: DLC_WEAPON_ADDON_SPECIAL_CARBINE_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP_02"):
-						iVar0 = Global_262145.f_7813 /* Tunable: DLC_WEAPON_ADDON_SPECIAL_CARBINE_SUPPRESSOR */;
+						iVar0 = Global_262145.f_7819 /* Tunable: DLC_WEAPON_ADDON_SPECIAL_CARBINE_SUPPRESSOR */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_AFGRIP"):
-						iVar0 = Global_262145.f_7818 /* Tunable: DLC_WEAPON_ADDON_SPECIAL_CARBINE_GRIP */;
+						iVar0 = Global_262145.f_7824 /* Tunable: DLC_WEAPON_ADDON_SPECIAL_CARBINE_GRIP */;
 						break;
 					
 					case joaat("COMPONENT_SPECIALCARBINE_VARMOD_LOWRIDER"):
-						iVar0 = Global_262145.f_12607 /* Tunable: WEAPONADDONSPECIAL_CARBINE_ETCHED_GUN_METAL_FINISH */;
+						iVar0 = Global_262145.f_12634 /* Tunable: WEAPONADDONSPECIAL_CARBINE_ETCHED_GUN_METAL_FINISH */;
 						break;
 					
 					case joaat("COMPONENT_GUNRUN_MK2_UPGRADE"):
-						iVar0 = Global_262145.f_23114 /* Tunable: GO_WEAPON_UPGRADES_SPECIAL_CARBINE_MK_II */;
+						iVar0 = Global_262145.f_23144 /* Tunable: GO_WEAPON_UPGRADES_SPECIAL_CARBINE_MK_II */;
+						break;
+					
+					case joaat("COMPONENT_SPECIALCARBINE_VARMOD_XMAS23"):
+						iVar0 = 0;
 						break;
 				}
 				break;
@@ -6084,19 +6215,19 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_HEAVYPISTOL_CLIP_02"):
-						iVar0 = Global_262145.f_7817 /* Tunable: DLC_WEAPON_ADDON_HEAVY_PISTOL_EXTENDED_CLIP */;
+						iVar0 = Global_262145.f_7823 /* Tunable: DLC_WEAPON_ADDON_HEAVY_PISTOL_EXTENDED_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_AT_PI_FLSH"):
-						iVar0 = Global_262145.f_7821 /* Tunable: DLC_WEAPON_ADDON_HEAVY_PISTOL_FLASHLIGHT */;
+						iVar0 = Global_262145.f_7827 /* Tunable: DLC_WEAPON_ADDON_HEAVY_PISTOL_FLASHLIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_PI_SUPP"):
-						iVar0 = Global_262145.f_7814 /* Tunable: DLC_WEAPON_ADDON_HEAVY_PISTOL_SUPPRESSOR */;
+						iVar0 = Global_262145.f_7820 /* Tunable: DLC_WEAPON_ADDON_HEAVY_PISTOL_SUPPRESSOR */;
 						break;
 					
 					case joaat("COMPONENT_HEAVYPISTOL_VARMOD_LUXE"):
-						iVar0 = Global_262145.f_7841 /* Tunable: LUXE1_ADDONSHEAVY_PISTOL_ETCHED_WOOD_GRIP_FINISH */;
+						iVar0 = Global_262145.f_7847 /* Tunable: LUXE1_ADDONSHEAVY_PISTOL_ETCHED_WOOD_GRIP_FINISH */;
 						break;
 				}
 				break;
@@ -6109,31 +6240,31 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_BULLPUPRIFLE_CLIP_02"):
-						iVar0 = Global_262145.f_7824 /* Tunable: DLC_WEAPON_ADDON_BULLPUP_RIFLE_EXTENDED_CLIP */;
+						iVar0 = Global_262145.f_7830 /* Tunable: DLC_WEAPON_ADDON_BULLPUP_RIFLE_EXTENDED_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
-						iVar0 = Global_262145.f_7827 /* Tunable: DLC_WEAPON_ADDON_BULLPUP_RIFLE_FLASHLIGHT */;
+						iVar0 = Global_262145.f_7833 /* Tunable: DLC_WEAPON_ADDON_BULLPUP_RIFLE_FLASHLIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP"):
-						iVar0 = Global_262145.f_7822 /* Tunable: DLC_WEAPON_ADDON_BULLPUP_RIFLE_SUPPRESSOR */;
+						iVar0 = Global_262145.f_7828 /* Tunable: DLC_WEAPON_ADDON_BULLPUP_RIFLE_SUPPRESSOR */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_SMALL"):
-						iVar0 = Global_262145.f_7823 /* Tunable: DLC_WEAPON_ADDON_BULLPUP_RIFLE_SCOPE */;
+						iVar0 = Global_262145.f_7829 /* Tunable: DLC_WEAPON_ADDON_BULLPUP_RIFLE_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_AFGRIP"):
-						iVar0 = Global_262145.f_7825 /* Tunable: DLC_WEAPON_ADDON_BULLPUP_RIFLE_GRIP */;
+						iVar0 = Global_262145.f_7831 /* Tunable: DLC_WEAPON_ADDON_BULLPUP_RIFLE_GRIP */;
 						break;
 					
 					case joaat("COMPONENT_BULLPUPRIFLE_VARMOD_LOW"):
-						iVar0 = Global_262145.f_12608 /* Tunable: WEAPONADDONBULLPUP_RIFLE_GILDED_GUN_METAL_FINISH */;
+						iVar0 = Global_262145.f_12635 /* Tunable: WEAPONADDONBULLPUP_RIFLE_GILDED_GUN_METAL_FINISH */;
 						break;
 					
 					case joaat("COMPONENT_GUNRUN_MK2_UPGRADE"):
-						iVar0 = Global_262145.f_23117 /* Tunable: GO_WEAPON_UPGRADES_BULLPUP_RIFLE_MK_II */;
+						iVar0 = Global_262145.f_23147 /* Tunable: GO_WEAPON_UPGRADES_BULLPUP_RIFLE_MK_II */;
 						break;
 				}
 				break;
@@ -6146,11 +6277,11 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_VINTAGEPISTOL_CLIP_02"):
-						iVar0 = Global_262145.f_8299 /* Tunable: DLC_HIPSTER_WEAPON_MOD_VINTAGE_PISTOL_EXTENDED_CLIP */;
+						iVar0 = Global_262145.f_8305 /* Tunable: DLC_HIPSTER_WEAPON_MOD_VINTAGE_PISTOL_EXTENDED_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_AT_PI_SUPP"):
-						iVar0 = Global_262145.f_8300 /* Tunable: DLC_HIPSTER_WEAPON_MOD_VINTAGE_PISTOL_SUPPRESSOR */;
+						iVar0 = Global_262145.f_8306 /* Tunable: DLC_HIPSTER_WEAPON_MOD_VINTAGE_PISTOL_SUPPRESSOR */;
 						break;
 				}
 				break;
@@ -6163,23 +6294,23 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_HEAVYSHOTGUN_CLIP_02"):
-						iVar0 = Global_262145.f_9029 /* Tunable: LTS_HEAVY_SHOTGUN_EXTENDED_CLIP */;
+						iVar0 = Global_262145.f_9035 /* Tunable: LTS_HEAVY_SHOTGUN_EXTENDED_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_HEAVYSHOTGUN_CLIP_03"):
-						iVar0 = Global_262145.f_16768 /* Tunable: ADDONS_HEAVY_SHOTGUN_DRUM_MAGAZINE */;
+						iVar0 = Global_262145.f_16796 /* Tunable: ADDONS_HEAVY_SHOTGUN_DRUM_MAGAZINE */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
-						iVar0 = Global_262145.f_9030 /* Tunable: LTS_HEAVY_SHOTGUN_FLASHLIGHT */;
+						iVar0 = Global_262145.f_9036 /* Tunable: LTS_HEAVY_SHOTGUN_FLASHLIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP_02"):
-						iVar0 = Global_262145.f_9031 /* Tunable: LTS_HEAVY_SHOTGUN_SUPPRESSOR */;
+						iVar0 = Global_262145.f_9037 /* Tunable: LTS_HEAVY_SHOTGUN_SUPPRESSOR */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_AFGRIP"):
-						iVar0 = Global_262145.f_9032 /* Tunable: LTS_HEAVY_SHOTGUN_GRIP */;
+						iVar0 = Global_262145.f_9038 /* Tunable: LTS_HEAVY_SHOTGUN_GRIP */;
 						break;
 				}
 				break;
@@ -6192,27 +6323,27 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_MARKSMANRIFLE_CLIP_02"):
-						iVar0 = Global_262145.f_9035 /* Tunable: LTS_MARKSMAN_RIFLE_EXTENDED_CLIP */;
+						iVar0 = Global_262145.f_9041 /* Tunable: LTS_MARKSMAN_RIFLE_EXTENDED_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
-						iVar0 = Global_262145.f_9036 /* Tunable: LTS_MARKSMAN_RIFLE_FLASHLIGHT */;
+						iVar0 = Global_262145.f_9042 /* Tunable: LTS_MARKSMAN_RIFLE_FLASHLIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP"):
-						iVar0 = Global_262145.f_9038 /* Tunable: LTS_MARKSMAN_RIFLE_SUPPRESSOR */;
+						iVar0 = Global_262145.f_9044 /* Tunable: LTS_MARKSMAN_RIFLE_SUPPRESSOR */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_AFGRIP"):
-						iVar0 = Global_262145.f_9039 /* Tunable: LTS_MARKSMAN_RIFLE_GRIP */;
+						iVar0 = Global_262145.f_9045 /* Tunable: LTS_MARKSMAN_RIFLE_GRIP */;
 						break;
 					
 					case joaat("COMPONENT_MARKSMANRIFLE_VARMOD_LUXE"):
-						iVar0 = Global_262145.f_9040 /* Tunable: LUXE1_ADDONSMARKSMAN_RIFLE_YUSUF_AMIR_LUXURY_FINISH */;
+						iVar0 = Global_262145.f_9046 /* Tunable: LUXE1_ADDONSMARKSMAN_RIFLE_YUSUF_AMIR_LUXURY_FINISH */;
 						break;
 					
 					case joaat("COMPONENT_GUNRUN_MK2_UPGRADE"):
-						iVar0 = Global_262145.f_23115 /* Tunable: GO_WEAPON_UPGRADES_MARKSMAN_RIFLE_MK_II */;
+						iVar0 = Global_262145.f_23145 /* Tunable: GO_WEAPON_UPGRADES_MARKSMAN_RIFLE_MK_II */;
 						break;
 				}
 				break;
@@ -6222,17 +6353,17 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 				{
 					case joaat("COMPONENT_AT_AR_AFGRIP"):
 						iVar0 = 4100;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_15312 /* Tunable: WEAPONADDON_BULLPUPSHOTGUN_GRIP_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_15340 /* Tunable: WEAPONADDON_BULLPUPSHOTGUN_GRIP_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
 						iVar0 = 2300;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4387 /* Tunable: WEAPONADDON_BULLPUPSHOTGUN_FLSH_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4210 /* Tunable: WEAPONADDON_BULLPUPSHOTGUN_FLSH_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP_02"):
 						iVar0 = 12450;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4388 /* Tunable: WEAPONADDON_BULLPUPSHOTGUN_SUPP_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4211 /* Tunable: WEAPONADDON_BULLPUPSHOTGUN_SUPP_EXPENDITURE_TUNABLE */));
 						break;
 				}
 				if (func_84() && (func_83() || func_82()))
@@ -6255,17 +6386,17 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 					
 					case joaat("COMPONENT_AT_PI_FLSH"):
 						iVar0 = 2000;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4353 /* Tunable: WEAPONADDON_DLCPISTOL50_FLSH_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4176 /* Tunable: WEAPONADDON_DLCPISTOL50_FLSH_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP_02"):
 						iVar0 = 12250;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4354 /* Tunable: WEAPONADDON_DLCPISTOL50_SUPP_EXPENDITURE_TUNABLE */));
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4177 /* Tunable: WEAPONADDON_DLCPISTOL50_SUPP_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_PISTOL50_VARMOD_LUXE"):
-						iVar0 = Global_262145.f_11213 /* Tunable: LUXE1_ADDONSPISTOL_50_PLATINUM_PEARL_DELUXE_FINISH */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4426 /* Tunable: WEAPONADDON_PISTOL50_ENGRAVED_EXPENDITURE_TUNABLE */));
+						iVar0 = Global_262145.f_11240 /* Tunable: LUXE1_ADDONSPISTOL_50_PLATINUM_PEARL_DELUXE_FINISH */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4249 /* Tunable: WEAPONADDON_PISTOL50_ENGRAVED_EXPENDITURE_TUNABLE */));
 						break;
 				}
 				if (func_84() && (func_83() || func_82()))
@@ -6278,8 +6409,8 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 				switch (iParam1)
 				{
 					case joaat("COMPONENT_SAWNOFFSHOTGUN_VARMOD_LUXE"):
-						iVar0 = Global_262145.f_11216 /* Tunable: LUXE1_ADDONSSAWED_OFF_SHOTGUN_GILDED_GUN_METAL_FINISH */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4428 /* Tunable: WEAPONADDON_SAWNOFFSHOTGUN_ENGRAVED_EXPENDITURE_TUNABLE */));
+						iVar0 = Global_262145.f_11243 /* Tunable: LUXE1_ADDONSSAWED_OFF_SHOTGUN_GILDED_GUN_METAL_FINISH */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4251 /* Tunable: WEAPONADDON_SAWNOFFSHOTGUN_ENGRAVED_EXPENDITURE_TUNABLE */));
 						break;
 				}
 				break;
@@ -6288,48 +6419,48 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 				switch (iParam1)
 				{
 					case joaat("COMPONENT_KNUCKLE_VARMOD_PIMP"):
-						iVar0 = Global_262145.f_11540 /* Tunable: LUXE2_THE_PIMP_KNUCKLE_DUSTER */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4433 /* Tunable: WEAPONADDON_KNUCKLEDUSTER_PIMP_ENGRAVED_EXPENDITURE_TUNABLE */));
+						iVar0 = Global_262145.f_11567 /* Tunable: LUXE2_THE_PIMP_KNUCKLE_DUSTER */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4256 /* Tunable: WEAPONADDON_KNUCKLEDUSTER_PIMP_ENGRAVED_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_KNUCKLE_VARMOD_BALLAS"):
-						iVar0 = Global_262145.f_11541 /* Tunable: LUXE2_THE_BALLAS_KNUCKLE_DUSTER */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4434 /* Tunable: WEAPONADDON_KNUCKLEDUSTER_BALLAS_ENGRAVED_EXPENDITURE_TUNABLE */));
+						iVar0 = Global_262145.f_11568 /* Tunable: LUXE2_THE_BALLAS_KNUCKLE_DUSTER */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4257 /* Tunable: WEAPONADDON_KNUCKLEDUSTER_BALLAS_ENGRAVED_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_KNUCKLE_VARMOD_DOLLAR"):
-						iVar0 = Global_262145.f_11542 /* Tunable: LUXE2_THE_HUSTLER_KNUCKLE_DUSTER */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4435 /* Tunable: WEAPONADDON_KNUCKLEDUSTER_HUSTLER_ENGRAVED_EXPENDITURE_TUNABLE */));
+						iVar0 = Global_262145.f_11569 /* Tunable: LUXE2_THE_HUSTLER_KNUCKLE_DUSTER */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4258 /* Tunable: WEAPONADDON_KNUCKLEDUSTER_HUSTLER_ENGRAVED_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_KNUCKLE_VARMOD_DIAMOND"):
-						iVar0 = Global_262145.f_11543 /* Tunable: LUXE2_THE_ROCK_KNUCKLE_DUSTER */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4436 /* Tunable: WEAPONADDON_KNUCKLEDUSTER_ROCK_ENGRAVED_EXPENDITURE_TUNABLE */));
+						iVar0 = Global_262145.f_11570 /* Tunable: LUXE2_THE_ROCK_KNUCKLE_DUSTER */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4259 /* Tunable: WEAPONADDON_KNUCKLEDUSTER_ROCK_ENGRAVED_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_KNUCKLE_VARMOD_HATE"):
-						iVar0 = Global_262145.f_11544 /* Tunable: LUXE2_THE_HATER_KNUCKLE_DUSTER */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4437 /* Tunable: WEAPONADDON_KNUCKLEDUSTER_HATER_ENGRAVED_EXPENDITURE_TUNABLE */));
+						iVar0 = Global_262145.f_11571 /* Tunable: LUXE2_THE_HATER_KNUCKLE_DUSTER */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4260 /* Tunable: WEAPONADDON_KNUCKLEDUSTER_HATER_ENGRAVED_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_KNUCKLE_VARMOD_LOVE"):
-						iVar0 = Global_262145.f_11545 /* Tunable: LUXE2_THE_LOVER_KNUCKLE_DUSTER */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4438 /* Tunable: WEAPONADDON_KNUCKLEDUSTER_LOVER_ENGRAVED_EXPENDITURE_TUNABLE */));
+						iVar0 = Global_262145.f_11572 /* Tunable: LUXE2_THE_LOVER_KNUCKLE_DUSTER */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4261 /* Tunable: WEAPONADDON_KNUCKLEDUSTER_LOVER_ENGRAVED_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_KNUCKLE_VARMOD_PLAYER"):
-						iVar0 = Global_262145.f_11546 /* Tunable: LUXE2_THE_PLAYER_KNUCKLE_DUSTER */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4439 /* Tunable: WEAPONADDON_KNUCKLEDUSTER_PLAYER_ENGRAVED_EXPENDITURE_TUNABLE */));
+						iVar0 = Global_262145.f_11573 /* Tunable: LUXE2_THE_PLAYER_KNUCKLE_DUSTER */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4262 /* Tunable: WEAPONADDON_KNUCKLEDUSTER_PLAYER_ENGRAVED_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_KNUCKLE_VARMOD_KING"):
-						iVar0 = Global_262145.f_11547 /* Tunable: LUXE2_THE_KING_KNUCKLE_DUSTER */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4440 /* Tunable: WEAPONADDON_KNUCKLEDUSTER_KING_ENGRAVED_EXPENDITURE_TUNABLE */));
+						iVar0 = Global_262145.f_11574 /* Tunable: LUXE2_THE_KING_KNUCKLE_DUSTER */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4263 /* Tunable: WEAPONADDON_KNUCKLEDUSTER_KING_ENGRAVED_EXPENDITURE_TUNABLE */));
 						break;
 					
 					case joaat("COMPONENT_KNUCKLE_VARMOD_VAGOS"):
-						iVar0 = Global_262145.f_11548 /* Tunable: LUXE2_THE_VAGOS_KNUCKLE_DUSTER */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4441 /* Tunable: WEAPONADDON_KNUCKLEDUSTER_VAGOS_ENGRAVED_EXPENDITURE_TUNABLE */));
+						iVar0 = Global_262145.f_11575 /* Tunable: LUXE2_THE_VAGOS_KNUCKLE_DUSTER */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4264 /* Tunable: WEAPONADDON_KNUCKLEDUSTER_VAGOS_ENGRAVED_EXPENDITURE_TUNABLE */));
 						break;
 				}
 				break;
@@ -6342,17 +6473,17 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_MACHINEPISTOL_CLIP_02"):
-						iVar0 = Global_262145.f_11565 /* Tunable: LOWRIDER_MACHINEPISTOL_CLIP02 */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4443));
+						iVar0 = Global_262145.f_11592 /* Tunable: LOWRIDER_MACHINEPISTOL_CLIP02 */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4266));
 						break;
 					
 					case joaat("COMPONENT_MACHINEPISTOL_CLIP_03"):
-						iVar0 = Global_262145.f_16766 /* Tunable: ADDONS_MACHINE_PISTOL_DRUM_MAGAZINE */;
+						iVar0 = Global_262145.f_16794 /* Tunable: ADDONS_MACHINE_PISTOL_DRUM_MAGAZINE */;
 						break;
 					
 					case joaat("COMPONENT_AT_PI_SUPP"):
-						iVar0 = Global_262145.f_11566 /* Tunable: LOWRIDER_MACHINEPISTOL_SUPP */;
-						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4444));
+						iVar0 = Global_262145.f_11593 /* Tunable: LOWRIDER_MACHINEPISTOL_SUPP */;
+						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4267));
 						break;
 				}
 				break;
@@ -6365,11 +6496,11 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_SWITCHBLADE_VARMOD_VAR1"):
-						iVar0 = Global_262145.f_13449 /* Tunable: APARTMENT_ADDONS_SWITCHBLADE_ENGRAVED_BOSS_VARIANT */;
+						iVar0 = Global_262145.f_13476 /* Tunable: APARTMENT_ADDONS_SWITCHBLADE_ENGRAVED_BOSS_VARIANT */;
 						break;
 					
 					case joaat("COMPONENT_SWITCHBLADE_VARMOD_VAR2"):
-						iVar0 = Global_262145.f_13450 /* Tunable: APARTMENT_ADDONS_SWITCHBLADE_ENGRAVED_GOON_VARIANT */;
+						iVar0 = Global_262145.f_13477 /* Tunable: APARTMENT_ADDONS_SWITCHBLADE_ENGRAVED_GOON_VARIANT */;
 						break;
 				}
 				break;
@@ -6382,15 +6513,15 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_REVOLVER_VARMOD_BOSS"):
-						iVar0 = Global_262145.f_13507 /* Tunable: APARTMENT_ADDONS_HEAVY_REVOLVER_ENGRAVED_BOSS_VARIANT */;
+						iVar0 = Global_262145.f_13534 /* Tunable: APARTMENT_ADDONS_HEAVY_REVOLVER_ENGRAVED_BOSS_VARIANT */;
 						break;
 					
 					case joaat("COMPONENT_REVOLVER_VARMOD_GOON"):
-						iVar0 = Global_262145.f_13448 /* Tunable: APARTMENT_ADDONS_HEAVY_REVOLVER_ENGRAVED_GOON_VARIANT */;
+						iVar0 = Global_262145.f_13475 /* Tunable: APARTMENT_ADDONS_HEAVY_REVOLVER_ENGRAVED_GOON_VARIANT */;
 						break;
 					
 					case joaat("COMPONENT_GUNRUN_MK2_UPGRADE"):
-						iVar0 = Global_262145.f_23116 /* Tunable: GO_WEAPON_UPGRADES_HEAVY_REVOVLER_MK_II */;
+						iVar0 = Global_262145.f_23146 /* Tunable: GO_WEAPON_UPGRADES_HEAVY_REVOVLER_MK_II */;
 						break;
 				}
 				break;
@@ -6403,11 +6534,11 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_COMPACTRIFLE_CLIP_02"):
-						iVar0 = Global_262145.f_15242 /* Tunable: ADDONS_COMPACT_RIFLE_EXTENDED_CLIP */;
+						iVar0 = Global_262145.f_15270 /* Tunable: ADDONS_COMPACT_RIFLE_EXTENDED_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_COMPACTRIFLE_CLIP_03"):
-						iVar0 = Global_262145.f_16763 /* Tunable: ADDONS_COMPACT_RIFLE_DRUM_MAGAZINE */;
+						iVar0 = Global_262145.f_16791 /* Tunable: ADDONS_COMPACT_RIFLE_DRUM_MAGAZINE */;
 						break;
 				}
 				break;
@@ -6429,7 +6560,7 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_MINISMG_CLIP_02"):
-						iVar0 = Global_262145.f_19222 /* Tunable: 1482389140 */;
+						iVar0 = Global_262145.f_19252 /* Tunable: 1482389140 */;
 						break;
 				}
 				break;
@@ -6442,23 +6573,23 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_COMBATPDW_CLIP_02"):
-						iVar0 = Global_262145.f_21255 /* Tunable: LUXE1_COMBATPDW_EXTENDED_CLIP */;
+						iVar0 = Global_262145.f_21285 /* Tunable: LUXE1_COMBATPDW_EXTENDED_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_COMBATPDW_CLIP_03"):
-						iVar0 = Global_262145.f_16765 /* Tunable: ADDONS_PDW_DRUM_MAGAZINE */;
+						iVar0 = Global_262145.f_16793 /* Tunable: ADDONS_PDW_DRUM_MAGAZINE */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
-						iVar0 = Global_262145.f_21256 /* Tunable: LUXE1_COMBATPDW_FLASHLIGHT */;
+						iVar0 = Global_262145.f_21286 /* Tunable: LUXE1_COMBATPDW_FLASHLIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_SMALL"):
-						iVar0 = Global_262145.f_21258 /* Tunable: LUXE1_COMBATPDW_SCOPE */;
+						iVar0 = Global_262145.f_21288 /* Tunable: LUXE1_COMBATPDW_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_AFGRIP"):
-						iVar0 = Global_262145.f_21257 /* Tunable: LUXE1_COMBATPDW_GRIP */;
+						iVar0 = Global_262145.f_21287 /* Tunable: LUXE1_COMBATPDW_GRIP */;
 						break;
 				}
 				break;
@@ -6471,79 +6602,79 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_ASSAULTRIFLE_MK2_CLIP_02"):
-						iVar0 = Global_262145.f_21379 /* Tunable: -1550181012 */;
+						iVar0 = Global_262145.f_21409 /* Tunable: -1550181012 */;
 						break;
 					
 					case joaat("COMPONENT_ASSAULTRIFLE_MK2_CLIP_ARMORPIERCING"):
-						iVar0 = Global_262145.f_21380 /* Tunable: 599186436 */;
+						iVar0 = Global_262145.f_21410 /* Tunable: 599186436 */;
 						break;
 					
 					case joaat("COMPONENT_ASSAULTRIFLE_MK2_CLIP_FMJ"):
-						iVar0 = Global_262145.f_21381 /* Tunable: 1538620212 */;
+						iVar0 = Global_262145.f_21411 /* Tunable: 1538620212 */;
 						break;
 					
 					case joaat("COMPONENT_ASSAULTRIFLE_MK2_CLIP_INCENDIARY"):
-						iVar0 = Global_262145.f_21382 /* Tunable: -170097190 */;
+						iVar0 = Global_262145.f_21412 /* Tunable: -170097190 */;
 						break;
 					
 					case joaat("COMPONENT_ASSAULTRIFLE_MK2_CLIP_TRACER"):
-						iVar0 = Global_262145.f_21383 /* Tunable: -1387455740 */;
+						iVar0 = Global_262145.f_21413 /* Tunable: -1387455740 */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
-						iVar0 = Global_262145.f_21384 /* Tunable: -325408568 */;
+						iVar0 = Global_262145.f_21414 /* Tunable: -325408568 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SIGHTS"):
-						iVar0 = Global_262145.f_21385 /* Tunable: -82364995 */;
+						iVar0 = Global_262145.f_21415 /* Tunable: -82364995 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MACRO_MK2"):
-						iVar0 = Global_262145.f_21386 /* Tunable: -229542830 */;
+						iVar0 = Global_262145.f_21416 /* Tunable: -229542830 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_SMALL_MK2"):
-						iVar0 = Global_262145.f_21387 /* Tunable: 1327976003 */;
+						iVar0 = Global_262145.f_21417 /* Tunable: 1327976003 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MEDIUM_MK2"):
-						iVar0 = Global_262145.f_21388 /* Tunable: -618034935 */;
+						iVar0 = Global_262145.f_21418 /* Tunable: -618034935 */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP_02"):
-						iVar0 = Global_262145.f_21389 /* Tunable: -1721486303 */;
+						iVar0 = Global_262145.f_21419 /* Tunable: -1721486303 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_01"):
-						iVar0 = Global_262145.f_21390 /* Tunable: -240242887 */;
+						iVar0 = Global_262145.f_21420 /* Tunable: -240242887 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_02"):
-						iVar0 = Global_262145.f_21391 /* Tunable: 1111019601 */;
+						iVar0 = Global_262145.f_21421 /* Tunable: 1111019601 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_03"):
-						iVar0 = Global_262145.f_21392 /* Tunable: 1417573596 */;
+						iVar0 = Global_262145.f_21422 /* Tunable: 1417573596 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_04"):
-						iVar0 = Global_262145.f_21393 /* Tunable: 648354090 */;
+						iVar0 = Global_262145.f_21423 /* Tunable: 648354090 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_05"):
-						iVar0 = Global_262145.f_21394 /* Tunable: -1500342013 */;
+						iVar0 = Global_262145.f_21424 /* Tunable: -1500342013 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_06"):
-						iVar0 = Global_262145.f_21395 /* Tunable: -80395705 */;
+						iVar0 = Global_262145.f_21425 /* Tunable: -80395705 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_07"):
-						iVar0 = Global_262145.f_21396 /* Tunable: 225896138 */;
+						iVar0 = Global_262145.f_21426 /* Tunable: 225896138 */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_AFGRIP_02"):
-						iVar0 = Global_262145.f_21397 /* Tunable: -946948419 */;
+						iVar0 = Global_262145.f_21427 /* Tunable: -946948419 */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_BARREL_01"):
@@ -6551,51 +6682,51 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_AT_AR_BARREL_02"):
-						iVar0 = Global_262145.f_21398 /* Tunable: 628289383 */;
+						iVar0 = Global_262145.f_21428 /* Tunable: 628289383 */;
 						break;
 					
 					case joaat("COMPONENT_ASSAULTRIFLE_MK2_CAMO"):
-						iVar0 = Global_262145.f_21507 /* Tunable: GR_WEAPON_CAMO_1_DIGITAL_CAMO */;
+						iVar0 = Global_262145.f_21537 /* Tunable: GR_WEAPON_CAMO_1_DIGITAL_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_ASSAULTRIFLE_MK2_CAMO_02"):
-						iVar0 = Global_262145.f_21508 /* Tunable: GR_WEAPON_CAMO_2_TIGER_CAMO */;
+						iVar0 = Global_262145.f_21538 /* Tunable: GR_WEAPON_CAMO_2_TIGER_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_ASSAULTRIFLE_MK2_CAMO_03"):
-						iVar0 = Global_262145.f_21509 /* Tunable: GR_WEAPON_CAMO_3_WOODLAND_CAMO */;
+						iVar0 = Global_262145.f_21539 /* Tunable: GR_WEAPON_CAMO_3_WOODLAND_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_ASSAULTRIFLE_MK2_CAMO_04"):
-						iVar0 = Global_262145.f_21510 /* Tunable: GR_WEAPON_CAMO_4_SKULL */;
+						iVar0 = Global_262145.f_21540 /* Tunable: GR_WEAPON_CAMO_4_SKULL */;
 						break;
 					
 					case joaat("COMPONENT_ASSAULTRIFLE_MK2_CAMO_05"):
-						iVar0 = Global_262145.f_21511 /* Tunable: GR_WEAPON_CAMO_5_SESSANTA_NOVE */;
+						iVar0 = Global_262145.f_21541 /* Tunable: GR_WEAPON_CAMO_5_SESSANTA_NOVE */;
 						break;
 					
 					case joaat("COMPONENT_ASSAULTRIFLE_MK2_CAMO_06"):
-						iVar0 = Global_262145.f_21512 /* Tunable: GR_WEAPON_CAMO_6_PERSEUS */;
+						iVar0 = Global_262145.f_21542 /* Tunable: GR_WEAPON_CAMO_6_PERSEUS */;
 						break;
 					
 					case joaat("COMPONENT_ASSAULTRIFLE_MK2_CAMO_07"):
-						iVar0 = Global_262145.f_21513 /* Tunable: GR_WEAPON_CAMO_7_LEOPARD */;
+						iVar0 = Global_262145.f_21543 /* Tunable: GR_WEAPON_CAMO_7_LEOPARD */;
 						break;
 					
 					case joaat("COMPONENT_ASSAULTRIFLE_MK2_CAMO_08"):
-						iVar0 = Global_262145.f_21514 /* Tunable: GR_WEAPON_CAMO_8_ZEBRA */;
+						iVar0 = Global_262145.f_21544 /* Tunable: GR_WEAPON_CAMO_8_ZEBRA */;
 						break;
 					
 					case joaat("COMPONENT_ASSAULTRIFLE_MK2_CAMO_09"):
-						iVar0 = Global_262145.f_21515 /* Tunable: GR_WEAPON_CAMO_9_GEOMETRIC */;
+						iVar0 = Global_262145.f_21545 /* Tunable: GR_WEAPON_CAMO_9_GEOMETRIC */;
 						break;
 					
 					case joaat("COMPONENT_ASSAULTRIFLE_MK2_CAMO_10"):
-						iVar0 = Global_262145.f_21516 /* Tunable: GR_WEAPON_CAMO_10_BOOM */;
+						iVar0 = Global_262145.f_21546 /* Tunable: GR_WEAPON_CAMO_10_BOOM */;
 						break;
 					
 					case joaat("COMPONENT_ASSAULTRIFLE_MK2_CAMO_IND_01"):
-						iVar0 = Global_262145.f_21517 /* Tunable: GR_WEAPON_CAMO_11_PATRIOTIC */;
+						iVar0 = Global_262145.f_21547 /* Tunable: GR_WEAPON_CAMO_11_PATRIOTIC */;
 						break;
 				}
 				break;
@@ -6608,79 +6739,79 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_CARBINERIFLE_MK2_CLIP_02"):
-						iVar0 = Global_262145.f_21399 /* Tunable: 1286553594 */;
+						iVar0 = Global_262145.f_21429 /* Tunable: 1286553594 */;
 						break;
 					
 					case joaat("COMPONENT_CARBINERIFLE_MK2_CLIP_ARMORPIERCING"):
-						iVar0 = Global_262145.f_21400 /* Tunable: -1398112727 */;
+						iVar0 = Global_262145.f_21430 /* Tunable: -1398112727 */;
 						break;
 					
 					case joaat("COMPONENT_CARBINERIFLE_MK2_CLIP_FMJ"):
-						iVar0 = Global_262145.f_21401 /* Tunable: 1311192953 */;
+						iVar0 = Global_262145.f_21431 /* Tunable: 1311192953 */;
 						break;
 					
 					case joaat("COMPONENT_CARBINERIFLE_MK2_CLIP_INCENDIARY"):
-						iVar0 = Global_262145.f_21402 /* Tunable: -577265450 */;
+						iVar0 = Global_262145.f_21432 /* Tunable: -577265450 */;
 						break;
 					
 					case joaat("COMPONENT_CARBINERIFLE_MK2_CLIP_TRACER"):
-						iVar0 = Global_262145.f_21403 /* Tunable: 441926214 */;
+						iVar0 = Global_262145.f_21433 /* Tunable: 441926214 */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
-						iVar0 = Global_262145.f_21404 /* Tunable: -1137873158 */;
+						iVar0 = Global_262145.f_21434 /* Tunable: -1137873158 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SIGHTS"):
-						iVar0 = Global_262145.f_21405 /* Tunable: 757231685 */;
+						iVar0 = Global_262145.f_21435 /* Tunable: 757231685 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MACRO_MK2"):
-						iVar0 = Global_262145.f_21406 /* Tunable: 1743852487 */;
+						iVar0 = Global_262145.f_21436 /* Tunable: 1743852487 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_SMALL_MK2"):
-						iVar0 = Global_262145.f_21407 /* Tunable: 1889225718 */;
+						iVar0 = Global_262145.f_21437 /* Tunable: 1889225718 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MEDIUM_MK2"):
-						iVar0 = Global_262145.f_21408 /* Tunable: 1808408105 */;
+						iVar0 = Global_262145.f_21438 /* Tunable: 1808408105 */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP"):
-						iVar0 = Global_262145.f_21409 /* Tunable: 998096574 */;
+						iVar0 = Global_262145.f_21439 /* Tunable: 998096574 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_01"):
-						iVar0 = Global_262145.f_21410 /* Tunable: 42291623 */;
+						iVar0 = Global_262145.f_21440 /* Tunable: 42291623 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_02"):
-						iVar0 = Global_262145.f_21411 /* Tunable: 918075921 */;
+						iVar0 = Global_262145.f_21441 /* Tunable: 918075921 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_03"):
-						iVar0 = Global_262145.f_21412 /* Tunable: -253841830 */;
+						iVar0 = Global_262145.f_21442 /* Tunable: -253841830 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_04"):
-						iVar0 = Global_262145.f_21413 /* Tunable: -554038639 */;
+						iVar0 = Global_262145.f_21443 /* Tunable: -554038639 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_05"):
-						iVar0 = Global_262145.f_21414 /* Tunable: -851712235 */;
+						iVar0 = Global_262145.f_21444 /* Tunable: -851712235 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_06"):
-						iVar0 = Global_262145.f_21415 /* Tunable: -1149353062 */;
+						iVar0 = Global_262145.f_21445 /* Tunable: -1149353062 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_07"):
-						iVar0 = Global_262145.f_21416 /* Tunable: -1211679700 */;
+						iVar0 = Global_262145.f_21446 /* Tunable: -1211679700 */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_AFGRIP_02"):
-						iVar0 = Global_262145.f_21417 /* Tunable: -1770903800 */;
+						iVar0 = Global_262145.f_21447 /* Tunable: -1770903800 */;
 						break;
 					
 					case joaat("COMPONENT_AT_CR_BARREL_01"):
@@ -6688,51 +6819,51 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_AT_CR_BARREL_02"):
-						iVar0 = Global_262145.f_21418 /* Tunable: 120043539 */;
+						iVar0 = Global_262145.f_21448 /* Tunable: 120043539 */;
 						break;
 					
 					case joaat("COMPONENT_CARBINERIFLE_MK2_CAMO"):
-						iVar0 = Global_262145.f_21507 /* Tunable: GR_WEAPON_CAMO_1_DIGITAL_CAMO */;
+						iVar0 = Global_262145.f_21537 /* Tunable: GR_WEAPON_CAMO_1_DIGITAL_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_CARBINERIFLE_MK2_CAMO_02"):
-						iVar0 = Global_262145.f_21508 /* Tunable: GR_WEAPON_CAMO_2_TIGER_CAMO */;
+						iVar0 = Global_262145.f_21538 /* Tunable: GR_WEAPON_CAMO_2_TIGER_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_CARBINERIFLE_MK2_CAMO_03"):
-						iVar0 = Global_262145.f_21509 /* Tunable: GR_WEAPON_CAMO_3_WOODLAND_CAMO */;
+						iVar0 = Global_262145.f_21539 /* Tunable: GR_WEAPON_CAMO_3_WOODLAND_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_CARBINERIFLE_MK2_CAMO_04"):
-						iVar0 = Global_262145.f_21510 /* Tunable: GR_WEAPON_CAMO_4_SKULL */;
+						iVar0 = Global_262145.f_21540 /* Tunable: GR_WEAPON_CAMO_4_SKULL */;
 						break;
 					
 					case joaat("COMPONENT_CARBINERIFLE_MK2_CAMO_05"):
-						iVar0 = Global_262145.f_21511 /* Tunable: GR_WEAPON_CAMO_5_SESSANTA_NOVE */;
+						iVar0 = Global_262145.f_21541 /* Tunable: GR_WEAPON_CAMO_5_SESSANTA_NOVE */;
 						break;
 					
 					case joaat("COMPONENT_CARBINERIFLE_MK2_CAMO_06"):
-						iVar0 = Global_262145.f_21512 /* Tunable: GR_WEAPON_CAMO_6_PERSEUS */;
+						iVar0 = Global_262145.f_21542 /* Tunable: GR_WEAPON_CAMO_6_PERSEUS */;
 						break;
 					
 					case joaat("COMPONENT_CARBINERIFLE_MK2_CAMO_07"):
-						iVar0 = Global_262145.f_21513 /* Tunable: GR_WEAPON_CAMO_7_LEOPARD */;
+						iVar0 = Global_262145.f_21543 /* Tunable: GR_WEAPON_CAMO_7_LEOPARD */;
 						break;
 					
 					case joaat("COMPONENT_CARBINERIFLE_MK2_CAMO_08"):
-						iVar0 = Global_262145.f_21514 /* Tunable: GR_WEAPON_CAMO_8_ZEBRA */;
+						iVar0 = Global_262145.f_21544 /* Tunable: GR_WEAPON_CAMO_8_ZEBRA */;
 						break;
 					
 					case joaat("COMPONENT_CARBINERIFLE_MK2_CAMO_09"):
-						iVar0 = Global_262145.f_21515 /* Tunable: GR_WEAPON_CAMO_9_GEOMETRIC */;
+						iVar0 = Global_262145.f_21545 /* Tunable: GR_WEAPON_CAMO_9_GEOMETRIC */;
 						break;
 					
 					case joaat("COMPONENT_CARBINERIFLE_MK2_CAMO_10"):
-						iVar0 = Global_262145.f_21516 /* Tunable: GR_WEAPON_CAMO_10_BOOM */;
+						iVar0 = Global_262145.f_21546 /* Tunable: GR_WEAPON_CAMO_10_BOOM */;
 						break;
 					
 					case joaat("COMPONENT_CARBINERIFLE_MK2_CAMO_IND_01"):
-						iVar0 = Global_262145.f_21517 /* Tunable: GR_WEAPON_CAMO_11_PATRIOTIC */;
+						iVar0 = Global_262145.f_21547 /* Tunable: GR_WEAPON_CAMO_11_PATRIOTIC */;
 						break;
 				}
 				break;
@@ -6745,71 +6876,71 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_COMBATMG_MK2_CLIP_02"):
-						iVar0 = Global_262145.f_21419 /* Tunable: 1898572754 */;
+						iVar0 = Global_262145.f_21449 /* Tunable: 1898572754 */;
 						break;
 					
 					case joaat("COMPONENT_COMBATMG_MK2_CLIP_ARMORPIERCING"):
-						iVar0 = Global_262145.f_21420 /* Tunable: -980014447 */;
+						iVar0 = Global_262145.f_21450 /* Tunable: -980014447 */;
 						break;
 					
 					case joaat("COMPONENT_COMBATMG_MK2_CLIP_FMJ"):
-						iVar0 = Global_262145.f_21421 /* Tunable: 954938707 */;
+						iVar0 = Global_262145.f_21451 /* Tunable: 954938707 */;
 						break;
 					
 					case joaat("COMPONENT_COMBATMG_MK2_CLIP_INCENDIARY"):
-						iVar0 = Global_262145.f_21422 /* Tunable: 1734159338 */;
+						iVar0 = Global_262145.f_21452 /* Tunable: 1734159338 */;
 						break;
 					
 					case joaat("COMPONENT_COMBATMG_MK2_CLIP_TRACER"):
-						iVar0 = Global_262145.f_21423 /* Tunable: 994554097 */;
+						iVar0 = Global_262145.f_21453 /* Tunable: 994554097 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SIGHTS"):
-						iVar0 = Global_262145.f_21424 /* Tunable: 320273484 */;
+						iVar0 = Global_262145.f_21454 /* Tunable: 320273484 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MACRO_MK2"):
-						iVar0 = Global_262145.f_21425 /* Tunable: -300742141 */;
+						iVar0 = Global_262145.f_21455 /* Tunable: -300742141 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_SMALL_MK2"):
-						iVar0 = Global_262145.f_21426 /* Tunable: -1429921876 */;
+						iVar0 = Global_262145.f_21456 /* Tunable: -1429921876 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MEDIUM_MK2"):
-						iVar0 = Global_262145.f_21427 /* Tunable: 1509305655 */;
+						iVar0 = Global_262145.f_21457 /* Tunable: 1509305655 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_01"):
-						iVar0 = Global_262145.f_21428 /* Tunable: -49677055 */;
+						iVar0 = Global_262145.f_21458 /* Tunable: -49677055 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_02"):
-						iVar0 = Global_262145.f_21429 /* Tunable: 2089647114 */;
+						iVar0 = Global_262145.f_21459 /* Tunable: 2089647114 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_03"):
-						iVar0 = Global_262145.f_21430 /* Tunable: 1816386423 */;
+						iVar0 = Global_262145.f_21460 /* Tunable: 1816386423 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_04"):
-						iVar0 = Global_262145.f_21431 /* Tunable: -1717619155 */;
+						iVar0 = Global_262145.f_21461 /* Tunable: -1717619155 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_05"):
-						iVar0 = Global_262145.f_21432 /* Tunable: -2014801216 */;
+						iVar0 = Global_262145.f_21462 /* Tunable: -2014801216 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_06"):
-						iVar0 = Global_262145.f_21433 /* Tunable: 902950516 */;
+						iVar0 = Global_262145.f_21463 /* Tunable: 902950516 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_07"):
-						iVar0 = Global_262145.f_21434 /* Tunable: 562283992 */;
+						iVar0 = Global_262145.f_21464 /* Tunable: 562283992 */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_AFGRIP_02"):
-						iVar0 = Global_262145.f_21435 /* Tunable: 1292930355 */;
+						iVar0 = Global_262145.f_21465 /* Tunable: 1292930355 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MG_BARREL_01"):
@@ -6817,51 +6948,51 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_AT_MG_BARREL_02"):
-						iVar0 = Global_262145.f_21436 /* Tunable: 1947193436 */;
+						iVar0 = Global_262145.f_21466 /* Tunable: 1947193436 */;
 						break;
 					
 					case joaat("COMPONENT_COMBATMG_MK2_CAMO"):
-						iVar0 = Global_262145.f_21507 /* Tunable: GR_WEAPON_CAMO_1_DIGITAL_CAMO */;
+						iVar0 = Global_262145.f_21537 /* Tunable: GR_WEAPON_CAMO_1_DIGITAL_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_COMBATMG_MK2_CAMO_02"):
-						iVar0 = Global_262145.f_21508 /* Tunable: GR_WEAPON_CAMO_2_TIGER_CAMO */;
+						iVar0 = Global_262145.f_21538 /* Tunable: GR_WEAPON_CAMO_2_TIGER_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_COMBATMG_MK2_CAMO_03"):
-						iVar0 = Global_262145.f_21509 /* Tunable: GR_WEAPON_CAMO_3_WOODLAND_CAMO */;
+						iVar0 = Global_262145.f_21539 /* Tunable: GR_WEAPON_CAMO_3_WOODLAND_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_COMBATMG_MK2_CAMO_04"):
-						iVar0 = Global_262145.f_21510 /* Tunable: GR_WEAPON_CAMO_4_SKULL */;
+						iVar0 = Global_262145.f_21540 /* Tunable: GR_WEAPON_CAMO_4_SKULL */;
 						break;
 					
 					case joaat("COMPONENT_COMBATMG_MK2_CAMO_05"):
-						iVar0 = Global_262145.f_21511 /* Tunable: GR_WEAPON_CAMO_5_SESSANTA_NOVE */;
+						iVar0 = Global_262145.f_21541 /* Tunable: GR_WEAPON_CAMO_5_SESSANTA_NOVE */;
 						break;
 					
 					case joaat("COMPONENT_COMBATMG_MK2_CAMO_06"):
-						iVar0 = Global_262145.f_21512 /* Tunable: GR_WEAPON_CAMO_6_PERSEUS */;
+						iVar0 = Global_262145.f_21542 /* Tunable: GR_WEAPON_CAMO_6_PERSEUS */;
 						break;
 					
 					case joaat("COMPONENT_COMBATMG_MK2_CAMO_07"):
-						iVar0 = Global_262145.f_21513 /* Tunable: GR_WEAPON_CAMO_7_LEOPARD */;
+						iVar0 = Global_262145.f_21543 /* Tunable: GR_WEAPON_CAMO_7_LEOPARD */;
 						break;
 					
 					case joaat("COMPONENT_COMBATMG_MK2_CAMO_08"):
-						iVar0 = Global_262145.f_21514 /* Tunable: GR_WEAPON_CAMO_8_ZEBRA */;
+						iVar0 = Global_262145.f_21544 /* Tunable: GR_WEAPON_CAMO_8_ZEBRA */;
 						break;
 					
 					case joaat("COMPONENT_COMBATMG_MK2_CAMO_09"):
-						iVar0 = Global_262145.f_21515 /* Tunable: GR_WEAPON_CAMO_9_GEOMETRIC */;
+						iVar0 = Global_262145.f_21545 /* Tunable: GR_WEAPON_CAMO_9_GEOMETRIC */;
 						break;
 					
 					case joaat("COMPONENT_COMBATMG_MK2_CAMO_10"):
-						iVar0 = Global_262145.f_21516 /* Tunable: GR_WEAPON_CAMO_10_BOOM */;
+						iVar0 = Global_262145.f_21546 /* Tunable: GR_WEAPON_CAMO_10_BOOM */;
 						break;
 					
 					case joaat("COMPONENT_COMBATMG_MK2_CAMO_IND_01"):
-						iVar0 = Global_262145.f_21517 /* Tunable: GR_WEAPON_CAMO_11_PATRIOTIC */;
+						iVar0 = Global_262145.f_21547 /* Tunable: GR_WEAPON_CAMO_11_PATRIOTIC */;
 						break;
 				}
 				break;
@@ -6874,27 +7005,27 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_HEAVYSNIPER_MK2_CLIP_02"):
-						iVar0 = Global_262145.f_21437 /* Tunable: 330899918 */;
+						iVar0 = Global_262145.f_21467 /* Tunable: 330899918 */;
 						break;
 					
 					case joaat("COMPONENT_HEAVYSNIPER_MK2_CLIP_ARMORPIERCING"):
-						iVar0 = Global_262145.f_21438 /* Tunable: 917018525 */;
+						iVar0 = Global_262145.f_21468 /* Tunable: 917018525 */;
 						break;
 					
 					case joaat("COMPONENT_HEAVYSNIPER_MK2_CLIP_FMJ"):
-						iVar0 = Global_262145.f_21440 /* Tunable: 884234768 */;
+						iVar0 = Global_262145.f_21470 /* Tunable: 884234768 */;
 						break;
 					
 					case joaat("COMPONENT_HEAVYSNIPER_MK2_CLIP_INCENDIARY"):
-						iVar0 = Global_262145.f_21441 /* Tunable: 1088190767 */;
+						iVar0 = Global_262145.f_21471 /* Tunable: 1088190767 */;
 						break;
 					
 					case joaat("COMPONENT_HEAVYSNIPER_MK2_CLIP_EXPLOSIVE"):
-						iVar0 = Global_262145.f_21439 /* Tunable: -1206093715 */;
+						iVar0 = Global_262145.f_21469 /* Tunable: -1206093715 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_LARGE_MK2"):
-						iVar0 = Global_262145.f_21442 /* Tunable: 579562015 */;
+						iVar0 = Global_262145.f_21472 /* Tunable: 579562015 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MAX"):
@@ -6902,23 +7033,23 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_NV"):
-						iVar0 = Global_262145.f_21443 /* Tunable: 544428193 */;
+						iVar0 = Global_262145.f_21473 /* Tunable: 544428193 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_THERMAL"):
-						iVar0 = Global_262145.f_21444 /* Tunable: -707213005 */;
+						iVar0 = Global_262145.f_21474 /* Tunable: -707213005 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SR_SUPP_03"):
-						iVar0 = Global_262145.f_21445 /* Tunable: 1674324405 */;
+						iVar0 = Global_262145.f_21475 /* Tunable: 1674324405 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_08"):
-						iVar0 = Global_262145.f_21446 /* Tunable: 291821001 */;
+						iVar0 = Global_262145.f_21476 /* Tunable: 291821001 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_09"):
-						iVar0 = Global_262145.f_21447 /* Tunable: 1067332155 */;
+						iVar0 = Global_262145.f_21477 /* Tunable: 1067332155 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SR_BARREL_01"):
@@ -6926,51 +7057,51 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_AT_SR_BARREL_02"):
-						iVar0 = Global_262145.f_21448 /* Tunable: 2037426926 */;
+						iVar0 = Global_262145.f_21478 /* Tunable: 2037426926 */;
 						break;
 					
 					case joaat("COMPONENT_HEAVYSNIPER_MK2_CAMO"):
-						iVar0 = Global_262145.f_21507 /* Tunable: GR_WEAPON_CAMO_1_DIGITAL_CAMO */;
+						iVar0 = Global_262145.f_21537 /* Tunable: GR_WEAPON_CAMO_1_DIGITAL_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_HEAVYSNIPER_MK2_CAMO_02"):
-						iVar0 = Global_262145.f_21508 /* Tunable: GR_WEAPON_CAMO_2_TIGER_CAMO */;
+						iVar0 = Global_262145.f_21538 /* Tunable: GR_WEAPON_CAMO_2_TIGER_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_HEAVYSNIPER_MK2_CAMO_03"):
-						iVar0 = Global_262145.f_21509 /* Tunable: GR_WEAPON_CAMO_3_WOODLAND_CAMO */;
+						iVar0 = Global_262145.f_21539 /* Tunable: GR_WEAPON_CAMO_3_WOODLAND_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_HEAVYSNIPER_MK2_CAMO_04"):
-						iVar0 = Global_262145.f_21510 /* Tunable: GR_WEAPON_CAMO_4_SKULL */;
+						iVar0 = Global_262145.f_21540 /* Tunable: GR_WEAPON_CAMO_4_SKULL */;
 						break;
 					
 					case joaat("COMPONENT_HEAVYSNIPER_MK2_CAMO_05"):
-						iVar0 = Global_262145.f_21511 /* Tunable: GR_WEAPON_CAMO_5_SESSANTA_NOVE */;
+						iVar0 = Global_262145.f_21541 /* Tunable: GR_WEAPON_CAMO_5_SESSANTA_NOVE */;
 						break;
 					
 					case joaat("COMPONENT_HEAVYSNIPER_MK2_CAMO_06"):
-						iVar0 = Global_262145.f_21512 /* Tunable: GR_WEAPON_CAMO_6_PERSEUS */;
+						iVar0 = Global_262145.f_21542 /* Tunable: GR_WEAPON_CAMO_6_PERSEUS */;
 						break;
 					
 					case joaat("COMPONENT_HEAVYSNIPER_MK2_CAMO_07"):
-						iVar0 = Global_262145.f_21513 /* Tunable: GR_WEAPON_CAMO_7_LEOPARD */;
+						iVar0 = Global_262145.f_21543 /* Tunable: GR_WEAPON_CAMO_7_LEOPARD */;
 						break;
 					
 					case joaat("COMPONENT_HEAVYSNIPER_MK2_CAMO_08"):
-						iVar0 = Global_262145.f_21514 /* Tunable: GR_WEAPON_CAMO_8_ZEBRA */;
+						iVar0 = Global_262145.f_21544 /* Tunable: GR_WEAPON_CAMO_8_ZEBRA */;
 						break;
 					
 					case joaat("COMPONENT_HEAVYSNIPER_MK2_CAMO_09"):
-						iVar0 = Global_262145.f_21515 /* Tunable: GR_WEAPON_CAMO_9_GEOMETRIC */;
+						iVar0 = Global_262145.f_21545 /* Tunable: GR_WEAPON_CAMO_9_GEOMETRIC */;
 						break;
 					
 					case joaat("COMPONENT_HEAVYSNIPER_MK2_CAMO_10"):
-						iVar0 = Global_262145.f_21516 /* Tunable: GR_WEAPON_CAMO_10_BOOM */;
+						iVar0 = Global_262145.f_21546 /* Tunable: GR_WEAPON_CAMO_10_BOOM */;
 						break;
 					
 					case joaat("COMPONENT_HEAVYSNIPER_MK2_CAMO_IND_01"):
-						iVar0 = Global_262145.f_21517 /* Tunable: GR_WEAPON_CAMO_11_PATRIOTIC */;
+						iVar0 = Global_262145.f_21547 /* Tunable: GR_WEAPON_CAMO_11_PATRIOTIC */;
 						break;
 				}
 				break;
@@ -6983,83 +7114,83 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_PISTOL_MK2_CLIP_02"):
-						iVar0 = Global_262145.f_21449 /* Tunable: 1430566154 */;
+						iVar0 = Global_262145.f_21479 /* Tunable: 1430566154 */;
 						break;
 					
 					case joaat("COMPONENT_PISTOL_MK2_CLIP_HOLLOWPOINT"):
-						iVar0 = Global_262145.f_21451 /* Tunable: -1046185578 */;
+						iVar0 = Global_262145.f_21481 /* Tunable: -1046185578 */;
 						break;
 					
 					case joaat("COMPONENT_PISTOL_MK2_CLIP_FMJ"):
-						iVar0 = Global_262145.f_21450 /* Tunable: -506102803 */;
+						iVar0 = Global_262145.f_21480 /* Tunable: -506102803 */;
 						break;
 					
 					case joaat("COMPONENT_PISTOL_MK2_CLIP_INCENDIARY"):
-						iVar0 = Global_262145.f_21452 /* Tunable: 1296166421 */;
+						iVar0 = Global_262145.f_21482 /* Tunable: 1296166421 */;
 						break;
 					
 					case joaat("COMPONENT_PISTOL_MK2_CLIP_TRACER"):
-						iVar0 = Global_262145.f_21453 /* Tunable: 1866512725 */;
+						iVar0 = Global_262145.f_21483 /* Tunable: 1866512725 */;
 						break;
 					
 					case joaat("COMPONENT_AT_PI_FLSH_02"):
-						iVar0 = Global_262145.f_21454 /* Tunable: -1999312528 */;
+						iVar0 = Global_262145.f_21484 /* Tunable: -1999312528 */;
 						break;
 					
 					case joaat("COMPONENT_AT_PI_RAIL"):
-						iVar0 = Global_262145.f_21455 /* Tunable: 1055846757 */;
+						iVar0 = Global_262145.f_21485 /* Tunable: 1055846757 */;
 						break;
 					
 					case joaat("COMPONENT_AT_PI_SUPP_02"):
-						iVar0 = Global_262145.f_21456 /* Tunable: 1378860015 */;
+						iVar0 = Global_262145.f_21486 /* Tunable: 1378860015 */;
 						break;
 					
 					case joaat("COMPONENT_AT_PI_COMP"):
-						iVar0 = Global_262145.f_21457 /* Tunable: 1792089868 */;
+						iVar0 = Global_262145.f_21487 /* Tunable: 1792089868 */;
 						break;
 					
 					case joaat("COMPONENT_PISTOL_MK2_CAMO"):
-						iVar0 = Global_262145.f_21507 /* Tunable: GR_WEAPON_CAMO_1_DIGITAL_CAMO */;
+						iVar0 = Global_262145.f_21537 /* Tunable: GR_WEAPON_CAMO_1_DIGITAL_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_PISTOL_MK2_CAMO_02"):
-						iVar0 = Global_262145.f_21508 /* Tunable: GR_WEAPON_CAMO_2_TIGER_CAMO */;
+						iVar0 = Global_262145.f_21538 /* Tunable: GR_WEAPON_CAMO_2_TIGER_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_PISTOL_MK2_CAMO_03"):
-						iVar0 = Global_262145.f_21509 /* Tunable: GR_WEAPON_CAMO_3_WOODLAND_CAMO */;
+						iVar0 = Global_262145.f_21539 /* Tunable: GR_WEAPON_CAMO_3_WOODLAND_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_PISTOL_MK2_CAMO_04"):
-						iVar0 = Global_262145.f_21510 /* Tunable: GR_WEAPON_CAMO_4_SKULL */;
+						iVar0 = Global_262145.f_21540 /* Tunable: GR_WEAPON_CAMO_4_SKULL */;
 						break;
 					
 					case joaat("COMPONENT_PISTOL_MK2_CAMO_05"):
-						iVar0 = Global_262145.f_21511 /* Tunable: GR_WEAPON_CAMO_5_SESSANTA_NOVE */;
+						iVar0 = Global_262145.f_21541 /* Tunable: GR_WEAPON_CAMO_5_SESSANTA_NOVE */;
 						break;
 					
 					case joaat("COMPONENT_PISTOL_MK2_CAMO_06"):
-						iVar0 = Global_262145.f_21512 /* Tunable: GR_WEAPON_CAMO_6_PERSEUS */;
+						iVar0 = Global_262145.f_21542 /* Tunable: GR_WEAPON_CAMO_6_PERSEUS */;
 						break;
 					
 					case joaat("COMPONENT_PISTOL_MK2_CAMO_07"):
-						iVar0 = Global_262145.f_21513 /* Tunable: GR_WEAPON_CAMO_7_LEOPARD */;
+						iVar0 = Global_262145.f_21543 /* Tunable: GR_WEAPON_CAMO_7_LEOPARD */;
 						break;
 					
 					case joaat("COMPONENT_PISTOL_MK2_CAMO_08"):
-						iVar0 = Global_262145.f_21514 /* Tunable: GR_WEAPON_CAMO_8_ZEBRA */;
+						iVar0 = Global_262145.f_21544 /* Tunable: GR_WEAPON_CAMO_8_ZEBRA */;
 						break;
 					
 					case joaat("COMPONENT_PISTOL_MK2_CAMO_09"):
-						iVar0 = Global_262145.f_21515 /* Tunable: GR_WEAPON_CAMO_9_GEOMETRIC */;
+						iVar0 = Global_262145.f_21545 /* Tunable: GR_WEAPON_CAMO_9_GEOMETRIC */;
 						break;
 					
 					case joaat("COMPONENT_PISTOL_MK2_CAMO_10"):
-						iVar0 = Global_262145.f_21516 /* Tunable: GR_WEAPON_CAMO_10_BOOM */;
+						iVar0 = Global_262145.f_21546 /* Tunable: GR_WEAPON_CAMO_10_BOOM */;
 						break;
 					
 					case joaat("COMPONENT_PISTOL_MK2_CAMO_IND_01"):
-						iVar0 = Global_262145.f_21517 /* Tunable: GR_WEAPON_CAMO_11_PATRIOTIC */;
+						iVar0 = Global_262145.f_21547 /* Tunable: GR_WEAPON_CAMO_11_PATRIOTIC */;
 						break;
 					
 					case joaat("COMPONENT_PISTOL_MK2_VARMOD_XM3"):
@@ -7076,71 +7207,71 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_SMG_MK2_CLIP_02"):
-						iVar0 = Global_262145.f_21458 /* Tunable: -220053906 */;
+						iVar0 = Global_262145.f_21488 /* Tunable: -220053906 */;
 						break;
 					
 					case joaat("COMPONENT_SMG_MK2_CLIP_HOLLOWPOINT"):
-						iVar0 = Global_262145.f_21460 /* Tunable: -952131423 */;
+						iVar0 = Global_262145.f_21490 /* Tunable: -952131423 */;
 						break;
 					
 					case joaat("COMPONENT_SMG_MK2_CLIP_FMJ"):
-						iVar0 = Global_262145.f_21459 /* Tunable: -1897517534 */;
+						iVar0 = Global_262145.f_21489 /* Tunable: -1897517534 */;
 						break;
 					
 					case joaat("COMPONENT_SMG_MK2_CLIP_INCENDIARY"):
-						iVar0 = Global_262145.f_21461 /* Tunable: -977321503 */;
+						iVar0 = Global_262145.f_21491 /* Tunable: -977321503 */;
 						break;
 					
 					case joaat("COMPONENT_SMG_MK2_CLIP_TRACER"):
-						iVar0 = Global_262145.f_21462 /* Tunable: -1188309354 */;
+						iVar0 = Global_262145.f_21492 /* Tunable: -1188309354 */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
-						iVar0 = Global_262145.f_21463 /* Tunable: -2017541960 */;
+						iVar0 = Global_262145.f_21493 /* Tunable: -2017541960 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SIGHTS_SMG"):
-						iVar0 = Global_262145.f_21464 /* Tunable: 1261888316 */;
+						iVar0 = Global_262145.f_21494 /* Tunable: 1261888316 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MACRO_02_SMG_MK2"):
-						iVar0 = Global_262145.f_21465 /* Tunable: 735171511 */;
+						iVar0 = Global_262145.f_21495 /* Tunable: 735171511 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_SMALL_SMG_MK2"):
-						iVar0 = Global_262145.f_21466 /* Tunable: -1290434805 */;
+						iVar0 = Global_262145.f_21496 /* Tunable: -1290434805 */;
 						break;
 					
 					case joaat("COMPONENT_AT_PI_SUPP"):
-						iVar0 = Global_262145.f_21467 /* Tunable: 662271695 */;
+						iVar0 = Global_262145.f_21497 /* Tunable: 662271695 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_01"):
-						iVar0 = Global_262145.f_21468 /* Tunable: 1781046189 */;
+						iVar0 = Global_262145.f_21498 /* Tunable: 1781046189 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_02"):
-						iVar0 = Global_262145.f_21469 /* Tunable: -1288131124 */;
+						iVar0 = Global_262145.f_21499 /* Tunable: -1288131124 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_03"):
-						iVar0 = Global_262145.f_21470 /* Tunable: -1129922392 */;
+						iVar0 = Global_262145.f_21500 /* Tunable: -1129922392 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_04"):
-						iVar0 = Global_262145.f_21471 /* Tunable: 129226433 */;
+						iVar0 = Global_262145.f_21501 /* Tunable: 129226433 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_05"):
-						iVar0 = Global_262145.f_21472 /* Tunable: -1594095277 */;
+						iVar0 = Global_262145.f_21502 /* Tunable: -1594095277 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_06"):
-						iVar0 = Global_262145.f_21473 /* Tunable: -444427681 */;
+						iVar0 = Global_262145.f_21503 /* Tunable: -444427681 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_07"):
-						iVar0 = Global_262145.f_21474 /* Tunable: -137611534 */;
+						iVar0 = Global_262145.f_21504 /* Tunable: -137611534 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SB_BARREL_01"):
@@ -7148,51 +7279,51 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_AT_SB_BARREL_02"):
-						iVar0 = Global_262145.f_21475 /* Tunable: 946764522 */;
+						iVar0 = Global_262145.f_21505 /* Tunable: 946764522 */;
 						break;
 					
 					case joaat("COMPONENT_SMG_MK2_CAMO"):
-						iVar0 = Global_262145.f_21507 /* Tunable: GR_WEAPON_CAMO_1_DIGITAL_CAMO */;
+						iVar0 = Global_262145.f_21537 /* Tunable: GR_WEAPON_CAMO_1_DIGITAL_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_SMG_MK2_CAMO_02"):
-						iVar0 = Global_262145.f_21508 /* Tunable: GR_WEAPON_CAMO_2_TIGER_CAMO */;
+						iVar0 = Global_262145.f_21538 /* Tunable: GR_WEAPON_CAMO_2_TIGER_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_SMG_MK2_CAMO_03"):
-						iVar0 = Global_262145.f_21509 /* Tunable: GR_WEAPON_CAMO_3_WOODLAND_CAMO */;
+						iVar0 = Global_262145.f_21539 /* Tunable: GR_WEAPON_CAMO_3_WOODLAND_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_SMG_MK2_CAMO_04"):
-						iVar0 = Global_262145.f_21510 /* Tunable: GR_WEAPON_CAMO_4_SKULL */;
+						iVar0 = Global_262145.f_21540 /* Tunable: GR_WEAPON_CAMO_4_SKULL */;
 						break;
 					
 					case joaat("COMPONENT_SMG_MK2_CAMO_05"):
-						iVar0 = Global_262145.f_21511 /* Tunable: GR_WEAPON_CAMO_5_SESSANTA_NOVE */;
+						iVar0 = Global_262145.f_21541 /* Tunable: GR_WEAPON_CAMO_5_SESSANTA_NOVE */;
 						break;
 					
 					case joaat("COMPONENT_SMG_MK2_CAMO_06"):
-						iVar0 = Global_262145.f_21512 /* Tunable: GR_WEAPON_CAMO_6_PERSEUS */;
+						iVar0 = Global_262145.f_21542 /* Tunable: GR_WEAPON_CAMO_6_PERSEUS */;
 						break;
 					
 					case joaat("COMPONENT_SMG_MK2_CAMO_07"):
-						iVar0 = Global_262145.f_21513 /* Tunable: GR_WEAPON_CAMO_7_LEOPARD */;
+						iVar0 = Global_262145.f_21543 /* Tunable: GR_WEAPON_CAMO_7_LEOPARD */;
 						break;
 					
 					case joaat("COMPONENT_SMG_MK2_CAMO_08"):
-						iVar0 = Global_262145.f_21514 /* Tunable: GR_WEAPON_CAMO_8_ZEBRA */;
+						iVar0 = Global_262145.f_21544 /* Tunable: GR_WEAPON_CAMO_8_ZEBRA */;
 						break;
 					
 					case joaat("COMPONENT_SMG_MK2_CAMO_09"):
-						iVar0 = Global_262145.f_21515 /* Tunable: GR_WEAPON_CAMO_9_GEOMETRIC */;
+						iVar0 = Global_262145.f_21545 /* Tunable: GR_WEAPON_CAMO_9_GEOMETRIC */;
 						break;
 					
 					case joaat("COMPONENT_SMG_MK2_CAMO_10"):
-						iVar0 = Global_262145.f_21516 /* Tunable: GR_WEAPON_CAMO_10_BOOM */;
+						iVar0 = Global_262145.f_21546 /* Tunable: GR_WEAPON_CAMO_10_BOOM */;
 						break;
 					
 					case joaat("COMPONENT_SMG_MK2_CAMO_IND_01"):
-						iVar0 = Global_262145.f_21517 /* Tunable: GR_WEAPON_CAMO_11_PATRIOTIC */;
+						iVar0 = Global_262145.f_21547 /* Tunable: GR_WEAPON_CAMO_11_PATRIOTIC */;
 						break;
 				}
 				break;
@@ -7205,87 +7336,87 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_PUMPSHOTGUN_MK2_CLIP_ARMORPIERCING"):
-						iVar0 = Global_262145.f_23145 /* Tunable: 1652287555 */;
+						iVar0 = Global_262145.f_23175 /* Tunable: 1652287555 */;
 						break;
 					
 					case joaat("COMPONENT_PUMPSHOTGUN_MK2_CLIP_EXPLOSIVE"):
-						iVar0 = Global_262145.f_23146 /* Tunable: -535703975 */;
+						iVar0 = Global_262145.f_23176 /* Tunable: -535703975 */;
 						break;
 					
 					case joaat("COMPONENT_PUMPSHOTGUN_MK2_CLIP_HOLLOWPOINT"):
-						iVar0 = Global_262145.f_23144 /* Tunable: 95511928 */;
+						iVar0 = Global_262145.f_23174 /* Tunable: 95511928 */;
 						break;
 					
 					case joaat("COMPONENT_PUMPSHOTGUN_MK2_CLIP_INCENDIARY"):
-						iVar0 = Global_262145.f_23143 /* Tunable: -665155806 */;
+						iVar0 = Global_262145.f_23173 /* Tunable: -665155806 */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
-						iVar0 = Global_262145.f_23172 /* Tunable: 307884450 */;
+						iVar0 = Global_262145.f_23202 /* Tunable: 307884450 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SIGHTS"):
-						iVar0 = Global_262145.f_23173 /* Tunable: 1712943577 */;
+						iVar0 = Global_262145.f_23203 /* Tunable: 1712943577 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MACRO_MK2"):
-						iVar0 = Global_262145.f_23174 /* Tunable: -1605498735 */;
+						iVar0 = Global_262145.f_23204 /* Tunable: -1605498735 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_SMALL_MK2"):
-						iVar0 = Global_262145.f_23175 /* Tunable: -1766164400 */;
+						iVar0 = Global_262145.f_23205 /* Tunable: -1766164400 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SR_SUPP_03"):
-						iVar0 = Global_262145.f_23176 /* Tunable: 1535840470 */;
+						iVar0 = Global_262145.f_23206 /* Tunable: 1535840470 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_08"):
-						iVar0 = Global_262145.f_23177 /* Tunable: 179346571 */;
+						iVar0 = Global_262145.f_23207 /* Tunable: 179346571 */;
 						break;
 					
 					case joaat("COMPONENT_PUMPSHOTGUN_MK2_CAMO"):
-						iVar0 = Global_262145.f_21507 /* Tunable: GR_WEAPON_CAMO_1_DIGITAL_CAMO */;
+						iVar0 = Global_262145.f_21537 /* Tunable: GR_WEAPON_CAMO_1_DIGITAL_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_PUMPSHOTGUN_MK2_CAMO_02"):
-						iVar0 = Global_262145.f_21508 /* Tunable: GR_WEAPON_CAMO_2_TIGER_CAMO */;
+						iVar0 = Global_262145.f_21538 /* Tunable: GR_WEAPON_CAMO_2_TIGER_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_PUMPSHOTGUN_MK2_CAMO_03"):
-						iVar0 = Global_262145.f_21509 /* Tunable: GR_WEAPON_CAMO_3_WOODLAND_CAMO */;
+						iVar0 = Global_262145.f_21539 /* Tunable: GR_WEAPON_CAMO_3_WOODLAND_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_PUMPSHOTGUN_MK2_CAMO_04"):
-						iVar0 = Global_262145.f_21510 /* Tunable: GR_WEAPON_CAMO_4_SKULL */;
+						iVar0 = Global_262145.f_21540 /* Tunable: GR_WEAPON_CAMO_4_SKULL */;
 						break;
 					
 					case joaat("COMPONENT_PUMPSHOTGUN_MK2_CAMO_05"):
-						iVar0 = Global_262145.f_21511 /* Tunable: GR_WEAPON_CAMO_5_SESSANTA_NOVE */;
+						iVar0 = Global_262145.f_21541 /* Tunable: GR_WEAPON_CAMO_5_SESSANTA_NOVE */;
 						break;
 					
 					case joaat("COMPONENT_PUMPSHOTGUN_MK2_CAMO_06"):
-						iVar0 = Global_262145.f_21512 /* Tunable: GR_WEAPON_CAMO_6_PERSEUS */;
+						iVar0 = Global_262145.f_21542 /* Tunable: GR_WEAPON_CAMO_6_PERSEUS */;
 						break;
 					
 					case joaat("COMPONENT_PUMPSHOTGUN_MK2_CAMO_07"):
-						iVar0 = Global_262145.f_21513 /* Tunable: GR_WEAPON_CAMO_7_LEOPARD */;
+						iVar0 = Global_262145.f_21543 /* Tunable: GR_WEAPON_CAMO_7_LEOPARD */;
 						break;
 					
 					case joaat("COMPONENT_PUMPSHOTGUN_MK2_CAMO_08"):
-						iVar0 = Global_262145.f_21514 /* Tunable: GR_WEAPON_CAMO_8_ZEBRA */;
+						iVar0 = Global_262145.f_21544 /* Tunable: GR_WEAPON_CAMO_8_ZEBRA */;
 						break;
 					
 					case joaat("COMPONENT_PUMPSHOTGUN_MK2_CAMO_09"):
-						iVar0 = Global_262145.f_21515 /* Tunable: GR_WEAPON_CAMO_9_GEOMETRIC */;
+						iVar0 = Global_262145.f_21545 /* Tunable: GR_WEAPON_CAMO_9_GEOMETRIC */;
 						break;
 					
 					case joaat("COMPONENT_PUMPSHOTGUN_MK2_CAMO_10"):
-						iVar0 = Global_262145.f_21516 /* Tunable: GR_WEAPON_CAMO_10_BOOM */;
+						iVar0 = Global_262145.f_21546 /* Tunable: GR_WEAPON_CAMO_10_BOOM */;
 						break;
 					
 					case joaat("COMPONENT_PUMPSHOTGUN_MK2_CAMO_IND_01"):
-						iVar0 = Global_262145.f_21517 /* Tunable: GR_WEAPON_CAMO_11_PATRIOTIC */;
+						iVar0 = Global_262145.f_21547 /* Tunable: GR_WEAPON_CAMO_11_PATRIOTIC */;
 						break;
 				}
 				break;
@@ -7298,75 +7429,75 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_SPECIALCARBINE_MK2_CLIP_02"):
-						iVar0 = Global_262145.f_23147 /* Tunable: -1133159623 */;
+						iVar0 = Global_262145.f_23177 /* Tunable: -1133159623 */;
 						break;
 					
 					case joaat("COMPONENT_SPECIALCARBINE_MK2_CLIP_ARMORPIERCING"):
-						iVar0 = Global_262145.f_23151 /* Tunable: 884315323 */;
+						iVar0 = Global_262145.f_23181 /* Tunable: 884315323 */;
 						break;
 					
 					case joaat("COMPONENT_SPECIALCARBINE_MK2_CLIP_FMJ"):
-						iVar0 = Global_262145.f_23149 /* Tunable: 117177146 */;
+						iVar0 = Global_262145.f_23179 /* Tunable: 117177146 */;
 						break;
 					
 					case joaat("COMPONENT_SPECIALCARBINE_MK2_CLIP_INCENDIARY"):
-						iVar0 = Global_262145.f_23150 /* Tunable: 1711440619 */;
+						iVar0 = Global_262145.f_23180 /* Tunable: 1711440619 */;
 						break;
 					
 					case joaat("COMPONENT_SPECIALCARBINE_MK2_CLIP_TRACER"):
-						iVar0 = Global_262145.f_23148 /* Tunable: 1515067404 */;
+						iVar0 = Global_262145.f_23178 /* Tunable: 1515067404 */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
-						iVar0 = Global_262145.f_23178 /* Tunable: -675401976 */;
+						iVar0 = Global_262145.f_23208 /* Tunable: -675401976 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SIGHTS"):
-						iVar0 = Global_262145.f_23179 /* Tunable: 1348404810 */;
+						iVar0 = Global_262145.f_23209 /* Tunable: 1348404810 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MACRO_MK2"):
-						iVar0 = Global_262145.f_23180 /* Tunable: 1661135184 */;
+						iVar0 = Global_262145.f_23210 /* Tunable: 1661135184 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MEDIUM_MK2"):
-						iVar0 = Global_262145.f_23181 /* Tunable: -622756256 */;
+						iVar0 = Global_262145.f_23211 /* Tunable: -622756256 */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP_02"):
-						iVar0 = Global_262145.f_23182 /* Tunable: 1005673153 */;
+						iVar0 = Global_262145.f_23212 /* Tunable: 1005673153 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_01"):
-						iVar0 = Global_262145.f_23183 /* Tunable: -2043761976 */;
+						iVar0 = Global_262145.f_23213 /* Tunable: -2043761976 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_02"):
-						iVar0 = Global_262145.f_23184 /* Tunable: 1467944449 */;
+						iVar0 = Global_262145.f_23214 /* Tunable: 1467944449 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_03"):
-						iVar0 = Global_262145.f_23185 /* Tunable: 2104462570 */;
+						iVar0 = Global_262145.f_23215 /* Tunable: 2104462570 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_04"):
-						iVar0 = Global_262145.f_23186 /* Tunable: -686370155 */;
+						iVar0 = Global_262145.f_23216 /* Tunable: -686370155 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_05"):
-						iVar0 = Global_262145.f_23187 /* Tunable: 1322082777 */;
+						iVar0 = Global_262145.f_23217 /* Tunable: 1322082777 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_06"):
-						iVar0 = Global_262145.f_23188 /* Tunable: -189707864 */;
+						iVar0 = Global_262145.f_23218 /* Tunable: -189707864 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_07"):
-						iVar0 = Global_262145.f_23189 /* Tunable: 1794058860 */;
+						iVar0 = Global_262145.f_23219 /* Tunable: 1794058860 */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_AFGRIP_02"):
-						iVar0 = Global_262145.f_23190 /* Tunable: -77140556 */;
+						iVar0 = Global_262145.f_23220 /* Tunable: -77140556 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SC_BARREL_01"):
@@ -7374,51 +7505,51 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_AT_SC_BARREL_02"):
-						iVar0 = Global_262145.f_23191 /* Tunable: 1028863717 */;
+						iVar0 = Global_262145.f_23221 /* Tunable: 1028863717 */;
 						break;
 					
 					case joaat("COMPONENT_SPECIALCARBINE_MK2_CAMO"):
-						iVar0 = Global_262145.f_21507 /* Tunable: GR_WEAPON_CAMO_1_DIGITAL_CAMO */;
+						iVar0 = Global_262145.f_21537 /* Tunable: GR_WEAPON_CAMO_1_DIGITAL_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_SPECIALCARBINE_MK2_CAMO_02"):
-						iVar0 = Global_262145.f_21508 /* Tunable: GR_WEAPON_CAMO_2_TIGER_CAMO */;
+						iVar0 = Global_262145.f_21538 /* Tunable: GR_WEAPON_CAMO_2_TIGER_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_SPECIALCARBINE_MK2_CAMO_03"):
-						iVar0 = Global_262145.f_21509 /* Tunable: GR_WEAPON_CAMO_3_WOODLAND_CAMO */;
+						iVar0 = Global_262145.f_21539 /* Tunable: GR_WEAPON_CAMO_3_WOODLAND_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_SPECIALCARBINE_MK2_CAMO_04"):
-						iVar0 = Global_262145.f_21510 /* Tunable: GR_WEAPON_CAMO_4_SKULL */;
+						iVar0 = Global_262145.f_21540 /* Tunable: GR_WEAPON_CAMO_4_SKULL */;
 						break;
 					
 					case joaat("COMPONENT_SPECIALCARBINE_MK2_CAMO_05"):
-						iVar0 = Global_262145.f_21511 /* Tunable: GR_WEAPON_CAMO_5_SESSANTA_NOVE */;
+						iVar0 = Global_262145.f_21541 /* Tunable: GR_WEAPON_CAMO_5_SESSANTA_NOVE */;
 						break;
 					
 					case joaat("COMPONENT_SPECIALCARBINE_MK2_CAMO_06"):
-						iVar0 = Global_262145.f_21512 /* Tunable: GR_WEAPON_CAMO_6_PERSEUS */;
+						iVar0 = Global_262145.f_21542 /* Tunable: GR_WEAPON_CAMO_6_PERSEUS */;
 						break;
 					
 					case joaat("COMPONENT_SPECIALCARBINE_MK2_CAMO_07"):
-						iVar0 = Global_262145.f_21513 /* Tunable: GR_WEAPON_CAMO_7_LEOPARD */;
+						iVar0 = Global_262145.f_21543 /* Tunable: GR_WEAPON_CAMO_7_LEOPARD */;
 						break;
 					
 					case joaat("COMPONENT_SPECIALCARBINE_MK2_CAMO_08"):
-						iVar0 = Global_262145.f_21514 /* Tunable: GR_WEAPON_CAMO_8_ZEBRA */;
+						iVar0 = Global_262145.f_21544 /* Tunable: GR_WEAPON_CAMO_8_ZEBRA */;
 						break;
 					
 					case joaat("COMPONENT_SPECIALCARBINE_MK2_CAMO_09"):
-						iVar0 = Global_262145.f_21515 /* Tunable: GR_WEAPON_CAMO_9_GEOMETRIC */;
+						iVar0 = Global_262145.f_21545 /* Tunable: GR_WEAPON_CAMO_9_GEOMETRIC */;
 						break;
 					
 					case joaat("COMPONENT_SPECIALCARBINE_MK2_CAMO_10"):
-						iVar0 = Global_262145.f_21516 /* Tunable: GR_WEAPON_CAMO_10_BOOM */;
+						iVar0 = Global_262145.f_21546 /* Tunable: GR_WEAPON_CAMO_10_BOOM */;
 						break;
 					
 					case joaat("COMPONENT_SPECIALCARBINE_MK2_CAMO_IND_01"):
-						iVar0 = Global_262145.f_21517 /* Tunable: GR_WEAPON_CAMO_11_PATRIOTIC */;
+						iVar0 = Global_262145.f_21547 /* Tunable: GR_WEAPON_CAMO_11_PATRIOTIC */;
 						break;
 				}
 				break;
@@ -7431,83 +7562,83 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_SNSPISTOL_MK2_CLIP_02"):
-						iVar0 = Global_262145.f_24063 /* Tunable: -1086352658 */;
+						iVar0 = Global_262145.f_24093 /* Tunable: -1086352658 */;
 						break;
 					
 					case joaat("COMPONENT_SNSPISTOL_MK2_CLIP_FMJ"):
-						iVar0 = Global_262145.f_23167 /* Tunable: -1789606801 */;
+						iVar0 = Global_262145.f_23197 /* Tunable: -1789606801 */;
 						break;
 					
 					case joaat("COMPONENT_SNSPISTOL_MK2_CLIP_HOLLOWPOINT"):
-						iVar0 = Global_262145.f_23169 /* Tunable: -843751922 */;
+						iVar0 = Global_262145.f_23199 /* Tunable: -843751922 */;
 						break;
 					
 					case joaat("COMPONENT_SNSPISTOL_MK2_CLIP_INCENDIARY"):
-						iVar0 = Global_262145.f_23168 /* Tunable: 839487066 */;
+						iVar0 = Global_262145.f_23198 /* Tunable: 839487066 */;
 						break;
 					
 					case joaat("COMPONENT_SNSPISTOL_MK2_CLIP_TRACER"):
-						iVar0 = Global_262145.f_23166 /* Tunable: -1383425686 */;
+						iVar0 = Global_262145.f_23196 /* Tunable: -1383425686 */;
 						break;
 					
 					case joaat("COMPONENT_AT_PI_FLSH_03"):
-						iVar0 = Global_262145.f_23223 /* Tunable: -291501777 */;
+						iVar0 = Global_262145.f_23253 /* Tunable: -291501777 */;
 						break;
 					
 					case joaat("COMPONENT_AT_PI_RAIL_02"):
-						iVar0 = Global_262145.f_23224 /* Tunable: -1122806840 */;
+						iVar0 = Global_262145.f_23254 /* Tunable: -1122806840 */;
 						break;
 					
 					case joaat("COMPONENT_AT_PI_SUPP_02"):
-						iVar0 = Global_262145.f_23225 /* Tunable: -353555220 */;
+						iVar0 = Global_262145.f_23255 /* Tunable: -353555220 */;
 						break;
 					
 					case joaat("COMPONENT_AT_PI_COMP_02"):
-						iVar0 = Global_262145.f_23226 /* Tunable: -537982964 */;
+						iVar0 = Global_262145.f_23256 /* Tunable: -537982964 */;
 						break;
 					
 					case joaat("COMPONENT_SNSPISTOL_MK2_CAMO"):
-						iVar0 = Global_262145.f_21507 /* Tunable: GR_WEAPON_CAMO_1_DIGITAL_CAMO */;
+						iVar0 = Global_262145.f_21537 /* Tunable: GR_WEAPON_CAMO_1_DIGITAL_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_SNSPISTOL_MK2_CAMO_02"):
-						iVar0 = Global_262145.f_21508 /* Tunable: GR_WEAPON_CAMO_2_TIGER_CAMO */;
+						iVar0 = Global_262145.f_21538 /* Tunable: GR_WEAPON_CAMO_2_TIGER_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_SNSPISTOL_MK2_CAMO_03"):
-						iVar0 = Global_262145.f_21509 /* Tunable: GR_WEAPON_CAMO_3_WOODLAND_CAMO */;
+						iVar0 = Global_262145.f_21539 /* Tunable: GR_WEAPON_CAMO_3_WOODLAND_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_SNSPISTOL_MK2_CAMO_04"):
-						iVar0 = Global_262145.f_21510 /* Tunable: GR_WEAPON_CAMO_4_SKULL */;
+						iVar0 = Global_262145.f_21540 /* Tunable: GR_WEAPON_CAMO_4_SKULL */;
 						break;
 					
 					case joaat("COMPONENT_SNSPISTOL_MK2_CAMO_05"):
-						iVar0 = Global_262145.f_21511 /* Tunable: GR_WEAPON_CAMO_5_SESSANTA_NOVE */;
+						iVar0 = Global_262145.f_21541 /* Tunable: GR_WEAPON_CAMO_5_SESSANTA_NOVE */;
 						break;
 					
 					case joaat("COMPONENT_SNSPISTOL_MK2_CAMO_06"):
-						iVar0 = Global_262145.f_21512 /* Tunable: GR_WEAPON_CAMO_6_PERSEUS */;
+						iVar0 = Global_262145.f_21542 /* Tunable: GR_WEAPON_CAMO_6_PERSEUS */;
 						break;
 					
 					case joaat("COMPONENT_SNSPISTOL_MK2_CAMO_07"):
-						iVar0 = Global_262145.f_21513 /* Tunable: GR_WEAPON_CAMO_7_LEOPARD */;
+						iVar0 = Global_262145.f_21543 /* Tunable: GR_WEAPON_CAMO_7_LEOPARD */;
 						break;
 					
 					case joaat("COMPONENT_SNSPISTOL_MK2_CAMO_08"):
-						iVar0 = Global_262145.f_21514 /* Tunable: GR_WEAPON_CAMO_8_ZEBRA */;
+						iVar0 = Global_262145.f_21544 /* Tunable: GR_WEAPON_CAMO_8_ZEBRA */;
 						break;
 					
 					case joaat("COMPONENT_SNSPISTOL_MK2_CAMO_09"):
-						iVar0 = Global_262145.f_21515 /* Tunable: GR_WEAPON_CAMO_9_GEOMETRIC */;
+						iVar0 = Global_262145.f_21545 /* Tunable: GR_WEAPON_CAMO_9_GEOMETRIC */;
 						break;
 					
 					case joaat("COMPONENT_SNSPISTOL_MK2_CAMO_10"):
-						iVar0 = Global_262145.f_21516 /* Tunable: GR_WEAPON_CAMO_10_BOOM */;
+						iVar0 = Global_262145.f_21546 /* Tunable: GR_WEAPON_CAMO_10_BOOM */;
 						break;
 					
 					case joaat("COMPONENT_SNSPISTOL_MK2_CAMO_IND_01"):
-						iVar0 = Global_262145.f_21517 /* Tunable: GR_WEAPON_CAMO_11_PATRIOTIC */;
+						iVar0 = Global_262145.f_21547 /* Tunable: GR_WEAPON_CAMO_11_PATRIOTIC */;
 						break;
 				}
 				break;
@@ -7520,35 +7651,35 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_MARKSMANRIFLE_MK2_CLIP_02"):
-						iVar0 = Global_262145.f_23152 /* Tunable: -1378447114 */;
+						iVar0 = Global_262145.f_23182 /* Tunable: -1378447114 */;
 						break;
 					
 					case joaat("COMPONENT_MARKSMANRIFLE_MK2_CLIP_ARMORPIERCING"):
-						iVar0 = Global_262145.f_23156 /* Tunable: -402362564 */;
+						iVar0 = Global_262145.f_23186 /* Tunable: -402362564 */;
 						break;
 					
 					case joaat("COMPONENT_MARKSMANRIFLE_MK2_CLIP_FMJ"):
-						iVar0 = Global_262145.f_23154 /* Tunable: -901067049 */;
+						iVar0 = Global_262145.f_23184 /* Tunable: -901067049 */;
 						break;
 					
 					case joaat("COMPONENT_MARKSMANRIFLE_MK2_CLIP_INCENDIARY"):
-						iVar0 = Global_262145.f_23155 /* Tunable: 148273883 */;
+						iVar0 = Global_262145.f_23185 /* Tunable: 148273883 */;
 						break;
 					
 					case joaat("COMPONENT_MARKSMANRIFLE_MK2_CLIP_TRACER"):
-						iVar0 = Global_262145.f_23153 /* Tunable: -1383428803 */;
+						iVar0 = Global_262145.f_23183 /* Tunable: -1383428803 */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
-						iVar0 = Global_262145.f_23192 /* Tunable: -852920589 */;
+						iVar0 = Global_262145.f_23222 /* Tunable: -852920589 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SIGHTS"):
-						iVar0 = Global_262145.f_23193 /* Tunable: -235285662 */;
+						iVar0 = Global_262145.f_23223 /* Tunable: -235285662 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MEDIUM_MK2"):
-						iVar0 = Global_262145.f_23194 /* Tunable: 947508682 */;
+						iVar0 = Global_262145.f_23224 /* Tunable: 947508682 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_LARGE_FIXED_ZOOM_MK2"):
@@ -7556,39 +7687,39 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP"):
-						iVar0 = Global_262145.f_23195 /* Tunable: -829621681 */;
+						iVar0 = Global_262145.f_23225 /* Tunable: -829621681 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_01"):
-						iVar0 = Global_262145.f_23196 /* Tunable: -1449227090 */;
+						iVar0 = Global_262145.f_23226 /* Tunable: -1449227090 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_02"):
-						iVar0 = Global_262145.f_23197 /* Tunable: -1300374254 */;
+						iVar0 = Global_262145.f_23227 /* Tunable: -1300374254 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_03"):
-						iVar0 = Global_262145.f_23198 /* Tunable: 989071156 */;
+						iVar0 = Global_262145.f_23228 /* Tunable: 989071156 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_04"):
-						iVar0 = Global_262145.f_23199 /* Tunable: 1338637515 */;
+						iVar0 = Global_262145.f_23229 /* Tunable: 1338637515 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_05"):
-						iVar0 = Global_262145.f_23200 /* Tunable: -1766547494 */;
+						iVar0 = Global_262145.f_23230 /* Tunable: -1766547494 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_06"):
-						iVar0 = Global_262145.f_23201 /* Tunable: -1090214635 */;
+						iVar0 = Global_262145.f_23231 /* Tunable: -1090214635 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_07"):
-						iVar0 = Global_262145.f_23202 /* Tunable: 532703720 */;
+						iVar0 = Global_262145.f_23232 /* Tunable: 532703720 */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_AFGRIP_02"):
-						iVar0 = Global_262145.f_23203 /* Tunable: -2106260249 */;
+						iVar0 = Global_262145.f_23233 /* Tunable: -2106260249 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MRFL_BARREL_01"):
@@ -7596,51 +7727,51 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_AT_MRFL_BARREL_02"):
-						iVar0 = Global_262145.f_23204 /* Tunable: -249998032 */;
+						iVar0 = Global_262145.f_23234 /* Tunable: -249998032 */;
 						break;
 					
 					case joaat("COMPONENT_MARKSMANRIFLE_MK2_CAMO"):
-						iVar0 = Global_262145.f_21507 /* Tunable: GR_WEAPON_CAMO_1_DIGITAL_CAMO */;
+						iVar0 = Global_262145.f_21537 /* Tunable: GR_WEAPON_CAMO_1_DIGITAL_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_MARKSMANRIFLE_MK2_CAMO_02"):
-						iVar0 = Global_262145.f_21508 /* Tunable: GR_WEAPON_CAMO_2_TIGER_CAMO */;
+						iVar0 = Global_262145.f_21538 /* Tunable: GR_WEAPON_CAMO_2_TIGER_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_MARKSMANRIFLE_MK2_CAMO_03"):
-						iVar0 = Global_262145.f_21509 /* Tunable: GR_WEAPON_CAMO_3_WOODLAND_CAMO */;
+						iVar0 = Global_262145.f_21539 /* Tunable: GR_WEAPON_CAMO_3_WOODLAND_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_MARKSMANRIFLE_MK2_CAMO_04"):
-						iVar0 = Global_262145.f_21510 /* Tunable: GR_WEAPON_CAMO_4_SKULL */;
+						iVar0 = Global_262145.f_21540 /* Tunable: GR_WEAPON_CAMO_4_SKULL */;
 						break;
 					
 					case joaat("COMPONENT_MARKSMANRIFLE_MK2_CAMO_05"):
-						iVar0 = Global_262145.f_21511 /* Tunable: GR_WEAPON_CAMO_5_SESSANTA_NOVE */;
+						iVar0 = Global_262145.f_21541 /* Tunable: GR_WEAPON_CAMO_5_SESSANTA_NOVE */;
 						break;
 					
 					case joaat("COMPONENT_MARKSMANRIFLE_MK2_CAMO_06"):
-						iVar0 = Global_262145.f_21512 /* Tunable: GR_WEAPON_CAMO_6_PERSEUS */;
+						iVar0 = Global_262145.f_21542 /* Tunable: GR_WEAPON_CAMO_6_PERSEUS */;
 						break;
 					
 					case joaat("COMPONENT_MARKSMANRIFLE_MK2_CAMO_07"):
-						iVar0 = Global_262145.f_21513 /* Tunable: GR_WEAPON_CAMO_7_LEOPARD */;
+						iVar0 = Global_262145.f_21543 /* Tunable: GR_WEAPON_CAMO_7_LEOPARD */;
 						break;
 					
 					case joaat("COMPONENT_MARKSMANRIFLE_MK2_CAMO_08"):
-						iVar0 = Global_262145.f_21514 /* Tunable: GR_WEAPON_CAMO_8_ZEBRA */;
+						iVar0 = Global_262145.f_21544 /* Tunable: GR_WEAPON_CAMO_8_ZEBRA */;
 						break;
 					
 					case joaat("COMPONENT_MARKSMANRIFLE_MK2_CAMO_09"):
-						iVar0 = Global_262145.f_21515 /* Tunable: GR_WEAPON_CAMO_9_GEOMETRIC */;
+						iVar0 = Global_262145.f_21545 /* Tunable: GR_WEAPON_CAMO_9_GEOMETRIC */;
 						break;
 					
 					case joaat("COMPONENT_MARKSMANRIFLE_MK2_CAMO_10"):
-						iVar0 = Global_262145.f_21516 /* Tunable: GR_WEAPON_CAMO_10_BOOM */;
+						iVar0 = Global_262145.f_21546 /* Tunable: GR_WEAPON_CAMO_10_BOOM */;
 						break;
 					
 					case joaat("COMPONENT_MARKSMANRIFLE_MK2_CAMO_IND_01"):
-						iVar0 = Global_262145.f_21517 /* Tunable: GR_WEAPON_CAMO_11_PATRIOTIC */;
+						iVar0 = Global_262145.f_21547 /* Tunable: GR_WEAPON_CAMO_11_PATRIOTIC */;
 						break;
 				}
 				break;
@@ -7653,79 +7784,79 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_REVOLVER_MK2_CLIP_TRACER"):
-						iVar0 = Global_262145.f_23157 /* Tunable: 1955558754 */;
+						iVar0 = Global_262145.f_23187 /* Tunable: 1955558754 */;
 						break;
 					
 					case joaat("COMPONENT_REVOLVER_MK2_CLIP_FMJ"):
-						iVar0 = Global_262145.f_23158 /* Tunable: 38016460 */;
+						iVar0 = Global_262145.f_23188 /* Tunable: 38016460 */;
 						break;
 					
 					case joaat("COMPONENT_REVOLVER_MK2_CLIP_HOLLOWPOINT"):
-						iVar0 = Global_262145.f_23160 /* Tunable: 784593552 */;
+						iVar0 = Global_262145.f_23190 /* Tunable: 784593552 */;
 						break;
 					
 					case joaat("COMPONENT_REVOLVER_MK2_CLIP_INCENDIARY"):
-						iVar0 = Global_262145.f_23159 /* Tunable: 1408548101 */;
+						iVar0 = Global_262145.f_23189 /* Tunable: 1408548101 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SIGHTS"):
-						iVar0 = Global_262145.f_23205 /* Tunable: 1857338618 */;
+						iVar0 = Global_262145.f_23235 /* Tunable: 1857338618 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MACRO_MK2"):
-						iVar0 = Global_262145.f_23206 /* Tunable: 1760541515 */;
+						iVar0 = Global_262145.f_23236 /* Tunable: 1760541515 */;
 						break;
 					
 					case joaat("COMPONENT_AT_PI_FLSH"):
-						iVar0 = Global_262145.f_23207 /* Tunable: 141245052 */;
+						iVar0 = Global_262145.f_23237 /* Tunable: 141245052 */;
 						break;
 					
 					case joaat("COMPONENT_AT_PI_COMP_03"):
-						iVar0 = Global_262145.f_23208 /* Tunable: -1827907706 */;
+						iVar0 = Global_262145.f_23238 /* Tunable: -1827907706 */;
 						break;
 					
 					case joaat("COMPONENT_REVOLVER_MK2_CAMO"):
-						iVar0 = Global_262145.f_21507 /* Tunable: GR_WEAPON_CAMO_1_DIGITAL_CAMO */;
+						iVar0 = Global_262145.f_21537 /* Tunable: GR_WEAPON_CAMO_1_DIGITAL_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_REVOLVER_MK2_CAMO_02"):
-						iVar0 = Global_262145.f_21508 /* Tunable: GR_WEAPON_CAMO_2_TIGER_CAMO */;
+						iVar0 = Global_262145.f_21538 /* Tunable: GR_WEAPON_CAMO_2_TIGER_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_REVOLVER_MK2_CAMO_03"):
-						iVar0 = Global_262145.f_21509 /* Tunable: GR_WEAPON_CAMO_3_WOODLAND_CAMO */;
+						iVar0 = Global_262145.f_21539 /* Tunable: GR_WEAPON_CAMO_3_WOODLAND_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_REVOLVER_MK2_CAMO_04"):
-						iVar0 = Global_262145.f_21510 /* Tunable: GR_WEAPON_CAMO_4_SKULL */;
+						iVar0 = Global_262145.f_21540 /* Tunable: GR_WEAPON_CAMO_4_SKULL */;
 						break;
 					
 					case joaat("COMPONENT_REVOLVER_MK2_CAMO_05"):
-						iVar0 = Global_262145.f_21511 /* Tunable: GR_WEAPON_CAMO_5_SESSANTA_NOVE */;
+						iVar0 = Global_262145.f_21541 /* Tunable: GR_WEAPON_CAMO_5_SESSANTA_NOVE */;
 						break;
 					
 					case joaat("COMPONENT_REVOLVER_MK2_CAMO_06"):
-						iVar0 = Global_262145.f_21512 /* Tunable: GR_WEAPON_CAMO_6_PERSEUS */;
+						iVar0 = Global_262145.f_21542 /* Tunable: GR_WEAPON_CAMO_6_PERSEUS */;
 						break;
 					
 					case joaat("COMPONENT_REVOLVER_MK2_CAMO_07"):
-						iVar0 = Global_262145.f_21513 /* Tunable: GR_WEAPON_CAMO_7_LEOPARD */;
+						iVar0 = Global_262145.f_21543 /* Tunable: GR_WEAPON_CAMO_7_LEOPARD */;
 						break;
 					
 					case joaat("COMPONENT_REVOLVER_MK2_CAMO_08"):
-						iVar0 = Global_262145.f_21514 /* Tunable: GR_WEAPON_CAMO_8_ZEBRA */;
+						iVar0 = Global_262145.f_21544 /* Tunable: GR_WEAPON_CAMO_8_ZEBRA */;
 						break;
 					
 					case joaat("COMPONENT_REVOLVER_MK2_CAMO_09"):
-						iVar0 = Global_262145.f_21515 /* Tunable: GR_WEAPON_CAMO_9_GEOMETRIC */;
+						iVar0 = Global_262145.f_21545 /* Tunable: GR_WEAPON_CAMO_9_GEOMETRIC */;
 						break;
 					
 					case joaat("COMPONENT_REVOLVER_MK2_CAMO_10"):
-						iVar0 = Global_262145.f_21516 /* Tunable: GR_WEAPON_CAMO_10_BOOM */;
+						iVar0 = Global_262145.f_21546 /* Tunable: GR_WEAPON_CAMO_10_BOOM */;
 						break;
 					
 					case joaat("COMPONENT_REVOLVER_MK2_CAMO_IND_01"):
-						iVar0 = Global_262145.f_21517 /* Tunable: GR_WEAPON_CAMO_11_PATRIOTIC */;
+						iVar0 = Global_262145.f_21547 /* Tunable: GR_WEAPON_CAMO_11_PATRIOTIC */;
 						break;
 				}
 				break;
@@ -7738,39 +7869,39 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_BULLPUPRIFLE_MK2_CLIP_02"):
-						iVar0 = Global_262145.f_23161 /* Tunable: -316590252 */;
+						iVar0 = Global_262145.f_23191 /* Tunable: -316590252 */;
 						break;
 					
 					case joaat("COMPONENT_BULLPUPRIFLE_MK2_CLIP_ARMORPIERCING"):
-						iVar0 = Global_262145.f_23165 /* Tunable: -2001892987 */;
+						iVar0 = Global_262145.f_23195 /* Tunable: -2001892987 */;
 						break;
 					
 					case joaat("COMPONENT_BULLPUPRIFLE_MK2_CLIP_FMJ"):
-						iVar0 = Global_262145.f_23163 /* Tunable: 545820391 */;
+						iVar0 = Global_262145.f_23193 /* Tunable: 545820391 */;
 						break;
 					
 					case joaat("COMPONENT_BULLPUPRIFLE_MK2_CLIP_INCENDIARY"):
-						iVar0 = Global_262145.f_23164 /* Tunable: 794018680 */;
+						iVar0 = Global_262145.f_23194 /* Tunable: 794018680 */;
 						break;
 					
 					case joaat("COMPONENT_BULLPUPRIFLE_MK2_CLIP_TRACER"):
-						iVar0 = Global_262145.f_23162 /* Tunable: -493624257 */;
+						iVar0 = Global_262145.f_23192 /* Tunable: -493624257 */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
-						iVar0 = Global_262145.f_23209 /* Tunable: 1592341943 */;
+						iVar0 = Global_262145.f_23239 /* Tunable: 1592341943 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SIGHTS"):
-						iVar0 = Global_262145.f_23210 /* Tunable: 2078892836 */;
+						iVar0 = Global_262145.f_23240 /* Tunable: 2078892836 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MACRO_02_MK2"):
-						iVar0 = Global_262145.f_23211 /* Tunable: 1554127006 */;
+						iVar0 = Global_262145.f_23241 /* Tunable: 1554127006 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_SMALL_MK2"):
-						iVar0 = Global_262145.f_23212 /* Tunable: -1314225140 */;
+						iVar0 = Global_262145.f_23242 /* Tunable: -1314225140 */;
 						break;
 					
 					case joaat("COMPONENT_AT_BP_BARREL_01"):
@@ -7778,87 +7909,87 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_AT_BP_BARREL_02"):
-						iVar0 = Global_262145.f_23222 /* Tunable: -2119010024 */;
+						iVar0 = Global_262145.f_23252 /* Tunable: -2119010024 */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP"):
-						iVar0 = Global_262145.f_23213 /* Tunable: -1948594273 */;
+						iVar0 = Global_262145.f_23243 /* Tunable: -1948594273 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_01"):
-						iVar0 = Global_262145.f_23214 /* Tunable: 21146921 */;
+						iVar0 = Global_262145.f_23244 /* Tunable: 21146921 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_02"):
-						iVar0 = Global_262145.f_23215 /* Tunable: 1358418183 */;
+						iVar0 = Global_262145.f_23245 /* Tunable: 1358418183 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_03"):
-						iVar0 = Global_262145.f_23216 /* Tunable: 1464361534 */;
+						iVar0 = Global_262145.f_23246 /* Tunable: 1464361534 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_04"):
-						iVar0 = Global_262145.f_23217 /* Tunable: -268389376 */;
+						iVar0 = Global_262145.f_23247 /* Tunable: -268389376 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_05"):
-						iVar0 = Global_262145.f_23218 /* Tunable: -1823864223 */;
+						iVar0 = Global_262145.f_23248 /* Tunable: -1823864223 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_06"):
-						iVar0 = Global_262145.f_23219 /* Tunable: -574324148 */;
+						iVar0 = Global_262145.f_23249 /* Tunable: -574324148 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_07"):
-						iVar0 = Global_262145.f_23220 /* Tunable: 999664111 */;
+						iVar0 = Global_262145.f_23250 /* Tunable: 999664111 */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_AFGRIP_02"):
-						iVar0 = Global_262145.f_23221 /* Tunable: -1915566950 */;
+						iVar0 = Global_262145.f_23251 /* Tunable: -1915566950 */;
 						break;
 					
 					case joaat("COMPONENT_BULLPUPRIFLE_MK2_CAMO"):
-						iVar0 = Global_262145.f_21507 /* Tunable: GR_WEAPON_CAMO_1_DIGITAL_CAMO */;
+						iVar0 = Global_262145.f_21537 /* Tunable: GR_WEAPON_CAMO_1_DIGITAL_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_BULLPUPRIFLE_MK2_CAMO_02"):
-						iVar0 = Global_262145.f_21508 /* Tunable: GR_WEAPON_CAMO_2_TIGER_CAMO */;
+						iVar0 = Global_262145.f_21538 /* Tunable: GR_WEAPON_CAMO_2_TIGER_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_BULLPUPRIFLE_MK2_CAMO_03"):
-						iVar0 = Global_262145.f_21509 /* Tunable: GR_WEAPON_CAMO_3_WOODLAND_CAMO */;
+						iVar0 = Global_262145.f_21539 /* Tunable: GR_WEAPON_CAMO_3_WOODLAND_CAMO */;
 						break;
 					
 					case joaat("COMPONENT_BULLPUPRIFLE_MK2_CAMO_04"):
-						iVar0 = Global_262145.f_21510 /* Tunable: GR_WEAPON_CAMO_4_SKULL */;
+						iVar0 = Global_262145.f_21540 /* Tunable: GR_WEAPON_CAMO_4_SKULL */;
 						break;
 					
 					case joaat("COMPONENT_BULLPUPRIFLE_MK2_CAMO_05"):
-						iVar0 = Global_262145.f_21511 /* Tunable: GR_WEAPON_CAMO_5_SESSANTA_NOVE */;
+						iVar0 = Global_262145.f_21541 /* Tunable: GR_WEAPON_CAMO_5_SESSANTA_NOVE */;
 						break;
 					
 					case joaat("COMPONENT_BULLPUPRIFLE_MK2_CAMO_06"):
-						iVar0 = Global_262145.f_21512 /* Tunable: GR_WEAPON_CAMO_6_PERSEUS */;
+						iVar0 = Global_262145.f_21542 /* Tunable: GR_WEAPON_CAMO_6_PERSEUS */;
 						break;
 					
 					case joaat("COMPONENT_BULLPUPRIFLE_MK2_CAMO_07"):
-						iVar0 = Global_262145.f_21513 /* Tunable: GR_WEAPON_CAMO_7_LEOPARD */;
+						iVar0 = Global_262145.f_21543 /* Tunable: GR_WEAPON_CAMO_7_LEOPARD */;
 						break;
 					
 					case joaat("COMPONENT_BULLPUPRIFLE_MK2_CAMO_08"):
-						iVar0 = Global_262145.f_21514 /* Tunable: GR_WEAPON_CAMO_8_ZEBRA */;
+						iVar0 = Global_262145.f_21544 /* Tunable: GR_WEAPON_CAMO_8_ZEBRA */;
 						break;
 					
 					case joaat("COMPONENT_BULLPUPRIFLE_MK2_CAMO_09"):
-						iVar0 = Global_262145.f_21515 /* Tunable: GR_WEAPON_CAMO_9_GEOMETRIC */;
+						iVar0 = Global_262145.f_21545 /* Tunable: GR_WEAPON_CAMO_9_GEOMETRIC */;
 						break;
 					
 					case joaat("COMPONENT_BULLPUPRIFLE_MK2_CAMO_10"):
-						iVar0 = Global_262145.f_21516 /* Tunable: GR_WEAPON_CAMO_10_BOOM */;
+						iVar0 = Global_262145.f_21546 /* Tunable: GR_WEAPON_CAMO_10_BOOM */;
 						break;
 					
 					case joaat("COMPONENT_BULLPUPRIFLE_MK2_CAMO_IND_01"):
-						iVar0 = Global_262145.f_21517 /* Tunable: GR_WEAPON_CAMO_11_PATRIOTIC */;
+						iVar0 = Global_262145.f_21547 /* Tunable: GR_WEAPON_CAMO_11_PATRIOTIC */;
 						break;
 				}
 				break;
@@ -7880,11 +8011,11 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_CERAMICPISTOL_CLIP_02"):
-						iVar0 = Global_262145.f_28904 /* Tunable: 453457679 */;
+						iVar0 = Global_262145.f_28974 /* Tunable: 453457679 */;
 						break;
 					
 					case joaat("COMPONENT_CERAMICPISTOL_SUPP"):
-						iVar0 = Global_262145.f_28905 /* Tunable: 143602352 */;
+						iVar0 = Global_262145.f_28975 /* Tunable: 143602352 */;
 						break;
 				}
 				break;
@@ -7897,11 +8028,11 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
-						iVar0 = Global_262145.f_31043 /* Tunable: IH_COMBAT_SHOTGUN_FLASHLIGHT */;
+						iVar0 = Global_262145.f_31117 /* Tunable: IH_COMBAT_SHOTGUN_FLASHLIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP"):
-						iVar0 = Global_262145.f_31044 /* Tunable: IH_COMBAT_SHOTGUN_SUPPRESSOR */;
+						iVar0 = Global_262145.f_31118 /* Tunable: IH_COMBAT_SHOTGUN_SUPPRESSOR */;
 						break;
 				}
 				break;
@@ -7919,27 +8050,27 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 				switch (iParam1)
 				{
 					case joaat("COMPONENT_MILITARYRIFLE_CLIP_01"):
-						iVar0 = Global_262145.f_31029 /* Tunable: IH_MILITARY_RIFLE_DEFAULT_CLIP */;
+						iVar0 = Global_262145.f_31103 /* Tunable: IH_MILITARY_RIFLE_DEFAULT_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_MILITARYRIFLE_CLIP_02"):
-						iVar0 = Global_262145.f_31030 /* Tunable: IH_MILITARY_RIFLE_EXTENDED_CLIP */;
+						iVar0 = Global_262145.f_31104 /* Tunable: IH_MILITARY_RIFLE_EXTENDED_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_MILITARYRIFLE_SIGHT_01"):
-						iVar0 = Global_262145.f_31031 /* Tunable: IH_MILITARY_RIFLE_IRON_SIGHTS */;
+						iVar0 = Global_262145.f_31105 /* Tunable: IH_MILITARY_RIFLE_IRON_SIGHTS */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_SMALL"):
-						iVar0 = Global_262145.f_31032 /* Tunable: IH_MILITARY_RIFLE_SCOPE */;
+						iVar0 = Global_262145.f_31106 /* Tunable: IH_MILITARY_RIFLE_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
-						iVar0 = Global_262145.f_31033 /* Tunable: IH_MILITARY_RIFLE_FLASHLIGHT */;
+						iVar0 = Global_262145.f_31107 /* Tunable: IH_MILITARY_RIFLE_FLASHLIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP"):
-						iVar0 = Global_262145.f_31034 /* Tunable: IH_MILITARY_RIFLE_SUPPRESSOR */;
+						iVar0 = Global_262145.f_31108 /* Tunable: IH_MILITARY_RIFLE_SUPPRESSOR */;
 						break;
 				}
 				break;
@@ -7948,35 +8079,35 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 				switch (iParam1)
 				{
 					case joaat("COMPONENT_HEAVYRIFLE_CLIP_01"):
-						iVar0 = Global_262145.f_32185 /* Tunable: FIXER_HEAVY_RIFLE_DEFAULT_CLIP */;
+						iVar0 = Global_262145.f_32300 /* Tunable: FIXER_HEAVY_RIFLE_DEFAULT_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_HEAVYRIFLE_CLIP_02"):
-						iVar0 = Global_262145.f_32186 /* Tunable: FIXER_HEAVY_RIFLE_EXTENDED_CLIP */;
+						iVar0 = Global_262145.f_32301 /* Tunable: FIXER_HEAVY_RIFLE_EXTENDED_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_HEAVYRIFLE_CAMO1"):
-						iVar0 = Global_262145.f_32218 /* Tunable: FIXER_THE_FAMILIES_FINISH */;
+						iVar0 = Global_262145.f_32333 /* Tunable: FIXER_THE_FAMILIES_FINISH */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_AFGRIP"):
-						iVar0 = Global_262145.f_32191 /* Tunable: FIXER_HEAVY_RIFLE_GRIP */;
+						iVar0 = Global_262145.f_32306 /* Tunable: FIXER_HEAVY_RIFLE_GRIP */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
-						iVar0 = Global_262145.f_32189 /* Tunable: FIXER_HEAVY_RIFLE_FLASHLIGHT */;
+						iVar0 = Global_262145.f_32304 /* Tunable: FIXER_HEAVY_RIFLE_FLASHLIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MEDIUM"):
-						iVar0 = Global_262145.f_32188 /* Tunable: FIXER_HEAVY_RIFLE_SCOPE */;
+						iVar0 = Global_262145.f_32303 /* Tunable: FIXER_HEAVY_RIFLE_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP"):
-						iVar0 = Global_262145.f_32190 /* Tunable: FIXER_HEAVY_RIFLE_SUPPRESSOR */;
+						iVar0 = Global_262145.f_32305 /* Tunable: FIXER_HEAVY_RIFLE_SUPPRESSOR */;
 						break;
 					
 					case joaat("COMPONENT_HEAVYRIFLE_SIGHT_01"):
-						iVar0 = Global_262145.f_32187 /* Tunable: FIXER_HEAVY_RIFLE_IRON_SIGHTS */;
+						iVar0 = Global_262145.f_32302 /* Tunable: FIXER_HEAVY_RIFLE_IRON_SIGHTS */;
 						break;
 				}
 				break;
@@ -7989,19 +8120,19 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_TACTICALRIFLE_CLIP_02"):
-						iVar0 = Global_262145.f_33437 /* Tunable: SU22_SERVICE_CARBINE_EXTENDED_CLIP */;
+						iVar0 = Global_262145.f_33559 /* Tunable: SU22_SERVICE_CARBINE_EXTENDED_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH_REH"):
-						iVar0 = Global_262145.f_33439 /* Tunable: SU22_SERVICE_CARBINE_FLASHLIGHT */;
+						iVar0 = Global_262145.f_33561 /* Tunable: SU22_SERVICE_CARBINE_FLASHLIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP_02"):
-						iVar0 = Global_262145.f_33440 /* Tunable: SU22_SERVICE_CARBINE_SUPPRESSOR */;
+						iVar0 = Global_262145.f_33562 /* Tunable: SU22_SERVICE_CARBINE_SUPPRESSOR */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_AFGRIP"):
-						iVar0 = Global_262145.f_33438 /* Tunable: SU22_SERVICE_CARBINE_GRIP */;
+						iVar0 = Global_262145.f_33560 /* Tunable: SU22_SERVICE_CARBINE_GRIP */;
 						break;
 				}
 				break;
@@ -8010,43 +8141,43 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 				switch (iParam1)
 				{
 					case joaat("COMPONENT_KNIFE_VARMOD_XM3"):
-						iVar0 = Global_262145.f_34353 /* Tunable: XM22_KNIFE_EYES */;
+						iVar0 = Global_262145.f_34587 /* Tunable: XM22_KNIFE_EYES */;
 						break;
 					
 					case joaat("COMPONENT_KNIFE_VARMOD_XM3_01"):
-						iVar0 = Global_262145.f_34357 /* Tunable: XM22_KNIFE_SPATTER */;
+						iVar0 = Global_262145.f_34591 /* Tunable: XM22_KNIFE_SPATTER */;
 						break;
 					
 					case joaat("COMPONENT_KNIFE_VARMOD_XM3_02"):
-						iVar0 = Global_262145.f_34354 /* Tunable: XM22_KNIFE_FLAMES */;
+						iVar0 = Global_262145.f_34588 /* Tunable: XM22_KNIFE_FLAMES */;
 						break;
 					
 					case joaat("COMPONENT_KNIFE_VARMOD_XM3_03"):
-						iVar0 = Global_262145.f_34355 /* Tunable: XM22_KNIFE_LIGHTNING */;
+						iVar0 = Global_262145.f_34589 /* Tunable: XM22_KNIFE_LIGHTNING */;
 						break;
 					
 					case joaat("COMPONENT_KNIFE_VARMOD_XM3_04"):
-						iVar0 = Global_262145.f_34358 /* Tunable: XM22_KNIFE_PILLS */;
+						iVar0 = Global_262145.f_34592 /* Tunable: XM22_KNIFE_PILLS */;
 						break;
 					
 					case joaat("COMPONENT_KNIFE_VARMOD_XM3_05"):
-						iVar0 = Global_262145.f_34356 /* Tunable: XM22_KNIFE_SNAKESKIN */;
+						iVar0 = Global_262145.f_34590 /* Tunable: XM22_KNIFE_SNAKESKIN */;
 						break;
 					
 					case joaat("COMPONENT_KNIFE_VARMOD_XM3_06"):
-						iVar0 = Global_262145.f_34360 /* Tunable: XM22_KNIFE_LUCHA_LIBRE */;
+						iVar0 = Global_262145.f_34594 /* Tunable: XM22_KNIFE_LUCHA_LIBRE */;
 						break;
 					
 					case joaat("COMPONENT_KNIFE_VARMOD_XM3_07"):
-						iVar0 = Global_262145.f_34359 /* Tunable: XM22_KNIFE_TRIPPY */;
+						iVar0 = Global_262145.f_34593 /* Tunable: XM22_KNIFE_TRIPPY */;
 						break;
 					
 					case joaat("COMPONENT_KNIFE_VARMOD_XM3_08"):
-						iVar0 = Global_262145.f_34361 /* Tunable: XM22_KNIFE_TEQUILYA */;
+						iVar0 = Global_262145.f_34595 /* Tunable: XM22_KNIFE_TEQUILYA */;
 						break;
 					
 					case joaat("COMPONENT_KNIFE_VARMOD_XM3_09"):
-						iVar0 = Global_262145.f_34362 /* Tunable: XM22_KNIFE_ORANGOTANG */;
+						iVar0 = Global_262145.f_34596 /* Tunable: XM22_KNIFE_ORANGOTANG */;
 						break;
 				}
 				break;
@@ -8055,43 +8186,43 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 				switch (iParam1)
 				{
 					case joaat("COMPONENT_BAT_VARMOD_XM3"):
-						iVar0 = Global_262145.f_34343 /* Tunable: XM22_BASEBALL_BAT_BLAGUEURS */;
+						iVar0 = Global_262145.f_34577 /* Tunable: XM22_BASEBALL_BAT_BLAGUEURS */;
 						break;
 					
 					case joaat("COMPONENT_BAT_VARMOD_XM3_01"):
-						iVar0 = Global_262145.f_34344 /* Tunable: XM22_BASEBALL_BAT_SPATTER */;
+						iVar0 = Global_262145.f_34578 /* Tunable: XM22_BASEBALL_BAT_SPATTER */;
 						break;
 					
 					case joaat("COMPONENT_BAT_VARMOD_XM3_02"):
-						iVar0 = Global_262145.f_34346 /* Tunable: XM22_BASEBALL_BAT_BULLET_HOLES */;
+						iVar0 = Global_262145.f_34580 /* Tunable: XM22_BASEBALL_BAT_BULLET_HOLES */;
 						break;
 					
 					case joaat("COMPONENT_BAT_VARMOD_XM3_03"):
-						iVar0 = Global_262145.f_34347 /* Tunable: XM22_BASEBALL_BAT_BURGER_SHOT */;
+						iVar0 = Global_262145.f_34581 /* Tunable: XM22_BASEBALL_BAT_BURGER_SHOT */;
 						break;
 					
 					case joaat("COMPONENT_BAT_VARMOD_XM3_04"):
-						iVar0 = Global_262145.f_34348 /* Tunable: XM22_BASEBALL_BAT_CLUCKIN_BELL */;
+						iVar0 = Global_262145.f_34582 /* Tunable: XM22_BASEBALL_BAT_CLUCKIN_BELL */;
 						break;
 					
 					case joaat("COMPONENT_BAT_VARMOD_XM3_05"):
-						iVar0 = Global_262145.f_34349 /* Tunable: XM22_BASEBALL_BAT_FATAL_INCURSION */;
+						iVar0 = Global_262145.f_34583 /* Tunable: XM22_BASEBALL_BAT_FATAL_INCURSION */;
 						break;
 					
 					case joaat("COMPONENT_BAT_VARMOD_XM3_06"):
-						iVar0 = Global_262145.f_34350 /* Tunable: XM22_BASEBALL_BAT_LUCHA_LIBRE */;
+						iVar0 = Global_262145.f_34584 /* Tunable: XM22_BASEBALL_BAT_LUCHA_LIBRE */;
 						break;
 					
 					case joaat("COMPONENT_BAT_VARMOD_XM3_07"):
-						iVar0 = Global_262145.f_34351 /* Tunable: XM22_BASEBALL_BAT_TRIPPY */;
+						iVar0 = Global_262145.f_34585 /* Tunable: XM22_BASEBALL_BAT_TRIPPY */;
 						break;
 					
 					case joaat("COMPONENT_BAT_VARMOD_XM3_08"):
-						iVar0 = Global_262145.f_34352 /* Tunable: XM22_BASEBALL_BAT_TIE_DYE */;
+						iVar0 = Global_262145.f_34586 /* Tunable: XM22_BASEBALL_BAT_TIE_DYE */;
 						break;
 					
 					case joaat("COMPONENT_BAT_VARMOD_XM3_09"):
-						iVar0 = Global_262145.f_34345 /* Tunable: XM22_BASEBALL_BAT_WALL */;
+						iVar0 = Global_262145.f_34579 /* Tunable: XM22_BASEBALL_BAT_WALL */;
 						break;
 				}
 				break;
@@ -8104,7 +8235,7 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 						break;
 					
 					case joaat("COMPONENT_PISTOLXM3_SUPP"):
-						iVar0 = Global_262145.f_34326 /* Tunable: XM22_WM29_SUPPRESSOR */;
+						iVar0 = Global_262145.f_34560 /* Tunable: XM22_WM29_SUPPRESSOR */;
 						break;
 				}
 				break;
@@ -8113,19 +8244,19 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 				switch (iParam1)
 				{
 					case joaat("COMPONENT_TECPISTOL_CLIP_01"):
-						iVar0 = Global_262145.f_35799 /* Tunable: SU23_TACTICAL_SMG_DEFAULT_CLIP */;
+						iVar0 = Global_262145.f_36034 /* Tunable: SU23_TACTICAL_SMG_DEFAULT_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_TECPISTOL_CLIP_02"):
-						iVar0 = Global_262145.f_35800 /* Tunable: SU23_TACTICAL_SMG_EXTENDED_CLIP */;
+						iVar0 = Global_262145.f_36035 /* Tunable: SU23_TACTICAL_SMG_EXTENDED_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP_02"):
-						iVar0 = Global_262145.f_35804 /* Tunable: SU23_TACTICAL_SMG_SUPPRESSOR */;
+						iVar0 = Global_262145.f_36039 /* Tunable: SU23_TACTICAL_SMG_SUPPRESSOR */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MACRO"):
-						iVar0 = Global_262145.f_35802 /* Tunable: SU23_TACTICAL_SMG_SCOPE */;
+						iVar0 = Global_262145.f_36037 /* Tunable: SU23_TACTICAL_SMG_SCOPE */;
 						break;
 				}
 				break;
@@ -8135,6 +8266,23 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 				{
 					case joaat("COMPONENT_RPG_VARMOD_TVR"):
 						iVar0 = 0;
+						break;
+				}
+				break;
+			
+			case joaat("WEAPON_BATTLERIFLE"):
+				switch (iParam1)
+				{
+					case joaat("COMPONENT_BATTLERIFLE_CLIP_01"):
+						iVar0 = 0;
+						break;
+					
+					case joaat("COMPONENT_BATTLERIFLE_CLIP_02"):
+						iVar0 = Global_262145.f_36168 /* Tunable: XM23_BATTLE_RIFLE_MOD_EXTENDED_CLIP */;
+						break;
+					
+					case joaat("COMPONENT_AT_AR_SUPP"):
+						iVar0 = Global_262145.f_36169 /* Tunable: XM23_BATTLE_RIFLE_MOD_SUPPRESSOR */;
 						break;
 				}
 				break;
@@ -8189,7 +8337,7 @@ int func_27(int iParam0, int iParam1)//Position - 0x6659
 	return iVar0;
 }
 
-float func_28(int iParam0, int iParam1, float fParam2)//Position - 0xA229
+float func_28(int iParam0, int iParam1, float fParam2)//Position - 0xA55F
 {
 	float fVar0;
 	float fVar1;
@@ -8201,14 +8349,14 @@ float func_28(int iParam0, int iParam1, float fParam2)//Position - 0xA229
 	{
 		fVar1 = (fVar1 + func_66());
 		fVar0 = (1f - fVar1);
-		*iParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*iParam1) * fVar0));
+		*iParam1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(*iParam1) * fVar0));
 		return fVar0;
 	}
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		*iParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*iParam1) * fParam2));
+		*iParam1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(*iParam1) * fParam2));
 	}
-	if (!Global_78689)
+	if (!Global_79248)
 	{
 		if (*iParam1 != 0)
 		{
@@ -8231,12 +8379,12 @@ float func_28(int iParam0, int iParam1, float fParam2)//Position - 0xA229
 	{
 		if (iLocal_53 == 1)
 		{
-			*iParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*iParam1) * Global_262145.f_77 /* Tunable: WEAPONS_SHOP_MULTIPLIER */));
+			*iParam1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(*iParam1) * Global_262145.f_77 /* Tunable: WEAPONS_SHOP_MULTIPLIER */));
 			fVar1 = (fVar1 + (SYSTEM::TO_FLOAT(Global_262145.f_133 /* Tunable: SHOP_GOODBOY_DISCOUNT_PERCENT */) / 100f));
 		}
 		if (iLocal_53 == 0)
 		{
-			*iParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*iParam1) * Global_262145.f_77 /* Tunable: WEAPONS_SHOP_MULTIPLIER */));
+			*iParam1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(*iParam1) * Global_262145.f_77 /* Tunable: WEAPONS_SHOP_MULTIPLIER */));
 			if (func_29())
 			{
 				fVar1 = (fVar1 + (SYSTEM::TO_FLOAT(Global_262145.f_133 /* Tunable: SHOP_GOODBOY_DISCOUNT_PERCENT */) / 100f));
@@ -8250,11 +8398,11 @@ float func_28(int iParam0, int iParam1, float fParam2)//Position - 0xA229
 		fVar1 = (fVar1 + func_66());
 	}
 	fVar0 = (1f - fVar1);
-	*iParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(*iParam1) * fVar0));
+	*iParam1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(*iParam1) * fVar0));
 	return fVar0;
 }
 
-int func_29()//Position - 0xA362
+int func_29()//Position - 0xA698
 {
 	int iVar0;
 	int iVar1;
@@ -8280,7 +8428,7 @@ int func_29()//Position - 0xA362
 	return 0;
 }
 
-int func_30()//Position - 0xA3C0
+int func_30()//Position - 0xA6F6
 {
 	int iVar0;
 	
@@ -8289,7 +8437,7 @@ int func_30()//Position - 0xA3C0
 	return iVar0;
 }
 
-int func_31()//Position - 0xA3E6
+int func_31()//Position - 0xA71C
 {
 	int iVar0;
 	
@@ -8311,7 +8459,7 @@ int func_31()//Position - 0xA3E6
 	return iVar0;
 }
 
-int func_32()//Position - 0xA4C2
+int func_32()//Position - 0xA7F8
 {
 	struct<7> Var0;
 	struct<7> Var7;
@@ -8325,7 +8473,7 @@ int func_32()//Position - 0xA4C2
 	return 0;
 }
 
-int func_33(struct<7> Param0, struct<7> Param7, int iParam14)//Position - 0xA506
+int func_33(struct<7> Param0, struct<7> Param7, int iParam14)//Position - 0xA83C
 {
 	int iVar0;
 	int iVar1;
@@ -8343,7 +8491,7 @@ int func_33(struct<7> Param0, struct<7> Param7, int iParam14)//Position - 0xA506
 	return 0;
 }
 
-int func_34(int iParam0, int iParam1)//Position - 0xA541
+int func_34(int iParam0, int iParam1)//Position - 0xA877
 {
 	int iVar0;
 	int iVar1;
@@ -8411,37 +8559,37 @@ int func_34(int iParam0, int iParam1)//Position - 0xA541
 	return 0;
 }
 
-int func_35(int iParam0)//Position - 0xA64D
+int func_35(int iParam0)//Position - 0xA983
 {
 	return SYSTEM::SHIFT_RIGHT(iParam0, 20) & 63;
 }
 
-int func_36(int iParam0)//Position - 0xA660
+int func_36(int iParam0)//Position - 0xA996
 {
 	return SYSTEM::SHIFT_RIGHT(iParam0, 14) & 63;
 }
 
-int func_37(int iParam0)//Position - 0xA673
+int func_37(int iParam0)//Position - 0xA9A9
 {
 	return SYSTEM::SHIFT_RIGHT(iParam0, 9) & 31;
 }
 
-int func_38(int iParam0)//Position - 0xA686
+int func_38(int iParam0)//Position - 0xA9BC
 {
 	return SYSTEM::SHIFT_RIGHT(iParam0, 4) & 31;
 }
 
-int func_39(int iParam0)//Position - 0xA698
+int func_39(int iParam0)//Position - 0xA9CE
 {
 	return iParam0 & 15;
 }
 
-var func_40(int iParam0)//Position - 0xA6A5
+var func_40(int iParam0)//Position - 0xA9DB
 {
 	return (SYSTEM::SHIFT_RIGHT(iParam0, 26) & 31 * func_41(BitTest(iParam0, 31), -1, 1)) + 2011;
 }
 
-int func_41(bool bParam0, int iParam1, int iParam2)//Position - 0xA6C7
+int func_41(bool bParam0, int iParam1, int iParam2)//Position - 0xA9FD
 {
 	if (bParam0)
 	{
@@ -8450,7 +8598,7 @@ int func_41(bool bParam0, int iParam1, int iParam2)//Position - 0xA6C7
 	return iParam2;
 }
 
-int func_42(int iParam0)//Position - 0xA6DE
+int func_42(int iParam0)//Position - 0xAA14
 {
 	int iVar0;
 	int iVar1;
@@ -8496,7 +8644,7 @@ int func_42(int iParam0)//Position - 0xA6DE
 	return 1;
 }
 
-int func_43(int iParam0, int iParam1)//Position - 0xA7BA
+int func_43(int iParam0, int iParam1)//Position - 0xAAF0
 {
 	if (iParam1 < 0)
 	{
@@ -8539,7 +8687,7 @@ int func_43(int iParam0, int iParam1)//Position - 0xA7BA
 	return 30;
 }
 
-var func_44(struct<7> Param0, int iParam7)//Position - 0xA85C
+var func_44(struct<7> Param0, int iParam7)//Position - 0xAB92
 {
 	var uVar0;
 	var uVar1;
@@ -8559,7 +8707,7 @@ var func_44(struct<7> Param0, int iParam7)//Position - 0xA85C
 	return uVar2;
 }
 
-void func_45(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6)//Position - 0xA89C
+void func_45(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6)//Position - 0xABD2
 {
 	int iVar0;
 	int iVar1;
@@ -8644,7 +8792,7 @@ void func_45(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 	func_46(uParam0, iVar5, iVar4, iVar3, iVar2, iVar1, iVar0);
 }
 
-void func_46(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6)//Position - 0xAA1E
+void func_46(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5, int iParam6)//Position - 0xAD54
 {
 	func_52(uParam0, iParam1);
 	func_51(uParam0, iParam2);
@@ -8654,7 +8802,7 @@ void func_46(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 	func_47(uParam0, iParam6);
 }
 
-void func_47(var uParam0, int iParam1)//Position - 0xAA56
+void func_47(var uParam0, int iParam1)//Position - 0xAD8C
 {
 	if (iParam1 <= 0)
 	{
@@ -8677,7 +8825,7 @@ void func_47(var uParam0, int iParam1)//Position - 0xAA56
 	}
 }
 
-void func_48(var uParam0, int iParam1)//Position - 0xAADC
+void func_48(var uParam0, int iParam1)//Position - 0xAE12
 {
 	int iVar0;
 	int iVar1;
@@ -8692,7 +8840,7 @@ void func_48(var uParam0, int iParam1)//Position - 0xAADC
 	*uParam0 = (*uParam0 || SYSTEM::SHIFT_LEFT(iParam1, 4));
 }
 
-void func_49(var uParam0, int iParam1)//Position - 0xAB2D
+void func_49(var uParam0, int iParam1)//Position - 0xAE63
 {
 	if (iParam1 < 0 || iParam1 > 11)
 	{
@@ -8702,7 +8850,7 @@ void func_49(var uParam0, int iParam1)//Position - 0xAB2D
 	*uParam0 = (*uParam0 || iParam1);
 }
 
-void func_50(var uParam0, int iParam1)//Position - 0xAB60
+void func_50(var uParam0, int iParam1)//Position - 0xAE96
 {
 	if (iParam1 < 0 || iParam1 > 24)
 	{
@@ -8712,7 +8860,7 @@ void func_50(var uParam0, int iParam1)//Position - 0xAB60
 	*uParam0 = (*uParam0 || SYSTEM::SHIFT_LEFT(iParam1, 9));
 }
 
-void func_51(var uParam0, int iParam1)//Position - 0xAB9A
+void func_51(var uParam0, int iParam1)//Position - 0xAED0
 {
 	if (iParam1 < 0 || iParam1 >= 60)
 	{
@@ -8722,7 +8870,7 @@ void func_51(var uParam0, int iParam1)//Position - 0xAB9A
 	*uParam0 = (*uParam0 || SYSTEM::SHIFT_LEFT(iParam1, 14));
 }
 
-void func_52(var uParam0, int iParam1)//Position - 0xABD5
+void func_52(var uParam0, int iParam1)//Position - 0xAF0B
 {
 	if (iParam1 < 0 || iParam1 >= 60)
 	{
@@ -8732,7 +8880,7 @@ void func_52(var uParam0, int iParam1)//Position - 0xABD5
 	*uParam0 = (*uParam0 || SYSTEM::SHIFT_LEFT(iParam1, 20));
 }
 
-int func_53(struct<7> Param0)//Position - 0xAC11
+int func_53(struct<7> Param0)//Position - 0xAF47
 {
 	if ((((((Param0.f_0 == 0 && Param0.f_1 == 0) && Param0.f_2 == 0) && Param0.f_3 == 0) && Param0.f_4 == 0) && Param0.f_5 == 0) && Param0.f_6 == 0)
 	{
@@ -8741,7 +8889,7 @@ int func_53(struct<7> Param0)//Position - 0xAC11
 	return 0;
 }
 
-var func_54(struct<6> Param0, var uParam6)//Position - 0xAC67
+var func_54(struct<6> Param0, var uParam6)//Position - 0xAF9D
 {
 	var uVar0;
 	
@@ -8772,7 +8920,7 @@ var func_54(struct<6> Param0, var uParam6)//Position - 0xAC67
 	return uVar0;
 }
 
-int func_55(int iParam0)//Position - 0xACDD
+int func_55(int iParam0)//Position - 0xB013
 {
 	if (iParam0 < 1)
 	{
@@ -8835,7 +8983,7 @@ int func_55(int iParam0)//Position - 0xACDD
 	return 0;
 }
 
-struct<7> func_56(int iParam0)//Position - 0xADA2
+struct<7> func_56(int iParam0)//Position - 0xB0D8
 {
 	int iVar0;
 	struct<7> Var1;
@@ -8849,7 +8997,7 @@ struct<7> func_56(int iParam0)//Position - 0xADA2
 	return Var1;
 }
 
-int func_57(int iParam0)//Position - 0xADC6
+int func_57(int iParam0)//Position - 0xB0FC
 {
 	int iVar0;
 	int iVar1;
@@ -9031,7 +9179,7 @@ int func_57(int iParam0)//Position - 0xADC6
 	return -1;
 }
 
-int func_58(int iParam0, int iParam1)//Position - 0xB022
+int func_58(int iParam0, int iParam1)//Position - 0xB358
 {
 	int iVar0;
 	int iVar1;
@@ -9111,55 +9259,55 @@ int func_58(int iParam0, int iParam1)//Position - 0xB022
 	return iVar4;
 }
 
-int func_59(int iParam0, int iParam1)//Position - 0xB126
+int func_59(int iParam0, int iParam1)//Position - 0xB45C
 {
-	return Global_113810.f_19150[iParam1 /*271*/].f_3[iParam0 /*12*/].f_3;
+	return Global_114370.f_19150[iParam1 /*271*/].f_3[iParam0 /*12*/].f_3;
 }
 
-bool func_60(int iParam0)//Position - 0xB142
+bool func_60(int iParam0)//Position - 0xB478
 {
 	return iParam0 < 3;
 }
 
-int func_61()//Position - 0xB14E
+int func_61()//Position - 0xB484
 {
 	func_62();
-	return Global_113810.f_2366.f_539.f_4321;
+	return Global_114370.f_2366.f_539.f_4321;
 }
 
-void func_62()//Position - 0xB167
+void func_62()//Position - 0xB49D
 {
 	int iVar0;
 	
 	if (ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()))
 	{
-		if (func_64(Global_113810.f_2366.f_539.f_4321) != ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()))
+		if (func_64(Global_114370.f_2366.f_539.f_4321) != ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()))
 		{
 			iVar0 = func_63(PLAYER::PLAYER_PED_ID());
-			if (func_60(iVar0) && (!func_177(14) || Global_112760))
+			if (func_60(iVar0) && (!func_177(14) || Global_113320))
 			{
-				if (Global_113810.f_2366.f_539.f_4321 != iVar0 && func_60(Global_113810.f_2366.f_539.f_4321))
+				if (Global_114370.f_2366.f_539.f_4321 != iVar0 && func_60(Global_114370.f_2366.f_539.f_4321))
 				{
-					Global_113810.f_2366.f_539.f_4322 = Global_113810.f_2366.f_539.f_4321;
+					Global_114370.f_2366.f_539.f_4322 = Global_114370.f_2366.f_539.f_4321;
 				}
-				Global_113810.f_2366.f_539.f_4323 = iVar0;
-				Global_113810.f_2366.f_539.f_4321 = iVar0;
+				Global_114370.f_2366.f_539.f_4323 = iVar0;
+				Global_114370.f_2366.f_539.f_4321 = iVar0;
 				return;
 			}
 		}
 		else
 		{
-			if (Global_113810.f_2366.f_539.f_4321 != 145)
+			if (Global_114370.f_2366.f_539.f_4321 != 145)
 			{
-				Global_113810.f_2366.f_539.f_4323 = Global_113810.f_2366.f_539.f_4321;
+				Global_114370.f_2366.f_539.f_4323 = Global_114370.f_2366.f_539.f_4321;
 			}
 			return;
 		}
 	}
-	Global_113810.f_2366.f_539.f_4321 = 145;
+	Global_114370.f_2366.f_539.f_4321 = 145;
 }
 
-int func_63(int iParam0)//Position - 0xB264
+int func_63(int iParam0)//Position - 0xB59A
 {
 	int iVar0;
 	int iVar1;
@@ -9180,7 +9328,7 @@ int func_63(int iParam0)//Position - 0xB264
 	return 145;
 }
 
-int func_64(int iParam0)//Position - 0xB2A1
+int func_64(int iParam0)//Position - 0xB5D7
 {
 	if (func_60(iParam0))
 	{
@@ -9192,17 +9340,17 @@ int func_64(int iParam0)//Position - 0xB2A1
 	return 0;
 }
 
-var func_65(int iParam0)//Position - 0xB2C6
+var func_65(int iParam0)//Position - 0xB5FC
 {
-	return Global_2058[iParam0 /*29*/];
+	return Global_2139[iParam0 /*29*/];
 }
 
-float func_66()//Position - 0xB2D5
+float func_66()//Position - 0xB60B
 {
-	return Global_100885.f_2096;
+	return Global_101444.f_2096;
 }
 
-void func_67(char* sParam0, char[8] cParam1, char[4] cParam3, char[4] cParam4, int iParam5, int iParam6, int iParam7, int iParam8, int iParam9, int iParam10, bool bParam11, bool bParam12, int iParam13)//Position - 0xB2E4
+void func_67(char* sParam0, char[8] cParam1, char[4] cParam3, char[4] cParam4, int iParam5, int iParam6, int iParam7, int iParam8, int iParam9, int iParam10, bool bParam11, bool bParam12, int iParam13)//Position - 0xB61A
 {
 	switch (MISC::GET_HASH_KEY(&cParam1))
 	{
@@ -9324,23 +9472,23 @@ void func_67(char* sParam0, char[8] cParam1, char[4] cParam3, char[4] cParam4, i
 			break;
 		
 		case 4:
-			if (iParam5 == Global_75777)
+			if (iParam5 == Global_76330)
 			{
 				StringCopy(sParam0, "VE_BIG_YACHT_t0_v0", 64);
 			}
-			else if (iParam5 == Global_75778)
+			else if (iParam5 == Global_76331)
 			{
 				StringCopy(sParam0, "VE_BIG_TRUCK_t0_v0", 64);
 			}
-			else if (iParam5 == Global_75779)
+			else if (iParam5 == Global_76332)
 			{
 				StringCopy(sParam0, "VE_BALLISTIC_EQUIPMENT_t0_v0", 64);
 			}
-			else if (iParam5 == Global_75780)
+			else if (iParam5 == Global_76333)
 			{
 				StringCopy(sParam0, "VE_BIG_PLANE_t0_v0", 64);
 			}
-			else if (iParam5 == Global_75781)
+			else if (iParam5 == Global_76334)
 			{
 				StringCopy(sParam0, "VE_HACKER_TRUCK_t0_v0", 64);
 			}
@@ -9585,32 +9733,32 @@ void func_67(char* sParam0, char[8] cParam1, char[4] cParam3, char[4] cParam4, i
 	}
 }
 
-bool func_68()//Position - 0xB967
+bool func_68()//Position - 0xBC9D
 {
 	return func_69();
 }
 
-bool func_69()//Position - 0xB973
+bool func_69()//Position - 0xBCA9
 {
-	return Global_1586488[189 /*142*/].f_66 == joaat("thruster");
+	return Global_1586504[189 /*142*/].f_66 == joaat("thruster");
 }
 
-int func_70()//Position - 0xB98B
+int func_70()//Position - 0xBCC1
 {
 	return joaat("manchez3");
 }
 
-int func_71()//Position - 0xB998
+int func_71()//Position - 0xBCCE
 {
 	return joaat("brickade2");
 }
 
-int func_72()//Position - 0xB9A5
+int func_72()//Position - 0xBCDB
 {
 	return joaat("kosatka");
 }
 
-int func_73(int iParam0)//Position - 0xB9B2
+int func_73(int iParam0)//Position - 0xBCE8
 {
 	switch (iParam0)
 	{
@@ -9632,12 +9780,12 @@ int func_73(int iParam0)//Position - 0xB9B2
 	return -1;
 }
 
-int func_74(int iParam0)//Position - 0xBA11
+int func_74(int iParam0)//Position - 0xBD47
 {
 	return func_75(iParam0);
 }
 
-int func_75(int iParam0)//Position - 0xBA1F
+int func_75(int iParam0)//Position - 0xBD55
 {
 	switch (iParam0)
 	{
@@ -10084,11 +10232,19 @@ int func_75(int iParam0)//Position - 0xBA1F
 		case joaat("WEAPON_TECPISTOL"):
 			return 98;
 			break;
+		
+		case joaat("WEAPON_BATTLERIFLE"):
+			return 99;
+			break;
+		
+		case joaat("WEAPON_SNOWLAUNCHER"):
+			return 100;
+			break;
 	}
 	return 0;
 }
 
-char* func_76(int iParam0, int iParam1)//Position - 0xC037
+char* func_76(int iParam0, int iParam1)//Position - 0xC62D
 {
 	int iVar0;
 	int iVar1;
@@ -10716,6 +10872,26 @@ char* func_76(int iParam0, int iParam1)//Position - 0xC037
 			return "WCT_CLIP2" /* GXT: Extended Clip */;
 			break;
 		
+		case joaat("COMPONENT_BATTLERIFLE_CLIP_01"):
+			return "WCT_CLIP1" /* GXT: Default Clip */;
+			break;
+		
+		case joaat("COMPONENT_BATTLERIFLE_CLIP_02"):
+			return "WCT_CLIP2" /* GXT: Extended Clip */;
+			break;
+		
+		case joaat("COMPONENT_COMBATPISTOL_VARMOD_XMAS23"):
+			return "WCT_COMPIST_XM" /* GXT: Snowman Finish */;
+			break;
+		
+		case joaat("COMPONENT_HEAVYSNIPER_VARMOD_XMAS23"):
+			return "WCT_HVSP_XM" /* GXT: Santa's Helper Finish */;
+			break;
+		
+		case joaat("COMPONENT_SPECIALCARBINE_VARMOD_XMAS23"):
+			return "WCT_SPCR_XM" /* GXT: Skull Santa Finish */;
+			break;
+		
 		default:
 			if (iParam1 != 0)
 			{
@@ -10741,12 +10917,12 @@ char* func_76(int iParam0, int iParam1)//Position - 0xC037
 	return "WCT_INVALID";
 }
 
-var func_77(var uParam0)//Position - 0xCA44
+var func_77(var uParam0)//Position - 0xD08A
 {
 	return uParam0;
 }
 
-int func_78()//Position - 0xCA4E
+int func_78()//Position - 0xD094
 {
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && func_79())
 	{
@@ -10755,7 +10931,7 @@ int func_78()//Position - 0xCA4E
 	return 0;
 }
 
-int func_79()//Position - 0xCA6B
+int func_79()//Position - 0xD0B1
 {
 	if (MISC::IS_PC_VERSION())
 	{
@@ -10764,7 +10940,7 @@ int func_79()//Position - 0xCA6B
 	return 0;
 }
 
-int func_80(int iParam0)//Position - 0xCA82
+int func_80(int iParam0)//Position - 0xD0C8
 {
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
@@ -10785,12 +10961,12 @@ int func_80(int iParam0)//Position - 0xCA82
 	}
 	else if (func_81(iParam0))
 	{
-		return Global_262145.f_21368 /* Tunable: ENABLE_INDEPENDENCE_LIVERY_WEAPONS */;
+		return Global_262145.f_21398 /* Tunable: ENABLE_INDEPENDENCE_LIVERY_WEAPONS */;
 	}
 	return 1;
 }
 
-int func_81(int iParam0)//Position - 0xCAE4
+int func_81(int iParam0)//Position - 0xD12A
 {
 	switch (iParam0)
 	{
@@ -10812,16 +10988,16 @@ int func_81(int iParam0)//Position - 0xCAE4
 	return 0;
 }
 
-int func_82()//Position - 0xCB43
+int func_82()//Position - 0xD189
 {
 	var uVar0;
 	var uVar1;
 	int iVar2;
 	int iVar3;
 	
-	if (BitTest(Global_25, 6))
+	if (BitTest(Global_26, 6))
 	{
-		if (BitTest(Global_25, 2) || BitTest(Global_25, 4))
+		if (BitTest(Global_26, 2) || BitTest(Global_26, 4))
 		{
 			return 1;
 		}
@@ -10846,7 +11022,7 @@ int func_82()//Position - 0xCB43
 	}
 	if (STATS::STAT_SLOT_IS_LOADED(0))
 	{
-		if (Global_152688.f_3)
+		if (Global_153248.f_3)
 		{
 			iVar2 = joaat("MPPLY_PLAT_UP_LB_CHECK");
 			if (STATS::STAT_GET_INT(iVar2, &uVar1, -1))
@@ -10869,7 +11045,7 @@ int func_82()//Position - 0xCB43
 	return 0;
 }
 
-int func_83()//Position - 0xCBF9
+int func_83()//Position - 0xD23F
 {
 	var uVar0;
 	var uVar1;
@@ -10877,9 +11053,9 @@ int func_83()//Position - 0xCBF9
 	int iVar3;
 	int iVar4;
 	
-	if (BitTest(Global_25, 5))
+	if (BitTest(Global_26, 5))
 	{
-		if (BitTest(Global_25, 1) || BitTest(Global_25, 3))
+		if (BitTest(Global_26, 1) || BitTest(Global_26, 3))
 		{
 			return 1;
 		}
@@ -10904,7 +11080,7 @@ int func_83()//Position - 0xCBF9
 	}
 	if (STATS::STAT_SLOT_IS_LOADED(0))
 	{
-		if (Global_152688.f_3)
+		if (Global_153248.f_3)
 		{
 			iVar2 = joaat("MPPLY_PLAT_UP_LB_CHECK");
 			if (STATS::STAT_GET_INT(iVar2, &uVar1, -1))
@@ -10934,9 +11110,9 @@ int func_83()//Position - 0xCBF9
 				MISC::SET_BIT(&iVar4, 1);
 				MISC::SET_BIT(&iVar4, 3);
 				MISC::SET_BIT(&iVar4, 5);
-				MISC::SET_BIT(&Global_25, 1);
-				MISC::SET_BIT(&Global_25, 3);
-				MISC::SET_BIT(&Global_25, 5);
+				MISC::SET_BIT(&Global_26, 1);
+				MISC::SET_BIT(&Global_26, 3);
+				MISC::SET_BIT(&Global_26, 5);
 				STATS::STAT_SET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), iVar4, true);
 				if (MISC::ARE_PROFILE_SETTINGS_VALID())
 				{
@@ -10952,15 +11128,15 @@ int func_83()//Position - 0xCBF9
 	return 0;
 }
 
-int func_84()//Position - 0xCD32
+int func_84()//Position - 0xD378
 {
 	int iVar0;
 	
-	if (Global_152686 == 2)
+	if (Global_153246 == 2)
 	{
 		return 1;
 	}
-	else if (Global_152686 == 3)
+	else if (Global_153246 == 3)
 	{
 		return 0;
 	}
@@ -10974,9 +11150,9 @@ int func_84()//Position - 0xCD32
 				MISC::SET_BIT(&iVar0, 2);
 				MISC::SET_BIT(&iVar0, 4);
 				MISC::SET_BIT(&iVar0, 6);
-				MISC::SET_BIT(&Global_25, 2);
-				MISC::SET_BIT(&Global_25, 4);
-				MISC::SET_BIT(&Global_25, 6);
+				MISC::SET_BIT(&Global_26, 2);
+				MISC::SET_BIT(&Global_26, 4);
+				MISC::SET_BIT(&Global_26, 6);
 				STATS::STAT_SET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), iVar0, true);
 				if (MISC::ARE_PROFILE_SETTINGS_VALID())
 				{
@@ -10998,7 +11174,7 @@ int func_84()//Position - 0xCD32
 	return 0;
 }
 
-int func_85(int iParam0)//Position - 0xCDEA
+int func_85(int iParam0)//Position - 0xD430
 {
 	switch (iParam0)
 	{
@@ -11031,7 +11207,7 @@ int func_85(int iParam0)//Position - 0xCDEA
 	return 0;
 }
 
-int func_86(int iParam0, int iParam1)//Position - 0xCE8B
+int func_86(int iParam0, int iParam1)//Position - 0xD4D1
 {
 	int iVar0;
 	var uVar1;
@@ -11155,20 +11331,20 @@ int func_86(int iParam0, int iParam1)//Position - 0xCE8B
 	return iVar0;
 }
 
-int func_87(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0xD207
+int func_87(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0xD84D
 {
 	*uParam2 = 1;
 	*uParam3 = 0;
 	switch (iParam1)
 	{
 		case joaat("WEAPON_BAT"):
-			if ((!Global_262145.f_34131 /* Tunable: 1490225691 */ && func_98(iLocal_54, 0)) || func_88(iParam0, iParam1, -1))
+			if ((!Global_262145.f_34365 /* Tunable: 1490225691 */ && func_98(iLocal_54, 0)) || func_88(iParam0, iParam1, -1))
 			{
 				*uParam2 = 1;
 				*uParam3 = 0;
 				return 1;
 			}
-			if (Global_262145.f_34131 /* Tunable: 1490225691 */ || !func_98(iLocal_54, 0))
+			if (Global_262145.f_34365 /* Tunable: 1490225691 */ || !func_98(iLocal_54, 0))
 			{
 				*uParam2 = 0;
 				*uParam3 = 1;
@@ -11178,13 +11354,13 @@ int func_87(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0xD2
 			break;
 		
 		case joaat("WEAPON_KNIFE"):
-			if ((!Global_262145.f_34131 /* Tunable: 1490225691 */ && func_98(iLocal_54, 0)) || func_88(iParam0, iParam1, -1))
+			if ((!Global_262145.f_34365 /* Tunable: 1490225691 */ && func_98(iLocal_54, 0)) || func_88(iParam0, iParam1, -1))
 			{
 				*uParam2 = 1;
 				*uParam3 = 0;
 				return 1;
 			}
-			if (Global_262145.f_34131 /* Tunable: 1490225691 */)
+			if (Global_262145.f_34365 /* Tunable: 1490225691 */)
 			{
 				*uParam2 = 0;
 				*uParam3 = 1;
@@ -11196,7 +11372,7 @@ int func_87(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0xD2
 	return 0;
 }
 
-int func_88(int iParam0, int iParam1, int iParam2)//Position - 0xD2E3
+int func_88(int iParam0, int iParam1, int iParam2)//Position - 0xD929
 {
 	var uVar0;
 	int iVar1;
@@ -11210,17 +11386,17 @@ int func_88(int iParam0, int iParam1, int iParam2)//Position - 0xD2E3
 	return BitTest(uVar0, func_89(iVar1));
 }
 
-int func_89(int iParam0)//Position - 0xD315
+int func_89(int iParam0)//Position - 0xD95B
 {
 	return (iParam0 % 32);
 }
 
-int func_90(int iParam0, int iParam1)//Position - 0xD322
+int func_90(int iParam0, int iParam1)//Position - 0xD968
 {
 	return func_91(iParam0, iParam1);
 }
 
-int func_91(int iParam0, int iParam1)//Position - 0xD332
+int func_91(int iParam0, int iParam1)//Position - 0xD978
 {
 	switch (iParam1)
 	{
@@ -11274,6 +11450,10 @@ int func_91(int iParam0, int iParam1)//Position - 0xD332
 				
 				case joaat("COMPONENT_COMBATPISTOL_VARMOD_LOWRIDER"):
 					return 186;
+					break;
+				
+				case joaat("COMPONENT_COMBATPISTOL_VARMOD_XMAS23"):
+					return 613;
 					break;
 			}
 			break;
@@ -11651,6 +11831,10 @@ int func_91(int iParam0, int iParam1)//Position - 0xD332
 				case joaat("COMPONENT_GUNRUN_MK2_UPGRADE"):
 					return 216;
 					break;
+				
+				case joaat("COMPONENT_HEAVYSNIPER_VARMOD_XMAS23"):
+					return 614;
+					break;
 			}
 			break;
 		
@@ -11843,6 +12027,10 @@ int func_91(int iParam0, int iParam1)//Position - 0xD332
 				
 				case joaat("COMPONENT_GUNRUN_MK2_UPGRADE"):
 					return 390;
+					break;
+				
+				case joaat("COMPONENT_SPECIALCARBINE_VARMOD_XMAS23"):
+					return 615;
 					break;
 			}
 			break;
@@ -13878,11 +14066,28 @@ int func_91(int iParam0, int iParam1)//Position - 0xD332
 					break;
 			}
 			break;
+		
+		case joaat("WEAPON_BATTLERIFLE"):
+			switch (iParam0)
+			{
+				case joaat("COMPONENT_BATTLERIFLE_CLIP_01"):
+					return 611;
+					break;
+				
+				case joaat("COMPONENT_BATTLERIFLE_CLIP_02"):
+					return 612;
+					break;
+				
+				case joaat("COMPONENT_AT_AR_SUPP"):
+					return 616;
+					break;
+			}
+			break;
 	}
 	return 0;
 }
 
-var func_92(int iParam0, int iParam1, int iParam2)//Position - 0xF88B
+var func_92(int iParam0, int iParam1, int iParam2)//Position - 0xFF3B
 {
 	var uVar0;
 	
@@ -13890,7 +14095,7 @@ var func_92(int iParam0, int iParam1, int iParam2)//Position - 0xF88B
 	return uVar0;
 }
 
-int func_93(int iParam0, int iParam1)//Position - 0xF8A5
+int func_93(int iParam0, int iParam1)//Position - 0xFF55
 {
 	int iVar0;
 	int iVar1;
@@ -13974,51 +14179,51 @@ int func_93(int iParam0, int iParam1)//Position - 0xF8A5
 				break;
 			
 			case 18:
-				return 10272;
+				return 10273;
 				break;
 			
 			case 19:
-				return 12005;
+				return 12007;
 				break;
 			}
 	}
-	return 14385;
+	return 14626;
 }
 
-int func_94()//Position - 0xFA25
+int func_94()//Position - 0x10137
 {
-	return Global_32284;
+	return Global_32829;
 }
 
-int func_95()//Position - 0xFA30
+int func_95()//Position - 0x10142
 {
-	return Global_32283;
+	return Global_32828;
 }
 
-int func_96(int iParam0)//Position - 0xFA3B
+int func_96(int iParam0)//Position - 0x1014D
 {
 	return (iParam0 / 32);
 }
 
-bool func_97()//Position - 0xFA48
+bool func_97()//Position - 0x1015A
 {
-	return Global_1575042;
+	return Global_1575058;
 }
 
-int func_98(int iParam0, bool bParam1)//Position - 0xFA54
+int func_98(int iParam0, bool bParam1)//Position - 0x10166
 {
 	if (iParam0 == 58)
 	{
 		if (bParam1)
 		{
-			return Global_100885.f_329[58] < 5f;
+			return Global_101444.f_329[58] < 5f;
 		}
 		return 1;
 	}
 	return 0;
 }
 
-int func_99(int iParam0, int iParam1, int iParam2)//Position - 0xFA7D
+int func_99(int iParam0, int iParam1, int iParam2)//Position - 0x1018F
 {
 	var uVar0;
 	int iVar1;
@@ -14032,7 +14237,7 @@ int func_99(int iParam0, int iParam1, int iParam2)//Position - 0xFA7D
 	return BitTest(uVar0, func_89(iVar1));
 }
 
-var func_100(int iParam0, int iParam1, int iParam2)//Position - 0xFAAF
+var func_100(int iParam0, int iParam1, int iParam2)//Position - 0x101C1
 {
 	var uVar0;
 	
@@ -14040,7 +14245,7 @@ var func_100(int iParam0, int iParam1, int iParam2)//Position - 0xFAAF
 	return uVar0;
 }
 
-int func_101(int iParam0, int iParam1)//Position - 0xFAC9
+int func_101(int iParam0, int iParam1)//Position - 0x101DB
 {
 	int iVar0;
 	int iVar1;
@@ -14124,18 +14329,18 @@ int func_101(int iParam0, int iParam1)//Position - 0xFAC9
 				break;
 			
 			case 18:
-				return 10274;
+				return 10275;
 				break;
 			
 			case 19:
-				return 12007;
+				return 12009;
 				break;
 		}
 	}
 	return 1755;
 }
 
-int func_102(int iParam0)//Position - 0xFC4C
+int func_102(int iParam0)//Position - 0x1035E
 {
 	switch (iParam0)
 	{
@@ -14155,7 +14360,7 @@ int func_102(int iParam0)//Position - 0xFC4C
 	return 0;
 }
 
-void func_103(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4)//Position - 0xFC96
+void func_103(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4)//Position - 0x103A8
 {
 	*uParam0 = iParam1;
 	uParam0->f_4 = iParam2;
@@ -14163,7 +14368,7 @@ void func_103(var uParam0, int iParam1, int iParam2, int iParam3, int iParam4)//
 	uParam0->f_1 = iParam4;
 }
 
-int func_104(int iParam0, var* uParam1)//Position - 0xFCB5
+int func_104(int iParam0, var* uParam1)//Position - 0x103C7
 {
 	int iVar0;
 	int iVar1;
@@ -14184,7 +14389,7 @@ int func_104(int iParam0, var* uParam1)//Position - 0xFCB5
 	return -1;
 }
 
-void func_105(int iParam0, var uParam1)//Position - 0xFCF0
+void func_105(int iParam0, var uParam1)//Position - 0x10402
 {
 	int iVar0;
 	int iVar1;
@@ -14317,7 +14522,7 @@ void func_105(int iParam0, var uParam1)//Position - 0xFCF0
 	}
 }
 
-int func_106(int iParam0)//Position - 0xFF78
+int func_106(int iParam0)//Position - 0x1068A
 {
 	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
@@ -14417,6 +14622,8 @@ int func_106(int iParam0)//Position - 0xFF78
 			case joaat("WEAPON_CANDYCANE"):
 			case joaat("WEAPON_RAILGUNXM3"):
 			case joaat("WEAPON_TECPISTOL"):
+			case joaat("WEAPON_BATTLERIFLE"):
+			case joaat("WEAPON_SNOWLAUNCHER"):
 				return 1;
 				break;
 			}
@@ -14424,7 +14631,7 @@ int func_106(int iParam0)//Position - 0xFF78
 	return 0;
 }
 
-int func_107(int iParam0, int iParam1)//Position - 0x101CF
+int func_107(int iParam0, int iParam1)//Position - 0x10876
 {
 	int iVar0;
 	int iVar1;
@@ -14486,6 +14693,10 @@ int func_107(int iParam0, int iParam1)//Position - 0x101CF
 				
 				case 4:
 					iVar0 = joaat("COMPONENT_COMBATPISTOL_VARMOD_LOWRIDER");
+					break;
+				
+				case 5:
+					iVar0 = joaat("COMPONENT_COMBATPISTOL_VARMOD_XMAS23");
 					break;
 			}
 			break;
@@ -14867,6 +15078,10 @@ int func_107(int iParam0, int iParam1)//Position - 0x101CF
 				case 3:
 					iVar0 = joaat("COMPONENT_AT_SCOPE_MAX");
 					break;
+				
+				case 4:
+					iVar0 = joaat("COMPONENT_HEAVYSNIPER_VARMOD_XMAS23");
+					break;
 			}
 			break;
 		
@@ -15089,6 +15304,10 @@ int func_107(int iParam0, int iParam1)//Position - 0x101CF
 				case 7:
 					iVar0 = joaat("COMPONENT_SPECIALCARBINE_VARMOD_LOWRIDER");
 					break;
+				
+				case 8:
+					iVar0 = joaat("COMPONENT_SPECIALCARBINE_VARMOD_XMAS23");
+					break;
 			}
 			break;
 		
@@ -15251,6 +15470,23 @@ int func_107(int iParam0, int iParam1)//Position - 0x101CF
 			}
 			break;
 		
+		case joaat("WEAPON_BATTLERIFLE"):
+			switch (iParam1)
+			{
+				case 0:
+					iVar0 = joaat("COMPONENT_BATTLERIFLE_CLIP_01");
+					break;
+				
+				case 1:
+					iVar0 = joaat("COMPONENT_BATTLERIFLE_CLIP_02");
+					break;
+				
+				case 2:
+					iVar0 = joaat("COMPONENT_AT_AR_SUPP");
+					break;
+			}
+			break;
+		
 		default:
 			if (iParam0 != 0)
 			{
@@ -15280,7 +15516,7 @@ int func_107(int iParam0, int iParam1)//Position - 0x101CF
 	return iVar0;
 }
 
-int func_108(int iParam0)//Position - 0x10E80
+int func_108(int iParam0)//Position - 0x11597
 {
 	int iVar0;
 	
@@ -15442,7 +15678,7 @@ int func_108(int iParam0)//Position - 0x10E80
 	return iVar0;
 }
 
-float func_109(int* iParam0)//Position - 0x110F4
+float func_109(int* iParam0)//Position - 0x1180B
 {
 	if (func_112(iParam0))
 	{
@@ -15458,7 +15694,7 @@ float func_109(int* iParam0)//Position - 0x110F4
 	return iParam0->f_1;
 }
 
-float func_110(bool bParam0)//Position - 0x11130
+float func_110(bool bParam0)//Position - 0x11847
 {
 	float fVar0;
 	float fVar1;
@@ -15482,17 +15718,17 @@ float func_110(bool bParam0)//Position - 0x11130
 	return (SYSTEM::TO_FLOAT(MISC::GET_GAME_TIMER()) / 1000f);
 }
 
-bool func_111(int* iParam0)//Position - 0x11188
+bool func_111(int* iParam0)//Position - 0x1189F
 {
 	return BitTest(*iParam0, 2);
 }
 
-bool func_112(int* iParam0)//Position - 0x11195
+bool func_112(int* iParam0)//Position - 0x118AC
 {
 	return BitTest(*iParam0, 1);
 }
 
-int func_113()//Position - 0x111A2
+int func_113()//Position - 0x118B9
 {
 	if (Global_1574612)
 	{
@@ -15509,17 +15745,17 @@ int func_113()//Position - 0x111A2
 	return func_4(124, -1);
 }
 
-bool func_114()//Position - 0x111D2
+bool func_114()//Position - 0x118E9
 {
-	return Global_1575051;
+	return Global_1575067;
 }
 
-bool func_115()//Position - 0x111DE
+bool func_115()//Position - 0x118F5
 {
-	return Global_1575053;
+	return Global_1575069;
 }
 
-void func_116()//Position - 0x111EA
+void func_116()//Position - 0x11901
 {
 	int iVar0;
 	
@@ -15561,7 +15797,7 @@ void func_116()//Position - 0x111EA
 	}
 }
 
-bool func_117(int iParam0, int iParam1)//Position - 0x1127E
+bool func_117(int iParam0, int iParam1)//Position - 0x11995
 {
 	int iVar0;
 	int iVar1;
@@ -15575,7 +15811,7 @@ bool func_117(int iParam0, int iParam1)//Position - 0x1127E
 	return BitTest(iVar1, iParam0);
 }
 
-int func_118(int iParam0)//Position - 0x112A7
+int func_118(int iParam0)//Position - 0x119BE
 {
 	int iVar0;
 	
@@ -15608,7 +15844,7 @@ int func_118(int iParam0)//Position - 0x112A7
 	return iVar0;
 }
 
-int func_119()//Position - 0x1130A
+int func_119()//Position - 0x11A21
 {
 	if (func_121() && func_120(0))
 	{
@@ -15617,26 +15853,26 @@ int func_119()//Position - 0x1130A
 	return 0;
 }
 
-var func_120(int iParam0)//Position - 0x11328
+var func_120(int iParam0)//Position - 0x11A3F
 {
 	return Global_1574538[iParam0];
 }
 
-var func_121()//Position - 0x11338
+var func_121()//Position - 0x11A4F
 {
 	return func_120(func_7() + 1);
 }
 
-bool func_122(var uParam0)//Position - 0x1134A
+bool func_122(var uParam0)//Position - 0x11A61
 {
 	return uParam0->f_79 == 1;
 }
 
-void func_123(var uParam0)//Position - 0x11358
+void func_123(var uParam0)//Position - 0x11A6F
 {
 	float fVar0;
 	
-	fVar0 = Global_4542601;
+	fVar0 = Global_4543282;
 	uParam0->f_80 = (uParam0->f_80 + MISC::GET_FRAME_TIME());
 	if (!func_122(uParam0))
 	{
@@ -15667,7 +15903,7 @@ void func_123(var uParam0)//Position - 0x11358
 	}
 }
 
-void func_124(var uParam0)//Position - 0x113E0
+void func_124(var uParam0)//Position - 0x11AF7
 {
 	int iVar0;
 	
@@ -15682,7 +15918,7 @@ void func_124(var uParam0)//Position - 0x113E0
 	}
 }
 
-void func_125(var uParam0)//Position - 0x11411
+void func_125(var uParam0)//Position - 0x11B28
 {
 	int iVar0;
 	
@@ -15698,7 +15934,7 @@ void func_125(var uParam0)//Position - 0x11411
 	}
 }
 
-int func_126(int iParam0)//Position - 0x11448
+int func_126(int iParam0)//Position - 0x11B5F
 {
 	if (PLAYER::HAS_ACHIEVEMENT_BEEN_PASSED(iParam0))
 	{
@@ -15719,7 +15955,7 @@ int func_126(int iParam0)//Position - 0x11448
 	return 0;
 }
 
-int func_127(int iParam0)//Position - 0x11492
+int func_127(int iParam0)//Position - 0x11BA9
 {
 	switch (iParam0)
 	{
@@ -15740,12 +15976,12 @@ int func_127(int iParam0)//Position - 0x11492
 	return 0;
 }
 
-bool func_128(var uParam0, int iParam1)//Position - 0x114E2
+bool func_128(var uParam0, int iParam1)//Position - 0x11BF9
 {
 	return (*uParam0)[iParam1] == 78;
 }
 
-void func_129(var uParam0, float fParam1)//Position - 0x114F3
+void func_129(var uParam0, float fParam1)//Position - 0x11C0A
 {
 	if (fParam1 == 0f)
 	{
@@ -15757,16 +15993,16 @@ void func_129(var uParam0, float fParam1)//Position - 0x114F3
 	}
 }
 
-float func_130(var uParam0)//Position - 0x11510
+float func_130(var uParam0)//Position - 0x11C27
 {
 	return uParam0->f_80;
 }
 
-int func_131()//Position - 0x1151C
+int func_131()//Position - 0x11C33
 {
 	float fVar0;
 	
-	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() || Global_78689)
+	if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS() || Global_79248)
 	{
 		return 0;
 	}
@@ -15789,18 +16025,18 @@ int func_131()//Position - 0x1151C
 	return 0;
 }
 
-int func_132(int iParam0)//Position - 0x11594
+int func_132(int iParam0)//Position - 0x11CAB
 {
 	if (iParam0 == 94 || iParam0 == -1)
 	{
 		return 0;
 	}
-	return Global_113810.f_9088.f_330[iParam0 /*6*/];
+	return Global_114370.f_9088.f_330[iParam0 /*6*/];
 }
 
-void func_133(bool bParam0)//Position - 0x115C0
+void func_133(bool bParam0)//Position - 0x11CD7
 {
-	if (Global_78689)
+	if (Global_79248)
 	{
 		if (bParam0)
 		{
@@ -15824,7 +16060,7 @@ void func_133(bool bParam0)//Position - 0x115C0
 	}
 }
 
-int func_134()//Position - 0x11614
+int func_134()//Position - 0x11D2B
 {
 	int iVar0;
 	int iVar1;
@@ -15847,7 +16083,7 @@ int func_134()//Position - 0x11614
 	return 0;
 }
 
-int func_135()//Position - 0x11682
+int func_135()//Position - 0x11D99
 {
 	int iVar0;
 	
@@ -15858,13 +16094,13 @@ int func_135()//Position - 0x11682
 	iVar0 = MISC::GET_NUM_SUCCESSFUL_STUNT_JUMPS();
 	if (iVar0 > 0)
 	{
-		if (Global_32549 < iVar0)
+		if (Global_33094 < iVar0)
 		{
-			if (Global_32549 >= 0)
+			if (Global_33094 >= 0)
 			{
 				func_150(22, iVar0);
 			}
-			Global_32549 = iVar0;
+			Global_33094 = iVar0;
 		}
 	}
 	if (MISC::GET_NUM_SUCCESSFUL_STUNT_JUMPS() >= 50)
@@ -15875,7 +16111,7 @@ int func_135()//Position - 0x11682
 	return 0;
 }
 
-int func_136(bool bParam0)//Position - 0x116D9
+int func_136(bool bParam0)//Position - 0x11DF0
 {
 	var uVar0[6];
 	int iVar7;
@@ -15957,7 +16193,7 @@ int func_136(bool bParam0)//Position - 0x116D9
 	return 1;
 }
 
-int func_137()//Position - 0x117FB
+int func_137()//Position - 0x11F12
 {
 	int iVar0;
 	
@@ -15965,15 +16201,15 @@ int func_137()//Position - 0x117FB
 	iVar0 = 0;
 	while (iVar0 < 12)
 	{
-		if (Global_113810.f_1991[0 /*121*/][iVar0 /*10*/].f_8 == 3)
+		if (Global_114370.f_1991[0 /*121*/][iVar0 /*10*/].f_8 == 3)
 		{
 			return 1;
 		}
-		else if (Global_113810.f_1991[1 /*121*/][iVar0 /*10*/].f_8 == 3)
+		else if (Global_114370.f_1991[1 /*121*/][iVar0 /*10*/].f_8 == 3)
 		{
 			return 1;
 		}
-		else if (Global_113810.f_1991[2 /*121*/][iVar0 /*10*/].f_8 == 3)
+		else if (Global_114370.f_1991[2 /*121*/][iVar0 /*10*/].f_8 == 3)
 		{
 			return 1;
 		}
@@ -15982,7 +16218,7 @@ int func_137()//Position - 0x117FB
 	return 0;
 }
 
-int func_138()//Position - 0x11868
+int func_138()//Position - 0x11F7F
 {
 	int iVar0;
 	
@@ -15990,15 +16226,15 @@ int func_138()//Position - 0x11868
 	iVar0 = 0;
 	while (iVar0 < 22)
 	{
-		if (Global_113810.f_19150[0 /*271*/].f_3[iVar0 /*12*/].f_3 == 3)
+		if (Global_114370.f_19150[0 /*271*/].f_3[iVar0 /*12*/].f_3 == 3)
 		{
 			return 1;
 		}
-		else if (Global_113810.f_19150[1 /*271*/].f_3[iVar0 /*12*/].f_3 == 3)
+		else if (Global_114370.f_19150[1 /*271*/].f_3[iVar0 /*12*/].f_3 == 3)
 		{
 			return 1;
 		}
-		else if (Global_113810.f_19150[2 /*271*/].f_3[iVar0 /*12*/].f_3 == 3)
+		else if (Global_114370.f_19150[2 /*271*/].f_3[iVar0 /*12*/].f_3 == 3)
 		{
 			return 1;
 		}
@@ -16007,7 +16243,7 @@ int func_138()//Position - 0x11868
 	return 0;
 }
 
-int func_139()//Position - 0x118DE
+int func_139()//Position - 0x11FF5
 {
 	bool bVar0;
 	
@@ -16015,7 +16251,7 @@ int func_139()//Position - 0x118DE
 	bVar0 = false;
 	while (bVar0 < 4)
 	{
-		if (BitTest(Global_113810.f_24979.f_1, bVar0))
+		if (BitTest(Global_114370.f_24979.f_1, bVar0))
 		{
 			return 1;
 		}
@@ -16024,7 +16260,7 @@ int func_139()//Position - 0x118DE
 	return 0;
 }
 
-int func_140()//Position - 0x1190F
+int func_140()//Position - 0x12026
 {
 	bool bVar0;
 	
@@ -16032,7 +16268,7 @@ int func_140()//Position - 0x1190F
 	bVar0 = false;
 	while (bVar0 < 5)
 	{
-		if (BitTest(Global_113810.f_24982.f_2, bVar0))
+		if (BitTest(Global_114370.f_24982.f_2, bVar0))
 		{
 			return 1;
 		}
@@ -16041,7 +16277,7 @@ int func_140()//Position - 0x1190F
 	return 0;
 }
 
-int func_141()//Position - 0x11940
+int func_141()//Position - 0x12057
 {
 	int iVar0;
 	
@@ -16049,7 +16285,7 @@ int func_141()//Position - 0x11940
 	iVar0 = 0;
 	while (iVar0 < 7)
 	{
-		if (Global_113810.f_19019.f_19[iVar0] == 1)
+		if (Global_114370.f_19019.f_19[iVar0] == 1)
 		{
 			return 1;
 		}
@@ -16058,7 +16294,7 @@ int func_141()//Position - 0x11940
 	return 0;
 }
 
-int func_142()//Position - 0x11973
+int func_142()//Position - 0x1208A
 {
 	int iVar0;
 	
@@ -16066,7 +16302,7 @@ int func_142()//Position - 0x11973
 	iVar0 = 0;
 	while (iVar0 < 3)
 	{
-		if (Global_113810.f_20014[iVar0] == 1)
+		if (Global_114370.f_20014[iVar0] == 1)
 		{
 			return 1;
 		}
@@ -16075,7 +16311,7 @@ int func_142()//Position - 0x11973
 	return 0;
 }
 
-int func_143(bool bParam0)//Position - 0x119A4
+int func_143(bool bParam0)//Position - 0x120BB
 {
 	int iVar0;
 	int iVar1;
@@ -16116,7 +16352,7 @@ int func_143(bool bParam0)//Position - 0x119A4
 	return 1;
 }
 
-int func_144(int iParam0, int iParam1)//Position - 0x11A5B
+int func_144(int iParam0, int iParam1)//Position - 0x12172
 {
 	if (iParam0 >= 78)
 	{
@@ -16125,7 +16361,7 @@ int func_144(int iParam0, int iParam1)//Position - 0x11A5B
 	return func_145(iParam0, iParam1);
 }
 
-int func_145(int iParam0, int iParam1)//Position - 0x11A76
+int func_145(int iParam0, int iParam1)//Position - 0x1218D
 {
 	if (func_177(14) && !func_127(iParam0))
 	{
@@ -16135,17 +16371,17 @@ int func_145(int iParam0, int iParam1)//Position - 0x11A76
 	{
 		return 0;
 	}
-	if (Global_32534 != 0 && !Global_78689)
+	if (Global_33079 != 0 && !Global_79248)
 	{
 		return 0;
 	}
-	if (func_122(&Global_4542602))
+	if (func_122(&Global_4543283))
 	{
-		if (func_148(&Global_4542602, iParam0))
+		if (func_148(&Global_4543283, iParam0))
 		{
 			return 0;
 		}
-		if (func_146(&Global_4542602, iParam0))
+		if (func_146(&Global_4543283, iParam0))
 		{
 			return 1;
 		}
@@ -16165,7 +16401,7 @@ int func_145(int iParam0, int iParam1)//Position - 0x11A76
 	return 0;
 }
 
-int func_146(var uParam0, int iParam1)//Position - 0x11B13
+int func_146(var uParam0, int iParam1)//Position - 0x1222A
 {
 	int iVar0;
 	var uVar1[78];
@@ -16205,7 +16441,7 @@ int func_146(var uParam0, int iParam1)//Position - 0x11B13
 	return 1;
 }
 
-int func_147(var uParam0, int iParam1)//Position - 0x11BC4
+int func_147(var uParam0, int iParam1)//Position - 0x122DB
 {
 	int iVar0;
 	
@@ -16238,12 +16474,12 @@ int func_147(var uParam0, int iParam1)//Position - 0x11BC4
 	return 0;
 }
 
-bool func_148(var uParam0, int iParam1)//Position - 0x11C3F
+bool func_148(var uParam0, int iParam1)//Position - 0x12356
 {
 	return func_149(uParam0, iParam1) != -1;
 }
 
-int func_149(var uParam0, int iParam1)//Position - 0x11C51
+int func_149(var uParam0, int iParam1)//Position - 0x12368
 {
 	int iVar0;
 	
@@ -16259,7 +16495,7 @@ int func_149(var uParam0, int iParam1)//Position - 0x11C51
 	return -1;
 }
 
-int func_150(int iParam0, int iParam1)//Position - 0x11C7E
+int func_150(int iParam0, int iParam1)//Position - 0x12395
 {
 	int iVar0;
 	
@@ -16283,7 +16519,7 @@ int func_150(int iParam0, int iParam1)//Position - 0x11C7E
 	return 0;
 }
 
-int func_151(bool bParam0)//Position - 0x11CCF
+int func_151(bool bParam0)//Position - 0x123E6
 {
 	int iVar0;
 	
@@ -16294,7 +16530,7 @@ int func_151(bool bParam0)//Position - 0x11CCF
 	return iVar0;
 }
 
-int func_152(bool bParam0)//Position - 0x11CED
+int func_152(bool bParam0)//Position - 0x12404
 {
 	int iVar0;
 	int iVar1;
@@ -16311,9 +16547,9 @@ int func_152(bool bParam0)//Position - 0x11CED
 	{
 	}
 	iVar0 = 0;
-	while (iVar0 < Global_113810.f_18577)
+	while (iVar0 < Global_114370.f_18577)
 	{
-		if (Global_113810.f_18577[iVar0 /*6*/].f_3 != -1 && func_162(iVar0, 7))
+		if (Global_114370.f_18577[iVar0 /*6*/].f_3 != -1 && func_162(iVar0, 7))
 		{
 			iVar3 = 0;
 			iVar4 = 0;
@@ -16321,7 +16557,7 @@ int func_152(bool bParam0)//Position - 0x11CED
 			while (iVar5 < func_160(iVar0, 7))
 			{
 				iVar7 = func_158(iVar0, 7, iVar5);
-				if (!Global_63710[iVar7 /*13*/].f_7)
+				if (!Global_64263[iVar7 /*13*/].f_7)
 				{
 					if (func_155(iVar7) == 1)
 					{
@@ -16338,7 +16574,7 @@ int func_152(bool bParam0)//Position - 0x11CED
 				if (bParam0)
 				{
 				}
-				iVar2 = Global_113810.f_2355[(iVar0 - 52) /*2*/];
+				iVar2 = Global_114370.f_2355[(iVar0 - 52) /*2*/];
 				fVar6 = 0f;
 			}
 			if (fVar6 >= 100f || iVar2 == 3)
@@ -16354,7 +16590,7 @@ int func_152(bool bParam0)//Position - 0x11CED
 	return iVar1;
 }
 
-int func_153(float fParam0)//Position - 0x11DE1
+int func_153(float fParam0)//Position - 0x124F8
 {
 	if (fParam0 == 0f)
 	{
@@ -16371,7 +16607,7 @@ int func_153(float fParam0)//Position - 0x11DE1
 	return 1;
 }
 
-float func_154(int iParam0, int iParam1, bool bParam2)//Position - 0x11E16
+float func_154(int iParam0, int iParam1, bool bParam2)//Position - 0x1252D
 {
 	float fVar0;
 	float fVar1;
@@ -16394,22 +16630,22 @@ float func_154(int iParam0, int iParam1, bool bParam2)//Position - 0x11E16
 	return fVar1;
 }
 
-int func_155(int iParam0)//Position - 0x11E75
+int func_155(int iParam0)//Position - 0x1258C
 {
-	if (func_156(iParam0, func_157(Global_63710[iParam0 /*13*/].f_4)))
+	if (func_156(iParam0, func_157(Global_64263[iParam0 /*13*/].f_4)))
 	{
 		return 1;
 	}
 	return 0;
 }
 
-int func_156(int iParam0, int iParam1)//Position - 0x11E98
+int func_156(int iParam0, int iParam1)//Position - 0x125AF
 {
 	if (iParam1 < 0)
 	{
 		return 0;
 	}
-	switch (Global_63710[iParam0 /*13*/])
+	switch (Global_64263[iParam0 /*13*/])
 	{
 		case 1:
 		case 2:
@@ -16426,25 +16662,25 @@ int func_156(int iParam0, int iParam1)//Position - 0x11E98
 	{
 		return 0;
 	}
-	if (((iParam0 == 881 || iParam0 == 889) || iParam0 == 897) && Global_113810.f_24907[4 /*4*/] == func_61())
+	if (((iParam0 == 881 || iParam0 == 889) || iParam0 == 897) && Global_114370.f_24907[4 /*4*/] == func_61())
 	{
-		Global_63710[iParam0 /*13*/].f_2 = 0;
+		Global_64263[iParam0 /*13*/].f_2 = 0;
 	}
-	if (Global_63710[iParam0 /*13*/].f_3)
+	if (Global_64263[iParam0 /*13*/].f_3)
 	{
-		if (iParam1 < Global_63710[iParam0 /*13*/].f_2)
+		if (iParam1 < Global_64263[iParam0 /*13*/].f_2)
 		{
 			return 1;
 		}
 	}
-	else if (iParam1 >= Global_63710[iParam0 /*13*/].f_2)
+	else if (iParam1 >= Global_64263[iParam0 /*13*/].f_2)
 	{
 		return 1;
 	}
 	return 0;
 }
 
-int func_157(int iParam0)//Position - 0x11F62
+int func_157(int iParam0)//Position - 0x12679
 {
 	int iVar0;
 	
@@ -16459,12 +16695,12 @@ int func_157(int iParam0)//Position - 0x11F62
 	return -1;
 }
 
-int func_158(int iParam0, int iParam1, int iParam2)//Position - 0x11F8B
+int func_158(int iParam0, int iParam1, int iParam2)//Position - 0x126A2
 {
 	switch (iParam1)
 	{
 		case 1:
-			return Global_91601[iParam0 /*34*/].f_17[iParam2];
+			return Global_92160[iParam0 /*34*/].f_17[iParam2];
 			break;
 		
 		case 7:
@@ -16477,7 +16713,7 @@ int func_158(int iParam0, int iParam1, int iParam2)//Position - 0x11F8B
 	return 914;
 }
 
-int func_159(int iParam0, int iParam1)//Position - 0x11FCE
+int func_159(int iParam0, int iParam1)//Position - 0x126E5
 {
 	switch (iParam0)
 	{
@@ -17038,12 +17274,12 @@ int func_159(int iParam0, int iParam1)//Position - 0x11FCE
 	return -1;
 }
 
-int func_160(int iParam0, int iParam1)//Position - 0x126B2
+int func_160(int iParam0, int iParam1)//Position - 0x12DC9
 {
 	switch (iParam1)
 	{
 		case 1:
-			return Global_91601[iParam0 /*34*/].f_16;
+			return Global_92160[iParam0 /*34*/].f_16;
 			break;
 		
 		case 7:
@@ -17056,7 +17292,7 @@ int func_160(int iParam0, int iParam1)//Position - 0x126B2
 	return 0;
 }
 
-int func_161(int iParam0)//Position - 0x126ED
+int func_161(int iParam0)//Position - 0x12E04
 {
 	switch (iParam0)
 	{
@@ -17192,12 +17428,12 @@ int func_161(int iParam0)//Position - 0x126ED
 	return 0;
 }
 
-int func_162(int iParam0, int iParam1)//Position - 0x1289E
+int func_162(int iParam0, int iParam1)//Position - 0x12FB5
 {
 	switch (iParam1)
 	{
 		case 1:
-			return !BitTest(Global_91601[iParam0 /*34*/].f_15, 5);
+			return !BitTest(Global_92160[iParam0 /*34*/].f_15, 5);
 			break;
 		
 		case 7:
@@ -17210,7 +17446,7 @@ int func_162(int iParam0, int iParam1)//Position - 0x1289E
 	return 0;
 }
 
-int func_163(int iParam0)//Position - 0x128DC
+int func_163(int iParam0)//Position - 0x12FF3
 {
 	switch (iParam0)
 	{
@@ -17472,7 +17708,7 @@ int func_163(int iParam0)//Position - 0x128DC
 	return 0;
 }
 
-int func_164(bool bParam0)//Position - 0x12C22
+int func_164(bool bParam0)//Position - 0x13339
 {
 	int iVar0;
 	int iVar1;
@@ -17490,9 +17726,9 @@ int func_164(bool bParam0)//Position - 0x12C22
 	{
 	}
 	iVar0 = 0;
-	while (iVar0 < Global_113810.f_9088.f_330)
+	while (iVar0 < Global_114370.f_9088.f_330)
 	{
-		if (Global_113810.f_9088.f_330[iVar0 /*6*/].f_3 != -1 && func_162(iVar0, 1))
+		if (Global_114370.f_9088.f_330[iVar0 /*6*/].f_3 != -1 && func_162(iVar0, 1))
 		{
 			iVar3 = 0;
 			iVar4 = 0;
@@ -17501,7 +17737,7 @@ int func_164(bool bParam0)//Position - 0x12C22
 			while (iVar5 < func_160(iVar0, 1))
 			{
 				iVar7 = func_158(iVar0, 1, iVar5);
-				if (!Global_63710[iVar7 /*13*/].f_7)
+				if (!Global_64263[iVar7 /*13*/].f_7)
 				{
 					if (func_155(iVar7) == 1)
 					{
@@ -17544,11 +17780,11 @@ int func_164(bool bParam0)//Position - 0x12C22
 	return iVar1;
 }
 
-int func_165(int iParam0)//Position - 0x12D3C
+int func_165(int iParam0)//Position - 0x13453
 {
 	int iVar0;
 	
-	iVar0 = func_157(Global_63710[iParam0 /*13*/].f_4);
+	iVar0 = func_157(Global_64263[iParam0 /*13*/].f_4);
 	if (iVar0 > -2)
 	{
 		return iVar0;
@@ -17556,7 +17792,7 @@ int func_165(int iParam0)//Position - 0x12D3C
 	return 0;
 }
 
-void func_166()//Position - 0x12D61
+void func_166()//Position - 0x13478
 {
 	int iVar0;
 	int iVar1;
@@ -17589,7 +17825,7 @@ void func_166()//Position - 0x12D61
 	}
 }
 
-bool func_167(int iParam0)//Position - 0x12DEA
+bool func_167(int iParam0)//Position - 0x13501
 {
 	if (!ENTITY::DOES_ENTITY_EXIST(iParam0))
 	{
@@ -17598,7 +17834,7 @@ bool func_167(int iParam0)//Position - 0x12DEA
 	return !ENTITY::IS_ENTITY_DEAD(iParam0, false);
 }
 
-void func_168()//Position - 0x12E08
+void func_168()//Position - 0x1351F
 {
 	switch (iLocal_55)
 	{
@@ -17666,7 +17902,7 @@ void func_168()//Position - 0x12E08
 	}
 }
 
-void func_169(int* iParam0)//Position - 0x12F18
+void func_169(int* iParam0)//Position - 0x1362F
 {
 	if (func_112(iParam0))
 	{
@@ -17678,7 +17914,7 @@ void func_169(int* iParam0)//Position - 0x12F18
 	}
 }
 
-float func_170(int* iParam0)//Position - 0x12F4F
+float func_170(int* iParam0)//Position - 0x13666
 {
 	if (func_112(iParam0))
 	{
@@ -17694,47 +17930,47 @@ float func_170(int* iParam0)//Position - 0x12F4F
 	return 0f;
 }
 
-void func_171(int* iParam0)//Position - 0x12F88
+void func_171(int* iParam0)//Position - 0x1369F
 {
 	iParam0->f_1 = 0f;
 	iParam0->f_2 = 0f;
 	*iParam0 = 0;
 }
 
-int func_172()//Position - 0x12F9E
+int func_172()//Position - 0x136B5
 {
 	if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
-		return Global_98291.f_44 == 1;
+		return Global_98850.f_44 == 1;
 	}
 	return 0;
 }
 
-int func_173()//Position - 0x12FBA
+int func_173()//Position - 0x136D1
 {
 	int iVar0;
 	int iVar1;
 	
 	iVar0 = 0;
 	iVar1 = func_175(2);
-	if (func_174(iVar1, 0) || BitTest(Global_96664, 2))
+	if (func_174(iVar1, 0) || BitTest(Global_97223, 2))
 	{
 		iVar0++;
 	}
 	iVar1 = func_175(1);
-	if (func_174(iVar1, 0) || BitTest(Global_96664, 1))
+	if (func_174(iVar1, 0) || BitTest(Global_97223, 1))
 	{
 		iVar0++;
 	}
 	iVar1 = func_175(0);
-	if (func_174(iVar1, 0) || BitTest(Global_96664, 0))
+	if (func_174(iVar1, 0) || BitTest(Global_97223, 0))
 	{
 		iVar0++;
 	}
 	return iVar0;
 }
 
-int func_174(int iParam0, int iParam1)//Position - 0x13030
+int func_174(int iParam0, int iParam1)//Position - 0x13747
 {
 	bool bVar0;
 	
@@ -17757,7 +17993,7 @@ int func_174(int iParam0, int iParam1)//Position - 0x13030
 				return 0;
 			}
 		}
-		if (BitTest(Global_96666, bVar0))
+		if (BitTest(Global_97225, bVar0))
 		{
 			return 1;
 		}
@@ -17765,7 +18001,7 @@ int func_174(int iParam0, int iParam1)//Position - 0x13030
 	return 0;
 }
 
-int func_175(int iParam0)//Position - 0x13089
+int func_175(int iParam0)//Position - 0x137A0
 {
 	if (iParam0 > 3)
 	{
@@ -17775,10 +18011,10 @@ int func_175(int iParam0)//Position - 0x13089
 	{
 		return PLAYER::PLAYER_PED_ID();
 	}
-	return Global_98291[func_176(iParam0)];
+	return Global_98850[func_176(iParam0)];
 }
 
-int func_176(int iParam0)//Position - 0x130BA
+int func_176(int iParam0)//Position - 0x137D1
 {
 	if (iParam0 == 0)
 	{
@@ -17799,28 +18035,28 @@ int func_176(int iParam0)//Position - 0x130BA
 	return 4;
 }
 
-bool func_177(int iParam0)//Position - 0x130F5
+bool func_177(int iParam0)//Position - 0x1380C
 {
-	return Global_43377 == iParam0;
+	return Global_43922 == iParam0;
 }
 
-void func_178(char* sParam0, int iParam1)//Position - 0x13103
+void func_178(char* sParam0, int iParam1)//Position - 0x1381A
 {
 	HUD::BEGIN_TEXT_COMMAND_DISPLAY_HELP(sParam0);
 	HUD::END_TEXT_COMMAND_DISPLAY_HELP(0, false, true, iParam1);
 }
 
-bool func_179()//Position - 0x1311A
+bool func_179()//Position - 0x13831
 {
 	return (MISC::IS_ORBIS_VERSION() || MISC::IS_PROSPERO_VERSION());
 }
 
-void func_180(int* iParam0)//Position - 0x13130
+void func_180(int* iParam0)//Position - 0x13847
 {
 	func_181(iParam0, 0f);
 }
 
-void func_181(int* iParam0, float fParam1)//Position - 0x1313F
+void func_181(int* iParam0, float fParam1)//Position - 0x13856
 {
 	iParam0->f_1 = (func_110(BitTest(*iParam0, 4)) - fParam1);
 	MISC::SET_BIT(iParam0, 1);
@@ -17828,7 +18064,7 @@ void func_181(int* iParam0, float fParam1)//Position - 0x1313F
 	iParam0->f_2 = 0f;
 }
 
-void func_182(var uParam0, int iParam1)//Position - 0x1316A
+void func_182(var uParam0, int iParam1)//Position - 0x13881
 {
 	uParam0->f_79 = iParam1;
 	if (uParam0->f_79)
@@ -17837,7 +18073,7 @@ void func_182(var uParam0, int iParam1)//Position - 0x1316A
 	}
 }
 
-void func_183(var uParam0)//Position - 0x13186
+void func_183(var uParam0)//Position - 0x1389D
 {
 	int iVar0;
 	
@@ -17847,15 +18083,15 @@ void func_183(var uParam0)//Position - 0x13186
 		func_184(uParam0, iVar0);
 		iVar0++;
 	}
-	func_129(uParam0, (Global_4542601 - 0.5f));
+	func_129(uParam0, (Global_4543282 - 0.5f));
 }
 
-void func_184(var uParam0, int iParam1)//Position - 0x131BA
+void func_184(var uParam0, int iParam1)//Position - 0x138D1
 {
 	(*uParam0)[iParam1] = 78;
 }
 
-void func_185()//Position - 0x131CA
+void func_185()//Position - 0x138E1
 {
 	int iVar0;
 	int iVar1;
@@ -17871,7 +18107,7 @@ void func_185()//Position - 0x131CA
 	}
 }
 
-void func_186(int iParam0)//Position - 0x131F4
+void func_186(int iParam0)//Position - 0x1390B
 {
 	if (iParam0 > 0)
 	{

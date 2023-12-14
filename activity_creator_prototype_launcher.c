@@ -90,9 +90,9 @@
 	var uLocal_88 = 0;
 	var uLocal_89 = 0;
 	var uLocal_90 = 0;
-	var uLocal_91 = -1;
+	var uLocal_91 = 0;
 	var uLocal_92 = 0;
-	var uLocal_93 = 0;
+	var uLocal_93 = -1;
 	var uLocal_94 = 0;
 	var uLocal_95 = 0;
 	var uLocal_96 = 0;
@@ -114,6 +114,8 @@
 	var uLocal_112 = 0;
 	var uLocal_113 = 0;
 	var uLocal_114 = 0;
+	var uLocal_115 = 0;
+	var uLocal_116 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -275,7 +277,7 @@ int func_4(int iParam0)//Position - 0x1CE
 
 bool func_5()//Position - 0x1E5
 {
-	return Global_2683883.f_693;
+	return Global_2684312.f_693;
 }
 
 bool func_6(bool bParam0)//Position - 0x1F4
@@ -283,7 +285,7 @@ bool func_6(bool bParam0)//Position - 0x1F4
 	if (bParam0)
 	{
 	}
-	return Global_1575038;
+	return Global_1575052;
 }
 
 void func_7()//Position - 0x205

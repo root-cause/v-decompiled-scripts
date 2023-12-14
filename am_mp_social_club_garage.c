@@ -108,12 +108,12 @@
 	var uLocal_106 = 0;
 	var uLocal_107 = 0;
 	var uLocal_108 = 0;
-	int iLocal_109 = 0;
+	var uLocal_109 = 0;
 	var uLocal_110 = 0;
-	float fLocal_111 = 0f;
-	var uLocal_112 = 0;
+	var uLocal_111 = 0;
+	int iLocal_112 = 0;
 	var uLocal_113 = 0;
-	var uLocal_114 = 0;
+	float fLocal_114 = 0f;
 	var uLocal_115 = 0;
 	var uLocal_116 = 0;
 	var uLocal_117 = 0;
@@ -132,6 +132,9 @@
 	var uLocal_130 = 0;
 	var uLocal_131 = 0;
 	var uLocal_132 = 0;
+	var uLocal_133 = 0;
+	var uLocal_134 = 0;
+	var uLocal_135 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -165,7 +168,7 @@ void __EntryFunction__()//Position - 0x0
 	fLocal_76 = 0f;
 	fLocal_77 = 2f;
 	fLocal_78 = 100f;
-	iLocal_109 = -1;
-	fLocal_111 = 0.5f;
+	iLocal_112 = -1;
+	fLocal_114 = 0.5f;
 }
 

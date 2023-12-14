@@ -173,7 +173,7 @@ int func_3()//Position - 0x227
 
 var func_4()//Position - 0x230
 {
-	return Global_1895156[PLAYER::PLAYER_ID() /*609*/].f_10;
+	return Global_1886967[PLAYER::PLAYER_ID() /*609*/].f_10;
 }
 
 bool func_5(int iParam0, bool bParam1)//Position - 0x245
@@ -189,16 +189,16 @@ bool func_5(int iParam0, bool bParam1)//Position - 0x245
 			return 0;
 		}
 	}
-	return Global_1895156[iParam0 /*609*/].f_10 != func_3();
+	return Global_1886967[iParam0 /*609*/].f_10 != func_3();
 }
 
 int func_6(int iParam0)//Position - 0x27E
 {
 	if (func_7(iParam0))
 	{
-		if (Global_1895156[iParam0 /*609*/].f_10 != func_3())
+		if (Global_1886967[iParam0 /*609*/].f_10 != func_3())
 		{
-			return Global_1895156[iParam0 /*609*/].f_10 == iParam0;
+			return Global_1886967[iParam0 /*609*/].f_10 == iParam0;
 		}
 	}
 	return 0;
@@ -239,7 +239,7 @@ int func_9(int iParam0)//Position - 0x30E
 {
 	if (iParam0 != func_3())
 	{
-		return Global_1853988[iParam0 /*867*/].f_267.f_293;
+		return Global_1845263[iParam0 /*877*/].f_267.f_295;
 	}
 	return 0;
 }
@@ -248,7 +248,7 @@ int func_10(int iParam0)//Position - 0x332
 {
 	if (iParam0 != func_3())
 	{
-		return Global_1853988[iParam0 /*867*/].f_267.f_293 != 0;
+		return Global_1845263[iParam0 /*877*/].f_267.f_295 != 0;
 	}
 	return 0;
 }
@@ -848,7 +848,7 @@ int func_24(int iParam0)//Position - 0xD5B
 			return 1;
 		}
 	}
-	if (BitTest(Global_2657704[iParam0 /*463*/].f_199, 2))
+	if (BitTest(Global_2657921[iParam0 /*463*/].f_199, 2))
 	{
 		return 1;
 	}
@@ -874,7 +874,7 @@ bool func_26(int iParam0, int iParam1)//Position - 0xDA8
 	}
 	else
 	{
-		bVar0 = Global_1853988[iParam0 /*867*/].f_205 == 8;
+		bVar0 = Global_1845263[iParam0 /*877*/].f_205 == 8;
 	}
 	if (iParam1 == 1)
 	{
@@ -896,7 +896,7 @@ int func_27(int iParam0, bool bParam1)//Position - 0xE01
 	{
 		iVar1 = func_28();
 	}
-	if (Global_1575043[iVar1] == 1)
+	if (Global_1575059[iVar1] == 1)
 	{
 		if (bParam1)
 		{
@@ -905,7 +905,7 @@ int func_27(int iParam0, bool bParam1)//Position - 0xE01
 	}
 	else
 	{
-		iVar0 = Global_1574912[iVar1];
+		iVar0 = Global_1574919[iVar1];
 		if (bParam1)
 		{
 		}
@@ -915,6 +915,6 @@ int func_27(int iParam0, bool bParam1)//Position - 0xE01
 
 int func_28()//Position - 0xE42
 {
-	return Global_1574918;
+	return Global_1574925;
 }
 

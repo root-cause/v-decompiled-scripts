@@ -1949,7 +1949,6 @@ void func_10(int iParam0, int iParam1, var uParam2, int iParam3, bool bParam4)//
 		case 856:
 		case 686:
 		case 687:
-		case 688:
 			while (Var0[0 /*6*/].f_3.f_2 > 180f)
 			{
 				Var0[0 /*6*/].f_3.f_2 = (Var0[0 /*6*/].f_3.f_2 - 360f);
@@ -2120,7 +2119,7 @@ void func_10(int iParam0, int iParam1, var uParam2, int iParam3, bool bParam4)//
 		case 1007:
 		case 1011:
 		case 1012:
-		case 1013:
+		case 688:
 			while (Var0[0 /*6*/].f_3.f_2 > 180f)
 			{
 				Var0[0 /*6*/].f_3.f_2 = (Var0[0 /*6*/].f_3.f_2 - 360f);

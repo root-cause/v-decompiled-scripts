@@ -135,7 +135,7 @@ void __EntryFunction__()//Position - 0x0
 						func_30(0, 1);
 						func_29(2, 0);
 						func_82();
-						Global_78939 = 0;
+						Global_79498 = 0;
 						func_28(-1);
 					}
 					else if (ScriptParam_0.f_1 == 5)
@@ -156,7 +156,7 @@ void __EntryFunction__()//Position - 0x0
 						{
 							func_29(1, 0);
 						}
-						Global_78939 = 0;
+						Global_79498 = 0;
 						func_28(-1);
 					}
 					break;
@@ -167,7 +167,7 @@ void __EntryFunction__()//Position - 0x0
 			switch (ScriptParam_0.f_1)
 			{
 				case 5:
-					switch (Global_78939)
+					switch (Global_79498)
 					{
 						case 1:
 							func_83(1, 1, 0);
@@ -188,9 +188,9 @@ void __EntryFunction__()//Position - 0x0
 					break;
 				
 				case 76:
-					if (Global_78956 != -1)
+					if (Global_79515 != -1)
 					{
-						func_1(Global_78956, Global_78939);
+						func_1(Global_79515, Global_79498);
 						func_28(-1);
 						HUD::SET_FRONTEND_ACTIVE(false);
 						CAM::DO_SCREEN_FADE_OUT(0);
@@ -199,7 +199,7 @@ void __EntryFunction__()//Position - 0x0
 						{
 							if (VEHICLE::IS_VEHICLE_DRIVEABLE(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false), false))
 							{
-								Global_78941 = { ENTITY::GET_ENTITY_VELOCITY(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false)) };
+								Global_79500 = { ENTITY::GET_ENTITY_VELOCITY(PED::GET_VEHICLE_PED_IS_IN(PLAYER::PLAYER_PED_ID(), false)) };
 							}
 						}
 						if (!PED::IS_PED_INJURED(PLAYER::PLAYER_PED_ID()))
@@ -216,16 +216,16 @@ void __EntryFunction__()//Position - 0x0
 
 void func_1(int iParam0, int iParam1)//Position - 0x320
 {
-	Global_78936 = iParam0;
-	Global_78936.f_1 = iParam1;
+	Global_79495 = iParam0;
+	Global_79495.f_1 = iParam1;
 	if (iParam1 == 7)
 	{
 		if (iParam0 >= 0 && iParam0 < 63)
 		{
-			Global_112897[iParam0 /*10*/].f_3 = 1;
+			Global_113457[iParam0 /*10*/].f_3 = 1;
 		}
 	}
-	MISC::SET_BIT(&Global_78938, 0);
+	MISC::SET_BIT(&Global_79497, 0);
 }
 
 void func_2(int iParam0, int iParam1)//Position - 0x361
@@ -235,7 +235,7 @@ void func_2(int iParam0, int iParam1)//Position - 0x361
 		if (func_5(iParam0))
 		{
 			func_4(2);
-			func_33(Global_78956, iParam1);
+			func_33(Global_79515, iParam1);
 			func_3(1);
 		}
 	}
@@ -278,7 +278,7 @@ int func_5(int iParam0)//Position - 0x3D0
 
 int func_6()//Position - 0x403
 {
-	if (Global_113810.f_18577.f_380 > 0)
+	if (Global_114370.f_18577.f_380 > 0)
 	{
 		return 1;
 	}
@@ -303,7 +303,7 @@ int func_7()//Position - 0x41E
 		}
 		return 0;
 	}
-	else if (Global_113810.f_10019.f_21 > 0)
+	else if (Global_114370.f_10019.f_21 > 0)
 	{
 		return 1;
 	}
@@ -320,7 +320,7 @@ int func_8()//Position - 0x476
 		}
 		return 0;
 	}
-	if (Global_78950 == 1)
+	if (Global_79509 == 1)
 	{
 		return 0;
 	}
@@ -350,7 +350,7 @@ int func_8()//Position - 0x476
 	{
 		return 0;
 	}
-	if (func_24(Global_112834, 256))
+	if (func_24(Global_113394, 256))
 	{
 		return 2;
 	}
@@ -388,11 +388,11 @@ int func_8()//Position - 0x476
 			}
 		}
 	}
-	if (Global_78687)
+	if (Global_79246)
 	{
 		return 2;
 	}
-	if (Global_77479.f_577)
+	if (Global_78038.f_577)
 	{
 		return 4;
 	}
@@ -440,7 +440,7 @@ int func_12(int iParam0, int iParam1, bool bParam2)//Position - 0x633
 	}
 	if (bParam2)
 	{
-		return BitTest(Global_100885.f_1414[iParam0], iParam1);
+		return BitTest(Global_101444.f_1414[iParam0], iParam1);
 	}
 	else if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 	{
@@ -451,7 +451,7 @@ int func_12(int iParam0, int iParam1, bool bParam2)//Position - 0x633
 	}
 	else
 	{
-		return BitTest(Global_113810.f_668[iParam0], iParam1);
+		return BitTest(Global_114370.f_668[iParam0], iParam1);
 	}
 	return 0;
 }
@@ -461,7 +461,7 @@ int func_13(int iParam0, int iParam1)//Position - 0x693
 	int iVar0;
 	var uVar1;
 	
-	if (iParam0 != 14385)
+	if (iParam0 != 14626)
 	{
 		iVar0 = func_14(iParam0, iParam1);
 		if (STATS::STAT_GET_INT(iVar0, &uVar1, -1))
@@ -488,13 +488,13 @@ int func_15(var uParam0)//Position - 0x6D7
 		iVar1 = func_16();
 		if (iVar1 > -1)
 		{
-			Global_2805862 = 0;
+			Global_2750546 = 0;
 			iVar0 = iVar1;
 		}
 		else
 		{
 			iVar0 = 0;
-			Global_2805862 = 1;
+			Global_2750546 = 1;
 		}
 	}
 	return iVar0;
@@ -502,7 +502,7 @@ int func_15(var uParam0)//Position - 0x6D7
 
 var func_16()//Position - 0x70B
 {
-	return Global_1574918;
+	return Global_1574925;
 }
 
 int func_17(int iParam0)//Position - 0x717
@@ -686,7 +686,7 @@ int func_17(int iParam0)//Position - 0x717
 			break;
 		
 		case 44:
-			return 12514;
+			return 12725;
 			break;
 		
 		case 45:
@@ -734,54 +734,54 @@ int func_17(int iParam0)//Position - 0x717
 			break;
 		
 		case 56:
-			return 9916;
+			return 9917;
 			break;
 		
 		case 57:
-			return 9918;
+			return 9919;
 			break;
 		
 		case 58:
-			return 11433;
+			return 11435;
 			break;
 		
 		case 59:
-			return 11844;
+			return 11846;
 			break;
 		
 		case 60:
-			return 11901;
+			return 11903;
 			break;
 		
 		default:
 			break;
 	}
-	return 14385;
+	return 14626;
 }
 
 int func_18()//Position - 0xABF
 {
-	return Global_32283;
+	return Global_32828;
 }
 
 bool func_19()//Position - 0xACA
 {
-	return Global_100885.f_393 > 0;
+	return Global_101444.f_393 > 0;
 }
 
 bool func_20()//Position - 0xADB
 {
-	return Global_100885.f_394 > 0;
+	return Global_101444.f_394 > 0;
 }
 
 bool func_21()//Position - 0xAEC
 {
-	return BitTest(Global_78938, 9);
+	return BitTest(Global_79497, 9);
 }
 
 bool func_22()//Position - 0xAFB
 {
-	return BitTest(Global_78938, 8);
+	return BitTest(Global_79497, 8);
 }
 
 int func_23()//Position - 0xB0A
@@ -807,17 +807,17 @@ int func_25(bool bParam0)//Position - 0xC8E
 	{
 		return 1;
 	}
-	return BitTest(Global_78938, 0);
+	return BitTest(Global_79497, 0);
 }
 
 bool func_26(int iParam0)//Position - 0xCB6
 {
-	return Global_43377 == iParam0;
+	return Global_43922 == iParam0;
 }
 
 int func_27()//Position - 0xCC4
 {
-	if (Global_43377 == 15)
+	if (Global_43922 == 15)
 	{
 		return 0;
 	}
@@ -826,7 +826,7 @@ int func_27()//Position - 0xCC4
 
 void func_28(int iParam0)//Position - 0xCD9
 {
-	Global_78956 = iParam0;
+	Global_79515 = iParam0;
 }
 
 void func_29(int iParam0, bool bParam1)//Position - 0xCE7
@@ -860,27 +860,27 @@ void func_30(bool bParam0, int iParam1)//Position - 0xD16
 			switch (iVar3)
 			{
 				case 0:
-					sVar0 = "PM_RPB_SM_1" /* GXT: Replay is unavailable while on a Mission. Once you have passed the current Mission, you will be able to try it again and aim to reach the Gold standard.~n~~n~If you are a Social Club member, Mission stats are recorded on the leaderboards on the Social Club website where you can see how you stack up against friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ to view leaderboards and in-depth career stats. */;
+					sVar0 = "PM_RPB_SM_1" /* GXT: Replay is unavailable while on a Mission. Once you have passed the current Mission, you will be able to try it again and aim to reach the Gold standard.~n~~n~If you have a Rockstar Games account, Mission stats are recorded on the leaderboards on rockstargames.com where you can see how you stack up against friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~rockstargames.com~s~ to view leaderboards and in-depth career stats. */;
 					break;
 				
 				case 2:
-					sVar0 = "PM_RPB_SM_2" /* GXT: Replay is unavailable while viewing a cutscene.~n~~n~If you are a Social Club member, Mission stats are recorded on the leaderboards on the Social Club website where you can see how you stack up against friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ to view leaderboards and in-depth career stats. */;
+					sVar0 = "PM_RPB_SM_2" /* GXT: Replay is unavailable while viewing a cutscene.~n~~n~If you have a Rockstar Games account, Mission stats are recorded on the leaderboards on rockstargames.com where you can see how you stack up against friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~rockstargames.com~s~ to view leaderboards and in-depth career stats. */;
 					break;
 				
 				case 3:
-					sVar0 = "PM_RPB_SM_3" /* GXT: Replay is unavailable while browsing in a shop.~n~~n~If you are a Social Club member, Mission stats are recorded on the leaderboards on the Social Club website where you can see how you stack up against friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ to view leaderboards and in-depth career stats. */;
+					sVar0 = "PM_RPB_SM_3" /* GXT: Replay is unavailable while browsing in a shop.~n~~n~If you have a Rockstar Games account, Mission stats are recorded on the leaderboards on rockstargames.com where you can see how you stack up against friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~rockstargames.com~s~ to view leaderboards and in-depth career stats. */;
 					break;
 				
 				case 1:
-					sVar0 = "PM_RPB_SM_4" /* GXT: Replay is unavailable while the Creator is running.~n~~n~If you are a Social Club member, Mission stats are recorded on the leaderboards on the Social Club website where you can see how you stack up against friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ to view leaderboards and in-depth career stats. */;
+					sVar0 = "PM_RPB_SM_4" /* GXT: Replay is unavailable while the Creator is running.~n~~n~If you have a Rockstar Games account, Mission stats are recorded on the leaderboards on rockstargames.com where you can see how you stack up against friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~rockstargames.com~s~ to view leaderboards and in-depth career stats. */;
 					break;
 				
 				case 4:
-					sVar0 = "PM_RPB_SM_5" /* GXT: Replay is unavailable from this location.~n~~n~If you are a Social Club member, Mission stats are recorded on the leaderboards on the Social Club website where you can see how you stack up against friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ to view leaderboards and in-depth career stats. */;
+					sVar0 = "PM_RPB_SM_5" /* GXT: Replay is unavailable from this location.~n~~n~If you have a Rockstar Games account, Mission stats are recorded on the leaderboards on rockstargames.com where you can see how you stack up against friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~rockstargames.com~s~ to view leaderboards and in-depth career stats. */;
 					break;
 				
 				case 5:
-					sVar0 = "PM_RPB_SM_6" /* GXT: Replay is unavailable while Director Mode is running. Once you have exited Director Mode, you will be able to replay missions and aim to reach the Gold standard.~n~~n~If you are a Social Club member, Mission stats are recorded on the leaderboards on the Social Club website where you can see how you stack up against friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ to view leaderboards and in-depth career stats. */;
+					sVar0 = "PM_RPB_SM_6" /* GXT: Replay is unavailable while Director Mode is running. Once you have exited Director Mode, you will be able to replay missions and aim to reach the Gold standard.~n~~n~If you have a Rockstar Games account, Mission stats are recorded on the leaderboards on rockstargames.com where you can see how you stack up against friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~rockstargames.com~s~ to view leaderboards and in-depth career stats. */;
 					break;
 				
 				default:
@@ -892,27 +892,27 @@ void func_30(bool bParam0, int iParam1)//Position - 0xD16
 			switch (iVar3)
 			{
 				case 0:
-					sVar0 = "PM_RPB_RC_1" /* GXT: Replay is unavailable while on a Mission. Once you have passed the current Mission, you will be able to try it again and aim to reach the Gold standard.~n~~n~If you are a Social Club member, you can see which Strangers and Freaks you are yet to meet and see how you stack up against your friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ for more information and to view in-depth career stats. */;
+					sVar0 = "PM_RPB_RC_1" /* GXT: Replay is unavailable while on a Mission. Once you have passed the current Mission, you will be able to try it again and aim to reach the Gold standard.~n~~n~If you have a Rockstar Games account, you can see which Strangers and Freaks you are yet to meet and see how you stack up against your friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~rockstargames.com~s~ for more information and to view in-depth career stats. */;
 					break;
 				
 				case 2:
-					sVar0 = "PM_RPB_RC_2" /* GXT: Replay is unavailable while viewing a cutscene.~n~~n~If you are a Social Club member, you can see which Strangers and Freaks you are yet to meet and see how you stack up against your friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ for more information and to view in-depth career stats. */;
+					sVar0 = "PM_RPB_RC_2" /* GXT: Replay is unavailable while viewing a cutscene.~n~~n~If you have a Rockstar Games account, you can see which Strangers and Freaks you are yet to meet and see how you stack up against your friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~rockstargames.com~s~ for more information and to view in-depth career stats. */;
 					break;
 				
 				case 3:
-					sVar0 = "PM_RPB_RC_3" /* GXT: Replay is unavailable while browsing in a shop.~n~~n~If you are a Social Club member, you can see which Strangers and Freaks you are yet to meet and see how you stack up against your friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ for more information and to view in-depth career stats. */;
+					sVar0 = "PM_RPB_RC_3" /* GXT: Replay is unavailable while browsing in a shop.~n~~n~If you have a Rockstar Games account, you can see which Strangers and Freaks you are yet to meet and see how you stack up against your friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~rockstargames.com~s~ for more information and to view in-depth career stats. */;
 					break;
 				
 				case 1:
-					sVar0 = "PM_RPB_RC_4" /* GXT: Replay is unavailable while the Creator is running.~n~~n~If you are a Social Club member, you can see which Strangers and Freaks you are yet to meet and see how you stack up against your friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ for more information and to view in-depth career stats. */;
+					sVar0 = "PM_RPB_RC_4" /* GXT: Replay is unavailable while the Creator is running.~n~~n~If you have a Rockstar Games account, you can see which Strangers and Freaks you are yet to meet and see how you stack up against your friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~rockstargames.com~s~ for more information and to view in-depth career stats. */;
 					break;
 				
 				case 4:
-					sVar0 = "PM_RPB_RC_5" /* GXT: Replay is unavailable from this location.~n~~n~If you are a Social Club member, you can see which Strangers and Freaks you are yet to meet and see how you stack up against your friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ for more information and to view in-depth career stats. */;
+					sVar0 = "PM_RPB_RC_5" /* GXT: Replay is unavailable from this location.~n~~n~If you have a Rockstar Games account, you can see which Strangers and Freaks you are yet to meet and see how you stack up against your friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~rockstargames.com~s~ for more information and to view in-depth career stats. */;
 					break;
 				
 				case 5:
-					sVar0 = "PM_RPB_RC_6" /* GXT: Replay is unavailable while Director Mode is running. Once you have exited Director Mode, you will be able to replay missions and aim to reach the Gold standard.~n~~n~If you are a Social Club member, you can see which Strangers and Freaks you are yet to meet and see how you stack up against your friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ for more information and to view in-depth career stats. */;
+					sVar0 = "PM_RPB_RC_6" /* GXT: Replay is unavailable while Director Mode is running. Once you have exited Director Mode, you will be able to replay missions and aim to reach the Gold standard.~n~~n~If you have a Rockstar Games account, you can see which Strangers and Freaks you are yet to meet and see how you stack up against your friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~rockstargames.com~s~ for more information and to view in-depth career stats. */;
 					break;
 				
 				default:
@@ -926,12 +926,12 @@ void func_30(bool bParam0, int iParam1)//Position - 0xD16
 		if (iParam1 == 1)
 		{
 			sVar1 = "PM_RP_HELPT" /* GXT: Replay */;
-			sVar0 = "PM_RP_HELP" /* GXT: Replay Missions you've passed and try to reach the Gold standard for each. Aim to reach Gold in a single attempt, or work towards it one objective at a time.~n~~n~If you are a Social Club member, Mission stats are recorded on the leaderboards on the Social Club website where you can see how you stack up against friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ to view leaderboards and in-depth career stats. */;
+			sVar0 = "PM_RP_HELP" /* GXT: Replay Missions you've passed and try to reach the Gold standard for each. Aim to reach Gold in a single attempt, or work towards it one objective at a time.~n~~n~If you have a Rockstar Games account, Mission stats are recorded on the leaderboards on rockstargames.com where you can see how you stack up against friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~rockstargames.com~s~ to view leaderboards and in-depth career stats. */;
 		}
 		else
 		{
 			sVar1 = "PM_RP_HELPT3" /* GXT: Replay */;
-			sVar0 = "PM_RP_HELP3" /* GXT: Select an encounter with Strangers and Freaks to replay.~n~~n~If you are a Social Club member, you can see which Strangers and Freaks you are yet to meet and see how you stack up against your friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ for more information and to view in-depth career stats. */;
+			sVar0 = "PM_RP_HELP3" /* GXT: Select an encounter with Strangers and Freaks to replay.~n~~n~If you have a Rockstar Games account, you can see which Strangers and Freaks you are yet to meet and see how you stack up against your friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~rockstargames.com~s~ for more information and to view in-depth career stats. */;
 		}
 	}
 	else
@@ -940,12 +940,12 @@ void func_30(bool bParam0, int iParam1)//Position - 0xD16
 		if (iParam1 == 1)
 		{
 			sVar1 = "PM_RP_HELPT1" /* GXT: Replay */;
-			sVar0 = "PM_RP_HELP1" /* GXT: There are currently no Missions available to replay. Once you have played some Missions you will be able to try them again and aim to reach the Gold standard in each.~n~~n~If you are a Social Club member, Mission stats are recorded on the leaderboards on the Social Club website where you can see how you stack up against friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ to view leaderboards and in-depth career stats. */;
+			sVar0 = "PM_RP_HELP1" /* GXT: There are currently no Missions available to replay. Once you have played some Missions you will be able to try them again and aim to reach the Gold standard in each.~n~~n~If you have a Rockstar Games account, Mission stats are recorded on the leaderboards on rockstargames.com where you can see how you stack up against friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~rockstargames.com~s~ to view leaderboards and in-depth career stats. */;
 		}
 		else
 		{
 			sVar1 = "PM_RP_HELPT3" /* GXT: Replay */;
-			sVar0 = "PM_RP_HELP4" /* GXT: There are currently no encounters with Strangers and Freaks available to replay.~n~~n~If you are a Social Club member, you can see which Strangers and Freaks you are yet to meet and see how you stack up against your friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~www.rockstargames.com/socialclub~s~ for more information and to view in-depth career stats. */;
+			sVar0 = "PM_RP_HELP4" /* GXT: There are currently no encounters with Strangers and Freaks available to replay.~n~~n~If you have a Rockstar Games account, you can see which Strangers and Freaks you are yet to meet and see how you stack up against your friends and Crewmates. Visit ~HUD_COLOUR_SOCIAL_CLUB~rockstargames.com~s~ for more information and to view in-depth career stats. */;
 		}
 	}
 	GRAPHICS::SCALEFORM_MOVIE_METHOD_ADD_PARAM_INT(iVar2);
@@ -981,17 +981,17 @@ void func_33(int iParam0, int iParam1)//Position - 0xED1
 {
 	if (func_8() == -1)
 	{
-		if (func_5(Global_78939))
+		if (func_5(Global_79498))
 		{
 			func_28(iParam0);
 			func_47(iParam0);
-			if (Global_78940 > 16)
+			if (Global_79499 > 16)
 			{
 				if (iParam1 == 0)
 				{
 					func_36();
 				}
-				func_34(func_35(iParam0), Global_78940);
+				func_34(func_35(iParam0), Global_79499);
 			}
 		}
 	}
@@ -1025,14 +1025,14 @@ int func_35(int iParam0)//Position - 0xF4A
 
 void func_36()//Position - 0xF78
 {
-	switch (Global_78939)
+	switch (Global_79498)
 	{
 		case 1:
-			Global_78940 = func_37(&Local_28, 1, 0, 1);
+			Global_79499 = func_37(&Local_28, 1, 0, 1);
 			break;
 		
 		case 7:
-			Global_78940 = func_37(&Local_28, 0, 1, 1);
+			Global_79499 = func_37(&Local_28, 0, 1, 1);
 			break;
 		
 		default:
@@ -1167,7 +1167,7 @@ int func_40(int iParam0, int iParam1)//Position - 0x117A
 	switch (iParam1)
 	{
 		case 1:
-			return !BitTest(Global_91601[iParam0 /*34*/].f_15, 5);
+			return !BitTest(Global_92160[iParam0 /*34*/].f_15, 5);
 			break;
 		
 		case 7:
@@ -1447,11 +1447,11 @@ int func_42(int iParam0, int iParam1)//Position - 0x14FE
 	switch (iParam1)
 	{
 		case 1:
-			return Global_113810.f_9088.f_330[iParam0 /*6*/].f_3;
+			return Global_114370.f_9088.f_330[iParam0 /*6*/].f_3;
 			break;
 		
 		case 7:
-			return Global_113810.f_18577[iParam0 /*6*/].f_3;
+			return Global_114370.f_18577[iParam0 /*6*/].f_3;
 			break;
 		
 		default:
@@ -1471,12 +1471,12 @@ int func_43(int iParam0, int iParam1)//Position - 0x1546
 			}
 			else
 			{
-				return Global_113810.f_9088.f_330[iParam0 /*6*/];
+				return Global_114370.f_9088.f_330[iParam0 /*6*/];
 			}
 			break;
 		
 		case 7:
-			return BitTest(Global_113810.f_18577[iParam0 /*6*/], 3);
+			return BitTest(Global_114370.f_18577[iParam0 /*6*/], 3);
 			break;
 		
 		default:
@@ -1487,7 +1487,7 @@ int func_43(int iParam0, int iParam1)//Position - 0x1546
 
 int func_44()//Position - 0x159F
 {
-	if (((Global_113810.f_9088.f_330[24 /*6*/] == 1 || Global_113810.f_9088.f_330[25 /*6*/] == 1) || Global_113810.f_9088.f_330[26 /*6*/] == 1) || Global_113810.f_9088.f_330[27 /*6*/] == 1)
+	if (((Global_114370.f_9088.f_330[24 /*6*/] == 1 || Global_114370.f_9088.f_330[25 /*6*/] == 1) || Global_114370.f_9088.f_330[26 /*6*/] == 1) || Global_114370.f_9088.f_330[27 /*6*/] == 1)
 	{
 		return 1;
 	}
@@ -1534,7 +1534,7 @@ void func_47(int iParam0)//Position - 0x166A
 	int iVar5;
 	int iVar6;
 	
-	Local_26 = { func_79(iParam0, Global_78939) };
+	Local_26 = { func_79(iParam0, Global_79498) };
 	if (!func_4(2))
 	{
 		return;
@@ -1550,9 +1550,9 @@ void func_47(int iParam0)//Position - 0x166A
 	iVar3 = 0;
 	iVar4 = 0;
 	iVar0 = 0;
-	while (iVar0 < func_76(iParam0, Global_78939))
+	while (iVar0 < func_76(iParam0, Global_79498))
 	{
-		iVar5 = func_74(iParam0, Global_78939, iVar0);
+		iVar5 = func_74(iParam0, Global_79498, iVar0);
 		iVar6 = 1;
 		switch (iVar5)
 		{
@@ -1582,7 +1582,7 @@ void func_47(int iParam0)//Position - 0x166A
 				}
 				break;
 		}
-		if (!Global_63710[iVar5 /*13*/].f_7 && iVar6)
+		if (!Global_64263[iVar5 /*13*/].f_7 && iVar6)
 		{
 			if (func_54(iVar5, iVar3, 0))
 			{
@@ -1726,13 +1726,13 @@ void func_53(int iParam0, int iParam1)//Position - 0x196D
 {
 	int iVar0;
 	
-	if (Global_78939 == 7)
+	if (Global_79498 == 7)
 	{
 		iVar0 = iParam0;
 		switch (iVar0)
 		{
 			case 52:
-				*iParam1 = Global_113810.f_2355[0 /*2*/];
+				*iParam1 = Global_114370.f_2355[0 /*2*/];
 				if (*iParam1 == 0)
 				{
 					*iParam1 = 1;
@@ -1740,7 +1740,7 @@ void func_53(int iParam0, int iParam1)//Position - 0x196D
 				break;
 			
 			case 53:
-				*iParam1 = Global_113810.f_2355[1 /*2*/];
+				*iParam1 = Global_114370.f_2355[1 /*2*/];
 				if (*iParam1 == 0)
 				{
 					*iParam1 = 1;
@@ -1748,7 +1748,7 @@ void func_53(int iParam0, int iParam1)//Position - 0x196D
 				break;
 			
 			case 54:
-				*iParam1 = Global_113810.f_2355[2 /*2*/];
+				*iParam1 = Global_114370.f_2355[2 /*2*/];
 				if (*iParam1 == 0)
 				{
 					*iParam1 = 1;
@@ -1756,7 +1756,7 @@ void func_53(int iParam0, int iParam1)//Position - 0x196D
 				break;
 			
 			case 55:
-				*iParam1 = Global_113810.f_2355[3 /*2*/];
+				*iParam1 = Global_114370.f_2355[3 /*2*/];
 				if (*iParam1 == 0)
 				{
 					*iParam1 = 1;
@@ -1764,7 +1764,7 @@ void func_53(int iParam0, int iParam1)//Position - 0x196D
 				break;
 			
 			case 56:
-				*iParam1 = Global_113810.f_2355[4 /*2*/];
+				*iParam1 = Global_114370.f_2355[4 /*2*/];
 				if (*iParam1 == 0)
 				{
 					*iParam1 = 1;
@@ -1788,11 +1788,11 @@ int func_54(int iParam0, int iParam1, int iParam2)//Position - 0x1A2D
 			return 0;
 		}
 	}
-	if (Global_63710[iParam0 /*13*/].f_7)
+	if (Global_64263[iParam0 /*13*/].f_7)
 	{
 		return 1;
 	}
-	Var0 = { Global_63710[iParam0 /*13*/] };
+	Var0 = { Global_64263[iParam0 /*13*/] };
 	iVar13 = func_64(iParam0);
 	switch (iParam0)
 	{
@@ -4290,7 +4290,7 @@ char* func_63(int iParam0)//Position - 0x31D0
 
 int func_64(int iParam0)//Position - 0x4383
 {
-	if (func_65(iParam0, func_72(Global_63710[iParam0 /*13*/].f_4)))
+	if (func_65(iParam0, func_72(Global_64263[iParam0 /*13*/].f_4)))
 	{
 		return 1;
 	}
@@ -4303,7 +4303,7 @@ int func_65(int iParam0, int iParam1)//Position - 0x43A6
 	{
 		return 0;
 	}
-	switch (Global_63710[iParam0 /*13*/])
+	switch (Global_64263[iParam0 /*13*/])
 	{
 		case 1:
 		case 2:
@@ -4320,18 +4320,18 @@ int func_65(int iParam0, int iParam1)//Position - 0x43A6
 	{
 		return 0;
 	}
-	if (((iParam0 == 881 || iParam0 == 889) || iParam0 == 897) && Global_113810.f_24907[4 /*4*/] == func_66())
+	if (((iParam0 == 881 || iParam0 == 889) || iParam0 == 897) && Global_114370.f_24907[4 /*4*/] == func_66())
 	{
-		Global_63710[iParam0 /*13*/].f_2 = 0;
+		Global_64263[iParam0 /*13*/].f_2 = 0;
 	}
-	if (Global_63710[iParam0 /*13*/].f_3)
+	if (Global_64263[iParam0 /*13*/].f_3)
 	{
-		if (iParam1 < Global_63710[iParam0 /*13*/].f_2)
+		if (iParam1 < Global_64263[iParam0 /*13*/].f_2)
 		{
 			return 1;
 		}
 	}
-	else if (iParam1 >= Global_63710[iParam0 /*13*/].f_2)
+	else if (iParam1 >= Global_64263[iParam0 /*13*/].f_2)
 	{
 		return 1;
 	}
@@ -4341,7 +4341,7 @@ int func_65(int iParam0, int iParam1)//Position - 0x43A6
 int func_66()//Position - 0x4470
 {
 	func_67();
-	return Global_113810.f_2366.f_539.f_4321;
+	return Global_114370.f_2366.f_539.f_4321;
 }
 
 void func_67()//Position - 0x4489
@@ -4350,30 +4350,30 @@ void func_67()//Position - 0x4489
 	
 	if (ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()))
 	{
-		if (func_70(Global_113810.f_2366.f_539.f_4321) != ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()))
+		if (func_70(Global_114370.f_2366.f_539.f_4321) != ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()))
 		{
 			iVar0 = func_69(PLAYER::PLAYER_PED_ID());
-			if (func_68(iVar0) && (!func_26(14) || Global_112760))
+			if (func_68(iVar0) && (!func_26(14) || Global_113320))
 			{
-				if (Global_113810.f_2366.f_539.f_4321 != iVar0 && func_68(Global_113810.f_2366.f_539.f_4321))
+				if (Global_114370.f_2366.f_539.f_4321 != iVar0 && func_68(Global_114370.f_2366.f_539.f_4321))
 				{
-					Global_113810.f_2366.f_539.f_4322 = Global_113810.f_2366.f_539.f_4321;
+					Global_114370.f_2366.f_539.f_4322 = Global_114370.f_2366.f_539.f_4321;
 				}
-				Global_113810.f_2366.f_539.f_4323 = iVar0;
-				Global_113810.f_2366.f_539.f_4321 = iVar0;
+				Global_114370.f_2366.f_539.f_4323 = iVar0;
+				Global_114370.f_2366.f_539.f_4321 = iVar0;
 				return;
 			}
 		}
 		else
 		{
-			if (Global_113810.f_2366.f_539.f_4321 != 145)
+			if (Global_114370.f_2366.f_539.f_4321 != 145)
 			{
-				Global_113810.f_2366.f_539.f_4323 = Global_113810.f_2366.f_539.f_4321;
+				Global_114370.f_2366.f_539.f_4323 = Global_114370.f_2366.f_539.f_4321;
 			}
 			return;
 		}
 	}
-	Global_113810.f_2366.f_539.f_4321 = 145;
+	Global_114370.f_2366.f_539.f_4321 = 145;
 }
 
 bool func_68(int iParam0)//Position - 0x4586
@@ -4416,7 +4416,7 @@ int func_70(int iParam0)//Position - 0x45CF
 
 var func_71(int iParam0)//Position - 0x45F4
 {
-	return Global_2058[iParam0 /*29*/];
+	return Global_2139[iParam0 /*29*/];
 }
 
 int func_72(int iParam0)//Position - 0x4603
@@ -4438,7 +4438,7 @@ int func_73(int iParam0)//Position - 0x462C
 {
 	int iVar0;
 	
-	iVar0 = func_72(Global_63710[iParam0 /*13*/].f_4);
+	iVar0 = func_72(Global_64263[iParam0 /*13*/].f_4);
 	if (iVar0 > -2)
 	{
 		return iVar0;
@@ -4451,7 +4451,7 @@ int func_74(int iParam0, int iParam1, int iParam2)//Position - 0x4651
 	switch (iParam1)
 	{
 		case 1:
-			return Global_91601[iParam0 /*34*/].f_17[iParam2];
+			return Global_92160[iParam0 /*34*/].f_17[iParam2];
 			break;
 		
 		case 7:
@@ -5030,7 +5030,7 @@ int func_76(int iParam0, int iParam1)//Position - 0x4D78
 	switch (iParam1)
 	{
 		case 1:
-			return Global_91601[iParam0 /*34*/].f_16;
+			return Global_92160[iParam0 /*34*/].f_16;
 			break;
 		
 		case 7:
@@ -5200,13 +5200,13 @@ struct<2> func_79(int iParam0, int iParam1)//Position - 0x4F89
 		case 1:
 			if ((iParam0 == 80 || iParam0 == 81) || iParam0 == 82)
 			{
-				StringConCat(&Var0, &(Global_91601[iParam0 /*34*/].f_8), 8);
+				StringConCat(&Var0, &(Global_92160[iParam0 /*34*/].f_8), 8);
 				StringConCat(&Var0, "A", 8);
 			}
 			else
 			{
 				StringCopy(&Var0, "M_", 8);
-				StringConCat(&Var0, &(Global_91601[iParam0 /*34*/].f_8), 8);
+				StringConCat(&Var0, &(Global_92160[iParam0 /*34*/].f_8), 8);
 				if (iParam0 == 90)
 				{
 					StringConCat(&Var0, "A", 8);
@@ -5524,11 +5524,11 @@ void func_83(int iParam0, int iParam1, int iParam2)//Position - 0x54DA
 	int iVar0;
 	
 	iVar0 = 0;
-	if (Global_78939 != iParam0 || iParam2 == 1)
+	if (Global_79498 != iParam0 || iParam2 == 1)
 	{
 		iVar0 = 1;
 	}
-	Global_78939 = iParam0;
+	Global_79498 = iParam0;
 	func_4(2);
 	if (func_8() != -1 || !func_5(iParam0))
 	{
@@ -5571,10 +5571,10 @@ void func_84()//Position - 0x5574
 	int iVar8;
 	
 	func_36();
-	if (Global_78940 > 16)
+	if (Global_79499 > 16)
 	{
 		func_86();
-		func_34(0, Global_78940);
+		func_34(0, Global_79499);
 	}
 	else
 	{
@@ -5583,18 +5583,18 @@ void func_84()//Position - 0x5574
 	iVar2 = 0;
 	iVar3 = 0;
 	iVar0 = 0;
-	while (iVar0 < Global_78940)
+	while (iVar0 < Global_79499)
 	{
 		iVar2 = 0;
 		iVar3 = 0;
 		iVar8 = -1;
 		iVar1 = Local_28[iVar0 /*2*/];
-		Local_26 = { func_79(iVar1, Global_78939) };
+		Local_26 = { func_79(iVar1, Global_79498) };
 		iVar7 = 0;
-		while (iVar7 < func_76(iVar1, Global_78939))
+		while (iVar7 < func_76(iVar1, Global_79498))
 		{
-			iVar4 = func_74(iVar1, Global_78939, iVar7);
-			if (!Global_63710[iVar4 /*13*/].f_7)
+			iVar4 = func_74(iVar1, Global_79498, iVar7);
+			if (!Global_64263[iVar4 /*13*/].f_7)
 			{
 				if (func_64(iVar4) == 1)
 				{
