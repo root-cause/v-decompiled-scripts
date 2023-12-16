@@ -17275,7 +17275,7 @@ void func_583(var uParam0, var uParam1)//Position - 0x14DFA
 	uParam1->f_1.f_18 = func_594(uParam0->f_1092);
 	uParam1->f_1.f_19 = func_593(func_597(uParam0->f_1092));
 	uParam1->f_1.f_20 = func_592(func_597(uParam0->f_1092));
-	uParam1->f_1.f_17 = SYSTEM::CEIL((IntToFloat(uParam1->f_1.f_16) * Global_262145.f_34100 /* Tunable: 1601153005 */));
+	uParam1->f_1.f_17 = SYSTEM::CEIL((IntToFloat(uParam1->f_1.f_16) * Global_262145.f_34100 /* Tunable: SALV23_VEHICLE_SALVAGE_VALUE_MULTIPLIER */));
 	uParam1->f_1.f_21 = func_589(uParam0, func_591(uParam0->f_1092));
 	uParam1->f_23 = func_588(iVar0, 0);
 	uParam1->f_23.f_1 = func_587(func_367(uParam0->f_1092, iVar0));
@@ -18145,7 +18145,7 @@ struct<10> func_602(var uParam0, int iParam1)//Position - 0x15CEF
 				}
 			}
 	}
-	Var0.f_5 = SYSTEM::CEIL((IntToFloat(Var0.f_4) * Global_262145.f_34100 /* Tunable: 1601153005 */));
+	Var0.f_5 = SYSTEM::CEIL((IntToFloat(Var0.f_4) * Global_262145.f_34100 /* Tunable: SALV23_VEHICLE_SALVAGE_VALUE_MULTIPLIER */));
 	return Var0;
 }
 
