@@ -9335,7 +9335,7 @@ int func_261(int iParam0)//Position - 0xB266
 {
 	if (iParam0 != -1)
 	{
-		return Global_262145.f_34045 /* Tunable: 1597065378 */[iParam0];
+		return Global_262145.f_34045 /* Tunable: SUM23_AVENGER_OPERATION_ROOT_CONTENT_ID_5 */[iParam0];
 	}
 	return -1;
 }

@@ -43073,7 +43073,7 @@ int func_498(char* sParam0, int iParam1, int iParam2, bool bParam3)//Position - 
 			break;
 		
 		case joaat("SMOD4_WHL_5"):
-			fVar0 = SYSTEM::TO_FLOAT(Global_262145.f_29575 /* Tunable: -2082607376 */);
+			fVar0 = SYSTEM::TO_FLOAT(Global_262145.f_29575 /* Tunable: SUM_STREET_WHEEL_RACING_FIVES */);
 			break;
 		
 		case joaat("SMOD4_WHL_6"):

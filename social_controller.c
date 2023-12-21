@@ -2699,7 +2699,7 @@ void func_56(var uParam0, bool bParam1)//Position - 0x2747
 							break;
 						
 						case joaat("rockstar_message"):
-							if ((func_54() && func_51()) && Global_262145.f_25518 /* Tunable: 1042335322 */)
+							if ((func_54() && func_51()) && Global_262145.f_25518 /* Tunable: ENABLE_ROCKSTARMESSAGE */)
 							{
 								SOCIALCLUB::SC_INBOX_MESSAGE_DO_APPLY(iVar1);
 								if (SOCIALCLUB::SC_INBOX_MESSAGE_GET_DATA_STRING(iVar1, "msg", &uVar3))
