@@ -1808,7 +1808,7 @@ int func_59(int iParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x1
 			}
 			if (iParam0 == 3)
 			{
-				fVar0 = (fVar0 + ((4f * Global_262145.f_24545 /* Tunable: -624142803 */) * IntToFloat(func_72(7237, -1))));
+				fVar0 = (fVar0 + ((4f * Global_262145.f_24545 /* Tunable: BB_NIGHTCLUB_BEAT_MATCHING_STAMINA_INCREASE_PER_MINUTE */) * IntToFloat(func_72(7237, -1))));
 			}
 			if (iParam0 == 3)
 			{

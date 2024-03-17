@@ -10178,14 +10178,14 @@ void func_261(int iParam0, int iParam1, bool bParam2)//Position - 0xC36F
 		{
 			if (Global_2738587.f_4499 == -1)
 			{
-				Global_2738587.f_4499 = Global_262145.f_27440 /* Tunable: 945146471 */;
+				Global_2738587.f_4499 = Global_262145.f_27440 /* Tunable: VC_PASSIVE_COOLDOWN_REENABLE */;
 			}
 			func_265(&(Global_2738587.f_4497), 0, 0);
 			if (bParam2)
 			{
 				if (Global_2738587.f_4502 == -1)
 				{
-					Global_2738587.f_4502 = Global_262145.f_27441 /* Tunable: -29732167 */;
+					Global_2738587.f_4502 = Global_262145.f_27441 /* Tunable: VC_PASSIVE_TIME_AFTER_DISABLE */;
 				}
 				func_265(&(Global_2738587.f_4500), 0, 0);
 			}
@@ -11259,7 +11259,7 @@ void func_299(int iParam0, char* sParam1, bool bParam2, var uParam3)//Position -
 
 int func_300()//Position - 0xD5C2
 {
-	if (!Global_262145.f_29155 /* Tunable: 1028571554 */)
+	if (!Global_262145.f_29155 /* Tunable: NPC_PHONE_TELEMETRY_TRACKING_ENABLED */)
 	{
 		return 0;
 	}
@@ -15725,7 +15725,7 @@ void func_417()//Position - 0x11D92
 					{
 						func_458("IMPEX_PASS" /* GXT: Cash for vehicle $~1~. */, iLocal_327, 7000, 0);
 					}
-					func_424(2, "XPT_IMPEXP" /* GXT: ~g~+~1~ ~a~:~s~ Import Export */, joaat("XPTYPE_COMPLETE"), -1930707410, iLocal_328, 1, -1, 0);
+					func_424(2, "XPT_IMPEXP" /* GXT: ~g~+~1~ ~a~:~s~ Import Export */, joaat("XPTYPE_COMPLETE"), joaat("XPCATEGORY_COMPLETE_IMPORT_EXPORT_DELIVERY"), iLocal_328, 1, -1, 0);
 					func_423(29);
 					func_421(45, 1);
 					func_504(PLAYER::PLAYER_ID(), 1, 0, 0);
@@ -16169,7 +16169,7 @@ void func_434(int iParam0, int iParam1, int iParam2)//Position - 0x12F2D
 		{
 			if (iParam0 == 0)
 			{
-				STATS::PLAYSTATS_AWARD_XP(iParam0, -1158693853, -1345423847);
+				STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_INITIALISE"), joaat("XPCATEGORY_LIVE_RP_RESET"));
 				if (iParam2 == 0)
 				{
 					return;
@@ -17064,7 +17064,7 @@ void func_459(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4,
 		case joaat("SERVICE_SPEND_ARENA_SPECTATOR_BOX"):
 		case joaat("SERVICE_SPEND_MAKE_IT_RAIN"):
 		case joaat("SERVICE_SPEND_SALVAGE_YARD_VEH_ROB_SETUP"):
-			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: 1103207774 */)
+			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: ALLOW_ZERO_SPEND_SERVICE_TELEM */)
 			{
 				func_460(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -17217,7 +17217,7 @@ void func_459(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4,
 		case joaat("SERVICE_SPEND_NIGHTCLUB_TOILET_ATTENDANT"):
 		case joaat("SERVICE_SPEND_JUGALLO_BOSS_VEHICLE_REQUEST"):
 		case joaat("SERVICE_SPEND_SALVAGE_YARD_CLAIM_VEH"):
-			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: 1103207774 */)
+			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: ALLOW_ZERO_SPEND_SERVICE_TELEM */)
 			{
 				func_460(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -17852,7 +17852,7 @@ void func_487(int iParam0, int iParam1)//Position - 0x151F7
 {
 	if (iParam1 > 0)
 	{
-		if (Global_262145.f_24208 /* Tunable: 277748102 */ != -1)
+		if (Global_262145.f_24208 /* Tunable: SETTINGFORCASHSHARE */ != -1)
 		{
 			if (func_488())
 			{

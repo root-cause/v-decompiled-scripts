@@ -4658,19 +4658,19 @@ int func_44()//Position - 0x840E
 
 int func_45(int iParam0)//Position - 0x8422
 {
-	if (iParam0 >= Global_262145.f_27310 /* Tunable: -1160199960 */)
+	if (iParam0 >= Global_262145.f_27310 /* Tunable: VC_PENTHOUSE_CHIPS_MEMBERS_5 */)
 	{
 		return 5;
 	}
-	else if (iParam0 >= Global_262145.f_27309 /* Tunable: -653984448 */)
+	else if (iParam0 >= Global_262145.f_27309 /* Tunable: VC_PENTHOUSE_CHIPS_MEMBERS_4 */)
 	{
 		return 4;
 	}
-	else if (iParam0 >= Global_262145.f_27308 /* Tunable: 1613204359 */)
+	else if (iParam0 >= Global_262145.f_27308 /* Tunable: VC_PENTHOUSE_CHIPS_MEMBERS_3 */)
 	{
 		return 3;
 	}
-	else if (iParam0 >= Global_262145.f_27307 /* Tunable: 1819845673 */)
+	else if (iParam0 >= Global_262145.f_27307 /* Tunable: VC_PENTHOUSE_CHIPS_MEMBERS_2 */)
 	{
 		return 2;
 	}

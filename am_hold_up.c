@@ -2818,7 +2818,7 @@ void func_70(int iParam0, int iParam1, int iParam2)//Position - 0x3755
 		{
 			if (iParam0 == 0)
 			{
-				STATS::PLAYSTATS_AWARD_XP(iParam0, -1158693853, -1345423847);
+				STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_INITIALISE"), joaat("XPCATEGORY_LIVE_RP_RESET"));
 				if (iParam2 == 0)
 				{
 					return;
@@ -5846,7 +5846,7 @@ void func_181(int iParam0)//Position - 0x76A3
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = Global_262145.f_18371 /* Tunable: -539038925 */;
+			iVar0 = Global_262145.f_18371 /* Tunable: BIKER_MC_POINTS_PASS_OUT_DRUNK */;
 			break;
 		
 		case 1:
@@ -5854,7 +5854,7 @@ void func_181(int iParam0)//Position - 0x76A3
 			break;
 		
 		case 2:
-			iVar0 = Global_262145.f_18372 /* Tunable: 771289284 */;
+			iVar0 = Global_262145.f_18372 /* Tunable: BIKER_MC_POINTS_RIDE_IN_FORMATION */;
 			break;
 		
 		case 3:
@@ -5874,11 +5874,11 @@ void func_181(int iParam0)//Position - 0x76A3
 			break;
 		
 		case 8:
-			iVar0 = Global_262145.f_18376 /* Tunable: -555621765 */;
+			iVar0 = Global_262145.f_18376 /* Tunable: BIKER_MC_POINTS_NOT_IN_MC */;
 			break;
 		
 		case 9:
-			iVar0 = Global_262145.f_18379 /* Tunable: 45776395 */;
+			iVar0 = Global_262145.f_18379 /* Tunable: BIKER_MC_POINTS_KILLED_BY_RIVAL_MC */;
 			break;
 		
 		case 22:
@@ -5886,15 +5886,15 @@ void func_181(int iParam0)//Position - 0x76A3
 			break;
 		
 		case 23:
-			iVar0 = Global_262145.f_18373 /* Tunable: 419613951 */;
+			iVar0 = Global_262145.f_18373 /* Tunable: BIKER_MC_POINTS_RIDE_BIKE_IN_MC */;
 			break;
 		
 		case 25:
-			iVar0 = Global_262145.f_19265 /* Tunable: 1684681813 */;
+			iVar0 = Global_262145.f_19265 /* Tunable: BIKER_MC_POINTS_STEAL_MC_BIKER */;
 			break;
 		
 		case 26:
-			iVar0 = Global_262145.f_19264 /* Tunable: -1825390724 */;
+			iVar0 = Global_262145.f_19264 /* Tunable: BIKER_MC_POINTS_STEAL_PRESIDENT_BIKE */;
 			break;
 	}
 	if (iVar0 != 0)
@@ -6037,7 +6037,7 @@ void func_194(int iParam0, int iParam1)//Position - 0x79FD
 {
 	if (iParam1 > 0)
 	{
-		if (Global_262145.f_24208 /* Tunable: 277748102 */ != -1)
+		if (Global_262145.f_24208 /* Tunable: SETTINGFORCASHSHARE */ != -1)
 		{
 			if (func_195())
 			{
@@ -6375,7 +6375,7 @@ void func_211(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4,
 		case joaat("SERVICE_SPEND_ARENA_SPECTATOR_BOX"):
 		case joaat("SERVICE_SPEND_MAKE_IT_RAIN"):
 		case joaat("SERVICE_SPEND_SALVAGE_YARD_VEH_ROB_SETUP"):
-			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: 1103207774 */)
+			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: ALLOW_ZERO_SPEND_SERVICE_TELEM */)
 			{
 				func_212(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -6528,7 +6528,7 @@ void func_211(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4,
 		case joaat("SERVICE_SPEND_NIGHTCLUB_TOILET_ATTENDANT"):
 		case joaat("SERVICE_SPEND_JUGALLO_BOSS_VEHICLE_REQUEST"):
 		case joaat("SERVICE_SPEND_SALVAGE_YARD_CLAIM_VEH"):
-			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: 1103207774 */)
+			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: ALLOW_ZERO_SPEND_SERVICE_TELEM */)
 			{
 				func_212(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -8016,7 +8016,7 @@ void func_239()//Position - 0xA5E4
 
 int func_240()//Position - 0xA61B
 {
-	if (!Global_262145.f_29155 /* Tunable: 1028571554 */)
+	if (!Global_262145.f_29155 /* Tunable: NPC_PHONE_TELEMETRY_TRACKING_ENABLED */)
 	{
 		return 0;
 	}
@@ -19213,14 +19213,14 @@ void func_444(int iParam0, int iParam1, bool bParam2)//Position - 0x1A6C7
 		{
 			if (Global_2738587.f_4499 == -1)
 			{
-				Global_2738587.f_4499 = Global_262145.f_27440 /* Tunable: 945146471 */;
+				Global_2738587.f_4499 = Global_262145.f_27440 /* Tunable: VC_PASSIVE_COOLDOWN_REENABLE */;
 			}
 			func_445(&(Global_2738587.f_4497), 0, 0);
 			if (bParam2)
 			{
 				if (Global_2738587.f_4502 == -1)
 				{
-					Global_2738587.f_4502 = Global_262145.f_27441 /* Tunable: -29732167 */;
+					Global_2738587.f_4502 = Global_262145.f_27441 /* Tunable: VC_PASSIVE_TIME_AFTER_DISABLE */;
 				}
 				func_445(&(Global_2738587.f_4500), 0, 0);
 			}
@@ -19554,7 +19554,7 @@ int func_455(int iParam0)//Position - 0x1ADAE
 
 var func_456()//Position - 0x1ADFE
 {
-	return Global_262145.f_31218 /* Tunable: 2071833430 */;
+	return Global_262145.f_31218 /* Tunable: ENABLESYNCEDAMBIENTPICKUPS */;
 }
 
 int func_457()//Position - 0x1AE0D

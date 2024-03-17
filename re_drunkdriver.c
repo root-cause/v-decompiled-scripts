@@ -998,7 +998,7 @@ void func_12()//Position - 0xCEA
 
 int func_13()//Position - 0xD21
 {
-	if (!Global_262145.f_29155 /* Tunable: 1028571554 */)
+	if (!Global_262145.f_29155 /* Tunable: NPC_PHONE_TELEMETRY_TRACKING_ENABLED */)
 	{
 		return 0;
 	}
@@ -13518,7 +13518,7 @@ int func_266(int iParam0, int iParam1)//Position - 0xEF5E
 	}
 	else if (iParam0 == joaat("weevil"))
 	{
-		if (Global_262145.f_30435 /* Tunable: -552682736 */)
+		if (Global_262145.f_30435 /* Tunable: IH_EARLY_ACCESS_BEETLE */)
 		{
 		}
 		else if (!Global_262145.f_30427 /* Tunable: ENABLE_VEHICLE_WEEVIL */ && iVar1 < Global_262145.f_30410 /* Tunable: LAUNCHPOSIX_WEEVIL */)
@@ -13556,7 +13556,7 @@ int func_266(int iParam0, int iParam1)//Position - 0xEF5E
 	}
 	else if (iParam0 == joaat("brioso2"))
 	{
-		if (Global_262145.f_30436 /* Tunable: 976860524 */)
+		if (Global_262145.f_30436 /* Tunable: IH_EARLY_ACCESS_BRIOSO2 */)
 		{
 		}
 		else if (!Global_262145.f_30432 /* Tunable: ENABLE_VEHICLE_BRIOSO2 */ && iVar1 < Global_262145.f_30415 /* Tunable: LAUNCHPOSIX_BRIOSO2 */)
@@ -13797,7 +13797,7 @@ int func_266(int iParam0, int iParam1)//Position - 0xEF5E
 	}
 	else if (iParam0 == joaat("baller7"))
 	{
-		if (Global_262145.f_32292 /* Tunable: 991164709 */)
+		if (Global_262145.f_32292 /* Tunable: FIXER_EARLY_ACCESS_BALLER7 */)
 		{
 		}
 		else if (!Global_262145.f_32228 /* Tunable: ENABLE_VEHICLE_BALLER7 */ && iVar1 < Global_262145.f_32213 /* Tunable: LAUNCHPOSIX_BALLER7 */)

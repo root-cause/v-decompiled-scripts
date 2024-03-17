@@ -518,10 +518,10 @@ void func_13()//Position - 0x40B
 {
 	if (NETWORK::NETWORK_DOES_NETWORK_ID_EXIST(Local_59.f_4))
 	{
-		if (Global_262145.f_20498 /* Tunable: -156036296 */ > 0)
+		if (Global_262145.f_20498 /* Tunable: BALLISTICSUITCOSTDELIVERY */ > 0)
 		{
-			func_32(Global_262145.f_20498 /* Tunable: -156036296 */, 0);
-			func_14(Global_262145.f_20498 /* Tunable: -156036296 */, 14, 2, 1);
+			func_32(Global_262145.f_20498 /* Tunable: BALLISTICSUITCOSTDELIVERY */, 0);
+			func_14(Global_262145.f_20498 /* Tunable: BALLISTICSUITCOSTDELIVERY */, 14, 2, 1);
 		}
 	}
 }
@@ -725,7 +725,7 @@ void func_15(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4, 
 		case joaat("SERVICE_SPEND_ARENA_SPECTATOR_BOX"):
 		case joaat("SERVICE_SPEND_MAKE_IT_RAIN"):
 		case joaat("SERVICE_SPEND_SALVAGE_YARD_VEH_ROB_SETUP"):
-			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: 1103207774 */)
+			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: ALLOW_ZERO_SPEND_SERVICE_TELEM */)
 			{
 				func_16(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -878,7 +878,7 @@ void func_15(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4, 
 		case joaat("SERVICE_SPEND_NIGHTCLUB_TOILET_ATTENDANT"):
 		case joaat("SERVICE_SPEND_JUGALLO_BOSS_VEHICLE_REQUEST"):
 		case joaat("SERVICE_SPEND_SALVAGE_YARD_CLAIM_VEH"):
-			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: 1103207774 */)
+			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: ALLOW_ZERO_SPEND_SERVICE_TELEM */)
 			{
 				func_16(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -2070,7 +2070,7 @@ void func_49()//Position - 0x218F
 
 int func_50()//Position - 0x21C6
 {
-	if (!Global_262145.f_29155 /* Tunable: 1028571554 */)
+	if (!Global_262145.f_29155 /* Tunable: NPC_PHONE_TELEMETRY_TRACKING_ENABLED */)
 	{
 		return 0;
 	}

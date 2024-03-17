@@ -11819,7 +11819,7 @@ void func_99(var uParam0, var uParam1)//Position - 0xA796
 	}
 	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_STONE_HATCHET")) && iLocal_65[50] == uParam1->f_5)
 	{
-		if (Global_262145.f_24355 /* Tunable: -585985361 */ && func_105())
+		if (Global_262145.f_24355 /* Tunable: ENABLE_BOUNTY_HUNTER_HATCHET */ && func_105())
 		{
 			func_111(joaat("WEAPON_STONE_HATCHET"), uParam0, *uParam1, 0);
 		}
@@ -15226,7 +15226,7 @@ void func_153()//Position - 0xF03A
 	{
 		iLocal_65[49] = -1;
 	}
-	if ((Global_262145.f_24355 /* Tunable: -585985361 */ && WEAPON::IS_WEAPON_VALID(joaat("WEAPON_STONE_HATCHET"))) && func_105())
+	if ((Global_262145.f_24355 /* Tunable: ENABLE_BOUNTY_HUNTER_HATCHET */ && WEAPON::IS_WEAPON_VALID(joaat("WEAPON_STONE_HATCHET"))) && func_105())
 	{
 		iLocal_65[50] = ((iLocal_64 / 9) + iLocal_63);
 		iLocal_64++;

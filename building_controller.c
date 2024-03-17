@@ -630,7 +630,7 @@ void func_9()//Position - 0x5C5
 		}
 		if (!Global_1836232)
 		{
-			if (Global_262145.f_24930 /* Tunable: 1419194420 */)
+			if (Global_262145.f_24930 /* Tunable: DISABLE_CASINO_NIGHTCLUB_DJ_KEINEMUSIK */)
 			{
 				if (STREAMING::IS_IPL_ACTIVE("h4_ClubPoster_KeineMusik"))
 				{
@@ -641,7 +641,7 @@ void func_9()//Position - 0x5C5
 			{
 				STREAMING::REQUEST_IPL("h4_ClubPoster_KeineMusik");
 			}
-			if (Global_262145.f_24929 /* Tunable: -2064797647 */)
+			if (Global_262145.f_24929 /* Tunable: DISABLE_CASINO_NIGHTCLUB_DJ_MOODYMANN */)
 			{
 				if (STREAMING::IS_IPL_ACTIVE("h4_ClubPoster_MoodyMann"))
 				{
@@ -652,7 +652,7 @@ void func_9()//Position - 0x5C5
 			{
 				STREAMING::REQUEST_IPL("h4_ClubPoster_MoodyMann");
 			}
-			if (Global_262145.f_24931 /* Tunable: -2084724801 */)
+			if (Global_262145.f_24931 /* Tunable: DISABLE_CASINO_NIGHTCLUB_DJ_PALMS_TRAX */)
 			{
 				if (STREAMING::IS_IPL_ACTIVE("h4_ClubPoster_PalmsTraxx"))
 				{
@@ -851,7 +851,7 @@ void func_9()//Position - 0x5C5
 			{
 				STREAMING::REQUEST_IPL("xm3_collision_fixes");
 			}
-			if (Global_262145.f_33023 /* Tunable: 33634624 */)
+			if (Global_262145.f_33023 /* Tunable: WINTER_22_DISABLE_MEDICAL_SIGN_IPL */)
 			{
 				if (STREAMING::IS_IPL_ACTIVE("xm3_doc_sign"))
 				{

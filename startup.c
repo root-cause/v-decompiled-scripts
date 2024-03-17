@@ -13076,40 +13076,40 @@ int func_67(int iParam0)//Position - 0x22397
 			return Global_262145.f_16103 /* Tunable: EXEC1_OFFICE4_MAZE2 */;
 		
 		case 91:
-			return Global_262145.f_18195 /* Tunable: 819519215 */;
+			return Global_262145.f_18195 /* Tunable: BIKER_CLUBHOUSE1_RANCHO_1334_ROY_LOWENSTEIN_BLVD */;
 		
 		case 92:
-			return Global_262145.f_18197 /* Tunable: 471352940 */;
+			return Global_262145.f_18197 /* Tunable: BIKER_CLUBHOUSE2_DEL_PERRO_BEACH_7_DEL_PERRO_BEACH */;
 		
 		case 93:
-			return Global_262145.f_18193 /* Tunable: 2023136086 */;
+			return Global_262145.f_18193 /* Tunable: BIKER_CLUBHOUSE3_PILLBOX_HILL_75_ELGIN_AVENUE */;
 		
 		case 94:
-			return Global_262145.f_18202 /* Tunable: 217858651 */;
+			return Global_262145.f_18202 /* Tunable: BIKER_CLUBHOUSE4_GREAT_CHAPARRAL101_ROUTE_68 */;
 		
 		case 95:
-			return Global_262145.f_18199 /* Tunable: -1058611921 */;
+			return Global_262145.f_18199 /* Tunable: BIKER_CLUBHOUSE5_PALETO_BAY_1_PALETO_BLVD */;
 		
 		case 96:
-			return Global_262145.f_18201 /* Tunable: -1767762009 */;
+			return Global_262145.f_18201 /* Tunable: BIKER_CLUBHOUSE6_SANDY_SHORES_47_ALGONQUIN_BLVD */;
 		
 		case 97:
-			return Global_262145.f_18194 /* Tunable: -1390109608 */;
+			return Global_262145.f_18194 /* Tunable: BIKER_CLUBHOUSE7_LA_MESA_137_CAPITAL_BLVD */;
 		
 		case 98:
-			return Global_262145.f_18192 /* Tunable: 2033735347 */;
+			return Global_262145.f_18192 /* Tunable: BIKER_CLUBHOUSE8_DOWNTOWN_VINEWOOD_2214_CLINTON_AVENUE */;
 		
 		case 99:
-			return Global_262145.f_18191 /* Tunable: -1219608517 */;
+			return Global_262145.f_18191 /* Tunable: BIKER_CLUBHOUSE9_HAWICK_CLUBHOUSE1778_HAWICK_AVENUE */;
 		
 		case 100:
-			return Global_262145.f_18200 /* Tunable: 1669688233 */;
+			return Global_262145.f_18200 /* Tunable: BIKER_CLUBHOUSE10_GRAPESEED_2111_EAST_JOSHUA_ROAD */;
 		
 		case 101:
-			return Global_262145.f_18198 /* Tunable: 1241258301 */;
+			return Global_262145.f_18198 /* Tunable: BIKER_CLUBHOUSE11_PALETO_BAY68_PALETO_BLVD */;
 		
 		case 102:
-			return Global_262145.f_18196 /* Tunable: 813618473 */;
+			return Global_262145.f_18196 /* Tunable: BIKER_CLUBHOUSE12_VESPUCCI_BEACH_4_GOMA_STREET */;
 		
 		case 103:
 			return Global_262145.f_19865 /* Tunable: IMPEXP_GARAGE_LEVEL1 */;

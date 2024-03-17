@@ -8506,71 +8506,71 @@ int func_188(int iParam0, int iParam1)//Position - 0xAB7E
 	switch (iParam0)
 	{
 		case 1:
-			if (Global_262145.f_33395 /* Tunable: 648076385 */)
+			if (Global_262145.f_33395 /* Tunable: ENABLE_CONTROL_PAYOUT_BIKER_BUSINESSES_WEED */)
 			{
 				if (!func_189(32351, -1))
 				{
-					iParam1 = (iParam1 * Global_262145.f_33404 /* Tunable: -793049781 */);
+					iParam1 = (iParam1 * Global_262145.f_33404 /* Tunable: CASH_CONTROL_PAYOUT_BIKER_BUSINESSES_WEED */);
 				}
 			}
 			break;
 		
 		case 3:
-			if (Global_262145.f_33396 /* Tunable: 1057315128 */)
+			if (Global_262145.f_33396 /* Tunable: ENABLE_CONTROL_PAYOUT_BIKER_BUSINESSES_METH */)
 			{
 				if (!func_189(32352, -1))
 				{
-					iParam1 = (iParam1 * Global_262145.f_33405 /* Tunable: -1035386051 */);
+					iParam1 = (iParam1 * Global_262145.f_33405 /* Tunable: CASH_CONTROL_PAYOUT_BIKER_BUSINESSES_METH */);
 				}
 			}
 			break;
 		
 		case 4:
-			if (Global_262145.f_33397 /* Tunable: 2074826178 */)
+			if (Global_262145.f_33397 /* Tunable: ENABLE_CONTROL_PAYOUT_BIKER_BUSINESSES_COCAINE */)
 			{
 				if (!func_189(32353, -1))
 				{
-					iParam1 = (iParam1 * Global_262145.f_33406 /* Tunable: 1011759977 */);
+					iParam1 = (iParam1 * Global_262145.f_33406 /* Tunable: CASH_CONTROL_PAYOUT_BIKER_BUSINESSES_COCAINE */);
 				}
 			}
 			break;
 		
 		case 0:
-			if (Global_262145.f_33398 /* Tunable: 98893693 */)
+			if (Global_262145.f_33398 /* Tunable: ENABLE_CONTROL_PAYOUT_BIKER_BUSINESSES_FORGEDDOCUMENTS */)
 			{
 				if (!func_189(32354, -1))
 				{
-					iParam1 = (iParam1 * Global_262145.f_33407 /* Tunable: -1980822412 */);
+					iParam1 = (iParam1 * Global_262145.f_33407 /* Tunable: CASH_CONTROL_PAYOUT_BIKER_BUSINESSES_FORGEDDOCUMENTS */);
 				}
 			}
 			break;
 		
 		case 6:
-			if (Global_262145.f_33399 /* Tunable: 1086821607 */)
+			if (Global_262145.f_33399 /* Tunable: ENABLE_CONTROL_PAYOUT_BIKER_BUSINESSES_ACID */)
 			{
 				if (!func_189(36667, -1))
 				{
-					iParam1 = (iParam1 * Global_262145.f_33408 /* Tunable: -1917878808 */);
+					iParam1 = (iParam1 * Global_262145.f_33408 /* Tunable: CASH_CONTROL_PAYOUT_BIKER_BUSINESSES_ACID */);
 				}
 			}
 			break;
 		
 		case 2:
-			if (Global_262145.f_33400 /* Tunable: 328208647 */)
+			if (Global_262145.f_33400 /* Tunable: ENABLE_CONTROL_PAYOUT_BIKER_BUSINESSES_COUNTERFIETCASH */)
 			{
 				if (!func_189(32355, -1))
 				{
-					iParam1 = (iParam1 * Global_262145.f_33409 /* Tunable: 667598560 */);
+					iParam1 = (iParam1 * Global_262145.f_33409 /* Tunable: CASH_CONTROL_PAYOUT_BIKER_BUSINESSES_COUNTERFIETCASH */);
 				}
 			}
 			break;
 		
 		case 5:
-			if (Global_262145.f_33402 /* Tunable: 1598011694 */)
+			if (Global_262145.f_33402 /* Tunable: ENABLE_CONTROL_PAYOUT_GUNRUNNINGBUNKER_CARGO_SELL */)
 			{
 				if (!func_189(32357, -1))
 				{
-					iParam1 = (iParam1 * Global_262145.f_33411 /* Tunable: -278088930 */);
+					iParam1 = (iParam1 * Global_262145.f_33411 /* Tunable: CASH_CONTROL_PAYOUT_GUNRUNNINGBUNKER_CARGO_SELL */);
 				}
 			}
 			break;
@@ -9263,14 +9263,14 @@ void func_219(int iParam0, int iParam1, bool bParam2)//Position - 0xB973
 		{
 			if (Global_2738587.f_4499 == -1)
 			{
-				Global_2738587.f_4499 = Global_262145.f_27440 /* Tunable: 945146471 */;
+				Global_2738587.f_4499 = Global_262145.f_27440 /* Tunable: VC_PASSIVE_COOLDOWN_REENABLE */;
 			}
 			func_20(&(Global_2738587.f_4497), 0, 0);
 			if (bParam2)
 			{
 				if (Global_2738587.f_4502 == -1)
 				{
-					Global_2738587.f_4502 = Global_262145.f_27441 /* Tunable: -29732167 */;
+					Global_2738587.f_4502 = Global_262145.f_27441 /* Tunable: VC_PASSIVE_TIME_AFTER_DISABLE */;
 				}
 				func_20(&(Global_2738587.f_4500), 0, 0);
 			}

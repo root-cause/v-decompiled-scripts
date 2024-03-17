@@ -52190,16 +52190,16 @@ int func_294(int iParam0, int iParam1, int iParam2)//Position - 0x3A0D0
 					return 0;
 				
 				case 2:
-					return Global_262145.f_25519 /* Tunable: -2140343856 */;
+					return Global_262145.f_25519 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_BRONZE_TIME */;
 				
 				case 3:
-					return Global_262145.f_25520 /* Tunable: -1167118619 */;
+					return Global_262145.f_25520 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_SILVER_TIME */;
 				
 				case 4:
-					return Global_262145.f_25521 /* Tunable: -132305813 */;
+					return Global_262145.f_25521 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_GOLD_TIME */;
 				
 				case 5:
-					return Global_262145.f_25522 /* Tunable: 1249433112 */;
+					return Global_262145.f_25522 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_PLATINUM_TIME */;
 				
 				default:
 			}
@@ -52215,16 +52215,16 @@ int func_294(int iParam0, int iParam1, int iParam2)//Position - 0x3A0D0
 					return 0;
 				
 				case 2:
-					return Global_262145.f_25519 /* Tunable: -2140343856 */;
+					return Global_262145.f_25519 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_BRONZE_TIME */;
 				
 				case 3:
-					return Global_262145.f_25520 /* Tunable: -1167118619 */;
+					return Global_262145.f_25520 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_SILVER_TIME */;
 				
 				case 4:
-					return Global_262145.f_25521 /* Tunable: -132305813 */;
+					return Global_262145.f_25521 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_GOLD_TIME */;
 				
 				case 5:
-					return Global_262145.f_25522 /* Tunable: 1249433112 */;
+					return Global_262145.f_25522 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_PLATINUM_TIME */;
 				
 				default:
 			}
@@ -52240,16 +52240,16 @@ int func_294(int iParam0, int iParam1, int iParam2)//Position - 0x3A0D0
 					return 0;
 				
 				case 2:
-					return Global_262145.f_25519 /* Tunable: -2140343856 */;
+					return Global_262145.f_25519 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_BRONZE_TIME */;
 				
 				case 3:
-					return Global_262145.f_25520 /* Tunable: -1167118619 */;
+					return Global_262145.f_25520 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_SILVER_TIME */;
 				
 				case 4:
-					return Global_262145.f_25521 /* Tunable: -132305813 */;
+					return Global_262145.f_25521 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_GOLD_TIME */;
 				
 				case 5:
-					return Global_262145.f_25522 /* Tunable: 1249433112 */;
+					return Global_262145.f_25522 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_PLATINUM_TIME */;
 				
 				default:
 			}
@@ -52265,16 +52265,16 @@ int func_294(int iParam0, int iParam1, int iParam2)//Position - 0x3A0D0
 					return 0;
 				
 				case 2:
-					return Global_262145.f_25519 /* Tunable: -2140343856 */;
+					return Global_262145.f_25519 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_BRONZE_TIME */;
 				
 				case 3:
-					return Global_262145.f_25520 /* Tunable: -1167118619 */;
+					return Global_262145.f_25520 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_SILVER_TIME */;
 				
 				case 4:
-					return Global_262145.f_25521 /* Tunable: -132305813 */;
+					return Global_262145.f_25521 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_GOLD_TIME */;
 				
 				case 5:
-					return Global_262145.f_25522 /* Tunable: 1249433112 */;
+					return Global_262145.f_25522 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_PLATINUM_TIME */;
 				
 				default:
 			}
@@ -52965,16 +52965,16 @@ int func_294(int iParam0, int iParam1, int iParam2)//Position - 0x3A0D0
 					return 0;
 				
 				case 2:
-					return Global_262145.f_28857 /* Tunable: 212778777 */;
+					return Global_262145.f_28857 /* Tunable: CH_ARCADE_GAMES_GGSM_ASTROCHIMP_B_SCORE */;
 				
 				case 3:
-					return Global_262145.f_28858 /* Tunable: 1730590555 */;
+					return Global_262145.f_28858 /* Tunable: CH_ARCADE_GAMES_GGSM_ASTROCHIMP_S_SCORE */;
 				
 				case 4:
-					return Global_262145.f_28859 /* Tunable: 599275937 */;
+					return Global_262145.f_28859 /* Tunable: CH_ARCADE_GAMES_GGSM_ASTROCHIMP_G_SCORE */;
 				
 				case 5:
-					return Global_262145.f_28860 /* Tunable: 790883802 */;
+					return Global_262145.f_28860 /* Tunable: CH_ARCADE_GAMES_GGSM_ASTROCHIMP_P_SCORE */;
 				
 				default:
 			}
@@ -84574,7 +84574,7 @@ void func_579(int iParam0, int iParam1, int iParam2)//Position - 0x6419F
 		{
 			if (iParam0 == 0)
 			{
-				STATS::PLAYSTATS_AWARD_XP(iParam0, -1158693853, -1345423847);
+				STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_INITIALISE"), joaat("XPCATEGORY_LIVE_RP_RESET"));
 				if (iParam2 == 0)
 				{
 					return;
@@ -85585,7 +85585,7 @@ int func_613(int iParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 			}
 			if (iParam0 == 3)
 			{
-				fVar0 = (fVar0 + ((4f * Global_262145.f_24545 /* Tunable: -624142803 */) * IntToFloat(func_162(7237, -1))));
+				fVar0 = (fVar0 + ((4f * Global_262145.f_24545 /* Tunable: BB_NIGHTCLUB_BEAT_MATCHING_STAMINA_INCREASE_PER_MINUTE */) * IntToFloat(func_162(7237, -1))));
 			}
 			if (iParam0 == 3)
 			{
@@ -86533,7 +86533,7 @@ void func_629()//Position - 0x6657D
 			{
 				Local_120[PLAYER::PLAYER_ID() /*7*/].f_4 = Local_351.f_1;
 			}
-			Local_120[PLAYER::PLAYER_ID() /*7*/].f_5 = MISC::GET_RANDOM_INT_IN_RANGE(0, Global_262145.f_29236 /* Tunable: 1661695592 */ + 1);
+			Local_120[PLAYER::PLAYER_ID() /*7*/].f_5 = MISC::GET_RANDOM_INT_IN_RANGE(0, Global_262145.f_29236 /* Tunable: CH_LOVE_METER_PERFECT_MATCH_CHANCE */ + 1);
 			MISC::SET_BIT(&(Local_120[PLAYER::PLAYER_ID() /*7*/]), 1);
 			func_25(5);
 		}

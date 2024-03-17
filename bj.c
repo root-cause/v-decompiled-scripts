@@ -6726,10 +6726,10 @@ int func_110(int iParam0)//Position - 0x8AE1
 	else if (iParam0 > iVar0)
 	{
 		fVar1 = (SYSTEM::TO_FLOAT(iParam0) - SYSTEM::TO_FLOAT(iVar0));
-		iVar2 = SYSTEM::FLOOR((fVar1 / SYSTEM::TO_FLOAT(Global_262145.f_31370 /* Tunable: 1335277880 */)));
+		iVar2 = SYSTEM::FLOOR((fVar1 / SYSTEM::TO_FLOAT(Global_262145.f_31370 /* Tunable: TUNER_CARCLUB_REP_INCREMENT_PER_TIER_1000 */)));
 		return (199 + iVar2);
 	}
-	fVar3 = (SYSTEM::TO_FLOAT(Global_262145.f_31369 /* Tunable: -1131555628 */) / 2f);
+	fVar3 = (SYSTEM::TO_FLOAT(Global_262145.f_31369 /* Tunable: TUNER_CARCLUB_REP_INCREMENT_PER_TIER_200 */) / 2f);
 	fVar4 = (-(fVar3 * 3f) + fVar3);
 	fVar5 = fVar3;
 	fVar6 = ((-(fVar3 * 3f) + fVar4) + 100f);
@@ -6753,7 +6753,7 @@ int func_112(int iParam0)//Position - 0x8BCB
 	float fVar1;
 	
 	fVar0 = SYSTEM::TO_FLOAT(iParam0);
-	fVar1 = (SYSTEM::TO_FLOAT(Global_262145.f_31369 /* Tunable: -1131555628 */) / 2f);
+	fVar1 = (SYSTEM::TO_FLOAT(Global_262145.f_31369 /* Tunable: TUNER_CARCLUB_REP_INCREMENT_PER_TIER_200 */) / 2f);
 	return SYSTEM::ROUND((((fVar0 * 100f) - 100f) + ((fVar0 - 3f) * ((fVar1 * (fVar0 - 3f)) + fVar1))));
 }
 
@@ -19333,7 +19333,7 @@ int func_295(int iParam0, int iParam1)//Position - 0x186AE
 	}
 	else if (iParam0 == joaat("weevil"))
 	{
-		if (Global_262145.f_30435 /* Tunable: -552682736 */)
+		if (Global_262145.f_30435 /* Tunable: IH_EARLY_ACCESS_BEETLE */)
 		{
 		}
 		else if (!Global_262145.f_30427 /* Tunable: ENABLE_VEHICLE_WEEVIL */ && iVar1 < Global_262145.f_30410 /* Tunable: LAUNCHPOSIX_WEEVIL */)
@@ -19371,7 +19371,7 @@ int func_295(int iParam0, int iParam1)//Position - 0x186AE
 	}
 	else if (iParam0 == joaat("brioso2"))
 	{
-		if (Global_262145.f_30436 /* Tunable: 976860524 */)
+		if (Global_262145.f_30436 /* Tunable: IH_EARLY_ACCESS_BRIOSO2 */)
 		{
 		}
 		else if (!Global_262145.f_30432 /* Tunable: ENABLE_VEHICLE_BRIOSO2 */ && iVar1 < Global_262145.f_30415 /* Tunable: LAUNCHPOSIX_BRIOSO2 */)
@@ -19612,7 +19612,7 @@ int func_295(int iParam0, int iParam1)//Position - 0x186AE
 	}
 	else if (iParam0 == joaat("baller7"))
 	{
-		if (Global_262145.f_32292 /* Tunable: 991164709 */)
+		if (Global_262145.f_32292 /* Tunable: FIXER_EARLY_ACCESS_BALLER7 */)
 		{
 		}
 		else if (!Global_262145.f_32228 /* Tunable: ENABLE_VEHICLE_BALLER7 */ && iVar1 < Global_262145.f_32213 /* Tunable: LAUNCHPOSIX_BALLER7 */)
@@ -25406,7 +25406,7 @@ void func_405()//Position - 0x23530
 
 int func_406()//Position - 0x23567
 {
-	if (!Global_262145.f_29155 /* Tunable: 1028571554 */)
+	if (!Global_262145.f_29155 /* Tunable: NPC_PHONE_TELEMETRY_TRACKING_ENABLED */)
 	{
 		return 0;
 	}

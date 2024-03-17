@@ -14485,7 +14485,7 @@ void func_28(var uParam0)//Position - 0x775F
 	{
 		if (!func_103(uParam0[uParam0->f_7948 /*58*/], 14))
 		{
-			if (SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), ENTITY::GET_ENTITY_COORDS((*uParam0)[uParam0->f_7948 /*58*/], false)) < Global_262145.f_24366 /* Tunable: 1294797024 */)
+			if (SYSTEM::VDIST2(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), ENTITY::GET_ENTITY_COORDS((*uParam0)[uParam0->f_7948 /*58*/], false)) < Global_262145.f_24366 /* Tunable: NC_PEDS_SPEECH_DIST_2_LIMIT_LAZLOW */)
 			{
 				if (!func_104(uParam0[uParam0->f_7948 /*58*/], 14))
 				{
@@ -15164,7 +15164,7 @@ void func_33()//Position - 0x848D
 
 int func_34()//Position - 0x84C4
 {
-	if (!Global_262145.f_29155 /* Tunable: 1028571554 */)
+	if (!Global_262145.f_29155 /* Tunable: NPC_PHONE_TELEMETRY_TRACKING_ENABLED */)
 	{
 		return 0;
 	}
@@ -18859,40 +18859,40 @@ void func_110(var uParam0, var uParam1, int iParam2)//Position - 0xC249
 	fVar8 = SYSTEM::VDIST2(Var2, Var5);
 	if (iVar0 == 10 || iVar0 == 62)
 	{
-		if (fVar8 > Global_262145.f_24364 /* Tunable: -923842137 */)
+		if (fVar8 > Global_262145.f_24364 /* Tunable: NC_PEDS_SPEECH_DIST_2_LIMIT_DJ */)
 		{
 			bVar1 = true;
 		}
 	}
 	else if (iVar0 == 14)
 	{
-		if (fVar8 > Global_262145.f_24366 /* Tunable: 1294797024 */)
+		if (fVar8 > Global_262145.f_24366 /* Tunable: NC_PEDS_SPEECH_DIST_2_LIMIT_LAZLOW */)
 		{
 			bVar1 = true;
 		}
 	}
 	else if (iVar0 == 17)
 	{
-		if (fVar8 > Global_262145.f_24365 /* Tunable: -1590709249 */)
+		if (fVar8 > Global_262145.f_24365 /* Tunable: NC_PEDS_SPEECH_DIST_2_LIMIT_TONY */)
 		{
 			bVar1 = true;
 		}
 	}
 	else if (((((iVar0 == 54 || iVar0 == 55) || iVar0 == 60) || iVar0 == 56) || iVar0 == 53) || iVar0 == 58)
 	{
-		if (fVar8 > Global_262145.f_24367 /* Tunable: -1955737684 */)
+		if (fVar8 > Global_262145.f_24367 /* Tunable: NC_PEDS_SPEECH_DIST_2_LIMIT_CELEB */)
 		{
 			bVar1 = true;
 		}
 	}
 	else if (iVar0 == 1)
 	{
-		if (fVar8 > Global_262145.f_24368 /* Tunable: 733645191 */)
+		if (fVar8 > Global_262145.f_24368 /* Tunable: NC_PEDS_SPEECH_DIST_2_LIMIT_BOUNCER_HEAD */)
 		{
 			bVar1 = true;
 		}
 	}
-	else if (fVar8 > Global_262145.f_24363 /* Tunable: 1507906964 */)
+	else if (fVar8 > Global_262145.f_24363 /* Tunable: NC_PEDS_SPEECH_DIST_2_LIMIT */)
 	{
 		bVar1 = true;
 	}

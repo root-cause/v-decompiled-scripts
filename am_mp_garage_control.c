@@ -19354,16 +19354,16 @@ int func_191(int iParam0, int iParam1, int iParam2)//Position - 0x1A0D2
 					return 0;
 				
 				case 2:
-					return Global_262145.f_25519 /* Tunable: -2140343856 */;
+					return Global_262145.f_25519 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_BRONZE_TIME */;
 				
 				case 3:
-					return Global_262145.f_25520 /* Tunable: -1167118619 */;
+					return Global_262145.f_25520 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_SILVER_TIME */;
 				
 				case 4:
-					return Global_262145.f_25521 /* Tunable: -132305813 */;
+					return Global_262145.f_25521 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_GOLD_TIME */;
 				
 				case 5:
-					return Global_262145.f_25522 /* Tunable: 1249433112 */;
+					return Global_262145.f_25522 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_PLATINUM_TIME */;
 				
 				default:
 			}
@@ -19379,16 +19379,16 @@ int func_191(int iParam0, int iParam1, int iParam2)//Position - 0x1A0D2
 					return 0;
 				
 				case 2:
-					return Global_262145.f_25519 /* Tunable: -2140343856 */;
+					return Global_262145.f_25519 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_BRONZE_TIME */;
 				
 				case 3:
-					return Global_262145.f_25520 /* Tunable: -1167118619 */;
+					return Global_262145.f_25520 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_SILVER_TIME */;
 				
 				case 4:
-					return Global_262145.f_25521 /* Tunable: -132305813 */;
+					return Global_262145.f_25521 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_GOLD_TIME */;
 				
 				case 5:
-					return Global_262145.f_25522 /* Tunable: 1249433112 */;
+					return Global_262145.f_25522 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_PLATINUM_TIME */;
 				
 				default:
 			}
@@ -19404,16 +19404,16 @@ int func_191(int iParam0, int iParam1, int iParam2)//Position - 0x1A0D2
 					return 0;
 				
 				case 2:
-					return Global_262145.f_25519 /* Tunable: -2140343856 */;
+					return Global_262145.f_25519 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_BRONZE_TIME */;
 				
 				case 3:
-					return Global_262145.f_25520 /* Tunable: -1167118619 */;
+					return Global_262145.f_25520 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_SILVER_TIME */;
 				
 				case 4:
-					return Global_262145.f_25521 /* Tunable: -132305813 */;
+					return Global_262145.f_25521 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_GOLD_TIME */;
 				
 				case 5:
-					return Global_262145.f_25522 /* Tunable: 1249433112 */;
+					return Global_262145.f_25522 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_PLATINUM_TIME */;
 				
 				default:
 			}
@@ -19429,16 +19429,16 @@ int func_191(int iParam0, int iParam1, int iParam2)//Position - 0x1A0D2
 					return 0;
 				
 				case 2:
-					return Global_262145.f_25519 /* Tunable: -2140343856 */;
+					return Global_262145.f_25519 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_BRONZE_TIME */;
 				
 				case 3:
-					return Global_262145.f_25520 /* Tunable: -1167118619 */;
+					return Global_262145.f_25520 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_SILVER_TIME */;
 				
 				case 4:
-					return Global_262145.f_25521 /* Tunable: -132305813 */;
+					return Global_262145.f_25521 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_GOLD_TIME */;
 				
 				case 5:
-					return Global_262145.f_25522 /* Tunable: 1249433112 */;
+					return Global_262145.f_25522 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_PLATINUM_TIME */;
 				
 				default:
 			}
@@ -20129,16 +20129,16 @@ int func_191(int iParam0, int iParam1, int iParam2)//Position - 0x1A0D2
 					return 0;
 				
 				case 2:
-					return Global_262145.f_28857 /* Tunable: 212778777 */;
+					return Global_262145.f_28857 /* Tunable: CH_ARCADE_GAMES_GGSM_ASTROCHIMP_B_SCORE */;
 				
 				case 3:
-					return Global_262145.f_28858 /* Tunable: 1730590555 */;
+					return Global_262145.f_28858 /* Tunable: CH_ARCADE_GAMES_GGSM_ASTROCHIMP_S_SCORE */;
 				
 				case 4:
-					return Global_262145.f_28859 /* Tunable: 599275937 */;
+					return Global_262145.f_28859 /* Tunable: CH_ARCADE_GAMES_GGSM_ASTROCHIMP_G_SCORE */;
 				
 				case 5:
-					return Global_262145.f_28860 /* Tunable: 790883802 */;
+					return Global_262145.f_28860 /* Tunable: CH_ARCADE_GAMES_GGSM_ASTROCHIMP_P_SCORE */;
 				
 				default:
 			}
@@ -69025,7 +69025,7 @@ void func_355(int iParam0, int iParam1)//Position - 0x528F6
 			}
 			if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("oppressor2"))
 			{
-				VEHICLE::SET_VEHICLE_WEAPON_RESTRICTED_AMMO(iParam0, 2, Global_262145.f_24910 /* Tunable: -1560443006 */);
+				VEHICLE::SET_VEHICLE_WEAPON_RESTRICTED_AMMO(iParam0, 2, Global_262145.f_24910 /* Tunable: BB_TERRORBYTE_OPPRESSOR_MKII_MISSILE_CAPACITY */);
 			}
 			if (ENTITY::GET_ENTITY_MODEL(iParam0) == joaat("strikeforce"))
 			{
@@ -81776,22 +81776,22 @@ void func_409(int iParam0)//Position - 0x5FF86
 	{
 		case 53:
 			func_1093(&(Global_2685249.f_4328.f_242[53 /*2*/]), 1, 0);
-			Global_2685249.f_4328.f_403[53] = Global_262145.f_24702 /* Tunable: 464940095 */;
+			Global_2685249.f_4328.f_403[53] = Global_262145.f_24702 /* Tunable: BB_SELL_MISSIONS_DELIVERY_VEHICLE_COOLDOWN_AFTER_SELL_MISSION */;
 			break;
 		
 		case 54:
 			func_1093(&(Global_2685249.f_4328.f_242[54 /*2*/]), 1, 0);
-			Global_2685249.f_4328.f_403[54] = Global_262145.f_24702 /* Tunable: 464940095 */;
+			Global_2685249.f_4328.f_403[54] = Global_262145.f_24702 /* Tunable: BB_SELL_MISSIONS_DELIVERY_VEHICLE_COOLDOWN_AFTER_SELL_MISSION */;
 			break;
 		
 		case 55:
 			func_1093(&(Global_2685249.f_4328.f_242[55 /*2*/]), 1, 0);
-			Global_2685249.f_4328.f_403[55] = Global_262145.f_24702 /* Tunable: 464940095 */;
+			Global_2685249.f_4328.f_403[55] = Global_262145.f_24702 /* Tunable: BB_SELL_MISSIONS_DELIVERY_VEHICLE_COOLDOWN_AFTER_SELL_MISSION */;
 			break;
 		
 		case 56:
 			func_1093(&(Global_2685249.f_4328.f_242[56 /*2*/]), 1, 0);
-			Global_2685249.f_4328.f_403[56] = Global_262145.f_24702 /* Tunable: 464940095 */;
+			Global_2685249.f_4328.f_403[56] = Global_262145.f_24702 /* Tunable: BB_SELL_MISSIONS_DELIVERY_VEHICLE_COOLDOWN_AFTER_SELL_MISSION */;
 			break;
 	}
 }
@@ -82467,11 +82467,11 @@ void func_439(int iParam0, var uParam1, bool bParam2, bool bParam3, bool bParam4
 						VEHICLE::SET_VEHICLE_STRONG(iParam0, true);
 						if (uParam1->f_9[16] == 5)
 						{
-							VEHICLE::SET_VEHICLE_DAMAGE_SCALE(iParam0, (Global_262145.f_21957 /* Tunable: -1001087518 */ + 0.05f));
+							VEHICLE::SET_VEHICLE_DAMAGE_SCALE(iParam0, (Global_262145.f_21957 /* Tunable: IMANI_ARMOR_PLATING_DAMAGE_SCALE */ + 0.05f));
 						}
 						else
 						{
-							VEHICLE::SET_VEHICLE_DAMAGE_SCALE(iParam0, Global_262145.f_21957 /* Tunable: -1001087518 */);
+							VEHICLE::SET_VEHICLE_DAMAGE_SCALE(iParam0, Global_262145.f_21957 /* Tunable: IMANI_ARMOR_PLATING_DAMAGE_SCALE */);
 						}
 						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, true);
 						break;
@@ -82610,7 +82610,7 @@ void func_444(int iParam0)//Position - 0x61035
 {
 	struct<3> Var0;
 	
-	if (Global_262145.f_20366 /* Tunable: 1239690786 */)
+	if (Global_262145.f_20366 /* Tunable: ENABLED_LOCK_ANY_AMBIENT_DOZER_OF_THIS_ZOLA */)
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(iParam0))
 		{
@@ -97158,7 +97158,7 @@ int func_644(int iParam0, int iParam1)//Position - 0x77ADA
 	}
 	else if (iParam0 == joaat("weevil"))
 	{
-		if (Global_262145.f_30435 /* Tunable: -552682736 */)
+		if (Global_262145.f_30435 /* Tunable: IH_EARLY_ACCESS_BEETLE */)
 		{
 		}
 		else if (!Global_262145.f_30427 /* Tunable: ENABLE_VEHICLE_WEEVIL */ && iVar1 < Global_262145.f_30410 /* Tunable: LAUNCHPOSIX_WEEVIL */)
@@ -97196,7 +97196,7 @@ int func_644(int iParam0, int iParam1)//Position - 0x77ADA
 	}
 	else if (iParam0 == joaat("brioso2"))
 	{
-		if (Global_262145.f_30436 /* Tunable: 976860524 */)
+		if (Global_262145.f_30436 /* Tunable: IH_EARLY_ACCESS_BRIOSO2 */)
 		{
 		}
 		else if (!Global_262145.f_30432 /* Tunable: ENABLE_VEHICLE_BRIOSO2 */ && iVar1 < Global_262145.f_30415 /* Tunable: LAUNCHPOSIX_BRIOSO2 */)
@@ -97437,7 +97437,7 @@ int func_644(int iParam0, int iParam1)//Position - 0x77ADA
 	}
 	else if (iParam0 == joaat("baller7"))
 	{
-		if (Global_262145.f_32292 /* Tunable: 991164709 */)
+		if (Global_262145.f_32292 /* Tunable: FIXER_EARLY_ACCESS_BALLER7 */)
 		{
 		}
 		else if (!Global_262145.f_32228 /* Tunable: ENABLE_VEHICLE_BALLER7 */ && iVar1 < Global_262145.f_32213 /* Tunable: LAUNCHPOSIX_BALLER7 */)

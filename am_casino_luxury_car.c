@@ -700,11 +700,11 @@ void func_24(int iParam0, var uParam1, bool bParam2, bool bParam3, bool bParam4)
 						VEHICLE::SET_VEHICLE_STRONG(iParam0, true);
 						if (uParam1->f_9[16] == 5)
 						{
-							VEHICLE::SET_VEHICLE_DAMAGE_SCALE(iParam0, (Global_262145.f_21957 /* Tunable: -1001087518 */ + 0.05f));
+							VEHICLE::SET_VEHICLE_DAMAGE_SCALE(iParam0, (Global_262145.f_21957 /* Tunable: IMANI_ARMOR_PLATING_DAMAGE_SCALE */ + 0.05f));
 						}
 						else
 						{
-							VEHICLE::SET_VEHICLE_DAMAGE_SCALE(iParam0, Global_262145.f_21957 /* Tunable: -1001087518 */);
+							VEHICLE::SET_VEHICLE_DAMAGE_SCALE(iParam0, Global_262145.f_21957 /* Tunable: IMANI_ARMOR_PLATING_DAMAGE_SCALE */);
 						}
 						VEHICLE::SET_VEHICLE_EXPLODES_ON_EXPLOSION_DAMAGE_AT_ZERO_BODY_HEALTH(iParam0, true);
 						break;
@@ -843,7 +843,7 @@ void func_29(int iParam0)//Position - 0xC96
 {
 	struct<3> Var0;
 	
-	if (Global_262145.f_20366 /* Tunable: 1239690786 */)
+	if (Global_262145.f_20366 /* Tunable: ENABLED_LOCK_ANY_AMBIENT_DOZER_OF_THIS_ZOLA */)
 	{
 		if (ENTITY::DOES_ENTITY_EXIST(iParam0))
 		{

@@ -6019,7 +6019,7 @@ int func_149(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x5
 	}
 	if (func_150(iParam0))
 	{
-		if (iParam2 <= Global_262145.f_21893 /* Tunable: -1542918426 */)
+		if (iParam2 <= Global_262145.f_21893 /* Tunable: GR_GENERAL_MEDIUM_STOCK_THRESHOLD */)
 		{
 			iVar0 = 1;
 			if (iParam0 == 15)
@@ -6027,7 +6027,7 @@ int func_149(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x5
 				iVar0 = 2;
 			}
 		}
-		else if (iParam2 <= Global_262145.f_21894 /* Tunable: -2015624215 */)
+		else if (iParam2 <= Global_262145.f_21894 /* Tunable: GR_GENERAL_LARGE_STOCK_THRESHOLD */)
 		{
 			iVar0 = 2;
 			if (iParam0 == 18)
@@ -6065,7 +6065,7 @@ int func_149(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x5
 	}
 	else if (func_151(iParam0))
 	{
-		if (iParam1 < Global_262145.f_21853 /* Tunable: 642214211 */)
+		if (iParam1 < Global_262145.f_21853 /* Tunable: GR_RESUPPLY_GENERAL_PLAYERS_NEEDED_FOR_SECOND_RESUPPLY_VEHICLE */)
 		{
 			iVar0 = 1;
 		}
@@ -13081,7 +13081,7 @@ int func_259(int iParam0)//Position - 0xBA80
 			return Global_262145.f_19804 /* Tunable: IMPEXP_WAREHOUSE_DAVIS_COST */;
 		
 		case 4:
-			return Global_262145.f_19805 /* Tunable: 14402113 */;
+			return Global_262145.f_19805 /* Tunable: IMPEXP_WAREHOSUE_STRAWBERRY_COST */;
 		
 		case 5:
 			return Global_262145.f_19806 /* Tunable: IMPEXP_WAREHOUSE_MURRIETA_COST */;
@@ -13390,7 +13390,7 @@ int func_269(int iParam0, bool bParam1)//Position - 0xBF99
 
 int func_270(int iParam0)//Position - 0xBFD0
 {
-	return SYSTEM::CEIL((IntToFloat(iParam0) * Global_262145.f_19627 /* Tunable: -466347733 */));
+	return SYSTEM::CEIL((IntToFloat(iParam0) * Global_262145.f_19627 /* Tunable: IMPEXP_SELL_BUYER3_MOD_COST_MODIFIER */));
 }
 
 int func_271(int iParam0)//Position - 0xBFE7
@@ -13428,7 +13428,7 @@ int func_272(int iParam0, bool bParam1)//Position - 0xC03D
 
 int func_273(int iParam0)//Position - 0xC074
 {
-	return SYSTEM::CEIL((IntToFloat(iParam0) * Global_262145.f_19626 /* Tunable: 1410072259 */));
+	return SYSTEM::CEIL((IntToFloat(iParam0) * Global_262145.f_19626 /* Tunable: IMPEXP_SELL_BUYER2_MOD_COST_MODIFIER */));
 }
 
 int func_274(int iParam0)//Position - 0xC08B
@@ -13550,9 +13550,9 @@ int func_277(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 			iVar1 = 500000;
 			if (bVar0)
 			{
-				if (Global_262145.f_21781 /* Tunable: 982031447 */ >= 0)
+				if (Global_262145.f_21781 /* Tunable: GR_BALLISTIC_EQ_PRICE */ >= 0)
 				{
-					iVar1 = Global_262145.f_21781 /* Tunable: 982031447 */;
+					iVar1 = Global_262145.f_21781 /* Tunable: GR_BALLISTIC_EQ_PRICE */;
 				}
 			}
 			bVar3 = true;
@@ -13600,9 +13600,9 @@ int func_277(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 			iVar1 = 16000;
 			if (bVar0)
 			{
-				if (Global_262145.f_18128 /* Tunable: -841706086 */ >= 0)
+				if (Global_262145.f_18128 /* Tunable: BIKER_WEBSITE_WESTERN_BAGGER_DISC_VEHICLE */ >= 0)
 				{
-					iVar1 = Global_262145.f_18128 /* Tunable: -841706086 */;
+					iVar1 = Global_262145.f_18128 /* Tunable: BIKER_WEBSITE_WESTERN_BAGGER_DISC_VEHICLE */;
 				}
 			}
 			break;
@@ -16265,7 +16265,7 @@ int func_277(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar2 = iVar1;
 				if (!bParam2)
 				{
-					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21573 /* Tunable: -1237354304 */)) / 100f)));
+					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21573 /* Tunable: GR_VEHICLE_GENERAL_BUY_IT_NOW_PRICE_INCREASE */)) / 100f)));
 				}
 				break;
 			
@@ -16281,7 +16281,7 @@ int func_277(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar2 = iVar1;
 				if (!bParam2)
 				{
-					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21573 /* Tunable: -1237354304 */)) / 100f)));
+					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21573 /* Tunable: GR_VEHICLE_GENERAL_BUY_IT_NOW_PRICE_INCREASE */)) / 100f)));
 				}
 				break;
 			
@@ -16297,7 +16297,7 @@ int func_277(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar2 = iVar1;
 				if (!bParam2)
 				{
-					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21573 /* Tunable: -1237354304 */)) / 100f)));
+					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21573 /* Tunable: GR_VEHICLE_GENERAL_BUY_IT_NOW_PRICE_INCREASE */)) / 100f)));
 				}
 				break;
 			
@@ -16313,7 +16313,7 @@ int func_277(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar2 = iVar1;
 				if (!bParam2)
 				{
-					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21573 /* Tunable: -1237354304 */)) / 100f)));
+					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21573 /* Tunable: GR_VEHICLE_GENERAL_BUY_IT_NOW_PRICE_INCREASE */)) / 100f)));
 				}
 				break;
 			
@@ -16329,7 +16329,7 @@ int func_277(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar2 = iVar1;
 				if (!bParam2)
 				{
-					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21573 /* Tunable: -1237354304 */)) / 100f)));
+					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21573 /* Tunable: GR_VEHICLE_GENERAL_BUY_IT_NOW_PRICE_INCREASE */)) / 100f)));
 				}
 				break;
 			
@@ -16345,7 +16345,7 @@ int func_277(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar2 = iVar1;
 				if (!bParam2)
 				{
-					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21573 /* Tunable: -1237354304 */)) / 100f)));
+					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21573 /* Tunable: GR_VEHICLE_GENERAL_BUY_IT_NOW_PRICE_INCREASE */)) / 100f)));
 				}
 				break;
 			
@@ -18262,9 +18262,9 @@ int func_277(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 			
 			case joaat("issi7"):
 				iVar1 = 897000;
-				if (bVar0 && Global_262145.f_27153 /* Tunable: 1101391290 */ >= 0)
+				if (bVar0 && Global_262145.f_27153 /* Tunable: VC_SALE_UPGRADE_PRICE_ISSI_CUSTOM */ >= 0)
 				{
-					iVar1 = Global_262145.f_27153 /* Tunable: 1101391290 */;
+					iVar1 = Global_262145.f_27153 /* Tunable: VC_SALE_UPGRADE_PRICE_ISSI_CUSTOM */;
 				}
 				break;
 			
@@ -22480,11 +22480,11 @@ int func_280(int iParam0, int iParam1)//Position - 0x15181
 			break;
 		
 		case joaat("technical3"):
-			return Global_262145.f_21581 /* Tunable: 424298680 */;
+			return Global_262145.f_21581 /* Tunable: GR_EXISTING_FULLY_WEAPONIZED_VEHICLE_UPRGRADES_KARIN_TECHNICAL_CUSTOM */;
 			break;
 		
 		case joaat("insurgent3"):
-			return Global_262145.f_21580 /* Tunable: 2123626407 */;
+			return Global_262145.f_21580 /* Tunable: GR_EXISTING_FULLY_WEAPONIZED_VEHICLE_UPRGRADES_HVY_INSURGENT_PICK_UP_CUSTOM */;
 			break;
 		
 		case joaat("bruiser"):
@@ -23035,7 +23035,7 @@ int func_289(int iParam0)//Position - 0x15D4C
 			return Global_262145.f_19817 /* Tunable: IMPEXP_WAREHOUSE_DAVIS_BASE_COST */;
 		
 		case 4:
-			return Global_262145.f_19818 /* Tunable: -2100999849 */;
+			return Global_262145.f_19818 /* Tunable: IMPEXP_WAREHOSUE_STRAWBERRY_BASE_COST */;
 		
 		case 5:
 			return Global_262145.f_19819 /* Tunable: IMPEXP_WAREHOUSE_MURRIETA_BASE_COST */;
@@ -23785,7 +23785,7 @@ int func_320(bool bParam0, int iParam1, int iParam2, int iParam3)//Position - 0x
 	
 	fVar0 = MISC::GET_RANDOM_FLOAT_IN_RANGE(0f, 1f);
 	fVar1 = (func_322(2) / (func_322(2) + func_322(20)));
-	fVar2 = Global_262145.f_33582 /* Tunable: 567360631 */;
+	fVar2 = Global_262145.f_33582 /* Tunable: SUM22_SOURCE_CARGO_NEW_MISSION_CHANCE_MODIFIER */;
 	iVar3 = func_598(3666, func_2());
 	iVar4 = 167;
 	if (func_321(fVar0, fVar1, fVar2, iVar3))
@@ -35874,7 +35874,7 @@ void func_635()//Position - 0x26EA9
 
 int func_636()//Position - 0x26EE0
 {
-	if (!Global_262145.f_29155 /* Tunable: 1028571554 */)
+	if (!Global_262145.f_29155 /* Tunable: NPC_PHONE_TELEMETRY_TRACKING_ENABLED */)
 	{
 		return 0;
 	}
@@ -38755,28 +38755,28 @@ int func_748(int iParam0)//Position - 0x2A130
 	switch (iParam0)
 	{
 		case 0:
-			return Global_262145.f_19630 /* Tunable: 1584540863 */;
+			return Global_262145.f_19630 /* Tunable: IMPEXP_RAMPBUGGY_SVM_UNLOCK */;
 		
 		case 1:
-			return Global_262145.f_19631 /* Tunable: 66939034 */;
+			return Global_262145.f_19631 /* Tunable: IMPEXP_WASTELANDER_SVM_UNLOCK */;
 		
 		case 2:
-			return Global_262145.f_19632 /* Tunable: 1728276108 */;
+			return Global_262145.f_19632 /* Tunable: IMPEXP_BLAZERAQUA_SVM_UNLOCK */;
 		
 		case 3:
-			return Global_262145.f_19633 /* Tunable: 473647117 */;
+			return Global_262145.f_19633 /* Tunable: IMPEXP_PHANTOMWEDGE_SVM_UNLOCK */;
 		
 		case 4:
-			return Global_262145.f_19634 /* Tunable: -519289138 */;
+			return Global_262145.f_19634 /* Tunable: IMPEXP_ROCKETVOLTIC_SVM_UNLOCK */;
 		
 		case 5:
-			return Global_262145.f_19635 /* Tunable: 505472864 */;
+			return Global_262145.f_19635 /* Tunable: IMPEXP_TECHNICALAQUA_SVM_UNLOCK */;
 		
 		case 6:
-			return Global_262145.f_19636 /* Tunable: 385270792 */;
+			return Global_262145.f_19636 /* Tunable: IMPEXP_ARMOREDBOXVILLE_SVM_UNLOCK */;
 		
 		case 7:
-			return Global_262145.f_19637 /* Tunable: -1169424861 */;
+			return Global_262145.f_19637 /* Tunable: IMPEXP_RUINER_SVM_UNLOCK */;
 		
 		default:
 	}
@@ -39186,11 +39186,11 @@ void func_770(int iParam0, char* sParam1, char* sParam2, int iParam3, int iParam
 				MemCopy(sParam1, {func_771(Global_1942661[iVar4])}, 16);
 				break;
 		}
-		if (Global_262145.f_33394 /* Tunable: -1292749091 */)
+		if (Global_262145.f_33394 /* Tunable: ENABLE_CONTROL_PAYOUT_EXECUTIVE_OFFICE_SPECIALCARGO */)
 		{
 			if (!func_319(32350, -1))
 			{
-				*iParam0 = (*iParam0 * Global_262145.f_33403 /* Tunable: -364133001 */);
+				*iParam0 = (*iParam0 * Global_262145.f_33403 /* Tunable: CASH_CONTROL_PAYOUT_EXECUTIVE_OFFICE_SPECIALCARGO */);
 			}
 		}
 		if (iParam3 == 3)

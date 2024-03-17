@@ -5355,7 +5355,7 @@ int func_115(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x3
 	}
 	if (func_116(iParam0))
 	{
-		if (iParam2 <= Global_262145.f_21893 /* Tunable: -1542918426 */)
+		if (iParam2 <= Global_262145.f_21893 /* Tunable: GR_GENERAL_MEDIUM_STOCK_THRESHOLD */)
 		{
 			iVar0 = 1;
 			if (iParam0 == 15)
@@ -5363,7 +5363,7 @@ int func_115(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x3
 				iVar0 = 2;
 			}
 		}
-		else if (iParam2 <= Global_262145.f_21894 /* Tunable: -2015624215 */)
+		else if (iParam2 <= Global_262145.f_21894 /* Tunable: GR_GENERAL_LARGE_STOCK_THRESHOLD */)
 		{
 			iVar0 = 2;
 			if (iParam0 == 18)
@@ -5401,7 +5401,7 @@ int func_115(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x3
 	}
 	else if (func_117(iParam0))
 	{
-		if (iParam1 < Global_262145.f_21853 /* Tunable: 642214211 */)
+		if (iParam1 < Global_262145.f_21853 /* Tunable: GR_RESUPPLY_GENERAL_PLAYERS_NEEDED_FOR_SECOND_RESUPPLY_VEHICLE */)
 		{
 			iVar0 = 1;
 		}
@@ -11557,7 +11557,7 @@ float func_210(int iParam0, int iParam1)//Position - 0x8FE6
 	int iVar2;
 	
 	fVar0 = 0f;
-	fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_23030 /* Tunable: 599309088 */);
+	fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_23030 /* Tunable: SMUG_SELL_CRATE_BONUS_THRESHOLD_MEDIUM */);
 	switch (iParam0)
 	{
 		case -1:
@@ -11565,40 +11565,40 @@ float func_210(int iParam0, int iParam1)//Position - 0x8FE6
 			return 0f;
 		
 		case 7:
-			fVar0 = Global_262145.f_23032 /* Tunable: 264591774 */;
-			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_23029 /* Tunable: 664286755 */);
+			fVar0 = Global_262145.f_23032 /* Tunable: SMUG_SELL_CRATE_BONUS_PERCENTAGE_LOW */;
+			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_23029 /* Tunable: SMUG_SELL_CRATE_BONUS_THRESHOLD_LOW */);
 			break;
 		
 		case 3:
-			fVar0 = Global_262145.f_23032 /* Tunable: 264591774 */;
-			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_23029 /* Tunable: 664286755 */);
+			fVar0 = Global_262145.f_23032 /* Tunable: SMUG_SELL_CRATE_BONUS_PERCENTAGE_LOW */;
+			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_23029 /* Tunable: SMUG_SELL_CRATE_BONUS_THRESHOLD_LOW */);
 			break;
 		
 		case 0:
-			fVar0 = Global_262145.f_23033 /* Tunable: 99009277 */;
+			fVar0 = Global_262145.f_23033 /* Tunable: SMUG_SELL_CRATE_BONUS_PERCENTAGE_MEDIUM */;
 			break;
 		
 		case 1:
-			fVar0 = Global_262145.f_23033 /* Tunable: 99009277 */;
+			fVar0 = Global_262145.f_23033 /* Tunable: SMUG_SELL_CRATE_BONUS_PERCENTAGE_MEDIUM */;
 			break;
 		
 		case 4:
-			fVar0 = Global_262145.f_23033 /* Tunable: 99009277 */;
+			fVar0 = Global_262145.f_23033 /* Tunable: SMUG_SELL_CRATE_BONUS_PERCENTAGE_MEDIUM */;
 			break;
 		
 		case 6:
-			fVar0 = Global_262145.f_23034 /* Tunable: 643266636 */;
-			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_23031 /* Tunable: 486872462 */);
+			fVar0 = Global_262145.f_23034 /* Tunable: SMUG_SELL_CRATE_BONUS_PERCENTAGE_HIGH */;
+			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_23031 /* Tunable: SMUG_SELL_CRATE_BONUS_THRESHOLD_HIGH */);
 			break;
 		
 		case 2:
-			fVar0 = Global_262145.f_23034 /* Tunable: 643266636 */;
-			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_23031 /* Tunable: 486872462 */);
+			fVar0 = Global_262145.f_23034 /* Tunable: SMUG_SELL_CRATE_BONUS_PERCENTAGE_HIGH */;
+			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_23031 /* Tunable: SMUG_SELL_CRATE_BONUS_THRESHOLD_HIGH */);
 			break;
 		
 		case 5:
-			fVar0 = Global_262145.f_23034 /* Tunable: 643266636 */;
-			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_23031 /* Tunable: 486872462 */);
+			fVar0 = Global_262145.f_23034 /* Tunable: SMUG_SELL_CRATE_BONUS_PERCENTAGE_HIGH */;
+			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_23031 /* Tunable: SMUG_SELL_CRATE_BONUS_THRESHOLD_HIGH */);
 			break;
 	}
 	iVar2 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iParam1) / fVar1));
@@ -11615,31 +11615,31 @@ int func_212(int iParam0)//Position - 0x910F
 	switch (iParam0)
 	{
 		case 8:
-			return Global_262145.f_23020 /* Tunable: -954321460 */;
+			return Global_262145.f_23020 /* Tunable: SMUG_SELL_PRICE_PER_CRATE_MIXED */;
 		
 		case 0:
-			return Global_262145.f_23021 /* Tunable: 117429930 */;
+			return Global_262145.f_23021 /* Tunable: SMUG_SELL_PRICE_PER_CRATE_ANIMAL_MATERIALS */;
 		
 		case 1:
-			return Global_262145.f_23022 /* Tunable: 921812958 */;
+			return Global_262145.f_23022 /* Tunable: SMUG_SELL_PRICE_PER_CRATE_ART_AND_ANTIQUES */;
 		
 		case 2:
-			return Global_262145.f_23023 /* Tunable: 1940564107 */;
+			return Global_262145.f_23023 /* Tunable: SMUG_SELL_PRICE_PER_CRATE_CHEMICALS */;
 		
 		case 3:
-			return Global_262145.f_23024 /* Tunable: -2031678534 */;
+			return Global_262145.f_23024 /* Tunable: SMUG_SELL_PRICE_PER_CRATE_COUNTERFEIT_GOODS */;
 		
 		case 4:
-			return Global_262145.f_23025 /* Tunable: -2091681714 */;
+			return Global_262145.f_23025 /* Tunable: SMUG_SELL_PRICE_PER_CRATE_JEWELRY_AND_GEMSTONES */;
 		
 		case 5:
-			return Global_262145.f_23026 /* Tunable: 975965466 */;
+			return Global_262145.f_23026 /* Tunable: SMUG_SELL_PRICE_PER_CRATE_MEDICAL_SUPPLIES */;
 		
 		case 6:
-			return Global_262145.f_23027 /* Tunable: 1382988286 */;
+			return Global_262145.f_23027 /* Tunable: SMUG_SELL_PRICE_PER_CRATE_NARCOTICS */;
 		
 		case 7:
-			return Global_262145.f_23028 /* Tunable: 2066048851 */;
+			return Global_262145.f_23028 /* Tunable: SMUG_SELL_PRICE_PER_CRATE_TOBACCO_AND_ALCOHOL */;
 		
 		default:
 	}
@@ -16806,7 +16806,7 @@ void func_420()//Position - 0xE9B1
 
 int func_421()//Position - 0xE9E8
 {
-	if (!Global_262145.f_29155 /* Tunable: 1028571554 */)
+	if (!Global_262145.f_29155 /* Tunable: NPC_PHONE_TELEMETRY_TRACKING_ENABLED */)
 	{
 		return 0;
 	}

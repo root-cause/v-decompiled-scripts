@@ -4861,7 +4861,7 @@ void func_157(int iParam0)//Position - 0x5B41
 {
 	func_158();
 	MISC::SET_BIT(&(Global_2684312.f_2), 11);
-	if (iParam0 && Global_262145.f_30015 /* Tunable: 410392007 */)
+	if (iParam0 && Global_262145.f_30015 /* Tunable: ALLOWONCALLCLEARINCHARGE */)
 	{
 		if (BitTest(Global_2685249.f_1.f_2809, 0))
 		{
@@ -9786,8 +9786,8 @@ void func_300(var uParam0, int iParam1, int iParam2)//Position - 0xB8C2
 	int iVar4;
 	int iVar5;
 	
-	iVar0 = Global_262145.f_23501 /* Tunable: -2020782937 */;
-	iVar1 = Global_262145.f_23502 /* Tunable: 944111042 */;
+	iVar0 = Global_262145.f_23501 /* Tunable: H2_FINALE_MIN_CUT_AMOUNT */;
+	iVar1 = Global_262145.f_23502 /* Tunable: H2_FINALE_MAX_CUT_AMOUNT */;
 	if (iParam2 < 0)
 	{
 		iVar2 = uParam0->f_50[iParam1];
@@ -12038,59 +12038,59 @@ void func_352(var uParam0)//Position - 0xE7C5
 		switch (uParam0->f_812.f_44)
 		{
 			case 2:
-				uParam0->f_812.f_50[0] = Global_262145.f_23503 /* Tunable: 384540432 */;
-				uParam0->f_812.f_50[1] = Global_262145.f_23504 /* Tunable: 1844989781 */;
+				uParam0->f_812.f_50[0] = Global_262145.f_23503 /* Tunable: H2_FINALE_CUT_TWO_PLAYERS_LEADER */;
+				uParam0->f_812.f_50[1] = Global_262145.f_23504 /* Tunable: H2_FINALE_CUT_TWO_PLAYERS_MEMBER */;
 				uParam0->f_812.f_50[2] = 0;
 				uParam0->f_812.f_50[3] = 0;
 				uParam0->f_812.f_50[4] = 0;
-				Global_786481.f_21 = Global_262145.f_23503 /* Tunable: 384540432 */;
+				Global_786481.f_21 = Global_262145.f_23503 /* Tunable: H2_FINALE_CUT_TWO_PLAYERS_LEADER */;
 				if (uParam0->f_812.f_41 == PLAYER::PLAYER_ID())
 				{
-					Global_2685249.f_6615 = Global_262145.f_23503 /* Tunable: 384540432 */;
-					Global_786481.f_2 = Global_262145.f_23503 /* Tunable: 384540432 */;
+					Global_2685249.f_6615 = Global_262145.f_23503 /* Tunable: H2_FINALE_CUT_TWO_PLAYERS_LEADER */;
+					Global_786481.f_2 = Global_262145.f_23503 /* Tunable: H2_FINALE_CUT_TWO_PLAYERS_LEADER */;
 				}
 				else
 				{
-					Global_2685249.f_6615 = Global_262145.f_23504 /* Tunable: 1844989781 */;
-					Global_786481.f_2 = Global_262145.f_23504 /* Tunable: 1844989781 */;
+					Global_2685249.f_6615 = Global_262145.f_23504 /* Tunable: H2_FINALE_CUT_TWO_PLAYERS_MEMBER */;
+					Global_786481.f_2 = Global_262145.f_23504 /* Tunable: H2_FINALE_CUT_TWO_PLAYERS_MEMBER */;
 				}
 				break;
 			
 			case 3:
-				uParam0->f_812.f_50[0] = Global_262145.f_23505 /* Tunable: 2059668470 */;
-				uParam0->f_812.f_50[1] = Global_262145.f_23506 /* Tunable: 499834411 */;
-				uParam0->f_812.f_50[2] = Global_262145.f_23506 /* Tunable: 499834411 */;
+				uParam0->f_812.f_50[0] = Global_262145.f_23505 /* Tunable: H2_FINALE_CUT_THREE_PLAYERS_LEADER */;
+				uParam0->f_812.f_50[1] = Global_262145.f_23506 /* Tunable: H2_FINALE_CUT_THREE_PLAYERS_MEMBER */;
+				uParam0->f_812.f_50[2] = Global_262145.f_23506 /* Tunable: H2_FINALE_CUT_THREE_PLAYERS_MEMBER */;
 				uParam0->f_812.f_50[3] = 0;
 				uParam0->f_812.f_50[4] = 0;
-				Global_786481.f_21 = Global_262145.f_23505 /* Tunable: 2059668470 */;
+				Global_786481.f_21 = Global_262145.f_23505 /* Tunable: H2_FINALE_CUT_THREE_PLAYERS_LEADER */;
 				if (uParam0->f_812.f_41 == PLAYER::PLAYER_ID())
 				{
-					Global_2685249.f_6615 = Global_262145.f_23505 /* Tunable: 2059668470 */;
-					Global_786481.f_2 = Global_262145.f_23505 /* Tunable: 2059668470 */;
+					Global_2685249.f_6615 = Global_262145.f_23505 /* Tunable: H2_FINALE_CUT_THREE_PLAYERS_LEADER */;
+					Global_786481.f_2 = Global_262145.f_23505 /* Tunable: H2_FINALE_CUT_THREE_PLAYERS_LEADER */;
 				}
 				else
 				{
-					Global_2685249.f_6615 = Global_262145.f_23506 /* Tunable: 499834411 */;
-					Global_786481.f_2 = Global_262145.f_23506 /* Tunable: 499834411 */;
+					Global_2685249.f_6615 = Global_262145.f_23506 /* Tunable: H2_FINALE_CUT_THREE_PLAYERS_MEMBER */;
+					Global_786481.f_2 = Global_262145.f_23506 /* Tunable: H2_FINALE_CUT_THREE_PLAYERS_MEMBER */;
 				}
 				break;
 			
 			case 4:
-				uParam0->f_812.f_50[0] = Global_262145.f_23507 /* Tunable: 208853530 */;
-				uParam0->f_812.f_50[1] = Global_262145.f_23508 /* Tunable: 1273628128 */;
-				uParam0->f_812.f_50[2] = Global_262145.f_23508 /* Tunable: 1273628128 */;
-				uParam0->f_812.f_50[3] = Global_262145.f_23508 /* Tunable: 1273628128 */;
+				uParam0->f_812.f_50[0] = Global_262145.f_23507 /* Tunable: H2_FINALE_CUT_FOUR_PLAYERS_LEADER */;
+				uParam0->f_812.f_50[1] = Global_262145.f_23508 /* Tunable: H2_FINALE_CUT_FOUR_PLAYERS_MEMBER */;
+				uParam0->f_812.f_50[2] = Global_262145.f_23508 /* Tunable: H2_FINALE_CUT_FOUR_PLAYERS_MEMBER */;
+				uParam0->f_812.f_50[3] = Global_262145.f_23508 /* Tunable: H2_FINALE_CUT_FOUR_PLAYERS_MEMBER */;
 				uParam0->f_812.f_50[4] = 0;
-				Global_786481.f_21 = Global_262145.f_23507 /* Tunable: 208853530 */;
+				Global_786481.f_21 = Global_262145.f_23507 /* Tunable: H2_FINALE_CUT_FOUR_PLAYERS_LEADER */;
 				if (uParam0->f_812.f_41 == PLAYER::PLAYER_ID())
 				{
-					Global_2685249.f_6615 = Global_262145.f_23507 /* Tunable: 208853530 */;
-					Global_786481.f_2 = Global_262145.f_23507 /* Tunable: 208853530 */;
+					Global_2685249.f_6615 = Global_262145.f_23507 /* Tunable: H2_FINALE_CUT_FOUR_PLAYERS_LEADER */;
+					Global_786481.f_2 = Global_262145.f_23507 /* Tunable: H2_FINALE_CUT_FOUR_PLAYERS_LEADER */;
 				}
 				else
 				{
-					Global_2685249.f_6615 = Global_262145.f_23508 /* Tunable: 1273628128 */;
-					Global_786481.f_2 = Global_262145.f_23508 /* Tunable: 1273628128 */;
+					Global_2685249.f_6615 = Global_262145.f_23508 /* Tunable: H2_FINALE_CUT_FOUR_PLAYERS_MEMBER */;
+					Global_786481.f_2 = Global_262145.f_23508 /* Tunable: H2_FINALE_CUT_FOUR_PLAYERS_MEMBER */;
 				}
 				break;
 		}
@@ -12614,26 +12614,26 @@ int func_376(var uParam0)//Position - 0xF34D
 			break;
 		
 		case 2:
-			uParam0->f_812.f_50[0] = Global_262145.f_23503 /* Tunable: 384540432 */;
-			uParam0->f_812.f_50[1] = Global_262145.f_23504 /* Tunable: 1844989781 */;
+			uParam0->f_812.f_50[0] = Global_262145.f_23503 /* Tunable: H2_FINALE_CUT_TWO_PLAYERS_LEADER */;
+			uParam0->f_812.f_50[1] = Global_262145.f_23504 /* Tunable: H2_FINALE_CUT_TWO_PLAYERS_MEMBER */;
 			uParam0->f_812.f_50[2] = 0;
 			uParam0->f_812.f_50[3] = 0;
 			uParam0->f_812.f_50[4] = 0;
 			break;
 		
 		case 3:
-			uParam0->f_812.f_50[0] = Global_262145.f_23505 /* Tunable: 2059668470 */;
-			uParam0->f_812.f_50[1] = Global_262145.f_23506 /* Tunable: 499834411 */;
-			uParam0->f_812.f_50[2] = Global_262145.f_23506 /* Tunable: 499834411 */;
+			uParam0->f_812.f_50[0] = Global_262145.f_23505 /* Tunable: H2_FINALE_CUT_THREE_PLAYERS_LEADER */;
+			uParam0->f_812.f_50[1] = Global_262145.f_23506 /* Tunable: H2_FINALE_CUT_THREE_PLAYERS_MEMBER */;
+			uParam0->f_812.f_50[2] = Global_262145.f_23506 /* Tunable: H2_FINALE_CUT_THREE_PLAYERS_MEMBER */;
 			uParam0->f_812.f_50[3] = 0;
 			uParam0->f_812.f_50[4] = 0;
 			break;
 		
 		case 4:
-			uParam0->f_812.f_50[0] = Global_262145.f_23507 /* Tunable: 208853530 */;
-			uParam0->f_812.f_50[1] = Global_262145.f_23508 /* Tunable: 1273628128 */;
-			uParam0->f_812.f_50[2] = Global_262145.f_23508 /* Tunable: 1273628128 */;
-			uParam0->f_812.f_50[3] = Global_262145.f_23508 /* Tunable: 1273628128 */;
+			uParam0->f_812.f_50[0] = Global_262145.f_23507 /* Tunable: H2_FINALE_CUT_FOUR_PLAYERS_LEADER */;
+			uParam0->f_812.f_50[1] = Global_262145.f_23508 /* Tunable: H2_FINALE_CUT_FOUR_PLAYERS_MEMBER */;
+			uParam0->f_812.f_50[2] = Global_262145.f_23508 /* Tunable: H2_FINALE_CUT_FOUR_PLAYERS_MEMBER */;
+			uParam0->f_812.f_50[3] = Global_262145.f_23508 /* Tunable: H2_FINALE_CUT_FOUR_PLAYERS_MEMBER */;
 			uParam0->f_812.f_50[4] = 0;
 			break;
 	}
@@ -17742,7 +17742,7 @@ int func_549(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x1
 	}
 	if (func_550(iParam0))
 	{
-		if (iParam2 <= Global_262145.f_21893 /* Tunable: -1542918426 */)
+		if (iParam2 <= Global_262145.f_21893 /* Tunable: GR_GENERAL_MEDIUM_STOCK_THRESHOLD */)
 		{
 			iVar0 = 1;
 			if (iParam0 == 15)
@@ -17750,7 +17750,7 @@ int func_549(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x1
 				iVar0 = 2;
 			}
 		}
-		else if (iParam2 <= Global_262145.f_21894 /* Tunable: -2015624215 */)
+		else if (iParam2 <= Global_262145.f_21894 /* Tunable: GR_GENERAL_LARGE_STOCK_THRESHOLD */)
 		{
 			iVar0 = 2;
 			if (iParam0 == 18)
@@ -17788,7 +17788,7 @@ int func_549(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x1
 	}
 	else if (func_551(iParam0))
 	{
-		if (iParam1 < Global_262145.f_21853 /* Tunable: 642214211 */)
+		if (iParam1 < Global_262145.f_21853 /* Tunable: GR_RESUPPLY_GENERAL_PLAYERS_NEEDED_FOR_SECOND_RESUPPLY_VEHICLE */)
 		{
 			iVar0 = 1;
 		}
@@ -24359,7 +24359,7 @@ void func_651(int iParam0, bool bParam1, var uParam2, bool bParam3, bool bParam4
 		case joaat("SERVICE_SPEND_ARENA_SPECTATOR_BOX"):
 		case joaat("SERVICE_SPEND_MAKE_IT_RAIN"):
 		case joaat("SERVICE_SPEND_SALVAGE_YARD_VEH_ROB_SETUP"):
-			if (bParam1 > 0 || Global_262145.f_28652 /* Tunable: 1103207774 */)
+			if (bParam1 > 0 || Global_262145.f_28652 /* Tunable: ALLOW_ZERO_SPEND_SERVICE_TELEM */)
 			{
 				func_652(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, bParam1, iVar0, 7);
 			}
@@ -24512,7 +24512,7 @@ void func_651(int iParam0, bool bParam1, var uParam2, bool bParam3, bool bParam4
 		case joaat("SERVICE_SPEND_NIGHTCLUB_TOILET_ATTENDANT"):
 		case joaat("SERVICE_SPEND_JUGALLO_BOSS_VEHICLE_REQUEST"):
 		case joaat("SERVICE_SPEND_SALVAGE_YARD_CLAIM_VEH"):
-			if (bParam1 > 0 || Global_262145.f_28652 /* Tunable: 1103207774 */)
+			if (bParam1 > 0 || Global_262145.f_28652 /* Tunable: ALLOW_ZERO_SPEND_SERVICE_TELEM */)
 			{
 				func_652(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, bParam1, iVar0, 7);
 			}
@@ -29067,11 +29067,11 @@ int func_800(int iParam0, bool bParam1)//Position - 0x204BE
 			break;
 		
 		case 32:
-			iVar0 = Global_262145.f_28656 /* Tunable: 485948238 */;
+			iVar0 = Global_262145.f_28656 /* Tunable: CASINO_HEIST_JOB_CASH_REWARD */;
 			break;
 		
 		case 33:
-			iVar0 = Global_262145.f_30005 /* Tunable: -1998919342 */;
+			iVar0 = Global_262145.f_30005 /* Tunable: ISLAND_HEIST_JOB_CASH_REWARD */;
 			break;
 		
 		case 34:

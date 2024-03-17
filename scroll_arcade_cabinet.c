@@ -4760,7 +4760,7 @@ void func_127()//Position - 0x7823
 	{
 		return;
 	}
-	if (Local_162.f_2712.f_9 < Global_262145.f_27516 /* Tunable: -1660179710 */)
+	if (Local_162.f_2712.f_9 < Global_262145.f_27516 /* Tunable: IVC_IAP_OIL_CHALLENGE_REQUIREMENT */)
 	{
 		return;
 	}
@@ -4769,7 +4769,7 @@ void func_127()//Position - 0x7823
 	MISC::SET_BIT(&(Local_162.f_2904), 2);
 	MISC::SET_BIT(&(Local_162.f_2904), 8);
 	func_129();
-	func_128("IAP_CH_1", Global_262145.f_27516 /* Tunable: -1660179710 */, 7500);
+	func_128("IAP_CH_1", Global_262145.f_27516 /* Tunable: IVC_IAP_OIL_CHALLENGE_REQUIREMENT */, 7500);
 }
 
 void func_128(char* sParam0, var uParam1, int iParam2)//Position - 0x7889
@@ -4790,23 +4790,23 @@ void func_129()//Position - 0x78AF
 	{
 		return;
 	}
-	if (Global_262145.f_27520 /* Tunable: 915420781 */ && !BitTest(Local_162.f_2904, 1))
+	if (Global_262145.f_27520 /* Tunable: BVC_IAP_KILL_CHALLENGE_REQUIRED_FOR_GOLD */ && !BitTest(Local_162.f_2904, 1))
 	{
 		return;
 	}
-	if (Global_262145.f_27521 /* Tunable: 104913142 */ && !BitTest(Local_162.f_2904, 2))
+	if (Global_262145.f_27521 /* Tunable: BVC_IAP_OIL_CHALLENGE_REQUIRED_FOR_GOLD */ && !BitTest(Local_162.f_2904, 2))
 	{
 		return;
 	}
-	if (Global_262145.f_27522 /* Tunable: -38730582 */ && !BitTest(Local_162.f_2904, 3))
+	if (Global_262145.f_27522 /* Tunable: BVC_IAP_MOON_DISTANCE_CHALLENGE_REQUIRED_FOR_GOLD */ && !BitTest(Local_162.f_2904, 3))
 	{
 		return;
 	}
-	if (Global_262145.f_27523 /* Tunable: -1799527873 */ && !BitTest(Local_162.f_2904, 4))
+	if (Global_262145.f_27523 /* Tunable: BVC_IAP_LIVES_CHALLENGE_REQUIRED_FOR_GOLD */ && !BitTest(Local_162.f_2904, 4))
 	{
 		return;
 	}
-	if (Global_262145.f_27524 /* Tunable: -1243869602 */ && !BitTest(Local_162.f_2904, 5))
+	if (Global_262145.f_27524 /* Tunable: BVC_IAP_SCORE_CHALLENGE_REQUIRED_FOR_GOLD */ && !BitTest(Local_162.f_2904, 5))
 	{
 		return;
 	}
@@ -4868,7 +4868,7 @@ void func_134()//Position - 0x79F0
 	{
 		return;
 	}
-	if (Local_162.f_2712.f_5 < Global_262145.f_27515 /* Tunable: 1189077060 */)
+	if (Local_162.f_2712.f_5 < Global_262145.f_27515 /* Tunable: IVC_IAP_KILL_CHALLENGE_REQUIREMENT */)
 	{
 		return;
 	}
@@ -4877,7 +4877,7 @@ void func_134()//Position - 0x79F0
 	MISC::SET_BIT(&(Local_162.f_2904), 1);
 	MISC::SET_BIT(&(Local_162.f_2904), 7);
 	func_129();
-	func_128("IAP_CH_0", Global_262145.f_27515 /* Tunable: 1189077060 */, 7500);
+	func_128("IAP_CH_0", Global_262145.f_27515 /* Tunable: IVC_IAP_KILL_CHALLENGE_REQUIREMENT */, 7500);
 }
 
 void func_135(int iParam0, struct<2> Param1)//Position - 0x7A55
@@ -6509,7 +6509,7 @@ void func_213()//Position - 0xA70E
 	{
 		return;
 	}
-	if (Local_162.f_2725 < Global_262145.f_27519 /* Tunable: -173611933 */)
+	if (Local_162.f_2725 < Global_262145.f_27519 /* Tunable: IVC_IAP_SCORE_CHALLENGE_REQUIREMENT */)
 	{
 		return;
 	}
@@ -6518,7 +6518,7 @@ void func_213()//Position - 0xA70E
 	MISC::SET_BIT(&(Local_162.f_2904), 5);
 	MISC::SET_BIT(&(Local_162.f_2904), 11);
 	func_129();
-	func_128("IAP_CH_4", Global_262145.f_27519 /* Tunable: -173611933 */, 7500);
+	func_128("IAP_CH_4", Global_262145.f_27519 /* Tunable: IVC_IAP_SCORE_CHALLENGE_REQUIREMENT */, 7500);
 }
 
 int func_214(bool bParam0, int iParam1, int iParam2)//Position - 0xA772
@@ -8269,7 +8269,7 @@ void func_275()//Position - 0xDAB9
 	{
 		return;
 	}
-	if (Local_162.f_2368.f_330 < Global_262145.f_27518 /* Tunable: -84284307 */)
+	if (Local_162.f_2368.f_330 < Global_262145.f_27518 /* Tunable: IVC_IAP_LIVES_CHALLENGE_REQUIREMENT */)
 	{
 		return;
 	}
@@ -8278,7 +8278,7 @@ void func_275()//Position - 0xDAB9
 	MISC::SET_BIT(&(Local_162.f_2904), 4);
 	MISC::SET_BIT(&(Local_162.f_2904), 10);
 	func_129();
-	func_128("IAP_CH_3", Global_262145.f_27518 /* Tunable: -84284307 */, 7500);
+	func_128("IAP_CH_3", Global_262145.f_27518 /* Tunable: IVC_IAP_LIVES_CHALLENGE_REQUIREMENT */, 7500);
 }
 
 void func_276(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0xDB2B
@@ -10204,7 +10204,7 @@ void func_313()//Position - 0x118F9
 	{
 		return;
 	}
-	if (iVar0 < Global_262145.f_27517 /* Tunable: -886125311 */)
+	if (iVar0 < Global_262145.f_27517 /* Tunable: IVC_IAP_MOON_DISTANCE_CHALLENGE_REQUIREMENT */)
 	{
 		return;
 	}
@@ -10213,7 +10213,7 @@ void func_313()//Position - 0x118F9
 	MISC::SET_BIT(&(Local_162.f_2904), 3);
 	MISC::SET_BIT(&(Local_162.f_2904), 9);
 	func_129();
-	func_128("IAP_CH_2", Global_262145.f_27517 /* Tunable: -886125311 */, 7500);
+	func_128("IAP_CH_2", Global_262145.f_27517 /* Tunable: IVC_IAP_MOON_DISTANCE_CHALLENGE_REQUIREMENT */, 7500);
 }
 
 void func_314()//Position - 0x11988

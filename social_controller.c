@@ -2680,7 +2680,7 @@ void func_56(var uParam0, bool bParam1)//Position - 0x2747
 												if (func_54() && func_51())
 												{
 													SOCIALCLUB::SC_INBOX_MESSAGE_DO_APPLY(iVar1);
-													func_117(0, "XPT_MISSVER" /* GXT: RP for verified mission: ~1~. */, joaat("XPTYPE_SOCIALCLUB"), 475954354, 5000, 1, -1, 0);
+													func_117(0, "XPT_MISSVER" /* GXT: RP for verified mission: ~1~. */, joaat("XPTYPE_SOCIALCLUB"), joaat("XPCATEGORY_SOCIALCLUB_MISSION_VERIFIED"), 5000, 1, -1, 0);
 													if (SOCIALCLUB::SC_INBOX_MESSAGE_GET_DATA_STRING(iVar1, "msg", &uVar3))
 													{
 													}
@@ -4129,7 +4129,7 @@ void func_128(int iParam0, int iParam1, int iParam2)//Position - 0x420C
 		{
 			if (iParam0 == 0)
 			{
-				STATS::PLAYSTATS_AWARD_XP(iParam0, -1158693853, -1345423847);
+				STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_INITIALISE"), joaat("XPCATEGORY_LIVE_RP_RESET"));
 				if (iParam2 == 0)
 				{
 					return;
@@ -12038,7 +12038,7 @@ void func_268(int iParam0, char* sParam1, bool bParam2, var uParam3)//Position -
 
 int func_269()//Position - 0xD052
 {
-	if (!Global_262145.f_29155 /* Tunable: 1028571554 */)
+	if (!Global_262145.f_29155 /* Tunable: NPC_PHONE_TELEMETRY_TRACKING_ENABLED */)
 	{
 		return 0;
 	}

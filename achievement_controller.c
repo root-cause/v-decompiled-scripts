@@ -5613,7 +5613,7 @@ int func_27(int iParam0, int iParam1)//Position - 0x6924
 						break;
 					
 					case joaat("COMPONENT_COMBATPISTOL_CLIP_02"):
-						iVar0 = Global_262145.f_21289 /* Tunable: -1714511790 */;
+						iVar0 = Global_262145.f_21289 /* Tunable: LOW1_MACHINEPISTOL_EXTENDED_CLIP */;
 						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_2896 /* Tunable: WEAPONADDON_COMBATPISTOL_CLIP_02_EXPENDITURE_TUNABLE */));
 						break;
 					
@@ -5623,7 +5623,7 @@ int func_27(int iParam0, int iParam1)//Position - 0x6924
 						break;
 					
 					case joaat("COMPONENT_AT_PI_SUPP"):
-						iVar0 = Global_262145.f_21290 /* Tunable: -83416429 */;
+						iVar0 = Global_262145.f_21290 /* Tunable: LOW1_MACHINEPISTOL_SUPPRESSOR */;
 						iVar0 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iVar0) * Global_262145.f_4173 /* Tunable: WEAPONADDON_COMBATPISTOL_SUPP_EXPENDITURE_TUNABLE */));
 						break;
 					
@@ -6560,7 +6560,7 @@ int func_27(int iParam0, int iParam1)//Position - 0x6924
 						break;
 					
 					case joaat("COMPONENT_MINISMG_CLIP_02"):
-						iVar0 = Global_262145.f_19252 /* Tunable: 1482389140 */;
+						iVar0 = Global_262145.f_19252 /* Tunable: DLC_WEAPON_ADDON_MINI_SMG_EXTENDED_CLIP */;
 						break;
 				}
 				break;
@@ -6602,79 +6602,79 @@ int func_27(int iParam0, int iParam1)//Position - 0x6924
 						break;
 					
 					case joaat("COMPONENT_ASSAULTRIFLE_MK2_CLIP_02"):
-						iVar0 = Global_262145.f_21409 /* Tunable: -1550181012 */;
+						iVar0 = Global_262145.f_21409 /* Tunable: UPGRD_WEAP_MOD_ASSAULT_RIFLE_MK2_MAG_EXTENDED_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_ASSAULTRIFLE_MK2_CLIP_ARMORPIERCING"):
-						iVar0 = Global_262145.f_21410 /* Tunable: 599186436 */;
+						iVar0 = Global_262145.f_21410 /* Tunable: UPGRD_WEAP_MOD_ASSAULT_RIFLE_MK2_MAG_ARMOR_PIERCING_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_ASSAULTRIFLE_MK2_CLIP_FMJ"):
-						iVar0 = Global_262145.f_21411 /* Tunable: 1538620212 */;
+						iVar0 = Global_262145.f_21411 /* Tunable: UPGRD_WEAP_MOD_ASSAULT_RIFLE_MK2_MAG_FULL_METAL_JACKET_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_ASSAULTRIFLE_MK2_CLIP_INCENDIARY"):
-						iVar0 = Global_262145.f_21412 /* Tunable: -170097190 */;
+						iVar0 = Global_262145.f_21412 /* Tunable: UPGRD_WEAP_MOD_ASSAULT_RIFLE_MK2_MAG_INCENDIARY_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_ASSAULTRIFLE_MK2_CLIP_TRACER"):
-						iVar0 = Global_262145.f_21413 /* Tunable: -1387455740 */;
+						iVar0 = Global_262145.f_21413 /* Tunable: UPGRD_WEAP_MOD_ASSAULT_RIFLE_MK2_MAG_TRACER_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
-						iVar0 = Global_262145.f_21414 /* Tunable: -325408568 */;
+						iVar0 = Global_262145.f_21414 /* Tunable: UPGRD_WEAP_MOD_ASSAULT_RIFLE_MK2_FLASHLIGHTS_FLASHLIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_SIGHTS"):
-						iVar0 = Global_262145.f_21415 /* Tunable: -82364995 */;
+						iVar0 = Global_262145.f_21415 /* Tunable: UPGRD_WEAP_MOD_ASSAULT_RIFLE_MK2_SCOPES_HOLOGRAPHIC_SIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MACRO_MK2"):
-						iVar0 = Global_262145.f_21416 /* Tunable: -229542830 */;
+						iVar0 = Global_262145.f_21416 /* Tunable: UPGRD_WEAP_MOD_ASSAULT_RIFLE_MK2_SCOPES_SMALL_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_SMALL_MK2"):
-						iVar0 = Global_262145.f_21417 /* Tunable: 1327976003 */;
+						iVar0 = Global_262145.f_21417 /* Tunable: UPGRD_WEAP_MOD_ASSAULT_RIFLE_MK2_SCOPES_MEDIUM_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MEDIUM_MK2"):
-						iVar0 = Global_262145.f_21418 /* Tunable: -618034935 */;
+						iVar0 = Global_262145.f_21418 /* Tunable: UPGRD_WEAP_MOD_ASSAULT_RIFLE_MK2_SCOPES_LARGE_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP_02"):
-						iVar0 = Global_262145.f_21419 /* Tunable: -1721486303 */;
+						iVar0 = Global_262145.f_21419 /* Tunable: UPGRD_WEAP_MOD_ASSAULT_RIFLE_MK2_MUZ_SUPPRESSOR */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_01"):
-						iVar0 = Global_262145.f_21420 /* Tunable: -240242887 */;
+						iVar0 = Global_262145.f_21420 /* Tunable: UPGRD_WEAP_MOD_ASSAULT_RIFLE_MK2_MUZ_MUZZLE_BRAKE_1 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_02"):
-						iVar0 = Global_262145.f_21421 /* Tunable: 1111019601 */;
+						iVar0 = Global_262145.f_21421 /* Tunable: UPGRD_WEAP_MOD_ASSAULT_RIFLE_MK2_MUZ_MUZZLE_BRAKE_2 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_03"):
-						iVar0 = Global_262145.f_21422 /* Tunable: 1417573596 */;
+						iVar0 = Global_262145.f_21422 /* Tunable: UPGRD_WEAP_MOD_ASSAULT_RIFLE_MK2_MUZ_MUZZLE_BRAKE_3 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_04"):
-						iVar0 = Global_262145.f_21423 /* Tunable: 648354090 */;
+						iVar0 = Global_262145.f_21423 /* Tunable: UPGRD_WEAP_MOD_ASSAULT_RIFLE_MK2_MUZ_MUZZLE_BRAKE_4 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_05"):
-						iVar0 = Global_262145.f_21424 /* Tunable: -1500342013 */;
+						iVar0 = Global_262145.f_21424 /* Tunable: UPGRD_WEAP_MOD_ASSAULT_RIFLE_MK2_MUZ_MUZZLE_BRAKE_5 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_06"):
-						iVar0 = Global_262145.f_21425 /* Tunable: -80395705 */;
+						iVar0 = Global_262145.f_21425 /* Tunable: UPGRD_WEAP_MOD_ASSAULT_RIFLE_MK2_MUZ_MUZZLE_BRAKE_6 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_07"):
-						iVar0 = Global_262145.f_21426 /* Tunable: 225896138 */;
+						iVar0 = Global_262145.f_21426 /* Tunable: UPGRD_WEAP_MOD_ASSAULT_RIFLE_MK2_MUZ_MUZZLE_BRAKE_7 */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_AFGRIP_02"):
-						iVar0 = Global_262145.f_21427 /* Tunable: -946948419 */;
+						iVar0 = Global_262145.f_21427 /* Tunable: UPGRD_WEAP_MOD_ASSAULT_RIFLE_MK2_GRIP */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_BARREL_01"):
@@ -6682,7 +6682,7 @@ int func_27(int iParam0, int iParam1)//Position - 0x6924
 						break;
 					
 					case joaat("COMPONENT_AT_AR_BARREL_02"):
-						iVar0 = Global_262145.f_21428 /* Tunable: 628289383 */;
+						iVar0 = Global_262145.f_21428 /* Tunable: UPGRD_WEAP_MOD_ASSAULT_RIFLE_MK2_BARRELS_HVY_BARREL */;
 						break;
 					
 					case joaat("COMPONENT_ASSAULTRIFLE_MK2_CAMO"):
@@ -6739,79 +6739,79 @@ int func_27(int iParam0, int iParam1)//Position - 0x6924
 						break;
 					
 					case joaat("COMPONENT_CARBINERIFLE_MK2_CLIP_02"):
-						iVar0 = Global_262145.f_21429 /* Tunable: 1286553594 */;
+						iVar0 = Global_262145.f_21429 /* Tunable: UPGRD_WEAP_MOD_CARBINE_RIFLE_MK2_MAG_EXTENDED_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_CARBINERIFLE_MK2_CLIP_ARMORPIERCING"):
-						iVar0 = Global_262145.f_21430 /* Tunable: -1398112727 */;
+						iVar0 = Global_262145.f_21430 /* Tunable: UPGRD_WEAP_MOD_CARBINE_RIFLE_MK2_MAG_ARMOR_PIERCING_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_CARBINERIFLE_MK2_CLIP_FMJ"):
-						iVar0 = Global_262145.f_21431 /* Tunable: 1311192953 */;
+						iVar0 = Global_262145.f_21431 /* Tunable: UPGRD_WEAP_MOD_CARBINE_RIFLE_MK2_MAG_FULL_METAL_JACKET_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_CARBINERIFLE_MK2_CLIP_INCENDIARY"):
-						iVar0 = Global_262145.f_21432 /* Tunable: -577265450 */;
+						iVar0 = Global_262145.f_21432 /* Tunable: UPGRD_WEAP_MOD_CARBINE_RIFLE_MK2_MAG_INCENDIARY_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_CARBINERIFLE_MK2_CLIP_TRACER"):
-						iVar0 = Global_262145.f_21433 /* Tunable: 441926214 */;
+						iVar0 = Global_262145.f_21433 /* Tunable: UPGRD_WEAP_MOD_CARBINE_RIFLE_MK2_MAG_TRACER_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
-						iVar0 = Global_262145.f_21434 /* Tunable: -1137873158 */;
+						iVar0 = Global_262145.f_21434 /* Tunable: UPGRD_WEAP_MOD_CARBINE_RIFLE_MK2_FLASHLIGHTS_FLASHLIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_SIGHTS"):
-						iVar0 = Global_262145.f_21435 /* Tunable: 757231685 */;
+						iVar0 = Global_262145.f_21435 /* Tunable: UPGRD_WEAP_MOD_CARBINE_RIFLE_MK2_SCOPES_HOLOGRAPHIC_SIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MACRO_MK2"):
-						iVar0 = Global_262145.f_21436 /* Tunable: 1743852487 */;
+						iVar0 = Global_262145.f_21436 /* Tunable: UPGRD_WEAP_MOD_CARBINE_RIFLE_MK2_SCOPES_SMALL_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_SMALL_MK2"):
-						iVar0 = Global_262145.f_21437 /* Tunable: 1889225718 */;
+						iVar0 = Global_262145.f_21437 /* Tunable: UPGRD_WEAP_MOD_CARBINE_RIFLE_MK2_SCOPES_MEDIUM_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MEDIUM_MK2"):
-						iVar0 = Global_262145.f_21438 /* Tunable: 1808408105 */;
+						iVar0 = Global_262145.f_21438 /* Tunable: UPGRD_WEAP_MOD_CARBINE_RIFLE_MK2_SCOPES_LARGE_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP"):
-						iVar0 = Global_262145.f_21439 /* Tunable: 998096574 */;
+						iVar0 = Global_262145.f_21439 /* Tunable: UPGRD_WEAP_MOD_CARBINE_RIFLE_MK2_MUZ_SUPPRESSOR */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_01"):
-						iVar0 = Global_262145.f_21440 /* Tunable: 42291623 */;
+						iVar0 = Global_262145.f_21440 /* Tunable: UPGRD_WEAP_MOD_CARBINE_RIFLE_MK2_MUZ_MUZZLE_BRAKE_1 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_02"):
-						iVar0 = Global_262145.f_21441 /* Tunable: 918075921 */;
+						iVar0 = Global_262145.f_21441 /* Tunable: UPGRD_WEAP_MOD_CARBINE_RIFLE_MK2_MUZ_MUZZLE_BRAKE_2 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_03"):
-						iVar0 = Global_262145.f_21442 /* Tunable: -253841830 */;
+						iVar0 = Global_262145.f_21442 /* Tunable: UPGRD_WEAP_MOD_CARBINE_RIFLE_MK2_MUZ_MUZZLE_BRAKE_3 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_04"):
-						iVar0 = Global_262145.f_21443 /* Tunable: -554038639 */;
+						iVar0 = Global_262145.f_21443 /* Tunable: UPGRD_WEAP_MOD_CARBINE_RIFLE_MK2_MUZ_MUZZLE_BRAKE_4 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_05"):
-						iVar0 = Global_262145.f_21444 /* Tunable: -851712235 */;
+						iVar0 = Global_262145.f_21444 /* Tunable: UPGRD_WEAP_MOD_CARBINE_RIFLE_MK2_MUZ_MUZZLE_BRAKE_5 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_06"):
-						iVar0 = Global_262145.f_21445 /* Tunable: -1149353062 */;
+						iVar0 = Global_262145.f_21445 /* Tunable: UPGRD_WEAP_MOD_CARBINE_RIFLE_MK2_MUZ_MUZZLE_BRAKE_6 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_07"):
-						iVar0 = Global_262145.f_21446 /* Tunable: -1211679700 */;
+						iVar0 = Global_262145.f_21446 /* Tunable: UPGRD_WEAP_MOD_CARBINE_RIFLE_MK2_MUZ_MUZZLE_BRAKE_7 */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_AFGRIP_02"):
-						iVar0 = Global_262145.f_21447 /* Tunable: -1770903800 */;
+						iVar0 = Global_262145.f_21447 /* Tunable: UPGRD_WEAP_MOD_CARBINE_RIFLE_MK2_GRIP */;
 						break;
 					
 					case joaat("COMPONENT_AT_CR_BARREL_01"):
@@ -6819,7 +6819,7 @@ int func_27(int iParam0, int iParam1)//Position - 0x6924
 						break;
 					
 					case joaat("COMPONENT_AT_CR_BARREL_02"):
-						iVar0 = Global_262145.f_21448 /* Tunable: 120043539 */;
+						iVar0 = Global_262145.f_21448 /* Tunable: UPGRD_WEAP_MOD_CARBINE_RIFLE_MK2_BARRELS_HVY_BARREL */;
 						break;
 					
 					case joaat("COMPONENT_CARBINERIFLE_MK2_CAMO"):
@@ -6876,71 +6876,71 @@ int func_27(int iParam0, int iParam1)//Position - 0x6924
 						break;
 					
 					case joaat("COMPONENT_COMBATMG_MK2_CLIP_02"):
-						iVar0 = Global_262145.f_21449 /* Tunable: 1898572754 */;
+						iVar0 = Global_262145.f_21449 /* Tunable: UPGRD_WEAP_MOD_COMB_MG_MK2_MAG_EXTENDED_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_COMBATMG_MK2_CLIP_ARMORPIERCING"):
-						iVar0 = Global_262145.f_21450 /* Tunable: -980014447 */;
+						iVar0 = Global_262145.f_21450 /* Tunable: UPGRD_WEAP_MOD_COMB_MG_MK2_MAG_ARMOR_PIERCING_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_COMBATMG_MK2_CLIP_FMJ"):
-						iVar0 = Global_262145.f_21451 /* Tunable: 954938707 */;
+						iVar0 = Global_262145.f_21451 /* Tunable: UPGRD_WEAP_MOD_COMB_MG_MK2_MAG_FULL_METAL_JACKET_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_COMBATMG_MK2_CLIP_INCENDIARY"):
-						iVar0 = Global_262145.f_21452 /* Tunable: 1734159338 */;
+						iVar0 = Global_262145.f_21452 /* Tunable: UPGRD_WEAP_MOD_COMB_MG_MK2_MAG_INCENDIARY_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_COMBATMG_MK2_CLIP_TRACER"):
-						iVar0 = Global_262145.f_21453 /* Tunable: 994554097 */;
+						iVar0 = Global_262145.f_21453 /* Tunable: UPGRD_WEAP_MOD_COMB_MG_MK2_MAG_TRACER_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_AT_SIGHTS"):
-						iVar0 = Global_262145.f_21454 /* Tunable: 320273484 */;
+						iVar0 = Global_262145.f_21454 /* Tunable: UPGRD_WEAP_MOD_COMB_MG_MK2_SCOPES_HOLOGRAPHIC_SIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MACRO_MK2"):
-						iVar0 = Global_262145.f_21455 /* Tunable: -300742141 */;
+						iVar0 = Global_262145.f_21455 /* Tunable: UPGRD_WEAP_MOD_COMB_MG_MK2_SCOPES_SMALL_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_SMALL_MK2"):
-						iVar0 = Global_262145.f_21456 /* Tunable: -1429921876 */;
+						iVar0 = Global_262145.f_21456 /* Tunable: UPGRD_WEAP_MOD_COMB_MG_MK2_SCOPES_MEDIUM_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MEDIUM_MK2"):
-						iVar0 = Global_262145.f_21457 /* Tunable: 1509305655 */;
+						iVar0 = Global_262145.f_21457 /* Tunable: UPGRD_WEAP_MOD_COMB_MG_MK2_SCOPES_LARGE_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_01"):
-						iVar0 = Global_262145.f_21458 /* Tunable: -49677055 */;
+						iVar0 = Global_262145.f_21458 /* Tunable: UPGRD_WEAP_MOD_COMB_MG_MK2_MUZ_MUZZLE_BRAKE_1 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_02"):
-						iVar0 = Global_262145.f_21459 /* Tunable: 2089647114 */;
+						iVar0 = Global_262145.f_21459 /* Tunable: UPGRD_WEAP_MOD_COMB_MG_MK2_MUZ_MUZZLE_BRAKE_2 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_03"):
-						iVar0 = Global_262145.f_21460 /* Tunable: 1816386423 */;
+						iVar0 = Global_262145.f_21460 /* Tunable: UPGRD_WEAP_MOD_COMB_MG_MK2_MUZ_MUZZLE_BRAKE_3 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_04"):
-						iVar0 = Global_262145.f_21461 /* Tunable: -1717619155 */;
+						iVar0 = Global_262145.f_21461 /* Tunable: UPGRD_WEAP_MOD_COMB_MG_MK2_MUZ_MUZZLE_BRAKE_4 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_05"):
-						iVar0 = Global_262145.f_21462 /* Tunable: -2014801216 */;
+						iVar0 = Global_262145.f_21462 /* Tunable: UPGRD_WEAP_MOD_COMB_MG_MK2_MUZ_MUZZLE_BRAKE_5 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_06"):
-						iVar0 = Global_262145.f_21463 /* Tunable: 902950516 */;
+						iVar0 = Global_262145.f_21463 /* Tunable: UPGRD_WEAP_MOD_COMB_MG_MK2_MUZ_MUZZLE_BRAKE_6 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_07"):
-						iVar0 = Global_262145.f_21464 /* Tunable: 562283992 */;
+						iVar0 = Global_262145.f_21464 /* Tunable: UPGRD_WEAP_MOD_COMB_MG_MK2_MUZ_MUZZLE_BRAKE_7 */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_AFGRIP_02"):
-						iVar0 = Global_262145.f_21465 /* Tunable: 1292930355 */;
+						iVar0 = Global_262145.f_21465 /* Tunable: UPGRD_WEAP_MOD_COMB_MG_MK2_GRIP */;
 						break;
 					
 					case joaat("COMPONENT_AT_MG_BARREL_01"):
@@ -6948,7 +6948,7 @@ int func_27(int iParam0, int iParam1)//Position - 0x6924
 						break;
 					
 					case joaat("COMPONENT_AT_MG_BARREL_02"):
-						iVar0 = Global_262145.f_21466 /* Tunable: 1947193436 */;
+						iVar0 = Global_262145.f_21466 /* Tunable: UPGRD_WEAP_MOD_COMB_MG_MK2_BARRELS_HVY_BARREL */;
 						break;
 					
 					case joaat("COMPONENT_COMBATMG_MK2_CAMO"):
@@ -7005,27 +7005,27 @@ int func_27(int iParam0, int iParam1)//Position - 0x6924
 						break;
 					
 					case joaat("COMPONENT_HEAVYSNIPER_MK2_CLIP_02"):
-						iVar0 = Global_262145.f_21467 /* Tunable: 330899918 */;
+						iVar0 = Global_262145.f_21467 /* Tunable: UPGRD_WEAP_MOD_HVY_SNIPER_MK2_MAG_EXTENDED_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_HEAVYSNIPER_MK2_CLIP_ARMORPIERCING"):
-						iVar0 = Global_262145.f_21468 /* Tunable: 917018525 */;
+						iVar0 = Global_262145.f_21468 /* Tunable: UPGRD_WEAP_MOD_HVY_SNIPER_MK2_MAG_ARMOR_PIERCING_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_HEAVYSNIPER_MK2_CLIP_FMJ"):
-						iVar0 = Global_262145.f_21470 /* Tunable: 884234768 */;
+						iVar0 = Global_262145.f_21470 /* Tunable: UPGRD_WEAP_MOD_HVY_SNIPER_MK2_MAG_FULL_METAL_JACKET_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_HEAVYSNIPER_MK2_CLIP_INCENDIARY"):
-						iVar0 = Global_262145.f_21471 /* Tunable: 1088190767 */;
+						iVar0 = Global_262145.f_21471 /* Tunable: UPGRD_WEAP_MOD_HVY_SNIPER_MK2_MAG_INCENDIARY_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_HEAVYSNIPER_MK2_CLIP_EXPLOSIVE"):
-						iVar0 = Global_262145.f_21469 /* Tunable: -1206093715 */;
+						iVar0 = Global_262145.f_21469 /* Tunable: UPGRD_WEAP_MOD_HVY_SNIPER_MK2_MAG_EXPLOSIVE_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_LARGE_MK2"):
-						iVar0 = Global_262145.f_21472 /* Tunable: 579562015 */;
+						iVar0 = Global_262145.f_21472 /* Tunable: UPGRD_WEAP_MOD_HVY_SNIPER_MK2_SCOPES_ZOOM_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MAX"):
@@ -7033,23 +7033,23 @@ int func_27(int iParam0, int iParam1)//Position - 0x6924
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_NV"):
-						iVar0 = Global_262145.f_21473 /* Tunable: 544428193 */;
+						iVar0 = Global_262145.f_21473 /* Tunable: UPGRD_WEAP_MOD_HVY_SNIPER_MK2_SCOPES_NIGHT_VISION_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_THERMAL"):
-						iVar0 = Global_262145.f_21474 /* Tunable: -707213005 */;
+						iVar0 = Global_262145.f_21474 /* Tunable: UPGRD_WEAP_MOD_HVY_SNIPER_MK2_SCOPES_THERMAL_VISION_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_SR_SUPP_03"):
-						iVar0 = Global_262145.f_21475 /* Tunable: 1674324405 */;
+						iVar0 = Global_262145.f_21475 /* Tunable: UPGRD_WEAP_MOD_HVY_SNIPER_MK2_MUZ_SUPPRESSOR */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_08"):
-						iVar0 = Global_262145.f_21476 /* Tunable: 291821001 */;
+						iVar0 = Global_262145.f_21476 /* Tunable: UPGRD_WEAP_MOD_HVY_SNIPER_MK2_MUZ_HVY_MUZZLE_BRAKE_1 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_09"):
-						iVar0 = Global_262145.f_21477 /* Tunable: 1067332155 */;
+						iVar0 = Global_262145.f_21477 /* Tunable: UPGRD_WEAP_MOD_HVY_SNIPER_MK2_MUZ_HVY_MUZZLE_BRAKE_2 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SR_BARREL_01"):
@@ -7057,7 +7057,7 @@ int func_27(int iParam0, int iParam1)//Position - 0x6924
 						break;
 					
 					case joaat("COMPONENT_AT_SR_BARREL_02"):
-						iVar0 = Global_262145.f_21478 /* Tunable: 2037426926 */;
+						iVar0 = Global_262145.f_21478 /* Tunable: UPGRD_WEAP_MOD_HVY_SNIPER_MK2_BARRELS_HVY_BARREL */;
 						break;
 					
 					case joaat("COMPONENT_HEAVYSNIPER_MK2_CAMO"):
@@ -7114,39 +7114,39 @@ int func_27(int iParam0, int iParam1)//Position - 0x6924
 						break;
 					
 					case joaat("COMPONENT_PISTOL_MK2_CLIP_02"):
-						iVar0 = Global_262145.f_21479 /* Tunable: 1430566154 */;
+						iVar0 = Global_262145.f_21479 /* Tunable: UPGRD_WEAP_MOD_PISTOL_MK2_MAG_EXTENDED_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_PISTOL_MK2_CLIP_HOLLOWPOINT"):
-						iVar0 = Global_262145.f_21481 /* Tunable: -1046185578 */;
+						iVar0 = Global_262145.f_21481 /* Tunable: UPGRD_WEAP_MOD_PISTOL_MK2_MAG_HOLLOW_POINT_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_PISTOL_MK2_CLIP_FMJ"):
-						iVar0 = Global_262145.f_21480 /* Tunable: -506102803 */;
+						iVar0 = Global_262145.f_21480 /* Tunable: UPGRD_WEAP_MOD_PISTOL_MK2_MAG_FULL_METAL_JACKET_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_PISTOL_MK2_CLIP_INCENDIARY"):
-						iVar0 = Global_262145.f_21482 /* Tunable: 1296166421 */;
+						iVar0 = Global_262145.f_21482 /* Tunable: UPGRD_WEAP_MOD_PISTOL_MK2_MAG_INCENDIARY_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_PISTOL_MK2_CLIP_TRACER"):
-						iVar0 = Global_262145.f_21483 /* Tunable: 1866512725 */;
+						iVar0 = Global_262145.f_21483 /* Tunable: UPGRD_WEAP_MOD_PISTOL_MK2_MAG_TRACER_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_AT_PI_FLSH_02"):
-						iVar0 = Global_262145.f_21484 /* Tunable: -1999312528 */;
+						iVar0 = Global_262145.f_21484 /* Tunable: UPGRD_WEAP_MOD_PISTOL_MK2_FLASHLIGHTS_FLASHLIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_PI_RAIL"):
-						iVar0 = Global_262145.f_21485 /* Tunable: 1055846757 */;
+						iVar0 = Global_262145.f_21485 /* Tunable: UPGRD_WEAP_MOD_PISTOL_MK2_FLASHLIGHTS_RAIL_MOUNT */;
 						break;
 					
 					case joaat("COMPONENT_AT_PI_SUPP_02"):
-						iVar0 = Global_262145.f_21486 /* Tunable: 1378860015 */;
+						iVar0 = Global_262145.f_21486 /* Tunable: UPGRD_WEAP_MOD_PISTOL_MK2_MUZ_SUPPRESSOR */;
 						break;
 					
 					case joaat("COMPONENT_AT_PI_COMP"):
-						iVar0 = Global_262145.f_21487 /* Tunable: 1792089868 */;
+						iVar0 = Global_262145.f_21487 /* Tunable: UPGRD_WEAP_MOD_PISTOL_MK2_MUZ_COMPENSATOR */;
 						break;
 					
 					case joaat("COMPONENT_PISTOL_MK2_CAMO"):
@@ -7207,71 +7207,71 @@ int func_27(int iParam0, int iParam1)//Position - 0x6924
 						break;
 					
 					case joaat("COMPONENT_SMG_MK2_CLIP_02"):
-						iVar0 = Global_262145.f_21488 /* Tunable: -220053906 */;
+						iVar0 = Global_262145.f_21488 /* Tunable: UPGRD_WEAP_MOD_SMG_MK2_MAG_EXTENDED_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_SMG_MK2_CLIP_HOLLOWPOINT"):
-						iVar0 = Global_262145.f_21490 /* Tunable: -952131423 */;
+						iVar0 = Global_262145.f_21490 /* Tunable: UPGRD_WEAP_MOD_SMG_MK2_MAG_HOLLOW_POINT_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_SMG_MK2_CLIP_FMJ"):
-						iVar0 = Global_262145.f_21489 /* Tunable: -1897517534 */;
+						iVar0 = Global_262145.f_21489 /* Tunable: UPGRD_WEAP_MOD_SMG_MK2_MAG_FULL_METAL_JACKET_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_SMG_MK2_CLIP_INCENDIARY"):
-						iVar0 = Global_262145.f_21491 /* Tunable: -977321503 */;
+						iVar0 = Global_262145.f_21491 /* Tunable: UPGRD_WEAP_MOD_SMG_MK2_MAG_INCENDIARY_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_SMG_MK2_CLIP_TRACER"):
-						iVar0 = Global_262145.f_21492 /* Tunable: -1188309354 */;
+						iVar0 = Global_262145.f_21492 /* Tunable: UPGRD_WEAP_MOD_SMG_MK2_MAG_TRACER_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
-						iVar0 = Global_262145.f_21493 /* Tunable: -2017541960 */;
+						iVar0 = Global_262145.f_21493 /* Tunable: UPGRD_WEAP_MOD_SMG_MK2_FLASHLIGHTS_FLASHLIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_SIGHTS_SMG"):
-						iVar0 = Global_262145.f_21494 /* Tunable: 1261888316 */;
+						iVar0 = Global_262145.f_21494 /* Tunable: UPGRD_WEAP_MOD_SMG_MK2_SCOPES_HOLOGRAPHIC_SIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MACRO_02_SMG_MK2"):
-						iVar0 = Global_262145.f_21495 /* Tunable: 735171511 */;
+						iVar0 = Global_262145.f_21495 /* Tunable: UPGRD_WEAP_MOD_SMG_MK2_SCOPES_SMALL_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_SMALL_SMG_MK2"):
-						iVar0 = Global_262145.f_21496 /* Tunable: -1290434805 */;
+						iVar0 = Global_262145.f_21496 /* Tunable: UPGRD_WEAP_MOD_SMG_MK2_SCOPES_MEDIUM_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_PI_SUPP"):
-						iVar0 = Global_262145.f_21497 /* Tunable: 662271695 */;
+						iVar0 = Global_262145.f_21497 /* Tunable: UPGRD_WEAP_MOD_SMG_MK2_MUZ_SUPPRESSOR */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_01"):
-						iVar0 = Global_262145.f_21498 /* Tunable: 1781046189 */;
+						iVar0 = Global_262145.f_21498 /* Tunable: UPGRD_WEAP_MOD_SMG_MK2_MUZ_MUZZLE_BRAKE_1 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_02"):
-						iVar0 = Global_262145.f_21499 /* Tunable: -1288131124 */;
+						iVar0 = Global_262145.f_21499 /* Tunable: UPGRD_WEAP_MOD_SMG_MK2_MUZ_MUZZLE_BRAKE_2 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_03"):
-						iVar0 = Global_262145.f_21500 /* Tunable: -1129922392 */;
+						iVar0 = Global_262145.f_21500 /* Tunable: UPGRD_WEAP_MOD_SMG_MK2_MUZ_MUZZLE_BRAKE_3 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_04"):
-						iVar0 = Global_262145.f_21501 /* Tunable: 129226433 */;
+						iVar0 = Global_262145.f_21501 /* Tunable: UPGRD_WEAP_MOD_SMG_MK2_MUZ_MUZZLE_BRAKE_4 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_05"):
-						iVar0 = Global_262145.f_21502 /* Tunable: -1594095277 */;
+						iVar0 = Global_262145.f_21502 /* Tunable: UPGRD_WEAP_MOD_SMG_MK2_MUZ_MUZZLE_BRAKE_5 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_06"):
-						iVar0 = Global_262145.f_21503 /* Tunable: -444427681 */;
+						iVar0 = Global_262145.f_21503 /* Tunable: UPGRD_WEAP_MOD_SMG_MK2_MUZ_MUZZLE_BRAKE_6 */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_07"):
-						iVar0 = Global_262145.f_21504 /* Tunable: -137611534 */;
+						iVar0 = Global_262145.f_21504 /* Tunable: UPGRD_WEAP_MOD_SMG_MK2_MUZ_MUZZLE_BRAKE_7 */;
 						break;
 					
 					case joaat("COMPONENT_AT_SB_BARREL_01"):
@@ -7279,7 +7279,7 @@ int func_27(int iParam0, int iParam1)//Position - 0x6924
 						break;
 					
 					case joaat("COMPONENT_AT_SB_BARREL_02"):
-						iVar0 = Global_262145.f_21505 /* Tunable: 946764522 */;
+						iVar0 = Global_262145.f_21505 /* Tunable: UPGRD_WEAP_MOD_SMG_MK2_BARRELS_HVY_BARREL */;
 						break;
 					
 					case joaat("COMPONENT_SMG_MK2_CAMO"):
@@ -7336,43 +7336,43 @@ int func_27(int iParam0, int iParam1)//Position - 0x6924
 						break;
 					
 					case joaat("COMPONENT_PUMPSHOTGUN_MK2_CLIP_ARMORPIERCING"):
-						iVar0 = Global_262145.f_23175 /* Tunable: 1652287555 */;
+						iVar0 = Global_262145.f_23175 /* Tunable: UPGRD_WEAP_MOD_PUMPSHOTGUN_MK2_MAG_ARMOR_PIERCING_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_PUMPSHOTGUN_MK2_CLIP_EXPLOSIVE"):
-						iVar0 = Global_262145.f_23176 /* Tunable: -535703975 */;
+						iVar0 = Global_262145.f_23176 /* Tunable: UPGRD_WEAP_MOD_PUMPSHOTGUN_MK2_MAG_EXPLOSIVE_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_PUMPSHOTGUN_MK2_CLIP_HOLLOWPOINT"):
-						iVar0 = Global_262145.f_23174 /* Tunable: 95511928 */;
+						iVar0 = Global_262145.f_23174 /* Tunable: UPGRD_WEAP_MOD_PUMPSHOTGUN_MK2_MAG_HOLLOW_POINT_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_PUMPSHOTGUN_MK2_CLIP_INCENDIARY"):
-						iVar0 = Global_262145.f_23173 /* Tunable: -665155806 */;
+						iVar0 = Global_262145.f_23173 /* Tunable: UPGRD_WEAP_MOD_PUMPSHOTGUN_MK2_MAG_INCENDIARY_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
-						iVar0 = Global_262145.f_23202 /* Tunable: 307884450 */;
+						iVar0 = Global_262145.f_23202 /* Tunable: H2_PUMP_SHOTGUN_MK_II_MOD_FLASHLIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_SIGHTS"):
-						iVar0 = Global_262145.f_23203 /* Tunable: 1712943577 */;
+						iVar0 = Global_262145.f_23203 /* Tunable: H2_PUMP_SHOTGUN_MK_II_MOD_HOLOGRAPHIC_SIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MACRO_MK2"):
-						iVar0 = Global_262145.f_23204 /* Tunable: -1605498735 */;
+						iVar0 = Global_262145.f_23204 /* Tunable: H2_PUMP_SHOTGUN_MK_II_MOD_SMALL_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_SMALL_MK2"):
-						iVar0 = Global_262145.f_23205 /* Tunable: -1766164400 */;
+						iVar0 = Global_262145.f_23205 /* Tunable: H2_PUMP_SHOTGUN_MK_II_MOD_MEDIUM_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_SR_SUPP_03"):
-						iVar0 = Global_262145.f_23206 /* Tunable: 1535840470 */;
+						iVar0 = Global_262145.f_23206 /* Tunable: H2_PUMP_SHOTGUN_MK_II_MOD_SUPPRESSOR */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_08"):
-						iVar0 = Global_262145.f_23207 /* Tunable: 179346571 */;
+						iVar0 = Global_262145.f_23207 /* Tunable: H2_PUMP_SHOTGUN_MK_II_MOD_MUZZLE_BRAKE */;
 						break;
 					
 					case joaat("COMPONENT_PUMPSHOTGUN_MK2_CAMO"):
@@ -7429,75 +7429,75 @@ int func_27(int iParam0, int iParam1)//Position - 0x6924
 						break;
 					
 					case joaat("COMPONENT_SPECIALCARBINE_MK2_CLIP_02"):
-						iVar0 = Global_262145.f_23177 /* Tunable: -1133159623 */;
+						iVar0 = Global_262145.f_23177 /* Tunable: UPGRD_WEAP_MOD_SPECIALCARBINE_MK2_MAG_EXTENDED_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_SPECIALCARBINE_MK2_CLIP_ARMORPIERCING"):
-						iVar0 = Global_262145.f_23181 /* Tunable: 884315323 */;
+						iVar0 = Global_262145.f_23181 /* Tunable: UPGRD_WEAP_MOD_SPECIALCARBINE_MK2_MAG_ARMOR_PIERCING_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_SPECIALCARBINE_MK2_CLIP_FMJ"):
-						iVar0 = Global_262145.f_23179 /* Tunable: 117177146 */;
+						iVar0 = Global_262145.f_23179 /* Tunable: UPGRD_WEAP_MOD_SPECIALCARBINE_MK2_MAG_FMJ_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_SPECIALCARBINE_MK2_CLIP_INCENDIARY"):
-						iVar0 = Global_262145.f_23180 /* Tunable: 1711440619 */;
+						iVar0 = Global_262145.f_23180 /* Tunable: UPGRD_WEAP_MOD_SPECIALCARBINE_MK2_MAG_INCENDIARY_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_SPECIALCARBINE_MK2_CLIP_TRACER"):
-						iVar0 = Global_262145.f_23178 /* Tunable: 1515067404 */;
+						iVar0 = Global_262145.f_23178 /* Tunable: UPGRD_WEAP_MOD_SPECIALCARBINE_MK2_MAG_TRACER_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
-						iVar0 = Global_262145.f_23208 /* Tunable: -675401976 */;
+						iVar0 = Global_262145.f_23208 /* Tunable: H2_SPECIAL_CARBINE_MK_II_MOD_FLASHLIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_SIGHTS"):
-						iVar0 = Global_262145.f_23209 /* Tunable: 1348404810 */;
+						iVar0 = Global_262145.f_23209 /* Tunable: H2_SPECIAL_CARBINE_MK_II_MOD_HOLOGRAPHIC_SIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MACRO_MK2"):
-						iVar0 = Global_262145.f_23210 /* Tunable: 1661135184 */;
+						iVar0 = Global_262145.f_23210 /* Tunable: H2_SPECIAL_CARBINE_MK_II_MOD_SMALL_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MEDIUM_MK2"):
-						iVar0 = Global_262145.f_23211 /* Tunable: -622756256 */;
+						iVar0 = Global_262145.f_23211 /* Tunable: H2_SPECIAL_CARBINE_MK_II_MOD_LARGE_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP_02"):
-						iVar0 = Global_262145.f_23212 /* Tunable: 1005673153 */;
+						iVar0 = Global_262145.f_23212 /* Tunable: H2_SPECIAL_CARBINE_MK_II_MOD_SUPPRESSOR */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_01"):
-						iVar0 = Global_262145.f_23213 /* Tunable: -2043761976 */;
+						iVar0 = Global_262145.f_23213 /* Tunable: H2_SPECIAL_CARBINE_MK_II_MOD_FLAT_MUZZLE_BRAKE */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_02"):
-						iVar0 = Global_262145.f_23214 /* Tunable: 1467944449 */;
+						iVar0 = Global_262145.f_23214 /* Tunable: H2_SPECIAL_CARBINE_MK_II_MOD_TACTICAL_MUZZLE_BRAKE */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_03"):
-						iVar0 = Global_262145.f_23215 /* Tunable: 2104462570 */;
+						iVar0 = Global_262145.f_23215 /* Tunable: H2_SPECIAL_CARBINE_MK_II_MOD_FAT_END_MUZZLE_BRAKE */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_04"):
-						iVar0 = Global_262145.f_23216 /* Tunable: -686370155 */;
+						iVar0 = Global_262145.f_23216 /* Tunable: H2_SPECIAL_CARBINE_MK_II_MOD_PRECISION_MUZZLE_BRAKE */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_05"):
-						iVar0 = Global_262145.f_23217 /* Tunable: 1322082777 */;
+						iVar0 = Global_262145.f_23217 /* Tunable: H2_SPECIAL_CARBINE_MK_II_MOD_HEAVY_DUTY_MUZZLE_BRAKE */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_06"):
-						iVar0 = Global_262145.f_23218 /* Tunable: -189707864 */;
+						iVar0 = Global_262145.f_23218 /* Tunable: H2_SPECIAL_CARBINE_MK_II_MOD_SLANTED_MUZZLE_BRAKE */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_07"):
-						iVar0 = Global_262145.f_23219 /* Tunable: 1794058860 */;
+						iVar0 = Global_262145.f_23219 /* Tunable: H2_SPECIAL_CARBINE_MK_II_MOD_SPLIT_END_MUZZLE_BRAKE */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_AFGRIP_02"):
-						iVar0 = Global_262145.f_23220 /* Tunable: -77140556 */;
+						iVar0 = Global_262145.f_23220 /* Tunable: H2_SPECIAL_CARBINE_MK_II_MOD_GRIP */;
 						break;
 					
 					case joaat("COMPONENT_AT_SC_BARREL_01"):
@@ -7505,7 +7505,7 @@ int func_27(int iParam0, int iParam1)//Position - 0x6924
 						break;
 					
 					case joaat("COMPONENT_AT_SC_BARREL_02"):
-						iVar0 = Global_262145.f_23221 /* Tunable: 1028863717 */;
+						iVar0 = Global_262145.f_23221 /* Tunable: H2_SPECIAL_CARBINE_MK_II_MOD_HEAVY_BARREL */;
 						break;
 					
 					case joaat("COMPONENT_SPECIALCARBINE_MK2_CAMO"):
@@ -7562,39 +7562,39 @@ int func_27(int iParam0, int iParam1)//Position - 0x6924
 						break;
 					
 					case joaat("COMPONENT_SNSPISTOL_MK2_CLIP_02"):
-						iVar0 = Global_262145.f_24093 /* Tunable: -1086352658 */;
+						iVar0 = Global_262145.f_24093 /* Tunable: UPGRD_WEAP_MOD_SNSPISTOL_MK2_MAG_EXTENDED_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_SNSPISTOL_MK2_CLIP_FMJ"):
-						iVar0 = Global_262145.f_23197 /* Tunable: -1789606801 */;
+						iVar0 = Global_262145.f_23197 /* Tunable: UPGRD_WEAP_MOD_SNSPISTOL_MK2_MAG_FMJ_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_SNSPISTOL_MK2_CLIP_HOLLOWPOINT"):
-						iVar0 = Global_262145.f_23199 /* Tunable: -843751922 */;
+						iVar0 = Global_262145.f_23199 /* Tunable: UPGRD_WEAP_MOD_SNSPISTOL_MK2_MAG_HOLLOW_POINT_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_SNSPISTOL_MK2_CLIP_INCENDIARY"):
-						iVar0 = Global_262145.f_23198 /* Tunable: 839487066 */;
+						iVar0 = Global_262145.f_23198 /* Tunable: UPGRD_WEAP_MOD_SNSPISTOL_MK2_MAG_INCENDIARY_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_SNSPISTOL_MK2_CLIP_TRACER"):
-						iVar0 = Global_262145.f_23196 /* Tunable: -1383425686 */;
+						iVar0 = Global_262145.f_23196 /* Tunable: UPGRD_WEAP_MOD_SNSPISTOL_MK2_MAG_TRACER_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_AT_PI_FLSH_03"):
-						iVar0 = Global_262145.f_23253 /* Tunable: -291501777 */;
+						iVar0 = Global_262145.f_23253 /* Tunable: H2_SNS_PISTOL_MK_II_MOD_FLASHLIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_PI_RAIL_02"):
-						iVar0 = Global_262145.f_23254 /* Tunable: -1122806840 */;
+						iVar0 = Global_262145.f_23254 /* Tunable: H2_SNS_PISTOL_MK_II_MOD_MOUNTED_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_PI_SUPP_02"):
-						iVar0 = Global_262145.f_23255 /* Tunable: -353555220 */;
+						iVar0 = Global_262145.f_23255 /* Tunable: H2_SNS_PISTOL_MK_II_MOD_SUPPRESSOR */;
 						break;
 					
 					case joaat("COMPONENT_AT_PI_COMP_02"):
-						iVar0 = Global_262145.f_23256 /* Tunable: -537982964 */;
+						iVar0 = Global_262145.f_23256 /* Tunable: H2_SNS_PISTOL_MK_II_MOD_COMPENSATOR */;
 						break;
 					
 					case joaat("COMPONENT_SNSPISTOL_MK2_CAMO"):
@@ -7651,35 +7651,35 @@ int func_27(int iParam0, int iParam1)//Position - 0x6924
 						break;
 					
 					case joaat("COMPONENT_MARKSMANRIFLE_MK2_CLIP_02"):
-						iVar0 = Global_262145.f_23182 /* Tunable: -1378447114 */;
+						iVar0 = Global_262145.f_23182 /* Tunable: UPGRD_WEAP_MOD_MARKSMANRIFLE_MK2_MAG_EXTENDED_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_MARKSMANRIFLE_MK2_CLIP_ARMORPIERCING"):
-						iVar0 = Global_262145.f_23186 /* Tunable: -402362564 */;
+						iVar0 = Global_262145.f_23186 /* Tunable: UPGRD_WEAP_MOD_MARKSMANRIFLE_MK2_MAG_ARMOR_PIERCING_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_MARKSMANRIFLE_MK2_CLIP_FMJ"):
-						iVar0 = Global_262145.f_23184 /* Tunable: -901067049 */;
+						iVar0 = Global_262145.f_23184 /* Tunable: UPGRD_WEAP_MOD_MARKSMANRIFLE_MK2_MAG_FMJ_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_MARKSMANRIFLE_MK2_CLIP_INCENDIARY"):
-						iVar0 = Global_262145.f_23185 /* Tunable: 148273883 */;
+						iVar0 = Global_262145.f_23185 /* Tunable: UPGRD_WEAP_MOD_MARKSMANRIFLE_MK2_MAG_INCENDIARY_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_MARKSMANRIFLE_MK2_CLIP_TRACER"):
-						iVar0 = Global_262145.f_23183 /* Tunable: -1383428803 */;
+						iVar0 = Global_262145.f_23183 /* Tunable: UPGRD_WEAP_MOD_MARKSMANRIFLE_MK2_MAG_TRACER_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
-						iVar0 = Global_262145.f_23222 /* Tunable: -852920589 */;
+						iVar0 = Global_262145.f_23222 /* Tunable: H2_MARKSMAN_RIFLE_MK_II_MOD_FLASHLIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_SIGHTS"):
-						iVar0 = Global_262145.f_23223 /* Tunable: -235285662 */;
+						iVar0 = Global_262145.f_23223 /* Tunable: H2_MARKSMAN_RIFLE_MK_II_MOD_HOLOGRAPHIC_SIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MEDIUM_MK2"):
-						iVar0 = Global_262145.f_23224 /* Tunable: 947508682 */;
+						iVar0 = Global_262145.f_23224 /* Tunable: H2_MARKSMAN_RIFLE_MK_II_MOD_SMALL_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_LARGE_FIXED_ZOOM_MK2"):
@@ -7687,39 +7687,39 @@ int func_27(int iParam0, int iParam1)//Position - 0x6924
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP"):
-						iVar0 = Global_262145.f_23225 /* Tunable: -829621681 */;
+						iVar0 = Global_262145.f_23225 /* Tunable: H2_MARKSMAN_RIFLE_MK_II_MOD_SUPPRESSOR */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_01"):
-						iVar0 = Global_262145.f_23226 /* Tunable: -1449227090 */;
+						iVar0 = Global_262145.f_23226 /* Tunable: H2_MARKSMAN_RIFLE_MK_II_MOD_FLAT_MUZZLE_BRAKE */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_02"):
-						iVar0 = Global_262145.f_23227 /* Tunable: -1300374254 */;
+						iVar0 = Global_262145.f_23227 /* Tunable: H2_MARKSMAN_RIFLE_MK_II_MOD_TACTICAL_MUZZLE_BRAKE */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_03"):
-						iVar0 = Global_262145.f_23228 /* Tunable: 989071156 */;
+						iVar0 = Global_262145.f_23228 /* Tunable: H2_MARKSMAN_RIFLE_MK_II_MOD_FAT_END_MUZZLE_BRAKE */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_04"):
-						iVar0 = Global_262145.f_23229 /* Tunable: 1338637515 */;
+						iVar0 = Global_262145.f_23229 /* Tunable: H2_MARKSMAN_RIFLE_MK_II_MOD_PRECISION_MUZZLE_BRAKE */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_05"):
-						iVar0 = Global_262145.f_23230 /* Tunable: -1766547494 */;
+						iVar0 = Global_262145.f_23230 /* Tunable: H2_MARKSMAN_RIFLE_MK_II_MOD_HEAVY_DUTY_MUZZLE_BRAKE */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_06"):
-						iVar0 = Global_262145.f_23231 /* Tunable: -1090214635 */;
+						iVar0 = Global_262145.f_23231 /* Tunable: H2_MARKSMAN_RIFLE_MK_II_MOD_SLANTED_MUZZLE_BRAKE */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_07"):
-						iVar0 = Global_262145.f_23232 /* Tunable: 532703720 */;
+						iVar0 = Global_262145.f_23232 /* Tunable: H2_MARKSMAN_RIFLE_MK_II_MOD_SPLIT_END_MUZZLE_BRAKE */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_AFGRIP_02"):
-						iVar0 = Global_262145.f_23233 /* Tunable: -2106260249 */;
+						iVar0 = Global_262145.f_23233 /* Tunable: H2_MARKSMAN_RIFLE_MK_II_MOD_GRIP */;
 						break;
 					
 					case joaat("COMPONENT_AT_MRFL_BARREL_01"):
@@ -7727,7 +7727,7 @@ int func_27(int iParam0, int iParam1)//Position - 0x6924
 						break;
 					
 					case joaat("COMPONENT_AT_MRFL_BARREL_02"):
-						iVar0 = Global_262145.f_23234 /* Tunable: -249998032 */;
+						iVar0 = Global_262145.f_23234 /* Tunable: H2_MARKSMAN_RIFLE_MK_II_MOD_HEAVY_BARREL */;
 						break;
 					
 					case joaat("COMPONENT_MARKSMANRIFLE_MK2_CAMO"):
@@ -7784,35 +7784,35 @@ int func_27(int iParam0, int iParam1)//Position - 0x6924
 						break;
 					
 					case joaat("COMPONENT_REVOLVER_MK2_CLIP_TRACER"):
-						iVar0 = Global_262145.f_23187 /* Tunable: 1955558754 */;
+						iVar0 = Global_262145.f_23187 /* Tunable: UPGRD_WEAP_MOD_REVOLVER_MK2_MAG_TRACER_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_REVOLVER_MK2_CLIP_FMJ"):
-						iVar0 = Global_262145.f_23188 /* Tunable: 38016460 */;
+						iVar0 = Global_262145.f_23188 /* Tunable: UPGRD_WEAP_MOD_REVOLVER_MK2_MAG_FMJ_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_REVOLVER_MK2_CLIP_HOLLOWPOINT"):
-						iVar0 = Global_262145.f_23190 /* Tunable: 784593552 */;
+						iVar0 = Global_262145.f_23190 /* Tunable: UPGRD_WEAP_MOD_REVOLVER_MK2_MAG_HOLLOW_POINT_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_REVOLVER_MK2_CLIP_INCENDIARY"):
-						iVar0 = Global_262145.f_23189 /* Tunable: 1408548101 */;
+						iVar0 = Global_262145.f_23189 /* Tunable: UPGRD_WEAP_MOD_REVOLVER_MK2_MAG_INCENDIARY_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_AT_SIGHTS"):
-						iVar0 = Global_262145.f_23235 /* Tunable: 1857338618 */;
+						iVar0 = Global_262145.f_23235 /* Tunable: H2_HEAVY_REVOLVER_MK_II_MOD_HOLOGRAPHIC_SIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MACRO_MK2"):
-						iVar0 = Global_262145.f_23236 /* Tunable: 1760541515 */;
+						iVar0 = Global_262145.f_23236 /* Tunable: H2_HEAVY_REVOLVER_MK_II_MOD_SMALL_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_PI_FLSH"):
-						iVar0 = Global_262145.f_23237 /* Tunable: 141245052 */;
+						iVar0 = Global_262145.f_23237 /* Tunable: H2_HEAVY_REVOLVER_MK_II_MOD_FLASHLIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_PI_COMP_03"):
-						iVar0 = Global_262145.f_23238 /* Tunable: -1827907706 */;
+						iVar0 = Global_262145.f_23238 /* Tunable: H2_HEAVY_REVOLVER_MK_II_MOD_COMPENSATOR */;
 						break;
 					
 					case joaat("COMPONENT_REVOLVER_MK2_CAMO"):
@@ -7869,39 +7869,39 @@ int func_27(int iParam0, int iParam1)//Position - 0x6924
 						break;
 					
 					case joaat("COMPONENT_BULLPUPRIFLE_MK2_CLIP_02"):
-						iVar0 = Global_262145.f_23191 /* Tunable: -316590252 */;
+						iVar0 = Global_262145.f_23191 /* Tunable: UPGRD_WEAP_MOD_BULLPUPRIFLE_MK2_MAG_EXTENDED_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_BULLPUPRIFLE_MK2_CLIP_ARMORPIERCING"):
-						iVar0 = Global_262145.f_23195 /* Tunable: -2001892987 */;
+						iVar0 = Global_262145.f_23195 /* Tunable: UPGRD_WEAP_MOD_BULLPUPRIFLE_MK2_MAG_ARMOR_PIERCING_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_BULLPUPRIFLE_MK2_CLIP_FMJ"):
-						iVar0 = Global_262145.f_23193 /* Tunable: 545820391 */;
+						iVar0 = Global_262145.f_23193 /* Tunable: UPGRD_WEAP_MOD_BULLPUPRIFLE_MK2_MAG_FMJ_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_BULLPUPRIFLE_MK2_CLIP_INCENDIARY"):
-						iVar0 = Global_262145.f_23194 /* Tunable: 794018680 */;
+						iVar0 = Global_262145.f_23194 /* Tunable: UPGRD_WEAP_MOD_BULLPUPRIFLE_MK2_MAG_INCENDIARY_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_BULLPUPRIFLE_MK2_CLIP_TRACER"):
-						iVar0 = Global_262145.f_23192 /* Tunable: -493624257 */;
+						iVar0 = Global_262145.f_23192 /* Tunable: UPGRD_WEAP_MOD_BULLPUPRIFLE_MK2_MAG_TRACER_ROUNDS */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_FLSH"):
-						iVar0 = Global_262145.f_23239 /* Tunable: 1592341943 */;
+						iVar0 = Global_262145.f_23239 /* Tunable: H2_BULLPUP_RIFLE_MK_II_MOD_FLASHLIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_SIGHTS"):
-						iVar0 = Global_262145.f_23240 /* Tunable: 2078892836 */;
+						iVar0 = Global_262145.f_23240 /* Tunable: H2_BULLPUP_RIFLE_MK_II_MOD_HOLOGRAPHIC_SIGHT */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_MACRO_02_MK2"):
-						iVar0 = Global_262145.f_23241 /* Tunable: 1554127006 */;
+						iVar0 = Global_262145.f_23241 /* Tunable: H2_BULLPUP_RIFLE_MK_II_MOD_SMALL_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_SCOPE_SMALL_MK2"):
-						iVar0 = Global_262145.f_23242 /* Tunable: -1314225140 */;
+						iVar0 = Global_262145.f_23242 /* Tunable: H2_BULLPUP_RIFLE_MK_II_MOD_MEDIUM_SCOPE */;
 						break;
 					
 					case joaat("COMPONENT_AT_BP_BARREL_01"):
@@ -7909,43 +7909,43 @@ int func_27(int iParam0, int iParam1)//Position - 0x6924
 						break;
 					
 					case joaat("COMPONENT_AT_BP_BARREL_02"):
-						iVar0 = Global_262145.f_23252 /* Tunable: -2119010024 */;
+						iVar0 = Global_262145.f_23252 /* Tunable: H2_BULLPUP_RIFLE_MK_II_MOD_HEAVY_BARREL */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_SUPP"):
-						iVar0 = Global_262145.f_23243 /* Tunable: -1948594273 */;
+						iVar0 = Global_262145.f_23243 /* Tunable: H2_BULLPUP_RIFLE_MK_II_MOD_SUPPRESSOR */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_01"):
-						iVar0 = Global_262145.f_23244 /* Tunable: 21146921 */;
+						iVar0 = Global_262145.f_23244 /* Tunable: H2_BULLPUP_RIFLE_MK_II_MOD_FLAT_MUZZLE_BRAKE */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_02"):
-						iVar0 = Global_262145.f_23245 /* Tunable: 1358418183 */;
+						iVar0 = Global_262145.f_23245 /* Tunable: H2_BULLPUP_RIFLE_MK_II_MOD_TACTICAL_MUZZLE_BRAKE */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_03"):
-						iVar0 = Global_262145.f_23246 /* Tunable: 1464361534 */;
+						iVar0 = Global_262145.f_23246 /* Tunable: H2_BULLPUP_RIFLE_MK_II_MOD_FAT_END_MUZZLE_BRAKE */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_04"):
-						iVar0 = Global_262145.f_23247 /* Tunable: -268389376 */;
+						iVar0 = Global_262145.f_23247 /* Tunable: H2_BULLPUP_RIFLE_MK_II_MOD_PRECISION_MUZZLE_BRAKE */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_05"):
-						iVar0 = Global_262145.f_23248 /* Tunable: -1823864223 */;
+						iVar0 = Global_262145.f_23248 /* Tunable: H2_BULLPUP_RIFLE_MK_II_MOD_HEAVY_DUTY_MUZZLE_BRAKE */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_06"):
-						iVar0 = Global_262145.f_23249 /* Tunable: -574324148 */;
+						iVar0 = Global_262145.f_23249 /* Tunable: H2_BULLPUP_RIFLE_MK_II_MOD_SLANTED_MUZZLE_BRAKE */;
 						break;
 					
 					case joaat("COMPONENT_AT_MUZZLE_07"):
-						iVar0 = Global_262145.f_23250 /* Tunable: 999664111 */;
+						iVar0 = Global_262145.f_23250 /* Tunable: H2_BULLPUP_RIFLE_MK_II_MOD_SPLIT_END_MUZZLE_BRAKE */;
 						break;
 					
 					case joaat("COMPONENT_AT_AR_AFGRIP_02"):
-						iVar0 = Global_262145.f_23251 /* Tunable: -1915566950 */;
+						iVar0 = Global_262145.f_23251 /* Tunable: H2_BULLPUP_RIFLE_MK_II_MOD_GRIP */;
 						break;
 					
 					case joaat("COMPONENT_BULLPUPRIFLE_MK2_CAMO"):
@@ -8011,11 +8011,11 @@ int func_27(int iParam0, int iParam1)//Position - 0x6924
 						break;
 					
 					case joaat("COMPONENT_CERAMICPISTOL_CLIP_02"):
-						iVar0 = Global_262145.f_28974 /* Tunable: 453457679 */;
+						iVar0 = Global_262145.f_28974 /* Tunable: ARCADE_CERAMIC_PISTOL_MOD_EXTENDED_CLIP */;
 						break;
 					
 					case joaat("COMPONENT_CERAMICPISTOL_SUPP"):
-						iVar0 = Global_262145.f_28975 /* Tunable: 143602352 */;
+						iVar0 = Global_262145.f_28975 /* Tunable: ARCADE_CERAMIC_PISTOL_MOD_SUPRESSOR */;
 						break;
 				}
 				break;

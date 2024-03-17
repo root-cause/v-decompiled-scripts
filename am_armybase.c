@@ -187,7 +187,7 @@ void __EntryFunction__()//Position - 0x0
 		}
 		if (NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
-			if ((func_159() && !Global_262145.f_22179 /* Tunable: 1137600288 */) && !NETWORK::NETWORK_IS_ACTIVITY_SESSION())
+			if ((func_159() && !Global_262145.f_22179 /* Tunable: SMUGGLER_BLOCK_FZ_EXP_WARNING */) && !NETWORK::NETWORK_IS_ACTIVITY_SESSION())
 			{
 				func_150();
 			}
@@ -262,7 +262,7 @@ void __EntryFunction__()//Position - 0x0
 								{
 									iLocal_574 = 1;
 								}
-								if (Global_262145.f_22163 /* Tunable: -2075966757 */ && !func_10(PLAYER::PLAYER_ID()))
+								if (Global_262145.f_22163 /* Tunable: ZANCUDO_BLOCK_WANTED */ && !func_10(PLAYER::PLAYER_ID()))
 								{
 									if ((!bLocal_570 && PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID()) != 0) && iLocal_574)
 									{
@@ -304,9 +304,9 @@ void __EntryFunction__()//Position - 0x0
 											PLAYER::REPORT_POLICE_SPOTTED_PLAYER(PLAYER::PLAYER_ID());
 										}
 									}
-									else if (PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID()) < Global_262145.f_22100 /* Tunable: 1302216568 */)
+									else if (PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID()) < Global_262145.f_22100 /* Tunable: GANGWANTEDLEVELZANCUDO */)
 									{
-										PLAYER::REPORT_CRIME(PLAYER::PLAYER_ID(), 36, (PLAYER::GET_WANTED_LEVEL_THRESHOLD(Global_262145.f_22100 /* Tunable: 1302216568 */) - PLAYER::GET_WANTED_LEVEL_THRESHOLD(PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID()))));
+										PLAYER::REPORT_CRIME(PLAYER::PLAYER_ID(), 36, (PLAYER::GET_WANTED_LEVEL_THRESHOLD(Global_262145.f_22100 /* Tunable: GANGWANTEDLEVELZANCUDO */) - PLAYER::GET_WANTED_LEVEL_THRESHOLD(PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID()))));
 									}
 									else
 									{
@@ -380,7 +380,7 @@ int func_3()//Position - 0x523
 	
 	if ((((func_21(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), 3, 1000, 0) || func_20(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), false), 1000)) && !func_9()) && !func_24(PLAYER::PLAYER_ID())) && !Global_4456449.f_5 == 6)
 	{
-		if (Global_262145.f_22094 /* Tunable: 11080722 */)
+		if (Global_262145.f_22094 /* Tunable: DISABLEENEMYAIFORTZANCUDO */)
 		{
 			return 0;
 		}
@@ -2074,7 +2074,7 @@ void func_69()//Position - 0x303A
 
 int func_70()//Position - 0x3071
 {
-	if (!Global_262145.f_29155 /* Tunable: 1028571554 */)
+	if (!Global_262145.f_29155 /* Tunable: NPC_PHONE_TELEMETRY_TRACKING_ENABLED */)
 	{
 		return 0;
 	}
@@ -2900,7 +2900,7 @@ void func_111(int iParam0)//Position - 0x3E6B
 					}
 					else
 					{
-						PLAYER::REPORT_CRIME(PLAYER::PLAYER_ID(), 36, PLAYER::GET_WANTED_LEVEL_THRESHOLD(Global_262145.f_22100 /* Tunable: 1302216568 */));
+						PLAYER::REPORT_CRIME(PLAYER::PLAYER_ID(), 36, PLAYER::GET_WANTED_LEVEL_THRESHOLD(Global_262145.f_22100 /* Tunable: GANGWANTEDLEVELZANCUDO */));
 					}
 				}
 			}
@@ -2928,7 +2928,7 @@ void func_111(int iParam0)//Position - 0x3E6B
 					}
 					else
 					{
-						PLAYER::REPORT_CRIME(PLAYER::PLAYER_ID(), 36, (PLAYER::GET_WANTED_LEVEL_THRESHOLD(Global_262145.f_22100 /* Tunable: 1302216568 */) - PLAYER::GET_WANTED_LEVEL_THRESHOLD(PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID()))));
+						PLAYER::REPORT_CRIME(PLAYER::PLAYER_ID(), 36, (PLAYER::GET_WANTED_LEVEL_THRESHOLD(Global_262145.f_22100 /* Tunable: GANGWANTEDLEVELZANCUDO */) - PLAYER::GET_WANTED_LEVEL_THRESHOLD(PLAYER::GET_PLAYER_WANTED_LEVEL(PLAYER::PLAYER_ID()))));
 					}
 				}
 			}
@@ -3962,11 +3962,11 @@ void func_150()//Position - 0x5507
 	{
 		return;
 	}
-	if (func_105(&uLocal_580) && func_103(&uLocal_580, Global_262145.f_22180 /* Tunable: -2077916586 */, 0))
+	if (func_105(&uLocal_580) && func_103(&uLocal_580, Global_262145.f_22180 /* Tunable: SMUGGLER_FZ_EXP_DELAY */, 0))
 	{
 		func_102(&uLocal_580);
 	}
-	if (func_105(&uLocal_578) && func_103(&uLocal_578, Global_262145.f_22181 /* Tunable: -372789145 */, 0))
+	if (func_105(&uLocal_578) && func_103(&uLocal_578, Global_262145.f_22181 /* Tunable: SMUGGLER_FZ_EXP_TIMER */, 0))
 	{
 		func_102(&uLocal_578);
 		iLocal_575 = 0;

@@ -4039,10 +4039,10 @@ float func_102(int iParam0, int iParam1)//Position - 0x3773
 					return Global_262145.f_32074 /* Tunable: PAYPHONE_MOTEL_WEIGHTING */;
 				
 				case 3:
-					return Global_262145.f_32075 /* Tunable: -2129051069 */;
+					return Global_262145.f_32075 /* Tunable: PAYPHONE_HITLIST_WEIGHTING */;
 				
 				case 4:
-					return Global_262145.f_32076 /* Tunable: 37939428 */;
+					return Global_262145.f_32076 /* Tunable: PAYPHONE_COORDATTACK_WEIGHTING */;
 				
 				case 5:
 					return Global_262145.f_32077 /* Tunable: PAYPHONE_CONSTRUCTION_WEIGHTING */;
@@ -4061,10 +4061,10 @@ float func_102(int iParam0, int iParam1)//Position - 0x3773
 			switch (iParam1)
 			{
 				case 0:
-					return Global_262145.f_33573 /* Tunable: 289990589 */;
+					return Global_262145.f_33573 /* Tunable: FREQUENCY_WEIGHT_SOURCE_CARGO_AUTO_SHOP_ROBBERY */;
 				
 				case 1:
-					return Global_262145.f_33574 /* Tunable: 662304577 */;
+					return Global_262145.f_33574 /* Tunable: FREQUENCY_WEIGHT_SOURCE_CARGO_UNDERWATER_CARGO */;
 				
 				default:
 			}
@@ -4074,10 +4074,10 @@ float func_102(int iParam0, int iParam1)//Position - 0x3773
 			switch (iParam1)
 			{
 				case 1:
-					return Global_262145.f_33575 /* Tunable: 230846628 */;
+					return Global_262145.f_33575 /* Tunable: FREQUENCY_WEIGHT_RESUPPLY_MISSIONS_OCEAN_SUPPLY_DROP */;
 				
 				case 0:
-					return Global_262145.f_33576 /* Tunable: -841520834 */;
+					return Global_262145.f_33576 /* Tunable: FREQUENCY_WEIGHT_RESUPPLY_MISSIONS_HACK_PLANE */;
 				
 				default:
 			}
@@ -4087,10 +4087,10 @@ float func_102(int iParam0, int iParam1)//Position - 0x3773
 			switch (iParam1)
 			{
 				case 0:
-					return Global_262145.f_33577 /* Tunable: -1057231589 */;
+					return Global_262145.f_33577 /* Tunable: FREQUENCY_WEIGHT_CLUB_MANAGEMENT_DRUG_PROBLEM */;
 				
 				case 1:
-					return Global_262145.f_33578 /* Tunable: 1854522283 */;
+					return Global_262145.f_33578 /* Tunable: FREQUENCY_WEIGHT_CLUB_MANAGEMENT_PAPARAZZI */;
 				
 				default:
 			}
@@ -6274,10 +6274,10 @@ float func_169(int iParam0, int iParam1)//Position - 0x63D2
 	switch (iParam0)
 	{
 		case 262:
-			return Global_262145.f_32854 /* Tunable: 523318704 */;
+			return Global_262145.f_32854 /* Tunable: PAYPHONE_MAX_LAUNCH_RANGE */;
 		
 		case 292:
-			return Global_262145.f_33996 /* Tunable: 194567857 */;
+			return Global_262145.f_33996 /* Tunable: DISTANCE_CHECK_CUSTOMER_BIKE_DELIVERY_MAXIMUM */;
 		
 		case 306:
 			switch (iParam1)
@@ -6332,86 +6332,86 @@ float func_170(int iParam0, int iParam1)//Position - 0x64A2
 			return func_171(iParam1);
 		
 		case 262:
-			return Global_262145.f_32853 /* Tunable: 1685379467 */;
+			return Global_262145.f_32853 /* Tunable: PAYPHONE_MIN_LAUNCH_RANGE */;
 		
 		case 294:
 			switch (iParam1)
 			{
 				case 0:
-					return SYSTEM::TO_FLOAT(Global_262145.f_33980 /* Tunable: -2047637070 */);
+					return SYSTEM::TO_FLOAT(Global_262145.f_33980 /* Tunable: DISTANCE_CHECK_AUTO_SHOP_ROBBERY */);
 				
 				case 1:
-					return SYSTEM::TO_FLOAT(Global_262145.f_33981 /* Tunable: 109211224 */);
+					return SYSTEM::TO_FLOAT(Global_262145.f_33981 /* Tunable: DISTANCE_CHECK_UNDERWATER_CARGO */);
 				
 				default:
 			}
 			break;
 		
 		case 295:
-			return SYSTEM::TO_FLOAT(Global_262145.f_33982 /* Tunable: -817430146 */);
+			return SYSTEM::TO_FLOAT(Global_262145.f_33982 /* Tunable: DISTANCE_CHECK_EXPORT_CARGO */);
 		
 		case 297:
 			switch (iParam1)
 			{
 				case 1:
-					return SYSTEM::TO_FLOAT(Global_262145.f_33983 /* Tunable: 82708950 */);
+					return SYSTEM::TO_FLOAT(Global_262145.f_33983 /* Tunable: DISTANCE_CHECK_OCEAN_SUPPLY_DROP */);
 				
 				case 0:
-					return SYSTEM::TO_FLOAT(Global_262145.f_33984 /* Tunable: -1872673545 */);
+					return SYSTEM::TO_FLOAT(Global_262145.f_33984 /* Tunable: DISTANCE_CHECK_HACK_PLANE */);
 				
 				default:
 			}
 			break;
 		
 		case 296:
-			return SYSTEM::TO_FLOAT(Global_262145.f_33985 /* Tunable: -159223983 */);
+			return SYSTEM::TO_FLOAT(Global_262145.f_33985 /* Tunable: DISTANCE_CHECK_AMMUNATION_DELIVERY */);
 		
 		case 298:
-			return SYSTEM::TO_FLOAT(Global_262145.f_33986 /* Tunable: 1628433752 */);
+			return SYSTEM::TO_FLOAT(Global_262145.f_33986 /* Tunable: DISTANCE_CHECK_JUGGERNAUT */);
 		
 		case 293:
 			switch (iParam1)
 			{
 				case 1:
-					return SYSTEM::TO_FLOAT(Global_262145.f_33987 /* Tunable: 1989338603 */);
+					return SYSTEM::TO_FLOAT(Global_262145.f_33987 /* Tunable: DISTANCE_CHECK_ROOFTOP_CONTAINER */);
 				
 				case 0:
-					return SYSTEM::TO_FLOAT(Global_262145.f_33988 /* Tunable: -919096631 */);
+					return SYSTEM::TO_FLOAT(Global_262145.f_33988 /* Tunable: DISTANCE_CHECK_DEATHBIKE_DELIVERY */);
 				
 				default:
 			}
 			break;
 		
 		case 291:
-			return SYSTEM::TO_FLOAT(Global_262145.f_33989 /* Tunable: 2086088797 */);
+			return SYSTEM::TO_FLOAT(Global_262145.f_33989 /* Tunable: DISTANCE_CHECK_BAR_RESUPPLY */);
 		
 		case 292:
-			return SYSTEM::TO_FLOAT(Global_262145.f_33990 /* Tunable: -1355878491 */);
+			return SYSTEM::TO_FLOAT(Global_262145.f_33990 /* Tunable: DISTANCE_CHECK_CUSTOMER_BIKE_DELIVERY */);
 		
 		case 299:
 			switch (iParam1)
 			{
 				case 0:
-					return SYSTEM::TO_FLOAT(Global_262145.f_33991 /* Tunable: -124333932 */);
+					return SYSTEM::TO_FLOAT(Global_262145.f_33991 /* Tunable: DISTANCE_CHECK_DRUG_PROBLEM */);
 				
 				case 1:
-					return SYSTEM::TO_FLOAT(Global_262145.f_33992 /* Tunable: -2082651933 */);
+					return SYSTEM::TO_FLOAT(Global_262145.f_33992 /* Tunable: DISTANCE_CHECK_PAPARAZZI */);
 				
 				default:
 			}
 			break;
 		
 		case 300:
-			return SYSTEM::TO_FLOAT(Global_262145.f_33993 /* Tunable: 441405716 */);
+			return SYSTEM::TO_FLOAT(Global_262145.f_33993 /* Tunable: DISTANCE_CHECK_PASSED_OUT_VIP */);
 		
 		case 301:
 			switch (iParam1)
 			{
 				case 0:
-					return SYSTEM::TO_FLOAT(Global_262145.f_33994 /* Tunable: -1120019279 */);
+					return SYSTEM::TO_FLOAT(Global_262145.f_33994 /* Tunable: DISTANCE_CHECK_TUGBOAT */);
 				
 				case 1:
-					return SYSTEM::TO_FLOAT(Global_262145.f_33995 /* Tunable: -800296430 */);
+					return SYSTEM::TO_FLOAT(Global_262145.f_33995 /* Tunable: DISTANCE_CHECK_TRUCK */);
 				
 				default:
 			}
@@ -16944,7 +16944,7 @@ int func_353(int iParam0, int iParam1)//Position - 0x12CB2
 	switch (iParam0)
 	{
 		case 0:
-			if (Global_262145.f_24930 /* Tunable: 1419194420 */)
+			if (Global_262145.f_24930 /* Tunable: DISABLE_CASINO_NIGHTCLUB_DJ_KEINEMUSIK */)
 			{
 				return 0;
 			}
@@ -16963,7 +16963,7 @@ int func_353(int iParam0, int iParam1)//Position - 0x12CB2
 			break;
 		
 		case 1:
-			if (Global_262145.f_24930 /* Tunable: 1419194420 */)
+			if (Global_262145.f_24930 /* Tunable: DISABLE_CASINO_NIGHTCLUB_DJ_KEINEMUSIK */)
 			{
 				return 0;
 			}
@@ -16982,7 +16982,7 @@ int func_353(int iParam0, int iParam1)//Position - 0x12CB2
 			break;
 		
 		case 2:
-			if (Global_262145.f_24930 /* Tunable: 1419194420 */)
+			if (Global_262145.f_24930 /* Tunable: DISABLE_CASINO_NIGHTCLUB_DJ_KEINEMUSIK */)
 			{
 				return 0;
 			}
@@ -17001,7 +17001,7 @@ int func_353(int iParam0, int iParam1)//Position - 0x12CB2
 			break;
 		
 		case 3:
-			if (Global_262145.f_24929 /* Tunable: -2064797647 */)
+			if (Global_262145.f_24929 /* Tunable: DISABLE_CASINO_NIGHTCLUB_DJ_MOODYMANN */)
 			{
 				return 0;
 			}
@@ -17016,7 +17016,7 @@ int func_353(int iParam0, int iParam1)//Position - 0x12CB2
 			break;
 		
 		case 4:
-			if (Global_262145.f_24929 /* Tunable: -2064797647 */)
+			if (Global_262145.f_24929 /* Tunable: DISABLE_CASINO_NIGHTCLUB_DJ_MOODYMANN */)
 			{
 				return 0;
 			}
@@ -17031,7 +17031,7 @@ int func_353(int iParam0, int iParam1)//Position - 0x12CB2
 			break;
 		
 		case 5:
-			if (Global_262145.f_24931 /* Tunable: -2084724801 */)
+			if (Global_262145.f_24931 /* Tunable: DISABLE_CASINO_NIGHTCLUB_DJ_PALMS_TRAX */)
 			{
 				return 0;
 			}
@@ -17046,7 +17046,7 @@ int func_353(int iParam0, int iParam1)//Position - 0x12CB2
 			break;
 		
 		case 6:
-			if (Global_262145.f_24931 /* Tunable: -2084724801 */)
+			if (Global_262145.f_24931 /* Tunable: DISABLE_CASINO_NIGHTCLUB_DJ_PALMS_TRAX */)
 			{
 				return 0;
 			}
@@ -17309,13 +17309,13 @@ int func_364(int iParam0, int iParam1)//Position - 0x13179
 			switch (iParam1)
 			{
 				case 0:
-					return !Global_262145.f_29937 /* Tunable: -1036423235 */;
+					return !Global_262145.f_29937 /* Tunable: SUM_BB_AIRCRAFT_CARRIER_ENABLE */;
 				
 				case 2:
-					return !Global_262145.f_29945 /* Tunable: -1212739458 */;
+					return !Global_262145.f_29945 /* Tunable: SUM_BB_CAPTURE_UFO_ENABLE */;
 				
 				case 1:
-					return !Global_262145.f_29941 /* Tunable: 1650434624 */;
+					return !Global_262145.f_29941 /* Tunable: SUM_BB_CHICKEN_FACTORY_ENABLE */;
 				
 				default:
 			}
@@ -18005,10 +18005,10 @@ int func_374(int iParam0)//Position - 0x13B06
 			return Global_262145.f_11887 /* Tunable: HUNT_THE_BEAST_MINIMUM_PARTICIPANTS_LAUNCH */;
 		
 		case 19:
-			return Global_262145.f_24731 /* Tunable: 1278472339 */;
+			return Global_262145.f_24731 /* Tunable: BB_BUSINESS_BATTLES_MISSIONS_MINIMUM_PARTICIPATION_GLOBAL */;
 		
 		case 20:
-			return Global_262145.f_24731 /* Tunable: 1278472339 */;
+			return Global_262145.f_24731 /* Tunable: BB_BUSINESS_BATTLES_MISSIONS_MINIMUM_PARTICIPATION_GLOBAL */;
 		
 		default:
 	}
@@ -18121,10 +18121,10 @@ float func_378(int iParam0)//Position - 0x13CDD
 			return Global_262145.f_11888 /* Tunable: HUNT_THE_BEAST_AMBIENT_WEIGHTING_HUNT_THE_BEAST */;
 		
 		case 19:
-			return Global_262145.f_24730 /* Tunable: -1111358435 */;
+			return Global_262145.f_24730 /* Tunable: BB_BUSINESS_BATTLES_MISSIONS_WEIGHTING_GLOBAL */;
 		
 		case 20:
-			return Global_262145.f_29936 /* Tunable: -1338193374 */;
+			return Global_262145.f_29936 /* Tunable: SUM_BB_WEIGHTING_GLOBAL */;
 		
 		default:
 	}

@@ -1414,7 +1414,7 @@ void func_24()//Position - 0x19D4
 
 int func_25()//Position - 0x1A0B
 {
-	if (!Global_262145.f_29155 /* Tunable: 1028571554 */)
+	if (!Global_262145.f_29155 /* Tunable: NPC_PHONE_TELEMETRY_TRACKING_ENABLED */)
 	{
 		return 0;
 	}
@@ -2377,7 +2377,7 @@ void func_75(int iParam0)//Position - 0x2A23
 	switch (iParam0)
 	{
 		case 0:
-			iVar0 = Global_262145.f_18371 /* Tunable: -539038925 */;
+			iVar0 = Global_262145.f_18371 /* Tunable: BIKER_MC_POINTS_PASS_OUT_DRUNK */;
 			break;
 		
 		case 1:
@@ -2385,7 +2385,7 @@ void func_75(int iParam0)//Position - 0x2A23
 			break;
 		
 		case 2:
-			iVar0 = Global_262145.f_18372 /* Tunable: 771289284 */;
+			iVar0 = Global_262145.f_18372 /* Tunable: BIKER_MC_POINTS_RIDE_IN_FORMATION */;
 			break;
 		
 		case 3:
@@ -2405,11 +2405,11 @@ void func_75(int iParam0)//Position - 0x2A23
 			break;
 		
 		case 8:
-			iVar0 = Global_262145.f_18376 /* Tunable: -555621765 */;
+			iVar0 = Global_262145.f_18376 /* Tunable: BIKER_MC_POINTS_NOT_IN_MC */;
 			break;
 		
 		case 9:
-			iVar0 = Global_262145.f_18379 /* Tunable: 45776395 */;
+			iVar0 = Global_262145.f_18379 /* Tunable: BIKER_MC_POINTS_KILLED_BY_RIVAL_MC */;
 			break;
 		
 		case 22:
@@ -2417,15 +2417,15 @@ void func_75(int iParam0)//Position - 0x2A23
 			break;
 		
 		case 23:
-			iVar0 = Global_262145.f_18373 /* Tunable: 419613951 */;
+			iVar0 = Global_262145.f_18373 /* Tunable: BIKER_MC_POINTS_RIDE_BIKE_IN_MC */;
 			break;
 		
 		case 25:
-			iVar0 = Global_262145.f_19265 /* Tunable: 1684681813 */;
+			iVar0 = Global_262145.f_19265 /* Tunable: BIKER_MC_POINTS_STEAL_MC_BIKER */;
 			break;
 		
 		case 26:
-			iVar0 = Global_262145.f_19264 /* Tunable: -1825390724 */;
+			iVar0 = Global_262145.f_19264 /* Tunable: BIKER_MC_POINTS_STEAL_PRESIDENT_BIKE */;
 			break;
 	}
 	if (iVar0 != 0)
@@ -3712,7 +3712,7 @@ void func_124()//Position - 0x3CDB
 			}
 			return;
 		}
-		if (((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && Local_41.f_1 == PLAYER::PLAYER_PED_ID()) && func_137(PLAYER::PLAYER_ID())) && Global_262145.f_24563 /* Tunable: -748730308 */)
+		if (((NETWORK::NETWORK_IS_GAME_IN_PROGRESS() && Local_41.f_1 == PLAYER::PLAYER_PED_ID()) && func_137(PLAYER::PLAYER_ID())) && Global_262145.f_24563 /* Tunable: BB_NIGHTCLUB_DISABLE_NIGHTCLUB_PASS_OUT_DISABLE */)
 		{
 			if (Global_44908[iLocal_62 /*5*/].f_3 >= 10)
 			{

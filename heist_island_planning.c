@@ -9547,7 +9547,7 @@ void func_321()//Position - 0xAD01
 
 int func_322()//Position - 0xAD38
 {
-	if (!Global_262145.f_29155 /* Tunable: 1028571554 */)
+	if (!Global_262145.f_29155 /* Tunable: NPC_PHONE_TELEMETRY_TRACKING_ENABLED */)
 	{
 		return 0;
 	}
@@ -14252,7 +14252,7 @@ void func_516(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4,
 		case joaat("SERVICE_SPEND_ARENA_SPECTATOR_BOX"):
 		case joaat("SERVICE_SPEND_MAKE_IT_RAIN"):
 		case joaat("SERVICE_SPEND_SALVAGE_YARD_VEH_ROB_SETUP"):
-			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: 1103207774 */)
+			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: ALLOW_ZERO_SPEND_SERVICE_TELEM */)
 			{
 				func_517(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -14405,7 +14405,7 @@ void func_516(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4,
 		case joaat("SERVICE_SPEND_NIGHTCLUB_TOILET_ATTENDANT"):
 		case joaat("SERVICE_SPEND_JUGALLO_BOSS_VEHICLE_REQUEST"):
 		case joaat("SERVICE_SPEND_SALVAGE_YARD_CLAIM_VEH"):
-			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: 1103207774 */)
+			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: ALLOW_ZERO_SPEND_SERVICE_TELEM */)
 			{
 				func_517(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -15043,7 +15043,7 @@ void func_542()//Position - 0x116C2
 	int iVar60;
 	float fVar61;
 	
-	iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(Global_262145.f_30025 /* Tunable: 544918928 */, Global_262145.f_30026 /* Tunable: -1055680280 */);
+	iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(Global_262145.f_30025 /* Tunable: H4LOOT_MIN_ISLAND_LOCATIONS */, Global_262145.f_30026 /* Tunable: H4LOOT_MAX_ISLAND_LOCATIONS */);
 	iVar1 = 0;
 	while (iVar1 < iVar0)
 	{
@@ -15113,7 +15113,7 @@ void func_542()//Position - 0x116C2
 		MISC::CLEAR_BIT(&iVar9, 11);
 		MISC::CLEAR_BIT(&iVar9, 12);
 	}
-	iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(Global_262145.f_30027 /* Tunable: -577933166 */, Global_262145.f_30028 /* Tunable: 740148171 */);
+	iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(Global_262145.f_30027 /* Tunable: H4LOOT_MIN_COMPOUND_LOCATIONS */, Global_262145.f_30028 /* Tunable: H4LOOT_MAX_COMPOUND_LOCATIONS */);
 	iVar1 = 0;
 	while (iVar1 < iVar0)
 	{
@@ -15164,7 +15164,7 @@ void func_542()//Position - 0x116C2
 		}
 		iVar1++;
 	}
-	iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(Global_262145.f_30029 /* Tunable: -1215396560 */, Global_262145.f_30030 /* Tunable: 2086011134 */);
+	iVar0 = MISC::GET_RANDOM_INT_IN_RANGE(Global_262145.f_30029 /* Tunable: H4LOOT_MIN_PAINTINGS */, Global_262145.f_30030 /* Tunable: H4LOOT_MAX_PAINTINGS */);
 	iVar1 = 0;
 	while (iVar1 < iVar0)
 	{
@@ -15231,22 +15231,22 @@ float func_543()//Position - 0x11B88
 	switch (func_544(1))
 	{
 		case 0:
-			return Global_262145.f_30182 /* Tunable: -1387641161 */;
+			return Global_262145.f_30182 /* Tunable: H4_SECONDARY_LOOT_MULTIPLIER_TEQUILA */;
 		
 		case 1:
-			return Global_262145.f_30183 /* Tunable: -1977209208 */;
+			return Global_262145.f_30183 /* Tunable: H4_SECONDARY_LOOT_MULTIPLIER_NECKLACE */;
 		
 		case 2:
-			return Global_262145.f_30184 /* Tunable: -651044344 */;
+			return Global_262145.f_30184 /* Tunable: H4_SECONDARY_LOOT_MULTIPLIER_BEARER_BONDS */;
 		
 		case 3:
-			return Global_262145.f_30185 /* Tunable: 593471001 */;
+			return Global_262145.f_30185 /* Tunable: H4_SECONDARY_LOOT_MULTIPLIER_PINK_DIAMOND */;
 		
 		case 4:
-			return Global_262145.f_30186 /* Tunable: 2057499252 */;
+			return Global_262145.f_30186 /* Tunable: H4_SECONDARY_LOOT_MULTIPLIER_MADRAZO_FILES */;
 		
 		case 5:
-			return Global_262145.f_30187 /* Tunable: -982681546 */;
+			return Global_262145.f_30187 /* Tunable: H4_SECONDARY_LOOT_MULTIPLIER_PANTHER_STATUE */;
 		
 		default:
 	}
@@ -15328,9 +15328,9 @@ void func_547()//Position - 0x11D23
 		func_5(9489, 4, -1, 1);
 		return;
 	}
-	if (Global_262145.f_30199 /* Tunable: 637051746 */ != 0)
+	if (Global_262145.f_30199 /* Tunable: H4LOOT_PROMOTION */ != 0)
 	{
-		if (func_549(9360, -1) != Global_262145.f_30199 /* Tunable: 637051746 */)
+		if (func_549(9360, -1) != Global_262145.f_30199 /* Tunable: H4LOOT_PROMOTION */)
 		{
 			func_5(9489, 5, -1, 1);
 			return;
@@ -22282,7 +22282,7 @@ int func_760(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x1
 	}
 	if (func_761(iParam0))
 	{
-		if (iParam2 <= Global_262145.f_21893 /* Tunable: -1542918426 */)
+		if (iParam2 <= Global_262145.f_21893 /* Tunable: GR_GENERAL_MEDIUM_STOCK_THRESHOLD */)
 		{
 			iVar0 = 1;
 			if (iParam0 == 15)
@@ -22290,7 +22290,7 @@ int func_760(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x1
 				iVar0 = 2;
 			}
 		}
-		else if (iParam2 <= Global_262145.f_21894 /* Tunable: -2015624215 */)
+		else if (iParam2 <= Global_262145.f_21894 /* Tunable: GR_GENERAL_LARGE_STOCK_THRESHOLD */)
 		{
 			iVar0 = 2;
 			if (iParam0 == 18)
@@ -22328,7 +22328,7 @@ int func_760(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x1
 	}
 	else if (func_762(iParam0))
 	{
-		if (iParam1 < Global_262145.f_21853 /* Tunable: 642214211 */)
+		if (iParam1 < Global_262145.f_21853 /* Tunable: GR_RESUPPLY_GENERAL_PLAYERS_NEEDED_FOR_SECOND_RESUPPLY_VEHICLE */)
 		{
 			iVar0 = 1;
 		}
@@ -30029,10 +30029,10 @@ float func_919(int iParam0)//Position - 0x2027E
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_30265 /* Tunable: 1808919381 */;
+			return Global_262145.f_30265 /* Tunable: IH_PRIMARY_TARGET_VALUE_DIFF_MOD_NORMAL */;
 		
 		case 2:
-			return Global_262145.f_30266 /* Tunable: 1759346392 */;
+			return Global_262145.f_30266 /* Tunable: IH_PRIMARY_TARGET_VALUE_DIFF_MOD_HARD */;
 		
 		default:
 	}

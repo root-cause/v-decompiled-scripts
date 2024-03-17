@@ -396,7 +396,7 @@ void func_1()//Position - 0x20B
 				{
 					if (PLAYER::GET_MAX_WANTED_LEVEL() > 0)
 					{
-						PLAYER::SET_WANTED_LEVEL_MULTIPLIER(Global_262145.f_23299 /* Tunable: -646444147 */);
+						PLAYER::SET_WANTED_LEVEL_MULTIPLIER(Global_262145.f_23299 /* Tunable: H2_AVENGER_WANTED_LEVEL_MULTIPLIER_ON_TURRETS */);
 						iLocal_295 = 1;
 					}
 				}
@@ -2175,21 +2175,21 @@ int func_29()//Position - 0x26E3
 		switch (Global_1582003)
 		{
 			case 1:
-				if (Global_262145.f_23302 /* Tunable: 1200779746 */)
+				if (Global_262145.f_23302 /* Tunable: H2_AVENGER_DISABLE_ROCKET_TURRET_1 */)
 				{
 					return 1;
 				}
 				break;
 			
 			case 2:
-				if (Global_262145.f_23303 /* Tunable: 948556753 */)
+				if (Global_262145.f_23303 /* Tunable: H2_AVENGER_DISABLE_ROCKET_TURRET_2 */)
 				{
 					return 1;
 				}
 				break;
 			
 			case 3:
-				if (Global_262145.f_23304 /* Tunable: 1781774116 */)
+				if (Global_262145.f_23304 /* Tunable: H2_AVENGER_DISABLE_ROCKET_TURRET_3 */)
 				{
 					return 1;
 				}

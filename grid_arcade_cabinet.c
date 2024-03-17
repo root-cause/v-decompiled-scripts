@@ -4769,44 +4769,44 @@ void func_161()//Position - 0x5A2C
 		case 0:
 			iVar0 = func_165(8355, -1) + 1;
 			func_163(8355, iVar0, -1, 1);
-			if (iVar0 == Global_262145.f_27514 /* Tunable: 554611933 */)
+			if (iVar0 == Global_262145.f_27514 /* Tunable: IVC_SCGW_WIN_CHALLENGE_REQUIREMENT */)
 			{
 				func_154(27189, 1, -1);
 				func_155(12, "CLO_VWM_D_1_3" /* GXT: Street Crimes Hoods Tee */, "UNLOCK_NAME_SHIRT3" /* GXT: Homies Sharp T-shirt */, "FeedhitTshirt04", "MPTshirtAwards3", -1, 0, 0, 0, -1, 1);
-				func_162("SCGW_CH_0", Global_262145.f_27514 /* Tunable: 554611933 */, 7500, 1);
+				func_162("SCGW_CH_0", Global_262145.f_27514 /* Tunable: IVC_SCGW_WIN_CHALLENGE_REQUIREMENT */, 7500, 1);
 			}
 			break;
 		
 		case 1:
 			iVar0 = func_165(8356, -1) + 1;
 			func_163(8356, iVar0, -1, 1);
-			if (iVar0 == Global_262145.f_27514 /* Tunable: 554611933 */)
+			if (iVar0 == Global_262145.f_27514 /* Tunable: IVC_SCGW_WIN_CHALLENGE_REQUIREMENT */)
 			{
 				func_154(27190, 1, -1);
 				func_155(12, "CLO_VWM_D_1_4" /* GXT: Street Crimes Punks Tee */, "UNLOCK_NAME_SHIRT3" /* GXT: Homies Sharp T-shirt */, "FeedhitTshirt04", "MPTshirtAwards3", -1, 0, 0, 0, -1, 1);
-				func_162("SCGW_CH_1", Global_262145.f_27514 /* Tunable: 554611933 */, 7500, 1);
+				func_162("SCGW_CH_1", Global_262145.f_27514 /* Tunable: IVC_SCGW_WIN_CHALLENGE_REQUIREMENT */, 7500, 1);
 			}
 			break;
 		
 		case 2:
 			iVar0 = func_165(8357, -1) + 1;
 			func_163(8357, iVar0, -1, 1);
-			if (iVar0 == Global_262145.f_27514 /* Tunable: 554611933 */)
+			if (iVar0 == Global_262145.f_27514 /* Tunable: IVC_SCGW_WIN_CHALLENGE_REQUIREMENT */)
 			{
 				func_154(27191, 1, -1);
 				func_155(12, "CLO_VWM_D_1_5" /* GXT: Street Crimes Yokels Tee */, "UNLOCK_NAME_SHIRT3" /* GXT: Homies Sharp T-shirt */, "FeedhitTshirt04", "MPTshirtAwards3", -1, 0, 0, 0, -1, 1);
-				func_162("SCGW_CH_2", Global_262145.f_27514 /* Tunable: 554611933 */, 7500, 1);
+				func_162("SCGW_CH_2", Global_262145.f_27514 /* Tunable: IVC_SCGW_WIN_CHALLENGE_REQUIREMENT */, 7500, 1);
 			}
 			break;
 		
 		case 3:
 			iVar0 = func_165(8358, -1) + 1;
 			func_163(8358, iVar0, -1, 1);
-			if (iVar0 == Global_262145.f_27514 /* Tunable: 554611933 */)
+			if (iVar0 == Global_262145.f_27514 /* Tunable: IVC_SCGW_WIN_CHALLENGE_REQUIREMENT */)
 			{
 				func_154(27192, 1, -1);
 				func_155(12, "CLO_VWM_D_1_2" /* GXT: Street Crimes Bikers Tee */, "UNLOCK_NAME_SHIRT3" /* GXT: Homies Sharp T-shirt */, "FeedhitTshirt04", "MPTshirtAwards3", -1, 0, 0, 0, -1, 1);
-				func_162("SCGW_CH_3", Global_262145.f_27514 /* Tunable: 554611933 */, 7500, 1);
+				func_162("SCGW_CH_3", Global_262145.f_27514 /* Tunable: IVC_SCGW_WIN_CHALLENGE_REQUIREMENT */, 7500, 1);
 			}
 			break;
 	}

@@ -2015,11 +2015,11 @@ int func_51(int iParam0)//Position - 0x27FF
 				iVar0 = 0;
 				iVar0 += 19;
 				iVar0 += 8;
-				return (Global_262145.f_22068 /* Tunable: 1073335638 */ + iVar0);
+				return (Global_262145.f_22068 /* Tunable: TOTALNUMBEROFWEAPONMODS */ + iVar0);
 			}
 			else
 			{
-				return Global_262145.f_22068 /* Tunable: 1073335638 */;
+				return Global_262145.f_22068 /* Tunable: TOTALNUMBEROFWEAPONMODS */;
 			}
 			break;
 		

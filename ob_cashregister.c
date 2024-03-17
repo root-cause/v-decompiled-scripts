@@ -324,7 +324,7 @@ int func_11(int iParam0)//Position - 0x540
 
 var func_12()//Position - 0x590
 {
-	return Global_262145.f_31218 /* Tunable: 2071833430 */;
+	return Global_262145.f_31218 /* Tunable: ENABLESYNCEDAMBIENTPICKUPS */;
 }
 
 int func_13(int iParam0, int iParam1)//Position - 0x59F

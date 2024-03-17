@@ -4926,7 +4926,7 @@ int func_136(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x4
 	}
 	if (func_137(iParam0))
 	{
-		if (iParam2 <= Global_262145.f_21893 /* Tunable: -1542918426 */)
+		if (iParam2 <= Global_262145.f_21893 /* Tunable: GR_GENERAL_MEDIUM_STOCK_THRESHOLD */)
 		{
 			iVar0 = 1;
 			if (iParam0 == 15)
@@ -4934,7 +4934,7 @@ int func_136(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x4
 				iVar0 = 2;
 			}
 		}
-		else if (iParam2 <= Global_262145.f_21894 /* Tunable: -2015624215 */)
+		else if (iParam2 <= Global_262145.f_21894 /* Tunable: GR_GENERAL_LARGE_STOCK_THRESHOLD */)
 		{
 			iVar0 = 2;
 			if (iParam0 == 18)
@@ -4972,7 +4972,7 @@ int func_136(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x4
 	}
 	else if (func_138(iParam0))
 	{
-		if (iParam1 < Global_262145.f_21853 /* Tunable: 642214211 */)
+		if (iParam1 < Global_262145.f_21853 /* Tunable: GR_RESUPPLY_GENERAL_PLAYERS_NEEDED_FOR_SECOND_RESUPPLY_VEHICLE */)
 		{
 			iVar0 = 1;
 		}
@@ -14674,29 +14674,29 @@ int func_335(int iParam0, int iParam1)//Position - 0xDBD3
 
 int func_336(int iParam0)//Position - 0xDC63
 {
-	if (Global_262145.f_24863 /* Tunable: -801610231 */)
+	if (Global_262145.f_24863 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_DISABLE_JOB_GLOBAL */)
 	{
 		return 1;
 	}
 	switch (iParam0)
 	{
 		case 239:
-			return Global_262145.f_24873 /* Tunable: -1162070521 */;
+			return Global_262145.f_24873 /* Tunable: BB_HACKER_WORK_HACKER_CHALLENGE_DISABLE_JOB_SECURITY_VANS */;
 		
 		case 240:
-			return Global_262145.f_24874 /* Tunable: 778849006 */;
+			return Global_262145.f_24874 /* Tunable: BB_HACKER_WORK_HACKER_CHALLENGE_DISABLE_JOB_TARGET_PURSUIT */;
 		
 		case 242:
-			return Global_262145.f_24869 /* Tunable: 1321408955 */;
+			return Global_262145.f_24869 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_DISABLE_JOB_BANK_JOB */;
 		
 		case 244:
-			return Global_262145.f_24870 /* Tunable: -1535603338 */;
+			return Global_262145.f_24870 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_DISABLE_JOB_DATA_HACK */;
 		
 		case 248:
 			return Global_262145.f_24871;
 		
 		case 241:
-			return Global_262145.f_24872 /* Tunable: -1200937774 */;
+			return Global_262145.f_24872 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_DISABLE_JOB_JEWEL_STORE_GRAB */;
 		
 		default:
 	}
@@ -15203,7 +15203,7 @@ int func_360(int iParam0)//Position - 0xE412
 
 int func_361()//Position - 0xE533
 {
-	return Global_262145.f_24853 /* Tunable: 181533481 */;
+	return Global_262145.f_24853 /* Tunable: BB_HACKER_WORK_HACKER_CHALLENGE_COOLDOWN_GLOBAL_COOLDOWN */;
 }
 
 int func_362(int iParam0)//Position - 0xE542
@@ -15226,7 +15226,7 @@ int func_363(int iParam0)//Position - 0xE560
 
 int func_364()//Position - 0xE580
 {
-	return Global_262145.f_24848 /* Tunable: -926426916 */;
+	return Global_262145.f_24848 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_GLOBAL_COOLDOWN */;
 }
 
 int func_365(int iParam0)//Position - 0xE58F
@@ -15301,42 +15301,42 @@ int func_370(int iParam0)//Position - 0xE674
 	switch (iParam0)
 	{
 		case 0:
-			if (Global_262145.f_24863 /* Tunable: -801610231 */)
+			if (Global_262145.f_24863 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_DISABLE_JOB_GLOBAL */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 1:
-			if (Global_262145.f_24864 /* Tunable: -1227720913 */)
+			if (Global_262145.f_24864 /* Tunable: BB_HACKER_WORK_AIRFREIGHT_CARGO_DISABLE_JOB_GLOBAL */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 2:
-			if (Global_262145.f_24865 /* Tunable: -747086426 */)
+			if (Global_262145.f_24865 /* Tunable: BB_HACKER_WORK_SPECIAL_CARGO_DISABLE_JOB_GLOBAL */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 3:
-			if (Global_262145.f_24866 /* Tunable: -929393072 */)
+			if (Global_262145.f_24866 /* Tunable: BB_HACKER_WORK_VEHICLE_CARGO_DISABLE_JOB_GLOBAL */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 4:
-			if (Global_262145.f_24867 /* Tunable: 1014910195 */)
+			if (Global_262145.f_24867 /* Tunable: BB_HACKER_WORK_GUNRUNNING_SUPPLIES_DISABLE_JOB_GLOBAL */)
 			{
 				return 1;
 			}
 			break;
 		
 		case 5:
-			if (Global_262145.f_24868 /* Tunable: 40263998 */)
+			if (Global_262145.f_24868 /* Tunable: BB_HACKER_WORK_BIKER_SUPPLIES_DISABLE_JOB_GLOBAL */)
 			{
 				return 1;
 			}
@@ -15437,7 +15437,7 @@ void func_372()//Position - 0xE751
 				Global_1942633 = iLocal_303;
 				Global_1940394.f_53 = 1;
 				func_449(192);
-				func_373(func_219(iLocal_303), !Global_262145.f_17656 /* Tunable: 35628303 */);
+				func_373(func_219(iLocal_303), !Global_262145.f_17656 /* Tunable: BIKER_STOP_PRODUCTION_ON_MISSIONS */);
 				func_377(func_219(iLocal_303));
 			}
 			break;
@@ -19261,7 +19261,7 @@ void func_513()//Position - 0x12C9B
 
 int func_514()//Position - 0x12CD2
 {
-	if (!Global_262145.f_29155 /* Tunable: 1028571554 */)
+	if (!Global_262145.f_29155 /* Tunable: NPC_PHONE_TELEMETRY_TRACKING_ENABLED */)
 	{
 		return 0;
 	}

@@ -2711,7 +2711,7 @@ int func_70(int iParam0)//Position - 0x2A49
 		}
 		else
 		{
-			func_71(0, "SLOT MACHINE RP", joaat("XPTYPE_AWARDS"), joaat("XPCATEGORY_RP_LUCKY_WHEEL"), Global_262145.f_28177 /* Tunable: -1084863458 */, 1, -1, 0);
+			func_71(0, "SLOT MACHINE RP", joaat("XPTYPE_AWARDS"), joaat("XPCATEGORY_RP_LUCKY_WHEEL"), Global_262145.f_28177 /* Tunable: FAME_OR_SHAME_SLOT_MACHINE_RP_REWARD */, 1, -1, 0);
 		}
 	}
 	MISC::SET_BIT(&uLocal_1636, 16);
@@ -2967,7 +2967,7 @@ void func_79(int iParam0, int iParam1, int iParam2)//Position - 0x2EC3
 		{
 			if (iParam0 == 0)
 			{
-				STATS::PLAYSTATS_AWARD_XP(iParam0, -1158693853, -1345423847);
+				STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_INITIALISE"), joaat("XPCATEGORY_LIVE_RP_RESET"));
 				if (iParam2 == 0)
 				{
 					return;
@@ -4743,11 +4743,11 @@ int func_125(int iParam0, int iParam1, var uParam2, int iParam3, int iParam4)//P
 			else if (iParam1 == 3)
 			{
 				func_129(iVar4);
-				if (iVar4 >= Global_262145.f_27450 /* Tunable: -1684709496 */)
+				if (iVar4 >= Global_262145.f_27450 /* Tunable: VC_CASINO_SAVE_MAJOR_WIN_THRESHOLD */)
 				{
 					Global_2695901 = 1;
 				}
-				else if (iVar4 >= Global_262145.f_27449 /* Tunable: 1971152414 */)
+				else if (iVar4 >= Global_262145.f_27449 /* Tunable: VC_CASINO_SAVE_BIG_WIN_THRESHOLD */)
 				{
 					Global_2695902 = 1;
 				}
@@ -6899,7 +6899,7 @@ int func_174(int iParam0, int iParam1, var uParam2, int iParam3, int iParam4, in
 			{
 				Global_2695901 = 1;
 			}
-			else if (iVar2 >= Global_262145.f_27451 /* Tunable: 1906061901 */)
+			else if (iVar2 >= Global_262145.f_27451 /* Tunable: VC_CASINO_SAVE_LOSS_THRESHOLD */)
 			{
 				Global_2695902 = 1;
 			}
@@ -7165,7 +7165,7 @@ void func_180(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0x
 							if (iLocal_210 == -1)
 							{
 								StringCopy(&Var10, "SLOTS_HELPW74b" /* GXT: You win ~1~ RP. */, 24);
-								func_186(&Var10, Global_262145.f_28177 /* Tunable: -1084863458 */);
+								func_186(&Var10, Global_262145.f_28177 /* Tunable: FAME_OR_SHAME_SLOT_MACHINE_RP_REWARD */);
 							}
 							else
 							{

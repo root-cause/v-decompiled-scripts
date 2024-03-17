@@ -11042,7 +11042,7 @@ void func_298(int iParam0, int iParam1, int iParam2)//Position - 0xDA92
 		{
 			if (iParam0 == 0)
 			{
-				STATS::PLAYSTATS_AWARD_XP(iParam0, -1158693853, -1345423847);
+				STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_INITIALISE"), joaat("XPCATEGORY_LIVE_RP_RESET"));
 				if (iParam2 == 0)
 				{
 					return;
@@ -12118,7 +12118,7 @@ void func_330(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4,
 		case joaat("SERVICE_SPEND_ARENA_SPECTATOR_BOX"):
 		case joaat("SERVICE_SPEND_MAKE_IT_RAIN"):
 		case joaat("SERVICE_SPEND_SALVAGE_YARD_VEH_ROB_SETUP"):
-			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: 1103207774 */)
+			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: ALLOW_ZERO_SPEND_SERVICE_TELEM */)
 			{
 				func_331(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -12271,7 +12271,7 @@ void func_330(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4,
 		case joaat("SERVICE_SPEND_NIGHTCLUB_TOILET_ATTENDANT"):
 		case joaat("SERVICE_SPEND_JUGALLO_BOSS_VEHICLE_REQUEST"):
 		case joaat("SERVICE_SPEND_SALVAGE_YARD_CLAIM_VEH"):
-			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: 1103207774 */)
+			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: ALLOW_ZERO_SPEND_SERVICE_TELEM */)
 			{
 				func_331(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -13154,15 +13154,15 @@ int func_349(int iParam0)//Position - 0xFD6F
 			break;
 		
 		case 58:
-			return Global_262145.f_26046 /* Tunable: 2115355697 */;
+			return Global_262145.f_26046 /* Tunable: BANDITO_COOLDOWN_TIME */;
 			break;
 		
 		case 62:
-			return Global_262145.f_26047 /* Tunable: -1358864430 */;
+			return Global_262145.f_26047 /* Tunable: TANK_COOLDOWN_TIME */;
 			break;
 		
 		case 63:
-			return Global_262145.f_29536 /* Tunable: -1559847104 */;
+			return Global_262145.f_29536 /* Tunable: PV_RETURN_COOLDOWN */;
 			break;
 		
 		case 64:
@@ -13170,19 +13170,19 @@ int func_349(int iParam0)//Position - 0xFD6F
 			break;
 		
 		case 72:
-			return Global_262145.f_26047 /* Tunable: -1358864430 */;
+			return Global_262145.f_26047 /* Tunable: TANK_COOLDOWN_TIME */;
 			break;
 		
 		case 73:
-			return Global_262145.f_32098 /* Tunable: -1284681617 */;
+			return Global_262145.f_32098 /* Tunable: FRANKLIN_SUPPLY_STASH_COST */;
 			break;
 		
 		case 74:
-			return Global_262145.f_32100 /* Tunable: -1303558292 */;
+			return Global_262145.f_32100 /* Tunable: IMANI_SOURCE_MOTORCYCLE_COST */;
 			break;
 		
 		case 75:
-			return Global_262145.f_32102 /* Tunable: 569088073 */;
+			return Global_262145.f_32102 /* Tunable: IMANI_OUT_OF_SIGHT_COST */;
 			break;
 	}
 	return 0;
@@ -14865,7 +14865,7 @@ void func_413(int iParam0, char* sParam1, bool bParam2, var uParam3)//Position -
 
 int func_414()//Position - 0x11CEF
 {
-	if (!Global_262145.f_29155 /* Tunable: 1028571554 */)
+	if (!Global_262145.f_29155 /* Tunable: NPC_PHONE_TELEMETRY_TRACKING_ENABLED */)
 	{
 		return 0;
 	}

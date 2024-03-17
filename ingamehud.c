@@ -1212,7 +1212,7 @@ void func_29()//Position - 0xEF0
 	var uVar1;
 	int iVar7;
 	
-	if (Global_262145.f_33429 /* Tunable: 1800565986 */)
+	if (Global_262145.f_33429 /* Tunable: H4_SHOULD_HEIST_ANTI_CHEAT_BE_DISABLED */)
 	{
 		if (func_71())
 		{
@@ -1225,13 +1225,13 @@ void func_29()//Position - 0xEF0
 		return;
 	}
 	iVar0 = func_68();
-	iVar7 = Global_262145.f_33430 /* Tunable: 1802642206 */;
-	if (iVar0 >= Global_262145.f_33431 /* Tunable: -1917213107 */)
+	iVar7 = Global_262145.f_33430 /* Tunable: H4_HEIST_ANTI_CHEAT_OPERATING_MODE */;
+	if (iVar0 >= Global_262145.f_33431 /* Tunable: H4_TOTAL_HEIST_FINALE_CHEAT_CHANCE */)
 	{
 		STATS::PLAYSTATS_HEIST_SAVE_CHEAT(MISC::GET_HASH_KEY(&uVar1), 6);
 		if (iVar7 == 0 || iVar7 == 2)
 		{
-			if (Global_262145.f_33432 /* Tunable: -1522470469 */)
+			if (Global_262145.f_33432 /* Tunable: H4_HEIST_FINALE_ANTI_CHEAT_NO_PROGRESSION */)
 			{
 				func_46(0);
 			}
@@ -1292,11 +1292,11 @@ void func_30(int iParam0)//Position - 0xF82
 			{
 				MISC::SET_BIT(&iVar0, 10);
 			}
-			if (iParam0 == PLAYER::PLAYER_ID() && Global_262145.f_30199 /* Tunable: 637051746 */ != 0)
+			if (iParam0 == PLAYER::PLAYER_ID() && Global_262145.f_30199 /* Tunable: H4LOOT_PROMOTION */ != 0)
 			{
-				if (func_1196(9360, -1) != Global_262145.f_30199 /* Tunable: 637051746 */)
+				if (func_1196(9360, -1) != Global_262145.f_30199 /* Tunable: H4LOOT_PROMOTION */)
 				{
-					func_44(9360, Global_262145.f_30199 /* Tunable: 637051746 */, -1);
+					func_44(9360, Global_262145.f_30199 /* Tunable: H4LOOT_PROMOTION */, -1);
 				}
 			}
 			break;
@@ -2088,7 +2088,7 @@ void func_74()//Position - 0x1E46
 	var uVar1;
 	int iVar7;
 	
-	if (Global_262145.f_33425 /* Tunable: -1513754019 */)
+	if (Global_262145.f_33425 /* Tunable: H3_SHOULD_HEIST_ANTI_CHEAT_BE_DISABLED */)
 	{
 		if (func_91())
 		{
@@ -2101,13 +2101,13 @@ void func_74()//Position - 0x1E46
 		return;
 	}
 	iVar0 = func_90();
-	iVar7 = Global_262145.f_33426 /* Tunable: 771334694 */;
-	if (iVar0 >= Global_262145.f_33427 /* Tunable: -206567767 */)
+	iVar7 = Global_262145.f_33426 /* Tunable: H3_HEIST_ANTI_CHEAT_OPERATING_MODE */;
+	if (iVar0 >= Global_262145.f_33427 /* Tunable: H3_TOTAL_HEIST_FINALE_CHEAT_CHANCE */)
 	{
 		STATS::PLAYSTATS_HEIST_SAVE_CHEAT(MISC::GET_HASH_KEY(&uVar1), 5);
 		if (iVar7 == 0 || iVar7 == 2)
 		{
-			if (Global_262145.f_33428 /* Tunable: 927126982 */)
+			if (Global_262145.f_33428 /* Tunable: H3_HEIST_FINALE_ANTI_CHEAT_NO_PROGRESSION */)
 			{
 				func_83(0);
 			}
@@ -2135,13 +2135,13 @@ void func_75(int iParam0, int iParam1)//Position - 0x1EE0
 		{
 			MISC::SET_BIT(&(Global_1963882.f_22), 18);
 		}
-		func_32(8838, (NETWORK::GET_CLOUD_TIME_AS_INT() + Global_262145.f_29157 /* Tunable: -2031602543 */), -1, 1);
+		func_32(8838, (NETWORK::GET_CLOUD_TIME_AS_INT() + Global_262145.f_29157 /* Tunable: H3_HEIST_COOLDOWN_BEFORE_REPLAY */), -1, 1);
 		if (func_45(8802, -1) != iParam0)
 		{
 			func_32(8803, func_45(8802, -1), -1, 1);
 			func_32(8802, iParam0, -1, 1);
 		}
-		if (Global_262145.f_28688 /* Tunable: -608294742 */ != -1 && func_81(PLAYER::PLAYER_ID()) == Global_262145.f_28688 /* Tunable: -608294742 */)
+		if (Global_262145.f_28688 /* Tunable: LOOTVAULTPROMOTION */ != -1 && func_81(PLAYER::PLAYER_ID()) == Global_262145.f_28688 /* Tunable: LOOTVAULTPROMOTION */)
 		{
 			if (!BitTest(iVar0, 17) && func_80(PLAYER::PLAYER_ID(), 0))
 			{
@@ -2885,7 +2885,7 @@ void func_94()//Position - 0x2D28
 	int iVar7;
 	int iVar8;
 	
-	if (Global_262145.f_23603 /* Tunable: 1379995913 */)
+	if (Global_262145.f_23603 /* Tunable: H2_SHOULD_HEIST_ANTI_CHEAT_BE_DISABLED */)
 	{
 		if (func_116())
 		{
@@ -2894,13 +2894,13 @@ void func_94()//Position - 0x2D28
 		return;
 	}
 	iVar0 = func_113();
-	iVar7 = Global_262145.f_23604 /* Tunable: -1885692485 */;
-	if (iVar0 >= Global_262145.f_23605 /* Tunable: -2049563852 */)
+	iVar7 = Global_262145.f_23604 /* Tunable: H2_HEIST_ANTI_CHEAT_OPERATING_MODE */;
+	if (iVar0 >= Global_262145.f_23605 /* Tunable: H2_TOTAL_HEIST_FINALE_CHEAT_CHANCE */)
 	{
 		STATS::PLAYSTATS_HEIST_SAVE_CHEAT(MISC::GET_HASH_KEY(&uVar1), 4);
 		if (iVar7 == 0 || iVar7 == 2)
 		{
-			if (Global_262145.f_23606 /* Tunable: -1956105275 */)
+			if (Global_262145.f_23606 /* Tunable: H2_HEIST_FINALE_ANTI_CHEAT_NO_PROGRESSION */)
 			{
 				func_111(0, 1);
 			}
@@ -17500,7 +17500,7 @@ int func_424(int iParam0, var uParam1, var uParam2, int iParam3, int iParam4, in
 	{
 		bVar7 = true;
 	}
-	if (((bParam8 && bParam9) && iParam0 == 2) && !Global_262145.f_10268 /* Tunable: 1123838161 */)
+	if (((bParam8 && bParam9) && iParam0 == 2) && !Global_262145.f_10268 /* Tunable: DISABLE_STUNT_SERIES_BUCKET */)
 	{
 		iVar13 = func_464();
 		iVar14 = func_462(func_463(iVar13), 0);
@@ -20853,7 +20853,7 @@ void func_544(var uParam0, var uParam1, var uParam2)//Position - 0x19B2D
 		fVar9 = (SYSTEM::TO_FLOAT(func_1195(joaat("MPPLY_GRIEFING"))) - SYSTEM::TO_FLOAT(Global_1577937));
 		if (fVar9 >= IntToFloat(func_1195(joaat("MPPLY_REPORT_STRENGTH"))))
 		{
-			if (Global_262145.f_24501 /* Tunable: -1341376882 */ == 1)
+			if (Global_262145.f_24501 /* Tunable: BSG_1 */ == 1)
 			{
 				func_551(joaat("MPPLY_OVERALL_BADSPORT"), Global_262145.f_9 /* Tunable: AMOUNT_TO_PUNISH_BY_GRIEFING */);
 			}
@@ -20924,7 +20924,7 @@ void func_544(var uParam0, var uParam1, var uParam2)//Position - 0x19B2D
 		fVar15 = (SYSTEM::TO_FLOAT(func_1195(joaat("MPPLY_VC_ANNOYINGME"))) - SYSTEM::TO_FLOAT(Global_1577943));
 		if (fVar15 >= IntToFloat(func_1195(joaat("MPPLY_REPORT_STRENGTH"))))
 		{
-			if (Global_262145.f_24502 /* Tunable: 1673590794 */ == 1)
+			if (Global_262145.f_24502 /* Tunable: BSAM_1 */ == 1)
 			{
 				func_551(joaat("MPPLY_OVERALL_BADSPORT"), Global_262145.f_13 /* Tunable: AMOUNT_TO_PUNISH_BY_VC_ANNOY */);
 			}
@@ -41027,16 +41027,16 @@ int func_682(int iParam0, int iParam1, int iParam2)//Position - 0x35A38
 					return 0;
 				
 				case 2:
-					return Global_262145.f_25519 /* Tunable: -2140343856 */;
+					return Global_262145.f_25519 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_BRONZE_TIME */;
 				
 				case 3:
-					return Global_262145.f_25520 /* Tunable: -1167118619 */;
+					return Global_262145.f_25520 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_SILVER_TIME */;
 				
 				case 4:
-					return Global_262145.f_25521 /* Tunable: -132305813 */;
+					return Global_262145.f_25521 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_GOLD_TIME */;
 				
 				case 5:
-					return Global_262145.f_25522 /* Tunable: 1249433112 */;
+					return Global_262145.f_25522 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_PLATINUM_TIME */;
 				
 				default:
 			}
@@ -41052,16 +41052,16 @@ int func_682(int iParam0, int iParam1, int iParam2)//Position - 0x35A38
 					return 0;
 				
 				case 2:
-					return Global_262145.f_25519 /* Tunable: -2140343856 */;
+					return Global_262145.f_25519 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_BRONZE_TIME */;
 				
 				case 3:
-					return Global_262145.f_25520 /* Tunable: -1167118619 */;
+					return Global_262145.f_25520 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_SILVER_TIME */;
 				
 				case 4:
-					return Global_262145.f_25521 /* Tunable: -132305813 */;
+					return Global_262145.f_25521 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_GOLD_TIME */;
 				
 				case 5:
-					return Global_262145.f_25522 /* Tunable: 1249433112 */;
+					return Global_262145.f_25522 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_PLATINUM_TIME */;
 				
 				default:
 			}
@@ -41077,16 +41077,16 @@ int func_682(int iParam0, int iParam1, int iParam2)//Position - 0x35A38
 					return 0;
 				
 				case 2:
-					return Global_262145.f_25519 /* Tunable: -2140343856 */;
+					return Global_262145.f_25519 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_BRONZE_TIME */;
 				
 				case 3:
-					return Global_262145.f_25520 /* Tunable: -1167118619 */;
+					return Global_262145.f_25520 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_SILVER_TIME */;
 				
 				case 4:
-					return Global_262145.f_25521 /* Tunable: -132305813 */;
+					return Global_262145.f_25521 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_GOLD_TIME */;
 				
 				case 5:
-					return Global_262145.f_25522 /* Tunable: 1249433112 */;
+					return Global_262145.f_25522 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_PLATINUM_TIME */;
 				
 				default:
 			}
@@ -41102,16 +41102,16 @@ int func_682(int iParam0, int iParam1, int iParam2)//Position - 0x35A38
 					return 0;
 				
 				case 2:
-					return Global_262145.f_25519 /* Tunable: -2140343856 */;
+					return Global_262145.f_25519 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_BRONZE_TIME */;
 				
 				case 3:
-					return Global_262145.f_25520 /* Tunable: -1167118619 */;
+					return Global_262145.f_25520 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_SILVER_TIME */;
 				
 				case 4:
-					return Global_262145.f_25521 /* Tunable: -132305813 */;
+					return Global_262145.f_25521 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_GOLD_TIME */;
 				
 				case 5:
-					return Global_262145.f_25522 /* Tunable: 1249433112 */;
+					return Global_262145.f_25522 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_PLATINUM_TIME */;
 				
 				default:
 			}
@@ -41802,16 +41802,16 @@ int func_682(int iParam0, int iParam1, int iParam2)//Position - 0x35A38
 					return 0;
 				
 				case 2:
-					return Global_262145.f_28857 /* Tunable: 212778777 */;
+					return Global_262145.f_28857 /* Tunable: CH_ARCADE_GAMES_GGSM_ASTROCHIMP_B_SCORE */;
 				
 				case 3:
-					return Global_262145.f_28858 /* Tunable: 1730590555 */;
+					return Global_262145.f_28858 /* Tunable: CH_ARCADE_GAMES_GGSM_ASTROCHIMP_S_SCORE */;
 				
 				case 4:
-					return Global_262145.f_28859 /* Tunable: 599275937 */;
+					return Global_262145.f_28859 /* Tunable: CH_ARCADE_GAMES_GGSM_ASTROCHIMP_G_SCORE */;
 				
 				case 5:
-					return Global_262145.f_28860 /* Tunable: 790883802 */;
+					return Global_262145.f_28860 /* Tunable: CH_ARCADE_GAMES_GGSM_ASTROCHIMP_P_SCORE */;
 				
 				default:
 			}

@@ -1187,7 +1187,7 @@ void func_39()//Position - 0xF8B
 
 int func_40()//Position - 0xFC2
 {
-	if (!Global_262145.f_29155 /* Tunable: 1028571554 */)
+	if (!Global_262145.f_29155 /* Tunable: NPC_PHONE_TELEMETRY_TRACKING_ENABLED */)
 	{
 		return 0;
 	}
@@ -4912,10 +4912,10 @@ int func_113(int iParam0)//Position - 0x677B
 	switch (iParam0)
 	{
 		case 6:
-			return Global_262145.f_29110 /* Tunable: 685483744 */;
+			return Global_262145.f_29110 /* Tunable: HEIST3_FINALE_DECOY_GUNMAN */;
 		
 		case 7:
-			return Global_262145.f_29109 /* Tunable: 465695624 */;
+			return Global_262145.f_29109 /* Tunable: HEIST3_FINALE_CLEAN_VEHICLE */;
 		
 		default:
 	}
@@ -5287,13 +5287,13 @@ int func_129(int iParam0)//Position - 0x6E23
 	switch (iParam0)
 	{
 		case 2:
-			return Global_262145.f_29091 /* Tunable: 834167038 */;
+			return Global_262145.f_29091 /* Tunable: HEIST3_SETUP_BOARD_CASINO_MODEL */;
 		
 		case 4:
-			return Global_262145.f_29093 /* Tunable: 1261832289 */;
+			return Global_262145.f_29093 /* Tunable: HEIST3_SETUP_BOARD_VAULT_DOOR */;
 		
 		case 3:
-			return Global_262145.f_29092 /* Tunable: 652110494 */;
+			return Global_262145.f_29092 /* Tunable: HEIST3_SETUP_BOARD_SECURE_KEYPAD */;
 		
 		default:
 	}
@@ -5982,19 +5982,19 @@ int func_162(int iParam0)//Position - 0x7921
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_29104 /* Tunable: 2027377935 */;
+			return Global_262145.f_29104 /* Tunable: HEIST3_HACKERS_RICKIE_CUT */;
 		
 		case 2:
-			return Global_262145.f_29105 /* Tunable: -634674073 */;
+			return Global_262145.f_29105 /* Tunable: HEIST3_HACKERS_CHRISTIAN_CUT */;
 		
 		case 3:
-			return Global_262145.f_29106 /* Tunable: -1507129807 */;
+			return Global_262145.f_29106 /* Tunable: HEIST3_HACKERS_YOHAN_CUT */;
 		
 		case 4:
-			return Global_262145.f_29107 /* Tunable: -490900621 */;
+			return Global_262145.f_29107 /* Tunable: HEIST3_HACKERS_AVI_CUT */;
 		
 		case 5:
-			return Global_262145.f_29108 /* Tunable: -1454763111 */;
+			return Global_262145.f_29108 /* Tunable: HEIST3_HACKERS_PAIGE_CUT */;
 		
 		default:
 	}
@@ -6006,19 +6006,19 @@ int func_163(int iParam0)//Position - 0x7981
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_29099 /* Tunable: 88090906 */;
+			return Global_262145.f_29099 /* Tunable: HEIST3_DRIVERS_KARIM_CUT */;
 		
 		case 2:
-			return Global_262145.f_29100 /* Tunable: -891458514 */;
+			return Global_262145.f_29100 /* Tunable: HEIST3_DRIVERS_TALIANA_CUT */;
 		
 		case 3:
-			return Global_262145.f_29101 /* Tunable: 1321285827 */;
+			return Global_262145.f_29101 /* Tunable: HEIST3_DRIVERS_EDDIE_CUT */;
 		
 		case 4:
-			return Global_262145.f_29102 /* Tunable: -856366310 */;
+			return Global_262145.f_29102 /* Tunable: HEIST3_DRIVERS_ZACH_CUT */;
 		
 		case 5:
-			return Global_262145.f_29103 /* Tunable: -1218087984 */;
+			return Global_262145.f_29103 /* Tunable: HEIST3_DRIVERS_CHESTER_CUT */;
 		
 		default:
 	}
@@ -6030,19 +6030,19 @@ int func_164(int iParam0)//Position - 0x79E1
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_29094 /* Tunable: 74718927 */;
+			return Global_262145.f_29094 /* Tunable: HEIST3_PREPBOARD_GUNMEN_KARL_CUT */;
 		
 		case 2:
-			return Global_262145.f_29095 /* Tunable: 2084651107 */;
+			return Global_262145.f_29095 /* Tunable: HEIST3_PREPBOARD_GUNMEN_GUSTAVO_CUT */;
 		
 		case 3:
-			return Global_262145.f_29096 /* Tunable: 2092632403 */;
+			return Global_262145.f_29096 /* Tunable: HEIST3_PREPBOARD_GUNMEN_CHARLIE_CUT */;
 		
 		case 4:
-			return Global_262145.f_29097 /* Tunable: -289926524 */;
+			return Global_262145.f_29097 /* Tunable: HEIST3_PREPBOARD_GUNMEN_CHESTER_CUT */;
 		
 		case 5:
-			return Global_262145.f_29098 /* Tunable: -409770275 */;
+			return Global_262145.f_29098 /* Tunable: HEIST3_PREPBOARD_GUNMEN_PATRICK_CUT */;
 		
 		default:
 	}
@@ -13168,7 +13168,7 @@ int func_381(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0xE
 	}
 	if (func_382(iParam0))
 	{
-		if (iParam2 <= Global_262145.f_21893 /* Tunable: -1542918426 */)
+		if (iParam2 <= Global_262145.f_21893 /* Tunable: GR_GENERAL_MEDIUM_STOCK_THRESHOLD */)
 		{
 			iVar0 = 1;
 			if (iParam0 == 15)
@@ -13176,7 +13176,7 @@ int func_381(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0xE
 				iVar0 = 2;
 			}
 		}
-		else if (iParam2 <= Global_262145.f_21894 /* Tunable: -2015624215 */)
+		else if (iParam2 <= Global_262145.f_21894 /* Tunable: GR_GENERAL_LARGE_STOCK_THRESHOLD */)
 		{
 			iVar0 = 2;
 			if (iParam0 == 18)
@@ -13214,7 +13214,7 @@ int func_381(int iParam0, int iParam1, int iParam2, int iParam3)//Position - 0xE
 	}
 	else if (func_383(iParam0))
 	{
-		if (iParam1 < Global_262145.f_21853 /* Tunable: 642214211 */)
+		if (iParam1 < Global_262145.f_21853 /* Tunable: GR_RESUPPLY_GENERAL_PLAYERS_NEEDED_FOR_SECOND_RESUPPLY_VEHICLE */)
 		{
 			iVar0 = 1;
 		}
@@ -20455,9 +20455,9 @@ int func_532(var uParam0)//Position - 0x15238
 	float fVar7;
 	int iVar8;
 	
-	if ((Global_262145.f_28688 /* Tunable: -608294742 */ != -1 && !BitTest(func_10(8726, -1), 17)) && func_196(PLAYER::PLAYER_ID(), 0))
+	if ((Global_262145.f_28688 /* Tunable: LOOTVAULTPROMOTION */ != -1 && !BitTest(func_10(8726, -1), 17)) && func_196(PLAYER::PLAYER_ID(), 0))
 	{
-		*uParam0 = Global_262145.f_28688 /* Tunable: -608294742 */;
+		*uParam0 = Global_262145.f_28688 /* Tunable: LOOTVAULTPROMOTION */;
 		return 1;
 	}
 	uVar0[0] = Global_262145.f_29086 /* Tunable: CH_VAULT_WEIGHTING_CASH */;
@@ -20589,7 +20589,7 @@ void func_533(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4,
 		case joaat("SERVICE_SPEND_ARENA_SPECTATOR_BOX"):
 		case joaat("SERVICE_SPEND_MAKE_IT_RAIN"):
 		case joaat("SERVICE_SPEND_SALVAGE_YARD_VEH_ROB_SETUP"):
-			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: 1103207774 */)
+			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: ALLOW_ZERO_SPEND_SERVICE_TELEM */)
 			{
 				func_534(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -20742,7 +20742,7 @@ void func_533(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4,
 		case joaat("SERVICE_SPEND_NIGHTCLUB_TOILET_ATTENDANT"):
 		case joaat("SERVICE_SPEND_JUGALLO_BOSS_VEHICLE_REQUEST"):
 		case joaat("SERVICE_SPEND_SALVAGE_YARD_CLAIM_VEH"):
-			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: 1103207774 */)
+			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: ALLOW_ZERO_SPEND_SERVICE_TELEM */)
 			{
 				func_534(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -29721,10 +29721,10 @@ float func_803(int iParam0)//Position - 0x20FD9
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_29063 /* Tunable: 675917102 */;
+			return Global_262145.f_29063 /* Tunable: CH_VAULT_TAKE_DIFF_MOD_NORMAL */;
 		
 		case 2:
-			return Global_262145.f_29064 /* Tunable: 1912536171 */;
+			return Global_262145.f_29064 /* Tunable: CH_VAULT_TAKE_DIFF_MOD_HARD */;
 		
 		default:
 	}

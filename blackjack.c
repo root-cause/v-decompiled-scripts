@@ -7865,11 +7865,11 @@ int func_108(int iParam0, int iParam1, var uParam2, int iParam3, int iParam4)//P
 			else if (iParam1 == 3)
 			{
 				func_112(iVar4);
-				if (iVar4 >= Global_262145.f_27450 /* Tunable: -1684709496 */)
+				if (iVar4 >= Global_262145.f_27450 /* Tunable: VC_CASINO_SAVE_MAJOR_WIN_THRESHOLD */)
 				{
 					Global_2695901 = 1;
 				}
-				else if (iVar4 >= Global_262145.f_27449 /* Tunable: 1971152414 */)
+				else if (iVar4 >= Global_262145.f_27449 /* Tunable: VC_CASINO_SAVE_BIG_WIN_THRESHOLD */)
 				{
 					Global_2695902 = 1;
 				}
@@ -9794,7 +9794,7 @@ int func_162(int iParam0, int iParam1, var uParam2, int iParam3, int iParam4, in
 			{
 				Global_2695901 = 1;
 			}
-			else if (iVar2 >= Global_262145.f_27451 /* Tunable: 1906061901 */)
+			else if (iVar2 >= Global_262145.f_27451 /* Tunable: VC_CASINO_SAVE_LOSS_THRESHOLD */)
 			{
 				Global_2695902 = 1;
 			}

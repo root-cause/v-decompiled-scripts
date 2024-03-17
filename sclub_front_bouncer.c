@@ -2320,7 +2320,7 @@ void func_72()//Position - 0x1E0A
 
 int func_73()//Position - 0x1E41
 {
-	if (!Global_262145.f_29155 /* Tunable: 1028571554 */)
+	if (!Global_262145.f_29155 /* Tunable: NPC_PHONE_TELEMETRY_TRACKING_ENABLED */)
 	{
 		return 0;
 	}

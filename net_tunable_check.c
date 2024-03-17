@@ -3119,7 +3119,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000f;
 			uParam1->f_2 = 400;
 			uParam1->f_3 = 1000;
-			uParam1->f_5 = -1307500572;
+			uParam1->f_5 = joaat("KICK_TIMEOUT");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20898,7 +20898,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 50000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = -1219608517;
+			uParam1->f_5 = joaat("BIKER_CLUBHOUSE9_HAWICK_CLUBHOUSE1778_HAWICK_AVENUE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20907,7 +20907,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 50000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = 2033735347;
+			uParam1->f_5 = joaat("BIKER_CLUBHOUSE8_DOWNTOWN_VINEWOOD_2214_CLINTON_AVENUE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20916,7 +20916,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 50000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = 2023136086;
+			uParam1->f_5 = joaat("BIKER_CLUBHOUSE3_PILLBOX_HILL_75_ELGIN_AVENUE");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20925,7 +20925,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 50000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = -1390109608;
+			uParam1->f_5 = joaat("BIKER_CLUBHOUSE7_LA_MESA_137_CAPITAL_BLVD");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20934,7 +20934,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 50000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = 819519215;
+			uParam1->f_5 = joaat("BIKER_CLUBHOUSE1_RANCHO_1334_ROY_LOWENSTEIN_BLVD");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20943,7 +20943,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 50000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = 813618473;
+			uParam1->f_5 = joaat("BIKER_CLUBHOUSE12_VESPUCCI_BEACH_4_GOMA_STREET");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20952,7 +20952,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 50000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = 471352940;
+			uParam1->f_5 = joaat("BIKER_CLUBHOUSE2_DEL_PERRO_BEACH_7_DEL_PERRO_BEACH");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20961,7 +20961,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 50000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = 1241258301;
+			uParam1->f_5 = joaat("BIKER_CLUBHOUSE11_PALETO_BAY68_PALETO_BLVD");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20970,7 +20970,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 50000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = -1058611921;
+			uParam1->f_5 = joaat("BIKER_CLUBHOUSE5_PALETO_BAY_1_PALETO_BLVD");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20979,7 +20979,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 50000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = 1669688233;
+			uParam1->f_5 = joaat("BIKER_CLUBHOUSE10_GRAPESEED_2111_EAST_JOSHUA_ROAD");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20988,7 +20988,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 50000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = -1767762009;
+			uParam1->f_5 = joaat("BIKER_CLUBHOUSE6_SANDY_SHORES_47_ALGONQUIN_BLVD");
 			uParam1->f_4 = 1;
 			break;
 		
@@ -20997,7 +20997,7 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 			uParam1->f_1 = 1000000f;
 			uParam1->f_2 = 50000;
 			uParam1->f_3 = 1000000;
-			uParam1->f_5 = 217858651;
+			uParam1->f_5 = joaat("BIKER_CLUBHOUSE4_GREAT_CHAPARRAL101_ROUTE_68");
 			uParam1->f_4 = 1;
 			break;
 		

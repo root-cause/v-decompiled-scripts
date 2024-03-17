@@ -19230,7 +19230,7 @@ void func_414(var uParam0, var uParam1)//Position - 0x158B5
 		iVar0 = 100;
 		if (func_424(func_425()) > 0)
 		{
-			iVar0 = Global_262145.f_32037 /* Tunable: -1911815023 */;
+			iVar0 = Global_262145.f_32037 /* Tunable: FIXER_HQ_CHANCE_FRANKLIN_APPEARS */;
 		}
 		if ((func_423(func_425()) == 1 && func_422(func_425(), 6)) && !func_422(func_425(), 7))
 		{
@@ -19239,7 +19239,7 @@ void func_414(var uParam0, var uParam1)//Position - 0x158B5
 		if (MISC::GET_RANDOM_INT_IN_RANGE(0, 100) < iVar0)
 		{
 			MISC::SET_BIT(&(uParam1->f_4), 0);
-			if (MISC::GET_RANDOM_INT_IN_RANGE(0, 100) < Global_262145.f_32036 /* Tunable: 801201447 */ && func_421(func_425()))
+			if (MISC::GET_RANDOM_INT_IN_RANGE(0, 100) < Global_262145.f_32036 /* Tunable: FIXER_HQ_CHANCE_LAMAR_APPEARS */ && func_421(func_425()))
 			{
 				MISC::SET_BIT(&(uParam1->f_4), 1);
 			}
@@ -37921,7 +37921,7 @@ void func_689(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 				case 3:
 					uParam0->f_28 = 44;
 					uParam0->f_29 = 314;
-					uParam0->f_30 = Global_262145.f_31979 /* Tunable: -1163921635 */;
+					uParam0->f_30 = Global_262145.f_31979 /* Tunable: TUNER_CARMEET_PEDS_CULLING_LEVEL_BLOCK_B */;
 					uParam0->f_20[0] = 67371009;
 					uParam0->f_20[1] = 131073;
 					uParam0->f_20[2] = 0;
@@ -37932,7 +37932,7 @@ void func_689(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					uParam0->f_34 = { 0f, 0f, 10.8f };
 					func_69(&(uParam0->f_11));
 					func_44(&(uParam0->f_11), 31);
-					if (Global_262145.f_31981 /* Tunable: -1477346281 */)
+					if (Global_262145.f_31981 /* Tunable: TUNER_CARMEET_PEDS_REMOVE_BLOCK_B */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -37952,7 +37952,7 @@ void func_689(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 				case 3:
 					uParam0->f_28 = 44;
 					uParam0->f_29 = 295;
-					uParam0->f_30 = Global_262145.f_31978 /* Tunable: -921857032 */;
+					uParam0->f_30 = Global_262145.f_31978 /* Tunable: TUNER_CARMEET_PEDS_CULLING_LEVEL_BLOCK_A */;
 					uParam0->f_20[0] = 67502083;
 					uParam0->f_20[1] = 131074;
 					uParam0->f_20[2] = 0;
@@ -37963,7 +37963,7 @@ void func_689(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					uParam0->f_34 = { 0f, 0f, 221.76f };
 					func_69(&(uParam0->f_11));
 					func_44(&(uParam0->f_11), 31);
-					if (Global_262145.f_31980 /* Tunable: -1567592099 */)
+					if (Global_262145.f_31980 /* Tunable: TUNER_CARMEET_PEDS_REMOVE_BLOCK_A */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -38087,7 +38087,7 @@ void func_689(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 				case 3:
 					uParam0->f_28 = 44;
 					uParam0->f_29 = 211;
-					uParam0->f_30 = Global_262145.f_31978 /* Tunable: -921857032 */;
+					uParam0->f_30 = Global_262145.f_31978 /* Tunable: TUNER_CARMEET_PEDS_CULLING_LEVEL_BLOCK_A */;
 					uParam0->f_20[0] = 17039361;
 					uParam0->f_20[1] = 3;
 					uParam0->f_20[2] = 0;
@@ -38097,7 +38097,7 @@ void func_689(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					uParam0->f_31 = { -37.0679f, -20.021f, 0.9956f };
 					uParam0->f_34 = { 0f, 0f, 36.72f };
 					func_69(&(uParam0->f_11));
-					if (Global_262145.f_31980 /* Tunable: -1567592099 */)
+					if (Global_262145.f_31980 /* Tunable: TUNER_CARMEET_PEDS_REMOVE_BLOCK_A */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -38223,7 +38223,7 @@ void func_689(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 				case 3:
 					uParam0->f_28 = 44;
 					uParam0->f_29 = 247;
-					uParam0->f_30 = Global_262145.f_31978 /* Tunable: -921857032 */;
+					uParam0->f_30 = Global_262145.f_31978 /* Tunable: TUNER_CARMEET_PEDS_CULLING_LEVEL_BLOCK_A */;
 					uParam0->f_20[0] = 2;
 					uParam0->f_20[1] = 3;
 					uParam0->f_20[2] = 0;
@@ -38234,7 +38234,7 @@ void func_689(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					uParam0->f_34 = { 0f, 0f, 113.76f };
 					func_69(&(uParam0->f_11));
 					func_44(&(uParam0->f_11), 31);
-					if (Global_262145.f_31980 /* Tunable: -1567592099 */)
+					if (Global_262145.f_31980 /* Tunable: TUNER_CARMEET_PEDS_REMOVE_BLOCK_A */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -38254,7 +38254,7 @@ void func_689(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 				case 3:
 					uParam0->f_28 = 44;
 					uParam0->f_29 = 257;
-					uParam0->f_30 = Global_262145.f_31978 /* Tunable: -921857032 */;
+					uParam0->f_30 = Global_262145.f_31978 /* Tunable: TUNER_CARMEET_PEDS_CULLING_LEVEL_BLOCK_A */;
 					uParam0->f_20[0] = 16908292;
 					uParam0->f_20[1] = 65537;
 					uParam0->f_20[2] = 0;
@@ -38264,7 +38264,7 @@ void func_689(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					uParam0->f_31 = { -11.4534f, -7.3477f, 0.9944f };
 					uParam0->f_34 = { 0f, 0f, 47.52f };
 					func_69(&(uParam0->f_11));
-					if (Global_262145.f_31980 /* Tunable: -1567592099 */)
+					if (Global_262145.f_31980 /* Tunable: TUNER_CARMEET_PEDS_REMOVE_BLOCK_A */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -38813,7 +38813,7 @@ void func_689(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 				case 3:
 					uParam0->f_28 = 44;
 					uParam0->f_29 = 269;
-					uParam0->f_30 = Global_262145.f_31979 /* Tunable: -1163921635 */;
+					uParam0->f_30 = Global_262145.f_31979 /* Tunable: TUNER_CARMEET_PEDS_CULLING_LEVEL_BLOCK_B */;
 					uParam0->f_20[0] = 16777218;
 					uParam0->f_20[1] = 65577;
 					uParam0->f_20[2] = 0;
@@ -38823,7 +38823,7 @@ void func_689(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					uParam0->f_31 = { 12.7506f, -25.9465f, 1.1948f };
 					uParam0->f_34 = { 0f, 0f, 128.16f };
 					func_69(&(uParam0->f_11));
-					if (Global_262145.f_31981 /* Tunable: -1477346281 */)
+					if (Global_262145.f_31981 /* Tunable: TUNER_CARMEET_PEDS_REMOVE_BLOCK_B */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -38896,7 +38896,7 @@ void func_689(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 				case 3:
 					uParam0->f_28 = 45;
 					uParam0->f_29 = 230;
-					uParam0->f_30 = Global_262145.f_31979 /* Tunable: -1163921635 */;
+					uParam0->f_30 = Global_262145.f_31979 /* Tunable: TUNER_CARMEET_PEDS_CULLING_LEVEL_BLOCK_B */;
 					uParam0->f_20[0] = 50528257;
 					uParam0->f_20[1] = 66306;
 					uParam0->f_20[2] = 0;
@@ -38906,7 +38906,7 @@ void func_689(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					uParam0->f_31 = { 12.6356f, -26.8357f, 1.2004f };
 					uParam0->f_34 = { 0f, 0f, 69.12f };
 					func_69(&(uParam0->f_11));
-					if (Global_262145.f_31981 /* Tunable: -1477346281 */)
+					if (Global_262145.f_31981 /* Tunable: TUNER_CARMEET_PEDS_REMOVE_BLOCK_B */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -38952,7 +38952,7 @@ void func_689(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 				case 3:
 					uParam0->f_28 = 44;
 					uParam0->f_29 = 8;
-					uParam0->f_30 = Global_262145.f_31978 /* Tunable: -921857032 */;
+					uParam0->f_30 = Global_262145.f_31978 /* Tunable: TUNER_CARMEET_PEDS_CULLING_LEVEL_BLOCK_A */;
 					uParam0->f_20[0] = 16842752;
 					uParam0->f_20[1] = 1;
 					uParam0->f_20[2] = 0;
@@ -38962,7 +38962,7 @@ void func_689(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					uParam0->f_31 = { -34.7574f, -9.9475f, 0.9944f };
 					uParam0->f_34 = { 0f, 0f, 95.76f };
 					func_69(&(uParam0->f_11));
-					if (Global_262145.f_31980 /* Tunable: -1567592099 */)
+					if (Global_262145.f_31980 /* Tunable: TUNER_CARMEET_PEDS_REMOVE_BLOCK_A */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -39063,7 +39063,7 @@ void func_689(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 				case 3:
 					uParam0->f_28 = 45;
 					uParam0->f_29 = 245;
-					uParam0->f_30 = Global_262145.f_31979 /* Tunable: -1163921635 */;
+					uParam0->f_30 = Global_262145.f_31979 /* Tunable: TUNER_CARMEET_PEDS_CULLING_LEVEL_BLOCK_B */;
 					uParam0->f_20[0] = 50593793;
 					uParam0->f_20[1] = 131843;
 					uParam0->f_20[2] = 0;
@@ -39073,7 +39073,7 @@ void func_689(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					uParam0->f_31 = { -0.1575f, -16.9246f, 0.9954f };
 					uParam0->f_34 = { 0f, 0f, 21.6f };
 					func_69(&(uParam0->f_11));
-					if (Global_262145.f_31981 /* Tunable: -1477346281 */)
+					if (Global_262145.f_31981 /* Tunable: TUNER_CARMEET_PEDS_REMOVE_BLOCK_B */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -39093,7 +39093,7 @@ void func_689(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 				case 3:
 					uParam0->f_28 = 44;
 					uParam0->f_29 = 260;
-					uParam0->f_30 = Global_262145.f_31979 /* Tunable: -1163921635 */;
+					uParam0->f_30 = Global_262145.f_31979 /* Tunable: TUNER_CARMEET_PEDS_CULLING_LEVEL_BLOCK_B */;
 					uParam0->f_20[0] = 67108870;
 					uParam0->f_20[1] = 66562;
 					uParam0->f_20[2] = 0;
@@ -39103,7 +39103,7 @@ void func_689(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					uParam0->f_31 = { -1.2074f, -16.9846f, 1.0004f };
 					uParam0->f_34 = { 0f, 0f, 336.24f };
 					func_69(&(uParam0->f_11));
-					if (Global_262145.f_31981 /* Tunable: -1477346281 */)
+					if (Global_262145.f_31981 /* Tunable: TUNER_CARMEET_PEDS_REMOVE_BLOCK_B */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -39612,7 +39612,7 @@ void func_695(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 				case 3:
 					uParam0->f_28 = 45;
 					uParam0->f_29 = 297;
-					uParam0->f_30 = Global_262145.f_31978 /* Tunable: -921857032 */;
+					uParam0->f_30 = Global_262145.f_31978 /* Tunable: TUNER_CARMEET_PEDS_CULLING_LEVEL_BLOCK_A */;
 					uParam0->f_20[0] = 17170436;
 					uParam0->f_20[1] = 259;
 					uParam0->f_20[2] = 0;
@@ -39623,7 +39623,7 @@ void func_695(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					uParam0->f_34 = { 0f, 0f, 298.08f };
 					func_69(&(uParam0->f_11));
 					func_44(&(uParam0->f_11), 31);
-					if (Global_262145.f_31980 /* Tunable: -1567592099 */)
+					if (Global_262145.f_31980 /* Tunable: TUNER_CARMEET_PEDS_REMOVE_BLOCK_A */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -39934,7 +39934,7 @@ void func_695(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 				case 3:
 					uParam0->f_28 = 45;
 					uParam0->f_29 = 245;
-					uParam0->f_30 = Global_262145.f_31979 /* Tunable: -1163921635 */;
+					uParam0->f_30 = Global_262145.f_31979 /* Tunable: TUNER_CARMEET_PEDS_CULLING_LEVEL_BLOCK_B */;
 					uParam0->f_20[0] = 50593794;
 					uParam0->f_20[1] = 131841;
 					uParam0->f_20[2] = 0;
@@ -39944,7 +39944,7 @@ void func_695(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					uParam0->f_31 = { 10.5521f, 38.561f, 2.1021f };
 					uParam0->f_34 = { 0f, 0f, 228.24f };
 					func_69(&(uParam0->f_11));
-					if (Global_262145.f_31981 /* Tunable: -1477346281 */)
+					if (Global_262145.f_31981 /* Tunable: TUNER_CARMEET_PEDS_REMOVE_BLOCK_B */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -39990,7 +39990,7 @@ void func_695(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 				case 3:
 					uParam0->f_28 = 44;
 					uParam0->f_29 = 307;
-					uParam0->f_30 = Global_262145.f_31979 /* Tunable: -1163921635 */;
+					uParam0->f_30 = Global_262145.f_31979 /* Tunable: TUNER_CARMEET_PEDS_CULLING_LEVEL_BLOCK_B */;
 					uParam0->f_20[0] = 17104902;
 					uParam0->f_20[1] = 65536;
 					uParam0->f_20[2] = 0;
@@ -40001,7 +40001,7 @@ void func_695(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					uParam0->f_34 = { 0f, 0f, 336.24f };
 					func_69(&(uParam0->f_11));
 					func_44(&(uParam0->f_11), 31);
-					if (Global_262145.f_31981 /* Tunable: -1477346281 */)
+					if (Global_262145.f_31981 /* Tunable: TUNER_CARMEET_PEDS_REMOVE_BLOCK_B */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -40473,7 +40473,7 @@ void func_695(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 				case 3:
 					uParam0->f_28 = 44;
 					uParam0->f_29 = 345;
-					uParam0->f_30 = Global_262145.f_31978 /* Tunable: -921857032 */;
+					uParam0->f_30 = Global_262145.f_31978 /* Tunable: TUNER_CARMEET_PEDS_CULLING_LEVEL_BLOCK_A */;
 					uParam0->f_20[0] = 33816577;
 					uParam0->f_20[1] = 66048;
 					uParam0->f_20[2] = 0;
@@ -40483,7 +40483,7 @@ void func_695(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					uParam0->f_31 = { -37.6184f, 30.6013f, 2.1084f };
 					uParam0->f_34 = { 0f, 0f, 89.28f };
 					func_69(&(uParam0->f_11));
-					if (Global_262145.f_31980 /* Tunable: -1567592099 */)
+					if (Global_262145.f_31980 /* Tunable: TUNER_CARMEET_PEDS_REMOVE_BLOCK_A */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -40503,7 +40503,7 @@ void func_695(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 				case 3:
 					uParam0->f_28 = 44;
 					uParam0->f_29 = 251;
-					uParam0->f_30 = Global_262145.f_31978 /* Tunable: -921857032 */;
+					uParam0->f_30 = Global_262145.f_31978 /* Tunable: TUNER_CARMEET_PEDS_CULLING_LEVEL_BLOCK_A */;
 					uParam0->f_20[0] = 67436550;
 					uParam0->f_20[1] = 131072;
 					uParam0->f_20[2] = 0;
@@ -40514,7 +40514,7 @@ void func_695(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					uParam0->f_34 = { 0f, 0f, 118.08f };
 					func_69(&(uParam0->f_11));
 					func_44(&(uParam0->f_11), 31);
-					if (Global_262145.f_31980 /* Tunable: -1567592099 */)
+					if (Global_262145.f_31980 /* Tunable: TUNER_CARMEET_PEDS_REMOVE_BLOCK_A */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -40798,7 +40798,7 @@ void func_695(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 				case 3:
 					uParam0->f_28 = 44;
 					uParam0->f_29 = 262;
-					uParam0->f_30 = Global_262145.f_31979 /* Tunable: -1163921635 */;
+					uParam0->f_30 = Global_262145.f_31979 /* Tunable: TUNER_CARMEET_PEDS_CULLING_LEVEL_BLOCK_B */;
 					uParam0->f_20[0] = 33685508;
 					uParam0->f_20[1] = 131586;
 					uParam0->f_20[2] = 0;
@@ -40808,7 +40808,7 @@ void func_695(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					uParam0->f_31 = { -11.6869f, -14.429f, 0.994f };
 					uParam0->f_34 = { 0f, 0f, 54.72f };
 					func_69(&(uParam0->f_11));
-					if (Global_262145.f_31981 /* Tunable: -1477346281 */)
+					if (Global_262145.f_31981 /* Tunable: TUNER_CARMEET_PEDS_REMOVE_BLOCK_B */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -41277,7 +41277,7 @@ void func_695(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 				case 3:
 					uParam0->f_28 = 44;
 					uParam0->f_29 = 308;
-					uParam0->f_30 = Global_262145.f_31978 /* Tunable: -921857032 */;
+					uParam0->f_30 = Global_262145.f_31978 /* Tunable: TUNER_CARMEET_PEDS_CULLING_LEVEL_BLOCK_A */;
 					uParam0->f_20[0] = 84082693;
 					uParam0->f_20[1] = 771;
 					uParam0->f_20[2] = 1;
@@ -41288,7 +41288,7 @@ void func_695(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					uParam0->f_34 = { 0f, 0f, 293.04f };
 					func_69(&(uParam0->f_11));
 					func_44(&(uParam0->f_11), 31);
-					if (Global_262145.f_31980 /* Tunable: -1567592099 */)
+					if (Global_262145.f_31980 /* Tunable: TUNER_CARMEET_PEDS_REMOVE_BLOCK_A */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -41731,7 +41731,7 @@ void func_695(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 				case 3:
 					uParam0->f_28 = 45;
 					uParam0->f_29 = 287;
-					uParam0->f_30 = Global_262145.f_31979 /* Tunable: -1163921635 */;
+					uParam0->f_30 = Global_262145.f_31979 /* Tunable: TUNER_CARMEET_PEDS_CULLING_LEVEL_BLOCK_B */;
 					uParam0->f_20[0] = 84083717;
 					uParam0->f_20[1] = 66817;
 					uParam0->f_20[2] = 0;
@@ -41741,7 +41741,7 @@ void func_695(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					uParam0->f_31 = { 3.9481f, -28.2766f, 1.1985f };
 					uParam0->f_34 = { 0f, 0f, 65.625f };
 					func_69(&(uParam0->f_11));
-					if (Global_262145.f_31981 /* Tunable: -1477346281 */)
+					if (Global_262145.f_31981 /* Tunable: TUNER_CARMEET_PEDS_REMOVE_BLOCK_B */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -41761,7 +41761,7 @@ void func_695(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 				case 3:
 					uParam0->f_28 = 45;
 					uParam0->f_29 = 283;
-					uParam0->f_30 = Global_262145.f_31979 /* Tunable: -1163921635 */;
+					uParam0->f_30 = Global_262145.f_31979 /* Tunable: TUNER_CARMEET_PEDS_CULLING_LEVEL_BLOCK_B */;
 					uParam0->f_20[0] = 6;
 					uParam0->f_20[1] = 0;
 					uParam0->f_20[2] = 0;
@@ -41771,7 +41771,7 @@ void func_695(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					uParam0->f_31 = { 3.4061f, -29.895f, 1.1985f };
 					uParam0->f_34 = { 0f, 0f, 29.36f };
 					func_69(&(uParam0->f_11));
-					if (Global_262145.f_31981 /* Tunable: -1477346281 */)
+					if (Global_262145.f_31981 /* Tunable: TUNER_CARMEET_PEDS_REMOVE_BLOCK_B */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -41923,7 +41923,7 @@ void func_695(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 				case 3:
 					uParam0->f_28 = 45;
 					uParam0->f_29 = 250;
-					uParam0->f_30 = Global_262145.f_31978 /* Tunable: -921857032 */;
+					uParam0->f_30 = Global_262145.f_31978 /* Tunable: TUNER_CARMEET_PEDS_CULLING_LEVEL_BLOCK_A */;
 					uParam0->f_20[0] = 67239936;
 					uParam0->f_20[1] = 1026;
 					uParam0->f_20[2] = 0;
@@ -41934,7 +41934,7 @@ void func_695(var uParam0, int iParam1, int iParam2, bool bParam3)//Position - 0
 					uParam0->f_34 = { 0f, 0f, 33.12f };
 					func_69(&(uParam0->f_11));
 					func_44(&(uParam0->f_11), 31);
-					if (Global_262145.f_31980 /* Tunable: -1567592099 */)
+					if (Global_262145.f_31980 /* Tunable: TUNER_CARMEET_PEDS_REMOVE_BLOCK_A */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -66153,7 +66153,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 						default:
 							uParam0->f_28 = 7;
 							uParam0->f_29 = 13;
-							uParam0->f_30 = Global_262145.f_24935 /* Tunable: -925249045 */;
+							uParam0->f_30 = Global_262145.f_24935 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_A */;
 							uParam0->f_20[0] = -1;
 							uParam0->f_20[1] = -1;
 							uParam0->f_20[2] = -1;
@@ -66168,7 +66168,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 							{
 								func_44(&(uParam0->f_11), 27);
 							}
-							if (Global_262145.f_24943 /* Tunable: 853096083 */)
+							if (Global_262145.f_24943 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_A */)
 							{
 								func_44(&(uParam0->f_11), 0);
 							}
@@ -66438,7 +66438,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 				case 3:
 					uParam0->f_28 = 3;
 					uParam0->f_29 = 2;
-					uParam0->f_30 = Global_262145.f_24935 /* Tunable: -925249045 */;
+					uParam0->f_30 = Global_262145.f_24935 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_A */;
 					uParam0->f_20[0] = 100925444;
 					uParam0->f_20[1] = 4;
 					uParam0->f_20[2] = 0;
@@ -66452,7 +66452,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24943 /* Tunable: 853096083 */)
+					if (Global_262145.f_24943 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_A */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -66627,7 +66627,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 				case 3:
 					uParam0->f_28 = 3;
 					uParam0->f_29 = 30;
-					uParam0->f_30 = Global_262145.f_24938 /* Tunable: -1834752656 */;
+					uParam0->f_30 = Global_262145.f_24938 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_D */;
 					uParam0->f_20[0] = 84082691;
 					uParam0->f_20[1] = 4;
 					uParam0->f_20[2] = 0;
@@ -66641,7 +66641,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24946 /* Tunable: -1972869708 */)
+					if (Global_262145.f_24946 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_D */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -66784,7 +66784,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 				case 3:
 					uParam0->f_28 = 3;
 					uParam0->f_29 = 71;
-					uParam0->f_30 = Global_262145.f_24938 /* Tunable: -1834752656 */;
+					uParam0->f_30 = Global_262145.f_24938 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_D */;
 					uParam0->f_20[0] = 17367041;
 					uParam0->f_20[1] = 2;
 					uParam0->f_20[2] = 0;
@@ -66798,7 +66798,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24946 /* Tunable: -1972869708 */)
+					if (Global_262145.f_24946 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_D */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -66818,7 +66818,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 				case 3:
 					uParam0->f_28 = 3;
 					uParam0->f_29 = 68;
-					uParam0->f_30 = Global_262145.f_24938 /* Tunable: -1834752656 */;
+					uParam0->f_30 = Global_262145.f_24938 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_D */;
 					uParam0->f_20[0] = 100925444;
 					uParam0->f_20[1] = 4;
 					uParam0->f_20[2] = 0;
@@ -66832,7 +66832,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24946 /* Tunable: -1972869708 */)
+					if (Global_262145.f_24946 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_D */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -66943,7 +66943,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 				case 3:
 					uParam0->f_28 = 7;
 					uParam0->f_29 = 17;
-					uParam0->f_30 = Global_262145.f_24936 /* Tunable: -1231835809 */;
+					uParam0->f_30 = Global_262145.f_24936 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_B */;
 					uParam0->f_20[0] = 33685506;
 					uParam0->f_20[1] = 2;
 					uParam0->f_20[2] = 0;
@@ -66958,7 +66958,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24944 /* Tunable: -1253229699 */)
+					if (Global_262145.f_24944 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_B */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -67099,7 +67099,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 				case 3:
 					uParam0->f_28 = 3;
 					uParam0->f_29 = 8;
-					uParam0->f_30 = Global_262145.f_24935 /* Tunable: -925249045 */;
+					uParam0->f_30 = Global_262145.f_24935 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_A */;
 					uParam0->f_20[0] = 84410371;
 					uParam0->f_20[1] = 0;
 					uParam0->f_20[2] = 0;
@@ -67113,7 +67113,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24943 /* Tunable: 853096083 */)
+					if (Global_262145.f_24943 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_A */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -67379,7 +67379,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 				case 3:
 					uParam0->f_28 = 7;
 					uParam0->f_29 = 3;
-					uParam0->f_30 = Global_262145.f_24935 /* Tunable: -925249045 */;
+					uParam0->f_30 = Global_262145.f_24935 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_A */;
 					uParam0->f_20[0] = 67436548;
 					uParam0->f_20[1] = 4;
 					uParam0->f_20[2] = 3;
@@ -67394,7 +67394,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24943 /* Tunable: 853096083 */)
+					if (Global_262145.f_24943 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_A */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -67414,7 +67414,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 				case 3:
 					uParam0->f_28 = 7;
 					uParam0->f_29 = 96;
-					uParam0->f_30 = Global_262145.f_24938 /* Tunable: -1834752656 */;
+					uParam0->f_30 = Global_262145.f_24938 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_D */;
 					uParam0->f_20[0] = 33685505;
 					uParam0->f_20[1] = 3;
 					uParam0->f_20[2] = 0;
@@ -67429,7 +67429,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24946 /* Tunable: -1972869708 */)
+					if (Global_262145.f_24946 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_D */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -67449,7 +67449,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 				case 3:
 					uParam0->f_28 = 3;
 					uParam0->f_29 = 5;
-					uParam0->f_30 = Global_262145.f_24936 /* Tunable: -1231835809 */;
+					uParam0->f_30 = Global_262145.f_24936 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_B */;
 					uParam0->f_20[0] = 100859908;
 					uParam0->f_20[1] = 4;
 					uParam0->f_20[2] = 0;
@@ -67463,7 +67463,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24944 /* Tunable: -1253229699 */)
+					if (Global_262145.f_24944 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_B */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -67483,7 +67483,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 				case 3:
 					uParam0->f_28 = 3;
 					uParam0->f_29 = 69;
-					uParam0->f_30 = Global_262145.f_24937 /* Tunable: -1519580398 */;
+					uParam0->f_30 = Global_262145.f_24937 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_C */;
 					uParam0->f_20[0] = 67633152;
 					uParam0->f_20[1] = 4;
 					uParam0->f_20[2] = 0;
@@ -67497,7 +67497,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24945 /* Tunable: -1484873760 */)
+					if (Global_262145.f_24945 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_C */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -68296,7 +68296,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 				case 3:
 					uParam0->f_28 = 7;
 					uParam0->f_29 = 130;
-					uParam0->f_30 = Global_262145.f_24935 /* Tunable: -925249045 */;
+					uParam0->f_30 = Global_262145.f_24935 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_A */;
 					uParam0->f_20[0] = 33816577;
 					uParam0->f_20[1] = 3;
 					uParam0->f_20[2] = 0;
@@ -68311,7 +68311,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24943 /* Tunable: 853096083 */)
+					if (Global_262145.f_24943 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_A */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -68485,7 +68485,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 				case 3:
 					uParam0->f_28 = 3;
 					uParam0->f_29 = 16;
-					uParam0->f_30 = Global_262145.f_24937 /* Tunable: -1519580398 */;
+					uParam0->f_30 = Global_262145.f_24937 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_C */;
 					uParam0->f_20[0] = 67502080;
 					uParam0->f_20[1] = 2;
 					uParam0->f_20[2] = 0;
@@ -68499,7 +68499,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24945 /* Tunable: -1484873760 */)
+					if (Global_262145.f_24945 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_C */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -68519,7 +68519,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 				case 3:
 					uParam0->f_28 = 7;
 					uParam0->f_29 = 89;
-					uParam0->f_30 = Global_262145.f_24937 /* Tunable: -1519580398 */;
+					uParam0->f_30 = Global_262145.f_24937 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_C */;
 					uParam0->f_20[0] = 50462721;
 					uParam0->f_20[1] = 2;
 					uParam0->f_20[2] = 1;
@@ -68534,7 +68534,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24945 /* Tunable: -1484873760 */)
+					if (Global_262145.f_24945 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_C */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -68615,7 +68615,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 				case 3:
 					uParam0->f_28 = 3;
 					uParam0->f_29 = 69;
-					uParam0->f_30 = Global_262145.f_24937 /* Tunable: -1519580398 */;
+					uParam0->f_30 = Global_262145.f_24937 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_C */;
 					uParam0->f_20[0] = 33947650;
 					uParam0->f_20[1] = 2;
 					uParam0->f_20[2] = 0;
@@ -68629,7 +68629,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24945 /* Tunable: -1484873760 */)
+					if (Global_262145.f_24945 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_C */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -69202,7 +69202,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 				case 3:
 					uParam0->f_28 = 3;
 					uParam0->f_29 = 14;
-					uParam0->f_30 = Global_262145.f_24937 /* Tunable: -1519580398 */;
+					uParam0->f_30 = Global_262145.f_24937 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_C */;
 					uParam0->f_20[0] = 50987010;
 					uParam0->f_20[1] = 2;
 					uParam0->f_20[2] = 0;
@@ -69216,7 +69216,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24945 /* Tunable: -1484873760 */)
+					if (Global_262145.f_24945 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_C */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -69236,7 +69236,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 				case 3:
 					uParam0->f_28 = 3;
 					uParam0->f_29 = 8;
-					uParam0->f_30 = Global_262145.f_24936 /* Tunable: -1231835809 */;
+					uParam0->f_30 = Global_262145.f_24936 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_B */;
 					uParam0->f_20[0] = 101056512;
 					uParam0->f_20[1] = 2;
 					uParam0->f_20[2] = 0;
@@ -69250,7 +69250,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24944 /* Tunable: -1253229699 */)
+					if (Global_262145.f_24944 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_B */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -69270,7 +69270,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 				case 3:
 					uParam0->f_28 = 7;
 					uParam0->f_29 = 1;
-					uParam0->f_30 = Global_262145.f_24936 /* Tunable: -1231835809 */;
+					uParam0->f_30 = Global_262145.f_24936 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_B */;
 					uParam0->f_20[0] = 84213764;
 					uParam0->f_20[1] = 5;
 					uParam0->f_20[2] = 3;
@@ -69285,7 +69285,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24944 /* Tunable: -1253229699 */)
+					if (Global_262145.f_24944 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_B */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -69773,7 +69773,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 				case 3:
 					uParam0->f_28 = 7;
 					uParam0->f_29 = 9;
-					uParam0->f_30 = Global_262145.f_24936 /* Tunable: -1231835809 */;
+					uParam0->f_30 = Global_262145.f_24936 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_B */;
 					uParam0->f_20[0] = 84279300;
 					uParam0->f_20[1] = 5;
 					uParam0->f_20[2] = 3;
@@ -69788,7 +69788,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24944 /* Tunable: -1253229699 */)
+					if (Global_262145.f_24944 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_B */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -69872,7 +69872,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 				case 3:
 					uParam0->f_28 = 3;
 					uParam0->f_29 = 71;
-					uParam0->f_30 = Global_262145.f_24938 /* Tunable: -1834752656 */;
+					uParam0->f_30 = Global_262145.f_24938 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_D */;
 					uParam0->f_20[0] = 67698688;
 					uParam0->f_20[1] = 1;
 					uParam0->f_20[2] = 0;
@@ -69886,7 +69886,7 @@ void func_983(var uParam0, int iParam1, bool bParam2)//Position - 0x4EC49
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24946 /* Tunable: -1972869708 */)
+					if (Global_262145.f_24946 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_D */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -70440,7 +70440,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 				case 3:
 					uParam0->f_28 = 7;
 					uParam0->f_29 = 3;
-					uParam0->f_30 = Global_262145.f_24935 /* Tunable: -925249045 */;
+					uParam0->f_30 = Global_262145.f_24935 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_A */;
 					uParam0->f_20[0] = 84279299;
 					uParam0->f_20[1] = 5;
 					uParam0->f_20[2] = 3;
@@ -70455,7 +70455,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24943 /* Tunable: 853096083 */)
+					if (Global_262145.f_24943 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_A */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -70598,7 +70598,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 				case 3:
 					uParam0->f_28 = 7;
 					uParam0->f_29 = 22;
-					uParam0->f_30 = Global_262145.f_24938 /* Tunable: -1834752656 */;
+					uParam0->f_30 = Global_262145.f_24938 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_D */;
 					uParam0->f_20[0] = 84213764;
 					uParam0->f_20[1] = 5;
 					uParam0->f_20[2] = 3;
@@ -70613,7 +70613,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24946 /* Tunable: -1972869708 */)
+					if (Global_262145.f_24946 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_D */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -70846,7 +70846,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 				case 3:
 					uParam0->f_28 = 3;
 					uParam0->f_29 = 68;
-					uParam0->f_30 = Global_262145.f_24937 /* Tunable: -1519580398 */;
+					uParam0->f_30 = Global_262145.f_24937 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_C */;
 					uParam0->f_20[0] = 84148227;
 					uParam0->f_20[1] = 3;
 					uParam0->f_20[2] = 0;
@@ -70860,7 +70860,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24945 /* Tunable: -1484873760 */)
+					if (Global_262145.f_24945 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_C */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -71433,7 +71433,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 				case 3:
 					uParam0->f_28 = 7;
 					uParam0->f_29 = 96;
-					uParam0->f_30 = Global_262145.f_24938 /* Tunable: -1834752656 */;
+					uParam0->f_30 = Global_262145.f_24938 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_D */;
 					uParam0->f_20[0] = 67436547;
 					uParam0->f_20[1] = 4;
 					uParam0->f_20[2] = 3;
@@ -71448,7 +71448,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24946 /* Tunable: -1972869708 */)
+					if (Global_262145.f_24946 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_D */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -71468,7 +71468,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 				case 3:
 					uParam0->f_28 = 7;
 					uParam0->f_29 = 5;
-					uParam0->f_30 = Global_262145.f_24935 /* Tunable: -925249045 */;
+					uParam0->f_30 = Global_262145.f_24935 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_A */;
 					uParam0->f_20[0] = 84213764;
 					uParam0->f_20[1] = 5;
 					uParam0->f_20[2] = 3;
@@ -71483,7 +71483,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24943 /* Tunable: 853096083 */)
+					if (Global_262145.f_24943 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_A */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -71656,7 +71656,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 				case 3:
 					uParam0->f_28 = 7;
 					uParam0->f_29 = 17;
-					uParam0->f_30 = Global_262145.f_24936 /* Tunable: -1231835809 */;
+					uParam0->f_30 = Global_262145.f_24936 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_B */;
 					uParam0->f_20[0] = 50528258;
 					uParam0->f_20[1] = 2;
 					uParam0->f_20[2] = 1;
@@ -71671,7 +71671,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24944 /* Tunable: -1253229699 */)
+					if (Global_262145.f_24944 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_B */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -71784,7 +71784,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 				case 3:
 					uParam0->f_28 = 3;
 					uParam0->f_29 = 16;
-					uParam0->f_30 = Global_262145.f_24936 /* Tunable: -1231835809 */;
+					uParam0->f_30 = Global_262145.f_24936 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_B */;
 					uParam0->f_20[0] = 84475907;
 					uParam0->f_20[1] = 2;
 					uParam0->f_20[2] = 0;
@@ -71798,7 +71798,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24944 /* Tunable: -1253229699 */)
+					if (Global_262145.f_24944 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_B */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -72075,7 +72075,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 				case 3:
 					uParam0->f_28 = 3;
 					uParam0->f_29 = 30;
-					uParam0->f_30 = Global_262145.f_24937 /* Tunable: -1519580398 */;
+					uParam0->f_30 = Global_262145.f_24937 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_C */;
 					uParam0->f_20[0] = 50855938;
 					uParam0->f_20[1] = 3;
 					uParam0->f_20[2] = 0;
@@ -72089,7 +72089,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24945 /* Tunable: -1484873760 */)
+					if (Global_262145.f_24945 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_C */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -72354,7 +72354,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 				case 3:
 					uParam0->f_28 = 7;
 					uParam0->f_29 = 17;
-					uParam0->f_30 = Global_262145.f_24935 /* Tunable: -925249045 */;
+					uParam0->f_30 = Global_262145.f_24935 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_A */;
 					uParam0->f_20[0] = 84279300;
 					uParam0->f_20[1] = 5;
 					uParam0->f_20[2] = 3;
@@ -72369,7 +72369,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24943 /* Tunable: 853096083 */)
+					if (Global_262145.f_24943 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_A */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -72420,7 +72420,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 				case 3:
 					uParam0->f_28 = 7;
 					uParam0->f_29 = 17;
-					uParam0->f_30 = Global_262145.f_24935 /* Tunable: -925249045 */;
+					uParam0->f_30 = Global_262145.f_24935 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_A */;
 					uParam0->f_20[0] = 84279300;
 					uParam0->f_20[1] = 5;
 					uParam0->f_20[2] = 3;
@@ -72435,7 +72435,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24943 /* Tunable: 853096083 */)
+					if (Global_262145.f_24943 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_A */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -72455,7 +72455,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 				case 3:
 					uParam0->f_28 = 3;
 					uParam0->f_29 = 71;
-					uParam0->f_30 = Global_262145.f_24938 /* Tunable: -1834752656 */;
+					uParam0->f_30 = Global_262145.f_24938 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_D */;
 					uParam0->f_20[0] = 17498113;
 					uParam0->f_20[1] = 0;
 					uParam0->f_20[2] = 0;
@@ -72469,7 +72469,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24946 /* Tunable: -1972869708 */)
+					if (Global_262145.f_24946 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_D */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -72489,7 +72489,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 				case 3:
 					uParam0->f_28 = 7;
 					uParam0->f_29 = 126;
-					uParam0->f_30 = Global_262145.f_24937 /* Tunable: -1519580398 */;
+					uParam0->f_30 = Global_262145.f_24937 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_C */;
 					uParam0->f_20[0] = 67502083;
 					uParam0->f_20[1] = 4;
 					uParam0->f_20[2] = 3;
@@ -72504,7 +72504,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24945 /* Tunable: -1484873760 */)
+					if (Global_262145.f_24945 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_C */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -72524,7 +72524,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 				case 3:
 					uParam0->f_28 = 3;
 					uParam0->f_29 = 16;
-					uParam0->f_30 = Global_262145.f_24937 /* Tunable: -1519580398 */;
+					uParam0->f_30 = Global_262145.f_24937 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_C */;
 					uParam0->f_20[0] = 16842753;
 					uParam0->f_20[1] = 1;
 					uParam0->f_20[2] = 0;
@@ -72538,7 +72538,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24945 /* Tunable: -1484873760 */)
+					if (Global_262145.f_24945 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_C */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -72958,7 +72958,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 				case 3:
 					uParam0->f_28 = 3;
 					uParam0->f_29 = 16;
-					uParam0->f_30 = Global_262145.f_24938 /* Tunable: -1834752656 */;
+					uParam0->f_30 = Global_262145.f_24938 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_D */;
 					uParam0->f_20[0] = 65536;
 					uParam0->f_20[1] = 1;
 					uParam0->f_20[2] = 0;
@@ -72972,7 +72972,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24946 /* Tunable: -1972869708 */)
+					if (Global_262145.f_24946 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_D */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -72992,7 +72992,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 				case 3:
 					uParam0->f_28 = 3;
 					uParam0->f_29 = 68;
-					uParam0->f_30 = Global_262145.f_24938 /* Tunable: -1834752656 */;
+					uParam0->f_30 = Global_262145.f_24938 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_D */;
 					uParam0->f_20[0] = 50921474;
 					uParam0->f_20[1] = 3;
 					uParam0->f_20[2] = 0;
@@ -73006,7 +73006,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24946 /* Tunable: -1972869708 */)
+					if (Global_262145.f_24946 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_D */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -73026,7 +73026,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 				case 3:
 					uParam0->f_28 = 3;
 					uParam0->f_29 = 92;
-					uParam0->f_30 = Global_262145.f_24937 /* Tunable: -1519580398 */;
+					uParam0->f_30 = Global_262145.f_24937 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_C */;
 					uParam0->f_20[0] = 100925444;
 					uParam0->f_20[1] = 3;
 					uParam0->f_20[2] = 0;
@@ -73040,7 +73040,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24945 /* Tunable: -1484873760 */)
+					if (Global_262145.f_24945 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_C */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -73184,7 +73184,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 				case 3:
 					uParam0->f_28 = 7;
 					uParam0->f_29 = 17;
-					uParam0->f_30 = Global_262145.f_24936 /* Tunable: -1231835809 */;
+					uParam0->f_30 = Global_262145.f_24936 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_B */;
 					uParam0->f_20[0] = 50593793;
 					uParam0->f_20[1] = 2;
 					uParam0->f_20[2] = 0;
@@ -73199,7 +73199,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24944 /* Tunable: -1253229699 */)
+					if (Global_262145.f_24944 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_B */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -73372,7 +73372,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 				case 3:
 					uParam0->f_28 = 7;
 					uParam0->f_29 = 96;
-					uParam0->f_30 = Global_262145.f_24936 /* Tunable: -1231835809 */;
+					uParam0->f_30 = Global_262145.f_24936 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_B */;
 					uParam0->f_20[0] = 16842752;
 					uParam0->f_20[1] = 1;
 					uParam0->f_20[2] = 2;
@@ -73387,7 +73387,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24944 /* Tunable: -1253229699 */)
+					if (Global_262145.f_24944 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_B */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -73839,7 +73839,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 				case 3:
 					uParam0->f_28 = 3;
 					uParam0->f_29 = 10;
-					uParam0->f_30 = Global_262145.f_24935 /* Tunable: -925249045 */;
+					uParam0->f_30 = Global_262145.f_24935 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_A */;
 					uParam0->f_20[0] = 67502084;
 					uParam0->f_20[1] = 3;
 					uParam0->f_20[2] = 0;
@@ -73853,7 +73853,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24943 /* Tunable: 853096083 */)
+					if (Global_262145.f_24943 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_A */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -73873,7 +73873,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 				case 3:
 					uParam0->f_28 = 3;
 					uParam0->f_29 = 4;
-					uParam0->f_30 = Global_262145.f_24936 /* Tunable: -1231835809 */;
+					uParam0->f_30 = Global_262145.f_24936 /* Tunable: CASINO_NIGHTCLUB_PEDS_CULLING_LEVEL_BLOCK_B */;
 					uParam0->f_20[0] = 16777216;
 					uParam0->f_20[1] = 1;
 					uParam0->f_20[2] = 0;
@@ -73887,7 +73887,7 @@ void func_984(var uParam0, int iParam1, bool bParam2)//Position - 0x54ED4
 					{
 						func_44(&(uParam0->f_11), 27);
 					}
-					if (Global_262145.f_24944 /* Tunable: -1253229699 */)
+					if (Global_262145.f_24944 /* Tunable: CASINO_NIGHTCLUB_PEDS_REMOVE_BLOCK_B */)
 					{
 						func_44(&(uParam0->f_11), 0);
 					}
@@ -102203,7 +102203,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 				case 3:
 					uParam1->f_28 = 8;
 					uParam1->f_29 = 121;
-					uParam1->f_30 = Global_262145.f_24942 /* Tunable: 2089855578 */;
+					uParam1->f_30 = Global_262145.f_24942 /* Tunable: BEACH_PARTY_PEDS_CULLING_LEVEL_BLOCK_D */;
 					uParam1->f_20[0] = 131074;
 					uParam1->f_20[1] = 131329;
 					uParam1->f_20[2] = 16777216;
@@ -102217,7 +102217,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 					{
 						func_44(&(uParam1->f_11), 27);
 					}
-					if (Global_262145.f_24950 /* Tunable: -993451048 */)
+					if (Global_262145.f_24950 /* Tunable: BEACH_PARTY_PEDS_REMOVE_BLOCK_D */)
 					{
 						func_44(&(uParam1->f_11), 0);
 					}
@@ -102271,7 +102271,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 				case 3:
 					uParam1->f_28 = 10;
 					uParam1->f_29 = 96;
-					uParam1->f_30 = Global_262145.f_24942 /* Tunable: 2089855578 */;
+					uParam1->f_30 = Global_262145.f_24942 /* Tunable: BEACH_PARTY_PEDS_CULLING_LEVEL_BLOCK_D */;
 					uParam1->f_20[0] = 131074;
 					uParam1->f_20[1] = 16843009;
 					uParam1->f_20[2] = 17563648;
@@ -102285,7 +102285,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 					{
 						func_44(&(uParam1->f_11), 27);
 					}
-					if (Global_262145.f_24950 /* Tunable: -993451048 */)
+					if (Global_262145.f_24950 /* Tunable: BEACH_PARTY_PEDS_REMOVE_BLOCK_D */)
 					{
 						func_44(&(uParam1->f_11), 0);
 					}
@@ -102727,7 +102727,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 				case 3:
 					uParam1->f_28 = 10;
 					uParam1->f_29 = 119;
-					uParam1->f_30 = Global_262145.f_24941 /* Tunable: -1891938385 */;
+					uParam1->f_30 = Global_262145.f_24941 /* Tunable: BEACH_PARTY_PEDS_CULLING_LEVEL_BLOCK_C */;
 					uParam1->f_20[0] = 131074;
 					uParam1->f_20[1] = 33619968;
 					uParam1->f_20[2] = 524288;
@@ -102741,7 +102741,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 					{
 						func_44(&(uParam1->f_11), 27);
 					}
-					if (Global_262145.f_24949 /* Tunable: 262060418 */)
+					if (Global_262145.f_24949 /* Tunable: BEACH_PARTY_PEDS_REMOVE_BLOCK_C */)
 					{
 						func_44(&(uParam1->f_11), 0);
 					}
@@ -102791,7 +102791,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 				case 3:
 					uParam1->f_28 = 8;
 					uParam1->f_29 = 123;
-					uParam1->f_30 = Global_262145.f_24940 /* Tunable: 1509025053 */;
+					uParam1->f_30 = Global_262145.f_24940 /* Tunable: BEACH_PARTY_PEDS_CULLING_LEVEL_BLOCK_B */;
 					uParam1->f_20[0] = 131074;
 					uParam1->f_20[1] = 65536;
 					uParam1->f_20[2] = 0;
@@ -102805,7 +102805,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 					{
 						func_44(&(uParam1->f_11), 27);
 					}
-					if (Global_262145.f_24948 /* Tunable: 626451698 */)
+					if (Global_262145.f_24948 /* Tunable: BEACH_PARTY_PEDS_REMOVE_BLOCK_B */)
 					{
 						func_44(&(uParam1->f_11), 0);
 					}
@@ -102921,7 +102921,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 				case 3:
 					uParam1->f_28 = 10;
 					uParam1->f_29 = 61;
-					uParam1->f_30 = Global_262145.f_24939 /* Tunable: 1788315240 */;
+					uParam1->f_30 = Global_262145.f_24939 /* Tunable: BEACH_PARTY_PEDS_CULLING_LEVEL_BLOCK_A */;
 					uParam1->f_20[0] = 65537;
 					uParam1->f_20[1] = 33685504;
 					uParam1->f_20[2] = 720896;
@@ -102939,7 +102939,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 					{
 						func_44(&(uParam1->f_11), 27);
 					}
-					if (Global_262145.f_24947 /* Tunable: -600583507 */)
+					if (Global_262145.f_24947 /* Tunable: BEACH_PARTY_PEDS_REMOVE_BLOCK_A */)
 					{
 						func_44(&(uParam1->f_11), 0);
 					}
@@ -103140,7 +103140,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 				case 3:
 					uParam1->f_28 = 8;
 					uParam1->f_29 = 52;
-					uParam1->f_30 = Global_262145.f_24941 /* Tunable: -1891938385 */;
+					uParam1->f_30 = Global_262145.f_24941 /* Tunable: BEACH_PARTY_PEDS_CULLING_LEVEL_BLOCK_C */;
 					uParam1->f_20[0] = 65537;
 					uParam1->f_20[1] = 131585;
 					uParam1->f_20[2] = 33554432;
@@ -103154,7 +103154,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 					{
 						func_44(&(uParam1->f_11), 27);
 					}
-					if (Global_262145.f_24949 /* Tunable: 262060418 */)
+					if (Global_262145.f_24949 /* Tunable: BEACH_PARTY_PEDS_REMOVE_BLOCK_C */)
 					{
 						func_44(&(uParam1->f_11), 0);
 					}
@@ -103174,7 +103174,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 				case 3:
 					uParam1->f_28 = 10;
 					uParam1->f_29 = 86;
-					uParam1->f_30 = Global_262145.f_24940 /* Tunable: 1509025053 */;
+					uParam1->f_30 = Global_262145.f_24940 /* Tunable: BEACH_PARTY_PEDS_CULLING_LEVEL_BLOCK_B */;
 					uParam1->f_20[0] = 65537;
 					uParam1->f_20[1] = 33751040;
 					uParam1->f_20[2] = 50462720;
@@ -103188,7 +103188,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 					{
 						func_44(&(uParam1->f_11), 27);
 					}
-					if (Global_262145.f_24948 /* Tunable: 626451698 */)
+					if (Global_262145.f_24948 /* Tunable: BEACH_PARTY_PEDS_REMOVE_BLOCK_B */)
 					{
 						func_44(&(uParam1->f_11), 0);
 					}
@@ -103305,7 +103305,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 				case 3:
 					uParam1->f_28 = 9;
 					uParam1->f_29 = 54;
-					uParam1->f_30 = Global_262145.f_24941 /* Tunable: -1891938385 */;
+					uParam1->f_30 = Global_262145.f_24941 /* Tunable: BEACH_PARTY_PEDS_CULLING_LEVEL_BLOCK_C */;
 					uParam1->f_20[0] = 131074;
 					uParam1->f_20[1] = 33620226;
 					uParam1->f_20[2] = 524288;
@@ -103319,7 +103319,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 					{
 						func_44(&(uParam1->f_11), 27);
 					}
-					if (Global_262145.f_24949 /* Tunable: 262060418 */)
+					if (Global_262145.f_24949 /* Tunable: BEACH_PARTY_PEDS_REMOVE_BLOCK_C */)
 					{
 						func_44(&(uParam1->f_11), 0);
 					}
@@ -103339,7 +103339,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 				case 3:
 					uParam1->f_28 = 8;
 					uParam1->f_29 = 44;
-					uParam1->f_30 = Global_262145.f_24941 /* Tunable: -1891938385 */;
+					uParam1->f_30 = Global_262145.f_24941 /* Tunable: BEACH_PARTY_PEDS_CULLING_LEVEL_BLOCK_C */;
 					uParam1->f_20[0] = 65537;
 					uParam1->f_20[1] = 131584;
 					uParam1->f_20[2] = 33554432;
@@ -103357,7 +103357,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 					{
 						func_44(&(uParam1->f_11), 27);
 					}
-					if (Global_262145.f_24949 /* Tunable: 262060418 */)
+					if (Global_262145.f_24949 /* Tunable: BEACH_PARTY_PEDS_REMOVE_BLOCK_C */)
 					{
 						func_44(&(uParam1->f_11), 0);
 					}
@@ -103531,7 +103531,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 				case 3:
 					uParam1->f_28 = 9;
 					uParam1->f_29 = 36;
-					uParam1->f_30 = Global_262145.f_24939 /* Tunable: 1788315240 */;
+					uParam1->f_30 = Global_262145.f_24939 /* Tunable: BEACH_PARTY_PEDS_CULLING_LEVEL_BLOCK_A */;
 					uParam1->f_20[0] = 131074;
 					uParam1->f_20[1] = 50397954;
 					uParam1->f_20[2] = 67633152;
@@ -103545,7 +103545,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 					{
 						func_44(&(uParam1->f_11), 27);
 					}
-					if (Global_262145.f_24947 /* Tunable: -600583507 */)
+					if (Global_262145.f_24947 /* Tunable: BEACH_PARTY_PEDS_REMOVE_BLOCK_A */)
 					{
 						func_44(&(uParam1->f_11), 0);
 					}
@@ -103565,7 +103565,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 				case 3:
 					uParam1->f_28 = 10;
 					uParam1->f_29 = 53;
-					uParam1->f_30 = Global_262145.f_24939 /* Tunable: 1788315240 */;
+					uParam1->f_30 = Global_262145.f_24939 /* Tunable: BEACH_PARTY_PEDS_CULLING_LEVEL_BLOCK_A */;
 					uParam1->f_20[0] = 131074;
 					uParam1->f_20[1] = 66050;
 					uParam1->f_20[2] = 34209792;
@@ -103579,7 +103579,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 					{
 						func_44(&(uParam1->f_11), 27);
 					}
-					if (Global_262145.f_24947 /* Tunable: -600583507 */)
+					if (Global_262145.f_24947 /* Tunable: BEACH_PARTY_PEDS_REMOVE_BLOCK_A */)
 					{
 						func_44(&(uParam1->f_11), 0);
 					}
@@ -104142,7 +104142,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 				case 3:
 					uParam1->f_28 = 8;
 					uParam1->f_29 = 52;
-					uParam1->f_30 = Global_262145.f_24942 /* Tunable: 2089855578 */;
+					uParam1->f_30 = Global_262145.f_24942 /* Tunable: BEACH_PARTY_PEDS_CULLING_LEVEL_BLOCK_D */;
 					uParam1->f_20[0] = 65537;
 					uParam1->f_20[1] = 131073;
 					uParam1->f_20[2] = 0;
@@ -104156,7 +104156,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 					{
 						func_44(&(uParam1->f_11), 27);
 					}
-					if (Global_262145.f_24950 /* Tunable: -993451048 */)
+					if (Global_262145.f_24950 /* Tunable: BEACH_PARTY_PEDS_REMOVE_BLOCK_D */)
 					{
 						func_44(&(uParam1->f_11), 0);
 					}
@@ -104176,7 +104176,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 				case 3:
 					uParam1->f_28 = 10;
 					uParam1->f_29 = 53;
-					uParam1->f_30 = Global_262145.f_24940 /* Tunable: 1509025053 */;
+					uParam1->f_30 = Global_262145.f_24940 /* Tunable: BEACH_PARTY_PEDS_CULLING_LEVEL_BLOCK_B */;
 					uParam1->f_20[0] = 65537;
 					uParam1->f_20[1] = 16974081;
 					uParam1->f_20[2] = 17563648;
@@ -104190,7 +104190,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 					{
 						func_44(&(uParam1->f_11), 27);
 					}
-					if (Global_262145.f_24948 /* Tunable: 626451698 */)
+					if (Global_262145.f_24948 /* Tunable: BEACH_PARTY_PEDS_REMOVE_BLOCK_B */)
 					{
 						func_44(&(uParam1->f_11), 0);
 					}
@@ -104210,7 +104210,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 				case 3:
 					uParam1->f_28 = 10;
 					uParam1->f_29 = 96;
-					uParam1->f_30 = Global_262145.f_24942 /* Tunable: 2089855578 */;
+					uParam1->f_30 = Global_262145.f_24942 /* Tunable: BEACH_PARTY_PEDS_CULLING_LEVEL_BLOCK_D */;
 					uParam1->f_20[0] = 65537;
 					uParam1->f_20[1] = 16908545;
 					uParam1->f_20[2] = 17170432;
@@ -104224,7 +104224,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 					{
 						func_44(&(uParam1->f_11), 27);
 					}
-					if (Global_262145.f_24950 /* Tunable: -993451048 */)
+					if (Global_262145.f_24950 /* Tunable: BEACH_PARTY_PEDS_REMOVE_BLOCK_D */)
 					{
 						func_44(&(uParam1->f_11), 0);
 					}
@@ -104304,7 +104304,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 				case 3:
 					uParam1->f_28 = 9;
 					uParam1->f_29 = 79;
-					uParam1->f_30 = Global_262145.f_24940 /* Tunable: 1509025053 */;
+					uParam1->f_30 = Global_262145.f_24940 /* Tunable: BEACH_PARTY_PEDS_CULLING_LEVEL_BLOCK_B */;
 					uParam1->f_20[0] = 0;
 					uParam1->f_20[1] = 131842;
 					uParam1->f_20[2] = 67305472;
@@ -104318,7 +104318,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 					{
 						func_44(&(uParam1->f_11), 27);
 					}
-					if (Global_262145.f_24948 /* Tunable: 626451698 */)
+					if (Global_262145.f_24948 /* Tunable: BEACH_PARTY_PEDS_REMOVE_BLOCK_B */)
 					{
 						func_44(&(uParam1->f_11), 0);
 					}
@@ -104400,7 +104400,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 				case 3:
 					uParam1->f_28 = 10;
 					uParam1->f_29 = 126;
-					uParam1->f_30 = Global_262145.f_24940 /* Tunable: 1509025053 */;
+					uParam1->f_30 = Global_262145.f_24940 /* Tunable: BEACH_PARTY_PEDS_CULLING_LEVEL_BLOCK_B */;
 					uParam1->f_20[0] = 131074;
 					uParam1->f_20[1] = 16908545;
 					uParam1->f_20[2] = 17301504;
@@ -104414,7 +104414,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 					{
 						func_44(&(uParam1->f_11), 27);
 					}
-					if (Global_262145.f_24948 /* Tunable: 626451698 */)
+					if (Global_262145.f_24948 /* Tunable: BEACH_PARTY_PEDS_REMOVE_BLOCK_B */)
 					{
 						func_44(&(uParam1->f_11), 0);
 					}
@@ -104699,7 +104699,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 				case 3:
 					uParam1->f_28 = 10;
 					uParam1->f_29 = 81;
-					uParam1->f_30 = Global_262145.f_24942 /* Tunable: 2089855578 */;
+					uParam1->f_30 = Global_262145.f_24942 /* Tunable: BEACH_PARTY_PEDS_CULLING_LEVEL_BLOCK_D */;
 					uParam1->f_20[0] = 0;
 					uParam1->f_20[1] = 33685504;
 					uParam1->f_20[2] = 51052544;
@@ -104713,7 +104713,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 					{
 						func_44(&(uParam1->f_11), 27);
 					}
-					if (Global_262145.f_24950 /* Tunable: -993451048 */)
+					if (Global_262145.f_24950 /* Tunable: BEACH_PARTY_PEDS_REMOVE_BLOCK_D */)
 					{
 						func_44(&(uParam1->f_11), 0);
 					}
@@ -104815,7 +104815,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 				case 3:
 					uParam1->f_28 = 10;
 					uParam1->f_29 = 58;
-					uParam1->f_30 = Global_262145.f_24939 /* Tunable: 1788315240 */;
+					uParam1->f_30 = Global_262145.f_24939 /* Tunable: BEACH_PARTY_PEDS_CULLING_LEVEL_BLOCK_A */;
 					uParam1->f_20[0] = 0;
 					uParam1->f_20[1] = 16843009;
 					uParam1->f_20[2] = 16842752;
@@ -104829,7 +104829,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 					{
 						func_44(&(uParam1->f_11), 27);
 					}
-					if (Global_262145.f_24947 /* Tunable: -600583507 */)
+					if (Global_262145.f_24947 /* Tunable: BEACH_PARTY_PEDS_REMOVE_BLOCK_A */)
 					{
 						func_44(&(uParam1->f_11), 0);
 					}
@@ -104849,7 +104849,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 				case 3:
 					uParam1->f_28 = 9;
 					uParam1->f_29 = 57;
-					uParam1->f_30 = Global_262145.f_24939 /* Tunable: 1788315240 */;
+					uParam1->f_30 = Global_262145.f_24939 /* Tunable: BEACH_PARTY_PEDS_CULLING_LEVEL_BLOCK_A */;
 					uParam1->f_20[0] = 65537;
 					uParam1->f_20[1] = 16908546;
 					uParam1->f_20[2] = 262144;
@@ -104863,7 +104863,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 					{
 						func_44(&(uParam1->f_11), 27);
 					}
-					if (Global_262145.f_24947 /* Tunable: -600583507 */)
+					if (Global_262145.f_24947 /* Tunable: BEACH_PARTY_PEDS_REMOVE_BLOCK_A */)
 					{
 						func_44(&(uParam1->f_11), 0);
 					}
@@ -105271,7 +105271,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 				case 3:
 					uParam1->f_28 = 10;
 					uParam1->f_29 = 96;
-					uParam1->f_30 = Global_262145.f_24941 /* Tunable: -1891938385 */;
+					uParam1->f_30 = Global_262145.f_24941 /* Tunable: BEACH_PARTY_PEDS_CULLING_LEVEL_BLOCK_C */;
 					uParam1->f_20[0] = 0;
 					uParam1->f_20[1] = 66050;
 					uParam1->f_20[2] = 33816576;
@@ -105285,7 +105285,7 @@ void func_1377(var uParam0, var uParam1, int iParam2, bool bParam3)//Position - 
 					{
 						func_44(&(uParam1->f_11), 27);
 					}
-					if (Global_262145.f_24949 /* Tunable: 262060418 */)
+					if (Global_262145.f_24949 /* Tunable: BEACH_PARTY_PEDS_REMOVE_BLOCK_C */)
 					{
 						func_44(&(uParam1->f_11), 0);
 					}
@@ -115854,7 +115854,7 @@ void func_1629()//Position - 0x89506
 
 int func_1630()//Position - 0x8953D
 {
-	if (!Global_262145.f_29155 /* Tunable: 1028571554 */)
+	if (!Global_262145.f_29155 /* Tunable: NPC_PHONE_TELEMETRY_TRACKING_ENABLED */)
 	{
 		return 0;
 	}
@@ -118943,8 +118943,8 @@ void func_1727(int iParam0, var uParam1, var uParam2)//Position - 0x8D791
 		case 6:
 			if (func_512())
 			{
-				*uParam1 = Global_262145.f_32095 /* Tunable: -1377061372 */;
-				*uParam2 = Global_262145.f_32096 /* Tunable: 935973896 */;
+				*uParam1 = Global_262145.f_32095 /* Tunable: MUSIC_STUDIO_WEED_ROOM_DIALOGUE_MIN_DELAY_MS */;
+				*uParam2 = Global_262145.f_32096 /* Tunable: MUSIC_STUDIO_WEED_ROOM_DIALOGUE_MAX_DELAY_MS */;
 			}
 			break;
 	}

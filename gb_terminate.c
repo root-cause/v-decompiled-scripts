@@ -2781,7 +2781,7 @@ void func_113(int iParam0, bool bParam1, var uParam2, bool bParam3)//Position - 
 	{
 		if (bParam1)
 		{
-			if (Global_262145.f_24680 /* Tunable: -76964080 */)
+			if (Global_262145.f_24680 /* Tunable: USE_2022_GOON_PAYMENTS */)
 			{
 				if (func_385(PLAYER::PLAYER_ID()) <= 0)
 				{
@@ -47275,7 +47275,7 @@ void func_225(int iParam0, int iParam1)//Position - 0x2E207
 {
 	if (iParam1 > 0)
 	{
-		if (Global_262145.f_24208 /* Tunable: 277748102 */ != -1)
+		if (Global_262145.f_24208 /* Tunable: SETTINGFORCASHSHARE */ != -1)
 		{
 			if (func_226())
 			{
@@ -47827,31 +47827,31 @@ int func_240(int iParam0)//Position - 0x2EBED
 	switch (iParam0)
 	{
 		case 8:
-			return Global_262145.f_23020 /* Tunable: -954321460 */;
+			return Global_262145.f_23020 /* Tunable: SMUG_SELL_PRICE_PER_CRATE_MIXED */;
 		
 		case 0:
-			return Global_262145.f_23021 /* Tunable: 117429930 */;
+			return Global_262145.f_23021 /* Tunable: SMUG_SELL_PRICE_PER_CRATE_ANIMAL_MATERIALS */;
 		
 		case 1:
-			return Global_262145.f_23022 /* Tunable: 921812958 */;
+			return Global_262145.f_23022 /* Tunable: SMUG_SELL_PRICE_PER_CRATE_ART_AND_ANTIQUES */;
 		
 		case 2:
-			return Global_262145.f_23023 /* Tunable: 1940564107 */;
+			return Global_262145.f_23023 /* Tunable: SMUG_SELL_PRICE_PER_CRATE_CHEMICALS */;
 		
 		case 3:
-			return Global_262145.f_23024 /* Tunable: -2031678534 */;
+			return Global_262145.f_23024 /* Tunable: SMUG_SELL_PRICE_PER_CRATE_COUNTERFEIT_GOODS */;
 		
 		case 4:
-			return Global_262145.f_23025 /* Tunable: -2091681714 */;
+			return Global_262145.f_23025 /* Tunable: SMUG_SELL_PRICE_PER_CRATE_JEWELRY_AND_GEMSTONES */;
 		
 		case 5:
-			return Global_262145.f_23026 /* Tunable: 975965466 */;
+			return Global_262145.f_23026 /* Tunable: SMUG_SELL_PRICE_PER_CRATE_MEDICAL_SUPPLIES */;
 		
 		case 6:
-			return Global_262145.f_23027 /* Tunable: 1382988286 */;
+			return Global_262145.f_23027 /* Tunable: SMUG_SELL_PRICE_PER_CRATE_NARCOTICS */;
 		
 		case 7:
-			return Global_262145.f_23028 /* Tunable: 2066048851 */;
+			return Global_262145.f_23028 /* Tunable: SMUG_SELL_PRICE_PER_CRATE_TOBACCO_AND_ALCOHOL */;
 		
 		default:
 	}
@@ -47865,7 +47865,7 @@ float func_241(int iParam0, int iParam1)//Position - 0x2EC8D
 	int iVar2;
 	
 	fVar0 = 0f;
-	fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_23030 /* Tunable: 599309088 */);
+	fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_23030 /* Tunable: SMUG_SELL_CRATE_BONUS_THRESHOLD_MEDIUM */);
 	switch (iParam0)
 	{
 		case -1:
@@ -47873,40 +47873,40 @@ float func_241(int iParam0, int iParam1)//Position - 0x2EC8D
 			return 0f;
 		
 		case 7:
-			fVar0 = Global_262145.f_23032 /* Tunable: 264591774 */;
-			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_23029 /* Tunable: 664286755 */);
+			fVar0 = Global_262145.f_23032 /* Tunable: SMUG_SELL_CRATE_BONUS_PERCENTAGE_LOW */;
+			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_23029 /* Tunable: SMUG_SELL_CRATE_BONUS_THRESHOLD_LOW */);
 			break;
 		
 		case 3:
-			fVar0 = Global_262145.f_23032 /* Tunable: 264591774 */;
-			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_23029 /* Tunable: 664286755 */);
+			fVar0 = Global_262145.f_23032 /* Tunable: SMUG_SELL_CRATE_BONUS_PERCENTAGE_LOW */;
+			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_23029 /* Tunable: SMUG_SELL_CRATE_BONUS_THRESHOLD_LOW */);
 			break;
 		
 		case 0:
-			fVar0 = Global_262145.f_23033 /* Tunable: 99009277 */;
+			fVar0 = Global_262145.f_23033 /* Tunable: SMUG_SELL_CRATE_BONUS_PERCENTAGE_MEDIUM */;
 			break;
 		
 		case 1:
-			fVar0 = Global_262145.f_23033 /* Tunable: 99009277 */;
+			fVar0 = Global_262145.f_23033 /* Tunable: SMUG_SELL_CRATE_BONUS_PERCENTAGE_MEDIUM */;
 			break;
 		
 		case 4:
-			fVar0 = Global_262145.f_23033 /* Tunable: 99009277 */;
+			fVar0 = Global_262145.f_23033 /* Tunable: SMUG_SELL_CRATE_BONUS_PERCENTAGE_MEDIUM */;
 			break;
 		
 		case 6:
-			fVar0 = Global_262145.f_23034 /* Tunable: 643266636 */;
-			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_23031 /* Tunable: 486872462 */);
+			fVar0 = Global_262145.f_23034 /* Tunable: SMUG_SELL_CRATE_BONUS_PERCENTAGE_HIGH */;
+			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_23031 /* Tunable: SMUG_SELL_CRATE_BONUS_THRESHOLD_HIGH */);
 			break;
 		
 		case 2:
-			fVar0 = Global_262145.f_23034 /* Tunable: 643266636 */;
-			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_23031 /* Tunable: 486872462 */);
+			fVar0 = Global_262145.f_23034 /* Tunable: SMUG_SELL_CRATE_BONUS_PERCENTAGE_HIGH */;
+			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_23031 /* Tunable: SMUG_SELL_CRATE_BONUS_THRESHOLD_HIGH */);
 			break;
 		
 		case 5:
-			fVar0 = Global_262145.f_23034 /* Tunable: 643266636 */;
-			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_23031 /* Tunable: 486872462 */);
+			fVar0 = Global_262145.f_23034 /* Tunable: SMUG_SELL_CRATE_BONUS_PERCENTAGE_HIGH */;
+			fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_23031 /* Tunable: SMUG_SELL_CRATE_BONUS_THRESHOLD_HIGH */);
 			break;
 	}
 	iVar2 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(iParam1) / fVar1));
@@ -48273,7 +48273,7 @@ void func_246(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4,
 		case joaat("SERVICE_SPEND_ARENA_SPECTATOR_BOX"):
 		case joaat("SERVICE_SPEND_MAKE_IT_RAIN"):
 		case joaat("SERVICE_SPEND_SALVAGE_YARD_VEH_ROB_SETUP"):
-			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: 1103207774 */)
+			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: ALLOW_ZERO_SPEND_SERVICE_TELEM */)
 			{
 				func_247(iParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -48426,7 +48426,7 @@ void func_246(int iParam0, int iParam1, int iParam2, bool bParam3, bool bParam4,
 		case joaat("SERVICE_SPEND_NIGHTCLUB_TOILET_ATTENDANT"):
 		case joaat("SERVICE_SPEND_JUGALLO_BOSS_VEHICLE_REQUEST"):
 		case joaat("SERVICE_SPEND_SALVAGE_YARD_CLAIM_VEH"):
-			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: 1103207774 */)
+			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: ALLOW_ZERO_SPEND_SERVICE_TELEM */)
 			{
 				func_247(iParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -49324,7 +49324,7 @@ void func_281(int iParam0, int iParam1, int iParam2)//Position - 0x307E0
 		{
 			if (iParam0 == 0)
 			{
-				STATS::PLAYSTATS_AWARD_XP(iParam0, -1158693853, -1345423847);
+				STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_INITIALISE"), joaat("XPCATEGORY_LIVE_RP_RESET"));
 				if (iParam2 == 0)
 				{
 					return;
@@ -50224,19 +50224,19 @@ int func_310(int iParam0)//Position - 0x31653
 			return Global_262145.f_23017 /* Tunable: SMUG_SELL_MC_MEMBER_PARTICIPATION_TIME_CAP */;
 		
 		case 229:
-			return Global_262145.f_22919 /* Tunable: 673226777 */;
+			return Global_262145.f_22919 /* Tunable: SMUG_STEAL_AND_SETUP_MC_MEMBER_PARTICIPATION_TIME_CAP */;
 		
 		case 233:
-			return Global_262145.f_23498 /* Tunable: -1702410515 */;
+			return Global_262145.f_23498 /* Tunable: H2_PREP_MEMBER_PARTICIPATION_RP_TIME_CAP */;
 		
 		case 237:
-			return Global_262145.f_24669 /* Tunable: 451918514 */;
+			return Global_262145.f_24669 /* Tunable: BB_SELL_MISSIONS_PARTICIPATION_TIME_CAP */;
 		
 		case 238:
-			return Global_262145.f_24787 /* Tunable: 83188597 */;
+			return Global_262145.f_24787 /* Tunable: BB_DEFEND_MISSIONS_PARTICIPATION_TIME_CAP */;
 		
 		case 249:
-			return Global_262145.f_24803 /* Tunable: -2115907141 */;
+			return Global_262145.f_24803 /* Tunable: BB_PHONECALL_MISSIONS_PARTICIPATION_TIME_CAP */;
 		
 		case 243:
 			return Global_262145.f_27348 /* Tunable: VC_WORK_REWARD_PARTICIPATION_CAP */;
@@ -50433,7 +50433,7 @@ int func_311(int iParam0)//Position - 0x31766
 		case 229:
 			if (!func_258())
 			{
-				return Global_262145.f_22921 /* Tunable: 307309693 */;
+				return Global_262145.f_22921 /* Tunable: SMUG_STEAL_AND_SETUP_MC_MEMBER_PARTICIPATION_RP */;
 			}
 			break;
 		
@@ -50447,7 +50447,7 @@ int func_311(int iParam0)//Position - 0x31766
 		case 233:
 			if (!func_258())
 			{
-				return Global_262145.f_23497 /* Tunable: -1734540895 */;
+				return Global_262145.f_23497 /* Tunable: H2_PREP_MEMBER_PARTICIPATION_RP */;
 			}
 			break;
 		
@@ -50475,21 +50475,21 @@ int func_311(int iParam0)//Position - 0x31766
 		case 237:
 			if (!func_258())
 			{
-				return Global_262145.f_24671 /* Tunable: 390565516 */;
+				return Global_262145.f_24671 /* Tunable: BB_SELL_MISSIONS_PARTICIPATION_RP_PER_MIN */;
 			}
 			break;
 		
 		case 238:
 			if (!func_258())
 			{
-				return Global_262145.f_24789 /* Tunable: -1154535762 */;
+				return Global_262145.f_24789 /* Tunable: BB_DEFEND_MISSIONS_PARTICIPATION_RP_PER_MIN */;
 			}
 			break;
 		
 		case 249:
 			if (!func_258())
 			{
-				return Global_262145.f_24805 /* Tunable: -1955439320 */;
+				return Global_262145.f_24805 /* Tunable: BB_PHONECALL_MISSIONS_PARTICIPATION_RP_PER_MIN */;
 			}
 			break;
 		
@@ -50749,7 +50749,7 @@ int func_312(int iParam0)//Position - 0x31C31
 		case 229:
 			if (func_237(0))
 			{
-				iVar0 = Global_262145.f_22920 /* Tunable: 932122259 */;
+				iVar0 = Global_262145.f_22920 /* Tunable: SMUG_STEAL_AND_SETUP_MC_MEMBER_PARTICIPATION_CASH */;
 			}
 			break;
 		
@@ -50763,7 +50763,7 @@ int func_312(int iParam0)//Position - 0x31C31
 		case 233:
 			if (func_237(0))
 			{
-				iVar0 = Global_262145.f_23499 /* Tunable: -1127511386 */;
+				iVar0 = Global_262145.f_23499 /* Tunable: H2_PREP_MC_MEMBER_PARTICPATION_CASH */;
 			}
 			break;
 		
@@ -50798,21 +50798,21 @@ int func_312(int iParam0)//Position - 0x31C31
 		case 237:
 			if (func_237(0))
 			{
-				iVar0 = Global_262145.f_24670 /* Tunable: 1803569019 */;
+				iVar0 = Global_262145.f_24670 /* Tunable: BB_SELL_MISSIONS_PARTICIPATION_CASH_PER_MIN */;
 			}
 			break;
 		
 		case 238:
 			if (func_237(0))
 			{
-				iVar0 = Global_262145.f_24788 /* Tunable: 1534727269 */;
+				iVar0 = Global_262145.f_24788 /* Tunable: BB_DEFEND_MISSIONS_PARTICIPATION_CASH_PER_MIN */;
 			}
 			break;
 		
 		case 249:
 			if (func_237(0))
 			{
-				iVar0 = Global_262145.f_24804 /* Tunable: -1273645929 */;
+				iVar0 = Global_262145.f_24804 /* Tunable: BB_PHONECALL_MISSIONS_PARTICIPATION_CASH_PER_MIN */;
 			}
 			break;
 		
@@ -50827,9 +50827,9 @@ int func_312(int iParam0)//Position - 0x31C31
 			}
 			break;
 	}
-	if (func_237(0) && Global_262145.f_24679 /* Tunable: -219469745 */ > 0f)
+	if (func_237(0) && Global_262145.f_24679 /* Tunable: MC_MEMBER_PARTICIPATION_CASH_MULTIPLIER */ > 0f)
 	{
-		iVar0 = SYSTEM::CEIL((IntToFloat(iVar0) * Global_262145.f_24679 /* Tunable: -219469745 */));
+		iVar0 = SYSTEM::CEIL((IntToFloat(iVar0) * Global_262145.f_24679 /* Tunable: MC_MEMBER_PARTICIPATION_CASH_MULTIPLIER */));
 	}
 	return iVar0;
 }
@@ -51078,12 +51078,12 @@ void func_324(int iParam0, var uParam1, int iParam2, var uParam3)//Position - 0x
 				if (!NETWORK::NETWORK_SESSION_IS_PRIVATE())
 				{
 					iVar6 = func_325(&uVar5);
-					iVar7 = Global_262145.f_24707 /* Tunable: 249027540 */;
+					iVar7 = Global_262145.f_24707 /* Tunable: BB_SELL_MISSIONS_HIGH_DEMAND_BONUS_CAP */;
 					if (iVar6 > iVar7)
 					{
 						iVar6 = iVar7;
 					}
-					iVar9 = SYSTEM::CEIL((IntToFloat(iVar6) * Global_262145.f_24706 /* Tunable: -540578960 */));
+					iVar9 = SYSTEM::CEIL((IntToFloat(iVar6) * Global_262145.f_24706 /* Tunable: BB_SELL_MISSIONS_HIGH_DEMAND_BONUS_PER_PLAYER */));
 					iVar8 = ((*iParam2 / 100) * iVar9);
 					*iParam2 = (*iParam2 + iVar8);
 					if (*iParam2 > 0)
@@ -51094,11 +51094,11 @@ void func_324(int iParam0, var uParam1, int iParam2, var uParam3)//Position - 0x
 						}
 					}
 				}
-				if (Global_262145.f_33401 /* Tunable: 2010545334 */)
+				if (Global_262145.f_33401 /* Tunable: ENABLE_CONTROL_PAYOUT_NIGHTCLUB_WAREHOUSEMANAGEMENT_SELL */)
 				{
 					if (!func_182(32356, -1))
 					{
-						*iParam2 = (*iParam2 * Global_262145.f_33410 /* Tunable: -492941246 */);
+						*iParam2 = (*iParam2 * Global_262145.f_33410 /* Tunable: CASH_CONTROL_PAYOUT_NIGHTCLUB_WAREHOUSEMANAGEMENT_SELL */);
 						func_123(32356, 1, -1);
 					}
 				}
@@ -51106,17 +51106,17 @@ void func_324(int iParam0, var uParam1, int iParam2, var uParam3)//Position - 0x
 			}
 			else
 			{
-				fVar16 = Global_262145.f_24673 /* Tunable: 179990920 */;
+				fVar16 = Global_262145.f_24673 /* Tunable: BB_SELL_MISSIONS_MC_MEMBER_EARN_PERCENTAGE */;
 				if (!bVar18)
 				{
-					fVar16 = Global_262145.f_24674 /* Tunable: 840484279 */;
+					fVar16 = Global_262145.f_24674 /* Tunable: BB_SELL_MISSIONS_ORG_MEMBER_EARN_PERCENTAGE */;
 				}
 				iVar3 = SYSTEM::CEIL((IntToFloat(*iParam2) * fVar16));
 				*iParam2 = iVar3;
-				iVar4 = Global_262145.f_24675 /* Tunable: 390735097 */;
+				iVar4 = Global_262145.f_24675 /* Tunable: BB_SELL_MISSIONS_MC_MEMBER_EARN_CAP */;
 				if (!bVar18)
 				{
-					iVar4 = Global_262145.f_24676 /* Tunable: -1911840744 */;
+					iVar4 = Global_262145.f_24676 /* Tunable: BB_SELL_MISSIONS_ORG_MEMBER_EARN_CAP */;
 				}
 				if (*iParam2 > iVar4)
 				{
@@ -51183,7 +51183,7 @@ int func_330(int iParam0)//Position - 0x32738
 	float fVar1;
 	
 	fVar0 = SYSTEM::TO_FLOAT(iParam0);
-	fVar1 = (fVar0 * Global_262145.f_24708 /* Tunable: -1002770353 */);
+	fVar1 = (fVar0 * Global_262145.f_24708 /* Tunable: BB_SELL_MISSIONS_TONYS_CUT */);
 	if (fVar1 > 100000f)
 	{
 		fVar1 = 100000f;
@@ -51289,12 +51289,12 @@ void func_332(int iParam0, var uParam1, int iParam2, var uParam3, var uParam4)//
 				if (!NETWORK::NETWORK_SESSION_IS_PRIVATE())
 				{
 					iVar6 = func_325(&uVar5);
-					iVar7 = Global_262145.f_23036 /* Tunable: 1245415334 */;
+					iVar7 = Global_262145.f_23036 /* Tunable: SMUG_SELL_HIGH_DEMAND_BONUS_CAP */;
 					if (iVar6 > iVar7)
 					{
 						iVar6 = iVar7;
 					}
-					iVar8 = SYSTEM::CEIL((IntToFloat(iVar6) * Global_262145.f_23035 /* Tunable: -2011721386 */));
+					iVar8 = SYSTEM::CEIL((IntToFloat(iVar6) * Global_262145.f_23035 /* Tunable: SMUG_SELL_HIGH_DEMAND_BONUS_PERCENTAGE */));
 					*uParam4 = ((*iParam2 / 100) * iVar8);
 					*iParam2 = (*iParam2 + *uParam4);
 					if (*iParam2 > 0)
@@ -51348,10 +51348,10 @@ int func_334(int iParam0)//Position - 0x329D5
 	float fVar1;
 	
 	fVar0 = SYSTEM::TO_FLOAT(iParam0);
-	fVar1 = (fVar0 * Global_262145.f_23003 /* Tunable: 1232447926 */);
-	if (fVar1 > SYSTEM::TO_FLOAT(Global_262145.f_23004 /* Tunable: -7028792 */))
+	fVar1 = (fVar0 * Global_262145.f_23003 /* Tunable: SMUG_SELL_RONS_CUT */);
+	if (fVar1 > SYSTEM::TO_FLOAT(Global_262145.f_23004 /* Tunable: SMUG_SELL_RONS_CUT_CAP */))
 	{
-		fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_23004 /* Tunable: -7028792 */);
+		fVar1 = SYSTEM::TO_FLOAT(Global_262145.f_23004 /* Tunable: SMUG_SELL_RONS_CUT_CAP */);
 	}
 	return SYSTEM::ROUND(fVar1);
 }
@@ -51411,11 +51411,11 @@ void func_335(int iParam0, var uParam1, int iParam2, var uParam3)//Position - 0x
 			iVar2 = func_350(bVar15, iVar16, iVar1, 0);
 			if (uParam1->f_14 == 0)
 			{
-				iVar2 = SYSTEM::CEIL((IntToFloat(iVar2) * Global_262145.f_21720 /* Tunable: 1021567941 */));
+				iVar2 = SYSTEM::CEIL((IntToFloat(iVar2) * Global_262145.f_21720 /* Tunable: GR_SELL_PRODUCT_FAR_MODIFIER */));
 			}
 			else
 			{
-				iVar2 = SYSTEM::CEIL((IntToFloat(iVar2) * Global_262145.f_21719 /* Tunable: 1865029244 */));
+				iVar2 = SYSTEM::CEIL((IntToFloat(iVar2) * Global_262145.f_21719 /* Tunable: GR_SELL_PRODUCT_LOCAL_MODIFIER */));
 			}
 			*iParam2 = (*iParam2 + iVar2);
 			if (bVar15 == PLAYER::PLAYER_ID())
@@ -51428,12 +51428,12 @@ void func_335(int iParam0, var uParam1, int iParam2, var uParam3)//Position - 0x
 				if (!NETWORK::NETWORK_SESSION_IS_PRIVATE())
 				{
 					iVar6 = func_325(&uVar5);
-					iVar7 = SYSTEM::ROUND(Global_262145.f_21722 /* Tunable: -556480345 */);
+					iVar7 = SYSTEM::ROUND(Global_262145.f_21722 /* Tunable: GR_HIGH_DEMAND_BONUS_CAP */);
 					if (iVar6 > iVar7)
 					{
 						iVar6 = iVar7;
 					}
-					iVar8 = SYSTEM::CEIL((IntToFloat(iVar6) * Global_262145.f_21721 /* Tunable: 1413334331 */));
+					iVar8 = SYSTEM::CEIL((IntToFloat(iVar6) * Global_262145.f_21721 /* Tunable: GR_HIGH_DEMAND_BONUS */));
 					iVar9 = ((*iParam2 / 100) * iVar8);
 					*iParam2 = (*iParam2 + iVar9);
 					if (*iParam2 > 0)
@@ -51448,11 +51448,11 @@ void func_335(int iParam0, var uParam1, int iParam2, var uParam3)//Position - 0x
 						}
 					}
 				}
-				if (Global_262145.f_33402 /* Tunable: 1598011694 */)
+				if (Global_262145.f_33402 /* Tunable: ENABLE_CONTROL_PAYOUT_GUNRUNNINGBUNKER_CARGO_SELL */)
 				{
 					if (!func_182(32357, -1))
 					{
-						*iParam2 = (*iParam2 * Global_262145.f_33411 /* Tunable: -278088930 */);
+						*iParam2 = (*iParam2 * Global_262145.f_33411 /* Tunable: CASH_CONTROL_PAYOUT_GUNRUNNINGBUNKER_CARGO_SELL */);
 						func_123(32357, 1, -1);
 					}
 				}
@@ -51553,7 +51553,7 @@ void func_336(int iParam0)//Position - 0x32C47
 			{
 				if (func_338(Global_262145.f_21267 /* Tunable: ITEM_AWARD_ADVMODE */))
 				{
-					func_231("CLOTHAWDSTRAP5" /* GXT: You have received an award item for completing ~1~ Gunrunning Adversary Modes. */, Global_262145.f_21402 /* Tunable: 784992141 */, 0);
+					func_231("CLOTHAWDSTRAP5" /* GXT: You have received an award item for completing ~1~ Gunrunning Adversary Modes. */, Global_262145.f_21402 /* Tunable: NUMBER_OF_TIMES_TO_UNLOCK_ADVERSARY_AWARD */, 0);
 				}
 			}
 			break;
@@ -52581,71 +52581,71 @@ int func_351(int iParam0, int iParam1)//Position - 0x33FF8
 	switch (iParam0)
 	{
 		case 1:
-			if (Global_262145.f_33395 /* Tunable: 648076385 */)
+			if (Global_262145.f_33395 /* Tunable: ENABLE_CONTROL_PAYOUT_BIKER_BUSINESSES_WEED */)
 			{
 				if (!func_182(32351, -1))
 				{
-					iParam1 = (iParam1 * Global_262145.f_33404 /* Tunable: -793049781 */);
+					iParam1 = (iParam1 * Global_262145.f_33404 /* Tunable: CASH_CONTROL_PAYOUT_BIKER_BUSINESSES_WEED */);
 				}
 			}
 			break;
 		
 		case 3:
-			if (Global_262145.f_33396 /* Tunable: 1057315128 */)
+			if (Global_262145.f_33396 /* Tunable: ENABLE_CONTROL_PAYOUT_BIKER_BUSINESSES_METH */)
 			{
 				if (!func_182(32352, -1))
 				{
-					iParam1 = (iParam1 * Global_262145.f_33405 /* Tunable: -1035386051 */);
+					iParam1 = (iParam1 * Global_262145.f_33405 /* Tunable: CASH_CONTROL_PAYOUT_BIKER_BUSINESSES_METH */);
 				}
 			}
 			break;
 		
 		case 4:
-			if (Global_262145.f_33397 /* Tunable: 2074826178 */)
+			if (Global_262145.f_33397 /* Tunable: ENABLE_CONTROL_PAYOUT_BIKER_BUSINESSES_COCAINE */)
 			{
 				if (!func_182(32353, -1))
 				{
-					iParam1 = (iParam1 * Global_262145.f_33406 /* Tunable: 1011759977 */);
+					iParam1 = (iParam1 * Global_262145.f_33406 /* Tunable: CASH_CONTROL_PAYOUT_BIKER_BUSINESSES_COCAINE */);
 				}
 			}
 			break;
 		
 		case 0:
-			if (Global_262145.f_33398 /* Tunable: 98893693 */)
+			if (Global_262145.f_33398 /* Tunable: ENABLE_CONTROL_PAYOUT_BIKER_BUSINESSES_FORGEDDOCUMENTS */)
 			{
 				if (!func_182(32354, -1))
 				{
-					iParam1 = (iParam1 * Global_262145.f_33407 /* Tunable: -1980822412 */);
+					iParam1 = (iParam1 * Global_262145.f_33407 /* Tunable: CASH_CONTROL_PAYOUT_BIKER_BUSINESSES_FORGEDDOCUMENTS */);
 				}
 			}
 			break;
 		
 		case 6:
-			if (Global_262145.f_33399 /* Tunable: 1086821607 */)
+			if (Global_262145.f_33399 /* Tunable: ENABLE_CONTROL_PAYOUT_BIKER_BUSINESSES_ACID */)
 			{
 				if (!func_182(36667, -1))
 				{
-					iParam1 = (iParam1 * Global_262145.f_33408 /* Tunable: -1917878808 */);
+					iParam1 = (iParam1 * Global_262145.f_33408 /* Tunable: CASH_CONTROL_PAYOUT_BIKER_BUSINESSES_ACID */);
 				}
 			}
 			break;
 		
 		case 2:
-			if (Global_262145.f_33400 /* Tunable: 328208647 */)
+			if (Global_262145.f_33400 /* Tunable: ENABLE_CONTROL_PAYOUT_BIKER_BUSINESSES_COUNTERFIETCASH */)
 			{
 				if (!func_182(32355, -1))
 				{
-					iParam1 = (iParam1 * Global_262145.f_33409 /* Tunable: 667598560 */);
+					iParam1 = (iParam1 * Global_262145.f_33409 /* Tunable: CASH_CONTROL_PAYOUT_BIKER_BUSINESSES_COUNTERFIETCASH */);
 				}
 			}
 			break;
 		
 		case 5:
-			if (Global_262145.f_33402 /* Tunable: 1598011694 */)
+			if (Global_262145.f_33402 /* Tunable: ENABLE_CONTROL_PAYOUT_GUNRUNNINGBUNKER_CARGO_SELL */)
 			{
 				if (!func_182(32357, -1))
 				{
-					iParam1 = (iParam1 * Global_262145.f_33411 /* Tunable: -278088930 */);
+					iParam1 = (iParam1 * Global_262145.f_33411 /* Tunable: CASH_CONTROL_PAYOUT_GUNRUNNINGBUNKER_CARGO_SELL */);
 				}
 			}
 			break;
@@ -52864,24 +52864,24 @@ void func_361(int iParam0, var uParam1, int iParam2, var uParam3)//Position - 0x
 				iVar7 = func_350(PLAYER::PLAYER_ID(), Var0.f_0, *uParam3, 0);
 				if (Var0.f_1 == 1)
 				{
-					fVar8 = (SYSTEM::TO_FLOAT(iVar7) * Global_262145.f_19277 /* Tunable: 1763638426 */);
+					fVar8 = (SYSTEM::TO_FLOAT(iVar7) * Global_262145.f_19277 /* Tunable: BIKER_SELL_PRODUCT_FAR_MODIFIER */);
 					iVar7 = SYSTEM::ROUND(fVar8);
 				}
 				else
 				{
-					fVar9 = (SYSTEM::TO_FLOAT(iVar7) * Global_262145.f_19276 /* Tunable: -823848572 */);
+					fVar9 = (SYSTEM::TO_FLOAT(iVar7) * Global_262145.f_19276 /* Tunable: BIKER_SELL_PRODUCT_LOCAL_MODIFIER */);
 					iVar7 = SYSTEM::ROUND(fVar9);
 				}
 				*iParam2 = (*iParam2 + iVar7);
 				if (!NETWORK::NETWORK_SESSION_IS_PRIVATE())
 				{
 					iVar11 = func_325(&uVar10);
-					iVar12 = SYSTEM::ROUND(Global_262145.f_19267 /* Tunable: -444616278 */);
+					iVar12 = SYSTEM::ROUND(Global_262145.f_19267 /* Tunable: BIKER_HIGH_DEMAND_BONUS_CAP */);
 					if (iVar11 > iVar12)
 					{
 						iVar11 = iVar12;
 					}
-					iVar13 = SYSTEM::CEIL((IntToFloat(iVar11) * Global_262145.f_19266 /* Tunable: -309450581 */));
+					iVar13 = SYSTEM::CEIL((IntToFloat(iVar11) * Global_262145.f_19266 /* Tunable: BIKER_HIGH_DEMAND_BONUS */));
 					iVar14 = ((*iParam2 / 100) * iVar13);
 					*iParam2 = (*iParam2 + iVar14);
 					if (iVar11 > 0)
@@ -52913,55 +52913,55 @@ void func_361(int iParam0, var uParam1, int iParam2, var uParam3)//Position - 0x
 				switch (func_363(Var0.f_0))
 				{
 					case 1:
-						if (Global_262145.f_33395 /* Tunable: 648076385 */)
+						if (Global_262145.f_33395 /* Tunable: ENABLE_CONTROL_PAYOUT_BIKER_BUSINESSES_WEED */)
 						{
 							if (!func_182(32351, -1))
 							{
-								*iParam2 = (*iParam2 * Global_262145.f_33404 /* Tunable: -793049781 */);
+								*iParam2 = (*iParam2 * Global_262145.f_33404 /* Tunable: CASH_CONTROL_PAYOUT_BIKER_BUSINESSES_WEED */);
 								func_123(32351, 1, -1);
 							}
 						}
 						break;
 					
 					case 3:
-						if (Global_262145.f_33396 /* Tunable: 1057315128 */)
+						if (Global_262145.f_33396 /* Tunable: ENABLE_CONTROL_PAYOUT_BIKER_BUSINESSES_METH */)
 						{
 							if (!func_182(32352, -1))
 							{
-								*iParam2 = (*iParam2 * Global_262145.f_33405 /* Tunable: -1035386051 */);
+								*iParam2 = (*iParam2 * Global_262145.f_33405 /* Tunable: CASH_CONTROL_PAYOUT_BIKER_BUSINESSES_METH */);
 								func_123(32352, 1, -1);
 							}
 						}
 						break;
 					
 					case 4:
-						if (Global_262145.f_33397 /* Tunable: 2074826178 */)
+						if (Global_262145.f_33397 /* Tunable: ENABLE_CONTROL_PAYOUT_BIKER_BUSINESSES_COCAINE */)
 						{
 							if (!func_182(32353, -1))
 							{
-								*iParam2 = (*iParam2 * Global_262145.f_33406 /* Tunable: 1011759977 */);
+								*iParam2 = (*iParam2 * Global_262145.f_33406 /* Tunable: CASH_CONTROL_PAYOUT_BIKER_BUSINESSES_COCAINE */);
 								func_123(32353, 1, -1);
 							}
 						}
 						break;
 					
 					case 0:
-						if (Global_262145.f_33398 /* Tunable: 98893693 */)
+						if (Global_262145.f_33398 /* Tunable: ENABLE_CONTROL_PAYOUT_BIKER_BUSINESSES_FORGEDDOCUMENTS */)
 						{
 							if (!func_182(32354, -1))
 							{
-								*iParam2 = (*iParam2 * Global_262145.f_33407 /* Tunable: -1980822412 */);
+								*iParam2 = (*iParam2 * Global_262145.f_33407 /* Tunable: CASH_CONTROL_PAYOUT_BIKER_BUSINESSES_FORGEDDOCUMENTS */);
 								func_123(32354, 1, -1);
 							}
 						}
 						break;
 					
 					case 2:
-						if (Global_262145.f_33400 /* Tunable: 328208647 */)
+						if (Global_262145.f_33400 /* Tunable: ENABLE_CONTROL_PAYOUT_BIKER_BUSINESSES_COUNTERFIETCASH */)
 						{
 							if (!func_182(32355, -1))
 							{
-								*iParam2 = (*iParam2 * Global_262145.f_33409 /* Tunable: 667598560 */);
+								*iParam2 = (*iParam2 * Global_262145.f_33409 /* Tunable: CASH_CONTROL_PAYOUT_BIKER_BUSINESSES_COUNTERFIETCASH */);
 								func_123(32355, 1, -1);
 							}
 						}
@@ -52988,17 +52988,17 @@ void func_361(int iParam0, var uParam1, int iParam2, var uParam3)//Position - 0x
 				iVar22 = func_350(func_12(), Var15.f_0, *uParam3, 0);
 				if (Var15.f_1 == 1)
 				{
-					iVar22 = SYSTEM::CEIL((IntToFloat(iVar22) * Global_262145.f_19277 /* Tunable: 1763638426 */));
+					iVar22 = SYSTEM::CEIL((IntToFloat(iVar22) * Global_262145.f_19277 /* Tunable: BIKER_SELL_PRODUCT_FAR_MODIFIER */));
 				}
 				else if (Var15.f_1 == 0)
 				{
-					iVar22 = SYSTEM::CEIL((IntToFloat(iVar22) * Global_262145.f_19276 /* Tunable: -823848572 */));
+					iVar22 = SYSTEM::CEIL((IntToFloat(iVar22) * Global_262145.f_19276 /* Tunable: BIKER_SELL_PRODUCT_LOCAL_MODIFIER */));
 				}
 				*iParam2 = (*iParam2 + iVar22);
-				fVar23 = Global_262145.f_19316 /* Tunable: -1680154074 */;
+				fVar23 = Global_262145.f_19316 /* Tunable: BIKER_SELL_MEMBER_REWARD_PERCENTAGE */;
 				iVar24 = SYSTEM::CEIL((IntToFloat(*iParam2) * fVar23));
 				*iParam2 = iVar24;
-				iVar25 = Global_262145.f_19317 /* Tunable: 997747887 */;
+				iVar25 = Global_262145.f_19317 /* Tunable: BIKER_SELL_MEMBER_REWARD_CAP */;
 				if (*iParam2 > iVar25)
 				{
 					*iParam2 = iVar25;
@@ -53153,11 +53153,11 @@ void func_364(int iParam0, bool bParam1, var uParam2, int iParam3, var uParam4)/
 			}
 			if (bVar0)
 			{
-				if (Global_262145.f_33394 /* Tunable: -1292749091 */)
+				if (Global_262145.f_33394 /* Tunable: ENABLE_CONTROL_PAYOUT_EXECUTIVE_OFFICE_SPECIALCARGO */)
 				{
 					if (!func_182(32350, -1))
 					{
-						*iParam3 = (*iParam3 * Global_262145.f_33403 /* Tunable: -364133001 */);
+						*iParam3 = (*iParam3 * Global_262145.f_33403 /* Tunable: CASH_CONTROL_PAYOUT_EXECUTIVE_OFFICE_SPECIALCARGO */);
 						func_123(32350, 1, -1);
 					}
 				}
@@ -53167,10 +53167,10 @@ void func_364(int iParam0, bool bParam1, var uParam2, int iParam3, var uParam4)/
 			}
 			else
 			{
-				fVar8 = Global_262145.f_24677 /* Tunable: -623310017 */;
+				fVar8 = Global_262145.f_24677 /* Tunable: CONTRABAND_ORG_MEMBER_SELL_REWARD_PERCENTAGE */;
 				iVar9 = SYSTEM::CEIL((IntToFloat(*iParam3) * fVar8));
 				*iParam3 = iVar9;
-				iVar10 = Global_262145.f_24678 /* Tunable: -223487172 */;
+				iVar10 = Global_262145.f_24678 /* Tunable: CONTRABAND_ORG_MEMBER_SELL_REWARD_CAP */;
 				if (*iParam3 > iVar10)
 				{
 					*iParam3 = iVar10;
@@ -54067,22 +54067,22 @@ int func_388(int iParam0, bool bParam1)//Position - 0x356A0
 			return Global_262145.f_19701 /* Tunable: IMPEXP_VELOCITY_CASH_REWARD */;
 		
 		case 241:
-			return Global_262145.f_24824 /* Tunable: -1488651458 */;
+			return Global_262145.f_24824 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_CASH_REWARD_JEWEL_STORE_GRAB */;
 		
 		case 242:
-			return Global_262145.f_24820 /* Tunable: -918416046 */;
+			return Global_262145.f_24820 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_CASH_REWARD_BANK_JOB */;
 		
 		case 248:
-			return Global_262145.f_24823 /* Tunable: -937767423 */;
+			return Global_262145.f_24823 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_CASH_REWARD_INFILTRATION */;
 		
 		case 244:
-			return Global_262145.f_24821 /* Tunable: -60663099 */;
+			return Global_262145.f_24821 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_CASH_REWARD_DATA_HACK */;
 		
 		case 239:
-			return Global_262145.f_24825 /* Tunable: -1479714568 */;
+			return Global_262145.f_24825 /* Tunable: BB_HACKER_WORK_HACKER_CHALLENGE_CASH_REWARD_SECURITY_VANS */;
 		
 		case 240:
-			return Global_262145.f_24826 /* Tunable: 957581095 */;
+			return Global_262145.f_24826 /* Tunable: BB_HACKER_WORK_HACKER_CHALLENGE_CASH_REWARD_TARGET_PURSUIT */;
 		
 		case 243:
 			return Global_262145.f_27346 /* Tunable: VC_WORK_CASH_REWARD */;
@@ -54157,13 +54157,13 @@ int func_389(int iParam0, bool bParam1, bool bParam2)//Position - 0x35A64
 			return 0;
 		
 		case 167:
-			return Global_262145.f_17765 /* Tunable: 1726921260 */;
+			return Global_262145.f_17765 /* Tunable: EXEC_RP_REWARD_SUCCESS_BUY */;
 		
 		case 168:
-			iVar0 = Global_262145.f_17764 /* Tunable: -183629958 */;
-			if ((func_258() && Global_262145.f_33394 /* Tunable: -1292749091 */) && !func_182(32350, -1))
+			iVar0 = Global_262145.f_17764 /* Tunable: EXEC_RP_REWARD_SUCCESS_SELL */;
+			if ((func_258() && Global_262145.f_33394 /* Tunable: ENABLE_CONTROL_PAYOUT_EXECUTIVE_OFFICE_SPECIALCARGO */) && !func_182(32350, -1))
 			{
-				iVar0 = (iVar0 * Global_262145.f_33412 /* Tunable: -631336731 */);
+				iVar0 = (iVar0 * Global_262145.f_33412 /* Tunable: RP_CONTROL_PAYOUT_EXECUTIVE_OFFICE_SPECIALCARGO */);
 			}
 			return iVar0;
 		
@@ -54313,9 +54313,9 @@ int func_389(int iParam0, bool bParam1, bool bParam2)//Position - 0x35A64
 			{
 				iVar0 = Global_262145.f_21715 /* Tunable: GR_SELL_RP_EARNED_MC_LEADER */;
 			}
-			if ((func_258() && Global_262145.f_33402 /* Tunable: 1598011694 */) && !func_182(32357, -1))
+			if ((func_258() && Global_262145.f_33402 /* Tunable: ENABLE_CONTROL_PAYOUT_GUNRUNNINGBUNKER_CARGO_SELL */) && !func_182(32357, -1))
 			{
-				iVar0 = (iVar0 * Global_262145.f_33419 /* Tunable: -1052635986 */);
+				iVar0 = (iVar0 * Global_262145.f_33419 /* Tunable: RP_CONTROL_PAYOUT_GUNRUNNINGBUNKER_CARGO_SELL */);
 			}
 			return iVar0;
 			break;
@@ -54343,16 +54343,16 @@ int func_389(int iParam0, bool bParam1, bool bParam2)//Position - 0x35A64
 			{
 				if (func_236(PLAYER::PLAYER_ID()))
 				{
-					return Global_262145.f_22916 /* Tunable: 1458037811 */;
+					return Global_262145.f_22916 /* Tunable: SMUG_STEAL_AND_SETUP_RP_EARNED_CEO */;
 				}
 				else
 				{
-					return Global_262145.f_22917 /* Tunable: 603306374 */;
+					return Global_262145.f_22917 /* Tunable: SMUG_STEAL_AND_SETUP_RP_EARNED_VIP */;
 				}
 			}
 			else if (func_221())
 			{
-				return Global_262145.f_22918 /* Tunable: -1639668705 */;
+				return Global_262145.f_22918 /* Tunable: SMUG_STEAL_AND_SETUP_RP_EARNED_MC_LEADER */;
 			}
 			break;
 		
@@ -54379,56 +54379,56 @@ int func_389(int iParam0, bool bParam1, bool bParam2)//Position - 0x35A64
 			{
 				if (func_236(PLAYER::PLAYER_ID()))
 				{
-					return Global_262145.f_23495 /* Tunable: -4626313 */;
+					return Global_262145.f_23495 /* Tunable: H2_PREP_CEO_RP_PAYOUT */;
 				}
 				else
 				{
-					return Global_262145.f_23496 /* Tunable: 942419845 */;
+					return Global_262145.f_23496 /* Tunable: H2_PREP_VIP_RP_PAYOUT */;
 				}
 			}
 			else if (func_221())
 			{
-				return Global_262145.f_23494 /* Tunable: -1014903589 */;
+				return Global_262145.f_23494 /* Tunable: H2_PREP_MC_LEADER_RP_PAYOUT */;
 			}
 			break;
 		
 		case 241:
-			return Global_262145.f_24831 /* Tunable: -203340822 */;
+			return Global_262145.f_24831 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_RP_REWARD_JEWEL_STORE_GRAB */;
 		
 		case 242:
-			return Global_262145.f_24827 /* Tunable: 1230342870 */;
+			return Global_262145.f_24827 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_RP_REWARD_BANK_JOB */;
 		
 		case 244:
-			return Global_262145.f_24828 /* Tunable: 968100900 */;
+			return Global_262145.f_24828 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_RP_REWARD_DATA_HACK */;
 		
 		case 248:
-			return Global_262145.f_24830 /* Tunable: -423913502 */;
+			return Global_262145.f_24830 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_RP_REWARD_INFILTRATION */;
 		
 		case 239:
-			return Global_262145.f_24832 /* Tunable: -935764824 */;
+			return Global_262145.f_24832 /* Tunable: BB_HACKER_WORK_HACKER_CHALLENGE_RP_REWARD_SECURITY_VANS */;
 		
 		case 240:
-			return Global_262145.f_24833 /* Tunable: -54427531 */;
+			return Global_262145.f_24833 /* Tunable: BB_HACKER_WORK_HACKER_CHALLENGE_RP_REWARD_TARGET_PURSUIT */;
 		
 		case 237:
 			if (func_258() && !func_221())
 			{
 				if (func_236(PLAYER::PLAYER_ID()))
 				{
-					iVar0 = Global_262145.f_24666 /* Tunable: 1085938514 */;
+					iVar0 = Global_262145.f_24666 /* Tunable: BB_SELL_MISSIONS_RP_EARNED_CEO */;
 				}
 				else
 				{
-					iVar0 = Global_262145.f_24667 /* Tunable: 263628155 */;
+					iVar0 = Global_262145.f_24667 /* Tunable: BB_SELL_MISSIONS_RP_EARNED_VIP */;
 				}
 			}
 			else if (func_221())
 			{
-				iVar0 = Global_262145.f_24668 /* Tunable: 1312243956 */;
+				iVar0 = Global_262145.f_24668 /* Tunable: BB_SELL_MISSIONS_RP_EARNED_MC_LEADER */;
 			}
-			if ((func_258() && Global_262145.f_33401 /* Tunable: 2010545334 */) && !func_182(32356, -1))
+			if ((func_258() && Global_262145.f_33401 /* Tunable: ENABLE_CONTROL_PAYOUT_NIGHTCLUB_WAREHOUSEMANAGEMENT_SELL */) && !func_182(32356, -1))
 			{
-				iVar0 = (iVar0 * Global_262145.f_33418 /* Tunable: -1372236592 */);
+				iVar0 = (iVar0 * Global_262145.f_33418 /* Tunable: RP_CONTROL_PAYOUT_NIGHTCLUB_WAREHOUSEMANAGEMENT_SELL */);
 			}
 			return iVar0;
 			break;
@@ -54438,16 +54438,16 @@ int func_389(int iParam0, bool bParam1, bool bParam2)//Position - 0x35A64
 			{
 				if (func_236(PLAYER::PLAYER_ID()))
 				{
-					return Global_262145.f_24784 /* Tunable: 1782673288 */;
+					return Global_262145.f_24784 /* Tunable: BB_DEFEND_MISSIONS_RP_EARNED_OWNER_CEO */;
 				}
 				else
 				{
-					return Global_262145.f_24785 /* Tunable: 1766328749 */;
+					return Global_262145.f_24785 /* Tunable: BB_DEFEND_MISSIONS_RP_EARNED_OWNER_VIP_OWNER */;
 				}
 			}
 			else if (func_221())
 			{
-				return Global_262145.f_24786 /* Tunable: 1471086652 */;
+				return Global_262145.f_24786 /* Tunable: BB_DEFEND_MISSIONS_RP_EARNED_OWNER_MC_LEADER */;
 			}
 			break;
 		
@@ -54456,16 +54456,16 @@ int func_389(int iParam0, bool bParam1, bool bParam2)//Position - 0x35A64
 			{
 				if (func_236(PLAYER::PLAYER_ID()))
 				{
-					return Global_262145.f_24800 /* Tunable: -1955364748 */;
+					return Global_262145.f_24800 /* Tunable: BB_PHONECALL_MISSIONS_RP_EARNED_CEO */;
 				}
 				else
 				{
-					return Global_262145.f_24801 /* Tunable: -880863222 */;
+					return Global_262145.f_24801 /* Tunable: BB_PHONECALL_MISSIONS_RP_EARNED_VIP */;
 				}
 			}
 			else if (func_221())
 			{
-				return Global_262145.f_24802 /* Tunable: 1576676738 */;
+				return Global_262145.f_24802 /* Tunable: BB_PHONECALL_MISSIONS_RP_EARNED_MC_LEADER */;
 			}
 			break;
 		
@@ -54536,38 +54536,38 @@ void func_390(int iParam0, var uParam1, var uParam2)//Position - 0x3629B
 	{
 		if (func_106(iParam0))
 		{
-			*uParam1 = (Global_262145.f_18821 /* Tunable: -1082665723 */ / 100f);
-			*uParam2 = (Global_262145.f_18821 /* Tunable: -1082665723 */ / 100f);
+			*uParam1 = (Global_262145.f_18821 /* Tunable: BIKER_CLUBHOUSE_RIVAL_MEMBER_WIN_PERCENTAGE */ / 100f);
+			*uParam2 = (Global_262145.f_18821 /* Tunable: BIKER_CLUBHOUSE_RIVAL_MEMBER_WIN_PERCENTAGE */ / 100f);
 		}
 		else if (iParam0 == 242)
 		{
-			*uParam1 = Global_262145.f_24834 /* Tunable: 1063368282 */;
-			*uParam2 = Global_262145.f_24834 /* Tunable: 1063368282 */;
+			*uParam1 = Global_262145.f_24834 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_RIVAL_GANG_CASH_REWARD_BANK_JOB */;
+			*uParam2 = Global_262145.f_24834 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_RIVAL_GANG_CASH_REWARD_BANK_JOB */;
 		}
 		else if (iParam0 == 244)
 		{
-			*uParam1 = Global_262145.f_24835 /* Tunable: 1249038613 */;
-			*uParam2 = Global_262145.f_24835 /* Tunable: 1249038613 */;
+			*uParam1 = Global_262145.f_24835 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_RIVAL_GANG_CASH_REWARD_DATA_HACK */;
+			*uParam2 = Global_262145.f_24835 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_RIVAL_GANG_CASH_REWARD_DATA_HACK */;
 		}
 		else if (iParam0 == 248)
 		{
-			*uParam1 = Global_262145.f_24837 /* Tunable: -488524036 */;
-			*uParam2 = Global_262145.f_24837 /* Tunable: -488524036 */;
+			*uParam1 = Global_262145.f_24837 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_RIVAL_GANG_CASH_REWARD_INFILTRATION */;
+			*uParam2 = Global_262145.f_24837 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_RIVAL_GANG_CASH_REWARD_INFILTRATION */;
 		}
 		else if (iParam0 == 241)
 		{
-			*uParam1 = Global_262145.f_24838 /* Tunable: 787287514 */;
-			*uParam2 = Global_262145.f_24838 /* Tunable: 787287514 */;
+			*uParam1 = Global_262145.f_24838 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_RIVAL_GANG_CASH_REWARD_JEWEL_STORE_GRAB */;
+			*uParam2 = Global_262145.f_24838 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_RIVAL_GANG_CASH_REWARD_JEWEL_STORE_GRAB */;
 		}
 		else if (iParam0 == 239)
 		{
-			*uParam1 = Global_262145.f_24839 /* Tunable: 1624617753 */;
-			*uParam2 = Global_262145.f_24839 /* Tunable: 1624617753 */;
+			*uParam1 = Global_262145.f_24839 /* Tunable: BB_HACKER_WORK_HACKER_CHALLENGE_RIVAL_GANG_CASH_REWARD_SECURITY_VANS */;
+			*uParam2 = Global_262145.f_24839 /* Tunable: BB_HACKER_WORK_HACKER_CHALLENGE_RIVAL_GANG_CASH_REWARD_SECURITY_VANS */;
 		}
 		else if (iParam0 == 240)
 		{
-			*uParam1 = Global_262145.f_24840 /* Tunable: 987927512 */;
-			*uParam2 = Global_262145.f_24840 /* Tunable: 987927512 */;
+			*uParam1 = Global_262145.f_24840 /* Tunable: BB_HACKER_WORK_HACKER_CHALLENGE_RIVAL_GANG_CASH_REWARD_TARGET_PURSUIT */;
+			*uParam2 = Global_262145.f_24840 /* Tunable: BB_HACKER_WORK_HACKER_CHALLENGE_RIVAL_GANG_CASH_REWARD_TARGET_PURSUIT */;
 		}
 		else
 		{
@@ -54577,38 +54577,38 @@ void func_390(int iParam0, var uParam1, var uParam2)//Position - 0x3629B
 	}
 	else if (func_106(iParam0))
 	{
-		*uParam1 = (Global_262145.f_18822 /* Tunable: -1704843668 */ / 100f);
-		*uParam2 = (Global_262145.f_18822 /* Tunable: -1704843668 */ / 100f);
+		*uParam1 = (Global_262145.f_18822 /* Tunable: BIKER_CLUBHOUSE_RIVAL_SOLO_WIN_PERCENTAGE */ / 100f);
+		*uParam2 = (Global_262145.f_18822 /* Tunable: BIKER_CLUBHOUSE_RIVAL_SOLO_WIN_PERCENTAGE */ / 100f);
 	}
 	else if (iParam0 == 242)
 	{
-		*uParam1 = Global_262145.f_24841 /* Tunable: -1262379258 */;
-		*uParam2 = Global_262145.f_24841 /* Tunable: -1262379258 */;
+		*uParam1 = Global_262145.f_24841 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_SOLO_PLAYER_CASH_REWARD_BANK_JOB */;
+		*uParam2 = Global_262145.f_24841 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_SOLO_PLAYER_CASH_REWARD_BANK_JOB */;
 	}
 	else if (iParam0 == 244)
 	{
-		*uParam1 = Global_262145.f_24842 /* Tunable: 1108489437 */;
-		*uParam2 = Global_262145.f_24842 /* Tunable: 1108489437 */;
+		*uParam1 = Global_262145.f_24842 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_SOLO_PLAYER_CASH_REWARD_DATA_HACK */;
+		*uParam2 = Global_262145.f_24842 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_SOLO_PLAYER_CASH_REWARD_DATA_HACK */;
 	}
 	else if (iParam0 == 248)
 	{
-		*uParam1 = Global_262145.f_24844 /* Tunable: -989876675 */;
-		*uParam2 = Global_262145.f_24844 /* Tunable: -989876675 */;
+		*uParam1 = Global_262145.f_24844 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_SOLO_PLAYER_CASH_REWARD_INFILTRATION */;
+		*uParam2 = Global_262145.f_24844 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_SOLO_PLAYER_CASH_REWARD_INFILTRATION */;
 	}
 	else if (iParam0 == 241)
 	{
-		*uParam1 = Global_262145.f_24845 /* Tunable: -1361915386 */;
-		*uParam2 = Global_262145.f_24845 /* Tunable: -1361915386 */;
+		*uParam1 = Global_262145.f_24845 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_SOLO_PLAYER_CASH_REWARD_JEWEL_STORE_GRAB */;
+		*uParam2 = Global_262145.f_24845 /* Tunable: BB_HACKER_WORK_CLIENT_WORK_SOLO_PLAYER_CASH_REWARD_JEWEL_STORE_GRAB */;
 	}
 	else if (iParam0 == 239)
 	{
-		*uParam1 = Global_262145.f_24846 /* Tunable: -1419284063 */;
-		*uParam2 = Global_262145.f_24846 /* Tunable: -1419284063 */;
+		*uParam1 = Global_262145.f_24846 /* Tunable: BB_HACKER_WORK_HACKER_CHALLENGE_SOLO_PLAYER_CASH_REWARD_SECURITY_VANS */;
+		*uParam2 = Global_262145.f_24846 /* Tunable: BB_HACKER_WORK_HACKER_CHALLENGE_SOLO_PLAYER_CASH_REWARD_SECURITY_VANS */;
 	}
 	else if (iParam0 == 240)
 	{
-		*uParam1 = Global_262145.f_24847 /* Tunable: 2112977251 */;
-		*uParam2 = Global_262145.f_24847 /* Tunable: 2112977251 */;
+		*uParam1 = Global_262145.f_24847 /* Tunable: BB_HACKER_WORK_HACKER_CHALLENGE_SOLO_PLAYER_CASH_REWARD_TARGET_PURSUIT */;
+		*uParam2 = Global_262145.f_24847 /* Tunable: BB_HACKER_WORK_HACKER_CHALLENGE_SOLO_PLAYER_CASH_REWARD_TARGET_PURSUIT */;
 	}
 	else
 	{
@@ -61822,7 +61822,7 @@ void func_700(bool bParam0, int iParam1)//Position - 0x3E28A
 		func_761();
 		MISC::CLEAR_BIT(&(Global_1940367.f_3), 4);
 	}
-	if ((func_221() && iParam1 != 0) && Global_262145.f_17656 /* Tunable: 35628303 */)
+	if ((func_221() && iParam1 != 0) && Global_262145.f_17656 /* Tunable: BIKER_STOP_PRODUCTION_ON_MISSIONS */)
 	{
 		if (Global_1886967[PLAYER::PLAYER_ID() /*609*/].f_10.f_33 == 190 || Global_1886967[PLAYER::PLAYER_ID() /*609*/].f_10.f_33 == 192)
 		{
@@ -62427,7 +62427,7 @@ int func_719(int iParam0, bool bParam1)//Position - 0x3EE2C
 			{
 				if (func_66(PLAYER::PLAYER_ID()))
 				{
-					return Global_262145.f_18956 /* Tunable: 1107909355 */;
+					return Global_262145.f_18956 /* Tunable: BIKER_CLUB_WORK_COOLDOWN_GLOBAL */;
 				}
 				return Global_262145.f_13281 /* Tunable: GB_COOLDOWN_UNTIL_NEXT_BOSS_WORK */;
 			}
@@ -62594,7 +62594,7 @@ int func_719(int iParam0, bool bParam1)//Position - 0x3EE2C
 			}
 			else
 			{
-				return Global_262145.f_18956 /* Tunable: 1107909355 */;
+				return Global_262145.f_18956 /* Tunable: BIKER_CLUB_WORK_COOLDOWN_GLOBAL */;
 			}
 			break;
 		
@@ -62605,7 +62605,7 @@ int func_719(int iParam0, bool bParam1)//Position - 0x3EE2C
 			}
 			else
 			{
-				return Global_262145.f_18956 /* Tunable: 1107909355 */;
+				return Global_262145.f_18956 /* Tunable: BIKER_CLUB_WORK_COOLDOWN_GLOBAL */;
 			}
 			break;
 		
@@ -62682,7 +62682,7 @@ int func_719(int iParam0, bool bParam1)//Position - 0x3EE2C
 			}
 			else
 			{
-				return Global_262145.f_18956 /* Tunable: 1107909355 */;
+				return Global_262145.f_18956 /* Tunable: BIKER_CLUB_WORK_COOLDOWN_GLOBAL */;
 			}
 			break;
 		
@@ -63616,68 +63616,68 @@ int func_744(int iParam0, bool bParam1)//Position - 0x402CF
 	switch (iVar1)
 	{
 		case 1:
-			uVar0 = Global_262145.f_17620 /* Tunable: -373027461 */;
+			uVar0 = Global_262145.f_17620 /* Tunable: BIKER_WEED_MATERIAL_PRODUCT_COST */;
 			if (func_357(PLAYER::PLAYER_ID(), iParam0, 0))
 			{
-				uVar0 = Global_262145.f_17626 /* Tunable: 1195564032 */;
+				uVar0 = Global_262145.f_17626 /* Tunable: BIKER_WEED_MATERIAL_PRODUCT_COST_UPGRADE_REDUCTION */;
 			}
 			break;
 		
 		case 3:
-			uVar0 = Global_262145.f_17619 /* Tunable: -730135062 */;
+			uVar0 = Global_262145.f_17619 /* Tunable: BIKER_METH_MATERIAL_PRODUCT_COST */;
 			if (func_357(PLAYER::PLAYER_ID(), iParam0, 0))
 			{
-				uVar0 = Global_262145.f_17625 /* Tunable: -660914094 */;
+				uVar0 = Global_262145.f_17625 /* Tunable: BIKER_METH_MATERIAL_PRODUCT_COST_UPGRADE_REDUCTION */;
 			}
 			break;
 		
 		case 4:
-			uVar0 = Global_262145.f_17618 /* Tunable: -161187879 */;
+			uVar0 = Global_262145.f_17618 /* Tunable: BIKER_CRACK_MATERIAL_PRODUCT_COST */;
 			if (func_357(PLAYER::PLAYER_ID(), iParam0, 0))
 			{
-				uVar0 = Global_262145.f_17624 /* Tunable: 1500658261 */;
+				uVar0 = Global_262145.f_17624 /* Tunable: BIKER_CRACK_MATERIAL_PRODUCT_COST_UPGRADE_REDUCTION */;
 			}
 			break;
 		
 		case 0:
-			uVar0 = Global_262145.f_17616 /* Tunable: -1839004359 */;
+			uVar0 = Global_262145.f_17616 /* Tunable: BIKER_FAKEIDS_MATERIAL_PRODUCT_COST */;
 			if (func_357(PLAYER::PLAYER_ID(), iParam0, 0))
 			{
-				uVar0 = Global_262145.f_17622 /* Tunable: -192060672 */;
+				uVar0 = Global_262145.f_17622 /* Tunable: BIKER_FAKEIDS_MATERIAL_PRODUCT_COST_UPGRADE_REDUCTION */;
 			}
 			break;
 		
 		case 6:
-			uVar0 = Global_262145.f_17621 /* Tunable: -1506354854 */;
+			uVar0 = Global_262145.f_17621 /* Tunable: BIKER_ACID_MATERIAL_PRODUCT_COST */;
 			if (func_356(PLAYER::PLAYER_ID()))
 			{
-				uVar0 = Global_262145.f_17627 /* Tunable: -993236072 */;
+				uVar0 = Global_262145.f_17627 /* Tunable: BIKER_ACID_MATERIAL_PRODUCT_COST_UPGRADE_REDUCTION */;
 			}
 			break;
 		
 		case 2:
-			uVar0 = Global_262145.f_17617 /* Tunable: 631857857 */;
+			uVar0 = Global_262145.f_17617 /* Tunable: BIKER_COUNTERCASH_MATERIAL_PRODUCT_COST */;
 			if (func_357(PLAYER::PLAYER_ID(), iParam0, 0))
 			{
-				uVar0 = Global_262145.f_17623 /* Tunable: -891680742 */;
+				uVar0 = Global_262145.f_17623 /* Tunable: BIKER_COUNTERCASH_MATERIAL_PRODUCT_COST_UPGRADE_REDUCTION */;
 			}
 			break;
 		
 		case 5:
 			if (bParam1)
 			{
-				uVar0 = Global_262145.f_21761 /* Tunable: 1485279815 */;
+				uVar0 = Global_262145.f_21761 /* Tunable: GR_RESEARCH_MATERIAL_PRODUCT_COST */;
 				if (func_357(PLAYER::PLAYER_ID(), iParam0, 0))
 				{
-					uVar0 = Global_262145.f_21762 /* Tunable: 2041812011 */;
+					uVar0 = Global_262145.f_21762 /* Tunable: GR_RESEARCH_MATERIAL_PRODUCT_COST_UPGRADE_REDUCTION */;
 				}
 			}
 			else
 			{
-				uVar0 = Global_262145.f_21745 /* Tunable: -1652502760 */;
+				uVar0 = Global_262145.f_21745 /* Tunable: GR_MANU_MATERIAL_PRODUCT_COST */;
 				if (func_357(PLAYER::PLAYER_ID(), iParam0, 0))
 				{
-					uVar0 = Global_262145.f_21746 /* Tunable: 1647327744 */;
+					uVar0 = Global_262145.f_21746 /* Tunable: GR_MANU_MATERIAL_PRODUCT_COST_UPGRADE_REDUCTION */;
 				}
 			}
 			break;
@@ -63730,9 +63730,9 @@ int func_746(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position - 
 			{
 				iVar0 = (iVar0 - Global_262145.f_17615 /* Tunable: BIKER_WEED_UPGRADE_STAFF_REDUCTION_TIME */);
 			}
-			if (Global_262145.f_33380 /* Tunable: 335485367 */ && !func_182(34716, -1))
+			if (Global_262145.f_33380 /* Tunable: ENABLE_CONTROL_SUPPLY_BIKER_BUSINESSES_WEED */ && !func_182(34716, -1))
 			{
-				iVar0 = SYSTEM::FLOOR((IntToFloat(iVar0) * Global_262145.f_33387 /* Tunable: 1015227874 */));
+				iVar0 = SYSTEM::FLOOR((IntToFloat(iVar0) * Global_262145.f_33387 /* Tunable: SPEED_SUPPLY_BIKER_BUSINESSES_WEED */));
 			}
 			break;
 		
@@ -63758,9 +63758,9 @@ int func_746(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position - 
 			{
 				iVar0 = (iVar0 - Global_262145.f_17614 /* Tunable: BIKER_METH_UPGRADE_STAFF_REDUCTION_TIME */);
 			}
-			if (Global_262145.f_33381 /* Tunable: -801385760 */ && !func_182(34719, -1))
+			if (Global_262145.f_33381 /* Tunable: ENABLE_CONTROL_SUPPLY_BIKER_BUSINESSES_METH */ && !func_182(34719, -1))
 			{
-				iVar0 = SYSTEM::FLOOR((IntToFloat(iVar0) * Global_262145.f_33388 /* Tunable: -601866636 */));
+				iVar0 = SYSTEM::FLOOR((IntToFloat(iVar0) * Global_262145.f_33388 /* Tunable: SPEED_SUPPLY_BIKER_BUSINESSES_METH */));
 			}
 			break;
 		
@@ -63774,9 +63774,9 @@ int func_746(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position - 
 			{
 				iVar0 = (iVar0 - Global_262145.f_17613 /* Tunable: BIKER_CRACK_UPGRADE_STAFF_REDUCTION_TIME */);
 			}
-			if (Global_262145.f_33382 /* Tunable: -660655388 */ && !func_182(34717, -1))
+			if (Global_262145.f_33382 /* Tunable: ENABLE_CONTROL_SUPPLY_BIKER_BUSINESSES_COCAINE */ && !func_182(34717, -1))
 			{
-				iVar0 = SYSTEM::FLOOR((IntToFloat(iVar0) * Global_262145.f_33389 /* Tunable: -1764267310 */));
+				iVar0 = SYSTEM::FLOOR((IntToFloat(iVar0) * Global_262145.f_33389 /* Tunable: SPEED_SUPPLY_BIKER_BUSINESSES_COCAINE */));
 			}
 			break;
 		
@@ -63790,9 +63790,9 @@ int func_746(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position - 
 			{
 				iVar0 = (iVar0 - Global_262145.f_17611 /* Tunable: BIKER_FAKEIDS_UPGRADE_STAFF_REDUCTION_TIME */);
 			}
-			if (Global_262145.f_33383 /* Tunable: 1893606490 */ && !func_182(34718, -1))
+			if (Global_262145.f_33383 /* Tunable: ENABLE_CONTROL_SUPPLY_BIKER_BUSINESSES_FORGEDDOCUMENTS */ && !func_182(34718, -1))
 			{
-				iVar0 = SYSTEM::FLOOR((IntToFloat(iVar0) * Global_262145.f_33390 /* Tunable: 1899275219 */));
+				iVar0 = SYSTEM::FLOOR((IntToFloat(iVar0) * Global_262145.f_33390 /* Tunable: SPEED_SUPPLY_BIKER_BUSINESSES_FORGEDDOCUMENTS */));
 			}
 			break;
 		
@@ -63806,9 +63806,9 @@ int func_746(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position - 
 			{
 				iVar0 = (iVar0 - Global_262145.f_17612 /* Tunable: BIKER_COUNTERCASH_UPGRADE_STAFF_REDUCTION_TIME */);
 			}
-			if (Global_262145.f_33384 /* Tunable: 1786115839 */ && !func_182(34720, -1))
+			if (Global_262145.f_33384 /* Tunable: ENABLE_CONTROL_SUPPLY_BIKER_BUSINESSES_COUNTERFIETCASH */ && !func_182(34720, -1))
 			{
-				iVar0 = SYSTEM::FLOOR((IntToFloat(iVar0) * Global_262145.f_33391 /* Tunable: 6615240 */));
+				iVar0 = SYSTEM::FLOOR((IntToFloat(iVar0) * Global_262145.f_33391 /* Tunable: SPEED_SUPPLY_BIKER_BUSINESSES_COUNTERFIETCASH */));
 			}
 			break;
 		
@@ -63845,14 +63845,14 @@ int func_746(int iParam0, bool bParam1, bool bParam2, bool bParam3)//Position - 
 			}
 			if (bParam2)
 			{
-				if (Global_262145.f_33386 /* Tunable: 737414449 */ && !func_182(34739, -1))
+				if (Global_262145.f_33386 /* Tunable: ENABLE_CONTROL_SUPPLY_GUNRUNNINGBUNKER_RESEARCH */ && !func_182(34739, -1))
 				{
-					iVar0 = SYSTEM::FLOOR((IntToFloat(iVar0) * Global_262145.f_33393 /* Tunable: -551759160 */));
+					iVar0 = SYSTEM::FLOOR((IntToFloat(iVar0) * Global_262145.f_33393 /* Tunable: SPEED_SUPPLY_GUNRUNNINGBUNKER_RESEARCH */));
 				}
 			}
-			else if (Global_262145.f_33385 /* Tunable: 275206414 */ && !func_182(34721, -1))
+			else if (Global_262145.f_33385 /* Tunable: ENABLE_CONTROL_SUPPLY_GUNRUNNINGBUNKER_CARGO */ && !func_182(34721, -1))
 			{
-				iVar0 = SYSTEM::FLOOR((IntToFloat(iVar0) * Global_262145.f_33392 /* Tunable: -1509366616 */));
+				iVar0 = SYSTEM::FLOOR((IntToFloat(iVar0) * Global_262145.f_33392 /* Tunable: SPEED_SUPPLY_GUNRUNNINGBUNKER_CARGO */));
 			}
 			if (func_742(PLAYER::PLAYER_ID(), iParam0) == 2)
 			{

@@ -926,25 +926,25 @@ int func_29(int iParam0)//Position - 0x921
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_24600 /* Tunable: -1318722703 */;
+			return Global_262145.f_24600 /* Tunable: BB_BUSINESS_TOTAL_MAX_UNITS_WEAPONS */;
 		
 		case 2:
-			return Global_262145.f_24601 /* Tunable: -2136290534 */;
+			return Global_262145.f_24601 /* Tunable: BB_BUSINESS_TOTAL_MAX_UNITS_COKE */;
 		
 		case 3:
-			return Global_262145.f_24602 /* Tunable: 1069721135 */;
+			return Global_262145.f_24602 /* Tunable: BB_BUSINESS_TOTAL_MAX_UNITS_METH */;
 		
 		case 4:
-			return Global_262145.f_24603 /* Tunable: -8586474 */;
+			return Global_262145.f_24603 /* Tunable: BB_BUSINESS_TOTAL_MAX_UNITS_WEED */;
 		
 		case 5:
-			return Global_262145.f_24604 /* Tunable: -358911902 */;
+			return Global_262145.f_24604 /* Tunable: BB_BUSINESS_TOTAL_MAX_UNITS_FORGED_DOCUMENTS */;
 		
 		case 6:
-			return Global_262145.f_24605 /* Tunable: -879486246 */;
+			return Global_262145.f_24605 /* Tunable: BB_BUSINESS_TOTAL_MAX_UNITS_COUNTERFEIT_CASH */;
 		
 		case 0:
-			return Global_262145.f_24606 /* Tunable: -1168716160 */;
+			return Global_262145.f_24606 /* Tunable: BB_BUSINESS_TOTAL_MAX_UNITS_CARGO */;
 		
 		default:
 	}
@@ -2026,14 +2026,14 @@ int func_74(int iParam0, int iParam1)//Position - 0x1B23
 	{
 		if (Global_1662900[iParam0] > 0 && (!func_81(iParam1) || !func_77(PLAYER::PLAYER_ID(), iParam1)))
 		{
-			if (!Global_262145.f_21763 /* Tunable: 1006342231 */ || func_62(PLAYER::PLAYER_ID()))
+			if (!Global_262145.f_21763 /* Tunable: GR_STOP_PRODUCTION_WHEN_NOT_GANG_BOSS */ || func_62(PLAYER::PLAYER_ID()))
 			{
 				return 1;
 			}
 		}
 		return 0;
 	}
-	if ((Global_1662900[iParam0] > 0 && !func_81(iParam1)) && (!Global_262145.f_19161 /* Tunable: 1192276690 */ || func_75(PLAYER::PLAYER_ID())))
+	if ((Global_1662900[iParam0] > 0 && !func_81(iParam1)) && (!Global_262145.f_19161 /* Tunable: BIKER_STOP_PRODUCTION_WHEN_NOT_MC_PRESIDENT */ || func_75(PLAYER::PLAYER_ID())))
 	{
 		return 1;
 	}
@@ -3245,7 +3245,7 @@ void func_117()//Position - 0x2F97
 
 int func_118()//Position - 0x2FCE
 {
-	if (!Global_262145.f_29155 /* Tunable: 1028571554 */)
+	if (!Global_262145.f_29155 /* Tunable: NPC_PHONE_TELEMETRY_TRACKING_ENABLED */)
 	{
 		return 0;
 	}
@@ -7186,7 +7186,7 @@ void func_287()//Position - 0x766C
 			bVar0 = NETWORK::NETWORK_IS_IN_TRANSITION();
 			if ((((bVar0 || NETWORK::NETWORK_IS_TRANSITION_STARTED()) || NETWORK::NETWORK_IS_TRANSITION_BUSY()) || NETWORK::NETWORK_IS_TRANSITION_MATCHMAKING()) || NETWORK::NETWORK_IS_TRANSITION_LEAVE_POSTPONED())
 			{
-				if (Global_262145.f_34044 /* Tunable: -1509580267 */)
+				if (Global_262145.f_34044 /* Tunable: APPJIPMP_CANCEL_MATCHMAKING_ON_NETWORK_BAIL */)
 				{
 					NETWORK::NETWORK_CANCEL_TRANSITION_MATCHMAKING();
 				}
@@ -7916,14 +7916,14 @@ void func_342(int iParam0, int iParam1, bool bParam2)//Position - 0x83B3
 		{
 			if (Global_2738587.f_4499 == -1)
 			{
-				Global_2738587.f_4499 = Global_262145.f_27440 /* Tunable: 945146471 */;
+				Global_2738587.f_4499 = Global_262145.f_27440 /* Tunable: VC_PASSIVE_COOLDOWN_REENABLE */;
 			}
 			func_349(&(Global_2738587.f_4497), 0, 0);
 			if (bParam2)
 			{
 				if (Global_2738587.f_4502 == -1)
 				{
-					Global_2738587.f_4502 = Global_262145.f_27441 /* Tunable: -29732167 */;
+					Global_2738587.f_4502 = Global_262145.f_27441 /* Tunable: VC_PASSIVE_TIME_AFTER_DISABLE */;
 				}
 				func_349(&(Global_2738587.f_4500), 0, 0);
 			}

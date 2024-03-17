@@ -22740,7 +22740,7 @@ void func_118(int iParam0, var uParam1, int iParam2)//Position - 0x18D55
 			break;
 		
 		case joaat("CLO_H4M_DECL_39"):
-			*uParam1 = Global_262145.f_30769 /* Tunable: -1243972377 */;
+			*uParam1 = Global_262145.f_30769 /* Tunable: IH_MISBHV_ORANGE_KM_HOODIE */;
 			break;
 		
 		case joaat("CLO_H4M_DECL_41"):
@@ -22772,7 +22772,7 @@ void func_118(int iParam0, var uParam1, int iParam2)//Position - 0x18D55
 			break;
 		
 		case joaat("CLO_H4F_DECL_39"):
-			*uParam1 = Global_262145.f_30769 /* Tunable: -1243972377 */;
+			*uParam1 = Global_262145.f_30769 /* Tunable: IH_MISBHV_ORANGE_KM_HOODIE */;
 			break;
 		
 		case joaat("CLO_H4F_DECL_41"):
@@ -23689,15 +23689,15 @@ void func_119(int iParam0, var uParam1, int iParam2)//Position - 0x1AA9E
 					break;
 				
 				case joaat("CLO_SUM_U_16_17"):
-					*uParam1 = Global_262145.f_29818 /* Tunable: -2062495386 */;
+					*uParam1 = Global_262145.f_29818 /* Tunable: SUM_RUST_CHECK_OPEN_OFFICE_UNBUTTONED */;
 					break;
 				
 				case joaat("CLO_SUM_U_16_18"):
-					*uParam1 = Global_262145.f_29819 /* Tunable: 619832563 */;
+					*uParam1 = Global_262145.f_29819 /* Tunable: SUM_BLUE_CHECK_OPEN_OFFICE_UNBUTTONED */;
 					break;
 				
 				case joaat("CLO_SUM_U_16_19"):
-					*uParam1 = Global_262145.f_29820 /* Tunable: 1050877194 */;
+					*uParam1 = Global_262145.f_29820 /* Tunable: SUM_BIG_BLUE_CHECK_OPEN_OFFICE_UNBUTTONED */;
 					break;
 				
 				case joaat("CLO_SUM_U_17_0"):
@@ -23769,15 +23769,15 @@ void func_119(int iParam0, var uParam1, int iParam2)//Position - 0x1AA9E
 					break;
 				
 				case joaat("CLO_SUM_U_17_17"):
-					*uParam1 = Global_262145.f_29818 /* Tunable: -2062495386 */;
+					*uParam1 = Global_262145.f_29818 /* Tunable: SUM_RUST_CHECK_OPEN_OFFICE_UNBUTTONED */;
 					break;
 				
 				case joaat("CLO_SUM_U_17_18"):
-					*uParam1 = Global_262145.f_29819 /* Tunable: 619832563 */;
+					*uParam1 = Global_262145.f_29819 /* Tunable: SUM_BLUE_CHECK_OPEN_OFFICE_UNBUTTONED */;
 					break;
 				
 				case joaat("CLO_SUM_U_17_19"):
-					*uParam1 = Global_262145.f_29820 /* Tunable: 1050877194 */;
+					*uParam1 = Global_262145.f_29820 /* Tunable: SUM_BIG_BLUE_CHECK_OPEN_OFFICE_UNBUTTONED */;
 					break;
 				
 				case joaat("CLO_SUM_U_18_0"):
@@ -23980,7 +23980,7 @@ void func_119(int iParam0, var uParam1, int iParam2)//Position - 0x1AA9E
 					break;
 				
 				case joaat("CLO_SUF_L_1_7"):
-					*uParam1 = Global_262145.f_29879 /* Tunable: -1848618360 */;
+					*uParam1 = Global_262145.f_29879 /* Tunable: SUM_FEMALE_PATTEREND_SLACKS */;
 					break;
 				
 				case joaat("CLO_SUF_L_1_8"):
@@ -24212,7 +24212,7 @@ void func_119(int iParam0, var uParam1, int iParam2)//Position - 0x1AA9E
 					break;
 				
 				case joaat("CLO_SUF_L_5_11"):
-					*uParam1 = Global_262145.f_29908 /* Tunable: -1066030332 */;
+					*uParam1 = Global_262145.f_29908 /* Tunable: SUM_FEMALE_GRAY_CHINOS2 */;
 					break;
 				
 				case joaat("CLO_SUF_L_5_12"):
@@ -24680,7 +24680,7 @@ void func_119(int iParam0, var uParam1, int iParam2)//Position - 0x1AA9E
 					break;
 				
 				case joaat("CLO_SUF_U_10_4"):
-					*uParam1 = Global_262145.f_29919 /* Tunable: 2124740440 */;
+					*uParam1 = Global_262145.f_29919 /* Tunable: SUM_FEMALE_PINK_TUCKED_ROLLED_SHIRT2 */;
 					break;
 				
 				case joaat("CLO_SUF_U_10_5"):
@@ -24708,7 +24708,7 @@ void func_119(int iParam0, var uParam1, int iParam2)//Position - 0x1AA9E
 					break;
 				
 				case joaat("CLO_SUF_U_11_4"):
-					*uParam1 = Global_262145.f_29926 /* Tunable: 1618660460 */;
+					*uParam1 = Global_262145.f_29926 /* Tunable: SUM_FEMALE_PINK_TUCKED_SHORT_SHIRT2 */;
 					break;
 				
 				case joaat("CLO_SUF_U_11_5"):
@@ -24736,7 +24736,7 @@ void func_119(int iParam0, var uParam1, int iParam2)//Position - 0x1AA9E
 					break;
 				
 				case joaat("CLO_SUF_U_12_4"):
-					*uParam1 = Global_262145.f_29919 /* Tunable: 2124740440 */;
+					*uParam1 = Global_262145.f_29919 /* Tunable: SUM_FEMALE_PINK_TUCKED_ROLLED_SHIRT2 */;
 					break;
 				
 				case joaat("CLO_SUF_U_12_5"):
@@ -24764,7 +24764,7 @@ void func_119(int iParam0, var uParam1, int iParam2)//Position - 0x1AA9E
 					break;
 				
 				case joaat("CLO_SUF_U_13_4"):
-					*uParam1 = Global_262145.f_29926 /* Tunable: 1618660460 */;
+					*uParam1 = Global_262145.f_29926 /* Tunable: SUM_FEMALE_PINK_TUCKED_SHORT_SHIRT2 */;
 					break;
 				
 				case joaat("CLO_SUF_U_13_5"):
@@ -25120,15 +25120,15 @@ void func_119(int iParam0, var uParam1, int iParam2)//Position - 0x1AA9E
 					break;
 				
 				case joaat("CLO_SUF_U_19_17"):
-					*uParam1 = Global_262145.f_29818 /* Tunable: -2062495386 */;
+					*uParam1 = Global_262145.f_29818 /* Tunable: SUM_RUST_CHECK_OPEN_OFFICE_UNBUTTONED */;
 					break;
 				
 				case joaat("CLO_SUF_U_19_18"):
-					*uParam1 = Global_262145.f_29819 /* Tunable: 619832563 */;
+					*uParam1 = Global_262145.f_29819 /* Tunable: SUM_BLUE_CHECK_OPEN_OFFICE_UNBUTTONED */;
 					break;
 				
 				case joaat("CLO_SUF_U_19_19"):
-					*uParam1 = Global_262145.f_29820 /* Tunable: 1050877194 */;
+					*uParam1 = Global_262145.f_29820 /* Tunable: SUM_BIG_BLUE_CHECK_OPEN_OFFICE_UNBUTTONED */;
 					break;
 				
 				case joaat("CLO_SUF_U_20_0"):
@@ -25200,15 +25200,15 @@ void func_119(int iParam0, var uParam1, int iParam2)//Position - 0x1AA9E
 					break;
 				
 				case joaat("CLO_SUF_U_20_17"):
-					*uParam1 = Global_262145.f_29818 /* Tunable: -2062495386 */;
+					*uParam1 = Global_262145.f_29818 /* Tunable: SUM_RUST_CHECK_OPEN_OFFICE_UNBUTTONED */;
 					break;
 				
 				case joaat("CLO_SUF_U_20_18"):
-					*uParam1 = Global_262145.f_29819 /* Tunable: 619832563 */;
+					*uParam1 = Global_262145.f_29819 /* Tunable: SUM_BLUE_CHECK_OPEN_OFFICE_UNBUTTONED */;
 					break;
 				
 				case joaat("CLO_SUF_U_20_19"):
-					*uParam1 = Global_262145.f_29820 /* Tunable: 1050877194 */;
+					*uParam1 = Global_262145.f_29820 /* Tunable: SUM_BIG_BLUE_CHECK_OPEN_OFFICE_UNBUTTONED */;
 					break;
 				
 				case joaat("CLO_SUF_U_21_0"):
@@ -26135,67 +26135,67 @@ void func_120(int iParam0, var uParam1, int iParam2)//Position - 0x1DA58
 					break;
 				
 				case joaat("CLO_H3M_PH_10_0"):
-					*uParam1 = Global_262145.f_29411 /* Tunable: -1883837301 */;
+					*uParam1 = Global_262145.f_29411 /* Tunable: CH_BLACK_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3M_PH_10_1"):
-					*uParam1 = Global_262145.f_29412 /* Tunable: -798694275 */;
+					*uParam1 = Global_262145.f_29412 /* Tunable: CH_SAGE_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3M_PH_10_2"):
-					*uParam1 = Global_262145.f_29413 /* Tunable: -1155389265 */;
+					*uParam1 = Global_262145.f_29413 /* Tunable: CH_BEIGE_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3M_PH_10_3"):
-					*uParam1 = Global_262145.f_29414 /* Tunable: -451655856 */;
+					*uParam1 = Global_262145.f_29414 /* Tunable: CH_STONE_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3M_PH_10_4"):
-					*uParam1 = Global_262145.f_29415 /* Tunable: -5846860 */;
+					*uParam1 = Global_262145.f_29415 /* Tunable: CH_WHITE_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3M_PH_10_5"):
-					*uParam1 = Global_262145.f_29416 /* Tunable: -873859144 */;
+					*uParam1 = Global_262145.f_29416 /* Tunable: CH_BEIGE_DIGITAL_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3M_PH_10_6"):
-					*uParam1 = Global_262145.f_29417 /* Tunable: -449204377 */;
+					*uParam1 = Global_262145.f_29417 /* Tunable: CH_GREEN_DIGITAL_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3M_PH_10_7"):
-					*uParam1 = Global_262145.f_29418 /* Tunable: 726336069 */;
+					*uParam1 = Global_262145.f_29418 /* Tunable: CH_DESERT_DIGITAL_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3M_PH_11_0"):
-					*uParam1 = Global_262145.f_29411 /* Tunable: -1883837301 */;
+					*uParam1 = Global_262145.f_29411 /* Tunable: CH_BLACK_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3M_PH_11_1"):
-					*uParam1 = Global_262145.f_29412 /* Tunable: -798694275 */;
+					*uParam1 = Global_262145.f_29412 /* Tunable: CH_SAGE_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3M_PH_11_2"):
-					*uParam1 = Global_262145.f_29413 /* Tunable: -1155389265 */;
+					*uParam1 = Global_262145.f_29413 /* Tunable: CH_BEIGE_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3M_PH_11_3"):
-					*uParam1 = Global_262145.f_29414 /* Tunable: -451655856 */;
+					*uParam1 = Global_262145.f_29414 /* Tunable: CH_STONE_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3M_PH_11_4"):
-					*uParam1 = Global_262145.f_29415 /* Tunable: -5846860 */;
+					*uParam1 = Global_262145.f_29415 /* Tunable: CH_WHITE_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3M_PH_11_5"):
-					*uParam1 = Global_262145.f_29416 /* Tunable: -873859144 */;
+					*uParam1 = Global_262145.f_29416 /* Tunable: CH_BEIGE_DIGITAL_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3M_PH_11_6"):
-					*uParam1 = Global_262145.f_29417 /* Tunable: -449204377 */;
+					*uParam1 = Global_262145.f_29417 /* Tunable: CH_GREEN_DIGITAL_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3M_PH_11_7"):
-					*uParam1 = Global_262145.f_29418 /* Tunable: 726336069 */;
+					*uParam1 = Global_262145.f_29418 /* Tunable: CH_DESERT_DIGITAL_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 			}
 			break;
@@ -27528,67 +27528,67 @@ void func_120(int iParam0, var uParam1, int iParam2)//Position - 0x1DA58
 					break;
 				
 				case joaat("CLO_H3F_PH_10_0"):
-					*uParam1 = Global_262145.f_29411 /* Tunable: -1883837301 */;
+					*uParam1 = Global_262145.f_29411 /* Tunable: CH_BLACK_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3F_PH_10_1"):
-					*uParam1 = Global_262145.f_29412 /* Tunable: -798694275 */;
+					*uParam1 = Global_262145.f_29412 /* Tunable: CH_SAGE_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3F_PH_10_2"):
-					*uParam1 = Global_262145.f_29413 /* Tunable: -1155389265 */;
+					*uParam1 = Global_262145.f_29413 /* Tunable: CH_BEIGE_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3F_PH_10_3"):
-					*uParam1 = Global_262145.f_29414 /* Tunable: -451655856 */;
+					*uParam1 = Global_262145.f_29414 /* Tunable: CH_STONE_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3F_PH_10_4"):
-					*uParam1 = Global_262145.f_29415 /* Tunable: -5846860 */;
+					*uParam1 = Global_262145.f_29415 /* Tunable: CH_WHITE_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3F_PH_10_5"):
-					*uParam1 = Global_262145.f_29416 /* Tunable: -873859144 */;
+					*uParam1 = Global_262145.f_29416 /* Tunable: CH_BEIGE_DIGITAL_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3F_PH_10_6"):
-					*uParam1 = Global_262145.f_29417 /* Tunable: -449204377 */;
+					*uParam1 = Global_262145.f_29417 /* Tunable: CH_GREEN_DIGITAL_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3F_PH_10_7"):
-					*uParam1 = Global_262145.f_29418 /* Tunable: 726336069 */;
+					*uParam1 = Global_262145.f_29418 /* Tunable: CH_DESERT_DIGITAL_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3F_PH_11_0"):
-					*uParam1 = Global_262145.f_29411 /* Tunable: -1883837301 */;
+					*uParam1 = Global_262145.f_29411 /* Tunable: CH_BLACK_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3F_PH_11_1"):
-					*uParam1 = Global_262145.f_29412 /* Tunable: -798694275 */;
+					*uParam1 = Global_262145.f_29412 /* Tunable: CH_SAGE_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3F_PH_11_2"):
-					*uParam1 = Global_262145.f_29413 /* Tunable: -1155389265 */;
+					*uParam1 = Global_262145.f_29413 /* Tunable: CH_BEIGE_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3F_PH_11_3"):
-					*uParam1 = Global_262145.f_29414 /* Tunable: -451655856 */;
+					*uParam1 = Global_262145.f_29414 /* Tunable: CH_STONE_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3F_PH_11_4"):
-					*uParam1 = Global_262145.f_29415 /* Tunable: -5846860 */;
+					*uParam1 = Global_262145.f_29415 /* Tunable: CH_WHITE_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3F_PH_11_5"):
-					*uParam1 = Global_262145.f_29416 /* Tunable: -873859144 */;
+					*uParam1 = Global_262145.f_29416 /* Tunable: CH_BEIGE_DIGITAL_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3F_PH_11_6"):
-					*uParam1 = Global_262145.f_29417 /* Tunable: -449204377 */;
+					*uParam1 = Global_262145.f_29417 /* Tunable: CH_GREEN_DIGITAL_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 				
 				case joaat("CLO_H3F_PH_11_7"):
-					*uParam1 = Global_262145.f_29418 /* Tunable: 726336069 */;
+					*uParam1 = Global_262145.f_29418 /* Tunable: CH_DESERT_DIGITAL_SINGLE_SCOPE_NIGHTVISION */;
 					break;
 			}
 			break;
@@ -28651,7 +28651,7 @@ void func_121(int iParam0, var uParam1, int iParam2)//Position - 0x20B40
 					break;
 				
 				case joaat("CLO_VWM_U_15_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27689 /* Tunable: 730689216 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27689 /* Tunable: VC_GRAY_THE_DIAMON_HOODIE */) * 1f));
 					break;
 				
 				case joaat("CLO_VWM_U_15_4"):
@@ -28731,7 +28731,7 @@ void func_121(int iParam0, var uParam1, int iParam2)//Position - 0x20B40
 					break;
 				
 				case joaat("CLO_VWM_U_17_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27709 /* Tunable: -281123609 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27709 /* Tunable: VC_BROKER_DEATIL_SWEATER */) * 1f));
 					break;
 				
 				case joaat("CLO_VWM_U_17_2"):
@@ -28763,11 +28763,11 @@ void func_121(int iParam0, var uParam1, int iParam2)//Position - 0x20B40
 					break;
 				
 				case joaat("CLO_VWM_U_17_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27717 /* Tunable: -1157988221 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27717 /* Tunable: VC_BLACK_LE_CHIEN_DIAMOND_SWEATER */) * 1f));
 					break;
 				
 				case joaat("CLO_VWM_U_17_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27718 /* Tunable: 144233227 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27718 /* Tunable: VC_RED_LE_CHIEN_DIAMOND_SWEATER */) * 1f));
 					break;
 				
 				case joaat("CLO_VWM_U_17_11"):
@@ -30007,27 +30007,27 @@ void func_121(int iParam0, var uParam1, int iParam2)//Position - 0x20B40
 					break;
 				
 				case joaat("CLO_VWM_PW_8_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27902 /* Tunable: -1626530340 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27902 /* Tunable: VC_SILVER_SASS_WORLD_CHAMPION_CUFFS */) * 1f));
 					break;
 				
 				case joaat("CLO_VWM_PW_8_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27903 /* Tunable: 305568433 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27903 /* Tunable: VC_GOLD_SASS_WORLD_CHAMPION_CUFFS */) * 1f));
 					break;
 				
 				case joaat("CLO_VWM_PW_8_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27904 /* Tunable: 1866952932 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27904 /* Tunable: VC_BLACK_SASS_WORLD_CHAMPION_CUFFS */) * 1f));
 					break;
 				
 				case joaat("CLO_VWM_PW_9_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27905 /* Tunable: 1686671523 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27905 /* Tunable: VC_SILVER_WORLD_SASS_CHAMPION_CUFFS */) * 1f));
 					break;
 				
 				case joaat("CLO_VWM_PW_9_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27906 /* Tunable: 866995344 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27906 /* Tunable: VC_GOLD_WORLD_SASS_CHAMPION_CUFFS */) * 1f));
 					break;
 				
 				case joaat("CLO_VWM_PW_9_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27907 /* Tunable: -1959480083 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27907 /* Tunable: VC_BLACK_WORLD_SASS_CHAMPION_CUFFS */) * 1f));
 					break;
 			}
 			break;
@@ -30722,7 +30722,7 @@ void func_121(int iParam0, var uParam1, int iParam2)//Position - 0x20B40
 					break;
 				
 				case joaat("CLO_VWF_U_13_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27689 /* Tunable: 730689216 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27689 /* Tunable: VC_GRAY_THE_DIAMON_HOODIE */) * 1f));
 					break;
 				
 				case joaat("CLO_VWF_U_13_4"):
@@ -30802,7 +30802,7 @@ void func_121(int iParam0, var uParam1, int iParam2)//Position - 0x20B40
 					break;
 				
 				case joaat("CLO_VWF_U_15_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27709 /* Tunable: -281123609 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27709 /* Tunable: VC_BROKER_DEATIL_SWEATER */) * 1f));
 					break;
 				
 				case joaat("CLO_VWF_U_15_2"):
@@ -30834,11 +30834,11 @@ void func_121(int iParam0, var uParam1, int iParam2)//Position - 0x20B40
 					break;
 				
 				case joaat("CLO_VWF_U_15_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27717 /* Tunable: -1157988221 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27717 /* Tunable: VC_BLACK_LE_CHIEN_DIAMOND_SWEATER */) * 1f));
 					break;
 				
 				case joaat("CLO_VWF_U_15_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27718 /* Tunable: 144233227 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27718 /* Tunable: VC_RED_LE_CHIEN_DIAMOND_SWEATER */) * 1f));
 					break;
 				
 				case joaat("CLO_VWF_U_15_11"):
@@ -32142,27 +32142,27 @@ void func_121(int iParam0, var uParam1, int iParam2)//Position - 0x20B40
 					break;
 				
 				case joaat("CLO_VWF_PW_8_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27902 /* Tunable: -1626530340 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27902 /* Tunable: VC_SILVER_SASS_WORLD_CHAMPION_CUFFS */) * 1f));
 					break;
 				
 				case joaat("CLO_VWF_PW_8_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27903 /* Tunable: 305568433 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27903 /* Tunable: VC_GOLD_SASS_WORLD_CHAMPION_CUFFS */) * 1f));
 					break;
 				
 				case joaat("CLO_VWF_PW_8_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27904 /* Tunable: 1866952932 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27904 /* Tunable: VC_BLACK_SASS_WORLD_CHAMPION_CUFFS */) * 1f));
 					break;
 				
 				case joaat("CLO_VWF_PW_9_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27905 /* Tunable: 1686671523 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27905 /* Tunable: VC_SILVER_WORLD_SASS_CHAMPION_CUFFS */) * 1f));
 					break;
 				
 				case joaat("CLO_VWF_PW_9_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27906 /* Tunable: 866995344 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27906 /* Tunable: VC_GOLD_WORLD_SASS_CHAMPION_CUFFS */) * 1f));
 					break;
 				
 				case joaat("CLO_VWF_PW_9_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27907 /* Tunable: -1959480083 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_27907 /* Tunable: VC_BLACK_WORLD_SASS_CHAMPION_CUFFS */) * 1f));
 					break;
 			}
 			break;
@@ -32603,75 +32603,75 @@ void func_122(int iParam0, var uParam1, int iParam2)//Position - 0x28C0A
 			switch (iParam0)
 			{
 				case joaat("CLO_AWM_U_1_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26527 /* Tunable: -409900672 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26527 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_1 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26528 /* Tunable: -588229570 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26528 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_2 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26529 /* Tunable: -1020485449 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26529 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_3 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26530 /* Tunable: -1167159493 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26530 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_4 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26531 /* Tunable: 40542002 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26531 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_5 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26532 /* Tunable: 816675767 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26532 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_6 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26533 /* Tunable: 1589434301 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26533 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_7 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26534 /* Tunable: 204845768 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26534 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_8 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26535 /* Tunable: -725630003 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26535 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_9 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26536 /* Tunable: -1321810327 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26536 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_10 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26537 /* Tunable: -664169270 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26537 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_11 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26538 /* Tunable: -353322536 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26538 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_12 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26539 /* Tunable: -174829793 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26539 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_13 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26540 /* Tunable: 108425443 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26540 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_14 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_16"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26541 /* Tunable: 286197268 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26541 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_15 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26542 /* Tunable: 600583054 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26542 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_16 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_18"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26543 /* Tunable: 1794128341 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26543 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_17 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_1_19"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26544 /* Tunable: 1019108722 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26544 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_18 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_U_3_0"):
@@ -33148,83 +33148,83 @@ void func_122(int iParam0, var uParam1, int iParam2)//Position - 0x28C0A
 					break;
 				
 				case joaat("CLO_AWM_F_7_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26507 /* Tunable: -20915801 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26507 /* Tunable: ARENA_CLOTHES_METAL_PLATED_COMBO_1 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_7_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26508 /* Tunable: 269581384 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26508 /* Tunable: ARENA_CLOTHES_METAL_PLATED_COMBO_2 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_7_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26509 /* Tunable: 1402012510 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26509 /* Tunable: ARENA_CLOTHES_METAL_PLATED_COMBO_3 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_7_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26510 /* Tunable: 1683793141 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26510 /* Tunable: ARENA_CLOTHES_METAL_PLATED_COMBO_4 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_7_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26511 /* Tunable: 932596561 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26511 /* Tunable: ARENA_CLOTHES_METAL_PLATED_COMBO_5 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_7_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26512 /* Tunable: 1240264702 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26512 /* Tunable: ARENA_CLOTHES_METAL_PLATED_COMBO_6 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_7_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26513 /* Tunable: -1348256915 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26513 /* Tunable: ARENA_CLOTHES_METAL_PLATED_COMBO_7 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_7_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26514 /* Tunable: -2118688874 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26514 /* Tunable: ARENA_CLOTHES_METAL_PLATED_COMBO_8 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_8_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26515 /* Tunable: 464265198 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26515 /* Tunable: ARENA_CLOTHES_METAL_PLATED_LEATHER_BOOTS_1 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_8_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26516 /* Tunable: -1988920453 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26516 /* Tunable: ARENA_CLOTHES_METAL_PLATED_LEATHER_BOOTS_2 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_8_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26517 /* Tunable: 1814642919 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26517 /* Tunable: ARENA_CLOTHES_METAL_PLATED_LEATHER_BOOTS_3 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_8_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26518 /* Tunable: 1642540131 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26518 /* Tunable: ARENA_CLOTHES_METAL_PLATED_LEATHER_BOOTS_4 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_8_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26519 /* Tunable: 1923075544 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26519 /* Tunable: ARENA_CLOTHES_METAL_PLATED_LEATHER_BOOTS_5 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_8_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26520 /* Tunable: 1611278509 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26520 /* Tunable: ARENA_CLOTHES_METAL_PLATED_LEATHER_BOOTS_6 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_8_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26521 /* Tunable: -953092355 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26521 /* Tunable: ARENA_CLOTHES_METAL_PLATED_LEATHER_BOOTS_7 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_8_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26522 /* Tunable: -1260236192 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26522 /* Tunable: ARENA_CLOTHES_METAL_PLATED_LEATHER_BOOTS_8 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_8_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26523 /* Tunable: -1521241277 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26523 /* Tunable: ARENA_CLOTHES_METAL_PLATED_LEATHER_BOOTS_9 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_8_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26524 /* Tunable: -1963435437 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26524 /* Tunable: ARENA_CLOTHES_METAL_PLATED_LEATHER_BOOTS_10 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_8_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26525 /* Tunable: -167366543 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26525 /* Tunable: ARENA_CLOTHES_METAL_PLATED_LEATHER_BOOTS_11 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_F_8_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26526 /* Tunable: -398224148 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26526 /* Tunable: ARENA_CLOTHES_METAL_PLATED_LEATHER_BOOTS_12 */) * 1f));
 					break;
 			}
 			break;
@@ -33446,67 +33446,67 @@ void func_122(int iParam0, var uParam1, int iParam2)//Position - 0x28C0A
 			switch (iParam0)
 			{
 				case joaat("CLO_AWM_B_2_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26412 /* Tunable: -234158218 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26412 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_1 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26413 /* Tunable: 1136962280 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26413 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_2 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26414 /* Tunable: 361156205 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26414 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_3 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26415 /* Tunable: 1491948857 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26415 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_4 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26416 /* Tunable: 849217691 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26416 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_5 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26417 /* Tunable: 2087328818 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26417 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_6 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26418 /* Tunable: -2009058338 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26418 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_7 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26419 /* Tunable: -1652072852 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26419 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_8 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26420 /* Tunable: -1462668032 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26420 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_9 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26421 /* Tunable: 1374439456 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26421 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_10 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26422 /* Tunable: 1742500864 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26422 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_11 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26423 /* Tunable: 659092618 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26423 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_12 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26424 /* Tunable: 420861988 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26424 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_13 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26425 /* Tunable: -875315807 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26425 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_14 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26426 /* Tunable: -563748155 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26426 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_15 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_2_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26427 /* Tunable: -830520584 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26427 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_16 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWM_B_3_0"):
@@ -34128,75 +34128,75 @@ void func_122(int iParam0, var uParam1, int iParam2)//Position - 0x28C0A
 			switch (iParam0)
 			{
 				case joaat("CLO_AWF_U_1_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26527 /* Tunable: -409900672 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26527 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_1 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26528 /* Tunable: -588229570 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26528 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_2 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26529 /* Tunable: -1020485449 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26529 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_3 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26530 /* Tunable: -1167159493 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26530 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_4 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26531 /* Tunable: 40542002 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26531 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_5 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26532 /* Tunable: 816675767 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26532 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_6 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26533 /* Tunable: 1589434301 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26533 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_7 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26534 /* Tunable: 204845768 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26534 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_8 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26535 /* Tunable: -725630003 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26535 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_9 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26536 /* Tunable: -1321810327 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26536 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_10 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26537 /* Tunable: -664169270 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26537 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_11 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26538 /* Tunable: -353322536 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26538 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_12 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26539 /* Tunable: -174829793 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26539 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_13 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26540 /* Tunable: 108425443 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26540 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_14 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_16"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26541 /* Tunable: 286197268 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26541 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_15 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26542 /* Tunable: 600583054 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26542 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_16 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_18"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26543 /* Tunable: 1794128341 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26543 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_17 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_1_19"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26544 /* Tunable: 1019108722 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26544 /* Tunable: ARENA_CLOTHES_REPUBLICAN_SPACE_RANGER_T_SHIRT_18 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_U_3_0"):
@@ -34673,83 +34673,83 @@ void func_122(int iParam0, var uParam1, int iParam2)//Position - 0x28C0A
 					break;
 				
 				case joaat("CLO_AWF_F_7_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26507 /* Tunable: -20915801 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26507 /* Tunable: ARENA_CLOTHES_METAL_PLATED_COMBO_1 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_7_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26508 /* Tunable: 269581384 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26508 /* Tunable: ARENA_CLOTHES_METAL_PLATED_COMBO_2 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_7_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26509 /* Tunable: 1402012510 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26509 /* Tunable: ARENA_CLOTHES_METAL_PLATED_COMBO_3 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_7_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26510 /* Tunable: 1683793141 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26510 /* Tunable: ARENA_CLOTHES_METAL_PLATED_COMBO_4 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_7_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26511 /* Tunable: 932596561 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26511 /* Tunable: ARENA_CLOTHES_METAL_PLATED_COMBO_5 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_7_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26512 /* Tunable: 1240264702 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26512 /* Tunable: ARENA_CLOTHES_METAL_PLATED_COMBO_6 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_7_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26513 /* Tunable: -1348256915 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26513 /* Tunable: ARENA_CLOTHES_METAL_PLATED_COMBO_7 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_7_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26514 /* Tunable: -2118688874 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26514 /* Tunable: ARENA_CLOTHES_METAL_PLATED_COMBO_8 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_8_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26515 /* Tunable: 464265198 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26515 /* Tunable: ARENA_CLOTHES_METAL_PLATED_LEATHER_BOOTS_1 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_8_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26516 /* Tunable: -1988920453 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26516 /* Tunable: ARENA_CLOTHES_METAL_PLATED_LEATHER_BOOTS_2 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_8_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26517 /* Tunable: 1814642919 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26517 /* Tunable: ARENA_CLOTHES_METAL_PLATED_LEATHER_BOOTS_3 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_8_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26518 /* Tunable: 1642540131 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26518 /* Tunable: ARENA_CLOTHES_METAL_PLATED_LEATHER_BOOTS_4 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_8_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26519 /* Tunable: 1923075544 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26519 /* Tunable: ARENA_CLOTHES_METAL_PLATED_LEATHER_BOOTS_5 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_8_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26520 /* Tunable: 1611278509 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26520 /* Tunable: ARENA_CLOTHES_METAL_PLATED_LEATHER_BOOTS_6 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_8_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26521 /* Tunable: -953092355 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26521 /* Tunable: ARENA_CLOTHES_METAL_PLATED_LEATHER_BOOTS_7 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_8_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26522 /* Tunable: -1260236192 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26522 /* Tunable: ARENA_CLOTHES_METAL_PLATED_LEATHER_BOOTS_8 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_8_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26523 /* Tunable: -1521241277 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26523 /* Tunable: ARENA_CLOTHES_METAL_PLATED_LEATHER_BOOTS_9 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_8_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26524 /* Tunable: -1963435437 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26524 /* Tunable: ARENA_CLOTHES_METAL_PLATED_LEATHER_BOOTS_10 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_8_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26525 /* Tunable: -167366543 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26525 /* Tunable: ARENA_CLOTHES_METAL_PLATED_LEATHER_BOOTS_11 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_F_8_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26526 /* Tunable: -398224148 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26526 /* Tunable: ARENA_CLOTHES_METAL_PLATED_LEATHER_BOOTS_12 */) * 1f));
 					break;
 			}
 			break;
@@ -34971,67 +34971,67 @@ void func_122(int iParam0, var uParam1, int iParam2)//Position - 0x28C0A
 			switch (iParam0)
 			{
 				case joaat("CLO_AWF_B_2_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26412 /* Tunable: -234158218 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26412 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_1 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26413 /* Tunable: 1136962280 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26413 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_2 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26414 /* Tunable: 361156205 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26414 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_3 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26415 /* Tunable: 1491948857 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26415 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_4 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26416 /* Tunable: 849217691 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26416 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_5 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26417 /* Tunable: 2087328818 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26417 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_6 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26418 /* Tunable: -2009058338 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26418 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_7 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26419 /* Tunable: -1652072852 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26419 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_8 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26420 /* Tunable: -1462668032 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26420 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_9 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26421 /* Tunable: 1374439456 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26421 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_10 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26422 /* Tunable: 1742500864 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26422 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_11 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26423 /* Tunable: 659092618 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26423 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_12 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26424 /* Tunable: 420861988 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26424 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_13 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26425 /* Tunable: -875315807 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26425 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_14 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26426 /* Tunable: -563748155 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26426 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_15 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_2_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26427 /* Tunable: -830520584 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_26427 /* Tunable: ARENA_CLOTHES_DYSTOPIA_PLAGUE_MASK_16 */) * 1f));
 					break;
 				
 				case joaat("CLO_AWF_B_3_0"):
@@ -42371,269 +42371,269 @@ void func_130(int iParam0, var uParam1, int iParam2)//Position - 0x3813C
 					break;
 				
 				case joaat("CLO_SMM_B_4_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22591 /* Tunable: -1492946770 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22591 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_BROWN_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22592 /* Tunable: -463532632 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22592 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_TEAL_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22593 /* Tunable: 1372436366 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22593 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_GREEN_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22594 /* Tunable: 208486718 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22594 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_YELLOW_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22595 /* Tunable: -1506585770 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22595 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_TURQUOISE_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22596 /* Tunable: 1387962429 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22596 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_BROWN_DIGITAL_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22597 /* Tunable: 1112796330 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22597 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_YELLOW_PATTERN_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22598 /* Tunable: -1837423225 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22598 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_DARK_RED_PATTERN_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22599 /* Tunable: 1906870284 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22599 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_PEACH_DIGITAL_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22600 /* Tunable: 2145675547 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22600 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_FALL_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22601 /* Tunable: -425631516 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22601 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_DARK_WOODLAND_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22602 /* Tunable: -924497294 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22602 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_ORANGE_PATTERN_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22603 /* Tunable: 1640566609 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22603 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_RED_PATTERN_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22604 /* Tunable: 1046871718 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22604 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_GRAY_WOODLAND_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22605 /* Tunable: -1512354612 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22605 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_BLUE_PATTERN_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22606 /* Tunable: -1831721917 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22606 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_SPLINTER_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_16"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22607 /* Tunable: 1238659817 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22607 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_PURPLE_PATTERN_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22608 /* Tunable: 1299154959 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22608 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_JOLLY_ROGER_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_18"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22609 /* Tunable: -833678379 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22609 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_PEACH_CAMO_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_19"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22610 /* Tunable: -1495317930 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22610 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_BRUSHSTROKE_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_20"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22611 /* Tunable: 1826388452 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22611 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_FLECKTARN_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_4_21"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22612 /* Tunable: -107646406 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22612 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_WEAPON_PATTERN_LOOSE */) * 1f));
 					break;
 			}
 			switch (iParam0)
 			{
 				case joaat("CLO_SMM_B_5_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22613 /* Tunable: 1290085438 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22613 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_BROWN_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22614 /* Tunable: 1596047290 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22614 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_TEAL_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22615 /* Tunable: 1925296366 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22615 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_GREEN_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22616 /* Tunable: -136553320 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22616 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_YELLOW_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22617 /* Tunable: -195414787 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22617 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_TURQUOISE_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22618 /* Tunable: 136076146 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22618 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_BROWN_DIGITAL_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22619 /* Tunable: -1199067303 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22619 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_RED_PATTERN_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22620 /* Tunable: 2077332930 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22620 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_JOLLY_ROGER_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22621 /* Tunable: 182923297 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22621 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_PEACH_DIGITAL_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22622 /* Tunable: -1354077030 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22622 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_FALL_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22623 /* Tunable: 633038981 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22623 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_DARK_WOODLAND_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22624 /* Tunable: 1242552928 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22624 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_WEAPON_PATTERN_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22625 /* Tunable: 434807563 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22625 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_BLUE_PATTERN_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22626 /* Tunable: -1624987959 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22626 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_GRAY_WOODLAND_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22627 /* Tunable: -70955600 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22627 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_DARK_PATTERN_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22628 /* Tunable: -768117945 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22628 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_SPLINTER_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_16"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22629 /* Tunable: 1066104868 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22629 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_DARK_RED_PATTERN_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22630 /* Tunable: 1006661327 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22630 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_ORANGE_PATTERN_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_18"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22631 /* Tunable: -2123264974 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22631 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_PEACH_CAMO_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_19"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22632 /* Tunable: -213889030 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22632 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_BRUSHSTROKE_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_20"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22633 /* Tunable: 110806728 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22633 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_FLECKTARN_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_5_21"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22634 /* Tunable: -1833920445 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22634 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_PURPLE_PATTERN_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22635 /* Tunable: -184557821 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22635 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_BROWN_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22636 /* Tunable: 2001117287 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22636 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_TEAL_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22637 /* Tunable: 79521103 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22637 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_GREEN_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22638 /* Tunable: -64094494 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22638 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_YELLOW_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22639 /* Tunable: -1643830001 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22639 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_TURQUOISE_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22640 /* Tunable: 1285708777 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22640 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_BROWN_DIGITAL_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22641 /* Tunable: 1234555954 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22641 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_DARK_RED_PATTERN_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22642 /* Tunable: 689620437 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22642 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_ORANGE_PATTERN_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22643 /* Tunable: -2006096918 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22643 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_PEACH_DIGITAL_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22644 /* Tunable: -334137884 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22644 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_FALL_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22645 /* Tunable: -937216931 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22645 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_DARK_WOODLAND_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22646 /* Tunable: -1500776364 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22646 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_BLUE_PATTERN_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22647 /* Tunable: 880477018 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22647 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_PURPLE_PATTERN_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22648 /* Tunable: 119002485 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22648 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_GRAY_WOODLAND_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22649 /* Tunable: -1161485380 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22649 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_YELLOW_PATTERN_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22650 /* Tunable: -1426139156 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22650 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_SPLINTER_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_16"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22651 /* Tunable: 626169223 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22651 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_RED_PATTERN_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22652 /* Tunable: -843945452 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22652 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_WEAPON_PATTERN_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_18"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22653 /* Tunable: -46782592 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22653 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_PEACH_CAMO_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_19"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22654 /* Tunable: -2098981569 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22654 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_BRUSHSTROKE_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_20"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22655 /* Tunable: -1757860601 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22655 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_FLECKTARN_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_6_21"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22656 /* Tunable: 2050641957 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22656 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_JOLLY_ROGER_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_7_0"):
@@ -42773,11 +42773,11 @@ void func_130(int iParam0, var uParam1, int iParam2)//Position - 0x3813C
 					break;
 				
 				case joaat("CLO_SMM_B_8_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22691 /* Tunable: -1476576007 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22691 /* Tunable: SMUG_MALE_AND_FEMALE_UPPERS_BLUE_JC_TSHIRT */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_8_18"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22692 /* Tunable: 217207198 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22692 /* Tunable: SMUG_MALE_AND_FEMALE_UPPERS_BLACK_JC_TSHIRT */) * 1f));
 					break;
 				
 				case joaat("CLO_SMM_B_8_19"):
@@ -43658,11 +43658,11 @@ void func_130(int iParam0, var uParam1, int iParam2)//Position - 0x3813C
 			break;
 		
 		case joaat("CLO_SMM_DECL_14"):
-			*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22327 /* Tunable: -1021387358 */) * 1f));
+			*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22327 /* Tunable: SMUG_MALE_AND_FEMALE_UPPERS_CAMO_SMUG_MALE_AND_FEMALE_TANK */) * 1f));
 			break;
 		
 		case joaat("CLO_SMM_DECL_15"):
-			*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22328 /* Tunable: 559894657 */) * 1f));
+			*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22328 /* Tunable: SMUG_MALE_AND_FEMALE_UPPERS_RED_SMUG_MALE_AND_FEMALE_TANK */) * 1f));
 			break;
 		
 		case joaat("CLO_SMM_DECL_16"):
@@ -44551,269 +44551,269 @@ void func_130(int iParam0, var uParam1, int iParam2)//Position - 0x3813C
 					break;
 				
 				case joaat("CLO_SMF_B_4_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22591 /* Tunable: -1492946770 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22591 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_BROWN_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22592 /* Tunable: -463532632 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22592 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_TEAL_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22593 /* Tunable: 1372436366 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22593 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_GREEN_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22594 /* Tunable: 208486718 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22594 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_YELLOW_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22595 /* Tunable: -1506585770 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22595 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_TURQUOISE_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22596 /* Tunable: 1387962429 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22596 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_BROWN_DIGITAL_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22597 /* Tunable: 1112796330 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22597 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_YELLOW_PATTERN_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22598 /* Tunable: -1837423225 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22598 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_DARK_RED_PATTERN_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22599 /* Tunable: 1906870284 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22599 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_PEACH_DIGITAL_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22600 /* Tunable: 2145675547 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22600 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_FALL_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22601 /* Tunable: -425631516 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22601 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_DARK_WOODLAND_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22602 /* Tunable: -924497294 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22602 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_ORANGE_PATTERN_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22603 /* Tunable: 1640566609 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22603 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_RED_PATTERN_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22604 /* Tunable: 1046871718 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22604 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_GRAY_WOODLAND_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22605 /* Tunable: -1512354612 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22605 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_BLUE_PATTERN_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22606 /* Tunable: -1831721917 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22606 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_SPLINTER_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_16"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22607 /* Tunable: 1238659817 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22607 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_PURPLE_PATTERN_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22608 /* Tunable: 1299154959 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22608 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_JOLLY_ROGER_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_18"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22609 /* Tunable: -833678379 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22609 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_PEACH_CAMO_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_19"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22610 /* Tunable: -1495317930 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22610 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_BRUSHSTROKE_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_20"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22611 /* Tunable: 1826388452 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22611 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_FLECKTARN_LOOSE */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_4_21"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22612 /* Tunable: -107646406 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22612 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_WEAPON_PATTERN_LOOSE */) * 1f));
 					break;
 			}
 			switch (iParam0)
 			{
 				case joaat("CLO_SMF_B_5_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22613 /* Tunable: 1290085438 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22613 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_BROWN_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22614 /* Tunable: 1596047290 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22614 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_TEAL_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22615 /* Tunable: 1925296366 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22615 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_GREEN_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22616 /* Tunable: -136553320 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22616 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_YELLOW_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22617 /* Tunable: -195414787 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22617 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_TURQUOISE_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22618 /* Tunable: 136076146 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22618 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_BROWN_DIGITAL_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22619 /* Tunable: -1199067303 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22619 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_RED_PATTERN_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22620 /* Tunable: 2077332930 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22620 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_JOLLY_ROGER_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22621 /* Tunable: 182923297 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22621 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_PEACH_DIGITAL_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22622 /* Tunable: -1354077030 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22622 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_FALL_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22623 /* Tunable: 633038981 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22623 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_DARK_WOODLAND_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22624 /* Tunable: 1242552928 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22624 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_WEAPON_PATTERN_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22625 /* Tunable: 434807563 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22625 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_BLUE_PATTERN_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22626 /* Tunable: -1624987959 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22626 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_GRAY_WOODLAND_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22627 /* Tunable: -70955600 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22627 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_DARK_PATTERN_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22628 /* Tunable: -768117945 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22628 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_SPLINTER_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_16"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22629 /* Tunable: 1066104868 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22629 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_DARK_RED_PATTERN_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22630 /* Tunable: 1006661327 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22630 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_ORANGE_PATTERN_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_18"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22631 /* Tunable: -2123264974 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22631 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_PEACH_CAMO_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_19"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22632 /* Tunable: -213889030 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22632 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_BRUSHSTROKE_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_20"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22633 /* Tunable: 110806728 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22633 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_FLECKTARN_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_5_21"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22634 /* Tunable: -1833920445 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22634 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_PURPLE_PATTERN_WRAPPED */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22635 /* Tunable: -184557821 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22635 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_BROWN_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_1"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22636 /* Tunable: 2001117287 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22636 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_TEAL_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_2"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22637 /* Tunable: 79521103 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22637 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_GREEN_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_3"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22638 /* Tunable: -64094494 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22638 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_YELLOW_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_4"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22639 /* Tunable: -1643830001 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22639 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_TURQUOISE_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_5"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22640 /* Tunable: 1285708777 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22640 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_BROWN_DIGITAL_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_6"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22641 /* Tunable: 1234555954 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22641 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_DARK_RED_PATTERN_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22642 /* Tunable: 689620437 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22642 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_ORANGE_PATTERN_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_8"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22643 /* Tunable: -2006096918 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22643 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_PEACH_DIGITAL_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_9"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22644 /* Tunable: -334137884 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22644 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_FALL_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_10"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22645 /* Tunable: -937216931 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22645 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_DARK_WOODLAND_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22646 /* Tunable: -1500776364 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22646 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_BLUE_PATTERN_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_12"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22647 /* Tunable: 880477018 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22647 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_PURPLE_PATTERN_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_13"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22648 /* Tunable: 119002485 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22648 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_GRAY_WOODLAND_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_14"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22649 /* Tunable: -1161485380 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22649 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_YELLOW_PATTERN_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22650 /* Tunable: -1426139156 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22650 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_SPLINTER_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_16"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22651 /* Tunable: 626169223 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22651 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_RED_PATTERN_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22652 /* Tunable: -843945452 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22652 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_WEAPON_PATTERN_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_18"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22653 /* Tunable: -46782592 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22653 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_PEACH_CAMO_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_19"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22654 /* Tunable: -2098981569 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22654 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_BRUSHSTROKE_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_20"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22655 /* Tunable: -1757860601 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22655 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_FLECKTARN_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_6_21"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22656 /* Tunable: 2050641957 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22656 /* Tunable: SMUGGLER_MALE_AND_FEMALE_HEADSCARVES_JOLLY_ROGER_SNOOD */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_7_0"):
@@ -44953,11 +44953,11 @@ void func_130(int iParam0, var uParam1, int iParam2)//Position - 0x3813C
 					break;
 				
 				case joaat("CLO_SMF_B_8_17"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22691 /* Tunable: -1476576007 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22691 /* Tunable: SMUG_MALE_AND_FEMALE_UPPERS_BLUE_JC_TSHIRT */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_8_18"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22692 /* Tunable: 217207198 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22692 /* Tunable: SMUG_MALE_AND_FEMALE_UPPERS_BLACK_JC_TSHIRT */) * 1f));
 					break;
 				
 				case joaat("CLO_SMF_B_8_19"):
@@ -45838,11 +45838,11 @@ void func_130(int iParam0, var uParam1, int iParam2)//Position - 0x3813C
 			break;
 		
 		case joaat("CLO_SMF_DECL_14"):
-			*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22327 /* Tunable: -1021387358 */) * 1f));
+			*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22327 /* Tunable: SMUG_MALE_AND_FEMALE_UPPERS_CAMO_SMUG_MALE_AND_FEMALE_TANK */) * 1f));
 			break;
 		
 		case joaat("CLO_SMF_DECL_15"):
-			*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22328 /* Tunable: 559894657 */) * 1f));
+			*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_22328 /* Tunable: SMUG_MALE_AND_FEMALE_UPPERS_RED_SMUG_MALE_AND_FEMALE_TANK */) * 1f));
 			break;
 		
 		case joaat("CLO_SMF_DECL_16"):
@@ -46973,7 +46973,7 @@ void func_131(int iParam0, var uParam1, int iParam2)//Position - 0x3FED4
 					break;
 				
 				case joaat("CLO_GRM_U_17_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20854 /* Tunable: -518770784 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20854 /* Tunable: GR_UPPERS_GREEN_COLLLARED_SLEEVELESS_PUFFER */) * 1f));
 					break;
 				
 				case joaat("CLO_GRM_U_17_8"):
@@ -47021,7 +47021,7 @@ void func_131(int iParam0, var uParam1, int iParam2)//Position - 0x3FED4
 					break;
 				
 				case joaat("CLO_GRM_U_18_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20866 /* Tunable: -1285105064 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20866 /* Tunable: GR_UPPERS_GREEN_COLLLARED_PUFFER */) * 1f));
 					break;
 				
 				case joaat("CLO_GRM_U_18_8"):
@@ -50282,7 +50282,7 @@ void func_131(int iParam0, var uParam1, int iParam2)//Position - 0x3FED4
 					break;
 				
 				case joaat("CLO_GRF_U_23_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20854 /* Tunable: -518770784 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20854 /* Tunable: GR_UPPERS_GREEN_COLLLARED_SLEEVELESS_PUFFER */) * 1f));
 					break;
 				
 				case joaat("CLO_GRF_U_23_8"):
@@ -50330,7 +50330,7 @@ void func_131(int iParam0, var uParam1, int iParam2)//Position - 0x3FED4
 					break;
 				
 				case joaat("CLO_GRF_U_24_7"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20866 /* Tunable: -1285105064 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20866 /* Tunable: GR_UPPERS_GREEN_COLLLARED_PUFFER */) * 1f));
 					break;
 				
 				case joaat("CLO_GRF_U_24_8"):
@@ -52607,7 +52607,7 @@ void func_132(int iParam0, var uParam1, int iParam2)//Position - 0x4B2B6
 					break;
 				
 				case joaat("CLO_IEM_U_7_24"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20209 /* Tunable: 662019820 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20209 /* Tunable: IMPEXP_MALE_UPPERS_WHITE_NEON_AND_BLACK_GUFFY_TSHIRT */) * 1f));
 					break;
 				
 				case joaat("CLO_IEM_U_7_25"):
@@ -53058,7 +53058,7 @@ void func_132(int iParam0, var uParam1, int iParam2)//Position - 0x4B2B6
 					break;
 				
 				case joaat("CLO_IEM_PH_0_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20120 /* Tunable: 1113883327 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20120 /* Tunable: IMPEXP_HATS_WHITE_NEON_AND_BLACK_GUFFY_CAP */) * 1f));
 					break;
 			}
 			break;
@@ -53786,7 +53786,7 @@ void func_132(int iParam0, var uParam1, int iParam2)//Position - 0x4B2B6
 					break;
 				
 				case joaat("CLO_IEF_U_7_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20226 /* Tunable: 1358005315 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20226 /* Tunable: IMPEXP_FEMALE_UPPERS_WHITE_NEON_AND_BLACK_GUFFY_TORN_TEE */) * 1f));
 					break;
 				
 				case joaat("CLO_IEF_U_7_16"):
@@ -54171,7 +54171,7 @@ void func_132(int iParam0, var uParam1, int iParam2)//Position - 0x4B2B6
 					break;
 				
 				case joaat("CLO_IEF_L_7_0"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20254 /* Tunable: -786753656 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20254 /* Tunable: IMPEXP_FEMALE_LOWERS_GRAY_AND_NEON_CAMO_LEGGINGS */) * 1f));
 					break;
 				
 				case joaat("CLO_IEF_L_7_1"):
@@ -54215,7 +54215,7 @@ void func_132(int iParam0, var uParam1, int iParam2)//Position - 0x4B2B6
 					break;
 				
 				case joaat("CLO_IEF_L_7_11"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20265 /* Tunable: 1585660410 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20265 /* Tunable: IMPEXP_FEMALE_LOWERS_GRAY_AND_NEON_SPARSE_CAMO_LEGGINGS */) * 1f));
 					break;
 				
 				case joaat("CLO_IEF_L_7_12"):
@@ -54614,7 +54614,7 @@ void func_132(int iParam0, var uParam1, int iParam2)//Position - 0x4B2B6
 					break;
 				
 				case joaat("CLO_IEF_PH_0_15"):
-					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20120 /* Tunable: 1113883327 */) * 1f));
+					*uParam1 = SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_20120 /* Tunable: IMPEXP_HATS_WHITE_NEON_AND_BLACK_GUFFY_CAP */) * 1f));
 					break;
 			}
 			break;
@@ -111278,7 +111278,7 @@ void func_270(int iParam0, int iParam1, int iParam2)//Position - 0x90CD9
 		{
 			if (iParam0 == 0)
 			{
-				STATS::PLAYSTATS_AWARD_XP(iParam0, -1158693853, -1345423847);
+				STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_INITIALISE"), joaat("XPCATEGORY_LIVE_RP_RESET"));
 				if (iParam2 == 0)
 				{
 					return;
@@ -112259,7 +112259,7 @@ void func_302(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4,
 		case joaat("SERVICE_SPEND_ARENA_SPECTATOR_BOX"):
 		case joaat("SERVICE_SPEND_MAKE_IT_RAIN"):
 		case joaat("SERVICE_SPEND_SALVAGE_YARD_VEH_ROB_SETUP"):
-			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: 1103207774 */)
+			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: ALLOW_ZERO_SPEND_SERVICE_TELEM */)
 			{
 				func_303(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -112412,7 +112412,7 @@ void func_302(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4,
 		case joaat("SERVICE_SPEND_NIGHTCLUB_TOILET_ATTENDANT"):
 		case joaat("SERVICE_SPEND_JUGALLO_BOSS_VEHICLE_REQUEST"):
 		case joaat("SERVICE_SPEND_SALVAGE_YARD_CLAIM_VEH"):
-			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: 1103207774 */)
+			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: ALLOW_ZERO_SPEND_SERVICE_TELEM */)
 			{
 				func_303(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -112856,7 +112856,7 @@ void func_315(int iParam0, int iParam1)//Position - 0x92A27
 {
 	if (iParam1 > 0)
 	{
-		if (Global_262145.f_24208 /* Tunable: 277748102 */ != -1)
+		if (Global_262145.f_24208 /* Tunable: SETTINGFORCASHSHARE */ != -1)
 		{
 			if (func_316())
 			{
@@ -115098,7 +115098,7 @@ int func_419(int iParam0)//Position - 0x9551C
 		
 		default:
 	}
-	return Global_262145.f_24354 /* Tunable: -1488550814 */;
+	return Global_262145.f_24354 /* Tunable: CI_TYPE_M3_HIDE_AMB_MAX */;
 }
 
 void func_420()//Position - 0x955AB
@@ -115117,14 +115117,14 @@ void func_421(int iParam0, int iParam1, bool bParam2)//Position - 0x955C4
 		{
 			if (Global_2738587.f_4499 == -1)
 			{
-				Global_2738587.f_4499 = Global_262145.f_27440 /* Tunable: 945146471 */;
+				Global_2738587.f_4499 = Global_262145.f_27440 /* Tunable: VC_PASSIVE_COOLDOWN_REENABLE */;
 			}
 			func_428(&(Global_2738587.f_4497), 0, 0);
 			if (bParam2)
 			{
 				if (Global_2738587.f_4502 == -1)
 				{
-					Global_2738587.f_4502 = Global_262145.f_27441 /* Tunable: -29732167 */;
+					Global_2738587.f_4502 = Global_262145.f_27441 /* Tunable: VC_PASSIVE_TIME_AFTER_DISABLE */;
 				}
 				func_428(&(Global_2738587.f_4500), 0, 0);
 			}
@@ -115541,9 +115541,9 @@ int func_437(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 			iVar1 = 500000;
 			if (bVar0)
 			{
-				if (Global_262145.f_21781 /* Tunable: 982031447 */ >= 0)
+				if (Global_262145.f_21781 /* Tunable: GR_BALLISTIC_EQ_PRICE */ >= 0)
 				{
-					iVar1 = Global_262145.f_21781 /* Tunable: 982031447 */;
+					iVar1 = Global_262145.f_21781 /* Tunable: GR_BALLISTIC_EQ_PRICE */;
 				}
 			}
 			bVar3 = true;
@@ -115591,9 +115591,9 @@ int func_437(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 			iVar1 = 16000;
 			if (bVar0)
 			{
-				if (Global_262145.f_18128 /* Tunable: -841706086 */ >= 0)
+				if (Global_262145.f_18128 /* Tunable: BIKER_WEBSITE_WESTERN_BAGGER_DISC_VEHICLE */ >= 0)
 				{
-					iVar1 = Global_262145.f_18128 /* Tunable: -841706086 */;
+					iVar1 = Global_262145.f_18128 /* Tunable: BIKER_WEBSITE_WESTERN_BAGGER_DISC_VEHICLE */;
 				}
 			}
 			break;
@@ -118256,7 +118256,7 @@ int func_437(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar2 = iVar1;
 				if (!bParam2)
 				{
-					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21573 /* Tunable: -1237354304 */)) / 100f)));
+					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21573 /* Tunable: GR_VEHICLE_GENERAL_BUY_IT_NOW_PRICE_INCREASE */)) / 100f)));
 				}
 				break;
 			
@@ -118272,7 +118272,7 @@ int func_437(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar2 = iVar1;
 				if (!bParam2)
 				{
-					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21573 /* Tunable: -1237354304 */)) / 100f)));
+					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21573 /* Tunable: GR_VEHICLE_GENERAL_BUY_IT_NOW_PRICE_INCREASE */)) / 100f)));
 				}
 				break;
 			
@@ -118288,7 +118288,7 @@ int func_437(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar2 = iVar1;
 				if (!bParam2)
 				{
-					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21573 /* Tunable: -1237354304 */)) / 100f)));
+					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21573 /* Tunable: GR_VEHICLE_GENERAL_BUY_IT_NOW_PRICE_INCREASE */)) / 100f)));
 				}
 				break;
 			
@@ -118304,7 +118304,7 @@ int func_437(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar2 = iVar1;
 				if (!bParam2)
 				{
-					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21573 /* Tunable: -1237354304 */)) / 100f)));
+					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21573 /* Tunable: GR_VEHICLE_GENERAL_BUY_IT_NOW_PRICE_INCREASE */)) / 100f)));
 				}
 				break;
 			
@@ -118320,7 +118320,7 @@ int func_437(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar2 = iVar1;
 				if (!bParam2)
 				{
-					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21573 /* Tunable: -1237354304 */)) / 100f)));
+					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21573 /* Tunable: GR_VEHICLE_GENERAL_BUY_IT_NOW_PRICE_INCREASE */)) / 100f)));
 				}
 				break;
 			
@@ -118336,7 +118336,7 @@ int func_437(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 				iVar2 = iVar1;
 				if (!bParam2)
 				{
-					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21573 /* Tunable: -1237354304 */)) / 100f)));
+					iVar1 = SYSTEM::ROUND((SYSTEM::TO_FLOAT(iVar1) * ((100f + SYSTEM::TO_FLOAT(Global_262145.f_21573 /* Tunable: GR_VEHICLE_GENERAL_BUY_IT_NOW_PRICE_INCREASE */)) / 100f)));
 				}
 				break;
 			
@@ -120253,9 +120253,9 @@ int func_437(var uParam0, int iParam1, bool bParam2, int iParam3)//Position - 0x
 			
 			case joaat("issi7"):
 				iVar1 = 897000;
-				if (bVar0 && Global_262145.f_27153 /* Tunable: 1101391290 */ >= 0)
+				if (bVar0 && Global_262145.f_27153 /* Tunable: VC_SALE_UPGRADE_PRICE_ISSI_CUSTOM */ >= 0)
 				{
-					iVar1 = Global_262145.f_27153 /* Tunable: 1101391290 */;
+					iVar1 = Global_262145.f_27153 /* Tunable: VC_SALE_UPGRADE_PRICE_ISSI_CUSTOM */;
 				}
 				break;
 			
@@ -124471,11 +124471,11 @@ int func_440(int iParam0, int iParam1)//Position - 0x9EBE4
 			break;
 		
 		case joaat("technical3"):
-			return Global_262145.f_21581 /* Tunable: 424298680 */;
+			return Global_262145.f_21581 /* Tunable: GR_EXISTING_FULLY_WEAPONIZED_VEHICLE_UPRGRADES_KARIN_TECHNICAL_CUSTOM */;
 			break;
 		
 		case joaat("insurgent3"):
-			return Global_262145.f_21580 /* Tunable: 2123626407 */;
+			return Global_262145.f_21580 /* Tunable: GR_EXISTING_FULLY_WEAPONIZED_VEHICLE_UPRGRADES_HVY_INSURGENT_PICK_UP_CUSTOM */;
 			break;
 		
 		case joaat("bruiser"):

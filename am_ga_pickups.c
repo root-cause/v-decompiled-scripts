@@ -577,7 +577,7 @@ int func_19(int iParam0)//Position - 0x6D8
 
 var func_20()//Position - 0x728
 {
-	return Global_262145.f_31218 /* Tunable: 2071833430 */;
+	return Global_262145.f_31218 /* Tunable: ENABLESYNCEDAMBIENTPICKUPS */;
 }
 
 int func_21()//Position - 0x737

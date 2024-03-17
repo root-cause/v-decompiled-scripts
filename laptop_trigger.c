@@ -1587,7 +1587,7 @@ void func_35(int iParam0, char* sParam1, bool bParam2, var uParam3)//Position - 
 
 int func_36()//Position - 0x1B6A
 {
-	if (!Global_262145.f_29155 /* Tunable: 1028571554 */)
+	if (!Global_262145.f_29155 /* Tunable: NPC_PHONE_TELEMETRY_TRACKING_ENABLED */)
 	{
 		return 0;
 	}
@@ -3472,7 +3472,7 @@ void func_126()//Position - 0x3CBD
 			bVar0 = NETWORK::NETWORK_IS_IN_TRANSITION();
 			if ((((bVar0 || NETWORK::NETWORK_IS_TRANSITION_STARTED()) || NETWORK::NETWORK_IS_TRANSITION_BUSY()) || NETWORK::NETWORK_IS_TRANSITION_MATCHMAKING()) || NETWORK::NETWORK_IS_TRANSITION_LEAVE_POSTPONED())
 			{
-				if (Global_262145.f_34044 /* Tunable: -1509580267 */)
+				if (Global_262145.f_34044 /* Tunable: APPJIPMP_CANCEL_MATCHMAKING_ON_NETWORK_BAIL */)
 				{
 					NETWORK::NETWORK_CANCEL_TRANSITION_MATCHMAKING();
 				}
@@ -4016,14 +4016,14 @@ void func_170(int iParam0, int iParam1, bool bParam2)//Position - 0x473E
 		{
 			if (Global_2738587.f_4499 == -1)
 			{
-				Global_2738587.f_4499 = Global_262145.f_27440 /* Tunable: 945146471 */;
+				Global_2738587.f_4499 = Global_262145.f_27440 /* Tunable: VC_PASSIVE_COOLDOWN_REENABLE */;
 			}
 			func_21(&(Global_2738587.f_4497), 0, 0);
 			if (bParam2)
 			{
 				if (Global_2738587.f_4502 == -1)
 				{
-					Global_2738587.f_4502 = Global_262145.f_27441 /* Tunable: -29732167 */;
+					Global_2738587.f_4502 = Global_262145.f_27441 /* Tunable: VC_PASSIVE_TIME_AFTER_DISABLE */;
 				}
 				func_21(&(Global_2738587.f_4500), 0, 0);
 			}

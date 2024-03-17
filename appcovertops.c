@@ -701,7 +701,7 @@ void func_13()//Position - 0x57E
 
 int func_14()//Position - 0x5B5
 {
-	if (!Global_262145.f_29155 /* Tunable: 1028571554 */)
+	if (!Global_262145.f_29155 /* Tunable: NPC_PHONE_TELEMETRY_TRACKING_ENABLED */)
 	{
 		return 0;
 	}
@@ -1374,28 +1374,28 @@ int func_57(int iParam0)//Position - 0x1027
 	switch (iParam0)
 	{
 		case 0:
-			return Global_262145.f_21822 /* Tunable: -1397592988 */;
+			return Global_262145.f_21822 /* Tunable: GR_RESUPPLY_MISSIONS_NEEDED_TO_UNLOCK_DUNE3 */;
 		
 		case 1:
-			return Global_262145.f_21823 /* Tunable: 1417889837 */;
+			return Global_262145.f_21823 /* Tunable: GR_RESUPPLY_MISSIONS_NEEDED_TO_UNLOCK_HALFTRACK */;
 		
 		case 2:
-			return Global_262145.f_21824 /* Tunable: -648585009 */;
+			return Global_262145.f_21824 /* Tunable: GR_RESUPPLY_MISSIONS_NEEDED_TO_UNLOCK_TRAILERSMALL */;
 		
 		case 3:
-			return Global_262145.f_21825 /* Tunable: -769260324 */;
+			return Global_262145.f_21825 /* Tunable: GR_RESUPPLY_MISSIONS_NEEDED_TO_UNLOCK_APC */;
 		
 		case 4:
-			return Global_262145.f_21826 /* Tunable: -787597788 */;
+			return Global_262145.f_21826 /* Tunable: GR_RESUPPLY_MISSIONS_NEEDED_TO_UNLOCK_TRAILERLARGE */;
 		
 		case 5:
-			return Global_262145.f_21827 /* Tunable: 710100141 */;
+			return Global_262145.f_21827 /* Tunable: GR_RESUPPLY_MISSIONS_NEEDED_TO_UNLOCK_TAMPA */;
 		
 		case 6:
-			return Global_262145.f_21828 /* Tunable: -2117485517 */;
+			return Global_262145.f_21828 /* Tunable: GR_RESUPPLY_MISSIONS_NEEDED_TO_UNLOCK_OPPRESSOR_1 */;
 		
 		case 7:
-			return Global_262145.f_21829 /* Tunable: 1737983951 */;
+			return Global_262145.f_21829 /* Tunable: GR_RESUPPLY_MISSIONS_NEEDED_TO_UNLOCK_OPPRESSOR_2 */;
 		
 		default:
 	}

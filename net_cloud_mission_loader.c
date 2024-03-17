@@ -14223,7 +14223,7 @@ void func_313(int iParam0, bool bParam1)//Position - 0x16816
 		{
 			Global_4980736.f_79098[iVar220 /*242*/].f_7 = joaat("prop_barrel_exp_01a");
 		}
-		if ((((!func_184() && Global_4718592.f_126721 == 0) && STREAMING::IS_MODEL_VALID(Global_4980736.f_79098[iVar220 /*242*/].f_7)) && !Global_262145.f_19485 /* Tunable: -573066468 */) && !func_320())
+		if ((((!func_184() && Global_4718592.f_126721 == 0) && STREAMING::IS_MODEL_VALID(Global_4980736.f_79098[iVar220 /*242*/].f_7)) && !Global_262145.f_19485 /* Tunable: KILL_INVALID_PROP_REPLACEMENT */) && !func_320())
 		{
 			if (func_319(Global_4980736.f_79098[iVar220 /*242*/].f_7))
 			{
@@ -15413,7 +15413,7 @@ void func_326(int iParam0, bool bParam1)//Position - 0x193B7
 		{
 			Global_4980736.f_46530[iVar151 /*162*/].f_7 = joaat("gr_prop_gr_bench_03a");
 		}
-		if ((((!func_184() && Global_4718592.f_126721 == 0) && STREAMING::IS_MODEL_VALID(Global_4980736.f_46530[iVar151 /*162*/].f_7)) && !Global_262145.f_19485 /* Tunable: -573066468 */) && !func_320())
+		if ((((!func_184() && Global_4718592.f_126721 == 0) && STREAMING::IS_MODEL_VALID(Global_4980736.f_46530[iVar151 /*162*/].f_7)) && !Global_262145.f_19485 /* Tunable: KILL_INVALID_PROP_REPLACEMENT */) && !func_320())
 		{
 			if (func_319(Global_4980736.f_46530[iVar151 /*162*/].f_7))
 			{
@@ -17981,7 +17981,7 @@ int func_336()//Position - 0x20150
 
 int func_337(int iParam0)//Position - 0x2017E
 {
-	if (((!func_320() && (!func_339(iParam0) || func_338(iParam0))) && !func_184()) && !Global_262145.f_19484 /* Tunable: 1208494720 */)
+	if (((!func_320() && (!func_339(iParam0) || func_338(iParam0))) && !func_184()) && !Global_262145.f_19484 /* Tunable: KILL_INVALID_VEHICLE_REPLACEMENT */)
 	{
 		return 1;
 	}
@@ -22799,7 +22799,7 @@ void func_348(int iParam0)//Position - 0x2588D
 			{
 				Global_4718592.f_180472[iVar0 /*248*/].f_182[iVar1] = 0;
 			}
-			if ((STREAMING::IS_MODEL_VALID(Global_4718592.f_180472[iVar0 /*248*/].f_182[iVar1]) && !Global_262145.f_19485 /* Tunable: -573066468 */) && !func_320())
+			if ((STREAMING::IS_MODEL_VALID(Global_4718592.f_180472[iVar0 /*248*/].f_182[iVar1]) && !Global_262145.f_19485 /* Tunable: KILL_INVALID_PROP_REPLACEMENT */) && !func_320())
 			{
 				if (func_319(Global_4718592.f_180472[iVar0 /*248*/].f_182[iVar1]) || !func_349(Global_4718592.f_180472[iVar0 /*248*/].f_182[iVar1]))
 				{

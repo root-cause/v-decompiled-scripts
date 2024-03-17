@@ -6962,7 +6962,7 @@ void func_193(int iParam0, char* sParam1, bool bParam2, var uParam3)//Position -
 
 int func_194()//Position - 0x7308
 {
-	if (!Global_262145.f_29155 /* Tunable: 1028571554 */)
+	if (!Global_262145.f_29155 /* Tunable: NPC_PHONE_TELEMETRY_TRACKING_ENABLED */)
 	{
 		return 0;
 	}

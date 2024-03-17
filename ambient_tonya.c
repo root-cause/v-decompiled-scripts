@@ -8671,7 +8671,7 @@ void func_172()//Position - 0xBF38
 
 int func_173()//Position - 0xBF6F
 {
-	if (!Global_262145.f_29155 /* Tunable: 1028571554 */)
+	if (!Global_262145.f_29155 /* Tunable: NPC_PHONE_TELEMETRY_TRACKING_ENABLED */)
 	{
 		return 0;
 	}

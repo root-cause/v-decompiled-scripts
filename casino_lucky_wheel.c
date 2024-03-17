@@ -681,9 +681,9 @@ int func_25()//Position - 0x7E6
 		func_26(10412, 0, -1, 1);
 		return 0;
 	}
-	else if (Global_262145.f_27453 /* Tunable: -312420223 */)
+	else if (Global_262145.f_27453 /* Tunable: VC_LUCKY_WHEEL_ADDITIONAL_SPINS_ENABLE */)
 	{
-		if (iVar3 < Global_262145.f_27452 /* Tunable: 9960150 */)
+		if (iVar3 < Global_262145.f_27452 /* Tunable: VC_LUCKY_WHEEL_NUM_SPINS_PER_DAY */)
 		{
 			return 0;
 		}
@@ -811,9 +811,9 @@ int func_28(bool bParam0, bool bParam1)//Position - 0x8A3
 			{
 				if ((!HUD::IS_HELP_MESSAGE_BEING_DISPLAYED() && !HUD::IS_HELP_MESSAGE_ON_SCREEN()) && !func_53())
 				{
-					if (Global_262145.f_27453 /* Tunable: -312420223 */)
+					if (Global_262145.f_27453 /* Tunable: VC_LUCKY_WHEEL_ADDITIONAL_SPINS_ENABLE */)
 					{
-						switch (Global_262145.f_27452 /* Tunable: 9960150 */)
+						switch (Global_262145.f_27452 /* Tunable: VC_LUCKY_WHEEL_NUM_SPINS_PER_DAY */)
 						{
 							case 2:
 								func_49("LUCKY_WHEEL_US1" /* GXT: You can only spin the Lucky Wheel twice per day. */, -1);
@@ -7158,22 +7158,22 @@ int func_191(int iParam0)//Position - 0x7AC4
 	switch (iParam0)
 	{
 		case 0:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 1:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 2:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 3:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 4:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 5:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		default:
 	}
@@ -7217,7 +7217,7 @@ int func_192(char* sParam0, int* iParam1, var uParam2, int iParam3, bool bParam4
 					}
 					StringCopy(sParam0, "INVALID", 64);
 				}
-				if (Global_262145.f_29156 /* Tunable: -1595770647 */)
+				if (Global_262145.f_29156 /* Tunable: AWARD_CLIQUE_XMAS_LIVERY */)
 				{
 					if (uParam2->f_62 == joaat("clique"))
 					{
@@ -7701,7 +7701,7 @@ void func_211(int iParam0, int iParam1, int iParam2)//Position - 0x84EE
 		{
 			if (iParam0 == 0)
 			{
-				STATS::PLAYSTATS_AWARD_XP(iParam0, -1158693853, -1345423847);
+				STATS::PLAYSTATS_AWARD_XP(iParam0, joaat("XPTYPE_INITIALISE"), joaat("XPCATEGORY_LIVE_RP_RESET"));
 				if (iParam2 == 0)
 				{
 					return;
@@ -9145,7 +9145,7 @@ void func_250(int iParam0, char* sParam1, bool bParam2, var uParam3)//Position -
 
 int func_251()//Position - 0x9E61
 {
-	if (!Global_262145.f_29155 /* Tunable: 1028571554 */)
+	if (!Global_262145.f_29155 /* Tunable: NPC_PHONE_TELEMETRY_TRACKING_ENABLED */)
 	{
 		return 0;
 	}
@@ -40290,7 +40290,7 @@ int func_604(int iParam0, var uParam1)//Position - 0x2E386
 				iVar0 = func_601(PLAYER::PLAYER_ID(), 5);
 				if (((func_628(PLAYER::PLAYER_ID(), iVar0) && func_626(PLAYER::PLAYER_ID(), 5)) && func_599(PLAYER::PLAYER_ID(), iVar0) < 80) || uParam1)
 				{
-					return Global_262145.f_27120 /* Tunable: -1776588845 */;
+					return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 				}
 			}
 			break;
@@ -40304,7 +40304,7 @@ int func_604(int iParam0, var uParam1)//Position - 0x2E386
 			{
 				if (func_621(func_625(iParam0)) || uParam1)
 				{
-					return Global_262145.f_27120 /* Tunable: -1776588845 */;
+					return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 				}
 			}
 			break;
@@ -40319,7 +40319,7 @@ int func_604(int iParam0, var uParam1)//Position - 0x2E386
 			{
 				if (!func_605(iParam0) || uParam1)
 				{
-					return Global_262145.f_27120 /* Tunable: -1776588845 */;
+					return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 				}
 			}
 			break;
@@ -45821,52 +45821,52 @@ int func_682(int iParam0)//Position - 0x33D26
 	switch (iParam0)
 	{
 		case 0:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 1:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 2:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 3:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 4:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 5:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 6:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 7:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 8:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 9:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 10:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 11:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 12:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 13:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 14:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 15:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		default:
 	}
@@ -52345,7 +52345,7 @@ int func_760(int iParam0)//Position - 0x3A58C
 	switch (iParam0)
 	{
 		case joaat("firetruk"):
-			if (BitTest(iVar0, 0) || Global_262145.f_28865 /* Tunable: -1997603235 */)
+			if (BitTest(iVar0, 0) || Global_262145.f_28865 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_FIRETRUK */)
 			{
 				return 1;
 			}
@@ -52356,7 +52356,7 @@ int func_760(int iParam0)//Position - 0x3A58C
 			break;
 		
 		case joaat("burrito2"):
-			if (BitTest(iVar0, 1) || Global_262145.f_28866 /* Tunable: 1293915021 */)
+			if (BitTest(iVar0, 1) || Global_262145.f_28866 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_BURRITO2 */)
 			{
 				return 1;
 			}
@@ -52367,7 +52367,7 @@ int func_760(int iParam0)//Position - 0x3A58C
 			break;
 		
 		case joaat("boxville"):
-			if (BitTest(iVar0, 2) || Global_262145.f_28867 /* Tunable: -423431250 */)
+			if (BitTest(iVar0, 2) || Global_262145.f_28867 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_BOXVILLE */)
 			{
 				return 1;
 			}
@@ -52378,7 +52378,7 @@ int func_760(int iParam0)//Position - 0x3A58C
 			break;
 		
 		case joaat("stockade"):
-			if (BitTest(iVar0, 3) || Global_262145.f_28868 /* Tunable: -1491164275 */)
+			if (BitTest(iVar0, 3) || Global_262145.f_28868 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_STOCKADE */)
 			{
 				return 1;
 			}
@@ -52389,7 +52389,7 @@ int func_760(int iParam0)//Position - 0x3A58C
 			break;
 		
 		case joaat("asbo"):
-			if (BitTest(iVar0, 4) || Global_262145.f_28869 /* Tunable: -170684478 */)
+			if (BitTest(iVar0, 4) || Global_262145.f_28869 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_ASBO */)
 			{
 				return 1;
 			}
@@ -52400,7 +52400,7 @@ int func_760(int iParam0)//Position - 0x3A58C
 			break;
 		
 		case joaat("kanjo"):
-			if (BitTest(iVar0, 5) || Global_262145.f_28870 /* Tunable: -1541063863 */)
+			if (BitTest(iVar0, 5) || Global_262145.f_28870 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_KANJO */)
 			{
 				return 1;
 			}
@@ -52411,7 +52411,7 @@ int func_760(int iParam0)//Position - 0x3A58C
 			break;
 		
 		case joaat("everon"):
-			if (BitTest(iVar0, 6) || Global_262145.f_28871 /* Tunable: 2075481779 */)
+			if (BitTest(iVar0, 6) || Global_262145.f_28871 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_EVERON */)
 			{
 				return 1;
 			}
@@ -52422,7 +52422,7 @@ int func_760(int iParam0)//Position - 0x3A58C
 			break;
 		
 		case joaat("retinue2"):
-			if (BitTest(iVar0, 7) || Global_262145.f_28872 /* Tunable: -1775833032 */)
+			if (BitTest(iVar0, 7) || Global_262145.f_28872 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_RETINUE2 */)
 			{
 				return 1;
 			}
@@ -52433,7 +52433,7 @@ int func_760(int iParam0)//Position - 0x3A58C
 			break;
 		
 		case joaat("yosemite2"):
-			if (BitTest(iVar0, 8) || Global_262145.f_28873 /* Tunable: -1971661685 */)
+			if (BitTest(iVar0, 8) || Global_262145.f_28873 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_YOSEMITE2 */)
 			{
 				return 1;
 			}
@@ -52444,7 +52444,7 @@ int func_760(int iParam0)//Position - 0x3A58C
 			break;
 		
 		case joaat("sugoi"):
-			if (BitTest(iVar0, 9) || Global_262145.f_28874 /* Tunable: 1161220966 */)
+			if (BitTest(iVar0, 9) || Global_262145.f_28874 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_SUGOI */)
 			{
 				return 1;
 			}
@@ -52455,7 +52455,7 @@ int func_760(int iParam0)//Position - 0x3A58C
 			break;
 		
 		case joaat("sultan2"):
-			if (BitTest(iVar0, 10) || Global_262145.f_28875 /* Tunable: -1874913332 */)
+			if (BitTest(iVar0, 10) || Global_262145.f_28875 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_SULTAN2 */)
 			{
 				return 1;
 			}
@@ -52466,7 +52466,7 @@ int func_760(int iParam0)//Position - 0x3A58C
 			break;
 		
 		case joaat("outlaw"):
-			if (BitTest(iVar0, 11) || Global_262145.f_28876 /* Tunable: -595990903 */)
+			if (BitTest(iVar0, 11) || Global_262145.f_28876 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_OUTLAW */)
 			{
 				return 1;
 			}
@@ -52477,7 +52477,7 @@ int func_760(int iParam0)//Position - 0x3A58C
 			break;
 		
 		case joaat("vagrant"):
-			if (BitTest(iVar0, 12) || Global_262145.f_28877 /* Tunable: 829638346 */)
+			if (BitTest(iVar0, 12) || Global_262145.f_28877 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_VAGRANT */)
 			{
 				return 1;
 			}
@@ -52488,7 +52488,7 @@ int func_760(int iParam0)//Position - 0x3A58C
 			break;
 		
 		case joaat("komoda"):
-			if (BitTest(iVar0, 13) || Global_262145.f_28878 /* Tunable: 1362146058 */)
+			if (BitTest(iVar0, 13) || Global_262145.f_28878 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_KOMODA */)
 			{
 				return 1;
 			}
@@ -52499,7 +52499,7 @@ int func_760(int iParam0)//Position - 0x3A58C
 			break;
 		
 		case joaat("stryder"):
-			if (BitTest(iVar0, 14) || Global_262145.f_28879 /* Tunable: -758040390 */)
+			if (BitTest(iVar0, 14) || Global_262145.f_28879 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_STRYDER */)
 			{
 				return 1;
 			}
@@ -52510,7 +52510,7 @@ int func_760(int iParam0)//Position - 0x3A58C
 			break;
 		
 		case joaat("furia"):
-			if (BitTest(iVar0, 15) || Global_262145.f_28880 /* Tunable: 1378787619 */)
+			if (BitTest(iVar0, 15) || Global_262145.f_28880 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_FURIA */)
 			{
 				return 1;
 			}
@@ -52521,7 +52521,7 @@ int func_760(int iParam0)//Position - 0x3A58C
 			break;
 		
 		case joaat("zhaba"):
-			if (BitTest(iVar0, 16) || Global_262145.f_28881 /* Tunable: 1041883040 */)
+			if (BitTest(iVar0, 16) || Global_262145.f_28881 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_ZHABA */)
 			{
 				return 1;
 			}
@@ -52532,7 +52532,7 @@ int func_760(int iParam0)//Position - 0x3A58C
 			break;
 		
 		case joaat("jugular"):
-			if (BitTest(iVar0, 17) || Global_262145.f_28882 /* Tunable: -463901261 */)
+			if (BitTest(iVar0, 17) || Global_262145.f_28882 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_JUGULAR */)
 			{
 				return 1;
 			}
@@ -52543,7 +52543,7 @@ int func_760(int iParam0)//Position - 0x3A58C
 			break;
 		
 		case joaat("sentinel3"):
-			if (BitTest(iVar0, 18) || Global_262145.f_28883 /* Tunable: 1961619344 */)
+			if (BitTest(iVar0, 18) || Global_262145.f_28883 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_SENTINEL3 */)
 			{
 				return 1;
 			}
@@ -52554,7 +52554,7 @@ int func_760(int iParam0)//Position - 0x3A58C
 			break;
 		
 		case joaat("gauntlet3"):
-			if (BitTest(iVar0, 19) || Global_262145.f_28884 /* Tunable: -2141495545 */)
+			if (BitTest(iVar0, 19) || Global_262145.f_28884 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_GAUNTLET3 */)
 			{
 				return 1;
 			}
@@ -52565,7 +52565,7 @@ int func_760(int iParam0)//Position - 0x3A58C
 			break;
 		
 		case joaat("ellie"):
-			if (BitTest(iVar0, 20) || Global_262145.f_28885 /* Tunable: -349041781 */)
+			if (BitTest(iVar0, 20) || Global_262145.f_28885 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_ELLIE */)
 			{
 				return 1;
 			}
@@ -52576,7 +52576,7 @@ int func_760(int iParam0)//Position - 0x3A58C
 			break;
 		
 		case joaat("defiler"):
-			if (BitTest(iVar0, 21) || Global_262145.f_28886 /* Tunable: -410267195 */)
+			if (BitTest(iVar0, 21) || Global_262145.f_28886 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_DEFILER */)
 			{
 				return 1;
 			}
@@ -52587,7 +52587,7 @@ int func_760(int iParam0)//Position - 0x3A58C
 			break;
 		
 		case joaat("manchez"):
-			if (BitTest(iVar0, 22) || Global_262145.f_28887 /* Tunable: -1071451023 */)
+			if (BitTest(iVar0, 22) || Global_262145.f_28887 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_MANCHEZ */)
 			{
 				return 1;
 			}
@@ -52799,7 +52799,7 @@ int func_764(int iParam0)//Position - 0x3ABEB
 	switch (iParam0)
 	{
 		case joaat("mule4"):
-			if (func_22(7233, -1) >= func_765(iParam0) || Global_262145.f_24895 /* Tunable: 1416880888 */)
+			if (func_22(7233, -1) >= func_765(iParam0) || Global_262145.f_24895 /* Tunable: BB_TRADE_PRICES_DISABLE_REQUIREMENT_MULE_CUSTOM */)
 			{
 				return 1;
 			}
@@ -52810,7 +52810,7 @@ int func_764(int iParam0)//Position - 0x3ABEB
 			break;
 		
 		case joaat("pounder2"):
-			if (func_22(7233, -1) >= func_765(iParam0) || Global_262145.f_24896 /* Tunable: 132690314 */)
+			if (func_22(7233, -1) >= func_765(iParam0) || Global_262145.f_24896 /* Tunable: BB_TRADE_PRICES_DISABLE_REQUIREMENT_POUNDER_CUSTOM */)
 			{
 				return 1;
 			}
@@ -52821,7 +52821,7 @@ int func_764(int iParam0)//Position - 0x3ABEB
 			break;
 		
 		case joaat("oppressor2"):
-			if (func_69(22050, -1) >= func_765(iParam0) || Global_262145.f_24897 /* Tunable: 407802353 */)
+			if (func_69(22050, -1) >= func_765(iParam0) || Global_262145.f_24897 /* Tunable: BB_TRADE_PRICES_DISABLE_REQUIREMENT_OPPRESSOR_MK_II */)
 			{
 				return 1;
 			}
@@ -52832,7 +52832,7 @@ int func_764(int iParam0)//Position - 0x3ABEB
 			break;
 		
 		case joaat("pbus2"):
-			if (BitTest(Global_1845263[PLAYER::PLAYER_ID() /*877*/].f_267.f_313.f_7, 1) || Global_262145.f_24899 /* Tunable: -26415325 */)
+			if (BitTest(Global_1845263[PLAYER::PLAYER_ID() /*877*/].f_267.f_313.f_7, 1) || Global_262145.f_24899 /* Tunable: BB_TRADE_PRICES_DISABLE_REQUIREMENT_FESTIVAL_BUS */)
 			{
 				return 1;
 			}
@@ -52843,7 +52843,7 @@ int func_764(int iParam0)//Position - 0x3ABEB
 			break;
 		
 		case joaat("patriot2"):
-			if (func_22(7231, -1) >= func_765(iParam0) || Global_262145.f_24900 /* Tunable: 1547508956 */)
+			if (func_22(7231, -1) >= func_765(iParam0) || Global_262145.f_24900 /* Tunable: BB_TRADE_PRICES_DISABLE_REQUIREMENT_PATRIOT_STRETCH */)
 			{
 				return 1;
 			}
@@ -52854,7 +52854,7 @@ int func_764(int iParam0)//Position - 0x3ABEB
 			break;
 		
 		case joaat("blimp3"):
-			if (func_22(7231, -1) >= func_765(iParam0) || Global_262145.f_24901 /* Tunable: -1431059775 */)
+			if (func_22(7231, -1) >= func_765(iParam0) || Global_262145.f_24901 /* Tunable: BB_TRADE_PRICES_DISABLE_REQUIREMENT_BLIMP */)
 			{
 				return 1;
 			}
@@ -52872,23 +52872,23 @@ int func_765(int iParam0)//Position - 0x3AD33
 	switch (iParam0)
 	{
 		case joaat("mule4"):
-			return Global_262145.f_24902 /* Tunable: -781384755 */;
+			return Global_262145.f_24902 /* Tunable: BB_TRADE_PRICES_UNLOCKS_MULE_CUSTOM_NUMBER_OF_SELL_GOODS_MISSIONS */;
 			break;
 		
 		case joaat("pounder2"):
-			return Global_262145.f_24903 /* Tunable: 1813909003 */;
+			return Global_262145.f_24903 /* Tunable: BB_TRADE_PRICES_UNLOCKS_POUNDER_CUSTOM_NUMBER_OF_SELL_GOODS_MISSIONS */;
 			break;
 		
 		case joaat("oppressor2"):
-			return Global_262145.f_24904 /* Tunable: 246949104 */;
+			return Global_262145.f_24904 /* Tunable: BB_TRADE_PRICES_UNLOCKS_OPPRESSOR_MK_II_NUMBER_OF_HACKER_WORKS_MISSIONS */;
 			break;
 		
 		case joaat("patriot2"):
-			return Global_262145.f_24905 /* Tunable: -410593703 */;
+			return Global_262145.f_24905 /* Tunable: BB_TRADE_PRICES_UNLOCKS_PATRIOT_STRETCH_NUMBER_OF_CLUB_MANAGEMENT_MISSIONS */;
 			break;
 		
 		case joaat("blimp3"):
-			return Global_262145.f_24906 /* Tunable: -121606550 */;
+			return Global_262145.f_24906 /* Tunable: BB_TRADE_PRICES_UNLOCKS_BLIMP_NUMBER_OF_CLUB_MANAGEMENT_MISSIONS */;
 			break;
 	}
 	return 0;
@@ -56434,14 +56434,14 @@ int func_784(int iParam0)//Position - 0x3ECEF
 			}
 			else
 			{
-				return Global_262145.f_27119 /* Tunable: -1192324278 */;
+				return Global_262145.f_27119 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_LOW_W */;
 			}
 			break;
 		
 		case 1:
 		case 2:
 		case 3:
-			return Global_262145.f_27119 /* Tunable: -1192324278 */;
+			return Global_262145.f_27119 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_LOW_W */;
 			break;
 		
 		case 4:
@@ -56455,7 +56455,7 @@ int func_784(int iParam0)//Position - 0x3ECEF
 		case 6:
 		case 7:
 		case 8:
-			return Global_262145.f_27119 /* Tunable: -1192324278 */;
+			return Global_262145.f_27119 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_LOW_W */;
 			break;
 		
 		case 9:
@@ -56465,7 +56465,7 @@ int func_784(int iParam0)//Position - 0x3ECEF
 			}
 			else
 			{
-				return Global_262145.f_27119 /* Tunable: -1192324278 */;
+				return Global_262145.f_27119 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_LOW_W */;
 			}
 			break;
 		
@@ -56481,7 +56481,7 @@ int func_784(int iParam0)//Position - 0x3ECEF
 		case 19:
 		case 20:
 		case 21:
-			return Global_262145.f_27119 /* Tunable: -1192324278 */;
+			return Global_262145.f_27119 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_LOW_W */;
 			break;
 		
 		case 22:
@@ -56491,7 +56491,7 @@ int func_784(int iParam0)//Position - 0x3ECEF
 			}
 			else
 			{
-				return Global_262145.f_27119 /* Tunable: -1192324278 */;
+				return Global_262145.f_27119 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_LOW_W */;
 			}
 			break;
 		
@@ -56502,7 +56502,7 @@ int func_784(int iParam0)//Position - 0x3ECEF
 			}
 			else
 			{
-				return Global_262145.f_27119 /* Tunable: -1192324278 */;
+				return Global_262145.f_27119 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_LOW_W */;
 			}
 			break;
 		
@@ -56512,7 +56512,7 @@ int func_784(int iParam0)//Position - 0x3ECEF
 		case 27:
 		case 28:
 		case 29:
-			return Global_262145.f_27119 /* Tunable: -1192324278 */;
+			return Global_262145.f_27119 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_LOW_W */;
 			break;
 		
 		case 30:
@@ -56522,7 +56522,7 @@ int func_784(int iParam0)//Position - 0x3ECEF
 			}
 			else
 			{
-				return Global_262145.f_27119 /* Tunable: -1192324278 */;
+				return Global_262145.f_27119 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_LOW_W */;
 			}
 			break;
 		
@@ -56533,7 +56533,7 @@ int func_784(int iParam0)//Position - 0x3ECEF
 			}
 			else
 			{
-				return Global_262145.f_27119 /* Tunable: -1192324278 */;
+				return Global_262145.f_27119 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_LOW_W */;
 			}
 			break;
 		
@@ -56542,11 +56542,11 @@ int func_784(int iParam0)//Position - 0x3ECEF
 		case 34:
 		case 35:
 		case 36:
-			return Global_262145.f_27119 /* Tunable: -1192324278 */;
+			return Global_262145.f_27119 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_LOW_W */;
 			break;
 		
 		case 37:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 			break;
 		
 		case 38:
@@ -56556,14 +56556,14 @@ int func_784(int iParam0)//Position - 0x3ECEF
 			}
 			else
 			{
-				return Global_262145.f_27120 /* Tunable: -1776588845 */;
+				return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 			}
 			break;
 		
 		case 39:
 		case 40:
 		case 41:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 			break;
 		
 		case 42:
@@ -56573,24 +56573,24 @@ int func_784(int iParam0)//Position - 0x3ECEF
 			}
 			else
 			{
-				return Global_262145.f_27120 /* Tunable: -1776588845 */;
+				return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 			}
 			break;
 		
 		case 43:
 		case 44:
 		case 45:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 			break;
 		
 		case 46:
-			return Global_262145.f_27121 /* Tunable: -1361004258 */;
+			return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 			break;
 		
 		case 47:
 			if (func_589(joaat("voltic2"), -1))
 			{
-				return Global_262145.f_27121 /* Tunable: -1361004258 */;
+				return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 			}
 			else
 			{
@@ -56614,7 +56614,7 @@ int func_784(int iParam0)//Position - 0x3ECEF
 		case 61:
 		case 62:
 		case 63:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 			break;
 		
 		case 64:
@@ -56663,7 +56663,7 @@ int func_784(int iParam0)//Position - 0x3ECEF
 		case 107:
 		case 108:
 		case 109:
-			return Global_262145.f_27121 /* Tunable: -1361004258 */;
+			return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 			break;
 		
 		case 110:
@@ -56673,7 +56673,7 @@ int func_784(int iParam0)//Position - 0x3ECEF
 			}
 			else
 			{
-				return Global_262145.f_27121 /* Tunable: -1361004258 */;
+				return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 			}
 			break;
 		
@@ -56688,13 +56688,13 @@ int func_784(int iParam0)//Position - 0x3ECEF
 		case 119:
 		case 120:
 		case 121:
-			return Global_262145.f_27121 /* Tunable: -1361004258 */;
+			return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 			break;
 		
 		case 122:
 			if (func_589(joaat("tribike"), -1))
 			{
-				return Global_262145.f_27121 /* Tunable: -1361004258 */;
+				return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 			}
 			else
 			{
@@ -56705,7 +56705,7 @@ int func_784(int iParam0)//Position - 0x3ECEF
 		case 123:
 			if (func_589(joaat("tribike2"), -1))
 			{
-				return Global_262145.f_27121 /* Tunable: -1361004258 */;
+				return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 			}
 			else
 			{
@@ -56716,7 +56716,7 @@ int func_784(int iParam0)//Position - 0x3ECEF
 		case 124:
 			if (func_589(joaat("tribike3"), -1))
 			{
-				return Global_262145.f_27121 /* Tunable: -1361004258 */;
+				return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 			}
 			else
 			{
@@ -56736,13 +56736,13 @@ int func_784(int iParam0)//Position - 0x3ECEF
 		case 134:
 		case 135:
 		case 136:
-			return Global_262145.f_27121 /* Tunable: -1361004258 */;
+			return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 			break;
 		
 		case 137:
 			if (func_589(joaat("scorcher"), -1))
 			{
-				return Global_262145.f_27121 /* Tunable: -1361004258 */;
+				return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 			}
 			else
 			{
@@ -56753,7 +56753,7 @@ int func_784(int iParam0)//Position - 0x3ECEF
 		case 138:
 			if (func_589(joaat("cruiser"), -1))
 			{
-				return Global_262145.f_27121 /* Tunable: -1361004258 */;
+				return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 			}
 			else
 			{
@@ -56764,7 +56764,7 @@ int func_784(int iParam0)//Position - 0x3ECEF
 		case 139:
 			if (func_589(joaat("bmx"), -1))
 			{
-				return Global_262145.f_27121 /* Tunable: -1361004258 */;
+				return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 			}
 			else
 			{
@@ -56773,7 +56773,7 @@ int func_784(int iParam0)//Position - 0x3ECEF
 			break;
 		
 		case 140:
-			return Global_262145.f_27121 /* Tunable: -1361004258 */;
+			return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 			break;
 	}
 	return 0;
@@ -56830,25 +56830,25 @@ int func_787(int iParam0)//Position - 0x3F3D0
 	switch (iParam0)
 	{
 		case 0:
-			return Global_262145.f_27112 /* Tunable: -1183018516 */;
+			return Global_262145.f_27112 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_CLOTHES */;
 		
 		case 1:
-			return Global_262145.f_27113 /* Tunable: -1414018391 */;
+			return Global_262145.f_27113 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_VEHICLE */;
 		
 		case 2:
-			return Global_262145.f_27114 /* Tunable: -1861946920 */;
+			return Global_262145.f_27114 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_CHIPS */;
 		
 		case 3:
-			return Global_262145.f_27115 /* Tunable: 1584556026 */;
+			return Global_262145.f_27115 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_CASH */;
 		
 		case 4:
-			return Global_262145.f_27116 /* Tunable: -154701234 */;
+			return Global_262145.f_27116 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_RP */;
 		
 		case 5:
-			return Global_262145.f_27117 /* Tunable: -983519212 */;
+			return Global_262145.f_27117 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_INVENTOR */;
 		
 		case 6:
-			return Global_262145.f_27118 /* Tunable: -1972517 */;
+			return Global_262145.f_27118 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_BUSINESS */;
 		
 		default:
 	}
@@ -56939,11 +56939,11 @@ int func_789(int iParam0, int iParam1, var uParam2, int iParam3, int iParam4)//P
 			else if (iParam1 == 3)
 			{
 				func_793(iVar4);
-				if (iVar4 >= Global_262145.f_27450 /* Tunable: -1684709496 */)
+				if (iVar4 >= Global_262145.f_27450 /* Tunable: VC_CASINO_SAVE_MAJOR_WIN_THRESHOLD */)
 				{
 					Global_2695901 = 1;
 				}
-				else if (iVar4 >= Global_262145.f_27449 /* Tunable: 1971152414 */)
+				else if (iVar4 >= Global_262145.f_27449 /* Tunable: VC_CASINO_SAVE_BIG_WIN_THRESHOLD */)
 				{
 					Global_2695902 = 1;
 				}
@@ -57535,22 +57535,22 @@ int func_814(int iParam0)//Position - 0x3FD63
 	switch (iParam0)
 	{
 		case 0:
-			return Global_262145.f_27464 /* Tunable: -1684252796 */;
+			return Global_262145.f_27464 /* Tunable: VC_LUCKY_WHEEL_MYSTERY_HIGH_CHIP_1 */;
 		
 		case 1:
-			return Global_262145.f_27465 /* Tunable: 217791040 */;
+			return Global_262145.f_27465 /* Tunable: VC_LUCKY_WHEEL_MYSTERY_HIGH_CHIP_2 */;
 		
 		case 2:
-			return Global_262145.f_27462 /* Tunable: 2119131742 */;
+			return Global_262145.f_27462 /* Tunable: VC_LUCKY_WHEEL_MYSTERY_MID_CHIP_1 */;
 		
 		case 3:
-			return Global_262145.f_27463 /* Tunable: 1332053131 */;
+			return Global_262145.f_27463 /* Tunable: VC_LUCKY_WHEEL_MYSTERY_MID_CHIP_2 */;
 		
 		case 4:
-			return Global_262145.f_27460 /* Tunable: 526996617 */;
+			return Global_262145.f_27460 /* Tunable: VC_LUCKY_WHEEL_MYSTERY_LOW_CHIP_1 */;
 		
 		case 5:
-			return Global_262145.f_27461 /* Tunable: -235275861 */;
+			return Global_262145.f_27461 /* Tunable: VC_LUCKY_WHEEL_MYSTERY_LOW_CHIP_2 */;
 		
 		default:
 	}
@@ -57594,22 +57594,22 @@ int func_816(int iParam0)//Position - 0x3FE52
 	switch (iParam0)
 	{
 		case 0:
-			return Global_262145.f_27121 /* Tunable: -1361004258 */;
+			return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 		
 		case 1:
-			return Global_262145.f_27121 /* Tunable: -1361004258 */;
+			return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 		
 		case 2:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 3:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 4:
-			return Global_262145.f_27119 /* Tunable: -1192324278 */;
+			return Global_262145.f_27119 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_LOW_W */;
 		
 		case 5:
-			return Global_262145.f_27119 /* Tunable: -1192324278 */;
+			return Global_262145.f_27119 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_LOW_W */;
 		
 		default:
 	}
@@ -57838,7 +57838,7 @@ void func_823(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4,
 		case joaat("SERVICE_SPEND_ARENA_SPECTATOR_BOX"):
 		case joaat("SERVICE_SPEND_MAKE_IT_RAIN"):
 		case joaat("SERVICE_SPEND_SALVAGE_YARD_VEH_ROB_SETUP"):
-			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: 1103207774 */)
+			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: ALLOW_ZERO_SPEND_SERVICE_TELEM */)
 			{
 				func_824(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -57991,7 +57991,7 @@ void func_823(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4,
 		case joaat("SERVICE_SPEND_NIGHTCLUB_TOILET_ATTENDANT"):
 		case joaat("SERVICE_SPEND_JUGALLO_BOSS_VEHICLE_REQUEST"):
 		case joaat("SERVICE_SPEND_SALVAGE_YARD_CLAIM_VEH"):
-			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: 1103207774 */)
+			if (iParam1 > 0 || Global_262145.f_28652 /* Tunable: ALLOW_ZERO_SPEND_SERVICE_TELEM */)
 			{
 				func_824(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_SPEND"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			}
@@ -58250,28 +58250,28 @@ int func_827(int iParam0)//Position - 0x40B76
 	switch (iParam0)
 	{
 		case 0:
-			return Global_262145.f_27471 /* Tunable: 818696951 */;
+			return Global_262145.f_27471 /* Tunable: VC_LUCKY_WHEEL_MYSTERY_HIGH_CASH_1 */;
 		
 		case 1:
-			return Global_262145.f_27472 /* Tunable: 2111106283 */;
+			return Global_262145.f_27472 /* Tunable: VC_LUCKY_WHEEL_MYSTERY_HIGH_CASH_2 */;
 		
 		case 2:
-			return Global_262145.f_27473 /* Tunable: -1954117554 */;
+			return Global_262145.f_27473 /* Tunable: VC_LUCKY_WHEEL_MYSTERY_HIGH_CASH_3 */;
 		
 		case 3:
-			return Global_262145.f_27468 /* Tunable: 393704489 */;
+			return Global_262145.f_27468 /* Tunable: VC_LUCKY_WHEEL_MYSTERY_MID_CASH_1 */;
 		
 		case 4:
-			return Global_262145.f_27469 /* Tunable: -351200419 */;
+			return Global_262145.f_27469 /* Tunable: VC_LUCKY_WHEEL_MYSTERY_MID_CASH_2 */;
 		
 		case 5:
-			return Global_262145.f_27470 /* Tunable: -1529606428 */;
+			return Global_262145.f_27470 /* Tunable: VC_LUCKY_WHEEL_MYSTERY_MID_CASH_3 */;
 		
 		case 6:
-			return Global_262145.f_27466 /* Tunable: -2074621439 */;
+			return Global_262145.f_27466 /* Tunable: VC_LUCKY_WHEEL_MYSTERY_LOW_CASH_1 */;
 		
 		case 7:
-			return Global_262145.f_27467 /* Tunable: 1881186707 */;
+			return Global_262145.f_27467 /* Tunable: VC_LUCKY_WHEEL_MYSTERY_LOW_CASH_2 */;
 		
 		default:
 	}
@@ -58315,28 +58315,28 @@ int func_829(int iParam0)//Position - 0x40C88
 	switch (iParam0)
 	{
 		case 0:
-			return Global_262145.f_27121 /* Tunable: -1361004258 */;
+			return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 		
 		case 1:
-			return Global_262145.f_27121 /* Tunable: -1361004258 */;
+			return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 		
 		case 2:
-			return Global_262145.f_27121 /* Tunable: -1361004258 */;
+			return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 		
 		case 3:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 4:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 5:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 6:
-			return Global_262145.f_27119 /* Tunable: -1192324278 */;
+			return Global_262145.f_27119 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_LOW_W */;
 		
 		case 7:
-			return Global_262145.f_27119 /* Tunable: -1192324278 */;
+			return Global_262145.f_27119 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_LOW_W */;
 		
 		default:
 	}
@@ -58435,22 +58435,22 @@ int func_835(int iParam0)//Position - 0x40E53
 	switch (iParam0)
 	{
 		case 0:
-			return Global_262145.f_27458 /* Tunable: -1749455644 */;
+			return Global_262145.f_27458 /* Tunable: VC_LUCKY_WHEEL_MYSTERY_HIGH_RP_1 */;
 		
 		case 1:
-			return Global_262145.f_27459 /* Tunable: -2111159866 */;
+			return Global_262145.f_27459 /* Tunable: VC_LUCKY_WHEEL_MYSTERY_HIGH_RP_2 */;
 		
 		case 2:
-			return Global_262145.f_27456 /* Tunable: -838254143 */;
+			return Global_262145.f_27456 /* Tunable: VC_LUCKY_WHEEL_MYSTERY_MID_RP_1 */;
 		
 		case 3:
-			return Global_262145.f_27457 /* Tunable: -2072662373 */;
+			return Global_262145.f_27457 /* Tunable: VC_LUCKY_WHEEL_MYSTERY_MID_RP_2 */;
 		
 		case 4:
-			return Global_262145.f_27454 /* Tunable: -2029860543 */;
+			return Global_262145.f_27454 /* Tunable: VC_LUCKY_WHEEL_MYSTERY_LOW_RP_1 */;
 		
 		case 5:
-			return Global_262145.f_27455 /* Tunable: 1344199546 */;
+			return Global_262145.f_27455 /* Tunable: VC_LUCKY_WHEEL_MYSTERY_LOW_RP_2 */;
 		
 		default:
 	}
@@ -58494,22 +58494,22 @@ int func_837(int iParam0)//Position - 0x40F42
 	switch (iParam0)
 	{
 		case 0:
-			return Global_262145.f_27121 /* Tunable: -1361004258 */;
+			return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 		
 		case 1:
-			return Global_262145.f_27121 /* Tunable: -1361004258 */;
+			return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 		
 		case 2:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 3:
-			return Global_262145.f_27120 /* Tunable: -1776588845 */;
+			return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 		
 		case 4:
-			return Global_262145.f_27119 /* Tunable: -1192324278 */;
+			return Global_262145.f_27119 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_LOW_W */;
 		
 		case 5:
-			return Global_262145.f_27119 /* Tunable: -1192324278 */;
+			return Global_262145.f_27119 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_LOW_W */;
 		
 		default:
 	}
@@ -60450,7 +60450,7 @@ int func_845(int iParam0, bool bParam1)//Position - 0x42E84
 			}
 			else
 			{
-				return Global_262145.f_27119 /* Tunable: -1192324278 */;
+				return Global_262145.f_27119 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_LOW_W */;
 			}
 			break;
 		
@@ -60508,11 +60508,11 @@ int func_845(int iParam0, bool bParam1)//Position - 0x42E84
 			}
 			else if (!bParam1)
 			{
-				return Global_262145.f_27120 /* Tunable: -1776588845 */;
+				return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 			}
 			else
 			{
-				return Global_262145.f_27121 /* Tunable: -1361004258 */;
+				return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 			}
 			break;
 		
@@ -60566,7 +60566,7 @@ int func_845(int iParam0, bool bParam1)//Position - 0x42E84
 			}
 			else
 			{
-				return Global_262145.f_27121 /* Tunable: -1361004258 */;
+				return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 			}
 			break;
 		
@@ -60589,7 +60589,7 @@ int func_845(int iParam0, bool bParam1)//Position - 0x42E84
 			}
 			else
 			{
-				return Global_262145.f_27119 /* Tunable: -1192324278 */;
+				return Global_262145.f_27119 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_LOW_W */;
 			}
 			break;
 		
@@ -60619,7 +60619,7 @@ int func_845(int iParam0, bool bParam1)//Position - 0x42E84
 		case 142:
 		case 143:
 		case 144:
-			return Global_262145.f_27119 /* Tunable: -1192324278 */;
+			return Global_262145.f_27119 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_LOW_W */;
 			break;
 	}
 	switch (iParam0)
@@ -60644,7 +60644,7 @@ int func_845(int iParam0, bool bParam1)//Position - 0x42E84
 			}
 			else
 			{
-				return Global_262145.f_27119 /* Tunable: -1192324278 */;
+				return Global_262145.f_27119 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_LOW_W */;
 			}
 			break;
 		
@@ -60686,11 +60686,11 @@ int func_845(int iParam0, bool bParam1)//Position - 0x42E84
 			}
 			else if (!bParam1)
 			{
-				return Global_262145.f_27120 /* Tunable: -1776588845 */;
+				return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 			}
 			else
 			{
-				return Global_262145.f_27121 /* Tunable: -1361004258 */;
+				return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 			}
 			break;
 		
@@ -60701,7 +60701,7 @@ int func_845(int iParam0, bool bParam1)//Position - 0x42E84
 			}
 			else
 			{
-				return Global_262145.f_27121 /* Tunable: -1361004258 */;
+				return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 			}
 			break;
 		
@@ -60726,11 +60726,11 @@ int func_845(int iParam0, bool bParam1)//Position - 0x42E84
 			}
 			else if (!bParam1)
 			{
-				return Global_262145.f_27120 /* Tunable: -1776588845 */;
+				return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 			}
 			else
 			{
-				return Global_262145.f_27121 /* Tunable: -1361004258 */;
+				return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 			}
 			break;
 		
@@ -60741,7 +60741,7 @@ int func_845(int iParam0, bool bParam1)//Position - 0x42E84
 			}
 			else
 			{
-				return Global_262145.f_27121 /* Tunable: -1361004258 */;
+				return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 			}
 			break;
 		
@@ -60752,11 +60752,11 @@ int func_845(int iParam0, bool bParam1)//Position - 0x42E84
 			}
 			else if (!bParam1)
 			{
-				return Global_262145.f_27120 /* Tunable: -1776588845 */;
+				return Global_262145.f_27120 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_MID_W */;
 			}
 			else
 			{
-				return Global_262145.f_27121 /* Tunable: -1361004258 */;
+				return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 			}
 			break;
 		
@@ -60808,7 +60808,7 @@ int func_845(int iParam0, bool bParam1)//Position - 0x42E84
 			}
 			else
 			{
-				return Global_262145.f_27121 /* Tunable: -1361004258 */;
+				return Global_262145.f_27121 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_HIGH_W */;
 			}
 			break;
 		
@@ -60831,7 +60831,7 @@ int func_845(int iParam0, bool bParam1)//Position - 0x42E84
 			}
 			else
 			{
-				return Global_262145.f_27119 /* Tunable: -1192324278 */;
+				return Global_262145.f_27119 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_LOW_W */;
 			}
 			break;
 		
@@ -60861,7 +60861,7 @@ int func_845(int iParam0, bool bParam1)//Position - 0x42E84
 		case 287:
 		case 288:
 		case 289:
-			return Global_262145.f_27119 /* Tunable: -1192324278 */;
+			return Global_262145.f_27119 /* Tunable: CASINO_LUCKY_WHEEL_MYSTERY_ITEM_LOW_W */;
 			break;
 	}
 	return 0;
@@ -62989,7 +62989,7 @@ int func_941(int iParam0)//Position - 0x45D66
 			}
 			else
 			{
-				return Global_262145.f_27092 /* Tunable: 797837618 */;
+				return Global_262145.f_27092 /* Tunable: CASINO_LUCKY_WHEEL_REWARD_CLOTHES_1_W */;
 			}
 			break;
 		
@@ -63000,7 +63000,7 @@ int func_941(int iParam0)//Position - 0x45D66
 			}
 			else
 			{
-				return Global_262145.f_27093 /* Tunable: -957505180 */;
+				return Global_262145.f_27093 /* Tunable: CASINO_LUCKY_WHEEL_REWARD_CLOTHES_2_W */;
 			}
 			break;
 		
@@ -63011,7 +63011,7 @@ int func_941(int iParam0)//Position - 0x45D66
 			}
 			else
 			{
-				return Global_262145.f_27094 /* Tunable: -1444374387 */;
+				return Global_262145.f_27094 /* Tunable: CASINO_LUCKY_WHEEL_REWARD_CLOTHES_3_W */;
 			}
 			break;
 		
@@ -63022,7 +63022,7 @@ int func_941(int iParam0)//Position - 0x45D66
 			}
 			else
 			{
-				return Global_262145.f_27095 /* Tunable: 1637789970 */;
+				return Global_262145.f_27095 /* Tunable: CASINO_LUCKY_WHEEL_REWARD_CLOTHES_4_W */;
 			}
 			break;
 		
@@ -63033,7 +63033,7 @@ int func_941(int iParam0)//Position - 0x45D66
 			}
 			else
 			{
-				return Global_262145.f_27096 /* Tunable: -1232760373 */;
+				return Global_262145.f_27096 /* Tunable: CASINO_LUCKY_WHEEL_REWARD_RP2500_W */;
 			}
 			break;
 		
@@ -63044,7 +63044,7 @@ int func_941(int iParam0)//Position - 0x45D66
 			}
 			else
 			{
-				return Global_262145.f_27097 /* Tunable: -866795740 */;
+				return Global_262145.f_27097 /* Tunable: CASINO_LUCKY_WHEEL_REWARD_RP5000_W */;
 			}
 			break;
 		
@@ -63055,7 +63055,7 @@ int func_941(int iParam0)//Position - 0x45D66
 			}
 			else
 			{
-				return Global_262145.f_27098 /* Tunable: -651561626 */;
+				return Global_262145.f_27098 /* Tunable: CASINO_LUCKY_WHEEL_REWARD_RP75000_W */;
 			}
 			break;
 		
@@ -63066,7 +63066,7 @@ int func_941(int iParam0)//Position - 0x45D66
 			}
 			else
 			{
-				return Global_262145.f_27099 /* Tunable: 1565093006 */;
+				return Global_262145.f_27099 /* Tunable: CASINO_LUCKY_WHEEL_REWARD_RP10K_W */;
 			}
 			break;
 		
@@ -63077,7 +63077,7 @@ int func_941(int iParam0)//Position - 0x45D66
 			}
 			else
 			{
-				return Global_262145.f_27100 /* Tunable: -94985608 */;
+				return Global_262145.f_27100 /* Tunable: CASINO_LUCKY_WHEEL_REWARD_RP15K_W */;
 			}
 			break;
 		
@@ -63088,7 +63088,7 @@ int func_941(int iParam0)//Position - 0x45D66
 			}
 			else
 			{
-				return Global_262145.f_27101 /* Tunable: 2102801011 */;
+				return Global_262145.f_27101 /* Tunable: CASINO_LUCKY_WHEEL_REWARD_CASH20K_W */;
 			}
 			break;
 		
@@ -63099,7 +63099,7 @@ int func_941(int iParam0)//Position - 0x45D66
 			}
 			else
 			{
-				return Global_262145.f_27102 /* Tunable: -1454907092 */;
+				return Global_262145.f_27102 /* Tunable: CASINO_LUCKY_WHEEL_REWARD_CASH30K_W */;
 			}
 			break;
 		
@@ -63110,7 +63110,7 @@ int func_941(int iParam0)//Position - 0x45D66
 			}
 			else
 			{
-				return Global_262145.f_27103 /* Tunable: 1657309988 */;
+				return Global_262145.f_27103 /* Tunable: CASINO_LUCKY_WHEEL_REWARD_CASH40K_W */;
 			}
 			break;
 		
@@ -63121,7 +63121,7 @@ int func_941(int iParam0)//Position - 0x45D66
 			}
 			else
 			{
-				return Global_262145.f_27104 /* Tunable: -1599769987 */;
+				return Global_262145.f_27104 /* Tunable: CASINO_LUCKY_WHEEL_REWARD_CASH50K_W */;
 			}
 			break;
 		
@@ -63132,7 +63132,7 @@ int func_941(int iParam0)//Position - 0x45D66
 			}
 			else
 			{
-				return Global_262145.f_27105 /* Tunable: -265665671 */;
+				return Global_262145.f_27105 /* Tunable: CASINO_LUCKY_WHEEL_REWARD_CHIPS10K_W */;
 			}
 			break;
 		
@@ -63143,7 +63143,7 @@ int func_941(int iParam0)//Position - 0x45D66
 			}
 			else
 			{
-				return Global_262145.f_27106 /* Tunable: -696364493 */;
+				return Global_262145.f_27106 /* Tunable: CASINO_LUCKY_WHEEL_REWARD_CHIPS15K_W */;
 			}
 			break;
 		
@@ -63154,7 +63154,7 @@ int func_941(int iParam0)//Position - 0x45D66
 			}
 			else
 			{
-				return Global_262145.f_27107 /* Tunable: -1493965134 */;
+				return Global_262145.f_27107 /* Tunable: CASINO_LUCKY_WHEEL_REWARD_CHIPS20K_W */;
 			}
 			break;
 		
@@ -63165,7 +63165,7 @@ int func_941(int iParam0)//Position - 0x45D66
 			}
 			else
 			{
-				return Global_262145.f_27108 /* Tunable: 2130910960 */;
+				return Global_262145.f_27108 /* Tunable: CASINO_LUCKY_WHEEL_REWARD_CHIPS25K_W */;
 			}
 			break;
 		
@@ -63176,7 +63176,7 @@ int func_941(int iParam0)//Position - 0x45D66
 			}
 			else
 			{
-				return Global_262145.f_27109 /* Tunable: 769416539 */;
+				return Global_262145.f_27109 /* Tunable: CASINO_LUCKY_WHEEL_REWARD_MYSTERY_W */;
 			}
 			break;
 		
@@ -63187,7 +63187,7 @@ int func_941(int iParam0)//Position - 0x45D66
 			}
 			else
 			{
-				return Global_262145.f_27110 /* Tunable: 35455186 */;
+				return Global_262145.f_27110 /* Tunable: CASINO_LUCKY_WHEEL_REWARD_VEHICLE_W */;
 			}
 			break;
 		
@@ -63198,7 +63198,7 @@ int func_941(int iParam0)//Position - 0x45D66
 			}
 			else
 			{
-				return Global_262145.f_27111 /* Tunable: -825965233 */;
+				return Global_262145.f_27111 /* Tunable: CASINO_LUCKY_WHEEL_REWARD_DISCOUNT_W */;
 			}
 			break;
 	}

@@ -34512,7 +34512,7 @@ int func_226(int iParam0)//Position - 0x2438D
 	switch (iParam0)
 	{
 		case joaat("firetruk"):
-			if (BitTest(iVar0, 0) || Global_262145.f_28865 /* Tunable: -1997603235 */)
+			if (BitTest(iVar0, 0) || Global_262145.f_28865 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_FIRETRUK */)
 			{
 				return 1;
 			}
@@ -34523,7 +34523,7 @@ int func_226(int iParam0)//Position - 0x2438D
 			break;
 		
 		case joaat("burrito2"):
-			if (BitTest(iVar0, 1) || Global_262145.f_28866 /* Tunable: 1293915021 */)
+			if (BitTest(iVar0, 1) || Global_262145.f_28866 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_BURRITO2 */)
 			{
 				return 1;
 			}
@@ -34534,7 +34534,7 @@ int func_226(int iParam0)//Position - 0x2438D
 			break;
 		
 		case joaat("boxville"):
-			if (BitTest(iVar0, 2) || Global_262145.f_28867 /* Tunable: -423431250 */)
+			if (BitTest(iVar0, 2) || Global_262145.f_28867 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_BOXVILLE */)
 			{
 				return 1;
 			}
@@ -34545,7 +34545,7 @@ int func_226(int iParam0)//Position - 0x2438D
 			break;
 		
 		case joaat("stockade"):
-			if (BitTest(iVar0, 3) || Global_262145.f_28868 /* Tunable: -1491164275 */)
+			if (BitTest(iVar0, 3) || Global_262145.f_28868 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_STOCKADE */)
 			{
 				return 1;
 			}
@@ -34556,7 +34556,7 @@ int func_226(int iParam0)//Position - 0x2438D
 			break;
 		
 		case joaat("asbo"):
-			if (BitTest(iVar0, 4) || Global_262145.f_28869 /* Tunable: -170684478 */)
+			if (BitTest(iVar0, 4) || Global_262145.f_28869 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_ASBO */)
 			{
 				return 1;
 			}
@@ -34567,7 +34567,7 @@ int func_226(int iParam0)//Position - 0x2438D
 			break;
 		
 		case joaat("kanjo"):
-			if (BitTest(iVar0, 5) || Global_262145.f_28870 /* Tunable: -1541063863 */)
+			if (BitTest(iVar0, 5) || Global_262145.f_28870 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_KANJO */)
 			{
 				return 1;
 			}
@@ -34578,7 +34578,7 @@ int func_226(int iParam0)//Position - 0x2438D
 			break;
 		
 		case joaat("everon"):
-			if (BitTest(iVar0, 6) || Global_262145.f_28871 /* Tunable: 2075481779 */)
+			if (BitTest(iVar0, 6) || Global_262145.f_28871 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_EVERON */)
 			{
 				return 1;
 			}
@@ -34589,7 +34589,7 @@ int func_226(int iParam0)//Position - 0x2438D
 			break;
 		
 		case joaat("retinue2"):
-			if (BitTest(iVar0, 7) || Global_262145.f_28872 /* Tunable: -1775833032 */)
+			if (BitTest(iVar0, 7) || Global_262145.f_28872 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_RETINUE2 */)
 			{
 				return 1;
 			}
@@ -34600,7 +34600,7 @@ int func_226(int iParam0)//Position - 0x2438D
 			break;
 		
 		case joaat("yosemite2"):
-			if (BitTest(iVar0, 8) || Global_262145.f_28873 /* Tunable: -1971661685 */)
+			if (BitTest(iVar0, 8) || Global_262145.f_28873 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_YOSEMITE2 */)
 			{
 				return 1;
 			}
@@ -34611,7 +34611,7 @@ int func_226(int iParam0)//Position - 0x2438D
 			break;
 		
 		case joaat("sugoi"):
-			if (BitTest(iVar0, 9) || Global_262145.f_28874 /* Tunable: 1161220966 */)
+			if (BitTest(iVar0, 9) || Global_262145.f_28874 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_SUGOI */)
 			{
 				return 1;
 			}
@@ -34622,7 +34622,7 @@ int func_226(int iParam0)//Position - 0x2438D
 			break;
 		
 		case joaat("sultan2"):
-			if (BitTest(iVar0, 10) || Global_262145.f_28875 /* Tunable: -1874913332 */)
+			if (BitTest(iVar0, 10) || Global_262145.f_28875 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_SULTAN2 */)
 			{
 				return 1;
 			}
@@ -34633,7 +34633,7 @@ int func_226(int iParam0)//Position - 0x2438D
 			break;
 		
 		case joaat("outlaw"):
-			if (BitTest(iVar0, 11) || Global_262145.f_28876 /* Tunable: -595990903 */)
+			if (BitTest(iVar0, 11) || Global_262145.f_28876 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_OUTLAW */)
 			{
 				return 1;
 			}
@@ -34644,7 +34644,7 @@ int func_226(int iParam0)//Position - 0x2438D
 			break;
 		
 		case joaat("vagrant"):
-			if (BitTest(iVar0, 12) || Global_262145.f_28877 /* Tunable: 829638346 */)
+			if (BitTest(iVar0, 12) || Global_262145.f_28877 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_VAGRANT */)
 			{
 				return 1;
 			}
@@ -34655,7 +34655,7 @@ int func_226(int iParam0)//Position - 0x2438D
 			break;
 		
 		case joaat("komoda"):
-			if (BitTest(iVar0, 13) || Global_262145.f_28878 /* Tunable: 1362146058 */)
+			if (BitTest(iVar0, 13) || Global_262145.f_28878 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_KOMODA */)
 			{
 				return 1;
 			}
@@ -34666,7 +34666,7 @@ int func_226(int iParam0)//Position - 0x2438D
 			break;
 		
 		case joaat("stryder"):
-			if (BitTest(iVar0, 14) || Global_262145.f_28879 /* Tunable: -758040390 */)
+			if (BitTest(iVar0, 14) || Global_262145.f_28879 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_STRYDER */)
 			{
 				return 1;
 			}
@@ -34677,7 +34677,7 @@ int func_226(int iParam0)//Position - 0x2438D
 			break;
 		
 		case joaat("furia"):
-			if (BitTest(iVar0, 15) || Global_262145.f_28880 /* Tunable: 1378787619 */)
+			if (BitTest(iVar0, 15) || Global_262145.f_28880 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_FURIA */)
 			{
 				return 1;
 			}
@@ -34688,7 +34688,7 @@ int func_226(int iParam0)//Position - 0x2438D
 			break;
 		
 		case joaat("zhaba"):
-			if (BitTest(iVar0, 16) || Global_262145.f_28881 /* Tunable: 1041883040 */)
+			if (BitTest(iVar0, 16) || Global_262145.f_28881 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_ZHABA */)
 			{
 				return 1;
 			}
@@ -34699,7 +34699,7 @@ int func_226(int iParam0)//Position - 0x2438D
 			break;
 		
 		case joaat("jugular"):
-			if (BitTest(iVar0, 17) || Global_262145.f_28882 /* Tunable: -463901261 */)
+			if (BitTest(iVar0, 17) || Global_262145.f_28882 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_JUGULAR */)
 			{
 				return 1;
 			}
@@ -34710,7 +34710,7 @@ int func_226(int iParam0)//Position - 0x2438D
 			break;
 		
 		case joaat("sentinel3"):
-			if (BitTest(iVar0, 18) || Global_262145.f_28883 /* Tunable: 1961619344 */)
+			if (BitTest(iVar0, 18) || Global_262145.f_28883 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_SENTINEL3 */)
 			{
 				return 1;
 			}
@@ -34721,7 +34721,7 @@ int func_226(int iParam0)//Position - 0x2438D
 			break;
 		
 		case joaat("gauntlet3"):
-			if (BitTest(iVar0, 19) || Global_262145.f_28884 /* Tunable: -2141495545 */)
+			if (BitTest(iVar0, 19) || Global_262145.f_28884 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_GAUNTLET3 */)
 			{
 				return 1;
 			}
@@ -34732,7 +34732,7 @@ int func_226(int iParam0)//Position - 0x2438D
 			break;
 		
 		case joaat("ellie"):
-			if (BitTest(iVar0, 20) || Global_262145.f_28885 /* Tunable: -349041781 */)
+			if (BitTest(iVar0, 20) || Global_262145.f_28885 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_ELLIE */)
 			{
 				return 1;
 			}
@@ -34743,7 +34743,7 @@ int func_226(int iParam0)//Position - 0x2438D
 			break;
 		
 		case joaat("defiler"):
-			if (BitTest(iVar0, 21) || Global_262145.f_28886 /* Tunable: -410267195 */)
+			if (BitTest(iVar0, 21) || Global_262145.f_28886 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_DEFILER */)
 			{
 				return 1;
 			}
@@ -34754,7 +34754,7 @@ int func_226(int iParam0)//Position - 0x2438D
 			break;
 		
 		case joaat("manchez"):
-			if (BitTest(iVar0, 22) || Global_262145.f_28887 /* Tunable: -1071451023 */)
+			if (BitTest(iVar0, 22) || Global_262145.f_28887 /* Tunable: CH_TRADE_PRICES_DISABLE_REQUIREMENT_MANCHEZ */)
 			{
 				return 1;
 			}
@@ -36714,7 +36714,7 @@ int func_232(int iParam0)//Position - 0x2637C
 	switch (iParam0)
 	{
 		case joaat("mule4"):
-			if (func_51(7233, -1) >= func_234(iParam0) || Global_262145.f_24895 /* Tunable: 1416880888 */)
+			if (func_51(7233, -1) >= func_234(iParam0) || Global_262145.f_24895 /* Tunable: BB_TRADE_PRICES_DISABLE_REQUIREMENT_MULE_CUSTOM */)
 			{
 				return 1;
 			}
@@ -36725,7 +36725,7 @@ int func_232(int iParam0)//Position - 0x2637C
 			break;
 		
 		case joaat("pounder2"):
-			if (func_51(7233, -1) >= func_234(iParam0) || Global_262145.f_24896 /* Tunable: 132690314 */)
+			if (func_51(7233, -1) >= func_234(iParam0) || Global_262145.f_24896 /* Tunable: BB_TRADE_PRICES_DISABLE_REQUIREMENT_POUNDER_CUSTOM */)
 			{
 				return 1;
 			}
@@ -36736,7 +36736,7 @@ int func_232(int iParam0)//Position - 0x2637C
 			break;
 		
 		case joaat("oppressor2"):
-			if (func_233(22050, -1) >= func_234(iParam0) || Global_262145.f_24897 /* Tunable: 407802353 */)
+			if (func_233(22050, -1) >= func_234(iParam0) || Global_262145.f_24897 /* Tunable: BB_TRADE_PRICES_DISABLE_REQUIREMENT_OPPRESSOR_MK_II */)
 			{
 				return 1;
 			}
@@ -36747,7 +36747,7 @@ int func_232(int iParam0)//Position - 0x2637C
 			break;
 		
 		case joaat("pbus2"):
-			if (BitTest(Global_1845263[PLAYER::PLAYER_ID() /*877*/].f_267.f_313.f_7, 1) || Global_262145.f_24899 /* Tunable: -26415325 */)
+			if (BitTest(Global_1845263[PLAYER::PLAYER_ID() /*877*/].f_267.f_313.f_7, 1) || Global_262145.f_24899 /* Tunable: BB_TRADE_PRICES_DISABLE_REQUIREMENT_FESTIVAL_BUS */)
 			{
 				return 1;
 			}
@@ -36758,7 +36758,7 @@ int func_232(int iParam0)//Position - 0x2637C
 			break;
 		
 		case joaat("patriot2"):
-			if (func_51(7231, -1) >= func_234(iParam0) || Global_262145.f_24900 /* Tunable: 1547508956 */)
+			if (func_51(7231, -1) >= func_234(iParam0) || Global_262145.f_24900 /* Tunable: BB_TRADE_PRICES_DISABLE_REQUIREMENT_PATRIOT_STRETCH */)
 			{
 				return 1;
 			}
@@ -36769,7 +36769,7 @@ int func_232(int iParam0)//Position - 0x2637C
 			break;
 		
 		case joaat("blimp3"):
-			if (func_51(7231, -1) >= func_234(iParam0) || Global_262145.f_24901 /* Tunable: -1431059775 */)
+			if (func_51(7231, -1) >= func_234(iParam0) || Global_262145.f_24901 /* Tunable: BB_TRADE_PRICES_DISABLE_REQUIREMENT_BLIMP */)
 			{
 				return 1;
 			}
@@ -36796,23 +36796,23 @@ int func_234(int iParam0)//Position - 0x264E0
 	switch (iParam0)
 	{
 		case joaat("mule4"):
-			return Global_262145.f_24902 /* Tunable: -781384755 */;
+			return Global_262145.f_24902 /* Tunable: BB_TRADE_PRICES_UNLOCKS_MULE_CUSTOM_NUMBER_OF_SELL_GOODS_MISSIONS */;
 			break;
 		
 		case joaat("pounder2"):
-			return Global_262145.f_24903 /* Tunable: 1813909003 */;
+			return Global_262145.f_24903 /* Tunable: BB_TRADE_PRICES_UNLOCKS_POUNDER_CUSTOM_NUMBER_OF_SELL_GOODS_MISSIONS */;
 			break;
 		
 		case joaat("oppressor2"):
-			return Global_262145.f_24904 /* Tunable: 246949104 */;
+			return Global_262145.f_24904 /* Tunable: BB_TRADE_PRICES_UNLOCKS_OPPRESSOR_MK_II_NUMBER_OF_HACKER_WORKS_MISSIONS */;
 			break;
 		
 		case joaat("patriot2"):
-			return Global_262145.f_24905 /* Tunable: -410593703 */;
+			return Global_262145.f_24905 /* Tunable: BB_TRADE_PRICES_UNLOCKS_PATRIOT_STRETCH_NUMBER_OF_CLUB_MANAGEMENT_MISSIONS */;
 			break;
 		
 		case joaat("blimp3"):
-			return Global_262145.f_24906 /* Tunable: -121606550 */;
+			return Global_262145.f_24906 /* Tunable: BB_TRADE_PRICES_UNLOCKS_BLIMP_NUMBER_OF_CLUB_MANAGEMENT_MISSIONS */;
 			break;
 	}
 	return 0;
@@ -52967,7 +52967,7 @@ int func_442(int iParam0, int iParam1)//Position - 0x39517
 	}
 	else if (iParam0 == joaat("weevil"))
 	{
-		if (Global_262145.f_30435 /* Tunable: -552682736 */)
+		if (Global_262145.f_30435 /* Tunable: IH_EARLY_ACCESS_BEETLE */)
 		{
 		}
 		else if (!Global_262145.f_30427 /* Tunable: ENABLE_VEHICLE_WEEVIL */ && iVar1 < Global_262145.f_30410 /* Tunable: LAUNCHPOSIX_WEEVIL */)
@@ -53005,7 +53005,7 @@ int func_442(int iParam0, int iParam1)//Position - 0x39517
 	}
 	else if (iParam0 == joaat("brioso2"))
 	{
-		if (Global_262145.f_30436 /* Tunable: 976860524 */)
+		if (Global_262145.f_30436 /* Tunable: IH_EARLY_ACCESS_BRIOSO2 */)
 		{
 		}
 		else if (!Global_262145.f_30432 /* Tunable: ENABLE_VEHICLE_BRIOSO2 */ && iVar1 < Global_262145.f_30415 /* Tunable: LAUNCHPOSIX_BRIOSO2 */)
@@ -53246,7 +53246,7 @@ int func_442(int iParam0, int iParam1)//Position - 0x39517
 	}
 	else if (iParam0 == joaat("baller7"))
 	{
-		if (Global_262145.f_32292 /* Tunable: 991164709 */)
+		if (Global_262145.f_32292 /* Tunable: FIXER_EARLY_ACCESS_BALLER7 */)
 		{
 		}
 		else if (!Global_262145.f_32228 /* Tunable: ENABLE_VEHICLE_BALLER7 */ && iVar1 < Global_262145.f_32213 /* Tunable: LAUNCHPOSIX_BALLER7 */)
@@ -78171,16 +78171,16 @@ int func_638(int iParam0, int iParam1, int iParam2)//Position - 0x5FA2A
 					return 0;
 				
 				case 2:
-					return Global_262145.f_25519 /* Tunable: -2140343856 */;
+					return Global_262145.f_25519 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_BRONZE_TIME */;
 				
 				case 3:
-					return Global_262145.f_25520 /* Tunable: -1167118619 */;
+					return Global_262145.f_25520 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_SILVER_TIME */;
 				
 				case 4:
-					return Global_262145.f_25521 /* Tunable: -132305813 */;
+					return Global_262145.f_25521 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_GOLD_TIME */;
 				
 				case 5:
-					return Global_262145.f_25522 /* Tunable: 1249433112 */;
+					return Global_262145.f_25522 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_PLATINUM_TIME */;
 				
 				default:
 			}
@@ -78196,16 +78196,16 @@ int func_638(int iParam0, int iParam1, int iParam2)//Position - 0x5FA2A
 					return 0;
 				
 				case 2:
-					return Global_262145.f_25519 /* Tunable: -2140343856 */;
+					return Global_262145.f_25519 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_BRONZE_TIME */;
 				
 				case 3:
-					return Global_262145.f_25520 /* Tunable: -1167118619 */;
+					return Global_262145.f_25520 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_SILVER_TIME */;
 				
 				case 4:
-					return Global_262145.f_25521 /* Tunable: -132305813 */;
+					return Global_262145.f_25521 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_GOLD_TIME */;
 				
 				case 5:
-					return Global_262145.f_25522 /* Tunable: 1249433112 */;
+					return Global_262145.f_25522 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_PLATINUM_TIME */;
 				
 				default:
 			}
@@ -78221,16 +78221,16 @@ int func_638(int iParam0, int iParam1, int iParam2)//Position - 0x5FA2A
 					return 0;
 				
 				case 2:
-					return Global_262145.f_25519 /* Tunable: -2140343856 */;
+					return Global_262145.f_25519 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_BRONZE_TIME */;
 				
 				case 3:
-					return Global_262145.f_25520 /* Tunable: -1167118619 */;
+					return Global_262145.f_25520 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_SILVER_TIME */;
 				
 				case 4:
-					return Global_262145.f_25521 /* Tunable: -132305813 */;
+					return Global_262145.f_25521 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_GOLD_TIME */;
 				
 				case 5:
-					return Global_262145.f_25522 /* Tunable: 1249433112 */;
+					return Global_262145.f_25522 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_PLATINUM_TIME */;
 				
 				default:
 			}
@@ -78246,16 +78246,16 @@ int func_638(int iParam0, int iParam1, int iParam2)//Position - 0x5FA2A
 					return 0;
 				
 				case 2:
-					return Global_262145.f_25519 /* Tunable: -2140343856 */;
+					return Global_262145.f_25519 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_BRONZE_TIME */;
 				
 				case 3:
-					return Global_262145.f_25520 /* Tunable: -1167118619 */;
+					return Global_262145.f_25520 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_SILVER_TIME */;
 				
 				case 4:
-					return Global_262145.f_25521 /* Tunable: -132305813 */;
+					return Global_262145.f_25521 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_GOLD_TIME */;
 				
 				case 5:
-					return Global_262145.f_25522 /* Tunable: 1249433112 */;
+					return Global_262145.f_25522 /* Tunable: BB_NIGHTCLUB_DANCING_REWARD_PLATINUM_TIME */;
 				
 				default:
 			}
@@ -78946,16 +78946,16 @@ int func_638(int iParam0, int iParam1, int iParam2)//Position - 0x5FA2A
 					return 0;
 				
 				case 2:
-					return Global_262145.f_28857 /* Tunable: 212778777 */;
+					return Global_262145.f_28857 /* Tunable: CH_ARCADE_GAMES_GGSM_ASTROCHIMP_B_SCORE */;
 				
 				case 3:
-					return Global_262145.f_28858 /* Tunable: 1730590555 */;
+					return Global_262145.f_28858 /* Tunable: CH_ARCADE_GAMES_GGSM_ASTROCHIMP_S_SCORE */;
 				
 				case 4:
-					return Global_262145.f_28859 /* Tunable: 599275937 */;
+					return Global_262145.f_28859 /* Tunable: CH_ARCADE_GAMES_GGSM_ASTROCHIMP_G_SCORE */;
 				
 				case 5:
-					return Global_262145.f_28860 /* Tunable: 790883802 */;
+					return Global_262145.f_28860 /* Tunable: CH_ARCADE_GAMES_GGSM_ASTROCHIMP_P_SCORE */;
 				
 				default:
 			}

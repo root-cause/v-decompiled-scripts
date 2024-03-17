@@ -362,7 +362,7 @@ void __EntryFunction__()//Position - 0x0
 								{
 									if (func_316(iLocal_185, &Local_187, &Local_190, &cLocal_206, &cLocal_222, &iLocal_238, &iLocal_239, &iLocal_240, &iLocal_241, &iLocal_242, &iLocal_243, &iLocal_244, &iLocal_245, &bLocal_246, &iVar0, &iVar1, &iLocal_247, &bLocal_248, &Local_249, &iLocal_255, &iLocal_256, &bLocal_257, &bLocal_281, &iLocal_258, &iLocal_259, &iLocal_282, &iLocal_283))
 									{
-										if (Global_262145.f_31223 /* Tunable: 1860013361 */ && func_314(iLocal_185) != -1)
+										if (Global_262145.f_31223 /* Tunable: ENABLE_SERIES_INFOCARDS */ && func_314(iLocal_185) != -1)
 										{
 											iVar3 = func_314(iLocal_185);
 											if (func_313(iVar3))
@@ -390,7 +390,7 @@ void __EntryFunction__()//Position - 0x0
 										{
 											func_289(1, 65, Local_187, iLocal_245, &Local_190, &cLocal_206, &cLocal_222, iLocal_244, iLocal_238, iLocal_239, iLocal_240, iLocal_241, iLocal_242, iLocal_243, bLocal_246, Local_249, &Local_260, iLocal_247, bLocal_248, iLocal_256, 0, bLocal_281, 0, iLocal_282, iLocal_283);
 										}
-										if (Global_262145.f_31220 /* Tunable: -1638160656 */ && func_272(iLocal_185))
+										if (Global_262145.f_31220 /* Tunable: ENABLE_DLC_CONTENT_CONTROLLER */ && func_272(iLocal_185))
 										{
 											iVar4 = func_266(iLocal_185);
 											if (func_265(iVar4))
@@ -450,7 +450,7 @@ void func_3()//Position - 0x355
 {
 	int iVar0;
 	
-	if (Global_262145.f_31220 /* Tunable: -1638160656 */ == 0)
+	if (Global_262145.f_31220 /* Tunable: ENABLE_DLC_CONTENT_CONTROLLER */ == 0)
 	{
 		return;
 	}
@@ -662,9 +662,9 @@ void func_6(int iParam0, char* sParam1, char* sParam2, int iParam3, char* sParam
 			}
 			if (func_9() && func_14())
 			{
-				if (Global_262145.f_7028 /* Tunable: -278879208 */ > 1f)
+				if (Global_262145.f_7028 /* Tunable: FM_CORONA_PROFESSIONAL_RP_MULTIPLIER */ > 1f)
 				{
-					fVar1 = Global_262145.f_7028 /* Tunable: -278879208 */;
+					fVar1 = Global_262145.f_7028 /* Tunable: FM_CORONA_PROFESSIONAL_RP_MULTIPLIER */;
 				}
 			}
 			if (fVar1 < 1f)
@@ -2694,7 +2694,7 @@ void func_63()//Position - 0x2518
 								{
 									iLocal_294 = 335;
 								}
-								else if ((iLocal_294 == 0 && func_179(iLocal_282, 0)) && !Global_262145.f_10268 /* Tunable: 1123838161 */)
+								else if ((iLocal_294 == 0 && func_179(iLocal_282, 0)) && !Global_262145.f_10268 /* Tunable: DISABLE_STUNT_SERIES_BUCKET */)
 								{
 									iLocal_294 = func_178(iLocal_282);
 								}
@@ -2721,7 +2721,7 @@ void func_63()//Position - 0x2518
 										iLocal_294 = 165;
 									}
 								}
-								else if ((iLocal_294 == 2 && func_177(iLocal_282)) && !Global_262145.f_10268 /* Tunable: 1123838161 */)
+								else if ((iLocal_294 == 2 && func_177(iLocal_282)) && !Global_262145.f_10268 /* Tunable: DISABLE_STUNT_SERIES_BUCKET */)
 								{
 									iLocal_294 = 184;
 								}
@@ -6861,7 +6861,7 @@ int func_195(var uParam0, int iParam1)//Position - 0x7424
 			{
 				return 60;
 			}
-			if (!Global_262145.f_7031 /* Tunable: 506270292 */)
+			if (!Global_262145.f_7031 /* Tunable: FM_CORONA_PLAYLIST_ACTIVE_PROFESSIONAL */)
 			{
 				return 61;
 			}
@@ -8461,15 +8461,15 @@ int func_247(int iParam0)//Position - 0x8FCB
 			break;
 		
 		case 58:
-			return Global_262145.f_26046 /* Tunable: 2115355697 */;
+			return Global_262145.f_26046 /* Tunable: BANDITO_COOLDOWN_TIME */;
 			break;
 		
 		case 62:
-			return Global_262145.f_26047 /* Tunable: -1358864430 */;
+			return Global_262145.f_26047 /* Tunable: TANK_COOLDOWN_TIME */;
 			break;
 		
 		case 63:
-			return Global_262145.f_29536 /* Tunable: -1559847104 */;
+			return Global_262145.f_29536 /* Tunable: PV_RETURN_COOLDOWN */;
 			break;
 		
 		case 64:
@@ -8477,19 +8477,19 @@ int func_247(int iParam0)//Position - 0x8FCB
 			break;
 		
 		case 72:
-			return Global_262145.f_26047 /* Tunable: -1358864430 */;
+			return Global_262145.f_26047 /* Tunable: TANK_COOLDOWN_TIME */;
 			break;
 		
 		case 73:
-			return Global_262145.f_32098 /* Tunable: -1284681617 */;
+			return Global_262145.f_32098 /* Tunable: FRANKLIN_SUPPLY_STASH_COST */;
 			break;
 		
 		case 74:
-			return Global_262145.f_32100 /* Tunable: -1303558292 */;
+			return Global_262145.f_32100 /* Tunable: IMANI_SOURCE_MOTORCYCLE_COST */;
 			break;
 		
 		case 75:
-			return Global_262145.f_32102 /* Tunable: 569088073 */;
+			return Global_262145.f_32102 /* Tunable: IMANI_OUT_OF_SIGHT_COST */;
 			break;
 	}
 	return 0;
@@ -12676,7 +12676,7 @@ void func_328(int iParam0)//Position - 0xEC53
 
 void func_329()//Position - 0xEC84
 {
-	if (Global_262145.f_31220 /* Tunable: -1638160656 */)
+	if (Global_262145.f_31220 /* Tunable: ENABLE_DLC_CONTENT_CONTROLLER */)
 	{
 		if (!BitTest(Global_1974475, 0))
 		{

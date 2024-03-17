@@ -4882,21 +4882,21 @@ int func_152()//Position - 0x5642
 		switch (Global_1582003)
 		{
 			case 1:
-				if (Global_262145.f_23302 /* Tunable: 1200779746 */)
+				if (Global_262145.f_23302 /* Tunable: H2_AVENGER_DISABLE_ROCKET_TURRET_1 */)
 				{
 					return 1;
 				}
 				break;
 			
 			case 2:
-				if (Global_262145.f_23303 /* Tunable: 948556753 */)
+				if (Global_262145.f_23303 /* Tunable: H2_AVENGER_DISABLE_ROCKET_TURRET_2 */)
 				{
 					return 1;
 				}
 				break;
 			
 			case 3:
-				if (Global_262145.f_23304 /* Tunable: 1781774116 */)
+				if (Global_262145.f_23304 /* Tunable: H2_AVENGER_DISABLE_ROCKET_TURRET_3 */)
 				{
 					return 1;
 				}
@@ -5185,7 +5185,7 @@ int func_175()//Position - 0x5F51
 	
 	if (func_27(PLAYER::PLAYER_ID(), 0))
 	{
-		if (Global_262145.f_24891 /* Tunable: -236967184 */)
+		if (Global_262145.f_24891 /* Tunable: BB_TERRORBYTE_DISABLE_MISSILE_LAUNCHER */)
 		{
 			return 1;
 		}

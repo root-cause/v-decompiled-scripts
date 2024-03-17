@@ -647,7 +647,7 @@ void func_27()//Position - 0x859
 		{
 			if (func_31())
 			{
-				iVar0 = Global_262145.f_25523 /* Tunable: 1682810056 */;
+				iVar0 = Global_262145.f_25523 /* Tunable: AW_DRONE_EMP_COOLDOWN_TIME */;
 			}
 			else
 			{
@@ -1317,21 +1317,21 @@ int func_50()//Position - 0x1374
 		switch (Global_1582003)
 		{
 			case 1:
-				if (Global_262145.f_23302 /* Tunable: 1200779746 */)
+				if (Global_262145.f_23302 /* Tunable: H2_AVENGER_DISABLE_ROCKET_TURRET_1 */)
 				{
 					return 1;
 				}
 				break;
 			
 			case 2:
-				if (Global_262145.f_23303 /* Tunable: 948556753 */)
+				if (Global_262145.f_23303 /* Tunable: H2_AVENGER_DISABLE_ROCKET_TURRET_2 */)
 				{
 					return 1;
 				}
 				break;
 			
 			case 3:
-				if (Global_262145.f_23304 /* Tunable: 1781774116 */)
+				if (Global_262145.f_23304 /* Tunable: H2_AVENGER_DISABLE_ROCKET_TURRET_3 */)
 				{
 					return 1;
 				}
@@ -4580,7 +4580,7 @@ void func_191()//Position - 0x5406
 					}
 					else if (func_31())
 					{
-						iVar1 = Global_262145.f_25523 /* Tunable: 1682810056 */;
+						iVar1 = Global_262145.f_25523 /* Tunable: AW_DRONE_EMP_COOLDOWN_TIME */;
 					}
 					else
 					{
@@ -5353,7 +5353,7 @@ void func_213()//Position - 0x64C6
 					Var12 = { 10f, 10f, 10f };
 					if (func_31())
 					{
-						Var12 = { Global_262145.f_25524 /* Tunable: 936176424 */, Global_262145.f_25524 /* Tunable: 936176424 */, Global_262145.f_25524 /* Tunable: 936176424 */ };
+						Var12 = { Global_262145.f_25524 /* Tunable: AW_DRONE_EMP_RANGE */, Global_262145.f_25524 /* Tunable: AW_DRONE_EMP_RANGE */, Global_262145.f_25524 /* Tunable: AW_DRONE_EMP_RANGE */ };
 					}
 					Var15 = { Var3 + Var9 * Var12 };
 					Var0 = { OBJECT::GET_OFFSET_FROM_COORD_AND_HEADING_IN_WORLD_COORDS(Local_197.f_150, ENTITY::GET_ENTITY_HEADING(NETWORK::NET_TO_OBJ(Local_197.f_159)), 0f, -0.1f, 0f) };
@@ -10878,7 +10878,7 @@ void func_374()//Position - 0xD2B0
 		{
 			if (PED::IS_PED_IN_ANY_VEHICLE(PLAYER::GET_PLAYER_PED(iVar0), false))
 			{
-				if (func_375(NETWORK::NET_TO_OBJ(Local_197.f_159), PLAYER::GET_PLAYER_PED(iVar0), Global_262145.f_25524 /* Tunable: 936176424 */, 1))
+				if (func_375(NETWORK::NET_TO_OBJ(Local_197.f_159), PLAYER::GET_PLAYER_PED(iVar0), Global_262145.f_25524 /* Tunable: AW_DRONE_EMP_RANGE */, 1))
 				{
 					if (!func_218(PLAYER::PLAYER_ID(), iVar0))
 					{
@@ -12335,7 +12335,7 @@ int func_426()//Position - 0xEFDF
 	{
 		return 1;
 	}
-	if (Global_262145.f_24892 /* Tunable: -1148048700 */)
+	if (Global_262145.f_24892 /* Tunable: BB_TERRORBYTE_DISABLE_DISABLE_DRONE_STATION */)
 	{
 		return 1;
 	}
@@ -12479,11 +12479,11 @@ void func_436()//Position - 0xF5A6
 	
 	if (!func_426())
 	{
-		if ((((((func_450() || func_449()) && !Global_1927715) && func_451()) && !BitTest(Global_2707417, 6)) && Global_1574972) && !(func_450() && Global_262145.f_26902 /* Tunable: -542627307 */))
+		if ((((((func_450() || func_449()) && !Global_1927715) && func_451()) && !BitTest(Global_2707417, 6)) && Global_1574972) && !(func_450() && Global_262145.f_26902 /* Tunable: AW_TABLET_DISABLE_SPECTATOR_DRONE */))
 		{
 			if ((((((PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 224 /*INPUT_SCRIPT_RLEFT*/) || PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 224 /*INPUT_SCRIPT_RLEFT*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 223 /*INPUT_SCRIPT_RDOWN*/)) && !PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 223 /*INPUT_SCRIPT_RDOWN*/)) && !PAD::IS_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 235 /*INPUT_SCRIPT_PAD_RIGHT*/)) && !PAD::IS_DISABLED_CONTROL_JUST_PRESSED(2 /*FRONTEND_CONTROL*/, 235 /*INPUT_SCRIPT_PAD_RIGHT*/)) && !PAD::IS_DISABLED_CONTROL_PRESSED(2 /*FRONTEND_CONTROL*/, 19 /*INPUT_CHARACTER_WHEEL*/))
 			{
-				if (MONEY::NETWORK_CAN_SPEND_MONEY(Global_262145.f_26904 /* Tunable: -76677190 */, false, false, true, -1, 0) || BitTest(Global_2707417, 2))
+				if (MONEY::NETWORK_CAN_SPEND_MONEY(Global_262145.f_26904 /* Tunable: AW_TABLET_SPECTATOR_DRONE_COST */, false, false, true, -1, 0) || BitTest(Global_2707417, 2))
 				{
 					MISC::SET_BIT(&Global_2707417, 0);
 					func_456(0, 0);
@@ -12840,11 +12840,11 @@ void func_456(bool bParam0, bool bParam1)//Position - 0xFAB6
 	}
 	if (func_38())
 	{
-		func_457(Global_262145.f_29069 /* Tunable: 126404605 */);
+		func_457(Global_262145.f_29069 /* Tunable: CH_NANO_DRONE_DISTANCE_LIMIT */);
 	}
 	else if (func_37() && !func_38())
 	{
-		func_457(Global_262145.f_29070 /* Tunable: 107757763 */);
+		func_457(Global_262145.f_29070 /* Tunable: CH_ARCADE_DRONE_DISTANCE_LIMIT */);
 	}
 	else if (func_17())
 	{

@@ -46352,7 +46352,7 @@ int func_477(var uParam0)//Position - 0x31058
 		{
 			if (!Global_1836230)
 			{
-				if (Global_262145.f_26095 /* Tunable: -1208911595 */)
+				if (Global_262145.f_26095 /* Tunable: XMAS2018_ARENAINTERIOR */)
 				{
 					INTERIOR::ACTIVATE_INTERIOR_ENTITY_SET(*uParam0, "VIP_XMAS_DECS");
 				}
@@ -48177,7 +48177,7 @@ var func_560()//Position - 0x32FBE
 
 void func_561()//Position - 0x32FCD
 {
-	if (!Global_262145.f_18939 /* Tunable: 766468427 */)
+	if (!Global_262145.f_18939 /* Tunable: DISABLE_FIX_FOR_FORCING_GAMEMODE */)
 	{
 		NETWORK::NETWORK_SESSION_SET_GAMEMODE(0);
 	}
