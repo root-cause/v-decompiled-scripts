@@ -192,7 +192,7 @@ int func_2(int iParam0)//Position - 0x28C
 	{
 		return 0;
 	}
-	return Global_114370.f_9088.f_330[iParam0 /*6*/];
+	return Global_114372.f_9088.f_330[iParam0 /*6*/];
 }
 
 int func_3(bool bParam0)//Position - 0x2B8

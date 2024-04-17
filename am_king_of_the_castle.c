@@ -10663,7 +10663,7 @@ int func_285(int iParam0)//Position - 0xD70A
 	{
 		iVar0 = 1;
 	}
-	if (func_51(Global_113398.f_1, 32))
+	if (func_51(Global_113400.f_1, 32))
 	{
 		iVar0 = 1;
 	}
@@ -10732,7 +10732,7 @@ int func_285(int iParam0)//Position - 0xD70A
 	Global_2695955 = 0;
 	Global_1577921 = 0;
 	Global_2695894 = 0;
-	func_288(&(Global_113398.f_1), 32);
+	func_288(&(Global_113400.f_1), 32);
 	func_287(512);
 	func_286(128);
 	Global_1837398 = 0;
@@ -10741,12 +10741,12 @@ int func_285(int iParam0)//Position - 0xD70A
 
 void func_286(int iParam0)//Position - 0xD871
 {
-	Global_113455 = (Global_113455 - (Global_113455 && iParam0));
+	Global_113457 = (Global_113457 - (Global_113457 && iParam0));
 }
 
 void func_287(int iParam0)//Position - 0xD889
 {
-	Global_113456 = (Global_113456 - (Global_113456 && iParam0));
+	Global_113458 = (Global_113458 - (Global_113458 && iParam0));
 }
 
 void func_288(var uParam0, int iParam1)//Position - 0xD8A1
@@ -10792,12 +10792,12 @@ int func_292()//Position - 0xD937
 
 bool func_293(int iParam0)//Position - 0xD948
 {
-	return (Global_113455 && iParam0) != 0;
+	return (Global_113457 && iParam0) != 0;
 }
 
 bool func_294(int iParam0)//Position - 0xD959
 {
-	return (Global_113456 && iParam0) != 0;
+	return (Global_113458 && iParam0) != 0;
 }
 
 int func_295()//Position - 0xD96A
@@ -11310,7 +11310,7 @@ int func_323(int iParam0, int iParam1, bool bParam2)//Position - 0xDFB6
 	}
 	else
 	{
-		return BitTest(Global_114370.f_668[iParam0], iParam1);
+		return BitTest(Global_114372.f_668[iParam0], iParam1);
 	}
 	return 0;
 }

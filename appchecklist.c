@@ -391,28 +391,28 @@ void func_11()//Position - 0x743
 	switch (iLocal_115)
 	{
 		case 0:
-			iLocal_124 = Global_114089;
-			iLocal_125 = Global_114106;
+			iLocal_124 = Global_114091;
+			iLocal_125 = Global_114108;
 			break;
 		
 		case 1:
-			iLocal_124 = (Global_114090 + Global_114091);
-			iLocal_125 = (Global_114107 + Global_114108);
+			iLocal_124 = (Global_114092 + Global_114093);
+			iLocal_125 = (Global_114109 + Global_114110);
 			break;
 		
 		case 2:
-			iLocal_124 = Global_114092;
-			iLocal_125 = Global_114109;
+			iLocal_124 = Global_114094;
+			iLocal_125 = Global_114111;
 			break;
 		
 		case 3:
-			iLocal_124 = Global_114093;
-			iLocal_125 = Global_114110;
+			iLocal_124 = Global_114095;
+			iLocal_125 = Global_114112;
 			break;
 		
 		case 4:
-			iLocal_124 = (Global_114094 + Global_114095);
-			iLocal_125 = (Global_114111 + Global_114112);
+			iLocal_124 = (Global_114096 + Global_114097);
+			iLocal_125 = (Global_114113 + Global_114114);
 			break;
 		
 		default:
@@ -741,7 +741,7 @@ void func_20()//Position - 0xCE1
 	bVar0 = false;
 	while (bVar0 < 63)
 	{
-		if ((BitTest(Global_114370.f_18577[bVar0 /*6*/], 0) && BitTest(Global_114370.f_18577[bVar0 /*6*/], 1)) && !BitTest(Global_114370.f_18577[bVar0 /*6*/], 3))
+		if ((BitTest(Global_114372.f_18577[bVar0 /*6*/], 0) && BitTest(Global_114372.f_18577[bVar0 /*6*/], 1)) && !BitTest(Global_114372.f_18577[bVar0 /*6*/], 3))
 		{
 			if (Global_96373 < 52)
 			{
@@ -758,7 +758,7 @@ void func_20()//Position - 0xCE1
 	bVar0 = false;
 	while (bVar0 < 20)
 	{
-		if (BitTest(Global_114370.f_9088.f_99.f_219[0], bVar0))
+		if (BitTest(Global_114372.f_9088.f_99.f_219[0], bVar0))
 		{
 			if (Global_96373 < 52)
 			{
@@ -1152,7 +1152,7 @@ struct<2> func_24(int iParam0)//Position - 0x13E1
 	StringConCat(&Var0, &(Global_92160[iParam0 /*34*/].f_8), 8);
 	if (iParam0 == 90)
 	{
-		switch (Global_114370.f_9088.f_99.f_205[7])
+		switch (Global_114372.f_9088.f_99.f_205[7])
 		{
 			case 1:
 				StringConCat(&Var0, "A", 8);
@@ -1294,11 +1294,11 @@ void func_30()//Position - 0x15B7
 
 void func_31()//Position - 0x16F1
 {
-	func_32(0, "CELL_3001" /* GXT: Missions */, 1, Global_114106);
-	func_32(1, "CELL_3008" /* GXT: Hobbies and Pastimes */, 3, Global_114106);
-	func_32(2, "CELL_3004" /* GXT: Strangers and Freaks */, 7, Global_114109);
-	func_32(3, "CELL_3005" /* GXT: Random Events */, 9, Global_114110);
-	func_32(4, "CELL_3007" /* GXT: Miscellaneous */, 11, Global_114111);
+	func_32(0, "CELL_3001" /* GXT: Missions */, 1, Global_114108);
+	func_32(1, "CELL_3008" /* GXT: Hobbies and Pastimes */, 3, Global_114108);
+	func_32(2, "CELL_3004" /* GXT: Strangers and Freaks */, 7, Global_114111);
+	func_32(3, "CELL_3005" /* GXT: Random Events */, 9, Global_114112);
+	func_32(4, "CELL_3007" /* GXT: Miscellaneous */, 11, Global_114113);
 }
 
 void func_32(int iParam0, char* sParam1, int iParam2, var uParam3)//Position - 0x1741

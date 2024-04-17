@@ -289,18 +289,18 @@ void __EntryFunction__()//Position - 0x0
 	Global_104919 = -1;
 	StringCopy(&Global_113012, "", 16);
 	Global_113016 = -1;
-	Global_113322 = -1;
-	Global_113397 = 1;
-	Global_113419 = 1;
-	StringCopy(&Global_113426, "NULL", 24);
-	Global_114117 = 300000;
-	Global_114359 = -1;
-	Global_114369 = -1;
-	Global_152958 = 1;
-	Global_153205 = -1;
-	Global_153206 = -1;
-	Global_153208 = 1000;
-	Global_153247 = 1;
+	Global_113324 = -1;
+	Global_113399 = 1;
+	Global_113421 = 1;
+	StringCopy(&Global_113428, "NULL", 24);
+	Global_114119 = 300000;
+	Global_114361 = -1;
+	Global_114371 = -1;
+	Global_152961 = 1;
+	Global_153208 = -1;
+	Global_153209 = -1;
+	Global_153211 = 1000;
+	Global_153250 = 1;
 	func_89();
 	func_86();
 	func_72();
@@ -2443,7 +2443,7 @@ void func_25()//Position - 0x581D
 
 void func_26(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, int iParam5)//Position - 0x59DE
 {
-	Global_114370.f_1.f_73[iParam0 /*3*/] = iParam1;
+	Global_114372.f_1.f_73[iParam0 /*3*/] = iParam1;
 	func_27(iParam0, 0, iParam2);
 	func_27(iParam0, 1, iParam3);
 	func_27(iParam0, 2, iParam4);
@@ -2452,7 +2452,7 @@ void func_26(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4, in
 
 void func_27(int iParam0, int iParam1, int iParam2)//Position - 0x5A18
 {
-	func_28(iParam1, iParam2, &(Global_114370.f_1.f_73[iParam0 /*3*/].f_1), &(Global_114370.f_1.f_73[iParam0 /*3*/].f_2));
+	func_28(iParam1, iParam2, &(Global_114372.f_1.f_73[iParam0 /*3*/].f_1), &(Global_114372.f_1.f_73[iParam0 /*3*/].f_2));
 }
 
 void func_28(int iParam0, int iParam1, var uParam2, var uParam3)//Position - 0x5A44
@@ -2498,13 +2498,13 @@ void func_30(int iParam0, int iParam1, int iParam2, bool bParam3)//Position - 0x
 	Global_97247[iParam0 /*5*/].f_1 = iParam2;
 	if (bParam3)
 	{
-		MISC::SET_BIT(&(Global_114370.f_1.f_116), iParam0);
+		MISC::SET_BIT(&(Global_114372.f_1.f_116), iParam0);
 	}
 	else
 	{
-		MISC::CLEAR_BIT(&(Global_114370.f_1.f_116), iParam0);
+		MISC::CLEAR_BIT(&(Global_114372.f_1.f_116), iParam0);
 	}
-	MISC::CLEAR_BIT(&(Global_114370.f_1.f_118), iParam0);
+	MISC::CLEAR_BIT(&(Global_114372.f_1.f_118), iParam0);
 }
 
 void func_31()//Position - 0x5B6B
@@ -2600,63 +2600,63 @@ void func_35(int iParam0, struct<3> Param1, struct<3> Param4, float fParam7, cha
 
 void func_36()//Position - 0x5EB3
 {
-	Global_153125.f_1 = 0;
-	Global_153125.f_2 = 0;
-	Global_153125.f_3 = 2;
-	Global_153125.f_4 = 73;
-	Global_153125.f_5 = 0;
-	Global_153125.f_6 = 6;
-	Global_153125.f_7 = joaat("MP_M_Freemode_01");
-	Global_153125.f_8 = joaat("MP_F_Freemode_01");
-	Global_153125.f_9 = joaat("sentinel2");
-	Global_153125.f_10 = joaat("U_M_M_FilmDirector");
-	StringCopy(&(Global_153125.f_12), "CNC_TN_S_01", 16);
-	StringCopy(&(Global_153125.f_16), "CNC_TN_S_01_CAP", 16);
-	StringCopy(&(Global_153125.f_20), "CNC_TN_S_02", 16);
-	StringCopy(&(Global_153125.f_24), "CNC_TN_S_02_CAP", 16);
-	StringCopy(&(Global_153125.f_28), "CNC_TN_S_05", 16);
-	StringCopy(&(Global_153125.f_32), "CNC_TN_S_05_CAP", 16);
-	StringCopy(&(Global_153125.f_36), "CNC_TN_S_03", 16);
-	StringCopy(&(Global_153125.f_40), "CNC_TN_S_03_CAP", 16);
-	StringCopy(&(Global_153125.f_44), "CNC_TN_S_06", 16);
-	StringCopy(&(Global_153125.f_48), "CNC_TN_S_06_CAP", 16);
-	StringCopy(&(Global_153125.f_52), "CNC_TN_S_04", 16);
-	StringCopy(&(Global_153125.f_56), "CNC_TN_S_04_CAP", 16);
-	StringCopy(&(Global_153125.f_60), "", 16);
-	StringCopy(&(Global_153125.f_64), "img_radar_gang_families", 32);
-	StringCopy(&(Global_153125.f_72), "", 16);
-	StringCopy(&(Global_153125.f_76), "nothing", 16);
-	Global_153045.f_1 = 1;
-	Global_153045.f_2 = 0;
-	Global_153045.f_3 = 2;
-	Global_153045.f_4 = 73;
-	Global_153045.f_5 = 0;
-	Global_153045.f_6 = 6;
-	Global_153045.f_7 = joaat("MP_M_Freemode_01");
-	Global_153045.f_8 = joaat("MP_F_Freemode_01");
-	Global_153045.f_9 = joaat("sentinel2");
-	Global_153045.f_10 = joaat("U_M_M_FilmDirector");
-	StringCopy(&(Global_153045.f_12), "CNC_TN_F_01", 16);
-	StringCopy(&(Global_153045.f_16), "CNC_TN_F_01_CAP", 16);
-	StringCopy(&(Global_153045.f_20), "CNC_TN_F_02", 16);
-	StringCopy(&(Global_153045.f_24), "CNC_TN_F_02_CAP", 16);
-	StringCopy(&(Global_153045.f_28), "CNC_TN_F_05", 16);
-	StringCopy(&(Global_153045.f_32), "CNC_TN_F_05_CAP", 16);
-	StringCopy(&(Global_153045.f_36), "CNC_TN_F_03", 16);
-	StringCopy(&(Global_153045.f_40), "CNC_TN_F_03_CAP", 16);
-	StringCopy(&(Global_153045.f_44), "CNC_TN_F_06", 16);
-	StringCopy(&(Global_153045.f_48), "CNC_TN_F_06_CAP", 16);
-	StringCopy(&(Global_153045.f_52), "CNC_TN_F_04", 16);
-	StringCopy(&(Global_153045.f_56), "CNC_TN_F_04_CAP", 16);
-	StringCopy(&(Global_153045.f_60), "", 16);
-	StringCopy(&(Global_153045.f_64), "img_radar_gang_families", 32);
-	StringCopy(&(Global_153045.f_72), "", 16);
-	StringCopy(&(Global_153045.f_76), "nothing", 16);
+	Global_153128.f_1 = 0;
+	Global_153128.f_2 = 0;
+	Global_153128.f_3 = 2;
+	Global_153128.f_4 = 73;
+	Global_153128.f_5 = 0;
+	Global_153128.f_6 = 6;
+	Global_153128.f_7 = joaat("MP_M_Freemode_01");
+	Global_153128.f_8 = joaat("MP_F_Freemode_01");
+	Global_153128.f_9 = joaat("sentinel2");
+	Global_153128.f_10 = joaat("U_M_M_FilmDirector");
+	StringCopy(&(Global_153128.f_12), "CNC_TN_S_01", 16);
+	StringCopy(&(Global_153128.f_16), "CNC_TN_S_01_CAP", 16);
+	StringCopy(&(Global_153128.f_20), "CNC_TN_S_02", 16);
+	StringCopy(&(Global_153128.f_24), "CNC_TN_S_02_CAP", 16);
+	StringCopy(&(Global_153128.f_28), "CNC_TN_S_05", 16);
+	StringCopy(&(Global_153128.f_32), "CNC_TN_S_05_CAP", 16);
+	StringCopy(&(Global_153128.f_36), "CNC_TN_S_03", 16);
+	StringCopy(&(Global_153128.f_40), "CNC_TN_S_03_CAP", 16);
+	StringCopy(&(Global_153128.f_44), "CNC_TN_S_06", 16);
+	StringCopy(&(Global_153128.f_48), "CNC_TN_S_06_CAP", 16);
+	StringCopy(&(Global_153128.f_52), "CNC_TN_S_04", 16);
+	StringCopy(&(Global_153128.f_56), "CNC_TN_S_04_CAP", 16);
+	StringCopy(&(Global_153128.f_60), "", 16);
+	StringCopy(&(Global_153128.f_64), "img_radar_gang_families", 32);
+	StringCopy(&(Global_153128.f_72), "", 16);
+	StringCopy(&(Global_153128.f_76), "nothing", 16);
+	Global_153048.f_1 = 1;
+	Global_153048.f_2 = 0;
+	Global_153048.f_3 = 2;
+	Global_153048.f_4 = 73;
+	Global_153048.f_5 = 0;
+	Global_153048.f_6 = 6;
+	Global_153048.f_7 = joaat("MP_M_Freemode_01");
+	Global_153048.f_8 = joaat("MP_F_Freemode_01");
+	Global_153048.f_9 = joaat("sentinel2");
+	Global_153048.f_10 = joaat("U_M_M_FilmDirector");
+	StringCopy(&(Global_153048.f_12), "CNC_TN_F_01", 16);
+	StringCopy(&(Global_153048.f_16), "CNC_TN_F_01_CAP", 16);
+	StringCopy(&(Global_153048.f_20), "CNC_TN_F_02", 16);
+	StringCopy(&(Global_153048.f_24), "CNC_TN_F_02_CAP", 16);
+	StringCopy(&(Global_153048.f_28), "CNC_TN_F_05", 16);
+	StringCopy(&(Global_153048.f_32), "CNC_TN_F_05_CAP", 16);
+	StringCopy(&(Global_153048.f_36), "CNC_TN_F_03", 16);
+	StringCopy(&(Global_153048.f_40), "CNC_TN_F_03_CAP", 16);
+	StringCopy(&(Global_153048.f_44), "CNC_TN_F_06", 16);
+	StringCopy(&(Global_153048.f_48), "CNC_TN_F_06_CAP", 16);
+	StringCopy(&(Global_153048.f_52), "CNC_TN_F_04", 16);
+	StringCopy(&(Global_153048.f_56), "CNC_TN_F_04_CAP", 16);
+	StringCopy(&(Global_153048.f_60), "", 16);
+	StringCopy(&(Global_153048.f_64), "img_radar_gang_families", 32);
+	StringCopy(&(Global_153048.f_72), "", 16);
+	StringCopy(&(Global_153048.f_76), "nothing", 16);
 }
 
 void func_37()//Position - 0x60E5
 {
-	Global_153044 = INTERIOR::GET_INTERIOR_AT_COORDS(114.64f, -1290.34f, 29.68f);
+	Global_153047 = INTERIOR::GET_INTERIOR_AT_COORDS(114.64f, -1290.34f, 29.68f);
 }
 
 void func_38()//Position - 0x6104
@@ -3780,7 +3780,7 @@ void func_81(int iParam0, struct<3> Param1, char* sParam4, int iParam5, bool bPa
 	{
 	}
 	func_85(iParam0, Param1, sParam4, iParam5, bParam6, iParam7, 1);
-	if (((Global_114370.f_2355[iVar2 /*2*/] >= 1 || func_84(108) == 1) || func_83((iVar0 + iVar2), 0)) || BitTest(Global_114370.f_18577[(iVar1 + iVar2) /*6*/], 3))
+	if (((Global_114372.f_2355[iVar2 /*2*/] >= 1 || func_84(108) == 1) || func_83((iVar0 + iVar2), 0)) || BitTest(Global_114372.f_18577[(iVar1 + iVar2) /*6*/], 3))
 	{
 		func_82(iParam0, 1);
 	}
@@ -3817,7 +3817,7 @@ void func_82(int iParam0, bool bParam1)//Position - 0x9153
 
 int func_83(int iParam0, int iParam1)//Position - 0x91D9
 {
-	if (Global_114370.f_10197[iParam0 /*12*/].f_5 == 1)
+	if (Global_114372.f_10197[iParam0 /*12*/].f_5 == 1)
 	{
 		if (iParam1 == 1)
 		{
@@ -3833,7 +3833,7 @@ int func_84(int iParam0)//Position - 0x9200
 	{
 		return 0;
 	}
-	return Global_114370.f_9088.f_99.f_58[iParam0];
+	return Global_114372.f_9088.f_99.f_58[iParam0];
 }
 
 void func_85(int iParam0, struct<3> Param1, char* sParam4, int iParam5, bool bParam6, int iParam7, int iParam8)//Position - 0x922D

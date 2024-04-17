@@ -2114,7 +2114,7 @@ int func_44(bool bParam0)//Position - 0x2219
 
 int func_45()//Position - 0x2241
 {
-	if (Global_114370.f_9088.f_330[0 /*6*/])
+	if (Global_114372.f_9088.f_330[0 /*6*/])
 	{
 		return 1;
 	}

@@ -561,11 +561,11 @@ void func_20(int iParam0)//Position - 0x607
 								iVar3 = 0;
 								while (iVar3 < 35)
 								{
-									if (Global_114370.f_14144[iVar3 /*104*/].f_24 != 0)
+									if (Global_114372.f_14144[iVar3 /*104*/].f_24 != 0)
 									{
-										if (Global_114370.f_14144[iVar3 /*104*/].f_28 == 0)
+										if (Global_114372.f_14144[iVar3 /*104*/].f_28 == 0)
 										{
-											if (Global_114370.f_14144[iVar3 /*104*/].f_99[Global_20813] == 1)
+											if (Global_114372.f_14144[iVar3 /*104*/].f_99[Global_20813] == 1)
 											{
 												Global_23234++;
 											}

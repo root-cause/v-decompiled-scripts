@@ -815,7 +815,7 @@ int func_22(int iParam0)//Position - 0xB68
 	{
 		return 0;
 	}
-	return Global_114370.f_9088.f_99.f_58[iParam0];
+	return Global_114372.f_9088.f_99.f_58[iParam0];
 }
 
 struct<4> func_23(var uParam0)//Position - 0xB95
@@ -1065,7 +1065,7 @@ struct<4> func_28(var uParam0)//Position - 0xF68
 
 int func_29(int iParam0, int iParam1)//Position - 0xFC5
 {
-	if (Global_114370.f_10197[iParam0 /*12*/].f_5 == 1)
+	if (Global_114372.f_10197[iParam0 /*12*/].f_5 == 1)
 	{
 		if (iParam1 == 1)
 		{
@@ -1221,7 +1221,7 @@ int func_34(int iParam0)//Position - 0x134B
 {
 	if (iParam0 < 9)
 	{
-		return BitTest(Global_114370.f_18106.f_175[iParam0 /*19*/].f_18, 0);
+		return BitTest(Global_114372.f_18106.f_175[iParam0 /*19*/].f_18, 0);
 	}
 	return 0;
 }
@@ -1253,15 +1253,15 @@ int func_36(int iParam0)//Position - 0x13E8
 	switch (iParam0)
 	{
 		case 0:
-			return Global_114370.f_10052.f_90[0];
+			return Global_114372.f_10052.f_90[0];
 			break;
 		
 		case 1:
-			return Global_114370.f_10052.f_90[1];
+			return Global_114372.f_10052.f_90[1];
 			break;
 		
 		case 2:
-			return Global_114370.f_10052.f_90[2];
+			return Global_114372.f_10052.f_90[2];
 			break;
 	}
 	return 0;

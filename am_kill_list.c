@@ -27737,7 +27737,7 @@ int func_712(int iParam0)//Position - 0x21641
 	{
 		iVar0 = 1;
 	}
-	if (func_570(Global_113398.f_1, 32))
+	if (func_570(Global_113400.f_1, 32))
 	{
 		iVar0 = 1;
 	}
@@ -27806,7 +27806,7 @@ int func_712(int iParam0)//Position - 0x21641
 	Global_2695955 = 0;
 	Global_1577921 = 0;
 	Global_2695894 = 0;
-	func_715(&(Global_113398.f_1), 32);
+	func_715(&(Global_113400.f_1), 32);
 	func_714(512);
 	func_713(128);
 	Global_1837398 = 0;
@@ -27815,12 +27815,12 @@ int func_712(int iParam0)//Position - 0x21641
 
 void func_713(int iParam0)//Position - 0x217A8
 {
-	Global_113455 = (Global_113455 - (Global_113455 && iParam0));
+	Global_113457 = (Global_113457 - (Global_113457 && iParam0));
 }
 
 void func_714(int iParam0)//Position - 0x217C0
 {
-	Global_113456 = (Global_113456 - (Global_113456 && iParam0));
+	Global_113458 = (Global_113458 - (Global_113458 && iParam0));
 }
 
 void func_715(var uParam0, int iParam1)//Position - 0x217D8
@@ -27866,12 +27866,12 @@ int func_719()//Position - 0x2186E
 
 bool func_720(int iParam0)//Position - 0x2187F
 {
-	return (Global_113455 && iParam0) != 0;
+	return (Global_113457 && iParam0) != 0;
 }
 
 bool func_721(int iParam0)//Position - 0x21890
 {
-	return (Global_113456 && iParam0) != 0;
+	return (Global_113458 && iParam0) != 0;
 }
 
 int func_722()//Position - 0x218A1

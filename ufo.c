@@ -55,7 +55,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_11 = 12;
 	fLocal_12 = 0.001f;
 	iLocal_15 = -1;
-	if (Global_114370.f_10197.f_3854 == 0)
+	if (Global_114372.f_10197.f_3854 == 0)
 	{
 		func_10();
 	}
@@ -108,7 +108,7 @@ void func_1(int iParam0, int iParam1, int iParam2, bool bParam3, int iParam4)//P
 		}
 		else
 		{
-			Global_114370.f_7264.f_227[iParam0] = iParam1;
+			Global_114372.f_7264.f_227[iParam0] = iParam1;
 		}
 		Global_40462[iParam0] = iParam2;
 		Global_40661[iParam0] = 1;
@@ -217,7 +217,7 @@ bool func_4(int iParam0, bool bParam1, int iParam2, bool bParam3)//Position - 0x
 	func_8(&Var3, iParam0);
 	if (func_5())
 	{
-		iVar1 = Global_114370.f_7264.f_227[iParam0];
+		iVar1 = Global_114372.f_7264.f_227[iParam0];
 	}
 	else
 	{

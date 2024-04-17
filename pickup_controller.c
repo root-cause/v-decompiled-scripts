@@ -146,7 +146,7 @@ int func_5(int iParam0)//Position - 0x195
 	{
 		return 0;
 	}
-	return Global_114370.f_9088.f_330[iParam0 /*6*/];
+	return Global_114372.f_9088.f_330[iParam0 /*6*/];
 }
 
 void func_6()//Position - 0x1C1
@@ -191,11 +191,11 @@ int func_9()//Position - 0x271
 {
 	int iVar0;
 	
-	if (Global_153246 == 2)
+	if (Global_153249 == 2)
 	{
 		return 1;
 	}
-	else if (Global_153246 == 3)
+	else if (Global_153249 == 3)
 	{
 		return 0;
 	}
@@ -327,7 +327,7 @@ int func_13(int iParam0)//Position - 0x589
 	{
 		return 0;
 	}
-	return Global_114370.f_9088.f_99.f_58[iParam0];
+	return Global_114372.f_9088.f_99.f_58[iParam0];
 }
 
 void func_14()//Position - 0x5B6

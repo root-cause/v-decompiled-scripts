@@ -1730,7 +1730,7 @@ void func_22(int iParam0, int iParam1, int iParam2, bool bParam3, int iParam4)//
 		}
 		else
 		{
-			Global_114370.f_7264.f_227[iParam0] = iParam1;
+			Global_114372.f_7264.f_227[iParam0] = iParam1;
 		}
 		Global_40462[iParam0] = iParam2;
 		Global_40661[iParam0] = 1;
@@ -1839,7 +1839,7 @@ bool func_25(int iParam0, bool bParam1, int iParam2, bool bParam3)//Position - 0
 	func_29(&Var3, iParam0);
 	if (func_26())
 	{
-		iVar1 = Global_114370.f_7264.f_227[iParam0];
+		iVar1 = Global_114372.f_7264.f_227[iParam0];
 	}
 	else
 	{

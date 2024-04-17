@@ -2059,14 +2059,14 @@ void func_40(bool bParam0, int iParam1)//Position - 0x42A9
 			Global_64038 = 1;
 		}
 	}
-	if (Global_114370.f_9088 || func_43(0))
+	if (Global_114372.f_9088 || func_43(0))
 	{
 		iVar0 = func_41();
 		iVar1 = Global_92124[iVar0 /*5*/];
 		uVar2 = Global_79519.f_109[iVar1 /*4*/];
 		if (iVar0 == -1)
 		{
-			if (Global_114370.f_9088)
+			if (Global_114372.f_9088)
 			{
 			}
 			return;

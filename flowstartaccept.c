@@ -91,7 +91,7 @@ void __EntryFunction__()//Position - 0x0
 		func_1();
 	}
 	Global_79519.f_1 = 0;
-	MISC::SET_BIT(&(Global_114370.f_10019.f_25), 0);
+	MISC::SET_BIT(&(Global_114372.f_10019.f_25), 0);
 	func_6();
 }
 
