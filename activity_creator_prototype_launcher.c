@@ -65,7 +65,7 @@
 	var uLocal_63 = 0;
 	float fLocal_64 = 0f;
 	var uLocal_65 = 0;
-	var uLocal_66 = 0;
+	float fLocal_66 = 0f;
 	var uLocal_67 = 0;
 	var uLocal_68 = 0;
 	var uLocal_69 = 0;
@@ -92,9 +92,9 @@
 	var uLocal_90 = 0;
 	var uLocal_91 = 0;
 	var uLocal_92 = 0;
-	var uLocal_93 = -1;
+	var uLocal_93 = 0;
 	var uLocal_94 = 0;
-	var uLocal_95 = 0;
+	var uLocal_95 = -1;
 	var uLocal_96 = 0;
 	var uLocal_97 = 0;
 	var uLocal_98 = 0;
@@ -116,6 +116,8 @@
 	var uLocal_114 = 0;
 	var uLocal_115 = 0;
 	var uLocal_116 = 0;
+	var uLocal_117 = 0;
+	var uLocal_118 = 0;
 #endregion
 
 void __EntryFunction__()//Position - 0x0
@@ -145,6 +147,7 @@ void __EntryFunction__()//Position - 0x0
 	iLocal_39 = 49;
 	iLocal_40 = 64;
 	fLocal_64 = ((0.05f + 0.275f) - 0.01f);
+	fLocal_66 = 0f;
 	func_2();
 	while (true)
 	{
@@ -153,17 +156,17 @@ void __EntryFunction__()//Position - 0x0
 	}
 }
 
-void func_1()//Position - 0x98
+void func_1()//Position - 0x9B
 {
 }
 
-void func_2()//Position - 0xA0
+void func_2()//Position - 0xA3
 {
 	NETWORK::NETWORK_SET_THIS_SCRIPT_IS_NETWORK_SCRIPT(32, false, -1);
 	func_3(0, -1, 0);
 }
 
-int func_3(int iParam0, int iParam1, bool bParam2)//Position - 0xB8
+int func_3(int iParam0, int iParam1, bool bParam2)//Position - 0xBB
 {
 	int iVar0;
 	
@@ -236,7 +239,7 @@ int func_3(int iParam0, int iParam1, bool bParam2)//Position - 0xB8
 	}
 	if (iParam1 > -1)
 	{
-		Global_1574666 = iVar0;
+		Global_1574667 = iVar0;
 	}
 	if (iParam0 == 0)
 	{
@@ -266,7 +269,7 @@ int func_3(int iParam0, int iParam1, bool bParam2)//Position - 0xB8
 	return 1;
 }
 
-int func_4(int iParam0)//Position - 0x1CE
+int func_4(int iParam0)//Position - 0x1D1
 {
 	if (SCRIPT::GET_EVENT_EXISTS(1, iParam0))
 	{
@@ -275,20 +278,20 @@ int func_4(int iParam0)//Position - 0x1CE
 	return 0;
 }
 
-bool func_5()//Position - 0x1E5
+bool func_5()//Position - 0x1E8
 {
-	return Global_2684312.f_693;
+	return Global_2684504.f_695;
 }
 
-bool func_6(bool bParam0)//Position - 0x1F4
+bool func_6(bool bParam0)//Position - 0x1F7
 {
 	if (bParam0)
 	{
 	}
-	return Global_1575052;
+	return Global_1575055;
 }
 
-void func_7()//Position - 0x205
+void func_7()//Position - 0x208
 {
 	SCRIPT::TERMINATE_THIS_THREAD();
 }

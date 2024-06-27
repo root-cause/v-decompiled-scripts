@@ -1,6 +1,6 @@
 # v-decompiled-scripts
 
-Decompiled scripts from GTAV build 3179, for educational purposes only.
+Decompiled scripts from GTAV build 3258, for educational purposes only.
 
 # Older scripts
 
@@ -10,6 +10,7 @@ Decompiled scripts from GTAV build 3179, for educational purposes only.
 * [Build 2845](https://github.com/root-cause/v-decompiled-scripts/tree/631d09f9a7d5e9cf169adbee4ff205c76ee8f201)
 * [Build 2944](https://github.com/root-cause/v-decompiled-scripts/tree/a4554b1f89ba14c06aab0644aec84bd2fa8ed95d)
 * [Build 3095](https://github.com/root-cause/v-decompiled-scripts/tree/93f5c88f45720e599ea6619bbe347c98a2a9e669)
+* [Build 3179](https://github.com/root-cause/v-decompiled-scripts/tree/43f2dff81134a8b011ddae8d23f42649e27df70f)
 
 ## Credits
 

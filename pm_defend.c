@@ -1202,7 +1202,7 @@ void func_33(var uParam0)//Position - 0x1C3A
 
 int func_34()//Position - 0x1CBB
 {
-	return func_35(Global_113079.f_20, Global_113079.f_29);
+	return func_35(Global_112676.f_20, Global_112676.f_29);
 }
 
 int func_35(int iParam0, int iParam1)//Position - 0x1CD3
@@ -1227,7 +1227,7 @@ int func_35(int iParam0, int iParam1)//Position - 0x1CD3
 
 int func_36()//Position - 0x1D0D
 {
-	return Global_113079.f_20;
+	return Global_112676.f_20;
 }
 
 void func_37(var uParam0)//Position - 0x1D1B
@@ -1316,6 +1316,6 @@ void func_40(struct<61> Param0, var uParam61, var uParam62, var uParam63, var uP
 
 void func_41(int iParam0)//Position - 0x1E58
 {
-	Global_113079.f_22 = iParam0;
+	Global_112676.f_22 = iParam0;
 }
 

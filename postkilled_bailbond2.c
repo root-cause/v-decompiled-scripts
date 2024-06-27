@@ -457,7 +457,7 @@ int func_9()//Position - 0x5C0
 			return 0;
 		}
 	}
-	if (Global_98292 == 1)
+	if (Global_98433 == 1)
 	{
 		return 0;
 	}
@@ -465,7 +465,7 @@ int func_9()//Position - 0x5C0
 	{
 		return 0;
 	}
-	if (Global_32831)
+	if (Global_32951)
 	{
 		return 0;
 	}
@@ -479,7 +479,7 @@ int func_9()//Position - 0x5C0
 int func_10()//Position - 0x610
 {
 	func_11();
-	return Global_114372.f_2366.f_539.f_4321;
+	return Global_113969.f_2366.f_539.f_4321;
 }
 
 void func_11()//Position - 0x629
@@ -488,35 +488,35 @@ void func_11()//Position - 0x629
 	
 	if (ENTITY::DOES_ENTITY_EXIST(PLAYER::PLAYER_PED_ID()))
 	{
-		if (func_15(Global_114372.f_2366.f_539.f_4321) != ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()))
+		if (func_15(Global_113969.f_2366.f_539.f_4321) != ENTITY::GET_ENTITY_MODEL(PLAYER::PLAYER_PED_ID()))
 		{
 			iVar0 = func_14(PLAYER::PLAYER_PED_ID());
-			if (func_13(iVar0) && (!func_12(14) || Global_113320))
+			if (func_13(iVar0) && (!func_12(14) || Global_112917))
 			{
-				if (Global_114372.f_2366.f_539.f_4321 != iVar0 && func_13(Global_114372.f_2366.f_539.f_4321))
+				if (Global_113969.f_2366.f_539.f_4321 != iVar0 && func_13(Global_113969.f_2366.f_539.f_4321))
 				{
-					Global_114372.f_2366.f_539.f_4322 = Global_114372.f_2366.f_539.f_4321;
+					Global_113969.f_2366.f_539.f_4322 = Global_113969.f_2366.f_539.f_4321;
 				}
-				Global_114372.f_2366.f_539.f_4323 = iVar0;
-				Global_114372.f_2366.f_539.f_4321 = iVar0;
+				Global_113969.f_2366.f_539.f_4323 = iVar0;
+				Global_113969.f_2366.f_539.f_4321 = iVar0;
 				return;
 			}
 		}
 		else
 		{
-			if (Global_114372.f_2366.f_539.f_4321 != 145)
+			if (Global_113969.f_2366.f_539.f_4321 != 145)
 			{
-				Global_114372.f_2366.f_539.f_4323 = Global_114372.f_2366.f_539.f_4321;
+				Global_113969.f_2366.f_539.f_4323 = Global_113969.f_2366.f_539.f_4321;
 			}
 			return;
 		}
 	}
-	Global_114372.f_2366.f_539.f_4321 = 145;
+	Global_113969.f_2366.f_539.f_4321 = 145;
 }
 
 bool func_12(int iParam0)//Position - 0x726
 {
-	return Global_43922 == iParam0;
+	return Global_44042 == iParam0;
 }
 
 bool func_13(int iParam0)//Position - 0x734
@@ -559,12 +559,12 @@ int func_15(int iParam0)//Position - 0x77D
 
 var func_16(int iParam0)//Position - 0x7A2
 {
-	return Global_2139[iParam0 /*29*/];
+	return Global_2169[iParam0 /*29*/];
 }
 
 bool func_17(int iParam0)//Position - 0x7B1
 {
-	return func_18(iParam0, Global_43922);
+	return func_18(iParam0, Global_44042);
 }
 
 int func_18(int iParam0, int iParam1)//Position - 0x7C2
