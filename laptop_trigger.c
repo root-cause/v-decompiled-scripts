@@ -3150,7 +3150,7 @@ void func_114(char* sParam0, bool bParam1)//Position - 0x35FF
 
 void func_115(int iParam0, char[4] cParam1, char[4] cParam2, char[4] cParam3, char[4] cParam4, char[4] cParam5, char[4] cParam6, char[4] cParam7, char[4] cParam8, char[4] cParam9, char[4] cParam10, char[4] cParam11, char[4] cParam12, char[4] cParam13, char[4] cParam14, char[4] cParam15, char[4] cParam16, int iParam17)//Position - 0x36CA
 {
-	int iVar0;
+	bool bVar0;
 	int iVar1;
 	int iVar2;
 	int iVar3;
@@ -3161,7 +3161,7 @@ void func_115(int iParam0, char[4] cParam1, char[4] cParam2, char[4] cParam3, ch
 		return;
 	}
 	Global_1980307 = MISC::GET_FRAME_COUNT();
-	iVar0 = func_272();
+	bVar0 = func_272();
 	iVar1 = 0;
 	if (func_119(1))
 	{
@@ -3177,7 +3177,7 @@ void func_115(int iParam0, char[4] cParam1, char[4] cParam2, char[4] cParam3, ch
 	iVar2 = func_117(func_118());
 	iVar3 = func_116(func_118());
 	iVar4 = iParam17;
-	STATS::_PLAYSTATS_MISSION_BOUNTIES(iVar0, iVar1, iVar2, iVar3, iParam0, &cParam1, iVar4);
+	STATS::_PLAYSTATS_NAMED_USER_CONTENT(bVar0, iVar1, iVar2, iVar3, iParam0, &cParam1, iVar4);
 }
 
 int func_116(int iParam0)//Position - 0x3734

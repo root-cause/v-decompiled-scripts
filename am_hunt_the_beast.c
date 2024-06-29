@@ -107504,7 +107504,7 @@ void func_538(int iParam0, char[4] cParam1, char[4] cParam2, char[4] cParam3, ch
 	iVar2 = func_520(func_524());
 	iVar3 = func_519(func_524());
 	iVar4 = iParam17;
-	STATS::_PLAYSTATS_MISSION_BOUNTIES(bVar0, iVar1, iVar2, iVar3, iParam0, &cParam1, iVar4);
+	STATS::_PLAYSTATS_NAMED_USER_CONTENT(bVar0, iVar1, iVar2, iVar3, iParam0, &cParam1, iVar4);
 }
 
 int func_539()//Position - 0x7BC51
@@ -110690,16 +110690,16 @@ void func_674(int iParam0, int iParam1, var uParam2, bool bParam3, bool bParam4,
 		case joaat("SERVICE_EARN_AMBIENT_JOB_TOW_TRUCK_WORK"):
 		case joaat("SERVICE_EARN_SALVAGE_YARD_SELL_VEH"):
 		case 2131157548:
-		case 1237940902:
-		case -1688538833:
-		case 918785029:
-		case -1343182760:
-		case -1725871206:
-		case 1435585629:
-		case 1851118721:
-		case -1961446392:
-		case -1726080156:
-		case 300207193:
+		case joaat("SERVICE_EARN_BAIL_OFFICE_PRISONER"):
+		case joaat("SERVICE_EARN_BAIL_OFFICE_HIGH_VALUE_PRISONER"):
+		case joaat("SERVICE_EARN_BOUNTY_STANDARD_TARGET_BOSS"):
+		case joaat("SERVICE_EARN_BOUNTY_STANDARD_TARGET_GOON"):
+		case joaat("SERVICE_EARN_BOUNTY_HIGH_VALUE_TARGET_BOSS"):
+		case joaat("SERVICE_EARN_BOUNTY_HIGH_VALUE_TARGET_GOON"):
+		case joaat("SERVICE_EARN_BOUNTY24_DISPATCH_WORK"):
+		case joaat("SERVICE_EARN_BOUNTY24_PIZZA_DELIVERY"):
+		case joaat("SERVICE_EARN_BOUNTY24_UFO_ABDUCTION"):
+		case joaat("SERVICE_EARN_BOUNTY24_AWARD"):
 			func_675(uParam2, joaat("NET_SHOP_TTYPE_SERVICE"), joaat("NET_SHOP_ACTION_EARN"), joaat("CATEGORY_SERVICE_WITH_THRESHOLD"), iParam0, iParam1, iVar0, 7);
 			break;
 	}
@@ -118558,7 +118558,7 @@ int func_936(bool bParam0)//Position - 0x88670
 		}
 		else if (NETWORK::NETWORK_HAVE_USER_CONTENT_PRIVILEGES(0))
 		{
-			if (NETWORK::NETWORK_CAN_VIEW_GAMER_USER_CONTENT(&Var0) && NETWORK::_NETWORK_CAN_RECEIVER_USER_CONTENT_FROM_GAMER(&Var0))
+			if (NETWORK::NETWORK_CAN_VIEW_GAMER_USER_CONTENT(&Var0) && NETWORK::_NETWORK_CAN_TEXT_FROM_GAMER_BE_VIEWED(&Var0))
 			{
 				return 1;
 			}
@@ -118578,7 +118578,7 @@ int func_937(bool bParam0)//Position - 0x886BB
 		{
 			return 1;
 		}
-		if (!NETWORK::_NETWORK_CAN_RECEIVER_USER_CONTENT_FROM_GAMER(&Var0))
+		if (!NETWORK::_NETWORK_CAN_TEXT_FROM_GAMER_BE_VIEWED(&Var0))
 		{
 			return 1;
 		}

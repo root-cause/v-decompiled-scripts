@@ -891,9 +891,9 @@ void func_9(bool bParam0)//Position - 0xE9D
 	}
 }
 
-void func_10(int iParam0, int iParam1)//Position - 0xEC4
+void func_10(int iParam0, bool bParam1)//Position - 0xEC4
 {
-	STATS::_PLAYSTATS_FLOW_LOW(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), "BAIL_OFFICE_STAFF_MISSION", iParam1, iParam0 + 1);
+	STATS::_PLAYSTATS_FLOW_LOW(ENTITY::GET_ENTITY_COORDS(PLAYER::PLAYER_PED_ID(), true), "BAIL_OFFICE_STAFF_MISSION", bParam1, iParam0 + 1);
 }
 
 void func_11(int iParam0)//Position - 0xEE2

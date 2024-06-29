@@ -3974,7 +3974,7 @@ void func_46()//Position - 0x40F6
 					else
 					{
 						func_40();
-						STATS::_PLAYSTATS_FLOW_HIGH(Global_2672855.f_4.f_11, "PhoneApp", 0, Global_8807[Global_20933 /*15*/].f_9);
+						STATS::_PLAYSTATS_FLOW_HIGH(Global_2672855.f_4.f_11, "PhoneApp", false, Global_8807[Global_20933 /*15*/].f_9);
 						SCRIPT::REQUEST_SCRIPT(&(Global_8807[Global_20933 /*15*/].f_5));
 						MISC::SET_BIT(&Global_8800, 23);
 					}

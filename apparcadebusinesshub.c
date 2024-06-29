@@ -4322,7 +4322,7 @@ int func_178(int iParam0)//Position - 0x434D
 		}
 		else if (NETWORK::NETWORK_HAVE_USER_CONTENT_PRIVILEGES(0))
 		{
-			if (NETWORK::NETWORK_CAN_VIEW_GAMER_USER_CONTENT(&Var0) && NETWORK::_NETWORK_CAN_RECEIVER_USER_CONTENT_FROM_GAMER(&Var0))
+			if (NETWORK::NETWORK_CAN_VIEW_GAMER_USER_CONTENT(&Var0) && NETWORK::_NETWORK_CAN_TEXT_FROM_GAMER_BE_VIEWED(&Var0))
 			{
 				return 1;
 			}
@@ -4350,7 +4350,7 @@ int func_180(int iParam0)//Position - 0x43AF
 		{
 			return 1;
 		}
-		if (!NETWORK::_NETWORK_CAN_RECEIVER_USER_CONTENT_FROM_GAMER(&Var0))
+		if (!NETWORK::_NETWORK_CAN_TEXT_FROM_GAMER_BE_VIEWED(&Var0))
 		{
 			return 1;
 		}
@@ -7184,7 +7184,7 @@ void func_289(bool bParam0, bool bParam1, int iParam2, int iParam3)//Position - 
 
 void func_290(int iParam0, char[4] cParam1, char[4] cParam2, char[4] cParam3, char[4] cParam4, char[4] cParam5, char[4] cParam6, char[4] cParam7, char[4] cParam8, char[4] cParam9, char[4] cParam10, char[4] cParam11, char[4] cParam12, char[4] cParam13, char[4] cParam14, char[4] cParam15, char[4] cParam16, int iParam17)//Position - 0x75F4
 {
-	int iVar0;
+	bool bVar0;
 	int iVar1;
 	int iVar2;
 	int iVar3;
@@ -7195,7 +7195,7 @@ void func_290(int iParam0, char[4] cParam1, char[4] cParam2, char[4] cParam3, ch
 		return;
 	}
 	Global_1980307 = MISC::GET_FRAME_COUNT();
-	iVar0 = func_61();
+	bVar0 = func_61();
 	iVar1 = 0;
 	if (func_291(1))
 	{
@@ -7211,7 +7211,7 @@ void func_290(int iParam0, char[4] cParam1, char[4] cParam2, char[4] cParam3, ch
 	iVar2 = func_295(func_296());
 	iVar3 = func_294(func_296());
 	iVar4 = iParam17;
-	STATS::_PLAYSTATS_MISSION_BOUNTIES(iVar0, iVar1, iVar2, iVar3, iParam0, &cParam1, iVar4);
+	STATS::_PLAYSTATS_NAMED_USER_CONTENT(bVar0, iVar1, iVar2, iVar3, iParam0, &cParam1, iVar4);
 }
 
 bool func_291(bool bParam0)//Position - 0x765E

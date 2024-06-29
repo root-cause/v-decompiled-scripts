@@ -34230,16 +34230,16 @@ int func_310(int iParam0, int iParam1, int iParam2)//Position - 0x24371
 			case joaat("SERVICE_EARN_SALVAGE_YARD_SELL_VEH"):
 			case joaat("SERVICE_EARN_AMBIENT_JOB_TOW_TRUCK_WORK"):
 			case 2131157548:
-			case 1237940902:
-			case -1688538833:
-			case 918785029:
-			case -1343182760:
-			case -1725871206:
-			case 1435585629:
-			case 1851118721:
-			case -1961446392:
-			case -1726080156:
-			case 300207193:
+			case joaat("SERVICE_EARN_BAIL_OFFICE_PRISONER"):
+			case joaat("SERVICE_EARN_BAIL_OFFICE_HIGH_VALUE_PRISONER"):
+			case joaat("SERVICE_EARN_BOUNTY_STANDARD_TARGET_BOSS"):
+			case joaat("SERVICE_EARN_BOUNTY_STANDARD_TARGET_GOON"):
+			case joaat("SERVICE_EARN_BOUNTY_HIGH_VALUE_TARGET_BOSS"):
+			case joaat("SERVICE_EARN_BOUNTY_HIGH_VALUE_TARGET_GOON"):
+			case joaat("SERVICE_EARN_BOUNTY24_DISPATCH_WORK"):
+			case joaat("SERVICE_EARN_BOUNTY24_PIZZA_DELIVERY"):
+			case joaat("SERVICE_EARN_BOUNTY24_UFO_ABDUCTION"):
+			case joaat("SERVICE_EARN_BOUNTY24_AWARD"):
 				if (iParam2 == 0)
 				{
 					return 0;
