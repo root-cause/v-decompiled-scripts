@@ -85903,13 +85903,13 @@ int func_606()//Position - 0x656FD
 	}
 	else if (func_607(Global_4718592.f_185586))
 	{
-		if (Global_262145.f_7169 /* Tunable: 1840127983 */ > 36000)
+		if (Global_262145.f_7169 /* Tunable: ADVERSARY_LARGE_RP_CAP */ > 36000)
 		{
 			iVar0 = 36000;
 		}
 		else
 		{
-			iVar0 = Global_262145.f_7169 /* Tunable: 1840127983 */;
+			iVar0 = Global_262145.f_7169 /* Tunable: ADVERSARY_LARGE_RP_CAP */;
 		}
 	}
 	else if (Global_262145.f_7168 /* Tunable: JOB_RP_CAP */ > 36000)

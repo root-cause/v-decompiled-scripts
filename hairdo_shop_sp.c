@@ -117730,7 +117730,7 @@ bool func_672(int iParam0, int iParam1, int iParam2, int iParam3, int iParam4)//
 						break;
 					
 					case 45:
-						func_677(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_33527 /* Tunable: 127027373 */) * Global_262145.f_14981 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_X6F_H_0_0" /* GXT: Buzzcut */, func_55(iParam0, joaat("DLC_MP_X22_F_HAIR_0_0"), 2, 4), 1003639867);
+						func_677(iParam3, SYSTEM::ROUND((IntToFloat(Global_262145.f_33527 /* Tunable: HAIR_COST_BUZZCUT */) * Global_262145.f_14981 /* Tunable: MALE_AND_FEMALE_HAIR_ALL_HAIR */)), "CLO_X6F_H_0_0" /* GXT: Buzzcut */, func_55(iParam0, joaat("DLC_MP_X22_F_HAIR_0_0"), 2, 4), 1003639867);
 						break;
 					
 					case 46:
@@ -127814,15 +127814,15 @@ int func_766(int iParam0, int iParam1, int iParam2)//Position - 0x96E04
 			break;
 		
 		case 8:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30852 /* Tunable: -1422526474 */) * Global_262145.f_30966 /* Tunable: -433751738 */));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30852 /* Tunable: TUNER_PRIVATE_INSTANCE_FIRST_TIME_BONUS_XP */) * Global_262145.f_30966 /* Tunable: TUNER_PRIVATE_INSTANCE_FIRST_TIME_BONUS_XP_MULTIPLIER */));
 			break;
 		
 		case 9:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30899 /* Tunable: -1620115849 */) * Global_262145.f_30901 /* Tunable: 2027625704 */));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30899 /* Tunable: SALV_DRIFT_FIRST_TIME_BONUS_XP */) * Global_262145.f_30901 /* Tunable: SALV_DRIFT_FIRST_TIME_BONUS_XP_MULTIPLIER */));
 			break;
 		
 		case 10:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30913 /* Tunable: 1232141091 */) * Global_262145.f_30916 /* Tunable: -466455557 */));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30913 /* Tunable: SALV_DRAG_FIRST_TIME_BONUS_XP */) * Global_262145.f_30916 /* Tunable: SALV_DRAG_FIRST_TIME_BONUS_XP_MULTIPLIER */));
 			break;
 		
 		case 11:
@@ -127870,15 +127870,15 @@ int func_766(int iParam0, int iParam1, int iParam2)//Position - 0x96E04
 			break;
 		
 		case 22:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30853 /* Tunable: 297722204 */) * Global_262145.f_30978 /* Tunable: -1139381694 */));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30853 /* Tunable: TUNER_PRIVATE_INSTANCE_FIRST_TIME_DAILY_XP */) * Global_262145.f_30978 /* Tunable: TUNER_PRIVATE_INSTANCE_FIRST_TIME_DAILY_XP_MULTIPLIER */));
 			break;
 		
 		case 23:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30900 /* Tunable: 1421668987 */) * Global_262145.f_30902 /* Tunable: 595405349 */));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30900 /* Tunable: SALV_DRIFT_FIRST_TIME_DAILY_XP */) * Global_262145.f_30902 /* Tunable: SALV_DRIFT_FIRST_TIME_DAILY_XP_MULTIPLIER */));
 			break;
 		
 		case 24:
-			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30914 /* Tunable: -846516073 */) * Global_262145.f_30915 /* Tunable: -895219964 */));
+			iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30914 /* Tunable: SALV_DRAG_FIRST_TIME_DAILY_XP */) * Global_262145.f_30915 /* Tunable: SALV_DRAG_FIRST_TIME_DAILY_XP_MULTIPLIER */));
 			break;
 		
 		case 25:
@@ -128264,48 +128264,48 @@ int func_766(int iParam0, int iParam1, int iParam2)//Position - 0x96E04
 				case 1:
 					if (iParam2 == 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30904 /* Tunable: -2067954966 */) * Global_262145.f_30917 /* Tunable: 699318703 */));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30904 /* Tunable: SALV_DRAG_1ST_PLACE_XP */) * Global_262145.f_30917 /* Tunable: SALV_DRAG_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 == 3)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30908 /* Tunable: -1448468860 */) * Global_262145.f_30917 /* Tunable: 699318703 */));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30908 /* Tunable: SALV_DRAG_3P_1ST_PLACE_XP */) * Global_262145.f_30917 /* Tunable: SALV_DRAG_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 == 2)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30911 /* Tunable: -130762752 */) * Global_262145.f_30917 /* Tunable: 699318703 */));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30911 /* Tunable: SALV_DRAG_2P_1ST_PLACE_XP */) * Global_262145.f_30917 /* Tunable: SALV_DRAG_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 2:
 					if (iParam2 == 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30905 /* Tunable: -210092431 */) * Global_262145.f_30917 /* Tunable: 699318703 */));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30905 /* Tunable: SALV_DRAG_2ND_PLACE_XP */) * Global_262145.f_30917 /* Tunable: SALV_DRAG_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 == 3)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30909 /* Tunable: -563055463 */) * Global_262145.f_30917 /* Tunable: 699318703 */));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30909 /* Tunable: SALV_DRAG_3P_2ND_PLACE_XP */) * Global_262145.f_30917 /* Tunable: SALV_DRAG_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 == 2)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30912 /* Tunable: 1121245557 */) * Global_262145.f_30917 /* Tunable: 699318703 */));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30912 /* Tunable: SALV_DRAG_2P_2ND_PLACE_XP */) * Global_262145.f_30917 /* Tunable: SALV_DRAG_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 3:
 					if (iParam2 == 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30906 /* Tunable: 141138586 */) * Global_262145.f_30917 /* Tunable: 699318703 */));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30906 /* Tunable: SALV_DRAG_3RD_PLACE_XP */) * Global_262145.f_30917 /* Tunable: SALV_DRAG_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 == 3)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30910 /* Tunable: -1628611336 */) * Global_262145.f_30917 /* Tunable: 699318703 */));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30910 /* Tunable: SALV_DRAG_3P_3RD_PLACE_XP */) * Global_262145.f_30917 /* Tunable: SALV_DRAG_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 4:
 					if (iParam2 == 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30907 /* Tunable: -1861534226 */) * Global_262145.f_30917 /* Tunable: 699318703 */));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30907 /* Tunable: SALV_DRAG_4TH_PLACE_XP */) * Global_262145.f_30917 /* Tunable: SALV_DRAG_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 			}
@@ -128317,80 +128317,80 @@ int func_766(int iParam0, int iParam1, int iParam2)//Position - 0x96E04
 				case 1:
 					if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30885 /* Tunable: 1110149918 */) * Global_262145.f_30903 /* Tunable: -1300610175 */));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30885 /* Tunable: SALV_DRIFT_1ST_PLACE_XP */) * Global_262145.f_30903 /* Tunable: SALV_DRIFT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 3 && iParam2 <= 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30893 /* Tunable: 1719448838 */) * Global_262145.f_30903 /* Tunable: -1300610175 */));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30893 /* Tunable: SALV_DRIFT_3P_1ST_PLACE_XP */) * Global_262145.f_30903 /* Tunable: SALV_DRIFT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 1 && iParam2 <= 2)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30897 /* Tunable: 2120495288 */) * Global_262145.f_30903 /* Tunable: -1300610175 */));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30897 /* Tunable: SALV_DRIFT_2P_1ST_PLACE_XP */) * Global_262145.f_30903 /* Tunable: SALV_DRIFT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 2:
 					if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30886 /* Tunable: 411519662 */) * Global_262145.f_30903 /* Tunable: -1300610175 */));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30886 /* Tunable: SALV_DRIFT_2ND_PLACE_XP */) * Global_262145.f_30903 /* Tunable: SALV_DRIFT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 3 && iParam2 <= 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30894 /* Tunable: -1545093841 */) * Global_262145.f_30903 /* Tunable: -1300610175 */));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30894 /* Tunable: SALV_DRIFT_3P_2ND_PLACE_XP */) * Global_262145.f_30903 /* Tunable: SALV_DRIFT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 1 && iParam2 <= 2)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30898 /* Tunable: -677631261 */) * Global_262145.f_30903 /* Tunable: -1300610175 */));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30898 /* Tunable: SALV_DRIFT_2P_2ND_PLACE_XP */) * Global_262145.f_30903 /* Tunable: SALV_DRIFT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 3:
 					if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30887 /* Tunable: -137848070 */) * Global_262145.f_30903 /* Tunable: -1300610175 */));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30887 /* Tunable: SALV_DRIFT_3RD_PLACE_XP */) * Global_262145.f_30903 /* Tunable: SALV_DRIFT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 3 && iParam2 <= 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30895 /* Tunable: -1191008849 */) * Global_262145.f_30903 /* Tunable: -1300610175 */));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30895 /* Tunable: SALV_DRIFT_3P_3RD_PLACE_XP */) * Global_262145.f_30903 /* Tunable: SALV_DRIFT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 4:
 					if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30888 /* Tunable: -1361090584 */) * Global_262145.f_30903 /* Tunable: -1300610175 */));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30888 /* Tunable: SALV_DRIFT_4TH_PLACE_XP */) * Global_262145.f_30903 /* Tunable: SALV_DRIFT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					else if (iParam2 >= 3 && iParam2 <= 4)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30896 /* Tunable: 848211004 */) * Global_262145.f_30903 /* Tunable: -1300610175 */));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30896 /* Tunable: SALV_DRIFT_3P_4TH_PLACE_XP */) * Global_262145.f_30903 /* Tunable: SALV_DRIFT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 5:
 					if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30889 /* Tunable: 938899970 */) * Global_262145.f_30903 /* Tunable: -1300610175 */));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30889 /* Tunable: SALV_DRIFT_5TH_PLACE_XP */) * Global_262145.f_30903 /* Tunable: SALV_DRIFT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 6:
 					if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30890 /* Tunable: 1999081913 */) * Global_262145.f_30903 /* Tunable: -1300610175 */));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30890 /* Tunable: SALV_DRIFT_6TH_PLACE_XP */) * Global_262145.f_30903 /* Tunable: SALV_DRIFT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 7:
 					if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30891 /* Tunable: -491102356 */) * Global_262145.f_30903 /* Tunable: -1300610175 */));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30891 /* Tunable: SALV_DRIFT_7TH_PLACE_XP */) * Global_262145.f_30903 /* Tunable: SALV_DRIFT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 				
 				case 8:
 					if (iParam2 >= 5 && iParam2 <= 8)
 					{
-						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30892 /* Tunable: -1864997147 */) * Global_262145.f_30903 /* Tunable: -1300610175 */));
+						iVar0 = SYSTEM::ROUND((IntToFloat(Global_262145.f_30892 /* Tunable: SALV_DRIFT_8TH_PLACE_XP */) * Global_262145.f_30903 /* Tunable: SALV_DRIFT_RACE_PLACE_XP_MULTIPLIER */));
 					}
 					break;
 			}

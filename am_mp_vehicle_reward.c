@@ -67607,22 +67607,22 @@ int func_585(int iParam0, int iParam1, int iParam2, char* sParam3, bool bParam4,
 					case 1:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_34601 /* Tunable: 1203085518 */) * Global_262145.f_26215 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_545(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_34601 /* Tunable: AVENGER_MODS_STEALTH_MODULE */) * Global_262145.f_26215 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_545(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_34601 /* Tunable: 1203085518 */) * func_545(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_34601 /* Tunable: AVENGER_MODS_STEALTH_MODULE */) * func_545(iParam1, 0)));
 						}
 						break;
 					
 					case 2:
 						if (bParam4)
 						{
-							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_34602 /* Tunable: 1338736410 */) * Global_262145.f_26215 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_545(iParam1, 0)));
+							return SYSTEM::FLOOR(((SYSTEM::TO_FLOAT(Global_262145.f_34602 /* Tunable: AVENGER_MODS_MISSILE_LOCKON_JAMMER */) * Global_262145.f_26215 /* Tunable: AW_VEHICLE_MODS_BUY_IT_NOW_PRICE_MULTIPLIER */) * func_545(iParam1, 0)));
 						}
 						else
 						{
-							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_34602 /* Tunable: 1338736410 */) * func_545(iParam1, 0)));
+							return SYSTEM::FLOOR((SYSTEM::TO_FLOAT(Global_262145.f_34602 /* Tunable: AVENGER_MODS_MISSILE_LOCKON_JAMMER */) * func_545(iParam1, 0)));
 						}
 						break;
 				}

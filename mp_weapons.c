@@ -15505,7 +15505,7 @@ void func_153()//Position - 0xF196
 	{
 		iLocal_65[70] = -1;
 	}
-	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_STUNROD")) && (Global_262145.f_35585 /* Tunable: 917342071 */ || func_154(joaat("WEAPON_STUNROD"))))
+	if (WEAPON::IS_WEAPON_VALID(joaat("WEAPON_STUNROD")) && (Global_262145.f_35585 /* Tunable: ENABLE_SM24_STUNROD */ || func_154(joaat("WEAPON_STUNROD"))))
 	{
 		iLocal_65[71] = ((iLocal_64 / 9) + iLocal_63);
 		iLocal_64++;

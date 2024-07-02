@@ -59816,7 +59816,7 @@ bool func_507(int iParam0, var uParam1, var uParam2, var uParam3, int iParam4)//
 				break;
 			
 			case joaat("WEAPON_BATTLERIFLE"):
-				*uParam1 = Global_262145.f_35074 /* Tunable: 446104705 */;
+				*uParam1 = Global_262145.f_35074 /* Tunable: XM23_WEAPON_BATTLE_RIFLE */;
 				*uParam2 = Global_262145.f_35084 /* Tunable: XM23_BATTLE_RIFLE_AMMO */;
 				iVar40 = 3;
 				break;
@@ -59827,7 +59827,7 @@ bool func_507(int iParam0, var uParam1, var uParam2, var uParam3, int iParam4)//
 				break;
 			
 			case joaat("WEAPON_STUNROD"):
-				*uParam1 = Global_262145.f_35586 /* Tunable: -1425139107 */;
+				*uParam1 = Global_262145.f_35586 /* Tunable: SM24_STUNROD_COST */;
 				iVar40 = 7;
 				break;
 			
