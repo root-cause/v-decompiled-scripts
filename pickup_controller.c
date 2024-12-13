@@ -146,7 +146,7 @@ int func_5(int iParam0)//Position - 0x195
 	{
 		return 0;
 	}
-	return Global_113969.f_9088.f_330[iParam0 /*6*/];
+	return Global_114135.f_9089.f_330[iParam0 /*6*/];
 }
 
 void func_6()//Position - 0x1C1
@@ -191,11 +191,11 @@ int func_9()//Position - 0x271
 {
 	int iVar0;
 	
-	if (Global_152848 == 2)
+	if (Global_153015 == 2)
 	{
 		return 1;
 	}
-	else if (Global_152848 == 3)
+	else if (Global_153015 == 3)
 	{
 		return 0;
 	}
@@ -209,9 +209,9 @@ int func_9()//Position - 0x271
 				MISC::SET_BIT(&iVar0, 2);
 				MISC::SET_BIT(&iVar0, 4);
 				MISC::SET_BIT(&iVar0, 6);
-				MISC::SET_BIT(&Global_26, 2);
-				MISC::SET_BIT(&Global_26, 4);
-				MISC::SET_BIT(&Global_26, 6);
+				MISC::SET_BIT(&Global_28, 2);
+				MISC::SET_BIT(&Global_28, 4);
+				MISC::SET_BIT(&Global_28, 6);
 				STATS::STAT_SET_INT(joaat("SP_UNLOCK_EXCLUS_CONTENT"), iVar0, true);
 				if (MISC::ARE_PROFILE_SETTINGS_VALID())
 				{
@@ -327,66 +327,66 @@ int func_13(int iParam0)//Position - 0x589
 	{
 		return 0;
 	}
-	return Global_113969.f_9088.f_99.f_58[iParam0];
+	return Global_114135.f_9089.f_99.f_58[iParam0];
 }
 
 void func_14()//Position - 0x5B6
 {
-	switch (Global_33193)
+	switch (Global_33332)
 	{
 		case 0:
 			break;
 		
 		case 1:
-			switch (Global_33194)
+			switch (Global_33333)
 			{
 				case 0:
-					if (OBJECT::DOES_PICKUP_EXIST(iLocal_18[Global_33195]) && OBJECT::DOES_PICKUP_OBJECT_EXIST(iLocal_18[Global_33195]))
+					if (OBJECT::DOES_PICKUP_EXIST(iLocal_18[Global_33334]) && OBJECT::DOES_PICKUP_OBJECT_EXIST(iLocal_18[Global_33334]))
 					{
-						Global_33196 = 0;
+						Global_33335 = 0;
 					}
 					else
 					{
-						Global_33196 = 1;
+						Global_33335 = 1;
 					}
 					break;
 				
 				case 1:
-					if (OBJECT::DOES_PICKUP_EXIST(iLocal_84[Global_33195]) && OBJECT::DOES_PICKUP_OBJECT_EXIST(iLocal_84[Global_33195]))
+					if (OBJECT::DOES_PICKUP_EXIST(iLocal_84[Global_33334]) && OBJECT::DOES_PICKUP_OBJECT_EXIST(iLocal_84[Global_33334]))
 					{
-						Global_33196 = 0;
+						Global_33335 = 0;
 					}
 					else
 					{
-						Global_33196 = 1;
+						Global_33335 = 1;
 					}
 					break;
 				
 				case 2:
-					if (OBJECT::DOES_PICKUP_EXIST(iLocal_161[Global_33195]) && OBJECT::DOES_PICKUP_OBJECT_EXIST(iLocal_161[Global_33195]))
+					if (OBJECT::DOES_PICKUP_EXIST(iLocal_161[Global_33334]) && OBJECT::DOES_PICKUP_OBJECT_EXIST(iLocal_161[Global_33334]))
 					{
-						Global_33196 = 0;
+						Global_33335 = 0;
 					}
 					else
 					{
-						Global_33196 = 1;
+						Global_33335 = 1;
 					}
 					break;
 				
 				case 3:
-					Global_33193 = 3;
+					Global_33332 = 3;
 					break;
 			}
-			Global_33193 = 2;
+			Global_33332 = 2;
 			break;
 		
 		case 2:
 			break;
 		
 		case 3:
-			Global_33195 = 0;
-			Global_33196 = 0;
-			Global_33193 = 0;
+			Global_33334 = 0;
+			Global_33335 = 0;
+			Global_33332 = 0;
 			break;
 	}
 }
@@ -522,7 +522,7 @@ void func_22()//Position - 0x81B
 
 bool func_23(int iParam0)//Position - 0x84D
 {
-	return Global_44042 == iParam0;
+	return Global_44181 == iParam0;
 }
 
 void func_24()//Position - 0x85B

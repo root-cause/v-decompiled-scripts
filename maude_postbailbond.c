@@ -466,24 +466,24 @@ void func_16(bool bParam0)//Position - 0x6C0
 
 void func_17()//Position - 0x6F8
 {
-	Global_21152 = 0;
+	Global_21291 = 0;
 	func_18();
 }
 
 void func_18()//Position - 0x708
 {
 	AUDIO::RESTART_SCRIPTED_CONVERSATION();
-	Global_23297 = 0;
+	Global_23436 = 0;
 	if (AUDIO::IS_SCRIPTED_CONVERSATION_ONGOING())
 	{
 		AUDIO::STOP_SCRIPTED_CONVERSATION(false);
-		Global_22286 = 6;
+		Global_22425 = 6;
 	}
 }
 
 void func_19()//Position - 0x729
 {
-	Global_21152 = 0;
+	Global_21291 = 0;
 	func_20();
 }
 
@@ -492,28 +492,28 @@ void func_20()//Position - 0x739
 	if (AUDIO::IS_SCRIPTED_CONVERSATION_ONGOING())
 	{
 		AUDIO::RESTART_SCRIPTED_CONVERSATION();
-		Global_23297 = 0;
+		Global_23436 = 0;
 		AUDIO::STOP_SCRIPTED_CONVERSATION(true);
-		Global_22286 = 6;
+		Global_22425 = 6;
 		return;
 	}
 }
 
 char* func_21()//Position - 0x75D
 {
-	if (BitTest(Global_113969.f_24989, 3))
+	if (BitTest(Global_114135.f_24990, 3))
 	{
 		return "BB4_loiter";
 	}
-	else if (BitTest(Global_113969.f_24989, 2))
+	else if (BitTest(Global_114135.f_24990, 2))
 	{
 		return "BB3_loiter";
 	}
-	else if (BitTest(Global_113969.f_24989, 1))
+	else if (BitTest(Global_114135.f_24990, 1))
 	{
 		return "BB2_loiter";
 	}
-	else if (BitTest(Global_113969.f_24989, 0))
+	else if (BitTest(Global_114135.f_24990, 0))
 	{
 		return "BB1_loiter";
 	}
@@ -525,16 +525,16 @@ struct<6> func_22()//Position - 0x7BE
 	struct<6> Var0;
 	
 	StringCopy(&Var0, "NULL", 24);
-	if (Global_22286 == 4)
+	if (Global_22425 == 4)
 	{
-		return Global_21905;
+		return Global_22044;
 	}
 	return Var0;
 }
 
 int func_23()//Position - 0x7E2
 {
-	if (Global_22286 != 0 || AUDIO::IS_SCRIPTED_CONVERSATION_ONGOING())
+	if (Global_22425 != 0 || AUDIO::IS_SCRIPTED_CONVERSATION_ONGOING())
 	{
 		return 1;
 	}
@@ -1133,54 +1133,54 @@ void func_44(var uParam0, char* sParam1, char* sParam2, int iParam3, int iParam4
 			iParam3 = 7;
 		}
 	}
-	MISC::SET_BIT(&Global_21152, 0);
-	Global_22289 = iParam3;
-	StringCopy(&Global_22276, sParam2, 24);
+	MISC::SET_BIT(&Global_21291, 0);
+	Global_22428 = iParam3;
+	StringCopy(&Global_22415, sParam2, 24);
 }
 
 void func_45(var uParam0, int iParam1, char* sParam2, int iParam3, int iParam4, int iParam5)//Position - 0x12B2
 {
-	Global_21740 = { *uParam0 };
-	Global_8116 = iParam1;
-	StringCopy(&Global_22356, sParam2, 24);
-	Global_23275 = iParam5;
+	Global_21879 = { *uParam0 };
+	Global_8235 = iParam1;
+	StringCopy(&Global_22495, sParam2, 24);
+	Global_23414 = iParam5;
 	if (iParam3 == 0)
 	{
-		Global_23273 = 1;
-		Global_23271 = 0;
+		Global_23412 = 1;
+		Global_23410 = 0;
 	}
 	else
 	{
-		Global_23273 = 0;
-		Global_23271 = 1;
+		Global_23412 = 0;
+		Global_23410 = 1;
 	}
 	if (iParam4 == 0)
 	{
-		Global_23274 = 1;
-		Global_23272 = 0;
+		Global_23413 = 1;
+		Global_23411 = 0;
 	}
 	else
 	{
-		Global_23274 = 0;
-		Global_23272 = 1;
+		Global_23413 = 0;
+		Global_23411 = 1;
 	}
 }
 
 char* func_46()//Position - 0x1308
 {
-	if (BitTest(Global_113969.f_24989, 3))
+	if (BitTest(Global_114135.f_24990, 3))
 	{
 		return "BB4AUD";
 	}
-	else if (BitTest(Global_113969.f_24989, 2))
+	else if (BitTest(Global_114135.f_24990, 2))
 	{
 		return "BB3AUD";
 	}
-	else if (BitTest(Global_113969.f_24989, 1))
+	else if (BitTest(Global_114135.f_24990, 1))
 	{
 		return "BB2AUD";
 	}
-	else if (BitTest(Global_113969.f_24989, 0))
+	else if (BitTest(Global_114135.f_24990, 0))
 	{
 		return "BB1AUD";
 	}
@@ -1197,7 +1197,7 @@ void func_47(var uParam0, int iParam1, int iParam2, char* sParam3, int iParam4, 
 	(uParam0[iParam1 /*10*/])->f_7 = 1;
 	(uParam0[iParam1 /*10*/])->f_8 = iParam4;
 	(uParam0[iParam1 /*10*/])->f_9 = iParam5;
-	if (!Global_79389)
+	if (!Global_79539)
 	{
 		if (!PED::IS_PED_INJURED(iParam2))
 		{
@@ -1251,19 +1251,19 @@ void func_48(bool bParam0, var uParam1)//Position - 0x1404
 
 int func_49()//Position - 0x14F2
 {
-	if (BitTest(Global_113969.f_24989, 3))
+	if (BitTest(Global_114135.f_24990, 3))
 	{
 		return 4;
 	}
-	else if (BitTest(Global_113969.f_24989, 2))
+	else if (BitTest(Global_114135.f_24990, 2))
 	{
 		return 4;
 	}
-	else if (BitTest(Global_113969.f_24989, 1))
+	else if (BitTest(Global_114135.f_24990, 1))
 	{
 		return 4;
 	}
-	else if (BitTest(Global_113969.f_24989, 0))
+	else if (BitTest(Global_114135.f_24990, 0))
 	{
 		return 3;
 	}
@@ -1380,7 +1380,7 @@ int func_53(int iParam0)//Position - 0x1778
 
 var func_54(int iParam0)//Position - 0x179E
 {
-	return Global_2169[iParam0 /*29*/];
+	return Global_2201[iParam0 /*29*/];
 }
 
 bool func_55(int iParam0)//Position - 0x17AD

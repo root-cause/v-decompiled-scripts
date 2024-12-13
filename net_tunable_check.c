@@ -42,11 +42,11 @@ void __EntryFunction__()//Position - 0x0
 	sLocal_18 = "NULL";
 	while (true)
 	{
-		if (func_7() || Global_1955906 == 1)
+		if (func_7() || Global_1956681 == 1)
 		{
 			func_6();
 		}
-		if (func_1(&uLocal_19, &Global_298114))
+		if (func_1(&uLocal_19, &Global_298557))
 		{
 			func_6();
 		}
@@ -21311,11 +21311,11 @@ void func_2(int iParam0, var uParam1)//Position - 0x1CD
 
 int func_3()//Position - 0x1D086
 {
-	if (Global_2692501)
+	if (Global_2692732)
 	{
 		return 32;
 	}
-	return (32 - Global_2692502);
+	return (32 - Global_2692733);
 }
 
 int func_4(int iParam0)//Position - 0x1D0A1
@@ -21463,7 +21463,7 @@ void func_6()//Position - 0x1D32F
 
 int func_7()//Position - 0x1D33B
 {
-	if (Global_1575055 == 0)
+	if (Global_1575056 == 0)
 	{
 		if (!NETWORK::NETWORK_IS_GAME_IN_PROGRESS())
 		{
@@ -21474,7 +21474,7 @@ int func_7()//Position - 0x1D33B
 	{
 		return 1;
 	}
-	if (Global_2698757)
+	if (Global_2699004)
 	{
 		return 1;
 	}
@@ -21524,7 +21524,7 @@ int func_8()//Position - 0x1D3BF
 
 int func_9()//Position - 0x1D3F2
 {
-	switch (Global_2698864)
+	switch (Global_2699111)
 	{
 		case 0:
 			return joaat("freemode");
@@ -21536,12 +21536,12 @@ int func_9()//Position - 0x1D3F2
 
 int func_10()//Position - 0x1D416
 {
-	return Global_32948;
+	return Global_33087;
 }
 
 bool func_11()//Position - 0x1D421
 {
-	return Global_2684504.f_700;
+	return Global_2684718.f_700;
 }
 
 int func_12(int iParam0)//Position - 0x1D430
@@ -21555,11 +21555,11 @@ int func_12(int iParam0)//Position - 0x1D430
 
 bool func_13()//Position - 0x1D447
 {
-	return Global_2696172;
+	return Global_2696416;
 }
 
 bool func_14()//Position - 0x1D453
 {
-	return Global_2684504.f_695;
+	return Global_2684718.f_695;
 }
 
