@@ -11264,7 +11264,7 @@ void func_253(int iParam0, bool bParam1, var uParam2, struct<3> Param3, int iPar
 	}
 	if (BitTest(Global_4980736.f_99616[bParam1 /*615*/].f_114, 11))
 	{
-		VEHICLE::SET_DISABLE_HELI_EXPLODE_FROM_BODY_DAMAGE(iParam0, 1);
+		VEHICLE::SET_DISABLE_HELI_EXPLODE_FROM_BODY_DAMAGE(iParam0, true);
 	}
 	if (VEHICLE::IS_THIS_MODEL_A_HELI(ENTITY::GET_ENTITY_MODEL(iParam0)) && VEHICLE::DOES_VEHICLE_HAVE_WEAPONS(iParam0))
 	{

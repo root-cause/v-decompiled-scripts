@@ -25135,7 +25135,7 @@ void func_429(bool bParam0, int iParam1)//Position - 0x1E013
 	}
 	if (func_438())
 	{
-		VEHICLE::SET_DISABLE_EXPLODE_FROM_BODY_DAMAGE_ON_COLLISION(iParam1, 1E-45f);
+		VEHICLE::SET_DISABLE_EXPLODE_FROM_BODY_DAMAGE_ON_COLLISION(iParam1, true);
 	}
 	func_437(iParam1);
 	func_436(iParam1, 1);
