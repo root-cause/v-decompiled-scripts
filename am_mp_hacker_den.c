@@ -41991,7 +41991,7 @@ int func_652(int iParam0)//Position - 0x31F8D
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_36129 /* Tunable: 555765146 */;
+			return Global_262145.f_36129 /* Tunable: HACKER24_FIELD_HANGAR_PROPERTY_BASE_MCKENZIE */;
 		
 		default:
 	}
@@ -42069,7 +42069,7 @@ int func_657(int iParam0)//Position - 0x320AD
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_36130 /* Tunable: -352657640 */;
+			return Global_262145.f_36130 /* Tunable: HACKER24_FIELD_HANGAR_PROPERTY_SALE_MCKENZIE */;
 		
 		default:
 	}
@@ -49359,7 +49359,7 @@ int func_986(int iParam0)//Position - 0x3A64B
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_36127 /* Tunable: 544270477 */;
+			return Global_262145.f_36127 /* Tunable: HACKER24_HACKER_DEN_PROPERTY_BASE_GARMENT_FACTORY */;
 		
 		default:
 	}
@@ -49432,7 +49432,7 @@ int func_990(int iParam0)//Position - 0x3A734
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_36128 /* Tunable: -1581749451 */;
+			return Global_262145.f_36128 /* Tunable: HACKER24_HACKER_DEN_PROPERTY_SALE_GARMENT_FACTORY */;
 		
 		default:
 	}
@@ -355437,7 +355437,7 @@ bool func_6441()//Position - 0x1E1A40
 
 int func_6442()//Position - 0x1E1A51
 {
-	return Global_262145.f_36057 /* Tunable: -792265290 */;
+	return Global_262145.f_36057 /* Tunable: HACKER_DEN_MAX_SAFE_STORAGE */;
 }
 
 int func_6443()//Position - 0x1E1A63
@@ -382949,7 +382949,7 @@ Vector3 func_7100()//Position - 0x214C41
 
 int func_7101(int iParam0)//Position - 0x214C58
 {
-	if ((((((((Global_1938035 || Global_262145.f_36050 /* Tunable: 1301489571 */) || Local_250.f_425 != PLAYER::PLAYER_ID()) || func_428()) || func_418()) || (Local_250.f_772 > 1 && CAM::IS_SCREEN_FADED_OUT())) || (iParam0 && TASK::IS_PED_RUNNING(PLAYER::PLAYER_PED_ID()))) || Global_2711010) || !func_7102(1))
+	if ((((((((Global_1938035 || Global_262145.f_36050 /* Tunable: HACKER_DEN_DISABLE_VEHICLE_MANAGEMENT_MENU */) || Local_250.f_425 != PLAYER::PLAYER_ID()) || func_428()) || func_418()) || (Local_250.f_772 > 1 && CAM::IS_SCREEN_FADED_OUT())) || (iParam0 && TASK::IS_PED_RUNNING(PLAYER::PLAYER_PED_ID()))) || Global_2711010) || !func_7102(1))
 	{
 		return 1;
 	}

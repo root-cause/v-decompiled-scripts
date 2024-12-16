@@ -1020,7 +1020,7 @@ void func_15(var uParam0)//Position - 0xED6
 					{
 						iVar3 += 2;
 					}
-					if (!Global_262145.f_36024 /* Tunable: 2045896120 */)
+					if (!Global_262145.f_36024 /* Tunable: ENABLE_DLC2_ARMS_TRAFFICKING_MISSIONS */)
 					{
 						iVar3 += 11;
 					}
@@ -1289,7 +1289,7 @@ void func_15(var uParam0)//Position - 0xED6
 				case 19:
 					iLocal_109 = 1;
 					iLocal_110 = 8;
-					if (!Global_262145.f_36024 /* Tunable: 2045896120 */)
+					if (!Global_262145.f_36024 /* Tunable: ENABLE_DLC2_ARMS_TRAFFICKING_MISSIONS */)
 					{
 						iLocal_109 = 0;
 						iLocal_110 = 9;
@@ -1649,7 +1649,7 @@ void func_15(var uParam0)//Position - 0xED6
 								func_118(143, 8, iVar4, &Global_1672152);
 								func_118(144, 8, iVar4, &Global_1672152);
 								func_118(145, 8, iVar4, &Global_1672152);
-								if (Global_262145.f_36024 /* Tunable: 2045896120 */)
+								if (Global_262145.f_36024 /* Tunable: ENABLE_DLC2_ARMS_TRAFFICKING_MISSIONS */)
 								{
 									func_104(188, 8, iVar4, &Global_1672152);
 									func_104(189, 8, iVar4, &Global_1672152);
@@ -1954,7 +1954,7 @@ void func_15(var uParam0)//Position - 0xED6
 							break;
 						
 						case 19:
-							if (Global_262145.f_36024 /* Tunable: 2045896120 */)
+							if (Global_262145.f_36024 /* Tunable: ENABLE_DLC2_ARMS_TRAFFICKING_MISSIONS */)
 							{
 								func_118(146, 8, iVar4, &Global_1672152);
 								func_104(191, 8, iVar4, &Global_1672152);
@@ -2908,7 +2908,7 @@ void func_15(var uParam0)//Position - 0xED6
 				
 				case 31:
 					func_118(145, 8, iVar4, &Global_1672152);
-					if (Global_262145.f_36024 /* Tunable: 2045896120 */)
+					if (Global_262145.f_36024 /* Tunable: ENABLE_DLC2_ARMS_TRAFFICKING_MISSIONS */)
 					{
 						func_104(188, 8, iVar4, &Global_1672152);
 						func_104(189, 8, iVar4, &Global_1672152);

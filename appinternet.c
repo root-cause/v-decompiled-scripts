@@ -49251,7 +49251,7 @@ int func_329(int iParam0)//Position - 0x32205
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_36129 /* Tunable: 555765146 */;
+			return Global_262145.f_36129 /* Tunable: HACKER24_FIELD_HANGAR_PROPERTY_BASE_MCKENZIE */;
 		
 		default:
 	}
@@ -49329,7 +49329,7 @@ int func_334(int iParam0)//Position - 0x32325
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_36130 /* Tunable: -352657640 */;
+			return Global_262145.f_36130 /* Tunable: HACKER24_FIELD_HANGAR_PROPERTY_SALE_MCKENZIE */;
 		
 		default:
 	}
@@ -57183,7 +57183,7 @@ int func_698(int iParam0)//Position - 0x3B1A4
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_36127 /* Tunable: 544270477 */;
+			return Global_262145.f_36127 /* Tunable: HACKER24_HACKER_DEN_PROPERTY_BASE_GARMENT_FACTORY */;
 		
 		default:
 	}
@@ -57256,7 +57256,7 @@ int func_702(int iParam0)//Position - 0x3B28D
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_36128 /* Tunable: -1581749451 */;
+			return Global_262145.f_36128 /* Tunable: HACKER24_HACKER_DEN_PROPERTY_SALE_GARMENT_FACTORY */;
 		
 		default:
 	}
@@ -452773,7 +452773,7 @@ int func_7736(int iParam0)//Position - 0x24F2C0
 			break;
 		
 		case 81:
-			return Global_262145.f_36139 /* Tunable: 859554615 */;
+			return Global_262145.f_36139 /* Tunable: REQUEST_FIELD_DUSTER */;
 			break;
 		
 		case 53:
@@ -513433,7 +513433,7 @@ void func_8191(int iParam0, int iParam1)//Position - 0x2912DA
 						{
 							iVar42 = -1;
 						}
-						if (iVar10 == 601 && !Global_262145.f_36024 /* Tunable: 2045896120 */)
+						if (iVar10 == 601 && !Global_262145.f_36024 /* Tunable: ENABLE_DLC2_ARMS_TRAFFICKING_MISSIONS */)
 						{
 							iVar45 = iVar46;
 							bVar48 = false;
@@ -555730,7 +555730,7 @@ void func_8576(bool bParam0, bool bParam1)//Position - 0x2BF29B
 											case 5:
 											case 6:
 											case 7:
-												if (!func_7943(iVar32) && Global_262145.f_36024 /* Tunable: 2045896120 */)
+												if (!func_7943(iVar32) && Global_262145.f_36024 /* Tunable: ENABLE_DLC2_ARMS_TRAFFICKING_MISSIONS */)
 												{
 													switch (iLocal_704)
 													{

@@ -3815,7 +3815,7 @@ void func_64()//Position - 0x57D2
 		{
 			func_37(1, "RPA_MENU_O2" /* GXT: Duster */, 0, 0, 0, 0, 0);
 		}
-		if (!Global_262145.f_36250 /* Tunable: 2050386464 */)
+		if (!Global_262145.f_36250 /* Tunable: FIELD_DUSTER_DISABLE */)
 		{
 			if (func_150(51351, -1))
 			{
@@ -18505,7 +18505,7 @@ int func_173(int iParam0)//Position - 0x15022
 			break;
 		
 		case 81:
-			return Global_262145.f_36139 /* Tunable: 859554615 */;
+			return Global_262145.f_36139 /* Tunable: REQUEST_FIELD_DUSTER */;
 			break;
 		
 		case 53:

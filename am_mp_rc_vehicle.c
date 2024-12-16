@@ -121150,7 +121150,7 @@ int func_1281(int iParam0)//Position - 0x9C049
 			break;
 		
 		case 81:
-			return Global_262145.f_36139 /* Tunable: 859554615 */;
+			return Global_262145.f_36139 /* Tunable: REQUEST_FIELD_DUSTER */;
 			break;
 		
 		case 53:

@@ -159654,7 +159654,7 @@ int func_1888(int iParam0)//Position - 0xB8A31
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_36129 /* Tunable: 555765146 */;
+			return Global_262145.f_36129 /* Tunable: HACKER24_FIELD_HANGAR_PROPERTY_BASE_MCKENZIE */;
 		
 		default:
 	}
@@ -159732,7 +159732,7 @@ int func_1893(int iParam0)//Position - 0xB8B53
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_36130 /* Tunable: -352657640 */;
+			return Global_262145.f_36130 /* Tunable: HACKER24_FIELD_HANGAR_PROPERTY_SALE_MCKENZIE */;
 		
 		default:
 	}
@@ -166649,7 +166649,7 @@ int func_2181(int iParam0)//Position - 0xC0DC8
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_36127 /* Tunable: 544270477 */;
+			return Global_262145.f_36127 /* Tunable: HACKER24_HACKER_DEN_PROPERTY_BASE_GARMENT_FACTORY */;
 		
 		default:
 	}
@@ -166722,7 +166722,7 @@ int func_2185(int iParam0)//Position - 0xC0EB3
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_36128 /* Tunable: -1581749451 */;
+			return Global_262145.f_36128 /* Tunable: HACKER24_HACKER_DEN_PROPERTY_SALE_GARMENT_FACTORY */;
 		
 		default:
 	}

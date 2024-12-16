@@ -210799,13 +210799,13 @@ int func_1910(int iParam0)//Position - 0x10C1D1
 			return Global_262145.f_35042 /* Tunable: 1484128898 */;
 		
 		case joaat("futo"):
-			return Global_262145.f_36015 /* Tunable: 1192211214 */;
+			return Global_262145.f_36015 /* Tunable: ENABLE_FUTO_DRIFT_TUNING_UPGRADE */;
 		
 		case joaat("jester3"):
-			return Global_262145.f_36070 /* Tunable: 260395135 */;
+			return Global_262145.f_36070 /* Tunable: ENABLE_JESTER3_DRIFT_TUNING_UPGRADE */;
 		
 		case joaat("cheburek"):
-			return Global_262145.f_36076 /* Tunable: -1699446266 */;
+			return Global_262145.f_36076 /* Tunable: ENABLE_CHEBUREK_DRIFT_TUNING_UPGRADE */;
 		
 		default:
 	}

@@ -16449,7 +16449,7 @@ void func_371()//Position - 0x12F99
 				break;
 			
 			case 1:
-				if (Global_262145.f_36024 /* Tunable: 2045896120 */ == 0)
+				if (Global_262145.f_36024 /* Tunable: ENABLE_DLC2_ARMS_TRAFFICKING_MISSIONS */ == 0)
 				{
 					func_334("OSGUZ_OP2_NA" /* GXT: This request is not currently available. */, 0, 0);
 				}
@@ -16751,7 +16751,7 @@ int func_385()//Position - 0x13694
 	{
 		return 0;
 	}
-	if ((((func_291(PLAYER::PLAYER_ID()) || func_386(PLAYER::PLAYER_ID())) || !func_377()) || func_372()) || Global_262145.f_36024 /* Tunable: 2045896120 */ == 0)
+	if ((((func_291(PLAYER::PLAYER_ID()) || func_386(PLAYER::PLAYER_ID())) || !func_377()) || func_372()) || Global_262145.f_36024 /* Tunable: ENABLE_DLC2_ARMS_TRAFFICKING_MISSIONS */ == 0)
 	{
 		return 0;
 	}
@@ -75835,7 +75835,7 @@ int func_1319(int iParam0)//Position - 0x51F8A
 			break;
 		
 		case 81:
-			return Global_262145.f_36139 /* Tunable: 859554615 */;
+			return Global_262145.f_36139 /* Tunable: REQUEST_FIELD_DUSTER */;
 			break;
 		
 		case 53:

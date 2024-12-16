@@ -118140,7 +118140,7 @@ void func_730(int iParam0, var uParam1, int iParam2)//Position - 0x8D92A
 					break;
 				
 				case joaat("CLO_X8M_D_25_0"):
-					*uParam1 = Global_262145.f_36328 /* Tunable: 1771565256 */;
+					*uParam1 = Global_262145.f_36328 /* Tunable: XM24_BLACK_SPRAY_BLAGUEURS_HOODIE_ */;
 					break;
 				
 				case joaat("CLO_X8M_D_25_1"):
@@ -118148,11 +118148,11 @@ void func_730(int iParam0, var uParam1, int iParam2)//Position - 0x8D92A
 					break;
 				
 				case joaat("CLO_X8M_D_25_2"):
-					*uParam1 = Global_262145.f_36330 /* Tunable: 1233046150 */;
+					*uParam1 = Global_262145.f_36330 /* Tunable: XM24_BLACK_SIMPLE_BLAGUEURS_HOODIE */;
 					break;
 				
 				case joaat("CLO_X8M_D_25_3"):
-					*uParam1 = Global_262145.f_36331 /* Tunable: 283679241 */;
+					*uParam1 = Global_262145.f_36331 /* Tunable: XM24_LIME_SIMPLE_BLAGUEURS_HOODIE */;
 					break;
 				
 				case joaat("CLO_X8M_D_25_4"):
@@ -118180,11 +118180,11 @@ void func_730(int iParam0, var uParam1, int iParam2)//Position - 0x8D92A
 					break;
 				
 				case joaat("CLO_X8M_D_26_0"):
-					*uParam1 = Global_262145.f_36335 /* Tunable: -750139821 */;
+					*uParam1 = Global_262145.f_36335 /* Tunable: XM24_WHITE_HSLS_HOODIE */;
 					break;
 				
 				case joaat("CLO_X8M_D_26_1"):
-					*uParam1 = Global_262145.f_36336 /* Tunable: 1772071433 */;
+					*uParam1 = Global_262145.f_36336 /* Tunable: XM24_BLACK_HSLS_HOODIE */;
 					break;
 				
 				case joaat("CLO_X8M_D_26_2"):
@@ -118208,43 +118208,43 @@ void func_730(int iParam0, var uParam1, int iParam2)//Position - 0x8D92A
 					break;
 				
 				case joaat("CLO_X8M_D_36_0"):
-					*uParam1 = Global_262145.f_36305 /* Tunable: 1527444165 */;
+					*uParam1 = Global_262145.f_36305 /* Tunable: XM24_BIGNESS_PURPLE_ANIMAL_TEE */;
 					break;
 				
 				case joaat("CLO_X8M_D_36_1"):
-					*uParam1 = Global_262145.f_36306 /* Tunable: -327236379 */;
+					*uParam1 = Global_262145.f_36306 /* Tunable: XM24_BIGNESS_ORANGE_ANIMAL_TEE */;
 					break;
 				
 				case joaat("CLO_X8M_D_36_2"):
-					*uParam1 = Global_262145.f_36307 /* Tunable: -320316599 */;
+					*uParam1 = Global_262145.f_36307 /* Tunable: XM24_BIGNESS_BLUE_ANIMAL_TEE */;
 					break;
 				
 				case joaat("CLO_X8M_D_37_0"):
-					*uParam1 = Global_262145.f_36308 /* Tunable: 1322231868 */;
+					*uParam1 = Global_262145.f_36308 /* Tunable: XM24_STRAPZ_ORANGE_ANIMAL_TEE */;
 					break;
 				
 				case joaat("CLO_X8M_D_37_1"):
-					*uParam1 = Global_262145.f_36309 /* Tunable: 1118262555 */;
+					*uParam1 = Global_262145.f_36309 /* Tunable: XM24_STRAPZ_BLUE_ANIMAL_TEE */;
 					break;
 				
 				case joaat("CLO_X8M_D_37_2"):
-					*uParam1 = Global_262145.f_36310 /* Tunable: 1633232640 */;
+					*uParam1 = Global_262145.f_36310 /* Tunable: XM24_YETI_PINK_CAMO_ANIMAL_TEE */;
 					break;
 				
 				case joaat("CLO_X8M_D_37_3"):
-					*uParam1 = Global_262145.f_36311 /* Tunable: 1790564985 */;
+					*uParam1 = Global_262145.f_36311 /* Tunable: XM24_YETI_GRAY_CAMO_ANIMAL_TEE */;
 					break;
 				
 				case joaat("CLO_X8M_D_37_4"):
-					*uParam1 = Global_262145.f_36312 /* Tunable: -1714149054 */;
+					*uParam1 = Global_262145.f_36312 /* Tunable: XM24_YETI_WOODLAND_CAMO_ANIMAL_TEE */;
 					break;
 				
 				case joaat("CLO_X8M_D_37_5"):
-					*uParam1 = Global_262145.f_36313 /* Tunable: 1005080078 */;
+					*uParam1 = Global_262145.f_36313 /* Tunable: XM24_HEAT_BLUE_ANIMAL_TEE */;
 					break;
 				
 				case joaat("CLO_X8M_D_37_6"):
-					*uParam1 = Global_262145.f_36314 /* Tunable: -637842409 */;
+					*uParam1 = Global_262145.f_36314 /* Tunable: XM24_HEAT_BLACK_ANIMAL_TEE */;
 					break;
 			}
 			break;
@@ -118253,83 +118253,83 @@ void func_730(int iParam0, var uParam1, int iParam2)//Position - 0x8D92A
 			switch (iParam0)
 			{
 				case joaat("CLO_X8M_L_6_1"):
-					*uParam1 = Global_262145.f_36295 /* Tunable: -387575907 */;
+					*uParam1 = Global_262145.f_36295 /* Tunable: XM24_PURPLE_BIGNESS_TIEDYE_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8M_L_6_2"):
-					*uParam1 = Global_262145.f_36296 /* Tunable: 1200698128 */;
+					*uParam1 = Global_262145.f_36296 /* Tunable: XM24_GRAY_BIGNESS_TIEDYE_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8M_L_6_3"):
-					*uParam1 = Global_262145.f_36297 /* Tunable: 842619794 */;
+					*uParam1 = Global_262145.f_36297 /* Tunable: XM24_BLUE_SQUASH_TIEDYE_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8M_L_6_4"):
-					*uParam1 = Global_262145.f_36298 /* Tunable: -1173089095 */;
+					*uParam1 = Global_262145.f_36298 /* Tunable: XM24_PINK_SQUASH_TIEDYE_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8M_L_6_5"):
-					*uParam1 = Global_262145.f_36299 /* Tunable: -1990038101 */;
+					*uParam1 = Global_262145.f_36299 /* Tunable: XM24_SLATE_MANOR_TIEDYE_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8M_L_6_6"):
-					*uParam1 = Global_262145.f_36300 /* Tunable: -1260460422 */;
+					*uParam1 = Global_262145.f_36300 /* Tunable: XM24_BLACK_MANOR_TIEDYE_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8M_L_6_7"):
-					*uParam1 = Global_262145.f_36301 /* Tunable: 734610821 */;
+					*uParam1 = Global_262145.f_36301 /* Tunable: XM24_MAGENTA_GUFFY_TIEDYE_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8M_L_6_8"):
-					*uParam1 = Global_262145.f_36302 /* Tunable: 1116260820 */;
+					*uParam1 = Global_262145.f_36302 /* Tunable: XM24_GREEN_GUFFY_TIEDYE_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8M_L_6_9"):
-					*uParam1 = Global_262145.f_36303 /* Tunable: -1125998002 */;
+					*uParam1 = Global_262145.f_36303 /* Tunable: XM24_GREEN_SC_TIEDYE_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8M_L_6_10"):
-					*uParam1 = Global_262145.f_36304 /* Tunable: -1252698065 */;
+					*uParam1 = Global_262145.f_36304 /* Tunable: XM24_BLACK_SC_TIEDYE_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8M_L_6_11"):
-					*uParam1 = Global_262145.f_36285 /* Tunable: -947389387 */;
+					*uParam1 = Global_262145.f_36285 /* Tunable: XM24_BIGNESS_PURPLE_ANIMAL_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8M_L_6_12"):
-					*uParam1 = Global_262145.f_36286 /* Tunable: 2027984080 */;
+					*uParam1 = Global_262145.f_36286 /* Tunable: XM24_BIGNESS_ORANGE_ANIMAL_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8M_L_6_13"):
-					*uParam1 = Global_262145.f_36287 /* Tunable: -1803658245 */;
+					*uParam1 = Global_262145.f_36287 /* Tunable: XM24_BIGNESS_BLUE_ANIMAL_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8M_L_6_14"):
-					*uParam1 = Global_262145.f_36288 /* Tunable: 313179646 */;
+					*uParam1 = Global_262145.f_36288 /* Tunable: XM24_STRAPZ_ORANGE_ANIMAL_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8M_L_6_15"):
-					*uParam1 = Global_262145.f_36289 /* Tunable: 49621808 */;
+					*uParam1 = Global_262145.f_36289 /* Tunable: XM24_STRAPZ_BLUE_ANIMAL_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8M_L_6_16"):
-					*uParam1 = Global_262145.f_36290 /* Tunable: -2093366647 */;
+					*uParam1 = Global_262145.f_36290 /* Tunable: XM24_YETI_PINK_CAMO_ANIMAL_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8M_L_6_17"):
-					*uParam1 = Global_262145.f_36291 /* Tunable: -1184607819 */;
+					*uParam1 = Global_262145.f_36291 /* Tunable: XM24_YETI_GRAY_CAMO_ANIMAL_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8M_L_6_18"):
-					*uParam1 = Global_262145.f_36292 /* Tunable: 1359811560 */;
+					*uParam1 = Global_262145.f_36292 /* Tunable: XM24_YETI_WOODLAND_CAMO_ANIMAL_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8M_L_6_19"):
-					*uParam1 = Global_262145.f_36293 /* Tunable: -2014653683 */;
+					*uParam1 = Global_262145.f_36293 /* Tunable: XM24_HEAT_BLUE_ANIMAL_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8M_L_6_20"):
-					*uParam1 = Global_262145.f_36294 /* Tunable: 374199910 */;
+					*uParam1 = Global_262145.f_36294 /* Tunable: XM24_HEAT_BLACK_ANIMAL_SHORTS */;
 					break;
 			}
 			break;
@@ -118382,83 +118382,83 @@ void func_730(int iParam0, var uParam1, int iParam2)//Position - 0x8D92A
 					break;
 				
 				case joaat("CLO_X8M_PH_15_0"):
-					*uParam1 = Global_262145.f_36264 /* Tunable: 1189728879 */;
+					*uParam1 = Global_262145.f_36264 /* Tunable: XM24_BIGNESS_PURPLE_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8M_PH_15_1"):
-					*uParam1 = Global_262145.f_36265 /* Tunable: 1858197827 */;
+					*uParam1 = Global_262145.f_36265 /* Tunable: XM24_BIGNESS_ORANGE_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8M_PH_15_2"):
-					*uParam1 = Global_262145.f_36266 /* Tunable: 1278310734 */;
+					*uParam1 = Global_262145.f_36266 /* Tunable: XM24_BIGNESS_BLUE_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8M_PH_15_3"):
-					*uParam1 = Global_262145.f_36267 /* Tunable: 774366085 */;
+					*uParam1 = Global_262145.f_36267 /* Tunable: XM24_STRAPZ_ORANGE_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8M_PH_15_4"):
-					*uParam1 = Global_262145.f_36268 /* Tunable: -596891774 */;
+					*uParam1 = Global_262145.f_36268 /* Tunable: XM24_STRAPZ_BLUE_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8M_PH_15_5"):
-					*uParam1 = Global_262145.f_36269 /* Tunable: 1094107101 */;
+					*uParam1 = Global_262145.f_36269 /* Tunable: XM24_YETI_PINK_CAMO_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8M_PH_15_6"):
-					*uParam1 = Global_262145.f_36270 /* Tunable: 1297659363 */;
+					*uParam1 = Global_262145.f_36270 /* Tunable: XM24_YETI_GRAY_CAMO_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8M_PH_15_7"):
-					*uParam1 = Global_262145.f_36271 /* Tunable: 1877036115 */;
+					*uParam1 = Global_262145.f_36271 /* Tunable: XM24_YETI_WOODLAND_CAMO_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8M_PH_15_8"):
-					*uParam1 = Global_262145.f_36272 /* Tunable: 1283159865 */;
+					*uParam1 = Global_262145.f_36272 /* Tunable: XM24_HEAT_BLUE_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8M_PH_15_9"):
-					*uParam1 = Global_262145.f_36273 /* Tunable: -1509293012 */;
+					*uParam1 = Global_262145.f_36273 /* Tunable: XM24_HEAT_BLACK_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8M_PH_16_0"):
-					*uParam1 = Global_262145.f_36264 /* Tunable: 1189728879 */;
+					*uParam1 = Global_262145.f_36264 /* Tunable: XM24_BIGNESS_PURPLE_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8M_PH_16_1"):
-					*uParam1 = Global_262145.f_36265 /* Tunable: 1858197827 */;
+					*uParam1 = Global_262145.f_36265 /* Tunable: XM24_BIGNESS_ORANGE_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8M_PH_16_2"):
-					*uParam1 = Global_262145.f_36266 /* Tunable: 1278310734 */;
+					*uParam1 = Global_262145.f_36266 /* Tunable: XM24_BIGNESS_BLUE_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8M_PH_16_3"):
-					*uParam1 = Global_262145.f_36267 /* Tunable: 774366085 */;
+					*uParam1 = Global_262145.f_36267 /* Tunable: XM24_STRAPZ_ORANGE_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8M_PH_16_4"):
-					*uParam1 = Global_262145.f_36268 /* Tunable: -596891774 */;
+					*uParam1 = Global_262145.f_36268 /* Tunable: XM24_STRAPZ_BLUE_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8M_PH_16_5"):
-					*uParam1 = Global_262145.f_36269 /* Tunable: 1094107101 */;
+					*uParam1 = Global_262145.f_36269 /* Tunable: XM24_YETI_PINK_CAMO_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8M_PH_16_6"):
-					*uParam1 = Global_262145.f_36270 /* Tunable: 1297659363 */;
+					*uParam1 = Global_262145.f_36270 /* Tunable: XM24_YETI_GRAY_CAMO_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8M_PH_16_7"):
-					*uParam1 = Global_262145.f_36271 /* Tunable: 1877036115 */;
+					*uParam1 = Global_262145.f_36271 /* Tunable: XM24_YETI_WOODLAND_CAMO_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8M_PH_16_8"):
-					*uParam1 = Global_262145.f_36272 /* Tunable: 1283159865 */;
+					*uParam1 = Global_262145.f_36272 /* Tunable: XM24_HEAT_BLUE_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8M_PH_16_9"):
-					*uParam1 = Global_262145.f_36273 /* Tunable: -1509293012 */;
+					*uParam1 = Global_262145.f_36273 /* Tunable: XM24_HEAT_BLACK_ANIMAL_CAP */;
 					break;
 			}
 			break;
@@ -118607,7 +118607,7 @@ void func_730(int iParam0, var uParam1, int iParam2)//Position - 0x8D92A
 					break;
 				
 				case joaat("CLO_X8F_D_25_0"):
-					*uParam1 = Global_262145.f_36328 /* Tunable: 1771565256 */;
+					*uParam1 = Global_262145.f_36328 /* Tunable: XM24_BLACK_SPRAY_BLAGUEURS_HOODIE_ */;
 					break;
 				
 				case joaat("CLO_X8F_D_25_1"):
@@ -118615,11 +118615,11 @@ void func_730(int iParam0, var uParam1, int iParam2)//Position - 0x8D92A
 					break;
 				
 				case joaat("CLO_X8F_D_25_2"):
-					*uParam1 = Global_262145.f_36330 /* Tunable: 1233046150 */;
+					*uParam1 = Global_262145.f_36330 /* Tunable: XM24_BLACK_SIMPLE_BLAGUEURS_HOODIE */;
 					break;
 				
 				case joaat("CLO_X8F_D_25_3"):
-					*uParam1 = Global_262145.f_36331 /* Tunable: 283679241 */;
+					*uParam1 = Global_262145.f_36331 /* Tunable: XM24_LIME_SIMPLE_BLAGUEURS_HOODIE */;
 					break;
 				
 				case joaat("CLO_X8F_D_25_4"):
@@ -118647,11 +118647,11 @@ void func_730(int iParam0, var uParam1, int iParam2)//Position - 0x8D92A
 					break;
 				
 				case joaat("CLO_X8F_D_26_0"):
-					*uParam1 = Global_262145.f_36335 /* Tunable: -750139821 */;
+					*uParam1 = Global_262145.f_36335 /* Tunable: XM24_WHITE_HSLS_HOODIE */;
 					break;
 				
 				case joaat("CLO_X8F_D_26_1"):
-					*uParam1 = Global_262145.f_36336 /* Tunable: 1772071433 */;
+					*uParam1 = Global_262145.f_36336 /* Tunable: XM24_BLACK_HSLS_HOODIE */;
 					break;
 				
 				case joaat("CLO_X8F_D_26_2"):
@@ -118675,43 +118675,43 @@ void func_730(int iParam0, var uParam1, int iParam2)//Position - 0x8D92A
 					break;
 				
 				case joaat("CLO_X8F_D_36_0"):
-					*uParam1 = Global_262145.f_36305 /* Tunable: 1527444165 */;
+					*uParam1 = Global_262145.f_36305 /* Tunable: XM24_BIGNESS_PURPLE_ANIMAL_TEE */;
 					break;
 				
 				case joaat("CLO_X8F_D_36_1"):
-					*uParam1 = Global_262145.f_36306 /* Tunable: -327236379 */;
+					*uParam1 = Global_262145.f_36306 /* Tunable: XM24_BIGNESS_ORANGE_ANIMAL_TEE */;
 					break;
 				
 				case joaat("CLO_X8F_D_36_2"):
-					*uParam1 = Global_262145.f_36307 /* Tunable: -320316599 */;
+					*uParam1 = Global_262145.f_36307 /* Tunable: XM24_BIGNESS_BLUE_ANIMAL_TEE */;
 					break;
 				
 				case joaat("CLO_X8F_D_37_0"):
-					*uParam1 = Global_262145.f_36308 /* Tunable: 1322231868 */;
+					*uParam1 = Global_262145.f_36308 /* Tunable: XM24_STRAPZ_ORANGE_ANIMAL_TEE */;
 					break;
 				
 				case joaat("CLO_X8F_D_37_1"):
-					*uParam1 = Global_262145.f_36309 /* Tunable: 1118262555 */;
+					*uParam1 = Global_262145.f_36309 /* Tunable: XM24_STRAPZ_BLUE_ANIMAL_TEE */;
 					break;
 				
 				case joaat("CLO_X8F_D_37_2"):
-					*uParam1 = Global_262145.f_36310 /* Tunable: 1633232640 */;
+					*uParam1 = Global_262145.f_36310 /* Tunable: XM24_YETI_PINK_CAMO_ANIMAL_TEE */;
 					break;
 				
 				case joaat("CLO_X8F_D_37_3"):
-					*uParam1 = Global_262145.f_36311 /* Tunable: 1790564985 */;
+					*uParam1 = Global_262145.f_36311 /* Tunable: XM24_YETI_GRAY_CAMO_ANIMAL_TEE */;
 					break;
 				
 				case joaat("CLO_X8F_D_37_4"):
-					*uParam1 = Global_262145.f_36312 /* Tunable: -1714149054 */;
+					*uParam1 = Global_262145.f_36312 /* Tunable: XM24_YETI_WOODLAND_CAMO_ANIMAL_TEE */;
 					break;
 				
 				case joaat("CLO_X8F_D_37_5"):
-					*uParam1 = Global_262145.f_36313 /* Tunable: 1005080078 */;
+					*uParam1 = Global_262145.f_36313 /* Tunable: XM24_HEAT_BLUE_ANIMAL_TEE */;
 					break;
 				
 				case joaat("CLO_X8F_D_37_6"):
-					*uParam1 = Global_262145.f_36314 /* Tunable: -637842409 */;
+					*uParam1 = Global_262145.f_36314 /* Tunable: XM24_HEAT_BLACK_ANIMAL_TEE */;
 					break;
 			}
 			break;
@@ -118720,83 +118720,83 @@ void func_730(int iParam0, var uParam1, int iParam2)//Position - 0x8D92A
 			switch (iParam0)
 			{
 				case joaat("CLO_X8F_L_11_0"):
-					*uParam1 = Global_262145.f_36295 /* Tunable: -387575907 */;
+					*uParam1 = Global_262145.f_36295 /* Tunable: XM24_PURPLE_BIGNESS_TIEDYE_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8F_L_11_1"):
-					*uParam1 = Global_262145.f_36296 /* Tunable: 1200698128 */;
+					*uParam1 = Global_262145.f_36296 /* Tunable: XM24_GRAY_BIGNESS_TIEDYE_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8F_L_11_2"):
-					*uParam1 = Global_262145.f_36297 /* Tunable: 842619794 */;
+					*uParam1 = Global_262145.f_36297 /* Tunable: XM24_BLUE_SQUASH_TIEDYE_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8F_L_11_3"):
-					*uParam1 = Global_262145.f_36298 /* Tunable: -1173089095 */;
+					*uParam1 = Global_262145.f_36298 /* Tunable: XM24_PINK_SQUASH_TIEDYE_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8F_L_11_4"):
-					*uParam1 = Global_262145.f_36299 /* Tunable: -1990038101 */;
+					*uParam1 = Global_262145.f_36299 /* Tunable: XM24_SLATE_MANOR_TIEDYE_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8F_L_11_5"):
-					*uParam1 = Global_262145.f_36300 /* Tunable: -1260460422 */;
+					*uParam1 = Global_262145.f_36300 /* Tunable: XM24_BLACK_MANOR_TIEDYE_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8F_L_11_6"):
-					*uParam1 = Global_262145.f_36301 /* Tunable: 734610821 */;
+					*uParam1 = Global_262145.f_36301 /* Tunable: XM24_MAGENTA_GUFFY_TIEDYE_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8F_L_11_7"):
-					*uParam1 = Global_262145.f_36302 /* Tunable: 1116260820 */;
+					*uParam1 = Global_262145.f_36302 /* Tunable: XM24_GREEN_GUFFY_TIEDYE_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8F_L_11_8"):
-					*uParam1 = Global_262145.f_36303 /* Tunable: -1125998002 */;
+					*uParam1 = Global_262145.f_36303 /* Tunable: XM24_GREEN_SC_TIEDYE_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8F_L_11_9"):
-					*uParam1 = Global_262145.f_36304 /* Tunable: -1252698065 */;
+					*uParam1 = Global_262145.f_36304 /* Tunable: XM24_BLACK_SC_TIEDYE_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8F_L_11_10"):
-					*uParam1 = Global_262145.f_36285 /* Tunable: -947389387 */;
+					*uParam1 = Global_262145.f_36285 /* Tunable: XM24_BIGNESS_PURPLE_ANIMAL_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8F_L_11_11"):
-					*uParam1 = Global_262145.f_36286 /* Tunable: 2027984080 */;
+					*uParam1 = Global_262145.f_36286 /* Tunable: XM24_BIGNESS_ORANGE_ANIMAL_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8F_L_11_12"):
-					*uParam1 = Global_262145.f_36287 /* Tunable: -1803658245 */;
+					*uParam1 = Global_262145.f_36287 /* Tunable: XM24_BIGNESS_BLUE_ANIMAL_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8F_L_11_13"):
-					*uParam1 = Global_262145.f_36288 /* Tunable: 313179646 */;
+					*uParam1 = Global_262145.f_36288 /* Tunable: XM24_STRAPZ_ORANGE_ANIMAL_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8F_L_11_14"):
-					*uParam1 = Global_262145.f_36289 /* Tunable: 49621808 */;
+					*uParam1 = Global_262145.f_36289 /* Tunable: XM24_STRAPZ_BLUE_ANIMAL_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8F_L_11_15"):
-					*uParam1 = Global_262145.f_36290 /* Tunable: -2093366647 */;
+					*uParam1 = Global_262145.f_36290 /* Tunable: XM24_YETI_PINK_CAMO_ANIMAL_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8F_L_11_16"):
-					*uParam1 = Global_262145.f_36291 /* Tunable: -1184607819 */;
+					*uParam1 = Global_262145.f_36291 /* Tunable: XM24_YETI_GRAY_CAMO_ANIMAL_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8F_L_11_17"):
-					*uParam1 = Global_262145.f_36292 /* Tunable: 1359811560 */;
+					*uParam1 = Global_262145.f_36292 /* Tunable: XM24_YETI_WOODLAND_CAMO_ANIMAL_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8F_L_11_18"):
-					*uParam1 = Global_262145.f_36293 /* Tunable: -2014653683 */;
+					*uParam1 = Global_262145.f_36293 /* Tunable: XM24_HEAT_BLUE_ANIMAL_SHORTS */;
 					break;
 				
 				case joaat("CLO_X8F_L_11_19"):
-					*uParam1 = Global_262145.f_36294 /* Tunable: 374199910 */;
+					*uParam1 = Global_262145.f_36294 /* Tunable: XM24_HEAT_BLACK_ANIMAL_SHORTS */;
 					break;
 			}
 			break;
@@ -118849,83 +118849,83 @@ void func_730(int iParam0, var uParam1, int iParam2)//Position - 0x8D92A
 					break;
 				
 				case joaat("CLO_X8F_PH_15_0"):
-					*uParam1 = Global_262145.f_36264 /* Tunable: 1189728879 */;
+					*uParam1 = Global_262145.f_36264 /* Tunable: XM24_BIGNESS_PURPLE_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8F_PH_15_1"):
-					*uParam1 = Global_262145.f_36265 /* Tunable: 1858197827 */;
+					*uParam1 = Global_262145.f_36265 /* Tunable: XM24_BIGNESS_ORANGE_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8F_PH_15_2"):
-					*uParam1 = Global_262145.f_36266 /* Tunable: 1278310734 */;
+					*uParam1 = Global_262145.f_36266 /* Tunable: XM24_BIGNESS_BLUE_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8F_PH_15_3"):
-					*uParam1 = Global_262145.f_36267 /* Tunable: 774366085 */;
+					*uParam1 = Global_262145.f_36267 /* Tunable: XM24_STRAPZ_ORANGE_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8F_PH_15_4"):
-					*uParam1 = Global_262145.f_36268 /* Tunable: -596891774 */;
+					*uParam1 = Global_262145.f_36268 /* Tunable: XM24_STRAPZ_BLUE_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8F_PH_15_5"):
-					*uParam1 = Global_262145.f_36269 /* Tunable: 1094107101 */;
+					*uParam1 = Global_262145.f_36269 /* Tunable: XM24_YETI_PINK_CAMO_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8F_PH_15_6"):
-					*uParam1 = Global_262145.f_36270 /* Tunable: 1297659363 */;
+					*uParam1 = Global_262145.f_36270 /* Tunable: XM24_YETI_GRAY_CAMO_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8F_PH_15_7"):
-					*uParam1 = Global_262145.f_36271 /* Tunable: 1877036115 */;
+					*uParam1 = Global_262145.f_36271 /* Tunable: XM24_YETI_WOODLAND_CAMO_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8F_PH_15_8"):
-					*uParam1 = Global_262145.f_36272 /* Tunable: 1283159865 */;
+					*uParam1 = Global_262145.f_36272 /* Tunable: XM24_HEAT_BLUE_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8F_PH_15_9"):
-					*uParam1 = Global_262145.f_36273 /* Tunable: -1509293012 */;
+					*uParam1 = Global_262145.f_36273 /* Tunable: XM24_HEAT_BLACK_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8F_PH_16_0"):
-					*uParam1 = Global_262145.f_36264 /* Tunable: 1189728879 */;
+					*uParam1 = Global_262145.f_36264 /* Tunable: XM24_BIGNESS_PURPLE_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8F_PH_16_1"):
-					*uParam1 = Global_262145.f_36265 /* Tunable: 1858197827 */;
+					*uParam1 = Global_262145.f_36265 /* Tunable: XM24_BIGNESS_ORANGE_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8F_PH_16_2"):
-					*uParam1 = Global_262145.f_36266 /* Tunable: 1278310734 */;
+					*uParam1 = Global_262145.f_36266 /* Tunable: XM24_BIGNESS_BLUE_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8F_PH_16_3"):
-					*uParam1 = Global_262145.f_36267 /* Tunable: 774366085 */;
+					*uParam1 = Global_262145.f_36267 /* Tunable: XM24_STRAPZ_ORANGE_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8F_PH_16_4"):
-					*uParam1 = Global_262145.f_36268 /* Tunable: -596891774 */;
+					*uParam1 = Global_262145.f_36268 /* Tunable: XM24_STRAPZ_BLUE_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8F_PH_16_5"):
-					*uParam1 = Global_262145.f_36269 /* Tunable: 1094107101 */;
+					*uParam1 = Global_262145.f_36269 /* Tunable: XM24_YETI_PINK_CAMO_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8F_PH_16_6"):
-					*uParam1 = Global_262145.f_36270 /* Tunable: 1297659363 */;
+					*uParam1 = Global_262145.f_36270 /* Tunable: XM24_YETI_GRAY_CAMO_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8F_PH_16_7"):
-					*uParam1 = Global_262145.f_36271 /* Tunable: 1877036115 */;
+					*uParam1 = Global_262145.f_36271 /* Tunable: XM24_YETI_WOODLAND_CAMO_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8F_PH_16_8"):
-					*uParam1 = Global_262145.f_36272 /* Tunable: 1283159865 */;
+					*uParam1 = Global_262145.f_36272 /* Tunable: XM24_HEAT_BLUE_ANIMAL_CAP */;
 					break;
 				
 				case joaat("CLO_X8F_PH_16_9"):
-					*uParam1 = Global_262145.f_36273 /* Tunable: -1509293012 */;
+					*uParam1 = Global_262145.f_36273 /* Tunable: XM24_HEAT_BLACK_ANIMAL_CAP */;
 					break;
 			}
 			break;
@@ -119657,7 +119657,7 @@ void func_731(int iParam0, var uParam1, int iParam2)//Position - 0x8ECE0
 					break;
 				
 				case joaat("CLO_SDF_U_0_4"):
-					*uParam1 = Global_262145.f_35811 /* Tunable: 1925469151 */;
+					*uParam1 = Global_262145.f_35811 /* Tunable: SU24_FEM_BIEGE_DOTTED_TANK */;
 					break;
 				
 				case joaat("CLO_SDF_U_0_5"):

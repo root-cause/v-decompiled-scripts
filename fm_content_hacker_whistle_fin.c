@@ -27494,7 +27494,7 @@ int func_561(int iParam0)//Position - 0x20831
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_36129 /* Tunable: 555765146 */;
+			return Global_262145.f_36129 /* Tunable: HACKER24_FIELD_HANGAR_PROPERTY_BASE_MCKENZIE */;
 		
 		default:
 	}
@@ -27572,7 +27572,7 @@ int func_566(int iParam0)//Position - 0x20951
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_36130 /* Tunable: -352657640 */;
+			return Global_262145.f_36130 /* Tunable: HACKER24_FIELD_HANGAR_PROPERTY_SALE_MCKENZIE */;
 		
 		default:
 	}
@@ -35438,7 +35438,7 @@ int func_919(int iParam0)//Position - 0x299E1
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_36127 /* Tunable: 544270477 */;
+			return Global_262145.f_36127 /* Tunable: HACKER24_HACKER_DEN_PROPERTY_BASE_GARMENT_FACTORY */;
 		
 		default:
 	}
@@ -35511,7 +35511,7 @@ int func_923(int iParam0)//Position - 0x29ACA
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_36128 /* Tunable: -1581749451 */;
+			return Global_262145.f_36128 /* Tunable: HACKER24_HACKER_DEN_PROPERTY_SALE_GARMENT_FACTORY */;
 		
 		default:
 	}
@@ -362963,7 +362963,7 @@ int func_6719()//Position - 0x1EEE83
 	}
 	else if (Local_6653.f_1229.f_5)
 	{
-		iVar0 = (iVar0 + Global_262145.f_35989 /* Tunable: -2025969620 */);
+		iVar0 = (iVar0 + Global_262145.f_35989 /* Tunable: HACKER24_ROBBERY_GOON_REWARD_FOCUS */);
 	}
 	else
 	{
@@ -362979,19 +362979,19 @@ int func_6720()//Position - 0x1EEED9
 	
 	if (func_6724())
 	{
-		iVar0 = (iVar0 + Global_262145.f_35990 /* Tunable: -653658505 */);
+		iVar0 = (iVar0 + Global_262145.f_35990 /* Tunable: HACKER24_ROBBERY_CHALLENGE_BONUS_REWARD */);
 	}
 	if (func_6723())
 	{
-		iVar0 = (iVar0 + Global_262145.f_35990 /* Tunable: -653658505 */);
+		iVar0 = (iVar0 + Global_262145.f_35990 /* Tunable: HACKER24_ROBBERY_CHALLENGE_BONUS_REWARD */);
 	}
 	if (func_6721())
 	{
-		iVar0 = (iVar0 + Global_262145.f_35990 /* Tunable: -653658505 */);
+		iVar0 = (iVar0 + Global_262145.f_35990 /* Tunable: HACKER24_ROBBERY_CHALLENGE_BONUS_REWARD */);
 	}
-	if (iVar0 == Global_262145.f_35990 /* Tunable: -653658505 */ * 3)
+	if (iVar0 == Global_262145.f_35990 /* Tunable: HACKER24_ROBBERY_CHALLENGE_BONUS_REWARD */ * 3)
 	{
-		iVar0 = (iVar0 + Global_262145.f_35991 /* Tunable: 1059821247 */);
+		iVar0 = (iVar0 + Global_262145.f_35991 /* Tunable: HACKER24_ROBBERY_ALL_CHALLENGE_BONUS_REWARD */);
 	}
 	return iVar0;
 }
@@ -370220,16 +370220,16 @@ int func_7295(int iParam0, bool bParam1)//Position - 0x1F69C5
 		switch (iParam0)
 		{
 			case 0:
-				return Global_262145.f_35981 /* Tunable: 275622326 */;
+				return Global_262145.f_35981 /* Tunable: HACKER24_ROBBERY_CARGO_PLANE_REWARD_FOCUS */;
 			
 			case 1:
-				return Global_262145.f_35983 /* Tunable: 1209644240 */;
+				return Global_262145.f_35983 /* Tunable: HACKER24_ROBBERY_FORT_ZANCUDO_REWARD_FOCUS */;
 			
 			case 2:
-				return Global_262145.f_35985 /* Tunable: -33469921 */;
+				return Global_262145.f_35985 /* Tunable: HACKER24_ROBBERY_PENTHOUSE_REWARD_FOCUS */;
 			
 			case 3:
-				return Global_262145.f_35987 /* Tunable: 1316224106 */;
+				return Global_262145.f_35987 /* Tunable: HACKER24_ROBBERY_WHISTLEBLOWER_REWARD_FOCUS */;
 			
 			default:
 		}
@@ -370239,16 +370239,16 @@ int func_7295(int iParam0, bool bParam1)//Position - 0x1F69C5
 		switch (iParam0)
 		{
 			case 0:
-				return Global_262145.f_35980 /* Tunable: -46370632 */;
+				return Global_262145.f_35980 /* Tunable: HACKER24_ROBBERY_CARGO_PLANE_REWARD */;
 			
 			case 1:
-				return Global_262145.f_35982 /* Tunable: 1057328597 */;
+				return Global_262145.f_35982 /* Tunable: HACKER24_ROBBERY_FORT_ZANCUDO_REWARD */;
 			
 			case 2:
-				return Global_262145.f_35984 /* Tunable: 1736050476 */;
+				return Global_262145.f_35984 /* Tunable: HACKER24_ROBBERY_PENTHOUSE_REWARD */;
 			
 			case 3:
-				return Global_262145.f_35986 /* Tunable: 517329369 */;
+				return Global_262145.f_35986 /* Tunable: HACKER24_ROBBERY_WHISTLEBLOWER_REWARD */;
 			}
 		
 		default:
@@ -396847,7 +396847,7 @@ void func_7955(int iParam0, var uParam1, bool bParam2, bool bParam3, bool bParam
 		Global_1972344.f_2 = 0;
 		if (bParam3)
 		{
-			Global_1972344.f_12 = Global_262145.f_35989 /* Tunable: -2025969620 */;
+			Global_1972344.f_12 = Global_262145.f_35989 /* Tunable: HACKER24_ROBBERY_GOON_REWARD_FOCUS */;
 		}
 		else
 		{
@@ -396856,7 +396856,7 @@ void func_7955(int iParam0, var uParam1, bool bParam2, bool bParam3, bool bParam
 	}
 	if (bParam4)
 	{
-		Global_1972344.f_8[0] = Global_262145.f_35990 /* Tunable: -653658505 */;
+		Global_1972344.f_8[0] = Global_262145.f_35990 /* Tunable: HACKER24_ROBBERY_CHALLENGE_BONUS_REWARD */;
 	}
 	else
 	{
@@ -396864,7 +396864,7 @@ void func_7955(int iParam0, var uParam1, bool bParam2, bool bParam3, bool bParam
 	}
 	if (bParam5)
 	{
-		Global_1972344.f_8[1] = Global_262145.f_35990 /* Tunable: -653658505 */;
+		Global_1972344.f_8[1] = Global_262145.f_35990 /* Tunable: HACKER24_ROBBERY_CHALLENGE_BONUS_REWARD */;
 	}
 	else
 	{
@@ -396872,7 +396872,7 @@ void func_7955(int iParam0, var uParam1, bool bParam2, bool bParam3, bool bParam
 	}
 	if (bParam6)
 	{
-		Global_1972344.f_8[2] = Global_262145.f_35990 /* Tunable: -653658505 */;
+		Global_1972344.f_8[2] = Global_262145.f_35990 /* Tunable: HACKER24_ROBBERY_CHALLENGE_BONUS_REWARD */;
 	}
 	else
 	{
@@ -396891,7 +396891,7 @@ void func_7955(int iParam0, var uParam1, bool bParam2, bool bParam3, bool bParam
 	}
 	if ((bParam4 && bParam5) && bParam6)
 	{
-		Global_1972344.f_68 = Global_262145.f_35991 /* Tunable: 1059821247 */;
+		Global_1972344.f_68 = Global_262145.f_35991 /* Tunable: HACKER24_ROBBERY_ALL_CHALLENGE_BONUS_REWARD */;
 		func_7956(187, 1, -1);
 		if (!func_578(9542, -1))
 		{
@@ -396949,7 +396949,7 @@ void func_7957(int iParam0, bool bParam1)//Position - 0x21D647
 
 int func_7958()//Position - 0x21D658
 {
-	return Global_262145.f_35979 /* Tunable: -1349518791 */;
+	return Global_262145.f_35979 /* Tunable: HACKER24_FOCUS_ROBBERY */;
 }
 
 void func_7959()//Position - 0x21D66A
@@ -458473,16 +458473,16 @@ int func_10105()//Position - 0x264322
 			switch (Local_6653.f_1165)
 			{
 				case 0:
-					return func_10104(Global_262145.f_35964 /* Tunable: 2123257090 */);
+					return func_10104(Global_262145.f_35964 /* Tunable: HACKER24_ARMS_TRAFFICKING_CARGOBOB_CASH_REWARD */);
 				
 				case 1:
-					return func_10104(Global_262145.f_35965 /* Tunable: -1665911439 */);
+					return func_10104(Global_262145.f_35965 /* Tunable: HACKER24_ARMS_TRAFFICKING_PLANE_STEAL_CASH_REWARD */);
 				
 				case 2:
-					return func_10104(Global_262145.f_35966 /* Tunable: 1032570852 */);
+					return func_10104(Global_262145.f_35966 /* Tunable: HACKER24_ARMS_TRAFFICKING_RATEL_RUN_CASH_REWARD */);
 				
 				case 3:
-					return func_10104(Global_262145.f_35967 /* Tunable: -663766845 */);
+					return func_10104(Global_262145.f_35967 /* Tunable: HACKER24_ARMS_TRAFFICKING_RIVAL_DESTROY_CASH_REWARD */);
 				
 				default:
 			}

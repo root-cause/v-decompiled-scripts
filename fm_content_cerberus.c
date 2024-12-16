@@ -23914,7 +23914,7 @@ int func_500(int iParam0)//Position - 0x1E851
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_36129 /* Tunable: 555765146 */;
+			return Global_262145.f_36129 /* Tunable: HACKER24_FIELD_HANGAR_PROPERTY_BASE_MCKENZIE */;
 		
 		default:
 	}
@@ -23992,7 +23992,7 @@ int func_505(int iParam0)//Position - 0x1E971
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_36130 /* Tunable: -352657640 */;
+			return Global_262145.f_36130 /* Tunable: HACKER24_FIELD_HANGAR_PROPERTY_SALE_MCKENZIE */;
 		
 		default:
 	}
@@ -31858,7 +31858,7 @@ int func_858(int iParam0)//Position - 0x279F3
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_36127 /* Tunable: 544270477 */;
+			return Global_262145.f_36127 /* Tunable: HACKER24_HACKER_DEN_PROPERTY_BASE_GARMENT_FACTORY */;
 		
 		default:
 	}
@@ -31931,7 +31931,7 @@ int func_862(int iParam0)//Position - 0x27ADC
 	switch (iParam0)
 	{
 		case 1:
-			return Global_262145.f_36128 /* Tunable: -1581749451 */;
+			return Global_262145.f_36128 /* Tunable: HACKER24_HACKER_DEN_PROPERTY_SALE_GARMENT_FACTORY */;
 		
 		default:
 	}
@@ -413347,16 +413347,16 @@ int func_8516()//Position - 0x23231A
 			switch (Local_1642.f_94)
 			{
 				case 0:
-					return func_8515(Global_262145.f_35964 /* Tunable: 2123257090 */);
+					return func_8515(Global_262145.f_35964 /* Tunable: HACKER24_ARMS_TRAFFICKING_CARGOBOB_CASH_REWARD */);
 				
 				case 1:
-					return func_8515(Global_262145.f_35965 /* Tunable: -1665911439 */);
+					return func_8515(Global_262145.f_35965 /* Tunable: HACKER24_ARMS_TRAFFICKING_PLANE_STEAL_CASH_REWARD */);
 				
 				case 2:
-					return func_8515(Global_262145.f_35966 /* Tunable: 1032570852 */);
+					return func_8515(Global_262145.f_35966 /* Tunable: HACKER24_ARMS_TRAFFICKING_RATEL_RUN_CASH_REWARD */);
 				
 				case 3:
-					return func_8515(Global_262145.f_35967 /* Tunable: -663766845 */);
+					return func_8515(Global_262145.f_35967 /* Tunable: HACKER24_ARMS_TRAFFICKING_RIVAL_DESTROY_CASH_REWARD */);
 				
 				default:
 			}

@@ -6890,13 +6890,13 @@ float func_189(int iParam0, int iParam1)//Position - 0x6BC4
 			switch (iParam1)
 			{
 				case 0:
-					return Global_262145.f_36114 /* Tunable: -539663841 */;
+					return Global_262145.f_36114 /* Tunable: HACKER24_PREP_PLANT_DEVICE_MAX_LAUNCH_RANGE */;
 				
 				case 1:
-					return Global_262145.f_36115 /* Tunable: -1135348381 */;
+					return Global_262145.f_36115 /* Tunable: HACKER24_PREP_SONAR_EQUIPMENT_MAX_LAUNCH_RANGE */;
 				
 				case 2:
-					return Global_262145.f_36116 /* Tunable: 395557546 */;
+					return Global_262145.f_36116 /* Tunable: HACKER24_PREP_TULA_MAX_LAUNCH_RANGE */;
 				
 				default:
 			}
@@ -6906,13 +6906,13 @@ float func_189(int iParam0, int iParam1)//Position - 0x6BC4
 			switch (iParam1)
 			{
 				case 0:
-					return Global_262145.f_36117 /* Tunable: -1255494126 */;
+					return Global_262145.f_36117 /* Tunable: HACKER24_PREP_ARMOR_MAX_LAUNCH_RANGE */;
 				
 				case 1:
-					return Global_262145.f_36118 /* Tunable: 1574663349 */;
+					return Global_262145.f_36118 /* Tunable: HACKER24_PREP_MILITARY_EQUIPMENT_MAX_LAUNCH_RANGE */;
 				
 				case 2:
-					return Global_262145.f_36119 /* Tunable: 799531553 */;
+					return Global_262145.f_36119 /* Tunable: HACKER24_PREP_OVERRIDE_KEY_MAX_LAUNCH_RANGE */;
 				
 				default:
 			}
@@ -6922,13 +6922,13 @@ float func_189(int iParam0, int iParam1)//Position - 0x6BC4
 			switch (iParam1)
 			{
 				case 0:
-					return Global_262145.f_36120 /* Tunable: 717081733 */;
+					return Global_262145.f_36120 /* Tunable: HACKER24_PREP_EMP_CHARGES_MAX_LAUNCH_RANGE */;
 				
 				case 1:
-					return Global_262145.f_36121 /* Tunable: -303616902 */;
+					return Global_262145.f_36121 /* Tunable: HACKER24_PREP_HELICOPTER_MAX_LAUNCH_RANGE */;
 				
 				case 2:
-					return Global_262145.f_36122 /* Tunable: -1447452456 */;
+					return Global_262145.f_36122 /* Tunable: HACKER24_PREP_RETINA_SCAN_MAX_LAUNCH_RANGE */;
 				
 				default:
 			}
@@ -6938,13 +6938,13 @@ float func_189(int iParam0, int iParam1)//Position - 0x6BC4
 			switch (iParam1)
 			{
 				case 0:
-					return Global_262145.f_36123 /* Tunable: -1046884437 */;
+					return Global_262145.f_36123 /* Tunable: HACKER24_PREP_RC_BANDITO_STASH_MAX_LAUNCH_RANGE */;
 				
 				case 1:
-					return Global_262145.f_36124 /* Tunable: 1728162091 */;
+					return Global_262145.f_36124 /* Tunable: HACKER24_PREP_THERMAL_CHARGES_MAX_LAUNCH_RANGE */;
 				
 				case 2:
-					return Global_262145.f_36125 /* Tunable: 1043503185 */;
+					return Global_262145.f_36125 /* Tunable: HACKER24_PREP_MALWARE_MAX_LAUNCH_RANGE */;
 				
 				default:
 			}
@@ -6954,16 +6954,16 @@ float func_189(int iParam0, int iParam1)//Position - 0x6BC4
 			switch (iParam1)
 			{
 				case 0:
-					return Global_262145.f_36156 /* Tunable: -904899250 */;
+					return Global_262145.f_36156 /* Tunable: HACKER24_ARMS_TRAFFICKING_CARGOBOB_MAX_LAUNCH_RANGE */;
 				
 				case 1:
-					return Global_262145.f_36157 /* Tunable: -104376301 */;
+					return Global_262145.f_36157 /* Tunable: HACKER24_ARMS_TRAFFICKING_PLANE_STEAL_MAX_LAUNCH_RANGE */;
 				
 				case 2:
-					return Global_262145.f_36158 /* Tunable: 889118479 */;
+					return Global_262145.f_36158 /* Tunable: HACKER24_ARMS_TRAFFICKING_RATEL_RUN_MAX_LAUNCH_RANGE */;
 				
 				case 3:
-					return Global_262145.f_36159 /* Tunable: 1270794386 */;
+					return Global_262145.f_36159 /* Tunable: HACKER24_ARMS_TRAFFICKING_RIVAL_DESTROY_MAX_LAUNCH_RANGE */;
 				
 				default:
 			}
@@ -7182,13 +7182,13 @@ float func_190(int iParam0, int iParam1)//Position - 0x6E16
 			switch (iParam1)
 			{
 				case 0:
-					return Global_262145.f_36102 /* Tunable: 380843139 */;
+					return Global_262145.f_36102 /* Tunable: HACKER24_PREP_PLANT_DEVICE_MIN_LAUNCH_RANGE */;
 				
 				case 1:
-					return Global_262145.f_36103 /* Tunable: 1844113235 */;
+					return Global_262145.f_36103 /* Tunable: HACKER24_PREP_SONAR_EQUIPMENT_MIN_LAUNCH_RANGE */;
 				
 				case 2:
-					return Global_262145.f_36104 /* Tunable: -1989656042 */;
+					return Global_262145.f_36104 /* Tunable: HACKER24_PREP_TULA_MIN_LAUNCH_RANGE */;
 				
 				default:
 			}
@@ -7198,13 +7198,13 @@ float func_190(int iParam0, int iParam1)//Position - 0x6E16
 			switch (iParam1)
 			{
 				case 0:
-					return Global_262145.f_36105 /* Tunable: -885094970 */;
+					return Global_262145.f_36105 /* Tunable: HACKER24_PREP_ARMOR_MIN_LAUNCH_RANGE */;
 				
 				case 1:
-					return Global_262145.f_36106 /* Tunable: -1637381748 */;
+					return Global_262145.f_36106 /* Tunable: HACKER24_PREP_MILITARY_EQUIPMENT_MIN_LAUNCH_RANGE */;
 				
 				case 2:
-					return Global_262145.f_36107 /* Tunable: -492427063 */;
+					return Global_262145.f_36107 /* Tunable: HACKER24_PREP_OVERRIDE_KEY_MIN_LAUNCH_RANGE */;
 				
 				default:
 			}
@@ -7214,13 +7214,13 @@ float func_190(int iParam0, int iParam1)//Position - 0x6E16
 			switch (iParam1)
 			{
 				case 0:
-					return Global_262145.f_36108 /* Tunable: 1174625584 */;
+					return Global_262145.f_36108 /* Tunable: HACKER24_PREP_EMP_CHARGES_MIN_LAUNCH_RANGE */;
 				
 				case 1:
-					return Global_262145.f_36109 /* Tunable: -164722167 */;
+					return Global_262145.f_36109 /* Tunable: HACKER24_PREP_HELICOPTER_MIN_LAUNCH_RANGE */;
 				
 				case 2:
-					return Global_262145.f_36110 /* Tunable: -425655741 */;
+					return Global_262145.f_36110 /* Tunable: HACKER24_PREP_RETINA_SCAN_MIN_LAUNCH_RANGE */;
 				
 				default:
 			}
@@ -7230,13 +7230,13 @@ float func_190(int iParam0, int iParam1)//Position - 0x6E16
 			switch (iParam1)
 			{
 				case 0:
-					return Global_262145.f_36111 /* Tunable: -734195222 */;
+					return Global_262145.f_36111 /* Tunable: HACKER24_PREP_RC_BANDITO_STASH_MIN_LAUNCH_RANGE */;
 				
 				case 1:
-					return Global_262145.f_36112 /* Tunable: 390662431 */;
+					return Global_262145.f_36112 /* Tunable: HACKER24_PREP_THERMAL_CHARGES_MIN_LAUNCH_RANGE */;
 				
 				case 2:
-					return Global_262145.f_36113 /* Tunable: 223168573 */;
+					return Global_262145.f_36113 /* Tunable: HACKER24_PREP_MALWARE_MIN_LAUNCH_RANGE */;
 				
 				default:
 			}
@@ -7246,16 +7246,16 @@ float func_190(int iParam0, int iParam1)//Position - 0x6E16
 			switch (iParam1)
 			{
 				case 0:
-					return Global_262145.f_36152 /* Tunable: 1813280875 */;
+					return Global_262145.f_36152 /* Tunable: HACKER24_ARMS_TRAFFICKING_CARGOBOB_MIN_LAUNCH_RANGE */;
 				
 				case 1:
-					return Global_262145.f_36153 /* Tunable: 1875285298 */;
+					return Global_262145.f_36153 /* Tunable: HACKER24_ARMS_TRAFFICKING_PLANE_STEAL_MIN_LAUNCH_RANGE */;
 				
 				case 2:
-					return Global_262145.f_36154 /* Tunable: -1973811726 */;
+					return Global_262145.f_36154 /* Tunable: HACKER24_ARMS_TRAFFICKING_RATEL_RUN_MIN_LAUNCH_RANGE */;
 				
 				case 3:
-					return Global_262145.f_36155 /* Tunable: 1573729805 */;
+					return Global_262145.f_36155 /* Tunable: HACKER24_ARMS_TRAFFICKING_RIVAL_DESTROY_MIN_LAUNCH_RANGE */;
 				
 				default:
 			}
@@ -19124,22 +19124,22 @@ int func_398(int iParam0, int iParam1)//Position - 0x14D8B
 			switch (iParam1)
 			{
 				case 0:
-					return Global_262145.f_35950 /* Tunable: 731799954 */;
+					return Global_262145.f_35950 /* Tunable: DISABLE_DISPATCH_WORK_BOMB_DISPOSAL */;
 				
 				case 1:
-					return Global_262145.f_35951 /* Tunable: -1800925318 */;
+					return Global_262145.f_35951 /* Tunable: DISABLE_DISPATCH_WORK_CCTV */;
 				
 				case 2:
-					return Global_262145.f_35952 /* Tunable: -1777201066 */;
+					return Global_262145.f_35952 /* Tunable: DISABLE_DISPATCH_WORK_DRUG_BUST */;
 				
 				case 3:
-					return Global_262145.f_35953 /* Tunable: -1460381711 */;
+					return Global_262145.f_35953 /* Tunable: DISABLE_DISPATCH_WORK_VIGILANTE */;
 				
 				case 4:
-					return Global_262145.f_35955 /* Tunable: -1104987624 */;
+					return Global_262145.f_35955 /* Tunable: DISABLE_DISPATCH_WORK_TACO_VAN */;
 				
 				case 5:
-					return Global_262145.f_35954 /* Tunable: 1396481753 */;
+					return Global_262145.f_35954 /* Tunable: DISABLE_DISPATCH_WORK_INFORMANT_PROTECTION */;
 				
 				default:
 			}
