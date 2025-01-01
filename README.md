@@ -1,3 +1,7 @@
+# Archive notice
+
+As of January 1 2025, this repository will no longer be updated. A big thank you goes to everyone who contributed in any way.
+
 # v-decompiled-scripts
 
 Decompiled scripts from GTAV build 3407, for educational purposes only.
